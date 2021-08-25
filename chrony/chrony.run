@@ -1,0 +1,6 @@
+#!/bin/sh
+sv check dhcpcd >/dev/null || exit 1
+if [ -f /run/dhcpcd/hook-state/resolv.conf/eth0.dhcp ]; then
+	install -d -m750 -o chrony -g chrony /var/run/chrony
+	exec chronyd -n -u chrony
+fi

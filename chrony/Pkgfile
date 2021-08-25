@@ -1,0 +1,34 @@
+# Description:	NTP client and server programs
+# URL:		https://chrony.tuxfamily.org
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libcap libseccomp nettle
+
+name=chrony
+version=4.1
+release=0
+source=(https://download.tuxfamily.org/${name}/${name}-${version}.tar.gz \
+	chrony.conf \
+	chrony.run)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--enable-seccomp \
+		--enable-scfilter \
+		--with-user=${name}
+
+	make
+
+	make DESTDIR=$PKG install
+
+	# chrony runit service
+	install -D -m 0644 $SRC/chrony.conf $PKG/etc/chrony.conf
+	install -d $PKG/etc/sv/chrony
+	install -m 0755 $SRC/chrony.run $PKG/etc/sv/chrony/run
+	ln -s /run/runit/supervise.chrony $PKG/etc/sv/chrony/supervise
+
+	chown -R chrony:chrony $PKG/var/lib/chrony
+}
