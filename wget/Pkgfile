@@ -1,0 +1,30 @@
+# Description:	A network utility for downloading content from the Web
+# URL:		http://www.gnu.org/software/wget/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	openssl
+
+name=wget
+version=1.21.1
+release=0
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.lz \
+	wgetrc)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--disable-debug \
+		--disable-nls \
+		--disable-pcre2 \
+		--with-ssl=openssl
+
+	make
+
+	make DESTDIR=$PKG install
+
+	install -D -m 644 $SRC/wgetrc $PKG/etc/wgetrc
+
+	rm -r $PKG/usr/share/info
+}
