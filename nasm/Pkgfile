@@ -1,0 +1,19 @@
+# Description:	80x86 assembler
+# URL:		http://www.nasm.us/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=nasm
+version=2.15.05
+release=0
+source=(http://www.nasm.us/pub/nasm/releasebuilds/${version}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr
+
+	make
+
+	make DESTDIR=$PKG install
+}
