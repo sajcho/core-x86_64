@@ -1,0 +1,16 @@
+# Description:	LZ4 is lossless compression algorithm with fast decoder @ multiple GB/s per core
+# URL:		https://github.com/lz4/lz4
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=lz4
+version=1.9.3
+release=0
+source=(https://github.com/${name}/${name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	make PREFIX=/usr
+
+	make PREFIX=/usr DESTDIR=$PKG install
+}
