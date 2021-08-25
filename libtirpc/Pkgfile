@@ -1,0 +1,21 @@
+# Description:	Transport Independent RPC library
+# URL:		http://nfsv4.bullopensource.org/doc/tirpc_rpcbind.php
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=libtirpc
+version=1.3.2
+release=0
+source=(http://downloads.sourceforge.net/project/${name}/${name}/${version}/${name}-${version}.tar.bz2)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--disable-gssapi
+
+	make
+
+	make DESTDIR=$PKG install
+}
