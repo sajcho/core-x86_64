@@ -1,0 +1,53 @@
+# Description:	The GNU Binutils are a collection of binary tools
+# URL:		http://sources.redhat.com/binutils/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	flex texinfo zlib
+
+name=binutils
+version=2.37
+release=0
+source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
+
+build() {
+	cd $SRC
+
+	mkdir build
+	cd build
+
+	../${name}-${version}/configure \
+				--prefix=/usr \
+				--enable-ld=default \
+				--enable-gold=no \
+				--enable-plugins \
+				--enable-shared \
+				--enable-threads \
+				--enable-relro \
+				--enable-64-bit-bfd \
+				--enable-install-libiberty \
+				--enable-deterministic-archives \
+				--enable-default-hash-style=gnu \
+				--disable-nls \
+				--disable-werror \
+				--disable-multilib \
+				--disable-gdb \
+				--with-pic \
+				--with-mmap \
+				--with-system-zlib \
+				--with-pkgversion="SAUX x86_64" \
+				--build=$CHOST \
+				--host=$CHOST
+
+	make tooldir=/usr
+
+	make tooldir=/usr DESTDIR=$PKG install
+
+	# Create triplet symlinks
+	for f in $PKG/usr/bin/*; do
+		ln -s ${f##*/} $PKG/usr/bin/$CHOST-${f##*/}
+	done
+
+	rm -r $PKG/usr/share/info
+	rm $PKG/usr/share/man/man1/{dlltool,windres,windmc}.1
+
+	sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib/lib{bfd,ctf,ctf-nobfd,opcodes}.la
+}
