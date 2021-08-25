@@ -1,0 +1,26 @@
+# Description:	SQL database engine
+# URL:		http://www.sqlite.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	readline zlib
+
+name=sqlite3
+version=3.36.0
+release=0
+_version=$(printf "%i%.2i%.2i%.2i" ${version//./ })
+
+source=(http://www.sqlite.org/2021/sqlite-autoconf-${_version}.tar.gz)
+
+build() {
+	cd sqlite-autoconf-${_version}
+
+	CFLAGS="-DSQLITE_SECURE_DELETE=1 -DSQLITE_ENABLE_COLUMN_METADATA=1 \
+		-DSQLITE_ENABLE_UNLOCK_NOTIFY=1 -DSQLITE_ENABLE_DBSTAT_VTAB=1 \
+		-DSQLITE_ENABLE_FTS3=1  $CFLAGS" \
+		./configure \
+			--prefix=/usr \
+			--enable-readline
+
+	make
+
+	make DESTDIR=$PKG install
+}
