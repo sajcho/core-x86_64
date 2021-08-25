@@ -1,0 +1,29 @@
+# Description:	Void Linux socklog configuration
+# URL:		https://github.com/void-linux/socklog-void
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	socklog
+
+name=socklog-config
+version=20200115
+release=0
+source=(https://github.com/void-linux/socklog-void/archive/${version}.tar.gz)
+
+build() {
+	cd socklog-void-${version}
+
+	sed -i 's|bin|sbin|g' Makefile
+	sed -i 's|nobody:nogroup|socklog:socklog|' sv/nanoklogd/run
+	sed -i '1 a setcap cap_syslog+ep /usr/sbin/nanoklogd' sv/nanoklogd/run
+	sed -i '2 a chown -R root:socklog /var/log/socklog' sv/nanoklogd/run
+	sed -i 's|nobody:nogroup|socklog:socklog|' sv/socklog-unix/run
+
+	make
+
+	make DESTDIR=$PKG install
+
+	chown -R root:socklog $PKG/var/log/socklog
+	chmod 2750 $PKG/var/log/socklog/*
+	chmod 0644 $PKG/var/log/socklog/*/config
+
+	rm -r $PKG/var/log/socklog/{lpr,xbps}
+}

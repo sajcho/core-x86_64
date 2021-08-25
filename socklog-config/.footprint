@@ -1,0 +1,44 @@
+drwxr-xr-x	root/root	etc/
+drwxrwxr-x	root/root	etc/sv/
+drwxrwxr-x	root/root	etc/sv/nanoklogd/
+-rwxrwxr-x	root/root	etc/sv/nanoklogd/run
+lrwxrwxrwx	root/root	etc/sv/nanoklogd/supervise -> /run/runit/supervise.nanoklogd
+drwxrwxr-x	root/root	etc/sv/socklog-unix/
+-rwxrwxr-x	root/root	etc/sv/socklog-unix/check
+drwxrwxr-x	root/root	etc/sv/socklog-unix/log/
+-rwxrwxr-x	root/root	etc/sv/socklog-unix/log/run
+lrwxrwxrwx	root/root	etc/sv/socklog-unix/log/supervise -> /run/runit/supervise.socklog-unix-log
+-rwxrwxr-x	root/root	etc/sv/socklog-unix/run
+lrwxrwxrwx	root/root	etc/sv/socklog-unix/supervise -> /run/runit/supervise.socklog-unix
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/nanoklogd
+-rwxr-xr-x	root/root	usr/sbin/svlogtail
+-rwxr-xr-x	root/root	usr/sbin/syslog-stripdate
+drwxr-xr-x	root/root	var/
+drwxr-xr-x	root/root	var/log/
+drwxrwxr-x	root/socklog	var/log/socklog/
+drwxr-s---	root/socklog	var/log/socklog/cron/
+-rw-r--r--	root/socklog	var/log/socklog/cron/config
+drwxr-s---	root/socklog	var/log/socklog/daemon/
+-rw-r--r--	root/socklog	var/log/socklog/daemon/config
+drwxr-s---	root/socklog	var/log/socklog/debug/
+-rw-r--r--	root/socklog	var/log/socklog/debug/config
+drwxr-s---	root/socklog	var/log/socklog/errors/
+-rw-r--r--	root/socklog	var/log/socklog/errors/config
+drwxr-s---	root/socklog	var/log/socklog/everything/
+-rw-r--r--	root/socklog	var/log/socklog/everything/config
+drwxr-s---	root/socklog	var/log/socklog/kernel/
+-rw-r--r--	root/socklog	var/log/socklog/kernel/config
+drwxr-s---	root/socklog	var/log/socklog/mail/
+-rw-r--r--	root/socklog	var/log/socklog/mail/config
+drwxr-s---	root/socklog	var/log/socklog/messages/
+-rw-r--r--	root/socklog	var/log/socklog/messages/config
+drwxr-s---	root/socklog	var/log/socklog/remote-udp/
+-rw-r--r--	root/socklog	var/log/socklog/remote-udp/config
+drwxr-s---	root/socklog	var/log/socklog/secure/
+-rw-r--r--	root/socklog	var/log/socklog/secure/config
+drwxr-s---	root/socklog	var/log/socklog/tty12/
+-rw-r--r--	root/socklog	var/log/socklog/tty12/config
+drwxr-s---	root/socklog	var/log/socklog/user/
+-rw-r--r--	root/socklog	var/log/socklog/user/config
