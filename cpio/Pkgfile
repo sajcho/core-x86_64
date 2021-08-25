@@ -1,0 +1,26 @@
+# Description:	A tool to copy files into or out of a cpio or tar archive
+# URL:		http://www.gnu.org/software/cpio/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=cpio
+version=2.13
+release=0
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.bz2 \
+	cpio-2.12-gcc-10.patch)
+
+build() {
+	cd ${name}-${version}
+
+	patch -p1 -i ../cpio-2.12-gcc-10.patch
+
+	./configure \
+		--prefix=/usr \
+		--disable-nls
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/{libexec,share/info}
+	rm -r $PKG/usr/share/man/man8
+}
