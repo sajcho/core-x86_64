@@ -1,0 +1,7 @@
+#!/bin/sh
+getent group uuidd >/dev/null || groupadd -r -g 98 uuidd
+getent passwd uuidd >/dev/null || useradd -r -g 98 -u 98 -d /var/lib/libuuid -s /bin/false uuidd
+/usr/bin/passwd -l -q uuidd
+[ ! -d /run/uuidd ] && mkdir -p /run/uuidd
+chown uuidd:uuidd /run/uuidd
+exec chpst -u uuidd:uuidd uuidd -F -P
