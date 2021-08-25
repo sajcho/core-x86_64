@@ -1,0 +1,35 @@
+# Description:	Pluggable Authentication Modules (PAM) for Linux
+# URL:		http://www.linux-pam.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=linux-pam
+version=1.5.1
+release=0
+source=(https://github.com/${name}/${name}/releases/download/v${version}/Linux-PAM-${version}.tar.xz \
+	common-account common-auth common-password common-session other)
+
+build() {
+	cd Linux-PAM-${version}
+
+	CONFIG_SHELL=/bin/bash \
+	./configure \
+		--prefix=/usr \
+		--libdir=/lib \
+		--disable-nls \
+		--disable-prelude \
+		--enable-db=no
+
+	make
+
+	make DESTDIR=$PKG install
+
+	# unix_chkpwd needs to be setuid root
+	chmod u+s $PKG/sbin/unix_chkpwd
+
+	mkdir -p $PKG/etc/pam.d
+	install -o root -g root -m 0644 \
+		$SRC/{common-*,other} \
+		$PKG/etc/pam.d/
+
+	rm -r $PKG/usr/{lib,share/doc}
+}
