@@ -1,0 +1,9 @@
+31998b53fb39cb946e96abc310af1c89  glibc-2.34.tar.xz
+6589008e16d8dd3c760d612ba8140db2  glibc-c-utf8-locale.patch
+96156bec8e05de67384dc93e72bdc313  host.conf
+fbbc215a9b15ba4846f326cc88108057  hosts
+f7fefce570a3c776e26e778c5e401490  ld.so.conf
+a8c854d40128b6c13386e1a159940e17  linux-5.13.2.tar.xz
+de45f08c1d54abe770c74f2e9180db65  nscd.run
+75931315bf9bc9be15a5e25e4ddd5f0d  nsswitch.conf
+acf9daad1ee85de5efd3543965596a63  resolv.conf

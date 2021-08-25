@@ -1,0 +1,66 @@
+# Description:	The C library used in the GNU system
+# URL:		http://www.gnu.org/software/libc/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	python3 texinfo
+
+name=glibc
+version=2.34
+release=0
+source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
+	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.13.2.tar.xz \
+	glibc-c-utf8-locale.patch \
+	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
+
+build() {
+	# install kernel headers
+	cd linux-5.13.2
+
+	make mrproper
+	make INSTALL_HDR_PATH=$PKG/usr headers_install
+
+	# add support C.UTF-8 locale
+	patch -d $SRC/${name}-${version} -p1 \
+		-i $SRC/glibc-c-utf8-locale.patch
+
+	mkdir $SRC/build
+	cd $SRC/build
+
+	../${name}-${version}/configure \
+				--prefix=/usr \
+				--libexecdir=/usr/lib \
+				--with-headers=$PKG/usr/include \
+				--enable-shared \
+				--enable-kernel=3.7.0 \
+				--enable-tunables \
+				--enable-bind-now \
+				--enable-stack-protector=strong \
+				--disable-profile \
+				--disable-werror \
+				--disable-multi-arch \
+				--disable-timezone-tools \
+				--with-pkgversion="SAUX x86_64" \
+				--without-gd \
+				--without-cvs \
+				--build=$CHOST \
+				--host=$CHOST \
+				--enable-cet \
+				libc_cv_slibdir=/lib
+
+	make
+
+	make install_root=$PKG install
+
+	install -m 0644 $SRC/${name}-${version}/nscd/nscd.conf $PKG/etc
+
+	# nscd runit service
+	install -d $PKG/etc/sv/nscd
+	install -m 0755 $SRC/nscd.run $PKG/etc/sv/nscd/run
+	ln -s /run/runit/supervise.nscd $PKG/etc/sv/nscd/supervise
+
+	install -m 0644 $SRC/{hosts,resolv.conf,nsswitch.conf,host.conf,ld.so.conf} $PKG/etc
+	ln -sf ../usr/share/zoneinfo/UTC $PKG/etc/localtime
+	install -d $PKG/etc/ld.so.conf.d $PKG/usr/lib/locale
+	touch $PKG/etc/ld.so.cache
+
+	rm -r $PKG/usr/share/{info,locale}
+}
