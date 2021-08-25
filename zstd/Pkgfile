@@ -1,0 +1,21 @@
+# Description:	Real-time compression with high compression ratios.
+# URL:		http://www.zstd.net/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	lz4 xz zlib
+
+name=zstd
+version=1.5.0
+release=0
+source=(https://github.com/facebook/${name}/archive/v${version}/${name}-v${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	make
+
+	make -C contrib/pzstd
+
+	make PREFIX=/usr DESTDIR=$PKG install
+
+	install -D -m 0755 contrib/pzstd/pzstd -t $PKG/usr/bin
+}
