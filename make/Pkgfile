@@ -1,0 +1,22 @@
+# Description:	Controls the generation of executables and other compile-related tasks
+# URL:		http://www.gnu.org/software/make/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=make
+version=4.3
+release=0
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.lz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--disable-nls
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/info
+}
