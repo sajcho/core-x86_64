@@ -1,0 +1,24 @@
+# Description:	Sed - streams editor
+# URL:		http://www.gnu.org/software/sed//sed.html
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	acl
+
+name=sed
+version=4.8
+release=0
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--exec-prefix=/ \
+		--disable-nls
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/info
+}
