@@ -1,0 +1,39 @@
+# Description:	GNU tar
+# URL:		http://www.gnu.org/software/tar/tar.html
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=tar
+version=1.34
+release=0
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
+	tar-1.28-loneZeroWarning.patch \
+	tar-1.28-vfatTruncate.patch \
+	tar-1.29-wildcards.patch \
+	tar-1.28-atime-rofs.patch \
+	tar-1.28-document-exclude-mistakes.patch \
+	tar-1.33-fix-capabilities-test.patch)
+
+build() {
+	cd ${name}-${version}
+
+	patch -p1 -i $SRC/tar-1.28-loneZeroWarning.patch
+	patch -p1 -i $SRC/tar-1.28-vfatTruncate.patch
+	patch -p1 -i $SRC/tar-1.29-wildcards.patch
+	patch -p1 -i $SRC/tar-1.28-atime-rofs.patch
+	patch -p1 -i $SRC/tar-1.28-document-exclude-mistakes.patch
+	patch -p1 -i $SRC/tar-1.33-fix-capabilities-test.patch
+
+	CONFIG_SHELL="/bin/bash" \
+	./configure \
+		--prefix= \
+		--libexec=/usr/lib/tar \
+		--mandir=/usr/share/man \
+		--disable-nls \
+		FORCE_UNSAFE_CONFIGURE=1
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/share
+}
