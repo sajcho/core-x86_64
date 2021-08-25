@@ -1,0 +1,27 @@
+# Description:	Contains programs for reading, writing, and converting info pages
+# URL:		http://www.gnu.org/software/texinfo/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	perl
+
+name=texinfo
+version=6.8
+release=0
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	# fix an issue building the package with Glibc-2.34 or later:
+	sed -e 's/__attribute_nonnull__/__nonnull/' \
+		-i gnulib/lib/malloc/dynarray-skeleton.c
+
+	./configure \
+		--prefix=/usr \
+		--disable-nls
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/info
+}
