@@ -1,0 +1,32 @@
+# Description:	A cross-platform, open-source make system.
+# URL:		http://www.cmake.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	curl expat libarchive libuv
+
+name=cmake
+version=3.21.1
+release=0
+source=(https://cmake.org/files/v3.21/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	sed -i '/"lib64"/s/64//' Modules/GNUInstallDirs.cmake
+	sed -i Source/CMakeInstallDestinations.cmake \
+		-e 's|share/cmake-${CMake_VERSION_MAJOR}.${CMake_VERSION_MINOR}|share/cmake|'
+
+	./bootstrap \
+		--prefix=/usr \
+		--system-libs \
+		--no-system-jsoncpp \
+		--no-system-librhash \
+		--parallel=${JOBS:-1}
+
+	make
+
+	make DESTDIR=$PKG install
+
+	ln -sf ${name} $PKG/usr/share/$name-${version%.*}
+
+	rm -r $PKG/usr/{doc,share/${name}-${version%.*}/Help}
+}
