@@ -1,0 +1,45 @@
+# Description:	Secure SHell server and client tools
+# URL:		http://www.openssh.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	linux-pam openssl zlib
+
+name=openssh
+version=8.7p1
+release=0
+source=(http://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/${name}-${version}.tar.gz
+	sshd.pam sshd.run)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--libexecdir=/usr/lib/ssh \
+		--sysconfdir=/etc/ssh \
+		--with-mantype=man \
+		--mandir=/usr/share/man \
+		--with-md5-passwords \
+		--with-pam \
+		--with-privsep-user=nobody \
+		--with-privsep-path=/var/empty \
+		--with-xauth=/usr/bin/xauth
+
+	make
+
+	make DESTDIR=$PKG install
+
+	install -D -m 0644 $SRC/sshd.pam $PKG/etc/pam.d/sshd
+
+	# sshd runit service
+	install -d $PKG/etc/sv/sshd
+	install -D -m 0755 $SRC/sshd.run $PKG/etc/sv/sshd/run
+	ln -s /run/runit/supervise.sshd $PKG/etc/sv/sshd/supervise
+
+	# enable PAM
+	sed '/^#UsePAM/aUsePAM yes' -i $PKG/etc/ssh/sshd_config
+
+	install -D -m 0755 contrib/ssh-copy-id $PKG/usr/bin/ssh-copy-id
+	install -D -m 0644 contrib/ssh-copy-id.1 $PKG/usr/share/man/man1/ssh-copy-id.1
+
+	rm -r $PKG/var
+}
