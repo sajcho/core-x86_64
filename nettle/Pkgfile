@@ -1,0 +1,26 @@
+# Description:	Low-level cryptographic library
+# URL:		http://www.lysator.liu.se/~nisse/nettle/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	gmp
+
+name=nettle
+version=3.7.3
+release=0
+source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--disable-documentation
+
+	make
+
+	make -C examples
+
+	make DESTDIR=$PKG install
+
+	# strip comments in fields from .pc as it confuses pkgconf
+	sed -i -e 's/ \#.*//' $PKG/usr/lib/pkgconfig/*.pc
+}
