@@ -1,0 +1,37 @@
+# Description:	Sudo (superuser do)
+# URL:		http://www.sudo.ws/sudo/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	zlib linux-pam
+
+name=sudo
+version=1.9.7p2
+release=0
+source=(https://www.sudo.ws/dist/${name}-${version}.tar.gz \
+	${name}.pam)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--libexecdir=/usr/lib \
+		--with-logfac=auth \
+		--with-vardir=/var/lib/sudo \
+		--with-rundir=/run/sudo \
+		--disable-nls
+
+	make
+
+	make DESTDIR=$PKG install
+
+	# PAM service file
+	install -D -m 0644 $SRC/${name}.pam \
+	$PKG/etc/pam.d/${name}
+
+	# password asterisk
+	sed -i '/Defaults specification/a Defaults env_reset,pwfeedback' \
+		$PKG/etc/sudoers
+
+	rm -r $PKG/usr/share/doc
+	rm $PKG/etc/sudoers.dist
+}
