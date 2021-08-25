@@ -1,0 +1,24 @@
+# Description:	GNU database library for C
+# URL:		http://www.gnu.org/software/gdbm/gdbm.html
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	readline
+
+name=gdbm
+version=1.20
+release=0
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--enable-libgdbm-compat \
+		--disable-nls
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/info
+}
