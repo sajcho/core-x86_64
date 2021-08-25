@@ -1,0 +1,31 @@
+# Description:	Saux runit scripts
+# URL:		https://github.com/sajcho/runit-saux/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	gawk procps runit
+
+name=runit-saux
+version=1.0.0b1
+release=0
+source=(https://github.com/sajcho/${name}/archive/refs/tags/v${version}.tar.gz \
+	https://raw.githubusercontent.com/bahamas10/vsv/master/vsv)
+
+build() {
+	cd ${name}-${version}
+
+	make
+
+	make DESTDIR=$PKG install
+
+	ln -s runit-init $PKG/sbin/init
+
+	install -d -m 0755 $PKG/etc/modules-load.d
+	install -d -m 0755 $PKG/etc/zzz.d/suspend
+	install -d -m 0755 $PKG/etc/zzz.d/resume
+	install -d -m 0755 $PKG/usr/sbin
+
+	# vsv-void-service-manager
+	install -D -m 0755 $SRC/vsv $PKG/usr/sbin
+
+	[ $CARCH = "x86_64" ] &&
+		rm $PKG/etc/runit/core-services/12-cpufreq.sh
+}

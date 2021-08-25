@@ -1,0 +1,140 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/modules-load.d/
+-rw-r--r--	root/root	etc/rc.conf
+-rwxr-xr-x	root/root	etc/rc.local
+-rwxr-xr-x	root/root	etc/rc.shutdown
+drwxr-xr-x	root/root	etc/runit/
+-rwxr-xr-x	root/root	etc/runit/1
+-rwxr-xr-x	root/root	etc/runit/2
+-rwxr-xr-x	root/root	etc/runit/3
+drwxr-xr-x	root/root	etc/runit/core-services/
+-rw-r--r--	root/root	etc/runit/core-services/00-pseudofs.sh
+-rw-r--r--	root/root	etc/runit/core-services/01-descriptor-symlink.sh
+-rw-r--r--	root/root	etc/runit/core-services/02-cgroup.sh
+-rw-r--r--	root/root	etc/runit/core-services/03-static-devnodes.sh
+-rw-r--r--	root/root	etc/runit/core-services/04-kmods.sh
+-rw-r--r--	root/root	etc/runit/core-services/05-udev.sh
+-rw-r--r--	root/root	etc/runit/core-services/06-filesystems.sh
+-rw-r--r--	root/root	etc/runit/core-services/07-swap.sh
+-rw-r--r--	root/root	etc/runit/core-services/08-sysctl.sh
+-rw-r--r--	root/root	etc/runit/core-services/09-misc.sh
+-rw-r--r--	root/root	etc/runit/core-services/10-console-setup.sh
+-rw-r--r--	root/root	etc/runit/core-services/13-numlock.sh
+-rw-r--r--	root/root	etc/runit/core-services/99-cleanup.sh
+-rw-r--r--	root/root	etc/runit/crypt.awk
+-rwxr-xr-x	root/root	etc/runit/ctrlaltdel
+-rw-r--r--	root/root	etc/runit/functions
+lrwxrwxrwx	root/root	etc/runit/reboot -> /run/runit/reboot
+drwxr-xr-x	root/root	etc/runit/runsvdir/
+lrwxrwxrwx	root/root	etc/runit/runsvdir/current -> default
+drwxrwxr-x	root/root	etc/runit/runsvdir/default/
+lrwxrwxrwx	root/root	etc/runit/runsvdir/default/agetty-tty1 -> /etc/sv/agetty-tty1
+lrwxrwxrwx	root/root	etc/runit/runsvdir/default/agetty-tty2 -> /etc/sv/agetty-tty2
+lrwxrwxrwx	root/root	etc/runit/runsvdir/default/agetty-tty3 -> /etc/sv/agetty-tty3
+lrwxrwxrwx	root/root	etc/runit/runsvdir/default/agetty-tty4 -> /etc/sv/agetty-tty4
+lrwxrwxrwx	root/root	etc/runit/runsvdir/default/agetty-tty5 -> /etc/sv/agetty-tty5
+lrwxrwxrwx	root/root	etc/runit/runsvdir/default/agetty-tty6 -> /etc/sv/agetty-tty6
+lrwxrwxrwx	root/root	etc/runit/runsvdir/default/agetty-ttyS0 -> /etc/sv/agetty-ttyS0
+drwxrwxr-x	root/root	etc/runit/runsvdir/single/
+lrwxrwxrwx	root/root	etc/runit/runsvdir/single/sulogin -> /etc/sv/sulogin
+lrwxrwxrwx	root/root	etc/runit/stopit -> /run/runit/stopit
+drwxr-xr-x	root/root	etc/sv/
+drwxrwxr-x	root/root	etc/sv/agetty-console/
+-rw-rw-r--	root/root	etc/sv/agetty-console/conf
+lrwxrwxrwx	root/root	etc/sv/agetty-console/finish -> ../agetty-generic/finish
+lrwxrwxrwx	root/root	etc/sv/agetty-console/run -> ../agetty-generic/run
+lrwxrwxrwx	root/root	etc/sv/agetty-console/supervise -> /run/runit/supervise.agetty-console
+drwxrwxr-x	root/root	etc/sv/agetty-generic/
+-rwxrwxr-x	root/root	etc/sv/agetty-generic/finish
+-rwxrwxr-x	root/root	etc/sv/agetty-generic/run
+drwxrwxr-x	root/root	etc/sv/agetty-hvc0/
+-rw-rw-r--	root/root	etc/sv/agetty-hvc0/conf
+lrwxrwxrwx	root/root	etc/sv/agetty-hvc0/finish -> ../agetty-generic/finish
+lrwxrwxrwx	root/root	etc/sv/agetty-hvc0/run -> ../agetty-serial/run
+lrwxrwxrwx	root/root	etc/sv/agetty-hvc0/supervise -> /run/runit/supervise.agetty-hvc0
+drwxrwxr-x	root/root	etc/sv/agetty-hvsi0/
+-rw-rw-r--	root/root	etc/sv/agetty-hvsi0/conf
+lrwxrwxrwx	root/root	etc/sv/agetty-hvsi0/finish -> ../agetty-generic/finish
+lrwxrwxrwx	root/root	etc/sv/agetty-hvsi0/run -> ../agetty-serial/run
+lrwxrwxrwx	root/root	etc/sv/agetty-hvsi0/supervise -> /run/runit/supervise.agetty-hvsi0
+drwxrwxr-x	root/root	etc/sv/agetty-serial/
+-rw-rw-r--	root/root	etc/sv/agetty-serial/conf
+lrwxrwxrwx	root/root	etc/sv/agetty-serial/finish -> ../agetty-generic/finish
+lrwxrwxrwx	root/root	etc/sv/agetty-serial/run -> ../agetty-generic/run
+drwxrwxr-x	root/root	etc/sv/agetty-tty1/
+-rw-rw-r--	root/root	etc/sv/agetty-tty1/conf
+lrwxrwxrwx	root/root	etc/sv/agetty-tty1/finish -> ../agetty-generic/finish
+lrwxrwxrwx	root/root	etc/sv/agetty-tty1/run -> ../agetty-generic/run
+lrwxrwxrwx	root/root	etc/sv/agetty-tty1/supervise -> /run/runit/supervise.agetty-tty1
+drwxrwxr-x	root/root	etc/sv/agetty-tty2/
+lrwxrwxrwx	root/root	etc/sv/agetty-tty2/conf -> ../agetty-tty1/conf
+lrwxrwxrwx	root/root	etc/sv/agetty-tty2/finish -> ../agetty-generic/finish
+lrwxrwxrwx	root/root	etc/sv/agetty-tty2/run -> ../agetty-generic/run
+lrwxrwxrwx	root/root	etc/sv/agetty-tty2/supervise -> /run/runit/supervise.agetty-tty2
+drwxrwxr-x	root/root	etc/sv/agetty-tty3/
+lrwxrwxrwx	root/root	etc/sv/agetty-tty3/conf -> ../agetty-tty1/conf
+lrwxrwxrwx	root/root	etc/sv/agetty-tty3/finish -> ../agetty-generic/finish
+lrwxrwxrwx	root/root	etc/sv/agetty-tty3/run -> ../agetty-generic/run
+lrwxrwxrwx	root/root	etc/sv/agetty-tty3/supervise -> /run/runit/supervise.agetty-tty3
+drwxrwxr-x	root/root	etc/sv/agetty-tty4/
+lrwxrwxrwx	root/root	etc/sv/agetty-tty4/conf -> ../agetty-tty1/conf
+lrwxrwxrwx	root/root	etc/sv/agetty-tty4/finish -> ../agetty-generic/finish
+lrwxrwxrwx	root/root	etc/sv/agetty-tty4/run -> ../agetty-generic/run
+lrwxrwxrwx	root/root	etc/sv/agetty-tty4/supervise -> /run/runit/supervise.agetty-tty4
+drwxrwxr-x	root/root	etc/sv/agetty-tty5/
+lrwxrwxrwx	root/root	etc/sv/agetty-tty5/conf -> ../agetty-tty1/conf
+lrwxrwxrwx	root/root	etc/sv/agetty-tty5/finish -> ../agetty-generic/finish
+lrwxrwxrwx	root/root	etc/sv/agetty-tty5/run -> ../agetty-generic/run
+lrwxrwxrwx	root/root	etc/sv/agetty-tty5/supervise -> /run/runit/supervise.agetty-tty5
+drwxrwxr-x	root/root	etc/sv/agetty-tty6/
+lrwxrwxrwx	root/root	etc/sv/agetty-tty6/conf -> ../agetty-tty1/conf
+lrwxrwxrwx	root/root	etc/sv/agetty-tty6/finish -> ../agetty-generic/finish
+lrwxrwxrwx	root/root	etc/sv/agetty-tty6/run -> ../agetty-generic/run
+lrwxrwxrwx	root/root	etc/sv/agetty-tty6/supervise -> /run/runit/supervise.agetty-tty6
+drwxrwxr-x	root/root	etc/sv/agetty-ttyAMA0/
+lrwxrwxrwx	root/root	etc/sv/agetty-ttyAMA0/conf -> ../agetty-serial/conf
+lrwxrwxrwx	root/root	etc/sv/agetty-ttyAMA0/finish -> ../agetty-generic/finish
+lrwxrwxrwx	root/root	etc/sv/agetty-ttyAMA0/run -> ../agetty-serial/run
+lrwxrwxrwx	root/root	etc/sv/agetty-ttyAMA0/supervise -> /run/runit/supervise.agetty-ttyAMA0
+drwxrwxr-x	root/root	etc/sv/agetty-ttyS0/
+lrwxrwxrwx	root/root	etc/sv/agetty-ttyS0/conf -> ../agetty-serial/conf
+lrwxrwxrwx	root/root	etc/sv/agetty-ttyS0/finish -> ../agetty-generic/finish
+lrwxrwxrwx	root/root	etc/sv/agetty-ttyS0/run -> ../agetty-serial/run
+lrwxrwxrwx	root/root	etc/sv/agetty-ttyS0/supervise -> /run/runit/supervise.agetty-ttyS0
+drwxrwxr-x	root/root	etc/sv/agetty-ttyUSB0/
+lrwxrwxrwx	root/root	etc/sv/agetty-ttyUSB0/conf -> ../agetty-serial/conf
+lrwxrwxrwx	root/root	etc/sv/agetty-ttyUSB0/finish -> ../agetty-generic/finish
+lrwxrwxrwx	root/root	etc/sv/agetty-ttyUSB0/run -> ../agetty-serial/run
+lrwxrwxrwx	root/root	etc/sv/agetty-ttyUSB0/supervise -> /run/runit/supervise.agetty-ttyUSB0
+drwxrwxr-x	root/root	etc/sv/sulogin/
+-rwxrwxr-x	root/root	etc/sv/sulogin/run
+lrwxrwxrwx	root/root	etc/sv/sulogin/supervise -> /run/runit/supervise.sulogin
+drwxr-xr-x	root/root	etc/zzz.d/
+drwxr-xr-x	root/root	etc/zzz.d/resume/
+drwxr-xr-x	root/root	etc/zzz.d/suspend/
+drwxr-xr-x	root/root	sbin/
+lrwxrwxrwx	root/root	sbin/ZZZ -> zzz
+-rwxr-xr-x	root/root	sbin/halt
+lrwxrwxrwx	root/root	sbin/init -> runit-init
+-rwxr-xr-x	root/root	sbin/modules-load
+-rwxr-xr-x	root/root	sbin/pause
+lrwxrwxrwx	root/root	sbin/poweroff -> halt
+lrwxrwxrwx	root/root	sbin/reboot -> halt
+-rwxr-xr-x	root/root	sbin/shutdown
+-rwxr-xr-x	root/root	sbin/vlogger
+-rwxr-xr-x	root/root	sbin/zzz
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/vsv
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/pause.1.gz
+drwxr-xr-x	root/root	usr/share/man/man8/
+-rw-r--r--	root/root	usr/share/man/man8/halt.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/modules-load.8.gz
+lrwxrwxrwx	root/root	usr/share/man/man8/poweroff.8.gz -> halt.8.gz
+lrwxrwxrwx	root/root	usr/share/man/man8/reboot.8.gz -> halt.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/shutdown.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/vlogger.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/zzz.8.gz
