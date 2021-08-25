@@ -1,0 +1,22 @@
+# Description:	A standard Unix macro processor with extensions
+# URL:		http://www.seindal.dk/rene/gnu/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=m4
+version=1.4.19
+release=0
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--disable-nls
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/info
+}
