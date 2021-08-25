@@ -1,0 +1,21 @@
+# Description:	Library and utilities to access the PCI bus configuration registers
+# URL:		http://mj.ucw.cz/pciutils.shtml
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	eudev
+
+name=pciutils
+version=3.7.0
+release=0
+source=(https://www.kernel.org/pub/software/utils/pciutils/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	local CONF="ZLIB=no DESTDIR=$PKG PREFIX=/usr"
+
+	make -j1 $CONF OPT="$CFLAGS" SHARED=yes install install-lib
+
+	make clean
+
+	make -j1 $CONF OPT="$CFLAGS" SHARED=no  install install-lib
+}
