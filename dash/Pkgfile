@@ -1,0 +1,23 @@
+# Description:	The Almquist shell, a POSIX-compliant /bin/sh implementation
+# URL:		http://gondor.apana.org.au/~herbert/dash/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=dash
+version=0.5.11.4
+release=0
+source=(http://gondor.apana.org.au/~herbert/dash/files/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/ \
+		--mandir=/usr/share/man
+
+	make
+
+	make DESTDIR=$PKG install
+
+	ln -s dash $PKG/bin/sh
+	ln -s dash.1 $PKG/usr/share/man/man1/sh.1
+}
