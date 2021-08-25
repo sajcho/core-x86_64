@@ -1,0 +1,25 @@
+# Description:	A collection of utilities to handle ELF objects.
+# URL:		https://sourceware.org/elfutils/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	bzip2 xz zlib
+
+name=elfutils
+version=0.185
+release=0
+source=(https://sourceware.org/${name}/ftp/${version}/${name}-${version}.tar.bz2)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--program-prefix=eu- \
+		--enable-maintainer-mode \
+		--disable-libdebuginfod \
+		--disable-debuginfod \
+		--disable-nls
+
+	make
+
+	make DESTDIR=$PKG install
+}
