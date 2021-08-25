@@ -1,0 +1,21 @@
+# Description:	Show full path of commands
+# URL:		http://directory.fsf.org/wiki/Which
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=which
+version=2.21
+release=0
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/info
+}
