@@ -1,0 +1,25 @@
+# Description:	A unit test framework for C
+# URL:		https://libcheck.github.io/check/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	automake libtool pkgconf
+
+name=check
+version=0.15.2
+release=0
+source=(https://github.com/libcheck/${name}/releases/download/${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	autoreconf -fiv
+
+	./configure \
+		--prefix=/usr \
+		--disable-static
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/{doc,info}
+}
