@@ -1,0 +1,24 @@
+# Description:	pciutils-like utilities for USB
+# URL:		https://github.com/gregkh/usbutils
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libusb
+
+name=usbutils
+version=014
+release=0
+source=(http://www.kernel.org/pub/linux/utils/usb/${name}/${name}-${version}.tar.xz
+	usb.ids.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--disable-zlib
+
+	make
+
+	make DESTDIR=$PKG install
+
+	unxz -c $SRC/usb.ids.xz > $PKG/usr/share/usb.ids
+}
