@@ -1,0 +1,25 @@
+# Description:	Basic directory searching utilities
+# URL:		http://www.gnu.org/software/findutils/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=findutils
+version=4.8.0
+release=0
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	CONFIG_SHELL=/bin/bash \
+	./configure \
+		--prefix=/usr \
+		--disable-nls
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm $PKG/usr/bin/{updatedb,locate}
+	rm $PKG/usr/share/man/man1/{updatedb.1,locate.1}
+	rm -r $PKG/usr/{libexec,var,share/{info,man/man5}}
+}
