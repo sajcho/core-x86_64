@@ -1,0 +1,10 @@
+#!/bin/sh
+[ ! -d /run/fcron ] && mkdir -p /run/fcron
+[ -r conf ] && . ./conf
+
+# initialize system systab
+if [ ! -f /var/spool/fcron/systab ]; then
+	/usr/bin/fcrontab -u systab -z
+fi
+
+exec fcron -f

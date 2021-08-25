@@ -1,0 +1,52 @@
+# Description:	Enhanced periodical command scheduler like cron
+# URL:		http://fcron.free.fr
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	readline
+
+name=fcron
+version=3.3.0
+release=0
+source=(http://fcron.free.fr/archives/${name}-${version}.src.tar.gz \
+	fcron.run runjobs systab.orig)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc/fcron \
+		--localstatedir=/var \
+		--mandir=/usr/share/man \
+		--with-piddir=/run/fcron \
+		--with-fifodir=/run/fcron \
+		--with-spooldir=/var/spool/fcron \
+		--with-username=fcron \
+		--with-groupname=fcron \
+		--with-pam=yes \
+		--with-db2man=no \
+		--with-boot-install=no \
+		--with-answer-all=no \
+		--with-selinux=no \
+		--with-sendmail=no \
+		--with-dsssl-dir=no \
+		--with-systemdsystemunitdir=no
+
+	make
+
+	make DESTDIR=$PKG install
+
+	install -D -m 644 files/fcron.pam $PKG/etc/pam.d/fcron
+	install -D -m 644 files/fcrontab.pam $PKG/etc/pam.d/fcrontab
+	install -D -m 755 $SRC/runjobs $PKG/usr/sbin/runjobs
+
+	# fcron runit service
+	install -d $PKG/etc/sv/fcron
+	install -D -m 755 $SRC/fcron.run $PKG/etc/sv/fcron/run
+	ln -s /run/runit/supervise.fcron $PKG/etc/sv/fcron/supervise
+	install -m 600 -o root -g fcron $SRC/systab.orig $PKG/var/spool/fcron
+
+	install -d $PKG/run/fcron
+	sed -i 's|var/run|var/run/fcron|g' $PKG/etc/fcron/fcron.conf
+
+	rm -r $PKG/usr/share/{doc,man/{fr,man3}}
+}
