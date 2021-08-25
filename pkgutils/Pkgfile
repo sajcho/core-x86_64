@@ -1,0 +1,31 @@
+# Description:	A set of utilities to manage software packages
+# URL:		http://crux.nu/gitweb/?p=tools/pkgutils.git
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libarchive
+
+name=pkgutils
+version=5.40.7
+_commit=9ca0da65121451447cdd284f98027dca2e16fb2e
+release=3
+source=(zstd-multiarch.patch pkgmk.conf-saux)
+
+build() {
+	cd $PKGMK_WORK_DIR/src
+
+	git clone git://crux.nu/tools/pkgutils.git
+	cd pkgutils
+	git reset --hard ${_commit}
+
+	if [ `uname -m` = "x86_64" ]; then
+		sed -i 's|pkg.tar|x86_64.pkg.tar|' pkgutil.h
+	elif [ ! `uname -m` = "x86_64" ]; then
+		sed -i 's|pkg.tar|aarch64.pkg.tar|' pkgutil.h
+	fi
+
+	patch -p1 -i $SRC/zstd-multiarch.patch
+
+	make DESTDIR=$PKG install
+
+	# Replaces a pkgmk.conf
+	install -m 0644 $SRC/pkgmk.conf-saux $PKG/etc/pkgmk.conf
+}

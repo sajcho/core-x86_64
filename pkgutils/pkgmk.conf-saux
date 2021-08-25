@@ -1,0 +1,47 @@
+#
+# /etc/pkgmk.conf: pkgmk(8) configuration
+#
+
+export LC_ALL="C.UTF-8"
+
+export CARCH="x86_64"
+export CHOST="x86_64-unknown-linux-gnu"
+
+CFLAGS="-O2 -pipe"
+CXXFLAGS="-O2 -pipe"
+
+case ${PKGMK_ARCH} in
+	"x86_64")
+		export CFLAGS="${CFLAGS}"
+		export CXXFLAGS="${CXXFLAGS}"
+		;;
+	"aarch64")
+		export CFLAGS="${CFLAGS}"
+		export CXXFLAGS="${CXXFLAGS}"
+		;;
+	*)
+		echo "Unknown architecture selected! Exiting."
+		exit 1
+		;;
+esac
+
+# export JOBS=$(nproc)
+# export MAKEFLAGS="-j $JOBS"
+# export SAMUFLAGS="-j $JOBS"
+
+# PKGMK_SOURCE_MIRRORS=()
+# PKGMK_SOURCE_DIR="$PWD"
+# PKGMK_PACKAGE_DIR="$PWD"
+# PKGMK_WORK_DIR="$PWD/work"
+# PKGMK_DOWNLOAD="no"
+# PKGMK_IGNORE_SIGNATURE="no"
+# PKGMK_IGNORE_MD5SUM="no"
+# PKGMK_IGNORE_FOOTPRINT="no"
+# PKGMK_IGNORE_NEW="no"
+# PKGMK_NO_STRIP="no"
+# PKGMK_DOWNLOAD_PROG="wget"
+# PKGMK_WGET_OPTS=""
+# PKGMK_CURL_OPTS=""
+# PKGMK_COMPRESSION_MODE="gz"
+
+# End of file
