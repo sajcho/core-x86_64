@@ -1,0 +1,37 @@
+# Description:	Utility for incremental file transfers over networks
+# URL:		https://rsync.samba.org
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	acl openssl zstd
+
+name=rsync
+version=3.2.3
+release=0
+source=(https://download.samba.org/pub/rsync/src/${name}-${version}.tar.gz \
+	rsyncd.conf rsync.driver rsyncd.run)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--runstatedir=/run \
+		--enable-zstd \
+		--with-rsh=ssh \
+		--with-included-popt \
+		--with-included-zlib \
+		--disable-xxhash \
+		--disable-lz4
+
+	make
+
+	make DESTDIR=$PKG install
+
+	install -d $PKG/etc/ports/drivers
+	install -m 644 $SRC/rsyncd.conf $PKG/etc
+	install -m 755 $SRC/rsync.driver $PKG/etc/ports/drivers/rsync
+
+	# rsyncd runit service
+	install -d $PKG/etc/sv/rsyncd
+	install -m 0755 $SRC/rsyncd.run $PKG/etc/sv/rsyncd/run
+	ln -s /run/runit/supervise.rsyncd $PKG/etc/sv/rsyncd/supervise
+}
