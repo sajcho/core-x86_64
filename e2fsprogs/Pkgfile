@@ -1,0 +1,34 @@
+# Description:	Ext2 Filesystem Utilities
+# URL:		http://e2fsprogs.sourceforge.net/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	util-linux
+
+name=e2fsprogs
+version=1.46.4
+release=0
+source=(https://www.kernel.org/pub/linux/kernel/people/tytso/${name}/v${version}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--with-root-prefix= \
+		--enable-symlink-install \
+		--enable-elf-shlibs \
+		--disable-e2initrd-helper \
+		--disable-nls \
+		--disable-fsck \
+		--disable-libblkid \
+		--disable-libuuid \
+		--disable-uuidd \
+		--disable-fuse2fs
+
+	make
+
+	make -j1 DESTDIR=$PKG install install-libs
+
+	chmod +w -R $PKG
+
+	rm -r $PKG/usr/share/info
+}
