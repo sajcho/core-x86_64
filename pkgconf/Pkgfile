@@ -1,0 +1,35 @@
+# Description:	development framework configuration tools
+# URL:		http://github.com/pkgconf/pkgconf
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	glibc
+
+name=pkgconf
+version=1.8.0
+release=0
+source=(https://distfiles.dereferenced.org/${name}/${name}-${version}.tar.xz \
+	x86_64-unknown-linux-gnu.personality)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--with-pkg-config-dir=/usr/lib/pkgconfig:/usr/share/pkgconfig \
+		--with-system-libdir=/usr/lib \
+		--with-system-includedir=/usr/include \
+		--disable-static
+
+	make
+
+	make DESTDIR=$PKG install
+
+	install -Dt $PKG/usr/share/pkgconfig/personality.d -m 0644 \
+		$SRC/x86_64-unknown-linux-gnu.personality
+
+	ln -s pkgconf $PKG/usr/bin/x86_64-unknown-linux-gnu-pkg-config
+	ln -s pkgconf $PKG/usr/bin/pkg-config
+	ln -s pkgconf.1 $PKG/usr/share/man/man1/pkg-config.1
+
+	rm -r $PKG/usr/share/doc
+}
