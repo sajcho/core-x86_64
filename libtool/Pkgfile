@@ -1,0 +1,22 @@
+# Description:	A generic library support script
+# URL:		http://www.gnu.org/software/libtool/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=libtool
+version=2.4.6
+release=0
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/info
+	rm $PKG/usr/share/libtool/{COPYING.LIB,README}
+}
