@@ -1,0 +1,19 @@
+# Description:	Collection of scripts for CRUX, mainly oriented towards package and port management
+# URL:		http://crux.nu/Wiki/PrtUtils
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	elfutils
+
+name=prt-utils
+version=1.1.4
+release=0
+source=(http://crux.nu/files/tools/${name}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	make
+
+	make DESTDIR=$PKG install
+
+	install -d $PKG/etc/revdep.d
+}
