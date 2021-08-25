@@ -1,0 +1,25 @@
+# Description:	A pattern scanning and processing language
+# URL:		http://www.gnu.org/software/gawk/gawk.html
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	readline mpfr
+
+name=gawk
+version=5.1.0
+release=0
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--libexecdir=/usr/lib \
+		--disable-nls
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/{etc,share/info}
+	rm $PKG/usr/bin/${name}-${version}
+}
