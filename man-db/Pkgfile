@@ -1,0 +1,34 @@
+# Description:	An implementation of the standard Unix documentation system accessed using the man command
+# URL:		http://man-db.nongnu.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	zlib gdbm libpipeline libseccomp
+
+name=man-db
+version=2.9.4
+release=0
+source=(http://download.savannah.gnu.org/releases/${name}/${name}-${version}.tar.xz \
+	mandb.cron)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--libexecdir=/usr/lib/${name} \
+		--disable-setuid \
+		--disable-cache-owner \
+		--disable-nls \
+		--with-libseccomp \
+		--with-systemdtmpfilesdir=no \
+		--with-systemdsystemunitdir=no
+
+	make
+
+	make DESTDIR=$PKG install
+
+	install -d $PKG/var/cache/man
+	install -D -o root -g root -m 0755 $SRC/mandb.cron $PKG/etc/cron/daily/mandb
+
+	rm -r $PKG/usr/share/doc
+}
