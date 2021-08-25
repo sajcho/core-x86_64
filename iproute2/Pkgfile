@@ -1,0 +1,23 @@
+# Description:	A collection of utilites for controlling TCP/IP networking and traffic in Linux
+# URL:		http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	db elfutils iptables libcap libmnl
+
+name=iproute2
+version=5.13.0
+release=0
+source=(https://www.kernel.org/pub/linux/utils/net/${name}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure
+
+	make -j1 CCOPTS="$CFLAGS"
+
+	make -j1 DESTDIR=$PKG install
+
+	# add ip to user path via symlink
+	install -d $PKG/bin
+	ln -s /sbin/ip $PKG/bin/ip
+}
