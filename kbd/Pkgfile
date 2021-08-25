@@ -1,0 +1,31 @@
+# Description:	Keytable files and keyboard utilities
+# URL:		http://kbd-project.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=kbd
+version=2.4.0
+release=0
+source=(https://www.kernel.org/pub/linux/utils/${name}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--datadir=/usr/share/kbd \
+		--disable-vlock \
+		--disable-nls \
+		--disable-tests
+
+	make
+
+	make DESTDIR=$PKG install
+
+	ln -sf default8x16.psfu.gz $PKG/usr/share/kbd/consolefonts/default.gz
+
+	rm -r $PKG/usr/share/kbd/keymaps/{ppc,mac,atari,amiga,sun}
+	rm $PKG/usr/bin/{loadunimap,mapscrn,psf*table,resizecons}
+	rm $PKG/usr/share/man/man8/{loadunimap,mapscrn,resizecons}.8
+	rm $PKG/usr/share/man/man1/psf*table.1
+	find $PKG/usr/share/kbd/ -type f -name "README*" -delete
+}
