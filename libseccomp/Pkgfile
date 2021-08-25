@@ -1,0 +1,20 @@
+# Description:	An interface to the Linux Kernel's syscall filtering mechanism
+# URL:		https://github.com/seccomp/libseccomp
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	gperf
+
+name=libseccomp
+version=2.5.1
+release=0
+source=(https://github.com/seccomp/libseccomp/releases/download/v${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr
+
+	make
+
+	make DESTDIR=$PKG install
+}
