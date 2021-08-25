@@ -1,0 +1,31 @@
+# Description:	Small and secure syslogd replacement for use with runit
+# URL:		http://smarden.org/socklog/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	runit
+
+name=socklog
+version=2.1.0
+release=0
+source=(http://smarden.org/${name}/${name}-${version}.tar.gz \
+	cross.patch)
+
+build() {
+	cd $SRC/admin/${name}-${version}
+
+	patch -d $SRC/admin/${name}-${version}/src -p1 -i $SRC/cross.patch
+
+	CFLAGS="${CFLAGS} -static"
+	LDFLAGS="${LDFLAGS} -static"
+
+	package/compile
+
+	# command
+	mkdir -v $PKG/sbin
+	cp -v command/* $PKG/sbin/
+
+	install -d -m 0755 $PKG/usr/share/man/{man1,man8}
+	install -D -m 0644 $SRC/admin/${name}-${version}/man/*.1 \
+		$PKG/usr/share/man/man1
+	install -D -m 0644 $SRC/admin/${name}-${version}/man/*.8 \
+		$PKG/usr/share/man/man8
+}
