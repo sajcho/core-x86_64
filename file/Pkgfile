@@ -1,0 +1,25 @@
+# Description:	File type identification utility
+# URL:		http://www.darwinsys.com/file/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	zlib libseccomp
+
+name=file
+version=5.40
+release=0
+source=(https://astron.com/pub/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--enable-fsect-man5 \
+		--enable-static \
+		--enable-libseccomp
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rmdir $PKG/usr/share/man/man4
+}
