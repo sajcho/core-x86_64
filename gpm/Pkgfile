@@ -1,0 +1,40 @@
+# Description:	Console mouse server.
+# URL:		http://unix.schottelius.org/gpm/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=gpm
+version=1.20.7
+release=0
+source=(https://www.nico.schottelius.org/software/${name}/archives/${name}-${version}.tar.bz2 \
+	${name}-${version}-consolidated-1.patch \
+	gpm.run)
+
+build() {
+	cd ${name}-${version}
+
+	# from BLFS
+	patch -Np1 -i $SRC/${name}-${version}-consolidated-1.patch
+
+	./autogen.sh
+
+	CFLAGS+=' -fcommon' \
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc
+
+	touch doc/gpm.info
+
+	make
+
+	make DESTDIR=$PKG install
+
+	ln -s libgpm.so.2.1.0 $PKG/usr/lib/libgpm.so
+	install -m 0644 conf/gpm-root.conf $PKG/etc
+
+	# gpm runit service
+	install -d $PKG/etc/sv/gpm
+	install -m 0755 -D $SRC/gpm.run $PKG/etc/sv/gpm/run
+	ln -s /run/runit/supervise.gpm $PKG/etc/sv/gpm/supervise
+
+	rm -r $PKG/usr/share/info
+}
