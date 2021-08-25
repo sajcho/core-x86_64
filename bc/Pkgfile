@@ -1,0 +1,26 @@
+# Description:	An arbitrary precision calculator language
+# URL:		http://www.gnu.org/software/bc/bc.html
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	readline
+
+name=bc
+version=1.07.1
+release=0
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--with-readline
+
+	# do not regen docs
+	touch doc/*.info doc/*.1 doc/Makefile
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/info
+}
