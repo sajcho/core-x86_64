@@ -1,0 +1,21 @@
+# Description:	Perfect hash function generator
+# URL:		http://www.gnu.org/software/gperf/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=gperf
+version=3.1
+release=0
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/{doc,info}
+}
