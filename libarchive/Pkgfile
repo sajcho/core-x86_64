@@ -1,0 +1,30 @@
+# Description:	Library to create and read several archive formats
+# URL:		http://www.libarchive.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	acl bzip2 lzo zstd
+
+name=libarchive
+version=3.5.2
+release=0
+source=(http://www.libarchive.org/downloads/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	# We're passing --without-xml2 and --without-nettle
+	# to avoid linking to libraries which are only available in opt.
+	# XML support is only needed for the xar format which we can live without.
+
+	./configure \
+		--prefix=/usr \
+		--without-xml2 \
+		--without-nettle \
+		--without-openssl \
+		--without-expat
+
+	make
+
+	make check
+
+	make DESTDIR=$PKG install
+}
