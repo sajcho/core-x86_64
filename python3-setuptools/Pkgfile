@@ -1,0 +1,23 @@
+# Description:	Easily download, build, install, upgrade, and uninstall Python packages.
+# URL:		https://pypi.python.org/pypi/setuptools
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	python3
+
+name=python3-setuptools
+version=57.4.0
+release=0
+source=(https://files.pythonhosted.org/packages/source/${name:8:1}/${name#*-}/${name#*-}-${version}.tar.gz)
+
+build() {
+	cd ${name#*-}-${version}
+
+	export SETUPTOOLS_INSTALL_WINDOWS_SPECIFIC_FILES=0
+
+	/usr/bin/python bootstrap.py
+	/usr/bin/python setup.py build
+
+	/usr/bin/python setup.py install \
+				--prefix=/usr \
+				--root=$PKG \
+				--optimize=1
+}
