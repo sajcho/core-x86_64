@@ -1,0 +1,41 @@
+# Description:	An RFC2131-compliant DHCP client daemon
+# URL:		http://roy.marples.name/projects/dhcpcd/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	eudev
+
+name=dhcpcd
+version=9.4.0
+release=0
+source=(https://roy.marples.name/downloads/dhcpcd/${name}-${version}.tar.xz \
+	dhcpcd-sv.conf dhcpcd.run)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix= \
+		--libexecdir=/lib/dhcpcd \
+		--dbdir=/var/lib/dhcpcd \
+		--sysconfdir=/etc/dhcpcd \
+		--runstatedir=/run \
+		--enable-privsep \
+		--privsepuser=dhcpcd
+
+	make
+
+	make DESTDIR=$PKG install
+
+	# dhcpcd runit service
+	install -d $PKG/etc/sv/dhcpcd
+	install -m 0644 $SRC/dhcpcd-sv.conf $PKG/etc/sv/dhcpcd/conf
+	install -m 0755 $SRC/dhcpcd.run $PKG/etc/sv/dhcpcd/run
+	ln -s /run/runit/supervise.dhcpcd $PKG/etc/sv/dhcpcd/supervise
+
+	install -d -m 0700 -o dhcpcd -g dhcpcd $PKG/var/lib/dhcpcd
+	chown dhcpcd:dhcpcd $PKG/var/lib/dhcpcd
+
+	chmod -R u+w $PKG
+
+	# prevent
+	rm -f $PKG/lib/dhcpcd/dhcpcd-hooks/50-ntp.conf
+}
