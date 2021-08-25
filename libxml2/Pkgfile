@@ -1,0 +1,26 @@
+# Description:	XML library version 2
+# URL:		http://xmlsoft.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	zlib xz
+
+name=libxml2
+version=2.9.12
+release=0
+source=(http://xmlsoft.org/sources/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--disable-static \
+		--with-threads \
+		--with-history \
+		--without-python
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/{doc,gtk-doc}
+}
