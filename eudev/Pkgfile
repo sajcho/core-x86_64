@@ -1,0 +1,51 @@
+# Description:	Userspace device management daemon
+# URL:		https://wiki.gentoo.org/wiki/Project:Eudev
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	kmod tree
+
+name=eudev
+version=3.2.10
+release=0
+source=(http://dev.gentoo.org/~blueness/${name}/${name}-${version}.tar.gz
+	50-firmware.rules udevd.run)
+
+build() {
+	cd ${name}-${version}
+
+	# needed for static linking, e.g. dmsetup.static
+	sed -i '/^Libs:/s/-ludev/-ludev -lrt/' src/libudev/libudev.pc.in
+
+	./configure \
+		--prefix=/usr \
+		--sbindir=/sbin \
+		--bindir=/sbin \
+		--sysconfdir=/etc \
+		--with-rootprefix= \
+		--with-rootlibdir=/lib \
+		--libexecdir=/lib \
+		--disable-introspection \
+		--disable-manpages \
+		--enable-split-usr
+
+	make CFLAGS="$CFLAGS -D_GNU_SOURCE"
+
+	make install DESTDIR=$PKG
+
+	make -C man install DESTDIR=$PKG
+
+	# create binary hwdb
+	LD_LIBRARY_PATH=$PKG/lib \
+	$PKG/sbin/udevadm hwdb --update --root=$PKG
+
+	# Devices
+	install -d $PKG/lib/{firmware,udev/devices/{pts,shm}}
+	install -d $PKG/{lib,sbin,run}
+
+	# Add ARM kernel firmware helper
+	install -m 0644 $SRC/50-firmware.rules $PKG/lib/udev/rules.d
+
+	# udevd runit service
+	install -d $PKG/etc/sv/udevd
+	install -m 0755 $SRC/udevd.run $PKG/etc/sv/udevd/run
+	ln -s /run/runit/supervise.udevd $PKG/etc/sv/udevd/supervise
+}
