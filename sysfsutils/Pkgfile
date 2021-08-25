@@ -1,0 +1,22 @@
+# Description:	System Utilities Based on Sysfs
+# URL:		http://linux-diag.sourceforge.net/Sysfsutils.html
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=sysfsutils
+version=2.1.1
+release=0
+source=(https://github.com/linux-ras/${name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./autogen
+
+	./configure \
+		--prefix=/usr \
+		--mandir=/usr/share/man
+
+	make
+
+	make DESTDIR=$PKG install
+}
