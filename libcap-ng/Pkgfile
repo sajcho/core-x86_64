@@ -1,0 +1,27 @@
+# Description:	POSIX capabilities library
+# URL:		http://people.redhat.com/sgrubb/libcap-ng/index.html
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=libcap-ng
+version=0.8.2
+release=0
+source=(https://people.redhat.com/sgrubb/${name}/${name}-${version}.tar.gz \
+	apply-disable.patch)
+
+build() {
+	cd ${name}-${version}
+
+	# Upstream: Fedora patch
+	patch -p1 -i $SRC/apply-disable.patch
+
+	ac_cv_prog_swig_found=no \
+	./configure \
+		--prefix=/usr \
+		--without-python \
+		--without-python3 \
+		--disable-static
+
+	make
+
+	make DESTDIR=$PKG install
+}
