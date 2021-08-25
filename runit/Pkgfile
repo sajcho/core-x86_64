@@ -1,0 +1,49 @@
+# Description:	a cross-platform Unix init scheme with service supervision
+# URL:		http://smarden.org/runit/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=runit
+version=2.1.2
+release=0
+source=(http://smarden.org/${name}/${name}-${version}.tar.gz \
+	_sv sv clearmem.patch cross.patch svlogd.patch utmpset-time_t.patch)
+
+build() {
+	cd $SRC/admin/${name}-${version}
+
+	# apply patches
+	patch -p1 -i $SRC/clearmem.patch
+	patch -p1 -i $SRC/cross.patch
+	patch -p1 -i $SRC/svlogd.patch
+	patch -p1 -i $SRC/utmpset-time_t.patch
+
+	# set default service path to /var/service
+	sed -i -e 's:^char \*varservice ="/service/";$:char \*varservice ="/var/service/";:' src/sv.c
+	# change type short to gid_t for getgroups(2) and setgroups(2)
+	sed -i -e 's:short x\[4\];$:gid_t x[4];:' src/chkshsgr.c
+	# note: include '<string.h>' or provide a declaration of 'memset'
+	sed -i -e '/#include "iopause.h"/a #include <string.h>' src/svlogd.c
+	# cosmetic - runit messages
+	sed -i -e 's|#define INFO "- runit: "|#define INFO " - runit: "|' src/runit.c
+
+	CFLAGS="${CFLAGS} -static"
+	LDFLAGS="${LDFLAGS} -static"
+
+	package/compile
+
+	# default services
+	mkdir -v $PKG/var
+	ln -s ../run/runit/runsvdir/current $PKG/var/service
+
+	# command
+	mkdir -v $PKG/sbin
+	cp -v command/* $PKG/sbin/
+
+	install -d -m 0755 $PKG/usr/share/man/man8
+	install -D -m 0644 $SRC/admin/${name}-${version}/man/* $PKG/usr/share/man/man8
+
+	install -d -m 0755 $PKG/usr/share/zsh/site-functions
+	install -D -m 0644 $SRC/_sv $PKG/usr/share/zsh/site-functions
+	install -d -m 0755 $PKG/usr/share/bash-completion/completions
+	install -D -m 0644 $SRC/sv $PKG/usr/share/bash-completion/completions
+}
