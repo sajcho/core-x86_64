@@ -1,0 +1,40 @@
+# Description:	A tool for transfering files with URL syntax
+# URL:		http://curl.haxx.se
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	openssl zstd
+
+name=curl
+version=7.78.0
+release=0
+source=(https://curl.haxx.se/download/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--enable-ipv6 \
+		--enable-threaded-resolver \
+		--enable-unix-sockets \
+		--disable-ldap \
+		--disable-ldaps \
+		--with-pic \
+		--with-openssl \
+		--with-ca-bundle=/etc/ssl/cert.pem \
+		--without-libidn \
+		--without-libidn2 \
+		--without-cyassl \
+		--without-gnutls \
+		--without-gssapi \
+		--without-librtmp \
+		--without-libssh2 \
+		--without-libpsl \
+		--without-brotli \
+		--without-nghttp2
+
+	make
+
+	make DESTDIR=$PKG install
+
+	make -C docs/libcurl DESTDIR=$PKG install
+}
