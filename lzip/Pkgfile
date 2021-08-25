@@ -1,0 +1,23 @@
+# Description:	Lzip is a lossless data compressor
+# URL:		http://www.nongnu.org/lzip/lzip.html
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=lzip
+version=1.22
+release=0
+source=(https://download.savannah.gnu.org/releases/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		CXX=g++ \
+		CXXFLAGS="$CXXFLAGS"
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/info
+}
