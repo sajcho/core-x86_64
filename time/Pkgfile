@@ -1,0 +1,21 @@
+# Description:	Measures many of the CPU resources that programs use
+# URL:		http://www.gnu.org/software/time/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=time
+version=1.9
+release=0
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share
+}
