@@ -1,0 +1,17 @@
+# Description:	A recursive directory indented listing of files
+# URL:		http://mama.indstate.edu/users/ice/tree/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=tree
+version=1.8.0
+release=0
+source=(http://mama.indstate.edu/users/ice/${name}/src/${name}-${version}.tgz)
+
+build() {
+	cd ${name}-${version}
+
+	make
+
+	make prefix=$PKG/usr \
+		MANDIR=$PKG/usr/share/man/man1 install
+}
