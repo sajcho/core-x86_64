@@ -1,0 +1,29 @@
+# Description:	The Linux manpages collection
+# URL:		http://man7.org/linux/man-pages/index.html
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=man-pages
+version=5.12
+release=0
+source=(http://www.kernel.org/pub/linux/docs/${name}/${name}-${version}.tar.xz \
+	http://www.kernel.org/pub/linux/docs/${name}/${name}-posix/${name}-posix-2013-a.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	rm man5/passwd.5
+
+	make \
+		prefix=/usr \
+		DESTDIR=$PKG install
+
+	cd $SRC/${name}-posix-2013-a
+
+	make gz
+
+	make \
+		prefix=/usr \
+		DESTDIR=$PKG install
+
+	touch $PKG/usr/share/man/whatis
+}
