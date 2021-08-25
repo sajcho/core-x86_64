@@ -1,0 +1,40 @@
+# Description:	The /proc file system utilities
+# URL:		http://gitorious.org/procps
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	ncurses
+
+name=procps
+version=3.3.17
+release=0
+source=(http://downloads.sourceforge.net/project/${name}-ng/Production/${name}-ng-${version}.tar.xz \
+	sysctl.conf)
+
+build() {
+	cd ${name}-${version}
+
+	export LINGUAS=' '
+
+	./configure \
+		--prefix=/usr \
+		--sbindir=/sbin \
+		--libdir=/usr/lib \
+		--sysconfdir=/etc \
+		--disable-nls \
+		--disable-kill \
+		--disable-modern-top
+
+	make
+
+	make DESTDIR=$PKG install
+
+	install -d $PKG/{bin,lib,etc}
+	mv $PKG/usr/bin/{ps,pidof} $PKG/bin/
+	mv $PKG/usr/lib/libprocps.so.* $PKG/lib
+	ln -sf ../../lib/$(readlink $PKG/lib/libprocps.so.8) $PKG/usr/lib/libprocps.so
+
+	install -d $PKG/etc/sysctl.d
+	install -m 0644 $SRC/sysctl.conf $PKG/etc/sysctl.conf
+	ln -s /etc/sysctl.conf $PKG/etc/sysctl.d/99-sysctl.conf
+
+	rm -r $PKG/usr/share/doc
+}
