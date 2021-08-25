@@ -1,0 +1,24 @@
+# Description:	CRUX ports system tools
+# URL:		http://crux.nu
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=ports
+version=1.6
+release=0
+
+source=(http://crux.nu/files/tools/${name}/${name}-${version}.tar.gz \
+	repo-core \
+	repo-opt \
+	repo-xorg)
+
+build() {
+	cd ${name}-${version}
+
+	make
+
+	make DESTDIR=$PKG MANDIR=/usr/share/man install
+
+	install -m 0644 $SRC/repo-core $PKG/etc/ports/core-x86_64.httpup
+	install -m 0644 $SRC/repo-opt $PKG/etc/ports/opt-x86_64.httpup
+	install -m 0644 $SRC/repo-xorg $PKG/etc/ports/xorg-x86_64.httpup
+}

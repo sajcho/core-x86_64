@@ -1,0 +1,6 @@
+# opt-x86_64 ports collection
+#
+# https://github.com/sajcho/opt-x86_64
+
+ROOT_DIR=/usr/ports/opt-x86_64
+URL=https://raw.githubusercontent.com/sajcho/opt-x86_64/master
