@@ -1,0 +1,39 @@
+# Description:	Basic networking utilities
+# URL:		https://github.com/iputils/iputils
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libcap openssl meson
+
+name=iputils
+version=20210722
+release=0
+source=(https://github.com/iputils/iputils/archive/${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson \
+		-DNO_SETCAP_OR_SUID=true \
+		-DBUILD_RARPD=true \
+		-DBUILD_TFTPD=true \
+		-DBUILD_TRACEROUTE6=true \
+		-DBUILD_MANS=false \
+		-DUSE_IDN=false \
+		-DUSE_GETTEXT=false \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -C build
+
+	local files
+	cd $SRC/${name}-${version}/build
+
+	for files in arping clockdiff rarpd rdisc tftpd/tftpd tracepath; do
+		install -D -m 0755 $files $PKG/usr/sbin/${files##*/}
+	done
+
+	for files in ping/ping traceroute6; do
+		install -D -m 4755 $files $PKG/bin/${files##*/}
+	done
+
+	ln -s tracepath $PKG/usr/sbin/tracepath6
+	ln -s ping $PKG/bin/ping6
+}
