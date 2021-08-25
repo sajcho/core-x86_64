@@ -1,0 +1,61 @@
+# Description:	Python interpreter, version 3.
+# URL:		https://www.python.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	bzip2 expat gdbm libffi libtirpc mpdecimal sqlite3 xz
+
+name=python3
+version=3.9.6
+release=0
+source=(https://www.python.org/ftp/python/${version}/Python-${version}.tar.xz \
+	mpdecimal-2.5.1.patch)
+
+build() {
+	cd Python-${version}
+
+	patch -p1 -i $SRC/mpdecimal-2.5.1.patch
+
+	# Ensure that we are using the system copy of various libraries
+	rm -r Modules/expat
+	rm -r Modules/_ctypes/{darwin,libffi}*
+	rm -r Modules/_decimal/libmpdec
+
+	# Remove tests
+	rm -r Lib/{test,{ctypes,sqlite3,tkinter,unittest}/test}
+	rm -r Lib/{{distutils,lib2to3}/tests,idlelib/idle_test}
+
+	./configure \
+		--prefix=/usr \
+		--enable-shared \
+		--enable-ipv6 \
+		--enable-loadable-sqlite-extensions \
+		--with-computed-gotos \
+		--with-system-expat \
+		--with-system-ffi \
+		--with-system-libmpdec \
+		--without-lto \
+		--without-ensurepip
+
+	make
+
+	make -j1 DESTDIR=$PKG altinstall maninstall
+
+	ln -s 2to3-${version%.*}            $PKG/usr/bin/2to3
+	ln -s python${version%.*}           $PKG/usr/bin/python3
+	ln -s python3                       $PKG/usr/bin/python
+	ln -s python${version%.*}-config    $PKG/usr/bin/python3-config
+	ln -s python3-config                $PKG/usr/bin/python-config
+	ln -s idle${version%.*}             $PKG/usr/bin/idle3
+	ln -s idle3                         $PKG/usr/bin/idle
+	ln -s pydoc${version%.*}            $PKG/usr/bin/pydoc3
+	ln -s pydoc3                        $PKG/usr/bin/pydoc
+	ln -s python${version%.*}           $PKG/usr/lib/$name
+	ln -s python-${version%.*}.pc       $PKG/usr/lib/pkgconfig/python3.pc
+	ln -s python-${version%.*}-embed.pc $PKG/usr/lib/pkgconfig/python3-embed.pc
+
+	rm $PKG/usr/lib/python${version%.*}/ctypes/macholib/README.ctypes
+	rm $PKG/usr/lib/python${version%.*}/distutils/README
+	rm $PKG/usr/lib/python${version%.*}/idlelib/{ChangeLog,NEWS.txt,NEWS2x.txt}
+	rm $PKG/usr/lib/python${version%.*}/idlelib/{README,TODO,CREDITS,HISTORY}.txt
+	rm $PKG/usr/lib/python${version%.*}/idlelib/Icons/README.txt
+	rm $PKG/usr/lib/python${version%.*}/site-packages/README.txt
+}
