@@ -1,0 +1,36 @@
+# Description:	A Multiboot boot loader
+# URL:		http://www.gnu.org/software/grub/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	bash gettext libdevmapper python3
+
+name=grub2
+version=2.06
+release=0
+source=(https://ftp.gnu.org/gnu/grub/grub-$version.tar.xz \
+	grub.default)
+
+build() {
+	cd grub-$version
+
+	unset CFLAGS
+	unset CXXFLAGS
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--disable-nls \
+		--disable-efiemu \
+		--disable-werror \
+		--disable-grub-mount
+
+	make -j1
+
+	make -j1 DESTDIR=$PKG install
+
+	install -D -m 0644 $SRC/grub.default $PKG/etc/default/grub
+	install -D -m 0644 $PKG/etc/bash_completion.d/grub \
+		$PKG/usr/share/bash-completion/completions/grub
+
+	rm -r $PKG/etc/bash_completion.d
+	rm -r $PKG/usr/share/info
+}
