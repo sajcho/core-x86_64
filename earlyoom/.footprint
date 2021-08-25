@@ -1,0 +1,15 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/sv/
+drwxr-xr-x	root/root	etc/sv/earlyoom/
+-rw-r--r--	root/root	etc/sv/earlyoom/conf
+drwxr-xr-x	root/root	etc/sv/earlyoom/log/
+-rwxr-xr-x	root/root	etc/sv/earlyoom/log/run
+-rwxr-xr-x	root/root	etc/sv/earlyoom/run
+lrwxrwxrwx	root/root	etc/sv/earlyoom/supervise -> /run/runit/supervise.earlyoom
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/sbin/
+-rwxr-xr-x	root/root	usr/sbin/earlyoom
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rwxr-xr-x	root/root	usr/share/man/man1/earlyoom.1.gz

@@ -1,0 +1,31 @@
+# Description:	Early OOM Daemon for Linux
+# URL:		https://github.com/rfjakob/earlyoom
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=earlyoom
+version=1.6.2
+release=0
+source=(https://github.com/rfjakob/${name}/archive/v${version}/${name}-${version}.tar.gz \
+	earlyoom.conf \
+	earlyoom.run \
+	earlyoom.1 \
+	log-earlyoom.run)
+
+build() {
+	cd ${name}-${version}
+
+	make PREFIX=/usr BINDIR=/sbin VERSION=${version} earlyoom
+
+	make DESTDIR=$PKG PREFIX=/usr BINDIR=/sbin install
+
+	install -D $SRC/earlyoom.1 $PKG/usr/share/man/man1/earlyoom.1
+
+	# earlyoom runit service
+	install -d $PKG/etc/sv/earlyoom/log
+	install -m 0644 $SRC/earlyoom.conf $PKG/etc/sv/earlyoom/conf
+	install -m 0755 $SRC/earlyoom.run $PKG/etc/sv/earlyoom/run
+	install -m 0755 $SRC/log-earlyoom.run $PKG/etc/sv/earlyoom/log/run
+	ln -s /run/runit/supervise.earlyoom $PKG/etc/sv/earlyoom/supervise
+
+	rm -r $PKG/etc/{default,systemd}
+}
