@@ -4,7 +4,7 @@
 
 name=autoconf
 version=2.71
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -18,5 +18,4 @@ build() {
 	make prefix=$PKG/usr install
 
 	rm -r $PKG/usr/share/info
-	rm $PKG/usr/share/autoconf/INSTALL
 }
