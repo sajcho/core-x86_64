@@ -417,8 +417,8 @@ f:db3e4aeae8f42eb555a907d9130900d4:libxml2/.md5sum
 f:e45ce6c3f43842981a8532b05031463b:libxml2/.footprint
 f:1d2545aee4ed882614bf1a1118df0ee0:libxml2/Pkgfile
 f:87109ff4d320b5897546e4d927e374d5:libtool/.md5sum
-f:3f72376c1015b8ee08faa0aadb05925f:libtool/.footprint
-f:20322c339a9a65fef6283054e849f441:libtool/Pkgfile
+f:c1d522a9fb074fd9757f067a226d38b7:libtool/.footprint
+f:66252b156733546688e85c166b810936:libtool/Pkgfile
 f:c0cafa5512f4d88200c7c1dada021c28:iptables/.md5sum
 f:8ce7e5e8e5b135f6bbb420c3c430030e:iptables/.footprint
 f:add6d4d1a6a17e1d162dfcb55a5655c1:iptables/Pkgfile
