@@ -24,8 +24,10 @@ drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/ltversion.m4
 -rw-r--r--	root/root	usr/share/aclocal/lt~obsolete.m4
 drwxr-xr-x	root/root	usr/share/libtool/
+-rw-r--r--	root/root	usr/share/libtool/COPYING.LIB
 -rw-r--r--	root/root	usr/share/libtool/Makefile.am
 -rw-r--r--	root/root	usr/share/libtool/Makefile.in
+-rw-r--r--	root/root	usr/share/libtool/README
 -rw-r--r--	root/root	usr/share/libtool/aclocal.m4
 drwxr-xr-x	root/root	usr/share/libtool/build-aux/
 -rwxr-xr-x	root/root	usr/share/libtool/build-aux/compile
