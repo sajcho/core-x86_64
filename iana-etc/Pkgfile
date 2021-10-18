@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=iana-etc
-version=20210407
+version=20211012
 release=0
 source=(services protocols update.sh)
 
