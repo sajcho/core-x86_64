@@ -5,7 +5,7 @@
 
 name=util-linux
 version=2.37.2
-release=0
+release=1
 source=(https://www.kernel.org/pub/linux/utils/${name}/v${version:0:4}/${name}-${version}.tar.xz \
 	util-linux-man-2.37.2.tar.xz \
 	uuidd.run)
@@ -21,7 +21,8 @@ build() {
 		--disable-{bfs,minix} \
 		--disable-chfn-chsh \
 		--enable-{write,raw,kill} \
-		--without-python
+		--without-python \
+		--without-systemd
 
 	make
 
