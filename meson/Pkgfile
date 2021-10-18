@@ -1,20 +1,20 @@
 # Description:	High productivity build system.
 # URL:		http://mesonbuild.com/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	python3-setuptools
+# Depends on:	python3-setuptools samurai
 
 name=meson
-version=0.58.1
+version=0.59.2
 release=0
-source=(https://github.com/mesonbuild/meson/releases/download/${version}/${name}-${version}.tar.gz \
+source=(https://github.com/mesonbuild/${name}/releases/download/${version}/${name}-${version}.tar.gz \
 	build-meson)
 
 build() {
 	cd ${name}-${version}
 
-	/usr/bin/python3 setup.py build
+	python3 setup.py build
 
-	/usr/bin/python3 setup.py install \
+	python3 setup.py install \
 		--prefix=/usr \
 		--optimize=1 \
 		--skip-build \
