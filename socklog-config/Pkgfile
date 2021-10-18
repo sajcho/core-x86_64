@@ -4,12 +4,13 @@
 # Depends on:	socklog
 
 name=socklog-config
+_realname=socklog-void
 version=20200115
-release=0
-source=(https://github.com/void-linux/socklog-void/archive/${version}.tar.gz)
+release=1
+source=(https://github.com/void-linux/${_realname}/archive/${version}/${_realname}-${version}.tar.gz)
 
 build() {
-	cd socklog-void-${version}
+	cd ${_realname}-${version}
 
 	sed -i 's|bin|sbin|g' Makefile
 	sed -i 's|nobody:nogroup|socklog:socklog|' sv/nanoklogd/run
