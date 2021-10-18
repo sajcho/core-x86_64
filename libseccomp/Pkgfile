@@ -4,7 +4,7 @@
 # Depends on:	gperf
 
 name=libseccomp
-version=2.5.1
+version=2.5.2
 release=0
 source=(https://github.com/seccomp/libseccomp/releases/download/v${version}/${name}-${version}.tar.gz)
 
