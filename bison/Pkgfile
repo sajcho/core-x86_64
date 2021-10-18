@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=bison
-version=3.7.6
+version=3.8.2
 release=0
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
@@ -16,8 +16,10 @@ build() {
 
 	make
 
+	#make check
+
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/{doc,info}
-	rm $PKG/usr/share/bison/{README.md,skeletons/README-D.txt}
+	rm $PKG/usr/share/bison/README.md
 }
