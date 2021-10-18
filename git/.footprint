@@ -478,6 +478,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/git-verify-commit.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-verify-pack.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-verify-tag.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/git-version.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-web--browse.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-whatchanged.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-worktree.1.gz
