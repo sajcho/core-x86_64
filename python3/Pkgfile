@@ -4,15 +4,12 @@
 # Depends on:	bzip2 expat gdbm libffi libtirpc mpdecimal sqlite3 xz
 
 name=python3
-version=3.9.6
+version=3.10.0
 release=0
-source=(https://www.python.org/ftp/python/${version}/Python-${version}.tar.xz \
-	mpdecimal-2.5.1.patch)
+source=(https://www.python.org/ftp/python/${version}/Python-${version}.tar.xz)
 
 build() {
 	cd Python-${version}
-
-	patch -p1 -i $SRC/mpdecimal-2.5.1.patch
 
 	# Ensure that we are using the system copy of various libraries
 	rm -r Modules/expat
