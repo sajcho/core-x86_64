@@ -1,0 +1,22 @@
+# Description:	Python 2 and 3 compatibility library
+# URL:		https://pypi.python.org/pypi/six
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	python3-setuptools
+
+name=python3-six
+_realname=six
+version=1.16.0
+release=0
+source=(https://github.com/benjaminp/$_realname/archive/${version}/${_realname}-${version}.tar.gz)
+
+build() {
+	cd ${_realname}-${version}
+
+	/usr/bin/python3 setup.py build
+
+	/usr/bin/python3 setup.py install \
+		--prefix=/usr \
+		--optimize=1 \
+		--skip-build \
+		--root=$PKG
+}
