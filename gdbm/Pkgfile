@@ -4,7 +4,7 @@
 # Depends on:	readline
 
 name=gdbm
-version=1.20
+version=1.21
 release=0
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
