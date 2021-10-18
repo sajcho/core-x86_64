@@ -4,7 +4,7 @@
 # Depends on:	readline
 
 name=inetutils
-version=2.1
+version=2.2
 release=0
 source=(http://ftpmirror.gnu.org/gnu/inetutils/inetutils-${version}.tar.gz \
 	inetd.conf inetd.run)
@@ -21,6 +21,10 @@ build() {
 		--enable-{hostname,ifconfig,inetd,ftp,telnet,traceroute}
 
 	make
+
+	# Does not work with fakeroot test fail
+	# must be root
+	#make check
 
 	make DESTDIR=$PKG install
 
