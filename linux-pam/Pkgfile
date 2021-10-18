@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=linux-pam
-version=1.5.1
+version=1.5.2
 release=0
 source=(https://github.com/${name}/${name}/releases/download/v${version}/Linux-PAM-${version}.tar.xz \
 	common-account common-auth common-password common-session other)
@@ -23,6 +23,8 @@ build() {
 
 	make DESTDIR=$PKG install
 
+	mv $PKG/lib/pkgconfig $PKG/usr/lib
+
 	# unix_chkpwd needs to be setuid root
 	chmod u+s $PKG/sbin/unix_chkpwd
 
@@ -31,5 +33,5 @@ build() {
 		$SRC/{common-*,other} \
 		$PKG/etc/pam.d/
 
-	rm -r $PKG/usr/{lib,share/doc}
+	rm -r $PKG/usr/{lib/systemd,share/doc}
 }

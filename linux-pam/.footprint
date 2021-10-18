@@ -134,6 +134,11 @@ drwxr-xr-x	root/root	usr/include/security/
 -rw-r--r--	root/root	usr/include/security/pam_misc.h
 -rw-r--r--	root/root	usr/include/security/pam_modules.h
 -rw-r--r--	root/root	usr/include/security/pam_modutil.h
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/pam.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/pam_misc.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/pamc.pc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man3/
