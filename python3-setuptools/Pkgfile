@@ -4,20 +4,26 @@
 # Depends on:	python3
 
 name=python3-setuptools
-version=57.4.0
+_realname=setuptools
+version=58.2.0
 release=0
-source=(https://files.pythonhosted.org/packages/source/${name:8:1}/${name#*-}/${name#*-}-${version}.tar.gz)
+source=(https://github.com/pypa/${_realname}/archive/v${version}/${_realname}-${version}.tar.gz)
 
 build() {
-	cd ${name#*-}-${version}
+	cd ${_realname}-${version}
 
 	export SETUPTOOLS_INSTALL_WINDOWS_SPECIFIC_FILES=0
 
-	/usr/bin/python bootstrap.py
-	/usr/bin/python setup.py build
+	# Fix post-release tag
+	sed -e '/tag_build = .post/d' \
+		-e '/tag_date = 1/d' \
+		-i setup.cfg
 
-	/usr/bin/python setup.py install \
-				--prefix=/usr \
-				--root=$PKG \
-				--optimize=1
+	/usr/bin/python3 setup.py build
+
+	/usr/bin/python3 setup.py install \
+		--prefix=/usr \
+		--optimize=1 \
+		--skip-build \
+		--root=$PKG
 }
