@@ -575,6 +575,7 @@ drwxr-xr-x	root/root	usr/share/zoneinfo-leaps/Pacific/
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/Pacific/Guam
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/Pacific/Honolulu
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/Pacific/Johnston
+-rw-r--r--	root/root	usr/share/zoneinfo-leaps/Pacific/Kanton
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/Pacific/Kiritimati
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/Pacific/Kosrae
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/Pacific/Kwajalein
@@ -1191,6 +1192,7 @@ drwxr-xr-x	root/root	usr/share/zoneinfo/Pacific/
 -rw-r--r--	root/root	usr/share/zoneinfo/Pacific/Guam
 -rw-r--r--	root/root	usr/share/zoneinfo/Pacific/Honolulu
 -rw-r--r--	root/root	usr/share/zoneinfo/Pacific/Johnston
+-rw-r--r--	root/root	usr/share/zoneinfo/Pacific/Kanton
 -rw-r--r--	root/root	usr/share/zoneinfo/Pacific/Kiritimati
 -rw-r--r--	root/root	usr/share/zoneinfo/Pacific/Kosrae
 -rw-r--r--	root/root	usr/share/zoneinfo/Pacific/Kwajalein

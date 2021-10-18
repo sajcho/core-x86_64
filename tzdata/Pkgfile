@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=tzdata
-version=2021a
+version=2021c
 release=0
 source=(https://data.iana.org/time-zones/releases/tzdb-${version}.tar.lz)
 
