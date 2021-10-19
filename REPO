@@ -391,9 +391,11 @@ f:1f5232b116c5735f7ba22c095368021e:sqlite3/Pkgfile
 f:ea26de4617b90a62f1897cb8c3faaddb:which/.md5sum
 f:eb87551fe2b7b7f87261629329602247:which/.footprint
 f:56dd43fe4873556da97284b114d868a5:which/Pkgfile
-f:3e82095988a9d0687c0267ec4761a7f8:samurai/.md5sum
+f:57abd5c61e74cddaebe0bd3231a909b2:samurai/.md5sum
+f:4cbfdf543fb4c3a325ca19e4ba4989cc:samurai/CVE-2021-30218.patch
+f:e0ad02fa472d49390431fdf896fcae3e:samurai/CVE-2021-30219.patch
 f:f7ca997936206cce76fb0809bc86641a:samurai/.footprint
-f:6b61717beff16d1a4afa2d11069e51db:samurai/Pkgfile
+f:32ebf5b28e80af6d01878082d1d1820c:samurai/Pkgfile
 f:e00e1511c119c1adb411b6da1abee04d:libcap-ng/.md5sum
 f:00e383e64b48a7a3ad0e72e6f1fff3bd:libcap-ng/.footprint
 f:d62bab4069691fc264aa74b76e67bac9:libcap-ng/apply-disable.patch
