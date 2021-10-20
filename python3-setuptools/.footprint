@@ -453,8 +453,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/setuptools/extern/__pycach
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/package_index.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/py34compat.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/sandbox.py
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/script (dev).tmpl
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/script.tmpl
+-rw-rw-r--	root/root	usr/lib/python3.10/site-packages/setuptools/script (dev).tmpl
+-rw-rw-r--	root/root	usr/lib/python3.10/site-packages/setuptools/script.tmpl
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/unicode_utils.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/version.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/wheel.py
