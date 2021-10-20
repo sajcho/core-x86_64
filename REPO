@@ -154,9 +154,9 @@ f:e9e4218bd3c3d6eea8eb305dd8a6a324:tar/tar-1.28-loneZeroWarning.patch
 f:879d405f652b23dba326818f841f4e21:tar/tar-1.29-wildcards.patch
 f:9c0deba39ed4cbf6a92af71606b64004:tar/Pkgfile
 f:07d95c75b86d420a8f1819f46709dc12:python3-setuptools/README
-f:f7dab4fbac2fdc64aafa1748be89acdd:python3-setuptools/.md5sum
-f:d9d13a0b76df718d3fa72a22ee6ec1ac:python3-setuptools/.footprint
-f:c58717ec7eb48a001997dbc396f5c038:python3-setuptools/Pkgfile
+f:9e7ec5b885fd805e77ad62f00ac82efc:python3-setuptools/.md5sum
+f:6466b62978d1bf31fcc09708728eec58:python3-setuptools/.footprint
+f:3e653e9955f290cbd92a4f01d008cda5:python3-setuptools/Pkgfile
 f:b68d40e697072a76e281f947809965af:libnsl/.md5sum
 f:969b4395cb276fb016cbbf5dc727ac60:libnsl/.footprint
 f:f3cfb3f013607225d3d26e31fd279516:libnsl/Pkgfile
@@ -199,7 +199,7 @@ f:81a1f5eb39b95de806bf296a18b19d65:chrony/chrony.conf
 f:dd90151b5dcdd9de74b9196c6f223ad2:chrony/.md5sum
 f:bdce30c9835c773b26c92f033233d891:chrony/chrony.run
 f:a3967c96ea889da8675baa804ba51c7b:chrony/.footprint
-f:5b0b87f69bf6b5c91934a7cab6541062:chrony/Pkgfile
+f:98bced6085a0195b2e7a27f3ebe2a9cf:chrony/Pkgfile
 f:2156a75cecb6a171dc2aca39400af62e:socklog/.md5sum
 f:35e68b8714ef1e55ad3075f380ba0556:socklog/cross.patch
 f:a0af182bf92fdd78e3a6c12e361ba2c6:socklog/.footprint
@@ -373,8 +373,8 @@ f:c747a30b93eab1cc607962e5219d16c2:libmnl/Pkgfile
 f:752afb19bca99d6299c2dc424c020c44:util-linux/uuidd.run
 f:ddc148b88a64953c61607185f6a0df24:util-linux/.md5sum
 f:fa772af4e6692483198609b3e7a1af1e:util-linux/util-linux-man-2.37.2.tar.xz
-f:398d456dc380f82044ac5a07ab93b3c4:util-linux/.footprint
-f:d19c44827217c22996eeade4ea474287:util-linux/Pkgfile
+f:dd998098ed740617a520a823ba6653c4:util-linux/.footprint
+f:d8ad79c8e909560b91e2ef52a5c7bbe9:util-linux/Pkgfile
 f:162edc21b4fb28a03a936e96ed292142:wget/.md5sum
 f:fa717c9970a09e8ee1775a93e51fb694:wget/wgetrc
 f:6a4c0d944be581239a6c4e266003a131:wget/.footprint
@@ -601,7 +601,7 @@ f:6f97bc5fa6b82b97d62b922bf3c90e7e:console-font-terminus/Pkgfile
 f:56f909c9737ebf7034673990342b0af8:grub2/.md5sum
 f:3569dfb5b8a28c987ab2aa22a5c4913d:grub2/grub.default
 f:d0547cd086f6777fcb00a382656809e6:grub2/.footprint
-f:b548d6378d3de0535fafbd471a6d3410:grub2/Pkgfile
+f:7c9bde9f6177c46df7a4d4000bb137db:grub2/Pkgfile
 f:75ebe2715a3dcb4caf4e23fc4d730c21:texinfo/.md5sum
 f:da0e564e83f95897b5c864d2ff19fd80:texinfo/.footprint
 f:166f8427c463142fa378057da63a0425:texinfo/Pkgfile
