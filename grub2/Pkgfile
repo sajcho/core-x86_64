@@ -4,13 +4,14 @@
 # Depends on:	bash gettext libdevmapper python3
 
 name=grub2
+_realname=grub
 version=2.06
-release=0
-source=(https://ftp.gnu.org/gnu/grub/grub-$version.tar.xz \
+release=1
+source=(https://ftp.gnu.org/gnu/${_realname}/${_realname}-${version}.tar.xz \
 	grub.default)
 
 build() {
-	cd grub-$version
+	cd ${_realname}-${version}
 
 	unset CFLAGS
 	unset CXXFLAGS
@@ -21,7 +22,9 @@ build() {
 		--disable-nls \
 		--disable-efiemu \
 		--disable-werror \
-		--disable-grub-mount
+		--disable-grub-mount \
+		--disable-grub-mkfont \
+		--disable-grub-themes
 
 	make -j1
 
