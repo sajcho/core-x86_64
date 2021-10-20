@@ -48,7 +48,6 @@ drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/mkfs.cramfs
 -rwxr-xr-x	root/root	sbin/mkswap
 -rwxr-xr-x	root/root	sbin/pivot_root
--rwxr-xr-x	root/root	sbin/raw
 -rwxr-xr-x	root/root	sbin/sfdisk
 -rwxr-xr-x	root/root	sbin/sulogin
 -rwxr-xr-x	root/root	sbin/swaplabel
