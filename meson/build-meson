@@ -4,21 +4,21 @@
 
 # TODO: enable LTO once our GCC works with LTO by default
 exec meson \
-		--prefix=/usr \
-		--libdir=/usr/lib \
-		--libexecdir=/usr/lib \
-		--bindir=/usr/bin \
-		--sbindir=/usr/sbin \
-		--includedir=/usr/include \
-		--datadir=/usr/share \
-		--mandir=/usr/share/man \
-		--sysconfdir=/etc \
-		--localstatedir=/var \
-		--sharedstatedir=/var/lib \
-		--buildtype=plain \
-		--auto-features=auto \
-		--wrap-mode=nodownload \
-		-Db_lto=false \
-		-Db_staticpic=true \
-		-Db_pie=true \
-		"$@"
+	--prefix=/usr \
+	--libdir=/usr/lib \
+	--libexecdir=/usr/lib \
+	--bindir=/usr/bin \
+	--sbindir=/usr/sbin \
+	--includedir=/usr/include \
+	--datadir=/usr/share \
+	--mandir=/usr/share/man \
+	--sysconfdir=/etc \
+	--localstatedir=/var \
+	--sharedstatedir=/var/lib \
+	--buildtype=plain \
+	--auto-features=auto \
+	--wrap-mode=nodownload \
+	-Db_lto=true \
+	-Db_staticpic=true \
+	-Db_pie=true \
+	"$@"

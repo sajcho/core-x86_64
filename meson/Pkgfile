@@ -5,7 +5,7 @@
 
 name=meson
 version=0.59.2
-release=0
+release=1
 source=(https://github.com/mesonbuild/${name}/releases/download/${version}/${name}-${version}.tar.gz \
 	build-meson)
 
