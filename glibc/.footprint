@@ -713,8 +713,12 @@ drwxr-xr-x	root/root	usr/include/linux/iio/
 -rw-r--r--	root/root	usr/include/linux/input-event-codes.h
 -rw-r--r--	root/root	usr/include/linux/input.h
 -rw-r--r--	root/root	usr/include/linux/io_uring.h
+-rw-r--r--	root/root	usr/include/linux/ioam6.h
+-rw-r--r--	root/root	usr/include/linux/ioam6_genl.h
+-rw-r--r--	root/root	usr/include/linux/ioam6_iptunnel.h
 -rw-r--r--	root/root	usr/include/linux/ioctl.h
 -rw-r--r--	root/root	usr/include/linux/iommu.h
+-rw-r--r--	root/root	usr/include/linux/ioprio.h
 -rw-r--r--	root/root	usr/include/linux/ip.h
 -rw-r--r--	root/root	usr/include/linux/ip6_tunnel.h
 -rw-r--r--	root/root	usr/include/linux/ip_vs.h
@@ -725,7 +729,6 @@ drwxr-xr-x	root/root	usr/include/linux/iio/
 -rw-r--r--	root/root	usr/include/linux/ipsec.h
 -rw-r--r--	root/root	usr/include/linux/ipv6.h
 -rw-r--r--	root/root	usr/include/linux/ipv6_route.h
--rw-r--r--	root/root	usr/include/linux/ipx.h
 -rw-r--r--	root/root	usr/include/linux/irqnr.h
 drwxr-xr-x	root/root	usr/include/linux/isdn/
 -rw-r--r--	root/root	usr/include/linux/isdn/capicmd.h
@@ -752,7 +755,6 @@ drwxr-xr-x	root/root	usr/include/linux/isdn/
 -rw-r--r--	root/root	usr/include/linux/l2tp.h
 -rw-r--r--	root/root	usr/include/linux/landlock.h
 -rw-r--r--	root/root	usr/include/linux/libc-compat.h
--rw-r--r--	root/root	usr/include/linux/lightnvm.h
 -rw-r--r--	root/root	usr/include/linux/limits.h
 -rw-r--r--	root/root	usr/include/linux/lirc.h
 -rw-r--r--	root/root	usr/include/linux/llc.h
@@ -764,6 +766,7 @@ drwxr-xr-x	root/root	usr/include/linux/isdn/
 -rw-r--r--	root/root	usr/include/linux/map_to_7segment.h
 -rw-r--r--	root/root	usr/include/linux/matroxfb.h
 -rw-r--r--	root/root	usr/include/linux/max2175.h
+-rw-r--r--	root/root	usr/include/linux/mctp.h
 -rw-r--r--	root/root	usr/include/linux/mdio.h
 -rw-r--r--	root/root	usr/include/linux/media-bus-format.h
 -rw-r--r--	root/root	usr/include/linux/media.h
@@ -792,7 +795,6 @@ drwxr-xr-x	root/root	usr/include/linux/mmc/
 -rw-r--r--	root/root	usr/include/linux/msdos_fs.h
 -rw-r--r--	root/root	usr/include/linux/msg.h
 -rw-r--r--	root/root	usr/include/linux/mtio.h
--rw-r--r--	root/root	usr/include/linux/n_r3964.h
 -rw-r--r--	root/root	usr/include/linux/nbd-netlink.h
 -rw-r--r--	root/root	usr/include/linux/nbd.h
 -rw-r--r--	root/root	usr/include/linux/ncsi.h
@@ -827,6 +829,7 @@ drwxr-xr-x	root/root	usr/include/linux/netfilter/ipset/
 -rw-r--r--	root/root	usr/include/linux/netfilter/nfnetlink_conntrack.h
 -rw-r--r--	root/root	usr/include/linux/netfilter/nfnetlink_cthelper.h
 -rw-r--r--	root/root	usr/include/linux/netfilter/nfnetlink_cttimeout.h
+-rw-r--r--	root/root	usr/include/linux/netfilter/nfnetlink_hook.h
 -rw-r--r--	root/root	usr/include/linux/netfilter/nfnetlink_log.h
 -rw-r--r--	root/root	usr/include/linux/netfilter/nfnetlink_osf.h
 -rw-r--r--	root/root	usr/include/linux/netfilter/nfnetlink_queue.h
@@ -973,6 +976,7 @@ drwxr-xr-x	root/root	usr/include/linux/nfsd/
 -rw-r--r--	root/root	usr/include/linux/nilfs2_api.h
 -rw-r--r--	root/root	usr/include/linux/nilfs2_ondisk.h
 -rw-r--r--	root/root	usr/include/linux/nitro_enclaves.h
+-rw-r--r--	root/root	usr/include/linux/nl80211-vnd-intel.h
 -rw-r--r--	root/root	usr/include/linux/nl80211.h
 -rw-r--r--	root/root	usr/include/linux/nsfs.h
 -rw-r--r--	root/root	usr/include/linux/nubus.h
@@ -1027,7 +1031,6 @@ drwxr-xr-x	root/root	usr/include/linux/raid/
 -rw-r--r--	root/root	usr/include/linux/raid/md_p.h
 -rw-r--r--	root/root	usr/include/linux/raid/md_u.h
 -rw-r--r--	root/root	usr/include/linux/random.h
--rw-r--r--	root/root	usr/include/linux/raw.h
 -rw-r--r--	root/root	usr/include/linux/rds.h
 -rw-r--r--	root/root	usr/include/linux/reboot.h
 -rw-r--r--	root/root	usr/include/linux/reiserfs_fs.h
@@ -1195,6 +1198,7 @@ drwxr-xr-x	root/root	usr/include/linux/usb/
 -rw-r--r--	root/root	usr/include/linux/vbox_vmmdev_types.h
 -rw-r--r--	root/root	usr/include/linux/vboxguest.h
 -rw-r--r--	root/root	usr/include/linux/vdpa.h
+-rw-r--r--	root/root	usr/include/linux/vduse.h
 -rw-r--r--	root/root	usr/include/linux/version.h
 -rw-r--r--	root/root	usr/include/linux/veth.h
 -rw-r--r--	root/root	usr/include/linux/vfio.h
@@ -1211,7 +1215,9 @@ drwxr-xr-x	root/root	usr/include/linux/usb/
 -rw-r--r--	root/root	usr/include/linux/virtio_console.h
 -rw-r--r--	root/root	usr/include/linux/virtio_crypto.h
 -rw-r--r--	root/root	usr/include/linux/virtio_fs.h
+-rw-r--r--	root/root	usr/include/linux/virtio_gpio.h
 -rw-r--r--	root/root	usr/include/linux/virtio_gpu.h
+-rw-r--r--	root/root	usr/include/linux/virtio_i2c.h
 -rw-r--r--	root/root	usr/include/linux/virtio_ids.h
 -rw-r--r--	root/root	usr/include/linux/virtio_input.h
 -rw-r--r--	root/root	usr/include/linux/virtio_iommu.h
@@ -1219,9 +1225,11 @@ drwxr-xr-x	root/root	usr/include/linux/usb/
 -rw-r--r--	root/root	usr/include/linux/virtio_mmio.h
 -rw-r--r--	root/root	usr/include/linux/virtio_net.h
 -rw-r--r--	root/root	usr/include/linux/virtio_pci.h
+-rw-r--r--	root/root	usr/include/linux/virtio_pcidev.h
 -rw-r--r--	root/root	usr/include/linux/virtio_pmem.h
 -rw-r--r--	root/root	usr/include/linux/virtio_ring.h
 -rw-r--r--	root/root	usr/include/linux/virtio_rng.h
+-rw-r--r--	root/root	usr/include/linux/virtio_scmi.h
 -rw-r--r--	root/root	usr/include/linux/virtio_scsi.h
 -rw-r--r--	root/root	usr/include/linux/virtio_snd.h
 -rw-r--r--	root/root	usr/include/linux/virtio_types.h
@@ -1238,6 +1246,7 @@ drwxr-xr-x	root/root	usr/include/linux/usb/
 -rw-r--r--	root/root	usr/include/linux/wireguard.h
 -rw-r--r--	root/root	usr/include/linux/wireless.h
 -rw-r--r--	root/root	usr/include/linux/wmi.h
+-rw-r--r--	root/root	usr/include/linux/wwan.h
 -rw-r--r--	root/root	usr/include/linux/x25.h
 -rw-r--r--	root/root	usr/include/linux/xattr.h
 -rw-r--r--	root/root	usr/include/linux/xdp_diag.h
@@ -1338,12 +1347,12 @@ drwxr-xr-x	root/root	usr/include/rdma/hfi/
 -rw-r--r--	root/root	usr/include/rdma/hfi/hfi1_ioctl.h
 -rw-r--r--	root/root	usr/include/rdma/hfi/hfi1_user.h
 -rw-r--r--	root/root	usr/include/rdma/hns-abi.h
--rw-r--r--	root/root	usr/include/rdma/i40iw-abi.h
 -rw-r--r--	root/root	usr/include/rdma/ib_user_ioctl_cmds.h
 -rw-r--r--	root/root	usr/include/rdma/ib_user_ioctl_verbs.h
 -rw-r--r--	root/root	usr/include/rdma/ib_user_mad.h
 -rw-r--r--	root/root	usr/include/rdma/ib_user_sa.h
 -rw-r--r--	root/root	usr/include/rdma/ib_user_verbs.h
+-rw-r--r--	root/root	usr/include/rdma/irdma-abi.h
 -rw-r--r--	root/root	usr/include/rdma/mlx4-abi.h
 -rw-r--r--	root/root	usr/include/rdma/mlx5-abi.h
 -rw-r--r--	root/root	usr/include/rdma/mlx5_user_ioctl_cmds.h
