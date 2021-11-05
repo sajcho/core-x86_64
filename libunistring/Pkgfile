@@ -4,18 +4,21 @@
 
 name=libunistring
 version=0.9.10
-release=0
+release=1
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		--disable-static
 
 	make
 
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/{doc,info}
+
+	find $PKG -type f -name '*.la' -delete
 }
