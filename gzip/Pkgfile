@@ -4,7 +4,7 @@
 
 name=gzip
 version=1.11
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
