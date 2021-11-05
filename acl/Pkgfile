@@ -5,7 +5,7 @@
 
 name=acl
 version=2.3.1
-release=0
+release=1
 source=(http://download-mirror.savannah.gnu.org/releases/${name}/${name}-${version}.tar.gz)
 
 build() {
@@ -13,7 +13,8 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--bindir=/bin
+		--bindir=/bin \
+		--disable-static
 
 	make
 
@@ -24,4 +25,6 @@ build() {
 	ln -sf ../../lib/$(readlink $PKG/usr/lib/libacl.so) $PKG/usr/lib/libacl.so
 
 	rm -r $PKG/usr/share/{doc,locale}
+
+	find $PKG -type f -name '*.la' -delete
 }
