@@ -5,21 +5,29 @@
 
 name=elfutils
 version=0.185
-release=0
+release=1
 source=(https://sourceware.org/${name}/ftp/${version}/${name}-${version}.tar.bz2)
 
 build() {
 	cd ${name}-${version}
 
+	CFLAGS+=" -flto-partition=none -Wno-error=stack-usage="
+	CXXFLAGS+=" -flto-partition=none"
+	LDFLAGS+=" -Wno-error=stack-usage="
+
 	./configure \
 		--prefix=/usr \
 		--program-prefix=eu- \
+		--enable-deterministic-archives \
 		--enable-maintainer-mode \
 		--disable-libdebuginfod \
 		--disable-debuginfod \
+		--disable-static \
 		--disable-nls
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.a' -delete
 }
