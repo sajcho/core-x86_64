@@ -36,9 +36,7 @@ d:perl
 d:cmake
 d:check
 d:mpc
-d:tree
 d:dhcpcd
-d:llvm-toolchain
 d:readline
 d:db
 d:httpup
@@ -108,7 +106,6 @@ d:gdbm
 d:pkgutils
 d:bzip2
 d:gpm
-d:python3-six
 d:unzip
 d:gettext
 d:iputils
@@ -125,7 +122,6 @@ d:zstd
 d:mlocate
 d:kbd
 d:sharutils
-d:swig
 d:curl
 d:libcap
 d:openssh
@@ -300,17 +296,11 @@ f:be5ed2a9718bbd4912418600874a6a27:check/Pkgfile
 f:39e84ea22827f7ebe90a7244709664aa:mpc/.md5sum
 f:507474fcd4189a0f07eba3920aa6fc15:mpc/.footprint
 f:a54ab06096653fca9bd3108c36a42069:mpc/Pkgfile
-f:ca5defc008d5381900e2a8d38a138443:tree/.md5sum
-f:558527f92dc2db471135adfa723ec3d1:tree/.footprint
-f:831579e36ffc2a16a48bec5fd6734d05:tree/Pkgfile
 f:caa3777a6770b5ff2262dcaaa3454a39:dhcpcd/.md5sum
 f:f8eff40bab4dc0938db5986dc3383a9a:dhcpcd/dhcpcd.run
 f:d43a01849c81b04019898ea2e0975abb:dhcpcd/.footprint
 f:bb812c284473d69c4ad4a55c80d1f3f1:dhcpcd/dhcpcd-sv.conf
 f:98f52de78240526975d33c74834ee4ed:dhcpcd/Pkgfile
-f:c25295402bd1043a20d38bda50a70f73:llvm-toolchain/.md5sum
-f:48a014e4a8560052b8dfd7d1adf48214:llvm-toolchain/.footprint
-f:6f613f968e816156051885db68e5e0ad:llvm-toolchain/Pkgfile
 f:7e89abea1d3f3ba66dac39c64147eaf1:readline/.md5sum
 f:9ad2116da85fd77fbd9c050304092acd:readline/.footprint
 f:a39035370280bee80ecf227228ed2bc4:readline/readline-8.1.1.patch.gz
@@ -574,9 +564,6 @@ f:4c350ef132a76787e6de647dd6acb93c:gpm/gpm.run
 f:ec77fa2f1fa03871658029ea6df473cb:gpm/.footprint
 f:7f7d72b794c44c60afc122aca70838e0:gpm/gpm-1.20.7-consolidated-1.patch
 f:86f29f35c72a639875930eedf6b524e6:gpm/Pkgfile
-f:2ae076d6e27bbfef90af3629e6e2f2b9:python3-six/.md5sum
-f:2e30ae2cb0d06a58ed664eef8656f78a:python3-six/.footprint
-f:98c6144827d585eff85fc53ae836ea2a:python3-six/Pkgfile
 f:cf3e3a98ff85d784c5d3843758645874:unzip/unzip-6.0-cve-2014-8139.patch
 f:04bc89e05ccceb4c8600f646156fe242:unzip/unzip-6.0-alt-iconv-utf8-print.patch
 f:f65429e4494c4d5a80ec72e4321335da:unzip/0001-Fix-CVE-2016-9844-rhbz-1404283.patch
@@ -642,9 +629,6 @@ f:4ef1aacf3b435ccc2b7c7a4fe4f6161e:kbd/Pkgfile
 f:2e8dc4215d545a12b2d91f4072282d3e:sharutils/.md5sum
 f:3f2753f51ab94daa567dd51f47f50d08:sharutils/.footprint
 f:76bcf4843e94f38719e034b4fba962ab:sharutils/Pkgfile
-f:f775b9f6f9bc2f438ac919188bad4069:swig/.md5sum
-f:04d5da180e5b204334f8d9f924f97fe6:swig/.footprint
-f:9b0c361afac915db67fbdbc4247a460e:swig/Pkgfile
 f:9bdce81105419beefdf1689a2bb724bc:curl/.md5sum
 f:ed7d7fc7257c6227aafd78297b97c6fd:curl/.footprint
 f:4600a18ff04be0dc492219b239dab3ca:curl/Pkgfile
