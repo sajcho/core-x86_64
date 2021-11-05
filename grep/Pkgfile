@@ -5,7 +5,7 @@
 
 name=grep
 version=3.7
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
