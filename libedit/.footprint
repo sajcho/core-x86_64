@@ -4,8 +4,6 @@ drwxr-xr-x	root/root	usr/include/editline/
 -rw-r--r--	root/root	usr/include/editline/readline.h
 -rw-r--r--	root/root	usr/include/histedit.h
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libedit.a
--rwxr-xr-x	root/root	usr/lib/libedit.la
 lrwxrwxrwx	root/root	usr/lib/libedit.so -> libedit.so.0.0.68
 lrwxrwxrwx	root/root	usr/lib/libedit.so.0 -> libedit.so.0.0.68
 -rwxr-xr-x	root/root	usr/lib/libedit.so.0.0.68

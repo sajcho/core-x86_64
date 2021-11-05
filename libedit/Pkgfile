@@ -5,7 +5,7 @@
 
 name=libedit
 version=20210910_3.1
-release=0
+release=1
 source=(https://thrysoee.dk/editline/${name}-${version/_/-}.tar.gz)
 
 build() {
@@ -13,7 +13,8 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--enable-widec
+		--enable-widec \
+		--disable-static
 
 	make
 
@@ -23,4 +24,6 @@ build() {
 
 	# conflict with readline
 	rm $PKG/usr/share/man/man3/history.3
+
+	find $PKG -type f -name '*.la' -delete
 }
