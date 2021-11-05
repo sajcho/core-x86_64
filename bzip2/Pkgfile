@@ -4,7 +4,7 @@
 
 name=bzip2
 version=1.0.8
-release=0
+release=1
 source=(https://sourceware.org/pub/bzip2/${name}-${version}.tar.gz)
 
 build() {
@@ -31,7 +31,6 @@ build() {
 	ln -s bzgrep $PKG/usr/bin/bzfgrep
 	ln -s bzmore $PKG/usr/bin/bzless
 
-	install -m 0644 libbz2.a $PKG/usr/lib
 	install -m 0644 bzlib.h $PKG/usr/include
 	install -m 0644 *.1 $PKG/usr/share/man/man1
 }
