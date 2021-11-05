@@ -5,7 +5,7 @@
 
 name=less
 version=590
-release=0
+release=1
 source=(http://www.greenwoodsoftware.com/less/${name}-${version}.tar.gz \
 	filter)
 
