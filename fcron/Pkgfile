@@ -5,7 +5,7 @@
 
 name=fcron
 version=3.3.0
-release=0
+release=1
 source=(http://fcron.free.fr/archives/${name}-${version}.src.tar.gz \
 	fcron.run runjobs systab.orig)
 
