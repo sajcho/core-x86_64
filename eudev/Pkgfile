@@ -5,7 +5,7 @@
 
 name=eudev
 version=3.2.10
-release=0
+release=1
 source=(http://dev.gentoo.org/~blueness/${name}/${name}-${version}.tar.gz
 	50-firmware.rules udevd.run)
 
@@ -23,9 +23,10 @@ build() {
 		--with-rootprefix= \
 		--with-rootlibdir=/lib \
 		--libexecdir=/lib \
+		--enable-split-usr \
 		--disable-introspection \
 		--disable-manpages \
-		--enable-split-usr
+		--disable-static
 
 	make CFLAGS="$CFLAGS -D_GNU_SOURCE"
 
@@ -48,4 +49,6 @@ build() {
 	install -d $PKG/etc/sv/udevd
 	install -m 0755 $SRC/udevd.run $PKG/etc/sv/udevd/run
 	ln -s /run/runit/supervise.udevd $PKG/etc/sv/udevd/supervise
+
+	find $PKG -type f -name '*.la' -delete
 }
