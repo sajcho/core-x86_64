@@ -5,13 +5,11 @@
 
 name=check
 version=0.15.2
-release=0
+release=1
 source=(https://github.com/libcheck/${name}/releases/download/${version}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
-
-	autoreconf -fiv
 
 	./configure \
 		--prefix=/usr \
@@ -22,4 +20,6 @@ build() {
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/{doc,info}
+
+	find $PKG -type f -name '*.la' -delete
 }
