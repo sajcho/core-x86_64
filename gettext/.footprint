@@ -37,25 +37,16 @@ drwxr-xr-x	root/root	usr/lib/gettext/
 -rwxr-xr-x	root/root	usr/lib/gettext/project-id
 -rwxr-xr-x	root/root	usr/lib/gettext/urlget
 -rwxr-xr-x	root/root	usr/lib/gettext/user-email
--rw-r--r--	root/root	usr/lib/libasprintf.a
--rwxr-xr-x	root/root	usr/lib/libasprintf.la
 lrwxrwxrwx	root/root	usr/lib/libasprintf.so -> libasprintf.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libasprintf.so.0 -> libasprintf.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libasprintf.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libgettextlib-0.21.so
--rw-r--r--	root/root	usr/lib/libgettextlib.a
--rwxr-xr-x	root/root	usr/lib/libgettextlib.la
 lrwxrwxrwx	root/root	usr/lib/libgettextlib.so -> libgettextlib-0.21.so
--rw-r--r--	root/root	usr/lib/libgettextpo.a
--rwxr-xr-x	root/root	usr/lib/libgettextpo.la
 lrwxrwxrwx	root/root	usr/lib/libgettextpo.so -> libgettextpo.so.0.5.7
 lrwxrwxrwx	root/root	usr/lib/libgettextpo.so.0 -> libgettextpo.so.0.5.7
 -rwxr-xr-x	root/root	usr/lib/libgettextpo.so.0.5.7
 -rwxr-xr-x	root/root	usr/lib/libgettextsrc-0.21.so
--rwxr-xr-x	root/root	usr/lib/libgettextsrc.la
 lrwxrwxrwx	root/root	usr/lib/libgettextsrc.so -> libgettextsrc-0.21.so
--rw-r--r--	root/root	usr/lib/libtextstyle.a
--rwxr-xr-x	root/root	usr/lib/libtextstyle.la
 lrwxrwxrwx	root/root	usr/lib/libtextstyle.so -> libtextstyle.so.0.1.1
 lrwxrwxrwx	root/root	usr/lib/libtextstyle.so.0 -> libtextstyle.so.0.1.1
 -rwxr-xr-x	root/root	usr/lib/libtextstyle.so.0.1.1

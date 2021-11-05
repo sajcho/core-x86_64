@@ -5,7 +5,7 @@
 
 name=gettext
 version=0.21
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -13,8 +13,7 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--enable-{shared,static} \
-		--disable-{csharp,java,nls} \
+		--disable-{csharp,java,nls,static} \
 		--without-{emacs,git} \
 		--with-included-{glib,libcroco,libxml}
 
@@ -23,4 +22,6 @@ build() {
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/{info,doc}
+
+	find $PKG -type f -name '*.la' -delete
 }
