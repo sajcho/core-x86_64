@@ -9,8 +9,6 @@ drwxr-xr-x	root/root	usr/include/libltdl/
 -rw-r--r--	root/root	usr/include/libltdl/lt_system.h
 -rw-r--r--	root/root	usr/include/ltdl.h
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libltdl.a
--rwxr-xr-x	root/root	usr/lib/libltdl.la
 lrwxrwxrwx	root/root	usr/lib/libltdl.so -> libltdl.so.7.3.1
 lrwxrwxrwx	root/root	usr/lib/libltdl.so.7 -> libltdl.so.7.3.1
 -rwxr-xr-x	root/root	usr/lib/libltdl.so.7.3.1
