@@ -5,7 +5,7 @@
 
 name=libarchive
 version=3.5.2
-release=0
+release=1
 source=(http://www.libarchive.org/downloads/${name}-${version}.tar.gz)
 
 build() {
@@ -17,6 +17,7 @@ build() {
 
 	./configure \
 		--prefix=/usr \
+		--disable-static \
 		--without-xml2 \
 		--without-nettle \
 		--without-openssl \
@@ -24,7 +25,9 @@ build() {
 
 	make
 
-	make check
+	#make check
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
