@@ -185,7 +185,7 @@ f:6394790a3a4b882bbb0d0a62abfc0790:glibc/glibc-2.34-2-build.log
 f:f9c683641961d28124ac216c65f10616:glibc/Pkgfile
 f:15695abbce576f3e32ec7273b02eec8d:bc/.md5sum
 f:d6827a76321767fcfcb99d8fd946c17b:bc/.footprint
-f:8a6212c6a2673cb51e6e056ca1ad2db7:bc/Pkgfile
+f:1f4f6bd47e2583dae9f2bcc17722df04:bc/Pkgfile
 f:5a06d763bb239b1b2ee02451637a79ca:ports/.md5sum
 f:159e8dbbc039824886f7c241ece194cb:ports/repo-core
 f:5812f282908d0720d672afa4309257c4:ports/repo-opt
@@ -218,7 +218,7 @@ f:cd5fb0500c0d4db9c7eab11d1d5bd7f9:libdevmapper/.footprint
 f:dd2920d94694d5745be0ac956a74bf5c:libdevmapper/Pkgfile
 f:52126e99dfe38f4a9838c87be3bfb6dd:automake/.md5sum
 f:aead0804ad94cde8fc7cda5b49878750:automake/.footprint
-f:dcf7aee8feb407ac5ec7254047911ce7:automake/Pkgfile
+f:408b688a73a6773abb70ecb306e96346:automake/Pkgfile
 f:4359eb1350b7af695665d94c7400b665:signify/.md5sum
 f:a98cb3bec29ec19898280d032258b09a:signify/.footprint
 f:1ec6188cd775f3198e8716a4b40a1230:signify/cruxify.patch
@@ -284,9 +284,9 @@ f:965820d80ba705ed7dd6b0ad8246ea5c:nasm/.footprint
 f:b74398076431f2609a3748da6fb4ac31:nasm/Pkgfile
 f:2d92fe60b68c2afd9b99f5f7116d9789:bash/bash-5.1.8.patch.gz
 f:9256c6fcba01768ae245b4e54249efaf:bash/.md5sum
-f:be4c698ea8bb7d52eab2d6ce2c3fab8e:bash/profile
+f:7d2098635b10ea3b772f70ec0555b0ca:bash/profile
 f:32248d3becedd8e01816be2c3a698ecf:bash/.footprint
-f:65d150a6c97d5a51dc3fb25a943e538d:bash/Pkgfile
+f:a1acd9bfe157f36705c16640f558db38:bash/Pkgfile
 f:6d50047aef43e3febf19c6a795892f3a:perl/perl-5.35.1-Fix-definition-of-ITEM_NOT_FOUND-for-pre-1.13-versio.patch
 f:699a8d376ed0b125cbcd77de8cc3ddcb:perl/.md5sum
 f:4540b50fafcd99c1623514d7c0fec06e:perl/perl-5.35.1-Fix-GDBM_File-to-compile-with-version-1.20-and-earli.patch
@@ -298,8 +298,8 @@ f:297a5ce21e31902d95f983929d615d6f:cmake/.md5sum
 f:b6a00b84e853f9fb2cc74f14ef3c572f:cmake/.footprint
 f:503d743f77cf9f93b9fb9a57ad40431a:cmake/Pkgfile
 f:a65f5099b3cd43c220381aa8f1ea592a:check/.md5sum
-f:eb7e2b7689122324b32a3b96e7d45880:check/.footprint
-f:be5ed2a9718bbd4912418600874a6a27:check/Pkgfile
+f:a492e3a9fa08ca1d4dc6ec3dd74c3c94:check/.footprint
+f:1e703e68f8bb9e6d94394c0519fcdf07:check/Pkgfile
 f:39e84ea22827f7ebe90a7244709664aa:mpc/.md5sum
 f:507474fcd4189a0f07eba3920aa6fc15:mpc/.footprint
 f:a54ab06096653fca9bd3108c36a42069:mpc/Pkgfile
@@ -377,8 +377,8 @@ f:fa717c9970a09e8ee1775a93e51fb694:wget/wgetrc
 f:6a4c0d944be581239a6c4e266003a131:wget/.footprint
 f:af6e016969e99f2b0279a9b5ccd34d48:wget/Pkgfile
 f:dd6f3270031816b73205c4173085833b:attr/.md5sum
-f:ce49963164a2c6f6dce4ba6b7d107852:attr/.footprint
-f:63c2f3b1d5eb9b496e4bb5e309a4bbc3:attr/Pkgfile
+f:f761f2b0adaf2b04efa808637471edbb:attr/.footprint
+f:52f2f61aea4a489b3980e7e5e771698c:attr/Pkgfile
 f:fb192937611fc5b095842e18de42d493:mpdecimal/.md5sum
 f:a522ea0573e063dd7ffd95d63fea8e33:mpdecimal/.footprint
 f:6d6a157d93b39eeaa12a78c6732717a8:mpdecimal/Pkgfile
@@ -493,7 +493,7 @@ f:73bf10a99b9d5b4c7fe20c49769858d4:rsync/Pkgfile
 f:5f7ea134b04d4c0aca2b317388e0548a:ca-certificates/cacert.pem
 f:99747eee47c2ab10d2a2342797aa2904:ca-certificates/.md5sum
 f:b9e3d56125cb82aa9b9342be38d262b3:ca-certificates/.footprint
-f:6b1bc8f7364f59729694ca4b8a55cecc:ca-certificates/Pkgfile
+f:5656181f63828ea9e54f7f3b38511d8c:ca-certificates/Pkgfile
 f:35ed73c90809b6ff603d3225f81e93db:patch/.md5sum
 f:a316f48f5130f7601752d298d8187108:patch/.footprint
 f:47dc9543cd99ebe1bf109ddbc37ea36f:patch/Pkgfile
@@ -515,8 +515,8 @@ f:fae16edd97dfc7cd7a47aea8d6527a95:expat/.md5sum
 f:6cb560b9af7114595d6ffe1e6b5371c6:expat/.footprint
 f:0613dcf1c465600becc9b8cf4dd8d7f7:expat/Pkgfile
 f:4d175124b0c67a1a87bb9861eb526d08:acl/.md5sum
-f:a97079655f14a208806bb88cf0d3206b:acl/.footprint
-f:4f83598327b6e44eed4f55045359a064:acl/Pkgfile
+f:9199505f38865bbeb518aa906b04a63f:acl/.footprint
+f:44f854db198906d093e332bfdab009bf:acl/Pkgfile
 f:810ed78bbfccd0158ffd675c5000c4d6:e2fsprogs/.md5sum
 f:0a9818d70fd1ead79ba6524b1a208a45:e2fsprogs/.footprint
 f:56452c50bb815535041fa1dbf8f36ea4:e2fsprogs/Pkgfile
@@ -547,7 +547,7 @@ f:08116e653bcca30faac22939464ddd5e:coreutils/chmod.c.patch
 f:983e5a53a8764c44a3feb0a692b30bd7:coreutils/Pkgfile
 f:f1ad30baa503bd29ac72602db2fe2de3:bison/.md5sum
 f:7cba55dee564b570ffeefc02fa0e6c37:bison/.footprint
-f:973fc782af3ae012131cb0d29e896e9c:bison/Pkgfile
+f:b795104595f19314069bdd64e6a07336:bison/Pkgfile
 f:2846bba6a770fcf9f103978f6ea313b6:python3/.md5sum
 f:6a68043f58cf7b0c2e2d1a2be2f961d1:python3/.footprint
 f:0ff8c5bff17681234c853773a99dc73e:python3/Pkgfile
@@ -564,8 +564,8 @@ f:0d3a6fed127ba555ba0c1a587130c6bc:pkgutils/.footprint
 f:d3db42778a13e3829dab8f05e0f4bb1f:pkgutils/zstd-multiarch.patch
 f:d55899164c175f4fb9c8c6acca9cdb96:pkgutils/Pkgfile
 f:dd597cafa6084341977d7e2c214757f7:bzip2/.md5sum
-f:46d70f949e125745001d1a02787af799:bzip2/.footprint
-f:8c232a61e63711e730e635aa4973b5b9:bzip2/Pkgfile
+f:cdec9839d05a5b9c115f69f9032a93db:bzip2/.footprint
+f:63039e162a44b53c0663d440340f65a5:bzip2/Pkgfile
 f:ac9736a7295ad0db6118c17f5d3399a1:gpm/.md5sum
 f:4c350ef132a76787e6de647dd6acb93c:gpm/gpm.run
 f:ec77fa2f1fa03871658029ea6df473cb:gpm/.footprint
@@ -652,7 +652,7 @@ f:9e852273cc09843dd54dae23b26a453b:openssh/sshd.run
 f:57eab59c433de2df6abbd81fe40aec70:openssh/Pkgfile
 f:d811ccf6fe01c2b1dd928a48043eb381:bindutils/.md5sum
 f:af891b0eef46e4d25137e02d92065862:bindutils/.footprint
-f:a458534ebe418f760c26c863c50cb152:bindutils/Pkgfile
+f:fa840f06b1a3d334a13b20e8570b624b:bindutils/Pkgfile
 f:b235dfb6ff2f646e6257f77c802737de:prt-utils/.md5sum
 f:e52165bc4afc1cb7a2b5f858359807cd:prt-utils/.footprint
 f:5ff00c159e6103f4bde802353bc19b8a:prt-utils/Pkgfile
