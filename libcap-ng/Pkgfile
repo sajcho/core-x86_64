@@ -4,7 +4,7 @@
 
 name=libcap-ng
 version=0.8.2
-release=0
+release=1
 source=(https://people.redhat.com/sgrubb/${name}/${name}-${version}.tar.gz \
 	apply-disable.patch)
 
@@ -24,4 +24,6 @@ build() {
 	make
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
