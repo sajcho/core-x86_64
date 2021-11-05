@@ -4,7 +4,7 @@
 
 name=linux-pam
 version=1.5.2
-release=0
+release=1
 source=(https://github.com/${name}/${name}/releases/download/v${version}/Linux-PAM-${version}.tar.xz \
 	common-account common-auth common-password common-session other)
 
@@ -34,4 +34,6 @@ build() {
 		$PKG/etc/pam.d/
 
 	rm -r $PKG/usr/{lib/systemd,share/doc}
+
+	find $PKG -type f -name '*.la' -delete
 }
