@@ -38,8 +38,6 @@ drwxr-xr-x	root/root	usr/include/tirpc/rpcsvc/
 -rw-r--r--	root/root	usr/include/tirpc/rpcsvc/crypt.h
 -rw-r--r--	root/root	usr/include/tirpc/rpcsvc/crypt.x
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libtirpc.a
--rwxr-xr-x	root/root	usr/lib/libtirpc.la
 lrwxrwxrwx	root/root	usr/lib/libtirpc.so -> libtirpc.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libtirpc.so.3 -> libtirpc.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/libtirpc.so.3.0.0
