@@ -5,7 +5,7 @@
 
 name=libdevmapper
 version=1.02.181
-release=0
+release=1
 source=(https://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.14.tgz)
 
 build() {
@@ -29,7 +29,7 @@ build() {
 		--enable-udev_rules \
 		--with-{user,group}=root
 
-	make device-mapper
+	make V=1 device-mapper
 
 	make DESTDIR=$PKG install_device-mapper
 
