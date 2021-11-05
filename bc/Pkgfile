@@ -5,11 +5,13 @@
 
 name=bc
 version=1.07.1
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
+
+	export CFLAGS="$(echo $CFLAGS | sed -e 's|-O2|-O3|')"
 
 	./configure \
 		--prefix=/usr \
