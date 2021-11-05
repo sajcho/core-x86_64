@@ -4,7 +4,7 @@
 
 name=db
 version=5.3.28
-release=0
+release=1
 source=(http://download.oracle.com/berkeley-db/${name}-${version}.tar.gz \
 	0001-atomic-Rename-local-__atomic_compare_exchange-to-avo.patch)
 
@@ -19,8 +19,8 @@ build() {
 			--prefix=/usr \
 			--enable-compat185 \
 			--enable-shared \
-			--enable-static \
 			--enable-cxx \
+			--disable-static \
 			--build=$CHOST \
 			--host=$CHOST
 
@@ -31,4 +31,6 @@ build() {
 	chmod -R +w $PKG
 
 	rm -r $PKG/usr/docs
+
+	find $PKG -type f -name '*.la' -delete
 }
