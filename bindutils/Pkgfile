@@ -5,7 +5,7 @@
 
 name=bindutils
 version=9.16.21
-release=0
+release=1
 source=(https://ftp.isc.org/isc/bind9/${version}/bind-${version}.tar.xz)
 
 build() {
@@ -13,6 +13,7 @@ build() {
 
 	./configure \
 		--prefix=/usr \
+		--disable-static \
 		--disable-linux-caps \
 		--with-libxml2=no \
 		--with-libjson=no \
