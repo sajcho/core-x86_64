@@ -3,19 +3,20 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=libnsl
-version=1.3.0
-release=0
+version=2.0.0
+release=1
 source=(https://github.com/thkukuk/${name}/releases/download/v${version}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
-	autoreconf -fi
-
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		--disable-static
 
 	make
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
