@@ -4,7 +4,7 @@
 
 name=earlyoom
 version=1.6.2
-release=0
+release=1
 source=(https://github.com/rfjakob/${name}/archive/v${version}/${name}-${version}.tar.gz \
 	earlyoom.conf \
 	earlyoom.run \
