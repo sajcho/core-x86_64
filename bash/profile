@@ -18,4 +18,6 @@ export PS2="\[\033[1m\]> \[\033[0m\]"
 
 umask 022
 
+export PKG_CONFIG_PATH="/usr/lib/pkgconfig:/usr/share/pkgconfig"
+
 # End of file
