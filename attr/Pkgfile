@@ -4,7 +4,7 @@
 
 name=attr
 version=2.5.1
-release=0
+release=1
 source=(http://download-mirror.savannah.gnu.org/releases/${name}/${name}-${version}.tar.gz)
 
 build() {
@@ -13,7 +13,8 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--bindir=/bin \
-		--sysconfdir=/etc
+		--sysconfdir=/etc \
+		--disable-static
 
 	make
 
@@ -25,4 +26,6 @@ build() {
 	ln -sf ../../lib/$(readlink $PKG/lib/libattr.so.1) $PKG/usr/lib/libattr.so
 
 	rm -r $PKG/usr/share/{doc,locale}
+
+	find $PKG -type f -name '*.la' -delete
 }
