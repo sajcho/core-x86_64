@@ -5,7 +5,7 @@
 
 name=iputils
 version=20210722
-release=0
+release=1
 source=(https://github.com/iputils/iputils/archive/${version}/${name}-${version}.tar.gz)
 
 build() {
