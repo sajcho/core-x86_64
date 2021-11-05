@@ -17,7 +17,6 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/gpm.h
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libgpm.a
 lrwxrwxrwx	root/root	usr/lib/libgpm.so -> libgpm.so.2.1.0
 lrwxrwxrwx	root/root	usr/lib/libgpm.so.2 -> libgpm.so.2.1.0
 -rw-r--r--	root/root	usr/lib/libgpm.so.2.1.0

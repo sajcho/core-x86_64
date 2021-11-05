@@ -4,7 +4,7 @@
 
 name=gpm
 version=1.20.7
-release=0
+release=1
 source=(https://www.nico.schottelius.org/software/${name}/archives/${name}-${version}.tar.bz2 \
 	${name}-${version}-consolidated-1.patch \
 	gpm.run)
@@ -20,7 +20,8 @@ build() {
 	CFLAGS+=' -fcommon' \
 	./configure \
 		--prefix=/usr \
-		--sysconfdir=/etc
+		--sysconfdir=/etc \
+		--disable-static
 
 	touch doc/gpm.info
 
