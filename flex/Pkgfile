@@ -4,7 +4,7 @@
 
 name=flex
 version=2.6.4
-release=0
+release=1
 source=(https://github.com/westes/flex/releases/download/v${version}/${name}-${version}.tar.gz)
 
 build() {
@@ -13,6 +13,7 @@ build() {
 	CFLAGS="$CFLAGS -D_GNU_SOURCE" \
 	./configure \
 		--prefix=/usr \
+		--disable-static \
 		--disable-nls
 
 	make
@@ -23,4 +24,6 @@ build() {
 	ln -sf flex.1.gz $PKG/usr/share/man/man1/lex.1.gz
 
 	rm -r $PKG/usr/share/{info,doc}
+
+	find $PKG -type f -name '*.la' -delete
 }
