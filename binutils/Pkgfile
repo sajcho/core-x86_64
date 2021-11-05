@@ -5,39 +5,58 @@
 
 name=binutils
 version=2.37
-release=0
-source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
+release=1
+source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
+	binutils-2.37-upstream_fix-1.patch)
 
 build() {
-	cd $SRC
+	cd ${name}-${version}
+
+	patch -Np1 -i $SRC/binutils-2.37-upstream_fix-1.patch
+
+	# fix man pages
+	sed -i '63d' etc/texi2pod.pl
+	find -name \*.1 -delete
 
 	mkdir build
 	cd build
 
-	../${name}-${version}/configure \
-				--prefix=/usr \
-				--enable-ld=default \
-				--enable-gold=no \
-				--enable-plugins \
-				--enable-shared \
-				--enable-threads \
-				--enable-relro \
-				--enable-64-bit-bfd \
-				--enable-install-libiberty \
-				--enable-deterministic-archives \
-				--enable-default-hash-style=gnu \
-				--disable-nls \
-				--disable-werror \
-				--disable-multilib \
-				--disable-gdb \
-				--with-pic \
-				--with-mmap \
-				--with-system-zlib \
-				--with-pkgversion="SAUX x86_64" \
-				--build=$CHOST \
-				--host=$CHOST
+	../configure \
+		--prefix=/usr \
+		--enable-ld=default \
+		--enable-gold=no \
+		--enable-plugins \
+		--enable-shared \
+		--enable-threads \
+		--enable-relro \
+		--enable-lto \
+		--enable-64-bit-bfd \
+		--enable-install-libiberty \
+		--enable-deterministic-archives \
+		--enable-default-hash-style=gnu \
+		--disable-nls \
+		--disable-werror \
+		--disable-multilib \
+		--disable-gdb \
+		--with-pic \
+		--with-mmap \
+		--with-system-zlib \
+		--with-pkgversion="SAUX x86_64" \
+		--build=$CHOST \
+		--host=$CHOST
 
 	make tooldir=/usr
+
+	#  Optional
+	#make -k check < /dev/null || :
+	#cat {gas/testsuite/gas,ld/ld,binutils/binutils}.sum
+	#for file in {gas/testsuite/gas,ld/ld,binutils/binutils}.{sum,log}
+	#do
+	#	ln $file binutils-$CHOST-$(basename $file) || :
+	#done
+	#tar cJf ${name}-${version}-${release}-result-test.tar.xz \
+	#	binutils-$CHOST-*.{sum,log}
+	#cp ${name}-${version}-${release}-result-test.tar.xz $PKGMK_PACKAGE_DIR
 
 	make tooldir=/usr DESTDIR=$PKG install
 

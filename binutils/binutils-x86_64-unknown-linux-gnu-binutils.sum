@@ -1,0 +1,336 @@
+Test run by sajcho on Fri Nov  5 14:12:01 2021
+Native configuration is x86_64-unknown-linux-gnu
+
+		=== binutils tests ===
+
+Schedule of variations:
+    unix
+
+Running target unix
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/aarch64/aarch64.exp ...
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/ar.exp ...
+PASS: ar long file names
+PASS: ar thin archive
+PASS: ar thin archive with nested archive
+PASS: ar symbol table
+PASS: ar argument parsing
+PASS: ar deterministic archive
+PASS: ar deleting an element
+PASS: ar moving an element
+PASS: archive with empty element
+PASS: ar extracting an element
+PASS: ar many files
+PASS: ar adding library dependencies
+PASS: ar unique symbol in archive
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/arc/objdump.exp ...
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/arm/objdump.exp ...
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/bfin/objdump.exp ...
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/compress.exp ...
+PASS: objcopy (objcopy compress debug sections)
+PASS: objcopy (objcopy decompress compressed debug sections)
+PASS: objcopy decompress debug sections in archive
+PASS: objcopy compress debug sections in archive with zlib-gnu
+PASS: objdump compress debug sections
+PASS: objdump compress debug sections 3
+PASS: objcopy (objcopy compress empty debug sections)
+PASS: Uncompressed .debug_str section starting with ZLIB
+PASS: readelf -t zlib-gabi compress debug sections
+PASS: readelf -S zlib-gabi compress debug sections
+PASS: objcopy (objcopy compress debug sections with zlib-gabi)
+PASS: objcopy (objcopy decompress compressed debug sections with zlib-gabi)
+PASS: objcopy (objcopy zlib-gnu compress debug sections with zlib-gabi)
+PASS: objcopy (objcopy zlib-gabi compress debug sections with zlib-gnu)
+PASS: objcopy (objcopy compress debug sections 3 with zlib-gabi)
+PASS: objcopy (objcopy decompress compressed debug sections 3 with zlib-gabi)
+PASS: objcopy (objcopy zlib-gnu compress debug sections 3 with zlib-gabi)
+PASS: objcopy (objcopy zlib-gabi compress debug sections 3 with zlib-gnu)
+PASS: objcopy (objcopy zlib-gnu compress debug sections 3)
+PASS: objcopy (objcopy zlib-gabi compress debug sections 3)
+PASS: objcopy decompress debug sections in archive with zlib-gabi
+PASS: objcopy compress debug sections in archive with zlib-gabi
+PASS: objdump compress debug sections 3 with zlib-gabi
+PASS: Convert x86-64 object with zlib-gabi to x32 (1)
+PASS: Convert x86-64 object with zlib-gabi to x32 (2)
+PASS: Convert x86-64 object with zlib-gabi to x32 (3)
+PASS: Convert x86-64 object with zlib-gnu to x32 (1)
+PASS: Convert x86-64 object with zlib-gnu to x32 (2)
+PASS: Convert x86-64 object with zlib-gnu to x32 (3)
+PASS: Convert x86-64 object to x32 (1)
+PASS: Convert x86-64 object to x32 (2)
+PASS: Convert x86-64 object to x32 (3)
+PASS: Convert x32 object with zlib-gabi to x86-64 (1)
+PASS: Convert x32 object with zlib-gabi to x86-64 (2)
+PASS: Convert x32 object with zlib-gabi to x86-64 (3)
+PASS: Convert x32 object with zlib-gnu to x86-64 (1)
+PASS: Convert x32 object with zlib-gnu to x86-64 (2)
+PASS: Convert x32 object with zlib-gnu to x86-64 (3)
+PASS: Convert x32 object to x86-64 (1)
+PASS: Convert x32 object to x86-64 (2)
+PASS: Convert x32 object to x86-64 (3)
+PASS: gnu-debuglink (objdump 1)
+PASS: gnu-debuglink (objdump 2)
+PASS: gnu-debuglink (objdump with missing link)
+PASS: gnu-debuglink (readelf with missing link)
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/cxxfilt.exp ...
+PASS: cxxfilt: demangling _Z1fIvJiELb0EEvPDOT1_EFT_DpT0_E
+PASS: cxxfilt: demangling _Z14int_if_addableI1YERiP1AIXszpldecvPT_Li0EdecvS4_Li0EEE
+PASS: cxxfilt: demangling Z3fooiPiPS_PS0_PS1_PS2_PS3_PS4_PS5_PS6_PS7_PS8_PS9_PSA_PSB_PSC_
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/debuginfod.exp ...
+UNSUPPORTED: debuginfod (not found)
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/dlltool.exp ...
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/elfedit.exp ...
+PASS: Update ELF header 1
+PASS: Update ELF header 2
+PASS: Update ELF header 3
+PASS: Update ELF header 4
+PASS: Update ELF header 5
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/hppa/objdump.exp ...
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/i386/i386.exp ...
+PASS: objcopy on compressed debug sections
+PASS: strip on uncompressed debug sections
+PASS: strip on compressed debug sections
+PASS: binutils-all/i386/empty
+PASS: binutils-all/i386/ibt
+PASS: binutils-all/i386/pr21231a
+PASS: binutils-all/i386/pr21231b
+PASS: binutils-all/i386/shstk
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/m68k/objdump.exp ...
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/mips/mips.exp ...
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/nfp/objdump.exp ...
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/nm.exp ...
+PASS: nm (no arguments)
+PASS: nm -g
+PASS: nm -P
+PASS: nm -t d
+PASS: nm --format posix
+PASS: nm --size-sort
+PASS: nm -g on unique symbols
+PASS: nm --with-symbol-versions
+PASS: nm --line-numbers on DWARF-4 debug info
+PASS: nm --ifunc-chars (global ifunc)
+PASS: nm --ifunc-chars (local ifunc)
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/objcopy.exp ...
+PASS: objcopy object (simple copy)
+PASS: objcopy (verilog data width 0)
+PASS: objcopy (verilog data width 1)
+PASS: objcopy (verilog data width 2)
+PASS: objcopy (verilog data width 4)
+PASS: objcopy (verilog data width 8)
+PASS: objcopy --reverse-bytes
+PASS: objcopy -i --interleave-width
+PASS: objcopy -O srec
+PASS: objcopy --set-start
+PASS: objcopy --adjust-start
+PASS: objcopy --adjust-vma
+PASS: objcopy --adjust-section-vma +
+PASS: objcopy --adjust-section-vma =
+PASS: strip preserving OS/ABI
+PASS: strip
+PASS: strip with saving a symbol
+PASS: simple objcopy of executable
+PASS: run objcopy of executable
+PASS: strip executable preserving OS/ABI
+PASS: run stripped executable
+PASS: run stripped executable with saving a symbol
+PASS: keep only debug data
+PASS: simple objcopy of debug data
+PASS: NOBITS sections retain sh_link field
+PASS: localize 'fo*' but not 'foo'
+PASS: weaken 'fo*' but not 'foo'
+PASS: weaken 'fo*' but not 'foo', localize foo.
+PASS: weaken '*' but not 'foo' or 'bar'
+PASS: binutils-all/common-1a
+PASS: binutils-all/common-1b
+PASS: binutils-all/common-1c
+PASS: binutils-all/common-1d
+PASS: binutils-all/common-1e
+PASS: binutils-all/common-1f
+PASS: binutils-all/common-2a
+PASS: binutils-all/common-2b
+PASS: binutils-all/common-2c
+PASS: binutils-all/common-2d
+PASS: binutils-all/common-2e
+PASS: binutils-all/common-2f
+PASS: objcopy object (ELF unknown section type)
+PASS: objcopy (ELF group 1)
+PASS: objcopy (ELF group 2)
+PASS: objcopy (ELF group 3)
+PASS: objcopy (ELF group 4)
+PASS: objcopy (GNU_MBIND section)
+PASS: copy removing group member
+PASS: copy removing all group member
+PASS: copy removing reloc group member
+PASS: copy removing non-reloc group member
+PASS: copy removing reloc and non-reloc group member
+PASS: copy with setting section flags 1
+PASS: add notes section
+PASS: merge notes section (64-bits)
+PASS: v2 gnu build attribute notes (64-bit)
+PASS: v3 gnu build attribute notes (64-bit)
+PASS: v3 gnu build attribute note merging (64-bit)
+PASS: assembler generated build notes
+PASS: copy with setting section flags 2
+PASS: copy with setting section flags 3
+PASS: strip --strip-unneeded on common symbol
+PASS: Error when using --keep-global-symbol with --globalize-symbol
+PASS: ihex objcopy test
+PASS: binutils-all/pr19020a
+PASS: binutils-all/pr19020b
+PASS: strip with section group 1
+PASS: strip with section group 2
+PASS: strip empty file
+PASS: strip with section group 4
+PASS: strip with section group 5
+PASS: strip with section group 6
+PASS: strip with section group 7
+PASS: strip with section group 8
+PASS: strip with section group 9
+PASS: binutils-all/strip-12
+PASS: binutils-all/strip-13
+PASS: binutils-all/strip-14
+PASS: binutils-all/strip-15
+PASS: strip on STB_GNU_UNIQUE
+PASS: strip -g empty file
+PASS: objcopy keeps symbols needed by relocs
+PASS: --localize-hidden test 1
+PASS: unordered .debug_info references to .debug_ranges
+UNSUPPORTED: unordered .debug_info references to .debug_ranges
+PASS: objcopy add-section
+PASS: objcopy add-symbol
+PASS: objcopy add-empty-section
+PASS: objcopy on sections with SHF_EXCLUDE
+PASS: strip --strip-unneeded on sections with SHF_EXCLUDE
+PASS: binutils-all/only-section-01
+PASS: binutils-all/remove-section-01
+PASS: binutils-all/keep-section-1
+PASS: binutils-all/keep-section-2
+PASS: binutils-all/remove-relocs-01
+PASS: binutils-all/remove-relocs-02
+PASS: binutils-all/remove-relocs-03
+PASS: binutils-all/remove-relocs-04
+PASS: binutils-all/remove-relocs-05
+PASS: binutils-all/remove-relocs-06
+PASS: binutils-all/remove-relocs-07
+PASS: binutils-all/remove-relocs-08
+PASS: --localize-hidden test 2
+PASS: strip without global symbol 
+PASS: remove-section relocation sections
+PASS: binutils-all/pr23633
+PASS: binutils-all/set-section-alignment
+PASS: objcopy executable (pr25662)
+PASS: objcopy executable (pr25662) timestamp
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/objdump.exp ...
+PASS: objdump -i
+PASS: objdump -f (tmpdir/bintest.o, tmpdir/bintest.o)
+PASS: objdump -f (tmpdir/bintest.a, bintest2.o)
+PASS: objdump -h (tmpdir/bintest.o, tmpdir/bintest.o)
+PASS: objdump -h (tmpdir/bintest.a, bintest2.o)
+PASS: objdump -t (tmpdir/bintest.o)
+PASS: objdump -t (tmpdir/bintest.a)
+PASS: objdump -r (tmpdir/bintest.o, tmpdir/bintest.o)
+PASS: objdump -r (tmpdir/bintest.a, bintest2.o)
+PASS: objdump -d tmpdir/bintest.o
+PASS: objdump -d tmpdir/bintest.a
+PASS: objdump --disassemble=text_symbol2 tmpdir/bintest.o
+PASS: objdump --disassemble=func tmpdir/disasm.o
+PASS: objdump --disassemble=non_func tmpdir/disasm.o
+PASS: objdump -s (tmpdir/bintest.o, tmpdir/bintest.o)
+PASS: objdump -s (tmpdir/bintest.a, bintest2.o)
+PASS: objdump -s -j .zdebug_abbrev
+PASS: objdump -W
+PASS: objdump -WL
+PASS: objdump -W for debug_ranges
+PASS: build-id-debuglink
+PASS: objdump -Wk
+PASS: follow-debuglink (--process-links --dwarf=info --dwarf=str)
+PASS: follow-debuglink (--process-links --headers --wide)
+PASS: objdump -s --start-address 0x80000004 --stop-address 0x80000008 (tmpdir/bintest_signed.o)
+PASS: objdump -d --start-address 0x80000004 --stop-address 0x80000008 (tmpdir/bintest_signed.o)
+PASS: dotnet-assemblies (ordinary x86 DLL)
+PASS: dotnet-assemblies (32-bit .NET)
+PASS: dotnet-assemblies (ordinary x86_64 DLL)
+PASS: dotnet-assemblies (64-bit)
+PASS: objdump -S
+PASS: objdump --source-comment
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/readelf.exp ...
+PASS: finding out ELF size with readelf -h (1)
+PASS: readelf -h bintest
+PASS: readelf -S bintest
+PASS: readelf -s bintest
+PASS: readelf -r bintest
+PASS: readelf -h bintest.thin
+PASS: readelf -h bintest.thin
+PASS: readelf --syms --demangle --wide mangled
+PASS: readelf -wi
+PASS: readelf -wa (compressed)
+PASS: readelf -p
+PASS: binutils-all/pr25543
+PASS: readelf SHF_GNU_RETAIN
+PASS: -t (section details) for readelf SHF_GNU_RETAIN
+PASS: Unknown SHF_MASKOS value in section
+PASS: -t (section details) for unknown SHF_MASKOS value in section
+PASS: binutils-all/pr26548
+PASS: readelf -Wwi pr26548e
+PASS: readelf -n version
+PASS: readelf --debug-dump=loc pr18374
+PASS: readelf --debug-dump=loc locview-1
+PASS: readelf --debug-dump=loc locview-2
+PASS: readelf --decompress --hex-dump .debug_loc z
+PASS: finding out ELF size with readelf -h (2)
+PASS: readelf -wiaoRlL dw5
+PASS: finding out ELF size with readelf -h (3)
+PASS: readelf -wi dwarf-attributes
+PASS: readelf --debug-dump=links -wN debuglink
+PASS: readelf -wKis -P debuglink
+PASS: readelf --debug-dump=links --debug-dump=no-follow-links dwo
+PASS: readelf --enable-checks --sections --wide zero-sec
+PASS: readelf --debug-dump=macro -wN pr26112
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/size.exp ...
+PASS: size (no arguments)
+PASS: size -A
+PASS: size -G
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/strings.exp ...
+PASS: strings: decoding little-endian multibyte strings
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/update-section.exp ...
+PASS: objcopy (dump empty section)
+PASS: objcopy (compare update-1.o update-2.o)
+PASS: objcopy (compare update-1.o update-3.o)
+PASS: objcopy (compare update-1.o update-4.o)
+PASS: objcopy (objcopy --update-section .bar=tmpdir/dumped-contents update-2.o)
+PASS: objcopy (objcopy --update-section .foo=tmpdir/dumped-contents  --remove-section .foo update-2.o)
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/vax/objdump.exp ...
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/wasm32/wasm32.exp ...
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/windres/windres.exp ...
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/x86-64/objects.exp ...
+PASS: objcopy (binutils-all/x86-64/pr22451.o)
+Running /home/devel/building/work/src/binutils-2.37/binutils/testsuite/binutils-all/x86-64/x86-64.exp ...
+PASS: objcopy on compressed debug sections
+PASS: strip on uncompressed debug sections
+PASS: strip on compressed debug sections
+PASS: binutils-all/x86-64/empty-x32
+PASS: binutils-all/x86-64/empty
+PASS: binutils-all/x86-64/ibt-x32
+PASS: binutils-all/x86-64/ibt
+PASS: binutils-all/x86-64/lam-u48
+PASS: binutils-all/x86-64/lam-u57
+PASS: binutils-all/x86-64/pr21231a
+PASS: binutils-all/x86-64/pr21231b
+PASS: binutils-all/x86-64/pr23494a-x32
+PASS: binutils-all/x86-64/pr23494a
+PASS: binutils-all/x86-64/pr23494b-x32
+PASS: binutils-all/x86-64/pr23494b
+PASS: binutils-all/x86-64/pr23494c-x32
+PASS: binutils-all/x86-64/pr23494c
+PASS: binutils-all/x86-64/pr23494d-x32
+PASS: binutils-all/x86-64/pr23494d
+PASS: binutils-all/x86-64/pr23494e-x32
+PASS: binutils-all/x86-64/pr23494e
+PASS: binutils-all/x86-64/shstk-x32
+PASS: binutils-all/x86-64/shstk
+PASS: readelf -wi (binutils-all/x86-64/pr26808.dwp)
+PASS: strip (binutils-all/x86-64/pr27708.exe)
+
+		=== binutils Summary ===
+
+# of expected passes		293
+# of unsupported tests		2
