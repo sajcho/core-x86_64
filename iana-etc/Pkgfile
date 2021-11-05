@@ -4,7 +4,7 @@
 
 name=iana-etc
 version=20211012
-release=0
+release=1
 source=(services protocols update.sh)
 
 build() {
