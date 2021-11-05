@@ -5,7 +5,7 @@
 
 name=git
 version=2.33.1
-release=0
+release=1
 source=(https://www.kernel.org/pub/software/scm/git/git-{,manpages-}${version}.tar.xz
 	git.driver)
 
