@@ -4,7 +4,7 @@
 
 name=libpcre
 version=8.45
-release=0
+release=1
 source=(https://ftp.pcre.org/pub/pcre/pcre-${version}.tar.bz2)
 
 build() {
@@ -14,9 +14,17 @@ build() {
 		--prefix=/usr \
 		--enable-utf8 \
 		--enable-unicode-properties \
-		--enable-jit
+		--enable-jit \
+		--enable-pcre16 \
+		--enable-pcre32 \
+		--enable-pcregrep-libz \
+		--enable-pcregrep-libbz2 \
+		--enable-pcretest-libreadline \
+		--disable-static
 
 	make
+
+	#make check
 
 	make DESTDIR=$PKG install
 
@@ -25,5 +33,6 @@ build() {
 	ln -sf ../../lib/$(readlink $PKG/usr/lib/libpcre.so) $PKG/usr/lib/libpcre.so
 
 	rm -r $PKG/usr/share/doc
-	rm $PKG/usr/share/man/man3/{pcre{16,32}*,pcre_utf{16,32}*}
+
+	find $PKG -type f -name '*.la' -delete
 }
