@@ -1,0 +1,77 @@
+From 690180eb4b35df3f4b5def690878ecaeb5492e41 Mon Sep 17 00:00:00 2001
+From: Martin Liska <mliska@suse.cz>
+Date: Fri, 22 Oct 2021 10:12:56 +0200
+Subject: [PATCH] Handle jobserver file descriptors in btest.
+
+	PR testsuite/102742
+
+libbacktrace/ChangeLog:
+
+	* btest.c (MIN_DESCRIPTOR): New.
+	(MAX_DESCRIPTOR): Likewise.
+	(check_available_files): Likewise.
+	(check_open_files): Check only file descriptors that
+	were not available at the entry.
+	(main): Call check_available_files.
+---
+ libbacktrace/btest.c | 24 ++++++++++++++++++++----
+ 1 file changed, 20 insertions(+), 4 deletions(-)
+
+diff --git a/libbacktrace/btest.c b/libbacktrace/btest.c
+index 9f9c03babf3..7ef6d320497 100644
+--- a/libbacktrace/btest.c
++++ b/libbacktrace/btest.c
+@@ -38,6 +38,7 @@ POSSIBILITY OF SUCH DAMAGE.  */
+ #include <stdlib.h>
+ #include <string.h>
+ #include <unistd.h>
++#include <sys/stat.h>
+ 
+ #include "filenames.h"
+ 
+@@ -458,16 +459,29 @@ test5 (void)
+   return failures;
+ }
+ 
++#define MIN_DESCRIPTOR 3
++#define MAX_DESCRIPTOR 10
++
++static int fstat_status[MAX_DESCRIPTOR];
++
++/* Check files that are available.  */
++
++static void
++check_available_files (void)
++{
++  struct stat s;
++  for (unsigned i = MIN_DESCRIPTOR; i < MAX_DESCRIPTOR; i++)
++    fstat_status[i] = fstat (i, &s);
++}
++
+ /* Check that are no files left open.  */
+ 
+ static void
+ check_open_files (void)
+ {
+-  int i;
+-
+-  for (i = 3; i < 10; i++)
++  for (unsigned i = MIN_DESCRIPTOR; i < MAX_DESCRIPTOR; i++)
+     {
+-      if (close (i) == 0)
++      if (fstat_status[i] != 0 && close (i) == 0)
+ 	{
+ 	  fprintf (stderr,
+ 		   "ERROR: descriptor %d still open after tests complete\n",
+@@ -482,6 +496,8 @@ check_open_files (void)
+ int
+ main (int argc ATTRIBUTE_UNUSED, char **argv)
+ {
++  check_available_files ();
++
+   state = backtrace_create_state (argv[0], BACKTRACE_SUPPORTS_THREADS,
+ 				  error_callback_create, NULL);
+ 
+-- 
+2.27.0
+

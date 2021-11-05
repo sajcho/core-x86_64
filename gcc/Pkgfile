@@ -1,60 +1,70 @@
-# Description:	The GNU Compiler Collection - devel version
+# Description:	The GNU Compiler Collection
 # URL:		http://gcc.gnu.org
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 # Depends on:	mpc zstd
 
 name=gcc
 version=11.2.0
-release=0
-source=(ftp://ftp.fu-berlin.de/unix/languages/${name}/releases/${name}-${version}/${name}-${version}.tar.xz \
-	c89 c99)
+release=1
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}/${name}-${version}.tar.xz \
+	gcc-11.2.0-jobserver-file-descriptors.patch c89 c99)
 
 build() {
 	cd ${name}-${version}
 
+	patch -p1 -i $SRC/gcc-11.2.0-jobserver-file-descriptors.patch
+
 	sed -i 's|lib64|lib|' $SRC/${name}-${version}/${name}/config/i386/t-linux64
 	sed -i 's|lib64|lib|' $SRC/${name}-${version}/${name}/config/i386/linux64.h
 
-	mkdir $SRC/build
-	cd $SRC/build
+	export CFLAGS="$(echo $CFLAGS | sed -e 's| -flto=auto -ffat-lto-objects||')"
+	export CXXFLAGS="$(echo $CXXFLAGS | sed -e 's| -flto=auto -ffat-lto-objects||')"
 
-	../${name}-${version}/configure \
-				--prefix=/usr \
-				--libexecdir=/usr/lib \
-				--enable-languages=c,c++,objc,fortran,lto \
-				--enable-threads=posix \
-				--enable-__cxa_atexit \
-				--enable-clocale=gnu \
-				--enable-default-pie \
-				--enable-default-ssp \
-				--enable-gnu-indirect-function \
-				--enable-standard-branch-protection \
-				--enable-initfini-array \
-				--enable-gnu-unique-object \
-				--enable-linker-build-id \
-				--enable-shared \
-				--enable-gold=no \
-				--enable-plugin \
-				--enable-c99 \
-				--enable-bootstrap \
-				--disable-nls \
-				--disable-multilib \
-				--disable-werror \
-				--disable-libssp \
-				--disable-libstdcxx-pch \
-				--disable-libunwind-exceptions \
-				--disable-libquadmath-support \
-				--disable-libquadmath \
-				--with-gnu-as \
-				--with-gnu-ld \
-				--with-system-zlib \
-				--with-linker-hash-style=gnu \
-				--with-pkgversion="SAUX x86_64" \
-				--without-included-gettext \
-				--build=$CHOST \
-				--host=$CHOST
+	mkdir build
+	cd build
+
+	../configure \
+		--prefix=/usr \
+		--libexecdir=/usr/lib \
+		--enable-languages=c,c++,objc,fortran,lto \
+		--enable-threads=posix \
+		--enable-__cxa_atexit \
+		--enable-clocale=gnu \
+		--enable-default-pie \
+		--enable-default-ssp \
+		--enable-gnu-indirect-function \
+		--enable-standard-branch-protection \
+		--enable-initfini-array \
+		--enable-gnu-unique-object \
+		--enable-linker-build-id \
+		--enable-shared \
+		--enable-gold=no \
+		--enable-plugin \
+		--enable-c99 \
+		--enable-bootstrap \
+		--disable-nls \
+		--disable-multilib \
+		--disable-werror \
+		--disable-libssp \
+		--disable-libstdcxx-pch \
+		--disable-libunwind-exceptions \
+		--disable-libquadmath-support \
+		--disable-libquadmath \
+		--with-system-zlib \
+		--with-linker-hash-style=gnu \
+		--with-build-config=bootstrap-lto-lean \
+		--with-pkgversion="SAUX x86_64" \
+		--without-included-gettext \
+		--cache-file=/dev/null \
+		--build=$CHOST \
+		--host=$CHOST
 
 	make
+
+	# Optional
+	#make -k check < /dev/null || :
+	#$SRC/${name}-${version}/contrib/test_summary \
+	#	> $PKGMK_PACKAGE_DIR/gcc-${version}-result-test.txt
 
 	make -j1 DESTDIR=$PKG install
 
@@ -62,6 +72,12 @@ build() {
 	ln -sf ../usr/bin/cpp $PKG/lib/cpp
 	ln -sf gcc $PKG/usr/bin/cc
 	ln -sf g++ $PKG/usr/bin/c++
+
+	# Add a compatibility symlink to enable building programs
+	# with Link Time Optimization (LTO):
+	install -d $PKG/usr/lib/bfd-plugins
+	ln -sf ../../lib/gcc/$CHOST/11.2.0/liblto_plugin.so \
+		$PKG/usr/lib/bfd-plugins/
 
 	mv $PKG/usr/lib/${name}/*/${version}/include-fixed/{limits.h,syslimits.h} \
 		$PKG/usr/lib/${name}/*/${version}/include/

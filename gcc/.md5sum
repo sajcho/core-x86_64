@@ -1,3 +1,4 @@
 3d333df77302ed89e06a4a8539943b7d  c89
 da96f545b863e57c6ab2598c1ea9a740  c99
+a1fe981d5cff867f2fd427eadf676f94  gcc-11.2.0-jobserver-file-descriptors.patch
 31c86f2ced76acac66992eeedce2fce2  gcc-11.2.0.tar.xz

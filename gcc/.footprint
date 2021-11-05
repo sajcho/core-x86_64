@@ -871,6 +871,8 @@ drwxr-xr-x	root/root	usr/include/c++/11.2.0/x86_64-unknown-linux-gnu/bits/
 drwxr-xr-x	root/root	usr/include/c++/11.2.0/x86_64-unknown-linux-gnu/ext/
 -rw-r--r--	root/root	usr/include/c++/11.2.0/x86_64-unknown-linux-gnu/ext/opt_random.h
 drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/bfd-plugins/
+lrwxrwxrwx	root/root	usr/lib/bfd-plugins/liblto_plugin.so -> ../../lib/gcc/x86_64-unknown-linux-gnu/11.2.0/liblto_plugin.so
 drwxr-xr-x	root/root	usr/lib/gcc/
 drwxr-xr-x	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/
 drwxr-xr-x	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/11.2.0/
