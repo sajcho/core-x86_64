@@ -5,7 +5,7 @@
 
 name=kmod
 version=29
-release=0
+release=1
 source=(https://www.kernel.org/pub/linux/utils/kernel/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -44,4 +44,6 @@ build() {
 
 	# remove bash-completion stuff
 	rm -r $PKG/usr/share/bash-completion
+
+	find $PKG -type f -name '*.la' -delete
 }
