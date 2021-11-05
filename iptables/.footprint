@@ -12,19 +12,15 @@ drwxr-xr-x	root/root	usr/include/libiptc/
 -rw-r--r--	root/root	usr/include/xtables-version.h
 -rw-r--r--	root/root	usr/include/xtables.h
 drwxr-xr-x	root/root	usr/lib/
--rwxr-xr-x	root/root	usr/lib/libip4tc.la
 lrwxrwxrwx	root/root	usr/lib/libip4tc.so -> libip4tc.so.2.0.0
 lrwxrwxrwx	root/root	usr/lib/libip4tc.so.2 -> libip4tc.so.2.0.0
 -rwxr-xr-x	root/root	usr/lib/libip4tc.so.2.0.0
--rwxr-xr-x	root/root	usr/lib/libip6tc.la
 lrwxrwxrwx	root/root	usr/lib/libip6tc.so -> libip6tc.so.2.0.0
 lrwxrwxrwx	root/root	usr/lib/libip6tc.so.2 -> libip6tc.so.2.0.0
 -rwxr-xr-x	root/root	usr/lib/libip6tc.so.2.0.0
--rwxr-xr-x	root/root	usr/lib/libipq.la
 lrwxrwxrwx	root/root	usr/lib/libipq.so -> libipq.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libipq.so.0 -> libipq.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libipq.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libxtables.la
 lrwxrwxrwx	root/root	usr/lib/libxtables.so -> libxtables.so.12.4.0
 lrwxrwxrwx	root/root	usr/lib/libxtables.so.12 -> libxtables.so.12.4.0
 -rwxr-xr-x	root/root	usr/lib/libxtables.so.12.4.0
