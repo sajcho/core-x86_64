@@ -4,7 +4,7 @@
 
 name=dash
 version=0.5.11.5
-release=0
+release=1
 source=(http://gondor.apana.org.au/~herbert/dash/files/${name}-${version}.tar.gz)
 
 build() {
