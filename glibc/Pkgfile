@@ -5,15 +5,15 @@
 
 name=glibc
 version=2.34
-release=1
+release=2
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	https://git.kernel.org/torvalds/t/linux-5.15-rc6.tar.gz \
+	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.tar.xz \
 	glibc-c-utf8-locale.patch \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
 	# install kernel headers
-	cd linux-5.15-rc6
+	cd linux-5.15
 
 	make mrproper
 	make INSTALL_HDR_PATH=$PKG/usr headers_install
@@ -22,31 +22,41 @@ build() {
 	patch -d $SRC/${name}-${version} -p1 \
 		-i $SRC/glibc-c-utf8-locale.patch
 
-	mkdir $SRC/build
-	cd $SRC/build
+	cd $SRC/${name}-${version}
 
-	../${name}-${version}/configure \
-				--prefix=/usr \
-				--libexecdir=/usr/lib \
-				--with-headers=$PKG/usr/include \
-				--enable-shared \
-				--enable-kernel=3.7.0 \
-				--enable-tunables \
-				--enable-bind-now \
-				--enable-stack-protector=strong \
-				--disable-profile \
-				--disable-werror \
-				--disable-multi-arch \
-				--disable-timezone-tools \
-				--with-pkgversion="SAUX x86_64" \
-				--without-gd \
-				--without-cvs \
-				--build=$CHOST \
-				--host=$CHOST \
-				--enable-cet \
-				libc_cv_slibdir=/lib
+	export CFLAGS="$(echo $CFLAGS | sed -e 's| -flto=auto -ffat-lto-objects||')"
+	export CXXFLAGS="$(echo $CXXFLAGS | sed -e 's| -flto=auto -ffat-lto-objects||')"
+
+	mkdir build
+	cd build
+
+	../configure \
+		--prefix=/usr \
+		--libexecdir=/usr/lib \
+		--with-headers=$PKG/usr/include \
+		--enable-shared \
+		--enable-kernel=3.7.0 \
+		--enable-tunables \
+		--enable-bind-now \
+		--enable-stack-protector=strong \
+		--disable-profile \
+		--disable-werror \
+		--disable-multi-arch \
+		--disable-timezone-tools \
+		--with-pkgversion="SAUX x86_64" \
+		--without-gd \
+		--without-cvs \
+		--build=$CHOST \
+		--host=$CHOST \
+		--enable-cet \
+		libc_cv_slibdir=/lib
 
 	make
+
+	# Optional
+	#make -k check < /dev/null || :
+	#/opt/bin/glibc-test-summary-result.sh tests.sum \
+	#$PKGMK_PACKAGE_DIR/${name}-${version}-${release}-linux-5.15-test-summary-result.txt
 
 	make install_root=$PKG install
 
