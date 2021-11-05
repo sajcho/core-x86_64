@@ -4,7 +4,7 @@
 
 name=cpio
 version=2.13
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.bz2 \
 	cpio-2.12-gcc-10.patch)
 
