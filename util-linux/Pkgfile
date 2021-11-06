@@ -5,7 +5,7 @@
 
 name=util-linux
 version=2.37.2
-release=2
+release=3
 source=(https://www.kernel.org/pub/linux/utils/${name}/v${version:0:4}/${name}-${version}.tar.xz \
 	util-linux-man-2.37.2.tar.xz \
 	uuidd.run)
@@ -17,13 +17,16 @@ build() {
 		--prefix=/usr \
 		--disable-asciidoc \
 		--disable-nls \
+		--disable-static \
 		--disable-{login,su,nologin,runuser} \
 		--disable-{bfs,minix} \
 		--disable-chfn-chsh \
 		--disable-raw \
 		--enable-{write,kill} \
 		--without-python \
-		--without-systemd
+		--without-systemd \
+		--without-systemdsystemunitdir \
+		runstatedir=/run
 
 	make
 
@@ -41,6 +44,8 @@ build() {
 	cp -r $SRC/man $PKG/usr/share
 
 	rm -r $PKG/usr/share/{doc,bash-completion}
-	rm $PKG/usr/share/man/man8/{i386,x86_64}.8
+	#rm $PKG/usr/share/man/man8/{i386,x86_64}.8
 	rm $PKG/usr/share/man/man8/{fsck.minix,mkfs.bfs,mkfs.minix}.8
+
+	find $PKG -type f -name '*.la' -delete
 }
