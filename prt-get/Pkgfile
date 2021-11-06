@@ -4,7 +4,7 @@
 
 name=prt-get
 version=5.19.5
-release=0
+release=1
 source=(http://crux.nu/files/prt-get-${version}.tar.xz \
 	prt-get-zstd.patch \
 	prt-get.conf \
