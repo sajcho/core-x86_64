@@ -5,17 +5,35 @@
 
 name=pciutils
 version=3.7.0
-release=0
-source=(https://www.kernel.org/pub/software/utils/pciutils/${name}-${version}.tar.xz)
+release=1
+source=(https://www.kernel.org/pub/software/utils/pciutils/${name}-${version}.tar.xz \
+	update-pciids.sh)
 
 build() {
 	cd ${name}-${version}
 
-	local CONF="ZLIB=no DESTDIR=$PKG PREFIX=/usr"
-
-	make -j1 $CONF OPT="$CFLAGS" SHARED=yes install install-lib
+	make -j1 \
+		PREFIX=/usr \
+		SHAREDIR=/usr/share/hwdata \
+		SHARED=yes \
+		OPT="${CFLAGS}" \
+		ZLIB=no
 
 	make clean
 
-	make -j1 $CONF OPT="$CFLAGS" SHARED=no  install install-lib
+	make -j1 \
+		PREFIX=/usr \
+		SHAREDIR=/usr/share/hwdata \
+		SHARED=yes \
+		OPT="${CFLAGS}" \
+		ZLIB=no \
+		DESTDIR=$PKG install install-lib
+
+	chmod  0755 $PKG/usr/lib/libpci.so
+
+	install -d -m 0755 $PKG/usr/share/hwdata/
+	wget https://pci-ids.ucw.cz/v2.2/pci.ids -O $PKG/usr/share/hwdata/pci.ids
+
+	install -D -m 0754 $SRC/update-pciids.sh \
+		$PKG/etc/cron/weekly/update-pciids.sh
 }
