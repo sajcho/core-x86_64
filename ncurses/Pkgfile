@@ -4,7 +4,7 @@
 
 name=ncurses
 version=6.2
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
 build() {
@@ -39,4 +39,6 @@ build() {
 	# linker script for the curses library
 	echo "INPUT(-lncursesw)" > $PKG/usr/lib/libcursesw.so
 	ln -s libncurses.so $PKG/usr/lib/libcurses.so
+
+	find $PKG -type f -name '*.a' -delete
 }
