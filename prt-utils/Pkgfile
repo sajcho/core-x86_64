@@ -5,11 +5,14 @@
 
 name=prt-utils
 version=1.1.4
-release=0
+release=1
 source=(http://crux.nu/files/tools/${name}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
+
+	# disable static
+	sed -e 's|--static||' -e 's|-static||' -i revdep/Makefile
 
 	make
 
