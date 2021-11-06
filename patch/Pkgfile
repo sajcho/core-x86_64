@@ -3,15 +3,34 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=patch
-version=2.7.6.17-9c98
-release=0
-source=(https://crux.nu/files/distfiles/${name}-${version}.tar.xz)
+version=2.7.6
+release=1
+source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
+	0001-Allow-input-files-to-be-missing-for-ed-style-patches.patch \
+	0002-Fix-arbitrary-command-execution-in-ed-style-patches-.patch \
+	CVE-2018-6951.patch \
+	CVE-2018-6952.patch \
+	CVE-2019-13636.patch \
+	CVE-2019-13638.patch \
+	CVE-2019-20633.patch)
 
 build() {
 	cd ${name}-${version}
 
+	patch -p1 -i $SRC/0001-Allow-input-files-to-be-missing-for-ed-style-patches.patch
+	patch -p1 -i $SRC/0002-Fix-arbitrary-command-execution-in-ed-style-patches-.patch
+	patch -p1 -i $SRC/CVE-2018-6951.patch
+	patch -p1 -i $SRC/CVE-2018-6952.patch
+	patch -p1 -i $SRC/CVE-2019-13636.patch
+	patch -p1 -i $SRC/CVE-2019-13638.patch
+	patch -p1 -i $SRC/CVE-2019-20633.patch
+
+	aclocal && autoheader && autoconf && automake --add-missing
+
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		gl_cv_func_gettimeofday_clobber=no \
+		gl_cv_func_tzset_clobber=no
 
 	make
 
