@@ -4,7 +4,7 @@
 
 name=sharutils
 version=4.15.2
-release=0
+release=1
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build(){
