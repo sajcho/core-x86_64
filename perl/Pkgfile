@@ -5,7 +5,7 @@
 
 name=perl
 version=5.34.0
-release=0
+release=1
 source=(http://www.cpan.org/src/5.0/${name}-${version}.tar.xz \
 	perl-5.34.0-Destroy-GDBM-NDBM-ODBM-SDBM-_File-objects-only-from-.patch \
 	perl-5.35.1-Fix-GDBM_File-to-compile-with-version-1.20-and-earli.patch \
