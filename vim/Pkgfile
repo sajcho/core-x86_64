@@ -4,8 +4,8 @@
 # Depends on:	ncurses acl
 
 name=vim
-version=8.2.3535
-release=0
+version=8.2.3577
+release=1
 source=(https://github.com/vim/vim/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
