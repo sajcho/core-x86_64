@@ -17,23 +17,15 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/sudo_plugin.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/sudo/
--rw-r--r--	root/root	usr/lib/sudo/audit_json.la
 -rw-r--r--	root/root	usr/lib/sudo/audit_json.so
--rw-r--r--	root/root	usr/lib/sudo/group_file.la
 -rw-r--r--	root/root	usr/lib/sudo/group_file.so
--rw-r--r--	root/root	usr/lib/sudo/libsudo_util.la
 lrwxrwxrwx	root/root	usr/lib/sudo/libsudo_util.so -> libsudo_util.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/sudo/libsudo_util.so.0 -> libsudo_util.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/sudo/libsudo_util.so.0.0.0
--rw-r--r--	root/root	usr/lib/sudo/sample_approval.la
 -rw-r--r--	root/root	usr/lib/sudo/sample_approval.so
--rw-r--r--	root/root	usr/lib/sudo/sudo_intercept.la
 -rw-r--r--	root/root	usr/lib/sudo/sudo_intercept.so
--rw-r--r--	root/root	usr/lib/sudo/sudo_noexec.la
 -rw-r--r--	root/root	usr/lib/sudo/sudo_noexec.so
--rw-r--r--	root/root	usr/lib/sudo/sudoers.la
 -rw-r--r--	root/root	usr/lib/sudo/sudoers.so
--rw-r--r--	root/root	usr/lib/sudo/system_group.la
 -rw-r--r--	root/root	usr/lib/sudo/system_group.so
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/sudo_logsrvd
