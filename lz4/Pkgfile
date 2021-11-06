@@ -4,7 +4,7 @@
 
 name=lz4
 version=1.9.3
-release=0
+release=1
 source=(https://github.com/${name}/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
@@ -13,4 +13,6 @@ build() {
 	make PREFIX=/usr
 
 	make PREFIX=/usr DESTDIR=$PKG install
+
+	rm $PKG/usr/lib/liblz4.a
 }
