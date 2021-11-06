@@ -5,7 +5,7 @@
 
 name=man-db
 version=2.9.4
-release=0
+release=1
 source=(http://download.savannah.gnu.org/releases/${name}/${name}-${version}.tar.xz \
 	mandb.cron)
 
@@ -16,6 +16,7 @@ build() {
 		--prefix=/usr \
 		--sysconfdir=/etc \
 		--libexecdir=/usr/lib/${name} \
+		--disable-static \
 		--disable-setuid \
 		--disable-cache-owner \
 		--disable-nls \
@@ -31,4 +32,6 @@ build() {
 	install -D -o root -g root -m 0755 $SRC/mandb.cron $PKG/etc/cron/daily/mandb
 
 	rm -r $PKG/usr/share/doc
+
+	find $PKG -type f -name '*.la' -delete
 }
