@@ -4,7 +4,7 @@
 
 name=openssl
 version=1.1.1l
-release=0
+release=1
 source=(https://www.openssl.org/source/${name}-${version}.tar.gz \
 	mksslcert.sh)
 
@@ -27,5 +27,6 @@ build() {
 
 	install -D -m 755 $SRC/mksslcert.sh $PKG/usr/bin/mksslcert
 
-	find $PKG -name "*fips*" -delete
+	find $PKG -name '*fips*' \
+		-or -name '*.a' -delete
 }
