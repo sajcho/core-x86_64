@@ -5,17 +5,19 @@
 
 name=zstd
 version=1.5.0
-release=0
+release=1
 source=(https://github.com/facebook/${name}/archive/v${version}/${name}-v${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
 
-	make
+	make V=1
 
 	make -C contrib/pzstd
 
 	make PREFIX=/usr DESTDIR=$PKG install
 
 	install -D -m 0755 contrib/pzstd/pzstd -t $PKG/usr/bin
+
+	rm $PKG/usr/lib/libzstd.a
 }
