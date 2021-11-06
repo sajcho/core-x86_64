@@ -5,7 +5,7 @@
 
 name=rsync
 version=3.2.3
-release=0
+release=1
 source=(https://download.samba.org/pub/rsync/src/${name}-${version}.tar.gz \
 	rsyncd.conf rsync.driver rsyncd.run)
 
@@ -22,7 +22,7 @@ build() {
 		--disable-xxhash \
 		--disable-lz4
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
