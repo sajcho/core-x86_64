@@ -29,8 +29,8 @@
 #
 # SAUX x86_64 build packages use CFLAGS and CXXFLAGS
 #
-# CFLAGS="-O2 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection -D_FORTIFY_SOURCE=2 -Wno-psabi"
-# CXXFLAGS="-O2 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection -D_FORTIFY_SOURCE=2 -Wno-psabi"
+# CFLAGS="-O2 -m64 -mtune=generic -flto=auto -ffat-lto-objects -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection -D_FORTIFY_SOURCE=2 -Wno-psabi"
+# CXXFLAGS="-O2 -m64 -mtune=generic -flto=auto -ffat-lto-objects -fasynchronous-unwind-tables -fstack-protector-strong -fstack-clash-protection -fcf-protection -D_FORTIFY_SOURCE=2 -Wno-psabi"
 #
 # =================================================================
 #

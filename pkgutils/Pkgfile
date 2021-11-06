@@ -6,7 +6,7 @@
 name=pkgutils
 version=5.40.7
 _commit=9ca0da65121451447cdd284f98027dca2e16fb2e
-release=3
+release=4
 source=(zstd-multiarch.patch pkgmk.conf-saux)
 
 build() {
@@ -23,6 +23,8 @@ build() {
 	fi
 
 	patch -p1 -i $SRC/zstd-multiarch.patch
+
+	sed -e 's|--static||' -e 's|-static||' -i Makefile
 
 	make DESTDIR=$PKG install
 
