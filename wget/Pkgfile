@@ -5,7 +5,7 @@
 
 name=wget
 version=1.21.2
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.lz \
 	wgetrc)
 
@@ -21,7 +21,7 @@ build() {
 		--with-ssl=openssl \
 		--without-libpsl
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
