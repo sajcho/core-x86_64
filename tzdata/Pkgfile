@@ -4,7 +4,7 @@
 
 name=tzdata
 version=2021e
-release=0
+release=1
 source=(https://data.iana.org/time-zones/releases/tzdb-${version}.tar.lz)
 
 build() {
@@ -18,6 +18,8 @@ build() {
 	rm -r $PKG/usr/share/man/man{5,8}
 
 	# conflict with glibc
-	rm $PKG/etc/localtime
-	rmdir $PKG/etc
+	rm -r $PKG/etc
+
+	find $PKG -type f -name '*.a' -delete
+
 }
