@@ -5,7 +5,7 @@
 
 name=readline
 version=8.1.1
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version:0:3}.tar.gz \
 	$name-$version.patch.gz \
 	inputrc)
@@ -16,7 +16,8 @@ build() {
 	gunzip -c $SRC/$name-$version.patch.gz | patch -p0
 
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		--disable-static
 
 	make -j1 SHLIB_LIBS=-lncurses
 
