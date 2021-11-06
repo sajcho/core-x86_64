@@ -4,7 +4,7 @@
 
 name=nasm
 version=2.15.05
-release=0
+release=1
 source=(http://www.nasm.us/pub/nasm/releasebuilds/${version}/${name}-${version}.tar.xz)
 
 build() {
