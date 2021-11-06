@@ -5,18 +5,20 @@
 
 name=mpdecimal
 version=2.5.1
-release=0
+release=1
 source=(http://www.bytereef.org/software/${name}/releases/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
 
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		--disable-static
 
 	make
 
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share
+	find $PKG -type f -name '*.a' -delete
 }
