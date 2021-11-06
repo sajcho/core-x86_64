@@ -4,7 +4,7 @@
 
 name=time
 version=1.9
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
 build() {
