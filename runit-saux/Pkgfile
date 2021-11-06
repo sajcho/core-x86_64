@@ -5,7 +5,7 @@
 
 name=runit-saux
 version=1.0.0b1
-release=0
+release=1
 source=(https://github.com/sajcho/${name}/archive/refs/tags/v${version}.tar.gz \
 	https://raw.githubusercontent.com/bahamas10/vsv/master/vsv)
 
@@ -25,6 +25,10 @@ build() {
 
 	# vsv-void-service-manager
 	install -D -m 0755 $SRC/vsv $PKG/usr/sbin
+
+	# system is x86_64
+	[ $CARCH = "x86_64" ] &&
+	sed -i 's|Aarch64|x86_64|' $PKG/etc/runit/1
 
 	[ $CARCH = "x86_64" ] &&
 		rm $PKG/etc/runit/core-services/12-cpufreq.sh
