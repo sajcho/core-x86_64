@@ -4,7 +4,7 @@
 
 name=man-pages
 version=5.13
-release=0
+release=1
 source=(http://www.kernel.org/pub/linux/docs/${name}/${name}-${version}.tar.xz \
 	http://www.kernel.org/pub/linux/docs/${name}/${name}-posix/${name}-posix-2013-a.tar.xz)
 
