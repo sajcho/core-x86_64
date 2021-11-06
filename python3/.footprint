@@ -910,7 +910,6 @@ drwxr-xr-x	root/root	usr/lib/python3.10/config-3.10-x86_64-linux-gnu/
 -rw-r--r--	root/root	usr/lib/python3.10/config-3.10-x86_64-linux-gnu/config.c
 -rw-r--r--	root/root	usr/lib/python3.10/config-3.10-x86_64-linux-gnu/config.c.in
 -rwxr-xr-x	root/root	usr/lib/python3.10/config-3.10-x86_64-linux-gnu/install-sh
--rw-r--r--	root/root	usr/lib/python3.10/config-3.10-x86_64-linux-gnu/libpython3.10.a
 -rwxr-xr-x	root/root	usr/lib/python3.10/config-3.10-x86_64-linux-gnu/makesetup
 -rwxr-xr-x	root/root	usr/lib/python3.10/config-3.10-x86_64-linux-gnu/python-config.py
 -rw-r--r--	root/root	usr/lib/python3.10/config-3.10-x86_64-linux-gnu/python.o

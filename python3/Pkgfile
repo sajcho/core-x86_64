@@ -5,7 +5,7 @@
 
 name=python3
 version=3.10.0
-release=0
+release=1
 source=(https://www.python.org/ftp/python/${version}/Python-${version}.tar.xz)
 
 build() {
@@ -29,7 +29,7 @@ build() {
 		--with-system-expat \
 		--with-system-ffi \
 		--with-system-libmpdec \
-		--without-lto \
+		--with-lto \
 		--without-ensurepip
 
 	make
@@ -55,4 +55,6 @@ build() {
 	rm $PKG/usr/lib/python${version%.*}/idlelib/{README,TODO,CREDITS,HISTORY}.txt
 	rm $PKG/usr/lib/python${version%.*}/idlelib/Icons/README.txt
 	rm $PKG/usr/lib/python${version%.*}/site-packages/README.txt
+
+	rm $PKG/usr/lib/python3.10/config-3.10-x86_64-linux-gnu/libpython3.10.a
 }
