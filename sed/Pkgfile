@@ -5,7 +5,7 @@
 
 name=sed
 version=4.8
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -16,7 +16,7 @@ build() {
 		--exec-prefix=/ \
 		--disable-nls
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
