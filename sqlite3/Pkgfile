@@ -5,7 +5,7 @@
 
 name=sqlite3
 version=3.36.0
-release=0
+release=1
 _version=$(printf "%i%.2i%.2i%.2i" ${version//./ })
 
 source=(http://www.sqlite.org/2021/sqlite-autoconf-${_version}.tar.gz)
@@ -18,9 +18,12 @@ build() {
 		-DSQLITE_ENABLE_FTS3=1  $CFLAGS" \
 		./configure \
 			--prefix=/usr \
-			--enable-readline
+			--enable-readline \
+			--disable-static
 
 	make
 
 	make DESTDIR=$PKG install
+
+	rm $PKG/usr/lib/libsqlite3.la
 }
