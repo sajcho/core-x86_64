@@ -5,7 +5,7 @@
 
 name=pkgconf
 version=1.8.0
-release=0
+release=1
 source=(https://distfiles.dereferenced.org/${name}/${name}-${version}.tar.xz \
 	x86_64-unknown-linux-gnu.personality)
 
@@ -20,7 +20,7 @@ build() {
 		--with-system-includedir=/usr/include \
 		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
@@ -32,4 +32,6 @@ build() {
 	ln -s pkgconf.1 $PKG/usr/share/man/man1/pkg-config.1
 
 	rm -r $PKG/usr/share/doc
+
+	find $PKG -type f -name '*.la' -delete
 }
