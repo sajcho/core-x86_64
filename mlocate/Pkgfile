@@ -4,7 +4,7 @@
 
 name=mlocate
 version=0.26
-release=0
+release=1
 source=(https://releases.pagure.org/${name}/${name}-${version}.tar.xz \
 	mlocate updatedb.conf)
 
