@@ -4,7 +4,7 @@
 
 name=sysfsutils
 version=2.1.1
-release=0
+release=1
 source=(https://github.com/linux-ras/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
@@ -14,9 +14,12 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--mandir=/usr/share/man
+		--mandir=/usr/share/man \
+		--disable-static
 
 	make
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
