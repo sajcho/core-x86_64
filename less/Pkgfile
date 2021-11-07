@@ -1,11 +1,11 @@
 # Description:	A terminal based program for viewing text files
 # URL:		http://www.greenwoodsoftware.com/less/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	ncurses libpcre
+# Depends on:	ncurses libpcre2
 
 name=less
 version=590
-release=1
+release=2
 source=(http://www.greenwoodsoftware.com/less/${name}-${version}.tar.gz \
 	filter)
 
@@ -14,7 +14,8 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--with-regex=pcre
+		--with-regex=pcre2 \
+		--with-editor=vim
 
 	make
 
