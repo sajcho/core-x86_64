@@ -43,6 +43,7 @@ d:httpup
 d:dash
 d:libidn2
 d:usbutils
+d:libpcre2
 d:man-db
 d:cpio
 d:inetutils
@@ -332,6 +333,9 @@ f:3607db42d58738a22a1cb7ae9f6d7182:usbutils/update-usbids.sh
 f:00f9c197cf91ea7ae9084c88920b342e:usbutils/.md5sum
 f:d41c9d792a60766a99736354cb30ef06:usbutils/.footprint
 f:ac2abb7caeda7395b74bbec0c5ca5943:usbutils/Pkgfile
+f:ddaa0c88d6e8e409abf988f3a9769061:libpcre2/.md5sum
+f:bc31799fba2c7eb35cbdf2ef6f223f90:libpcre2/.footprint
+f:9ba0e74adf6899cb7f7e740054a950d1:libpcre2/Pkgfile
 f:b7b3c5643b5bfed86a4148fd0c313280:man-db/.md5sum
 f:43dcb76783c4b2f0578b43a43124f9e9:man-db/mandb.cron
 f:cb0f743764b46d8eac5a64417c1af23a:man-db/.footprint
@@ -376,7 +380,7 @@ f:96885fa01fbda53414a32a75c8005b0f:util-linux/Pkgfile
 f:162edc21b4fb28a03a936e96ed292142:wget/.md5sum
 f:fa717c9970a09e8ee1775a93e51fb694:wget/wgetrc
 f:6a4c0d944be581239a6c4e266003a131:wget/.footprint
-f:bfb4da6c44864bf1b27dbddd22e59e96:wget/Pkgfile
+f:9109d23a8a9a4a21d34e731e582252c8:wget/Pkgfile
 f:dd6f3270031816b73205c4173085833b:attr/.md5sum
 f:f761f2b0adaf2b04efa808637471edbb:attr/.footprint
 f:52f2f61aea4a489b3980e7e5e771698c:attr/Pkgfile
@@ -476,7 +480,7 @@ f:726dcdbf0a71ec9149c7d41d820dda2b:gperf/Pkgfile
 f:8f8b5e780b374f872ce600f7c5196123:less/.md5sum
 f:341701b8457455cc7be81628611cfd54:less/.footprint
 f:941ac82e8f62127cf1ec571e43769b3d:less/filter
-f:a196c0ed8ff7b1da366a368e4ee72ec7:less/Pkgfile
+f:b02dd22d2aca769403aadd7b23453092:less/Pkgfile
 f:49c261d300c50fc98d0c5bc8df3c709a:lz4/.md5sum
 f:2458979da4d5a27546ce1d4120809a75:lz4/.footprint
 f:af86f70061780787fa543b6c9b68577b:lz4/Pkgfile
