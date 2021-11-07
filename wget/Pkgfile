@@ -1,11 +1,11 @@
 # Description:	A network utility for downloading content from the Web
 # URL:		http://www.gnu.org/software/wget/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	openssl
+# Depends on:	openssl libpcre2
 
 name=wget
 version=1.21.2
-release=1
+release=2
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.lz \
 	wgetrc)
 
@@ -15,9 +15,10 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--sysconfdir=/etc \
+		--enable-pcre2 \
 		--disable-debug \
 		--disable-nls \
-		--disable-pcre2 \
+		--disable-pcre \
 		--with-ssl=openssl \
 		--without-libpsl
 
