@@ -1,0 +1,74 @@
+# Description:	LLVM toolchain - llvm,clang,clang-tools-extra,compiler-rt,lld,lldb,polly
+# URL:		http://llvm.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	cmake libedit libxml2 samurai python3-six swig
+
+name=llvm-toolchain
+_realname=llvm-project
+version=13.0.0
+release=0
+source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
+
+build() {
+	cd ${_realname}-${version}.src
+
+	mkdir build
+	cd build
+
+	export CC="gcc"
+	export CXX="g++"
+
+	cmake .. -G Ninja \
+		-DCMAKE_BUILD_TYPE="Release" \
+		-DCMAKE_INSTALL_PREFIX="/usr " \
+		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+		-DLLDB_USE_SYSTEM_SIX=ON \
+		-DLLVM_TARGETS_TO_BUILD="host;X86;AMDGPU;BPF;NVPTX" \
+		-DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra;compiler-rt;lld;lldb;polly" \
+		-DLLVM_OPTIMIZED_TABLEGEN=ON \
+		-DLLVM_BUILD_LLVM_DYLIB=ON \
+		-DLLVM_LINK_LLVM_DYLIB=ON \
+		-DLLVM_INSTALL_UTILS=ON \
+		-DLLVM_ENABLE_FFI=ON \
+		-DLLVM_ENABLE_ZLIB=ON \
+		-DLLVM_ENABLE_PIC=ON \
+		-DLLVM_ENABLE_RTTI=ON \
+		-DLLVM_ENABLE_LLD=OFF \
+		-DLLVM_INCLUDE_TESTS=OFF \
+		-DLLVM_ENABLE_LIBCXX=OFF \
+		-DLLVM_ENABLE_SPHINX=OFF \
+		-DLLVM_ENABLE_OCAMLDOC=OFF \
+		-DLLVM_INCLUDE_EXAMPLES=OFF \
+		-DLLVM_PARALLEL_COMPILE_JOBS="${JOBS:-1}" \
+		-DCLANG_VENDOR="SAUX x86_64" \
+		-DLLD_VENDOR="SAUX x86_64" \
+		-Wno-dev \
+		../llvm
+
+	ninja
+
+	DESTDIR=$PKG ninja install
+
+	install -d $PKG/usr/lib/bfd-plugins
+	ln -s ../libLTO.so $PKG/usr/lib/bfd-plugins/
+
+	/usr/bin/python3 $SRC/${_realname}-${version}.src/llvm/utils/lit/setup.py build
+	/usr/bin/python3 $SRC/${_realname}-${version}.src/llvm/utils/lit/setup.py install \
+		--prefix=/usr \
+		--optimize=1 \
+		--skip-build \
+		--root=$PKG
+
+	/usr/bin/python3 -m compileall -d $SRC/${_realname}-${version}.src/llvm/utils/lit \
+		-x run-find-all-symbols.py $PKG
+	/usr/bin/python3 -O -m compileall -d $SRC/${_realname}-${version}.src.src/llvm/utils/lit \
+		-x run-find-all-symbols.py $PKG
+	/usr/bin/python3 -OO -m compileall -d $SRC/${_realname}-${version}.src/llvm/utils/lit \
+		-x run-find-all-symbols.py $PKG
+
+	mv $PKG/usr/libexec/{analyze-*,*-analyzer,intercept-*} $PKG/usr/lib/clang
+	sed -i 's|libexec|lib/clang|' $PKG/usr/bin/scan-build
+
+	rmdir $PKG/usr/libexec
+}
