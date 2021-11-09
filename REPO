@@ -37,6 +37,7 @@ d:cmake
 d:check
 d:mpc
 d:dhcpcd
+d:llvm-toolchain
 d:readline
 d:db
 d:httpup
@@ -310,6 +311,10 @@ f:f8eff40bab4dc0938db5986dc3383a9a:dhcpcd/dhcpcd.run
 f:d43a01849c81b04019898ea2e0975abb:dhcpcd/.footprint
 f:bb812c284473d69c4ad4a55c80d1f3f1:dhcpcd/dhcpcd-sv.conf
 f:f5bd729ae12f432f58a684059c6c2898:dhcpcd/Pkgfile
+f:745c40ebdc96d10d693c62a067666e94:llvm-toolchain/.md5sum
+f:f48eff2fe0a5367505351bdbd1ac5abb:llvm-toolchain/.footprint
+f:c6dc061490b8dfae84bff10281e4027b:llvm-toolchain/llvm-do-not-install-static-libraries.patch
+f:4f46f007ea1972d62e6e3ba714dced2e:llvm-toolchain/Pkgfile
 f:7e89abea1d3f3ba66dac39c64147eaf1:readline/.md5sum
 f:c272ae93f523862563a9d75800b5ff94:readline/.footprint
 f:a39035370280bee80ecf227228ed2bc4:readline/readline-8.1.1.patch.gz
