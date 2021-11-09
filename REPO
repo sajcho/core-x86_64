@@ -152,9 +152,9 @@ f:e9e4218bd3c3d6eea8eb305dd8a6a324:tar/tar-1.28-loneZeroWarning.patch
 f:879d405f652b23dba326818f841f4e21:tar/tar-1.29-wildcards.patch
 f:830b4abb9a96b7d506da1f8ab1c5e694:tar/Pkgfile
 f:07d95c75b86d420a8f1819f46709dc12:python3-setuptools/README
-f:9e7ec5b885fd805e77ad62f00ac82efc:python3-setuptools/.md5sum
-f:6466b62978d1bf31fcc09708728eec58:python3-setuptools/.footprint
-f:3e653e9955f290cbd92a4f01d008cda5:python3-setuptools/Pkgfile
+f:47e7f29cc5e6d917f61823c6c782d4ee:python3-setuptools/.md5sum
+f:741610957f2f00098d8572ecf501cc10:python3-setuptools/.footprint
+f:599189e6b23c3bfed95edc457e666906:python3-setuptools/Pkgfile
 f:e45870b3b9a063d5c65238d15e435139:libnsl/.md5sum
 f:68d29a7a4fc30ea3ba47a4caa45b6a5e:libnsl/.footprint
 f:9278e95abdee32ea9a3a1fe6ebddccb6:libnsl/Pkgfile
