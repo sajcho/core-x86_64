@@ -5,9 +5,9 @@
 
 name=libpcre2
 _realname=pcre2
-version=10.37
+version=10.39
 release=1
-source=(https://ftp.pcre.org/pub/pcre/${_realname}-${version}.tar.gz)
+source=(https://github.com/PhilipHazel/${_realname}/releases/download/${_realname}-${version}/${_realname}-${version}.tar.gz)
 
 build() {
 	cd ${_realname}-${version}
