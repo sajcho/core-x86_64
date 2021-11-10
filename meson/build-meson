@@ -3,7 +3,7 @@
 # Adapted for use Saux Linux: sajcho, saux dot aarch64 at gmail dot com
 
 # TODO: enable LTO once our GCC works with LTO by default
-exec meson \
+PYTHONUNBUFFERED=1 meson \
 	--prefix=/usr \
 	--libdir=/usr/lib \
 	--libexecdir=/usr/lib \
@@ -19,6 +19,9 @@ exec meson \
 	--auto-features=auto \
 	--wrap-mode=nodownload \
 	-Db_lto=true \
+	-Db_lto_threads=$(nproc) \
+	-Db_lto_model=default \
+	-Db_ndebug=false \
 	-Db_staticpic=true \
 	-Db_pie=true \
 	"$@"
