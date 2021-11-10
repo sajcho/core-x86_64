@@ -34,6 +34,7 @@ drwxr-xr-x	root/root	usr/share/awk/
 -rw-r--r--	root/root	usr/share/awk/have_mpfr.awk
 -rw-r--r--	root/root	usr/share/awk/inplace.awk
 -rw-r--r--	root/root	usr/share/awk/intdiv0.awk
+-rw-r--r--	root/root	usr/share/awk/isnumeric.awk
 -rw-r--r--	root/root	usr/share/awk/join.awk
 -rw-r--r--	root/root	usr/share/awk/libintl.awk
 -rw-r--r--	root/root	usr/share/awk/noassign.awk
