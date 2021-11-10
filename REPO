@@ -285,10 +285,10 @@ f:51fb306799d30462b495c19a193fc078:nasm/.md5sum
 f:965820d80ba705ed7dd6b0ad8246ea5c:nasm/.footprint
 f:e09f2dbe5f25ebbe38114c58522c9543:nasm/Pkgfile
 f:2d92fe60b68c2afd9b99f5f7116d9789:bash/bash-5.1.8.patch.gz
-f:9256c6fcba01768ae245b4e54249efaf:bash/.md5sum
+f:356c96d1a9bf00652d0204415a02d3a1:bash/.md5sum
 f:7d2098635b10ea3b772f70ec0555b0ca:bash/profile
 f:32248d3becedd8e01816be2c3a698ecf:bash/.footprint
-f:a1acd9bfe157f36705c16640f558db38:bash/Pkgfile
+f:9a1afcb82d49d9498aad16191932f85c:bash/Pkgfile
 f:6d50047aef43e3febf19c6a795892f3a:perl/perl-5.35.1-Fix-definition-of-ITEM_NOT_FOUND-for-pre-1.13-versio.patch
 f:699a8d376ed0b125cbcd77de8cc3ddcb:perl/.md5sum
 f:35f33ba764b8bf420775caf26db9d9b8:perl/perl-build.log
