@@ -1,7 +1,7 @@
 # Description:	Userspace device management daemon
 # URL:		https://wiki.gentoo.org/wiki/Project:Eudev
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	kmod tree
+# Depends on:	kmod
 
 name=eudev
 version=3.2.10
