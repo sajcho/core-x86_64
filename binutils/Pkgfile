@@ -5,7 +5,7 @@
 
 name=binutils
 version=2.37
-release=1
+release=2
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
 	binutils-2.37-upstream_fix-1.patch)
 
@@ -49,14 +49,6 @@ build() {
 
 	#  Optional
 	#make -k check < /dev/null || :
-	#cat {gas/testsuite/gas,ld/ld,binutils/binutils}.sum
-	#for file in {gas/testsuite/gas,ld/ld,binutils/binutils}.{sum,log}
-	#do
-	#	ln $file binutils-$CHOST-$(basename $file) || :
-	#done
-	#tar cJf ${name}-${version}-${release}-result-test.tar.xz \
-	#	binutils-$CHOST-*.{sum,log}
-	#cp ${name}-${version}-${release}-result-test.tar.xz $PKGMK_PACKAGE_DIR
 
 	make tooldir=/usr DESTDIR=$PKG install
 
