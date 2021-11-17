@@ -1,11 +1,11 @@
 # Description:	Python interpreter, version 3.
 # URL:		https://www.python.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	bzip2 expat gdbm libffi libtirpc mpdecimal sqlite3 xz
+# Depends on:	bzip2 expat gdbm libffi libtirpc mpdecimal openssl3 sqlite3 xz
 
 name=python3
 version=3.10.0
-release=1
+release=2
 source=(https://www.python.org/ftp/python/${version}/Python-${version}.tar.xz)
 
 build() {
@@ -24,7 +24,9 @@ build() {
 		--prefix=/usr \
 		--enable-shared \
 		--enable-ipv6 \
+		--enable-optimizations \
 		--enable-loadable-sqlite-extensions \
+		--with-ssl-default-suites=openssl \
 		--with-computed-gotos \
 		--with-system-expat \
 		--with-system-ffi \
@@ -32,7 +34,7 @@ build() {
 		--with-lto \
 		--without-ensurepip
 
-	make
+	make V=1
 
 	make -j1 DESTDIR=$PKG altinstall maninstall
 
