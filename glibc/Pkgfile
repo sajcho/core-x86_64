@@ -5,15 +5,15 @@
 
 name=glibc
 version=2.34
-release=2
+release=3
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.tar.xz \
+	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.2.tar.xz \
 	glibc-c-utf8-locale.patch \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
 	# install kernel headers
-	cd linux-5.15
+	cd linux-5.15.2
 
 	make mrproper
 	make INSTALL_HDR_PATH=$PKG/usr headers_install
@@ -26,6 +26,10 @@ build() {
 
 	export CFLAGS="$(echo $CFLAGS | sed -e 's| -flto=auto -ffat-lto-objects||')"
 	export CXXFLAGS="$(echo $CXXFLAGS | sed -e 's| -flto=auto -ffat-lto-objects||')"
+
+	# LFS -fix a security problem identified upstream:
+	sed -e '/NOTIFY_REMOVED)/s/)/ \&\& data.attr != NULL)/' \
+		-i sysdeps/unix/sysv/linux/mq_notify.c
 
 	mkdir build
 	cd build
@@ -51,12 +55,10 @@ build() {
 		--enable-cet \
 		libc_cv_slibdir=/lib
 
-	make
+	make V=1
 
 	# Optional
-	#make -k check < /dev/null || :
-	#/opt/bin/glibc-test-summary-result.sh tests.sum \
-	#$PKGMK_PACKAGE_DIR/${name}-${version}-${release}-linux-5.15-test-summary-result.txt
+	make -k check < /dev/null || :
 
 	make install_root=$PKG install
 
