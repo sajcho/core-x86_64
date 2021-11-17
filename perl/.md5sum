@@ -1,5 +1,1 @@
-0393d6eb64db80f7d02de0f27709370e  perl-5.34.0-Destroy-GDBM-NDBM-ODBM-SDBM-_File-objects-only-from-.patch
 df7ecb0653440b26dc951ad9dbfab517  perl-5.34.0.tar.xz
-4540b50fafcd99c1623514d7c0fec06e  perl-5.35.1-Fix-GDBM_File-to-compile-with-version-1.20-and-earli.patch
-6d50047aef43e3febf19c6a795892f3a  perl-5.35.1-Fix-definition-of-ITEM_NOT_FOUND-for-pre-1.13-versio.patch
-67c5293de1bf8f73594b461e6109a1fb  perl-5.35.1-Raise-version-number-in-ext-GDBM_File-GDBM_File.pm.patch

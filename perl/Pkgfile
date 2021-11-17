@@ -5,35 +5,13 @@
 
 name=perl
 version=5.34.0
-release=1
-source=(http://www.cpan.org/src/5.0/${name}-${version}.tar.xz \
-	perl-5.34.0-Destroy-GDBM-NDBM-ODBM-SDBM-_File-objects-only-from-.patch \
-	perl-5.35.1-Fix-GDBM_File-to-compile-with-version-1.20-and-earli.patch \
-	perl-5.35.1-Fix-definition-of-ITEM_NOT_FOUND-for-pre-1.13-versio.patch \
-	perl-5.35.1-Raise-version-number-in-ext-GDBM_File-GDBM_File.pm.patch)
+release=2
+source=(http://www.cpan.org/src/5.0/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
-	# from fedora
-	patch -p1 -i $SRC/perl-5.34.0-Destroy-GDBM-NDBM-ODBM-SDBM-_File-objects-only-from-.patch
-	patch -p1 -i $SRC/perl-5.35.1-Fix-GDBM_File-to-compile-with-version-1.20-and-earli.patch
-	patch -p1 -i $SRC/perl-5.35.1-Fix-definition-of-ITEM_NOT_FOUND-for-pre-1.13-versio.patch
-	patch -p1 -i $SRC/perl-5.35.1-Raise-version-number-in-ext-GDBM_File-GDBM_File.pm.patch
-
-	export BUILD_ZLIB=0
-	export BUILD_BZIP2=0
-	export BZIP2_LIB=/usr/lib
-	export BZIP2_INCLUDE=/usr/include
-
-	# Ensure that we never accidentally bundle zlib or bzip2
-	rm -r cpan/Compress-Raw-Zlib/zlib-src
-	rm -r cpan/Compress-Raw-Bzip2/bzip2-src
-	sed -i '/\(bzip2\|zlib\)-src/d' MANIFEST
-
-	sed -e 's/less -R/less/g' \
-		-e 's/libswanted="\(.*\) nsl\(.*\)"/libswanted="\1\2"/g' \
-		-i ./Configure
+	export LDFLAGS="-Wl,-z,relro -Wl,--as-needed  -Wl,-z,now"
 
 	./Configure -des \
 		-Dprefix=/usr \
@@ -47,15 +25,16 @@ build() {
 		-Di_db \
 		-Duseshrplib \
 		-Dusethreads \
-		-Dpager='/usr/bin/less -isr' \
-		-Dmyhostname=localhost \
-		-Dperladmin=root@localhost \
-		-Doptimize="$CFLAGS" \
-		-Dcccdlflags='-fPIC' \
-		-Dccdlflags='-rdynamic' \
-		-Dcf_by='SAUX x86_64'
+		-Duselargefiles \
+		-Doptimize=none \
+		-Dccflags="$CFLAGS" \
+		-Dldflags="$LDFLAGS" \
+		-Dccdlflags="-Wl,--enable-new-dtags $LDFLAGS" \
+		-Dlddlflags="-shared $LDFLAGS" \
+		-Dpager="/usr/bin/less -isr" \
+		-Dcf_by="SAUX Aarch64"
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
