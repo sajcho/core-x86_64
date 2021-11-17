@@ -1,0 +1,48 @@
+# Description:	Cryptography and SSL/TLS Toolkit - v3
+# URL:		http://www.openssl.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	perl
+
+name=openssl3
+_realname=openssl
+version=3.0.0
+release=1
+source=(https://www.openssl.org/source/${_realname}-${version}.tar.gz \
+	mksslcert.sh)
+
+build() {
+	cd ${_realname}-${version}
+
+	perl ./Configure linux-x86_64 \
+		--prefix=/usr \
+		--libdir=lib \
+		--openssldir=/etc/ssl \
+		shared \
+		enable-rfc3779 \
+		enable-cms \
+		enable-md2 \
+		enable-ktls \
+		enable-ec_nistp_64_gcc_128 \
+		no-async \
+		no-comp \
+		no-ec2m \
+		no-idea \
+		no-mdc2 \
+		no-rc5 \
+		no-seed \
+		no-sm2 \
+		no-sm4 \
+		no-ssl3 \
+		no-weak-ssl-ciphers \
+		no-zlib
+
+	make V=1 depend
+
+	make V=1
+
+	make MANSUFFIX=ssl DESTDIR=$PKG install_sw install_ssldirs install_man_docs
+
+	install -D -m 755 $SRC/mksslcert.sh $PKG/usr/bin/mksslcert
+
+	find $PKG -type f -name '*.la' -delete
+}
