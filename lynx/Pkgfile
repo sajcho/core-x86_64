@@ -1,11 +1,11 @@
 # Description:	Text-based web browser.
 # URL:		http://lynx.isc.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	openssl zlib
+# Depends on:	openssl3 zlib
 
 name=lynx
 version=2.9.0dev.10
-release=1
+release=2
 source=(https://invisible-mirror.net/archives/${name}/tarballs/${name}${version}.tar.gz)
 
 build() {
@@ -45,7 +45,7 @@ build() {
 		--with-ssl \
 		--without-included-gettext
 
-	make
+	make V=1
 
 	make -j1 DESTDIR=$PKG install
 }
