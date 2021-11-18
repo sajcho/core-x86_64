@@ -1,11 +1,11 @@
 # Description:	A network utility for downloading content from the Web
 # URL:		http://www.gnu.org/software/wget/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	openssl libpcre2
+# Depends on:	openssl3 libpcre2
 
 name=wget
 version=1.21.2
-release=2
+release=3
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.lz \
 	wgetrc)
 
