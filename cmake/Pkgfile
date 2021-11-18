@@ -4,7 +4,7 @@
 # Depends on:	curl expat libarchive libuv
 
 name=cmake
-version=3.21.3
+version=3.21.4
 release=1
 source=(https://cmake.org/files/v3.21/${name}-${version}.tar.gz)
 
@@ -22,11 +22,7 @@ build() {
 		--no-system-librhash \
 		--parallel=${JOBS:-1}
 
-	make
-
-	# Does not work with fakeroot.
-	# As root works right.
-	#./bin/ctest --parallel=${JOBS:-1}
+	make -O ${JOBS:+-j ${JOBS}} V=1 VERBOSE=1
 
 	make DESTDIR=$PKG install
 
