@@ -4,7 +4,7 @@
 # Depends on:	ncurses acl
 
 name=vim
-version=8.2.3577
+version=8.2.3614
 release=1
 source=(https://github.com/vim/vim/archive/v${version}/${name}-${version}.tar.gz)
 
@@ -24,7 +24,7 @@ build() {
 		--disable-canberra \
 		--disable-nls
 
-	make VIMRTDIR=
+	make V=1 VIMRTDIR=
 
 	make -j1 VIMRTDIR= DESTDIR=$PKG install
 
@@ -55,7 +55,7 @@ build() {
 		--disable-nls \
 		--with-features=tiny
 
-	make VIMRTDIR=
+	make V=1 VIMRTDIR=
 
 	make -j1 VIMRTDIR= DESTDIR=$PKG installvimbin
 }
