@@ -1,10 +1,10 @@
 # Description:	A tool for transfering files with URL syntax
 # URL:		http://curl.haxx.se
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	openssl zstd
+# Depends on:	openssl3 zstd
 
 name=curl
-version=7.79.1
+version=7.80.0
 release=1
 source=(https://curl.haxx.se/download/${name}-${version}.tar.xz)
 
@@ -33,7 +33,7 @@ build() {
 		--without-brotli \
 		--without-nghttp2
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
