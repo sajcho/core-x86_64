@@ -128,7 +128,6 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git-range-diff
 -rwxr-xr-x	root/root	usr/lib/git-core/git-read-tree
 -rwxr-xr-x	root/root	usr/lib/git-core/git-rebase
--rw-r--r--	root/root	usr/lib/git-core/git-rebase--preserve-merges
 -rwxr-xr-x	root/root	usr/lib/git-core/git-receive-pack
 -rwxr-xr-x	root/root	usr/lib/git-core/git-reflog
 -rwxr-xr-x	root/root	usr/lib/git-core/git-remote
