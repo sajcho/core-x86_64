@@ -1,11 +1,11 @@
 # Description:	Bind tools
 # URL:		http://www.isc.org/software/bind
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	openssl zlib
+# Depends on:	openssl3 zlib
 
 name=bindutils
 version=9.16.22
-release=1
+release=2
 source=(https://ftp.isc.org/isc/bind9/${version}/bind-${version}.tar.xz)
 
 build() {
@@ -20,11 +20,11 @@ build() {
 		--with-gssapi=no \
 		--with-python=no
 
-	make -C lib
+	make V=1 -C lib
 
-	make -C bin/dig
+	make V=1 -C bin/dig
 
-	make -C doc/man
+	make V=1 -C doc/man
 
 	install -D -m 0755 bin/dig/host $PKG/usr/bin/host
 	install -D -m 0644 doc/man/host.1 $PKG/usr/share/man/man1/host.1
