@@ -1,11 +1,11 @@
 # Description:	Basic networking utilities
 # URL:		https://github.com/iputils/iputils
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	libcap openssl meson
+# Depends on:	libcap openssl3 meson
 
 name=iputils
 version=20210722
-release=1
+release=2
 source=(https://github.com/iputils/iputils/archive/${version}/${name}-${version}.tar.gz)
 
 build() {
@@ -21,7 +21,7 @@ build() {
 		-DUSE_GETTEXT=false \
 		. build
 
-	meson compile ${JOBS:+-j ${JOBS}} -C build
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
 
 	local files
 	cd $SRC/${name}-${version}/build
