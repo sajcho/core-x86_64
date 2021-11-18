@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=ncurses
-version=6.2
+version=6.3
 release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
@@ -19,7 +19,7 @@ build() {
 		--with-pkg-config-libdir=/usr/lib/pkgconfig \
 		--enable-widec
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
