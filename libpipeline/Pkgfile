@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=libpipeline
-version=1.5.3
+version=1.5.4
 release=1
 source=(http://download.savannah.gnu.org/releases/${name}/${name}-${version}.tar.gz)
 
@@ -13,7 +13,7 @@ build() {
 	./configure \
 		--prefix=/usr
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
