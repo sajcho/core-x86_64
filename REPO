@@ -522,10 +522,10 @@ f:44f854db198906d093e332bfdab009bf:acl/Pkgfile
 f:810ed78bbfccd0158ffd675c5000c4d6:e2fsprogs/.md5sum
 f:5af9d15bf065bc4c1ad62d26f6f4cd72:e2fsprogs/.footprint
 f:bb5f237e84bde4aaaa72fb6d8f1daad1:e2fsprogs/Pkgfile
-f:d082bfa8b2325c04f59bba2e384f2f2b:libuv/skip-multicast-test
-f:d2b698991d6152bbd6346f5d75abdc93:libuv/.md5sum
+f:4e0e566ad8fd6b6f4d44522fb5114941:libuv/README
+f:c5027af78187a64673949d7fba3c3032:libuv/.md5sum
 f:5523ec9e4e6485d6dd628309822b691d:libuv/.footprint
-f:069e1178f1e0091c0f9cf6fe799cfeee:libuv/Pkgfile
+f:6956fc01214918eb78413a63f559165f:libuv/Pkgfile
 f:f21530e52d794b03145cc97e2e0694cd:sudo/.md5sum
 f:ffa7e5126582fe8a5c994d71c19926cd:sudo/.footprint
 f:41050d7eed38ca0fb8d8489e27b17d83:sudo/sudo.pam
