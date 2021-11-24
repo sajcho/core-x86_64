@@ -1,0 +1,10 @@
+
+
+  libuv:
+
+  It is recommended to turn on the -fno-strict-aliasing compiler flag in
+  projects that use libuv. The use of ad hoc "inheritance" in the libuv API
+  may not be safe in the presence of compiler optimizations that depend on
+  strict aliasing.
+
+  see: https://bestofcpp.com/repo/libuv-libuv-cpp-asynchronous-event-loop
