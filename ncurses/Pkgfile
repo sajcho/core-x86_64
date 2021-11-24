@@ -4,7 +4,7 @@
 
 name=ncurses
 version=6.3
-release=1
+release=2
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
 build() {
@@ -13,11 +13,18 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--mandir=/usr/share/man \
-		--with-{normal,shared} \
-		--without-{debug,ada,tests} \
+		--enable-widec \
 		--enable-pc-files \
+		--with-shared \
+		--with-cxx-shared \
+		--with-cxx-binding \
+		--with-ticlib=tic \
+		--with-termlib=tinfo \
 		--with-pkg-config-libdir=/usr/lib/pkgconfig \
-		--enable-widec
+		--without-normal \
+		--without-debug \
+		--without-ada \
+		--without-tests
 
 	make V=1
 
@@ -39,6 +46,4 @@ build() {
 	# linker script for the curses library
 	echo "INPUT(-lncursesw)" > $PKG/usr/lib/libcursesw.so
 	ln -s libncurses.so $PKG/usr/lib/libcurses.so
-
-	find $PKG -type f -name '*.a' -delete
 }
