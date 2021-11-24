@@ -474,8 +474,8 @@ f:49c261d300c50fc98d0c5bc8df3c709a:lz4/.md5sum
 f:2458979da4d5a27546ce1d4120809a75:lz4/.footprint
 f:af86f70061780787fa543b6c9b68577b:lz4/Pkgfile
 f:882bc86c7fe02db7ffdf407a2d49132a:ncurses/.md5sum
-f:bc95121e26a7935b0f5b7d6b30f23a90:ncurses/.footprint
-f:6c76fe8e2561eb1e86cbacd0a2f89535:ncurses/Pkgfile
+f:26cd81c9e7a2835a9bd225ce10f0c894:ncurses/.footprint
+f:b6f05ee03d6e11b5af1b1ab459238373:ncurses/Pkgfile
 f:6feacf83452778fc9f3e03cd086c4a8b:make/.md5sum
 f:737d0e0fee9b76c3869d916f5a4869c2:make/.footprint
 f:b068a3178cafafc554e17b5a6094842e:make/Pkgfile
