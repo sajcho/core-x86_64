@@ -204,6 +204,7 @@ drwxr-xr-x	root/root	usr/share/vim/compiler/
 drwxr-xr-x	root/root	usr/share/vim/doc/
 -rw-r--r--	root/root	usr/share/vim/doc/arabic.txt
 -rw-r--r--	root/root	usr/share/vim/doc/autocmd.txt
+-rw-r--r--	root/root	usr/share/vim/doc/builtin.txt
 -rw-r--r--	root/root	usr/share/vim/doc/change.txt
 -rw-r--r--	root/root	usr/share/vim/doc/channel.txt
 -rw-r--r--	root/root	usr/share/vim/doc/cmdline.txt
@@ -444,6 +445,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/hostsaccess.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/html.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/htmldjango.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/i3config.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/indent.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/initex.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/ishd.vim
@@ -558,6 +560,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/slpconf.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/slpreg.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/slpspi.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/solution.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/spec.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/sql.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/sshconfig.vim
@@ -967,6 +970,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/debsources.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/def.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/denyhosts.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/dep3patch.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/desc.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/desktop.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/dictconf.vim
@@ -1082,6 +1086,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/htmldjango.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/htmlm4.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/htmlos.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/i3config.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/ia64.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/ibasic.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/icemenu.vim
@@ -1369,6 +1374,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/sqloracle.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/sqr.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/squid.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/squirrel.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/srec.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/sshconfig.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/sshdconfig.vim
