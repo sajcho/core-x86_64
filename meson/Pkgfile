@@ -4,7 +4,7 @@
 # Depends on:	python3-setuptools samurai
 
 name=meson
-version=0.60.1
+version=0.60.2
 release=1
 source=(https://github.com/mesonbuild/${name}/releases/download/${version}/${name}-${version}.tar.gz \
 	build-meson)
