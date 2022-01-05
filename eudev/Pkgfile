@@ -4,9 +4,9 @@
 # Depends on:	kmod
 
 name=eudev
-version=3.2.10
+version=3.2.11
 release=1
-source=(http://dev.gentoo.org/~blueness/${name}/${name}-${version}.tar.gz
+source=(https://github.com/eudev-project/${name}/releases/download/v${version}/${name}-${version}.tar.gz \
 	50-firmware.rules udevd.run)
 
 build() {
@@ -28,7 +28,7 @@ build() {
 		--disable-manpages \
 		--disable-static
 
-	make CFLAGS="$CFLAGS -D_GNU_SOURCE"
+	make V=1 CFLAGS="$CFLAGS -D_GNU_SOURCE"
 
 	make install DESTDIR=$PKG
 
