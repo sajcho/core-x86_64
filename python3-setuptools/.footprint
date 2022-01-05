@@ -74,13 +74,13 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/pkg_resources/tests/data/m
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/pkg_resources/tests/data/my-test-package-source/__pycache__/setup.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/pkg_resources/tests/data/my-test-package-source/__pycache__/setup.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/pkg_resources/tests/data/my-test-package-source/setup.py
-drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/setuptools-59.1.1-py3.10.egg-info/
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-59.1.1-py3.10.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-59.1.1-py3.10.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-59.1.1-py3.10.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-59.1.1-py3.10.egg-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-59.1.1-py3.10.egg-info/requires.txt
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-59.1.1-py3.10.egg-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/setuptools-60.2.0-py3.10.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.2.0-py3.10.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.2.0-py3.10.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.2.0-py3.10.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.2.0-py3.10.egg-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.2.0-py3.10.egg-info/requires.txt
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.2.0-py3.10.egg-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/setuptools/
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/setuptools/__pycache__/
@@ -112,6 +112,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/setuptools/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/__pycache__/installer.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/__pycache__/launch.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/__pycache__/launch.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/__pycache__/logging.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/__pycache__/logging.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/__pycache__/monkey.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/__pycache__/monkey.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/__pycache__/msvc.cpython-310.opt-1.pyc
@@ -447,6 +449,7 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/setuptools/extern/__pycach
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/glob.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/installer.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/launch.py
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/logging.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/monkey.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/msvc.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/namespaces.py
