@@ -4,7 +4,7 @@
 # Depends on:	util-linux
 
 name=e2fsprogs
-version=1.46.4
+version=1.46.5
 release=1
 source=(https://www.kernel.org/pub/linux/kernel/people/tytso/${name}/v${version}/${name}-${version}.tar.xz)
 
@@ -24,7 +24,7 @@ build() {
 		--disable-uuidd \
 		--disable-fuse2fs
 
-	make
+	make V=1
 
 	make -j1 DESTDIR=$PKG install install-libs
 
