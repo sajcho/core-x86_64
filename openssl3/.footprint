@@ -2185,17 +2185,18 @@ lrwxrwxrwx	root/root	usr/share/man/man3/EVP_RAND_uninstantiate.3ssl.gz -> EVP_RA
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_RAND_up_ref.3ssl.gz -> EVP_RAND.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_RAND_verify_zeroization.3ssl.gz -> EVP_RAND.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_RSA_gen.3ssl.gz -> RSA_generate_key.3ssl.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_do_all_provided.3ssl.gz -> EVP_SIGNATURE_free.3ssl.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_fetch.3ssl.gz -> EVP_SIGNATURE_free.3ssl.gz
--rw-r--r--	root/root	usr/share/man/man3/EVP_SIGNATURE_free.3ssl.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_get0_description.3ssl.gz -> EVP_SIGNATURE_free.3ssl.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_get0_name.3ssl.gz -> EVP_SIGNATURE_free.3ssl.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_get0_provider.3ssl.gz -> EVP_SIGNATURE_free.3ssl.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_gettable_ctx_params.3ssl.gz -> EVP_SIGNATURE_free.3ssl.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_is_a.3ssl.gz -> EVP_SIGNATURE_free.3ssl.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_names_do_all.3ssl.gz -> EVP_SIGNATURE_free.3ssl.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_settable_ctx_params.3ssl.gz -> EVP_SIGNATURE_free.3ssl.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_up_ref.3ssl.gz -> EVP_SIGNATURE_free.3ssl.gz
+-rw-r--r--	root/root	usr/share/man/man3/EVP_SIGNATURE.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_do_all_provided.3ssl.gz -> EVP_SIGNATURE.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_fetch.3ssl.gz -> EVP_SIGNATURE.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_free.3ssl.gz -> EVP_SIGNATURE.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_get0_description.3ssl.gz -> EVP_SIGNATURE.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_get0_name.3ssl.gz -> EVP_SIGNATURE.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_get0_provider.3ssl.gz -> EVP_SIGNATURE.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_gettable_ctx_params.3ssl.gz -> EVP_SIGNATURE.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_is_a.3ssl.gz -> EVP_SIGNATURE.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_names_do_all.3ssl.gz -> EVP_SIGNATURE.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_settable_ctx_params.3ssl.gz -> EVP_SIGNATURE.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SIGNATURE_up_ref.3ssl.gz -> EVP_SIGNATURE.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SealFinal.3ssl.gz -> EVP_SealInit.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/EVP_SealInit.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/EVP_SealUpdate.3ssl.gz -> EVP_SealInit.3ssl.gz
@@ -5213,6 +5214,8 @@ lrwxrwxrwx	root/root	usr/share/man/man3/d2i_X509_REQ_fp.3ssl.gz -> d2i_X509.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_X509_REVOKED.3ssl.gz -> d2i_X509.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_X509_SIG.3ssl.gz -> d2i_X509.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_X509_VAL.3ssl.gz -> d2i_X509.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/d2i_X509_bio.3ssl.gz -> d2i_X509.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/d2i_X509_fp.3ssl.gz -> d2i_X509.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/i2b_PVK_bio.3ssl.gz -> b2i_PVK_bio_ex.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/i2b_PVK_bio_ex.3ssl.gz -> b2i_PVK_bio_ex.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_ACCESS_DESCRIPTION.3ssl.gz -> d2i_X509.3ssl.gz
@@ -5432,6 +5435,8 @@ lrwxrwxrwx	root/root	usr/share/man/man3/i2d_X509_REQ_fp.3ssl.gz -> d2i_X509.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_X509_REVOKED.3ssl.gz -> d2i_X509.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_X509_SIG.3ssl.gz -> d2i_X509.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_X509_VAL.3ssl.gz -> d2i_X509.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/i2d_X509_bio.3ssl.gz -> d2i_X509.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/i2d_X509_fp.3ssl.gz -> d2i_X509.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_re_X509_CRL_tbs.3ssl.gz -> i2d_re_X509_tbs.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_re_X509_REQ_tbs.3ssl.gz -> i2d_re_X509_tbs.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/i2d_re_X509_tbs.3ssl.gz
