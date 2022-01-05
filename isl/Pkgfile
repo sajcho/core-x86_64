@@ -1,0 +1,29 @@
+# Description:	An Integer Set Library for the Polyhedral Model
+# URL:		http://isl.gforge.inria.fr/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	gmp
+
+name=isl
+version=0.24
+release=1
+source=(https://downloads.sourceforge.net/project/libisl/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	export MP_CFLAGS="$CFLAGS"
+
+	./configure \
+		--prefix=/usr \
+		--disable-static
+
+	make V=1
+
+	make DESTDIR=$PKG install
+
+	install -d $PKG/usr/share/gdb/python/auto-load/usr/lib
+	mv $PKG/usr/lib/*-gdb.py \
+		$PKG/usr/share/gdb/python/auto-load/usr/lib/
+
+	find $PKG -type f -name '*.la' -delete
+}
