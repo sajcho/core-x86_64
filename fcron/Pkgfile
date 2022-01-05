@@ -4,7 +4,7 @@
 # Depends on:	readline
 
 name=fcron
-version=3.3.0
+version=3.3.1
 release=1
 source=(http://fcron.free.fr/archives/${name}-${version}.src.tar.gz \
 	fcron.run runjobs systab.orig)
@@ -31,7 +31,7 @@ build() {
 		--with-dsssl-dir=no \
 		--with-systemdsystemunitdir=no
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
