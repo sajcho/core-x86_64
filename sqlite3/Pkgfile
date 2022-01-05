@@ -4,7 +4,7 @@
 # Depends on:	readline zlib
 
 name=sqlite3
-version=3.36.0
+version=3.37.1
 release=1
 _version=$(printf "%i%.2i%.2i%.2i" ${version//./ })
 
@@ -21,7 +21,7 @@ build() {
 			--enable-readline \
 			--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
