@@ -4,9 +4,9 @@
 # Depends on:	curl expat libarchive libuv
 
 name=cmake
-version=3.21.4
+version=3.22.1
 release=1
-source=(https://cmake.org/files/v3.21/${name}-${version}.tar.gz)
+source=(https://cmake.org/files/v3.22/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
