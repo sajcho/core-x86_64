@@ -1,24 +1,25 @@
 # Description:	The GNU Compiler Collection
 # URL:		http://gcc.gnu.org
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	mpc zstd
+# Depends on:	isl mpc zstd
 
 name=gcc
-version=11.2.0
-release=2
-source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}/${name}-${version}.tar.xz \
-	gcc-11.2.0-jobserver-file-descriptors.patch c89 c99)
+version=12.0.0
+_realversion=12-20220109
+release=0
+source=(http://ftp.ntua.gr/mirror/gnu/gcc/snapshots/${_realversion}/${name}-${_realversion}.tar.xz \
+	c89  c99)
 
 build() {
-	cd ${name}-${version}
+	cd ${name}-${_realversion}
 
-	patch -p1 -i $SRC/gcc-11.2.0-jobserver-file-descriptors.patch
+	sed -i 's|lib64|lib|' $SRC/${name}-${_realversion}/${name}/config/i386/t-linux64
+	sed -i 's|lib64|lib|' $SRC/${name}-${_realversion}/${name}/config/i386/linux64.h
 
-	sed -i 's|lib64|lib|' $SRC/${name}-${version}/${name}/config/i386/t-linux64
-	sed -i 's|lib64|lib|' $SRC/${name}-${version}/${name}/config/i386/linux64.h
-
-	export CFLAGS="$(echo $CFLAGS | sed -e 's| -flto=auto -ffat-lto-objects||')"
-	export CXXFLAGS="$(echo $CXXFLAGS | sed -e 's| -flto=auto -ffat-lto-objects||')"
+	CFLAGS="${CFLAGS/-flto=auto -ffat-lto-objects -fuse-ld=mold/}"
+	export XCFLAGS="${CFLAGS/-flto=auto -ffat-lto-objects -fuse-ld=mold/}"
+	CXXFLAGS="${CXXFLAGS/-flto=auto -ffat-lto-objects -fuse-ld=mold/}"
+	LDFLAGS=${LDFLAGS/ -Wl,-fuse-ld=mold/}
 
 	mkdir build
 	cd build
@@ -26,7 +27,8 @@ build() {
 	../configure \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
-		--enable-languages=c,c++,objc,fortran,lto \
+		--enable-bootstrap \
+		--enable-languages=c,c++,fortran,lto \
 		--enable-threads=posix \
 		--enable-__cxa_atexit \
 		--enable-clocale=gnu \
@@ -34,14 +36,15 @@ build() {
 		--enable-default-ssp \
 		--enable-gnu-indirect-function \
 		--enable-standard-branch-protection \
+		--enable-link-serialization=1 \
 		--enable-initfini-array \
 		--enable-gnu-unique-object \
 		--enable-linker-build-id \
+		--enable-decimal-float \
 		--enable-shared \
 		--enable-gold=no \
 		--enable-plugin \
-		--enable-c99 \
-		--enable-bootstrap \
+		--enable-cet \
 		--disable-nls \
 		--disable-multilib \
 		--disable-werror \
@@ -50,19 +53,22 @@ build() {
 		--disable-libunwind-exceptions \
 		--disable-libquadmath-support \
 		--disable-libquadmath \
+		--with-isl \
 		--with-system-zlib \
+		--with-tune=generic \
+		--with-arch=x86-64 \
 		--with-linker-hash-style=gnu \
-		--with-build-config=bootstrap-lto-lean \
+		--with-build-config=bootstrap-lto \
 		--with-pkgversion="SAUX x86_64" \
 		--without-included-gettext \
-		--cache-file=/dev/null \
 		--build=$CHOST \
 		--host=$CHOST
 
-	make
+	make V=1
 
 	# Optional
 	#make -k check < /dev/null || :
+	#../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${_realversion}-result
 
 	make -j1 DESTDIR=$PKG install
 
@@ -74,7 +80,7 @@ build() {
 	# Add a compatibility symlink to enable building programs
 	# with Link Time Optimization (LTO):
 	install -d $PKG/usr/lib/bfd-plugins
-	ln -sf ../../lib/gcc/$CHOST/11.2.0/liblto_plugin.so \
+	ln -sf ../../lib/gcc/$CHOST/${version}/liblto_plugin.so \
 		$PKG/usr/lib/bfd-plugins/
 
 	mv $PKG/usr/lib/${name}/*/${version}/include-fixed/{limits.h,syslimits.h} \
