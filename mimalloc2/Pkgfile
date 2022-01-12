@@ -1,0 +1,28 @@
+# Description:	A compact general purpose allocator with excellent performance
+# URL:		https://github.com/microsoft/mimalloc
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	cmake
+
+name=mimalloc2
+version=2.0.3
+release=1
+source=(https://github.com/microsoft/mimalloc/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd mimalloc-${version}
+
+	mkdir build
+	cd build
+
+	cmake .. \
+		-DCMAKE_BUILD_TYPE="None" \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DMI_INSTALL_TOPLEVEL=ON \
+		-DMI_BUILD_STATIC=OFF \
+		-DMI_BUILD_OBJECT=OFF \
+		-Wno-dev
+
+	make -O ${JOBS:+-j ${JOBS}} V=1 VERBOSE=1
+
+	make DESTDIR=$PKG install
+}
