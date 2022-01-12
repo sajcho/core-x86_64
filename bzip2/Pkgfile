@@ -21,7 +21,7 @@ build() {
 
 	make clean
 
-	make
+	make V=1
 
 	install -m 0755 bzip2 bzip2recover bzdiff bzgrep bzmore $PKG/usr/bin
 	ln -s bzip2  $PKG/usr/bin/bunzip2
