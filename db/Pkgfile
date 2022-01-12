@@ -24,7 +24,7 @@ build() {
 			--build=$CHOST \
 			--host=$CHOST
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
