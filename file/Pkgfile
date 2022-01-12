@@ -16,7 +16,7 @@ build() {
 		--enable-fsect-man5 \
 		--enable-libseccomp
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
