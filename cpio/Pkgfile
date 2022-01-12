@@ -17,7 +17,7 @@ build() {
 		--prefix=/usr \
 		--disable-nls
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
