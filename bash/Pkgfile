@@ -4,7 +4,7 @@
 # Depends on:	readline
 
 name=bash
-version=5.1.12
+version=5.1.16
 release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version:0:3}.tar.gz \
 	profile ${name}-${version}.patch.gz)
