@@ -1,0 +1,27 @@
+# Description:	A tool for automating interactive applications
+# URL:		https://www.nist.gov/el/msid/expect.cfm
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	tcl
+
+name=expect
+version=5.45.4
+release=1
+source=(https://downloads.sourceforge.net/${name}/${name}${version}.tar.gz)
+
+build() {
+	cd ${name}${version}
+
+	./configure \
+		--build=$CHOST \
+		--prefix=/usr \
+		--mandir=/usr/share/man \
+		--enable-shared \
+		--with-tcl=/usr/lib \
+		--with-tclinclude=/usr/include
+
+	make V=1
+
+	make DESTDIR=$PKG install
+
+	ln -svf expect5.45.4/libexpect5.45.4.so $PKG/usr/lib
+}
