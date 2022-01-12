@@ -5,7 +5,7 @@
 
 name=glibc
 version=2.34
-release=3
+release=4
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
 	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.2.tar.xz \
 	glibc-c-utf8-locale.patch \
@@ -24,8 +24,9 @@ build() {
 
 	cd $SRC/${name}-${version}
 
-	export CFLAGS="$(echo $CFLAGS | sed -e 's| -flto=auto -ffat-lto-objects||')"
-	export CXXFLAGS="$(echo $CXXFLAGS | sed -e 's| -flto=auto -ffat-lto-objects||')"
+	CFLAGS="${CFLAGS/-flto=auto -ffat-lto-objects -fuse-ld=mold/}"
+	CXXFLAGS="${CXXFLAGS/-flto=auto -ffat-lto-objects -fuse-ld=mold/}"
+	LDFLAGS=${LDFLAGS/ -Wl,-fuse-ld=mold/}
 
 	# LFS -fix a security problem identified upstream:
 	sed -e '/NOTIFY_REMOVED)/s/)/ \&\& data.attr != NULL)/' \
@@ -58,7 +59,7 @@ build() {
 	make V=1
 
 	# Optional
-	make -k check < /dev/null || :
+	#make -k check < /dev/null || :
 
 	make install_root=$PKG install
 
