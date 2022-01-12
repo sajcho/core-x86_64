@@ -20,7 +20,7 @@ build() {
 	# do not regen docs
 	touch doc/*.info doc/*.1 doc/Makefile
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
