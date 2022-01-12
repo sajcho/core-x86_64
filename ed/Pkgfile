@@ -15,7 +15,7 @@ build() {
 		--exec-prefix=/ \
 		CFLAGS+="$CFLAGS"
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install-bin install-man
 }
