@@ -4,11 +4,17 @@
 
 name=attr
 version=2.5.1
-release=1
+release=2
 source=(http://download-mirror.savannah.gnu.org/releases/${name}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
+
+	#mold: ./libattr/libattr.lds:1: "fgetxattr@ATTR_1.0" = libattr_fgetxattr;
+	#                               ^ unknown linker script token
+	#collect2: error: ld returned 1 exit status
+	CFLAGS=${CFLAGS/-fuse-ld=mold/}
+	LDFLAGS=${LDFLAGS/ -Wl,-fuse-ld=mold/}
 
 	./configure \
 		--prefix=/usr \
@@ -16,7 +22,7 @@ build() {
 		--sysconfdir=/etc \
 		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
