@@ -16,7 +16,7 @@ build() {
 		--bindir=/bin \
 		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
