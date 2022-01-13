@@ -11,7 +11,7 @@ kmem::9:
 wheel::10:root
 ftp::11:
 mail::12:
-mlocate::13:
+plocate::13:
 dialout::14:
 www::15:
 audio::16:
