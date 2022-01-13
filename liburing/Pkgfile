@@ -1,0 +1,22 @@
+# Description:	liburing provides helpers to setup and teardown io_uring instances
+# URL:		https://github.com/axboe/liburing
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=liburing
+version=2.1
+release=1
+source=(https://github.com/axboe/${name}/archive/${name}-${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--mandir=/usr/share/man
+
+	make V=1
+
+	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.a' -delete
+}
