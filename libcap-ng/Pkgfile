@@ -21,7 +21,7 @@ build() {
 		--without-python3 \
 		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
