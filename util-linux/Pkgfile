@@ -28,7 +28,7 @@ build() {
 		--without-systemdsystemunitdir \
 		runstatedir=/run
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
