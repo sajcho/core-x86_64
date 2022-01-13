@@ -74,13 +74,13 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/pkg_resources/tests/data/m
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/pkg_resources/tests/data/my-test-package-source/__pycache__/setup.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/pkg_resources/tests/data/my-test-package-source/__pycache__/setup.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/pkg_resources/tests/data/my-test-package-source/setup.py
-drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/setuptools-60.2.0-py3.10.egg-info/
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.2.0-py3.10.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.2.0-py3.10.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.2.0-py3.10.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.2.0-py3.10.egg-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.2.0-py3.10.egg-info/requires.txt
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.2.0-py3.10.egg-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/setuptools-60.3.1-py3.10.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.3.1-py3.10.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.3.1-py3.10.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.3.1-py3.10.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.3.1-py3.10.egg-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.3.1-py3.10.egg-info/requires.txt
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools-60.3.1-py3.10.egg-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/setuptools/
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/setuptools/__pycache__/
@@ -140,6 +140,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/setuptools/_distutils/
 drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/setuptools/_distutils/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/_distutils/__pycache__/__init__.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/_distutils/__pycache__/__init__.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/_distutils/__pycache__/_collections.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/_distutils/__pycache__/_collections.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/_distutils/__pycache__/_msvccompiler.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/_distutils/__pycache__/_msvccompiler.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/_distutils/__pycache__/archive_util.cpython-310.opt-1.pyc
@@ -198,6 +200,7 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/setuptools/_distutils/__py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/_distutils/__pycache__/version.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/_distutils/__pycache__/versionpredicate.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/_distutils/__pycache__/versionpredicate.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/_distutils/_collections.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/_distutils/_msvccompiler.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/_distutils/archive_util.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/_distutils/bcppcompiler.py
@@ -456,8 +459,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/setuptools/extern/__pycach
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/package_index.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/py34compat.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/sandbox.py
--rw-rw-r--	root/root	usr/lib/python3.10/site-packages/setuptools/script (dev).tmpl
--rw-rw-r--	root/root	usr/lib/python3.10/site-packages/setuptools/script.tmpl
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/script (dev).tmpl
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/script.tmpl
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/unicode_utils.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/version.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/setuptools/wheel.py
