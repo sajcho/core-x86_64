@@ -24,8 +24,6 @@ build() {
 
 	make V=1
 
-	#./RunTest
-
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/doc
