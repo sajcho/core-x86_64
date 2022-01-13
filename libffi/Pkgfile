@@ -16,10 +16,7 @@ build() {
 		--with-gcc-arch=native \
 		--disable-exec-static-tramp
 
-	make
-
-	# optional - depends dejagnu
-	#make check
+	make V=1
 
 	make DESTDIR=$PKG install
 
