@@ -15,7 +15,7 @@ build() {
 	patch -p1 -i $SRC/CVE-2021-30218.patch
 	patch -p1 -i $SRC/CVE-2021-30219.patch
 
-	make
+	make V=1
 
 	make install PREFIX=/usr DESTDIR=$PKG
 
