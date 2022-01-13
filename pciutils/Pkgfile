@@ -12,7 +12,7 @@ source=(https://www.kernel.org/pub/software/utils/pciutils/${name}-${version}.ta
 build() {
 	cd ${name}-${version}
 
-	make -j1 \
+	make V=1 -j1 \
 		PREFIX=/usr \
 		SHAREDIR=/usr/share/hwdata \
 		SHARED=yes \
@@ -21,7 +21,7 @@ build() {
 
 	make clean
 
-	make -j1 \
+	make V=1 -j1 \
 		PREFIX=/usr \
 		SHAREDIR=/usr/share/hwdata \
 		SHARED=yes \
