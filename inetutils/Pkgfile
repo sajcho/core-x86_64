@@ -20,11 +20,7 @@ build() {
 		--disable-{servers,clients} \
 		--enable-{hostname,ifconfig,inetd,ftp,telnet,traceroute}
 
-	make
-
-	# Does not work with fakeroot test fail
-	# must be root
-	#make check
+	make V=1
 
 	make DESTDIR=$PKG install
 
