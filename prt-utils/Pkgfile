@@ -14,7 +14,7 @@ build() {
 	# disable static
 	sed -e 's|--static||' -e 's|-static||' -i revdep/Makefile
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
