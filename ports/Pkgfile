@@ -14,7 +14,7 @@ source=(http://crux.nu/files/tools/${name}/${name}-${version}.tar.gz \
 build() {
 	cd ${name}-${version}
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG MANDIR=/usr/share/man install
 
