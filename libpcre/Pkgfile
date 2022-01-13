@@ -22,9 +22,7 @@ build() {
 		--enable-pcretest-libreadline \
 		--disable-static
 
-	make
-
-	#make check
+	make V=1
 
 	make DESTDIR=$PKG install
 
