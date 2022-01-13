@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=libunistring
-version=0.9.10
+version=1.0
 release=1
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
@@ -14,7 +14,7 @@ build() {
 		--prefix=/usr \
 		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
