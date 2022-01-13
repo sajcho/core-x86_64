@@ -17,7 +17,7 @@ build() {
 		--disable-nls \
 		--disable-tests
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
