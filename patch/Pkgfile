@@ -32,7 +32,7 @@ build() {
 		gl_cv_func_gettimeofday_clobber=no \
 		gl_cv_func_tzset_clobber=no
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 }
