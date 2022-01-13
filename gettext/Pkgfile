@@ -17,7 +17,7 @@ build() {
 		--without-{emacs,git} \
 		--with-included-{glib,libcroco,libxml}
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
