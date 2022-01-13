@@ -13,7 +13,7 @@ build() {
 
 	./configure
 
-	make -j1 CCOPTS="$CFLAGS"
+	make V=1 -j1 CCOPTS="$CFLAGS"
 
 	make -j1 DESTDIR=$PKG install
 
