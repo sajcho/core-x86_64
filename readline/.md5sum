@@ -1,3 +1,4 @@
 553cf04fdeec54dca12062864c3ffba3  inputrc
-a39035370280bee80ecf227228ed2bc4  readline-8.1.1.patch.gz
+84a599897cbc9a347f249b3d1ad0e504  readline-8.0-shlib.patch
+a39035370280bee80ecf227228ed2bc4  readline-8.1.2.patch.gz
 e9557dd5b1409f5d7b37ef717c64518e  readline-8.1.tar.gz

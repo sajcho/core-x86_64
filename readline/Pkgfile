@@ -4,22 +4,26 @@
 # Depends on:	ncurses
 
 name=readline
-version=8.1.1
+version=8.1.2
 release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version:0:3}.tar.gz \
 	$name-$version.patch.gz \
+	readline-8.0-shlib.patch \
 	inputrc)
 
 build() {
 	cd ${name}-${version:0:3}
 
 	gunzip -c $SRC/$name-$version.patch.gz | patch -p0
+	patch -p1 -i $SRC/readline-8.0-shlib.patch
 
 	./configure \
 		--prefix=/usr \
-		--disable-static
+		--disable-static \
+		--disable-install-examples \
+		--with-curses
 
-	make -j1 SHLIB_LIBS=-lncurses
+	make V=1 -j1
 
 	make -j1 DESTDIR=$PKG install
 
