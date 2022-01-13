@@ -17,7 +17,7 @@ build() {
 		--with-regex=pcre2 \
 		--with-editor=vim
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
