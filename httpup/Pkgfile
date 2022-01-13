@@ -5,13 +5,19 @@
 
 name=httpup
 version=0.5.0
-release=1
+release=2
 source=(https://crux.nu/files/${name}-${version}.tar.xz httpup)
 
 build() {
 	cd ${name}-${version}
 
-	make
+	# main.cpp: In function 'int main(int, char**)':
+	# main.cpp:92:20: error: 'void operator delete(void*, std::size_t)' called on pointer returned from a mismatched allocation function [-Werror=mismatched-new-delete]
+	#   92 |             delete pwd;
+
+	sed -i 's|Werror|Wno-error|' Makefile
+
+	make V=1
 
 	make DESTDIR=$PKG prefix=/usr mandir=/usr/share/man install
 
