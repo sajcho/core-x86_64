@@ -1,0 +1,31 @@
+# Description:	A portable fork of the OpenBSD `doas` command
+# URL:		https://github.com/Duncaen/OpenDoas
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	linux-pam
+
+name=opendoas
+version=6.8.1
+release=1
+source=(https://github.com/Duncaen/OpenDoas/releases/download/v$version/$name-$version.tar.xz \
+	better-wayland-support.patch \
+	doas.conf \
+	doas.pam)
+
+build() {
+	cd $name-$version
+
+	patch -Np1 -i $SRC/better-wayland-support.patch
+
+	./configure \
+		--prefix=/usr \
+		--with-timestamp
+
+	make V=1
+
+	make DESTDIR=$PKG install
+
+	install -D -m 0644 $SRC/doas.pam \
+		$PKG/etc/pam.d/doas
+	install -D -m 0400 $SRC/doas.conf \
+		$PKG/etc/doas.conf
+}
