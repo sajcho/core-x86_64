@@ -16,7 +16,7 @@ build() {
 		--disable-static \
 		--disable-documentation
 
-	make
+	make V=1
 
 	make -C examples
 
