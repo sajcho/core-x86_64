@@ -1,0 +1,28 @@
+# Description:	Much faster locate
+# URL:		https://plocate.sesse.net/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	liburing zstd
+
+name=plocate
+version=1.1.14
+release=1
+source=(https://plocate.sesse.net/download/${name}-${version}.tar.gz \
+	plocate \
+	updatedb.conf)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson \
+		-Dinstall_cron=false \
+		-Dlocategroup=plocate \
+		-Dinstall_systemd=false \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	install -D -m 0755 $SRC/plocate $PKG/etc/cron/daily/plocate
+	install -m 0644 $SRC/updatedb.conf $PKG/etc
+}
