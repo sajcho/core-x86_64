@@ -16,7 +16,7 @@ build() {
 		--enable-libipq \
 		--disable-nftables
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
