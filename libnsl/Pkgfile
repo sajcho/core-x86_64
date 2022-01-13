@@ -14,7 +14,7 @@ build() {
 		--prefix=/usr \
 		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
