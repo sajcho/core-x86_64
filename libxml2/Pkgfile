@@ -18,7 +18,7 @@ build() {
 		--with-history \
 		--without-python
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
