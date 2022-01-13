@@ -16,7 +16,7 @@ build() {
 		--enable-widec \
 		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
