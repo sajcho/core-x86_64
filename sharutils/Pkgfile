@@ -16,7 +16,7 @@ build(){
 
 	sed 's/FUNC_FFLUSH_STDIN/-1/g' -i lib/fseeko.c
 
-	make CFLAGS+=" -fcommon"
+	make V=1 CFLAGS+=" -fcommon"
 
 	make DESTDIR=$PKG install
 
