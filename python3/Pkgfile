@@ -5,7 +5,7 @@
 
 name=python3
 version=3.10.1
-release=1
+release=2
 source=(https://www.python.org/ftp/python/${version}/Python-${version}.tar.xz)
 
 build() {
@@ -20,6 +20,19 @@ build() {
 	rm -r Lib/{test,{ctypes,sqlite3,tkinter,unittest}/test}
 	rm -r Lib/{{distutils,lib2to3}/tests,idlelib/idle_test}
 
+	# disable linker mold
+	CFLAGS="${CFLAGS/ -fuse-ld=mold/}"
+	CFLAGS_NODIST="${CFLAGS}"
+	CXXFLAGS="${CXXFLAGS/ -fuse-ld=mold/}"
+	unset LDFLAGS
+
+	export SETUPTOOLS_USE_DISTUTILS=stdlib
+
+	# GPO and LTO
+	sed -i -e "s|-O3|-O2|g" configure configure.ac
+	sed -i -e "s|-flto |-flto=4 |g" configure configure.ac
+
+	CXX="/usr/bin/g++" \
 	./configure \
 		--prefix=/usr \
 		--enable-shared \
@@ -32,24 +45,12 @@ build() {
 		--with-system-ffi \
 		--with-system-libmpdec \
 		--with-lto \
+		--with-tzpath=/usr/share/zoneinfo \
 		--without-ensurepip
 
 	make V=1
 
-	make -j1 DESTDIR=$PKG altinstall maninstall
-
-	ln -s 2to3-${version%.*}            $PKG/usr/bin/2to3
-	ln -s python${version%.*}           $PKG/usr/bin/python3
-	ln -s python3                       $PKG/usr/bin/python
-	ln -s python${version%.*}-config    $PKG/usr/bin/python3-config
-	ln -s python3-config                $PKG/usr/bin/python-config
-	ln -s idle${version%.*}             $PKG/usr/bin/idle3
-	ln -s idle3                         $PKG/usr/bin/idle
-	ln -s pydoc${version%.*}            $PKG/usr/bin/pydoc3
-	ln -s pydoc3                        $PKG/usr/bin/pydoc
-	ln -s python${version%.*}           $PKG/usr/lib/$name
-	ln -s python-${version%.*}.pc       $PKG/usr/lib/pkgconfig/python3.pc
-	ln -s python-${version%.*}-embed.pc $PKG/usr/lib/pkgconfig/python3-embed.pc
+	make -j1 DESTDIR=$PKG install
 
 	rm $PKG/usr/lib/python${version%.*}/ctypes/macholib/README.ctypes
 	rm $PKG/usr/lib/python${version%.*}/distutils/README
@@ -57,6 +58,4 @@ build() {
 	rm $PKG/usr/lib/python${version%.*}/idlelib/{README,TODO,CREDITS,HISTORY}.txt
 	rm $PKG/usr/lib/python${version%.*}/idlelib/Icons/README.txt
 	rm $PKG/usr/lib/python${version%.*}/site-packages/README.txt
-
-	rm $PKG/usr/lib/python3.10/config-3.10-x86_64-linux-gnu/libpython3.10.a
 }

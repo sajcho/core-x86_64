@@ -2,14 +2,10 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/2to3 -> 2to3-3.10
 -rwxr-xr-x	root/root	usr/bin/2to3-3.10
-lrwxrwxrwx	root/root	usr/bin/idle -> idle3
 lrwxrwxrwx	root/root	usr/bin/idle3 -> idle3.10
 -rwxr-xr-x	root/root	usr/bin/idle3.10
-lrwxrwxrwx	root/root	usr/bin/pydoc -> pydoc3
 lrwxrwxrwx	root/root	usr/bin/pydoc3 -> pydoc3.10
 -rwxr-xr-x	root/root	usr/bin/pydoc3.10
-lrwxrwxrwx	root/root	usr/bin/python -> python3
-lrwxrwxrwx	root/root	usr/bin/python-config -> python3-config
 lrwxrwxrwx	root/root	usr/bin/python3 -> python3.10
 lrwxrwxrwx	root/root	usr/bin/python3-config -> python3.10-config
 -rwxr-xr-x	root/root	usr/bin/python3.10
@@ -189,7 +185,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/python-3.10.pc
 lrwxrwxrwx	root/root	usr/lib/pkgconfig/python3-embed.pc -> python-3.10-embed.pc
 lrwxrwxrwx	root/root	usr/lib/pkgconfig/python3.pc -> python-3.10.pc
-lrwxrwxrwx	root/root	usr/lib/python3 -> python3.10
 drwxr-xr-x	root/root	usr/lib/python3.10/
 -rw-r--r--	root/root	usr/lib/python3.10/LICENSE.txt
 -rw-r--r--	root/root	usr/lib/python3.10/__future__.py
@@ -910,6 +905,7 @@ drwxr-xr-x	root/root	usr/lib/python3.10/config-3.10-x86_64-linux-gnu/
 -rw-r--r--	root/root	usr/lib/python3.10/config-3.10-x86_64-linux-gnu/config.c
 -rw-r--r--	root/root	usr/lib/python3.10/config-3.10-x86_64-linux-gnu/config.c.in
 -rwxr-xr-x	root/root	usr/lib/python3.10/config-3.10-x86_64-linux-gnu/install-sh
+-rw-r--r--	root/root	usr/lib/python3.10/config-3.10-x86_64-linux-gnu/libpython3.10.a
 -rwxr-xr-x	root/root	usr/lib/python3.10/config-3.10-x86_64-linux-gnu/makesetup
 -rwxr-xr-x	root/root	usr/lib/python3.10/config-3.10-x86_64-linux-gnu/python-config.py
 -rw-r--r--	root/root	usr/lib/python3.10/config-3.10-x86_64-linux-gnu/python.o
