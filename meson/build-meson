@@ -19,6 +19,6 @@ exec meson \
 	--auto-features=auto \
 	--wrap-mode=nodownload \
 	-Db_lto=false \
-	-Db_staticpic=false \
+	-Db_staticpic=true \
 	-Db_pie=true \
 	"$@"
