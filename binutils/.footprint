@@ -6,7 +6,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/c++filt
 -rwxr-xr-x	root/root	usr/bin/elfedit
 -rwxr-xr-x	root/root	usr/bin/gprof
--rwxr-xr-x	root/root	usr/bin/ld
+lrwxrwxrwx	root/root	usr/bin/ld -> ld.bfd
 -rwxr-xr-x	root/root	usr/bin/ld.bfd
 -rwxr-xr-x	root/root	usr/bin/nm
 -rwxr-xr-x	root/root	usr/bin/objcopy
