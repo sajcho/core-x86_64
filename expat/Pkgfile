@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=expat
-version=2.4.2
+version=2.4.3
 release=1
 source=(http://download.sourceforge.net/${name}/${name}-${version}.tar.bz2)
 
