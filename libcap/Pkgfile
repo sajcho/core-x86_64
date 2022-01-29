@@ -4,7 +4,7 @@
 # Depends on:	attr linux-pam
 
 name=libcap
-version=2.62
+version=2.63
 release=1
 source=(https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/${name}-${version}.tar.xz)
 
@@ -34,5 +34,5 @@ build() {
 
 	sed '/^libdir/s|/lib|/usr/lib|' -i $PKG/usr/lib/pkgconfig/*.pc
 
-	find $PKG -type f -name '*.[la]' -delete
+	find $PKG -type f -name '*.la' -delete
 }
