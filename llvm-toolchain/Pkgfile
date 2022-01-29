@@ -6,14 +6,11 @@
 name=llvm-toolchain
 _realname=llvm-project
 version=13.0.0
-release=2
-source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz \
-	llvm-do-not-install-static-libraries.patch)
+release=3
+source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
 
 build() {
 	cd ${_realname}-${version}.src
-
-	patch -p1 -i $SRC/llvm-do-not-install-static-libraries.patch
 
 	mkdir build
 	cd build
@@ -21,16 +18,14 @@ build() {
 	export CC="clang"
 	export CXX="clang++"
 
-	CFLAGS="${CFLAGS/-flto=auto -ffat-lto-objects -fuse-ld=mold/}"
-	CXXFLAGS="${CXXFLAGS/-flto=auto -ffat-lto-objects -fuse-ld=mold/}"
-	LDFLAGS=${LDFLAGS/ -Wl,-fuse-ld=mold/}
+	CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/}"
+	CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/}"
 
 	cmake .. \
 		-DCMAKE_BUILD_TYPE="Release" \
 		-DCMAKE_INSTALL_PREFIX="/usr " \
 		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
 		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
-		-DLLVM_TARGETS_TO_BUILD="X86;AMDGPU;BPF;NVPTX" \
 		-DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra;compiler-rt;lld" \
 		-DLLVM_OPTIMIZED_TABLEGEN=ON \
 		-DLLVM_BUILD_LLVM_DYLIB=ON \
