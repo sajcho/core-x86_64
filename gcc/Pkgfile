@@ -4,8 +4,8 @@
 # Depends on:	isl mpc zstd
 
 name=gcc
-version=12.0.0
-_realversion=12-20220109
+version=12.0.1
+_realversion=12-20220123
 release=0
 source=(http://ftp.ntua.gr/mirror/gnu/gcc/snapshots/${_realversion}/${name}-${_realversion}.tar.xz \
 	c89  c99)
@@ -16,10 +16,9 @@ build() {
 	sed -i 's|lib64|lib|' $SRC/${name}-${_realversion}/${name}/config/i386/t-linux64
 	sed -i 's|lib64|lib|' $SRC/${name}-${_realversion}/${name}/config/i386/linux64.h
 
-	CFLAGS="${CFLAGS/-flto=auto -ffat-lto-objects -fuse-ld=mold/}"
-	export XCFLAGS="${CFLAGS/-flto=auto -ffat-lto-objects -fuse-ld=mold/}"
-	CXXFLAGS="${CXXFLAGS/-flto=auto -ffat-lto-objects -fuse-ld=mold/}"
-	LDFLAGS=${LDFLAGS/ -Wl,-fuse-ld=mold/}
+	CFLAGS="${CFLAGS/-flto=auto -ffat-lto-objects/}"
+	export XCFLAGS="${CFLAGS/-flto=auto -ffat-lto-objects/}"
+	CXXFLAGS="${CXXFLAGS/-flto=auto -ffat-lto-objects/}"
 
 	mkdir build
 	cd build
