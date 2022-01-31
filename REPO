@@ -537,9 +537,9 @@ f:94d3d4ea3c3df4673042716b2c6f3633:procps/.md5sum
 f:237ea64a9ea7fcff81e55afa63582746:procps/sysctl.conf
 f:865df0292524c2fa93eb061b3c90934f:procps/.footprint
 f:5a8dc052ecbabb1e0037091526875fc9:procps/Pkgfile
-f:00e071ec8bc42d6cf83153de9eb82c43:expat/.md5sum
-f:4de1b7cbffb1b52a2f17b078dd1ecec7:expat/.footprint
-f:3c363d922764db666397158187df2f43:expat/Pkgfile
+f:0d03585a961f7fb8c4a5de6accc5e862:expat/.md5sum
+f:77b264074ab82db4f4e61cde4ecaf8de:expat/.footprint
+f:4a2f412bf43b17e476779f81ad0aea1f:expat/Pkgfile
 f:4d175124b0c67a1a87bb9861eb526d08:acl/.md5sum
 f:9199505f38865bbeb518aa906b04a63f:acl/.footprint
 f:6621d9cab598e2c59a00e141c6c66731:acl/Pkgfile
@@ -639,11 +639,11 @@ f:cd40a9be0616a0db7e1bf0ec621ec357:libffi/README
 f:a0e9456814e896dded8ecc2248399ec9:libffi/.md5sum
 f:b1612b76280be21762df6d854450f6f3:libffi/.footprint
 f:22f8c89285685b8f2660a172d45151cc:libffi/Pkgfile
-f:9cb3acf1dbb8e1478465e60275d0f862:gcc/.md5sum
+f:c067d3799eb729ecbb4c7634e329184e:gcc/.md5sum
 f:884f7c189d4efe20c6c0c0b7d96f4fe7:gcc/.footprint
 f:3d333df77302ed89e06a4a8539943b7d:gcc/c89
 f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
-f:aac548bc0ad0d727786da4e9f7d81ea4:gcc/Pkgfile
+f:ee273f88cc4a3131423b1b2fffeb3084:gcc/Pkgfile
 f:cfbdc114167b53c82ae8d040e89e288f:man-pages/.md5sum
 f:bc2ad577b288fa4b1af7a3f831a12f55:man-pages/.footprint
 f:ce4214f67a65c469eeb11f76007c893b:man-pages/Pkgfile
