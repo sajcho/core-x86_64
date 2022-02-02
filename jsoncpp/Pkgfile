@@ -1,0 +1,21 @@
+# Description:	JSON C++ library
+# URL:		https://github.com/open-source-parsers/jsoncpp
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=jsoncpp
+version=1.9.5
+release=1
+source=(https://github.com/open-source-parsers/${name}/archive/${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	# fix - version
+	sed -i 's|1.9.4|1.9.5|' meson.build
+
+	build-meson . build
+
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
