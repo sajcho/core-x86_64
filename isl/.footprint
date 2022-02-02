@@ -71,8 +71,7 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/isl.pc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/gdb/
-drwxr-xr-x	root/root	usr/share/gdb/python/
-drwxr-xr-x	root/root	usr/share/gdb/python/auto-load/
-drwxr-xr-x	root/root	usr/share/gdb/python/auto-load/usr/
-drwxr-xr-x	root/root	usr/share/gdb/python/auto-load/usr/lib/
--rw-r--r--	root/root	usr/share/gdb/python/auto-load/usr/lib/libisl.so.23.1.0-gdb.py
+drwxr-xr-x	root/root	usr/share/gdb/auto-load/
+drwxr-xr-x	root/root	usr/share/gdb/auto-load/usr/
+drwxr-xr-x	root/root	usr/share/gdb/auto-load/usr/lib/
+-rw-r--r--	root/root	usr/share/gdb/auto-load/usr/lib/libisl.so.23.1.0-gdb.py
