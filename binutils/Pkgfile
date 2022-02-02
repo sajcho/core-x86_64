@@ -4,19 +4,12 @@
 # Depends on:	flex texinfo zlib
 
 name=binutils
-version=2.37
-release=2
-source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	binutils-2.37-upstream_fix-1.patch)
+version=2.37.90
+release=0
+source=(ftp://sourceware.org/pub/binutils/snapshots/binutils-2.37.90.tar.xz)
 
 build() {
 	cd ${name}-${version}
-
-	patch -Np1 -i $SRC/binutils-2.37-upstream_fix-1.patch
-
-	# fix man pages
-	sed -i '63d' etc/texi2pod.pl
-	find -name \*.1 -delete
 
 	mkdir build
 	cd build
