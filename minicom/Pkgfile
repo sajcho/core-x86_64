@@ -1,0 +1,22 @@
+# Description:	menu driven communications program for terminals
+# URL:		https://tracker.debian.org/pkg/minicom
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=minicom
+version=2.8
+release=1
+source=(https://salsa.debian.org/${name}-team/${name}/-/archive/${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--enable-lock-dir=/run/lock \
+		--disable-nls
+
+	make V=1
+
+	make DESTDIR=$PKG install
+}
