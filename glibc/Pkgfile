@@ -4,11 +4,10 @@
 # Depends on:	python3 texinfo
 
 name=glibc
-version=2.34
-release=4
+version=2.35
+release=0
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
 	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.2.tar.xz \
-	glibc-c-utf8-locale.patch \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
@@ -17,20 +16,12 @@ build() {
 
 	make mrproper
 	make INSTALL_HDR_PATH=$PKG/usr headers_install
-
-	# add support C.UTF-8 locale
-	patch -d $SRC/${name}-${version} -p1 \
-		-i $SRC/glibc-c-utf8-locale.patch
+	chown -R root:root $PKG/usr
 
 	cd $SRC/${name}-${version}
 
-	CFLAGS="${CFLAGS/-flto=auto -ffat-lto-objects -fuse-ld=mold/}"
-	CXXFLAGS="${CXXFLAGS/-flto=auto -ffat-lto-objects -fuse-ld=mold/}"
-	LDFLAGS=${LDFLAGS/ -Wl,-fuse-ld=mold/}
-
-	# LFS -fix a security problem identified upstream:
-	sed -e '/NOTIFY_REMOVED)/s/)/ \&\& data.attr != NULL)/' \
-		-i sysdeps/unix/sysv/linux/mq_notify.c
+	CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/}"
+	CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/}"
 
 	mkdir build
 	cd build
@@ -40,9 +31,10 @@ build() {
 		--libexecdir=/usr/lib \
 		--with-headers=$PKG/usr/include \
 		--enable-shared \
-		--enable-kernel=3.7.0 \
+		--enable-kernel=4.9.0 \
 		--enable-tunables \
 		--enable-bind-now \
+		--enable-cet \
 		--enable-stack-protector=strong \
 		--disable-profile \
 		--disable-werror \
@@ -50,10 +42,8 @@ build() {
 		--disable-timezone-tools \
 		--with-pkgversion="SAUX x86_64" \
 		--without-gd \
-		--without-cvs \
 		--build=$CHOST \
 		--host=$CHOST \
-		--enable-cet \
 		libc_cv_slibdir=/lib
 
 	make V=1

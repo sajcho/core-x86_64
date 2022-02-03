@@ -16,7 +16,6 @@ lrwxrwxrwx	root/root	etc/sv/nscd/supervise -> /run/runit/supervise.nscd
 drwxr-xr-x	root/root	lib/
 -rwxr-xr-x	root/root	lib/ld-linux-x86-64.so.2
 -rwxr-xr-x	root/root	lib/libBrokenLocale.so.1
--rwxr-xr-x	root/root	lib/libSegFault.so
 -rwxr-xr-x	root/root	lib/libanl.so.1
 -rwxr-xr-x	root/root	lib/libc.so.6
 -rwxr-xr-x	root/root	lib/libc_malloc_debug.so.0
@@ -42,11 +41,11 @@ drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/sln
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
--rwxr-xr-x	root/root	usr/bin/catchsegv
 -rwxr-xr-x	root/root	usr/bin/gencat
 -rwxr-xr-x	root/root	usr/bin/getconf
 -rwxr-xr-x	root/root	usr/bin/getent
 -rwxr-xr-x	root/root	usr/bin/iconv
+lrwxrwxrwx	root/root	usr/bin/ld.so -> ../../lib/ld-linux-x86-64.so.2
 -rwxr-xr-x	root/root	usr/bin/ldd
 -rwxr-xr-x	root/root	usr/bin/locale
 -rwxr-xr-x	root/root	usr/bin/localedef
@@ -177,12 +176,14 @@ drwxr-xr-x	root/root	usr/include/asm/
 drwxr-xr-x	root/root	usr/include/bits/
 -rw-r--r--	root/root	usr/include/bits/a.out.h
 -rw-r--r--	root/root	usr/include/bits/argp-ldbl.h
+-rw-r--r--	root/root	usr/include/bits/atomic_wide_counter.h
 -rw-r--r--	root/root	usr/include/bits/byteswap.h
 -rw-r--r--	root/root	usr/include/bits/cmathcalls.h
 -rw-r--r--	root/root	usr/include/bits/confname.h
 -rw-r--r--	root/root	usr/include/bits/cpu-set.h
 -rw-r--r--	root/root	usr/include/bits/dirent.h
 -rw-r--r--	root/root	usr/include/bits/dirent_ext.h
+-rw-r--r--	root/root	usr/include/bits/dl_find_object.h
 -rw-r--r--	root/root	usr/include/bits/dlfcn.h
 -rw-r--r--	root/root	usr/include/bits/elfclass.h
 -rw-r--r--	root/root	usr/include/bits/endian.h
@@ -220,6 +221,7 @@ drwxr-xr-x	root/root	usr/include/bits/
 -rw-r--r--	root/root	usr/include/bits/libc-header-start.h
 -rw-r--r--	root/root	usr/include/bits/libm-simd-decl-stubs.h
 -rw-r--r--	root/root	usr/include/bits/link.h
+-rw-r--r--	root/root	usr/include/bits/link_lavcurrent.h
 -rw-r--r--	root/root	usr/include/bits/local_lim.h
 -rw-r--r--	root/root	usr/include/bits/locale.h
 -rw-r--r--	root/root	usr/include/bits/long-double.h
@@ -256,6 +258,7 @@ drwxr-xr-x	root/root	usr/include/bits/platform/
 -rw-r--r--	root/root	usr/include/bits/pthreadtypes.h
 -rw-r--r--	root/root	usr/include/bits/ptrace-shared.h
 -rw-r--r--	root/root	usr/include/bits/resource.h
+-rw-r--r--	root/root	usr/include/bits/rseq.h
 -rw-r--r--	root/root	usr/include/bits/sched.h
 -rw-r--r--	root/root	usr/include/bits/select.h
 -rw-r--r--	root/root	usr/include/bits/select2.h
@@ -1471,6 +1474,7 @@ drwxr-xr-x	root/root	usr/include/sys/platform/
 -rw-r--r--	root/root	usr/include/sys/reboot.h
 -rw-r--r--	root/root	usr/include/sys/reg.h
 -rw-r--r--	root/root	usr/include/sys/resource.h
+-rw-r--r--	root/root	usr/include/sys/rseq.h
 -rw-r--r--	root/root	usr/include/sys/select.h
 -rw-r--r--	root/root	usr/include/sys/sem.h
 -rw-r--r--	root/root	usr/include/sys/sendfile.h
@@ -1812,6 +1816,7 @@ drwxr-xr-x	root/root	usr/lib/getconf/
 -rwxr-xr-x	root/root	usr/lib/getconf/POSIX_V6_LP64_OFF64
 -rwxr-xr-x	root/root	usr/lib/getconf/POSIX_V7_LP64_OFF64
 -rwxr-xr-x	root/root	usr/lib/getconf/XBS5_LP64_OFF64
+-rw-r--r--	root/root	usr/lib/grcrt1.o
 -rw-r--r--	root/root	usr/lib/libBrokenLocale.a
 lrwxrwxrwx	root/root	usr/lib/libBrokenLocale.so -> ../../lib/libBrokenLocale.so.1
 -rw-r--r--	root/root	usr/lib/libanl.a
@@ -1824,7 +1829,7 @@ lrwxrwxrwx	root/root	usr/lib/libc_malloc_debug.so -> ../../lib/libc_malloc_debug
 lrwxrwxrwx	root/root	usr/lib/libcrypt.so -> ../../lib/libcrypt.so.1
 -rw-r--r--	root/root	usr/lib/libdl.a
 -rw-r--r--	root/root	usr/lib/libg.a
--rw-r--r--	root/root	usr/lib/libm-2.34.a
+-rw-r--r--	root/root	usr/lib/libm-2.35.a
 -rw-r--r--	root/root	usr/lib/libm.a
 -rw-r--r--	root/root	usr/lib/libm.so
 -rw-r--r--	root/root	usr/lib/libmcheck.a
@@ -1840,6 +1845,7 @@ lrwxrwxrwx	root/root	usr/lib/libresolv.so -> ../../lib/libresolv.so.2
 lrwxrwxrwx	root/root	usr/lib/libthread_db.so -> ../../lib/libthread_db.so.1
 -rw-r--r--	root/root	usr/lib/libutil.a
 drwxr-xr-x	root/root	usr/lib/locale/
+-rw-r--r--	root/root	usr/lib/rcrt1.o
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/iconvconfig
 -rwxr-xr-x	root/root	usr/sbin/nscd
@@ -2086,6 +2092,7 @@ drwxr-xr-x	root/root	usr/share/i18n/locales/
 -rw-r--r--	root/root	usr/share/i18n/locales/aa_ER
 -rw-r--r--	root/root	usr/share/i18n/locales/aa_ER@saaho
 -rw-r--r--	root/root	usr/share/i18n/locales/aa_ET
+-rw-r--r--	root/root	usr/share/i18n/locales/ab_GE
 -rw-r--r--	root/root	usr/share/i18n/locales/af_ZA
 -rw-r--r--	root/root	usr/share/i18n/locales/agr_PE
 -rw-r--r--	root/root	usr/share/i18n/locales/ak_GH

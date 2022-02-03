@@ -1,5 +1,4 @@
-31998b53fb39cb946e96abc310af1c89  glibc-2.34.tar.xz
-6589008e16d8dd3c760d612ba8140db2  glibc-c-utf8-locale.patch
+dd571c67d85d89d7f60b854a4e207423  glibc-2.35.tar.xz
 96156bec8e05de67384dc93e72bdc313  host.conf
 fbbc215a9b15ba4846f326cc88108057  hosts
 f7fefce570a3c776e26e778c5e401490  ld.so.conf
