@@ -517,10 +517,10 @@ f:b4e95fa8c8f3ae13cfdf616abd6a3960:rsync/rsyncd.conf
 f:ce1baa7b69bd6dcf6de9a6e22517ff3c:rsync/.footprint
 f:cfec9b994959fc3bf89bcc0b0887f9a6:rsync/rsyncd.run
 f:5f717f068be6d5581890e04960d31c92:rsync/Pkgfile
-f:1062c59e49c4585a9acfaad740a79c5d:ca-certificates/cacert.pem
-f:9ce19ac43670705ec2e22dfd71dd0ea4:ca-certificates/.md5sum
+f:3b89462e00eba6769fae30eebfb9997f:ca-certificates/cacert.pem
+f:2c172eeef2c9efb5ddaf9e4699c29e7e:ca-certificates/.md5sum
 f:b9e3d56125cb82aa9b9342be38d262b3:ca-certificates/.footprint
-f:461fec2a14b61ecbc8e1995d9a441358:ca-certificates/Pkgfile
+f:a4f71935a981bfd1bd30b851558883e2:ca-certificates/Pkgfile
 f:c148027c04bc4a8f5790ba37fb268d92:patch/CVE-2019-13636.patch
 f:6c555e7cc1b50e5e668b58d6bf9c20c4:patch/.md5sum
 f:9842bbeecd50922ee751fd1e7f48e590:patch/0002-Fix-arbitrary-command-execution-in-ed-style-patches-.patch
