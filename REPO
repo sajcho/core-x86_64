@@ -150,9 +150,9 @@ f:a72c719fb365e1c5c43d6f9e3f2f9232:pkgconf/.md5sum
 f:518b12ed688dfa3715f6a50fbe9802ba:pkgconf/x86_64-unknown-linux-gnu.personality
 f:6ae50b819725fc36204917ef7ba5ca2e:pkgconf/.footprint
 f:7819375b2d71f359011b7916a472f1e9:pkgconf/Pkgfile
-f:c8f09eb09ce9bd8159b4f28ff82bf350:findutils/.md5sum
+f:043be3f2eb0dee6bf0c98aea87b58755:findutils/.md5sum
 f:2dc5a54cb85bdabf757242415c7aaf15:findutils/.footprint
-f:4d3eda04a6becce10e5cb79ccc2c4b8b:findutils/Pkgfile
+f:9c07b55139d97c88b00894b0a25897b1:findutils/Pkgfile
 f:041760cae91aa63cbcf0e67cad571de6:tar/tar-1.28-vfatTruncate.patch
 f:1c8f02ca7b89a25a4293e740de46426a:tar/.md5sum
 f:012a92e2adce9310db12d06227f657c6:tar/.footprint
@@ -593,9 +593,9 @@ f:e131599b70c57826499ffe51b35295d0:python3/Pkgfile
 f:77f90f2460a545067018095ca9f83146:gawk/.md5sum
 f:19d4b2fd03f9f8f0ad8ca15e89066182:gawk/.footprint
 f:a33515fc1194203764cc8095b1dedeaa:gawk/Pkgfile
-f:5a6dd79203d04b6b04871df4a868ac2d:gdbm/.md5sum
+f:b6ad83d0e52c0d40ac7ef742897008a9:gdbm/.md5sum
 f:d6bff241bbb40934900f2e070513eacb:gdbm/.footprint
-f:65ac2b2ea564fcef56d6afca7adaf1f3:gdbm/Pkgfile
+f:56139f439fd4ee4ed5231516cb8e5f02:gdbm/Pkgfile
 f:cd56bc66f2204d9c08f06afcbab8abd2:pkgutils/README
 f:f01155446a2ce9b96764bbf26a1a3878:pkgutils/.md5sum
 f:d3cd3b5e962ed6856fc99bbfbfe6e771:pkgutils/pkgmk.conf-saux
