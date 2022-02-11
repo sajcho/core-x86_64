@@ -1,12 +1,12 @@
 # Description:	An implementation of the standard Unix documentation system accessed using the man command
-# URL:		http://man-db.nongnu.org/
+# URL:		https://man-db.nongnu.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 # Depends on:	zlib gdbm libpipeline libseccomp
 
 name=man-db
-version=2.9.4
+version=2.10.0
 release=1
-source=(http://download.savannah.gnu.org/releases/${name}/${name}-${version}.tar.xz \
+source=(https://download.savannah.gnu.org/releases/${name}/${name}-${version}.tar.xz \
 	mandb.cron)
 
 build() {
