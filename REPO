@@ -384,9 +384,9 @@ f:88d69d53c3b90f663aa24b1a285d091a:shadow/Pkgfile
 f:13c5d9e632e228b61ea0a40b9fbe1a5f:lzip/.md5sum
 f:021884352f89aebfbc8b505cc446e367:lzip/.footprint
 f:d05b7a1b98679c657d459459aa11abd6:lzip/Pkgfile
-f:9e2b8378ff8c5997997e6b99720f378d:mold/.md5sum
+f:0c4fcca2bb6b499e50984de3258fd5c1:mold/.md5sum
 f:f3e8728a1945bd552ab79e684e070bc7:mold/.footprint
-f:547d64c96495a3792ff39867ab5c1c0f:mold/Pkgfile
+f:8501aa350a80163c4a6f47e12f1e692d:mold/Pkgfile
 f:a2466bec566af80bc1b4072ffd9948e7:libmnl/.md5sum
 f:655acc31c6f42843fd303b4ad16f6cd2:libmnl/.footprint
 f:47cda20888507359fe410a66703e12d7:libmnl/Pkgfile
@@ -577,7 +577,7 @@ f:e14ef9dd59a7e6c7f3ae706771964d75:coreutils/coreutils-uname.patch
 f:465513780efc40708aab64c5cca4b329:coreutils/.md5sum
 f:15249427dbdff4dac44f3f1147839135:coreutils/.footprint
 f:08116e653bcca30faac22939464ddd5e:coreutils/chmod.c.patch
-f:f06ac26be159d10747d41519a7397e85:coreutils/Pkgfile
+f:b8d3e313fb1d957c1da1f87930d8882d:coreutils/Pkgfile
 f:81873fb5dece0a1498a9876b7f1c42fc:minicom/.md5sum
 f:f9883c632c6b16cae1b07cc259b6f7f7:minicom/.footprint
 f:c822f85d6ebb03b07bd64d44915359c8:minicom/Pkgfile
@@ -616,7 +616,7 @@ f:9897c63427674af4b4033e640df21ddf:gpm/Pkgfile
 f:b6bda8509ccd2f48702be065d6b4d2b3:openssl3/.md5sum
 f:91f85842d2118003ee465c34259047e6:openssl3/mksslcert.sh
 f:0bb8f5f88838222bcc784c30dbc58596:openssl3/.footprint
-f:be4aef590e2057865b74601ef0977fd1:openssl3/Pkgfile
+f:be9dd9a5e331c3ecbdc050055e2dde4f:openssl3/Pkgfile
 f:ac1ec5f02125db3163912b5a5b5fffc9:gettext/.md5sum
 f:b34b3c47913fbc9a85737756f401775d:gettext/.footprint
 f:d2015368ce2991424c68b67af86823b9:gettext/Pkgfile
