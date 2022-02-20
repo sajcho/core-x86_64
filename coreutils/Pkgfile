@@ -5,7 +5,7 @@
 
 name=coreutils
 version=9.0
-release=1
+release=2
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
 	chmod.c.patch \
 	coreutils-uname.patch)
@@ -16,8 +16,11 @@ build() {
 	patch -p1 -i $SRC/chmod.c.patch
 	patch -p1 -i $SRC/coreutils-uname.patch
 
-	export FORCE_UNSAFE_CONFIGURE=1
+	CFLAGS="${CFLAGS/ -flto/}"
 
+	autoreconf -fiv
+
+	export FORCE_UNSAFE_CONFIGURE=1
 	./configure \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
