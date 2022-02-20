@@ -2965,6 +2965,7 @@ drwxr-xr-x	root/root	usr/include/llvm/XRay/
 -rw-r--r--	root/root	usr/include/llvm/XRay/XRayRecord.h
 -rw-r--r--	root/root	usr/include/llvm/XRay/YAMLXRayRecord.h
 drwxr-xr-x	root/root	usr/lib/
+-rwxr-xr-x	root/root	usr/lib/LLVMgold.so
 drwxr-xr-x	root/root	usr/lib/bfd-plugins/
 lrwxrwxrwx	root/root	usr/lib/bfd-plugins/libLTO.so -> ../libLTO.so
 drwxr-xr-x	root/root	usr/lib/clang/

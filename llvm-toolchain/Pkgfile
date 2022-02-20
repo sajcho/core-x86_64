@@ -6,7 +6,7 @@
 name=llvm-toolchain
 _realname=llvm-project
 version=13.0.1
-release=0
+release=1
 source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
 
 build() {
@@ -17,9 +17,8 @@ build() {
 
 	export CC="clang"
 	export CXX="clang++"
-
-	CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/}"
-	CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/}"
+	CFLAGS="${CFLAGS/ -fuse-ld=mold -flto/}"
+	CXXFLAGS="${CXXFLAGS/ -fuse-ld=mold -flto/}"
 
 	cmake .. \
 		-DCMAKE_BUILD_TYPE="Release" \
@@ -27,6 +26,7 @@ build() {
 		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
 		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
 		-DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra;compiler-rt;lld" \
+		-DLLVM_BINUTILS_INCDIR=/usr/include \
 		-DLLVM_OPTIMIZED_TABLEGEN=ON \
 		-DLLVM_BUILD_LLVM_DYLIB=ON \
 		-DLLVM_LINK_LLVM_DYLIB=ON \
