@@ -5,9 +5,14 @@ drwxr-xr-x	root/root	etc/
 -rw-r--r--	root/root	etc/ld.so.conf
 drwxr-xr-x	root/root	etc/ld.so.conf.d/
 lrwxrwxrwx	root/root	etc/localtime -> ../usr/share/zoneinfo/UTC
+-rw-r--r--	root/root	etc/nscd.conf
 -rw-r--r--	root/root	etc/nsswitch.conf
 -rw-r--r--	root/root	etc/resolv.conf
 -rw-r--r--	root/root	etc/rpc
+drwxr-xr-x	root/root	etc/sv/
+drwxr-xr-x	root/root	etc/sv/nscd/
+-rwxr-xr-x	root/root	etc/sv/nscd/run
+lrwxrwxrwx	root/root	etc/sv/nscd/supervise -> /run/runit/supervise.nscd
 drwxr-xr-x	root/root	lib/
 -rwxr-xr-x	root/root	lib/ld-linux-x86-64.so.2
 -rwxr-xr-x	root/root	lib/libBrokenLocale.so.1
@@ -573,6 +578,7 @@ drwxr-xr-x	root/root	usr/include/linux/cifs/
 -rw-r--r--	root/root	usr/include/linux/cryptouser.h
 -rw-r--r--	root/root	usr/include/linux/cuda.h
 -rw-r--r--	root/root	usr/include/linux/cxl_mem.h
+-rw-r--r--	root/root	usr/include/linux/cyclades.h
 -rw-r--r--	root/root	usr/include/linux/cycx_cfm.h
 -rw-r--r--	root/root	usr/include/linux/dcbnl.h
 -rw-r--r--	root/root	usr/include/linux/dccp.h
@@ -1843,6 +1849,7 @@ drwxr-xr-x	root/root	usr/lib/locale/
 -rw-r--r--	root/root	usr/lib/rcrt1.o
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/iconvconfig
+-rwxr-xr-x	root/root	usr/sbin/nscd
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/i18n/
 drwxr-xr-x	root/root	usr/share/i18n/charmaps/
