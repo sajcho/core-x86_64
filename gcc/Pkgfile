@@ -5,25 +5,29 @@
 
 name=gcc
 version=12.0.1
-_realversion=12-20220130
-release=0
-source=(http://ftp.ntua.gr/mirror/gnu/gcc/snapshots/${_realversion}/${name}-${_realversion}.tar.xz \
-	c89  c99)
+_realversion=12-20220213
+release=1
+source=(https://ftp.gwdg.de/pub/misc/${name}/snapshots/${_realversion}/${name}-${_realversion}.tar.xz \
+	gcc-12-20220213-lto-plugin.c.patch \
+	c89 c99)
 
 build() {
 	cd ${name}-${_realversion}
 
+	# Support LDPT_GET_SYMBOLS_V3.
+	# That supports skipping of an object file.
+	patch -p1 -i $SRC/gcc-12-20220213-lto-plugin.c.patch
+
 	sed -i 's|lib64|lib|' $SRC/${name}-${_realversion}/${name}/config/i386/t-linux64
 	sed -i 's|lib64|lib|' $SRC/${name}-${_realversion}/${name}/config/i386/linux64.h
-
-	CFLAGS="${CFLAGS/-flto=auto -ffat-lto-objects/}"
-	export XCFLAGS="${CFLAGS/-flto=auto -ffat-lto-objects/}"
-	CXXFLAGS="${CXXFLAGS/-flto=auto -ffat-lto-objects/}"
 
 	mkdir build
 	cd build
 
-	../configure \
+	CFLAGS="${CFLAGS/ -fuse-ld=mold -flto/}"
+	CXXFLAGS="${CXXFLAGS/ -fuse-ld=mold -flto/}"
+
+        ../configure \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
 		--enable-bootstrap \
@@ -41,7 +45,7 @@ build() {
 		--enable-linker-build-id \
 		--enable-decimal-float \
 		--enable-shared \
-		--enable-gold=no \
+		--enable-gold=yes \
 		--enable-plugin \
 		--enable-cet \
 		--disable-nls \
@@ -54,8 +58,6 @@ build() {
 		--disable-libquadmath \
 		--with-isl \
 		--with-system-zlib \
-		--with-tune=generic \
-		--with-arch=x86-64 \
 		--with-linker-hash-style=gnu \
 		--with-build-config=bootstrap-lto \
 		--with-pkgversion="SAUX x86_64" \
