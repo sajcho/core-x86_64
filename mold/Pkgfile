@@ -4,15 +4,19 @@
 # Depends on:	mimalloc2 openssl3 xxhash
 
 name=mold
-version=1.0.3
-release=1
-source=(https://github.com/rui314/${name}/archive/v${version}/${name}-${version}.tar.gz)
+version=1.0.3-git20220220
+_commit=d258140d54d5dc853ca900d148d7ad7e83d2b060
+# Commits Feb 20, 2022
+release=0
+source=(https://github.com/rui314/${name}/archive/${_commit}/${name}-${_commit}.tar.gz)
 
 build() {
-	cd ${name}-${version}
+	cd ${name}-${_commit}
 
-	CFLAGS+=" -Wno-deprecated-declarations"
-	CXXFLAGS+=" -Wno-deprecated-declarations"
+	rm -r $SRC/${name}-${_commit}/third-party/{mimalloc,xxhash}
+
+	CFLAGS="${CFLAGS/ -fuse-ld=mold/}"
+	CXXFLAGS="${CXXFLAGS/ -fuse-ld=mold/}"
 
 	export SYSTEM_MIMALLOC=1
 	export SYSTEM_XXHASH=1
@@ -22,6 +26,8 @@ build() {
 
 	make -O ${JOBS:+-j ${JOBS}} V=1 VERBOSE=1 \
 		PREFIX=/usr LIBEXECDIR=/usr/lib
+
+	make check
 
 	make DESTDIR=$PKG PREFIX=/usr LIBEXECDIR=/usr/lib install
 }
