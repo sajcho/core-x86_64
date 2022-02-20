@@ -5,7 +5,7 @@
 
 name=mimalloc2
 version=2.0.3
-release=1
+release=2
 source=(https://github.com/microsoft/mimalloc/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
@@ -14,8 +14,11 @@ build() {
 	mkdir build
 	cd build
 
+	CFLAGS="${CFLAGS/ -fuse-ld=mold/}"
+	CXXFLAGS="${CXXFLAGS/ -fuse-ld=mold/}"
+
 	cmake .. \
-		-DCMAKE_BUILD_TYPE="None" \
+		-DCMAKE_BUILD_TYPE=Release \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DMI_INSTALL_TOPLEVEL=ON \
 		-DMI_BUILD_STATIC=OFF \
