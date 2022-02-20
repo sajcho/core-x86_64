@@ -5,7 +5,7 @@
 
 name=binutils
 version=2.38
-release=1
+release=2
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -14,10 +14,13 @@ build() {
 	mkdir build
 	cd build
 
+	CFLAGS="${CFLAGS/ -fuse-ld=mold -flto/}"
+	CXXFLAGS="${CXXFLAGS/ -fuse-ld=mold -flto/}"
+
 	../configure \
 		--prefix=/usr \
 		--enable-ld=default \
-		--enable-gold=no \
+		--enable-gold=yes \
 		--enable-plugins \
 		--enable-shared \
 		--enable-threads \
