@@ -1,0 +1,126 @@
+cat <<'EOF' |
+LAST_UPDATED: Obtained from git: master revision e49508ac6b36adb8a2056c5a1fb6e0178de2439d
+
+Native configuration is x86_64-unknown-linux-gnu
+
+		=== g++ tests ===
+
+
+Running target unix
+
+		=== g++ Summary ===
+
+# of expected passes		227557
+# of expected failures		1793
+# of unsupported tests		9830
+/home/devel/building/work/src/gcc-12-20220220/build/gcc/xg++  version 12.0.1 20220220 (experimental) (SAUX x86_64) 
+
+		=== gcc tests ===
+
+
+Running target unix
+FAIL: gcc.dg/deprecated.c  (test for warnings, line 28)
+FAIL: gcc.dg/deprecated.c (test for excess errors)
+FAIL: gcc.target/i386/auto-init-4.c scan-assembler-times long\\t-16843010 5
+FAIL: gcc.target/i386/cet-sjlj-6a.c scan-assembler-times movq\\t.*buf\\\\+8 1
+FAIL: gcc.target/i386/cet-sjlj-6a.c scan-assembler-times subq\\tbuf\\\\+8 1
+FAIL: gcc.target/i386/cet-sjlj-6b.c scan-assembler-times movq\\t.*buf\\\\+16 1
+FAIL: gcc.target/i386/cet-sjlj-6b.c scan-assembler-times subq\\tbuf\\\\+16 1
+FAIL: gcc.target/i386/fentryname3.c scan-assembler 0x0f, 0x1f, 0x44, 0x00, 0x00
+FAIL: gcc.target/i386/mvc7.c scan-assembler foo.avx,
+FAIL: gcc.target/i386/mvc7.c scan-assembler foo.default,
+FAIL: gcc.target/i386/pr24414.c (test for excess errors)
+UNRESOLVED: gcc.target/i386/pr24414.c compilation failed to produce executable
+FAIL: gcc.target/i386/pr93492-3.c scan-assembler \\t.cfi_startproc\\n\\tendbr(32|64)\\n.*.LPFE1:\\n\\tnop\\n1:\\tcall\\t__fentry__\\n\\tret\\n
+FAIL: gcc.target/i386/pr93492-5.c scan-assembler \\t.cfi_startproc\\n.*.LPFE1:\\n\\tnop\\n1:\\tcall\\t__fentry__\\n\\tret\\n
+FAIL: gcc.target/i386/pr98482-1.c scan-assembler movabsq\\t\\\\\$__fentry__, %r10\\n\\tcall\\t\\\\*%r10
+
+		=== gcc Summary ===
+
+# of expected passes		174903
+# of unexpected failures	14
+# of expected failures		1325
+# of unresolved testcases	1
+# of unsupported tests		2389
+/home/devel/building/work/src/gcc-12-20220220/build/gcc/xgcc  version 12.0.1 20220220 (experimental) (SAUX x86_64) 
+
+		=== gfortran tests ===
+
+
+Running target unix
+FAIL: gfortran.dg/unlimited_polymorphic_3.f03   -Os  execution test
+FAIL: gfortran.dg/vector_subscript_1.f90   -O1  execution test
+FAIL: gfortran.dg/vector_subscript_1.f90   -O2  execution test
+FAIL: gfortran.dg/vector_subscript_1.f90   -O3 -fomit-frame-pointer -funroll-loops -fpeel-loops -ftracer -finline-functions  execution test
+FAIL: gfortran.dg/vector_subscript_1.f90   -O3 -g  execution test
+FAIL: gfortran.dg/vector_subscript_1.f90   -Os  execution test
+
+		=== gfortran Summary ===
+
+# of expected passes		65738
+# of unexpected failures	6
+# of expected failures		272
+# of unsupported tests		97
+/home/devel/building/work/src/gcc-12-20220220/build/gcc/gfortran  version 12.0.1 20220220 (experimental) (SAUX x86_64) 
+
+		=== libatomic tests ===
+
+
+Running target unix
+
+		=== libatomic Summary ===
+
+# of expected passes		54
+		=== libgomp tests ===
+
+
+Running target unix
+FAIL: libgomp.c++/../libgomp.c-c++-common/task-reduction-11.c execution test
+
+		=== libgomp Summary ===
+
+# of expected passes		12970
+# of unexpected failures	1
+# of expected failures		217
+# of unsupported tests		538
+		=== libitm tests ===
+
+
+Running target unix
+
+		=== libitm Summary ===
+
+# of expected passes		44
+# of expected failures		3
+# of unsupported tests		1
+		=== libstdc++ tests ===
+
+
+Running target unix
+
+		=== libstdc++ Summary ===
+
+# of expected passes		14546
+# of expected failures		95
+# of unsupported tests		684
+
+Compiler version: 12.0.1 20220220 (experimental) (SAUX x86_64) 
+Platform: x86_64-unknown-linux-gnu
+configure flags: --prefix=/usr --libexecdir=/usr/lib --enable-languages=c,c++,fortran,lto --enable-threads=posix --enable-__cxa_atexit --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-linker-build-id --enable-plugin --disable-nls --disable-multilib --with-system-zlib --with-linker-hash-style=gnu --with-build-config=bootstrap-lto --with-pkgversion='SAUX x86_64' --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu
+EOF
+Mail -s "Results for 12.0.1 20220220 (experimental) (SAUX x86_64) testsuite on x86_64-unknown-linux-gnu" gcc-testresults@gcc.gnu.org &&
+mv /home/devel/building/work/src/gcc-12-20220220/build/./gcc/testsuite/g++/g++.sum /home/devel/building/work/src/gcc-12-20220220/build/./gcc/testsuite/g++/g++.sum.sent &&
+mv /home/devel/building/work/src/gcc-12-20220220/build/./gcc/testsuite/gcc/gcc.sum /home/devel/building/work/src/gcc-12-20220220/build/./gcc/testsuite/gcc/gcc.sum.sent &&
+mv /home/devel/building/work/src/gcc-12-20220220/build/./gcc/testsuite/gfortran/gfortran.sum /home/devel/building/work/src/gcc-12-20220220/build/./gcc/testsuite/gfortran/gfortran.sum.sent &&
+mv /home/devel/building/work/src/gcc-12-20220220/build/./x86_64-unknown-linux-gnu/libatomic/testsuite/libatomic.sum /home/devel/building/work/src/gcc-12-20220220/build/./x86_64-unknown-linux-gnu/libatomic/testsuite/libatomic.sum.sent &&
+mv /home/devel/building/work/src/gcc-12-20220220/build/./x86_64-unknown-linux-gnu/libgomp/testsuite/libgomp.sum /home/devel/building/work/src/gcc-12-20220220/build/./x86_64-unknown-linux-gnu/libgomp/testsuite/libgomp.sum.sent &&
+mv /home/devel/building/work/src/gcc-12-20220220/build/./x86_64-unknown-linux-gnu/libitm/testsuite/libitm.sum /home/devel/building/work/src/gcc-12-20220220/build/./x86_64-unknown-linux-gnu/libitm/testsuite/libitm.sum.sent &&
+mv /home/devel/building/work/src/gcc-12-20220220/build/./x86_64-unknown-linux-gnu/libstdc++-v3/testsuite/libstdc++.sum /home/devel/building/work/src/gcc-12-20220220/build/./x86_64-unknown-linux-gnu/libstdc++-v3/testsuite/libstdc++.sum.sent &&
+mv /home/devel/building/work/src/gcc-12-20220220/build/./gcc/testsuite/g++/g++.log /home/devel/building/work/src/gcc-12-20220220/build/./gcc/testsuite/g++/g++.log.sent &&
+mv /home/devel/building/work/src/gcc-12-20220220/build/./gcc/testsuite/gcc/gcc.log /home/devel/building/work/src/gcc-12-20220220/build/./gcc/testsuite/gcc/gcc.log.sent &&
+mv /home/devel/building/work/src/gcc-12-20220220/build/./gcc/testsuite/gfortran/gfortran.log /home/devel/building/work/src/gcc-12-20220220/build/./gcc/testsuite/gfortran/gfortran.log.sent &&
+mv /home/devel/building/work/src/gcc-12-20220220/build/./x86_64-unknown-linux-gnu/libatomic/testsuite/libatomic.log /home/devel/building/work/src/gcc-12-20220220/build/./x86_64-unknown-linux-gnu/libatomic/testsuite/libatomic.log.sent &&
+mv /home/devel/building/work/src/gcc-12-20220220/build/./x86_64-unknown-linux-gnu/libgomp/testsuite/libgomp.log /home/devel/building/work/src/gcc-12-20220220/build/./x86_64-unknown-linux-gnu/libgomp/testsuite/libgomp.log.sent &&
+mv /home/devel/building/work/src/gcc-12-20220220/build/./x86_64-unknown-linux-gnu/libitm/testsuite/libitm.log /home/devel/building/work/src/gcc-12-20220220/build/./x86_64-unknown-linux-gnu/libitm/testsuite/libitm.log.sent &&
+mv /home/devel/building/work/src/gcc-12-20220220/build/./x86_64-unknown-linux-gnu/libstdc++-v3/testsuite/libstdc++.log /home/devel/building/work/src/gcc-12-20220220/build/./x86_64-unknown-linux-gnu/libstdc++-v3/testsuite/libstdc++.log.sent &&
+true

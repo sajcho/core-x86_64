@@ -5,8 +5,8 @@
 
 name=gcc
 version=12.0.1
-_realversion=12-20220213
-release=1
+_realversion=12-20220220
+release=2
 source=(https://ftp.gwdg.de/pub/misc/${name}/snapshots/${_realversion}/${name}-${_realversion}.tar.xz \
 	gcc-12-20220213-lto-plugin.c.patch \
 	c89 c99)
@@ -30,38 +30,20 @@ build() {
         ../configure \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
-		--enable-bootstrap \
 		--enable-languages=c,c++,fortran,lto \
 		--enable-threads=posix \
 		--enable-__cxa_atexit \
 		--enable-clocale=gnu \
 		--enable-default-pie \
 		--enable-default-ssp \
-		--enable-gnu-indirect-function \
-		--enable-standard-branch-protection \
-		--enable-link-serialization=1 \
-		--enable-initfini-array \
-		--enable-gnu-unique-object \
 		--enable-linker-build-id \
-		--enable-decimal-float \
-		--enable-shared \
-		--enable-gold=yes \
 		--enable-plugin \
-		--enable-cet \
 		--disable-nls \
 		--disable-multilib \
-		--disable-werror \
-		--disable-libssp \
-		--disable-libstdcxx-pch \
-		--disable-libunwind-exceptions \
-		--disable-libquadmath-support \
-		--disable-libquadmath \
-		--with-isl \
 		--with-system-zlib \
 		--with-linker-hash-style=gnu \
 		--with-build-config=bootstrap-lto \
 		--with-pkgversion="SAUX x86_64" \
-		--without-included-gettext \
 		--build=$CHOST \
 		--host=$CHOST
 

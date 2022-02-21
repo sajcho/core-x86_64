@@ -992,6 +992,8 @@ drwxr-xr-x	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/
 -rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/pmmintrin.h
 -rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/popcntintrin.h
 -rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/prfchwintrin.h
+-rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/quadmath.h
+-rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/quadmath_weak.h
 -rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/rdseedintrin.h
 -rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/rtmintrin.h
 drwxr-xr-x	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/sanitizer/
@@ -1004,6 +1006,11 @@ drwxr-xr-x	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/sanitiz
 -rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/sgxintrin.h
 -rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/shaintrin.h
 -rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/smmintrin.h
+drwxr-xr-x	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/ssp/
+-rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/ssp/ssp.h
+-rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/ssp/stdio.h
+-rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/ssp/string.h
+-rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/ssp/unistd.h
 -rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/stdalign.h
 -rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/stdarg.h
 -rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/12.0.1/include/stdatomic.h
@@ -1573,7 +1580,19 @@ lrwxrwxrwx	root/root	usr/lib/liblsan.so -> liblsan.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/liblsan.so.0 -> liblsan.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/liblsan.so.0.0.0
 -rw-r--r--	root/root	usr/lib/liblsan_preinit.o
+-rw-r--r--	root/root	usr/lib/libquadmath.a
+-rwxr-xr-x	root/root	usr/lib/libquadmath.la
+lrwxrwxrwx	root/root	usr/lib/libquadmath.so -> libquadmath.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libquadmath.so.0 -> libquadmath.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libquadmath.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libsanitizer.spec
+-rw-r--r--	root/root	usr/lib/libssp.a
+-rwxr-xr-x	root/root	usr/lib/libssp.la
+lrwxrwxrwx	root/root	usr/lib/libssp.so -> libssp.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libssp.so.0 -> libssp.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libssp.so.0.0.0
+-rw-r--r--	root/root	usr/lib/libssp_nonshared.a
+-rwxr-xr-x	root/root	usr/lib/libssp_nonshared.la
 -rw-r--r--	root/root	usr/lib/libstdc++.a
 -rwxr-xr-x	root/root	usr/lib/libstdc++.la
 lrwxrwxrwx	root/root	usr/lib/libstdc++.so -> libstdc++.so.6.0.30
