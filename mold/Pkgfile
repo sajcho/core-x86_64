@@ -4,16 +4,14 @@
 # Depends on:	mimalloc2 openssl3 xxhash
 
 name=mold
-version=1.0.3-git20220220
-_commit=d258140d54d5dc853ca900d148d7ad7e83d2b060
-# Commits Feb 20, 2022
-release=0
-source=(https://github.com/rui314/${name}/archive/${_commit}/${name}-${_commit}.tar.gz)
+version=1.1
+release=1
+source=(https://github.com/rui314/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
-	cd ${name}-${_commit}
+	cd ${name}-${version}
 
-	rm -r $SRC/${name}-${_commit}/third-party/{mimalloc,xxhash}
+	rm -r $SRC/${name}-${version}/third-party/{mimalloc,xxhash}
 
 	CFLAGS="${CFLAGS/ -fuse-ld=mold/}"
 	CXXFLAGS="${CXXFLAGS/ -fuse-ld=mold/}"
