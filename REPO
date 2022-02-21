@@ -651,11 +651,12 @@ f:a0e9456814e896dded8ecc2248399ec9:libffi/.md5sum
 f:b1612b76280be21762df6d854450f6f3:libffi/.footprint
 f:22f8c89285685b8f2660a172d45151cc:libffi/Pkgfile
 f:9e7442326fbd3b506c54d343116d3dcb:gcc/gcc-12-20220213-lto-plugin.c.patch
-f:25ba6fe629e71581ca7fde4ab98547f8:gcc/.md5sum
-f:884f7c189d4efe20c6c0c0b7d96f4fe7:gcc/.footprint
+f:5299eb43a7e1c8760fe549ce105f7126:gcc/.md5sum
+f:03e70e5febc94e1e31bbb67006d9fbc1:gcc/test-gcc-12-20220220-result
+f:1388af4b1f055a8e0c93a6f100123ac9:gcc/.footprint
 f:3d333df77302ed89e06a4a8539943b7d:gcc/c89
 f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
-f:475206c66a5733a1c256423c5a917258:gcc/Pkgfile
+f:9b378e8147b3bbd76b794244afce4203:gcc/Pkgfile
 f:cfbdc114167b53c82ae8d040e89e288f:man-pages/.md5sum
 f:bc2ad577b288fa4b1af7a3f831a12f55:man-pages/.footprint
 f:ce4214f67a65c469eeb11f76007c893b:man-pages/Pkgfile
