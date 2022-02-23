@@ -4,7 +4,7 @@
 
 name=xxhash
 version=0.8.1
-release=1
+release=2
 source=(https://github.com/Cyan4973/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
@@ -13,4 +13,6 @@ build() {
 	make V=1 PREFIX=/usr
 
 	make PREFIX=/usr DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.a' -delete
 }
