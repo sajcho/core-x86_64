@@ -500,8 +500,8 @@ f:341701b8457455cc7be81628611cfd54:less/.footprint
 f:941ac82e8f62127cf1ec571e43769b3d:less/filter
 f:8d1fa239b84d9d5a8bf5c58ae79509bd:less/Pkgfile
 f:368183fed6cb628b16841f70a02f832d:xxhash/.md5sum
-f:31bb62f7f3cfc5bfbfed95a6579d21c9:xxhash/.footprint
-f:ee0bfbcae2be076da6e316603f5c9aaa:xxhash/Pkgfile
+f:0974bc76bd1f4d3047cadbb58bae8aa9:xxhash/.footprint
+f:4425ba9bcbd89ac7688c478ef9a8b826:xxhash/Pkgfile
 f:49c261d300c50fc98d0c5bc8df3c709a:lz4/.md5sum
 f:2458979da4d5a27546ce1d4120809a75:lz4/.footprint
 f:3e43c776e44c5808abd5824f3a6db978:lz4/Pkgfile
