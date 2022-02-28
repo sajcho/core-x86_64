@@ -563,7 +563,7 @@ f:a1bca57063be7736119e62f0db0f744c:grep/.footprint
 f:7bb1ac56980169d7a131fe64de39e27e:grep/Pkgfile
 f:017b0d89ff74dfc7381cbd2f687ef700:libpcre/.md5sum
 f:efb13ac1e54c5702bc2548281430ab29:libpcre/.footprint
-f:106899416043a8c72a6157ff1412df29:libpcre/Pkgfile
+f:b94f7f77d3e8c7a5c9dd04141a464512:libpcre/Pkgfile
 f:af6464bd136784c8e0a8d712c62bbd56:mimalloc2/.md5sum
 f:0ce0d98fdc53d2cde1cfa324e5fe8e86:mimalloc2/.footprint
 f:b8aba03eb2c77e6ff2bb96d3f0883dfc:mimalloc2/Pkgfile
