@@ -5,7 +5,7 @@
 
 name=coreutils
 version=9.0
-release=2
+release=3
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
 	chmod.c.patch \
 	coreutils-uname.patch)
@@ -15,8 +15,6 @@ build() {
 
 	patch -p1 -i $SRC/chmod.c.patch
 	patch -p1 -i $SRC/coreutils-uname.patch
-
-	CFLAGS="${CFLAGS/ -flto/}"
 
 	autoreconf -fiv
 
