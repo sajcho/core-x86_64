@@ -577,7 +577,7 @@ f:e14ef9dd59a7e6c7f3ae706771964d75:coreutils/coreutils-uname.patch
 f:465513780efc40708aab64c5cca4b329:coreutils/.md5sum
 f:15249427dbdff4dac44f3f1147839135:coreutils/.footprint
 f:08116e653bcca30faac22939464ddd5e:coreutils/chmod.c.patch
-f:b8d3e313fb1d957c1da1f87930d8882d:coreutils/Pkgfile
+f:59199f8c84da0e28ec4d748ba6c16219:coreutils/Pkgfile
 f:81873fb5dece0a1498a9876b7f1c42fc:minicom/.md5sum
 f:f9883c632c6b16cae1b07cc259b6f7f7:minicom/.footprint
 f:c822f85d6ebb03b07bd64d44915359c8:minicom/Pkgfile
