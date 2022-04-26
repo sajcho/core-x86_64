@@ -4,19 +4,12 @@
 # Depends on:	gmp acl libcap
 
 name=coreutils
-version=9.0
-release=3
-source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	chmod.c.patch \
-	coreutils-uname.patch)
+version=9.1
+release=1
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
-
-	patch -p1 -i $SRC/chmod.c.patch
-	patch -p1 -i $SRC/coreutils-uname.patch
-
-	autoreconf -fiv
 
 	export FORCE_UNSAFE_CONFIGURE=1
 	./configure \
