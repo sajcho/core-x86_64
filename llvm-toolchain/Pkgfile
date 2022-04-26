@@ -18,7 +18,7 @@ build() {
 	export CC="clang"
 	export CXX="clang++"
 
-	cmake .. -G Ninja \
+	cmake -G Ninja \
 		-DCMAKE_BUILD_TYPE="Release" \
 		-DCMAKE_INSTALL_PREFIX="/usr " \
 		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
@@ -37,7 +37,7 @@ build() {
 		-DLLVM_ENABLE_LTO=Thin \
 		-DLLVM_ENABLE_PIC=ON \
 		-DLLVM_ENABLE_RTTI=ON \
-		-DLLVM_ENABLE_LIBCXX=ON \
+		-DLLVM_ENABLE_LIBCXX=OFF \
 		-DLLVM_INCLUDE_TESTS=OFF \
 		-DLLVM_ENABLE_SPHINX=OFF \
 		-DLLVM_ENABLE_OCAMLDOC=OFF \
