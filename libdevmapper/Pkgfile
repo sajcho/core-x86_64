@@ -4,17 +4,13 @@
 # Depends on:	util-linux
 
 name=libdevmapper
-version=1.02.181
+version=1.02.183
 release=1
-source=(https://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.14.tgz)
+source=(https://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.15.tgz)
 
 build() {
-	cd LVM2.2.03.14
+	cd LVM2.2.03.15
 
-	# libaio is not needed for libdevmapper
-	sed 's/libaio.h//' -i configure
-
-	CONFIG_SHELL=/bin/bash \
 	./configure \
 		--prefix=/usr \
 		--exec-prefix= \
