@@ -4,7 +4,7 @@
 # Depends on:	mimalloc2 openssl3 xxhash
 
 name=mold
-version=1.1
+version=1.2.0
 release=1
 source=(https://github.com/rui314/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
@@ -13,11 +13,7 @@ build() {
 
 	rm -r $SRC/${name}-${version}/third-party/{mimalloc,xxhash}
 
-	CFLAGS="${CFLAGS/ -fuse-ld=mold/}"
-	CXXFLAGS="${CXXFLAGS/ -fuse-ld=mold/}"
-
 	export SYSTEM_MIMALLOC=1
-	export SYSTEM_XXHASH=1
 	export CC=gcc
 	export CXX=g++
 	export LTO=1
@@ -25,6 +21,8 @@ build() {
 	make -O ${JOBS:+-j ${JOBS}} V=1 VERBOSE=1 \
 		PREFIX=/usr LIBEXECDIR=/usr/lib
 
+	# this test requires dwarfdump - port is not available
+	rm test/elf/dead-debug-sections.sh
 	make check
 
 	make DESTDIR=$PKG PREFIX=/usr LIBEXECDIR=/usr/lib install
