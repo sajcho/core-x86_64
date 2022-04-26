@@ -4,9 +4,9 @@
 # Depends on:	curl expat jsoncpp libarchive libnghttp2 libuv rhash
 
 name=cmake
-version=3.22.2
+version=3.23.1
 release=1
-source=(https://cmake.org/files/v3.22/${name}-${version}.tar.gz)
+source=(https://cmake.org/files/v3.23/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
