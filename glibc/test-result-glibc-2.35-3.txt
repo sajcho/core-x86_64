@@ -1,0 +1,8 @@
+========= TEST =========
+Summary of test results:
+   5054 PASS
+     84 UNSUPPORTED
+     16 XFAIL
+      6 XPASS
+make[1]: Leaving directory '/home/devel/building/work/src/glibc-2.35'
+======= END TEST =======

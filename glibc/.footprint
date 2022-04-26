@@ -483,6 +483,7 @@ drwxr-xr-x	root/root	usr/include/linux/
 -rw-r--r--	root/root	usr/include/linux/agpgart.h
 -rw-r--r--	root/root	usr/include/linux/aio_abi.h
 -rw-r--r--	root/root	usr/include/linux/am437x-vpfe.h
+-rw-r--r--	root/root	usr/include/linux/amt.h
 drwxr-xr-x	root/root	usr/include/linux/android/
 -rw-r--r--	root/root	usr/include/linux/android/binder.h
 -rw-r--r--	root/root	usr/include/linux/android/binderfs.h
@@ -519,7 +520,6 @@ drwxr-xr-x	root/root	usr/include/linux/android/
 -rw-r--r--	root/root	usr/include/linux/batadv_packet.h
 -rw-r--r--	root/root	usr/include/linux/batman_adv.h
 -rw-r--r--	root/root	usr/include/linux/baycom.h
--rw-r--r--	root/root	usr/include/linux/bcache.h
 -rw-r--r--	root/root	usr/include/linux/bcm933xx_hcs.h
 -rw-r--r--	root/root	usr/include/linux/bfs_fs.h
 -rw-r--r--	root/root	usr/include/linux/binfmts.h
@@ -571,9 +571,11 @@ drwxr-xr-x	root/root	usr/include/linux/cifs/
 -rw-r--r--	root/root	usr/include/linux/cn_proc.h
 -rw-r--r--	root/root	usr/include/linux/coda.h
 -rw-r--r--	root/root	usr/include/linux/coff.h
+-rw-r--r--	root/root	usr/include/linux/comedi.h
 -rw-r--r--	root/root	usr/include/linux/connector.h
 -rw-r--r--	root/root	usr/include/linux/const.h
 -rw-r--r--	root/root	usr/include/linux/coresight-stm.h
+-rw-r--r--	root/root	usr/include/linux/counter.h
 -rw-r--r--	root/root	usr/include/linux/cramfs_fs.h
 -rw-r--r--	root/root	usr/include/linux/cryptouser.h
 -rw-r--r--	root/root	usr/include/linux/cuda.h
@@ -754,6 +756,7 @@ drwxr-xr-x	root/root	usr/include/linux/isdn/
 -rw-r--r--	root/root	usr/include/linux/keyboard.h
 -rw-r--r--	root/root	usr/include/linux/keyctl.h
 -rw-r--r--	root/root	usr/include/linux/kfd_ioctl.h
+-rw-r--r--	root/root	usr/include/linux/kfd_sysfs.h
 -rw-r--r--	root/root	usr/include/linux/kvm.h
 -rw-r--r--	root/root	usr/include/linux/kvm_para.h
 -rw-r--r--	root/root	usr/include/linux/l2tp.h
@@ -767,6 +770,7 @@ drwxr-xr-x	root/root	usr/include/linux/isdn/
 -rw-r--r--	root/root	usr/include/linux/lwtunnel.h
 -rw-r--r--	root/root	usr/include/linux/magic.h
 -rw-r--r--	root/root	usr/include/linux/major.h
+-rw-r--r--	root/root	usr/include/linux/map_to_14segment.h
 -rw-r--r--	root/root	usr/include/linux/map_to_7segment.h
 -rw-r--r--	root/root	usr/include/linux/matroxfb.h
 -rw-r--r--	root/root	usr/include/linux/max2175.h
@@ -975,7 +979,6 @@ drwxr-xr-x	root/root	usr/include/linux/nfsd/
 -rw-r--r--	root/root	usr/include/linux/nfsd/cld.h
 -rw-r--r--	root/root	usr/include/linux/nfsd/debug.h
 -rw-r--r--	root/root	usr/include/linux/nfsd/export.h
--rw-r--r--	root/root	usr/include/linux/nfsd/nfsfh.h
 -rw-r--r--	root/root	usr/include/linux/nfsd/stats.h
 -rw-r--r--	root/root	usr/include/linux/nilfs2_api.h
 -rw-r--r--	root/root	usr/include/linux/nilfs2_ondisk.h
@@ -1001,6 +1004,7 @@ drwxr-xr-x	root/root	usr/include/linux/nfsd/
 -rw-r--r--	root/root	usr/include/linux/perf_event.h
 -rw-r--r--	root/root	usr/include/linux/personality.h
 -rw-r--r--	root/root	usr/include/linux/pfkeyv2.h
+-rw-r--r--	root/root	usr/include/linux/pfrut.h
 -rw-r--r--	root/root	usr/include/linux/pg.h
 -rw-r--r--	root/root	usr/include/linux/phantom.h
 -rw-r--r--	root/root	usr/include/linux/phonet.h
@@ -1413,6 +1417,7 @@ drwxr-xr-x	root/root	usr/include/sound/
 -rw-r--r--	root/root	usr/include/sound/sb16_csp.h
 -rw-r--r--	root/root	usr/include/sound/sfnt_info.h
 -rw-r--r--	root/root	usr/include/sound/skl-tplg-interface.h
+-rw-r--r--	root/root	usr/include/sound/snd_ar_tokens.h
 -rw-r--r--	root/root	usr/include/sound/snd_sst_tokens.h
 drwxr-xr-x	root/root	usr/include/sound/sof/
 -rw-r--r--	root/root	usr/include/sound/sof/abi.h
