@@ -349,7 +349,7 @@ f:00f9c197cf91ea7ae9084c88920b342e:usbutils/.md5sum
 f:d41c9d792a60766a99736354cb30ef06:usbutils/.footprint
 f:ac2abb7caeda7395b74bbec0c5ca5943:usbutils/Pkgfile
 f:b09c57291e4cfb5364dd2a3c48e34dd1:libpcre2/.md5sum
-f:971fa545d55d566b736db794d8104ae5:libpcre2/.footprint
+f:23a948a5e43f1e1f4640508ece8f4a59:libpcre2/.footprint
 f:f993ee393f3141e49102183fe818ef6b:libpcre2/Pkgfile
 f:26f14b0b6578e37949d0591f31fd2b66:man-db/.md5sum
 f:43dcb76783c4b2f0578b43a43124f9e9:man-db/mandb.cron
