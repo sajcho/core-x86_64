@@ -5,8 +5,8 @@
 
 name=openssl3
 _realname=openssl
-version=3.0.1
-release=2
+version=3.0.2
+release=1
 source=(https://www.openssl.org/source/${_realname}-${version}.tar.gz \
 	mksslcert.sh)
 
