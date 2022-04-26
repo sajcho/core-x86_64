@@ -4,8 +4,8 @@
 # Depends on:	cmake
 
 name=mimalloc2
-version=2.0.3
-release=2
+version=2.0.6
+release=1
 source=(https://github.com/microsoft/mimalloc/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
@@ -13,9 +13,6 @@ build() {
 
 	mkdir build
 	cd build
-
-	CFLAGS="${CFLAGS/ -fuse-ld=mold/}"
-	CXXFLAGS="${CXXFLAGS/ -fuse-ld=mold/}"
 
 	cmake .. \
 		-DCMAKE_BUILD_TYPE=Release \
