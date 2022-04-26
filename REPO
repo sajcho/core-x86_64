@@ -316,9 +316,10 @@ f:f8eff40bab4dc0938db5986dc3383a9a:dhcpcd/dhcpcd.run
 f:0eede0f912f0513c9ddfb94589818eeb:dhcpcd/.footprint
 f:bb812c284473d69c4ad4a55c80d1f3f1:dhcpcd/dhcpcd-sv.conf
 f:ff722a1dcd4c5f2d1f70db533debde65:dhcpcd/Pkgfile
+f:3c9be7387e4c7b835c2a8f3003eb73cd:llvm-toolchain/buildlog
 f:a044da06867e1521c5b9f9460f7ed884:llvm-toolchain/.md5sum
 f:4ae930cc396d27211638e260fc515deb:llvm-toolchain/.footprint
-f:7fce8ac79075bf87581f81eedaa390e0:llvm-toolchain/Pkgfile
+f:58458d200a2924a535f8cb3b5806fe4c:llvm-toolchain/Pkgfile
 f:115f7a3213b0eea165f014fe97088553:plocate/.md5sum
 f:e4a50f4a3d5559e5ccd30e936672dc37:plocate/plocate
 f:7793e2e361db0c4c7981d3272a9e0651:plocate/.footprint
@@ -437,9 +438,9 @@ f:a53e8db52cc90426d4eadf56be26f48a:xz/Pkgfile
 f:c651b906fafa6a30748217b8fe79840e:libarchive/.md5sum
 f:2adae943f6689250ced7e95ca7c635cd:libarchive/.footprint
 f:28c28225339f45e782086491d1b58dab:libarchive/Pkgfile
-f:53e91d421dad419727ed4f427e52ac40:zlib/.md5sum
-f:4fe7a6ec6f418dbc5357501f90e34f76:zlib/.footprint
-f:dbb8a21d6334ec6f5ccaf938d029a18b:zlib/Pkgfile
+f:42c7552dea9388f2a6df1d5623cab974:zlib/.md5sum
+f:2a50256762984225fc844fe148399378:zlib/.footprint
+f:68407daa5596d7136b9a6028f42123ae:zlib/Pkgfile
 f:a91986d3084e70a8b118e7edce6450a4:libxml2/.md5sum
 f:b25e181b53a1730af905abf46f0e7ee8:libxml2/.footprint
 f:bd3cdfe556294c34b0cb92fe52e62ee0:libxml2/Pkgfile
