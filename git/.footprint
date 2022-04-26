@@ -73,6 +73,7 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git-format-patch
 -rwxr-xr-x	root/root	usr/lib/git-core/git-fsck
 -rwxr-xr-x	root/root	usr/lib/git-core/git-fsck-objects
+-rwxr-xr-x	root/root	usr/lib/git-core/git-fsmonitor--daemon
 -rwxr-xr-x	root/root	usr/lib/git-core/git-gc
 -rwxr-xr-x	root/root	usr/lib/git-core/git-get-tar-commit-id
 -rwxr-xr-x	root/root	usr/lib/git-core/git-grep
@@ -80,6 +81,7 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git-gui--askpass
 -rwxr-xr-x	root/root	usr/lib/git-core/git-hash-object
 -rwxr-xr-x	root/root	usr/lib/git-core/git-help
+-rwxr-xr-x	root/root	usr/lib/git-core/git-hook
 -rwxr-xr-x	root/root	usr/lib/git-core/git-http-backend
 -rwxr-xr-x	root/root	usr/lib/git-core/git-http-fetch
 -rwxr-xr-x	root/root	usr/lib/git-core/git-http-push
@@ -381,12 +383,14 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/git-format-patch.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-fsck-objects.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-fsck.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/git-fsmonitor--daemon.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-gc.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-get-tar-commit-id.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-grep.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-gui.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-hash-object.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-help.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/git-hook.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-http-backend.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-http-fetch.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-http-push.1.gz
