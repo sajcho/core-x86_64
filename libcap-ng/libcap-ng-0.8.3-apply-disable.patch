@@ -1,0 +1,71 @@
+diff -urp libcap-ng-0.8.3.orig/src/cap-ng.c libcap-ng-0.8.3/src/cap-ng.c
+--- libcap-ng-0.8.3.orig/src/cap-ng.c	2021-09-28 12:14:41.000000000 -0400
++++ libcap-ng-0.8.3/src/cap-ng.c	2021-09-28 12:23:23.551725018 -0400
+@@ -767,6 +767,41 @@ int capng_updatev(capng_act_t action, ca
+ 	return rc;
+ }
+ 
++#include <sys/param.h>
++static char *get_exename(char *exename, int size)
++{
++        char tmp[PATH_MAX+1];
++	int res;
++
++        /* get the name of the current executable */
++        if ((res = readlink("/proc/self/exe", tmp, PATH_MAX)) < 0)
++                strcpy(exename, "\"?\"");
++        else {
++                tmp[res] = '\0';
++                snprintf(exename, size, "\"%s\"", tmp);
++        }
++        return exename;
++}
++
++#include <syslog.h>
++static void log_problem(unsigned int msg)
++{
++	static const char *text[3] = {
++		"dropping bounding set",
++		"getting new bounding set",
++		"dropping bounding set due to not having CAP_SETPCAP"
++	};
++	static int warned[3] = {0, 0, 0};
++	unsigned idx = msg - 2;
++	char exe[2048];
++	if (warned[idx] == 0) {
++		// Only warn once
++		syslog(LOG_ERR, "libcap-ng used by %s failed %s in capng_apply",
++		       get_exename(exe, 2047), text[idx]);
++		warned[idx] = 1;
++	}
++}
++
+ int capng_apply(capng_select_t set)
+ {
+ 	int rc = 0;
+@@ -788,19 +823,22 @@ if (HAVE_PR_CAPBSET_DROP) {
+ 				if (capng_have_capability(CAPNG_BOUNDING_SET,
+ 								 i) == 0) {
+ 				    if (prctl(PR_CAPBSET_DROP, i, 0, 0, 0) <0) {
+-					rc = -2;
++//					rc = -2;
++					log_problem(2);
+ 					goto try_caps;
+ 				    }
+ 				}
+ 			}
+ 			m.state = CAPNG_APPLIED;
+ 			if (get_bounding_set() < 0) {
+-				rc = -3;
++//				rc = -3;
++				log_problem(3);
+ 				goto try_caps;
+ 			}
+ 		} else {
+ 			memcpy(&m, &state, sizeof(m)); /* restore state */
+-			rc = -4;
++//			rc = -4;
++			log_problem(4);
+ 			goto try_caps;
+ 		}
+ }
