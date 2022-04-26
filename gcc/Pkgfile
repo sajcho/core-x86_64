@@ -5,18 +5,13 @@
 
 name=gcc
 version=12.0.1
-_realversion=12-20220220
-release=2
-source=(https://ftp.gwdg.de/pub/misc/${name}/snapshots/${_realversion}/${name}-${_realversion}.tar.xz \
-	gcc-12-20220213-lto-plugin.c.patch \
+_realversion=12-20220424
+release=3
+source=(https://sourceware.org/pub/${name}/snapshots/${_realversion}/${name}-${_realversion}.tar.xz \
 	c89 c99)
 
 build() {
 	cd ${name}-${_realversion}
-
-	# Support LDPT_GET_SYMBOLS_V3.
-	# That supports skipping of an object file.
-	patch -p1 -i $SRC/gcc-12-20220213-lto-plugin.c.patch
 
 	sed -i 's|lib64|lib|' $SRC/${name}-${_realversion}/${name}/config/i386/t-linux64
 	sed -i 's|lib64|lib|' $SRC/${name}-${_realversion}/${name}/config/i386/linux64.h
@@ -24,10 +19,7 @@ build() {
 	mkdir build
 	cd build
 
-	CFLAGS="${CFLAGS/ -fuse-ld=mold -flto/}"
-	CXXFLAGS="${CXXFLAGS/ -fuse-ld=mold -flto/}"
-
-        ../configure \
+	../configure \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
 		--enable-languages=c,c++,fortran,lto \
@@ -37,21 +29,27 @@ build() {
 		--enable-default-pie \
 		--enable-default-ssp \
 		--enable-linker-build-id \
+		--enable-initfini-array \
+		--enable-link-serialization=1 \
+		--enable-gnu-indirect-function \
+		--enable-libstdcxx-backtrace=yes \
 		--enable-plugin \
 		--disable-nls \
 		--disable-multilib \
+		--disable-sjlj-exceptions \
 		--with-system-zlib \
+		--with-isl \
 		--with-linker-hash-style=gnu \
 		--with-build-config=bootstrap-lto \
-		--with-pkgversion="SAUX x86_64" \
+		--with-pkgversion=SAUX-x86_64 \
 		--build=$CHOST \
-		--host=$CHOST
+		--host=$CHOST \
 
-	make V=1
+	make V=1 profiledbootstrap
 
 	# Optional
-	#make -k check < /dev/null || :
-	#../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${_realversion}-result
+	make -k check < /dev/null || :
+	../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${_realversion}-result
 
 	make -j1 DESTDIR=$PKG install
 

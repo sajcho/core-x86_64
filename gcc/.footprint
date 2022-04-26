@@ -279,6 +279,7 @@ drwxr-xr-x	root/root	usr/include/c++/12.0.1/decimal/
 -rw-r--r--	root/root	usr/include/c++/12.0.1/deque
 -rw-r--r--	root/root	usr/include/c++/12.0.1/exception
 -rw-r--r--	root/root	usr/include/c++/12.0.1/execution
+-rw-r--r--	root/root	usr/include/c++/12.0.1/expected
 drwxr-xr-x	root/root	usr/include/c++/12.0.1/experimental/
 -rw-r--r--	root/root	usr/include/c++/12.0.1/experimental/algorithm
 -rw-r--r--	root/root	usr/include/c++/12.0.1/experimental/any
