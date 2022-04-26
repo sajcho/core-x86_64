@@ -5,7 +5,7 @@
 
 name=binutils
 version=2.38
-release=2
+release=3
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -14,37 +14,39 @@ build() {
 	mkdir build
 	cd build
 
-	CFLAGS="${CFLAGS/ -fuse-ld=mold -flto/}"
-	CXXFLAGS="${CXXFLAGS/ -fuse-ld=mold -flto/}"
-
 	../configure \
 		--prefix=/usr \
 		--enable-ld=default \
-		--enable-gold=yes \
+		--enable-gold=no \
 		--enable-plugins \
 		--enable-shared \
 		--enable-threads \
 		--enable-relro \
-		--enable-lto \
+		--enable-cet=auto \
 		--enable-64-bit-bfd \
 		--enable-install-libiberty \
+		--enable-targets=x86_64-pep \
 		--enable-deterministic-archives \
-		--enable-default-hash-style=gnu \
 		--disable-nls \
 		--disable-werror \
 		--disable-multilib \
+		--disable-sim \
 		--disable-gdb \
+		--disable-gdbserver \
+		--disable-libdecnumber \
+		--disable-readline \
 		--with-pic \
-		--with-mmap \
 		--with-system-zlib \
-		--with-pkgversion="SAUX x86_64" \
+		--with-pkgversion=SAUX-x86_64 \
 		--build=$CHOST \
 		--host=$CHOST
 
 	make V=1 tooldir=/usr
 
 	#  Optional
-	#make -k check < /dev/null || :
+	make -k check < /dev/null || :
+	cat libctf/libctf.sum binutils/binutils.sum gas/testsuite/gas.sum ld/ld.sum \
+		> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
 
 	make tooldir=/usr DESTDIR=$PKG install
 
