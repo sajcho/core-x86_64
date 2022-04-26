@@ -4,8 +4,8 @@
 # Depends on:	openssl3 libpcre2
 
 name=wget
-version=1.21.2
-release=3
+version=1.21.3
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.lz \
 	wgetrc)
 
