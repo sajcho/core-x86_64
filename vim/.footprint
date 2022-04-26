@@ -344,6 +344,7 @@ drwxr-xr-x	root/root	usr/share/vim/doc/
 -rw-r--r--	root/root	usr/share/vim/doc/version6.txt
 -rw-r--r--	root/root	usr/share/vim/doc/version7.txt
 -rw-r--r--	root/root	usr/share/vim/doc/version8.txt
+-rw-r--r--	root/root	usr/share/vim/doc/version9.txt
 -rw-r--r--	root/root	usr/share/vim/doc/vi_diff.txt
 -rwxr-xr-x	root/root	usr/share/vim/doc/vim2html.pl
 -rw-r--r--	root/root	usr/share/vim/doc/vim9.txt
@@ -672,6 +673,7 @@ drwxr-xr-x	root/root	usr/share/vim/indent/
 -rw-r--r--	root/root	usr/share/vim/indent/jsonc.vim
 -rw-r--r--	root/root	usr/share/vim/indent/jsp.vim
 -rw-r--r--	root/root	usr/share/vim/indent/julia.vim
+-rw-r--r--	root/root	usr/share/vim/indent/krl.vim
 -rw-r--r--	root/root	usr/share/vim/indent/ld.vim
 -rw-r--r--	root/root	usr/share/vim/indent/less.vim
 -rw-r--r--	root/root	usr/share/vim/indent/lifelines.vim
@@ -1126,6 +1128,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/kconfig.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/kivy.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/kix.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/krl.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/kscript.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/kwt.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/lace.vim
@@ -1228,6 +1231,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/omnimark.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/opam.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/openroad.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/openscad.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/opl.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/ora.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/pamconf.vim
