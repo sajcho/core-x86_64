@@ -1,13 +1,12 @@
 # Description:	Miscellaneous system utilities
 # URL:		https://www.kernel.org/pub/linux/utils/util-linux/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	bzip2 eudev file libcap-ng
+# Depends on:	bzip2 eudev file libcap-ng xz
 
 name=util-linux
-version=2.37.4
+version=2.38
 release=1
 source=(https://www.kernel.org/pub/linux/utils/${name}/v${version:0:4}/${name}-${version}.tar.xz \
-	util-linux-man-2.37.4.tar.xz \
 	uuidd.run)
 
 build() {
@@ -41,7 +40,6 @@ build() {
 	ln -s /run/runit/supervise.uuidd $PKG/etc/sv/uuidd/supervise
 
 	touch $PKG/etc/adjtime
-	cp -r $SRC/man $PKG/usr/share
 
 	rm -r $PKG/usr/share/{doc,bash-completion}
 
