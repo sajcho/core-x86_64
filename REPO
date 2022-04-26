@@ -656,7 +656,7 @@ f:83c803eff83c2ba066afad7d731c5ed5:gcc/test-gcc-12-20220424-result
 f:ec3fa4a0b6179f55fd44b8bda6300fa9:gcc/.footprint
 f:3d333df77302ed89e06a4a8539943b7d:gcc/c89
 f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
-f:956201dc775900a5e50f47d79ba36e83:gcc/Pkgfile
+f:c5ffa5dc64b7f0dcd548c47bad6d54ef:gcc/Pkgfile
 f:cfbdc114167b53c82ae8d040e89e288f:man-pages/.md5sum
 f:bc2ad577b288fa4b1af7a3f831a12f55:man-pages/.footprint
 f:ce4214f67a65c469eeb11f76007c893b:man-pages/Pkgfile
