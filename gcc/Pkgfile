@@ -41,9 +41,9 @@ build() {
 		--with-isl \
 		--with-linker-hash-style=gnu \
 		--with-build-config=bootstrap-lto \
-		--with-pkgversion=SAUX-x86_64 \
+		--with-pkgversion="SAUX-x86_64" \
 		--build=$CHOST \
-		--host=$CHOST \
+		--host=$CHOST
 
 	make V=1 profiledbootstrap
 
