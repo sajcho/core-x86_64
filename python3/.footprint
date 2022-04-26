@@ -1844,7 +1844,7 @@ drwxr-xr-x	root/root	usr/lib/python3.10/ensurepip/_bundled/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.10/ensurepip/_bundled/__pycache__/__init__.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/ensurepip/_bundled/__pycache__/__init__.cpython-310.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/ensurepip/_bundled/__pycache__/__init__.cpython-310.pyc
--rw-r--r--	root/root	usr/lib/python3.10/ensurepip/_bundled/pip-21.2.4-py3-none-any.whl
+-rw-r--r--	root/root	usr/lib/python3.10/ensurepip/_bundled/pip-22.0.4-py3-none-any.whl
 -rw-r--r--	root/root	usr/lib/python3.10/ensurepip/_bundled/setuptools-58.1.0-py3-none-any.whl
 -rw-r--r--	root/root	usr/lib/python3.10/ensurepip/_uninstall.py
 -rw-r--r--	root/root	usr/lib/python3.10/enum.py
@@ -2087,6 +2087,9 @@ drwxr-xr-x	root/root	usr/lib/python3.10/idlelib/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.10/idlelib/__pycache__/undo.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/idlelib/__pycache__/undo.cpython-310.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/idlelib/__pycache__/undo.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/idlelib/__pycache__/util.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/idlelib/__pycache__/util.cpython-310.opt-2.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/idlelib/__pycache__/util.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/idlelib/__pycache__/window.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/idlelib/__pycache__/window.cpython-310.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/idlelib/__pycache__/window.cpython-310.pyc
@@ -2158,6 +2161,7 @@ drwxr-xr-x	root/root	usr/lib/python3.10/idlelib/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.10/idlelib/tooltip.py
 -rw-r--r--	root/root	usr/lib/python3.10/idlelib/tree.py
 -rw-r--r--	root/root	usr/lib/python3.10/idlelib/undo.py
+-rw-r--r--	root/root	usr/lib/python3.10/idlelib/util.py
 -rw-r--r--	root/root	usr/lib/python3.10/idlelib/window.py
 -rw-r--r--	root/root	usr/lib/python3.10/idlelib/zoomheight.py
 -rw-r--r--	root/root	usr/lib/python3.10/idlelib/zzdummy.py
@@ -2344,9 +2348,9 @@ drwxr-xr-x	root/root	usr/lib/python3.10/lib-dynload/
 -rwxr-xr-x	root/root	usr/lib/python3.10/lib-dynload/zlib.cpython-310-x86_64-linux-gnu.so
 drwxr-xr-x	root/root	usr/lib/python3.10/lib2to3/
 -rw-r--r--	root/root	usr/lib/python3.10/lib2to3/Grammar.txt
--rw-r--r--	root/root	usr/lib/python3.10/lib2to3/Grammar3.10.2.final.0.pickle
+-rw-r--r--	root/root	usr/lib/python3.10/lib2to3/Grammar3.10.4.final.0.pickle
 -rw-r--r--	root/root	usr/lib/python3.10/lib2to3/PatternGrammar.txt
--rw-r--r--	root/root	usr/lib/python3.10/lib2to3/PatternGrammar3.10.2.final.0.pickle
+-rw-r--r--	root/root	usr/lib/python3.10/lib2to3/PatternGrammar3.10.4.final.0.pickle
 -rw-r--r--	root/root	usr/lib/python3.10/lib2to3/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.10/lib2to3/__main__.py
 drwxr-xr-x	root/root	usr/lib/python3.10/lib2to3/__pycache__/
