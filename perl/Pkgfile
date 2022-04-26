@@ -4,8 +4,8 @@
 # Depends on:	db gdbm
 
 name=perl
-version=5.34.0
-release=2
+version=5.34.1
+release=1
 source=(http://www.cpan.org/src/5.0/${name}-${version}.tar.xz)
 
 build() {
@@ -32,7 +32,7 @@ build() {
 		-Dccdlflags="-Wl,--enable-new-dtags $LDFLAGS" \
 		-Dlddlflags="-shared $LDFLAGS" \
 		-Dpager="/usr/bin/less -isr" \
-		-Dcf_by="SAUX Aarch64"
+		-Dcf_by="SAUX-x86_64"
 
 	make V=1
 
