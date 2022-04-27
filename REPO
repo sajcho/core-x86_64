@@ -176,9 +176,9 @@ f:f63b36754b7769fc0f76393b10f21195:binutils/Pkgfile
 f:feaca34edeaea282703faf762553a494:gzip/.md5sum
 f:b0d1386d3e51cbeb42005f9f8101f3bf:gzip/.footprint
 f:5877ef1b28da4f8d8a0f672e9b34a2c4:gzip/Pkgfile
-f:998142ae452f772570660fc00d44b272:elfutils/.md5sum
-f:65bcaaaf8eca9fc65e62a3d8bee0868d:elfutils/.footprint
-f:964b23bdab2b520ddbec4e4ce3cbd43f:elfutils/Pkgfile
+f:67f1f6587869f6c21bb1ac3868ae3e44:elfutils/.md5sum
+f:9dd26cc01cde867a3865b4fc9d91cdff:elfutils/.footprint
+f:0eb15a2e52f6499d7abcd00d3f8d67c1:elfutils/Pkgfile
 f:75cd4754e92fff45e3b9b3ac68676e41:glibc/.nostrip
 f:fbbc215a9b15ba4846f326cc88108057:glibc/hosts
 f:b507425588b8654e452486bdc7ebe0ba:glibc/.md5sum
@@ -690,9 +690,9 @@ f:24057379f9b6a58d9fb20e4ef89bb318:openssh/.footprint
 f:bf0717aadb81760a6ee3834e5be0d139:openssh/sshd.pam
 f:9e852273cc09843dd54dae23b26a453b:openssh/sshd.run
 f:113f1dbc4d156f81eed2066abb6cb946:openssh/Pkgfile
-f:f7e97da07d4cd108f0b6476d75cea80a:bindutils/.md5sum
+f:8cc775ef1e67b6893c7c8b20961c7bd9:bindutils/.md5sum
 f:af891b0eef46e4d25137e02d92065862:bindutils/.footprint
-f:5f1b6275878374eb12a3e4cf5af060f4:bindutils/Pkgfile
+f:79bc97fd8dfd31b621486340fc42d762:bindutils/Pkgfile
 f:45e6015a702e36ba0fa58d31c1e8a73c:prt-utils/.md5sum
 f:e52165bc4afc1cb7a2b5f858359807cd:prt-utils/.footprint
 f:a487ef70da495cc05841687fb62b1966:prt-utils/Pkgfile
