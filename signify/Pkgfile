@@ -3,15 +3,15 @@
 # Maintainer:  sajcho, saux dot aarch64 at gmail dot com
 
 name=signify
-version=20200707
-gitversion=1f93b1027c4be9f27f3a4b8dabb2ae3132e1cb6a
+version=0.10
 release=1
-source=(https://github.com/leahneukirchen/outils/archive/${gitversion}/outils-${version}.tar.gz \
+source=(https://github.com/leahneukirchen/outils/archive/v${version}/outils-${version}.tar.gz \
         cruxify.patch)
 
 build() {
-	cd outils-${gitversion}
+	cd outils-${version}
 
+	# Crux Linux
 	patch -p0 -i $SRC/cruxify.patch
 
 	export CFLAGS+=' -DSIGNIFYROOT=\"/etc/ports\"'
