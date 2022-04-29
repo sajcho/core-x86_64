@@ -4,13 +4,14 @@
 # Depends on:	ncurses
 
 name=procps
-version=3.3.17
+_realname=procps-ng
+version=4.0.0
 release=1
-source=(http://downloads.sourceforge.net/project/${name}-ng/Production/${name}-ng-${version}.tar.xz \
+source=(http://downloads.sourceforge.net/project/${_realname}/Production/${_realname}-${version}.tar.xz \
 	sysctl.conf)
 
 build() {
-	cd ${name}-${version}
+	cd ${_realname}-${version}
 
 	export LINGUAS=' '
 
@@ -30,8 +31,8 @@ build() {
 
 	install -d $PKG/{bin,lib,etc}
 	mv $PKG/usr/bin/{ps,pidof} $PKG/bin/
-	mv $PKG/usr/lib/libprocps.so.* $PKG/lib
-	ln -sf ../../lib/$(readlink $PKG/lib/libprocps.so.8) $PKG/usr/lib/libprocps.so
+	mv $PKG/usr/lib/libproc-2.so.* $PKG/lib
+	ln -sf ../../lib/$(readlink $PKG/lib/libproc-2.so.0) $PKG/usr/lib/libproc-2.so
 
 	install -d $PKG/etc/sysctl.d
 	install -m 0644 $SRC/sysctl.conf $PKG/etc/sysctl.conf
