@@ -4,7 +4,7 @@
 
 name=make
 version=4.3
-release=1
+release=2
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.lz)
 
 build() {
@@ -12,7 +12,8 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--disable-nls
+		--disable-nls \
+		--without-guile
 
 	make V=1
 
