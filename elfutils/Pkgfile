@@ -5,11 +5,14 @@
 
 name=elfutils
 version=0.187
-release=1
+release=2
 source=(https://sourceware.org/${name}/ftp/${version}/${name}-${version}.tar.bz2)
 
 build() {
 	cd ${name}-${version}
+
+	CFLAGS+=" -Wp,-D_FORTIFY_SOURCE=2"
+	CXXFLAGS+=" -Wp,-D_FORTIFY_SOURCE=2"
 
 	./configure \
 		--prefix=/usr \
