@@ -5,25 +5,32 @@
 
 name=mold
 version=1.2.1
-release=1
-source=(https://github.com/rui314/${name}/archive/v${version}/${name}-${version}.tar.gz)
+_commit=ed9a29b713150b4500a118814a8b21addd973d0a
+# Date: Tue May 3 20:23:18 2022
+release=1-git20220503
+source=()
 
 build() {
-	cd ${name}-${version}
+	cd $PKGMK_WORK_DIR/src
+	git clone https://github.com/rui314/mold.git
+	cd mold
+	git reset --hard ${_commit}
 
-	rm -r $SRC/${name}-${version}/third-party/{mimalloc,xxhash}
+	rm -r $SRC/${name}/third-party/{mimalloc,xxhash}
 
 	export SYSTEM_MIMALLOC=1
 	export CC=gcc
 	export CXX=g++
-	export LTO=1
 
 	make -O ${JOBS:+-j ${JOBS}} V=1 VERBOSE=1 \
 		PREFIX=/usr LIBEXECDIR=/usr/lib
 
 	# this test requires dwarfdump - port is not available
 	rm test/elf/dead-debug-sections.sh
-	make check
+	make -k check || :
 
 	make DESTDIR=$PKG PREFIX=/usr LIBEXECDIR=/usr/lib install
+
+	cd $PKG/usr/bin
+	ln -s mold $CHOST-mold
 }
