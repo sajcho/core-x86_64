@@ -7,7 +7,7 @@ name=mold
 version=1.2.1
 _commit=ed9a29b713150b4500a118814a8b21addd973d0a
 # Date: Tue May 3 20:23:18 2022
-release=1-git20220503
+release=2-git20220503
 source=()
 
 build() {
