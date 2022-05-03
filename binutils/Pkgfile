@@ -44,9 +44,9 @@ build() {
 	make V=1 tooldir=/usr
 
 	#  Optional
-	make -k check < /dev/null || :
-	cat libctf/libctf.sum binutils/binutils.sum gas/testsuite/gas.sum ld/ld.sum \
-		> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
+	#make -k check || :
+	#cat libctf/libctf.sum binutils/binutils.sum gas/testsuite/gas.sum ld/ld.sum \
+	#	> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
 
 	make tooldir=/usr DESTDIR=$PKG install
 
