@@ -7,8 +7,8 @@ export LC_ALL="C.UTF-8"
 export CARCH="x86_64"
 export CHOST="x86_64-unknown-linux-gnu"
 
-CFLAGS="-O2 -m64 -march=x86-64 -mtune=generic -fuse-ld=mold -flto -fexceptions -fstack-clash-protection -fcf-protection -D_FORTIFY_SOURCE=2 -Wno-psabi"
-CXXFLAGS="-O2 -m64 -march=x86-64 -mtune=generic -fuse-ld=mold -flto -fexceptions -fstack-clash-protection -fcf-protection -D_FORTIFY_SOURCE=2 -Wno-psabi"
+CFLAGS="-O2 -m64 -march=x86-64 -mtune=generic -Wno-psabi"
+CXXFLAGS="-O2 -m64 -march=x86-64 -mtune=generic -Wno-psabi"
 
 case ${PKGMK_ARCH} in
 	"x86_64")

@@ -6,7 +6,7 @@
 name=pkgutils
 version=5.40.7
 _commit=9ca0da65121451447cdd284f98027dca2e16fb2e
-release=4
+release=5
 source=(zstd-multiarch.patch pkgmk.conf-saux)
 
 build() {
