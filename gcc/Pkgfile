@@ -4,17 +4,18 @@
 # Depends on:	isl mpc zstd
 
 name=gcc
-version=12.0.1
-_realversion=12-20220424
-release=3
-source=(https://sourceware.org/pub/${name}/snapshots/${_realversion}/${name}-${_realversion}.tar.xz \
+version=12.1.0
+_develversion=12.0.1
+_srcversion=12.1.0-RC-20220429
+release=0
+source=(https://sourceware.org/pub/gcc/snapshots/12.1.0-RC-20220429/gcc-12.1.0-RC-20220429.tar.xz \
 	c89 c99)
 
 build() {
-	cd ${name}-${_realversion}
+	cd ${name}-${_srcversion}
 
-	sed -i 's|lib64|lib|' $SRC/${name}-${_realversion}/${name}/config/i386/t-linux64
-	sed -i 's|lib64|lib|' $SRC/${name}-${_realversion}/${name}/config/i386/linux64.h
+	sed -i 's|lib64|lib|' $SRC/${name}-${_srcversion}/${name}/config/i386/t-linux64
+	sed -i 's|lib64|lib|' $SRC/${name}-${_srcversion}/${name}/config/i386/linux64.h
 
 	mkdir build
 	cd build
@@ -22,34 +23,37 @@ build() {
 	../configure \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
+		--enable-bootstrap \
 		--enable-languages=c,c++,fortran,lto \
+		--enable-plugin \
 		--enable-threads=posix \
 		--enable-__cxa_atexit \
 		--enable-clocale=gnu \
-		--enable-default-pie \
-		--enable-default-ssp \
-		--enable-linker-build-id \
 		--enable-initfini-array \
+		--enable-linker-build-id \
+		--enable-checking=release \
 		--enable-link-serialization=1 \
 		--enable-gnu-indirect-function \
 		--enable-libstdcxx-backtrace=yes \
-		--enable-plugin \
 		--disable-nls \
 		--disable-multilib \
-		--disable-sjlj-exceptions \
-		--with-system-zlib \
+		--disable-libunwind-exceptions \
 		--with-isl \
+		--with-system-zlib \
 		--with-linker-hash-style=gnu \
 		--with-build-config=bootstrap-lto \
 		--with-pkgversion="SAUX-x86_64" \
 		--build=$CHOST \
 		--host=$CHOST
 
-	make V=1 profiledbootstrap
+	make \
+		BOOT_CFLAGS="-O2 -Wall -Wformat-security -Wp,-D_GLIBCXX_ASSERTIONS -mtune=generic" \
+		LDFLAGS_FOR_TARGET="-Wl,-z,relro,-z,now" \
+		profiledbootstrap
 
 	# Optional
-	make -k check < /dev/null || :
-	../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${_realversion}-result
+	#make -k check || :
+	#../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${_srcversion}-result
 
 	make -j1 DESTDIR=$PKG install
 
@@ -61,11 +65,11 @@ build() {
 	# Add a compatibility symlink to enable building programs
 	# with Link Time Optimization (LTO):
 	install -d $PKG/usr/lib/bfd-plugins
-	ln -sf ../../lib/gcc/$CHOST/${version}/liblto_plugin.so \
+	ln -sf ../../lib/gcc/$CHOST/${_develversion}/liblto_plugin.so \
 		$PKG/usr/lib/bfd-plugins/
 
-	mv $PKG/usr/lib/${name}/*/${version}/include-fixed/{limits.h,syslimits.h} \
-		$PKG/usr/lib/${name}/*/${version}/include/
+	mv $PKG/usr/lib/${name}/$CHOST/${_develversion}/include-fixed/{limits.h,syslimits.h} \
+		$PKG/usr/lib/${name}/$CHOST/${_develversion}/include/
 
 	install -d -m 0755 $PKG/usr/share/gdb/auto-load/usr/lib
 	mv $PKG/usr/lib/libstdc++.so.*-gdb.py $PKG/usr/share/gdb/auto-load/usr/lib
@@ -73,8 +77,8 @@ build() {
 	install -m 0755 $SRC/{c89,c99} $PKG/usr/bin
 
 	rm -r $PKG/usr/bin/*-linux-gnu-*
-	rm -r $PKG/usr/share/{info,${name}-${version}}
-	rm -r $PKG/usr/lib/${name}/*/${version}/{install-tools,include-fixed}
+	rm -r $PKG/usr/share/{info,${name}-${_develversion}}
+	rm -r $PKG/usr/lib/${name}/$CHOST/${_develversion}/{install-tools,include-fixed}
 
 	# Create triplet symlinks
 	for f in $PKG/usr/bin/*; do
