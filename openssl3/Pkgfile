@@ -5,15 +5,13 @@
 
 name=openssl3
 _realname=openssl
-version=3.0.2
+version=3.0.3
 release=1
 source=(https://www.openssl.org/source/${_realname}-${version}.tar.gz \
 	mksslcert.sh)
 
 build() {
 	cd ${_realname}-${version}
-
-	CFLAGS="${CFLAGS/ -flto/}"
 
 	perl ./Configure linux-x86_64 \
 		--prefix=/usr \
@@ -41,6 +39,8 @@ build() {
 	make V=1 depend
 
 	make V=1
+
+	#make test
 
 	make MANSUFFIX=ssl DESTDIR=$PKG install_sw install_ssldirs install_man_docs
 
