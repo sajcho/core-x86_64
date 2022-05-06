@@ -5,17 +5,15 @@
 
 name=gcc
 version=12.1.0
-_develversion=12.0.1
-_srcversion=12.1.0-RC-20220429
-release=0
-source=(https://sourceware.org/pub/gcc/snapshots/12.1.0-RC-20220429/gcc-12.1.0-RC-20220429.tar.xz \
+release=1
+source=(https://sourceware.org/pub/gcc/releases/${name}-${version}/${name}-${version}.tar.xz \
 	c89 c99)
 
 build() {
-	cd ${name}-${_srcversion}
+	cd ${name}-${version}
 
-	sed -i 's|lib64|lib|' $SRC/${name}-${_srcversion}/${name}/config/i386/t-linux64
-	sed -i 's|lib64|lib|' $SRC/${name}-${_srcversion}/${name}/config/i386/linux64.h
+	sed -i 's|lib64|lib|' $SRC/${name}-${version}/${name}/config/i386/t-linux64
+	sed -i 's|lib64|lib|' $SRC/${name}-${version}/${name}/config/i386/linux64.h
 
 	mkdir build
 	cd build
@@ -53,7 +51,7 @@ build() {
 
 	# Optional
 	#make -k check || :
-	#../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${_srcversion}-result
+	#../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${version}-result
 
 	make -j1 DESTDIR=$PKG install
 
@@ -65,11 +63,11 @@ build() {
 	# Add a compatibility symlink to enable building programs
 	# with Link Time Optimization (LTO):
 	install -d $PKG/usr/lib/bfd-plugins
-	ln -sf ../../lib/gcc/$CHOST/${_develversion}/liblto_plugin.so \
+	ln -sf ../../lib/gcc/$CHOST/${version}/liblto_plugin.so \
 		$PKG/usr/lib/bfd-plugins/
 
-	mv $PKG/usr/lib/${name}/$CHOST/${_develversion}/include-fixed/{limits.h,syslimits.h} \
-		$PKG/usr/lib/${name}/$CHOST/${_develversion}/include/
+	mv $PKG/usr/lib/${name}/$CHOST/${version}/include-fixed/{limits.h,syslimits.h} \
+		$PKG/usr/lib/${name}/$CHOST/${version}/include/
 
 	install -d -m 0755 $PKG/usr/share/gdb/auto-load/usr/lib
 	mv $PKG/usr/lib/libstdc++.so.*-gdb.py $PKG/usr/share/gdb/auto-load/usr/lib
@@ -77,8 +75,8 @@ build() {
 	install -m 0755 $SRC/{c89,c99} $PKG/usr/bin
 
 	rm -r $PKG/usr/bin/*-linux-gnu-*
-	rm -r $PKG/usr/share/{info,${name}-${_develversion}}
-	rm -r $PKG/usr/lib/${name}/$CHOST/${_develversion}/{install-tools,include-fixed}
+	rm -r $PKG/usr/share/{info,${name}-${version}}
+	rm -r $PKG/usr/lib/${name}/$CHOST/${version}/{install-tools,include-fixed}
 
 	# Create triplet symlinks
 	for f in $PKG/usr/bin/*; do
