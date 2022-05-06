@@ -44,10 +44,10 @@ build() {
 	make V=1
 
 	# Optional
-	make check 2>&1 | tee buildlog
-	echo "========= TEST =========" > $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
-	grep -A 5 Summary buildlog >> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
-	echo "======= END TEST =======" >> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
+	#make check 2>&1 | tee buildlog
+	#echo "========= TEST =========" > $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
+	#grep -A 5 Summary buildlog >> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
+	#echo "======= END TEST =======" >> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
 
 	make install_root=$PKG install
 
