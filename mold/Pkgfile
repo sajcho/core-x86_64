@@ -7,7 +7,7 @@ name=mold
 version=1.2.1
 _commit=d8a8877875d96d0efdb727b4ba600ee3910a333f
 # Date: Sat May 7 18:57:31 2022 +0800
-release=3-git20220507
+release=4-git20220507
 source=()
 
 build() {
@@ -30,7 +30,4 @@ build() {
 	make -k check || :
 
 	make DESTDIR=$PKG PREFIX=/usr LIBEXECDIR=/usr/lib install
-
-	cd $PKG/usr/bin
-	ln -s mold $CHOST-mold
 }
