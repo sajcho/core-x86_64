@@ -5,9 +5,9 @@
 
 name=mold
 version=1.2.1
-_commit=ed9a29b713150b4500a118814a8b21addd973d0a
-# Date: Tue May 3 20:23:18 2022
-release=2-git20220503
+_commit=d8a8877875d96d0efdb727b4ba600ee3910a333f
+# Date: Sat May 7 18:57:31 2022 +0800
+release=3-git20220507
 source=()
 
 build() {
