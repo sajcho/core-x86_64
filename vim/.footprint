@@ -413,11 +413,13 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/dune.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/eiffel.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/elinks.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/elixir.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/elm.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/erlang.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/eruby.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/eterm.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/falcon.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/fennel.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/fetchmail.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/flexwiki.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/fortran.vim
@@ -596,6 +598,8 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/vim.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/vroom.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/wast.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/wget.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/wget2.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/xdefaults.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/xf86conf.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/xhtml.vim
@@ -610,6 +614,9 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/zsh.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugof.vim
 -rw-r--r--	root/root	usr/share/vim/gvimrc_example.vim
+drwxr-xr-x	root/root	usr/share/vim/import/
+drwxr-xr-x	root/root	usr/share/vim/import/dist/
+-rw-r--r--	root/root	usr/share/vim/import/dist/vimhelp.vim
 -rw-r--r--	root/root	usr/share/vim/indent.vim
 drwxr-xr-x	root/root	usr/share/vim/indent/
 -rw-r--r--	root/root	usr/share/vim/indent/aap.vim
@@ -652,6 +659,7 @@ drwxr-xr-x	root/root	usr/share/vim/indent/
 -rw-r--r--	root/root	usr/share/vim/indent/eruby.vim
 -rw-r--r--	root/root	usr/share/vim/indent/eterm.vim
 -rw-r--r--	root/root	usr/share/vim/indent/falcon.vim
+-rw-r--r--	root/root	usr/share/vim/indent/fennel.vim
 -rw-r--r--	root/root	usr/share/vim/indent/fortran.vim
 -rw-r--r--	root/root	usr/share/vim/indent/framescript.vim
 -rw-r--r--	root/root	usr/share/vim/indent/freebasic.vim
@@ -1476,6 +1484,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/web.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/webmacro.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/wget.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/wget2.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/whitespace.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/winbatch.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/wml.vim
