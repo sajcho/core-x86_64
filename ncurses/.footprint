@@ -1922,9 +1922,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/f/
 -rw-r--r--	root/root	usr/share/terminfo/f/fenix
 -rw-r--r--	root/root	usr/share/terminfo/f/fenixw
 -rw-r--r--	root/root	usr/share/terminfo/f/fixterm
--rw-r--r--	root/root	usr/share/terminfo/f/foot
 -rw-r--r--	root/root	usr/share/terminfo/f/foot+base
--rw-r--r--	root/root	usr/share/terminfo/f/foot-direct
 -rw-r--r--	root/root	usr/share/terminfo/f/fortune
 -rw-r--r--	root/root	usr/share/terminfo/f/fos
 -rw-r--r--	root/root	usr/share/terminfo/f/fox

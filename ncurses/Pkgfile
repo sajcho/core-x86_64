@@ -4,7 +4,7 @@
 
 name=ncurses
 version=6.3
-release=2
+release=3
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
 build() {
@@ -46,4 +46,7 @@ build() {
 	# linker script for the curses library
 	echo "INPUT(-lncursesw)" > $PKG/usr/lib/libcursesw.so
 	ln -s libncurses.so $PKG/usr/lib/libcurses.so
+
+	# The files are provided by the port "foot"
+	rm $PKG/usr/share/terminfo/f/{foot,foot-direct}
 }
