@@ -602,7 +602,7 @@ f:fe092c84965b298e95b46971598442f8:pkgutils/.md5sum
 f:7244abb248c00c2468b9ed32534f417b:pkgutils/pkgmk.conf-saux
 f:0d3a6fed127ba555ba0c1a587130c6bc:pkgutils/.footprint
 f:d3db42778a13e3829dab8f05e0f4bb1f:pkgutils/zstd-multiarch.patch
-f:a14be409af88d1a4cc78cb772e386231:pkgutils/Pkgfile
+f:4e39d1f129eb8539a75116c73649a8cd:pkgutils/Pkgfile
 f:3a3997ea573bfbe10275dfd99e09525f:isl/.md5sum
 f:5510770d0fd663c1873bf1208bc603c2:isl/.footprint
 f:ff02f5e96fd0eef5a4524b6205dfe8d4:isl/Pkgfile
