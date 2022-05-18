@@ -597,7 +597,6 @@ f:a33515fc1194203764cc8095b1dedeaa:gawk/Pkgfile
 f:b6ad83d0e52c0d40ac7ef742897008a9:gdbm/.md5sum
 f:d6bff241bbb40934900f2e070513eacb:gdbm/.footprint
 f:56139f439fd4ee4ed5231516cb8e5f02:gdbm/Pkgfile
-f:cd56bc66f2204d9c08f06afcbab8abd2:pkgutils/README
 f:fe092c84965b298e95b46971598442f8:pkgutils/.md5sum
 f:7244abb248c00c2468b9ed32534f417b:pkgutils/pkgmk.conf-saux
 f:0d3a6fed127ba555ba0c1a587130c6bc:pkgutils/.footprint
