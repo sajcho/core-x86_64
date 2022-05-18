@@ -6,7 +6,7 @@
 name=pkgutils
 version=5.40.7
 _commit=9ca0da65121451447cdd284f98027dca2e16fb2e
-release=5
+release=6
 source=(zstd-multiarch.patch pkgmk.conf-saux)
 
 build() {
@@ -25,6 +25,12 @@ build() {
 	patch -p1 -i $SRC/zstd-multiarch.patch
 
 	sed -e 's|--static||' -e 's|-static||' -i Makefile
+
+	# fix - LC_ALL=C.UTF-8, bsdtar commpres
+	sed -e 's|POSIX|C.UTF-8|' \
+		-e 's|bsdtar -c|bsdtar --format=gnutar -c|' \
+		-i pkgmk.in
+
 
 	make DESTDIR=$PKG install
 
