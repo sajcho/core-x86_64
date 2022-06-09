@@ -4,7 +4,7 @@
 # Depends on:	curl expat jsoncpp libarchive libnghttp2 libuv rhash
 
 name=cmake
-version=3.23.1
+version=3.23.2
 release=1
 source=(https://cmake.org/files/v3.23/${name}-${version}.tar.gz)
 
