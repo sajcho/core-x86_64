@@ -4,12 +4,12 @@
 # Depends on:	util-linux
 
 name=libdevmapper
-version=1.02.183
+version=1.02.185
 release=1
-source=(https://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.15.tgz)
+source=(https://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.16.tgz)
 
 build() {
-	cd LVM2.2.03.15
+	cd LVM2.2.03.16
 
 	./configure \
 		--prefix=/usr \
