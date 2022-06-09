@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=iptables
-version=1.8.7
+version=1.8.8
 release=1
 source=(https://netfilter.org/projects/${name}/files/${name}-${version}.tar.bz2)
 
