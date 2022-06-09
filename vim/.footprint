@@ -335,7 +335,9 @@ drwxr-xr-x	root/root	usr/share/vim/doc/
 -rw-r--r--	root/root	usr/share/vim/doc/usr_43.txt
 -rw-r--r--	root/root	usr/share/vim/doc/usr_44.txt
 -rw-r--r--	root/root	usr/share/vim/doc/usr_45.txt
--rw-r--r--	root/root	usr/share/vim/doc/usr_46.txt
+-rw-r--r--	root/root	usr/share/vim/doc/usr_50.txt
+-rw-r--r--	root/root	usr/share/vim/doc/usr_51.txt
+-rw-r--r--	root/root	usr/share/vim/doc/usr_52.txt
 -rw-r--r--	root/root	usr/share/vim/doc/usr_90.txt
 -rw-r--r--	root/root	usr/share/vim/doc/usr_toc.txt
 -rw-r--r--	root/root	usr/share/vim/doc/various.txt
@@ -388,6 +390,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/cobol.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/conf.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/config.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/confini.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/context.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/cpp.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/crm.vim
@@ -638,6 +641,7 @@ drwxr-xr-x	root/root	usr/share/vim/indent/
 -rw-r--r--	root/root	usr/share/vim/indent/cmake.vim
 -rw-r--r--	root/root	usr/share/vim/indent/cobol.vim
 -rw-r--r--	root/root	usr/share/vim/indent/config.vim
+-rw-r--r--	root/root	usr/share/vim/indent/confini.vim
 -rw-r--r--	root/root	usr/share/vim/indent/context.vim
 -rw-r--r--	root/root	usr/share/vim/indent/cpp.vim
 -rw-r--r--	root/root	usr/share/vim/indent/cs.vim
@@ -953,6 +957,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/conaryrecipe.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/conf.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/config.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/confini.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/context.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/cpp.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/crm.vim
