@@ -4,7 +4,7 @@
 # Depends on:	db gdbm
 
 name=perl
-version=5.34.1
+version=5.36.0
 release=1
 source=(http://www.cpan.org/src/5.0/${name}-${version}.tar.xz)
 
@@ -35,6 +35,8 @@ build() {
 		-Dcf_by="SAUX-x86_64"
 
 	make V=1
+
+	#make test
 
 	make DESTDIR=$PKG install
 
