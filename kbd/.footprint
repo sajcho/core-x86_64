@@ -365,6 +365,7 @@ drwxr-xr-x	root/root	usr/share/kbd/keymaps/i386/include/
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/include/unicode.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/include/windowkeys.map.gz
 drwxr-xr-x	root/root	usr/share/kbd/keymaps/i386/neo/
+-rw-r--r--	root/root	usr/share/kbd/keymaps/i386/neo/3l.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/neo/adnw.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/neo/bone.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/neo/koy.map.gz
@@ -410,6 +411,7 @@ drwxr-xr-x	root/root	usr/share/kbd/keymaps/i386/qwerty/
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/gr.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/hu101.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/hypermap.m4
+-rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/ie.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/il-heb.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/il-phonetic.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/il.map.gz
@@ -525,6 +527,8 @@ drwxr-xr-x	root/root	usr/share/kbd/keymaps/include/
 -rw-r--r--	root/root	usr/share/kbd/keymaps/include/compose.latin3
 -rw-r--r--	root/root	usr/share/kbd/keymaps/include/compose.latin4
 -rw-r--r--	root/root	usr/share/kbd/keymaps/include/vim-compose.latin1
+drwxr-xr-x	root/root	usr/share/kbd/keymaps/pine/
+-rw-r--r--	root/root	usr/share/kbd/keymaps/pine/en.map.gz
 drwxr-xr-x	root/root	usr/share/kbd/unimaps/
 -rw-r--r--	root/root	usr/share/kbd/unimaps/8859-1.a0-ff.uni
 -rw-r--r--	root/root	usr/share/kbd/unimaps/8859-10.a0-ff.uni
