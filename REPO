@@ -441,9 +441,9 @@ f:28c28225339f45e782086491d1b58dab:libarchive/Pkgfile
 f:42c7552dea9388f2a6df1d5623cab974:zlib/.md5sum
 f:2a50256762984225fc844fe148399378:zlib/.footprint
 f:68407daa5596d7136b9a6028f42123ae:zlib/Pkgfile
-f:a91986d3084e70a8b118e7edce6450a4:libxml2/.md5sum
-f:b25e181b53a1730af905abf46f0e7ee8:libxml2/.footprint
-f:bd3cdfe556294c34b0cb92fe52e62ee0:libxml2/Pkgfile
+f:ea08d754eda1554139bc7285e7de7762:libxml2/.md5sum
+f:108c7cf4cfd06ae817ab12e35839a9ea:libxml2/.footprint
+f:178de177f91d496ae73b9a409e2e3348:libxml2/Pkgfile
 f:1f89f719adbddc964f64ed7e8b74d3af:libtool/.md5sum
 f:2fae769507b7ddf7ad7cf95093974435:libtool/.footprint
 f:714ccf9aa52e5ae88c868ff99c09862b:libtool/Pkgfile
@@ -644,9 +644,9 @@ f:fbf1509f83fb849f550f2355fec5ec37:libpipeline/.md5sum
 f:baddd7f575318a160697b10723a6d2f9:libpipeline/.footprint
 f:8df3bdc9570f9840faf6addc32ee1403:libpipeline/Pkgfile
 f:ad1d82e401e158f9c09003dd0ec66809:git/.md5sum
-f:c20e7a6d105b0dafc449675f73f9b07c:git/.footprint
+f:7a5c2262521ff183c726474e9796bedd:git/.footprint
 f:07297ac00d466c0c7c94afeaa16bc903:git/git.driver
-f:16f4f18e872c47f8ebf4dce4b5fcda71:git/Pkgfile
+f:349381b0a2599c21adb9fc4e81b4c5a4:git/Pkgfile
 f:cd40a9be0616a0db7e1bf0ec621ec357:libffi/README
 f:a0e9456814e896dded8ecc2248399ec9:libffi/.md5sum
 f:b1612b76280be21762df6d854450f6f3:libffi/.footprint
