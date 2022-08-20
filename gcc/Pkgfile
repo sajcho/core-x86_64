@@ -4,8 +4,8 @@
 # Depends on:	isl mpc zstd
 
 name=gcc
-version=12.1.0
-release=1
+version=12.2.0
+release=0
 source=(https://sourceware.org/pub/gcc/releases/${name}-${version}/${name}-${version}.tar.xz \
 	c89 c99)
 
@@ -50,8 +50,8 @@ build() {
 		profiledbootstrap
 
 	# Optional
-	#make -k check || :
-	#../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${version}-result
+	make -k check || :
+	../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${version}-result.txt
 
 	make -j1 DESTDIR=$PKG install
 
