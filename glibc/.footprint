@@ -103,6 +103,7 @@ drwxr-xr-x	root/root	usr/include/asm-generic/
 -rw-r--r--	root/root	usr/include/asm-generic/stat.h
 -rw-r--r--	root/root	usr/include/asm-generic/statfs.h
 -rw-r--r--	root/root	usr/include/asm-generic/swab.h
+-rw-r--r--	root/root	usr/include/asm-generic/termbits-common.h
 -rw-r--r--	root/root	usr/include/asm-generic/termbits.h
 -rw-r--r--	root/root	usr/include/asm-generic/termios.h
 -rw-r--r--	root/root	usr/include/asm-generic/types.h
@@ -110,6 +111,7 @@ drwxr-xr-x	root/root	usr/include/asm-generic/
 -rw-r--r--	root/root	usr/include/asm-generic/unistd.h
 drwxr-xr-x	root/root	usr/include/asm/
 -rw-r--r--	root/root	usr/include/asm/a.out.h
+-rw-r--r--	root/root	usr/include/asm/amd_hsmp.h
 -rw-r--r--	root/root	usr/include/asm/auxvec.h
 -rw-r--r--	root/root	usr/include/asm/bitsperlong.h
 -rw-r--r--	root/root	usr/include/asm/boot.h
@@ -234,6 +236,7 @@ drwxr-xr-x	root/root	usr/include/bits/
 -rw-r--r--	root/root	usr/include/bits/mman-map-flags-generic.h
 -rw-r--r--	root/root	usr/include/bits/mman-shared.h
 -rw-r--r--	root/root	usr/include/bits/mman.h
+-rw-r--r--	root/root	usr/include/bits/mman_ext.h
 -rw-r--r--	root/root	usr/include/bits/monetary-ldbl.h
 -rw-r--r--	root/root	usr/include/bits/mqueue.h
 -rw-r--r--	root/root	usr/include/bits/mqueue2.h
@@ -297,6 +300,7 @@ drwxr-xr-x	root/root	usr/include/bits/platform/
 -rw-r--r--	root/root	usr/include/bits/stdint-uintn.h
 -rw-r--r--	root/root	usr/include/bits/stdio-ldbl.h
 -rw-r--r--	root/root	usr/include/bits/stdio.h
+-rw-r--r--	root/root	usr/include/bits/stdio2-decl.h
 -rw-r--r--	root/root	usr/include/bits/stdio2.h
 -rw-r--r--	root/root	usr/include/bits/stdio_lim.h
 -rw-r--r--	root/root	usr/include/bits/stdlib-bsearch.h
@@ -344,6 +348,7 @@ drwxr-xr-x	root/root	usr/include/bits/types/
 -rw-r--r--	root/root	usr/include/bits/types/clockid_t.h
 -rw-r--r--	root/root	usr/include/bits/types/cookie_io_functions_t.h
 -rw-r--r--	root/root	usr/include/bits/types/error_t.h
+-rw-r--r--	root/root	usr/include/bits/types/idtype_t.h
 -rw-r--r--	root/root	usr/include/bits/types/locale_t.h
 -rw-r--r--	root/root	usr/include/bits/types/mbstate_t.h
 -rw-r--r--	root/root	usr/include/bits/types/res_state.h
@@ -499,7 +504,6 @@ drwxr-xr-x	root/root	usr/include/linux/android/
 -rw-r--r--	root/root	usr/include/linux/atm_idt77105.h
 -rw-r--r--	root/root	usr/include/linux/atm_nicstar.h
 -rw-r--r--	root/root	usr/include/linux/atm_tcp.h
--rw-r--r--	root/root	usr/include/linux/atm_zatm.h
 -rw-r--r--	root/root	usr/include/linux/atmapi.h
 -rw-r--r--	root/root	usr/include/linux/atmarp.h
 -rw-r--r--	root/root	usr/include/linux/atmbr2684.h
@@ -539,6 +543,7 @@ drwxr-xr-x	root/root	usr/include/linux/android/
 drwxr-xr-x	root/root	usr/include/linux/byteorder/
 -rw-r--r--	root/root	usr/include/linux/byteorder/big_endian.h
 -rw-r--r--	root/root	usr/include/linux/byteorder/little_endian.h
+-rw-r--r--	root/root	usr/include/linux/cachefiles.h
 drwxr-xr-x	root/root	usr/include/linux/caif/
 -rw-r--r--	root/root	usr/include/linux/caif/caif_socket.h
 -rw-r--r--	root/root	usr/include/linux/caif/if_caif.h
@@ -1081,6 +1086,7 @@ drwxr-xr-x	root/root	usr/include/linux/sched/
 -rw-r--r--	root/root	usr/include/linux/serial_core.h
 -rw-r--r--	root/root	usr/include/linux/serial_reg.h
 -rw-r--r--	root/root	usr/include/linux/serio.h
+-rw-r--r--	root/root	usr/include/linux/sev-guest.h
 -rw-r--r--	root/root	usr/include/linux/shm.h
 -rw-r--r--	root/root	usr/include/linux/signal.h
 -rw-r--r--	root/root	usr/include/linux/signalfd.h
@@ -1392,6 +1398,7 @@ drwxr-xr-x	root/root	usr/include/scsi/fc/
 -rw-r--r--	root/root	usr/include/scsi/fc/fc_ns.h
 -rw-r--r--	root/root	usr/include/scsi/scsi.h
 -rw-r--r--	root/root	usr/include/scsi/scsi_bsg_fc.h
+-rw-r--r--	root/root	usr/include/scsi/scsi_bsg_mpi3mr.h
 -rw-r--r--	root/root	usr/include/scsi/scsi_bsg_ufs.h
 -rw-r--r--	root/root	usr/include/scsi/scsi_ioctl.h
 -rw-r--r--	root/root	usr/include/scsi/scsi_netlink.h
@@ -1414,6 +1421,9 @@ drwxr-xr-x	root/root	usr/include/sound/
 -rw-r--r--	root/root	usr/include/sound/firewire.h
 -rw-r--r--	root/root	usr/include/sound/hdsp.h
 -rw-r--r--	root/root	usr/include/sound/hdspm.h
+drwxr-xr-x	root/root	usr/include/sound/intel/
+drwxr-xr-x	root/root	usr/include/sound/intel/avs/
+-rw-r--r--	root/root	usr/include/sound/intel/avs/tokens.h
 -rw-r--r--	root/root	usr/include/sound/sb16_csp.h
 -rw-r--r--	root/root	usr/include/sound/sfnt_info.h
 -rw-r--r--	root/root	usr/include/sound/skl-tplg-interface.h
@@ -1466,6 +1476,7 @@ drwxr-xr-x	root/root	usr/include/sys/
 -rw-r--r--	root/root	usr/include/sys/pci.h
 -rw-r--r--	root/root	usr/include/sys/perm.h
 -rw-r--r--	root/root	usr/include/sys/personality.h
+-rw-r--r--	root/root	usr/include/sys/pidfd.h
 drwxr-xr-x	root/root	usr/include/sys/platform/
 -rw-r--r--	root/root	usr/include/sys/platform/x86.h
 -rw-r--r--	root/root	usr/include/sys/poll.h
@@ -1835,7 +1846,7 @@ lrwxrwxrwx	root/root	usr/lib/libc_malloc_debug.so -> ../../lib/libc_malloc_debug
 lrwxrwxrwx	root/root	usr/lib/libcrypt.so -> ../../lib/libcrypt.so.1
 -rw-r--r--	root/root	usr/lib/libdl.a
 -rw-r--r--	root/root	usr/lib/libg.a
--rw-r--r--	root/root	usr/lib/libm-2.35.a
+-rw-r--r--	root/root	usr/lib/libm-2.36.a
 -rw-r--r--	root/root	usr/lib/libm.a
 -rw-r--r--	root/root	usr/lib/libm.so
 -rw-r--r--	root/root	usr/lib/libmcheck.a
@@ -2357,6 +2368,7 @@ drwxr-xr-x	root/root	usr/share/i18n/locales/
 -rw-r--r--	root/root	usr/share/i18n/locales/pt_PT@euro
 -rw-r--r--	root/root	usr/share/i18n/locales/quz_PE
 -rw-r--r--	root/root	usr/share/i18n/locales/raj_IN
+-rw-r--r--	root/root	usr/share/i18n/locales/rif_MA
 -rw-r--r--	root/root	usr/share/i18n/locales/ro_RO
 -rw-r--r--	root/root	usr/share/i18n/locales/ru_RU
 -rw-r--r--	root/root	usr/share/i18n/locales/ru_UA
@@ -2392,6 +2404,7 @@ drwxr-xr-x	root/root	usr/share/i18n/locales/
 -rw-r--r--	root/root	usr/share/i18n/locales/sv_SE
 -rw-r--r--	root/root	usr/share/i18n/locales/sw_KE
 -rw-r--r--	root/root	usr/share/i18n/locales/sw_TZ
+-rw-r--r--	root/root	usr/share/i18n/locales/syr
 -rw-r--r--	root/root	usr/share/i18n/locales/szl_PL
 -rw-r--r--	root/root	usr/share/i18n/locales/ta_IN
 -rw-r--r--	root/root	usr/share/i18n/locales/ta_LK

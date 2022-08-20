@@ -4,15 +4,15 @@
 # Depends on:	python3 texinfo
 
 name=glibc
-version=2.35
-release=3
+version=2.36
+release=0
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.17.2.tar.xz \
+	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.19.1.tar.xz \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
 	# install kernel headers
-	cd linux-5.17.2
+	cd linux-5.19.1
 
 	make mrproper
 	make ARCH=$CARCH INSTALL_HDR_PATH=$PKG/usr headers_install
@@ -44,10 +44,10 @@ build() {
 	make V=1
 
 	# Optional
-	#make check 2>&1 | tee buildlog
-	#echo "========= TEST =========" > $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
-	#grep -A 5 Summary buildlog >> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
-	#echo "======= END TEST =======" >> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
+	make check 2>&1 | tee buildlog
+	echo "========= TEST =========" > $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
+	grep -A 5 Summary buildlog >> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
+	echo "======= END TEST =======" >> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
 
 	make install_root=$PKG install
 
