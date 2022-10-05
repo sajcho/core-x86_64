@@ -476,6 +476,7 @@ drwxr-xr-x	root/root	usr/share/zoneinfo-leaps/Europe/
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/Europe/Kaliningrad
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/Europe/Kiev
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/Europe/Kirov
+-rw-r--r--	root/root	usr/share/zoneinfo-leaps/Europe/Kyiv
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/Europe/Lisbon
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/Europe/Ljubljana
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/Europe/London
@@ -1093,6 +1094,7 @@ drwxr-xr-x	root/root	usr/share/zoneinfo/Europe/
 -rw-r--r--	root/root	usr/share/zoneinfo/Europe/Kaliningrad
 -rw-r--r--	root/root	usr/share/zoneinfo/Europe/Kiev
 -rw-r--r--	root/root	usr/share/zoneinfo/Europe/Kirov
+-rw-r--r--	root/root	usr/share/zoneinfo/Europe/Kyiv
 -rw-r--r--	root/root	usr/share/zoneinfo/Europe/Lisbon
 -rw-r--r--	root/root	usr/share/zoneinfo/Europe/Ljubljana
 -rw-r--r--	root/root	usr/share/zoneinfo/Europe/London
