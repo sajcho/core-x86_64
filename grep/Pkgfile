@@ -4,7 +4,7 @@
 # Depends on:	libpcre
 
 name=grep
-version=3.7
+version=3.8
 release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
