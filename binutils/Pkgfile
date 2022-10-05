@@ -5,7 +5,7 @@
 
 name=binutils
 version=2.39
-release=0
+release=1
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -18,20 +18,19 @@ build() {
 		--prefix=/usr \
 		--enable-ld=default \
 		--enable-gold=no \
-		--enable-gprofng=no \
 		--enable-plugins \
 		--enable-shared \
 		--enable-threads \
 		--enable-relro \
-		--enable-cet=auto \
-		--enable-new-dtags \
 		--enable-64-bit-bfd \
 		--enable-install-libiberty \
 		--enable-targets=x86_64-pep \
+		--enable-default-execstack=no \
 		--enable-deterministic-archives \
 		--disable-nls \
 		--disable-werror \
 		--disable-multilib \
+		--disable-gprofng  \
 		--disable-jansson \
 		--disable-sim \
 		--disable-gdb \
@@ -47,9 +46,9 @@ build() {
 	make V=1 tooldir=/usr
 
 	#  Optional
-	make -k check || :
-	cat libctf/libctf.sum binutils/binutils.sum gas/testsuite/gas.sum ld/ld.sum \
-		> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
+	#make check 2>&1 | tee testlog
+	#grep -A 6 Summary testlog \
+	#	> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
 
 	make tooldir=/usr DESTDIR=$PKG install
 
