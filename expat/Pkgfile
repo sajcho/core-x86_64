@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=expat
-version=2.4.8
+version=2.4.9
 release=1
 source=(http://download.sourceforge.net/${name}/${name}-${version}.tar.bz2)
 
@@ -20,7 +20,7 @@ build() {
 
 	install -D -m 0644 doc/xmlwf.1 $PKG/usr/share/man/man1/xmlwf.1
 
-	rm -r $PKG/usr/share/doc
+	rm -r $PKG/usr/{lib/cmake,share/doc}
 
 	find $PKG -type f -name '*.la' -delete
 }
