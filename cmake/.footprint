@@ -12,7 +12,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/cmake
 -rw-r--r--	root/root	usr/share/bash-completion/completions/cpack
 -rw-r--r--	root/root	usr/share/bash-completion/completions/ctest
-lrwxrwxrwx	root/root	usr/share/cmake-3.23 -> cmake
+lrwxrwxrwx	root/root	usr/share/cmake-3.24 -> cmake
 drwxr-xr-x	root/root	usr/share/cmake/
 drwxr-xr-x	root/root	usr/share/cmake/Modules/
 -rw-r--r--	root/root	usr/share/cmake/Modules/.NoDartCoverage
@@ -235,7 +235,10 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/CheckIPOSupported/
 -rw-r--r--	root/root	usr/share/cmake/Modules/CheckVariableExists.c
 -rw-r--r--	root/root	usr/share/cmake/Modules/CheckVariableExists.cmake
 drwxr-xr-x	root/root	usr/share/cmake/Modules/Compiler/
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/ADSP-C.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/ADSP-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/ADSP.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/ARMCC-ASM.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/ARMCC-C.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/ARMCC-CXX.cmake
@@ -361,12 +364,14 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Compiler/
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/LCC-FindBinUtils.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/LCC-Fortran.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/LCC.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/LLVMFlang-Fortran.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/MSVC-ASM.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/MSVC-C-FeatureTests.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/MSVC-C.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/MSVC-CXX-FeatureTests.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/MSVC-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/MSVC.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/NAG-Fortran.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/NVHPC-C.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/NVHPC-CXX.cmake
@@ -471,6 +476,8 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/ExternalProject/
 -rw-r--r--	root/root	usr/share/cmake/Modules/FetchContent.cmake
 drwxr-xr-x	root/root	usr/share/cmake/Modules/FetchContent/
 -rw-r--r--	root/root	usr/share/cmake/Modules/FetchContent/CMakeLists.cmake.in
+-rw-r--r--	root/root	usr/share/cmake/Modules/FetchContent/package-config-version.cmake.in
+-rw-r--r--	root/root	usr/share/cmake/Modules/FetchContent/package-config.cmake.in
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindALSA.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindASPELL.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindAVIFile.cmake
@@ -721,6 +728,11 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Internal/OSRelease/
 -rw-r--r--	root/root	usr/share/cmake/Modules/MacroAddFileDependencies.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/MatlabTestsRedirect.cmake
 drwxr-xr-x	root/root	usr/share/cmake/Modules/Platform/
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/ADSP-C.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/ADSP-CXX.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/ADSP-Common.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/ADSP-Determine.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/ADSP.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/AIX-Clang-C.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/AIX-Clang-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/AIX-GNU-ASM.cmake
