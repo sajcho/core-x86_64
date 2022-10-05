@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=libffi
-version=3.4.2
+version=3.4.3
 release=1
 source=(https://github.com/${name}/${name}/releases/download/v${version}/${name}-${version}.tar.gz)
 
