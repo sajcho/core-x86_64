@@ -1,33 +1,41 @@
 # Description:	mold - a fast modern linker
 # URL:		https://github.com/rui314/mold
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	mimalloc2 openssl3 xxhash
+# Depends on:	mimalloc2 openssl3 xxhash zlib zstd
 
 name=mold
-version=1.2.1
-_commit=8f02509ba6528354cfe6660bb56512af38a80f87
-# Date:   Thu Jun 9 10:35:20 2022 -0700
-release=4-git20220609
-source=(https://github.com/rui314/mold/archive/${_commit}/${name}-${_commit}.tar.gz)
+version=1.5.1
+release=1
+source=(https://github.com/rui314/mold/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
-	cd ${name}-${_commit}
+	cd ${name}-${version}
 
-	rm -r $SRC/${name}-${_commit}/third-party/{mimalloc,xxhash}
+	rm -r $SRC/${name}-${version}/third-party/{mimalloc,zlib,zstd}
 
-	export SYSTEM_MIMALLOC=1
 	export CC=gcc
 	export CXX=g++
 
-	make -O ${JOBS:+-j ${JOBS}} V=1 VERBOSE=1 \
-		PREFIX=/usr LIBEXECDIR=/usr/lib
+	mkdir build
+	cd build
 
-	# this test requires dwarfdump - port is not available
-	rm test/elf/dead-debug-sections.sh
-	make check
+	cmake .. \
+		-DCMAKE_BUILD_TYPE='None' \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_LIBDIR=/usr/lib \
+		-DCMAKE_INSTALL_LIBEXECDIR=lib \
+		-DMOLD_USE_SYSTEM_MIMALLOC=ON \
+		-DMOLD_USE_SYSTEM_TBB=OFF \
+		-DMOLD_LTO=ON
 
-	make DESTDIR=$PKG PREFIX=/usr LIBEXECDIR=/usr/lib install
+	make -O ${JOBS:+-j ${JOBS}} VERBOSE=1
+
+	ctest
+
+	make DESTDIR=$PKG install
 
 	cd $PKG/usr/bin
 	ln -s mold $CHOST-ld.mold
+
+	rm -r $PKG/usr/share/doc
 }
