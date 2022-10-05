@@ -3287,6 +3287,8 @@ lrwxrwxrwx	root/root	usr/share/man/man3/PBKDF2PARAM_new.3ssl.gz -> X509_dup.3ssl
 lrwxrwxrwx	root/root	usr/share/man/man3/PEM_FLAG_EAY_COMPATIBLE.3ssl.gz -> PEM_read_bio_ex.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/PEM_FLAG_ONLY_B64.3ssl.gz -> PEM_read_bio_ex.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/PEM_FLAG_SECURE.3ssl.gz -> PEM_read_bio_ex.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_X509_INFO_read.3ssl.gz -> PEM_X509_INFO_read_bio_ex.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/PEM_X509_INFO_read_bio.3ssl.gz -> PEM_X509_INFO_read_bio_ex.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/PEM_X509_INFO_read_bio_ex.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/PEM_X509_INFO_read_ex.3ssl.gz -> PEM_X509_INFO_read_bio_ex.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/PEM_bytes_read_bio.3ssl.gz
@@ -5549,6 +5551,7 @@ drwxr-xr-x	root/root	usr/share/man/man7/
 lrwxrwxrwx	root/root	usr/share/man/man7/EVP_KEYEXCH-X448.7ssl.gz -> EVP_KEYEXCH-X25519.7ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man7/EVP_KEYMGMT-CMAC.7ssl.gz -> EVP_PKEY-HMAC.7ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man7/EVP_KEYMGMT-DH.7ssl.gz -> EVP_PKEY-DH.7ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man7/EVP_KEYMGMT-DHX.7ssl.gz -> EVP_PKEY-DH.7ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man7/EVP_KEYMGMT-DSA.7ssl.gz -> EVP_PKEY-DSA.7ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man7/EVP_KEYMGMT-EC.7ssl.gz -> EVP_PKEY-EC.7ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man7/EVP_KEYMGMT-ED25519.7ssl.gz -> EVP_PKEY-X25519.7ssl.gz
