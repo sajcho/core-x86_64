@@ -504,6 +504,7 @@ drwxr-xr-x	root/root	usr/include/linux/android/
 -rw-r--r--	root/root	usr/include/linux/atm_idt77105.h
 -rw-r--r--	root/root	usr/include/linux/atm_nicstar.h
 -rw-r--r--	root/root	usr/include/linux/atm_tcp.h
+-rw-r--r--	root/root	usr/include/linux/atm_zatm.h
 -rw-r--r--	root/root	usr/include/linux/atmapi.h
 -rw-r--r--	root/root	usr/include/linux/atmarp.h
 -rw-r--r--	root/root	usr/include/linux/atmbr2684.h
@@ -770,6 +771,7 @@ drwxr-xr-x	root/root	usr/include/linux/isdn/
 -rw-r--r--	root/root	usr/include/linux/limits.h
 -rw-r--r--	root/root	usr/include/linux/lirc.h
 -rw-r--r--	root/root	usr/include/linux/llc.h
+-rw-r--r--	root/root	usr/include/linux/loadpin.h
 -rw-r--r--	root/root	usr/include/linux/loop.h
 -rw-r--r--	root/root	usr/include/linux/lp.h
 -rw-r--r--	root/root	usr/include/linux/lwtunnel.h
@@ -1168,6 +1170,7 @@ drwxr-xr-x	root/root	usr/include/linux/tc_ematch/
 -rw-r--r--	root/root	usr/include/linux/tty.h
 -rw-r--r--	root/root	usr/include/linux/tty_flags.h
 -rw-r--r--	root/root	usr/include/linux/types.h
+-rw-r--r--	root/root	usr/include/linux/ublk_cmd.h
 -rw-r--r--	root/root	usr/include/linux/udf_fs_i.h
 -rw-r--r--	root/root	usr/include/linux/udmabuf.h
 -rw-r--r--	root/root	usr/include/linux/udp.h
@@ -1357,6 +1360,7 @@ drwxr-xr-x	root/root	usr/include/rdma/
 -rw-r--r--	root/root	usr/include/rdma/bnxt_re-abi.h
 -rw-r--r--	root/root	usr/include/rdma/cxgb4-abi.h
 -rw-r--r--	root/root	usr/include/rdma/efa-abi.h
+-rw-r--r--	root/root	usr/include/rdma/erdma-abi.h
 drwxr-xr-x	root/root	usr/include/rdma/hfi/
 -rw-r--r--	root/root	usr/include/rdma/hfi/hfi1_ioctl.h
 -rw-r--r--	root/root	usr/include/rdma/hfi/hfi1_user.h
