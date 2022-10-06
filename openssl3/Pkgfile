@@ -6,7 +6,7 @@
 name=openssl3
 _realname=openssl
 version=3.0.5
-release=1
+release=2
 source=(https://www.openssl.org/source/${_realname}-${version}.tar.gz \
 	mksslcert.sh)
 
@@ -46,5 +46,6 @@ build() {
 
 	install -D -m 755 $SRC/mksslcert.sh $PKG/usr/bin/mksslcert
 
-	find $PKG -type f -name '*.la' -delete
+	find $PKG -type f -name '*.a' -o \
+		-name '*.la' | xargs rm
 }

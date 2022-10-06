@@ -158,10 +158,8 @@ drwxr-xr-x	root/root	usr/lib/engines-3/
 -rwxr-xr-x	root/root	usr/lib/engines-3/capi.so
 -rwxr-xr-x	root/root	usr/lib/engines-3/loader_attic.so
 -rwxr-xr-x	root/root	usr/lib/engines-3/padlock.so
--rw-r--r--	root/root	usr/lib/libcrypto.a
 lrwxrwxrwx	root/root	usr/lib/libcrypto.so -> libcrypto.so.3
 -rwxr-xr-x	root/root	usr/lib/libcrypto.so.3
--rw-r--r--	root/root	usr/lib/libssl.a
 lrwxrwxrwx	root/root	usr/lib/libssl.so -> libssl.so.3
 -rwxr-xr-x	root/root	usr/lib/libssl.so.3
 drwxr-xr-x	root/root	usr/lib/ossl-modules/
