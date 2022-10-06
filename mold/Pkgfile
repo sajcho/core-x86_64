@@ -1,11 +1,11 @@
 # Description:	mold - a fast modern linker
 # URL:		https://github.com/rui314/mold
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	mimalloc2 openssl3 xxhash zlib zstd
+# Depends on:	cmake mimalloc2 openssl3 xxhash zlib zstd
 
 name=mold
 version=1.5.1
-release=1
+release=2
 source=(https://github.com/rui314/mold/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
