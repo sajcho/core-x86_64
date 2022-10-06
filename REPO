@@ -384,7 +384,7 @@ f:021884352f89aebfbc8b505cc446e367:lzip/.footprint
 f:d05b7a1b98679c657d459459aa11abd6:lzip/Pkgfile
 f:e1c50e4e8193822960df55c87dbc8c70:mold/.md5sum
 f:66e83ba4893acdc8ffe4499457648252:mold/.footprint
-f:0a90567f7abe18ffe3036e03197730e4:mold/Pkgfile
+f:ce04c3b19ce51181e4cdd4eeb538495d:mold/Pkgfile
 f:83e06aaf6129149bd41355f5c590d244:libmnl/.md5sum
 f:655acc31c6f42843fd303b4ad16f6cd2:libmnl/.footprint
 f:e025a7900e583ccd612e570300b3e2b9:libmnl/Pkgfile
@@ -610,8 +610,8 @@ f:7f7d72b794c44c60afc122aca70838e0:gpm/gpm-1.20.7-consolidated-1.patch
 f:9897c63427674af4b4033e640df21ddf:gpm/Pkgfile
 f:39c00ddf6e32725a17f3d23ebcc5cb4e:openssl3/.md5sum
 f:91f85842d2118003ee465c34259047e6:openssl3/mksslcert.sh
-f:5dd14168c2b375cd2299781735b01c04:openssl3/.footprint
-f:0665a209ce228c08bc63ce11b6f131ae:openssl3/Pkgfile
+f:d3a2f3fec9eb4a668e5035a8bdee66dc:openssl3/.footprint
+f:b02361f65c64d12677665e8503e62c1b:openssl3/Pkgfile
 f:ac1ec5f02125db3163912b5a5b5fffc9:gettext/.md5sum
 f:b34b3c47913fbc9a85737756f401775d:gettext/.footprint
 f:d2015368ce2991424c68b67af86823b9:gettext/Pkgfile
