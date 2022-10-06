@@ -11,6 +11,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/git-upload-archive
 -rwxr-xr-x	root/root	usr/bin/git-upload-pack
 -rwxr-xr-x	root/root	usr/bin/gitk
+-rwxr-xr-x	root/root	usr/bin/scalar
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git
@@ -55,6 +56,7 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git-cvsserver
 -rwxr-xr-x	root/root	usr/lib/git-core/git-daemon
 -rwxr-xr-x	root/root	usr/lib/git-core/git-describe
+-rwxr-xr-x	root/root	usr/lib/git-core/git-diagnose
 -rwxr-xr-x	root/root	usr/lib/git-core/git-diff
 -rwxr-xr-x	root/root	usr/lib/git-core/git-diff-files
 -rwxr-xr-x	root/root	usr/lib/git-core/git-diff-index
@@ -182,6 +184,7 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git-verify-commit
 -rwxr-xr-x	root/root	usr/lib/git-core/git-verify-pack
 -rwxr-xr-x	root/root	usr/lib/git-core/git-verify-tag
+-rwxr-xr-x	root/root	usr/lib/git-core/git-version
 -rwxr-xr-x	root/root	usr/lib/git-core/git-web--browse
 -rwxr-xr-x	root/root	usr/lib/git-core/git-whatchanged
 -rwxr-xr-x	root/root	usr/lib/git-core/git-worktree
@@ -210,6 +213,7 @@ drwxr-xr-x	root/root	usr/lib/git-core/mergetools/
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/vimdiff
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/winmerge
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/xxdiff
+-rwxr-xr-x	root/root	usr/lib/git-core/scalar
 drwxr-xr-x	root/root	usr/lib/perl5/
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.36/
@@ -367,6 +371,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/git-cvsserver.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-daemon.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-describe.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/git-diagnose.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-diff-files.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-diff-index.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-diff-tree.1.gz
@@ -489,12 +494,24 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/git.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gitk.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gitweb.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/scalar.1.gz
 drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/gitattributes.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/gitformat-bundle.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/gitformat-chunk.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/gitformat-commit-graph.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/gitformat-index.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/gitformat-pack.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/gitformat-signature.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/githooks.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/gitignore.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/gitmailmap.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/gitmodules.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/gitprotocol-capabilities.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/gitprotocol-common.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/gitprotocol-http.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/gitprotocol-pack.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/gitprotocol-v2.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/gitrepository-layout.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/gitweb.conf.5.gz
 drwxr-xr-x	root/root	usr/share/man/man7/
