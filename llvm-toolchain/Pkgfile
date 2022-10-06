@@ -5,7 +5,7 @@
 
 name=llvm-toolchain
 _realname=llvm-project
-version=14.0.3
+version=15.0.2
 release=1
 source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
 
@@ -42,7 +42,7 @@ build() {
 		-DLLVM_ENABLE_SPHINX=OFF \
 		-DLLVM_ENABLE_OCAMLDOC=OFF \
 		-DLLVM_INCLUDE_EXAMPLES=OFF \
-		-DCLANG_VENDOR="SAUX-x86_64" \
+		-DCLANG_VENDOR="(SAUX-x86_64)" \
 		-Wno-dev \
 		../llvm
 
