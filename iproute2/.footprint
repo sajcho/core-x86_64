@@ -67,6 +67,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/devlink-dev.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/devlink-dpipe.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/devlink-health.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/devlink-lc.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/devlink-monitor.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/devlink-port.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/devlink-rate.8.gz
