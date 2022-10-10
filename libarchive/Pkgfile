@@ -5,11 +5,17 @@
 
 name=libarchive
 version=3.6.1
-release=1
-source=(https://github.com/${name}/${name}/releases/download/v${version}/${name}-${version}.tar.xz)
+release=2
+source=(https://github.com/${name}/${name}/releases/download/v${version}/${name}-${version}.tar.xz \
+	0003-libarchive-Do-not-include-sys-mount.h-when-linux-fs.patch)
 
 build() {
 	cd ${name}-${version}
+
+	# Fix from Archlinux
+	# libarchive: Do not include sys/mount.h when linux/fs.h is present
+	# It also helps compiling with glibc 2.36 where sys/mount.h conflicts with linux/mount.h
+	patch -p1 -i $SRC/0003-libarchive-Do-not-include-sys-mount.h-when-linux-fs.patch
 
 	# XML support is only needed for the xar format which we can live without.
 
