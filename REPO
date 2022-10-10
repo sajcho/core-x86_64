@@ -429,9 +429,10 @@ f:02767af3a8f4fbb31ae2444bfb12ba2c:iana-etc/Pkgfile
 f:713f83c569e6d8cbdfe8bbf5a700ddc7:xz/.md5sum
 f:6d48ee16b1fbcdeefd5bc7f09a4c4601:xz/.footprint
 f:0c605dbc6443613c706bfcaf6fcd3936:xz/Pkgfile
-f:c651b906fafa6a30748217b8fe79840e:libarchive/.md5sum
+f:049b1a90ed62076e402a00798eba9f5e:libarchive/.md5sum
 f:2adae943f6689250ced7e95ca7c635cd:libarchive/.footprint
-f:28c28225339f45e782086491d1b58dab:libarchive/Pkgfile
+f:3034e5e77a5386f015e97d649759f2c4:libarchive/0003-libarchive-Do-not-include-sys-mount.h-when-linux-fs.patch
+f:89893a1301bf178cc5f102d92eba954d:libarchive/Pkgfile
 f:42c7552dea9388f2a6df1d5623cab974:zlib/.md5sum
 f:2a50256762984225fc844fe148399378:zlib/.footprint
 f:68407daa5596d7136b9a6028f42123ae:zlib/Pkgfile
