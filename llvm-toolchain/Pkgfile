@@ -5,7 +5,7 @@
 
 name=llvm-toolchain
 _realname=llvm-project
-version=15.0.2
+version=15.0.3
 release=1
 source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
 
@@ -24,7 +24,7 @@ build() {
 		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
 		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
 		-DLLVM_TARGETS_TO_BUILD="host;AMDGPU;BPF" \
-		-DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra;compiler-rt;flang" \
+		-DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra;compiler-rt" \
 		-DLLVM_BINUTILS_INCDIR=/usr/include \
 		-DLLVM_OPTIMIZED_TABLEGEN=ON \
 		-DLLVM_BUILD_LLVM_DYLIB=ON \
@@ -71,6 +71,4 @@ build() {
 	sed -i 's|libexec|lib/clang|' $PKG/usr/bin/scan-build
 
 	rmdir $PKG/usr/libexec
-
-	find $PKG -type f -name '*.a' -delete
 }
