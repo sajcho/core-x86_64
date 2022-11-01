@@ -1,0 +1,18 @@
+
+REQUIREMENTS
+
+PRE-INSTALL
+
+POST-INSTALL
+
+PRECAUTION
+
+    Note that updating major versions of libunistring (in x.y.z changing x or y)
+    requires rebuilding ports like gettext, libidn2, wget .. depend on this port.
+
+    If you use wget to download resources, use curl to update.(pkgmk.conf man page.
+
+    Have revdep(1) alert you to potential rebuild candidates after updating libunistring.
+
+MISC
+
