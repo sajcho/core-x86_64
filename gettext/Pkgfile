@@ -5,7 +5,7 @@
 
 name=gettext
 version=0.21.1
-release=1
+release=2
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -15,7 +15,8 @@ build() {
 		--prefix=/usr \
 		--disable-{csharp,java,nls,static} \
 		--without-{emacs,git} \
-		--with-included-{glib,libcroco,libxml}
+		--without-libunistring-prefix \
+		--with-included-{glib,libcroco,libunistring,libxml}
 
 	make V=1
 
