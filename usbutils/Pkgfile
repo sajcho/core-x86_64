@@ -4,19 +4,22 @@
 # Depends on:	libusb wget
 
 name=usbutils
-version=014
+version=015
 release=1
-source=(http://www.kernel.org/pub/linux/utils/usb/${name}/${name}-${version}.tar.xz \
+source=(https://github.com/gregkh/usbutils/archive/v${version}/${name}-${version}.tar.gz \
 	update-usbids.sh)
 
 build() {
 	cd ${name}-${version}
 
+	autoreconf -fiv
+
 	./configure \
 		--prefix=/usr \
-		--datadir=/usr/share/hwdata
+		--datadir=/usr/share/hwdata \
+		--disable-zlib
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
