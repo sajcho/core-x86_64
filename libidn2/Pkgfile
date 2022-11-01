@@ -1,10 +1,9 @@
 # Description:	Provides support for IETF Internationalized Domain Names (IDN) - IDNA2008 + TR46 specifications.
 # URL:		http://www.gnu.org/software/libidn/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	libunistring
 
 name=libidn2
-version=2.3.3
+version=2.3.4
 release=1
 source=(https://ftpmirror.gnu.org/gnu/libidn/${name}-${version}.tar.gz)
 
@@ -14,7 +13,9 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--disable-static \
-		--disable-nls
+		--disable-nls \
+		--with-included-libunistring \
+		--without-libunistring-prefix
 
 	make V=1
 
