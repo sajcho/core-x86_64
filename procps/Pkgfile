@@ -5,7 +5,7 @@
 
 name=procps
 _realname=procps-ng
-version=4.0.0
+version=4.0.1
 release=1
 source=(http://downloads.sourceforge.net/project/${_realname}/Production/${_realname}-${version}.tar.xz \
 	sysctl.conf)
@@ -31,8 +31,8 @@ build() {
 
 	install -d $PKG/{bin,lib,etc}
 	mv $PKG/usr/bin/{ps,pidof} $PKG/bin/
-	mv $PKG/usr/lib/libproc-2.so.* $PKG/lib
-	ln -sf ../../lib/$(readlink $PKG/lib/libproc-2.so.0) $PKG/usr/lib/libproc-2.so
+	mv $PKG/usr/lib/libproc2.so.* $PKG/lib
+	ln -sf ../../lib/$(readlink $PKG/lib/libproc2.so.0) $PKG/usr/lib/libproc2.so
 
 	install -d $PKG/etc/sysctl.d
 	install -m 0644 $SRC/sysctl.conf $PKG/etc/sysctl.conf

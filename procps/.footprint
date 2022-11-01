@@ -6,8 +6,8 @@ drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/sysctl.d/
 lrwxrwxrwx	root/root	etc/sysctl.d/99-sysctl.conf -> /etc/sysctl.conf
 drwxr-xr-x	root/root	lib/
-lrwxrwxrwx	root/root	lib/libproc-2.so.0 -> libproc-2.so.0.0.0
--rwxr-xr-x	root/root	lib/libproc-2.so.0.0.0
+lrwxrwxrwx	root/root	lib/libproc2.so.0 -> libproc2.so.0.0.0
+-rwxr-xr-x	root/root	lib/libproc2.so.0.0.0
 drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/sysctl
 drwxr-xr-x	root/root	usr/
@@ -26,19 +26,19 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/w
 -rwxr-xr-x	root/root	usr/bin/watch
 drwxr-xr-x	root/root	usr/include/
-drwxr-xr-x	root/root	usr/include/procps/
--rw-r--r--	root/root	usr/include/procps/diskstats.h
--rw-r--r--	root/root	usr/include/procps/meminfo.h
--rw-r--r--	root/root	usr/include/procps/misc.h
--rw-r--r--	root/root	usr/include/procps/pids.h
--rw-r--r--	root/root	usr/include/procps/slabinfo.h
--rw-r--r--	root/root	usr/include/procps/stat.h
--rw-r--r--	root/root	usr/include/procps/vmstat.h
--rw-r--r--	root/root	usr/include/procps/xtra-procps-debug.h
+drwxr-xr-x	root/root	usr/include/libproc2/
+-rw-r--r--	root/root	usr/include/libproc2/diskstats.h
+-rw-r--r--	root/root	usr/include/libproc2/meminfo.h
+-rw-r--r--	root/root	usr/include/libproc2/misc.h
+-rw-r--r--	root/root	usr/include/libproc2/pids.h
+-rw-r--r--	root/root	usr/include/libproc2/slabinfo.h
+-rw-r--r--	root/root	usr/include/libproc2/stat.h
+-rw-r--r--	root/root	usr/include/libproc2/vmstat.h
+-rw-r--r--	root/root	usr/include/libproc2/xtra-procps-debug.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libproc-2.so -> ../../lib/libproc-2.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libproc2.so -> ../../lib/libproc2.so.0.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
--rw-r--r--	root/root	usr/lib/pkgconfig/libproc-2.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/libproc2.pc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
