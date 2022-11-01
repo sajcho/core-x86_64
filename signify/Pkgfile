@@ -3,7 +3,7 @@
 # Maintainer:  sajcho, saux dot aarch64 at gmail dot com
 
 name=signify
-version=0.10
+version=0.12
 release=1
 source=(https://github.com/leahneukirchen/outils/archive/v${version}/outils-${version}.tar.gz \
         cruxify.patch)
