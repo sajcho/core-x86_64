@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=libunistring
-version=1.0
+version=1.1
 release=1
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
