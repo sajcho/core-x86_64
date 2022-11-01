@@ -6,7 +6,7 @@
 name=llvm-toolchain
 _realname=llvm-project
 version=15.0.3
-release=1
+release=2
 source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
 
 build() {
@@ -15,8 +15,8 @@ build() {
 	mkdir build
 	cd build
 
-	export CC="clang"
-	export CXX="clang++"
+	export CC="gcc"
+	export CXX="g++"
 
 	cmake -G Ninja \
 		-DCMAKE_BUILD_TYPE="Release" \
@@ -34,7 +34,6 @@ build() {
 		-DLLVM_ENABLE_ZLIB=ON \
 		-DLLVM_USE_PERF=ON \
 		-DLLVM_USE_LINKER=mold \
-		-DLLVM_ENABLE_LTO=Thin \
 		-DLLVM_ENABLE_PIC=ON \
 		-DLLVM_ENABLE_RTTI=ON \
 		-DLLVM_ENABLE_LIBCXX=OFF \
@@ -71,4 +70,6 @@ build() {
 	sed -i 's|libexec|lib/clang|' $PKG/usr/bin/scan-build
 
 	rmdir $PKG/usr/libexec
+
+	find $PKG -type f -name '*.a' -delete
 }
