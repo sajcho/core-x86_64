@@ -4,7 +4,7 @@
 # Depends on:	acl openssl3 zstd
 
 name=rsync
-version=3.2.6
+version=3.2.7
 release=1
 source=(https://download.samba.org/pub/rsync/src/${name}-${version}.tar.gz \
 	rsyncd.conf rsync.driver rsyncd.run)
