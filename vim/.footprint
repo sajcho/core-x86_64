@@ -385,6 +385,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/ada.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/alsaconf.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/ant.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/apache.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/arch.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/art.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/asm.vim
@@ -548,6 +549,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/ocaml.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/occam.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/octave.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/openvpn.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/pamconf.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/pascal.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/passwd.vim
@@ -558,6 +560,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/pinfo.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/plaintex.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/pod.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/poefilter.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/poke.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/postscr.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/procmail.vim
@@ -607,6 +610,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/solution.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/spec.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/sql.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/ssa.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/sshconfig.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/sudoers.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/svg.vim
@@ -1303,6 +1307,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/opam.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/openroad.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/openscad.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/openvpn.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/opl.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/ora.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/pamconf.vim
@@ -1331,6 +1336,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/plsql.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/po.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/pod.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/poefilter.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/poke.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/postscr.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/pov.vim
@@ -1467,6 +1473,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/shared/
 -rw-r--r--	root/root	usr/share/vim/syntax/squirrel.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/srec.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/srt.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/ssa.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/sshconfig.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/sshdconfig.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/st.vim
