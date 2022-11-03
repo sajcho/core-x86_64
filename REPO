@@ -175,9 +175,9 @@ f:97a8a908a54fea7b163f1e0f019c2134:binutils/Pkgfile
 f:feaca34edeaea282703faf762553a494:gzip/.md5sum
 f:b0d1386d3e51cbeb42005f9f8101f3bf:gzip/.footprint
 f:5877ef1b28da4f8d8a0f672e9b34a2c4:gzip/Pkgfile
-f:67f1f6587869f6c21bb1ac3868ae3e44:elfutils/.md5sum
-f:9dd26cc01cde867a3865b4fc9d91cdff:elfutils/.footprint
-f:27b9054f2db74625199ec26e96e85687:elfutils/Pkgfile
+f:9ad36de71eac2f803ce478fbdda31827:elfutils/.md5sum
+f:beb0c61d84d6ca5063135d18eee81c23:elfutils/.footprint
+f:53d79d570f3a2191c2f71bfd9c6dd584:elfutils/Pkgfile
 f:75cd4754e92fff45e3b9b3ac68676e41:glibc/.nostrip
 f:fbbc215a9b15ba4846f326cc88108057:glibc/hosts
 f:3fb7548de3edc9ae6b08aee167552a4d:glibc/.md5sum
@@ -215,9 +215,9 @@ f:2156a75cecb6a171dc2aca39400af62e:socklog/.md5sum
 f:35e68b8714ef1e55ad3075f380ba0556:socklog/cross.patch
 f:a0af182bf92fdd78e3a6c12e361ba2c6:socklog/.footprint
 f:6520d772096dc0d27841c6f50ba8af8e:socklog/Pkgfile
-f:58bf5bc509ad6588cef5d92e5fc1fdf1:libedit/.md5sum
-f:e66584104928f9fbf4cd432d12283deb:libedit/.footprint
-f:89e92a828a24d6707d31d3358b7deaaf:libedit/Pkgfile
+f:42489b6a8fab48ebd9ae376dafa282c0:libedit/.md5sum
+f:edc31e5b5d859700a43536a9e1b3707b:libedit/.footprint
+f:e6d8f83b72a3eec8f18827905a1e291f:libedit/Pkgfile
 f:a8cb1e62f7038004d5fbaea7b30956e8:autoconf/.md5sum
 f:9f752ae2b5e4f924d3a934cdc43a914c:autoconf/.footprint
 f:f751f91c2f310d818251edb31b42a009:autoconf/Pkgfile
