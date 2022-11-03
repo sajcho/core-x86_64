@@ -315,9 +315,9 @@ f:0eede0f912f0513c9ddfb94589818eeb:dhcpcd/.footprint
 f:bb812c284473d69c4ad4a55c80d1f3f1:dhcpcd/dhcpcd-sv.conf
 f:ff722a1dcd4c5f2d1f70db533debde65:dhcpcd/Pkgfile
 f:2a9922b8c9fc28248d1d5039c7012620:llvm-toolchain/README
-f:e6c2eb0c75bb39df7f95554d374665bc:llvm-toolchain/.md5sum
-f:f2e16ca3d411e9a8ff7a0c4bdf82f1ae:llvm-toolchain/.footprint
-f:212c909b367c2053af653e6336eee7cd:llvm-toolchain/Pkgfile
+f:de9216eb8d19f12fbe25538191f5548c:llvm-toolchain/.md5sum
+f:97b03314c27d805559eea79bc1ab2a01:llvm-toolchain/.footprint
+f:6209e8dd08934fb4355999916a1e03d1:llvm-toolchain/Pkgfile
 f:115f7a3213b0eea165f014fe97088553:plocate/.md5sum
 f:e4a50f4a3d5559e5ccd30e936672dc37:plocate/plocate
 f:7793e2e361db0c4c7981d3272a9e0651:plocate/.footprint
