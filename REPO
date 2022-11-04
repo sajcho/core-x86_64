@@ -300,9 +300,9 @@ f:b676033119640e08bbc85739fa636674:bash/Pkgfile
 f:789fe330a566c112b7e4f6802c6fae8a:perl/.md5sum
 f:67bcdfc3ae6cf7cdb6c12573b51d96d6:perl/.footprint
 f:31c7e6a0b6c668241bc310703863a4b5:perl/Pkgfile
-f:30c6b5d74ed5f7c8cfc8307d2e808305:cmake/.md5sum
-f:822dd0bee6bfff21a84f36ef1cbca0c0:cmake/.footprint
-f:9b4a81451c39956e1d24fc520007e7af:cmake/Pkgfile
+f:c917d4b34846cce89ed74d85ef98f17f:cmake/.md5sum
+f:81f9615513d9db49012b8e52ef2ee42a:cmake/.footprint
+f:8f2a69d7aa66233b2e72a859a18e9671:cmake/Pkgfile
 f:a65f5099b3cd43c220381aa8f1ea592a:check/.md5sum
 f:a492e3a9fa08ca1d4dc6ec3dd74c3c94:check/.footprint
 f:385e953d6270fe8bfa75a0733a460419:check/Pkgfile
@@ -665,9 +665,9 @@ f:e46dfd172afaf778fa002927418248b2:sed/Pkgfile
 f:a9ce5d4bff7e47f3a0d6d03ffa907832:zstd/.md5sum
 f:01b9990ed7a857c883543aeeed749bcb:zstd/.footprint
 f:21a7b6f5d5b292ec9a93779267844043:zstd/Pkgfile
-f:909d0cde9e933feac141967a1d86652d:liburing/.md5sum
-f:c4fca61153052fdee1fb84afe46942b8:liburing/.footprint
-f:cd6909641c3126ff7f7af5d042d96c5a:liburing/Pkgfile
+f:009f14fe2e3776f9d87c9859dfbb2cf9:liburing/.md5sum
+f:4e1e437bd05e7c8fcd4e9e7667ad24c8:liburing/.footprint
+f:9a185fff6d11fb3e91c4ec7de481b752:liburing/Pkgfile
 f:addd6a780ee3f83ef0a3d4a95eea196f:kbd/.md5sum
 f:e6d37048fd3de20cdd1d623eb0faa602:kbd/.footprint
 f:7aacc11ebc228ef3952eba7d252d3afd:kbd/Pkgfile
