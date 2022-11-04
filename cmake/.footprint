@@ -1048,6 +1048,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Platform/Android/
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows-IntelLLVM-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows-IntelLLVM-Fortran.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows-IntelLLVM.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows-LLVMFlang-Fortran.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows-MSVC-C.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows-MSVC-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows-MSVC.cmake
