@@ -6,15 +6,16 @@ drwxr-xr-x	root/root	usr/include/liburing/
 -rw-r--r--	root/root	usr/include/liburing/compat.h
 -rw-r--r--	root/root	usr/include/liburing/io_uring.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/liburing.so -> liburing.so.2.2
-lrwxrwxrwx	root/root	usr/lib/liburing.so.2 -> liburing.so.2.2
--rwxr-xr-x	root/root	usr/lib/liburing.so.2.2
+lrwxrwxrwx	root/root	usr/lib/liburing.so -> liburing.so.2.3
+lrwxrwxrwx	root/root	usr/lib/liburing.so.2 -> liburing.so.2.3
+-rwxr-xr-x	root/root	usr/lib/liburing.so.2.3
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/liburing.pc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man2/
 -rw-r--r--	root/root	usr/share/man/man2/io_uring_enter.2.gz
+-rw-r--r--	root/root	usr/share/man/man2/io_uring_enter2.2.gz
 -rw-r--r--	root/root	usr/share/man/man2/io_uring_register.2.gz
 -rw-r--r--	root/root	usr/share/man/man2/io_uring_setup.2.gz
 drwxr-xr-x	root/root	usr/share/man/man3/
@@ -24,11 +25,13 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_buf_ring_init.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_buf_ring_mask.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_cq_advance.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_cq_has_overflow.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_cq_ready.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_cqe_get_data.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_cqe_get_data64.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_cqe_seen.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_free_probe.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_get_events.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_get_probe.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_get_sqe.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_opcode_supported.3.gz
@@ -52,6 +55,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_msg_ring.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_multishot_accept.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_multishot_accept_direct.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_nop.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_openat.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_openat2.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_openat2_direct.3.gz
@@ -66,15 +70,19 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_readv.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_readv2.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_recv.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_recv_multishot.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_recvmsg.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_recvmsg_multishot.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_remove_buffers.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_rename.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_renameat.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_send.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_send_zc.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_sendmsg.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_shutdown.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_socket.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_socket_direct.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_socket_direct_alloc.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_splice.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_statx.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_symlink.3.gz
@@ -93,14 +101,24 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_queue_exit.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_queue_init.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_queue_init_params.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_recvmsg_cmsg_firsthdr.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_recvmsg_cmsg_nexthdr.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_recvmsg_name.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_recvmsg_out.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_recvmsg_payload.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_recvmsg_payload_length.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_recvmsg_validate.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_register_buf_ring.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_register_buffers.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_register_eventfd.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_register_eventfd_async.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_register_file_alloc_range.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_register_files.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_register_files_sparse.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_register_iowq_aff.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_register_iowq_max_workers.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_register_ring_fd.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_register_sync_cancel.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_sq_ready.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_sq_space_left.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_sqe_set_data.3.gz
@@ -108,6 +126,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_sqe_set_flags.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_sqring_wait.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_submit.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_submit_and_get_events.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_submit_and_wait.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_submit_and_wait_timeout.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_unregister_buf_ring.3.gz

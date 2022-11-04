@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=liburing
-version=2.2
+version=2.3
 release=1
 source=(https://github.com/axboe/${name}/archive/${name}-${version}/${name}-${version}.tar.gz)
 
