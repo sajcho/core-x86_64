@@ -2,12 +2,6 @@
 # /etc/pam.d/common-session - common session module configuration
 #
 
-session required    pam_unix.so
 session required    pam_limits.so
-
-# If you use elogind, enable these rules.
-
-#session  required    pam_loginuid.so
-#session  optional    pam_elogind.so
-
-# # End elogind addition
+session required    pam_unix.so
+session optional    pam_dumb_runtime_dir.so
