@@ -163,9 +163,9 @@ f:e5c38e4c2be10f1f60a0674b23dd562b:tar/tar-1.28-document-exclude-mistakes.patch
 f:e9e4218bd3c3d6eea8eb305dd8a6a324:tar/tar-1.28-loneZeroWarning.patch
 f:879d405f652b23dba326818f841f4e21:tar/tar-1.29-wildcards.patch
 f:830b4abb9a96b7d506da1f8ab1c5e694:tar/Pkgfile
-f:4519cd76d64fc69f69a429a550fcc5e3:python3-setuptools/.md5sum
-f:c20ef16833ed4c10522be0a330b96d18:python3-setuptools/.footprint
-f:736312e0d9551456279ae418c7789f7a:python3-setuptools/Pkgfile
+f:c76cc19d594093e192cfa16a1b86d9ae:python3-setuptools/.md5sum
+f:d621823d0408914cc90a4fa8d26e3c86:python3-setuptools/.footprint
+f:e65f018b5af3f76d7442cda5709580b1:python3-setuptools/Pkgfile
 f:e45870b3b9a063d5c65238d15e435139:libnsl/.md5sum
 f:68d29a7a4fc30ea3ba47a4caa45b6a5e:libnsl/.footprint
 f:0f3e01afeef8065dd70773b6a2a8decd:libnsl/Pkgfile
@@ -588,9 +588,9 @@ f:82e55ec4a1f6ce22fb35abd0447da271:expect/Pkgfile
 f:f1ad30baa503bd29ac72602db2fe2de3:bison/.md5sum
 f:7cba55dee564b570ffeefc02fa0e6c37:bison/.footprint
 f:c10d73d3f69583eab73d67e1c9262e3e:bison/Pkgfile
-f:8a6b502a7abc03e2389b9e413c206ce1:python3/.md5sum
-f:c831bf10bf8e46b1b230a18b5b0115dd:python3/.footprint
-f:4171d081608109c255ae1e157a9185b9:python3/Pkgfile
+f:707c101cd46e8477d1dd16bbd25aaba0:python3/.md5sum
+f:87e0866d937c7d0a12e6a05e50e3c660:python3/.footprint
+f:252ca2b791ae20b3b85957ead4225916:python3/Pkgfile
 f:f2ffdc44b6673d862f4695047faec279:gawk/.md5sum
 f:73976726910434b35d20764ba74111ca:gawk/.footprint
 f:99f557f14f90704877991a76cf2dcadb:gawk/add-upref.patch
