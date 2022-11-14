@@ -3,12 +3,18 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=make
-version=4.3
-release=2
+version=4.4
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.lz)
 
 build() {
 	cd ${name}-${version}
+
+	# LFS - First, fix some issues identified upstream:
+	sed \
+		-e '/ifdef SIGPIPE/,+2 d' \
+		-e '/undef  FATAL_SIG/i FATAL_SIG (SIGPIPE);' \
+		-i src/main.c
 
 	./configure \
 		--prefix=/usr \
