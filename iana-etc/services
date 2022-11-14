@@ -1,4 +1,4 @@
-# /etc/services, created 2022-10-01T22:09:03+0200
+# /etc/services, created 2022-11-14T12:36:10+0100
 # Source: https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xml
 tcpmux              1/tcp
 tcpmux              1/udp
@@ -10007,6 +10007,7 @@ espeech-rtp      8417/tcp
 espeech-rtp      8417/udp
 aritts           8423/tcp
 pgbackrest       8432/tcp
+aws-as2          8433/udp
 cybro-a-bus      8442/tcp
 cybro-a-bus      8442/udp
 pcsync-https     8443/tcp
@@ -10706,6 +10707,7 @@ warehouse       12322/tcp
 warehouse       12322/udp
 italk           12345/tcp
 italk           12345/udp
+carb-repl-ctrl  12546/tcp
 tsaf            12753/tcp
 tsaf            12753/udp
 netperf         12865/tcp
