@@ -5,7 +5,7 @@
 
 name=glibc
 version=2.36
-release=1
+release=2
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
 	https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.0.tar.xz \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
@@ -19,6 +19,9 @@ build() {
 	chown -R root:root $PKG/usr
 
 	cd $SRC/${name}-${version}
+
+	# Fix from LFS - use make 4.4
+	sed '/MAKEFLAGS :=/s/)r/) -r/' -i Makerules
 
 	mkdir build
 	cd build
