@@ -4,12 +4,12 @@
 # Depends on:	util-linux
 
 name=libdevmapper
-version=1.02.185
+version=1.02.187
 release=1
-source=(https://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.16.tgz)
+source=(https://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.17.tgz)
 
 build() {
-	cd LVM2.2.03.16
+	cd LVM2.2.03.17
 
 	./configure \
 		--prefix=/usr \
@@ -27,7 +27,7 @@ build() {
 
 	make V=1 device-mapper
 
-	make DESTDIR=$PKG install_device-mapper
+	make -j1 DESTDIR=$PKG install_device-mapper
 
 	install -m0644 -D udev/12-dm-permissions.rules $PKG/etc/udev/rules.d/12-dm-permissions.rules.example
 
