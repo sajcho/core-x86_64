@@ -187,7 +187,7 @@ f:de45f08c1d54abe770c74f2e9180db65:glibc/nscd.run
 f:96156bec8e05de67384dc93e72bdc313:glibc/host.conf
 f:05e5b0dc02b7516ae07dfa67e1e771b5:glibc/.footprint
 f:acf9daad1ee85de5efd3543965596a63:glibc/resolv.conf
-f:35ab72c1d861d94751875cdfa5c74c8d:glibc/Pkgfile
+f:669605e4e720556a06939f0c7838ac3c:glibc/Pkgfile
 f:15695abbce576f3e32ec7273b02eec8d:bc/.md5sum
 f:d6827a76321767fcfcb99d8fd946c17b:bc/.footprint
 f:cd2bfedd0578d516b6bdb3ccd2a2c611:bc/Pkgfile
@@ -511,9 +511,9 @@ f:5a3b35521ec239bcb3d1acab5b35e7c6:lz4/Pkgfile
 f:882bc86c7fe02db7ffdf407a2d49132a:ncurses/.md5sum
 f:6821fdf726f0caa0b666db12a57ccfe8:ncurses/.footprint
 f:3cb2d4b42dc1023a02eefa0ec6e100af:ncurses/Pkgfile
-f:6feacf83452778fc9f3e03cd086c4a8b:make/.md5sum
+f:4c849b253d825200b67b2197edc45ab5:make/.md5sum
 f:737d0e0fee9b76c3869d916f5a4869c2:make/.footprint
-f:72214772f9da3efdfe2008de16c7031d:make/Pkgfile
+f:3ca231d0f3c19f199d4ef0d581e1fbd3:make/Pkgfile
 f:f57741f516d9407b35f5cbdbf57f64f1:rsync/.md5sum
 f:bd6cc8e2c83d5e845af20a30e105fb5f:rsync/rsync.driver
 f:b4e95fa8c8f3ae13cfdf616abd6a3960:rsync/rsyncd.conf
