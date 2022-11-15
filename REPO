@@ -431,9 +431,9 @@ f:905a1052b0f01571692eef2ca2d28c76:iana-etc/.footprint
 f:b22d38402670add00dd4e57c1858c1ae:iana-etc/protocols
 f:d6b011b611df75cfa3b42b933250c1a8:iana-etc/update.sh
 f:ead623407f07b6894758909da86e8282:iana-etc/Pkgfile
-f:713f83c569e6d8cbdfe8bbf5a700ddc7:xz/.md5sum
-f:6d48ee16b1fbcdeefd5bc7f09a4c4601:xz/.footprint
-f:0c605dbc6443613c706bfcaf6fcd3936:xz/Pkgfile
+f:693273c20afb32e2c65f5349848a4723:xz/.md5sum
+f:4698ad1e75ed4f984df4617d42771796:xz/.footprint
+f:dfa7b35960a0ef41ec34d8de1d037c41:xz/Pkgfile
 f:049b1a90ed62076e402a00798eba9f5e:libarchive/.md5sum
 f:2adae943f6689250ced7e95ca7c635cd:libarchive/.footprint
 f:3034e5e77a5386f015e97d649759f2c4:libarchive/0003-libarchive-Do-not-include-sys-mount.h-when-linux-fs.patch
@@ -640,9 +640,9 @@ f:94bd05316a4459b831782f7a161bee17:texinfo/Pkgfile
 f:a1692cba991b797b59f2bd6eb02a40e0:tcl/.md5sum
 f:9ee50af85eb2bedb35a98fe6f4f0b219:tcl/.footprint
 f:0cf21fde4cb0264c4fba53187d8f1d75:tcl/Pkgfile
-f:fbf1509f83fb849f550f2355fec5ec37:libpipeline/.md5sum
-f:baddd7f575318a160697b10723a6d2f9:libpipeline/.footprint
-f:8df3bdc9570f9840faf6addc32ee1403:libpipeline/Pkgfile
+f:70ac444c973044ca6719e993370c86b2:libpipeline/.md5sum
+f:cab6dd4be6ed2f1db36629ec9b54a065:libpipeline/.footprint
+f:a5acd686ae9d08d690198bc0d7ccb888:libpipeline/Pkgfile
 f:012cc2607edf51c130fdd03340ea6235:git/.md5sum
 f:36604a495a1ba13a17e5314b051c9c86:git/.footprint
 f:07297ac00d466c0c7c94afeaa16bc903:git/git.driver
