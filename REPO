@@ -348,10 +348,10 @@ f:400b86219257b1bd0db69fca5221fb8b:usbutils/Pkgfile
 f:b09c57291e4cfb5364dd2a3c48e34dd1:libpcre2/.md5sum
 f:23a948a5e43f1e1f4640508ece8f4a59:libpcre2/.footprint
 f:f993ee393f3141e49102183fe818ef6b:libpcre2/Pkgfile
-f:53c39663e99b1e1890cdae0f4bb454bf:man-db/.md5sum
+f:d1c475bb8bec8eed51265b926926358a:man-db/.md5sum
 f:43dcb76783c4b2f0578b43a43124f9e9:man-db/mandb.cron
-f:25382344b4c7fec212ed4448f8fb6f16:man-db/.footprint
-f:b6d0a0a69ee2a8f52ec975b7023094cf:man-db/Pkgfile
+f:232e2613819c064aad309d00f9853f64:man-db/.footprint
+f:50984d95aed7fcdba3101dfa4029a6c2:man-db/Pkgfile
 f:e8ec0f0642ee8b4224a30f4e1c965ad8:libnghttp2/.md5sum
 f:4de01b91986b09d267285d19220df53b:libnghttp2/.footprint
 f:1fd5c7d02bed4c0cb81b7e48351e3498:libnghttp2/Pkgfile
@@ -472,10 +472,10 @@ f:6b4a256a7266b82573ee57e6ec37edc7:nettle/Pkgfile
 f:ae7ebb89a47ae19521480700f0cb8819:ed/.md5sum
 f:3e155d4a7adb32da44665179758ec66b:ed/.footprint
 f:4f5c2d88fd14f416cfaa1a42ed1c2dd3:ed/Pkgfile
-f:7c6f3dfbedf3e0c06d839127814b9111:meson/.md5sum
-f:8fa9eb859d947dc23b3131c3e0da60ad:meson/build-meson
+f:9f667af2e46b008e59e30871f186fa82:meson/.md5sum
+f:93570c7a618b02b50d9608a6f884aabe:meson/build-meson
 f:a5bcd091db4618afcfa8abb6332dcdff:meson/.footprint
-f:fbb69f3c31f4467a5294c2b5d8025116:meson/Pkgfile
+f:2a9195926526580f2857645e54ba7050:meson/Pkgfile
 f:f07c91477c30cf0e400317c03c5adb9a:lynx/.md5sum
 f:4e29bcae8c4bfd886a273c165cbce23e:lynx/.footprint
 f:1248da9dc9fc5a404b062998b14cc3be:lynx/Pkgfile
