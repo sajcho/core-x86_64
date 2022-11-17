@@ -5,8 +5,8 @@
 
 name=llvm-toolchain
 _realname=llvm-project
-version=15.0.4
-release=2
+version=15.0.5
+release=1
 source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
 
 build() {
