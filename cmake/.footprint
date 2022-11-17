@@ -12,7 +12,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/cmake
 -rw-r--r--	root/root	usr/share/bash-completion/completions/cpack
 -rw-r--r--	root/root	usr/share/bash-completion/completions/ctest
-lrwxrwxrwx	root/root	usr/share/cmake-3.24 -> cmake
+lrwxrwxrwx	root/root	usr/share/cmake-3.25 -> cmake
 drwxr-xr-x	root/root	usr/share/cmake/
 drwxr-xr-x	root/root	usr/share/cmake/Modules/
 -rw-r--r--	root/root	usr/share/cmake/Modules/.NoDartCoverage
@@ -353,6 +353,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Compiler/
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/IntelLLVM-C.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/IntelLLVM-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/IntelLLVM-FindBinUtils.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/IntelLLVM-Fortran.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/IntelLLVM.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake
@@ -419,6 +420,12 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Compiler/
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/TI-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/TI.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Tasking-ASM.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Tasking-C.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Tasking-CXX.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Tasking-FindBinUtils.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Tasking.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/TinyCC-C.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake
@@ -575,6 +582,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/FindMPI/
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindOpenCL.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindOpenGL.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindOpenMP.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/FindOpenSP.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindOpenSSL.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindOpenSceneGraph.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindOpenThreads.cmake
@@ -605,6 +613,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/FindPython/
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindRTI.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindRuby.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindSDL.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/FindSDL_gfx.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindSDL_image.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindSDL_mixer.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindSDL_net.cmake
@@ -1000,6 +1009,14 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Platform/Android/
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/RISCos.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/SCO_SV.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/SINIX.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/SerenityOS-Clang-ASM.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/SerenityOS-Clang-C.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/SerenityOS-Clang-CXX.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/SerenityOS-GNU-ASM.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/SerenityOS-GNU-C.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/SerenityOS-GNU-CXX.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/SerenityOS-GNU.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/SerenityOS.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/SunOS-Clang-C.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/SunOS-Clang-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/SunOS-GNU-C.cmake
@@ -1022,6 +1039,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Platform/Android/
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows-Clang-ASM.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows-Clang-C.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows-Clang-CXX.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows-Clang-HIP.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows-Clang.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows-Determine-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows-Embarcadero-C.cmake
