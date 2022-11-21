@@ -160,13 +160,13 @@ drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/pkg_resources/extern/
 drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/pkg_resources/extern/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/extern/__pycache__/__init__.cpython-311.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/extern/__pycache__/__init__.cpython-311.pyc
-drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/setuptools-65.5.1-py3.11.egg-info/
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-65.5.1-py3.11.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-65.5.1-py3.11.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-65.5.1-py3.11.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-65.5.1-py3.11.egg-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-65.5.1-py3.11.egg-info/requires.txt
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-65.5.1-py3.11.egg-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/setuptools-65.6.0-py3.11.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-65.6.0-py3.11.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-65.6.0-py3.11.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-65.6.0-py3.11.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-65.6.0-py3.11.egg-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-65.6.0-py3.11.egg-info/requires.txt
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-65.6.0-py3.11.egg-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/setuptools/
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/setuptools/__pycache__/
@@ -240,6 +240,8 @@ drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/setuptools/_distutils/__py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_distutils/__pycache__/_collections.cpython-311.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_distutils/__pycache__/_functools.cpython-311.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_distutils/__pycache__/_functools.cpython-311.pyc
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_distutils/__pycache__/_log.cpython-311.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_distutils/__pycache__/_log.cpython-311.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_distutils/__pycache__/_macos_compat.cpython-311.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_distutils/__pycache__/_macos_compat.cpython-311.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_distutils/__pycache__/_msvccompiler.cpython-311.opt-1.pyc
@@ -302,6 +304,7 @@ drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/setuptools/_distutils/__py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_distutils/__pycache__/versionpredicate.cpython-311.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_distutils/_collections.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_distutils/_functools.py
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_distutils/_log.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_distutils/_macos_compat.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_distutils/_msvccompiler.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_distutils/archive_util.py
