@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvVR/mAmj7PrVLJ4PQ14gcmFFcOC1Qmf/lL97tN4cbEhJGH0U3jvPrdZawZu+GjXL5aFAR6zyfYYkSYGZLDoTYQQ=
+SHA256 (Pkgfile) = 8627f36e0d55b93679ad2af3e42bf491807a19c59ea812f604cb3def01c9a208
+SHA256 (.footprint) = 09224c7c9d95bdbed47f97521316c9abe3193ee1ca200ace4a3f13ae9c92844c
+SHA256 (gawk-5.2.0.tar.xz) = e4ddbad1c2ef10e8e815ca80208d0162d4c983e6cca16f925e8418632d639018
+SHA256 (add-upref.patch) = bb0d82033baaeb5e9d1b7c83620a23ebc8f4907e371145d32e32ead06a2dfbb4
