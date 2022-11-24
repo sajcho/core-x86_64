@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvW8uT6AAnSeEqgKzljHhXeEKH3gb9i5DeMvyKiDXgh4szc0rxzFZ5klsHvGlJF64H05HfAsLbvScorM1gZfioAE=
+SHA256 (Pkgfile) = 0117eb276ced9323d49196acac90e5facf7fe36b9cd06d0be751c27a2636232a
+SHA256 (.footprint) = 6b030778ce7e17453c42a1c79db040622c03805e6a2b24b18e79103af9700ff3
+SHA256 (mold-1.7.1.tar.gz) = fa2558664db79a1e20f09162578632fa856b3cde966fbcb23084c352b827dfa9
