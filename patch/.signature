@@ -1,0 +1,12 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvRpBqFyYB7hAS5J2bDUYkbLvWh+SwF4kUGgmvXN6UTKAwgyfPJxJjaG1LWMTQFJufAI7HrogEuYzHHwFOVjAKgE=
+SHA256 (Pkgfile) = 29cb71287612656d7e68e00ef19ab1ae9c0e001a894049d08d30eebbcadb5e82
+SHA256 (.footprint) = 7185313cfe8efa96d2ac73dd1a2d12bd07820c9f4982052d085c72abece80bac
+SHA256 (patch-2.7.6.tar.xz) = ac610bda97abe0d9f6b7c963255a11dcb196c25e337c61f94e4778d632f1d8fd
+SHA256 (0001-Allow-input-files-to-be-missing-for-ed-style-patches.patch) = c2e9d1d960c8cf04dd732ddfa73e267e9a956fbc6d7bf99cf2d3a7c0f9a6d05f
+SHA256 (0002-Fix-arbitrary-command-execution-in-ed-style-patches-.patch) = 7a7836be33fe496c0b59a35b02ac12b9ad7e61ee0ced5017bbf6cf891e726f74
+SHA256 (CVE-2018-6951.patch) = 8a7b920cc0c770a992dfa287a1cb6dc4dfb5e3a16afe7109ef0d470f237a0909
+SHA256 (CVE-2018-6952.patch) = 4b9e81985ca057fa39daed34a4710eb113f08b3d1ce77a7121ddd8e3fae8007a
+SHA256 (CVE-2019-13636.patch) = ad82a53414bab8c69f8e0d688e4b492730be1a658275b55507ebb96d882d8683
+SHA256 (CVE-2019-13638.patch) = 084ee9793b7112e6ae9ecfe5e6c0f0b1f431aecaf46144730b6892142abdbea2
+SHA256 (CVE-2019-20633.patch) = 97ac2b1092917f3082194b0abc1cf7561afe00035e1f04c0e57331427e82d43a

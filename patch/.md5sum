@@ -1,8 +1,0 @@
-1a7ad3fab3f81dc2930f3ad21f21a0ad  0001-Allow-input-files-to-be-missing-for-ed-style-patches.patch
-9842bbeecd50922ee751fd1e7f48e590  0002-Fix-arbitrary-command-execution-in-ed-style-patches-.patch
-e41fd5bbde882dd578378a372df870ec  CVE-2018-6951.patch
-aa8ac1e3dccbd523143b01e9f60b06e8  CVE-2018-6952.patch
-c148027c04bc4a8f5790ba37fb268d92  CVE-2019-13636.patch
-76c3396708f46ea2158555ed69962e2c  CVE-2019-13638.patch
-84fba03109d823a8aae88c211376f914  CVE-2019-20633.patch
-78ad9937e4caadcba1526ef1853730d5  patch-2.7.6.tar.xz
