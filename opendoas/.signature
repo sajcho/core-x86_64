@@ -1,0 +1,8 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvZQTCEANf9bk1oqxpyZZKSdVA5Y3IejM0SFOxjgPAHSKYs/RXVukV6c8GVjlrCiaj/ThJVgWUq7NLiUZklXZWg4=
+SHA256 (Pkgfile) = 7b039ac9685dafb9cd702da63051b0570dab39aa36f6fd3bf721a9aa67bccdfc
+SHA256 (.footprint) = d7d61a15f2d3bd57082341cf9e9366a9474e8b8689888726969e7c8f7cde7c03
+SHA256 (opendoas-6.8.2.tar.xz) = 4e98828056d6266bd8f2c93e6ecf12a63a71dbfd70a5ea99ccd4ab6d0745adf0
+SHA256 (better-wayland-support.patch) = 1d3958a8519b2e95c3cf4f7a09556e48fe06b3aaffcc85c5b676b51a4c7141eb
+SHA256 (doas.conf) = bf4a51b0a286c03eff0c545deb287b5a7027da48caf66c676d287585a9cfd7dd
+SHA256 (doas.pam) = 7ba3c0ddd65859b711c87f536d7c465339162caee62ff241bebadb15a85a20dd
