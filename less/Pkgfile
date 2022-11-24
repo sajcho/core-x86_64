@@ -1,7 +1,7 @@
 # Description:	A terminal based program for viewing text files
 # URL:		http://www.greenwoodsoftware.com/less/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	ncurses libpcre2
+# Depends on:	libpcre2
 
 name=less
 version=608
