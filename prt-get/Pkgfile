@@ -1,12 +1,13 @@
 # Description:	A utility to simplify ports searching/installing
 # URL:		https://crux.nu/gitweb/?p=tools/prt-get.git;a=summary
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	pkgutils
 
 name=prt-get
-version=5.19.5
+version=5.19.6
 release=1
-source=(http://crux.nu/files/prt-get-${version}.tar.xz \
-	prt-get-zstd.patch \
+source=(http://crux.nu/files/${name}-${version}.tar.xz \
+	0001-Makefile.in-add-zstd-support.patch \
 	prt-get.conf \
 	prt-get.aliases)
 
@@ -19,7 +20,7 @@ build() {
 		sed -i 's|pkg.tar|aarch64.pkg.tar|' src/installtransaction.cpp
 	fi
 
-	patch -p1 -i $SRC/prt-get-zstd.patch
+	patch -p1 -i $SRC/0001-Makefile.in-add-zstd-support.patch
 
 	./configure \
 		--prefix=/usr

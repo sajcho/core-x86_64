@@ -1,36 +1,37 @@
-From 309514083d19b3e677d4b7a3a8c0a343909d810d Mon Sep 17 00:00:00 2001
+From 33b0c9e8bfc9f2948b6eb0ed56b3d4930aa22d91 Mon Sep 17 00:00:00 2001
 From: sajcho <saux.aarch64@gmail.com>
-Date: Sun, 14 Mar 2021 00:16:56 +0100
-Subject: [PATCH] Makefile.in: add support compress archive zstd
+Date: Sat, 19 Nov 2022 15:32:48 +0100
+Subject: [PATCH] Makefile.in: add zstd support
 
 ---
- Makefile.in | 7 ++++++-
- 1 file changed, 6 insertions(+), 1 deletion(-)
+ Makefile.in | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
 
 diff --git a/Makefile.in b/Makefile.in
-index bce64e7..ac9c6d9 100644
+index bce64e7..405e9f1 100644
 --- a/Makefile.in
 +++ b/Makefile.in
-@@ -487,6 +487,9 @@ dist-lzip: distdir
- 	tardir=$(distdir) && $(am__tar) | lzip -c $${LZIP_OPT--9} >$(distdir).tar.lz
+@@ -491,6 +491,10 @@ dist-xz: distdir
+ 	tardir=$(distdir) && $(am__tar) | XZ_OPT=$${XZ_OPT--e} xz -c >$(distdir).tar.xz
  	$(am__post_remove_distdir)
  
 +dist-zstd: distdir
 +	tardir=$(distdir) && $(am__tar) | zstd -c  >$(distdir).tar.zst
++	$(am__post_remove_distdir)
 +
- dist-xz: distdir
- 	tardir=$(distdir) && $(am__tar) | XZ_OPT=$${XZ_OPT--e} xz -c >$(distdir).tar.xz
+ dist-tarZ: distdir
+ 	tardir=$(distdir) && $(am__tar) | compress -c >$(distdir).tar.Z
  	$(am__post_remove_distdir)
-@@ -519,6 +522,8 @@ distcheck: dist
- 	  bzip2 -dc $(distdir).tar.bz2 | $(am__untar) ;;\
- 	*.tar.lz*) \
+@@ -521,6 +525,8 @@ distcheck: dist
  	  lzip -dc $(distdir).tar.lz | $(am__untar) ;;\
-+	*.tar.zst*) \
-+	  zstd -dc $(distdir).tar.zst | $(am__untar) ;;\
  	*.tar.xz*) \
  	  xz -dc $(distdir).tar.xz | $(am__untar) ;;\
++	*.tar.zst*) \
++	  zstd -dc $(distdir).tar.zst | $(am__untar) ;;\
  	*.tar.Z*) \
-@@ -704,7 +709,7 @@ uninstall-am:
+ 	  uncompress -c $(distdir).tar.Z | $(am__untar) ;;\
+ 	*.shar.gz*) \
+@@ -704,7 +710,7 @@ uninstall-am:
  .PHONY: $(RECURSIVE_CLEAN_TARGETS) $(RECURSIVE_TARGETS) CTAGS GTAGS \
  	all all-am am--refresh check check-am clean clean-cscope \
  	clean-generic cscope cscopelist cscopelist-recursive ctags \
@@ -40,5 +41,5 @@ index bce64e7..ac9c6d9 100644
  	distclean-generic distclean-hdr distclean-tags distcleancheck \
  	distdir distuninstallcheck dvi dvi-am html html-am info \
 -- 
-2.30.1
+2.38.1
 
