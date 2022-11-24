@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvSNzRW4zntrXeFx0kXmBZH73Uu2p+s3AZK66EUJdpdea0vbOL8ua5UDqaIoVt4I5SBgUFrf/UMoXXSjqkrGhjwA=
+SHA256 (Pkgfile) = 8d3e1af45cc18009e283e0558bf93abd06026ec140c0e939ab4df0ca7af50bde
+SHA256 (.footprint) = a426f0413db46080678ab5d3ec0b654715b887284ff85b7472e7da252ec35a5f
+SHA256 (zlib-1.2.13.tar.gz) = b3a24de97a8fdbc835b9833169501030b8977031bcb54b3b3ac13740f846ab30
