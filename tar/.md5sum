@@ -1,7 +1,0 @@
-451d4e93799a874118d101bd923098a6  tar-1.28-atime-rofs.patch
-e5c38e4c2be10f1f60a0674b23dd562b  tar-1.28-document-exclude-mistakes.patch
-e9e4218bd3c3d6eea8eb305dd8a6a324  tar-1.28-loneZeroWarning.patch
-041760cae91aa63cbcf0e67cad571de6  tar-1.28-vfatTruncate.patch
-879d405f652b23dba326818f841f4e21  tar-1.29-wildcards.patch
-20302da54fe97dd095ee6b4682b6caa8  tar-1.33-fix-capabilities-test.patch
-9a08d29a9ac4727130b5708347c0f5cf  tar-1.34.tar.xz
