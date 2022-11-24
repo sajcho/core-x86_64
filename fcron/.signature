@@ -1,0 +1,8 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvbqZsuV/27lh//8+YoepFucTlSh13omXlghxUYpxQwbu6I5oPrWa0QHDIJg7FVMfPysCxKdlT1wmXQcZz6L2Ww4=
+SHA256 (Pkgfile) = 4ef934f1b286e56ad795c08cfdb54599804b38f463bf24a6f5a8608daa7ec127
+SHA256 (.footprint) = 1f975b1111c53f5f02c6dd9de60a37548eaa379a11aaa67b9f8d3b499cc43627
+SHA256 (fcron-3.3.1.src.tar.gz) = f359daa08a63ddfb7fe2f964bb3f5c52244c25aa36f9225a3cc54d36f4681106
+SHA256 (fcron.run) = c6eedc833799bc2139c3fc6a196cf8efccbfa86eb4f49fc515f38b3cb0b03258
+SHA256 (runjobs) = c861105f2b04ad07cade83f3677fd261ae96ad2ef22a27e21e5490b97eecee4b
+SHA256 (systab.orig) = 768de3cddf3dee50a80a154282a9efa9195dfd60fdb0ba2a0ac4401ac7a9eb69
