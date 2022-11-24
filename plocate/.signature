@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvSIZy6gmHV+ITW9EmsAbRs/QKPxt3t35xoJBitaMCzYoASrr4xzhxHUTNXovq4VSlMidBIiKqA8fnE/22bmBbgY=
+SHA256 (Pkgfile) = 5b5f3dc0bce65d614e42f52826b67f229422dd8b33d0b1d48419adb69a36eb59
+SHA256 (.footprint) = fc4d8d00f0901280a0bc20dff3166d79ea0e0deec62ca74cd052120be4345dfd
+SHA256 (plocate-1.1.14.tar.gz) = 5560e527aa55cbe2de4de3783953bc64e26e338f797f58b7be99da0318f4dc18
+SHA256 (plocate) = 3220c159f621a3a38324c162b1bc218b6023f89ec5accaa74cb0c1a2e970e90e
+SHA256 (updatedb.conf) = 2fb40bd2d44c1fd803586bf5cf405981e046b5db9b07ff1c01c6598819a1f2d2
