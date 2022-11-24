@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvXFnSXCS5sdrBl82wFEKACcoSwvZOv9xxRwvfTtjhi9LVosGqNOcKDyr4juQgEVr7zH0PDK8hqKuaHiykcy5rQg=
+SHA256 (Pkgfile) = fe8d7c98e6c206ba67fee7e6d1499f6377f67689d843a71a7e6430c1176887d7
+SHA256 (.footprint) = 800b58963a2064ef9f358ce4167dfd3895df67cec922f34684bcf9355c02ab83
+SHA256 (zstd-v1.5.2.tar.gz) = f7de13462f7a82c29ab865820149e778cbfe01087b3a55b5332707abf9db4a6e
