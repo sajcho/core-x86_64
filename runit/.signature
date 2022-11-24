@@ -1,0 +1,11 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvXwMbGjICn3fU6id7bFbtEfMjJ/+sYScU0XcK9jMS1XI3G5KpOySmWE+/IcXANwyT42n+KjuhUJk7PN378Ut5gE=
+SHA256 (Pkgfile) = 16d834682cf0b48c7b3cff52d31802cc26b92f62823a0c0da289592bb41d76eb
+SHA256 (.footprint) = 9f8023c1392a46edb594a2618db6c7f43d07b28ccb9cd710d5fce71dd58164a2
+SHA256 (runit-2.1.2.tar.gz) = 6fd0160cb0cf1207de4e66754b6d39750cff14bb0aa66ab49490992c0c47ba18
+SHA256 (_sv) = 2baedf6b7a9f21f58abfc82b80167511ce5600eecce3853893a5c2d112560ab3
+SHA256 (sv) = b7acd9510eba7929ac359fa45da0317babf8d9da19f4650d048845eb4b39421d
+SHA256 (clearmem.patch) = 19b5e99135f153d07052f2dff707430af9faeabc717a5740ea58a8a783f609de
+SHA256 (cross.patch) = 51c17405558f5bbbe631d92a37adff872b9518fe1876a56b24efb05bedffae94
+SHA256 (svlogd.patch) = 9cf269264c0713975be1b3bc9dd3b5b3bb1e2078ac596527370a902d8d025a5a
+SHA256 (utmpset-time_t.patch) = 527f68f501cc9eb4bbab33f8ad374822624342c7d74b5c795efe4aac6b3f170a
