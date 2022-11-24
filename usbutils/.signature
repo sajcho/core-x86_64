@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvXUyN8l/tKgRFC+0XNcQypbq+OdWTdJOee4a8XX1YL03YYE1U89FvSx58ehuQIVz+qnCRjmnu1P1O8/x9/KHFwc=
+SHA256 (Pkgfile) = edaadb05420ba5b92b55a3b9709b8b0890a6e3e9bab4523ef7b8be6baf0658d9
+SHA256 (.footprint) = d50167a7bac0dd1622233f51ef65058ab0b59abc2fdeffbe4601b9c966dbcecf
+SHA256 (usbutils-015.tar.gz) = 659669e08cbc3961bc085c33f328f950a9570400519c3213b6908f3cc5f44227
+SHA256 (update-usbids.sh) = 3055e406e87725a3ab2b87b49a83f73697281d6a5f3d53323202abef2c1f5273
