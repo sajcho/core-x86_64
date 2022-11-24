@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvcKn4/c5OhSxhmGfJIemu1sASj7ppIar+M4YQwmisABNx3AJuzMoAHzXN+guTwOYmYmUZsuDxSqYpQXfFOI/ow4=
+SHA256 (Pkgfile) = 4ab8497c56ff438630f8e0838fa676887c6426dd0d1a14e0c7e4304c48933d0b
+SHA256 (.footprint) = 3a7bbfc94c40691a4871ab86fb334dfcbc7f98f74ed06847f091ba0b1721d540
+SHA256 (dash-0.5.11.5.tar.gz) = db778110891f7937985f29bf23410fe1c5d669502760f584e54e0e7b29e123bd
