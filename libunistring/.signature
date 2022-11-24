@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvZwUXJ+e9eqmdkIGFv5Hlt0uCzA/aVQ3nZIqFefbjZUEiGNTodnAyIauA4j2VT99XRBNTW+HEvsRHtbdr6uxXwU=
+SHA256 (Pkgfile) = 17e93a4437d2a120223fc41d3eafd50091d31b44f5d4fff7e86ade422af62749
+SHA256 (.footprint) = 8a8a9fe397417a50bb02bf9b66fc7f08f809695a61896d70b114f8f2ff93ab47
+SHA256 (libunistring-1.1.tar.xz) = 827c1eb9cb6e7c738b171745dac0888aa58c5924df2e59239318383de0729b98
