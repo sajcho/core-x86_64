@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvVBOjEYs8ryr1kT0U6/H32ZelwDw4cjPuKxUZEr89Ez4cIqkBXYPBPpAHfV3LSV54MDVnpDCpQ/lZfXbLVdfZQE=
+SHA256 (Pkgfile) = f4e838a181c97ea18032bbe9f0707337af2217ebb621b3b91ac84e6ca4be78d7
+SHA256 (.footprint) = 6362b9ff82a8e0a95e39cb4b7e7154da1b716f1f3dcb21dea58d1a25dd9e7419
+SHA256 (sharutils-4.15.2.tar.xz) = 2b05cff7de5d7b646dc1669bc36c35fdac02ac6ae4b6c19cb3340d87ec553a9a
