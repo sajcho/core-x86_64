@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvVAUGkXKyIStf9DeKBifY/YkUCf6Pu35RXo3yQLz/gngj5DUQjBwRXYtrXGMeIJ2aTsLgB2gscEEJiCkrHofvAY=
+SHA256 (Pkgfile) = 732707ffc1b98840875f4bfdeeb9e105725de093bf8c2a29293685f6ce0636e3
+SHA256 (.footprint) = 4392d10298740d1d3c5b10a137acbaa43311c59039de31dacd7215dc55509fda
+SHA256 (dumb_runtime_dir-1.0.4.tar.gz) = 451e680ee2ad4bd268a2cc21571fd843eefde5ffd7a6847221f9a1449924acc0
