@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvXhwq6MGLdLttdd8EUFXkenq06NZ+2Qy/Ts0BGwoyl3gZ6hKasXKao/N/lV59YfeZDM7iEAZYPsplNXIjC4/Rw4=
+SHA256 (Pkgfile) = fcc1b0cc92ebfd7a92a66610f749926cbda1a9a44c325a2f9f7b1e804dfe03cf
+SHA256 (.footprint) = 12fda3e31cb8a80b3a0aad7476cb0bf6f739101d91a6ac0cbfbe27be703927ac
+SHA256 (libidn2-2.3.4.tar.gz) = 93caba72b4e051d1f8d4f5a076ab63c99b77faee019b72b9783b267986dbb45f
