@@ -4,17 +4,13 @@
 # Depends on:	libarchive
 
 name=pkgutils
-version=5.40.7
-_commit=9ca0da65121451447cdd284f98027dca2e16fb2e
-release=6
-source=(zstd-multiarch.patch pkgmk.conf-saux)
+version=5.40.9
+release=1
+source=(https://crux.nu/files/${name}-${version}.tar.xz \
+	0001-Modified-for-SAUX-x86_64-system.patch)
 
 build() {
-	cd $PKGMK_WORK_DIR/src
-
-	git clone git://crux.nu/tools/pkgutils.git
-	cd pkgutils
-	git reset --hard ${_commit}
+	cd ${name}-${version}
 
 	if [ `uname -m` = "x86_64" ]; then
 		sed -i 's|pkg.tar|x86_64.pkg.tar|' pkgutil.h
@@ -22,18 +18,9 @@ build() {
 		sed -i 's|pkg.tar|aarch64.pkg.tar|' pkgutil.h
 	fi
 
-	patch -p1 -i $SRC/zstd-multiarch.patch
+	patch -p1 -i $SRC/0001-Modified-for-SAUX-x86_64-system.patch
 
 	sed -e 's|--static||' -e 's|-static||' -i Makefile
 
-	# fix - LC_ALL=C.UTF-8, bsdtar commpres
-	sed -e 's|POSIX|C.UTF-8|' \
-		-e 's|bsdtar -c|bsdtar --format=gnutar -c|' \
-		-i pkgmk.in
-
-
 	make DESTDIR=$PKG install
-
-	# Replaces a pkgmk.conf
-	install -m 0644 $SRC/pkgmk.conf-saux $PKG/etc/pkgmk.conf
 }

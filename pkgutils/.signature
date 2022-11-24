@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvQlRHKZfCnEhkJrrAUXjis1oJ1PGIu0A0vAf5JmtcT+aAI8L3nQOjGoKjhJw5hLoxGI5Hbd4vvuUGnosKkkO2Q8=
+SHA256 (Pkgfile) = 7013d0f2c5bbc041fb1b21ade461719987348cbea8bdf1b18dec95cee9ca14b8
+SHA256 (.footprint) = 7d143f18f63bba5569d729eefd0d0f04ae4b0539f8bd71f9cfd6955b9e7c639d
+SHA256 (pkgutils-5.40.9.tar.xz) = d2dd8c9af4ee14016480494aa1db12b0d211befbf3450772c602ff3a54f1a49e
+SHA256 (0001-Modified-for-SAUX-x86_64-system.patch) = 2599dd2926b58cae22289c9a61cc22f7b75a5d0dca478af61ddac8f58e830b1b

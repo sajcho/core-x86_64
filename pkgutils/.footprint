@@ -12,6 +12,7 @@ lrwxrwxrwx	root/root	usr/bin/pkgrm -> pkgadd
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man5/
+-rw-r--r--	root/root	usr/share/man/man5/pkgfile.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/pkgmk.conf.5.gz
 drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/pkgadd.8.gz
