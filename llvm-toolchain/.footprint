@@ -39,8 +39,12 @@ lrwxrwxrwx	root/root	usr/bin/clang-cpp -> clang
 -rwxr-xr-x	root/root	usr/bin/git-clang-format
 -rwxr-xr-x	root/root	usr/bin/hmaptool
 -rwxr-xr-x	root/root	usr/bin/intercept-build
+lrwxrwxrwx	root/root	usr/bin/ld.lld -> lld
+lrwxrwxrwx	root/root	usr/bin/ld64.lld -> lld
 -rwxr-xr-x	root/root	usr/bin/lit
 -rwxr-xr-x	root/root	usr/bin/llc
+-rwxr-xr-x	root/root	usr/bin/lld
+lrwxrwxrwx	root/root	usr/bin/lld-link -> lld
 -rwxr-xr-x	root/root	usr/bin/lli
 -rwxr-xr-x	root/root	usr/bin/lli-child-target
 -rwxr-xr-x	root/root	usr/bin/llvm-PerfectShuffle
@@ -125,6 +129,7 @@ lrwxrwxrwx	root/root	usr/bin/llvm-windres -> llvm-rc
 -rwxr-xr-x	root/root	usr/bin/scan-view
 -rwxr-xr-x	root/root	usr/bin/split-file
 -rwxr-xr-x	root/root	usr/bin/verify-uselistorder
+lrwxrwxrwx	root/root	usr/bin/wasm-ld -> lld
 -rwxr-xr-x	root/root	usr/bin/yaml-bench
 -rwxr-xr-x	root/root	usr/bin/yaml2obj
 drwxr-xr-x	root/root	usr/include/
@@ -1250,6 +1255,22 @@ drwxr-xr-x	root/root	usr/include/clang/Tooling/Transformer/
 -rw-r--r--	root/root	usr/include/clang/Tooling/Transformer/SourceCodeBuilders.h
 -rw-r--r--	root/root	usr/include/clang/Tooling/Transformer/Stencil.h
 -rw-r--r--	root/root	usr/include/clang/Tooling/Transformer/Transformer.h
+drwxr-xr-x	root/root	usr/include/lld/
+drwxr-xr-x	root/root	usr/include/lld/Common/
+-rw-r--r--	root/root	usr/include/lld/Common/Args.h
+-rw-r--r--	root/root	usr/include/lld/Common/Arrays.h
+-rw-r--r--	root/root	usr/include/lld/Common/CommonLinkerContext.h
+-rw-r--r--	root/root	usr/include/lld/Common/DWARF.h
+-rw-r--r--	root/root	usr/include/lld/Common/Driver.h
+-rw-r--r--	root/root	usr/include/lld/Common/ErrorHandler.h
+-rw-r--r--	root/root	usr/include/lld/Common/Filesystem.h
+-rw-r--r--	root/root	usr/include/lld/Common/LLVM.h
+-rw-r--r--	root/root	usr/include/lld/Common/Memory.h
+-rw-r--r--	root/root	usr/include/lld/Common/Reproduce.h
+-rw-r--r--	root/root	usr/include/lld/Common/Strings.h
+-rw-r--r--	root/root	usr/include/lld/Common/TargetOptionsCommandFlags.h
+-rw-r--r--	root/root	usr/include/lld/Common/Timer.h
+-rw-r--r--	root/root	usr/include/lld/Common/Version.h
 drwxr-xr-x	root/root	usr/include/llvm-c/
 -rw-r--r--	root/root	usr/include/llvm-c/Analysis.h
 -rw-r--r--	root/root	usr/include/llvm-c/BitReader.h
@@ -3164,7 +3185,13 @@ drwxr-xr-x	root/root	usr/lib/clang/15.0.5/include/
 -rw-r--r--	root/root	usr/lib/clang/15.0.5/include/amxintrin.h
 -rw-r--r--	root/root	usr/lib/clang/15.0.5/include/arm64intr.h
 -rw-r--r--	root/root	usr/lib/clang/15.0.5/include/arm_acle.h
+-rw-r--r--	root/root	usr/lib/clang/15.0.5/include/arm_bf16.h
+-rw-r--r--	root/root	usr/lib/clang/15.0.5/include/arm_cde.h
 -rw-r--r--	root/root	usr/lib/clang/15.0.5/include/arm_cmse.h
+-rw-r--r--	root/root	usr/lib/clang/15.0.5/include/arm_fp16.h
+-rw-r--r--	root/root	usr/lib/clang/15.0.5/include/arm_mve.h
+-rw-r--r--	root/root	usr/lib/clang/15.0.5/include/arm_neon.h
+-rw-r--r--	root/root	usr/lib/clang/15.0.5/include/arm_sve.h
 -rw-r--r--	root/root	usr/lib/clang/15.0.5/include/armintr.h
 -rw-r--r--	root/root	usr/lib/clang/15.0.5/include/avx2intrin.h
 -rw-r--r--	root/root	usr/lib/clang/15.0.5/include/avx512bf16intrin.h
@@ -3285,6 +3312,7 @@ drwxr-xr-x	root/root	usr/lib/clang/15.0.5/include/profile/
 -rw-r--r--	root/root	usr/lib/clang/15.0.5/include/ptwriteintrin.h
 -rw-r--r--	root/root	usr/lib/clang/15.0.5/include/rdpruintrin.h
 -rw-r--r--	root/root	usr/lib/clang/15.0.5/include/rdseedintrin.h
+-rw-r--r--	root/root	usr/lib/clang/15.0.5/include/riscv_vector.h
 -rw-r--r--	root/root	usr/lib/clang/15.0.5/include/rtmintrin.h
 -rw-r--r--	root/root	usr/lib/clang/15.0.5/include/s390intrin.h
 drwxr-xr-x	root/root	usr/lib/clang/15.0.5/include/sanitizer/
@@ -3393,6 +3421,10 @@ drwxr-xr-x	root/root	usr/lib/cmake/clang/
 -rw-r--r--	root/root	usr/lib/cmake/clang/ClangConfig.cmake
 -rw-r--r--	root/root	usr/lib/cmake/clang/ClangTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/clang/ClangTargets.cmake
+drwxr-xr-x	root/root	usr/lib/cmake/lld/
+-rw-r--r--	root/root	usr/lib/cmake/lld/LLDConfig.cmake
+-rw-r--r--	root/root	usr/lib/cmake/lld/LLDTargets-release.cmake
+-rw-r--r--	root/root	usr/lib/cmake/lld/LLDTargets.cmake
 drwxr-xr-x	root/root	usr/lib/cmake/llvm/
 -rw-r--r--	root/root	usr/lib/cmake/llvm/AddLLVM.cmake
 -rw-r--r--	root/root	usr/lib/cmake/llvm/AddLLVMDefinitions.cmake
