@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvb+6+kdHaKsHxv4hAXIhaBFC+ax30qZ0ysxV+IOaUq4DdnyQ9ocXYU+TgU/0wE8SyVOqEsVS9LZP5Bt74Os1zAE=
+SHA256 (Pkgfile) = 90518a085e6a2512fcd66a4d7f2adcb501ab04dc0e8dda637b4c6197c0e4c55f
+SHA256 (.footprint) = b6da4d8d5f42687f723b196c608941bfe0f0211397dc663c56e43459f0c8be75
+SHA256 (make-4.4.tar.lz) = 48d0fc0b2a04bb50f2911c16da65723285f7f4804c74fc5a2124a3df6c5f78c4
+SHA256 (upstream-fixes-20221116.patch) = d053aa03111bb4f49eb9d2c527b961fb53c608188883e3eb3d94c44f3e288391

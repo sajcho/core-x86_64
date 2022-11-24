@@ -1,0 +1,1213 @@
+diff --git a/src/config.h.W32 b/src/config.h.W32
+index 1a03a041..369e897d 100644
+--- a/src/config.h.W32
++++ b/src/config.h.W32
+@@ -344,6 +344,14 @@ this program.  If not, see <https://www.gnu.org/licenses/>.  */
+ 
+ /* Define to 1 if you have the `strtoll' function. */
+ #define HAVE_STRTOLL 1
++#ifdef __TINYC__
++# ifndef strtoll
++#  define strtoll _strtoi64
++# endif
++# ifndef strtoull
++#  define strtoull _strtoui64
++# endif
++#endif
+ 
+ /* Define to 1 if `d_type' is a member of `struct dirent'. */
+ /* SV 57152: MinGW64 version of dirent doesn't support d_type. */
+diff --git a/src/dir.c b/src/dir.c
+index b47e94fe..1e6e7397 100644
+--- a/src/dir.c
++++ b/src/dir.c
+@@ -456,7 +456,7 @@ dirfile_hash_cmp (const void *xv, const void *yv)
+ #define DIRFILE_BUCKETS 107
+ #endif
+ 
+-static int dir_contents_file_exists_p (struct directory_contents *dir,
++static int dir_contents_file_exists_p (struct directory *dir,
+                                        const char *filename);
+ static struct directory *find_directory (const char *name);
+ 
+@@ -623,7 +623,7 @@ find_directory (const char *name)
+           if (open_directories == MAX_OPEN_DIRECTORIES)
+             /* We have too many directories open already.
+                Read the entire directory and then close it.  */
+-            dir_contents_file_exists_p (dc, 0);
++            dir_contents_file_exists_p (dir, 0);
+         }
+     }
+ 
+@@ -634,17 +634,18 @@ find_directory (const char *name)
+    FILENAME must contain no slashes.  */
+ 
+ static int
+-dir_contents_file_exists_p (struct directory_contents *dir,
++dir_contents_file_exists_p (struct directory *dir,
+                             const char *filename)
+ {
+   struct dirfile *df;
+   struct dirent *d;
++  struct directory_contents *dc = dir->contents;
+ #ifdef WINDOWS32
+   struct stat st;
+   int rehash = 0;
+ #endif
+ 
+-  if (dir == 0 || dir->dirfiles.ht_vec == 0)
++  if (dc == 0 || dc->dirfiles.ht_vec == 0)
+     /* The directory could not be stat'd or opened.  */
+     return 0;
+ 
+@@ -671,7 +672,7 @@ dir_contents_file_exists_p (struct directory_contents *dir,
+         }
+       dirfile_key.name = filename;
+       dirfile_key.length = strlen (filename);
+-      df = hash_find_item (&dir->dirfiles, &dirfile_key);
++      df = hash_find_item (&dc->dirfiles, &dirfile_key);
+       if (df)
+         return !df->impossible;
+     }
+@@ -679,7 +680,7 @@ dir_contents_file_exists_p (struct directory_contents *dir,
+   /* The file was not found in the hashed list.
+      Try to read the directory further.  */
+ 
+-  if (dir->dirstream == 0)
++  if (dc->dirstream == 0)
+     {
+ #ifdef WINDOWS32
+       /*
+@@ -687,17 +688,17 @@ dir_contents_file_exists_p (struct directory_contents *dir,
+        * filesystems force a rehash always as mtime does not change
+        * on directories (ugh!).
+        */
+-      if (dir->path_key)
++      if (dc->path_key)
+         {
+-          if ((dir->fs_flags & FS_FAT) != 0)
++          if ((dc->fs_flags & FS_FAT) != 0)
+             {
+-              dir->mtime = time ((time_t *) 0);
++              dc->mtime = time ((time_t *) 0);
+               rehash = 1;
+             }
+-          else if (stat (dir->path_key, &st) == 0 && st.st_mtime > dir->mtime)
++          else if (stat (dc->path_key, &st) == 0 && st.st_mtime > dc->mtime)
+             {
+               /* reset date stamp to show most recent re-process.  */
+-              dir->mtime = st.st_mtime;
++              dc->mtime = st.st_mtime;
+               rehash = 1;
+             }
+ 
+@@ -706,8 +707,8 @@ dir_contents_file_exists_p (struct directory_contents *dir,
+             return 0;
+ 
+           /* make sure directory can still be opened; if not return.  */
+-          dir->dirstream = opendir (dir->path_key);
+-          if (!dir->dirstream)
++          dc->dirstream = opendir (dc->path_key);
++          if (!dc->dirstream)
+             return 0;
+         }
+       else
+@@ -723,11 +724,11 @@ dir_contents_file_exists_p (struct directory_contents *dir,
+       struct dirfile dirfile_key;
+       struct dirfile **dirfile_slot;
+ 
+-      ENULLLOOP (d, readdir (dir->dirstream));
++      ENULLLOOP (d, readdir (dc->dirstream));
+       if (d == 0)
+         {
+           if (errno)
+-            pfatal_with_name ("INTERNAL: readdir");
++            OSS (fatal, NILF, "readdir %s: %s", dir->name, strerror (errno));
+           break;
+         }
+ 
+@@ -747,7 +748,7 @@ dir_contents_file_exists_p (struct directory_contents *dir,
+       len = NAMLEN (d);
+       dirfile_key.name = d->d_name;
+       dirfile_key.length = len;
+-      dirfile_slot = (struct dirfile **) hash_find_slot (&dir->dirfiles, &dirfile_key);
++      dirfile_slot = (struct dirfile **) hash_find_slot (&dc->dirfiles, &dirfile_key);
+ #ifdef WINDOWS32
+       /*
+        * If re-reading a directory, don't cache files that have
+@@ -768,7 +769,7 @@ dir_contents_file_exists_p (struct directory_contents *dir,
+ #endif
+           df->length = len;
+           df->impossible = 0;
+-          hash_insert_at (&dir->dirfiles, df, dirfile_slot);
++          hash_insert_at (&dc->dirfiles, df, dirfile_slot);
+         }
+       /* Check if the name matches the one we're searching for.  */
+       if (filename != 0 && patheq (d->d_name, filename))
+@@ -777,12 +778,13 @@ dir_contents_file_exists_p (struct directory_contents *dir,
+ 
+   /* If the directory has been completely read in,
+      close the stream and reset the pointer to nil.  */
+-  if (d == 0)
++  if (d == NULL)
+     {
+       --open_directories;
+-      closedir (dir->dirstream);
+-      dir->dirstream = 0;
++      closedir (dc->dirstream);
++      dc->dirstream = NULL;
+     }
++
+   return 0;
+ }
+ 
+@@ -794,15 +796,10 @@ int
+ dir_file_exists_p (const char *dirname, const char *filename)
+ {
+ #ifdef VMS
+-  if ((filename != NULL) && (dirname != NULL))
+-    {
+-      int want_vmsify;
+-      want_vmsify = (strpbrk (dirname, ":<[") != NULL);
+-      if (want_vmsify)
+-        filename = vmsify (filename, 0);
+-    }
++  if (filename && dirname && strpbrk (dirname, ":<[") != NULL)
++    filename = vmsify (filename, 0);
+ #endif
+-  return dir_contents_file_exists_p (find_directory (dirname)->contents,
++  return dir_contents_file_exists_p (find_directory (dirname),
+                                      filename);
+ }
+ 
+@@ -1225,7 +1222,7 @@ open_dirstream (const char *directory)
+   /* Read all the contents of the directory now.  There is no benefit
+      in being lazy, since glob will want to see every file anyway.  */
+ 
+-  dir_contents_file_exists_p (dir->contents, 0);
++  dir_contents_file_exists_p (dir, 0);
+ 
+   new = xmalloc (sizeof (struct dirstream));
+   new->contents = dir->contents;
+diff --git a/src/function.c b/src/function.c
+index f0ef3434..e4a3af86 100644
+--- a/src/function.c
++++ b/src/function.c
+@@ -2801,7 +2801,7 @@ define_new_function (const floc *flocp, const char *name,
+          _("Invalid maximum argument count (%u) for function %s"), max, name);
+ 
+   ent = xmalloc (sizeof (struct function_table_entry));
+-  ent->name = name;
++  ent->name = strcache_add (name);
+   ent->len = (unsigned char) len;
+   ent->minimum_args = (unsigned char) min;
+   ent->maximum_args = (unsigned char) max;
+diff --git a/src/hash.c b/src/hash.c
+index 5d7ea81b..d1652f84 100644
+--- a/src/hash.c
++++ b/src/hash.c
+@@ -361,7 +361,7 @@ round_up_2 (unsigned long n)
+ #define sum_get_unaligned_32(r, p)              \
+   do {                                          \
+     unsigned int val;                           \
+-    memcpy(&val, (p), 4);                       \
++    memcpy (&val, (p), 4);                      \
+     r += val;                                   \
+   } while(0);
+ 
+@@ -413,13 +413,16 @@ jhash(unsigned const char *k, int length)
+ #define UINTSZ sizeof (unsigned int)
+ 
+ #ifdef WORDS_BIGENDIAN
+-/* The ifs are ordered from the first byte in memory to the last.  */
++/* The ifs are ordered from the first byte in memory to the last.
++   Help the compiler optimize by using static memcpy length.  */
+ #define sum_up_to_nul(r, p, plen, flag)   \
+   do {                                    \
+     unsigned int val = 0;                 \
+     size_t pn = (plen);                   \
+-    size_t n = pn < UINTSZ ? pn : UINTSZ; \
+-    memcpy (&val, (p), n);                \
++    if (pn >= UINTSZ)                     \
++      memcpy (&val, (p), UINTSZ);         \
++    else                                  \
++      memcpy (&val, (p), pn);             \
+     if ((val & 0xFF000000) == 0)          \
+       flag = 1;                           \
+     else if ((val & 0xFF0000) == 0)       \
+@@ -432,13 +435,16 @@ jhash(unsigned const char *k, int length)
+ #else
+ /* First detect the presence of zeroes.  If there is none, we can
+    sum the 4 bytes directly.  Otherwise, the ifs are ordered as in the
+-   big endian case, from the first byte in memory to the last.  */
++   big endian case, from the first byte in memory to the last.
++   Help the compiler optimize by using static memcpy length.  */
+ #define sum_up_to_nul(r, p, plen, flag)              \
+   do {                                               \
+     unsigned int val = 0;                            \
+     size_t pn = (plen);                              \
+-    size_t n = pn < UINTSZ ? pn : UINTSZ;            \
+-    memcpy (&val, (p), n);                           \
++    if (pn >= UINTSZ)                                \
++      memcpy (&val, (p), UINTSZ);                    \
++    else                                             \
++      memcpy (&val, (p), pn);                        \
+     flag = ((val - 0x01010101) & ~val) & 0x80808080; \
+     if (!flag)                                       \
+       r += val;                                      \
+diff --git a/src/main.c b/src/main.c
+index eec93656..b31ddd4d 100644
+--- a/src/main.c
++++ b/src/main.c
+@@ -1182,11 +1182,6 @@ main (int argc, char **argv, char **envp)
+   /* Useful for attaching debuggers, etc.  */
+   SPIN ("main-entry");
+ 
+-  /* Don't die if our stdout sends us SIGPIPE.  */
+-#ifdef SIGPIPE
+-  bsd_signal (SIGPIPE, SIG_IGN);
+-#endif
+-
+ #ifdef HAVE_ATEXIT
+   if (ANY_SET (check_io_state (), IO_STDOUT_OK))
+     atexit (close_stdout);
+@@ -1264,6 +1259,9 @@ main (int argc, char **argv, char **envp)
+ #endif
+ #ifdef SIGQUIT
+   FATAL_SIG (SIGQUIT);
++#endif
++#ifdef SIGPIPE
++  FATAL_SIG (SIGPIPE);
+ #endif
+   FATAL_SIG (SIGINT);
+   FATAL_SIG (SIGTERM);
+@@ -1505,7 +1503,7 @@ main (int argc, char **argv, char **envp)
+ 
+         /* If this is MAKE_RESTARTS, check to see if the "already printed
+            the enter statement" flag is set.  */
+-        if (len == 13 && memcmp (envp[i], STRING_SIZE_TUPLE ("MAKE_RESTARTS")) == 0)
++        if (len == 13 && memcmp (envp[i], "MAKE_RESTARTS", CSTRLEN ("MAKE_RESTARTS")) == 0)
+           {
+             if (*ep == '-')
+               {
+@@ -1930,6 +1928,9 @@ main (int argc, char **argv, char **envp)
+                  _("Makefile from standard input specified twice"));
+ 
+             outfile = get_tmpfile (&newnm);
++            if (!outfile)
++              O (fatal, NILF,
++                 _("cannot store makefile from stdin to a temporary file"));
+ 
+             while (!feof (stdin) && ! ferror (stdin))
+               {
+diff --git a/src/misc.c b/src/misc.c
+index 8264fe9f..00dce749 100644
+--- a/src/misc.c
++++ b/src/misc.c
+@@ -20,8 +20,7 @@ this program.  If not, see <https://www.gnu.org/licenses/>.  */
+ #include "os.h"
+ #include "debug.h"
+ 
+-/* GNU make no longer supports pre-ANSI89 environments.  */
+-
++#include <assert.h>
+ #include <stdarg.h>
+ 
+ #ifdef WINDOWS32
+@@ -650,11 +649,19 @@ get_tmppath ()
+ # ifdef HAVE_MKTEMP
+   path = get_tmptemplate ();
+   if (*mktemp (path) == '\0')
+-    pfatal_with_name ("mktemp");
++    {
++      OSS (error, NILF,
++           _("cannot generate temp path from %s: %s"), path, strerror (errno));
++      return NULL;
++    }
+ # else
+   path = xmalloc (L_tmpnam + 1);
+   if (tmpnam (path) == NULL)
+-    pfatal_with_name ("tmpnam");
++    {
++      OS (error, NILF,
++        _("cannot generate temp name: %s"), strerror (errno));
++      return NULL;
++    }
+ # endif
+ 
+   return path;
+@@ -662,7 +669,9 @@ get_tmppath ()
+ #endif
+ 
+ /* Generate a temporary file and return an fd for it.  If name is NULL then
+-   the temp file is anonymous and will be deleted when the process exits.  */
++   the temp file is anonymous and will be deleted when the process exits.  If
++   name is not null then *name will point to an allocated buffer, or set to
++   NULL on failure.  */
+ int
+ get_tmpfd (char **name)
+ {
+@@ -670,9 +679,11 @@ get_tmpfd (char **name)
+   char *tmpnm;
+   mode_t mask;
+ 
+-  /* If there's an os-specific way to get an anoymous temp file use it.  */
+-  if (!name)
++  if (name)
++    *name = NULL;
++  else
+     {
++      /* If there's an os-specific way to get an anoymous temp file use it.  */
+       fd = os_anontmp ();
+       if (fd >= 0)
+         return fd;
+@@ -689,13 +700,19 @@ get_tmpfd (char **name)
+   EINTRLOOP (fd, mkstemp (tmpnm));
+ #else
+   tmpnm = get_tmppath ();
++  if (!tmpnm)
++    return -1;
+ 
+   /* Can't use mkstemp(), but try to guard against a race condition.  */
+   EINTRLOOP (fd, open (tmpnm, O_CREAT|O_EXCL|O_RDWR, 0600));
+ #endif
+   if (fd < 0)
+-    OSS (fatal, NILF,
+-         _("create temporary file %s: %s"), tmpnm, strerror (errno));
++    {
++      OSS (error, NILF,
++           _("cannot create temporary file %s: %s"), tmpnm, strerror (errno));
++      free (tmpnm);
++      return -1;
++    }
+ 
+   if (name)
+     *name = tmpnm;
+@@ -704,8 +721,8 @@ get_tmpfd (char **name)
+       int r;
+       EINTRLOOP (r, unlink (tmpnm));
+       if (r < 0)
+-        OSS (fatal, NILF,
+-             _("unlink temporary file %s: %s"), tmpnm, strerror (errno));
++        OSS (error, NILF,
++             _("cannot unlink temporary file %s: %s"), tmpnm, strerror (errno));
+       free (tmpnm);
+     }
+ 
+@@ -715,8 +732,8 @@ get_tmpfd (char **name)
+ }
+ 
+ /* Return a FILE* for a temporary file, opened in the safest way possible.
+-   Set name to point to an allocated buffer containing the name of the file.
+-   Note, this cannot be NULL!  */
++   Set name to point to an allocated buffer containing the name of the file,
++   or NULL on failure.  Note, name cannot be NULL!  */
+ FILE *
+ get_tmpfile (char **name)
+ {
+@@ -725,26 +742,37 @@ get_tmpfile (char **name)
+   FILE *file;
+ 
+ #if defined(HAVE_FDOPEN)
+-  int fd = get_tmpfd (name);
++  int fd;
++  assert (name);
++  fd = get_tmpfd (name);
++  if (fd < 0)
++    return NULL;
++  assert (*name);
+ 
+   ENULLLOOP (file, fdopen (fd, tmpfile_mode));
+   if (file == NULL)
+-    OSS (fatal, NILF,
++    OSS (error, NILF,
+          _("fdopen: temporary file %s: %s"), *name, strerror (errno));
+ #else
+   /* Preserve the current umask, and set a restrictive one for temp files.  */
+   mode_t mask = umask (0077);
+-  int err;
+ 
++  assert (name);
+   *name = get_tmppath ();
++  if (!*name)
++    return NULL;
+ 
+   /* Although this fopen is insecure, it is executed only on non-fdopen
+      platforms, which should be a rarity nowadays.  */
+ 
+   ENULLLOOP (file, fopen (*name, tmpfile_mode));
+   if (file == NULL)
+-    OSS (fatal, NILF,
+-         _("fopen: temporary file %s: %s"), *name, strerror (errno));
++    {
++      OSS (error, NILF,
++           _("fopen: temporary file %s: %s"), *name, strerror (errno));
++      free (*name);
++      *name = NULL;
++    }
+ 
+   umask (mask);
+ #endif
+diff --git a/src/output.c b/src/output.c
+index 43eb2f06..22387dff 100644
+--- a/src/output.c
++++ b/src/output.c
+@@ -248,6 +248,9 @@ setup_tmpfile (struct output *out)
+ 
+   /* If we failed to create a temp file, disable output sync going forward.  */
+  error:
++  O (error, NILF,
++     _("cannot open output-sync lock file, suppressing output-sync."));
++
+   output_close (out);
+   output_sync = OUTPUT_SYNC_NONE;
+   osync_clear ();
+diff --git a/src/posixos.c b/src/posixos.c
+index 44aeb346..78358dd8 100644
+--- a/src/posixos.c
++++ b/src/posixos.c
+@@ -167,12 +167,12 @@ jobserver_setup (int slots, const char *style)
+              hang until the write side is open.  */
+           EINTRLOOP (job_fds[0], open (fifo_name, O_RDONLY|O_NONBLOCK));
+           if (job_fds[0] < 0)
+-            OSS (fatal, NILF, _("Cannot open jobserver %s: %s"),
++            OSS (fatal, NILF, _("cannot open jobserver %s: %s"),
+                  fifo_name, strerror (errno));
+ 
+           EINTRLOOP (job_fds[1], open (fifo_name, O_WRONLY));
+           if (job_fds[0] < 0)
+-            OSS (fatal, NILF, _("Cannot open jobserver %s: %s"),
++            OSS (fatal, NILF, _("cannot open jobserver %s: %s"),
+                  fifo_name, strerror (errno));
+ 
+           js_type = js_fifo;
+@@ -183,7 +183,7 @@ jobserver_setup (int slots, const char *style)
+   if (js_type == js_none)
+     {
+       if (style && strcmp (style, "pipe") != 0)
+-        OS (fatal, NILF, _("Unknown jobserver auth style '%s'"), style);
++        OS (fatal, NILF, _("unknown jobserver auth style '%s'"), style);
+ 
+       EINTRLOOP (r, pipe (job_fds));
+       if (r < 0)
+@@ -229,14 +229,19 @@ jobserver_parse_auth (const char *auth)
+ 
+       EINTRLOOP (job_fds[0], open (fifo_name, O_RDONLY));
+       if (job_fds[0] < 0)
+-        OSS (fatal, NILF,
+-             _("Cannot open jobserver %s: %s"), fifo_name, strerror (errno));
++        {
++          OSS (error, NILF,
++               _("cannot open jobserver %s: %s"), fifo_name, strerror (errno));
++          return 0;
++        }
+ 
+       EINTRLOOP (job_fds[1], open (fifo_name, O_WRONLY));
+-      if (job_fds[0] < 0)
+-        OSS (fatal, NILF,
+-             _("Cannot open jobserver %s: %s"), fifo_name, strerror (errno));
+-
++      if (job_fds[1] < 0)
++        {
++          OSS (error, NILF,
++               _("cannot open jobserver %s: %s"), fifo_name, strerror (errno));
++          return 0;
++        }
+       js_type = js_fifo;
+     }
+   /* If not, it must be a simple pipe.  */
+@@ -867,12 +872,15 @@ os_anontmp ()
+       FILE *tfile;
+       ENULLLOOP (tfile, tmpfile ());
+       if (!tfile)
+-        pfatal_with_name ("tmpfile");
++        {
++          OS (error, NILF, "tmpfile: %s", strerror (errno));
++          return -1;
++        }
+       umask (mask);
+ 
+       EINTRLOOP (fd, dup (fileno (tfile)));
+       if (fd < 0)
+-        pfatal_with_name ("dup");
++        OS (error, NILF, "dup: %s", strerror (errno));
+       fclose (tfile);
+     }
+ #endif
+diff --git a/src/read.c b/src/read.c
+index 07431240..15f58ecf 100644
+--- a/src/read.c
++++ b/src/read.c
+@@ -1140,20 +1140,29 @@ eval (struct ebuffer *ebuf, int set_default)
+ 
+         p2 = next_token (variable_buffer);
+ 
+-        /* If the word we're looking at is EOL, see if there's _anything_
+-           on the line.  If not, a variable expanded to nothing, so ignore
+-           it.  If so, we can't parse this line so punt.  */
++        /* If we're at EOL we didn't find a separator so we don't know what
++           kind of line this is.  */
+         if (wtype == w_eol)
+           {
++            /* Ignore an empty line.  */
+             if (*p2 == '\0')
+               continue;
+ 
+-            /* There's no need to be ivory-tower about this: check for
+-               one of the most common bugs found in makefiles...  */
++            /* Check for spaces instead of TAB.  */
+             if (cmd_prefix == '\t' && strneq (line, "        ", 8))
+               O (fatal, fstart, _("missing separator (did you mean TAB instead of 8 spaces?)"));
+-            else
+-              O (fatal, fstart, _("missing separator"));
++
++            /* Check for conditionals without whitespace afterward.
++               We don't check ifdef/ifndef because there's no real way to miss
++               whitespace there.  */
++            p2 = next_token (line);
++            if (strneq (p2, "if", 2) &&
++                ((strneq (&p2[2], "neq", 3) && !STOP_SET (p2[5], MAP_BLANK))
++                 || (strneq (&p2[2], "eq", 2) && !STOP_SET (p2[4], MAP_BLANK))))
++              O (fatal, fstart, _("missing separator (ifeq/ifneq must be followed by whitespace)"));
++
++            /* No idea...  */
++            O (fatal, fstart, _("missing separator"));
+           }
+ 
+         {
+diff --git a/src/w32/w32os.c b/src/w32/w32os.c
+index 9c5dec24..213bbf12 100644
+--- a/src/w32/w32os.c
++++ b/src/w32/w32os.c
+@@ -216,12 +216,12 @@ jobserver_setup (int slots, const char *style)
+   /* sub_proc.c is limited in the number of objects it can wait for. */
+ 
+   if (style && strcmp (style, "sem") != 0)
+-    OS (fatal, NILF, _("Unknown jobserver auth style '%s'"), style);
++    OS (fatal, NILF, _("unknown jobserver auth style '%s'"), style);
+ 
+   if (slots > process_table_usable_size())
+     {
+       slots = process_table_usable_size();
+-      DB (DB_JOBS, (_("Jobserver slots limited to %d\n"), slots));
++      DB (DB_JOBS, (_("jobserver slots limited to %d\n"), slots));
+     }
+ 
+   sprintf (jobserver_semaphore_name, "gmake_semaphore_%d", _getpid ());
+@@ -255,10 +255,12 @@ jobserver_parse_auth (const char *auth)
+     {
+       DWORD err = GetLastError ();
+       const char *estr = map_windows32_error_to_string (err);
+-      fatal (NILF, strlen (auth) + INTSTR_LENGTH + strlen (estr),
+-             _("internal error: unable to open jobserver semaphore '%s': (Error %ld: %s)"),
++      error (NILF, strlen (auth) + INTSTR_LENGTH + strlen (estr),
++             _("unable to open jobserver semaphore '%s': (Error %ld: %s)"),
+              auth, err, estr);
++      return 0;
+     }
++
+   DB (DB_JOBS, (_("Jobserver client (semaphore %s)\n"), auth));
+ 
+   return 1;
+diff --git a/tests/run_make_tests.pl b/tests/run_make_tests.pl
+index 70dd1821..5fc37595 100644
+--- a/tests/run_make_tests.pl
++++ b/tests/run_make_tests.pl
+@@ -185,7 +185,6 @@ sub subst_make_string
+     s/#PERL#/$perl_name/g;
+     s/#PWD#/$cwdpath/g;
+     s/#WORK#/$workdir/g;
+-    # If we're using a shell
+     s/#HELPER#/$perl_name $helptool/g;
+     return $_;
+ }
+diff --git a/tests/scripts/features/jobserver b/tests/scripts/features/jobserver
+index 8ecbe345..e12facf0 100644
+--- a/tests/scripts/features/jobserver
++++ b/tests/scripts/features/jobserver
+@@ -14,6 +14,7 @@ if (!$parallel_jobs) {
+ 
+ # Shorthand
+ my $np = '--no-print-directory';
++my $j1err = "warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.";
+ 
+ # Simple test of MAKEFLAGS settings
+ run_make_test(q!
+@@ -90,7 +91,7 @@ if ($port_type ne 'W32') {
+ default: ; @ #MAKEPATH# -f Makefile2
+ !,
+               "--jobserver-style=pipe -j2 $np",
+-"#MAKE#[1]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
++"#MAKE#[1]: $j1err
+ #MAKE#[1]: Nothing to be done for 'foo'.");
+ 
+     rmfiles('Makefile2');
+@@ -98,15 +99,15 @@ default: ; @ #MAKEPATH# -f Makefile2
+ 
+ # For Windows and named pipes, we don't need to worry about recursion
+ if ($port_type eq 'W32' || exists $FEATURES{'jobserver-fifo'}) {
+-    create_file('Makefile2', "vpath %.c ../\n", "foo:\n");
++  create_file('Makefile2', "vpath %.c ../\n", "foo:\n");
+ 
+-    run_make_test(q!
++  run_make_test(q!
+ default: ; @ #MAKEPATH# -f Makefile2
+ !,
+               "-j2 $np",
+ "#MAKE#[1]: Nothing to be done for 'foo'.");
+ 
+-    rmfiles('Makefile2');
++  rmfiles('Makefile2');
+ }
+ 
+ # Ensure enter/leave directory messages appear before jobserver warnings
+@@ -129,17 +130,17 @@ all: a
+ all a: ; @echo $@
+ !,
+               '--jobserver-style=foo -j8',
+-              "#MAKE#: *** Unknown jobserver auth style 'foo'.  Stop.", 512);
+-
+-# sv 62908.
+-# Test that when mkfifo fails, make switches to pipe and succeeds.
+-# Force mkfifo to fail by attempting to create a fifo in a non existent
+-# directory.
+-# run_make_test does not allow matching a multiline pattern, therefore run the
+-# test twice.
+-# First time look for /$ERR_no_such_file/ to ensure mkfifo failed.
+-# Second time look for /Nothing to be done/ to ensure make succeeded.
++              "#MAKE#: *** unknown jobserver auth style 'foo'.  Stop.", 512);
++
+ if (exists $FEATURES{'jobserver-fifo'}) {
++  # sv 62908.
++  # Test that when mkfifo fails, make switches to pipe and succeeds.
++  # Force mkfifo to fail by attempting to create a fifo in a non existent
++  # directory.
++  # run_make_test does not allow matching a multiline pattern, therefore run
++  # the test twice.
++  # First time look for /$ERR_no_such_file/ to ensure mkfifo failed.
++  # Second time look for /Nothing to be done/ to ensure make succeeded.
+   $ENV{TMPDIR} = "nosuchdir";
+   run_make_test("all:\n", '-j2', "/$ERR_no_such_file/");
+ 
+@@ -155,6 +156,10 @@ recurse: ; @$(MAKE) -f #MAKEFILE# all
+ all:;@echo "$$MAKEFLAGS"
+ !,
+               "-j2 --no-print-directory", "/--jobserver-auth=fifo:\\./");
++
++  # Verify we fall back to -j1 but continue, of the auth is bad.
++  $ENV{MAKEFLAGS} = '-j2 --jobserver-auth=fifo:nosuchfile';
++  run_make_test(q!all:;@echo hi!, "", "#MAKE#: cannot open jobserver nosuchfile: $ERR_no_such_file\n#MAKE#: $j1err\nhi\n");
+ }
+ 
+ 1;
+diff --git a/tests/scripts/features/output-sync b/tests/scripts/features/output-sync
+index 13a54ca0..18c85c0a 100644
+--- a/tests/scripts/features/output-sync
++++ b/tests/scripts/features/output-sync
+@@ -360,11 +360,27 @@ use POSIX ();
+ # file.
+ run_make_test(q!
+ pid:=$(shell echo $$PPID)
+-all:; @kill -TERM $(pid) && sleep 16
++all:; @#HELPER# term $(pid) sleep 10
+ !, '-O -j2', '/#MAKE#: \*\*\* \[#MAKEFILE#:3: all] Terminated/', POSIX::SIGTERM);
+ }
+-
+ unlink($fout);
++
++# SV 63333. Test that make continues to run without output sync when we
++# cannot create a temporary file.
++# Create a non-writable temporary directory.
++# Run the test twice, because run_make_test cannot match a regex againt a
++# multiline input.
++my $tdir = 'test_tmp_dir';
++mkdir($tdir, 0500);
++$ENV{'TMPDIR'} = $tdir;
++
++run_make_test(q!
++all:; $(info hello, world)
++!, '-Orecurse', "/suppressing output-sync/");
++
++run_make_test(undef, '-Orecurse', "/#MAKE#: 'all' is up to date./");
++
++rmdir($tdir);
+ }
+ 
+ # This tells the test driver that the perl test script executed properly.
+diff --git a/tests/scripts/features/temp_stdin b/tests/scripts/features/temp_stdin
+index b06df53e..3bd53e02 100644
+--- a/tests/scripts/features/temp_stdin
++++ b/tests/scripts/features/temp_stdin
+@@ -71,7 +71,7 @@ run_make_test(q!
+ include bye.mk
+ pid:=$(shell echo $$PPID)
+ all:;
+-bye.mk: force; @kill -TERM $(pid) && sleep 16
++bye.mk: force; @#HELPER# term $(pid) sleep 10
+ force:
+ !, '-f-', '/#MAKE#: \*\*\* \[#MAKEFILE#:5: bye.mk] Terminated/', POSIX::SIGTERM);
+ }
+@@ -109,6 +109,21 @@ force:
+ @make_command = @make_orig;
+ unlink($makecopy);
+ rmdir($tmakedir);
++
++# SV 63333. Test that make exits with an error message if we cannot store a
++# makefile from stdin to a temporary file.
++# Create a non-writable temporary directory.
++
++my $tdir = 'test_tmp_dir';
++mkdir($tdir, 0500);
++$ENV{'TMPDIR'} = $tdir;
++close(STDIN);
++open(STDIN, "<", 'input.mk') || die "$0: cannot open input.mk for reading: $!";
++
++run_make_test(q!
++all:; $(info hello, world)
++!, '-f-', '/cannot store makefile from stdin to a temporary file.  Stop./', 512);
++rmdir($tdir);
+ }
+ 
+ close(STDIN);
+diff --git a/tests/scripts/misc/failure b/tests/scripts/misc/failure
+new file mode 100644
+index 00000000..edd90fbb
+--- /dev/null
++++ b/tests/scripts/misc/failure
+@@ -0,0 +1,49 @@
++#                                                                    -*-perl-*-
++
++$description = "Test miscellaneous failures.";
++
++
++# Test that the "did you mean TAB" message is printed properly
++
++run_make_test(q!
++$x.
++!,
++              '', '#MAKEFILE#:2: *** missing separator.  Stop.', 512);
++
++run_make_test(q!
++foo:
++        bar
++!,
++              '', '#MAKEFILE#:3: *** missing separator (did you mean TAB instead of 8 spaces?).  Stop.', 512);
++
++run_make_test(q!
++.RECIPEPREFIX = :
++foo:
++        bar
++!,
++              '', '#MAKEFILE#:4: *** missing separator.  Stop.', 512);
++
++for my $kw ('eq', 'neq') {
++run_make_test(qq!
++if$kw(foo,bar)
++\$(error ouch)
++endif
++!,
++              '', '#MAKEFILE#:2: *** missing separator (ifeq/ifneq must be followed by whitespace).  Stop.', 512);
++
++run_make_test(qq!
++if$kw
++\$(error ouch)
++endif
++!,
++              '', '#MAKEFILE#:2: *** invalid syntax in conditional.  Stop.', 512);
++
++run_make_test(qq!
++if$kw blah
++\$(error ouch)
++endif
++!,
++              '', '#MAKEFILE#:2: *** invalid syntax in conditional.  Stop.', 512);
++}
++
++1;
+diff --git a/tests/scripts/variables/special b/tests/scripts/variables/special
+index 68f3128c..abe9fc0c 100644
+--- a/tests/scripts/variables/special
++++ b/tests/scripts/variables/special
+@@ -122,26 +122,6 @@ reset-four \
+ : foo-three
+ : foo-four');
+ 
+-# Test that the "did you mean TAB" message is printed properly
+-
+-run_make_test(q!
+-$x.
+-!,
+-              '', '#MAKEFILE#:2: *** missing separator.  Stop.', 512);
+-
+-run_make_test(q!
+-foo:
+-        bar
+-!,
+-              '', '#MAKEFILE#:3: *** missing separator (did you mean TAB instead of 8 spaces?).  Stop.', 512);
+-
+-run_make_test(q!
+-.RECIPEPREFIX = :
+-foo:
+-        bar
+-!,
+-              '', '#MAKEFILE#:4: *** missing separator.  Stop.', 512);
+-
+ 1;
+ 
+ ### Local Variables:
+diff --git a/tests/test_driver.pl b/tests/test_driver.pl
+index b64fffb6..efe4981d 100644
+--- a/tests/test_driver.pl
++++ b/tests/test_driver.pl
+@@ -806,12 +806,135 @@ sub error
+   die "$caller: $message";
+ }
+ 
++sub compare_answer_vms
++{
++  my ($kgo, $log) = @_;
++
++  # VMS has extra blank lines in output sometimes.
++  # Ticket #41760
++  $log =~ s/\n\n+/\n/gm;
++  $log =~ s/\A\n+//g;
++  return 1 if ($kgo eq $log);
++
++  # VMS adding a "Waiting for unfinished jobs..."
++  # Remove it for now to see what else is going on.
++  $log =~ s/^.+\*\*\* Waiting for unfinished jobs.+$//m;
++  $log =~ s/\n\n/\n/gm;
++  $log =~ s/^\n+//gm;
++  return 1 if ($log eq $kgo);
++
++  # VMS wants target device to exist or generates an error,
++  # Some test tagets look like VMS devices and trip this.
++  $log =~ s/^.+\: no such device or address.*$//gim;
++  $log =~ s/\n\n/\n/gm;
++  $log =~ s/^\n+//gm;
++  return 1 if ($log eq $kgo);
++
++  # VMS error message has a different case
++  $log =~ s/no such file /No such file /gm;
++  return 1 if ($log eq $kgo);
++
++  # VMS is putting comas instead of spaces in output
++  $log =~ s/,/ /gm;
++  return 1 if ($log eq $kgo);
++
++  # VMS Is sometimes adding extra leading spaces to output?
++  {
++     (my $mlog = $log) =~ s/^ +//gm;
++     return 1 if ($mlog eq $kgo);
++  }
++
++  # VMS port not handling POSIX encoded child status
++  # Translate error case it for now.
++  $log =~ s/0x1035a00a/1/gim;
++  return 1 if ($log =~ /\Q$kgo\E/i);
++
++  $log =~ s/0x1035a012/2/gim;
++  return 1 if ($log eq $kgo);
++
++  # Tests are using a UNIX null command, temp hack
++  # until this can be handled by the VMS port.
++  # ticket # 41761
++  $log =~ s/^.+DCL-W-NOCOMD.*$//gim;
++  $log =~ s/\n\n+/\n/gm;
++  $log =~ s/^\n+//gm;
++  return 1 if ($log eq $kgo);
++
++  # Tests are using exit 0;
++  # this generates a warning that should stop the make, but does not
++  $log =~ s/^.+NONAME-W-NOMSG.*$//gim;
++  $log =~ s/\n\n+/\n/gm;
++  $log =~ s/^\n+//gm;
++  return 1 if ($log eq $kgo);
++
++  # VMS is sometimes adding single quotes to output?
++  $log =~ s/\'//gm;
++  return 1 if ($log eq $kgo);
++
++  # And missing an extra space in output
++  $kgo =~ s/\h\h+/ /gm;
++  return 1 if ($log eq $kgo);
++
++  # VMS adding ; to end of some lines.
++  $log =~ s/;\n/\n/gm;
++  return 1 if ($log eq $kgo);
++
++  # VMS adding trailing space to end of some quoted lines.
++  $log =~ s/\h+\n/\n/gm;
++  return 1 if ($log eq $kgo);
++
++  # And VMS missing leading blank line
++  $kgo =~ s/\A\n//g;
++  return 1 if ($log eq $kgo);
++
++  # Unix double quotes showing up as single quotes on VMS.
++  $kgo =~ s/\"//g;
++  return 1 if ($log eq $kgo);
++
++  return 0;
++}
++
++sub compare_answer
++{
++  my ($kgo, $log) = @_;
++  my ($mkgo, $mlog);
++
++  # For make, get rid of any time skew error before comparing--too bad this
++  # has to go into the "generic" driver code :-/
++  $log =~ s/^.*modification time .*in the future.*\n//gm;
++  $log =~ s/^.*Clock skew detected.*\n//gm;
++  return 1 if ($log eq $kgo);
++
++  # Get rid of newline differences, forever
++  $kgo =~ s,\r\n,\n,gs;
++  $log =~ s,\r\n,\n,gs;
++  return 1 if ($log eq $kgo);
++
++  # See if it is a backslash problem (only on W32?)
++  ($mkgo = $kgo) =~ tr,\\,/,;
++  ($mlog = $log) =~ tr,\\,/,;
++  return 1 if ($log eq $kgo);
++
++  # VMS is a whole thing...
++  return 1 if ($^O eq 'VMS' && compare_answer_vms($mkgo, $mlog));
++
++  # See if the answer might be a regex.
++  if ($kgo =~ m,^/(.+)/$,) {
++    return 1 if ($log =~ /$1/);
++
++    # We can't test with backslashes converted to forward slashes, because
++    # backslashes could be escaping RE special characters!
++  }
++
++  return 0;
++}
++
+ my %old_tempfiles = ();
+ 
+ sub compare_output
+ {
+   my ($answer, $logfile) = @_;
+-  my ($slurp, $answer_matched, $extra) = ('', 0, 0);
++  my ($slurp, $matched, $extra) = ('', 0, 0);
+ 
+   ++$tests_run;
+ 
+@@ -831,169 +954,25 @@ sub compare_output
+ 
+   if (! defined $answer) {
+     print "Ignoring output ........ " if $debug;
+-    $answer_matched = 1;
++    $matched = 1;
+   } else {
+     print "Comparing output ........ " if $debug;
+ 
+-    $slurp = &read_file_into_string ($logfile);
+-
+-    # For make, get rid of any time skew error before comparing--too bad this
+-    # has to go into the "generic" driver code :-/
+-    $slurp =~ s/^.*modification time .*in the future.*\n//gm;
+-    $slurp =~ s/^.*Clock skew detected.*\n//gm;
+-
+-    if ($slurp eq $answer) {
+-        $answer_matched = 1;
+-    } else {
+-      # See if it is a slash or CRLF problem
+-      my ($answer_mod, $slurp_mod) = ($answer, $slurp);
+-
+-      $answer_mod =~ tr,\\,/,;
+-      $answer_mod =~ s,\r\n,\n,gs;
+-
+-      $slurp_mod =~ tr,\\,/,;
+-      $slurp_mod =~ s,\r\n,\n,gs;
+-
+-      $answer_matched = ($slurp_mod eq $answer_mod);
+-
+-      if (!$answer_matched && $^O eq 'VMS') {
+-
+-        # VMS has extra blank lines in output sometimes.
+-        # Ticket #41760
+-        if (!$answer_matched) {
+-          $slurp_mod =~ s/\n\n+/\n/gm;
+-          $slurp_mod =~ s/\A\n+//g;
+-          $answer_matched = ($slurp_mod eq $answer_mod);
+-        }
+-
+-        # VMS adding a "Waiting for unfinished jobs..."
+-        # Remove it for now to see what else is going on.
+-        if (!$answer_matched) {
+-          $slurp_mod =~ s/^.+\*\*\* Waiting for unfinished jobs.+$//m;
+-          $slurp_mod =~ s/\n\n/\n/gm;
+-          $slurp_mod =~ s/^\n+//gm;
+-          $answer_matched = ($slurp_mod eq $answer_mod);
+-        }
+-
+-        # VMS wants target device to exist or generates an error,
+-        # Some test tagets look like VMS devices and trip this.
+-        if (!$answer_matched) {
+-          $slurp_mod =~ s/^.+\: no such device or address.*$//gim;
+-          $slurp_mod =~ s/\n\n/\n/gm;
+-          $slurp_mod =~ s/^\n+//gm;
+-          $answer_matched = ($slurp_mod eq $answer_mod);
+-        }
+-
+-        # VMS error message has a different case
+-        if (!$answer_matched) {
+-          $slurp_mod =~ s/no such file /No such file /gm;
+-          $answer_matched = ($slurp_mod eq $answer_mod);
+-        }
+-
+-        # VMS is putting comas instead of spaces in output
+-        if (!$answer_matched) {
+-          $slurp_mod =~ s/,/ /gm;
+-          $answer_matched = ($slurp_mod eq $answer_mod);
+-        }
+-
+-        # VMS Is sometimes adding extra leading spaces to output?
+-        if (!$answer_matched) {
+-           my $slurp_mod = $slurp_mod;
+-           $slurp_mod =~ s/^ +//gm;
+-           $answer_matched = ($slurp_mod eq $answer_mod);
+-        }
+-
+-        # VMS port not handling POSIX encoded child status
+-        # Translate error case it for now.
+-        if (!$answer_matched) {
+-          $slurp_mod =~ s/0x1035a00a/1/gim;
+-          $answer_matched = 1 if $slurp_mod =~ /\Q$answer_mod\E/i;
+-
+-        }
+-        if (!$answer_matched) {
+-          $slurp_mod =~ s/0x1035a012/2/gim;
+-          $answer_matched = ($slurp_mod eq $answer_mod);
+-        }
+-
+-        # Tests are using a UNIX null command, temp hack
+-        # until this can be handled by the VMS port.
+-        # ticket # 41761
+-        if (!$answer_matched) {
+-          $slurp_mod =~ s/^.+DCL-W-NOCOMD.*$//gim;
+-          $slurp_mod =~ s/\n\n+/\n/gm;
+-          $slurp_mod =~ s/^\n+//gm;
+-          $answer_matched = ($slurp_mod eq $answer_mod);
+-        }
+-        # Tests are using exit 0;
+-        # this generates a warning that should stop the make, but does not
+-        if (!$answer_matched) {
+-          $slurp_mod =~ s/^.+NONAME-W-NOMSG.*$//gim;
+-          $slurp_mod =~ s/\n\n+/\n/gm;
+-          $slurp_mod =~ s/^\n+//gm;
+-          $answer_matched = ($slurp_mod eq $answer_mod);
+-        }
+-
+-        # VMS is sometimes adding single quotes to output?
+-        if (!$answer_matched) {
+-          my $noq_slurp_mod = $slurp_mod;
+-          $noq_slurp_mod =~ s/\'//gm;
+-          $answer_matched = ($noq_slurp_mod eq $answer_mod);
+-
+-          # And missing an extra space in output
+-          if (!$answer_matched) {
+-            $noq_answer_mod = $answer_mod;
+-            $noq_answer_mod =~ s/\h\h+/ /gm;
+-            $answer_matched = ($noq_slurp_mod eq $noq_answer_mod);
+-          }
+-
+-          # VMS adding ; to end of some lines.
+-          if (!$answer_matched) {
+-            $noq_slurp_mod =~ s/;\n/\n/gm;
+-            $answer_matched = ($noq_slurp_mod eq $noq_answer_mod);
+-          }
+-
+-          # VMS adding trailing space to end of some quoted lines.
+-          if (!$answer_matched) {
+-            $noq_slurp_mod =~ s/\h+\n/\n/gm;
+-            $answer_matched = ($noq_slurp_mod eq $noq_answer_mod);
+-          }
+-
+-          # And VMS missing leading blank line
+-          if (!$answer_matched) {
+-            $noq_answer_mod =~ s/\A\n//g;
+-            $answer_matched = ($noq_slurp_mod eq $noq_answer_mod);
+-          }
+-
+-          # Unix double quotes showing up as single quotes on VMS.
+-          if (!$answer_matched) {
+-            $noq_answer_mod =~ s/\"//g;
+-            $answer_matched = ($noq_slurp_mod eq $noq_answer_mod);
+-          }
+-        }
+-      }
+-
+-      # If it still doesn't match, see if the answer might be a regex.
+-      if (!$answer_matched && $answer =~ m,^/(.+)/$,) {
+-        $answer_matched = ($slurp =~ /$1/);
+-        if (!$answer_matched && $answer_mod =~ m,^/(.+)/$,) {
+-            $answer_matched = ($slurp_mod =~ /$1/);
+-        }
+-      }
+-    }
++    $matched = compare_answer($answer, &read_file_into_string ($logfile));
+   }
+ 
+-  if ($keep || ! $answer_matched) {
++  if ($keep || ! $matched) {
+     &create_file(&get_basefile, $answer);
+     &create_file(&get_runfile, $command_string);
+   }
+ 
+-  if ($answer_matched && $test_passed && !$extra) {
++  if ($matched && $test_passed && !$extra) {
+     print "ok\n" if $debug;
+     ++$tests_passed;
+     return 1;
+   }
+ 
+-  if (! $answer_matched) {
++  if (! $matched) {
+     print "DIFFERENT OUTPUT\n" if $debug;
+ 
+     print "\nCreating Difference File ...\n" if $debug;
+@@ -1001,10 +980,11 @@ sub compare_output
+     # Create the difference file
+     my $base = get_basefile();
+     if ($diff_name) {
+-        my $command = "$diff_name -c $base $logfile";
+-        &run_command_with_output(get_difffile(), $command);
++        &run_command_with_output(get_difffile(),
++                                 "$diff_name -c $base $logfile");
+     } else {
+-        create_file(get_difffile(), "Log file $logfile differs from base file $base\n");
++        create_file(get_difffile(),
++                    "Log file $logfile differs from base file $base\n");
+     }
+   }
+ 
+diff --git a/tests/thelp.pl b/tests/thelp.pl
+index 993339cb..c243bcb8 100755
+--- a/tests/thelp.pl
++++ b/tests/thelp.pl
+@@ -16,6 +16,7 @@
+ #  wait <word>  : wait for a file named <word> to exist
+ #  tmout <secs> : Change the timeout for waiting.  Default is 4 seconds.
+ #  sleep <secs> : Sleep for <secs> seconds then echo <secs>
++#  term <pid>   : send SIGTERM to PID <pid>
+ #  fail <err>   : echo <err> to stdout then exit with error code err
+ #
+ # If given -q only the "out" command generates output.
+@@ -95,6 +96,12 @@ sub op {
+         return 1;
+     }
+ 
++    if ($op eq 'term') {
++        print "term $nm\n";
++        kill('TERM', $nm);
++        return 1;
++    }
++
+     if ($op eq 'fail') {
+         print "fail $nm\n";
+         exit($nm);
