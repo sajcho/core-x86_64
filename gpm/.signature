@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvaJzCG254J5uNK0GTbEsScMZ4qGpw5QEeVMZTbeeoYlu8nR18+mqsoLyr4sd2y63ifdUZ67we1vDjQ4wDD7EtwI=
+SHA256 (Pkgfile) = 5d4acff3d56fcedb713167d4b32851f9fc5dc978133a28898ab2ab5529138cc0
+SHA256 (.footprint) = 8562c41464636d2beab29e18f0daf6b869b29f36e2b32b45c782781bf2e8aa4d
+SHA256 (gpm-1.20.7.tar.bz2) = f011b7dc7afb824e0a017b89b7300514e772853ece7fc4ee640310889411a48d
+SHA256 (gpm-1.20.7-consolidated-1.patch) = 3659543dc3c9074f768f80c32a9e9aa1773f147068c49cf7f560ff73a0674524
+SHA256 (gpm.run) = 71198a371cfa3aab134b71247a75b65e84a015b3a7bb7a43d4273edfb07db890
