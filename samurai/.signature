@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvS2d4Y0tNfeoP4zDJYi7dmcG8EtpvBzWTM3lOSFpta3A5olNuQMotBjgEnOlEZx5a3zPnVf4fFtkUcGKj5kqTAg=
+SHA256 (Pkgfile) = f92d41b7de896398f4fd28300e668d96fb8d1e23faa951dd53a6aa080bd81263
+SHA256 (.footprint) = 5668e2a3fbe3eca55efa39e68dc6d4dbfb5c69d6642e0a6ee3779b43ce67f7f1
+SHA256 (samurai-1.2.tar.gz) = 37a2d9f35f338c53387eba210bab7e5d8abe033492664984704ad84f91b71bac
+SHA256 (CVE-2021-30218.patch) = 5d585d15b2343b4af291b34d614fa112e6792eef0c7f16c8d7e25e9642dbd868
+SHA256 (CVE-2021-30219.patch) = b0ba58ad05310012103be6d191d2f3c4cd534b01137aef7933df20a0ae01fc2a
