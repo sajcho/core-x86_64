@@ -4,12 +4,15 @@
 
 name=ports
 version=1.6
-release=1
+release=2
 
 source=(http://crux.nu/files/tools/${name}/${name}-${version}.tar.gz \
-	repo-core \
-	repo-opt \
-	repo-xorg)
+	core-x86_64.httpup \
+	core-x86_64.pub \
+	opt-x86_64.httpup \
+	opt-x86_64.pub \
+	xorg-x86_64.httpup \
+	xorg-x86_64.pub)
 
 build() {
 	cd ${name}-${version}
@@ -18,7 +21,10 @@ build() {
 
 	make DESTDIR=$PKG MANDIR=/usr/share/man install
 
-	install -m 0644 $SRC/repo-core $PKG/etc/ports/core-x86_64.httpup
-	install -m 0644 $SRC/repo-opt $PKG/etc/ports/opt-x86_64.httpup
-	install -m 0644 $SRC/repo-xorg $PKG/etc/ports/xorg-x86_64.httpup
+	install -m 0644 $SRC/core-x86_64.httpup $PKG/etc/ports/core-x86_64.httpup
+	install -m 0644 $SRC/opt-x86_64.httpup $PKG/etc/ports/opt-x86_64.httpup
+	install -m 0644 $SRC/xorg-x86_64.httpup $PKG/etc/ports/xorg-x86_64.httpup
+	install -m 0644 $SRC/core-x86_64.pub $PKG/etc/ports/core-x86_64.pub
+	install -m 0644 $SRC/opt-x86_64.pub $PKG/etc/ports/opt-x86_64.pub
+	install -m 0644 $SRC/xorg-x86_64.pub $PKG/etc/ports/xorg-x86_64.pub
 }
