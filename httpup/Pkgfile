@@ -11,11 +11,10 @@ source=(https://crux.nu/files/${name}-${version}.tar.xz httpup)
 build() {
 	cd ${name}-${version}
 
-	# main.cpp: In function 'int main(int, char**)':
-	# main.cpp:92:20: error: 'void operator delete(void*, std::size_t)' called on pointer returned from a mismatched allocation function [-Werror=mismatched-new-delete]
-	#   92 |             delete pwd;
+	# fix - egrep is obsolescent; using grep -E
+	sed 's|egrep|grep -E|' -i httpup-repgen
 
-	sed -i 's|Werror|Wno-error|' Makefile
+	export CPPFLAGS="-Wno-error=mismatched-new-delete"
 
 	make V=1
 
