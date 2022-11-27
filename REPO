@@ -335,10 +335,10 @@ f:c4d4ce7cd9dbacddcf2f783f3d9d5e84:db/.signature
 f:335bee4184e5b720ce56cb45b79407d3:db/.footprint
 f:bf37166683ba4966059cda949d4f6dbd:db/0001-atomic-Rename-local-__atomic_compare_exchange-to-avo.patch
 f:85105a8e8c118314c71167a0716564f3:db/Pkgfile
-f:076b8ce905fd742e4f2d47964beffa0f:httpup/.signature
+f:398a95c7506e5426ae5d4048327dcb9e:httpup/.signature
 f:faa600a1b0349fe78b0eb463cab444df:httpup/httpup
 f:244d80213b48c8b5a5aca4c186f01f3d:httpup/.footprint
-f:ee30a8a37780680ddc85a2b6db12979a:httpup/Pkgfile
+f:9483c9d5779ba2940d1a3355886eb70b:httpup/Pkgfile
 f:abf5926369a9a633ecf9595de7cb61d1:dash/.signature
 f:28c289b83ba669b8ca3f7a6c02dcd838:dash/.footprint
 f:62660282832f2031952508351f1a35fe:dash/Pkgfile
@@ -436,11 +436,11 @@ f:b22d38402670add00dd4e57c1858c1ae:iana-etc/protocols
 f:d6b011b611df75cfa3b42b933250c1a8:iana-etc/update.sh
 f:ead623407f07b6894758909da86e8282:iana-etc/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:37e4b9ddc7faa423b98a0ca60598b22d:rust/.signature
+f:dd5fbd958acddfa680318a43f87b5c91:rust/.signature
 f:5c86e9185803da05baffe89e44b8e9cd:rust/libexec.patch
 f:8570861063b945ec436ad79503051634:rust/README
 f:3f6e6205d3758c4a66e2e43c762de9c9:rust/.footprint
-f:07616cc745b4614d69e7893c4a669e22:rust/Pkgfile
+f:6cc3f6389a8c2a8f1a1b11bcea292825:rust/Pkgfile
 f:1946bfd3578adbb56eb7c2da4ba7d3f3:xz/.signature
 f:4698ad1e75ed4f984df4617d42771796:xz/.footprint
 f:dfa7b35960a0ef41ec34d8de1d037c41:xz/Pkgfile
