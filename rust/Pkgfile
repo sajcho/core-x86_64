@@ -26,7 +26,6 @@ cat <<- EOF > $SRC/config.toml
 	profile = "user"
 
 	[llvm]
-	targets = "x86"
 	ninja = true
 	link-shared = true
 
