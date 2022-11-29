@@ -170,9 +170,9 @@ f:8f7203fdf9d5642e9fe2d50d34a673ef:python3-setuptools/Pkgfile
 f:b74adfb73210ea70aa08a4a12e6beeed:libnsl/.signature
 f:68d29a7a4fc30ea3ba47a4caa45b6a5e:libnsl/.footprint
 f:0f3e01afeef8065dd70773b6a2a8decd:libnsl/Pkgfile
-f:4671e8791c423ad1a14d7f15333aeefa:binutils/.signature
+f:bb631bf47f4b7f393aeba99a87692821:binutils/.signature
 f:26c0609ec35be8bf87389c94b90fdc5f:binutils/.footprint
-f:97a8a908a54fea7b163f1e0f019c2134:binutils/Pkgfile
+f:d37ed3a75ef97ebaba6cfce2d29649c9:binutils/Pkgfile
 f:11f18f367838372525d4f2659fffb219:gzip/.signature
 f:b0d1386d3e51cbeb42005f9f8101f3bf:gzip/.footprint
 f:5877ef1b28da4f8d8a0f672e9b34a2c4:gzip/Pkgfile
