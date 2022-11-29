@@ -30,7 +30,7 @@ build() {
 		--disable-nls \
 		--disable-werror \
 		--disable-multilib \
-		--disable-gprofng  \
+		--disable-gprofng \
 		--disable-jansson \
 		--disable-sim \
 		--disable-gdb \
