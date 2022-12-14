@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvdE1KYA7FvAnUxupRCi3NsJlQexYe9NbKyQzW0zf48QSbc3vWfpVBW/63A+/ZUGHqN0wcjAsayEu/eFnIrbOPgQ=
-SHA256 (Pkgfile) = 22add97141e0c26c9ca4e8d723a319256317e2ed3ee03b149d26d621279bbfd2
-SHA256 (.footprint) = d181e2ace90fcde34c4696f8b65e253e320c3f3968a2f63c674c898d03ababc0
-SHA256 (libarchive-3.6.1.tar.xz) = 5a411aceb978f43e626f0c2d1812ddd8807b645ed892453acabd532376c148e6
-SHA256 (0003-libarchive-Do-not-include-sys-mount.h-when-linux-fs.patch) = 99c85a9b8e6c16131cefaf1040d5fa15cd565ecf8c71c1f644c8fa47fe1306dc
+RWQyKH7cMutLvToXu1yTsi/Xucco1x5L0zSCxxRxguDjLZ3KUSuRbyWaF4N8YxyhEz5FbeVlWDCVvuHLV+xL1/jLateUbYTSPwQ=
+SHA256 (Pkgfile) = 825dab0e83c3d6222808633edb3dde948775d6be7507dcdd730a46aa30aef051
+SHA256 (.footprint) = db147493b1e8ef67cc9efcba0c4f9315fc40d7a85b0cef06ccc911c587a424ac
+SHA256 (libarchive-3.6.2.tar.xz) = 9e2c1b80d5fbe59b61308fdfab6c79b5021d7ff4ff2489fb12daf0a96a83551d
