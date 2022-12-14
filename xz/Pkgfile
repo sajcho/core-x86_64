@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=xz
-version=5.2.8
+version=5.2.9
 release=1
 source=(http://tukaani.org/xz/${name}-${version}.tar.xz)
 
