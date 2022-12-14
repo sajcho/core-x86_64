@@ -4,17 +4,14 @@
 # Depends on:	readline mpfr
 
 name=gawk
-version=5.2.0
+version=5.2.1
 release=1
-source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	add-upref.patch)
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
-	patch -p1 -i $SRC/add-upref.patch
-
-	export ac_cv_libsigsegv=no
+	sed -i 's/extras//' Makefile.in
 
 	./configure \
 		--prefix=/usr \
