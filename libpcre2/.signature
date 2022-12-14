@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvVQ8H/2voKXlPCyVyGAiQLK7KIeRRgfgDoIsQ+GnvpTtVd3/Il0RmW7iywoB5f37OT2eN1zjhN9glMUbWfVoEA8=
-SHA256 (Pkgfile) = b26041af9bc28ad52ff0ea6cedcd7f2fa56369bc4f8c6f5fc46b23cdc7c5c56e
-SHA256 (.footprint) = 8ee6d35b4b3b81c6b13a257dcf06c8fedf7a7cd6842ea94fd018d847b3d3af53
-SHA256 (pcre2-10.40.tar.gz) = ded42661cab30ada2e72ebff9e725e745b4b16ce831993635136f2ef86177724
+RWQyKH7cMutLvRUVc0NYzoWZ27gQ9qINNrdhRX/my2gF/WAR9nbSos6NUpRuIiqMko5KJ5zp2VvlUBl32JKmvZMW9vncqRG2iAE=
+SHA256 (Pkgfile) = cbdab86ac55b4c643981390e8dff3996af48635a4ec1ea464c07b8433b24f76a
+SHA256 (.footprint) = ff7b9118022a61a9b8c578044188b8a3e0886d7ed4180745f57d5f85453f5e53
+SHA256 (pcre2-10.42.tar.gz) = c33b418e3b936ee3153de2c61cc638e7e4fe3156022a5c77d0711bcbb9d64f1f
