@@ -109,6 +109,7 @@ drwxr-xr-x	root/root	usr/share/zoneinfo-leaps/America/Argentina/
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/America/Cayman
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/America/Chicago
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/America/Chihuahua
+-rw-r--r--	root/root	usr/share/zoneinfo-leaps/America/Ciudad_Juarez
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/America/Coral_Harbour
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/America/Cordoba
 -rw-r--r--	root/root	usr/share/zoneinfo-leaps/America/Costa_Rica
@@ -727,6 +728,7 @@ drwxr-xr-x	root/root	usr/share/zoneinfo/America/Argentina/
 -rw-r--r--	root/root	usr/share/zoneinfo/America/Cayman
 -rw-r--r--	root/root	usr/share/zoneinfo/America/Chicago
 -rw-r--r--	root/root	usr/share/zoneinfo/America/Chihuahua
+-rw-r--r--	root/root	usr/share/zoneinfo/America/Ciudad_Juarez
 -rw-r--r--	root/root	usr/share/zoneinfo/America/Coral_Harbour
 -rw-r--r--	root/root	usr/share/zoneinfo/America/Cordoba
 -rw-r--r--	root/root	usr/share/zoneinfo/America/Costa_Rica
