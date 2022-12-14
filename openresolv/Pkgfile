@@ -1,0 +1,27 @@
+# Description:	A framework for managing DNS information
+# URL:		https://roy.marples.name/projects/openresolv
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=openresolv
+version=3.12.0
+release=1
+source=(http://roy.marples.name/downloads/${name}/${name}-${version}.tar.xz \
+	0001-fix-sv-path.patch)
+
+build() {
+	cd ${name}-${version}
+
+	# fix - sv path /sbin
+	patch -p1 -i $SRC/0001-fix-sv-path.patch
+
+	# NOTE: Don't set --prefix, it should be /.
+	./configure \
+		--sysconfdir=/etc \
+		--libexecdir=/lib/resolvconf \
+		--mandir=/usr/share/man \
+		--rundir=/run
+
+	make V=1
+
+	make DESTDIR=$PKG install
+}
