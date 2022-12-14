@@ -1,3 +1,3 @@
 #!/bin/sh
 [ -r conf ] && . ./conf
-exec dhcpcd -B ${OPTS} ${IFACE:=-M} 1>&2
+exec dhcpcd -B ${OPTS} ${IFACE} 1>&2

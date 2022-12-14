@@ -7,7 +7,7 @@ name=dhcpcd
 version=9.99.0
 _commit=6a9994bbf00712ace77a835cb7e45558383be673
 # Date:   Mon Oct 17 14:30:03 2022
-release=20221017
+release=1-20221017
 source=(https://github.com/NetworkConfiguration/dhcpcd/archive/${_commit}/dhcpcd-${_commit}.tar.gz \
 	dhcpcd-sv.conf dhcpcd.run)
 
@@ -38,6 +38,8 @@ build() {
 
 	chmod -R u+w $PKG
 
+	ln -s /usr/share/dhcpcd/hooks/10-wpa_supplicant $PKG/lib/dhcpcd/dhcpcd-hooks/10-wpa_supplicant
+
 	# prevent
-	rm -f $PKG/lib/dhcpcd/dhcpcd-hooks/50-ntp.conf
+	rm $PKG/lib/dhcpcd/dhcpcd-hooks/50-ntp.conf
 }
