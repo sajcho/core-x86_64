@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvcw9KiTvFQTcPeklelA8Ask1KcX9OTej8Rsf6C1wwQtyCBQ4NVxXovGMYnMygSDtGfdfuqUMhUSBaQub2AMbMQc=
-SHA256 (Pkgfile) = aeffdc1c6f6ebd9ecc8c37a5e96b5cf5f49d3d442021ccb77a98c2984ab35868
+RWQyKH7cMutLvTEqB+yQtQJ1xDJEBP9rcLHnfYrmZ7Hilzwc3qfPTKVQTtBJfKESIQ4LMl/LnyqONBXzYZO9tlgNU6n8qrpipAo=
+SHA256 (Pkgfile) = 76fcdc8eed980a29c6574f0b6901e1c1d4891ab858b6f0f44829ed5c757c8dff
 SHA256 (.footprint) = c933abbd3cb8587820554834c5895726c7926788b7bffe0ee7ecb2f8e3a71343
-SHA256 (git-2.38.1.tar.xz) = 97ddf8ea58a2b9e0fbc2508e245028ca75911bd38d1551616b148c1aa5740ad9
-SHA256 (git-manpages-2.38.1.tar.xz) = 47f9090252dc7d48fcca6c597495b912d81bf07de8547d1719bc950d9ad1759d
+SHA256 (git-2.39.0.tar.xz) = ba199b13fb5a99ca3dec917b0bd736bc0eb5a9df87737d435eddfdf10d69265b
+SHA256 (git-manpages-2.39.0.tar.xz) = 7770f6d542cc34a2ccfaf02b82d7f9aefcd5d5156db847f36c218322671e9467
 SHA256 (git.driver) = 432108f8c5f5abeb429cab25181b43ee42060d46fa7fbe7e4b02790b56f61e8a
