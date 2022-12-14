@@ -4,7 +4,7 @@
 # Depends on:	sqlite3
 
 name=tcl
-version=8.6.12
+version=8.6.13
 release=1
 source=(https://downloads.sourceforge.net/project/${name}/Tcl/${version}/${name}${version}-src.tar.gz)
 
@@ -38,7 +38,7 @@ build() {
 		-e "s|$SRC/tcl${version}|/usr/include|g" \
 		-i $PKG/usr/lib/tclConfig.sh
 
-	local tdbcver=tdbc1.1.3
+	local tdbcver=tdbc1.1.5
 	sed \
 		-e "s|$SRC/tcl${version}/unix/pkgs/$tdbcver|/usr/lib/$tdbcver|g" \
 		-e "s|$SRC/tcl${version}/pkgs/$tdbcver/generic|/usr/include|g" \
@@ -46,7 +46,7 @@ build() {
 		-e "s|$SRC/tcl${version}/pkgs/$tdbcver|/usr/include|g" \
 		-i $PKG/usr/lib/$tdbcver/tdbcConfig.sh
 
-	local itclver=itcl4.2.2
+	local itclver=itcl4.2.3
 	sed \
 		-e "s|$SRC/tcl${version}/unix/pkgs/$itclver|/usr/lib/$itclver|g" \
 		-e "s|$SRC/tcl${version}/pkgs/$itclver/generic|/usr/include|g" \
