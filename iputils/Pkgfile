@@ -4,7 +4,7 @@
 # Depends on:	libcap meson
 
 name=iputils
-version=20211215
+version=20221126
 release=1
 source=(https://github.com/iputils/iputils/archive/${version}/${name}-${version}.tar.gz)
 
@@ -13,7 +13,6 @@ build() {
 
 	build-meson \
 		-DNO_SETCAP_OR_SUID=true \
-		-DBUILD_RARPD=true \
 		-DBUILD_MANS=false \
 		-DUSE_IDN=false \
 		-DUSE_GETTEXT=false \
@@ -24,8 +23,7 @@ build() {
 	install -d $PKG/{{sbin,bin},usr/{bin,sbin}}
 	install build/ping/ping $PKG/bin/
 	install build/arping $PKG/sbin/
-	install build/{tracepath,clockdiff,rdisc,rarpd} $PKG/usr/sbin/
-	install build/ninfod/ninfod $PKG/usr/sbin/
+	install build/{tracepath,clockdiff} $PKG/usr/sbin/
 
 	chmod u+s $PKG/bin/ping
 }
