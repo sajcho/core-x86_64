@@ -1,6 +1,18 @@
---- rustc-1.65.0-src/src/bootstrap/dist.rs.orig	2022-11-15 15:13:16.662631856 +0100
-+++ rustc-1.65.0-src/src/bootstrap/dist.rs	2022-11-15 15:21:43.839163173 +0100
-@@ -372,7 +372,7 @@
+From b8d54bc2881978236786cdba84e26d54f4ba828c Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Fri, 16 Dec 2022 15:27:24 +0100
+Subject: [PATCH] libexec path
+
+---
+ src/bootstrap/dist.rs | 4 ++--
+ src/bootstrap/tool.rs | 8 ++++----
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+
+diff --git a/src/bootstrap/dist.rs b/src/bootstrap/dist.rs
+index 12585e80e6b..eb596be98dc 100644
+--- a/src/bootstrap/dist.rs
++++ b/src/bootstrap/dist.rs
+@@ -394,7 +394,7 @@ fn prepare_image(builder: &Builder<'_>, compiler: Compiler, image: &Path) {
                      target: compiler.host,
                  })
                  .expect("rust-analyzer-proc-macro-server always builds");
@@ -9,7 +21,7 @@
  
              let libdir_relative = builder.libdir_relative(compiler);
  
-@@ -980,7 +980,7 @@
+@@ -1003,7 +1003,7 @@ fn run(self, builder: &Builder<'_>) -> Option<GeneratedTarball> {
          for dirent in fs::read_dir(cargo.parent().unwrap()).expect("read_dir") {
              let dirent = dirent.expect("read dir entry");
              if dirent.file_name().to_str().expect("utf8").starts_with("cargo-credential-") {
@@ -18,34 +30,104 @@
              }
          }
  
---- rustc-1.65.0-src/src/tools/cargo/src/cargo/ops/registry/auth.rs.orig	2022-11-15 15:14:32.082122963 +0100
-+++ rustc-1.65.0-src/src/tools/cargo/src/cargo/ops/registry/auth.rs	2022-11-15 15:22:08.578992771 +0100
-@@ -213,7 +213,7 @@
-     Ok(token)
+diff --git a/src/bootstrap/tool.rs b/src/bootstrap/tool.rs
+index eec74b2675a..efb491ace91 100644
+--- a/src/bootstrap/tool.rs
++++ b/src/bootstrap/tool.rs
+@@ -779,11 +779,11 @@ fn run(self, builder: &Builder<'_>) -> Option<PathBuf> {
+             source_type: SourceType::InTree,
+         })?;
+ 
+-        // Copy `rust-analyzer-proc-macro-srv` to `<sysroot>/libexec/`
++        // Copy `rust-analyzer-proc-macro-srv` to `<sysroot>/lib/`
+         // so that r-a can use it.
+-        let libexec_path = builder.sysroot(self.compiler).join("libexec");
+-        t!(fs::create_dir_all(&libexec_path));
+-        builder.copy(&path, &libexec_path.join("rust-analyzer-proc-macro-srv"));
++        let lib_path = builder.sysroot(self.compiler).join("lib");
++        t!(fs::create_dir_all(&lib_path));
++        builder.copy(&path, &lib_path.join("rust-analyzer-proc-macro-srv"));
+ 
+         Some(path)
+     }
+-- 
+2.39.0
+
+From 115ceea68bfa4a621039b217903c1120b13ef65f Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Fri, 16 Dec 2022 15:30:38 +0100
+Subject: [PATCH] libexec path
+
+---
+ src/tools/rust-analyzer/crates/project-model/src/tests.rs       | 2 +-
+ .../rust-analyzer/crates/rust-analyzer/src/cli/load_cargo.rs    | 2 +-
+ src/tools/rust-analyzer/crates/rust-analyzer/src/reload.rs      | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/src/tools/rust-analyzer/crates/project-model/src/tests.rs b/src/tools/rust-analyzer/crates/project-model/src/tests.rs
+index e2444e24974..fda153a8ee1 100644
+--- a/src/tools/rust-analyzer/crates/project-model/src/tests.rs
++++ b/src/tools/rust-analyzer/crates/project-model/src/tests.rs
+@@ -76,7 +76,7 @@ fn get_test_path(file: &str) -> PathBuf {
+ 
+ fn get_fake_sysroot() -> Sysroot {
+     let sysroot_path = get_test_path("fake-sysroot");
+-    // there's no `libexec/` directory with a `proc-macro-srv` binary in that
++    // there's no `lib/` directory with a `proc-macro-srv` binary in that
+     // fake sysroot, so we give them both the same path:
+     let sysroot_dir = AbsPathBuf::assert(sysroot_path);
+     let sysroot_src_dir = sysroot_dir.clone();
+diff --git a/src/tools/rust-analyzer/crates/rust-analyzer/src/cli/load_cargo.rs b/src/tools/rust-analyzer/crates/rust-analyzer/src/cli/load_cargo.rs
+index 5dba545b871..befaeb9e70d 100644
+--- a/src/tools/rust-analyzer/crates/rust-analyzer/src/cli/load_cargo.rs
++++ b/src/tools/rust-analyzer/crates/rust-analyzer/src/cli/load_cargo.rs
+@@ -69,7 +69,7 @@ pub fn load_workspace(
+             if let Some(sysroot) = sysroot.as_ref() {
+                 let standalone_server_name =
+                     format!("rust-analyzer-proc-macro-srv{}", std::env::consts::EXE_SUFFIX);
+-                let server_path = sysroot.root().join("libexec").join(&standalone_server_name);
++                let server_path = sysroot.root().join("lib").join(&standalone_server_name);
+                 if std::fs::metadata(&server_path).is_ok() {
+                     path = server_path;
+                     args = vec![];
+diff --git a/src/tools/rust-analyzer/crates/rust-analyzer/src/reload.rs b/src/tools/rust-analyzer/crates/rust-analyzer/src/reload.rs
+index e1f651786de..b026dbbf4ef 100644
+--- a/src/tools/rust-analyzer/crates/rust-analyzer/src/reload.rs
++++ b/src/tools/rust-analyzer/crates/rust-analyzer/src/reload.rs
+@@ -324,7 +324,7 @@ fn eq_ignore_build_data<'a>(
+                                 if let Some(sysroot) = sysroot.as_ref() {
+                                     let server_path = sysroot
+                                         .root()
+-                                        .join("libexec")
++                                        .join("lib")
+                                         .join(&standalone_server_name);
+                                     if std::fs::metadata(&server_path).is_ok() {
+                                         tracing::debug!(
+-- 
+2.39.0
+
+From 52b3f464773092c50d718e1b7c5f6f6777fc8415 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Fri, 16 Dec 2022 15:33:12 +0100
+Subject: [PATCH] libexec path
+
+---
+ src/tools/rust-analyzer/crates/project-model/src/sysroot.rs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/tools/rust-analyzer/crates/project-model/src/sysroot.rs b/src/tools/rust-analyzer/crates/project-model/src/sysroot.rs
+index fa8d76f3f45..3d68aa9515d 100644
+--- a/src/tools/rust-analyzer/crates/project-model/src/sysroot.rs
++++ b/src/tools/rust-analyzer/crates/project-model/src/sysroot.rs
+@@ -37,7 +37,7 @@ fn index(&self, index: SysrootCrate) -> &SysrootCrateData {
  }
  
--/// Gets the path to the libexec processes in the sysroot.
-+/// Gets the path to the lib processes in the sysroot.
- fn sysroot_credential(
-     config: &Config,
-     process: &(PathBuf, Vec<String>),
-@@ -224,7 +224,7 @@
-         .parent()
-         .and_then(|p| p.parent())
-         .ok_or_else(|| format_err!("expected cargo path {}", cargo.display()))?;
--    let exe = root.join("libexec").join(format!(
-+    let exe = root.join("lib").join(format!(
-         "cargo-credential-{}{}",
-         cred_name,
-         std::env::consts::EXE_SUFFIX
---- rustc-1.65.0-src/src/tools/rust-analyzer/crates/rust-analyzer/src/reload.rs.orig	2022-11-15 15:16:45.801216124 +0100
-+++ rustc-1.65.0-src/src/tools/rust-analyzer/crates/rust-analyzer/src/reload.rs	2022-11-15 15:22:34.388815010 +0100
-@@ -321,7 +321,7 @@
-                             if let Some(sysroot) = sysroot.as_ref() {
-                                 tracing::debug!("Found a cargo workspace with a sysroot...");
-                                 let server_path =
--                                    sysroot.root().join("libexec").join(&standalone_server_name);
-+                                    sysroot.root().join("lib").join(&standalone_server_name);
-                                 if std::fs::metadata(&server_path).is_ok() {
-                                     tracing::debug!(
-                                         "And the server exists at {}",
+ impl Sysroot {
+-    /// Returns sysroot "root" directory, where `bin/`, `etc/`, `lib/`, `libexec/`
++    /// Returns sysroot "root" directory, where `bin/`, `etc/`, `lib/`
+     /// subfolder live, like:
+     /// `$HOME/.rustup/toolchains/nightly-2022-07-23-x86_64-unknown-linux-gnu`
+     pub fn root(&self) -> &AbsPath {
+-- 
+2.39.0
+
