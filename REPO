@@ -437,11 +437,11 @@ f:b22d38402670add00dd4e57c1858c1ae:iana-etc/protocols
 f:d6b011b611df75cfa3b42b933250c1a8:iana-etc/update.sh
 f:ead623407f07b6894758909da86e8282:iana-etc/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:dd5fbd958acddfa680318a43f87b5c91:rust/.signature
-f:5c86e9185803da05baffe89e44b8e9cd:rust/libexec.patch
+f:03969b5a00ff2358b9efe70ace16d7e3:rust/.signature
+f:8e6e5a84bba0de3a8d9195125b897371:rust/libexec.patch
 f:8570861063b945ec436ad79503051634:rust/README
-f:3f6e6205d3758c4a66e2e43c762de9c9:rust/.footprint
-f:6cc3f6389a8c2a8f1a1b11bcea292825:rust/Pkgfile
+f:94237b5ff4e2bd3457efc351daac9268:rust/.footprint
+f:739fc3027728f2f858d950730f7500a6:rust/Pkgfile
 f:6b94dbc6aae79a9d72b2deeb56f03429:xz/.signature
 f:30e792cf6a77bafd514a9d29905ce6d2:xz/.footprint
 f:16069c1bd26f941385958d06a575c80e:xz/Pkgfile
