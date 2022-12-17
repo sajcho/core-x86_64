@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=earlyoom
-version=1.6.2
+version=1.7
 release=1
 source=(https://github.com/rfjakob/${name}/archive/v${version}/${name}-${version}.tar.gz \
 	earlyoom.conf \
@@ -13,6 +13,8 @@ source=(https://github.com/rfjakob/${name}/archive/v${version}/${name}-${version
 
 build() {
 	cd ${name}-${version}
+
+	sed -e '/systemctl/d' -e '/chcon/d' -i Makefile
 
 	make PREFIX=/usr BINDIR=/sbin VERSION=${version} earlyoom
 
