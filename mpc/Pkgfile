@@ -4,7 +4,7 @@
 # Depends on:	mpfr
 
 name=mpc
-version=1.2.1
+version=1.3.1
 release=1
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
