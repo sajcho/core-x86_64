@@ -5,7 +5,7 @@
 
 name=pkgutils
 version=5.40.9
-release=1
+release=2
 source=(https://crux.nu/files/${name}-${version}.tar.xz \
 	0001-Modified-for-SAUX-x86_64-system.patch)
 
@@ -20,7 +20,13 @@ build() {
 
 	patch -p1 -i $SRC/0001-Modified-for-SAUX-x86_64-system.patch
 
-	sed -e 's|--static||' -e 's|-static||' -i Makefile
+	# Build without static lib.
+	# Fix package version.
+	sed \
+		-e 's|--static||' \
+		-e 's|-static||' \
+		-e 's|5.40.8|5.40.9|' \
+		-i Makefile
 
 	make DESTDIR=$PKG install
 }
