@@ -445,9 +445,9 @@ f:739fc3027728f2f858d950730f7500a6:rust/Pkgfile
 f:6b94dbc6aae79a9d72b2deeb56f03429:xz/.signature
 f:30e792cf6a77bafd514a9d29905ce6d2:xz/.footprint
 f:16069c1bd26f941385958d06a575c80e:xz/Pkgfile
-f:4d52bdd5a1fd12e8c41a19034baabc5b:libarchive/.signature
+f:04d6bf0c9475f78dfd181fb9e0315a8c:libarchive/.signature
 f:f275996d43d9381c07100f7ae877a344:libarchive/.footprint
-f:abf0816b0e5090e1864f91632dc1478c:libarchive/Pkgfile
+f:954ffc28ffdbe242d2704813cba44263:libarchive/Pkgfile
 f:e45ea22e94b8a991f51846231432bbba:zlib/.signature
 f:5a16688f1ceebd7fb5c08731d1941179:zlib/.footprint
 f:6d70624be3ffb1dffba451552b8c58f0:zlib/Pkgfile
@@ -612,10 +612,10 @@ f:3aed2c1209373ef8e594b058f7dc902c:gawk/Pkgfile
 f:6a64fc7add1db2f1c37b28b7c597d66d:gdbm/.signature
 f:d6bff241bbb40934900f2e070513eacb:gdbm/.footprint
 f:56139f439fd4ee4ed5231516cb8e5f02:gdbm/Pkgfile
-f:61d64058ef772c89b58e08e3b7d6bf52:pkgutils/.signature
+f:a77c00e3aaf9a2ec12bc5d48786c719e:pkgutils/.signature
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
 f:686a1895bc0c63bd87b43d791d4e11d9:pkgutils/0001-Modified-for-SAUX-x86_64-system.patch
-f:31c67d7d182fe0606d338362dc05f244:pkgutils/Pkgfile
+f:3bdd5bc25f1f25aa24761d4082562b07:pkgutils/Pkgfile
 f:62ee7be7cb30d7430b879f2d3a938eec:isl/.signature
 f:5510770d0fd663c1873bf1208bc603c2:isl/.footprint
 f:ff02f5e96fd0eef5a4524b6205dfe8d4:isl/Pkgfile
