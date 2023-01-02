@@ -4,12 +4,13 @@
 # Depends on:	openssl3 zlib
 
 name=bindutils
-version=9.18.9
+_realname=bind
+version=9.18.10
 release=1
-source=(https://ftp.isc.org/isc/bind9/${version}/bind-${version}.tar.xz)
+source=(https://ftp.isc.org/isc/bind9/${version}/${_realname}-${version}.tar.xz)
 
 build() {
-	cd bind-${version}
+	cd ${_realname}-${version}
 
 	./configure \
 		--prefix=/usr \
