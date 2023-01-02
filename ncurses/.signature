@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvSJXVx9h4PxjtngxT/UEWvQGYlZ3uNfmXRGIFxjj5/20GBEnWkZHc36bgo0l+k0aXvf0nhWo18pVHXft96gwxgk=
-SHA256 (Pkgfile) = 6181e2995c8f664b7bc8729ac840940200288fd97c5d13fb26053e0cc51fa664
-SHA256 (.footprint) = cc4b85639a082ba20e9583f51ec65087626348b65f93099f8935abe03fe8fceb
-SHA256 (ncurses-6.3.tar.gz) = 97fc51ac2b085d4cde31ef4d2c3122c21abc217e9090a43a30fc5ec21684e059
+RWQyKH7cMutLvThg5G25mfc3oVB9hLS/R9HUFhWinUdz/jNCIJWn6WzQ7mXdo9ngwj8HPkx64g3Lfg/DsbkWuM30fEYIscMINAY=
+SHA256 (Pkgfile) = a4aa7bc1cf86045a1ca643dc2268c38d0d8ddfcd386ceb6cfd45a245c96f3c09
+SHA256 (.footprint) = db52e966f52c2ede04d0d857d0290dbd8e63cd1d6bae8fe0fe3cde25a47f13fb
+SHA256 (ncurses-6.4.tar.gz) = 6931283d9ac87c5073f30b6290c4c75f21632bb4fc3603ac8100812bed248159

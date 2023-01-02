@@ -1,7 +1,7 @@
 drwxr-xr-x	root/root	lib/
-lrwxrwxrwx	root/root	lib/libncurses.so.6 -> libncursesw.so.6.3
-lrwxrwxrwx	root/root	lib/libncursesw.so.6 -> libncursesw.so.6.3
--rwxr-xr-x	root/root	lib/libncursesw.so.6.3
+lrwxrwxrwx	root/root	lib/libncurses.so.6 -> libncursesw.so.6.4
+lrwxrwxrwx	root/root	lib/libncursesw.so.6 -> libncursesw.so.6.4
+-rwxr-xr-x	root/root	lib/libncursesw.so.6.4
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/captoinfo -> tic
@@ -41,27 +41,27 @@ lrwxrwxrwx	root/root	usr/lib/libcurses.so -> libncurses.so
 -rw-r--r--	root/root	usr/lib/libcursesw.so
 -rw-r--r--	root/root	usr/lib/libform.so
 lrwxrwxrwx	root/root	usr/lib/libformw.so -> libformw.so.6
-lrwxrwxrwx	root/root	usr/lib/libformw.so.6 -> libformw.so.6.3
--rwxr-xr-x	root/root	usr/lib/libformw.so.6.3
+lrwxrwxrwx	root/root	usr/lib/libformw.so.6 -> libformw.so.6.4
+-rwxr-xr-x	root/root	usr/lib/libformw.so.6.4
 -rw-r--r--	root/root	usr/lib/libmenu.so
 lrwxrwxrwx	root/root	usr/lib/libmenuw.so -> libmenuw.so.6
-lrwxrwxrwx	root/root	usr/lib/libmenuw.so.6 -> libmenuw.so.6.3
--rwxr-xr-x	root/root	usr/lib/libmenuw.so.6.3
+lrwxrwxrwx	root/root	usr/lib/libmenuw.so.6 -> libmenuw.so.6.4
+-rwxr-xr-x	root/root	usr/lib/libmenuw.so.6.4
 lrwxrwxrwx	root/root	usr/lib/libncurses++w.so -> libncurses++w.so.6
-lrwxrwxrwx	root/root	usr/lib/libncurses++w.so.6 -> libncurses++w.so.6.3
--rwxr-xr-x	root/root	usr/lib/libncurses++w.so.6.3
+lrwxrwxrwx	root/root	usr/lib/libncurses++w.so.6 -> libncurses++w.so.6.4
+-rwxr-xr-x	root/root	usr/lib/libncurses++w.so.6.4
 -rw-r--r--	root/root	usr/lib/libncurses.so
-lrwxrwxrwx	root/root	usr/lib/libncursesw.so -> ../../lib/libncursesw.so.6.3
+lrwxrwxrwx	root/root	usr/lib/libncursesw.so -> ../../lib/libncursesw.so.6.4
 -rw-r--r--	root/root	usr/lib/libpanel.so
 lrwxrwxrwx	root/root	usr/lib/libpanelw.so -> libpanelw.so.6
-lrwxrwxrwx	root/root	usr/lib/libpanelw.so.6 -> libpanelw.so.6.3
--rwxr-xr-x	root/root	usr/lib/libpanelw.so.6.3
+lrwxrwxrwx	root/root	usr/lib/libpanelw.so.6 -> libpanelw.so.6.4
+-rwxr-xr-x	root/root	usr/lib/libpanelw.so.6.4
 lrwxrwxrwx	root/root	usr/lib/libtic.so -> libtic.so.6
-lrwxrwxrwx	root/root	usr/lib/libtic.so.6 -> libtic.so.6.3
--rwxr-xr-x	root/root	usr/lib/libtic.so.6.3
+lrwxrwxrwx	root/root	usr/lib/libtic.so.6 -> libtic.so.6.4
+-rwxr-xr-x	root/root	usr/lib/libtic.so.6.4
 lrwxrwxrwx	root/root	usr/lib/libtinfo.so -> libtinfo.so.6
-lrwxrwxrwx	root/root	usr/lib/libtinfo.so.6 -> libtinfo.so.6.3
--rwxr-xr-x	root/root	usr/lib/libtinfo.so.6.3
+lrwxrwxrwx	root/root	usr/lib/libtinfo.so.6 -> libtinfo.so.6.4
+-rwxr-xr-x	root/root	usr/lib/libtinfo.so.6.4
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 lrwxrwxrwx	root/root	usr/lib/pkgconfig/form.pc -> formw.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/formw.pc
@@ -1149,6 +1149,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/a/
 -rw-r--r--	root/root	usr/share/terminfo/a/adm5
 -rw-r--r--	root/root	usr/share/terminfo/a/aepro
 -rw-r--r--	root/root	usr/share/terminfo/a/aixterm
+-rw-r--r--	root/root	usr/share/terminfo/a/aixterm+sl
 -rw-r--r--	root/root	usr/share/terminfo/a/aixterm-16color
 -rw-r--r--	root/root	usr/share/terminfo/a/aixterm-m
 -rw-r--r--	root/root	usr/share/terminfo/a/aixterm-m-old
@@ -1201,6 +1202,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/a/
 -rw-r--r--	root/root	usr/share/terminfo/a/annarbor4080
 -rw-r--r--	root/root	usr/share/terminfo/a/ansi
 -rw-r--r--	root/root	usr/share/terminfo/a/ansi+arrows
+-rw-r--r--	root/root	usr/share/terminfo/a/ansi+cpr
 -rw-r--r--	root/root	usr/share/terminfo/a/ansi+csr
 -rw-r--r--	root/root	usr/share/terminfo/a/ansi+cup
 -rw-r--r--	root/root	usr/share/terminfo/a/ansi+enq
@@ -1258,6 +1260,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/a/
 -rw-r--r--	root/root	usr/share/terminfo/a/ap-vm80
 -rw-r--r--	root/root	usr/share/terminfo/a/apl
 -rw-r--r--	root/root	usr/share/terminfo/a/apollo
+-rw-r--r--	root/root	usr/share/terminfo/a/apollo+vt132
 -rw-r--r--	root/root	usr/share/terminfo/a/apollo_15P
 -rw-r--r--	root/root	usr/share/terminfo/a/apollo_19L
 -rw-r--r--	root/root	usr/share/terminfo/a/apollo_color
@@ -1320,6 +1323,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/a/
 -rw-r--r--	root/root	usr/share/terminfo/a/att4426
 -rw-r--r--	root/root	usr/share/terminfo/a/att500
 -rw-r--r--	root/root	usr/share/terminfo/a/att505
+-rw-r--r--	root/root	usr/share/terminfo/a/att505-22
 -rw-r--r--	root/root	usr/share/terminfo/a/att505-24
 -rw-r--r--	root/root	usr/share/terminfo/a/att510a
 -rw-r--r--	root/root	usr/share/terminfo/a/att510d
@@ -1443,6 +1447,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/b/
 -rw-r--r--	root/root	usr/share/terminfo/b/bq300-w
 -rw-r--r--	root/root	usr/share/terminfo/b/bq300-w-8rv
 -rw-r--r--	root/root	usr/share/terminfo/b/bq300-w-rv
+-rw-r--r--	root/root	usr/share/terminfo/b/bracketed+paste
 -rw-r--r--	root/root	usr/share/terminfo/b/bsdos-pc
 -rw-r--r--	root/root	usr/share/terminfo/b/bsdos-pc-m
 -rw-r--r--	root/root	usr/share/terminfo/b/bsdos-pc-mono
@@ -1775,6 +1780,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/d/
 -rw-r--r--	root/root	usr/share/terminfo/d/dec-vt340
 -rw-r--r--	root/root	usr/share/terminfo/d/dec-vt400
 -rw-r--r--	root/root	usr/share/terminfo/d/decansi
+-rw-r--r--	root/root	usr/share/terminfo/d/decid+cpr
 -rw-r--r--	root/root	usr/share/terminfo/d/decpro
 -rw-r--r--	root/root	usr/share/terminfo/d/decwriter
 -rw-r--r--	root/root	usr/share/terminfo/d/delta
@@ -2235,6 +2241,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/k/
 -rw-r--r--	root/root	usr/share/terminfo/k/kermit-am
 -rw-r--r--	root/root	usr/share/terminfo/k/kitty
 -rw-r--r--	root/root	usr/share/terminfo/k/kitty+common
+-rw-r--r--	root/root	usr/share/terminfo/k/kitty+setal
 -rw-r--r--	root/root	usr/share/terminfo/k/kitty-direct
 -rw-r--r--	root/root	usr/share/terminfo/k/klone+acs
 -rw-r--r--	root/root	usr/share/terminfo/k/klone+color
@@ -2374,6 +2381,8 @@ drwxr-xr-x	root/root	usr/share/terminfo/m/
 -rw-r--r--	root/root	usr/share/terminfo/m/modgraph48
 -rw-r--r--	root/root	usr/share/terminfo/m/mono-emx
 -rw-r--r--	root/root	usr/share/terminfo/m/morphos
+-rw-r--r--	root/root	usr/share/terminfo/m/mosh
+-rw-r--r--	root/root	usr/share/terminfo/m/mosh-256color
 -rw-r--r--	root/root	usr/share/terminfo/m/mouse-sun
 -rw-r--r--	root/root	usr/share/terminfo/m/mrxvt
 -rw-r--r--	root/root	usr/share/terminfo/m/mrxvt-256color
@@ -2422,8 +2431,10 @@ drwxr-xr-x	root/root	usr/share/terminfo/n/
 -rw-r--r--	root/root	usr/share/terminfo/n/ncr260intpp
 -rw-r--r--	root/root	usr/share/terminfo/n/ncr260intwan
 -rw-r--r--	root/root	usr/share/terminfo/n/ncr260intwpp
+-rw-r--r--	root/root	usr/share/terminfo/n/ncr260vp+sl
 -rw-r--r--	root/root	usr/share/terminfo/n/ncr260vppp
 -rw-r--r--	root/root	usr/share/terminfo/n/ncr260vpwpp
+-rw-r--r--	root/root	usr/share/terminfo/n/ncr260vt+sl
 -rw-r--r--	root/root	usr/share/terminfo/n/ncr260vt100an
 -rw-r--r--	root/root	usr/share/terminfo/n/ncr260vt100pp
 -rw-r--r--	root/root	usr/share/terminfo/n/ncr260vt100wan
@@ -2503,6 +2514,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/n/
 -rw-r--r--	root/root	usr/share/terminfo/n/newscbm33
 -rw-r--r--	root/root	usr/share/terminfo/n/next
 -rw-r--r--	root/root	usr/share/terminfo/n/nextshell
+-rw-r--r--	root/root	usr/share/terminfo/n/no+brackets
 -rw-r--r--	root/root	usr/share/terminfo/n/northstar
 -rw-r--r--	root/root	usr/share/terminfo/n/nsterm
 -rw-r--r--	root/root	usr/share/terminfo/n/nsterm+7
@@ -2531,6 +2543,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/n/
 -rw-r--r--	root/root	usr/share/terminfo/n/nsterm-build343
 -rw-r--r--	root/root	usr/share/terminfo/n/nsterm-build361
 -rw-r--r--	root/root	usr/share/terminfo/n/nsterm-build400
+-rw-r--r--	root/root	usr/share/terminfo/n/nsterm-build440
 -rw-r--r--	root/root	usr/share/terminfo/n/nsterm-c
 -rw-r--r--	root/root	usr/share/terminfo/n/nsterm-c-7
 -rw-r--r--	root/root	usr/share/terminfo/n/nsterm-c-acs
@@ -2878,6 +2891,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/s/
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-256color-bce
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-256color-bce-s
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-256color-s
+-rw-r--r--	root/root	usr/share/terminfo/s/screen-base
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-bce
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-bce.Eterm
 -rw-r--r--	root/root	usr/share/terminfo/s/screen-bce.gnome
@@ -3039,6 +3053,13 @@ drwxr-xr-x	root/root	usr/share/terminfo/t/
 -rw-r--r--	root/root	usr/share/terminfo/t/tek4207-s
 -rw-r--r--	root/root	usr/share/terminfo/t/tek4404
 -rw-r--r--	root/root	usr/share/terminfo/t/teken
+-rw-r--r--	root/root	usr/share/terminfo/t/teken-16color
+-rw-r--r--	root/root	usr/share/terminfo/t/teken-2018
+-rw-r--r--	root/root	usr/share/terminfo/t/teken-2022
+-rw-r--r--	root/root	usr/share/terminfo/t/teken-sc
+-rw-r--r--	root/root	usr/share/terminfo/t/teken-sc+fkeys
+-rw-r--r--	root/root	usr/share/terminfo/t/teken-vt
+-rw-r--r--	root/root	usr/share/terminfo/t/teken-vt+fkeys
 -rw-r--r--	root/root	usr/share/terminfo/t/teleray
 -rw-r--r--	root/root	usr/share/terminfo/t/teletec
 -rw-r--r--	root/root	usr/share/terminfo/t/teraterm
@@ -3099,7 +3120,6 @@ drwxr-xr-x	root/root	usr/share/terminfo/t/
 -rw-r--r--	root/root	usr/share/terminfo/t/ts100-sp
 -rw-r--r--	root/root	usr/share/terminfo/t/ts1p
 -rw-r--r--	root/root	usr/share/terminfo/t/tt
--rw-r--r--	root/root	usr/share/terminfo/t/tt505-22
 -rw-r--r--	root/root	usr/share/terminfo/t/tt52
 -rw-r--r--	root/root	usr/share/terminfo/t/tty33
 -rw-r--r--	root/root	usr/share/terminfo/t/tty35
@@ -3550,6 +3570,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/w/
 -rw-r--r--	root/root	usr/share/terminfo/w/wy99gt-w
 -rw-r--r--	root/root	usr/share/terminfo/w/wy99gt-w-vb
 -rw-r--r--	root/root	usr/share/terminfo/w/wy99gt-wvb
+-rw-r--r--	root/root	usr/share/terminfo/w/wyse+sl
 -rw-r--r--	root/root	usr/share/terminfo/w/wyse-325
 -rw-r--r--	root/root	usr/share/terminfo/w/wyse-75ap
 -rw-r--r--	root/root	usr/share/terminfo/w/wyse-vp
@@ -3653,6 +3674,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/w/
 -rw-r--r--	root/root	usr/share/terminfo/w/wyse99gt-wvb
 drwxr-xr-x	root/root	usr/share/terminfo/x/
 -rw-r--r--	root/root	usr/share/terminfo/x/x10term
+-rw-r--r--	root/root	usr/share/terminfo/x/x10term+sl
 -rw-r--r--	root/root	usr/share/terminfo/x/x1700
 -rw-r--r--	root/root	usr/share/terminfo/x/x1700-lm
 -rw-r--r--	root/root	usr/share/terminfo/x/x1720
@@ -3667,6 +3689,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/x/
 -rw-r--r--	root/root	usr/share/terminfo/x/xerox1720
 -rw-r--r--	root/root	usr/share/terminfo/x/xerox820
 -rw-r--r--	root/root	usr/share/terminfo/x/xfce
+-rw-r--r--	root/root	usr/share/terminfo/x/xgterm
 -rw-r--r--	root/root	usr/share/terminfo/x/xiterm
 -rw-r--r--	root/root	usr/share/terminfo/x/xl83
 -rw-r--r--	root/root	usr/share/terminfo/x/xnuppc
@@ -3725,14 +3748,17 @@ drwxr-xr-x	root/root	usr/share/terminfo/x/
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+256setaf
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+88color
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+88color2
+-rw-r--r--	root/root	usr/share/terminfo/x/xterm+acs
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+alt+title
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+alt1049
+-rw-r--r--	root/root	usr/share/terminfo/x/xterm+alt47
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+app
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+direct
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+direct16
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+direct2
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+direct256
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+edit
+-rw-r--r--	root/root	usr/share/terminfo/x/xterm+focus
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+indirect
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+kbs
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+keypad
@@ -3753,6 +3779,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/x/
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+pcfkeys
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+r6f2
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+sl
+-rw-r--r--	root/root	usr/share/terminfo/x/xterm+sl-alt
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+sl-twm
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+sm+1002
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+sm+1003
@@ -3787,6 +3814,8 @@ drwxr-xr-x	root/root	usr/share/terminfo/x/
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm-nic
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm-noapp
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm-old
+-rw-r--r--	root/root	usr/share/terminfo/x/xterm-p370
+-rw-r--r--	root/root	usr/share/terminfo/x/xterm-p371
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm-pcolor
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm-r5
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm-r6
