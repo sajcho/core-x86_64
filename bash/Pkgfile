@@ -4,13 +4,13 @@
 # Depends on:	readline
 
 name=bash
-version=5.2
+version=5.2.15
 release=1
-source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version:0:3}.tar.gz \
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz \
 	profile)
 
 build() {
-	cd ${name}-${version:0:3}
+	cd ${name}-${version}
 
 	./configure \
 		--prefix=/usr \
