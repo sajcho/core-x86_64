@@ -392,9 +392,9 @@ f:398b42d10b50f037f1cbac5253166c2a:shadow/Pkgfile
 f:a41786cab0eadc57f87616245acc2a4d:lzip/.signature
 f:021884352f89aebfbc8b505cc446e367:lzip/.footprint
 f:d05b7a1b98679c657d459459aa11abd6:lzip/Pkgfile
-f:4347e0deeba7e46decf3c6c5db093f88:mold/.signature
-f:66e83ba4893acdc8ffe4499457648252:mold/.footprint
-f:c98713174e1bee3fa2fdfca4fe5215bf:mold/Pkgfile
+f:7eb632c4ef0d5a182f33828ffeb157cb:mold/.signature
+f:5049919a02290b388543a9a483587319:mold/.footprint
+f:5cec7625a3b86c2d4585dd97001b2ffc:mold/Pkgfile
 f:d34136dc20e0e70787fcee44ff0b66e5:libmnl/.signature
 f:655acc31c6f42843fd303b4ad16f6cd2:libmnl/.footprint
 f:e025a7900e583ccd612e570300b3e2b9:libmnl/Pkgfile
