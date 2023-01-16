@@ -4,7 +4,7 @@
 # Depends on:	zlib gdbm libpipeline libseccomp
 
 name=man-db
-version=2.11.1
+version=2.11.2
 release=1
 source=(https://download.savannah.gnu.org/releases/${name}/${name}-${version}.tar.xz \
 	mandb.cron)
