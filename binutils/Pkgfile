@@ -4,9 +4,9 @@
 # Depends on:	flex texinfo zlib
 
 name=binutils
-version=2.39
+version=2.40
 release=1
-source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
+source=(https://sourceware.org/pub/${name}/releases/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
@@ -16,6 +16,7 @@ build() {
 
 	../configure \
 		--prefix=/usr \
+		--sysconfdir=/etc \
 		--enable-ld=default \
 		--enable-gold=no \
 		--enable-plugins \
@@ -23,6 +24,7 @@ build() {
 		--enable-threads \
 		--enable-relro \
 		--enable-64-bit-bfd \
+		--enable-pgo-build=lto \
 		--enable-install-libiberty \
 		--enable-targets=x86_64-pep \
 		--enable-default-execstack=no \
