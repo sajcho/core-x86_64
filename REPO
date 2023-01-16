@@ -568,8 +568,8 @@ f:c4d4ce7cd9dbacddcf2f783f3d9d5e84:db/.signature
 f:85105a8e8c118314c71167a0716564f3:db/Pkgfile
 f:bf37166683ba4966059cda949d4f6dbd:db/0001-atomic-Rename-local-__atomic_compare_exchange-to-avo.patch
 f:eb75b6a1348671ae4a0be6d43fe89a2b:diffutils/.footprint
-f:13db7ce271b82b80d2b9872b17c8db77:diffutils/.signature
-f:dc12ce9ec7991574cc1d8976ce719399:diffutils/Pkgfile
+f:0eb7604f712033b0e904da6e6ee7a6b0:diffutils/.signature
+f:b9a290836a948938ec350f75fcdb6f6f:diffutils/Pkgfile
 f:ef7f5101668c748584096956a10895c6:libcap/.footprint
 f:7e933b1471288402da314d522cdf7e94:libcap/.signature
 f:ddded87e64e78942b2b95e42e0364304:libcap/Pkgfile
