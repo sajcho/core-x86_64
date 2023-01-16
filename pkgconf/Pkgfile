@@ -5,7 +5,7 @@
 
 name=pkgconf
 version=1.9.3
-release=1
+release=2
 source=(https://distfiles.dereferenced.org/${name}/${name}-${version}.tar.xz \
 	x86_64-unknown-linux-gnu.personality)
 
@@ -16,7 +16,7 @@ build() {
 		--prefix=/usr \
 		--sysconfdir=/etc \
 		--with-pkg-config-dir=/usr/lib/pkgconfig:/usr/share/pkgconfig \
-		--with-system-libdir=/usr/lib \
+		--with-system-libdir=/lib:/usr/lib \
 		--with-system-includedir=/usr/include \
 		--disable-static
 
