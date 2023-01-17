@@ -428,9 +428,9 @@ f:32248d3becedd8e01816be2c3a698ecf:bash/.footprint
 f:7d2098635b10ea3b772f70ec0555b0ca:bash/profile
 f:eb12bd8e7157d55bea4c3f4045c9e0b4:bash/.signature
 f:71489c9284198b4f538155861644c965:bash/Pkgfile
-f:1ee727f2783c3f1bba086a24447323e9:tzdata/.footprint
-f:88b330fe315d9f0f265582feb6ae6b2a:tzdata/.signature
-f:590967a1a31d20bb957956a3af949fbb:tzdata/Pkgfile
+f:9f64e91c990ac15cc88c9590d5924323:tzdata/.footprint
+f:4c729097a408193b8b79464e0e0afcf6:tzdata/.signature
+f:451c5b2f5e69484c01256e8c4ee9e19d:tzdata/Pkgfile
 f:8b15f97c65023f19cf52e73ba1a828fd:make/upstream-fixes-20221116.patch
 f:737d0e0fee9b76c3869d916f5a4869c2:make/.footprint
 f:8936f34bbb8b8bfe96fb5c9794cda1c8:make/.signature
