@@ -4,16 +4,17 @@
 # Depends on:	isl mpc zstd
 
 name=gcc
-version=12.2.0
-release=1
-source=(https://sourceware.org/pub/gcc/releases/${name}-${version}/${name}-${version}.tar.xz \
+version=13.0.0
+_develversion=13-20230115
+release=0
+source=(http://ftp.ntua.gr/mirror/gnu/${name}/snapshots/${_develversion}/${name}-${_develversion}.tar.xz \
 	c89 c99)
 
 build() {
-	cd ${name}-${version}
+	cd ${name}-${_develversion}
 
-	sed -i 's|lib64|lib|' $SRC/${name}-${version}/${name}/config/i386/t-linux64
-	sed -i 's|lib64|lib|' $SRC/${name}-${version}/${name}/config/i386/linux64.h
+	sed -i 's|lib64|lib|' $SRC/${name}-${_develversion}/${name}/config/i386/t-linux64
+	sed -i 's|lib64|lib|' $SRC/${name}-${_develversion}/${name}/config/i386/linux64.h
 
 	mkdir build
 	cd build
@@ -51,7 +52,7 @@ build() {
 
 	# Optional
 	#make -k check || :
-	#../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${version}-result.txt
+	#../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${_develversion}-result.txt
 
 	make -j1 DESTDIR=$PKG install
 
@@ -65,9 +66,6 @@ build() {
 	install -d $PKG/usr/lib/bfd-plugins
 	ln -sf ../../lib/gcc/$CHOST/${version}/liblto_plugin.so \
 		$PKG/usr/lib/bfd-plugins/
-
-	mv $PKG/usr/lib/${name}/$CHOST/${version}/include-fixed/{limits.h,syslimits.h} \
-		$PKG/usr/lib/${name}/$CHOST/${version}/include/
 
 	install -d -m 0755 $PKG/usr/share/gdb/auto-load/usr/lib
 	mv $PKG/usr/lib/libstdc++.so.*-gdb.py $PKG/usr/share/gdb/auto-load/usr/lib
