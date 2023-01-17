@@ -397,6 +397,7 @@ drwxr-xr-x	root/root	usr/include/bits/types/
 -rw-r--r--	root/root	usr/include/bits/waitstatus.h
 -rw-r--r--	root/root	usr/include/bits/wchar-ldbl.h
 -rw-r--r--	root/root	usr/include/bits/wchar.h
+-rw-r--r--	root/root	usr/include/bits/wchar2-decl.h
 -rw-r--r--	root/root	usr/include/bits/wchar2.h
 -rw-r--r--	root/root	usr/include/bits/wctype-wchar.h
 -rw-r--r--	root/root	usr/include/bits/wordsize.h
@@ -600,7 +601,6 @@ drwxr-xr-x	root/root	usr/include/linux/cifs/
 -rw-r--r--	root/root	usr/include/linux/dm-log-userspace.h
 -rw-r--r--	root/root	usr/include/linux/dma-buf.h
 -rw-r--r--	root/root	usr/include/linux/dma-heap.h
--rw-r--r--	root/root	usr/include/linux/dn.h
 -rw-r--r--	root/root	usr/include/linux/dns_resolver.h
 -rw-r--r--	root/root	usr/include/linux/dqblk_xfs.h
 drwxr-xr-x	root/root	usr/include/linux/dvb/
@@ -612,6 +612,7 @@ drwxr-xr-x	root/root	usr/include/linux/dvb/
 -rw-r--r--	root/root	usr/include/linux/dvb/osd.h
 -rw-r--r--	root/root	usr/include/linux/dvb/version.h
 -rw-r--r--	root/root	usr/include/linux/dvb/video.h
+-rw-r--r--	root/root	usr/include/linux/dw100.h
 -rw-r--r--	root/root	usr/include/linux/edd.h
 -rw-r--r--	root/root	usr/include/linux/efs_fs_sb.h
 -rw-r--r--	root/root	usr/include/linux/elf-em.h
@@ -941,7 +942,6 @@ drwxr-xr-x	root/root	usr/include/linux/netfilter_bridge/
 -rw-r--r--	root/root	usr/include/linux/netfilter_bridge/ebt_stp.h
 -rw-r--r--	root/root	usr/include/linux/netfilter_bridge/ebt_vlan.h
 -rw-r--r--	root/root	usr/include/linux/netfilter_bridge/ebtables.h
--rw-r--r--	root/root	usr/include/linux/netfilter_decnet.h
 -rw-r--r--	root/root	usr/include/linux/netfilter_ipv4.h
 drwxr-xr-x	root/root	usr/include/linux/netfilter_ipv4/
 -rw-r--r--	root/root	usr/include/linux/netfilter_ipv4/ip_tables.h
@@ -1850,7 +1850,7 @@ lrwxrwxrwx	root/root	usr/lib/libc_malloc_debug.so -> ../../lib/libc_malloc_debug
 lrwxrwxrwx	root/root	usr/lib/libcrypt.so -> ../../lib/libcrypt.so.1
 -rw-r--r--	root/root	usr/lib/libdl.a
 -rw-r--r--	root/root	usr/lib/libg.a
--rw-r--r--	root/root	usr/lib/libm-2.36.a
+-rw-r--r--	root/root	usr/lib/libm-2.36.9000-20230115.a
 -rw-r--r--	root/root	usr/lib/libm.a
 -rw-r--r--	root/root	usr/lib/libm.so
 -rw-r--r--	root/root	usr/lib/libmcheck.a

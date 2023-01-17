@@ -4,24 +4,28 @@
 # Depends on:	python3 texinfo
 
 name=glibc
-version=2.36
-release=2
-source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.0.tar.xz \
+version=20230115
+_commit=569cfcc6bf35c28112ca8d7112e9eb4a22bed5b8
+# Date:   Sun Jan 15 20:54:42 2023 +0100
+release=0
+source=(https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.6.tar.xz \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
 	# install kernel headers
-	cd linux-6.0
+	cd linux-6.1.6
 
 	make mrproper
 	make ARCH=$CARCH INSTALL_HDR_PATH=$PKG/usr headers_install
 	chown -R root:root $PKG/usr
 
-	cd $SRC/${name}-${version}
+	cd $SRC
+	git clone git://sourceware.org/git/glibc.git
+	cd $SRC/${name}
+	git reset --hard ${_commit}
 
-	# Fix from LFS - use make 4.4
-	sed '/MAKEFLAGS :=/s/)r/) -r/' -i Makerules
+	# Fix build version
+	sed 's|VERSION "2.36.9000"|VERSION "2.36.9000-20230115"|' -i version.h
 
 	mkdir build
 	cd build
@@ -52,7 +56,7 @@ build() {
 
 	make install_root=$PKG install
 
-	install -m 0644 $SRC/${name}-${version}/nscd/nscd.conf $PKG/etc
+	install -m 0644 $SRC/${name}/nscd/nscd.conf $PKG/etc
 
 	# nscd runit service
 	install -d $PKG/etc/sv/nscd
