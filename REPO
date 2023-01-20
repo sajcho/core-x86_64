@@ -598,8 +598,8 @@ f:700fd4f40cd5ff622d1f7a82738d86ac:wget/.signature
 f:1b141e96b6d1b741a12797dcebdb2d25:wget/Pkgfile
 f:686a1895bc0c63bd87b43d791d4e11d9:pkgutils/0001-Modified-for-SAUX-x86_64-system.patch
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
-f:67bdd9fe96f3941274a68b2cbc548247:pkgutils/.signature
-f:3bdd5bc25f1f25aa24761d4082562b07:pkgutils/Pkgfile
+f:e0fa21066fa5a95333a86283322ed338:pkgutils/.signature
+f:a010e8403ff490f9f98ad06cc887c298:pkgutils/Pkgfile
 f:9f752ae2b5e4f924d3a934cdc43a914c:autoconf/.footprint
 f:bcf5c4d22bedac50b1f03bb08c942f0f:autoconf/.signature
 f:f751f91c2f310d818251edb31b42a009:autoconf/Pkgfile
