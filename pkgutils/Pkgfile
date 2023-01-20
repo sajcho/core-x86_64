@@ -5,7 +5,7 @@
 
 name=pkgutils
 version=5.40.9
-release=2
+release=3
 source=(https://crux.nu/files/${name}-${version}.tar.xz \
 	0001-Modified-for-SAUX-x86_64-system.patch)
 
@@ -27,6 +27,9 @@ build() {
 		-e 's|-static||' \
 		-e 's|5.40.8|5.40.9|' \
 		-i Makefile
+
+	# egrep is obsolescent; using grep -E
+	sed 's|egrep|grep -E|' -i pkgmk.in
 
 	make DESTDIR=$PKG install
 }
