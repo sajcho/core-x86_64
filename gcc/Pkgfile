@@ -4,8 +4,8 @@
 # Depends on:	isl mpc zstd
 
 name=gcc
-version=13.0.0
-_develversion=13-20230115
+version=13.0.1
+_develversion=13-20230122
 release=0
 source=(http://ftp.ntua.gr/mirror/gnu/${name}/snapshots/${_develversion}/${name}-${_develversion}.tar.xz \
 	c89 c99)
