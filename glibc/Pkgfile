@@ -4,9 +4,9 @@
 # Depends on:	python3 texinfo
 
 name=glibc
-version=20230115
-_commit=569cfcc6bf35c28112ca8d7112e9eb4a22bed5b8
-# Date:   Sun Jan 15 20:54:42 2023 +0100
+version=20230122
+_commit=103a469dc7755fd9e8ccf362f3dd4c55dc761908
+# Date:   Wed Jan 18 18:29:04 2023 +0100
 release=0
 source=(https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.6.tar.xz \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
@@ -25,7 +25,7 @@ build() {
 	git reset --hard ${_commit}
 
 	# Fix build version
-	sed 's|VERSION "2.36.9000"|VERSION "2.36.9000-20230115"|' -i version.h
+	sed 's|VERSION "2.36.9000"|VERSION "2.36.9000-20230122"|' -i version.h
 
 	mkdir build
 	cd build
