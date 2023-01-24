@@ -240,8 +240,8 @@ f:f844085b16edfeb0d944b5cb3f0336fa:expect/.signature
 f:82e55ec4a1f6ce22fb35abd0447da271:expect/Pkgfile
 f:43b6b692c8ee3b43aba00372ed7e65b3:pkgconf/x86_64-unknown-linux-gnu.personality
 f:052888a71e8598d797e422b8e1d12fbe:pkgconf/.footprint
-f:2a4ebf5b071cd646b043f80b5d9fa5e4:pkgconf/.signature
-f:b97be0dfec1cf8a2edf7d16d1137abbc:pkgconf/Pkgfile
+f:ee62cf3fa263fa5a13b826c539e8251e:pkgconf/.signature
+f:bd37f17ea02df9f34671d4eaba532233:pkgconf/Pkgfile
 f:655acc31c6f42843fd303b4ad16f6cd2:libmnl/.footprint
 f:d34136dc20e0e70787fcee44ff0b66e5:libmnl/.signature
 f:e025a7900e583ccd612e570300b3e2b9:libmnl/Pkgfile
@@ -266,8 +266,8 @@ f:6fc4d4162ffe0577fd1260cce1265328:dejagnu/.footprint
 f:da8488d6f076251c83c8d9dfdd18fc0a:dejagnu/.signature
 f:932f542bcd8aae0457a2bc19d5d07177:dejagnu/Pkgfile
 f:80f553be5a80b91df12d34cea705b0e8:vim/.footprint
-f:37c17d73516fd4ab107573bda53761c4:vim/.signature
-f:9ab21e60de54f37cac8f7f29c8e3aa25:vim/Pkgfile
+f:d148d76e909aaf6cfd3497ad26fe0006:vim/.signature
+f:c8735d888ee5d788fc06c2b5aab1144e:vim/Pkgfile
 f:061866638c2bd5dfd35015ff9bf0e144:opendoas/.footprint
 f:f40f586701ea99bb9004cbfd4e418d40:opendoas/.signature
 f:695555240c19c0e4233ec65baa61aa93:opendoas/doas.pam
@@ -573,9 +573,9 @@ f:b9a290836a948938ec350f75fcdb6f6f:diffutils/Pkgfile
 f:ef7f5101668c748584096956a10895c6:libcap/.footprint
 f:7e933b1471288402da314d522cdf7e94:libcap/.signature
 f:ddded87e64e78942b2b95e42e0364304:libcap/Pkgfile
-f:2f9ae50f06a6a36c68e386b2271287d5:python3-setuptools/.footprint
-f:2c308105eca1b443fb1d7e29e0575bf2:python3-setuptools/.signature
-f:06e573cd2a493375093d381b89d07d52:python3-setuptools/Pkgfile
+f:2ef55368964814a3e165907a174e3bb4:python3-setuptools/.footprint
+f:84ecf9197932f3619319d4b5dd369a4a:python3-setuptools/.signature
+f:ce545bbba24b93ab48583988a29d8090:python3-setuptools/Pkgfile
 f:05ada03b255d820320650f21dc75fa98:ncurses/.footprint
 f:7cbc9d564097543b1eabed148eb6d173:ncurses/.signature
 f:83724f19238b6f080aa3cf0d3ad6fd30:ncurses/Pkgfile
@@ -675,8 +675,8 @@ f:e89387d4f27a73fbd22814cece660b2d:util-linux/.footprint
 f:0cad91c5f0c128baad4888fa5dc11b06:util-linux/.signature
 f:1715bece89b16272f18289c4edb7da58:util-linux/Pkgfile
 f:43ffcec84fad3ddfc7a30c7d4834ec43:cmake/.footprint
-f:7fe69daba23465d747c20c0d3947d3d2:cmake/.signature
-f:d8a28072ee973932a0e293a7722a9919:cmake/Pkgfile
+f:c22df1ef7107f9b5117c5b995566ffdc:cmake/.signature
+f:ac648a34382bcc3edcb025800c677494:cmake/Pkgfile
 f:67bcdfc3ae6cf7cdb6c12573b51d96d6:perl/.footprint
 f:4a7f3d96e12a13e76f6a5413e50014aa:perl/.signature
 f:31c7e6a0b6c668241bc310703863a4b5:perl/Pkgfile
