@@ -4,9 +4,9 @@
 # Depends on:	python3 texinfo
 
 name=glibc
-version=20230122
-_commit=103a469dc7755fd9e8ccf362f3dd4c55dc761908
-# Date:   Wed Jan 18 18:29:04 2023 +0100
+version=20230125
+_commit=0d50f477f47ba637b54fb03ac48d769ec4543e8d
+# Date:   Wed Jan 25 08:01:00 2023 +0100
 release=0
 source=(https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.6.tar.xz \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
@@ -25,7 +25,7 @@ build() {
 	git reset --hard ${_commit}
 
 	# Fix build version
-	sed 's|VERSION "2.36.9000"|VERSION "2.36.9000-20230122"|' -i version.h
+	sed 's|VERSION "2.36.9000"|VERSION "2.36.9000-20230125"|' -i version.h
 
 	mkdir build
 	cd build
@@ -51,8 +51,8 @@ build() {
 	make V=1
 
 	# Optional
-	#make -k check 2>&1 | tee testlog
-	#grep -A 5 Summary testlog > $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
+	make -k check || :
+	cp tests.sum $PKGMK_PACKAGE_DIR/tests-sum-${name}-${version}-${release}.txt
 
 	make install_root=$PKG install
 
