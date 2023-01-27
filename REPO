@@ -486,9 +486,9 @@ f:76c3396708f46ea2158555ed69962e2c:patch/CVE-2019-13638.patch
 f:7a7ef6a7807a785bfe891ec03d752271:patch/Pkgfile
 f:e41fd5bbde882dd578378a372df870ec:patch/CVE-2018-6951.patch
 f:aa8ac1e3dccbd523143b01e9f60b06e8:patch/CVE-2018-6952.patch
-f:0ccdf0a0e317a68bcc34d0ca88d96e5a:mpfr/.footprint
-f:bdfb8fbee614dcc5cc0ac96909396713:mpfr/.signature
-f:97e0a82930486c296a2d60ea9c34b7d1:mpfr/Pkgfile
+f:d82921d0685bb09c2431c112c03ce911:mpfr/.footprint
+f:ad8505bdbbd6c6acc62eac3833ceb03a:mpfr/.signature
+f:6a7bb04a7c79e1ddcc6d6a7e2abc73fa:mpfr/Pkgfile
 f:f1e8a3d6f44cbbf187385eee9c20d90b:gperf/.footprint
 f:411ee9aa3e5bf548a00e30a5a10b22f5:gperf/.signature
 f:d18ade3d4f2f493601406b6dee23358e:gperf/Pkgfile
