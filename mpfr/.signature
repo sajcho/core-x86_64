@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvdRWIKLMifFNalpppJ7Gn3Wb3Uub+9Ta8WBvHk7aHAmw31oPsQ3mS6OIa1XdOj06QdF4d45IGmcrFusB6Da9YAE=
-SHA256 (Pkgfile) = 5d4161d569246e7026bbb44c1a7659f1a8f44bab5e9da17b28b938711219bc8f
-SHA256 (.footprint) = eda7145bf2efe0e878cf4c94c6ba35f6c5b0d725b95b2a464b61d2b1857df851
-SHA256 (mpfr-4.1.1.tar.xz) = ffd195bd567dbaffc3b98b23fd00aad0537680c9896171e44fe3ff79e28ac33d
+RWQyKH7cMutLvb884xsInD6hIFeEwGWg9MMn5F8duxdJEAS1MVHAEOrfu5ubbQ+wgg2nAAKh+IoqAGLxehdiVyvdqmHR4khdjQs=
+SHA256 (Pkgfile) = bed76006cb0b1bf16401528fe9ed598f57b4e1d05437714d7ccb68bfb3bb18b9
+SHA256 (.footprint) = 62eac23ee751339c7f32ad9a42f2003658084459ab78e2538cca2b38f7aaa467
+SHA256 (mpfr-4.2.0.tar.xz) = 06a378df13501248c1b2db5aa977a2c8126ae849a9d9b7be2546fb4a9c26d993

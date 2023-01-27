@@ -4,7 +4,7 @@
 # Depends on:	gmp
 
 name=mpfr
-version=4.1.1
+version=4.2.0
 release=1
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
