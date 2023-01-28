@@ -690,8 +690,8 @@ f:d8678e6bc043011febfbb900f7580485:jsoncpp/.footprint
 f:2b5844ed1cd68b5f8c821624e8b77311:jsoncpp/.signature
 f:048dfb29ea7b4d62e03ee97155892491:jsoncpp/Pkgfile
 f:d06293555aa978f3a2480e4b3cb8e85a:texinfo/.footprint
-f:582aa8efc1a4c32300587d5d8bff4fa7:texinfo/.signature
-f:0aa6f8c5d8a8461f6fbf7df6b1a06ca3:texinfo/Pkgfile
+f:06e4e7b6f1c6a20cae488b53e7a55090:texinfo/.signature
+f:560d8839b0bfa842d9804a2c62c16508:texinfo/Pkgfile
 f:4e1e437bd05e7c8fcd4e9e7667ad24c8:liburing/.footprint
 f:ca7caddbf06d339fd62a12dc58cadf0f:liburing/.signature
 f:9a185fff6d11fb3e91c4ec7de481b752:liburing/Pkgfile
@@ -701,11 +701,11 @@ f:d0c75258403596af6d74ad48b258e961:libpcre2/Pkgfile
 f:021884352f89aebfbc8b505cc446e367:lzip/.footprint
 f:a41786cab0eadc57f87616245acc2a4d:lzip/.signature
 f:d05b7a1b98679c657d459459aa11abd6:lzip/Pkgfile
+f:423e5d66a9a37b22cc4df82e15d6abeb:rust/0001-bootstrap-Change-libexec-dir.patch
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:8e6e5a84bba0de3a8d9195125b897371:rust/libexec.patch
-f:f919d923f864fb248581251037cf6892:rust/.footprint
-f:b657a03159d5a7dea790847d4a0e4745:rust/.signature
-f:24cf4b4807a99b6a2cb53b35bfe55f04:rust/Pkgfile
+f:5664f816ffed965e9afbbaed1569dde0:rust/.footprint
+f:2eb7166c76e9f0a09609f1a352aaeada:rust/.signature
+f:9da79147f52f88d3d3e267416c5c2cc7:rust/Pkgfile
 f:8570861063b945ec436ad79503051634:rust/README
 f:5be073a2ea93fd3b65af03f55a0196d4:libunistring/.footprint
 f:4e287eab75e8385aef7eee427c220dcb:libunistring/.signature
