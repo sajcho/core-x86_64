@@ -48,9 +48,9 @@ build() {
 	make V=1 tooldir=/usr
 
 	#  Optional
-	#make check 2>&1 | tee testlog
-	#grep -A 6 Summary testlog \
-	#	> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
+	make check 2>&1 | tee testlog
+	grep -A 6 Summary testlog \
+		> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
 
 	make tooldir=/usr DESTDIR=$PKG install
 
