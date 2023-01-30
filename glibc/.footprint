@@ -1850,7 +1850,7 @@ lrwxrwxrwx	root/root	usr/lib/libc_malloc_debug.so -> ../../lib/libc_malloc_debug
 lrwxrwxrwx	root/root	usr/lib/libcrypt.so -> ../../lib/libcrypt.so.1
 -rw-r--r--	root/root	usr/lib/libdl.a
 -rw-r--r--	root/root	usr/lib/libg.a
--rw-r--r--	root/root	usr/lib/libm-2.36.9000-20230125.a
+-rw-r--r--	root/root	usr/lib/libm-2.36.9000-20230129.a
 -rw-r--r--	root/root	usr/lib/libm.a
 -rw-r--r--	root/root	usr/lib/libm.so
 -rw-r--r--	root/root	usr/lib/libmcheck.a

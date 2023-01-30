@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvfmeGlOCCwaaQcw7qzZT8fOsrvMUkYSILX3jjRT1g2zAJGMS+0DQ+n6LChFgun3vjUMtemFwBoq9NP81ebQInQY=
-SHA256 (Pkgfile) = 2f0c0ff21e9beaee4a02cace743a2ac5b0d2b80484c05122ed86d405630c5c02
-SHA256 (.footprint) = d18558c30d18d1293c0c0a4412076f2cdcea4dedf0f122d0b30ace9910eedca9
+RWQyKH7cMutLvdUw6ldq8Vju9XVYzaQBxXWmWYIU8cnT9cgVYHs+Dwdl/j4SqImOVSgpTlNDwCzUY+kGvmvvHLHv6Go2rXeiIA8=
+SHA256 (Pkgfile) = 89c3b7aba62cb5f51ad1f20b4114eb3242ea54a9fbf4c342a6a7826f12f776e6
+SHA256 (.footprint) = 31f51eeed2d8f6a5c8fd4e1b9ebc3c81e4f1c104254356c27504816d05efe3fc
 SHA256 (linux-6.1.6.tar.xz) = 3e4d8e561da5703a205ae8d7b2bed6c5c64fc4299eebcbfd20481e63b57d5ee3
 SHA256 (hosts) = 5c02b256c105f1d4a12fb738d71c1bab9eb126533074d7a0c8a14b92670c9431
 SHA256 (resolv.conf) = 72ccb58768a72a771ec37142bc361a18478a07ec9de6e925a20760794389bf51

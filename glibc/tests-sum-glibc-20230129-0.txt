@@ -2205,7 +2205,7 @@ PASS: math/test-double-getpayload
 PASS: math/test-double-hypot
 PASS: math/test-double-ilogb
 PASS: math/test-double-iscanonical
-FAIL: math/test-double-iseqsig
+PASS: math/test-double-iseqsig
 PASS: math/test-double-isfinite
 PASS: math/test-double-isgreater
 PASS: math/test-double-isgreaterequal
@@ -2581,7 +2581,7 @@ PASS: math/test-float-getpayload
 PASS: math/test-float-hypot
 PASS: math/test-float-ilogb
 PASS: math/test-float-iscanonical
-FAIL: math/test-float-iseqsig
+PASS: math/test-float-iseqsig
 PASS: math/test-float-isfinite
 PASS: math/test-float-isgreater
 PASS: math/test-float-isgreaterequal
@@ -2934,7 +2934,7 @@ PASS: math/test-float128-getpayload
 PASS: math/test-float128-hypot
 PASS: math/test-float128-ilogb
 PASS: math/test-float128-iscanonical
-FAIL: math/test-float128-iseqsig
+PASS: math/test-float128-iseqsig
 PASS: math/test-float128-isfinite
 PASS: math/test-float128-isgreater
 PASS: math/test-float128-isgreaterequal
@@ -3089,7 +3089,7 @@ PASS: math/test-float32-getpayload
 PASS: math/test-float32-hypot
 PASS: math/test-float32-ilogb
 PASS: math/test-float32-iscanonical
-FAIL: math/test-float32-iseqsig
+PASS: math/test-float32-iseqsig
 PASS: math/test-float32-isfinite
 PASS: math/test-float32-isgreater
 PASS: math/test-float32-isgreaterequal
@@ -3238,7 +3238,7 @@ PASS: math/test-float32x-getpayload
 PASS: math/test-float32x-hypot
 PASS: math/test-float32x-ilogb
 PASS: math/test-float32x-iscanonical
-FAIL: math/test-float32x-iseqsig
+PASS: math/test-float32x-iseqsig
 PASS: math/test-float32x-isfinite
 PASS: math/test-float32x-isgreater
 PASS: math/test-float32x-isgreaterequal
@@ -3381,7 +3381,7 @@ PASS: math/test-float64-getpayload
 PASS: math/test-float64-hypot
 PASS: math/test-float64-ilogb
 PASS: math/test-float64-iscanonical
-FAIL: math/test-float64-iseqsig
+PASS: math/test-float64-iseqsig
 PASS: math/test-float64-isfinite
 PASS: math/test-float64-isgreater
 PASS: math/test-float64-isgreaterequal
@@ -3518,7 +3518,7 @@ PASS: math/test-float64x-getpayload
 PASS: math/test-float64x-hypot
 PASS: math/test-float64x-ilogb
 PASS: math/test-float64x-iscanonical
-FAIL: math/test-float64x-iseqsig
+PASS: math/test-float64x-iseqsig
 PASS: math/test-float64x-isfinite
 PASS: math/test-float64x-isgreater
 PASS: math/test-float64x-isgreaterequal
@@ -3660,7 +3660,7 @@ PASS: math/test-ldouble-getpayload
 PASS: math/test-ldouble-hypot
 PASS: math/test-ldouble-ilogb
 PASS: math/test-ldouble-iscanonical
-FAIL: math/test-ldouble-iseqsig
+PASS: math/test-ldouble-iseqsig
 PASS: math/test-ldouble-isfinite
 PASS: math/test-ldouble-isgreater
 PASS: math/test-ldouble-isgreaterequal
