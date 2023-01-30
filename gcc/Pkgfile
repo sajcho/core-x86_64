@@ -5,7 +5,7 @@
 
 name=gcc
 version=13.0.1
-_develversion=13-20230122
+_develversion=13-20230129
 release=0
 source=(http://ftp.ntua.gr/mirror/gnu/${name}/snapshots/${_develversion}/${name}-${_develversion}.tar.xz \
 	c89 c99)
@@ -51,8 +51,8 @@ build() {
 		profiledbootstrap
 
 	# Optional
-	#make -k check || :
-	#../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${_develversion}-result.txt
+	make -k check || :
+	../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${_develversion}-result.txt
 
 	make -j1 DESTDIR=$PKG install
 
