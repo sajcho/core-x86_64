@@ -216,10 +216,11 @@ f:c4f71de8b6a71f352ff8167e4fe6a120:signify/.signature
 f:8906fb503a8570b5b79e86459e05b096:signify/Pkgfile
 f:1ec6188cd775f3198e8716a4b40a1230:signify/cruxify.patch
 f:a3bb6b827871442d35bf06ec9f0c030e:gcc/.footprint
+f:bcd14443c7adc89a9baa34009880806d:gcc/test-gcc-13-20230205-result.txt
 f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
-f:6e4c1cfae47547f4652d24b835abb2fe:gcc/.signature
-f:b5dd5850c08e4e3f166d7637d095aec1:gcc/buildlog.xz
-f:58c538024385296580f08adda9bdba29:gcc/Pkgfile
+f:5f42ff2097b39001cd10ba0c2e017d83:gcc/.signature
+f:5d8afcd5aa64bd2d596872097f7597e3:gcc/buildlog.xz
+f:5251366fd769704b5079d5b561e860f8:gcc/Pkgfile
 f:0918a84f0a22e69e68a1a4053e70b539:gcc/test-gcc-13-20230129-result.txt
 f:3d333df77302ed89e06a4a8539943b7d:gcc/c89
 f:3fde08e78b807833e1404c9f09bbe30f:mimalloc2/.footprint
