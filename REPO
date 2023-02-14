@@ -216,7 +216,6 @@ f:c4f71de8b6a71f352ff8167e4fe6a120:signify/.signature
 f:8906fb503a8570b5b79e86459e05b096:signify/Pkgfile
 f:1ec6188cd775f3198e8716a4b40a1230:signify/cruxify.patch
 f:a3bb6b827871442d35bf06ec9f0c030e:gcc/.footprint
-f:bcd14443c7adc89a9baa34009880806d:gcc/test-gcc-13-20230205-result.txt
 f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
 f:fd94d16b444f2f5853e71dcb310756a4:gcc/.signature
 f:422a821a9913d03f52f0e3a1e59af525:gcc/buildlog.xz
