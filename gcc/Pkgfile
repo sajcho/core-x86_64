@@ -5,7 +5,7 @@
 
 name=gcc
 version=13.0.1
-_develversion=13-20230205
+_develversion=13-20230212
 release=0
 source=(http://ftp.ntua.gr/mirror/gnu/${name}/snapshots/${_develversion}/${name}-${_develversion}.tar.xz \
 	c89 c99)
@@ -52,7 +52,7 @@ build() {
 
 	# Optional
 	make -k check || :
-	../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${_develversion}-result.txt
+	../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${_develversion}-${release}-result.txt
 
 	make -j1 DESTDIR=$PKG install
 
