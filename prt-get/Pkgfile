@@ -5,16 +5,24 @@
 
 name=prt-get
 version=5.19.6
-release=2
+release=3
 source=(http://crux.nu/files/${name}-${version}.tar.xz \
-	saux-prt-get-5.19.6.patch \
+	0001-Makefile.in-add-zstd-support.patch \
 	prt-get.conf \
 	prt-get.aliases)
 
 build() {
 	cd ${name}-${version}
 
-	patch -p1 -i $SRC/saux-prt-get-5.19.6.patch
+	if [ `uname -m` = "x86_64" ]; then
+		sed -i 's|pkg.tar|x86_64.pkg.tar|' src/installtransaction.cpp
+	elif [ `uname -m` = "aarch64" ]; then
+		sed -i 's|pkg.tar|aarch64.pkg.tar|' src/installtransaction.cpp
+	elif [ `uname -m` = "riscv64" ]; then
+		sed -i 's|pkg.tar|riscv64.pkg.tar|' src/installtransaction.cpp
+	fi
+
+	patch -p1 -i $SRC/0001-Makefile.in-add-zstd-support.patch
 
 	./configure \
 		--prefix=/usr
