@@ -1,18 +1,33 @@
 # Description:	A set of utilities to manage software packages
 # URL:		http://crux.nu/gitweb/?p=tools/pkgutils.git
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	coreutils libarchive
+# Depends on:	libarchive
 
 name=pkgutils
 version=5.40.10
-release=1
+release=2
 source=(https://crux.nu/files/${name}-${version}.tar.xz \
-	saux-pkgutils-5.40.10.patch)
+	0001-Modified-for-SAUX-x86_64-system.patch)
 
 build() {
 	cd ${name}-${version}
 
-	patch -p1 -i $SRC/saux-pkgutils-5.40.10.patch
+	if [ `uname -m` = "x86_64" ]; then
+		sed -i 's|pkg.tar|x86_64.pkg.tar|' pkgutil.h
+	elif [ `uname -m` = "aarch64" ]; then
+		sed -i 's|pkg.tar|aarch64.pkg.tar|' pkgutil.h
+	elif [ `uname -m` = "riscv64" ]; then
+		sed -i 's|pkg.tar|riscv64.pkg.tar|' pkgutil.h
+	fi
+
+	patch -p1 -i $SRC/0001-Modified-for-SAUX-x86_64-system.patch
+
+	# Build without static lib.
+	# Fix package version.
+	sed \
+		-e 's|--static||' \
+		-e 's|-static||' \
+		-i Makefile
 
 	make DESTDIR=$PKG install
 }
