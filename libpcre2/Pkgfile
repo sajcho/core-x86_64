@@ -6,7 +6,7 @@
 name=libpcre2
 _realname=pcre2
 version=10.42
-release=1
+release=2
 source=(https://github.com/PhilipHazel/${_realname}/releases/download/${_realname}-${version}/${_realname}-${version}.tar.gz)
 
 build() {
@@ -19,14 +19,11 @@ build() {
 		--enable-pcre2-16 \
 		--enable-pcre2-32 \
 		--enable-pcre2grep-libz \
-		--enable-pcre2test-libedit \
-		--disable-static
+		--enable-pcre2test-libedit
 
 	make V=1
 
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/doc
-
-	find $PKG -type f -name '*.la' -delete
 }
