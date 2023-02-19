@@ -4,7 +4,7 @@
 
 name=gmp
 version=6.2.1
-release=1
+release=2
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -12,7 +12,6 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--disable-static \
 		--enable-cxx
 
 	make V=1
@@ -20,6 +19,4 @@ build() {
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share
-
-	find $PKG -type f -name '*.la' -delete
 }
