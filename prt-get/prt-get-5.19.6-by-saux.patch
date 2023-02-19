@@ -1,7 +1,7 @@
-From 33b0c9e8bfc9f2948b6eb0ed56b3d4930aa22d91 Mon Sep 17 00:00:00 2001
+From 2dad0072ec664c68d9344a8f9ef034c3d1e08c73 Mon Sep 17 00:00:00 2001
 From: sajcho <saux.aarch64@gmail.com>
-Date: Sat, 19 Nov 2022 15:32:48 +0100
-Subject: [PATCH] Makefile.in: add zstd support
+Date: Wed, 15 Feb 2023 23:12:32 +0100
+Subject: [PATCH] Makefile.in: modified by saux
 
 ---
  Makefile.in | 8 +++++++-
@@ -41,5 +41,52 @@ index bce64e7..405e9f1 100644
  	distclean-generic distclean-hdr distclean-tags distcleancheck \
  	distdir distuninstallcheck dvi dvi-am html html-am info \
 -- 
-2.38.1
+2.39.1
+
+From a413284e9090f38150842de4fbd84fed34b3e59c Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Fri, 17 Feb 2023 10:55:24 +0100
+Subject: [PATCH] installtransaction.cpp: define supported architecture
+
+---
+ src/installtransaction.cpp | 17 ++++++++++++++++-
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+
+diff --git a/src/installtransaction.cpp b/src/installtransaction.cpp
+index 59834f1..41f2a51 100644
+--- a/src/installtransaction.cpp
++++ b/src/installtransaction.cpp
+@@ -34,6 +34,21 @@ using namespace std;
+ #include "lockfile.h"
+ #endif
+ 
++#ifdef linux
++#ifdef __x86_64__
++#define PKG_EXT ".x86_64.pkg.tar."
++#endif
++#ifdef __aarch64__
++#define PKG_EXT ".aarch64.pkg.tar."
++#endif
++#ifdef __riscv
++#define PKG_EXT ".riscv64.pkg.tar."
++#endif
++#else
++#error "unsupported architecture"
++#endif
++
++
+ using namespace StringHelper;
+ 
+ 
+@@ -371,7 +386,7 @@ InstallTransaction::installPackage( const Package* package,
+             args +=
+                 package->name()    + "#" +
+                 package->version() + "-" +
+-                package->release() + ".pkg.tar." + getPkgmkCompressionMode();
++                package->release() + PKG_EXT + getPkgmkCompressionMode();
+ 
+ 
+             // - inform the user about what's happening
+-- 
+2.39.1
 
