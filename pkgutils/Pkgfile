@@ -5,29 +5,14 @@
 
 name=pkgutils
 version=5.40.10
-release=2
+release=3
 source=(https://crux.nu/files/${name}-${version}.tar.xz \
-	0001-Modified-for-SAUX-x86_64-system.patch)
+	pkgutils-5.40.10-by-saux.patch)
 
 build() {
 	cd ${name}-${version}
 
-	if [ `uname -m` = "x86_64" ]; then
-		sed -i 's|pkg.tar|x86_64.pkg.tar|' pkgutil.h
-	elif [ `uname -m` = "aarch64" ]; then
-		sed -i 's|pkg.tar|aarch64.pkg.tar|' pkgutil.h
-	elif [ `uname -m` = "riscv64" ]; then
-		sed -i 's|pkg.tar|riscv64.pkg.tar|' pkgutil.h
-	fi
-
-	patch -p1 -i $SRC/0001-Modified-for-SAUX-x86_64-system.patch
-
-	# Build without static lib.
-	# Fix package version.
-	sed \
-		-e 's|--static||' \
-		-e 's|-static||' \
-		-i Makefile
+	patch -p1 -i $SRC/pkgutils-5.40.10-by-saux.patch
 
 	make DESTDIR=$PKG install
 }

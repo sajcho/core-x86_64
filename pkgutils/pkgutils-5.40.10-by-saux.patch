@@ -1,0 +1,1057 @@
+From 44091f0daa0461feb11c2943d35ecc68b05f8581 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 20:27:36 +0100
+Subject: [PATCH] Makefile: disable static
+
+---
+ Makefile | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index dfc99591..ae16d9f5 100644
+--- a/Makefile
++++ b/Makefile
+@@ -2,7 +2,7 @@
+ #  pkgutils
+ #
+ #  Copyright (c) 2000-2005 by Per Liden <per@fukt.bth.se>
+-#  Copyright (c) 2006-2021 by CRUX team (http://crux.nu)
++#  Copyright (c) 2006-2023 by CRUX team (http://crux.nu)
+ #
+ #  This program is free software; you can redistribute it and/or modify
+ #  it under the terms of the GNU General Public License as published by
+@@ -30,11 +30,11 @@ NAME = pkgutils-$(VERSION)
+ 
+ CXXFLAGS += -DNDEBUG
+ CXXFLAGS += -O2 -Wall -pedantic -D_GNU_SOURCE -DVERSION=\"$(VERSION)\" \
+-	    -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
++		-D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+ 
+-LIBARCHIVELIBS := $(shell pkg-config --libs --static libarchive)
++LIBARCHIVELIBS := $(shell pkg-config --libs libarchive)
+ 
+-LDFLAGS += -static $(LIBARCHIVELIBS)
++LDFLAGS += $(LIBARCHIVELIBS)
+ 
+ OBJECTS = main.o pkgutil.o pkgadd.o pkgrm.o pkginfo.o
+ 
+-- 
+2.39.1
+
+From ccf6ec4104c8edb49c5c1005bb7c8274e9cc8624 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 20:31:26 +0100
+Subject: [PATCH] main.cc: adjust copyright year
+
+---
+ main.cc | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/main.cc b/main.cc
+index 08a50926..16e7583a 100644
+--- a/main.cc
++++ b/main.cc
+@@ -1,9 +1,9 @@
+ //
+ //  pkgutils
+-// 
++//
+ //  Copyright (c) 2000-2005 Per Liden
+-//  Copyright (c) 2006-2021 by CRUX team (http://crux.nu)
+-// 
++//  Copyright (c) 2006-2023 by CRUX team (http://crux.nu)
++//
+ //  This program is free software; you can redistribute it and/or modify
+ //  it under the terms of the GNU General Public License as published by
+ //  the Free Software Foundation; either version 2 of the License, or
+@@ -16,7 +16,7 @@
+ //
+ //  You should have received a copy of the GNU General Public License
+ //  along with this program; if not, write to the Free Software
+-//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, 
++//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,
+ //  USA.
+ //
+ 
+-- 
+2.39.1
+
+From b50575d836af67dfe9e47456edc38908e21e196f Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 20:37:33 +0100
+Subject: [PATCH] pkgadd.cc: adjust copyright year
+
+---
+ pkgadd.cc | 16 ++++++++--------
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+
+diff --git a/pkgadd.cc b/pkgadd.cc
+index 231f5ba3..90c7accb 100644
+--- a/pkgadd.cc
++++ b/pkgadd.cc
+@@ -1,9 +1,9 @@
+ //
+ //  pkgutils
+-// 
++//
+ //  Copyright (c) 2000-2005 Per Liden
+-//  Copyright (c) 2006-2021 by CRUX team (http://crux.nu)
+-// 
++//  Copyright (c) 2006-2023 by CRUX team (http://crux.nu)
++//
+ //  This program is free software; you can redistribute it and/or modify
+ //  it under the terms of the GNU General Public License as published by
+ //  the Free Software Foundation; either version 2 of the License, or
+@@ -16,7 +16,7 @@
+ //
+ //  You should have received a copy of the GNU General Public License
+ //  along with this program; if not, write to the Free Software
+-//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, 
++//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,
+ //  USA.
+ //
+ 
+@@ -83,10 +83,10 @@ void pkgadd::run(int argc, char** argv)
+ 			throw runtime_error("package " + package.first + " already installed (use -u to upgrade)");
+ 		else if (!installed && o_upgrade)
+ 			throw runtime_error("package " + package.first + " not previously installed (skip -u to install)");
+-      
++
+ 		set<string> non_install_files = apply_install_rules(package.first, package.second, config_rules);
+ 		set<string> conflicting_files = db_find_conflicts(package.first, package.second);
+-      
++
+ 		if (!conflicting_files.empty()) {
+ 			if (o_force) {
+ 				set<string> keep_list;
+@@ -98,14 +98,14 @@ void pkgadd::run(int argc, char** argv)
+ 				throw runtime_error("listed file(s) already installed (use -f to ignore and overwrite)");
+ 			}
+ 		}
+-   
++
+ 		set<string> keep_list;
+ 
+ 		if (o_upgrade) {
+ 			keep_list = make_keep_list(package.second.files, config_rules);
+ 			db_rm_pkg(package.first, keep_list);
+ 		}
+-   
++
+ 		db_add_pkg(package.first, package.second);
+ 		db_commit();
+ 		try {
+-- 
+2.39.1
+
+From 070c87538fb47f78d936c2da3eb4a810a025cf3d Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 20:44:54 +0100
+Subject: [PATCH] pkgadd.conf: modified by saux
+
+---
+ pkgadd.conf | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+
+diff --git a/pkgadd.conf b/pkgadd.conf
+index 4ac0cb93..89a5a1f7 100644
+--- a/pkgadd.conf
++++ b/pkgadd.conf
+@@ -13,12 +13,11 @@ UPGRADE		^var/run/utmp$		NO
+ UPGRADE		^etc/ports/drivers/.*$	YES
+ UPGRADE		^etc/X11/.*$		YES
+ 
+-UPGRADE		^etc/rc.*$		YES
++UPGRADE		^etc/runit/.*$		NO
++UPGRADE		^etc/sv/.*$		NO
+ UPGRADE		^etc/rc\.local$		NO
+-UPGRADE		^etc/rc\.modules$	NO
++UPGRADE		^etc/rc\.shutdown$	NO
+ UPGRADE		^etc/rc\.conf$		NO
+-UPGRADE		^etc/rc\.d/net$		NO
+-UPGRADE		^etc/rc\.d/wlan$	NO
+ 
+ UPGRADE		^etc/udev/rules.d/.*$	YES
+ UPGRADE		^etc/udev/rules.d/1.*$	NO
+-- 
+2.39.1
+
+From 05615842f3cb19781f4f225e61b8266e03baa49c Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 20:56:30 +0100
+Subject: [PATCH] pkgadd.h: adjust copyright year
+
+---
+ pkgadd.h | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/pkgadd.h b/pkgadd.h
+index e0c133d3..62472c2f 100644
+--- a/pkgadd.h
++++ b/pkgadd.h
+@@ -1,9 +1,9 @@
+ //
+ //  pkgutils
+-// 
++//
+ //  Copyright (c) 2000-2005 Per Liden
+-//  Copyright (c) 2006-2021 by CRUX team (http://crux.nu)
+-// 
++//  Copyright (c) 2006-2023 by CRUX team (http://crux.nu)
++//
+ //  This program is free software; you can redistribute it and/or modify
+ //  it under the terms of the GNU General Public License as published by
+ //  the Free Software Foundation; either version 2 of the License, or
+@@ -16,7 +16,7 @@
+ //
+ //  You should have received a copy of the GNU General Public License
+ //  along with this program; if not, write to the Free Software
+-//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, 
++//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,
+ //  USA.
+ //
+ 
+-- 
+2.39.1
+
+From dbeed93131e981fc21f20b4e98f64b31934537ad Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 20:58:29 +0100
+Subject: [PATCH] pkgadd.8.in: adjust copyright year
+
+---
+ pkgadd.8.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/pkgadd.8.in b/pkgadd.8.in
+index 81eb179d..6d48038e 100644
+--- a/pkgadd.8.in
++++ b/pkgadd.8.in
+@@ -58,6 +58,6 @@ Configuration file.
+ .SH SEE ALSO
+ pkgrm(8), pkginfo(8), pkgmk(8), rejmerge(8)
+ .SH COPYRIGHT
+-pkgadd (pkgutils) is Copyright (c) 2000-2005 Per Liden and Copyright (c) 2006-2021 CRUX team (http://crux.nu).
++pkgadd (pkgutils) is Copyright (c) 2000-2005 Per Liden and Copyright (c) 2006-2023 CRUX team (http://crux.nu).
+ pkgadd (pkgutils) is licensed through the GNU General Public License.
+ Read the COPYING file for the complete license.
+-- 
+2.39.1
+
+From 161665d6cd40e7f54e9264e459152c3c694f0e5f Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 21:03:54 +0100
+Subject: [PATCH] pkgfile.5.in: adjust copyright year
+
+---
+ pkgfile.5.in | 20 ++++++++++----------
+ 1 file changed, 10 insertions(+), 10 deletions(-)
+
+diff --git a/pkgfile.5.in b/pkgfile.5.in
+index 857681af..8fab7dde 100644
+--- a/pkgfile.5.in
++++ b/pkgfile.5.in
+@@ -1,4 +1,4 @@
+-.\" 
++.\"
+ .\" Pkgfile manual page.
+ .\" (C) 2018 by Fun, updated 2021 by John McQuah <jmcquah at disroot dot org>
+ .\"
+@@ -9,10 +9,10 @@ Pkgfile \- sourced by \fBpkgmk\fP(8) when building a package in the ports tree
+ a \fBbash\fP(1) script that tells \fBpkgmk\fP(8) where the source code for a port may be downloaded,
+ and what to do once that source code is unpacked.
+ .SH FILE FORMAT
+-\fBPkgfile\fP starts with a header of commented lines, which are read by \fBprt-get\fP(8) 
++\fBPkgfile\fP starts with a header of commented lines, which are read by \fBprt-get\fP(8)
+ to resolve dependencies, or by \fBportspage\fP(1) to generate an HTML index of the ports collection.
+ After the header \fBpkgmk\fP will expect to find definitions of several mandatory variables, including
+-\fIname\fP, \fIversion\fP, \fIrelease\fP, the bash array \fIsource\fP, and 
++\fIname\fP, \fIversion\fP, \fIrelease\fP, the bash array \fIsource\fP, and
+ the bash function \fIbuild()\fP.
+ .SS Example:
+ .EX
+@@ -74,7 +74,7 @@ since the URL will automatically update when you modify the \fI$version\fP varia
+ 
+ .SS Support for renaming source files
+ Note that in the \fBsomelib\fP example above, Joe Maintainer chose to define the optional bash array
+-\fIrenames\fP (same length as \fIsource\fP), so that the ambiguously-named file retrieved by FTP 
++\fIrenames\fP (same length as \fIsource\fP), so that the ambiguously-named file retrieved by FTP
+ would not collide with another port's files, if downloaded into a common directory.
+ The keyword \(oqSKIP\(cq was given in the \fIrenames\fP array to indicate that renaming was not
+ necessary for the corresponding source file. SKIP should always be used for a file retrieved by
+@@ -125,7 +125,7 @@ Files related to NLS (national language support). If \fB--disable-nls\fP is not
+ an option to \fBconfigure\fP, then manually inserting \(oqrm -rf $PKG/usr/share/locale\(cq near the
+ end of the \fBbuild\fP function is an acceptable alternative.
+ .IP \[bu]
+-Useless or obsolete binaries (e.g. \fI/usr/games/banner\fP and \fI/sbin/mkfs.minix\fP). 
++Useless or obsolete binaries (e.g. \fI/usr/games/banner\fP and \fI/sbin/mkfs.minix\fP).
+ .LP
+ Apart from these global rules, the definition of "junk" is often a matter of personal taste.
+ One user might regard as "junk" the same files that another user sees as indispensible. See
+@@ -165,13 +165,13 @@ means that:
+ .IP "" 8
+ build dependencies provided by \fBcore\fP are not listed in the dependency header
+ .IP "" 8
+-run-time dependencies from \fBcore\fP which aren't dynamically linked in are not to be listed, either 
++run-time dependencies from \fBcore\fP which aren't dynamically linked in are not to be listed, either
+ .TP
+ Examples:
+ .IP "" 4
+ \fBopt/sloccount\fP does \fInot\fP list \fBperl\fP, because the program is a perl script -- there's no binary that links to \fBlibperl\fP
+ .IP "" 4
+-\fBopt/libxml2\fP \fIdoes\fP list \fBzlib\fP, because \fBlibxml\fP is linked to \fBlibz\fP. 
++\fBopt/libxml2\fP \fIdoes\fP list \fBzlib\fP, because \fBlibxml\fP is linked to \fBlibz\fP.
+ .LP
+ The reasoning for these guidelines is that you can use \fBrevdep\fP to find ports
+ that need to be updated if one of the dependent libraries has become
+@@ -194,8 +194,8 @@ simpler means.
+ .SS Optional dependencies
+ 
+ A common practice among port maintainers is to put filesystem tests in the \fIbuild\fP function,
+-allowing the package configuration to vary depending on what other packages the system administrator 
+-has installed. This practice can result in footprint mismatches. It is recommended that 
++allowing the package configuration to vary depending on what other packages the system administrator
++has installed. This practice can result in footprint mismatches. It is recommended that
+ maintainers build their ports in a container with the bare minimum of dependencies, or prune the
+ auto-generated footprint so that the spurious files are not reported as MISSING on another user's
+ system.
+@@ -261,6 +261,6 @@ pkgmk(8), pkgmk.conf(5),
+ .UR https://crux.nu/Main/PrePostInstallGuidelines
+ .UE .
+ .SH COPYRIGHT
+-pkgmk (pkgutils) is Copyright (c) 2000-2005 Per Liden and Copyright (c) 2006-2021 CRUX team (http://crux.nu).
++pkgmk (pkgutils) is Copyright (c) 2000-2005 Per Liden and Copyright (c) 2006-2023 CRUX team (http://crux.nu).
+ pkgmk (pkgutils) is licensed through the GNU General Public License.
+ Read the COPYING file for the complete license.
+-- 
+2.39.1
+
+From 3875762773414ab3c356a666cc665ed757bab89e Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 21:06:38 +0100
+Subject: [PATCH] pkginfo.cc: adjust copyright year
+
+---
+ pkginfo.cc | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+diff --git a/pkginfo.cc b/pkginfo.cc
+index b06b9b24..b6c03f88 100644
+--- a/pkginfo.cc
++++ b/pkginfo.cc
+@@ -1,9 +1,9 @@
+ //
+ //  pkgutils
+-// 
++//
+ //  Copyright (c) 2000-2005 Per Liden
+-//  Copyright (c) 2006-2021 by CRUX team (http://crux.nu)
+-// 
++//  Copyright (c) 2006-2023 by CRUX team (http://crux.nu)
++//
+ //  This program is free software; you can redistribute it and/or modify
+ //  it under the terms of the GNU General Public License as published by
+ //  the Free Software Foundation; either version 2 of the License, or
+@@ -16,7 +16,7 @@
+ //
+ //  You should have received a copy of the GNU General Public License
+ //  along with this program; if not, write to the Free Software
+-//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, 
++//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,
+ //  USA.
+ //
+ 
+@@ -116,7 +116,7 @@ void pkginfo::run(int argc, char** argv)
+ 			vector<pair<string, string> > result;
+ 			result.push_back(pair<string, string>("Package", "File"));
+ 			unsigned int width = result.begin()->first.length(); // Width of "Package"
+-			
++
+ 			for (packages_t::const_iterator i = packages.begin(); i != packages.end(); ++i) {
+ 				for (set<string>::const_iterator j = i->second.files.begin(); j != i->second.files.end(); ++j) {
+ 					const string file('/' + *j);
+@@ -127,9 +127,9 @@ void pkginfo::run(int argc, char** argv)
+ 					}
+ 				}
+ 			}
+-			
++
+ 			regfree(&preg);
+-			
++
+ 			if (result.size() > 1) {
+ 				for (vector<pair<string, string> >::const_iterator i = result.begin(); i != result.end(); ++i) {
+ 					cout << left << setw(width + 2) << i->first << i->second << endl;
+-- 
+2.39.1
+
+From 9442662ccf2c83c5081026bb2be158d3fe484340 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 21:08:50 +0100
+Subject: [PATCH] pkginfo.h: adjust copyright year
+
+---
+ pkginfo.h | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/pkginfo.h b/pkginfo.h
+index 66c3d8f6..b3bbf1c9 100644
+--- a/pkginfo.h
++++ b/pkginfo.h
+@@ -1,9 +1,9 @@
+ //
+ //  pkgutils
+-// 
++//
+ //  Copyright (c) 2000-2005 Per Liden
+-//  Copyright (c) 2006-2021 by CRUX team (http://crux.nu)
+-// 
++//  Copyright (c) 2006-2023 by CRUX team (http://crux.nu)
++//
+ //  This program is free software; you can redistribute it and/or modify
+ //  it under the terms of the GNU General Public License as published by
+ //  the Free Software Foundation; either version 2 of the License, or
+@@ -16,7 +16,7 @@
+ //
+ //  You should have received a copy of the GNU General Public License
+ //  along with this program; if not, write to the Free Software
+-//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, 
++//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,
+ //  USA.
+ //
+ 
+-- 
+2.39.1
+
+From 9bebc35cebd1773b98bffa40020261d3d3736621 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 21:10:35 +0100
+Subject: [PATCH] pkginfo.8.in: adjust copyright year
+
+---
+ pkginfo.8.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/pkginfo.8.in b/pkginfo.8.in
+index 89c0f1ce..555208c2 100644
+--- a/pkginfo.8.in
++++ b/pkginfo.8.in
+@@ -37,6 +37,6 @@ Print help and exit.
+ .SH SEE ALSO
+ pkgadd(8), pkgrm(8), pkgmk(8), rejmerge(8)
+ .SH COPYRIGHT
+-pkginfo (pkgutils) is Copyright (c) 2000-2005 Per Liden and Copyright (c) 2006-2021 CRUX team (http://crux.nu).
++pkginfo (pkgutils) is Copyright (c) 2000-2005 Per Liden and Copyright (c) 2006-2023 CRUX team (http://crux.nu).
+ pkginfo (pkgutils) is licensed through the GNU General Public License.
+ Read the COPYING file for the complete license.
+-- 
+2.39.1
+
+From 5e40757bd7904f106f1543b32fd1c05c2ec43bf8 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 21:21:42 +0100
+Subject: [PATCH] pkgmk.conf: modified by saux
+
+---
+ pkgmk.conf | 52 ++++++++++++++++++++++++++++++++++++++++++----------
+ 1 file changed, 42 insertions(+), 10 deletions(-)
+
+diff --git a/pkgmk.conf b/pkgmk.conf
+index e6a8abc8..804a5c15 100644
+--- a/pkgmk.conf
++++ b/pkgmk.conf
+@@ -1,21 +1,48 @@
+ #
+ # /etc/pkgmk.conf: pkgmk(8) configuration
+ #
++# Adjust according to architecture
++#
++
++# for x86_64
++##
++#export CARCH="x86_64"
++#export CHOST="x86_64-unknown-linux-gnu"
++##
++#CFLAGS="-O2 -pipe -m64 -march=x86-64 -mtune=generic"
++#CXXFLAGS="-O2 -pipe -m64 -march=x86-64 -mtune=generic"
++#####
+ 
+-export CFLAGS="-O2 -march=x86-64 -pipe"
+-export CXXFLAGS="${CFLAGS}"
++# for aarch64
++##
++#export CARCH="aarch64"
++#export CHOST="aarch64-unknown-linux-gnu"
++##
++#CFLAGS="-O2 -pipe -mabi=lp64 -march=armv8-a -mtune=generic"
++#CXXFLAGS="-O2 -pipe -mabi=lp64 -march=armv8-a -mtune=generic"
++#####
+ 
+-# export JOBS=$(nproc)
+-# export MAKEFLAGS="-j $JOBS"
++#  for riscv64
++##
++#export CARCH="riscv64"
++#export CHOST="riscv64-unknown-linux-gnu"
++##
++#export CFLAGS="-O2 -pipe -mabi=lp64d -march=rv64imafdc"
++#export CXXFLAGS="-O2 -pipe -mabi=lp64d -march=rv64imafdc"
++#####
+ 
+ case ${PKGMK_ARCH} in
+-	"64"|"")
++	"x86_64")
++		export CFLAGS="${CFLAGS}"
++		export CXXFLAGS="${CXXFLAGS}"
+ 		;;
+-	"32")
+-		export CFLAGS="${CFLAGS} -m32"
+-		export CXXFLAGS="${CXXFLAGS} -m32"
+-		export LDFLAGS="${LDFLAGS} -m32"
+-		export PKG_CONFIG_LIBDIR="/usr/lib32/pkgconfig"
++	"aarch64")
++		export CFLAGS="${CFLAGS}"
++		export CXXFLAGS="${CXXFLAGS}"
++		;;
++	"riscv64")
++		export CFLAGS="${CFLAGS}"
++		export CXXFLAGS="${CXXFLAGS}"
+ 		;;
+ 	*)
+ 		echo "Unknown architecture selected! Exiting."
+@@ -23,6 +50,11 @@ case ${PKGMK_ARCH} in
+ 		;;
+ esac
+ 
++#export PKG_CONFIG_PATH="/usr/lib/pkgconfig:/usr/share/pkgconfig
++#export JOBS=$(nproc)
++#export MAKEFLAGS="-j $JOBS"
++#export SAMUFLAGS="-j $JOBS"
++
+ # PKGMK_SOURCE_MIRRORS=()
+ # PKGMK_SOURCE_DIR="$PWD"
+ # PKGMK_PACKAGE_DIR="$PWD"
+-- 
+2.39.1
+
+From b32a81cbe416b62b63cbc4332e2b0213d732cc62 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 21:23:36 +0100
+Subject: [PATCH] pkgmk.conf.5.in: adjust copyright year
+
+---
+ pkgmk.conf.5.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/pkgmk.conf.5.in b/pkgmk.conf.5.in
+index 3e054362..e3438e90 100644
+--- a/pkgmk.conf.5.in
++++ b/pkgmk.conf.5.in
+@@ -90,6 +90,6 @@ Default: 'gz'
+ .SH SEE ALSO
+ pkgmk(8)
+ .SH COPYRIGHT
+-pkgmk (pkgutils) is Copyright (c) 2000-2005 Per Liden and Copyright (c) 2006-2021 CRUX team (http://crux.nu).
++pkgmk (pkgutils) is Copyright (c) 2000-2005 Per Liden and Copyright (c) 2006-2023 CRUX team (http://crux.nu).
+ pkgmk (pkgutils) is licensed through the GNU General Public License.
+ Read the COPYING file for the complete license.
+-- 
+2.39.1
+
+From 240e6efa30898588b02f9cf5cad8b3f6978765ac Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 21:25:27 +0100
+Subject: [PATCH] pkgmk.8.in: adjust copyright year
+
+---
+ pkgmk.8.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/pkgmk.8.in b/pkgmk.8.in
+index c3b79d96..10848038 100644
+--- a/pkgmk.8.in
++++ b/pkgmk.8.in
+@@ -151,6 +151,6 @@ An error occured while installing the package via pkgadd.
+ .SH SEE ALSO
+ pkgmk.conf(5), pkgadd(8), pkgrm(8), pkginfo(8), rejmerge(8), signify(1), curl(1), wget(1)
+ .SH COPYRIGHT
+-pkgmk (pkgutils) is Copyright (c) 2000-2005 Per Liden and Copyright (c) 2006-2021 CRUX team (http://crux.nu).
++pkgmk (pkgutils) is Copyright (c) 2000-2005 Per Liden and Copyright (c) 2006-2023 CRUX team (http://crux.nu).
+ pkgmk (pkgutils) is licensed through the GNU General Public License.
+ Read the COPYING file for the complete license.
+-- 
+2.39.1
+
+From 62290b43b1a582d477a72a59a39bf52d913d504d Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 22:20:40 +0100
+Subject: [PATCH] pkgmk.in: modified by saux
+
+---
+ pkgmk.in | 20 ++++++++++++--------
+ 1 file changed, 12 insertions(+), 8 deletions(-)
+
+diff --git a/pkgmk.in b/pkgmk.in
+index edc2ded8..7e78d0aa 100644
+--- a/pkgmk.in
++++ b/pkgmk.in
+@@ -3,7 +3,7 @@
+ #  pkgutils
+ #
+ #  Copyright (c) 2000-2005 Per Liden
+-#  Copyright (c) 2006-2021 by CRUX team (http://crux.nu)
++#  Copyright (c) 2006-2023 by CRUX team (http://crux.nu)
+ #
+ #  This program is free software; you can redistribute it and/or modify
+ #  it under the terms of the GNU General Public License as published by
+@@ -208,7 +208,7 @@ unpack_source() {
+ 		RENAME="${renames[$srcind]}"
+ 		[ -n "$RENAME" -a "$RENAME" != "SKIP" ] && LOCAL_FILE="$PKGMK_SOURCE_DIR/$RENAME"
+ 		case $LOCAL_FILE in
+-			*.tar|*.tar.gz|*.tar.Z|*.tgz|*.tar.bz2|*.tbz2|*.tar.xz|*.txz|*.tar.lzma|*.tar.lz|*.zip|*.rpm|*.7z)
++			*.tar|*.tar.gz|*.tar.Z|*.tgz|*.tar.bz2|*.tbz2|*.tar.xz|*.txz|*.tar.lzma|*.tar.lz|*.zip|*.rpm|*.7z|*.zst)
+ 				COMMAND="bsdtar -p -o -C $SRC -xf $LOCAL_FILE" ;;
+ 			*)
+ 				COMMAND="cp $LOCAL_FILE $SRC" ;;
+@@ -591,6 +591,7 @@ build_package() {
+ 			bz2) COMPRESSION="-j" ;;
+ 			xz)  COMPRESSION="-J" ;;
+ 			lz)  COMPRESSION="--lzip" ;;
++			zst) COMPRESSION="--zstd" ;;
+ 		esac
+ 		bsdtar --format=gnutar -c $COMPRESSION -f $TARGET *  &&  bsdtar -t -v -f $TARGET
+ 
+@@ -849,10 +850,13 @@ parse_options() {
+ }
+ 
+ main() {
+-	# multilib
+-	PKGMK_ARCH=64
+-	if [ -f ".32bit" ]; then
+-		PKGMK_ARCH=32
++	# multiarch
++	if [ -x "/bin/uname" ] && [ `uname -m` = "x86_64" ]; then
++		PKGMK_ARCH="x86_64"
++	elif [ -x "/bin/uname" ] && [ `uname -m` = "aarch64" ]; then
++		PKGMK_ARCH="aarch64"
++	elif [ -x "/bin/uname" ] && [ `uname -m` = "riscv64" ]; then
++		PKGMK_ARCH="riscv64"
+ 	fi
+ 
+ 	local FILE TARGET
+@@ -879,8 +883,8 @@ main() {
+ 	check_pkgfile
+ 
+ 	case $PKGMK_COMPRESSION_MODE in
+-		gz|bz2|xz|lz)
+-			TARGET="$PKGMK_PACKAGE_DIR/$name#$version-$release.pkg.tar.$PKGMK_COMPRESSION_MODE"
++		gz|bz2|xz|lz|zst)
++			TARGET="$PKGMK_PACKAGE_DIR/$name#$version-$release.$PKGMK_ARCH.pkg.tar.$PKGMK_COMPRESSION_MODE"
+ 			;;
+ 		*)
+ 			error "Compression mode '$PKGMK_COMPRESSION_MODE' not supported"
+-- 
+2.39.1
+
+From 72a4958a9a76271f20ff6fd132b99e9015fc26c4 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 22:24:12 +0100
+Subject: [PATCH] pkgrm.cc: adjust copyright year
+
+---
+ pkgrm.cc | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/pkgrm.cc b/pkgrm.cc
+index cbb2c673..ab075135 100644
+--- a/pkgrm.cc
++++ b/pkgrm.cc
+@@ -1,9 +1,9 @@
+ //
+ //  pkgutils
+-// 
++//
+ //  Copyright (c) 2000-2005 Per Liden
+-//  Copyright (c) 2006-2021 by CRUX team (http://crux.nu)
+-// 
++//  Copyright (c) 2006-2023 by CRUX team (http://crux.nu)
++//
+ //  This program is free software; you can redistribute it and/or modify
+ //  it under the terms of the GNU General Public License as published by
+ //  the Free Software Foundation; either version 2 of the License, or
+@@ -16,7 +16,7 @@
+ //
+ //  You should have received a copy of the GNU General Public License
+ //  along with this program; if not, write to the Free Software
+-//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, 
++//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,
+ //  USA.
+ //
+ 
+-- 
+2.39.1
+
+From b1caab928bf08b17b99f38c4e602bc155d3613ef Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 22:26:01 +0100
+Subject: [PATCH] pkgrm.h: adjust copyright year
+
+---
+ pkgrm.h | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/pkgrm.h b/pkgrm.h
+index 889650d8..bdb242ac 100644
+--- a/pkgrm.h
++++ b/pkgrm.h
+@@ -1,9 +1,9 @@
+ //
+ //  pkgutils
+-// 
++//
+ //  Copyright (c) 2000-2005 Per Liden
+-//  Copyright (c) 2006-2021 by CRUX team (http://crux.nu)
+-// 
++//  Copyright (c) 2006-2023 by CRUX team (http://crux.nu)
++//
+ //  This program is free software; you can redistribute it and/or modify
+ //  it under the terms of the GNU General Public License as published by
+ //  the Free Software Foundation; either version 2 of the License, or
+@@ -16,7 +16,7 @@
+ //
+ //  You should have received a copy of the GNU General Public License
+ //  along with this program; if not, write to the Free Software
+-//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, 
++//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,
+ //  USA.
+ //
+ 
+-- 
+2.39.1
+
+From 820a52fbc981afb6f183c165ceab3418a25a4803 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 22:27:28 +0100
+Subject: [PATCH] pkgrm.8.in: adjust copyright year
+
+---
+ pkgrm.8.in | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/pkgrm.8.in b/pkgrm.8.in
+index 9e28b27b..0f0ffb89 100644
+--- a/pkgrm.8.in
++++ b/pkgrm.8.in
+@@ -10,7 +10,7 @@ removes/uninstalls a previously installed software packages.
+ .TP
+ .B "\-r, \-\-root <path>"
+ Specify alternative installation root (default is "/"). This
+-should be used if you want to remove a package from a temporary 
++should be used if you want to remove a package from a temporary
+ mounted partition, which is "owned" by another system. By using
+ this option you not only specify where the software is installed,
+ but you also specify which package database to use.
+@@ -23,6 +23,6 @@ Print help and exit.
+ .SH SEE ALSO
+ pkgadd(8), pkginfo(8), pkgmk(8), rejmerge(8)
+ .SH COPYRIGHT
+-pkgrm (pkgutils) is Copyright (c) 2000-2005 Per Liden and Copyright (c) 2006-2021 CRUX team (http://crux.nu).
++pkgrm (pkgutils) is Copyright (c) 2000-2005 Per Liden and Copyright (c) 2006-2023 CRUX team (http://crux.nu).
+ pkgrm (pkgutils) is licensed through the GNU General Public License.
+ Read the COPYING file for the complete license.
+-- 
+2.39.1
+
+From 251dd006ef17d3c4e044bdf8cb78eafcd4ee8475 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 22:37:14 +0100
+Subject: [PATCH] pkgutil.cc: modified by saux
+
+---
+ pkgutil.cc | 33 +++++++++++++++++----------------
+ 1 file changed, 17 insertions(+), 16 deletions(-)
+
+diff --git a/pkgutil.cc b/pkgutil.cc
+index bf1a0aa6..a3cfcb13 100644
+--- a/pkgutil.cc
++++ b/pkgutil.cc
+@@ -1,9 +1,9 @@
+ //
+ //  pkgutils
+-// 
++//
+ //  Copyright (c) 2000-2005 Per Liden
+-//  Copyright (c) 2006-2021 by CRUX team (http://crux.nu)
+-// 
++//  Copyright (c) 2006-2023 by CRUX team (http://crux.nu)
++//
+ //  This program is free software; you can redistribute it and/or modify
+ //  it under the terms of the GNU General Public License as published by
+ //  the Free Software Foundation; either version 2 of the License, or
+@@ -16,7 +16,7 @@
+ //
+ //  You should have received a copy of the GNU General Public License
+ //  along with this program; if not, write to the Free Software
+-//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, 
++//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,
+ //  USA.
+ //
+ 
+@@ -48,6 +48,7 @@
+ 	archive_read_support_filter_bzip2((ar)); \
+ 	archive_read_support_filter_xz((ar)); \
+ 	archive_read_support_filter_lzip((ar)); \
++	archive_read_support_filter_zstd((ar)); \
+ 	archive_read_support_format_tar((ar))
+ 
+ #define DEFAULT_BYTES_PER_BLOCK (20 * 512)
+@@ -91,10 +92,10 @@ void pkgutil::db_open(const string& path)
+ 		for (;;) {
+ 			string file;
+ 			getline(in, file);
+-         
++
+ 			if (file.empty())
+ 				break; // End of record
+-         
++
+ 			info.files.insert(info.files.end(), file);
+ 		}
+ 		if (!info.files.empty())
+@@ -249,7 +250,7 @@ void pkgutil::db_rm_files(set<string> files, const set<string>& keep_list)
+ 	for (packages_t::iterator i = packages.begin(); i != packages.end(); ++i)
+ 		for (set<string>::const_iterator j = files.begin(); j != files.end(); ++j)
+ 			i->second.files.erase(*j);
+-   
++
+ #ifndef NDEBUG
+ 	cerr << "Removing files:" << endl;
+ 	copy(files.begin(), files.end(), ostream_iterator<string>(cerr, "\n"));
+@@ -275,7 +276,7 @@ void pkgutil::db_rm_files(set<string> files, const set<string>& keep_list)
+ set<string> pkgutil::db_find_conflicts(const string& name, const pkginfo_t& info)
+ {
+ 	set<string> files;
+-   
++
+ 	// Find conflicting files in database
+ 	for (packages_t::const_iterator i = packages.begin(); i != packages.end(); ++i) {
+ 		if (i->first != name) {
+@@ -284,7 +285,7 @@ set<string> pkgutil::db_find_conflicts(const string& name, const pkginfo_t& info
+ 					 inserter(files, files.end()));
+ 		}
+ 	}
+-	
++
+ #ifndef NDEBUG
+ 	cerr << "Conflicts phase 1 (conflicts in database):" << endl;
+ 	copy(files.begin(), files.end(), ostream_iterator<string>(cerr, "\n"));
+@@ -344,7 +345,7 @@ pair<string, pkgutil::pkginfo_t> pkgutil::pkg_open(const string& filename) const
+ 	string name(basename, 0, basename.find(VERSION_DELIM));
+ 	string version(basename, 0, basename.rfind(PKG_EXT));
+ 	version.erase(0, version.find(VERSION_DELIM) == string::npos ? string::npos : version.find(VERSION_DELIM) + 1);
+-   
++
+ 	if (name.empty() || version.empty())
+ 		throw runtime_error("could not determine name and/or version of " + basename + ": Invalid package name");
+ 
+@@ -371,7 +372,7 @@ pair<string, pkgutil::pkginfo_t> pkgutil::pkg_open(const string& filename) const
+ 		    archive_read_data_skip(archive) != ARCHIVE_OK)
+ 			throw runtime_error_with_errno("could not read " + filename, archive_errno(archive));
+ 	}
+-   
++
+ 	if (i == 0) {
+ 		if (archive_errno(archive) == 0)
+ 			throw runtime_error("empty package");
+@@ -604,11 +605,11 @@ void pkgutil::pkg_footprint(string& filename) const
+ 		}
+ 
+ 		cout << '\n';
+-		
++
+ 		if (S_ISREG(mode) && archive_read_data_skip(archive))
+ 			throw runtime_error_with_errno("could not read " + filename, archive_errno(archive));
+ 	}
+-   
++
+ 	if (i == 0) {
+ 		if (archive_errno(archive) == 0)
+ 			throw runtime_error("empty package");
+@@ -733,7 +734,7 @@ bool file_empty(const string& filename)
+ 
+ 	if (lstat(filename.c_str(), &buf) == -1)
+ 		return false;
+-	
++
+ 	return (S_ISREG(buf.st_mode) && buf.st_size == 0);
+ }
+ 
+@@ -751,7 +752,7 @@ bool file_equal(const string& file1, const string& file2)
+ 	if (S_ISREG(buf1.st_mode) && S_ISREG(buf2.st_mode)) {
+ 		ifstream f1(file1.c_str());
+ 		ifstream f2(file2.c_str());
+-	
++
+ 		if (!f1 || !f2)
+ 			return false;
+ 
+@@ -806,7 +807,7 @@ bool permissions_equal(const string& file1, const string& file2)
+ 
+ 	if (lstat(file2.c_str(), &buf2) == -1)
+ 		return false;
+-	
++
+ 	return(buf1.st_mode == buf2.st_mode) &&
+ 		(buf1.st_uid == buf2.st_uid) &&
+ 		(buf1.st_gid == buf2.st_gid);
+-- 
+2.39.1
+
+From 53716bed3a4b3d469e7e2ab1add6fe5cc873e2ad Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 22:39:15 +0100
+Subject: [PATCH] pkgutil.h: adjust copyright year
+
+---
+ pkgutil.h | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/pkgutil.h b/pkgutil.h
+index 7d18c5ea..f79f5ca9 100644
+--- a/pkgutil.h
++++ b/pkgutil.h
+@@ -1,9 +1,9 @@
+ //
+ //  pkgutils
+-// 
++//
+ //  Copyright (c) 2000-2005 Per Liden
+-//  Copyright (c) 2006-2021 by CRUX team (http://crux.nu)
+-// 
++//  Copyright (c) 2006-2023 by CRUX team (http://crux.nu)
++//
+ //  This program is free software; you can redistribute it and/or modify
+ //  it under the terms of the GNU General Public License as published by
+ //  the Free Software Foundation; either version 2 of the License, or
+@@ -16,7 +16,7 @@
+ //
+ //  You should have received a copy of the GNU General Public License
+ //  along with this program; if not, write to the Free Software
+-//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, 
++//  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,
+ //  USA.
+ //
+ 
+-- 
+2.39.1
+
+From b60ab804e3286d35308240183e470cb0835b06fa Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 22:41:34 +0100
+Subject: [PATCH] rejmerge.8.in: adjust copyright year
+
+---
+ rejmerge.8.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/rejmerge.8.in b/rejmerge.8.in
+index d496b0ff..90b12690 100644
+--- a/rejmerge.8.in
++++ b/rejmerge.8.in
+@@ -73,6 +73,6 @@ Directory where rejected files are stored.
+ .SH SEE ALSO
+ pkgadd(8), pkgrm(8), pkginfo(8), pkgmk(8)
+ .SH COPYRIGHT
+-rejmerge (pkgutils) is Copyright (c) 2000-2005 Per Liden and Copyright (c) 2006-2021 CRUX team (http://crux.nu).
++rejmerge (pkgutils) is Copyright (c) 2000-2005 Per Liden and Copyright (c) 2006-2023 CRUX team (http://crux.nu).
+ rejmerge (pkgutils) is licensed through the GNU General Public License.
+ Read the COPYING file for the complete license.
+-- 
+2.39.1
+
+From ca27e6ca67e15f1e9b544311ac16d5ef1db7d9dc Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Wed, 15 Feb 2023 22:43:56 +0100
+Subject: [PATCH] rejmerge.in: adjust copyright year
+
+---
+ rejmerge.in | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/rejmerge.in b/rejmerge.in
+index ae93489a..a5181cec 100644
+--- a/rejmerge.in
++++ b/rejmerge.in
+@@ -1,10 +1,10 @@
+ #!/bin/bash
+ #
+ #  rejmerge (pkgutils)
+-# 
++#
+ #  Copyright (c) 2000-2005 Per Liden
+-#  Copyright (c) 2006-2021 by CRUX team (http://crux.nu)
+-# 
++#  Copyright (c) 2006-2023 by CRUX team (http://crux.nu)
++#
+ #  This program is free software; you can redistribute it and/or modify
+ #  it under the terms of the GNU General Public License as published by
+ #  the Free Software Foundation; either version 2 of the License, or
+@@ -17,7 +17,7 @@
+ #
+ #  You should have received a copy of the GNU General Public License
+ #  along with this program; if not, write to the Free Software
+-#  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, 
++#  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,
+ #  USA.
+ #
+ 
+@@ -246,7 +246,7 @@ main() {
+ 	if [ -f "$REJMERGE_CONF" ]; then
+ 		. "$REJMERGE_CONF"
+ 	fi
+-	
++
+ 	REJECTED_FILES_FOUND="no"
+ 
+ 	# Check files
+-- 
+2.39.1
+
+From 877f8257f7658f42f778d9c0e364e62c667672a2 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Fri, 17 Feb 2023 10:49:19 +0100
+Subject: [PATCH] pkgutil.h: define supported architecture
+
+---
+ pkgutil.h | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+
+diff --git a/pkgutil.h b/pkgutil.h
+index f79f5ca9..28a0e938 100644
+--- a/pkgutil.h
++++ b/pkgutil.h
+@@ -33,7 +33,20 @@
+ #include <sys/types.h>
+ #include <dirent.h>
+ 
+-#define PKG_EXT         ".pkg.tar."
++#ifdef linux
++#ifdef __x86_64__
++#define PKG_EXT         ".x86_64.pkg.tar."
++#endif
++#ifdef __aarch64__
++#define PKG_EXT         ".aarch64.pkg.tar."
++#endif
++#ifdef __riscv
++#define PKG_EXT         ".riscv64.pkg.tar."
++#endif
++#else
++#error                  "unsupported architecture"
++#endif
++
+ #define PKG_DIR         "var/lib/pkg"
+ #define PKG_DB          "var/lib/pkg/db"
+ #define PKG_REJECTED    "var/lib/pkg/rejected"
+-- 
+2.39.1
+

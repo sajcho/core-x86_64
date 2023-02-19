@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvRWk4Dqayb8k/vIok4r48xe6uKTHmyk+XOuW6O8zM5bbPdgNOv6HxqohpqiDIPvaS1+siyKlc8IoaD2J+/05wA4=
-SHA256 (Pkgfile) = 2f9d2b928dd1343558ffadaf6cef6d3d8da7061985115f9eca7be471b0132974
+RWQyKH7cMutLvQeUgxYjd8SRaIMlIKpkcfPCO3ym5jSIZl1mlGZP9pNpIgkSrKrrpTSik7voes0ckHQ9fmk4pshDLZcZUd+aSAc=
+SHA256 (Pkgfile) = 95403d389eddd6b61383d9d7868a9860568945cbd2f3e838b6a1382c1feb4ac6
 SHA256 (.footprint) = 7d143f18f63bba5569d729eefd0d0f04ae4b0539f8bd71f9cfd6955b9e7c639d
 SHA256 (pkgutils-5.40.10.tar.xz) = 2d86335be3d0452dcc7ae5f568e7296cd7ea80117f57646d15420a6dc192f174
-SHA256 (0001-Modified-for-SAUX-x86_64-system.patch) = 2599dd2926b58cae22289c9a61cc22f7b75a5d0dca478af61ddac8f58e830b1b
+SHA256 (pkgutils-5.40.10-by-saux.patch) = f88daaa3fe06fdcc02efdfb461bc31832e618600f31178a7efaaca386bec5d3f
