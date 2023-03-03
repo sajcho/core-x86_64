@@ -3,15 +3,12 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=make
-version=4.4
-release=2
-source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.lz \
-	upstream-fixes-20221116.patch)
+version=4.4.1
+release=1
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.lz)
 
 build() {
 	cd ${name}-${version}
-
-	patch -p1 -i $SRC/upstream-fixes-20221116.patch
 
 	./configure \
 		--prefix=/usr \
