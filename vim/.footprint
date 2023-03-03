@@ -455,6 +455,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/falcon.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/fennel.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/fetchmail.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/fish.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/flexwiki.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/fortran.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/fpcmake.vim
@@ -581,6 +582,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/qb64.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/qf.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/quake.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/quarto.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/r.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/racc.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/racket.vim
@@ -719,6 +721,7 @@ drwxr-xr-x	root/root	usr/share/vim/indent/
 -rw-r--r--	root/root	usr/share/vim/indent/expect.vim
 -rw-r--r--	root/root	usr/share/vim/indent/falcon.vim
 -rw-r--r--	root/root	usr/share/vim/indent/fennel.vim
+-rw-r--r--	root/root	usr/share/vim/indent/fish.vim
 -rw-r--r--	root/root	usr/share/vim/indent/fortran.vim
 -rw-r--r--	root/root	usr/share/vim/indent/framescript.vim
 -rw-r--r--	root/root	usr/share/vim/indent/freebasic.vim
@@ -774,6 +777,7 @@ drwxr-xr-x	root/root	usr/share/vim/indent/
 -rw-r--r--	root/root	usr/share/vim/indent/pyrex.vim
 -rw-r--r--	root/root	usr/share/vim/indent/python.vim
 -rw-r--r--	root/root	usr/share/vim/indent/qb64.vim
+-rw-r--r--	root/root	usr/share/vim/indent/quarto.vim
 -rw-r--r--	root/root	usr/share/vim/indent/r.vim
 -rw-r--r--	root/root	usr/share/vim/indent/racket.vim
 -rw-r--r--	root/root	usr/share/vim/indent/raku.vim
@@ -1110,6 +1114,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/fdcc.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/fetchmail.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/fgl.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/fish.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/flexwiki.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/focexec.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/form.vim
@@ -1219,6 +1224,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/kwt.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/lace.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/latte.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/lc.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/ld.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/ldapconf.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/ldif.vim
@@ -1374,9 +1380,11 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/purifylog.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/pyrex.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/python.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/python2.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/qb64.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/qf.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/quake.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/quarto.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/r.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/racc.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/racket.vim
