@@ -4,7 +4,7 @@
 # Depends on:	lz4 xz zlib
 
 name=zstd
-version=1.5.2
+version=1.5.4
 release=1
 source=(https://github.com/facebook/${name}/archive/v${version}/${name}-v${version}.tar.gz)
 
