@@ -338,6 +338,7 @@ drwxr-xr-x	root/root	usr/include/c++/13.0.1/experimental/bits/
 -rw-r--r--	root/root	usr/include/c++/13.0.1/experimental/source_location
 -rw-r--r--	root/root	usr/include/c++/13.0.1/experimental/string
 -rw-r--r--	root/root	usr/include/c++/13.0.1/experimental/string_view
+-rw-r--r--	root/root	usr/include/c++/13.0.1/experimental/synchronized_value
 -rw-r--r--	root/root	usr/include/c++/13.0.1/experimental/system_error
 -rw-r--r--	root/root	usr/include/c++/13.0.1/experimental/timer
 -rw-r--r--	root/root	usr/include/c++/13.0.1/experimental/tuple
