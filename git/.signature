@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvdA4i7qL5sNYfkG+KdgpwArqrGD8qZCyk9luam3BcdQ4xh3lwkzFHzl8XhH3ww3GeQrfXQe9MsttxdPg37qFWg8=
-SHA256 (Pkgfile) = 2166cd9e55c7f164e2da6e07979232a9f6a7ca23ae3aa6de5b13c7ccc1875b3b
+RWQyKH7cMutLvbQdOb5Jz4LO9GPeMB6F+RFx5Kc4URmj456RF+7Tn3YtDJvmZhz/qfGGDHNSEdWskHl/hYrkQOXRyRl8pehRhQA=
+SHA256 (Pkgfile) = 4153f1bc41a5662ec21662a41b1ea78bc210ffa6079419ac57b74bf2ae182ba9
 SHA256 (.footprint) = c933abbd3cb8587820554834c5895726c7926788b7bffe0ee7ecb2f8e3a71343
-SHA256 (git-2.39.1.tar.xz) = 40a38a0847b30c371b35873b3afcf123885dd41ea3ecbbf510efa97f3ce5c161
-SHA256 (git-manpages-2.39.1.tar.xz) = b522a58e963fd5137f660802ec5a93283abfa3eaa0f069ebb6e7f00e529cc775
+SHA256 (git-2.39.2.tar.xz) = 475f75f1373b2cd4e438706185175966d5c11f68c4db1e48c26257c43ddcf2d6
+SHA256 (git-manpages-2.39.2.tar.xz) = 0b3927a2f09db3d3ec91dd548409a7129d3af9dabf11847401872c8c0c529b25
 SHA256 (git.driver) = 432108f8c5f5abeb429cab25181b43ee42060d46fa7fbe7e4b02790b56f61e8a
