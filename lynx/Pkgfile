@@ -4,8 +4,8 @@
 # Depends on:	openssl3 zlib
 
 name=lynx
-version=2.9.0dev.10
-release=2
+version=2.9.0dev.12
+release=1
 source=(https://invisible-mirror.net/archives/${name}/tarballs/${name}${version}.tar.gz)
 
 build() {
