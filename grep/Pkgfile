@@ -1,10 +1,10 @@
 # Description:	GNU grep, egrep and fgrep
 # URL:		http://www.gnu.org/software/grep/grep.html
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	libpcre
+# Depends on:	libpcre2
 
 name=grep
-version=3.8
+version=3.10
 release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
@@ -13,7 +13,8 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--disable-nls
+		--disable-nls \
+		--without-libsigsegv
 
 	make V=1
 
