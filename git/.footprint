@@ -16,14 +16,12 @@ drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-add
--rwxr-xr-x	root/root	usr/lib/git-core/git-add--interactive
 -rwxr-xr-x	root/root	usr/lib/git-core/git-am
 -rwxr-xr-x	root/root	usr/lib/git-core/git-annotate
 -rwxr-xr-x	root/root	usr/lib/git-core/git-apply
 -rwxr-xr-x	root/root	usr/lib/git-core/git-archimport
 -rwxr-xr-x	root/root	usr/lib/git-core/git-archive
 -rwxr-xr-x	root/root	usr/lib/git-core/git-bisect
--rwxr-xr-x	root/root	usr/lib/git-core/git-bisect--helper
 -rwxr-xr-x	root/root	usr/lib/git-core/git-blame
 -rwxr-xr-x	root/root	usr/lib/git-core/git-branch
 -rwxr-xr-x	root/root	usr/lib/git-core/git-bugreport
@@ -63,7 +61,6 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git-diff-tree
 -rwxr-xr-x	root/root	usr/lib/git-core/git-difftool
 -rwxr-xr-x	root/root	usr/lib/git-core/git-difftool--helper
--rwxr-xr-x	root/root	usr/lib/git-core/git-env--helper
 -rwxr-xr-x	root/root	usr/lib/git-core/git-fast-export
 -rwxr-xr-x	root/root	usr/lib/git-core/git-fast-import
 -rwxr-xr-x	root/root	usr/lib/git-core/git-fetch
