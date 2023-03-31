@@ -4,7 +4,7 @@
 # Depends on:	perl
 
 name=texinfo
-version=7.0.2
+version=7.0.3
 release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
