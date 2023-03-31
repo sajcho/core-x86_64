@@ -12,7 +12,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/cmake
 -rw-r--r--	root/root	usr/share/bash-completion/completions/cpack
 -rw-r--r--	root/root	usr/share/bash-completion/completions/ctest
-lrwxrwxrwx	root/root	usr/share/cmake-3.25 -> cmake
+lrwxrwxrwx	root/root	usr/share/cmake-3.26 -> cmake
 drwxr-xr-x	root/root	usr/share/cmake/
 drwxr-xr-x	root/root	usr/share/cmake/Modules/
 -rw-r--r--	root/root	usr/share/cmake/Modules/.NoDartCoverage
@@ -29,6 +29,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/AndroidTestUtilities/
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeASM-ATTInformation.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeASMCompiler.cmake.in
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeASMInformation.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/CMakeASM_MARMASMInformation.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeASM_MASMInformation.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeASM_NASMInformation.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeAddFortranSubdirectory.cmake
@@ -63,6 +64,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/CMakeAddFortranSubdirectory/
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDependentOption.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineASM-ATTCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineASM_MARMASMCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineASM_MASMCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineASM_NASMCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake
@@ -150,6 +152,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/CMakeAddFortranSubdirectory/
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeTestASM-ATTCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeTestASMCompiler.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/CMakeTestASM_MARMASMCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeTestASM_MASMCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeTestASM_NASMCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeTestCCompiler.cmake
@@ -1082,6 +1085,10 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Platform/Android/
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows-df.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows-windres.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows3x-OpenWatcom-C.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows3x-OpenWatcom-CXX.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows3x-OpenWatcom.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Windows3x.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/WindowsCE-MSVC-C.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/WindowsCE-MSVC-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/WindowsCE.cmake
@@ -1180,6 +1187,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/
 -rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v10_CudaHost.json
 -rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v10_LIB.json
 -rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v10_Link.json
+-rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v10_MARMASM.json
 -rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v10_MASM.json
 -rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v10_NASM.json
 -rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v10_RC.json
