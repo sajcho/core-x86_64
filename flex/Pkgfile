@@ -12,6 +12,8 @@ build() {
 
 	CFLAGS="$CFLAGS -D_GNU_SOURCE" \
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--disable-static \
 		--disable-nls
