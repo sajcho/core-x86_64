@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/core-x86_64.pub
+RWQyKH7cMutLvU4dK6cs7D+RoVuSzfhzlJo1vc/msaT4oOpqaus3C1KEIgcrrQ5p2SaDoVTHPNewyDzzSD3I+Jd5dm0UK40TPQw=
+SHA256 (Pkgfile) = df8357d995d070b32635e8aa02f2d07d5b8ac449a85067bf5ad2f714e44a4084
+SHA256 (.footprint) = 0de8c2735445fb40a795101e5a69a7f9ec2c3c016e119ec4adb365bbfe76dee6
+SHA256 (hdparm-9.65.tar.gz) = d14929f910d060932e717e9382425d47c2e7144235a53713d55a94f7de535a4b

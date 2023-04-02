@@ -1,0 +1,16 @@
+# Description:	A shell utility for manipulating Linux IDE drive/driver parameters
+# URL:		https://sourceforge.net/projects/hdparm/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=hdparm
+version=9.65
+release=1
+source=(https://downloads.sourceforge.net/project/${name}/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	make V=1
+
+	make DESTDIR=$PKG install
+}
