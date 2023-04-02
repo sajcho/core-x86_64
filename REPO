@@ -36,6 +36,7 @@ d:libnsl
 d:less
 d:dhcpcd
 d:e2fsprogs
+d:hdparm
 d:gpm
 d:libseccomp
 d:grep
@@ -206,8 +207,8 @@ f:11a79438bafa2115cba0e7378943a181:kmod/.footprint
 f:2d007318cc59f71c0a50a372ccc96af0:kmod/.signature
 f:fbf9bcc094757dba351432824112b6ba:kmod/Pkgfile
 f:159aefdfbc12502327a3deffee4be70e:runit-saux/.footprint
-f:ad93bd7875c5cffd7d177967948bf25b:runit-saux/.signature
-f:33eeca3a2a57523827a2627b04fdaf33:runit-saux/Pkgfile
+f:c6529c0e4000494afea1d39f66ff4426:runit-saux/.signature
+f:467ca5ac8637d63d0ff4361fbbeefc16:runit-saux/Pkgfile
 f:e52165bc4afc1cb7a2b5f858359807cd:prt-utils/.footprint
 f:bf2d144030c639279d5f900fa5ee6b2f:prt-utils/.signature
 f:985c85098ac81211eb037caf1bfa0a08:prt-utils/Pkgfile
@@ -301,6 +302,9 @@ f:185128f6abbba6bdf2d1572e7aacccff:dhcpcd/Pkgfile
 f:5af9d15bf065bc4c1ad62d26f6f4cd72:e2fsprogs/.footprint
 f:2ea612da3f8de5a154cb67c63437270a:e2fsprogs/.signature
 f:424452d87dd830f3c8aa09da7b1d0aba:e2fsprogs/Pkgfile
+f:3e11e08439e86156eeca0fc09265412d:hdparm/.footprint
+f:edbbe88a892ecd350fe19360ef142209:hdparm/.signature
+f:a5bc7b14a524aa3e5cf2d724cd23f2af:hdparm/Pkgfile
 f:7f7d72b794c44c60afc122aca70838e0:gpm/gpm-1.20.7-consolidated-1.patch
 f:73e7820fae31a7fbbe084548c4b7c096:gpm/.footprint
 f:0703e64075b5364e691a19909ecd2722:gpm/.signature
@@ -349,8 +353,8 @@ f:4e29bcae8c4bfd886a273c165cbce23e:lynx/.footprint
 f:0adaaa2a6dddc0ba3fe002d10ff05587:lynx/.signature
 f:e856c706f8bce4e7609309b363117266:lynx/Pkgfile
 f:770b061ceeb5eb5ba68badab216a5e04:libxml2/.footprint
-f:e7aae2661e8e77f28f6dd850f23a7f7e:libxml2/.signature
-f:a14df7a08d518db2be962199f4cbe840:libxml2/Pkgfile
+f:190bbae0a3492bfb3f27204b4cacdfd6:libxml2/.signature
+f:b4a0a31093fee56793ee74ae0e41ae4c:libxml2/Pkgfile
 f:2fae769507b7ddf7ad7cf95093974435:libtool/.footprint
 f:da5c73496374dc134629c38576be2ac3:libtool/.signature
 f:714ccf9aa52e5ae88c868ff99c09862b:libtool/Pkgfile
@@ -465,8 +469,8 @@ f:879d405f652b23dba326818f841f4e21:tar/tar-1.29-wildcards.patch
 f:830b4abb9a96b7d506da1f8ab1c5e694:tar/Pkgfile
 f:e5c38e4c2be10f1f60a0674b23dd562b:tar/tar-1.28-document-exclude-mistakes.patch
 f:8fb593324bb13f7adb6e752e4e5cf503:mpc/.footprint
-f:0786dcd4ab3d50a2af3ae2504300f6ba:mpc/.signature
-f:3750eac7f12bb07a45e1585539387ac7:mpc/Pkgfile
+f:524ce148a7bb81029532c7d56b76cc19:mpc/.signature
+f:2bac88753d6eb2ce54e90bff33013232:mpc/Pkgfile
 f:926780e57b5bde11681bab7ff2dff5a5:python3/.footprint
 f:49bea5918e77171860269a491b0c771c:python3/.signature
 f:ad706e75ba8d747b1a8d65112918493a:python3/Pkgfile
