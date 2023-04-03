@@ -218,8 +218,8 @@ f:8906fb503a8570b5b79e86459e05b096:signify/Pkgfile
 f:1ec6188cd775f3198e8716a4b40a1230:signify/cruxify.patch
 f:055eced36adabec1a45f92459931c5ad:gcc/.footprint
 f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
-f:3990442b4a0fb76bd14826100966fe4a:gcc/.signature
-f:efa5f818755dffe7c7bdce5484a88600:gcc/Pkgfile
+f:6c79163a160fcca0248e638b85a2d4a6:gcc/.signature
+f:e1d1f9bd95ae77b94b4a9fa235efb26b:gcc/Pkgfile
 f:3d333df77302ed89e06a4a8539943b7d:gcc/c89
 f:3fde08e78b807833e1404c9f09bbe30f:mimalloc2/.footprint
 f:39eadd1feea186b0b978da126fac8935:mimalloc2/.signature
