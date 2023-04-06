@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvXaNR+eQqMUDDvAEp1VLe3a1Fx7TRGgmE+Vpdnp7BsxpeR7GOrxSxi1KKLryruvjI4Pea7PO207CgeAPGDMrNQ8=
+RWQyKH7cMutLvaDRB0KkLGOqehFD5HCZoqoFsZhBQIsChMaOqWuGLA0SP73jfV0L+dXuJ2eX4Or5OW6p1U8EpJt/J3jYokZBMgU=
 SHA256 (Pkgfile) = 1303a0038a5f9b3a77aca94ee41feb65d3eb1748ec8d66145b6ba7c32f3dae62
-SHA256 (.footprint) = 44ed3bdbdf200b35dec9e3b04fe42d3fbde53e2fab7dcf4531828cdd7465a2a2
+SHA256 (.footprint) = db522d548ed9fff64ce1db367449d86f8a4f60206c11ce8a812f1e65641e111a
 SHA256 (rustc-1.68.2-src.tar.gz) = 93339c23f7cd4d0c45db58e18b4c6e16d6070f4277aad9d2492d23294bf32e96
 SHA256 (0001-bootstrap-Change-libexec-dir.patch) = 6a4e09671cd96a854cf0fc9a1f43651ac5a0fdc8dca571730131ae272b630cfe
