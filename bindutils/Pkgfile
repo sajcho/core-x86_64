@@ -6,14 +6,19 @@
 name=bindutils
 _realname=bind
 version=9.18.13
-release=1
-source=(https://ftp.isc.org/isc/bind9/${version}/${_realname}-${version}.tar.xz)
+release=2
+source=(https://ftp.isc.org/isc/bind9/${version}/${_realname}-${version}.tar.xz \
+	utils.patch)
 
 build() {
 	cd ${_realname}-${version}
 
+	patch -p1 -i $SRC/utils.patch
+
 	./configure \
 		--prefix=/usr \
+		--libdir=/usr/lib/bindutils \
+		--includedir=/usr/include/bindutils \
 		--disable-static \
 		--disable-linux-caps \
 		--with-libxml2=no \
@@ -23,12 +28,22 @@ build() {
 
 	make V=1 -C lib
 
+	make V=1 bind.keys.h
+
 	make V=1 -C bin/dig
 
-	make V=1 -C doc/man
+	make V=1 -C bin/delv
 
-	install -D -m 0755 bin/dig/host $PKG/usr/bin/host
-	install -D -m 0644 doc/man/host.1 $PKG/usr/share/man/man1/host.1
-	install -D -m 0755 bin/dig/dig $PKG/usr/bin/dig
+	make V=1 -C doc
+
+	make DESTDIR=$PKG -C lib install
+
+	make DESTDIR=$PKG -C bin/dig install
+
+	make DESTDIR=$PKG -C bin/delv install
+
+	install -D -m 0644 doc/man/delv.1 $PKG/usr/share/man/man1/delv.1
 	install -D -m 0644 doc/man/dig.1 $PKG/usr/share/man/man1/dig.1
+	install -D -m 0644 doc/man/host.1 $PKG/usr/share/man/man1/host.1
+	install -D -m 0644 doc/man/nslookup.1 $PKG/usr/share/man/man1/nslookup.1
 }

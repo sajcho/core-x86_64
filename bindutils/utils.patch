@@ -1,0 +1,24 @@
+diff -Naur bind-9.18.1.orig/bin/Makefile.in bind-9.18.1/bin/Makefile.in
+--- bind-9.18.1.orig/bin/Makefile.in	2022-03-27 14:02:21.478112668 +0200
++++ bind-9.18.1/bin/Makefile.in	2022-03-27 14:03:11.153676681 +0200
+@@ -387,7 +387,7 @@
+ top_build_prefix = @top_build_prefix@
+ top_builddir = @top_builddir@
+ top_srcdir = @top_srcdir@
+-SUBDIRS = named rndc dig delv dnssec tools nsupdate check confgen tests plugins
++SUBDIRS = dig delv
+ all: all-recursive
+ 
+ .SUFFIXES:
+diff -Naur bind-9.18.1.orig/lib/Makefile.in bind-9.18.1/lib/Makefile.in
+--- bind-9.18.1.orig/lib/Makefile.in	2022-03-27 14:02:21.310114196 +0200
++++ bind-9.18.1/lib/Makefile.in	2022-03-27 14:08:06.964314345 +0200
+@@ -448,7 +448,7 @@
+ LIBBIND9_LIBS = \
+ 	$(top_builddir)/lib/bind9/libbind9.la
+ 
+-SUBDIRS = isc dns isccc ns isccfg bind9 irs
++SUBDIRS = isc dns isccfg ns bind9 irs
+ all: all-recursive
+ 
+ .SUFFIXES:
