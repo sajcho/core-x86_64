@@ -4,15 +4,13 @@
 # Depends on:	eudev
 
 name=dhcpcd
-version=9.99.0
-_commit=6a9994bbf00712ace77a835cb7e45558383be673
-# Date:   Mon Oct 17 14:30:03 2022
-release=1-20221017
-source=(https://github.com/NetworkConfiguration/dhcpcd/archive/${_commit}/dhcpcd-${_commit}.tar.gz \
+version=10.0.0
+release=1
+source=(https://github.com/NetworkConfiguration/${name}/archive/refs/tags/${name}-${version}.tar.gz \
 	dhcpcd-sv.conf dhcpcd.run)
 
 build() {
-	cd ${name}-${_commit}
+	cd ${name}-${name}-${version}
 
 	./configure \
 		--prefix= \
