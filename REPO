@@ -296,9 +296,9 @@ f:234acbb219c24eb2036e15dd639f6845:less/Pkgfile
 f:941ac82e8f62127cf1ec571e43769b3d:less/filter
 f:faff4035396f887db82e856a5022a4a3:dhcpcd/dhcpcd.run
 f:b6d3d3cd86cd88e5401ff22e775a31d4:dhcpcd/.footprint
-f:6a35a0d56aeb438f5aaac349b11633b0:dhcpcd/.signature
+f:37fb3f38474e563299099db701288c48:dhcpcd/.signature
 f:0a231b9fde9cc31a0217dfbbb9265767:dhcpcd/dhcpcd-sv.conf
-f:185128f6abbba6bdf2d1572e7aacccff:dhcpcd/Pkgfile
+f:5e5163f840a7531900900c276ea99b62:dhcpcd/Pkgfile
 f:5af9d15bf065bc4c1ad62d26f6f4cd72:e2fsprogs/.footprint
 f:2ea612da3f8de5a154cb67c63437270a:e2fsprogs/.signature
 f:424452d87dd830f3c8aa09da7b1d0aba:e2fsprogs/Pkgfile
@@ -382,9 +382,10 @@ f:73162410bdca11e71d090fa23726b743:inetutils/.footprint
 f:98fafdaa4578ee58e822de1bb40a5816:inetutils/.signature
 f:35861833be79593cde24a13bb7b44dc8:inetutils/inetd.run
 f:b3ee94b1bf1b852246af315ff23b5ca7:inetutils/Pkgfile
-f:af891b0eef46e4d25137e02d92065862:bindutils/.footprint
-f:9d3e5c00d344e01aea3b9ab0221cae80:bindutils/.signature
-f:ff875066a18e3742d0024fe8a5e75355:bindutils/Pkgfile
+f:2118f5a6eb10ce768c807d0f13f32f95:bindutils/.footprint
+f:c3a374d2ea517f50a85a0053c95b419d:bindutils/.signature
+f:cb27d99f44fb279bca2c99081f5121bf:bindutils/Pkgfile
+f:3b0ac19785dd07a6a0c497f4f5eaf185:bindutils/utils.patch
 f:d21963552e877968012854321a3acbd4:console-font-terminus/.footprint
 f:c1422687a7c3a01e6374092f16655181:console-font-terminus/.signature
 f:be5c4452d7f4097dc20b2cc06bb3cafd:console-font-terminus/Pkgfile
