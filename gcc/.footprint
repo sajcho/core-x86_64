@@ -926,6 +926,7 @@ drwxr-xr-x	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/13.0.1/include/
 -rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/13.0.1/include/adxintrin.h
 -rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/13.0.1/include/ammintrin.h
 -rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/13.0.1/include/amxbf16intrin.h
+-rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/13.0.1/include/amxcomplexintrin.h
 -rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/13.0.1/include/amxfp16intrin.h
 -rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/13.0.1/include/amxint8intrin.h
 -rw-r--r--	root/root	usr/lib/gcc/x86_64-unknown-linux-gnu/13.0.1/include/amxtileintrin.h
