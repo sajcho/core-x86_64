@@ -1,0 +1,20 @@
+--- rustc-1.69.0-src/src/tools/cargo/src/cargo/util/auth.rs.orig	2023-04-23 09:11:30.129625885 +0200
++++ rustc-1.69.0-src/src/tools/cargo/src/cargo/util/auth.rs	2023-04-23 10:01:03.851860749 +0200
+@@ -805,7 +805,7 @@
+     Ok(token)
+ }
+ 
+-/// Gets the path to the libexec processes in the sysroot.
++/// Gets the path to the lib processes in the sysroot.
+ fn sysroot_credential(
+     config: &Config,
+     process: &(PathBuf, Vec<String>),
+@@ -816,7 +816,7 @@
+         .parent()
+         .and_then(|p| p.parent())
+         .ok_or_else(|| format_err!("expected cargo path {}", cargo.display()))?;
+-    let exe = root.join("libexec").join(format!(
++    let exe = root.join("lib").join(format!(
+         "cargo-credential-{}{}",
+         cred_name,
+         std::env::consts::EXE_SUFFIX
