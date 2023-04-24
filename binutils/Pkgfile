@@ -5,7 +5,7 @@
 
 name=binutils
 version=2.40
-release=1
+release=2
 source=(https://sourceware.org/pub/${name}/releases/${name}-${version}.tar.xz)
 
 build() {
@@ -26,7 +26,6 @@ build() {
 		--enable-64-bit-bfd \
 		--enable-pgo-build=lto \
 		--enable-install-libiberty \
-		--enable-targets=x86_64-pep \
 		--enable-default-execstack=no \
 		--enable-deterministic-archives \
 		--disable-nls \
@@ -48,9 +47,7 @@ build() {
 	make V=1 tooldir=/usr
 
 	#  Optional
-	make check 2>&1 | tee testlog
-	grep -A 6 Summary testlog \
-		> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
+	make -k check || :
 
 	make tooldir=/usr DESTDIR=$PKG install
 
