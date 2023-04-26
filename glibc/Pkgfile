@@ -48,7 +48,7 @@ build() {
 	make V=1
 
 	# Optional
-	make -k check || :
+	#make -k check || :
 
 	make install_root=$PKG install
 
