@@ -47,7 +47,7 @@ build() {
 	make V=1 tooldir=/usr
 
 	#  Optional
-	make -k check || :
+	#make -k check || :
 
 	make tooldir=/usr DESTDIR=$PKG install
 
