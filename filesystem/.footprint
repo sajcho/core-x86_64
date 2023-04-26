@@ -59,6 +59,7 @@ drwxr-xr-x	root/root	var/lib/pkg/
 lrwxrwxrwx	root/root	var/lock -> ../run/lock
 drwxr-xr-x	root/root	var/log/
 drwxr-xr-x	root/root	var/log/old/
+drwxr-xr-x	root/root	var/log/pkgbuild/
 lrwxrwxrwx	root/root	var/mail -> spool/mail
 lrwxrwxrwx	root/root	var/run -> ../run
 drwxr-xr-x	root/root	var/spool/
