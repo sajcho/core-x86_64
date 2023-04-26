@@ -315,9 +315,9 @@ f:2930e24751dffbb68da3562492b1c2fb:grep/.footprint
 f:6a86c5336db158d8b6881a8b4b603439:grep/.signature
 f:22cb66397c550387218d4840435f019b:grep/Pkgfile
 f:66d83d54abcb74adfe1ced48d604272f:git/.footprint
-f:c3a30fe486fa12327e355e39e954a448:git/.signature
+f:7887a06b3cac24c29baf76c90b63ef50:git/.signature
 f:07297ac00d466c0c7c94afeaa16bc903:git/git.driver
-f:b816a6fc43ca21bab086ad499887ddff:git/Pkgfile
+f:fc2b295a043984ee773db27f73e38489:git/Pkgfile
 f:e0ad02fa472d49390431fdf896fcae3e:samurai/CVE-2021-30219.patch
 f:4cbfdf543fb4c3a325ca19e4ba4989cc:samurai/CVE-2021-30218.patch
 f:f7ca997936206cce76fb0809bc86641a:samurai/.footprint
@@ -574,9 +574,9 @@ f:b9a290836a948938ec350f75fcdb6f6f:diffutils/Pkgfile
 f:31a14986522f4fa1fec8cd7aed79c3a2:libcap/.footprint
 f:19da0a477cd2c7ff0ef61c9560f7bf67:libcap/.signature
 f:24469704a58ad1b36549498772b4bfb0:libcap/Pkgfile
-f:35f42db6344aed54de9217c55abc4ef3:python3-setuptools/.footprint
-f:c2268d937b70b763109b0eded371e14d:python3-setuptools/.signature
-f:cbcb74048ac687e71dcf8bbf5622a139:python3-setuptools/Pkgfile
+f:4b5046628a4fdaf8751ab026add4c2e0:python3-setuptools/.footprint
+f:aaaa5d0444864c8c8b16c890ae5b4005:python3-setuptools/.signature
+f:cadeee23a51b8ec6c6408be049c3b98b:python3-setuptools/Pkgfile
 f:05ada03b255d820320650f21dc75fa98:ncurses/.footprint
 f:7cbc9d564097543b1eabed148eb6d173:ncurses/.signature
 f:83724f19238b6f080aa3cf0d3ad6fd30:ncurses/Pkgfile
