@@ -350,9 +350,9 @@ f:6621d9cab598e2c59a00e141c6c66731:acl/Pkgfile
 f:4e29bcae8c4bfd886a273c165cbce23e:lynx/.footprint
 f:0adaaa2a6dddc0ba3fe002d10ff05587:lynx/.signature
 f:e856c706f8bce4e7609309b363117266:lynx/Pkgfile
-f:770b061ceeb5eb5ba68badab216a5e04:libxml2/.footprint
-f:190bbae0a3492bfb3f27204b4cacdfd6:libxml2/.signature
-f:b4a0a31093fee56793ee74ae0e41ae4c:libxml2/Pkgfile
+f:ce8ae3f9b0fb2575aab21f2585cfd587:libxml2/.footprint
+f:33ae6b565f786a89097dcb5ec4bbcbc9:libxml2/.signature
+f:e557c082510b0b73bda507e4d8276878:libxml2/Pkgfile
 f:2fae769507b7ddf7ad7cf95093974435:libtool/.footprint
 f:da5c73496374dc134629c38576be2ac3:libtool/.signature
 f:714ccf9aa52e5ae88c868ff99c09862b:libtool/Pkgfile
