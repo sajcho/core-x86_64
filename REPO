@@ -78,7 +78,6 @@ d:make
 d:sharutils
 d:binutils
 d:minicom
-d:libpcre
 d:libtirpc
 d:cpio
 d:tar
@@ -155,9 +154,8 @@ f:4aa82ce2c33072a323f62e89fad1575a:openssh/Pkgfile
 f:e67526fd185f2d7b3ae8ae95070215c9:openssh/sshd.run
 f:bf0717aadb81760a6ee3834e5be0d139:openssh/sshd.pam
 f:890f4ccc97b70bd80e6a8290dc878a9b:openresolv/.footprint
-f:834803eb6fc6795d147e9fd6414b2013:openresolv/.signature
-f:fc9911ca3966cdb3054a6ae814ee9e30:openresolv/0001-fix-sv-path.patch
-f:987dce741c39983216242064253e1201:openresolv/Pkgfile
+f:85965c7ccd9e37bac54e21ccb7144f6c:openresolv/.signature
+f:729f275d0bc4ef17606ee28a89679f21:openresolv/Pkgfile
 f:88f53d854a75935ed17ecbf6eb22016e:flex/.footprint
 f:af17787a61aa18f4f6ee64564cced0f4:flex/.signature
 f:29c6ac44d15f39fa6180d93cc434ff7a:flex/Pkgfile
@@ -450,9 +448,6 @@ f:e0a0e655bd6376cfc806d8e88f488591:binutils/Pkgfile
 f:f9883c632c6b16cae1b07cc259b6f7f7:minicom/.footprint
 f:ce34293b6d46110669c1b2aa7a601063:minicom/.signature
 f:c822f85d6ebb03b07bd64d44915359c8:minicom/Pkgfile
-f:efb13ac1e54c5702bc2548281430ab29:libpcre/.footprint
-f:4b5c9fc4426dff0a3dec88c6c4398f23:libpcre/.signature
-f:b94f7f77d3e8c7a5c9dd04141a464512:libpcre/Pkgfile
 f:6c9bdd2cb10b4ece237545dc907af38f:libtirpc/.footprint
 f:358d2899d1383a0da859d7b2b872d6d9:libtirpc/.signature
 f:d40610c4addd47439ac1f8d5afcb458e:libtirpc/Pkgfile
