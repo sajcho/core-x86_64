@@ -3,16 +3,12 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=openresolv
-version=3.12.0
+version=3.13.1
 release=1
-source=(http://roy.marples.name/downloads/${name}/${name}-${version}.tar.xz \
-	0001-fix-sv-path.patch)
+source=(https://github.com/NetworkConfiguration/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
-
-	# fix - sv path /sbin
-	patch -p1 -i $SRC/0001-fix-sv-path.patch
 
 	# NOTE: Don't set --prefix, it should be /.
 	./configure \

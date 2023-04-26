@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvf/pGs4rwSyptKYs9gkvFvg3P0jHPrfvp38wcgBZkcoqJ2YaM4zI2rHAEK9PHyV6al0jRKf2wdoOdlrNQEqgDww=
-SHA256 (Pkgfile) = 8e1db56b7b3ae25b7bc1c416895e759d167bfc9597b12ca7779336c33496c8d2
+RWQyKH7cMutLvWNG4jZjx0eV1pvTd1aI2ol9uS7CIEdeTyhM2Fc2IHqEuiWyMCxAmVuQ2/RyFJ6plshzFJmJqbeI4TG59Ey2RAY=
+SHA256 (Pkgfile) = f57529a90ea46f454feea3daae095281b5eb8b44b0453568d6671eeb8395f630
 SHA256 (.footprint) = 4a0f5092831cb129cd6472857e32c1d73951a877d9031bfaf9d16101938ffb5b
-SHA256 (openresolv-3.12.0.tar.xz) = 42b30508e857a228535c631eaac936862d86eca68c14b5c0bf387ba176b91b97
-SHA256 (0001-fix-sv-path.patch) = 3df0d7c6c176d5fad3e06ebaf98edb643e96041a70157c90648da04051b6e234
+SHA256 (openresolv-3.13.1.tar.gz) = 04c9cde9afc54aea79f55da2423a4c3f22dc928b560a80436dc91dd4473b0b5b
