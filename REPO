@@ -415,8 +415,8 @@ f:5de02b8b4ea0d0ed1485212b87a3e15f:sqlite3/.footprint
 f:ec3006ab8a90f7f9ee42370a18325d39:sqlite3/.signature
 f:aa75d8055343a8f9f4544e86fd1a2acf:sqlite3/Pkgfile
 f:5049919a02290b388543a9a483587319:mold/.footprint
-f:0eb87b89a8d15548cb3c5c8202387955:mold/.signature
-f:4c199bfaa8b0dabd8170818cc1ac1e14:mold/Pkgfile
+f:55f14371a054816e4bb7043fc6934d83:mold/.signature
+f:f38e1c7aa65bd160efaa80e6d0ee4955:mold/Pkgfile
 f:a3536b3710a738086d1acbf20fd0df13:sed/.footprint
 f:3248eebc9890224b53b32c5f1a7bf8c5:sed/.signature
 f:bb8562334678ad7a348cb35f2bae6df4:sed/Pkgfile
