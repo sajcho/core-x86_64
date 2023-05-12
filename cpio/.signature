@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvUvUPgeq862N2GnyFzDy3hLF/qY3EVX8afaxef5DzhwrMTacEreeJ36QyTi/IO0xNk2PmKDBbl2kUy91zICk/Q8=
-SHA256 (Pkgfile) = b851f286f93ddc2344a3166db14491dd0a9fc5ecfc9cc582974e5fe9d45c1832
+RWQyKH7cMutLvf2UB2xjZD2e2nC2sRJsm8aC4Tj0Lr0gxRi3HZ+ueIzv80CVKnf1MGF36cq8GbaLG+fpJkJupFg/OJEqpqZayQY=
+SHA256 (Pkgfile) = a439dbedf32a2dab4d5596a026a7f6a52f8cadaf965753195993b47f7f94e4c5
 SHA256 (.footprint) = 26cfb1dd44c5356afcdba7aa054685d535b15b4ab96897ad7bd24a6c9a14b9fe
-SHA256 (cpio-2.13.tar.bz2) = eab5bdc5ae1df285c59f2a4f140a98fc33678a0bf61bdba67d9436ae26b46f6d
-SHA256 (cpio-2.12-gcc-10.patch) = 4faf9bb92903b81d6ca08f767b648c70550a66f4d33b82bcd7414859072c29b3
+SHA256 (cpio-2.14.tar.bz2) = fcdc15d60f7267a6fc7efcd6b9db7b6c8966c4f2fbbb964c24d41336fd3f2c12
