@@ -191,9 +191,9 @@ f:f9807b8949354130e6eb6dbc840f569e:grub2/.signature
 f:64840e881f59e5aacea19d265e0b8dae:grub2/Pkgfile
 f:3569dfb5b8a28c987ab2aa22a5c4913d:grub2/grub.default
 f:a8b60c004480f723a094ee1d69a604db:pciutils/update-pciids.sh
-f:2b4b6e1dcc15058bee7d46c4bdd7296a:pciutils/.footprint
-f:a987edfdc456062e91c3aa93fecca344:pciutils/.signature
-f:a2dacf88883213bab8c4c3454a1fecce:pciutils/Pkgfile
+f:106ba6d76e185b559d1353c30f6051a9:pciutils/.footprint
+f:a7b485c573a8b6a591b44dbda1b4bd6b:pciutils/.signature
+f:2d26fa1d4546f1452fc812ac21c974f4:pciutils/Pkgfile
 f:ee398260884776204bf258affac22add:sysfsutils/.footprint
 f:7c1ff9279801ac11bd3fc52899367961:sysfsutils/.signature
 f:c3af0088020ac062e51ddc2b6a18814b:sysfsutils/Pkgfile
@@ -289,8 +289,8 @@ f:68d29a7a4fc30ea3ba47a4caa45b6a5e:libnsl/.footprint
 f:b74adfb73210ea70aa08a4a12e6beeed:libnsl/.signature
 f:0f3e01afeef8065dd70773b6a2a8decd:libnsl/Pkgfile
 f:341701b8457455cc7be81628611cfd54:less/.footprint
-f:3eb0b01d3c14e4eef5cc1eb7bd2f0286:less/.signature
-f:234acbb219c24eb2036e15dd639f6845:less/Pkgfile
+f:489b0919f82622798ec77091da7ef2f8:less/.signature
+f:f876002018c86f9e137525e100834268:less/Pkgfile
 f:941ac82e8f62127cf1ec571e43769b3d:less/filter
 f:faff4035396f887db82e856a5022a4a3:dhcpcd/dhcpcd.run
 f:b6d3d3cd86cd88e5401ff22e775a31d4:dhcpcd/.footprint
@@ -450,10 +450,9 @@ f:c822f85d6ebb03b07bd64d44915359c8:minicom/Pkgfile
 f:6c9bdd2cb10b4ece237545dc907af38f:libtirpc/.footprint
 f:358d2899d1383a0da859d7b2b872d6d9:libtirpc/.signature
 f:d40610c4addd47439ac1f8d5afcb458e:libtirpc/Pkgfile
-f:9608f5031d01ca760cf4dfec5988d899:cpio/cpio-2.12-gcc-10.patch
 f:5506ef99ba9669698d9bf35499c1fc8e:cpio/.footprint
-f:77dd43183288cd9961ed4631a47c1ce8:cpio/.signature
-f:f43d762790b474bfcc6e055e12e5a838:cpio/Pkgfile
+f:17c974188ff1773135601fa5a302636b:cpio/.signature
+f:c85e671ffb84e1f1617c3f66e078e130:cpio/Pkgfile
 f:451d4e93799a874118d101bd923098a6:tar/tar-1.28-atime-rofs.patch
 f:20302da54fe97dd095ee6b4682b6caa8:tar/tar-1.33-fix-capabilities-test.patch
 f:012a92e2adce9310db12d06227f657c6:tar/.footprint
