@@ -16,6 +16,7 @@ drwxr-xr-x	root/root	etc/security/limits.d/
 drwxr-xr-x	root/root	etc/security/namespace.d/
 -rwxr-xr-x	root/root	etc/security/namespace.init
 -rw-r--r--	root/root	etc/security/pam_env.conf
+-rw-r--r--	root/root	etc/security/pwhistory.conf
 -rw-r--r--	root/root	etc/security/time.conf
 drwxr-xr-x	root/root	lib/
 lrwxrwxrwx	root/root	lib/libpam.so -> libpam.so.0.85.1
@@ -43,7 +44,6 @@ drwxr-xr-x	root/root	lib/security/pam_filter/
 -rwxr-xr-x	root/root	lib/security/pam_group.so
 -rwxr-xr-x	root/root	lib/security/pam_issue.so
 -rwxr-xr-x	root/root	lib/security/pam_keyinit.so
--rwxr-xr-x	root/root	lib/security/pam_lastlog.so
 -rwxr-xr-x	root/root	lib/security/pam_limits.so
 -rwxr-xr-x	root/root	lib/security/pam_listfile.so
 -rwxr-xr-x	root/root	lib/security/pam_localuser.so
@@ -151,6 +151,7 @@ drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/pam.conf.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/pam.d.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/pam_env.conf.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/pwhistory.conf.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/time.conf.5.gz
 drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/PAM.8.gz
@@ -170,7 +171,6 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/pam_group.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_issue.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_keyinit.8.gz
--rw-r--r--	root/root	usr/share/man/man8/pam_lastlog.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_limits.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_listfile.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_localuser.8.gz
