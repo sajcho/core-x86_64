@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvaSYvRbis+fjz5SXajJTThtMqR5Gt7PEaK8MKhqHiev+D3kVJBWpo51Y+im0gwTbDRrA60u7kCKLLuKo9tdNdg0=
-SHA256 (Pkgfile) = 791f401918f1af9bf6643f9676b43753eec5396b756e41e84b02c749ffdcb13d
-SHA256 (.footprint) = b7c09cbc562996a98ad46418d1557b8df9858b5f645e7f6b79b981d9c878a8b5
-SHA256 (pciutils-3.9.0.tar.xz) = cdea7ae97239dee23249a09c68a19a287a3f109fbeb2c232ebb616cb38599012
+RWQyKH7cMutLvS0jC/dlcgu90gU/l5QZukVPfx+gnA1WuFVeau7FGPXt+sqSul624Flwc+UR3+CeABlNMVxZj3PSWuJDCEsR3wE=
+SHA256 (Pkgfile) = 4187589505fd1bd959876d03e47a7fe8b46bff76c6176495cac3281dd466288a
+SHA256 (.footprint) = eeb0dd68dbaa6345bf0f18597aae3e92ac82d78f9b1cc8288210c384aadc2e82
+SHA256 (pciutils-3.10.0.tar.xz) = 238a2e27166730e53a17fe07bfad229e07fa39b618117e5944b6d7eda9fbb0e9
 SHA256 (update-pciids.sh) = 7996a9e31b27603cf1bd142cca35710fb453891208ba9a95507904a9c65e8215
