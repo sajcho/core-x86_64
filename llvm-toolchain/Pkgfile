@@ -1,11 +1,11 @@
-# Description:	LLVM toolchain - llvm,clang,clang-tools-extra,compiler-rt,lld
+# Description:	LLVM toolchain - llvm,clang,compiler-rt,lld
 # URL:		http://llvm.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	libedit libxml2 mold python3-setuptools samurai
+# Depends on:	libedit libxml2 python3-setuptools samurai
 
 name=llvm-toolchain
 _realname=llvm-project
-version=15.0.7
+version=16.0.4
 release=1
 source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
 
@@ -21,18 +21,20 @@ build() {
 	cmake -G Ninja \
 		-DCMAKE_BUILD_TYPE="Release" \
 		-DCMAKE_INSTALL_PREFIX="/usr " \
-		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
-		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
-		-DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra;compiler-rt;lld" \
+		-DCMAKE_INSTALL_LIBEXECDIR="/usr/lib/clang" \
+		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS -w" \
+		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -w" \
+		-DLLVM_TARGETS_TO_BUILD="host;AMDGPU;BPF;NVPTX;WebAssembly" \
+		-DLLVM_ENABLE_PROJECTS="clang;compiler-rt;lld" \
 		-DLLVM_BINUTILS_INCDIR=/usr/include \
 		-DLLVM_OPTIMIZED_TABLEGEN=ON \
 		-DLLVM_BUILD_LLVM_DYLIB=ON \
 		-DLLVM_LINK_LLVM_DYLIB=ON \
 		-DLLVM_INSTALL_UTILS=ON \
-		-DLLVM_ENABLE_FFI=ON \
 		-DLLVM_ENABLE_ZLIB=ON \
+		-DLLVM_ENABLE_FFI=ON \
+		-DLLVM_ENABLE_EH=ON \
 		-DLLVM_USE_PERF=ON \
-		-DLLVM_USE_LINKER=mold \
 		-DLLVM_ENABLE_PIC=ON \
 		-DLLVM_ENABLE_RTTI=ON \
 		-DLLVM_ENABLE_LIBCXX=OFF \
@@ -40,6 +42,8 @@ build() {
 		-DLLVM_ENABLE_SPHINX=OFF \
 		-DLLVM_ENABLE_OCAMLDOC=OFF \
 		-DLLVM_INCLUDE_EXAMPLES=OFF \
+		-DLIBCLANG_BUILD_STATIC=ON \
+		-DCLANG_DEFAULT_PIE_ON_LINUX=ON \
 		-DCLANG_VENDOR="(SAUX-x86_64)" \
 		-Wno-dev \
 		../llvm
@@ -64,11 +68,4 @@ build() {
 		-x run-find-all-symbols.py $PKG
 	/usr/bin/python3 -OO -m compileall -d $SRC/${_realname}-${version}.src/llvm/utils/lit \
 		-x run-find-all-symbols.py $PKG
-
-	mv $PKG/usr/libexec/{analyze-*,*-analyzer,intercept-*} $PKG/usr/lib/clang
-	sed -i 's|libexec|lib/clang|' $PKG/usr/bin/scan-build
-
-	rmdir $PKG/usr/libexec
-
-	find $PKG -type f -name '*.a' -delete
 }
