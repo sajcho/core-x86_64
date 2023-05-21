@@ -471,9 +471,9 @@ f:549d0eb544c99598b5350172e79c694e:python3/Pkgfile
 f:59a431db6aae60adff17544a5e4248ce:file/.footprint
 f:548bc785fee207ac71894b2d99654325:file/.signature
 f:22d498fc8b6242734c6d48a6987521b5:file/Pkgfile
-f:5e25b75df5c1bf8d935fe4755f367220:llvm-toolchain/.footprint
-f:3c653ed33ae150b3ed0b4fdf6daf5f0f:llvm-toolchain/.signature
-f:03f6cd990b19eb359b888804e3ae4996:llvm-toolchain/Pkgfile
+f:f0c44f1844c1b43f1810ece6cf87752c:llvm-toolchain/.footprint
+f:fd9bf687f5b60d52e4551a4edc18f720:llvm-toolchain/.signature
+f:a4109068f3fa43905518982e74f14268:llvm-toolchain/Pkgfile
 f:2a9922b8c9fc28248d1d5039c7012620:llvm-toolchain/README
 f:1a7ad3fab3f81dc2930f3ad21f21a0ad:patch/0001-Allow-input-files-to-be-missing-for-ed-style-patches.patch
 f:c148027c04bc4a8f5790ba37fb268d92:patch/CVE-2019-13636.patch
@@ -583,6 +583,7 @@ f:237ea64a9ea7fcff81e55afa63582746:procps/sysctl.conf
 f:8d3d82b0c4ef3187048a07c8ebef9c3c:procps/.footprint
 f:5f66ea01a2cf4758f457a631821aa38a:procps/.signature
 f:05b0541ce0de2bf565384a41235fcdc5:procps/Pkgfile
+f:b1060e70aaff0e2baed6fc1d91ebe9b3:SECURITY.md
 f:15249427dbdff4dac44f3f1147839135:coreutils/.footprint
 f:c765741a7a1a549f67824c64b7dd49f1:coreutils/.signature
 f:87efd02f4e65f413b79c6f90e880c515:coreutils/Pkgfile
@@ -700,9 +701,9 @@ f:021884352f89aebfbc8b505cc446e367:lzip/.footprint
 f:a41786cab0eadc57f87616245acc2a4d:lzip/.signature
 f:d05b7a1b98679c657d459459aa11abd6:lzip/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:b19d8ab782c72a14cf1a0bbe034f9402:rust/.footprint
-f:070afcb8150e26433e3f89772cc852d4:rust/.signature
-f:175320bbf869f7bf9b4f825b569426b2:rust/Pkgfile
+f:c805bcac3765602d12265e04038b7776:rust/.footprint
+f:5af7b2f54060d3f2f7aab4e9a1e693b5:rust/.signature
+f:cef57e06b67b209e8dbd3975a73b61f9:rust/Pkgfile
 f:f5e5c0aee8870ad07208027cb1487301:rust/change-libexec-bootstrap.patch
 f:54469c94f3196e84d05ecca9d24ccecc:rust/change-libexec-cargo.patch
 f:8570861063b945ec436ad79503051634:rust/README
