@@ -4,7 +4,7 @@
 # Depends on:	gmp
 
 name=nettle
-version=3.8.1
+version=3.9
 release=1
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
