@@ -7,6 +7,7 @@ drwxr-xr-x	root/root	bin/
 -rwxr-xr-x	root/root	bin/more
 -rwsr-xr-x	root/root	bin/mount
 -rwxr-xr-x	root/root	bin/mountpoint
+-rwxr-xr-x	root/root	bin/pipesz
 -rwsr-xr-x	root/root	bin/umount
 -rwxr-xr-x	root/root	bin/wdctl
 drwxr-xr-x	root/root	etc/
@@ -32,6 +33,7 @@ drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/agetty
 -rwxr-xr-x	root/root	sbin/blkdiscard
 -rwxr-xr-x	root/root	sbin/blkid
+-rwxr-xr-x	root/root	sbin/blkpr
 -rwxr-xr-x	root/root	sbin/blkzone
 -rwxr-xr-x	root/root	sbin/blockdev
 -rwxr-xr-x	root/root	sbin/cfdisk
@@ -68,6 +70,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/colrm
 -rwxr-xr-x	root/root	usr/bin/column
 -rwxr-xr-x	root/root	usr/bin/eject
+-rwxr-xr-x	root/root	usr/bin/fadvise
 -rwxr-xr-x	root/root	usr/bin/fallocate
 -rwxr-xr-x	root/root	usr/bin/fincore
 -rwxr-xr-x	root/root	usr/bin/flock
@@ -117,6 +120,7 @@ lrwxrwxrwx	root/root	usr/bin/uname26 -> setarch
 -rwxr-xr-x	root/root	usr/bin/utmpdump
 -rwxr-xr-x	root/root	usr/bin/uuidgen
 -rwxr-xr-x	root/root	usr/bin/uuidparse
+-rwxr-xr-x	root/root	usr/bin/waitpid
 -rwxr-sr-x	root/tty	usr/bin/wall
 -rwxr-xr-x	root/root	usr/bin/whereis
 -rwxr-sr-x	root/tty	usr/bin/write
@@ -166,6 +170,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/column.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/dmesg.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/eject.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/fadvise.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/fallocate.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/fincore.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/flock.1.gz
@@ -194,6 +199,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/mountpoint.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/namei.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/nsenter.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/pipesz.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/prlimit.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/rename.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/renice.1.gz
@@ -211,6 +217,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/utmpdump.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/uuidgen.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/uuidparse.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/waitpid.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/wall.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/whereis.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/write.1.gz
@@ -237,6 +244,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/agetty.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/blkdiscard.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/blkid.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/blkpr.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/blkzone.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/blockdev.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/cfdisk.8.gz
