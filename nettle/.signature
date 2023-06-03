@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvddMp61JTA3nyc1SPjRp8efWwUjM1qIkfzUMpR84Sjy9ueZfWofg3B8r4+6O4eK5ss1JpdJDCesIBDpgB6xX0wc=
-SHA256 (Pkgfile) = cd73cfd3efbc4c08e83e37f6777ce0d76a4cef45215876a8ffb5d75f725f9e4f
-SHA256 (.footprint) = 2f76d98e95f6b8c4365aaaa8bf5200d2e8fb104da39084c2a45abe46b0cc815b
-SHA256 (nettle-3.9.tar.gz) = 0ee7adf5a7201610bb7fe0acbb7c9b3be83be44904dd35ebbcd965cd896bfeaa
+RWQyKH7cMutLvZn1udWnsIYJirZNUiQK30+HGnTDnNp+KRjoPuDXgyqyDQFg5yiXv7xTIvs/Zaw0WLo/J0p05bwGc1uFSW5+Nws=
+SHA256 (Pkgfile) = 1624c60e5eac017f0765187af9420c00d884cf88d4f58d0df486d640cd785263
+SHA256 (.footprint) = d7ac6fb3f38f9c0f257034061c0ace301630d18a84a12b9d136ae172b39b7387
+SHA256 (nettle-3.9.1.tar.gz) = ccfeff981b0ca71bbd6fbcb054f407c60ffb644389a5be80d6716d5b550c6ce3
