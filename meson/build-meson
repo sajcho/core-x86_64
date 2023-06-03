@@ -2,7 +2,6 @@
 # Highly opinionated wrapper for Alpine Linux packaging
 # Adapted for use Saux Linux: sajcho, saux dot aarch64 at gmail dot com
 
-# TODO: enable LTO once our GCC works with LTO by default
 exec meson setup \
 	--prefix=/usr \
 	--libdir=/usr/lib \
@@ -18,7 +17,6 @@ exec meson setup \
 	--buildtype=plain \
 	--auto-features=auto \
 	--wrap-mode=nodownload \
-	-Db_lto=false \
-	-Db_staticpic=true \
+	-Db_lto=true \
 	-Db_pie=true \
 	"$@"
