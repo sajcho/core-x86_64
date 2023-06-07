@@ -6,7 +6,7 @@
 name=llvm-toolchain
 _realname=llvm-project
 version=16.0.5
-release=1
+release=2
 source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
 
 build() {
@@ -42,7 +42,6 @@ build() {
 		-DLLVM_ENABLE_SPHINX=OFF \
 		-DLLVM_ENABLE_OCAMLDOC=OFF \
 		-DLLVM_INCLUDE_EXAMPLES=OFF \
-		-DLIBCLANG_BUILD_STATIC=ON \
 		-DCLANG_DEFAULT_PIE_ON_LINUX=ON \
 		-DCLANG_VENDOR="(SAUX-x86_64)" \
 		-Wno-dev \
@@ -68,4 +67,6 @@ build() {
 		-x run-find-all-symbols.py $PKG
 	/usr/bin/python3 -OO -m compileall -d $SRC/${_realname}-${version}.src/llvm/utils/lit \
 		-x run-find-all-symbols.py $PKG
+
+	find $PKG -type f -name '*.a' -delete
 }
