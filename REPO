@@ -232,8 +232,8 @@ f:c479565d921098228dc5f2edaae01515:m4/.footprint
 f:bfb77769921edd48393e2e4213ccd5c1:m4/.signature
 f:9e8187d81fea3b842b5cef34e716d3cf:m4/Pkgfile
 f:ab95e0d9db90d80621ae62b9d74d99e7:libnghttp2/.footprint
-f:2586ba5d14b9ef2b9933d3912df69f6e:libnghttp2/.signature
-f:cf3bec7a79ce1706315badd8ce7f6d07:libnghttp2/Pkgfile
+f:da81564f92ebd56d2d1a1870fefb5baf:libnghttp2/.signature
+f:2eeade1263820d783126c3e052594667:libnghttp2/Pkgfile
 f:09206503e97d5a6ab44037bd968b815d:expect/.footprint
 f:f844085b16edfeb0d944b5cb3f0336fa:expect/.signature
 f:82e55ec4a1f6ce22fb35abd0447da271:expect/Pkgfile
