@@ -465,9 +465,9 @@ f:e5c38e4c2be10f1f60a0674b23dd562b:tar/tar-1.28-document-exclude-mistakes.patch
 f:8fb593324bb13f7adb6e752e4e5cf503:mpc/.footprint
 f:524ce148a7bb81029532c7d56b76cc19:mpc/.signature
 f:2bac88753d6eb2ce54e90bff33013232:mpc/Pkgfile
-f:c3142bd2d57ab97600e66cada81aefe7:python3/.footprint
-f:f86a853a70c2d730f5cf21f3cbde4c38:python3/.signature
-f:549d0eb544c99598b5350172e79c694e:python3/Pkgfile
+f:025dbf501e40c898c2b6174de24046e1:python3/.footprint
+f:0eab9786fc58ae8c2e4c8313fac4cf51:python3/.signature
+f:7177ba898cd47c082ae2812f92154a5e:python3/Pkgfile
 f:59a431db6aae60adff17544a5e4248ce:file/.footprint
 f:548bc785fee207ac71894b2d99654325:file/.signature
 f:22d498fc8b6242734c6d48a6987521b5:file/Pkgfile
