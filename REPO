@@ -381,8 +381,8 @@ f:98fafdaa4578ee58e822de1bb40a5816:inetutils/.signature
 f:35861833be79593cde24a13bb7b44dc8:inetutils/inetd.run
 f:b3ee94b1bf1b852246af315ff23b5ca7:inetutils/Pkgfile
 f:121f5a55b7343e19ebf73bc3e8dafed2:bindutils/.footprint
-f:f937cbde1687e4b292fb39640fd335af:bindutils/.signature
-f:b51499ff48a8409d1125ccf7a52dd672:bindutils/Pkgfile
+f:3bd989d28e2198a6b76f1db54c627506:bindutils/.signature
+f:b53fe18cf873f9ea0d5179f8eed5f410:bindutils/Pkgfile
 f:3b0ac19785dd07a6a0c497f4f5eaf185:bindutils/utils.patch
 f:d21963552e877968012854321a3acbd4:console-font-terminus/.footprint
 f:c1422687a7c3a01e6374092f16655181:console-font-terminus/.signature
