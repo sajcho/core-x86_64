@@ -6,7 +6,7 @@
 name=bindutils
 _realname=bind
 version=9.18.15
-release=1
+release=2
 source=(https://ftp.isc.org/isc/bind9/${version}/${_realname}-${version}.tar.xz \
 	utils.patch)
 
@@ -24,7 +24,8 @@ build() {
 		--with-libxml2=no \
 		--with-libjson=no \
 		--with-gssapi=no \
-		--with-python=no
+		--with-python=no \
+		--with-json-c=no
 
 	make V=1 -C lib
 
