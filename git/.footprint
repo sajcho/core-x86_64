@@ -6,186 +6,182 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/git
 -rwxr-xr-x	root/root	usr/bin/git-cvsserver
--rwxr-xr-x	root/root	usr/bin/git-receive-pack
+lrwxrwxrwx	root/root	usr/bin/git-receive-pack -> git
 -rwxr-xr-x	root/root	usr/bin/git-shell
--rwxr-xr-x	root/root	usr/bin/git-upload-archive
--rwxr-xr-x	root/root	usr/bin/git-upload-pack
--rwxr-xr-x	root/root	usr/bin/gitk
+lrwxrwxrwx	root/root	usr/bin/git-upload-archive -> git
+lrwxrwxrwx	root/root	usr/bin/git-upload-pack -> git
 -rwxr-xr-x	root/root	usr/bin/scalar
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/git-core/
--rwxr-xr-x	root/root	usr/lib/git-core/git
--rwxr-xr-x	root/root	usr/lib/git-core/git-add
--rwxr-xr-x	root/root	usr/lib/git-core/git-am
--rwxr-xr-x	root/root	usr/lib/git-core/git-annotate
--rwxr-xr-x	root/root	usr/lib/git-core/git-apply
+lrwxrwxrwx	root/root	usr/lib/git-core/git -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-add -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-am -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-annotate -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-apply -> ../../bin/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-archimport
--rwxr-xr-x	root/root	usr/lib/git-core/git-archive
--rwxr-xr-x	root/root	usr/lib/git-core/git-bisect
--rwxr-xr-x	root/root	usr/lib/git-core/git-blame
--rwxr-xr-x	root/root	usr/lib/git-core/git-branch
--rwxr-xr-x	root/root	usr/lib/git-core/git-bugreport
--rwxr-xr-x	root/root	usr/lib/git-core/git-bundle
--rwxr-xr-x	root/root	usr/lib/git-core/git-cat-file
--rwxr-xr-x	root/root	usr/lib/git-core/git-check-attr
--rwxr-xr-x	root/root	usr/lib/git-core/git-check-ignore
--rwxr-xr-x	root/root	usr/lib/git-core/git-check-mailmap
--rwxr-xr-x	root/root	usr/lib/git-core/git-check-ref-format
--rwxr-xr-x	root/root	usr/lib/git-core/git-checkout
--rwxr-xr-x	root/root	usr/lib/git-core/git-checkout--worker
--rwxr-xr-x	root/root	usr/lib/git-core/git-checkout-index
--rwxr-xr-x	root/root	usr/lib/git-core/git-cherry
--rwxr-xr-x	root/root	usr/lib/git-core/git-cherry-pick
--rwxr-xr-x	root/root	usr/lib/git-core/git-citool
--rwxr-xr-x	root/root	usr/lib/git-core/git-clean
--rwxr-xr-x	root/root	usr/lib/git-core/git-clone
--rwxr-xr-x	root/root	usr/lib/git-core/git-column
--rwxr-xr-x	root/root	usr/lib/git-core/git-commit
--rwxr-xr-x	root/root	usr/lib/git-core/git-commit-graph
--rwxr-xr-x	root/root	usr/lib/git-core/git-commit-tree
--rwxr-xr-x	root/root	usr/lib/git-core/git-config
--rwxr-xr-x	root/root	usr/lib/git-core/git-count-objects
--rwxr-xr-x	root/root	usr/lib/git-core/git-credential
--rwxr-xr-x	root/root	usr/lib/git-core/git-credential-cache
--rwxr-xr-x	root/root	usr/lib/git-core/git-credential-cache--daemon
--rwxr-xr-x	root/root	usr/lib/git-core/git-credential-store
+lrwxrwxrwx	root/root	usr/lib/git-core/git-archive -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-bisect -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-blame -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-branch -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-bugreport -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-bundle -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-cat-file -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-check-attr -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-check-ignore -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-check-mailmap -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-check-ref-format -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-checkout -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-checkout--worker -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-checkout-index -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-cherry -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-cherry-pick -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-clean -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-clone -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-column -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-commit -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-commit-graph -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-commit-tree -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-config -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-count-objects -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-credential -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-credential-cache -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-credential-cache--daemon -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-credential-store -> ../../bin/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-cvsexportcommit
 -rwxr-xr-x	root/root	usr/lib/git-core/git-cvsimport
--rwxr-xr-x	root/root	usr/lib/git-core/git-cvsserver
+lrwxrwxrwx	root/root	usr/lib/git-core/git-cvsserver -> ../../bin/git-cvsserver
 -rwxr-xr-x	root/root	usr/lib/git-core/git-daemon
--rwxr-xr-x	root/root	usr/lib/git-core/git-describe
--rwxr-xr-x	root/root	usr/lib/git-core/git-diagnose
--rwxr-xr-x	root/root	usr/lib/git-core/git-diff
--rwxr-xr-x	root/root	usr/lib/git-core/git-diff-files
--rwxr-xr-x	root/root	usr/lib/git-core/git-diff-index
--rwxr-xr-x	root/root	usr/lib/git-core/git-diff-tree
--rwxr-xr-x	root/root	usr/lib/git-core/git-difftool
+lrwxrwxrwx	root/root	usr/lib/git-core/git-describe -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-diagnose -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-diff -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-diff-files -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-diff-index -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-diff-tree -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-difftool -> ../../bin/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-difftool--helper
--rwxr-xr-x	root/root	usr/lib/git-core/git-fast-export
--rwxr-xr-x	root/root	usr/lib/git-core/git-fast-import
--rwxr-xr-x	root/root	usr/lib/git-core/git-fetch
--rwxr-xr-x	root/root	usr/lib/git-core/git-fetch-pack
+lrwxrwxrwx	root/root	usr/lib/git-core/git-fast-export -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-fast-import -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-fetch -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-fetch-pack -> ../../bin/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-filter-branch
--rwxr-xr-x	root/root	usr/lib/git-core/git-fmt-merge-msg
--rwxr-xr-x	root/root	usr/lib/git-core/git-for-each-ref
--rwxr-xr-x	root/root	usr/lib/git-core/git-for-each-repo
--rwxr-xr-x	root/root	usr/lib/git-core/git-format-patch
--rwxr-xr-x	root/root	usr/lib/git-core/git-fsck
--rwxr-xr-x	root/root	usr/lib/git-core/git-fsck-objects
--rwxr-xr-x	root/root	usr/lib/git-core/git-fsmonitor--daemon
--rwxr-xr-x	root/root	usr/lib/git-core/git-gc
--rwxr-xr-x	root/root	usr/lib/git-core/git-get-tar-commit-id
--rwxr-xr-x	root/root	usr/lib/git-core/git-grep
--rwxr-xr-x	root/root	usr/lib/git-core/git-gui
--rwxr-xr-x	root/root	usr/lib/git-core/git-gui--askpass
--rwxr-xr-x	root/root	usr/lib/git-core/git-hash-object
--rwxr-xr-x	root/root	usr/lib/git-core/git-help
--rwxr-xr-x	root/root	usr/lib/git-core/git-hook
+lrwxrwxrwx	root/root	usr/lib/git-core/git-fmt-merge-msg -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-for-each-ref -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-for-each-repo -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-format-patch -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-fsck -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-fsck-objects -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-fsmonitor--daemon -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-gc -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-get-tar-commit-id -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-grep -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-hash-object -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-help -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-hook -> ../../bin/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-http-backend
 -rwxr-xr-x	root/root	usr/lib/git-core/git-http-fetch
 -rwxr-xr-x	root/root	usr/lib/git-core/git-http-push
 -rwxr-xr-x	root/root	usr/lib/git-core/git-imap-send
--rwxr-xr-x	root/root	usr/lib/git-core/git-index-pack
--rwxr-xr-x	root/root	usr/lib/git-core/git-init
--rwxr-xr-x	root/root	usr/lib/git-core/git-init-db
+lrwxrwxrwx	root/root	usr/lib/git-core/git-index-pack -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-init -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-init-db -> ../../bin/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-instaweb
--rwxr-xr-x	root/root	usr/lib/git-core/git-interpret-trailers
--rwxr-xr-x	root/root	usr/lib/git-core/git-log
--rwxr-xr-x	root/root	usr/lib/git-core/git-ls-files
--rwxr-xr-x	root/root	usr/lib/git-core/git-ls-remote
--rwxr-xr-x	root/root	usr/lib/git-core/git-ls-tree
--rwxr-xr-x	root/root	usr/lib/git-core/git-mailinfo
--rwxr-xr-x	root/root	usr/lib/git-core/git-mailsplit
--rwxr-xr-x	root/root	usr/lib/git-core/git-maintenance
--rwxr-xr-x	root/root	usr/lib/git-core/git-merge
--rwxr-xr-x	root/root	usr/lib/git-core/git-merge-base
--rwxr-xr-x	root/root	usr/lib/git-core/git-merge-file
--rwxr-xr-x	root/root	usr/lib/git-core/git-merge-index
+lrwxrwxrwx	root/root	usr/lib/git-core/git-interpret-trailers -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-log -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-ls-files -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-ls-remote -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-ls-tree -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-mailinfo -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-mailsplit -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-maintenance -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-merge -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-merge-base -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-merge-file -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-merge-index -> ../../bin/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-merge-octopus
 -rwxr-xr-x	root/root	usr/lib/git-core/git-merge-one-file
--rwxr-xr-x	root/root	usr/lib/git-core/git-merge-ours
--rwxr-xr-x	root/root	usr/lib/git-core/git-merge-recursive
+lrwxrwxrwx	root/root	usr/lib/git-core/git-merge-ours -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-merge-recursive -> ../../bin/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-merge-resolve
--rwxr-xr-x	root/root	usr/lib/git-core/git-merge-subtree
--rwxr-xr-x	root/root	usr/lib/git-core/git-merge-tree
+lrwxrwxrwx	root/root	usr/lib/git-core/git-merge-subtree -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-merge-tree -> ../../bin/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-mergetool
 -rw-r--r--	root/root	usr/lib/git-core/git-mergetool--lib
--rwxr-xr-x	root/root	usr/lib/git-core/git-mktag
--rwxr-xr-x	root/root	usr/lib/git-core/git-mktree
--rwxr-xr-x	root/root	usr/lib/git-core/git-multi-pack-index
--rwxr-xr-x	root/root	usr/lib/git-core/git-mv
--rwxr-xr-x	root/root	usr/lib/git-core/git-name-rev
--rwxr-xr-x	root/root	usr/lib/git-core/git-notes
+lrwxrwxrwx	root/root	usr/lib/git-core/git-mktag -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-mktree -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-multi-pack-index -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-mv -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-name-rev -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-notes -> ../../bin/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-p4
--rwxr-xr-x	root/root	usr/lib/git-core/git-pack-objects
--rwxr-xr-x	root/root	usr/lib/git-core/git-pack-redundant
--rwxr-xr-x	root/root	usr/lib/git-core/git-pack-refs
--rwxr-xr-x	root/root	usr/lib/git-core/git-patch-id
--rwxr-xr-x	root/root	usr/lib/git-core/git-prune
--rwxr-xr-x	root/root	usr/lib/git-core/git-prune-packed
--rwxr-xr-x	root/root	usr/lib/git-core/git-pull
--rwxr-xr-x	root/root	usr/lib/git-core/git-push
+lrwxrwxrwx	root/root	usr/lib/git-core/git-pack-objects -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-pack-redundant -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-pack-refs -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-patch-id -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-prune -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-prune-packed -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-pull -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-push -> ../../bin/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-quiltimport
--rwxr-xr-x	root/root	usr/lib/git-core/git-range-diff
--rwxr-xr-x	root/root	usr/lib/git-core/git-read-tree
--rwxr-xr-x	root/root	usr/lib/git-core/git-rebase
--rwxr-xr-x	root/root	usr/lib/git-core/git-receive-pack
--rwxr-xr-x	root/root	usr/lib/git-core/git-reflog
--rwxr-xr-x	root/root	usr/lib/git-core/git-remote
--rwxr-xr-x	root/root	usr/lib/git-core/git-remote-ext
--rwxr-xr-x	root/root	usr/lib/git-core/git-remote-fd
--rwxr-xr-x	root/root	usr/lib/git-core/git-remote-ftp
--rwxr-xr-x	root/root	usr/lib/git-core/git-remote-ftps
+lrwxrwxrwx	root/root	usr/lib/git-core/git-range-diff -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-read-tree -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-rebase -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-receive-pack -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-reflog -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-remote -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-remote-ext -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-remote-fd -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-remote-ftp -> git-remote-http
+lrwxrwxrwx	root/root	usr/lib/git-core/git-remote-ftps -> git-remote-http
 -rwxr-xr-x	root/root	usr/lib/git-core/git-remote-http
--rwxr-xr-x	root/root	usr/lib/git-core/git-remote-https
--rwxr-xr-x	root/root	usr/lib/git-core/git-repack
--rwxr-xr-x	root/root	usr/lib/git-core/git-replace
+lrwxrwxrwx	root/root	usr/lib/git-core/git-remote-https -> git-remote-http
+lrwxrwxrwx	root/root	usr/lib/git-core/git-repack -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-replace -> ../../bin/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-request-pull
--rwxr-xr-x	root/root	usr/lib/git-core/git-rerere
--rwxr-xr-x	root/root	usr/lib/git-core/git-reset
--rwxr-xr-x	root/root	usr/lib/git-core/git-restore
--rwxr-xr-x	root/root	usr/lib/git-core/git-rev-list
--rwxr-xr-x	root/root	usr/lib/git-core/git-rev-parse
--rwxr-xr-x	root/root	usr/lib/git-core/git-revert
--rwxr-xr-x	root/root	usr/lib/git-core/git-rm
+lrwxrwxrwx	root/root	usr/lib/git-core/git-rerere -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-reset -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-restore -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-rev-list -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-rev-parse -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-revert -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-rm -> ../../bin/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-send-email
--rwxr-xr-x	root/root	usr/lib/git-core/git-send-pack
+lrwxrwxrwx	root/root	usr/lib/git-core/git-send-pack -> ../../bin/git
 -rw-r--r--	root/root	usr/lib/git-core/git-sh-i18n
 -rwxr-xr-x	root/root	usr/lib/git-core/git-sh-i18n--envsubst
 -rw-r--r--	root/root	usr/lib/git-core/git-sh-setup
--rwxr-xr-x	root/root	usr/lib/git-core/git-shell
--rwxr-xr-x	root/root	usr/lib/git-core/git-shortlog
--rwxr-xr-x	root/root	usr/lib/git-core/git-show
--rwxr-xr-x	root/root	usr/lib/git-core/git-show-branch
--rwxr-xr-x	root/root	usr/lib/git-core/git-show-index
--rwxr-xr-x	root/root	usr/lib/git-core/git-show-ref
--rwxr-xr-x	root/root	usr/lib/git-core/git-sparse-checkout
--rwxr-xr-x	root/root	usr/lib/git-core/git-stage
--rwxr-xr-x	root/root	usr/lib/git-core/git-stash
--rwxr-xr-x	root/root	usr/lib/git-core/git-status
--rwxr-xr-x	root/root	usr/lib/git-core/git-stripspace
+lrwxrwxrwx	root/root	usr/lib/git-core/git-shell -> ../../bin/git-shell
+lrwxrwxrwx	root/root	usr/lib/git-core/git-shortlog -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-show -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-show-branch -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-show-index -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-show-ref -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-sparse-checkout -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-stage -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-stash -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-status -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-stripspace -> ../../bin/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-submodule
--rwxr-xr-x	root/root	usr/lib/git-core/git-submodule--helper
+lrwxrwxrwx	root/root	usr/lib/git-core/git-submodule--helper -> ../../bin/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-svn
--rwxr-xr-x	root/root	usr/lib/git-core/git-switch
--rwxr-xr-x	root/root	usr/lib/git-core/git-symbolic-ref
--rwxr-xr-x	root/root	usr/lib/git-core/git-tag
--rwxr-xr-x	root/root	usr/lib/git-core/git-unpack-file
--rwxr-xr-x	root/root	usr/lib/git-core/git-unpack-objects
--rwxr-xr-x	root/root	usr/lib/git-core/git-update-index
--rwxr-xr-x	root/root	usr/lib/git-core/git-update-ref
--rwxr-xr-x	root/root	usr/lib/git-core/git-update-server-info
--rwxr-xr-x	root/root	usr/lib/git-core/git-upload-archive
--rwxr-xr-x	root/root	usr/lib/git-core/git-upload-pack
--rwxr-xr-x	root/root	usr/lib/git-core/git-var
--rwxr-xr-x	root/root	usr/lib/git-core/git-verify-commit
--rwxr-xr-x	root/root	usr/lib/git-core/git-verify-pack
--rwxr-xr-x	root/root	usr/lib/git-core/git-verify-tag
--rwxr-xr-x	root/root	usr/lib/git-core/git-version
+lrwxrwxrwx	root/root	usr/lib/git-core/git-switch -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-symbolic-ref -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-tag -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-unpack-file -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-unpack-objects -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-update-index -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-update-ref -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-update-server-info -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-upload-archive -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-upload-pack -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-var -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-verify-commit -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-verify-pack -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-verify-tag -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-version -> ../../bin/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-web--browse
--rwxr-xr-x	root/root	usr/lib/git-core/git-whatchanged
--rwxr-xr-x	root/root	usr/lib/git-core/git-worktree
--rwxr-xr-x	root/root	usr/lib/git-core/git-write-tree
+lrwxrwxrwx	root/root	usr/lib/git-core/git-whatchanged -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-worktree -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-write-tree -> ../../bin/git
 drwxr-xr-x	root/root	usr/lib/git-core/mergetools/
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/araxis
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/bc
@@ -210,14 +206,10 @@ drwxr-xr-x	root/root	usr/lib/git-core/mergetools/
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/vimdiff
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/winmerge
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/xxdiff
--rwxr-xr-x	root/root	usr/lib/git-core/scalar
+lrwxrwxrwx	root/root	usr/lib/git-core/scalar -> ../../bin/scalar
 drwxr-xr-x	root/root	usr/lib/perl5/
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.36/
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.36/FromCPAN/
--rw-r--r--	root/root	usr/lib/perl5/site_perl/5.36/FromCPAN/Error.pm
-drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.36/FromCPAN/Mail/
--rw-r--r--	root/root	usr/lib/perl5/site_perl/5.36/FromCPAN/Mail/Address.pm
 -rw-r--r--	root/root	usr/lib/perl5/site_perl/5.36/Git.pm
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.36/Git/
 -rw-r--r--	root/root	usr/lib/perl5/site_perl/5.36/Git/I18N.pm
@@ -262,66 +254,6 @@ drwxr-xr-x	root/root	usr/share/git-core/templates/hooks/
 -rwxr-xr-x	root/root	usr/share/git-core/templates/hooks/update.sample
 drwxr-xr-x	root/root	usr/share/git-core/templates/info/
 -rw-r--r--	root/root	usr/share/git-core/templates/info/exclude
-drwxr-xr-x	root/root	usr/share/git-gui/
-drwxr-xr-x	root/root	usr/share/git-gui/lib/
--rw-r--r--	root/root	usr/share/git-gui/lib/about.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/blame.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/branch.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/branch_checkout.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/branch_create.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/branch_delete.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/branch_rename.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/browser.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/checkout_op.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/choose_font.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/choose_repository.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/choose_rev.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/chord.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/class.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/commit.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/console.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/database.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/date.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/diff.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/encoding.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/error.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/git-gui.ico
--rw-r--r--	root/root	usr/share/git-gui/lib/index.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/line.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/logo.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/merge.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/mergetool.tcl
-drwxr-xr-x	root/root	usr/share/git-gui/lib/msgs/
--rw-r--r--	root/root	usr/share/git-gui/lib/msgs/bg.msg
--rw-r--r--	root/root	usr/share/git-gui/lib/msgs/de.msg
--rw-r--r--	root/root	usr/share/git-gui/lib/msgs/el.msg
--rw-r--r--	root/root	usr/share/git-gui/lib/msgs/fr.msg
--rw-r--r--	root/root	usr/share/git-gui/lib/msgs/hu.msg
--rw-r--r--	root/root	usr/share/git-gui/lib/msgs/it.msg
--rw-r--r--	root/root	usr/share/git-gui/lib/msgs/ja.msg
--rw-r--r--	root/root	usr/share/git-gui/lib/msgs/nb.msg
--rw-r--r--	root/root	usr/share/git-gui/lib/msgs/pt_br.msg
--rw-r--r--	root/root	usr/share/git-gui/lib/msgs/pt_pt.msg
--rw-r--r--	root/root	usr/share/git-gui/lib/msgs/ru.msg
--rw-r--r--	root/root	usr/share/git-gui/lib/msgs/sv.msg
--rw-r--r--	root/root	usr/share/git-gui/lib/msgs/vi.msg
--rw-r--r--	root/root	usr/share/git-gui/lib/msgs/zh_cn.msg
--rw-r--r--	root/root	usr/share/git-gui/lib/option.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/remote.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/remote_add.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/remote_branch_delete.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/search.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/shortcut.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/spellcheck.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/sshkey.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/status_bar.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/tclIndex
--rw-r--r--	root/root	usr/share/git-gui/lib/themed.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/tools.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/tools_dlg.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/transport.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/win32.tcl
--rw-r--r--	root/root	usr/share/git-gui/lib/win32_shortcut.js
 drwxr-xr-x	root/root	usr/share/gitweb/
 -rwxr-xr-x	root/root	usr/share/gitweb/gitweb.cgi
 drwxr-xr-x	root/root	usr/share/gitweb/static/
