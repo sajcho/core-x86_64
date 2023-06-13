@@ -5,7 +5,7 @@
 
 name=eudev
 version=3.2.12
-release=1
+release=2
 source=(https://github.com/eudev-project/${name}/releases/download/v${version}/${name}-${version}.tar.gz \
 	50-firmware.rules udevd.run)
 
@@ -14,6 +14,9 @@ build() {
 
 	# needed for static linking, e.g. dmsetup.static
 	sed -i '/^Libs:/s/-ludev/-ludev -lrt/' src/libudev/libudev.pc.in
+
+	# Remove an unneeded group sgx
+	sed -e 's|GROUP="sgx", ||' -i rules/50-udev-default.rules
 
 	./configure \
 		--prefix=/usr \
