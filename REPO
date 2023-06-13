@@ -314,10 +314,10 @@ f:a908c4da4cade95a6a270cabe8f22c78:libseccomp/Pkgfile
 f:2930e24751dffbb68da3562492b1c2fb:grep/.footprint
 f:6381b458b52a73bb1b9694d480c46887:grep/.signature
 f:7d534624758b35dc73e6a38a51f11371:grep/Pkgfile
-f:36db82e89ab57ab96077b323d8b0f133:git/.footprint
-f:f341acdb0e4605f8d5fc46e4de976250:git/.signature
+f:8aab738d16ce9283c3eaaa0741db2b9a:git/.footprint
+f:860cf816bb3eceb8f93bc47919b95d9f:git/.signature
 f:07297ac00d466c0c7c94afeaa16bc903:git/git.driver
-f:bb6affb4fcf46db212477f6f6113ba29:git/Pkgfile
+f:e0f6524f836639182975d5cb57ba2571:git/Pkgfile
 f:e0ad02fa472d49390431fdf896fcae3e:samurai/CVE-2021-30219.patch
 f:4cbfdf543fb4c3a325ca19e4ba4989cc:samurai/CVE-2021-30218.patch
 f:f7ca997936206cce76fb0809bc86641a:samurai/.footprint
