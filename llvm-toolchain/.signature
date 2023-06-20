@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvXWgfbEHwm2GNpb4ursAjvotU+sKGU+nfPf3FPoXjldL1PxND4OHcOsf2tJtwikL0OOZoZJzxd6bDzUqsjuFoQM=
-SHA256 (Pkgfile) = f57cdab2bae056c74f0b1af0070c1db0b08393dac2211a0aeb48d5417df39402
-SHA256 (.footprint) = a76acceb291c7582d86c301ed5d74979264e2cf73cc25b5d5e928efadbf16a52
-SHA256 (llvm-project-16.0.5.src.tar.xz) = 37f540124b9cfd4680666e649f557077f9937c9178489cea285a672e714b2863
+RWQyKH7cMutLvZ92uduSWdp9NIJWiR/fmkLDS5WDUI4FrhJq4+WPOl3iZY86B1iK4o3lS340H+nP9+k35u3SDwHaurNBZAgzeQU=
+SHA256 (Pkgfile) = d6fadee336aab0ceb13063adc37d33ca93e1ebeb772893c5ba9025c95bcdb746
+SHA256 (.footprint) = adde8ce4e7a361e1f5ff1bb4efe7458670932d896e9f08d8e5cab7d9ef05cf62
+SHA256 (llvm-project-16.0.6.src.tar.xz) = ce5e71081d17ce9e86d7cbcfa28c4b04b9300f8fb7e78422b1feb6bc52c3028e
