@@ -100,6 +100,8 @@ drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/pkg_resources/_vendor/pack
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/_vendor/packaging/__pycache__/_tokenizer.cpython-311.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/_vendor/packaging/__pycache__/markers.cpython-311.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/_vendor/packaging/__pycache__/markers.cpython-311.pyc
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/_vendor/packaging/__pycache__/metadata.cpython-311.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/_vendor/packaging/__pycache__/metadata.cpython-311.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/_vendor/packaging/__pycache__/requirements.cpython-311.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/_vendor/packaging/__pycache__/requirements.cpython-311.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/_vendor/packaging/__pycache__/specifiers.cpython-311.opt-1.pyc
@@ -117,6 +119,7 @@ drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/pkg_resources/_vendor/pack
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/_vendor/packaging/_structures.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/_vendor/packaging/_tokenizer.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/_vendor/packaging/markers.py
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/_vendor/packaging/metadata.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/_vendor/packaging/requirements.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/_vendor/packaging/specifiers.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/_vendor/packaging/tags.py
@@ -155,13 +158,13 @@ drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/pkg_resources/extern/
 drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/pkg_resources/extern/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/extern/__pycache__/__init__.cpython-311.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/pkg_resources/extern/__pycache__/__init__.cpython-311.pyc
-drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/setuptools-67.8.0-py3.11.egg-info/
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-67.8.0-py3.11.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-67.8.0-py3.11.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-67.8.0-py3.11.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-67.8.0-py3.11.egg-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-67.8.0-py3.11.egg-info/requires.txt
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-67.8.0-py3.11.egg-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/setuptools-68.0.0-py3.11.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-68.0.0-py3.11.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-68.0.0-py3.11.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-68.0.0-py3.11.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-68.0.0-py3.11.egg-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-68.0.0-py3.11.egg-info/requires.txt
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools-68.0.0-py3.11.egg-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/setuptools/
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/setuptools/__pycache__/
@@ -215,8 +218,6 @@ drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/setuptools/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/__pycache__/package_index.cpython-311.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/__pycache__/py312compat.cpython-311.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/__pycache__/py312compat.cpython-311.pyc
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/__pycache__/py34compat.cpython-311.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/__pycache__/py34compat.cpython-311.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/__pycache__/sandbox.cpython-311.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/__pycache__/sandbox.cpython-311.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/__pycache__/unicode_utils.cpython-311.opt-1.pyc
@@ -527,6 +528,8 @@ drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/setuptools/_vendor/packagi
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_vendor/packaging/__pycache__/_tokenizer.cpython-311.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_vendor/packaging/__pycache__/markers.cpython-311.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_vendor/packaging/__pycache__/markers.cpython-311.pyc
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_vendor/packaging/__pycache__/metadata.cpython-311.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_vendor/packaging/__pycache__/metadata.cpython-311.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_vendor/packaging/__pycache__/requirements.cpython-311.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_vendor/packaging/__pycache__/requirements.cpython-311.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_vendor/packaging/__pycache__/specifiers.cpython-311.opt-1.pyc
@@ -544,6 +547,7 @@ drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/setuptools/_vendor/packagi
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_vendor/packaging/_structures.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_vendor/packaging/_tokenizer.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_vendor/packaging/markers.py
+-rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_vendor/packaging/metadata.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_vendor/packaging/requirements.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_vendor/packaging/specifiers.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/_vendor/packaging/tags.py
@@ -604,8 +608,6 @@ drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/setuptools/command/__pycac
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/command/__pycache__/install_lib.cpython-311.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/command/__pycache__/install_scripts.cpython-311.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/command/__pycache__/install_scripts.cpython-311.pyc
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/command/__pycache__/py36compat.cpython-311.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/command/__pycache__/py36compat.cpython-311.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/command/__pycache__/register.cpython-311.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/command/__pycache__/register.cpython-311.pyc
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/command/__pycache__/rotate.cpython-311.opt-1.pyc
@@ -638,7 +640,6 @@ drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/setuptools/command/__pycac
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/command/install_egg_info.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/command/install_lib.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/command/install_scripts.py
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/command/py36compat.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/command/register.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/command/rotate.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/command/saveopts.py
@@ -704,7 +705,6 @@ drwxr-xr-x	root/root	usr/lib/python3.11/site-packages/setuptools/extern/__pycach
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/namespaces.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/package_index.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/py312compat.py
--rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/py34compat.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/sandbox.py
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/script (dev).tmpl
 -rw-r--r--	root/root	usr/lib/python3.11/site-packages/setuptools/script.tmpl
