@@ -83,6 +83,8 @@ drwxr-xr-x	root/root	usr/share/vim/autoload/xml/
 -rw-r--r--	root/root	usr/share/vim/autoload/xml/xsl.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/xmlcomplete.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/xmlformat.vim
+drwxr-xr-x	root/root	usr/share/vim/autoload/zig/
+-rw-r--r--	root/root	usr/share/vim/autoload/zig/fmt.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/zip.vim
 -rw-r--r--	root/root	usr/share/vim/bugreport.vim
 drwxr-xr-x	root/root	usr/share/vim/colors/
@@ -424,6 +426,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/config.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/confini.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/context.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/corn.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/cpp.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/crm.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/crontab.vim
@@ -653,6 +656,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/udevperm.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/udevrules.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/updatedb.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/urlshortcut.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/usd.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/vb.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/vdf.vim
@@ -1578,6 +1582,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/shared/
 -rw-r--r--	root/root	usr/share/vim/syntax/upstreaminstalllog.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/upstreamlog.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/upstreamrpt.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/urlshortcut.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/usserverlog.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/usw2kagtlog.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/valgrind.vim
