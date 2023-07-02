@@ -44,6 +44,7 @@ drwxr-xr-x	root/root	lib/security/pam_filter/
 -rwxr-xr-x	root/root	lib/security/pam_group.so
 -rwxr-xr-x	root/root	lib/security/pam_issue.so
 -rwxr-xr-x	root/root	lib/security/pam_keyinit.so
+-rwxr-xr-x	root/root	lib/security/pam_lastlog.so
 -rwxr-xr-x	root/root	lib/security/pam_limits.so
 -rwxr-xr-x	root/root	lib/security/pam_listfile.so
 -rwxr-xr-x	root/root	lib/security/pam_localuser.so
@@ -171,6 +172,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/pam_group.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_issue.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_keyinit.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/pam_lastlog.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_limits.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_listfile.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pam_localuser.8.gz
