@@ -634,8 +634,8 @@ f:eb87551fe2b7b7f87261629329602247:which/.footprint
 f:fa7ae3ca3284de6103532d4e075f4067:which/.signature
 f:7f086fa9aa57d697e3fd1ddb84622b0e:which/Pkgfile
 f:5523ec9e4e6485d6dd628309822b691d:libuv/.footprint
-f:e140d4d0fca0589ed8054cc6a9b6ced1:libuv/.signature
-f:4c7ae84f321240f5d40b7ee4f561b4ca:libuv/Pkgfile
+f:869b1d2b31e8dc2a3925438a2bae5b79:libuv/.signature
+f:62b445a95e28111197fe2ca76a0a2d06:libuv/Pkgfile
 f:4e0e566ad8fd6b6f4d44522fb5114941:libuv/README
 f:4d767707b8a37c7fa7e6fedb4e6da1ae:gawk/.footprint
 f:15d74ad465fd90f28efafaec9e1dc6b2:gawk/.signature
