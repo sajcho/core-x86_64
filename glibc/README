@@ -1,0 +1,19 @@
+
+
+
+WARNING !!!!
+
+   First - build - pkgmk -d libxcrypt
+
+   Update man-pages
+
+   After updating glibc without libcrypt,
+   install libxcrypt - pkgadd libcrypt#4.4.36.....
+
+   !!!! Do not restart the computer under any circumstances. !!!!
+   !!!! It is very likely that you will not log in to the system !!!!
+
+   Run revdep and all ports like perl, linux-pam, shadow, fcron, inetutils,
+   python3, util-linux, openssh, ruby ...., it is necessary to rebuild.
+
+   Update passwd root, user.

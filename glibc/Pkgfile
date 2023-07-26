@@ -4,25 +4,29 @@
 # Depends on:	python3 texinfo
 
 name=glibc
-version=2.37
-release=2
-source=(https://ftp.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.11.tar.xz \
+version=2.37.9000
+release=1
+_commit=784ae968113011ce832b1808d4d42369f5d2e320
+# Author: Adhemerval Zanella Netto <adhemerval.zanella@linaro.org>
+# Date:   Tue Jul 25 12:16:41 2023 -0300
+source=(https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.6.tar.xz \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
 	# install kernel headers
-	cd $SRC/linux-6.1.11
+	cd $SRC/linux-6.4.6
 
 	make mrproper
 	make ARCH=$CARCH INSTALL_HDR_PATH=$PKG/usr headers_install
 	chown -R root:root $PKG/usr
 
-	cd $SRC/${name}-${version}
+	cd $SRC
+	git clone https://sourceware.org/git/glibc.git
+	cd $SRC/${name}
+	git checkout -q $_commit
 
-	# Fix a security issue identified upstream
-	sed '/width -=/s/workend - string/number_length/' \
-		-i stdio-common/vfprintf-process-arg.c
+	export CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/}"
+	export CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/}"
 
 	mkdir build
 	cd build
@@ -34,8 +38,9 @@ build() {
 		--enable-cet \
 		--enable-kernel=5.15 \
 		--enable-bind-now \
-		--enable-tunables \
+		--enable-fortify-source \
 		--enable-stack-protector=strong \
+		--disable-crypt \
 		--disable-profile \
 		--disable-timezone-tools \
 		--with-pkgversion=SAUX-x86_64 \
@@ -48,11 +53,11 @@ build() {
 	make V=1
 
 	# Optional
-	#make -k check || :
+	# make -k check || :
 
 	make install_root=$PKG install
 
-	install -m 0644 $SRC/${name}-${version}/nscd/nscd.conf $PKG/etc
+	install -m 0644 $SRC/${name}/nscd/nscd.conf $PKG/etc
 
 	# nscd runit service
 	install -d $PKG/etc/sv/nscd
