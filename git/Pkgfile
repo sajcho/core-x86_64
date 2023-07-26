@@ -5,7 +5,7 @@
 
 name=git
 version=2.41.0
-release=2
+release=3
 source=(https://www.kernel.org/pub/software/scm/git/git-{,manpages-}${version}.tar.xz
 	git.driver)
 
@@ -15,8 +15,8 @@ build() {
 	make V=1 \
 		prefix=/usr \
 		gitexecdir=/usr/lib/git-core \
-		perllibdir=/usr/lib/perl5/site_perl/5.36 \
-		CFLAGS="$CFLAGS -flto=auto -ffat-lto-objects" \
+		perllibdir=/usr/lib/perl5/site_perl/5.38 \
+		CFLAGS="$CFLAGS" \
 		TAR=bsdtar \
 		USE_LIBPCRE2=Yes \
 		INSTALL_SYMLINKS=Yes \
