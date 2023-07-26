@@ -1140,8 +1140,6 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/creal.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/crealf.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/creall.3.gz
--rw-r--r--	root/root	usr/share/man/man3/crypt.3.gz
--rw-r--r--	root/root	usr/share/man/man3/crypt_r.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/csin.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/csinf.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/csinh.3.gz
