@@ -1,11 +1,11 @@
 # Description:	Enhanced periodical command scheduler like cron
 # URL:		http://fcron.free.fr
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	readline
+# Depends on:	libxcrypt readline
 
 name=fcron
 version=3.3.1
-release=1
+release=2
 source=(http://fcron.free.fr/archives/${name}-${version}.src.tar.gz \
 	fcron.run runjobs systab.orig)
 
