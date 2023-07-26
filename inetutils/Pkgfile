@@ -1,11 +1,11 @@
 # Description:	Inetd daemon, FTP and telnet client
 # URL:		http://www.gnu.org/software/inetutils/inetutils.html
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	readline
+# Depends on:	libxcrypt readline
 
 name=inetutils
 version=2.4
-release=1
+release=2
 source=(http://ftpmirror.gnu.org/gnu/inetutils/inetutils-${version}.tar.gz \
 	inetd.conf inetd.run)
 

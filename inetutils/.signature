@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvadZ9dvLK1fEatPqsbrqarh1AX944FQy/V0l0o4NCDhQNlV9rb3dQ/2JIamjCAJrb8trqjTaGhHhjv1/q9JLfww=
-SHA256 (Pkgfile) = 30f64f57fae758a5f175c0ef6d470a7c7a1c37834c96ea7c2c7fc124f9f6550a
+RWQyKH7cMutLvbE3bfqX3eVUPL3gTushLyK3i5lRSmvqN650M/xCyYa75Xaztif9j/Or9csMLnqYwYtDLailODGpaUZ3jpz29A4=
+SHA256 (Pkgfile) = d5f487a1176a091e42fc9ac505b85717abb9a7c02ba67d10285dbcb6ba1cdc25
 SHA256 (.footprint) = 5c64207ef0d74f7fd1d79d1685f9fd3b6ac70fcb28ec4b8f5114a5b473b3a285
 SHA256 (inetutils-2.4.tar.gz) = 76aee0c2f0954728600d510955d697a4ec29324318e784848db606ee3c09e365
 SHA256 (inetd.conf) = 35c5c1d8b4d48cdd708440863fea126c82c8248f8b964e5cf454ee3dd19e40f9
