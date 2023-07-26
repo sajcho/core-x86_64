@@ -1,0 +1,29 @@
+# Description:	Modern library for one-way hashing of passwords
+# URL:		https://github.com/besser82/libxcrypt/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=libxcrypt
+version=4.4.36
+release=1
+source=(https://github.com/besser82/${name}/releases/download/v${version}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
+		--prefix=/usr \
+		--enable-hashes=strong,glibc \
+		--enable-obsolete-api=no \
+		--disable-failure-tokens \
+		--disable-static
+
+	make V=1
+
+	make check
+
+	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
+}
