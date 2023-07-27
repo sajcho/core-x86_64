@@ -4,11 +4,14 @@
 
 name=zlib
 version=1.2.13
-release=2
+release=3
 source=(http://www.zlib.net/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
+
+	CFLAGS+=" -fPIE"
+	CXXFLAGS+=" -fPIE"
 
 	./configure \
 		--prefix=/usr \
