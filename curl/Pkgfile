@@ -4,7 +4,7 @@
 # Depends on:	openssl3 zstd
 
 name=curl
-version=8.1.2
+version=8.2.1
 release=1
 source=(https://curl.haxx.se/download/${name}-${version}.tar.xz)
 
@@ -12,6 +12,8 @@ build() {
 	cd ${name}-${version}
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--enable-ipv6 \
 		--enable-threaded-resolver \
