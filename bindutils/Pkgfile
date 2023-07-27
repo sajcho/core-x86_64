@@ -5,7 +5,7 @@
 
 name=bindutils
 _realname=bind
-version=9.18.16
+version=9.18.17
 release=1
 source=(https://ftp.isc.org/isc/bind9/${version}/${_realname}-${version}.tar.xz \
 	utils.patch)
@@ -16,6 +16,8 @@ build() {
 	patch -p1 -i $SRC/utils.patch
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--libdir=/usr/lib/bindutils \
 		--includedir=/usr/include/bindutils \
