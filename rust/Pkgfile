@@ -4,7 +4,7 @@
 # Depends on:	llvm-toolchain
 
 name=rust
-version=1.70.0
+version=1.71.0
 release=1
 
 source=(https://static.rust-lang.org/dist/rustc-${version}-src.tar.gz \
@@ -22,7 +22,6 @@ build() {
 	rm -r src/llvm-project/*
 	install -d src/llvm-project/libunwind
 
-
 cat <<- EOF > $SRC/config.toml
 	changelog-seen = 2
 	profile = "user"
@@ -30,6 +29,7 @@ cat <<- EOF > $SRC/config.toml
 	[llvm]
 	ninja = true
 	link-shared = true
+	static-libstdcpp = false
 
 	[install]
 	prefix = "/usr"
@@ -49,11 +49,20 @@ cat <<- EOF > $SRC/config.toml
 	vendor = true
 	docs = false
 	profiler = false
-	sanitizers = false
+	sanitizers = true
+	locked-deps = true
 	python = "/usr/bin/python3"
 	cargo = "/usr/bin/cargo"
 	rustc = "/usr/bin/rustc"
-	tools = ["analysis", "cargo", "clippy", "rls", "rustfmt", "rust-analyzer", "rust-demangler", "src"]
+	tools = ["analysis",
+		"cargo",
+		"clippy",
+		"rustfmt",
+		"rust-analyzer",
+		"rust-analyzer-proc-macro-srv",
+		"rustdoc",
+		"rust-demangler",
+		"src"]
 
 	[target.$CHOST]
 	llvm-config = "/usr/bin/llvm-config"
@@ -77,9 +86,11 @@ EOF
 	# Cleanup
 	rm -r $PKG/usr/share/doc
 	rm -r $PKG/usr/share/zsh
-	rm -r $PKG/etc
+	rm -r $PKG/usr/src
 	rm $PKG/usr/lib/rustlib/{components,install.log,manifest-*,rust-installer-version,uninstall.sh}
 	rm $PKG/usr/lib/{libstd-*,libtest-*}
 
 	ln -srft $PKG/usr/lib $PKG/usr/lib/rustlib/$CHOST/lib/*.so
+
+	find $PKG -type f -name 'README.md' -delete
 }
