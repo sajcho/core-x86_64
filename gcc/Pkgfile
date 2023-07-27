@@ -4,7 +4,7 @@
 # Depends on:	isl mpc zstd
 
 name=gcc
-version=13.1.0
+version=13.2.0
 release=1
 source=(https://sourceware.org/pub/${name}/releases/${name}-${version}/${name}-${version}.tar.xz \
 	c89 c99)
@@ -14,6 +14,9 @@ build() {
 
 	sed -i 's|lib64|lib|' $SRC/${name}-${version}/${name}/config/i386/t-linux64
 	sed -i 's|lib64|lib|' $SRC/${name}-${version}/${name}/config/i386/linux64.h
+
+	export CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/}"
+	export CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/}"
 
 	mkdir build
 	cd build
@@ -51,6 +54,7 @@ build() {
 
 	# Optional
 	#make -k check || :
+	#$SRC/${name}-${version}/contrib/test_summary
 
 	make -j1 DESTDIR=$PKG install
 
