@@ -4,7 +4,7 @@
 # Depends on:	linux-pam openssl3 zlib
 
 name=openssh
-version=9.3p1
+version=9.3p2
 release=1
 source=(http://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/${name}-${version}.tar.gz
 	sshd.pam sshd.run)
@@ -13,6 +13,8 @@ build() {
 	cd ${name}-${version}
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--libexecdir=/usr/lib/ssh \
 		--sysconfdir=/etc/ssh \
