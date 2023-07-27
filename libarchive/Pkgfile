@@ -4,14 +4,16 @@
 # Depends on:	acl bzip2 expat lzo openssl3 zstd
 
 name=libarchive
-version=3.6.2
-release=2
+version=3.7.0
+release=1
 source=(https://github.com/${name}/${name}/releases/download/v${version}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--disable-static \
 		--without-xml2 \
@@ -19,9 +21,9 @@ build() {
 
 	make V=1
 
-	make DESTDIR=$PKG install
+	#make check
 
-	sed 's|iconv ||' -i $PKG/usr/lib/pkgconfig/libarchive.pc
+	make DESTDIR=$PKG install
 
 	find $PKG -type f -name '*.la' -delete
 }
