@@ -3,33 +3,21 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=tar
-version=1.34
+version=1.35
 release=1
-source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	tar-1.28-loneZeroWarning.patch \
-	tar-1.28-vfatTruncate.patch \
-	tar-1.29-wildcards.patch \
-	tar-1.28-atime-rofs.patch \
-	tar-1.28-document-exclude-mistakes.patch \
-	tar-1.33-fix-capabilities-test.patch)
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
-	patch -p1 -i $SRC/tar-1.28-loneZeroWarning.patch
-	patch -p1 -i $SRC/tar-1.28-vfatTruncate.patch
-	patch -p1 -i $SRC/tar-1.29-wildcards.patch
-	patch -p1 -i $SRC/tar-1.28-atime-rofs.patch
-	patch -p1 -i $SRC/tar-1.28-document-exclude-mistakes.patch
-	patch -p1 -i $SRC/tar-1.33-fix-capabilities-test.patch
-
-	CONFIG_SHELL="/bin/bash" \
+	FORCE_UNSAFE_CONFIGURE=1 \
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix= \
 		--libexec=/usr/lib/tar \
 		--mandir=/usr/share/man \
-		--disable-nls \
-		FORCE_UNSAFE_CONFIGURE=1
+		--disable-nls
 
 	make V=1
 
