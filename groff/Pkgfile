@@ -3,28 +3,21 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=groff
-version=1.22.4
+version=1.23.0
 release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
 
-	# we install only the Base14 and EURO pdf fonts
-	# and don't lookup for fonts in the filesystem
-	# https://savannah.gnu.org/bugs/?38029
-
-	sed -r -e '/^EURO\|/s/N/Y/' \
-		-e '/^[A-Z]+\|N/d' \
-		-e '/\(gs\)/d' \
-		-i font/devpdf/Foundry.in
-
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
-		--without-x \
-		--with-doc=no
+		--sysconfdir=/etc \
+		--without-x
 
-	make V=1 -j1
+	make V=1
 
 	make DESTDIR=$PKG install
 
