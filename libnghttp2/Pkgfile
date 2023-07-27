@@ -5,7 +5,7 @@
 
 name=libnghttp2
 _realname=nghttp2
-version=1.54.0
+version=1.55.1
 release=1
 source=(https://github.com/${_realname}/${_realname}/releases/download/v${version}/${_realname}-${version}.tar.xz)
 
@@ -13,6 +13,8 @@ build() {
 	cd ${_realname}-${version}
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--enable-lib-only \
 		--disable-static \
