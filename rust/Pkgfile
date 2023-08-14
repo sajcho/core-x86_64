@@ -4,12 +4,13 @@
 # Depends on:	llvm-toolchain
 
 name=rust
-version=1.71.0
+version=1.71.1
 release=1
 
 source=(https://static.rust-lang.org/dist/rustc-${version}-src.tar.gz \
 	change-libexec-bootstrap.patch \
-	change-libexec-cargo.patch)
+	change-libexec-cargo.patch \
+	fix-bootstrap-version-comparison.patch)
 
 build() {
 	cd rustc-${version}-src
@@ -17,6 +18,7 @@ build() {
 	# use /usr/lib instead of /usr/libexec
 	patch -p1 -i $SRC/change-libexec-bootstrap.patch
 	patch -p1 -i $SRC/change-libexec-cargo.patch
+	patch -p1 -i $SRC/fix-bootstrap-version-comparison.patch
 
 	# Remove bundled dependencies.
 	rm -r src/llvm-project/*
@@ -86,7 +88,6 @@ EOF
 	# Cleanup
 	rm -r $PKG/usr/share/doc
 	rm -r $PKG/usr/share/zsh
-	rm -r $PKG/usr/src
 	rm $PKG/usr/lib/rustlib/{components,install.log,manifest-*,rust-installer-version,uninstall.sh}
 	rm $PKG/usr/lib/{libstd-*,libtest-*}
 
