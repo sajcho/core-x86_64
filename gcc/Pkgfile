@@ -48,13 +48,14 @@ build() {
 		--host=$CHOST
 
 	make V=1 \
-		BOOT_CFLAGS="-O2 -Wall -Wformat-security -Wp,-D_GLIBCXX_ASSERTIONS -mtune=generic" \
+		BOOT_CFLAGS="-O2 -mtune=generic -Wall -Wformat-security -Wp,-D_GLIBCXX_ASSERTIONS" \
 		LDFLAGS_FOR_TARGET="-Wl,-z,relro,-z,now" \
 		profiledbootstrap
 
 	# Optional
 	#make -k check || :
-	#$SRC/${name}-${version}/contrib/test_summary
+	#$SRC/${name}-${version}/contrib/test_summary \
+	#	> $PKGMK_PACKAGE_DIR/${name}-${version}-check-result.txt
 
 	make -j1 DESTDIR=$PKG install
 
