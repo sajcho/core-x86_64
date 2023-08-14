@@ -1,7 +1,7 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvSyOQke1B0sEgY0THExLaWqdZIfMeF5tz6ckLNBhFKUViorWHZTJcJkIhARWhXRGbfQ+INsyNPqfZoIAS2J4pgQ=
-SHA256 (Pkgfile) = e23d4dab62a6dd077dba67b3f736a6ce93103f146106dcf533a7b3b0ba7f3b30
+RWQyKH7cMutLvR8wpl8eRYJM2IwdzlUsV+TVYAXISgaI0/ZfjtJvfnxUio6JJHqjkToF9nF8VMsapP5oJDAv+WUbwj6Yy2QsuA8=
+SHA256 (Pkgfile) = 4ab969f9010fe5710698a2a3d1b3fdd7a1b909d90d89b0039de2abda4bf97af2
 SHA256 (.footprint) = d7e00e8a135ed152dfb3663742fff59997c5efc70754cb4dd14866e866d4192d
-SHA256 (chrony-4.3.tar.gz) = 9d0da889a865f089a5a21610ffb6713e3c9438ce303a63b49c2fb6eaff5b8804
+SHA256 (chrony-4.4.tar.gz) = eafb07e6daf92b142200f478856dfed6efc9ea2d146eeded5edcb09b93127088
 SHA256 (chrony.conf) = 540be2ccdd6dad6bb13e72c9c31cd7c6a39b09307fb2be919e9a76e8a7a1bae2
 SHA256 (chrony.run) = be9f2b39ed729614c38e678dde6fdd1c457b5e3cc99c5be5630978c1905ab3eb
