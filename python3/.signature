@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvR8jvumgUAAhLyRt+yHDmrT5XACg61fXlocQuAchLDGlJFcerGsquaPVoakHBD4WL0bqkNs2+VyEMuO2PX9ipg4=
-SHA256 (Pkgfile) = 9db14e1e1eddbcadef173ba6eec86e4ed074842beafd164c48c4e88a6c23d4b8
-SHA256 (.footprint) = 19cfbfed629da3b663b4395ebbec19590b31a084c9715f2291a6af11ba305a22
+RWQyKH7cMutLvW/PIIsQu5H7LjhWlNDA8tYh6bNLxR8ouM0heHR/VPQ7MxQ+t4y+sM8MBWnFsqdF5W4CAWhrVSLCViw325XSxAk=
+SHA256 (Pkgfile) = e840950abf7c9c7bb9db5adac672dc8b61021b4575dea47eb84684ee9f528d89
+SHA256 (.footprint) = 8e394df558d710536cf4f0b0fa75e59f45e482ec7e79f615658d000fa45baa6f
 SHA256 (Python-3.11.4.tar.xz) = 2f0e409df2ab57aa9fc4cbddfb976af44e4e55bf6f619eee6bc5c2297264a7f6
