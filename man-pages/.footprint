@@ -450,6 +450,7 @@ drwxr-xr-x	root/root	usr/share/man/man2/
 -rw-r--r--	root/root	usr/share/man/man2/ioctl_getfsmap.2.gz
 -rw-r--r--	root/root	usr/share/man/man2/ioctl_iflags.2.gz
 -rw-r--r--	root/root	usr/share/man/man2/ioctl_ns.2.gz
+-rw-r--r--	root/root	usr/share/man/man2/ioctl_pipe.2.gz
 -rw-r--r--	root/root	usr/share/man/man2/ioctl_tty.2.gz
 -rw-r--r--	root/root	usr/share/man/man2/ioctl_userfaultfd.2.gz
 -rw-r--r--	root/root	usr/share/man/man2/ioperm.2.gz
@@ -3488,6 +3489,7 @@ drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/core.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/dir_colors.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/elf.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/erofs.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/filesystems.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/fs.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/ftpusers.5.gz
