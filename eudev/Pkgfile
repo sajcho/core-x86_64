@@ -5,7 +5,7 @@
 
 name=eudev
 version=3.2.12
-release=2
+release=3
 source=(https://github.com/eudev-project/${name}/releases/download/v${version}/${name}-${version}.tar.gz \
 	50-firmware.rules udevd.run)
 
@@ -27,7 +27,6 @@ build() {
 		--with-rootlibdir=/lib \
 		--libexecdir=/lib \
 		--enable-split-usr \
-		--disable-introspection \
 		--disable-manpages \
 		--disable-static
 

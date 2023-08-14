@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvfWCEg1aZmf8AgnWr2AZe9OlkPrdpu+0S994dsVk1y8JoXyFSiVjvheECi+WHi28zoeB4U+yre04KmZUhuH8tgo=
-SHA256 (Pkgfile) = d3e2ee772c5f36be8d3bea349d457909030b29888b9a95737c223653ae95ea1d
+RWQyKH7cMutLvVa696RaGdEHEUry3xvLJCWWLQJLBqQupzsqsVwrUgRmHQP9ecZr72DWHebJen9O3iUUVstoTZkn2WeDYnsW3Qc=
+SHA256 (Pkgfile) = d6b3eca734c5ae759e387e3eed0367d8a77987c14aeebb51a1e0be6f662a6b05
 SHA256 (.footprint) = be671b5dea09b7d6937d907c8be7bb582b62b530d41d4d8848e397bc237757d8
 SHA256 (eudev-3.2.12.tar.gz) = ccdd64ec3c381d3c3ed0e99d2e70d1f62988c7763de89ca7bdffafa5eacb9ad8
 SHA256 (50-firmware.rules) = 37895a6ae81ab0e8753eb97a7c11b7cf578549e06fbbf2d6b192d109bc2cd9a3
