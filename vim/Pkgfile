@@ -4,7 +4,7 @@
 # Depends on:	ncurses acl
 
 name=vim
-version=9.0.1671
+version=9.0.1696
 release=1
 source=(https://github.com/vim/vim/archive/v${version}/${name}-${version}.tar.gz)
 
@@ -14,6 +14,8 @@ build() {
 	sed -i '/^CFLAGS/d' Makefile
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--with-vim-name=vim \
 		--without-x \
@@ -44,6 +46,8 @@ build() {
 	ln -sf vim.1.gz $PKG/usr/share/man/man1/gvim.1.gz
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/ \
 		--datarootdir=/usr/share \
 		--with-vim-name=vi \
