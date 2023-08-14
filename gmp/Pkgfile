@@ -3,14 +3,16 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=gmp
-version=6.2.1
-release=2
+version=6.3.0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--enable-cxx
 
