@@ -17,6 +17,9 @@ exec meson setup \
 	--buildtype=plain \
 	--auto-features=auto \
 	--wrap-mode=nodownload \
-	-Db_lto=true \
+	-Db_staticpic=true \
 	-Db_pie=true \
+	-Dpython.bytecompile=0 \
+	-Db_lto=false \
+	-Dwerror=false \
 	"$@"
