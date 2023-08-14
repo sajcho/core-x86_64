@@ -4,7 +4,7 @@
 # Depends on:	zlib libseccomp
 
 name=file
-version=5.44
+version=5.45
 release=1
 source=(https://astron.com/pub/${name}/${name}-${version}.tar.gz)
 
@@ -12,6 +12,8 @@ build() {
 	cd ${name}-${version}
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--enable-fsect-man5 \
 		--enable-libseccomp
