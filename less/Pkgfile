@@ -4,7 +4,7 @@
 # Depends on:	libpcre2
 
 name=less
-version=633
+version=643
 release=1
 source=(http://www.greenwoodsoftware.com/less/${name}-${version}-beta.tar.gz \
 	filter)
@@ -13,7 +13,10 @@ build() {
 	cd ${name}-${version}
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
+		--sysconfdir=/etc \
 		--with-regex=pcre2 \
 		--with-editor=vim
 
