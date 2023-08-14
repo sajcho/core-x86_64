@@ -4,12 +4,15 @@
 # Depends on:	flex texinfo zlib
 
 name=binutils
-version=2.40
-release=2
+version=2.41
+release=1
 source=(https://sourceware.org/pub/${name}/releases/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
+
+	export CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/}"
+	export CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/}"
 
 	mkdir build
 	cd build
