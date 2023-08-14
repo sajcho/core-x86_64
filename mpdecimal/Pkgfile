@@ -4,19 +4,15 @@
 
 name=mpdecimal
 version=2.5.1
-release=3
+release=4
 source=(http://www.bytereef.org/software/${name}/releases/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
 
-	# NOTE: without -ffat-lto-objects the inline assembly tests in ./configure
-	# have false positives on a variety of architectures
-
-	CFLAGS+=" -ffat-lto-objects"
-	CXXFLAGS+=" -ffat-lto-objects"
-
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr
 
 	make V=1
