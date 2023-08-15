@@ -253,8 +253,8 @@ f:cdb107c3d7b96a14bb3aae0236b25db5:rsync/Pkgfile
 f:a47ba380e5575c69784ca6a01888199d:linux-pam/other
 f:7021458163f5355d4acebf5ce5cf08c8:linux-pam/common-session
 f:f2ebe55d1319bb6cc3e2145afc2b6191:linux-pam/.footprint
-f:09088293c2fc3255f178eef57ca117a7:linux-pam/.signature
-f:0cbcc4a62137091a61710368b5b010e1:linux-pam/Pkgfile
+f:29985bace14228f4db699214df98de9f:linux-pam/.signature
+f:d2efa9200304eee3876aec1d226b7ceb:linux-pam/Pkgfile
 f:cc2207aa93a3b6579e5099f6ea699bc8:linux-pam/common-password
 f:6362b0bfc92504b3f8aec8ed3cd7b861:linux-pam/common-account
 f:af79dbf9b6a82ea8fcbafa1a405bcbd6:linux-pam/common-auth
