@@ -468,8 +468,8 @@ f:59a431db6aae60adff17544a5e4248ce:file/.footprint
 f:a79a8591f0aecf2be28e4ceadab244eb:file/.signature
 f:32626a0aef427d6d23c9e81ced711208:file/Pkgfile
 f:df2e308e6f134c3d90e33732195748bd:llvm-toolchain/.footprint
-f:999ee5a7b670bd06d110b68e2afe3e2b:llvm-toolchain/.signature
-f:b9465c3439a4281cef3c2ea8ace564bf:llvm-toolchain/Pkgfile
+f:d7fa9d26ef3990db74ffa4dd3be67dae:llvm-toolchain/.signature
+f:c437a616a7a33f78d769420900910fec:llvm-toolchain/Pkgfile
 f:3a56a4e09450a4bc9e2a6d17478f8679:llvm-toolchain/README
 f:1a7ad3fab3f81dc2930f3ad21f21a0ad:patch/0001-Allow-input-files-to-be-missing-for-ed-style-patches.patch
 f:c148027c04bc4a8f5790ba37fb268d92:patch/CVE-2019-13636.patch
