@@ -3,9 +3,9 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=gzip
-version=1.12
+version=1.13
 release=1
-source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
+source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
