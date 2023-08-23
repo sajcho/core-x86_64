@@ -4,7 +4,7 @@
 # Depends on:	gmp
 
 name=mpfr
-version=4.2.0
+version=4.2.1
 release=1
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
@@ -12,6 +12,8 @@ build() {
 	cd ${name}-${version}
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--enable-thread-safe \
 		--disable-static
