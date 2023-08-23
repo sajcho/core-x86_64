@@ -5,7 +5,7 @@
 
 name=openssh
 version=9.4p1
-release=1
+release=2
 source=(https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/${name}-${version}.tar.gz
 	sshd.pam sshd.run)
 
@@ -24,8 +24,11 @@ build() {
 		--with-pam \
 		--with-pie \
 		--with-pid-dir=/run \
+		--with-xauth=/usr/bin/xauth \
 		--with-privsep-user=nobody \
-		--with-privsep-path=/var/empty
+		--with-privsep-path=/var/empty \
+		--without-zlib-version-check
+
 
 	make V=1
 
