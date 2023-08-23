@@ -231,24 +231,24 @@ drwxr-xr-x	root/root	usr/include/bindutils/ns/
 -rw-r--r--	root/root	usr/include/bindutils/ns/xfrout.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/bindutils/
--rwxr-xr-x	root/root	usr/lib/bindutils/libbind9-9.18.17.so
+-rwxr-xr-x	root/root	usr/lib/bindutils/libbind9-9.18.18.so
 -rwxr-xr-x	root/root	usr/lib/bindutils/libbind9.la
-lrwxrwxrwx	root/root	usr/lib/bindutils/libbind9.so -> libbind9-9.18.17.so
--rwxr-xr-x	root/root	usr/lib/bindutils/libdns-9.18.17.so
+lrwxrwxrwx	root/root	usr/lib/bindutils/libbind9.so -> libbind9-9.18.18.so
+-rwxr-xr-x	root/root	usr/lib/bindutils/libdns-9.18.18.so
 -rwxr-xr-x	root/root	usr/lib/bindutils/libdns.la
-lrwxrwxrwx	root/root	usr/lib/bindutils/libdns.so -> libdns-9.18.17.so
--rwxr-xr-x	root/root	usr/lib/bindutils/libirs-9.18.17.so
+lrwxrwxrwx	root/root	usr/lib/bindutils/libdns.so -> libdns-9.18.18.so
+-rwxr-xr-x	root/root	usr/lib/bindutils/libirs-9.18.18.so
 -rwxr-xr-x	root/root	usr/lib/bindutils/libirs.la
-lrwxrwxrwx	root/root	usr/lib/bindutils/libirs.so -> libirs-9.18.17.so
--rwxr-xr-x	root/root	usr/lib/bindutils/libisc-9.18.17.so
+lrwxrwxrwx	root/root	usr/lib/bindutils/libirs.so -> libirs-9.18.18.so
+-rwxr-xr-x	root/root	usr/lib/bindutils/libisc-9.18.18.so
 -rwxr-xr-x	root/root	usr/lib/bindutils/libisc.la
-lrwxrwxrwx	root/root	usr/lib/bindutils/libisc.so -> libisc-9.18.17.so
--rwxr-xr-x	root/root	usr/lib/bindutils/libisccfg-9.18.17.so
+lrwxrwxrwx	root/root	usr/lib/bindutils/libisc.so -> libisc-9.18.18.so
+-rwxr-xr-x	root/root	usr/lib/bindutils/libisccfg-9.18.18.so
 -rwxr-xr-x	root/root	usr/lib/bindutils/libisccfg.la
-lrwxrwxrwx	root/root	usr/lib/bindutils/libisccfg.so -> libisccfg-9.18.17.so
--rwxr-xr-x	root/root	usr/lib/bindutils/libns-9.18.17.so
+lrwxrwxrwx	root/root	usr/lib/bindutils/libisccfg.so -> libisccfg-9.18.18.so
+-rwxr-xr-x	root/root	usr/lib/bindutils/libns-9.18.18.so
 -rwxr-xr-x	root/root	usr/lib/bindutils/libns.la
-lrwxrwxrwx	root/root	usr/lib/bindutils/libns.so -> libns-9.18.17.so
+lrwxrwxrwx	root/root	usr/lib/bindutils/libns.so -> libns-9.18.18.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
