@@ -587,10 +587,12 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/protocols.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/ps1.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/ps1xml.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/pymanifest.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/pyrex.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/python.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/qb64.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/qf.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/qml.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/quake.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/quarto.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/r.vim
@@ -617,6 +619,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/scheme.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/screen.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/scss.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/sed.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/sensors.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/services.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/setserial.vim
@@ -627,6 +630,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/slpconf.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/slpreg.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/slpspi.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/solidity.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/solution.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/spec.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/sql.vim
@@ -794,6 +798,7 @@ drwxr-xr-x	root/root	usr/share/vim/indent/
 -rw-r--r--	root/root	usr/share/vim/indent/pyrex.vim
 -rw-r--r--	root/root	usr/share/vim/indent/python.vim
 -rw-r--r--	root/root	usr/share/vim/indent/qb64.vim
+-rw-r--r--	root/root	usr/share/vim/indent/qml.vim
 -rw-r--r--	root/root	usr/share/vim/indent/quarto.vim
 -rw-r--r--	root/root	usr/share/vim/indent/r.vim
 -rw-r--r--	root/root	usr/share/vim/indent/racket.vim
@@ -1398,11 +1403,13 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/psl.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/ptcap.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/purifylog.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/pymanifest.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/pyrex.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/python.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/python2.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/qb64.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/qf.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/qml.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/quake.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/quarto.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/r.vim
