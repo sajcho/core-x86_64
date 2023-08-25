@@ -1,0 +1,20 @@
+# Description:	Automatically generates Rust FFI bindings to C (and some C++) libraries
+# URL:		https://github.com/rust-lang/rust-bindgen
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	clang rust
+
+name=rust-bindgen
+_realname=bindgen
+version=0.66.1
+release=1
+source=(https://github.com/rust-lang/${name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	cargo fetch --locked --target $CHOST
+
+	cargo build --release --frozen
+
+	install -D -m 0755 target/release/${_realname} $PKG/usr/bin/bindgen
+}
