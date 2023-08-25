@@ -1,7 +1,7 @@
 # Description:	Secure SHell server and client tools
 # URL:		http://www.openssh.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	libxcrypt linux-pam openssl3 zlib
+# Depends on:	linux-pam openssl3 zlib
 
 name=openssh
 version=9.4p1
