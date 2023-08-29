@@ -398,9 +398,10 @@ f:05e73c1eb723f5ca3826b0514e9af7fd:openssl3/.footprint
 f:133027bda091b1ae086671f1035281ee:openssl3/.signature
 f:04ef876b082dd4cce662e6b6811ce5b3:openssl3/Pkgfile
 f:91f85842d2118003ee465c34259047e6:openssl3/mksslcert.sh
-f:142a852bc5a1ff994377cba4e2506999:zstd/.footprint
-f:5c34901d6117ac3dfb3e3e1c90ab1842:zstd/.signature
-f:5ae978490a6c7e87118456d0a295340b:zstd/Pkgfile
+f:089085b6322f7d3bb6f073790e127a99:zstd/disable-warning-decompression-multi-thread.patch
+f:e63d5188bf4e3b20ed4d2b0694ec9e0d:zstd/.footprint
+f:e8bb8c7141d350c4bb891d28ce016439:zstd/.signature
+f:05f3ac95d50859a4fc9b90fefa09b66a:zstd/Pkgfile
 f:214c9d71e1e9250acbbceb9de3685dbc:socklog-config/.footprint
 f:28f71abd350eb901cffe5c6838f45d74:socklog-config/.signature
 f:7e4c7f348a249b228a042569e8b49ba2:socklog-config/Pkgfile
@@ -715,7 +716,8 @@ f:f97308d8a40bf6bd8d671e0bd9a99725:groff/.footprint
 f:150b86c75fe0b3ccd484ff36dad2362d:groff/.signature
 f:f186886e649f3d0bb92f458cd83eb3aa:groff/Pkgfile
 f:c0dbfb6299dfaeb45a4b23084a25a9a7:groff/README
+f:f8c0ee849369075980c1c9261d9bd93e:httpup/fix-mismatched-allocation-delete-pwd.patch
 f:244d80213b48c8b5a5aca4c186f01f3d:httpup/.footprint
-f:398a95c7506e5426ae5d4048327dcb9e:httpup/.signature
-f:9483c9d5779ba2940d1a3355886eb70b:httpup/Pkgfile
+f:de7cb9147e1ce25447a68158ff7dc9eb:httpup/.signature
+f:76fb41af5559ab8a370e7583e93d3a7d:httpup/Pkgfile
 f:faa600a1b0349fe78b0eb463cab444df:httpup/httpup
