@@ -1,5 +1,6 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvbZ6JPlq4JI9Ccufo4LI2OXjPG1glXynUga7aBVp1LTiGSMb5kHUNyZ0WyxXPblsGY0IHA0zNizPKPiwkD8+dQg=
-SHA256 (Pkgfile) = f97749e43c4eab1c09337c6bb88f9eb3c09b9efe8ce32110e82788b7497133cf
-SHA256 (.footprint) = dda9f5269d0de8d3d9de4de83ea19d6829ff025e87d90698c9b6a8dbee21f87c
+RWQyKH7cMutLvZTpnouUgwfzCtSOKhcPYX57Ds5UzbH3gcA5OuZ1PTzQ+7c1yx39M54ToCozps0a8NFjOwCHDgHlgXd/UI5dpwU=
+SHA256 (Pkgfile) = d303eeb50974890b3254e5e5ccda58e9bc3353b4f487fcdf43709929390aff9d
+SHA256 (.footprint) = 52cb2df6341ea658e0a20dbde39ab2031f38d3ee430e3cf51a00beb911aaa7c6
 SHA256 (zstd-v1.5.5.tar.gz) = 98e9c3d949d1b924e28e01eccb7deed865eefebf25c2f21c702e5cd5b63b85e1
+SHA256 (disable-warning-decompression-multi-thread.patch) = bcf4d000d85240d8d2693438855ac218a1f93c56b63bfb6be9e5598206b5cd73

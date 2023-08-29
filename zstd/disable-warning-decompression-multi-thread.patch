@@ -1,0 +1,26 @@
+From ac02a91078ef98674f9bcec0bacb382362f2481e Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Mon, 28 Aug 2023 12:56:35 +0200
+Subject: [PATCH] zstdcli.c: disable Warning decompression multi-threading
+
+---
+ programs/zstdcli.c | 3 ---
+ 1 file changed, 3 deletions(-)
+
+diff --git a/programs/zstdcli.c b/programs/zstdcli.c
+index 66952aa8..37703439 100644
+--- a/programs/zstdcli.c
++++ b/programs/zstdcli.c
+@@ -1291,9 +1291,6 @@ int main(int argCount, const char* argv[])
+     DISPLAYLEVEL(3, WELCOME_MESSAGE);
+ 
+ #ifdef ZSTD_MULTITHREAD
+-    if ((operation==zom_decompress) && (!singleThread) && (nbWorkers > 1)) {
+-        DISPLAYLEVEL(2, "Warning : decompression does not support multi-threading\n");
+-    }
+     if ((nbWorkers==0) && (!singleThread)) {
+         /* automatically set # workers based on # of reported cpus */
+         if (defaultLogicalCores) {
+-- 
+2.42.0
+

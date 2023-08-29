@@ -1,23 +1,39 @@
 # Description:	Real-time compression with high compression ratios.
 # URL:		http://www.zstd.net/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	lz4 xz zlib
+# Depends on:	meson lz4
 
 name=zstd
 version=1.5.5
-release=1
-source=(https://github.com/facebook/${name}/archive/v${version}/${name}-v${version}.tar.gz)
+release=2
+source=(https://github.com/facebook/${name}/archive/v${version}/${name}-v${version}.tar.gz \
+	disable-warning-decompression-multi-thread.patch)
 
 build() {
-	cd ${name}-${version}
+	cd ${name}-${version}/build/meson
 
-	make V=1
+	export CFLAGS="${CFLAGS/-O2/-O3}"
+	export CXXFLAGS="${CXXFLAGS/-O2/-O3}"
+	export CPPFLAGS="${CFLAGS/-O2/-O3}"
 
-	make -C contrib/pzstd
+	# Decompression does not support multi-threading
+	# Disable warning - It is annoying
+	patch -p1 -d $SRC/${name}-${version} \
+		-i $SRC/disable-warning-decompression-multi-thread.patch
 
-	make PREFIX=/usr DESTDIR=$PKG install
+	build-meson \
+		--default-library=both \
+		-Db_ndebug=true \
+		-Dbin_contrib=true \
+		-Dbin_programs=true \
+		-Dbacktrace=disabled \
+		-Dmulti_thread=enabled \
+		-Dlz4=enabled \
+		-Dlzma=enabled \
+		-Dzlib=enabled \
+		. build
 
-	install -D -m 0755 contrib/pzstd/pzstd -t $PKG/usr/bin
+	meson compile ${JOBS:+-j ${JOBS}} -C build
 
-	rm $PKG/usr/lib/libzstd.a
+	DESTDIR=$PKG meson install --no-rebuild -C build
 }
