@@ -5,16 +5,17 @@
 
 name=httpup
 version=0.5.0
-release=2
-source=(https://crux.nu/files/${name}-${version}.tar.xz httpup)
+release=3
+source=(https://crux.nu/files/${name}-${version}.tar.xz httpup \
+	fix-mismatched-allocation-delete-pwd.patch)
 
 build() {
 	cd ${name}-${version}
 
+	patch -p1 -i $SRC/fix-mismatched-allocation-delete-pwd.patch
+
 	# fix - egrep is obsolescent; using grep -E
 	sed 's|egrep|grep -E|' -i httpup-repgen
-
-	export CPPFLAGS="-Wno-error=mismatched-new-delete"
 
 	make V=1
 

@@ -1,6 +1,7 @@
 untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvf8omCr12jrppa0WQ4a3YwcmVEgoEr3UE3kHqJo+DgfecvqsKSuHdq1eo5wq2ejwu0jMGPorTKGIay3ozmyF1AA=
-SHA256 (Pkgfile) = 8d753b5ccc71fbb654282d93f08a72c7b054440461cf1cb0e504007d98daa4df
+RWQyKH7cMutLvVmkIF4Y3rR6N9qjWPP+T2y3/yfjtsQx4K2hXXjFhmtn3GGcFP11XZhIhE8iPOLV1deohPwj0sx5piWxKSFUsQA=
+SHA256 (Pkgfile) = c6565e08d5a51b0e08e5ebb79483b5aa6151ec03ed5c2a79e238bf26cd57b8d8
 SHA256 (.footprint) = e003004c0d164e3c82b062f16f30167565043c34aa58260fdf8d5771f14e4cc6
 SHA256 (httpup-0.5.0.tar.xz) = c61db05e60895a6eb075df6651d20352917945c9e46b20957dbb276b501ca494
 SHA256 (httpup) = b95756969ba3fe30a3bdb7addc34fdab26b4ea08ac8fddfd223fd28ac14c9af5
+SHA256 (fix-mismatched-allocation-delete-pwd.patch) = de892b170ec99b61137a0ffd7795b9a89365d08757193589101aa9344e33848d
