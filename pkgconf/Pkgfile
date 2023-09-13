@@ -4,7 +4,7 @@
 # Depends on:	glibc
 
 name=pkgconf
-version=2.0.2
+version=2.0.3
 release=1
 source=(https://distfiles.dereferenced.org/${name}/${name}-${version}.tar.xz \
 	x86_64-unknown-linux-gnu.personality)
