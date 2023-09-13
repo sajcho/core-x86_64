@@ -4,7 +4,7 @@
 # Depends on:	ncurses
 
 name=libedit
-version=20221030_3.1
+version=20230828_3.1
 release=1
 source=(https://thrysoee.dk/editline/${name}-${version/_/-}.tar.gz)
 
