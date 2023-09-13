@@ -5,7 +5,7 @@
 
 name=rust-bindgen
 _realname=bindgen
-version=0.66.1
+version=0.68.1
 release=1
 source=(https://github.com/rust-lang/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
