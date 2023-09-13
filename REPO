@@ -593,8 +593,8 @@ f:d6827a76321767fcfcb99d8fd946c17b:bc/.footprint
 f:6c654cf4d5f07bdd72dc597bb8a72e8c:bc/.signature
 f:cd2bfedd0578d516b6bdb3ccd2a2c611:bc/Pkgfile
 f:8c548635b6b6e04ef05b3bcca82bb071:rust-bindgen/.footprint
-f:f0db9bcf03540683acf35cc9c9e526f4:rust-bindgen/.signature
-f:bf0f2c18a5dc2f59683eefe74d3d71ee:rust-bindgen/Pkgfile
+f:2c88ad013c5ccc416f2755fb6e36cdd0:rust-bindgen/.signature
+f:3badb4b99066be476fb1854760c5a2b8:rust-bindgen/Pkgfile
 f:fa717c9970a09e8ee1775a93e51fb694:wget/wgetrc
 f:6a4c0d944be581239a6c4e266003a131:wget/.footprint
 f:a1c1acd47ef5298be702bccdda48e2b4:wget/.signature
