@@ -4,7 +4,7 @@
 # Depends on:	readline zlib
 
 name=sqlite3
-version=3.43.0
+version=3.43.1
 release=1
 _version=$(printf "%i%.2i%.2i%.2i" ${version//./ })
 
