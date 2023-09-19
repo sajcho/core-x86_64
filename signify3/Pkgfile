@@ -1,0 +1,22 @@
+# Description:	OpenBSD tool to sign and verify signatures on files
+# URL:		https://github.com/aperezdc/signify
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depands on:	libbsd
+
+name=signify3
+_realname=signify
+version=31
+release=1
+source=(https://github.com/aperezdc/${_realname}/archive/v${version}/${_realname}-${version}.tar.gz)
+
+build() {
+	cd ${_realname}-${version}
+
+	rm -r libbsd libwaive
+
+	sed 's|/etc/signify|/etc/ports|' -i signify.c
+
+	make V=1 PREFIX=/usr
+
+	make PREFIX=/usr DESTDIR=$PKG install
+}
