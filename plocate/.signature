@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvZWezBQ5T+b3lrLUFY4sLCKwxkKZ+pIt7KbNI3RMrnaVg+nCYGPpaDibHItkbmLqpBo6OAfMpwFyrDcKPAMOiQY=
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZzYkGh+gGKxBuQkx6urkRYNS+SApDZUMm8rugcdZT2oU2USKM2xJwNTjsr+gv2AR3R2zjGSbEU9lD5YCEACOnwE=
 SHA256 (Pkgfile) = 106efcb8f78926803212c07c22bd2e65cbe2506323edd8af507d4fea6e7d8cd5
 SHA256 (.footprint) = fc4d8d00f0901280a0bc20dff3166d79ea0e0deec62ca74cd052120be4345dfd
 SHA256 (plocate-1.1.19.tar.gz) = d95bc8ee8a9f79b9f69ce63df53fb85b202139f243bbb84c399555eda22e6165

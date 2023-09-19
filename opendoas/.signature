@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvZQTCEANf9bk1oqxpyZZKSdVA5Y3IejM0SFOxjgPAHSKYs/RXVukV6c8GVjlrCiaj/ThJVgWUq7NLiUZklXZWg4=
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZ3b53hBfZAklKvggXKeNFg9jXTjNpD+R/QWXv0gfa3cPjBWh/xi4F2NnowHJbM0Y4Iva3XKtvQQMA5+MNCIMcwc=
 SHA256 (Pkgfile) = 7b039ac9685dafb9cd702da63051b0570dab39aa36f6fd3bf721a9aa67bccdfc
 SHA256 (.footprint) = d7d61a15f2d3bd57082341cf9e9366a9474e8b8689888726969e7c8f7cde7c03
 SHA256 (opendoas-6.8.2.tar.xz) = 4e98828056d6266bd8f2c93e6ecf12a63a71dbfd70a5ea99ccd4ab6d0745adf0

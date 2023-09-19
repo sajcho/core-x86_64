@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvTDZn4u5w8nM5y3/RQvECqIsUVZa4g8J9tytQ7nAz8CEKS+iya0BmhnZUbxOWCa8BUSgWyc3FI0x+vBsHLpJ3Qc=
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZ3iTtOkYUdRd35j2U+HWQ/bCzZaaa7kmd3wI7QPX31CdsCPjDbSC+gNP+iqocY0KoDOBUZRuPrzDuvTTC6/Rhws=
 SHA256 (Pkgfile) = 63d5586888472af19d93485683808ec0f5b7d3427e32317b5151ed44957f784b
 SHA256 (.footprint) = 5d105554b90e8dda3800a1f70eaf69b17da94b199d33f7aba1e8578b0df3b856
 SHA256 (mimalloc2-2.0.6.tar.gz) = 9f05c94cc2b017ed13698834ac2a3567b6339a8bde27640df5a1581d49d05ce5

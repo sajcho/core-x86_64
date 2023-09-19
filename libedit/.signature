@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvVOGQOoapUYyXockytV0Zt2JKaoPEWrjTp2feCfNiAWzztc/t2MJsDVyGxly0AzVsXug80NiN3zN4yWWhL6QhAQ=
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZ5EwziynqKzghJvWjCCGiwghBlkdmxbMW8eHmhWKC/8nG1k2MRfWy21TxsEiWUQTsHubeFduwJZ3goBk3WueTgc=
 SHA256 (Pkgfile) = 765012d31fcf75543cab8d64cb4ef9c313e731de3d559aec6a095fb0d8accdcf
 SHA256 (.footprint) = f03084b735b41cbcc1a162cdd0ef56319883427644eb367126c5ca438c5a8d61
 SHA256 (libedit-20230828-3.1.tar.gz) = 4ee8182b6e569290e7d1f44f0f78dac8716b35f656b76528f699c69c98814dad

@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLveT/aRK6KEZspbCpnN3zL4XKLYZFyVOCsXnC6c8Hh9MXYP2A5/I+hoFBL1iKD4OjX9Ftf8GuTwFM5wDM+KFTPAs=
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZ8lM6ij7HNtcrPRDvKOJpOt6oh7WO/50l75hbsqZ9+Z+gvZKzQ+nD8B25vr72ewnkWZHD0M87VQUPmVAcPLGEg0=
 SHA256 (Pkgfile) = 410c4d8383359b4dfef9979ef600df22a06cee88fa05f56c3ef1d14c6548ba4f
 SHA256 (.footprint) = 29cb9f29313b15db699ae03a573bd780a0301355500d13993dbdc4f0aa745987
 SHA256 (earlyoom-1.7.tar.gz) = ebda1279a813d9b0f7860ce5029ccf5ea9f8868be070f2eaf40f90f2e64b6414

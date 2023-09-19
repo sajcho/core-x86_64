@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvSR3tgh9gsLPVtoCdfV2gOapRWv9GPLPs7LThmhOEBFY1Gx9doj22oMJf3ZinEXRhqiT4sSQTG5Tl7vopVTa1g8=
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZ0BcNgef6jfbFuY6jAa9d+DcMzj4BWabk/STfBHEBJR6mHLlEY5J5UonfiQN45lly6P8jGvtRmy2YKi2LufO/w8=
 SHA256 (Pkgfile) = c727a8cddd56c060e0217a37802abdafda32cd14a64e5b78b86a1e8a5e5d4db8
 SHA256 (.footprint) = 90ea1d6b301a23394d2c200b3d2e942623f648c0be5edf0474abac2d76212eb0
 SHA256 (openssh-9.4p1.tar.gz) = 3608fd9088db2163ceb3e600c85ab79d0de3d221e59192ea1923e23263866a85

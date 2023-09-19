@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvdPrrJxqhGp4IG/tTT8D/EiSnJTvaQ1bvcXgwLAw7l20p6cAnFgik8JMvdvlTWPWqJWf6V1ySZ4niAROypgbyQA=
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZ9MRIJU4ACg5Y2h3Ad2H48FnbiEVXmGjHjreoNfXvHxt67Mg9Q3clvOX+4dD++5QdwiGTVMaSqqYj1fQNhmRfw8=
 SHA256 (Pkgfile) = 066c782b2c6b0c39339ee4f3fb2fdf6904df59399e907c2f87d9422be5651a28
 SHA256 (.footprint) = 880c7608fe4fc1e84971941afe0e9767c4e679d19c9bceb4742dee8e96d95dc8
 SHA256 (acl-2.3.1.tar.gz) = 760c61c68901b37fdd5eefeeaf4c0c7a26bdfdd8ac747a1edff1ce0e243c11af

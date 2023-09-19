@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvU75/TJcloMVe9F/kZp5xZnBPaCAowgbgWgem1P+MoQoCvKvXTBlDrjCScDH97jqZE9DKjKBnSbr2d16sJI01wE=
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZwxcFEN7z8fST+mO4DEqdiouoklY9oCjLX35m40hzAWh4b5AwcM/Oc6cvEkALsMb+C3b5cf4uML2jEFQNSYITgo=
 SHA256 (Pkgfile) = bad6fc99f6c4d5d8fb17d78253884de7d292870629bec9f54bd516d8166bb5d5
 SHA256 (.footprint) = ce84c2dd8fff4ab53bf785aca8b0ef1d37faee090cb7f812f1235ea490ff3177
 SHA256 (liburing-2.4.tar.gz) = 2398ec82d967a6f903f3ae1fd4541c754472d3a85a584dc78c5da2fabc90706b

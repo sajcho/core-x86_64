@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvS2d4Y0tNfeoP4zDJYi7dmcG8EtpvBzWTM3lOSFpta3A5olNuQMotBjgEnOlEZx5a3zPnVf4fFtkUcGKj5kqTAg=
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZ7r31PmNZ651HHpFfBm5j3/yS363JjurdsLsb7evqzJeZzpqU+Tj1RjfOoTbzNqi56O2+rfq+6PRVuVGN6wMhwE=
 SHA256 (Pkgfile) = f92d41b7de896398f4fd28300e668d96fb8d1e23faa951dd53a6aa080bd81263
 SHA256 (.footprint) = 5668e2a3fbe3eca55efa39e68dc6d4dbfb5c69d6642e0a6ee3779b43ce67f7f1
 SHA256 (samurai-1.2.tar.gz) = 37a2d9f35f338c53387eba210bab7e5d8abe033492664984704ad84f91b71bac

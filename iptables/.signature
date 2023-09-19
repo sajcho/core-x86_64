@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvedCKUTohXB2jlml2n8qHx5nca/A5aAky64Q0q6GLSyx3kNJVddwnUsR54WIfgcYh592hvuyltpxJjvsOqK5jw8=
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZ2ST9n9ABxuIuXayGe76tsDJk+ltFiEeKepyLBWJH1buw7/bL44L4cdNS9jgJBij2R0UsRBQrDNdvWm7xbMumAM=
 SHA256 (Pkgfile) = f9671c6c6eb7a71acd9a65adf20c54f1662d9876f932d55238a086ed6a4a502f
 SHA256 (.footprint) = 32d9be13f10d90d4e8134de7520618b2d9feb3a85b7cb8187dd3236476ffff2c
 SHA256 (iptables-1.8.9.tar.xz) = ef6639a43be8325a4f8ea68123ffac236cb696e8c78501b64e8106afb008c87f

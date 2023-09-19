@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvR8wpl8eRYJM2IwdzlUsV+TVYAXISgaI0/ZfjtJvfnxUio6JJHqjkToF9nF8VMsapP5oJDAv+WUbwj6Yy2QsuA8=
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZ7V9jEs+bHPZwmm9vK9S6h+5RYgY+j5IT2vcLITyfFlbsodNqS2Gq3nCpOSdsUG4LLC7hEIrQKhHK1a79v31bg0=
 SHA256 (Pkgfile) = 4ab969f9010fe5710698a2a3d1b3fdd7a1b909d90d89b0039de2abda4bf97af2
 SHA256 (.footprint) = d7e00e8a135ed152dfb3663742fff59997c5efc70754cb4dd14866e866d4192d
 SHA256 (chrony-4.4.tar.gz) = eafb07e6daf92b142200f478856dfed6efc9ea2d146eeded5edcb09b93127088

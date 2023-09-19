@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvU+Ie+EK9uPzIs142qYHGEpzkHpoFOqMSVJ5C1/telolg5gSMiG3c4Skw9ExOWkSZtiFiuZMYXuATjSZcbKGdw8=
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZ8c1AT7s6P6puFPIY+sLelg2YYLiT8yhCEXuwkX3dJDPx9cv6glrYI5Zzjpl5G+aa/nkfjLZd062rdcSB2Qn7ws=
 SHA256 (Pkgfile) = c6f70c1140ef120b9c3d505900d5999eae904cfd66e0531ef84cca53ec77e7f6
 SHA256 (.footprint) = 27fe4e5c392cb670f9cb7e3e7ac27dd44c6589dc1d2b391609579c5beac81ad6
 SHA256 (terminus-font-4.49.1.tar.gz) = d961c1b781627bf417f9b340693d64fc219e0113ad3a3af1a3424c7aa373ef79

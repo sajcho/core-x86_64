@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvZdpK7lGKJIWeaJiarGiwSwhv5pE/OvpMzkQnuv5arVjTL3PoarwF3UYL6G1cVo9jiYev8TqleISNe7uLk6LhQs=
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZ3RkxBLzCR+vy9OdI12KjtvpthWG/wbqSci0HymDWlM5d73KY8AkVG/H0ZaZyMWAduBgktROrVQ04ze4HwYMXwY=
 SHA256 (Pkgfile) = 467722d425b47bcf2c9f4b4e78ae0176f697abacb2b7d477ec03e211d4f0fc6a
 SHA256 (.footprint) = 2f2595d48b1d9747afa0d6b676a290528c98d1151c567954c594803a07fa9255
 SHA256 (nasm-2.16.01.tar.xz) = c77745f4802375efeee2ec5c0ad6b7f037ea9c87c92b149a9637ff099f162558

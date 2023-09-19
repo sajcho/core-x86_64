@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvZcTltjuoLicRpyAlGRMemln6GXIb2KSDL+2rTjruu2bn3KvgfaunvVSx1rkeR9D8WQBYqGJh73SPq3vuBxYkAA=
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZ3djnvvneCNiRxS0OYtcLkvEw+h916Z/hBncP6qyIijHl3+JaRCkaw9L7aHtPhI4WLPwxdA46Ti6dk544pfW9gw=
 SHA256 (Pkgfile) = 6b581f2851133253a0b9ee336bfbd1b6775b44dff09abab3c385443b0bf75edd
 SHA256 (.footprint) = 45c2d1805ada036f538df41d4f15b3148670d9247839effbc39276b9d0c37819
 SHA256 (coreutils-9.4.tar.xz) = ea613a4cf44612326e917201bbbcdfbd301de21ffc3b59b6e5c07e040b275e52

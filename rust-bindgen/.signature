@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvWn6wOdLwynkHN78ZY2yHgfGhJReN1okmRn57iM5V1leqQOcuSOQQlXD914nrpv7AWo/K3WqfmC+FC2zYnrMBQc=
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZ/WM/dudC4ITqoabgmvpN/ztGNd1YNswutXyzVJAUFPLLCHWa69snb+WN1Y+u6WjZw5HCC8Y2nwOebf0qhnhdgs=
 SHA256 (Pkgfile) = 3fb185bbfae9464a9813aa2c0056af4efa8ea76a0414f7cc24e422d29be322f8
 SHA256 (.footprint) = 1662dbff2de9322f2626322d56660c935d19188a9072045946af4a44c3ac3b13
 SHA256 (rust-bindgen-0.68.1.tar.gz) = 6a577026184a6f7a99b48f46f2074c83d272d3aadf91c7b94a4c6c34e6acd445

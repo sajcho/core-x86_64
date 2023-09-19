@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvYVWAurpgpMzxiubkBXRMC8GExzvC7Yw/SnF4e84aahVDijv64bRqX7BaWWgc6elJEcyHJ5wSX16C+aw5LFBXA8=
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZ0zxMrGXQdxGxYeb33TcuGxNYdjHYWrfM82+4ui7OnXl5cM8yYFz2ikw+8NjrUJ2OjLgN6GHLgoaLjVcOVDczAE=
 SHA256 (Pkgfile) = 7ec12c8c340296ec9a267081a386764dd9aa30e69672547844987b12c4e90522
 SHA256 (.footprint) = d94594da47fad167ca840b22b0cbaf84555db141e0cbc7196f9e945a29724e1f
 SHA256 (texinfo-7.0.3.tar.xz) = 74b420d09d7f528e84f97aa330f0dd69a98a6053e7a4e01767eed115038807bf

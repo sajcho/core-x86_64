@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvbabEC1G6JbaHAXB6KLKNOE1iA1jcooATBqESyLGyifuz4iaIuIxMfX35r7IpBU/TeMcHbH6sQLt72DvHHQ1pQ4=
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZwnARYXuwH0M0ToEE4UdJ4YhSxUvAVyKOQxbVSUf4+1OMIX4Zkj4YNo2vgMKRTdPpjBAJLM4PzioqyKGo5wmtgw=
 SHA256 (Pkgfile) = 1361744200e3e8e24b01fab1a9d3d8fbe0d031c38b84fc04ebd0cb848dda5ea5
 SHA256 (.footprint) = 23dd6694cd022b74f941854d63c90e19529acac750a3cd407826893369c04d4a
 SHA256 (man-db-2.11.2.tar.xz) = cffa1ee4e974be78646c46508e6dd2f37e7c589aaab2938cc1064f058fef9f8d
