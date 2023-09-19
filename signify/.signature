@@ -1,6 +1,0 @@
-untrusted comment: verify with /etc/ports/core-x86_64.pub
-RWQyKH7cMutLvQ01OMjrKB47HSj8Qb4EzASHmF2eJRXVUxiZwQnZP305sBe1BZDtJScUJ3Wi2ssRjzzeHyCGAyJfj06bRak4XQs=
-SHA256 (Pkgfile) = 894bc9a997cea0327093a3d5a0ea1d7a6cb1a35dcc206d9a6e8fc613b07e57b3
-SHA256 (.footprint) = 7254b9c6417527154751eece07f12711fa68773b4d8cad5e659e552f6adf39bc
-SHA256 (outils-0.12.tar.gz) = 63b6ebddfb2e6213be1d5b20475321ba6f3221d6f86abe1dc615329c955c24db
-SHA256 (cruxify.patch) = d2f254f066d26273716a69c7fbb902c8fba7a8e441cd5285594a27df8bf5a752
