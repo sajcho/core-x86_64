@@ -1,0 +1,24 @@
+configure.ac: Improve C99 compatibility of __progname check
+
+The check uses printf, so it needs to include <stdio.h> for compilers
+which do not support implicit function declarations. (They were
+removed from C99.)
+
+Submitted upstream:
+
+  <https://gitlab.freedesktop.org/libbsd/libbsd/-/merge_requests/23>
+
+diff -ur libbsd-0.11.7.orig/configure.ac libbsd-0.11.7/configure.ac
+--- libbsd-0.11.7.orig/configure.ac	2022-10-06 04:06:31.000000000 +0200
++++ libbsd-0.11.7/configure.ac	2022-12-12 10:00:57.500065200 +0100
+@@ -221,7 +221,9 @@
+ 
+ AC_MSG_CHECKING([for __progname])
+ AC_LINK_IFELSE(
+-	[AC_LANG_PROGRAM([[extern char *__progname;]],
++	[AC_LANG_PROGRAM([[
++	#include <stdio.h>
++	extern char *__progname;]],
+ 	                 [[printf("%s", __progname);]])],
+ 	[AC_DEFINE([HAVE___PROGNAME], [1], [Define to 1 if you have __progname])
+ 	 AC_MSG_RESULT([yes])],
