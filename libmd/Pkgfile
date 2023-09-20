@@ -1,0 +1,26 @@
+# Description:	Message Digest functions from BSD systems
+# URL:		https://www.hadrons.org/software/libmd/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=libmd
+version=1.1.0
+release=1
+source=(https://archive.hadrons.org/software/${name}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
+		--prefix=/usr \
+		--disable-static
+
+	make V=1
+
+	make check
+
+	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
+}
