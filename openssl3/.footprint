@@ -2820,6 +2820,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_CMP_MSG_get_bodytype.3ssl.gz -> OSS
 -rw-r--r--	root/root	usr/share/man/man3/OSSL_CMP_MSG_http_perform.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_CMP_MSG_it.3ssl.gz -> X509_dup.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_CMP_MSG_read.3ssl.gz -> OSSL_CMP_MSG_get0_header.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_CMP_MSG_update_recipNonce.3ssl.gz -> OSSL_CMP_MSG_get0_header.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_CMP_MSG_update_transactionID.3ssl.gz -> OSSL_CMP_MSG_get0_header.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_CMP_MSG_write.3ssl.gz -> OSSL_CMP_MSG_get0_header.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/OSSL_CMP_P10CR.3ssl.gz -> OSSL_CMP_exec_certreq.3ssl.gz
@@ -5109,7 +5110,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/d2i_DSA_PUBKEY_fp.3ssl.gz -> d2i_RSAPriv
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_DSA_SIG.3ssl.gz -> d2i_X509.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_DSAparams.3ssl.gz -> d2i_RSAPrivateKey.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_ECDSA_SIG.3ssl.gz -> d2i_X509.3ssl.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/d2i_ECPKParameters.3ssl.gz -> d2i_RSAPrivateKey.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/d2i_ECPKParameters.3ssl.gz -> d2i_X509.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_ECParameters.3ssl.gz -> d2i_RSAPrivateKey.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_ECPrivateKey.3ssl.gz -> d2i_RSAPrivateKey.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/d2i_ECPrivateKey_bio.3ssl.gz -> d2i_RSAPrivateKey.3ssl.gz
@@ -5328,7 +5329,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/i2d_DSA_PUBKEY_fp.3ssl.gz -> d2i_RSAPriv
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_DSA_SIG.3ssl.gz -> d2i_X509.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_DSAparams.3ssl.gz -> d2i_RSAPrivateKey.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_ECDSA_SIG.3ssl.gz -> d2i_X509.3ssl.gz
-lrwxrwxrwx	root/root	usr/share/man/man3/i2d_ECPKParameters.3ssl.gz -> d2i_RSAPrivateKey.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/i2d_ECPKParameters.3ssl.gz -> d2i_X509.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_ECParameters.3ssl.gz -> d2i_RSAPrivateKey.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_ECPrivateKey.3ssl.gz -> d2i_RSAPrivateKey.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/i2d_ECPrivateKey_bio.3ssl.gz -> d2i_RSAPrivateKey.3ssl.gz

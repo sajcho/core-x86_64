@@ -5,7 +5,7 @@
 
 name=openssl3
 _realname=openssl
-version=3.1.0
+version=3.1.3
 release=1
 source=(https://www.openssl.org/source/${_realname}-${version}.tar.gz \
 	mksslcert.sh)
@@ -23,6 +23,7 @@ build() {
 		enable-md2 \
 		enable-ktls \
 		enable-ec_nistp_64_gcc_128 \
+		disable-tests \
 		no-async \
 		no-comp \
 		no-ec2m \
