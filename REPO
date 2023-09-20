@@ -82,6 +82,7 @@ d:libtirpc
 d:cpio
 d:tar
 d:mpc
+d:libbsd
 d:python3
 d:file
 d:llvm-toolchain
@@ -140,6 +141,7 @@ d:perl
 d:usbutils
 d:jsoncpp
 d:texinfo
+d:libmd
 d:liburing
 d:lld
 d:libpcre2
@@ -460,6 +462,11 @@ f:d527d5276d0fa452d6ffc55dd5ffb732:tar/Pkgfile
 f:8fb593324bb13f7adb6e752e4e5cf503:mpc/.footprint
 f:98a938e85b7f64b30e7d8d2033f07ede:mpc/.signature
 f:2bac88753d6eb2ce54e90bff33013232:mpc/Pkgfile
+f:ca3cef22188bc30536e9a4f051865b59:libbsd/libbsd-configure-c99.patch
+f:fcefa6a669a5ae89916fef1c2f618bfe:libbsd/.footprint
+f:35573dd260c0f435cf49d49de5e864c3:libbsd/.signature
+f:7fa60e036bc18a469832065fff238006:libbsd/libbsd-0.11.7-test-explicit_bzero.patch
+f:1fe0e1acc816e8db5573c0f12d52ecfc:libbsd/Pkgfile
 f:976e12cb4f77625cb7f6c246c63ce5f7:python3/.footprint
 f:e48d8362fdc0fb97bbcd43bb3bd464ce:python3/.signature
 f:683fb61cc62f8f6ca2116c82e9615214:python3/Pkgfile
@@ -692,6 +699,9 @@ f:048dfb29ea7b4d62e03ee97155892491:jsoncpp/Pkgfile
 f:d06293555aa978f3a2480e4b3cb8e85a:texinfo/.footprint
 f:c2fb7b28a3e083cc303c6ab5bd5a22c6:texinfo/.signature
 f:2504c1415e63a9ff32b3233b324fc050:texinfo/Pkgfile
+f:3484c194e8e34bafeb259bb2f9117c7d:libmd/.footprint
+f:b2a91f672608d36cb8ebe188db3e98b5:libmd/.signature
+f:da676f6c6523ab108982fd1fcfb14e0c:libmd/Pkgfile
 f:57f7be94fe447fa9e214e505264d66f7:liburing/.footprint
 f:e5c8bb994dad1155fc0945bfcc24acbf:liburing/.signature
 f:4daa7b9dff702269cfdb4834eacf5e3d:liburing/Pkgfile
