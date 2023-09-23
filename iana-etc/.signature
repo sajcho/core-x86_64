@@ -1,7 +1,7 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZxfiokRLbP+DbXacKxRT9H7rOeMZdBg7lG7R6usXCwtkwAxCpqnEvfo712DbulAeOoHmuE1oHkoVpIUVT9rWbQk=
-SHA256 (Pkgfile) = c6c6abb2c19d7d561db1fa0ad5f7ac7de6947d535b3b82cface0fc37992d1c3d
+RWQ0XEjKMixyZyrAn1jAjnFpTyZNUJRd9ME7ouUL3IJ0G68k6UVMSjD2b5+niMnAGrIt+pIUL1Des8LXdIcPd99+PJXrXK20Tw0=
+SHA256 (Pkgfile) = 5fdd4c59715ea69ccdac93554d990e08f017a0835e1448e5836cbbef04cbbac2
 SHA256 (.footprint) = 20bee9bdc0754167b76a54dd3f5b32a38ac4075bb7d0936188d78809f9056c8b
-SHA256 (services) = cd0f204463056dbeb85a697a1e9f1cbfedf6af32a56f8d5868d5dd6bd4b938f7
-SHA256 (protocols) = 64f2a2858a1f20db9314ea7ec6f75628c7edba2a605bf411a3d642d7c16037a1
+SHA256 (services) = 4b2a68d0aeabaf2a08c2acf3fd8fa98bf2c614711296009dc4a30a7c6a258f39
+SHA256 (protocols) = 02a7cd8a71982c87e042bcb58d19cdb1ad38d609c4fa29b1aa78f77fd7956e0b
 SHA256 (update.sh) = c0177c49b9ac29c4f8d89d5f26ca4dc8b1ca358c4e71efca562e61f71f9f3df0

@@ -1,4 +1,4 @@
-# /etc/protocols, created 2023-04-08T12:23:48+0200
+# /etc/protocols, created 2023-09-15T17:43:50+0200
 # Source: https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xml
 hopopt         0 HOPOPT
 icmp           1 ICMP
@@ -134,4 +134,5 @@ wesp         141 WESP
 rohc         142 ROHC
 ethernet     143 Ethernet
 aggfrag      144 AGGFRAG
+nsh          145 NSH
 reserved     255 Reserved
