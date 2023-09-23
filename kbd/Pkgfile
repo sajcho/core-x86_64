@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=kbd
-version=2.6.2
+version=2.6.3
 release=1
 source=(https://www.kernel.org/pub/linux/utils/${name}/${name}-${version}.tar.xz)
 
