@@ -5,7 +5,7 @@
 
 name=procps
 _realname=procps-ng
-version=4.0.3
+version=4.0.4
 release=1
 source=(http://downloads.sourceforge.net/project/${_realname}/Production/${_realname}-${version}.tar.xz \
 	sysctl.conf)

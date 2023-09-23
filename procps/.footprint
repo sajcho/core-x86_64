@@ -6,8 +6,8 @@ drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/sysctl.d/
 lrwxrwxrwx	root/root	etc/sysctl.d/99-sysctl.conf -> /etc/sysctl.conf
 drwxr-xr-x	root/root	lib/
-lrwxrwxrwx	root/root	lib/libproc2.so.0 -> libproc2.so.0.0.1
--rwxr-xr-x	root/root	lib/libproc2.so.0.0.1
+lrwxrwxrwx	root/root	lib/libproc2.so.0 -> libproc2.so.0.0.2
+-rwxr-xr-x	root/root	lib/libproc2.so.0.0.2
 drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/sysctl
 drwxr-xr-x	root/root	usr/
@@ -36,7 +36,7 @@ drwxr-xr-x	root/root	usr/include/libproc2/
 -rw-r--r--	root/root	usr/include/libproc2/vmstat.h
 -rw-r--r--	root/root	usr/include/libproc2/xtra-procps-debug.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libproc2.so -> ../../lib/libproc2.so.0.0.1
+lrwxrwxrwx	root/root	usr/lib/libproc2.so -> ../../lib/libproc2.so.0.0.2
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libproc2.pc
 drwxr-xr-x	root/root	usr/share/
