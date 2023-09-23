@@ -1,0 +1,44 @@
+# Description:	A network utility for downloading content from the Web
+# URL:		http://www.gnu.org/software/wget/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libidn2 libnghttp2 libpcre2 zstd
+
+name=wget2
+version=2.1.0
+release=1
+source=(https://ftpmirror.gnu.org/gnu/wget/wget2-2.1.0.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--enable-fuzzing \
+		--enable-threads=posix \
+		--disable-manylibs \
+		--disable-nls \
+		--disable-static \
+		--with-bzip2 \
+		--with-lzma \
+		--with-zstd \
+		--with-libidn2 \
+		--with-libpcre2 \
+		--with-libnghttp2 \
+		--with-ssl=openssl \
+		--without-gpgme \
+		--without-libpcre \
+		--without-libpsl \
+		--without-brotlidec \
+		--without-libmicrohttpd
+
+	make V=1
+
+	make DESTDIR=$PKG install
+
+	ln -s wget2 $PKG/usr/bin/wget
+
+	rm $PKG/usr/bin/wget2_noinstall
+
+	find $PKG -type f -name '*.la' -delete
+}
