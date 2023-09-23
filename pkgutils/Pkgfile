@@ -5,7 +5,7 @@
 
 name=pkgutils
 version=5.40.10
-release=3
+release=4
 source=(https://crux.nu/files/${name}-${version}.tar.xz \
 	pkgutils-5.40.10-by-saux.patch)
 
@@ -13,6 +13,9 @@ build() {
 	cd ${name}-${version}
 
 	patch -p1 -i $SRC/pkgutils-5.40.10-by-saux.patch
+
+	#  wget2 does not support this parameter
+	sed "s|--passive-ftp ||" -i pkgmk.in
 
 	make DESTDIR=$PKG install
 }
