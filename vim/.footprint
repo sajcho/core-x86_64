@@ -30,6 +30,7 @@ drwxr-xr-x	root/root	usr/share/vim/autoload/
 -rw-r--r--	root/root	usr/share/vim/autoload/ada.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/adacomplete.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/bitbake.vim
+-rw-r--r--	root/root	usr/share/vim/autoload/cargo.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/ccomplete.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/clojurecomplete.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/context.vim
@@ -515,6 +516,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/jsp.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/julia.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/kconfig.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/kotlin.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/kwt.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/ld.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/less.vim
@@ -766,6 +768,7 @@ drwxr-xr-x	root/root	usr/share/vim/indent/
 -rw-r--r--	root/root	usr/share/vim/indent/jsonc.vim
 -rw-r--r--	root/root	usr/share/vim/indent/jsp.vim
 -rw-r--r--	root/root	usr/share/vim/indent/julia.vim
+-rw-r--r--	root/root	usr/share/vim/indent/kotlin.vim
 -rw-r--r--	root/root	usr/share/vim/indent/krl.vim
 -rw-r--r--	root/root	usr/share/vim/indent/ld.vim
 -rw-r--r--	root/root	usr/share/vim/indent/less.vim
@@ -1265,6 +1268,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/kconfig.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/kivy.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/kix.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/kotlin.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/krl.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/kscript.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/kwt.vim
