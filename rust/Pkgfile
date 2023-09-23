@@ -4,7 +4,7 @@
 # Depends on:	llvm-toolchain
 
 name=rust
-version=1.72.0
+version=1.72.1
 release=1
 
 source=(https://static.rust-lang.org/dist/rustc-${version}-src.tar.gz \
@@ -13,6 +13,12 @@ source=(https://static.rust-lang.org/dist/rustc-${version}-src.tar.gz \
 
 build() {
 	cd rustc-${version}-src
+
+	# fix - llvm-toolchain 17.0.1
+	sed 's/FS,/"", &/' \
+		-i ./compiler/rustc_llvm/llvm-wrapper/PassWrapper.cpp
+	sed '/LLVMContext.h/i#include "llvm/ADT/SmallString.h"' \
+		-i compiler/rustc_llvm/llvm-wrapper/SymbolWrapper.cpp
 
 	# use /usr/lib instead of /usr/libexec
 	patch -p1 -i $SRC/0001-bootstrap-Change-libexec-dir.patch
