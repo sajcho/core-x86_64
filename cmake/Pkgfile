@@ -4,7 +4,7 @@
 # Depends on:	curl jsoncpp libarchive libnghttp2 libuv rhash
 
 name=cmake
-version=3.27.4
+version=3.27.6
 release=1
 source=(https://cmake.org/files/v${version%.*}/${name}-${version}.tar.gz)
 
@@ -22,9 +22,6 @@ build() {
 		--parallel=${JOBS:-1}
 
 	make -O ${JOBS:+-j ${JOBS}} V=1 VERBOSE=1
-
-	# skip one test 'RunCMake.ParseImplicitLinkInfo' failed
-	#/usr/bin/ctest -E RunCMake.ParseImplicitLinkInfo --output-on-failure -j ${JOBS}
 
 	make DESTDIR=$PKG install
 
