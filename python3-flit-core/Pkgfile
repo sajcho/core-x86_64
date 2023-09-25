@@ -1,0 +1,27 @@
+# Description:	Simplified packaging of Python modules
+# URL:		https://github.com/takluyver/flit
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	python3-pip
+
+name=python3-flit-core
+_realname=flit_core
+version=3.9.0
+release=1
+source=(https://pypi.org/packages/source/f/flit-core/${_realname}-${version}.tar.gz)
+
+build() {
+	cd ${_realname}-${version}
+
+	pip3 wheel -w dist --no-cache-dir --no-build-isolation --no-deps $PWD
+
+	PIP_CONFIG_FILE=/dev/null \
+	/usr/bin/pip3 install \
+		--root-user-action=ignore \
+		--no-warn-script-location \
+		--ignore-installed \
+		--no-deps dist/*.whl \
+		--no-cache-dir \
+		--no-index \
+		--isolated \
+		--root=$PKG
+}
