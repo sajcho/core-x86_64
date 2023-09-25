@@ -1,0 +1,25 @@
+
+REQUIREMENTS
+
+PRE-INSTALL
+
+POST-INSTALL
+
+PRECAUTION
+
+    Note, that updating major versions of llvm (in x.y.z changing x or y)
+    requires rebuilding ports rust.
+
+    e.g.
+    1. remove old version rust
+    2. build and install rust-static
+    3. build rust
+    4. remove rust-static
+    5. install rust
+    6. rebuild and reinstall rust
+
+    Have revdep(1) point out potential candidates for rebuilds after the llvm
+    update.
+
+MISC
+
