@@ -1,6 +1,6 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZzfGUz0KcqdYeGIH0fwLRFfwVscZP/TFfzW9PzwWlZ6VQDQz7hCR4qJcRaYX2wpKNMZFfXGzi06IykatUj8iawY=
-SHA256 (Pkgfile) = 67b34fc8638ac573aa426ac9b7d6d7ac6900afe89dd4481fd8a94d42921ccd41
-SHA256 (.footprint) = 6befcb19442ab089daf17ea485e90a09ca69a5aa85b8f0becdfce1ae2c7797ab
+RWQ0XEjKMixyZxBt7EUIABu+Q4MplfhNPzro7mviKZlzY6ILJ7aPvMkfNSznsZaX09IOUfCeXDcnrecSD0KJhpWTuuYuD39xEwk=
+SHA256 (Pkgfile) = 1b906a77260908ec531922515bc024fbcff55f1e741f822e12151b0d6a14011a
+SHA256 (.footprint) = 241965830ce761c746ad055963d8f8aa8b76d68ffc645a30d061df8e23a40340
 SHA256 (meson-1.2.1.tar.gz) = b1db3a153087549497ee52b1c938d2134e0338214fe14f7efd16fecd57b639f5
 SHA256 (build-meson) = 6cf5d82baf35c0d5b96aa214b7febee8c8e79de863eaaefd3a6b367e21c7469a
