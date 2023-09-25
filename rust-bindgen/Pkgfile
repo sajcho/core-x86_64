@@ -6,15 +6,15 @@
 name=rust-bindgen
 _realname=bindgen
 version=0.68.1
-release=1
+release=2
 source=(https://github.com/rust-lang/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
 
-	cargo fetch --locked --target $CHOST
+	cargo fetch --verbose --locked --target $CHOST
 
-	cargo build --release --frozen
+	cargo build --verbose --release --frozen
 
 	install -D -m 0755 target/release/${_realname} $PKG/usr/bin/bindgen
 }
