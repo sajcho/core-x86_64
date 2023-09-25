@@ -4,28 +4,30 @@
 # Depends on:	llvm-toolchain
 
 name=rust
-version=1.72.1
+_realname=rustc
+version=1.73.0-beta.7
+_nameversion=beta
+realversion="rustc 1.73.0-beta.7 (7c76587ed 2023-09-22)"
 release=1
 
-source=(https://static.rust-lang.org/dist/rustc-${version}-src.tar.gz \
-	0001-bootstrap-Change-libexec-dir.patch \
-	0001-cargo-Change-libexec-dir.patch)
+source=(https://static.rust-lang.org/dist/${_realname}-${_nameversion}-src.tar.xz \
+	0001-dist.rs-change-dir-libexec-to-lib.patch \
+	0002-tool.rs-change-dir-libexec-to-lib.patch)
 
 build() {
-	cd rustc-${version}-src
+	cd ${_realname}-${_nameversion}-src
 
-	# fix - llvm-toolchain 17.0.1
-	sed 's/FS,/"", &/' \
-		-i ./compiler/rustc_llvm/llvm-wrapper/PassWrapper.cpp
-	sed '/LLVMContext.h/i#include "llvm/ADT/SmallString.h"' \
-		-i compiler/rustc_llvm/llvm-wrapper/SymbolWrapper.cpp
+	export CC="gcc"
+	export CXX="g++"
+	export CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/}"
+	export CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/}"
 
 	# use /usr/lib instead of /usr/libexec
-	patch -p1 -i $SRC/0001-bootstrap-Change-libexec-dir.patch
-	patch -d src/tools/cargo -p1 -i $SRC/0001-cargo-Change-libexec-dir.patch
+	patch -p1 -i $SRC/0001-dist.rs-change-dir-libexec-to-lib.patch
+	patch -p1 -i $SRC/0002-tool.rs-change-dir-libexec-to-lib.patch
 
 	# Remove bundled dependencies.
-	rm -r src/llvm-project/*
+	rm -rf src/llvm-project/*
 	install -d src/llvm-project/libunwind
 
 cat <<- EOF > $SRC/config.toml
@@ -41,7 +43,7 @@ cat <<- EOF > $SRC/config.toml
 	prefix = "/usr"
 
 	[rust]
-	channel = "stable"
+	channel = "beta"
 	codegen-units-std = 1
 	debuginfo-level-std = 2
 	rpath = false

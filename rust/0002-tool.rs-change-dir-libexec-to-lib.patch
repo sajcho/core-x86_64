@@ -1,0 +1,28 @@
+From 64373e518d3166a0566cdaf5c4581f63d5efb016 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Fri, 8 Sep 2023 10:41:33 +0200
+Subject: [PATCH] tool.rs: change dir libexec to lib
+
+---
+ src/bootstrap/tool.rs | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/bootstrap/tool.rs b/src/bootstrap/tool.rs
+index e6d27757ac6..d70a840eec9 100644
+--- a/src/bootstrap/tool.rs
++++ b/src/bootstrap/tool.rs
+@@ -687,9 +687,9 @@ fn run(self, builder: &Builder<'_>) -> Option<PathBuf> {
+             allow_features: RustAnalyzer::ALLOW_FEATURES,
+         })?;
+ 
+-        // Copy `rust-analyzer-proc-macro-srv` to `<sysroot>/libexec/`
++        // Copy `rust-analyzer-proc-macro-srv` to `<sysroot>/lib/`
+         // so that r-a can use it.
+-        let libexec_path = builder.sysroot(self.compiler).join("libexec");
++        let libexec_path = builder.sysroot(self.compiler).join("lib");
+         t!(fs::create_dir_all(&libexec_path));
+         builder.copy(&path, &libexec_path.join("rust-analyzer-proc-macro-srv"));
+ 
+-- 
+2.42.0
+
