@@ -1,6 +1,6 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZwnARYXuwH0M0ToEE4UdJ4YhSxUvAVyKOQxbVSUf4+1OMIX4Zkj4YNo2vgMKRTdPpjBAJLM4PzioqyKGo5wmtgw=
-SHA256 (Pkgfile) = 1361744200e3e8e24b01fab1a9d3d8fbe0d031c38b84fc04ebd0cb848dda5ea5
-SHA256 (.footprint) = 23dd6694cd022b74f941854d63c90e19529acac750a3cd407826893369c04d4a
-SHA256 (man-db-2.11.2.tar.xz) = cffa1ee4e974be78646c46508e6dd2f37e7c589aaab2938cc1064f058fef9f8d
+RWQ0XEjKMixyZ2ktT4VfAkFdgvG4xIeg1m2PiXtp/TD+ItO8q2vjkuRmNfa48BvMMjaCYd7NIpU+XwhZGBGGz6PeY91O0EyeqQE=
+SHA256 (Pkgfile) = a50e90d8617aa5de442e5c07dc2b30eae7f7f4ee6ade3ad1f7ea85b68b4cf8e9
+SHA256 (.footprint) = f11e69636cc1cc3ee9713ab5ff84c46550eecda5b619f2d3b199a8a8ff47ca8a
+SHA256 (man-db-2.12.0.tar.xz) = 415a6284a22764ad22ff0f66710d853be7790dd451cd71436e3d25c74d996a95
 SHA256 (mandb.cron) = f2e9f1210bf6b7c3335cc6f3a9551651812428109ea8c4adc9cd5cf73461e0f1
