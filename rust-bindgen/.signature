@@ -1,5 +1,0 @@
-untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ2s5DCChAtfZMTXkBQgieLuHJxhjEiZABZ0Q3xaj3y+DA9T5KS0uKZ5FoHgapDg65cRvF53ZDIvjgWqiMkHs/gA=
-SHA256 (Pkgfile) = fce07bb68b7fca64c17c3edaec92e33339133b73ee4b8e725a87f04077971150
-SHA256 (.footprint) = 1662dbff2de9322f2626322d56660c935d19188a9072045946af4a44c3ac3b13
-SHA256 (rust-bindgen-0.68.1.tar.gz) = 6a577026184a6f7a99b48f46f2074c83d272d3aadf91c7b94a4c6c34e6acd445
