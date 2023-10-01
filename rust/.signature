@@ -1,7 +1,0 @@
-untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZzo5lGKB+VgOeit5w2tSxvhdHKj3b69HsdBnZ4o+TYF3rM6etHu0NVR4LIqDSQ7OTo5KwGH4iKvWJLwzi9TL6Qw=
-SHA256 (Pkgfile) = eb091f9165ca22d82728ae28cd477adad47e34c0aaa1fa690d057f0ddfc21b6b
-SHA256 (.footprint) = 0ea2763c989f6a5339b77aa538b2cd7af830b8c55372540bdbaa7259cd1686b1
-SHA256 (rustc-beta-src.tar.xz) = 092c75597254a81c4b7ca4a1164f196aaee59e6de09ce09dff7808fdfb230c76
-SHA256 (0001-dist.rs-change-dir-libexec-to-lib.patch) = 027875cf3ced367d8552590ff44527891dadb46d5edda7282c107eea1552fbeb
-SHA256 (0002-tool.rs-change-dir-libexec-to-lib.patch) = c5fb60b7adb8516317fb83d4ae98a861342e7ec94d71dc9874242fce2fc2a14c
