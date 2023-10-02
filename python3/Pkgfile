@@ -1,11 +1,11 @@
-# Description:	Python interpreter, pre-release 3.12.0rc3
+# Description:	Python interpreter, release 3.12.0
 # URL:		https://www.python.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 # Depends on:	bzip2 expat libffi libtirpc libxcrypt mpdecimal openssl3 sqlite3 xz
 
 name=python3
 _realname=Python
-version=3.12.0rc3
+version=3.12.0
 release=1
 source=(https://www.python.org/ftp/python/3.12.0/${_realname}-${version}.tar.xz)
 
