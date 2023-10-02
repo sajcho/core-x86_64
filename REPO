@@ -466,9 +466,9 @@ f:fcefa6a669a5ae89916fef1c2f618bfe:libbsd/.footprint
 f:35573dd260c0f435cf49d49de5e864c3:libbsd/.signature
 f:7fa60e036bc18a469832065fff238006:libbsd/libbsd-0.11.7-test-explicit_bzero.patch
 f:1fe0e1acc816e8db5573c0f12d52ecfc:libbsd/Pkgfile
-f:5aa040aa78d812d854322a5a022af953:python3/.footprint
-f:a42daff8b86da3c8fb8de6048463d758:python3/.signature
-f:156362b4304bcb79ddb389abf73d7171:python3/Pkgfile
+f:ee816b86b2f4bea498d063d31d860b1f:python3/.footprint
+f:927e62d9ea91269316970349dd2fc057:python3/.signature
+f:0abab3ea25f196e42fa23454fe13e83f:python3/Pkgfile
 f:59a431db6aae60adff17544a5e4248ce:file/.footprint
 f:a051b7a53681cce82c2182c3f0714da1:file/.signature
 f:32626a0aef427d6d23c9e81ced711208:file/Pkgfile
