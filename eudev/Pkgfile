@@ -4,8 +4,8 @@
 # Depends on:	kmod
 
 name=eudev
-version=3.2.12
-release=3
+version=3.2.14
+release=1
 source=(https://github.com/eudev-project/${name}/releases/download/v${version}/${name}-${version}.tar.gz \
 	50-firmware.rules udevd.run)
 
@@ -38,7 +38,7 @@ build() {
 
 	# create binary hwdb
 	LD_LIBRARY_PATH=$PKG/lib \
-	$PKG/sbin/udevadm hwdb --update --root=$PKG
+		$PKG/sbin/udevadm hwdb --update --root=$PKG
 
 	# Devices
 	install -d $PKG/lib/{firmware,udev/devices/{pts,shm}}
