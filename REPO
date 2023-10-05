@@ -150,8 +150,8 @@ f:cd5fb0500c0d4db9c7eab11d1d5bd7f9:libdevmapper/.footprint
 f:0f001b1d2661ba29a5a673fbc4775362:libdevmapper/.signature
 f:b0f6ded9a0f687fb9ce4de8971717659:libdevmapper/Pkgfile
 f:24057379f9b6a58d9fb20e4ef89bb318:openssh/.footprint
-f:684b5a804f9259783275609e9018a1d8:openssh/.signature
-f:c79f3e85d4c93c876d05199db8bd0824:openssh/Pkgfile
+f:fcb0b0f2a5908a0458f7f01655acc43b:openssh/.signature
+f:5eca427a73a246f3be7c06a64165c76b:openssh/Pkgfile
 f:e67526fd185f2d7b3ae8ae95070215c9:openssh/sshd.run
 f:bf0717aadb81760a6ee3834e5be0d139:openssh/sshd.pam
 f:890f4ccc97b70bd80e6a8290dc878a9b:openresolv/.footprint
@@ -325,9 +325,9 @@ f:e94b094e93ba832e2da7f65c502be914:samurai/Pkgfile
 f:965820d80ba705ed7dd6b0ad8246ea5c:nasm/.footprint
 f:864340477b0c86cb13178f535d0135a0:nasm/.signature
 f:7679f91c3ad5cafe0a889844a80174be:nasm/Pkgfile
-f:e4a657da5f6c61be80456e854554e4bf:gettext/.footprint
-f:93b5e1683030613f3b40c874a7be1248:gettext/.signature
-f:a24e8b6a354a2bcf8ce543772b9da87d:gettext/Pkgfile
+f:d5cc19ebcc02290e396fa360b1d3c2f4:gettext/.footprint
+f:f7cac57af1487fceadf8b22486d5b80f:gettext/.signature
+f:3003b71bec4c7e914e8ad9d2c2ae09cf:gettext/Pkgfile
 f:543853d3e30212e4aaadb7e33d716635:libedit/.footprint
 f:7e930ec132b21f26c23d0b728b829928:libedit/.signature
 f:902a735897eef44bfb0c8f12ba71a4ee:libedit/Pkgfile
