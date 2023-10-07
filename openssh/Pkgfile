@@ -20,7 +20,6 @@ build() {
 		--sysconfdir=/etc/ssh \
 		--with-mantype=man \
 		--mandir=/usr/share/man \
-		--with-md5-passwords \
 		--with-pam \
 		--with-pie \
 		--with-pid-dir=/run \
