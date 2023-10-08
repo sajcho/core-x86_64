@@ -5,9 +5,10 @@
 
 name=glibc
 version=2.38
-release=1
+release=2
 source=(https://ftp.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
 	https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.10.tar.xz \
+	glibc-2.38-upstream_fixes-3.patch \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
@@ -22,6 +23,8 @@ build() {
 
 	export CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/}"
 	export CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/}"
+
+	patch -p1 -i $SRC/glibc-2.38-upstream_fixes-3.patch
 
 	mkdir build
 	cd build
