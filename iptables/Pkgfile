@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=iptables
-version=1.8.9
+version=1.8.10
 release=1
 source=(https://netfilter.org/projects/${name}/files/${name}-${version}.tar.xz)
 
@@ -11,6 +11,8 @@ build() {
 	cd ${name}-${version}
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
 		--enable-libipq \
