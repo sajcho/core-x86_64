@@ -1,7 +1,7 @@
 # Description:	pciutils-like utilities for USB
 # URL:		https://github.com/gregkh/usbutils
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	libusb wget
+# Depends on:	libusb wget2
 
 name=usbutils
 version=015
