@@ -678,8 +678,8 @@ f:339b03c53860615fd08aabab04b68f85:perl/.footprint
 f:f8f03302f00761b97329f62583c5c07a:perl/.signature
 f:65bfb3e01afd4178b6a0d3b990f8d26e:perl/Pkgfile
 f:d41c9d792a60766a99736354cb30ef06:usbutils/.footprint
-f:7b56a556687650ad2134ae1988de95ac:usbutils/.signature
-f:400b86219257b1bd0db69fca5221fb8b:usbutils/Pkgfile
+f:e232065aa0acce087b901364edd9f830:usbutils/.signature
+f:0e8c6eabc734469833ace0458f481a6c:usbutils/Pkgfile
 f:3607db42d58738a22a1cb7ae9f6d7182:usbutils/update-usbids.sh
 f:d8678e6bc043011febfbb900f7580485:jsoncpp/.footprint
 f:9d0f429816cee3522c0f03edb34a8b8d:jsoncpp/.signature
