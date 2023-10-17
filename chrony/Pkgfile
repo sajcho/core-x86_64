@@ -5,10 +5,11 @@
 
 name=chrony
 version=4.4
-release=1
+release=2
 source=(https://download.tuxfamily.org/${name}/${name}-${version}.tar.gz \
 	chrony.conf \
-	chrony.run)
+	chrony.run \
+	chrony.run.conf)
 
 build() {
 	cd ${name}-${version}
@@ -28,6 +29,7 @@ build() {
 	install -D -m 0644 $SRC/chrony.conf $PKG/etc/chrony.conf
 	install -d $PKG/etc/sv/chrony
 	install -m 0755 $SRC/chrony.run $PKG/etc/sv/chrony/run
+	install -m 0644 $SRC/chrony.run.conf $PKG/etc/sv/chrony/conf
 	ln -s /run/runit/supervise.chrony $PKG/etc/sv/chrony/supervise
 
 	chown -R chrony:chrony $PKG/var/lib/chrony

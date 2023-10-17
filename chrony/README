@@ -1,0 +1,9 @@
+Old:
+The chrony service starts based on the existence of the dhcpcd pid.
+But this does not necessarily mean that the interface is correctly defined.
+
+New:
+The chrony service will start correctly based
+on the defined interface in the conf file - the IFACE variable.
+
+If you have a different interface name, change the IFACE value.

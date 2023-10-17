@@ -1,6 +1,7 @@
 #!/bin/sh
+[ -r conf ] && . ./conf
 sv check dhcpcd >/dev/null || exit 1
-if [ -f /run/dhcpcd/pid ] && [ -s /run/dhcpcd/pid ]; then
-	install -d -m750 -o chrony -g chrony /run/chrony
+if [ -f /run/resolvconf/interfaces/${IFACE}.dhcp ] && [ -s /run/resolvconf/interfaces/${IFACE}.dhcp ]; then
+	install -d -m 0750 -o chrony -g chrony /run/chrony
 	exec chronyd -n -u chrony
 fi
