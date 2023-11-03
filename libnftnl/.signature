@@ -1,0 +1,5 @@
+untrusted comment: verify with opt-x86_64.pub
+RWRkiJhlUJEGrFczCww7c+xJMtxwsyFWUdDWSdDcTyqJ9eQgokL5aht71b2pIb7XbFGdOdRYXLHEgrqlV1RYv79jeHkYMcBD0Qc=
+SHA256 (Pkgfile) = c0ca7cd6eb3b26544336dd02f3a02aebf3d9a340be762006ab5114b2083dd610
+SHA256 (.footprint) = aeb111cf9ca93dcd104102002403c6d055e2a29cee3755ec1dc11ddf155621f4
+SHA256 (libnftnl-1.2.6.tar.xz) = ceeaea2cd92147da19f13a35a7f1a4bc2767ff897e838e4b479cf54b59c777f4
