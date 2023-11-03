@@ -439,6 +439,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/cvsrc.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/debchangelog.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/debcontrol.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/debsources.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/denyhosts.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/desktop.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/dictconf.vim
@@ -511,6 +512,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/javascriptreact.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/jproperties.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/json.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/json5.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/jsonc.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/jsonnet.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/jsp.vim
@@ -567,6 +569,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/nroff.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/nsis.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/objc.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/objdump.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/obse.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/ocaml.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/occam.vim
@@ -1101,6 +1104,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/datascript.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/dcd.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/dcl.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/deb822sources.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/debchangelog.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/debcontrol.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/debcopyright.vim
@@ -1262,6 +1266,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/jovial.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/jproperties.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/json.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/json5.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/jsonc.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/jsp.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/julia.vim
@@ -1505,6 +1510,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/shared/
 -rw-r--r--	root/root	usr/share/vim/syntax/shared/context-data-interfaces.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/shared/context-data-metafun.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/shared/context-data-tex.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/shared/debversions.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/shared/hgcommitDiff.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/shared/typescriptcommon.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/sicad.vim
