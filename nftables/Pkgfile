@@ -1,0 +1,45 @@
+# Description:	Netfilter tables userspace tools
+# URL:		https://netfilter.org/projects/nftables
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	gmp jansson libedit libnftnl
+
+name=nftables
+version=1.0.9
+release=1
+source=(https://netfilter.org/projects/${name}/files/${name}-${version}.tar.xz \
+	nftables-basic-firewall.nft \
+	nftables.conf \
+	nftables.finish \
+	nftables.run)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--disable-python \
+		--disable-static \
+		--with-json \
+		--with-python-bin=/usr/bin/python3
+
+	make V=1
+
+	make DESTDIR=$PKG install
+
+	install -D -m 0644 $SRC/nftables.conf $PKG/etc/nftables.conf
+	install -D -m 0644 $SRC/nftables-basic-firewall.nft $PKG/etc/nftables/basic-firewall.nft
+	mv $PKG/usr/share/nftables/*.nft $PKG/etc/nftables/
+
+	# nftables runit service
+	install -d $PKG/etc/sv/nftables
+	install -m 0755 $SRC/nftables.run $PKG/etc/sv/nftables/run
+	install -m 0755 $SRC/nftables.finish $PKG/etc/sv/nftables/finish
+	ln -s /run/runit/supervise.nftables $PKG/etc/sv/nftables/supervise
+
+	rm -r $PKG/usr/share/{doc,nftables}
+
+	find $PKG -type f -name '*.la' -delete
+}
