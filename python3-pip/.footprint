@@ -18,16 +18,16 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/install/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/install/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/install/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/install/__pycache__/__init__.cpython-312.pyc
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip-23.2.1.dist-info/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.2.1.dist-info/AUTHORS.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.2.1.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.2.1.dist-info/LICENSE.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.2.1.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.2.1.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.2.1.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.2.1.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.2.1.dist-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.2.1.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip-23.3.1.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.1.dist-info/AUTHORS.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.1.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.1.dist-info/LICENSE.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.1.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.1.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.1.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.1.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.1.dist-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.1.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/__main__.py
@@ -316,7 +316,6 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pyca
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pycache__/filetypes.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pycache__/glibc.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pycache__/hashes.cpython-312.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pycache__/inject_securetransport.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pycache__/logging.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pycache__/misc.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pycache__/models.cpython-312.pyc
@@ -343,7 +342,6 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pyca
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/filetypes.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/glibc.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/hashes.py
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/inject_securetransport.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/logging.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/misc.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/models.py
@@ -383,7 +381,6 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_vendor/cachecontrol/_
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/cachecontrol/__pycache__/_cmd.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/cachecontrol/__pycache__/adapter.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/cachecontrol/__pycache__/cache.cpython-312.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/cachecontrol/__pycache__/compat.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/cachecontrol/__pycache__/controller.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/cachecontrol/__pycache__/filewrapper.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/cachecontrol/__pycache__/heuristics.cpython-312.pyc
@@ -400,7 +397,6 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_vendor/cachecontrol/c
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/cachecontrol/caches/__pycache__/redis_cache.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/cachecontrol/caches/redis_cache.py
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/cachecontrol/compat.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/cachecontrol/controller.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/cachecontrol/filewrapper.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/cachecontrol/heuristics.py
@@ -1024,6 +1020,20 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_vendor/tomli/__pycach
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/tomli/_parser.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/tomli/_re.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/tomli/_types.py
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_vendor/truststore/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/truststore/__init__.py
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_vendor/truststore/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/truststore/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/truststore/__pycache__/_api.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/truststore/__pycache__/_macos.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/truststore/__pycache__/_openssl.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/truststore/__pycache__/_ssl_constants.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/truststore/__pycache__/_windows.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/truststore/_api.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/truststore/_macos.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/truststore/_openssl.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/truststore/_ssl_constants.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/truststore/_windows.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/typing_extensions.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_vendor/urllib3/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/urllib3/__init__.py

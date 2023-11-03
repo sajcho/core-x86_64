@@ -1,11 +1,11 @@
-# Description:	Helper scripts to install pip, in a Python installation that doesn't have it. 
+# Description:	Helper scripts to install pip, in a Python installation that doesn't have it.
 # URL:		https://github.com/pypa/get-pip
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 # Depends on:	python3
 
 name=python3-pip
 _realname=get-pip
-version=23.2.1
+version=23.3.1
 release=1
 source=(https://github.com/pypa/${_realname}/archive/${version}/${_realname}-${version}.tar.gz)
 
@@ -21,7 +21,7 @@ build() {
 
 	# fix version
 	sed "s|pip3.11|pip3.12|" \
-		-i $PKG/usr/lib/python3.12/site-packages/pip-23.2.1.dist-info/entry_points.txt
+		-i $PKG/usr/lib/python3.12/site-packages/pip-23.3.1.dist-info/entry_points.txt
 
 	find $PKG -type f -name '*.exe' -delete
 }
