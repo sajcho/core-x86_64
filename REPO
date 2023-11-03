@@ -649,9 +649,9 @@ f:5523ec9e4e6485d6dd628309822b691d:libuv/.footprint
 f:e75db59a3f1e6a5da499e6f6a82fdab8:libuv/.signature
 f:62b445a95e28111197fe2ca76a0a2d06:libuv/Pkgfile
 f:4e0e566ad8fd6b6f4d44522fb5114941:libuv/README
-f:4d767707b8a37c7fa7e6fedb4e6da1ae:gawk/.footprint
-f:b70e69c4005fcb7fb21fcd5ddfd489df:gawk/.signature
-f:5d056c1a7490b73616cc381420589250:gawk/Pkgfile
+f:0638a46aa3e1ea3283172d17af8e1ba2:gawk/.footprint
+f:c1c249bbb1c22603d62a1d90b2738ba3:gawk/.signature
+f:a912dadd63f72f4a8d4e41a6a5088133:gawk/Pkgfile
 f:301dd94576fb3a08fde2b7cbec7469eb:psmisc/.footprint
 f:8a7e4cd63eaad97de3c3b05c377dd967:psmisc/.signature
 f:9932d0f345dc1b2062a310132172cb23:psmisc/Pkgfile
@@ -703,9 +703,10 @@ f:3607db42d58738a22a1cb7ae9f6d7182:usbutils/update-usbids.sh
 f:d8678e6bc043011febfbb900f7580485:jsoncpp/.footprint
 f:9d0f429816cee3522c0f03edb34a8b8d:jsoncpp/.signature
 f:048dfb29ea7b4d62e03ee97155892491:jsoncpp/Pkgfile
-f:d06293555aa978f3a2480e4b3cb8e85a:texinfo/.footprint
-f:c2fb7b28a3e083cc303c6ab5bd5a22c6:texinfo/.signature
-f:2504c1415e63a9ff32b3233b324fc050:texinfo/Pkgfile
+f:7d8408741fbf34e195175e5595727343:texinfo/.footprint
+f:dda30a9996073c1d04ba7d7ad4f2353a:texinfo/.signature
+f:001eca847cff400d491bef2bb8dbbf94:texinfo/fix-build-without-NLS.patch
+f:90bd93100c2203db2657e6b19dab3ea0:texinfo/Pkgfile
 f:3484c194e8e34bafeb259bb2f9117c7d:libmd/.footprint
 f:b2a91f672608d36cb8ebe188db3e98b5:libmd/.signature
 f:da676f6c6523ab108982fd1fcfb14e0c:libmd/Pkgfile
