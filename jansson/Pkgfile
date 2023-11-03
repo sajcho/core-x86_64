@@ -1,0 +1,22 @@
+# Description:	lightweight JSON library
+# URL:		http://www.digip.org/jansson/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=jansson
+version=2.14
+release=2
+source=(https://github.com/akheron/${name}/releases/download/v${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--disable-static
+
+	make V=1
+
+	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
+}
