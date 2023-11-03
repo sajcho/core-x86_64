@@ -8,6 +8,9 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/lsusb.py
 -rwxr-xr-x	root/root	usr/bin/usb-devices
 -rwxr-xr-x	root/root	usr/bin/usbhid-dump
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/usbutils.pc
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/hwdata/
 -rw-r--r--	root/root	usr/share/hwdata/usb.ids

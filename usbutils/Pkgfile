@@ -4,7 +4,7 @@
 # Depends on:	libusb wget2
 
 name=usbutils
-version=015
+version=017
 release=1
 source=(https://github.com/gregkh/usbutils/archive/v${version}/${name}-${version}.tar.gz \
 	update-usbids.sh)
