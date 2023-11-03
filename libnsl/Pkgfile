@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=libnsl
-version=2.0.0
+version=2.0.1
 release=1
 source=(https://github.com/thkukuk/${name}/releases/download/v${version}/${name}-${version}.tar.xz)
 

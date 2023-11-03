@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ6HCronXWOxxf6DSe8FUBnSAAU2EQFcfio2co4yUnE3F/aKddgvhRwmbWEUSANhEpL+K4RewC9YeSLelQrrcNgk=
-SHA256 (Pkgfile) = 323ccd4a7709875ff6d27e5fa1900f8719a61fcabf7bbe2997ddddec8328a517
+RWQ0XEjKMixyZxR4D7xj5DxiqNkMsJCRydPujn6jH8iQILckg6xXRTHOuc9XqCDRkMi5xtrS/RdLh+ZhPFxUcKZKn8JrJSrGXwo=
+SHA256 (Pkgfile) = ee4d44be57d604b515c086bb0051a41d16fa002cda3e0eaaab48ae9c62ce7516
 SHA256 (.footprint) = 76bf0b2ac906e69fb66d47e181a93a556a7b4f96d12e1edb02dc897959b157b2
-SHA256 (libnsl-2.0.0.tar.xz) = 2da075ef1893ebdfc5f074f83ac811873dc06fd5c62bc9a4729fd2e27a40341a
+SHA256 (libnsl-2.0.1.tar.xz) = 5c9e470b232a7acd3433491ac5221b4832f0c71318618dc6aa04dd05ffcd8fd9
