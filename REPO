@@ -327,9 +327,9 @@ f:2930e24751dffbb68da3562492b1c2fb:grep/.footprint
 f:a6732572657dd5ddd0fcbd141af37d07:grep/.signature
 f:7d534624758b35dc73e6a38a51f11371:grep/Pkgfile
 f:3ad53b56f38f0533d1a185fcb0fe3867:git/.footprint
-f:b7b62fb225b6b154c517f090ce7b254e:git/.signature
+f:825e3c3a123a21b3fac07ef5e640ba30:git/.signature
 f:07297ac00d466c0c7c94afeaa16bc903:git/git.driver
-f:688078d01120c08587638edb6ea5d2e8:git/Pkgfile
+f:992d9c498ee39e139f8ee89252c8dba6:git/Pkgfile
 f:e0ad02fa472d49390431fdf896fcae3e:samurai/CVE-2021-30219.patch
 f:4cbfdf543fb4c3a325ca19e4ba4989cc:samurai/CVE-2021-30218.patch
 f:f7ca997936206cce76fb0809bc86641a:samurai/.footprint
