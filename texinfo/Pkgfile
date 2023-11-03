@@ -4,14 +4,19 @@
 # Depends on:	perl
 
 name=texinfo
-version=7.0.3
+version=7.1
 release=1
-source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
+	fix-build-without-NLS.patch)
 
 build() {
 	cd ${name}-${version}
 
+	patch -p1 -i $SRC/fix-build-without-NLS.patch
+
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--disable-nls
 
