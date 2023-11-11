@@ -41,6 +41,8 @@ drwxr-xr-x	root/root	usr/share/vim/autoload/dist/
 -rw-r--r--	root/root	usr/share/vim/autoload/dist/ft.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/dist/man.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/dist/script.vim
+-rw-r--r--	root/root	usr/share/vim/autoload/dist/vim.vim
+-rw-r--r--	root/root	usr/share/vim/autoload/dist/vim9.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/dist/vimindent.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/freebasic.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/getscript.vim
