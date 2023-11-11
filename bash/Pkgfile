@@ -4,24 +4,24 @@
 # Depends on:	readline
 
 name=bash
-version=5.2.15
+version=5.2.21
 release=1
-source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz \
+source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz \
 	profile)
 
 build() {
 	cd ${name}-${version}
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--exec-prefix= \
 		--enable-readline \
 		--disable-nls \
 		--with-curses \
 		--with-installed-readline \
-		--without-bash-malloc \
-		--build=$CHOST \
-		--host=$CHOST
+		--without-bash-malloc
 
 	make -j1 V=1
 
