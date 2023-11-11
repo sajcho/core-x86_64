@@ -124,8 +124,6 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/tc-bfifo.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/tc-bpf.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/tc-cake.8.gz
--rw-r--r--	root/root	usr/share/man/man8/tc-cbq-details.8.gz
--rw-r--r--	root/root	usr/share/man/man8/tc-cbq.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/tc-cbs.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/tc-cgroup.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/tc-choke.8.gz
@@ -172,7 +170,6 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/tc-stab.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/tc-taprio.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/tc-tbf.8.gz
--rw-r--r--	root/root	usr/share/man/man8/tc-tcindex.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/tc-tunnel_key.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/tc-u32.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/tc-vlan.8.gz
