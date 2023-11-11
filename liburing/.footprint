@@ -7,12 +7,12 @@ drwxr-xr-x	root/root	usr/include/liburing/
 -rw-r--r--	root/root	usr/include/liburing/io_uring.h
 -rw-r--r--	root/root	usr/include/liburing/io_uring_version.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/liburing-ffi.so -> liburing-ffi.so.2.4
-lrwxrwxrwx	root/root	usr/lib/liburing-ffi.so.2 -> liburing-ffi.so.2.4
--rwxr-xr-x	root/root	usr/lib/liburing-ffi.so.2.4
-lrwxrwxrwx	root/root	usr/lib/liburing.so -> liburing.so.2.4
-lrwxrwxrwx	root/root	usr/lib/liburing.so.2 -> liburing.so.2.4
--rwxr-xr-x	root/root	usr/lib/liburing.so.2.4
+lrwxrwxrwx	root/root	usr/lib/liburing-ffi.so -> liburing-ffi.so.2.5
+lrwxrwxrwx	root/root	usr/lib/liburing-ffi.so.2 -> liburing-ffi.so.2.5
+-rwxr-xr-x	root/root	usr/lib/liburing-ffi.so.2.5
+lrwxrwxrwx	root/root	usr/lib/liburing.so -> liburing.so.2.5
+lrwxrwxrwx	root/root	usr/lib/liburing.so.2 -> liburing.so.2.5
+-rwxr-xr-x	root/root	usr/lib/liburing.so.2.5
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/liburing-ffi.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/liburing.pc
@@ -55,8 +55,10 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_accept_direct.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_cancel.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_cancel64.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_cancel_fd.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_close.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_close_direct.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_cmd.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_connect.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_fadvise.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_fallocate.3.gz
@@ -127,6 +129,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_writev2.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_queue_exit.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_queue_init.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_queue_init_mem.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_queue_init_params.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_recvmsg_cmsg_firsthdr.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_recvmsg_cmsg_nexthdr.3.gz
