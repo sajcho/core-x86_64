@@ -1,8 +1,8 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ/qsO1vQijr7Ji24xJuEyDjdJHs0Fr69GfKqy9hwLsNnHg044KMLTP/A+vsuD0sS+GA2xqEmpXj2fqMFc4p5wQk=
+RWQ0XEjKMixyZzYnqkfi1FLah2xQzPp1OHsISLP+6Azlav5TqKZ4wWEzphsQsayv3h4sphnopdgbw23fNd+5FFHkFang052GvAw=
 SHA256 (Pkgfile) = 1ba5372fcf354d31c3b13ca1efc5a641b776eca7b48892404b3e9362bbbca214
 SHA256 (.footprint) = 9a36be18f29307db9bfad99ab7bd2fd07b8342b935406bc89b7bde8f804292b6
 SHA256 (prt-get-5.19.6.tar.xz) = 6ea89df308e19a6239f260c91036805cd2063d0cd24a7427235849634dd49f0d
 SHA256 (prt-get-5.19.6-by-saux.patch) = bcf7cd492c86374e25a163b215bc867651273a505b4e3e7ee5d53d404268410d
-SHA256 (prt-get.conf) = cff535ce56750f40d6c3d186d0ea0a4deced3359ff33f5f0886144b9fc4e65ec
+SHA256 (prt-get.conf) = ce62513c52c64538b56bc7f909d7761d3eb3bd194dc991352f46e89798e55a48
 SHA256 (prt-get.aliases) = df473d38e59d1d6cd859d986a5d6586fdc54bfd51663313c63a939e941984b7b
