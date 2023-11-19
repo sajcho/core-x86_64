@@ -1,8 +1,8 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ0LQh2n8361PfkoVDkAJpVDdXRcvlKz0aHVbk9l3fmuk9/3s/sC3CRyrW3jBWi9VrdctRlfQCOMmhwJ4NnNjkgY=
-SHA256 (Pkgfile) = 24b471db5ea61e7eeca8c66b905ca9f57d82cd1bdadbdcc07279f1cc17ee30e9
-SHA256 (.footprint) = b3b6de248e287d02f6dceafa564d756404888075de624c52145fd838d3131d74
-SHA256 (shadow-4.13.tar.xz) = 9afe245d79a2e7caac5f1ed62519b17416b057ec89df316df1c3935502f9dd2c
+RWQ0XEjKMixyZ+1aEctFiNZfU6EpV/heEfPi/Xc6tgQ30J2aqJVk9Z+NxTG+/NW8/Ser32jRRZIhx3muIuni4bJebMhVcXFwew0=
+SHA256 (Pkgfile) = 281c4e3dbd800c529cc0067467beceec8499b240e1302ac5253643479d582c3e
+SHA256 (.footprint) = fd7c93a6bdcfffbc6475b5c87711b40fca787d561f8f3a4d7ef12f283fb02910
+SHA256 (shadow-4.14.0.tar.xz) = 87e1c5cc10109536132f1b4e29b6df6edc99b70f36f71ff042c2783f2fa01d4f
 SHA256 (pwck) = c62f1bf5785c2bb93bb269156bfa02b06728a01ff5d6c2e09cf6285701a1fda0
 SHA256 (login.defs) = def991c4bc012834d726a4010783634a930558b91650bc4cba5fe822064c3535
 SHA256 (chfn) = b31ef7a14f747e114c970027a57acb5dcefffee439ce0b4a7d55cc2f6b632fcf
