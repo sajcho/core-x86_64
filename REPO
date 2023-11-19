@@ -545,7 +545,7 @@ f:0153ce1b5ac57ab970abafbde26a9b62:fcron/systab.orig
 f:e1885cdd5b3333f2f4b35833a557e3a6:prt-get/prt-get.conf
 f:c93b5bb1816e15e941388f52c2cc4412:prt-get/prt-get-5.19.6-by-saux.patch
 f:7459342d9dc9f032d9aeb5d7d19bbe32:prt-get/.footprint
-f:57398cbf7342dc6ea3a0190db349569d:prt-get/.signature
+f:92ee5fa0acb2f348ed163325f0e741a2:prt-get/.signature
 f:4f6b710e4d2b18c70cfe5e4a593938b7:prt-get/prt-get.aliases
 f:2a657af971360332f31dd4d796513f54:prt-get/Pkgfile
 f:cb560d7197163902894ac8564722b46a:prt-get/README
