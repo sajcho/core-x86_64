@@ -4,15 +4,20 @@
 # Depends on:	ncurses
 
 name=readline
-version=8.2.1
+version=8.2.7
 release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version:0:3}.tar.gz \
+	readline_readline-8.2.7.patch.gz \
 	inputrc)
 
 build() {
 	cd ${name}-${version:0:3}
 
+	gunzip -c $SRC/readline_readline-8.2.7.patch.gz | patch -p0
+
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--disable-static \
 		--with-curses
