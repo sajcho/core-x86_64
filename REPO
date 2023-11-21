@@ -178,9 +178,9 @@ f:cbacf74f805662b94740cb5b5c76813f:filesystem/Pkgfile
 f:0f500a8da50619ac054bba5efc62d0c9:filesystem/passwd
 f:e0a40117ffd51487e0073c953a1dc06c:filesystem/mime.types
 f:63b1c85d380449e35c8ee42ec6d2d5da:meson/build-meson
-f:40675c716f12c8c25dc7b5a6d17446f8:meson/.footprint
-f:2ef0c087d4c4bfa1ed5de9007250de3a:meson/.signature
-f:d02a5e171244555ea8af730364748aa2:meson/Pkgfile
+f:a3ea31bdb60780c51f05cc58eb867dcc:meson/.footprint
+f:f7ed015dfe592ec9f4de24bd19095798:meson/.signature
+f:6cc69e830b0ed93971d99d43b02174e9:meson/Pkgfile
 f:a0d849b8237d6586f459a68e054cb58a:runit/cross.patch
 f:82b4d0be5b0e4246f83852e199243465:runit/clearmem.patch
 f:9138e23c11a099125434d605f2763b6c:runit/utmpset-time_t.patch
@@ -286,8 +286,9 @@ f:637d19b0bbebeb620a45e953f629dc8e:chrony/chrony.conf
 f:48c2d18c90879ed0dc44073e1901d91a:chrony/Pkgfile
 f:46b6f8977204863978e1211e5358590c:chrony/README
 f:da214214ee665b3985be97bb22ae8daf:readline/.footprint
-f:1254e1588a9acbe4bc7067c2327f0074:readline/.signature
-f:108dc5b940e8506ded49efee31b3fe48:readline/Pkgfile
+f:3cef1ae1a8cbd72216165f590db2ee08:readline/.signature
+f:63642d8efa3b1c043d800a1f946e18d3:readline/Pkgfile
+f:5d2ba84fbf08059638222631357bb591:readline/readline_readline-8.2.7.patch.gz
 f:553cf04fdeec54dca12062864c3ffba3:readline/inputrc
 f:68d29a7a4fc30ea3ba47a4caa45b6a5e:libnsl/.footprint
 f:046ce91ce21e8d29a8782ba7adf44361:libnsl/.signature
@@ -341,9 +342,9 @@ f:3ce619c79c15dc9896bfd59017ce8df3:jansson/Pkgfile
 f:965820d80ba705ed7dd6b0ad8246ea5c:nasm/.footprint
 f:864340477b0c86cb13178f535d0135a0:nasm/.signature
 f:7679f91c3ad5cafe0a889844a80174be:nasm/Pkgfile
-f:d5cc19ebcc02290e396fa360b1d3c2f4:gettext/.footprint
-f:f7cac57af1487fceadf8b22486d5b80f:gettext/.signature
-f:3003b71bec4c7e914e8ad9d2c2ae09cf:gettext/Pkgfile
+f:5dfe53eed8cd98f9550862e6f1e98966:gettext/.footprint
+f:f735cbf44ee02d4b2c63b4019436ca71:gettext/.signature
+f:a13cf5cb7a25ddbd448dba77501387c1:gettext/Pkgfile
 f:543853d3e30212e4aaadb7e33d716635:libedit/.footprint
 f:7e930ec132b21f26c23d0b728b829928:libedit/.signature
 f:902a735897eef44bfb0c8f12ba71a4ee:libedit/Pkgfile
