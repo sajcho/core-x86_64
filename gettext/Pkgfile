@@ -4,7 +4,7 @@
 # Depends on:	ncurses acl
 
 name=gettext
-version=0.22.3
+version=0.22.4
 release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
@@ -12,6 +12,8 @@ build() {
 	cd ${name}-${version}
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--disable-{csharp,java,nls,static} \
 		--without-{emacs,git} \

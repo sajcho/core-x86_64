@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZwhsGwl56BcxQU1LQixVXnReSKKjmINux/8q4+ZCvtKHhLxPa1UBKLQHSm0kPHCYfZ9GhTrEbLeMsdJAWTNeTQY=
-SHA256 (Pkgfile) = 87cd118021c7fa9d5ac13ad47a5dd519515903c4bb8c518f88be26746703a561
-SHA256 (.footprint) = 4c5142c4c838145a64fad4eaf499d2bc223ebc85409f56ec7df3bc42fccde8fd
-SHA256 (gettext-0.22.3.tar.xz) = b838228b3f8823a6c1eddf07297197c4db13f7e1b173b9ef93f3f945a63080b6
+RWQ0XEjKMixyZwPP6eDygq0teQgTL+hh7P8PezLwui6nOB7ADdXsIcaklfrdQHbV0OSoq6fiS/PmbIdlrtiKELoi5+qpCIc+jAw=
+SHA256 (Pkgfile) = 1e5cbdf24c58215db1c50c72026dcfbab0a709b5af644a11ca7728f02f5b9fa1
+SHA256 (.footprint) = d276bb1cc10873d629b0d96d8dfe363652b3a0815ebf96baaa6513850972c710
+SHA256 (gettext-0.22.4.tar.xz) = 29217f1816ee2e777fa9a01f9956a14139c0c23cc1b20368f06b2888e8a34116
