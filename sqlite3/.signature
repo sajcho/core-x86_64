@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZwGRiVSvi4wXwsrlOey+LZaWbfnI6KtL+yeiGdnsrFgTAJmIf5fhgOtRkNBLE6YpW00BlUtcCieUm6vONfG1IAw=
-SHA256 (Pkgfile) = 49f6b30d5f3774266d9ac28353d5f3b5fbcce601017ced280f17ec0e894c9fb3
+RWQ0XEjKMixyZ2JERVe/zzcXkoVvQX6whS3AaAiRU0Ab0z/QSQDCRz7iMP1wX3PkENN7BjsOnJMUDdL2fzYCALQueNy3uycuQwo=
+SHA256 (Pkgfile) = b0266d95195a547aadb6bdfd7f3b4db5c80f83a89efd72128e91dbfadc85586c
 SHA256 (.footprint) = 03cecd5a88515b122b23796ac530d295cb737cfddfe266d0d79f84eb62556f58
-SHA256 (sqlite-autoconf-3440000.tar.gz) = b9cd386e7cd22af6e0d2a0f06d0404951e1bef109e42ea06cc0450e10cd15550
+SHA256 (sqlite-autoconf-3440200.tar.gz) = 1c6719a148bc41cf0f2bbbe3926d7ce3f5ca09d878f1246fcc20767b175bb407
