@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ+LcqJ+xlkuA7Mz+qTOc//qytM/lqzKvxMz2h7mgybGZ2ZGP/PY7R8hsmVHRfxNdRz66Dst3/B4a/1fXHmKH9wQ=
-SHA256 (Pkgfile) = e6e49ad861e4692a71cf3bbb005dd4dddd85d12cc25c268bab47ea0e8345baea
-SHA256 (.footprint) = 3819b45d33e607335dd27946fb24d38db9eafce146b8932e96ae7dc6293d2156
-SHA256 (setuptools-68.2.2.tar.gz) = 4ac1475276d2f1c48684874089fefcd83bd7162ddaafb81fac866ba0db282a87
+RWQ0XEjKMixyZ5nYuUsGnEf6+B9MI5k4exlFZpdWbWw/RvTzdJEvzUMYnaZNWxWp/JoJ/N/cD2he0UIZU9OHc+OmH2fOprpPjgg=
+SHA256 (Pkgfile) = 3604fce2732ffe8f45d826bbb8997767ea69f6cb597d1bd9fc44731e4455d923
+SHA256 (.footprint) = ac7e3ba2934f7ed160320aa0e2607a7202e723e30a4e729367299bad814b5082
+SHA256 (setuptools-69.0.1.tar.gz) = f25195d54deb649832182d6455bffba7ac3d8fe71d35185e738d2198a4310044

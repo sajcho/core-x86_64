@@ -37,6 +37,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/impo
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/importlib_resources/_itertools.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/importlib_resources/_legacy.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/importlib_resources/abc.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/importlib_resources/py.typed (EMPTY)
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/importlib_resources/readers.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/importlib_resources/simple.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jaraco/
@@ -53,12 +54,16 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jara
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jaraco/text/__pycache__/__init__.cpython-312.pyc
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/more_itertools/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/more_itertools/__init__.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/more_itertools/__init__.pyi
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/more_itertools/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/more_itertools/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/more_itertools/__pycache__/more.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/more_itertools/__pycache__/recipes.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/more_itertools/more.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/more_itertools/more.pyi
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/more_itertools/py.typed (EMPTY)
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/more_itertools/recipes.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/more_itertools/recipes.pyi
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/packaging/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/packaging/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/packaging/__pycache__/
@@ -84,6 +89,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/pack
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/packaging/_tokenizer.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/packaging/markers.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/packaging/metadata.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/packaging/py.typed (EMPTY)
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/packaging/requirements.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/packaging/specifiers.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/packaging/tags.py
@@ -104,6 +110,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/plat
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/platformdirs/android.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/platformdirs/api.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/platformdirs/macos.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/platformdirs/py.typed (EMPTY)
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/platformdirs/unix.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/platformdirs/version.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/platformdirs/windows.py
@@ -113,16 +120,16 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/extern/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/extern/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/extern/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/extern/__pycache__/__init__.cpython-312.pyc
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools-68.2.2.dist-info/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-68.2.2.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-68.2.2.dist-info/LICENSE
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-68.2.2.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-68.2.2.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-68.2.2.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-68.2.2.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-68.2.2.dist-info/direct_url.json
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-68.2.2.dist-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-68.2.2.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools-69.0.1.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.0.1.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.0.1.dist-info/LICENSE
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.0.1.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.0.1.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.0.1.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.0.1.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.0.1.dist-info/direct_url.json
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.0.1.dist-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.0.1.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/__pycache__/
@@ -147,6 +154,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/__pycache__/installer.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/__pycache__/launch.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/__pycache__/logging.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/__pycache__/modified.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/__pycache__/monkey.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/__pycache__/msvc.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/__pycache__/namespaces.cpython-312.pyc
@@ -167,6 +175,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/_functools.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/_log.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/_macos_compat.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/_modified.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/_msvccompiler.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/archive_util.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/bcppcompiler.cpython-312.pyc
@@ -200,6 +209,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/_functools.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/_log.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/_macos_compat.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/_modified.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/_msvccompiler.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/archive_util.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/bcppcompiler.py
@@ -311,6 +321,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importl
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importlib_metadata/_meta.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importlib_metadata/_py39compat.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importlib_metadata/_text.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importlib_metadata/py.typed (EMPTY)
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importlib_resources/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importlib_resources/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importlib_resources/__pycache__/
@@ -329,6 +340,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importl
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importlib_resources/_itertools.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importlib_resources/_legacy.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importlib_resources/abc.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importlib_resources/py.typed (EMPTY)
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importlib_resources/readers.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importlib_resources/simple.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/
@@ -345,12 +357,16 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/text/__pycache__/__init__.cpython-312.pyc
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/more_itertools/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/more_itertools/__init__.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/more_itertools/__init__.pyi
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/more_itertools/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/more_itertools/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/more_itertools/__pycache__/more.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/more_itertools/__pycache__/recipes.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/more_itertools/more.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/more_itertools/more.pyi
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/more_itertools/py.typed (EMPTY)
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/more_itertools/recipes.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/more_itertools/recipes.pyi
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/ordered_set.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/packaging/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/packaging/__init__.py
@@ -377,6 +393,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/packagi
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/packaging/_tokenizer.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/packaging/markers.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/packaging/metadata.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/packaging/py.typed (EMPTY)
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/packaging/requirements.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/packaging/specifiers.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/packaging/tags.py
@@ -392,6 +409,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/tomli/_
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/tomli/_parser.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/tomli/_re.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/tomli/_types.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/tomli/py.typed
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/typing_extensions.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/zipp.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/archive_util.py
@@ -490,6 +508,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/extern/__pycach
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/installer.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/launch.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/logging.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/modified.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/monkey.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/msvc.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/namespaces.py
