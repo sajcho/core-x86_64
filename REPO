@@ -692,8 +692,8 @@ f:b3dc5efe9c0aaeb2529e59efcd6c4fc6:util-linux/.footprint
 f:ef787e29b27769cacb6fb630cc4e61a1:util-linux/.signature
 f:541cec1d1808549c41566bebbf30b633:util-linux/Pkgfile
 f:68b61055a746a9c23c79cd48e50c8cf1:cmake/.footprint
-f:a553be1a11c1ddfc2d669abded92dc16:cmake/.signature
-f:e781c272050b7cbd50766863366275d6:cmake/Pkgfile
+f:1ab22602bb2ab086c60275703bc00728:cmake/.signature
+f:4ad3fd6de7fee930ab6d6c4baee640d0:cmake/Pkgfile
 f:339b03c53860615fd08aabab04b68f85:perl/.footprint
 f:f8f03302f00761b97329f62583c5c07a:perl/.signature
 f:65bfb3e01afd4178b6a0d3b990f8d26e:perl/Pkgfile
