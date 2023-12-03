@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ+H9qEKxkD+4uoavcD5RgV9RwLGodcaejxswYCt+BaRkwoLH/Ffd7iOksD0oW/HdBHV/slXW36Z4XfU+/iMb+AA=
-SHA256 (Pkgfile) = d6f4b0c48d49919d01dcf044891644cc3888ae5933490ae8a0d3e0c04a9fc997
-SHA256 (.footprint) = 518236d47b54a63a3559d43d02df1ec7406b05ac14ba793f1dbbc8374dfe94e9
-SHA256 (libseccomp-2.5.4.tar.gz) = d82902400405cf0068574ef3dc1fe5f5926207543ba1ae6f8e7a1576351dcbdb
+RWQ0XEjKMixyZwtOYvk2U5iKoN2DaeZ5woSbIokzc+hNqizkllTe+pQ/5aFWeiTwlM90lJtl10izoOjpQktGeuBmuZpMNonCQgQ=
+SHA256 (Pkgfile) = 3a169ef85ee7e587dadd32a4f4128a6641ad2c8beb347a1496a350f6b4a6bb52
+SHA256 (.footprint) = 4d52a8ff39634bfe4ec374788efd02311444038dbcd299965cf5368924b19415
+SHA256 (libseccomp-2.5.5.tar.gz) = 248a2c8a4d9b9858aa6baf52712c34afefcf9c9e94b76dce02c1c9aa25fb3375
