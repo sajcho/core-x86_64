@@ -5,7 +5,7 @@
 
 name=python3-wheel
 _realname=wheel
-version=0.41.3
+version=0.42.0
 release=1
 source=(https://files.pythonhosted.org/packages/source/w/${_realname}/${_realname}-${version}.tar.gz)
 
