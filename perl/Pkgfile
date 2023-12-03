@@ -4,7 +4,7 @@
 # Depends on:	db gdbm libxcrypt
 
 name=perl
-version=5.38.0
+version=5.38.2
 release=1
 source=(http://www.cpan.org/src/5.0/${name}-${version}.tar.xz)
 

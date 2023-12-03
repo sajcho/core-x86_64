@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ+ztBQ7ZNAdjawqkaXOqWoIrA6AqsJ3kZo9+pedo7HayAhJxk1Uj0xRu2JZnfhlGqLTra+R2Aw11POr6TxSbjAc=
-SHA256 (Pkgfile) = ed2820c76ebff8d332cbff8822d55772967193555ce938b88acffe03279094f5
-SHA256 (.footprint) = 2665d3c759e88ba86c497303464df9e98ad0c231bb60738c9facd5a0bda60588
-SHA256 (perl-5.38.0.tar.xz) = eca551caec3bc549a4e590c0015003790bdd1a604ffe19cc78ee631d51f7072e
+RWQ0XEjKMixyZ0+bwCkFnCcxnXMfyqBudj3Dr1m4NUrlfWTC5FfTAFTp9vUvqUbtRt6YSPsPRYI2jSlcPDIcd9zpPRxf51tFpgo=
+SHA256 (Pkgfile) = 2dd992d3391eb2c367a6eec7da6e6336f27a8aa415e9854855d6532f022245bb
+SHA256 (.footprint) = 15f63f1892d193f7e37312e54535c0f394b33ddf3954a977a73affc9ca66ca1c
+SHA256 (perl-5.38.2.tar.xz) = d91115e90b896520e83d4de6b52f8254ef2b70a8d545ffab33200ea9f1cf29e8
