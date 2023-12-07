@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ1ezlWAG69mJ48Y49QAApJ12P0YLIH5E59oeoGDXCHtNOFlCBlhAtY7uglbd3dbDYbCSkwXRY4YVD/VWFhhWLAQ=
-SHA256 (Pkgfile) = 5c75f974ee31a5ba05a344a454db1090f23d5e7ef6f1006dcc3a1bc27ce1959e
+RWQ0XEjKMixyZ9wdFsF3FSGiJlkhunGxVvole+tJ5Y5MJl7K7JwUFn27fA0kg8i3/WXqQlRxc4cdd8WKrBy5eqTbb4zsO9c7qQU=
+SHA256 (Pkgfile) = 9b0a17b50b34f4db8c4b776327fdb1a6615aa453e99c63ba9dfbefc503f8e410
 SHA256 (.footprint) = 084a87fc6a81bc2cadf862e908aa00b1c9c94321156e3610eadf084374e70701
-SHA256 (curl-8.4.0.tar.xz) = 16c62a9c4af0f703d28bda6d7bbf37ba47055ad3414d70dec63e2e6336f2a82d
+SHA256 (curl-8.5.0.tar.xz) = 42ab8db9e20d8290a3b633e7fbb3cec15db34df65fd1015ef8ac1e4723750eeb
