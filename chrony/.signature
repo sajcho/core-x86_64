@@ -1,8 +1,8 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ9coxGYBqJ49E4W0BvxK4KZDKI9niKg3Nd5lHumbo6S9wwT+LE5Ng6ZNWY17wGSz/8wPbzBSzLGbYoAgEhU/fwI=
-SHA256 (Pkgfile) = b49951f474334c568d2f626c81ea8beced525551cc076e0bddd3a807fc22e662
+RWQ0XEjKMixyZ0gzkOhTZFXspXExNe8SfzRu/QbzkCfIoTdGE3Qb5gjeNWBnWC0hZze6IL1SonLmqH7HuK0/9zwHuhMbc2SIFg8=
+SHA256 (Pkgfile) = 4ac71c274fcd7c0ca036caa42bf7cc3051d54ab43a7dc2881b0edbd7a17d05d6
 SHA256 (.footprint) = fe7888fefeba54f7ab17ed50e722768e534c70e05815a6a8a50a6b213a3be6f7
-SHA256 (chrony-4.4.tar.gz) = eafb07e6daf92b142200f478856dfed6efc9ea2d146eeded5edcb09b93127088
+SHA256 (chrony-4.5.tar.gz) = 19fe1d9f4664d445a69a96c71e8fdb60bcd8df24c73d1386e02287f7366ad422
 SHA256 (chrony.conf) = 12d01764ef3aceeab18703632d18429cb524ea31a06498773df2e1eb6692c8bc
 SHA256 (chrony.run) = 509963db30dabda395c03a95eef02290296426486284eb5c1b99cd638610ee5a
 SHA256 (chrony.run.conf) = a59d3bf179a0aad0a2e3620a13714cc3b7f7ef0b80cef07340a4be4fbd38e11a

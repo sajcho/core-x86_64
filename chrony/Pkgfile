@@ -4,8 +4,8 @@
 # Depends on:	libcap libseccomp nettle
 
 name=chrony
-version=4.4
-release=2
+version=4.5
+release=1
 source=(https://download.tuxfamily.org/${name}/${name}-${version}.tar.gz \
 	chrony.conf \
 	chrony.run \
@@ -15,6 +15,8 @@ build() {
 	cd ${name}-${version}
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--sysconfdir=/etc \
 		--with-user=chrony \
