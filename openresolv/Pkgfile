@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=openresolv
-version=3.13.1
+version=3.13.2
 release=1
 source=(https://github.com/NetworkConfiguration/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
@@ -12,6 +12,8 @@ build() {
 
 	# NOTE: Don't set --prefix, it should be /.
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--sysconfdir=/etc \
 		--libexecdir=/lib/resolvconf \
 		--mandir=/usr/share/man \

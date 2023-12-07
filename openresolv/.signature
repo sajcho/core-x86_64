@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ6urhpPCLKq07sTEcsu0AF+QjU/pIj/I63HZ3u2Xh/UBIFytaTX7iFh4tJQiUtxeacjIZs65ej7GYGXlvCbZRgM=
-SHA256 (Pkgfile) = f57529a90ea46f454feea3daae095281b5eb8b44b0453568d6671eeb8395f630
+RWQ0XEjKMixyZ60KsxYtqq2B8YW6wcQ2XEFt3h3NESSU9phCPffDsIr7Fzpp8pvVzl5BtBEhh7GvfkwpL92Wywp3aw2JDStuGQw=
+SHA256 (Pkgfile) = e87ec16895edb063e358f497af167178c08a853edd767156a77b4b1dde00b1a6
 SHA256 (.footprint) = 4a0f5092831cb129cd6472857e32c1d73951a877d9031bfaf9d16101938ffb5b
-SHA256 (openresolv-3.13.1.tar.gz) = 04c9cde9afc54aea79f55da2423a4c3f22dc928b560a80436dc91dd4473b0b5b
+SHA256 (openresolv-3.13.2.tar.gz) = e16b732b52df50e03fde3e37dd3fb642094248412afe78e6a7cf37c429ffe3ad
