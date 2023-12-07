@@ -4,7 +4,7 @@
 # Depends on:	bzip2 eudev file libcap-ng
 
 name=util-linux
-version=2.39.2
+version=2.39.3
 release=1
 source=(https://www.kernel.org/pub/linux/utils/${name}/v${version:0:4}/${name}-${version}.tar.xz \
 	uuidd.run)
