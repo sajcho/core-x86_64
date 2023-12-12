@@ -1,13 +1,13 @@
-# Description:	Python interpreter, release 3.12.0
+# Description:	Python interpreter, release 3.12.1
 # URL:		https://www.python.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 # Depends on:	bzip2 expat libffi libtirpc libxcrypt mpdecimal openssl3 sqlite3 xz
 
 name=python3
 _realname=Python
-version=3.12.0
+version=3.12.1
 release=1
-source=(https://www.python.org/ftp/python/3.12.0/${_realname}-${version}.tar.xz)
+source=(https://www.python.org/ftp/python/${version}/${_realname}-${version}.tar.xz)
 
 build() {
 	cd ${_realname}-${version}
