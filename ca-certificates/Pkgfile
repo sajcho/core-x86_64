@@ -1,20 +1,19 @@
 # Description:	Bundle of CA Root Certificates from Mozilla
-# URL:		http://curl.haxx.se/ca/
+# URL:		https://curl.haxx.se/ca/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=ca-certificates
-version=20230822
+version=20231212
 release=1
 source=(cacert.pem)
 
 build() {
-
 	# see http://curl.haxx.se/docs/mk-ca-bundle.html how
 	# to create the bundle from Mozillas data:
 	# mk-ca-bundle.pl -p ALL:TRUSTED_DELEGATOR cacert.pem
 	# As of version 20180620 we are using again the bundle
 	# from curl without modifications.
+	# https://curl.se/docs/caextract.html
 
 	install -D -m 0644 $SRC/cacert.pem $PKG/etc/ssl/cert.pem
 }
-
