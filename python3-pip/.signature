@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZwDNEk8f12UpIdgbx7lwLrapUqeKFL5qvZHz+K7F9QTnkTLXmZ7P6/a8oWvDHBXWq2ZvVdeL/uDBQuH4MeYyawM=
-SHA256 (Pkgfile) = 466186d002b55fb8997fd3ebfad7dca9424a8c1224b93ac9cb32bed17bc780d5
-SHA256 (.footprint) = 30ab1e481b92669ff4ebfa7aec3e2ee2c1c28d691f61b3ff107dfb02eebf524f
-SHA256 (get-pip-23.3.1.tar.gz) = 5e93461d5b8e772c396ad389bbde0b2fef0d70abf3a200fbcfb871b767142adb
+RWQ0XEjKMixyZ9gxzTeNXpNUVefvvCqbXazidvOQt/7JAMSXossEtpDphRMrHalX4gFkNf1kaS8Lo+WzsWu4MP+7wUbs7MQ+bQU=
+SHA256 (Pkgfile) = 9942173f485e6268e60054b7905e54f1bd703d4475649aeced7755fb5502cd15
+SHA256 (.footprint) = d76df51cad524a2488739e1074c070dbbfa6f1a2c1c33315f45016014651594e
+SHA256 (get-pip-23.3.2.tar.gz) = ccdcad047029641363087b2e851ee36144cadddd3cee4da6cb41a710686a4d68
