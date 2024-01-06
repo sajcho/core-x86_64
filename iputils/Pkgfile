@@ -4,7 +4,7 @@
 # Depends on:	libcap meson
 
 name=iputils
-version=20221126
+version=20231222
 release=1
 source=(https://github.com/iputils/iputils/archive/${version}/${name}-${version}.tar.gz)
 
