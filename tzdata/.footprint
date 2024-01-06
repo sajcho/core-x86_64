@@ -1252,3 +1252,4 @@ drwxr-xr-x	root/root	usr/share/zoneinfo/US/
 -rw-r--r--	root/root	usr/share/zoneinfo/tzdata.zi
 -rw-r--r--	root/root	usr/share/zoneinfo/zone.tab
 -rw-r--r--	root/root	usr/share/zoneinfo/zone1970.tab
+-rw-r--r--	root/root	usr/share/zoneinfo/zonenow.tab
