@@ -5,8 +5,8 @@ drwxr-xr-x	root/root	etc/ports/
 drwxr-xr-x	root/root	etc/ports/drivers/
 -rw-r--r--	root/root	etc/ports/opt-x86_64.httpup
 -rw-r--r--	root/root	etc/ports/opt-x86_64.pub
--rw-r--r--	root/root	etc/ports/xorg-x86_64.httpup
--rw-r--r--	root/root	etc/ports/xorg-x86_64.pub
+-rw-r--r--	root/root	etc/ports/wayland-x86_64.httpup
+-rw-r--r--	root/root	etc/ports/wayland-x86_64.pub
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/ports
