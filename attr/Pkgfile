@@ -3,8 +3,8 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=attr
-version=2.5.1
-release=3
+version=2.5.2
+release=1
 source=(http://download-mirror.savannah.gnu.org/releases/${name}/${name}-${version}.tar.gz)
 
 build() {
