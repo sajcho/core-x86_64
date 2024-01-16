@@ -4,27 +4,12 @@
 # Depends on:	libmd
 
 name=libbsd
-version=0.11.7
+version=0.11.8
 release=1
-source=(https://libbsd.freedesktop.org/releases/${name}-${version}.tar.xz \
-	libbsd-0.11.7-test-explicit_bzero.patch \
-	libbsd-configure-c99.patch)
+source=(https://libbsd.freedesktop.org/releases/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
-
-	# Note: ctor-static
-	# The libbsd-ctor static library is required if setproctitle() is to be used
-	# when libbsd is loaded via dlopen() from a threaded program.
-	# This can be configured using "pkg-config --libs libbsd-ctor".
-	#
-	# See the libbsd mailing list message by Guillem Jover on Jul 14 2013:
-	# http://lists.freedesktop.org/archives/libbsd/2013-July/000091.html
-
-	patch -p1 -R -b -i $SRC/libbsd-0.11.7-test-explicit_bzero.patch
-	patch -p1 -b -i $SRC/libbsd-configure-c99.patch
-
-	autoreconf -fiv
 
 	./configure \
 		--build=$HOST \
@@ -37,9 +22,6 @@ build() {
 	make check
 
 	make DESTDIR=$PKG install
-
-	# provides man-pages
-	rm $PKG/usr/share/man/man3/explicit_bzero.3bsd
 
 	find $PKG -type f -name '*.la' -delete
 }

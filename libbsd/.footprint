@@ -34,8 +34,8 @@ drwxr-xr-x	root/root	usr/include/bsd/sys/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libbsd-ctor.a
 -rw-r--r--	root/root	usr/lib/libbsd.so
-lrwxrwxrwx	root/root	usr/lib/libbsd.so.0 -> libbsd.so.0.11.7
--rwxr-xr-x	root/root	usr/lib/libbsd.so.0.11.7
+lrwxrwxrwx	root/root	usr/lib/libbsd.so.0 -> libbsd.so.0.11.8
+-rwxr-xr-x	root/root	usr/lib/libbsd.so.0.11.8
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libbsd-ctor.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libbsd-overlay.pc
@@ -199,6 +199,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/dehumanize_number.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/errc.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/expand_number.3bsd.gz
+-rw-r--r--	root/root	usr/share/man/man3/explicit_bzero.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/fgetln.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/fgetwln.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/flopen.3bsd.gz
