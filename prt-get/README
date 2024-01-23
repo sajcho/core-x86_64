@@ -19,11 +19,11 @@ EXAMPLE EDIT PRT-GET.CONF:
 #
 prtdir /usr/ports/core-aarch6464
 prtdir /usr/ports/opt-aarch64
-prtdir /usr/ports/xorg-aarch64
+prtdir /usr/ports/wayland-aarch64
 
 prtdir /usr/ports/core-x86_64
 prtdir /usr/ports/opt-x86_64
-prtdir /usr/ports/xorg-x86_64
+prtdir /usr/ports/wayland-x86_64
 
 ########################################################################
 
@@ -31,10 +31,10 @@ prtdir /usr/ports/xorg-x86_64
 #
 prtdir /usr/ports/core-riscv64
 prtdir /usr/ports/opt-riscv64
-prtdir /usr/ports/xorg-riscv64
+prtdir /usr/ports/wayland-riscv64
 
 prtdir /usr/ports/core-x86_64
 prtdir /usr/ports/opt-x86_64
-prtdir /usr/ports/xorg-x86_64
+prtdir /usr/ports/wayland-x86_64
 
 ########################################################################
