@@ -599,6 +599,7 @@ drwxr-xr-x	root/root	usr/include/linux/cifs/
 -rw-r--r--	root/root	usr/include/linux/dma-buf.h
 -rw-r--r--	root/root	usr/include/linux/dma-heap.h
 -rw-r--r--	root/root	usr/include/linux/dns_resolver.h
+-rw-r--r--	root/root	usr/include/linux/dpll.h
 -rw-r--r--	root/root	usr/include/linux/dqblk_xfs.h
 drwxr-xr-x	root/root	usr/include/linux/dvb/
 -rw-r--r--	root/root	usr/include/linux/dvb/audio.h
@@ -806,6 +807,7 @@ drwxr-xr-x	root/root	usr/include/linux/mmc/
 -rw-r--r--	root/root	usr/include/linux/mpls.h
 -rw-r--r--	root/root	usr/include/linux/mpls_iptunnel.h
 -rw-r--r--	root/root	usr/include/linux/mptcp.h
+-rw-r--r--	root/root	usr/include/linux/mptcp_pm.h
 -rw-r--r--	root/root	usr/include/linux/mqueue.h
 -rw-r--r--	root/root	usr/include/linux/mroute.h
 -rw-r--r--	root/root	usr/include/linux/mroute6.h
@@ -990,11 +992,13 @@ drwxr-xr-x	root/root	usr/include/linux/nfsd/
 -rw-r--r--	root/root	usr/include/linux/nfsd/debug.h
 -rw-r--r--	root/root	usr/include/linux/nfsd/export.h
 -rw-r--r--	root/root	usr/include/linux/nfsd/stats.h
+-rw-r--r--	root/root	usr/include/linux/nfsd_netlink.h
 -rw-r--r--	root/root	usr/include/linux/nilfs2_api.h
 -rw-r--r--	root/root	usr/include/linux/nilfs2_ondisk.h
 -rw-r--r--	root/root	usr/include/linux/nitro_enclaves.h
 -rw-r--r--	root/root	usr/include/linux/nl80211-vnd-intel.h
 -rw-r--r--	root/root	usr/include/linux/nl80211.h
+-rw-r--r--	root/root	usr/include/linux/npcm-video.h
 -rw-r--r--	root/root	usr/include/linux/nsfs.h
 -rw-r--r--	root/root	usr/include/linux/nubus.h
 -rw-r--r--	root/root	usr/include/linux/nvme_ioctl.h

@@ -5,15 +5,15 @@
 
 name=glibc
 version=2.38
-release=3
+release=4
 source=(https://ftp.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.6.1.tar.xz \
+	https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.1.tar.xz \
 	glibc-2.38-upstream_fixes-3.patch \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
 	# install kernel headers
-	cd $SRC/linux-6.6.1
+	cd $SRC/linux-6.7.1
 
 	make mrproper
 	make ARCH=$CARCH INSTALL_HDR_PATH=$PKG/usr headers_install
