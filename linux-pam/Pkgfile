@@ -4,8 +4,8 @@
 # Depends on:	libxcrypt
 
 name=linux-pam
-version=1.5.3
-release=3
+version=1.6.0
+release=1
 source=(https://github.com/${name}/${name}/releases/download/v${version}/Linux-PAM-${version}.tar.xz \
 	common-account common-auth common-password common-session other)
 
@@ -14,6 +14,8 @@ build() {
 
 	CONFIG_SHELL=/bin/bash \
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--libdir=/lib \
 		--enable-securedir=/lib/security \
