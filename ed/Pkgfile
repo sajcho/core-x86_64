@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=ed
-version=1.19
+version=1.20
 release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.lz)
 
