@@ -1,7 +1,7 @@
 # Description:	Directory content manager
 # URL:		http://www.kernel.org/pub/software/scm/git/docs
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	curl libpcre2 python3
+# Depends on:	curl libpcre2
 
 name=git
 version=2.43.0
