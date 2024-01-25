@@ -1,7 +1,7 @@
 # Description:	Miscellaneous system utilities
 # URL:		https://www.kernel.org/pub/linux/utils/util-linux/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	bzip2 eudev file libcap-ng
+# Depends on:	eudev file libcap-ng
 
 name=util-linux
 version=2.39.3
