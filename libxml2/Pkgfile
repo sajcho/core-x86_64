@@ -1,7 +1,7 @@
 # Description:	XML C parser and toolkit
 # URL:		https://gitlab.gnome.org/GNOME/libxml2/-/wikis/home
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	python3 xz zlib
+# Depends on:	python3
 
 name=libxml2
 version=2.12.4
