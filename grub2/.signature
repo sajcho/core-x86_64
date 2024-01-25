@@ -1,6 +1,6 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZwjaPWm+YqLOsXwpwPFgrq+9mp9WfCL4Xf9pKp4OiPNTO4jTcaXnY3IBeSCkhQ+fqtQRFcbMDHl+RXQ+7VHgIAU=
-SHA256 (Pkgfile) = caa60d5c4d0e832a27d634035d02f5ea5cc8899bb0b5642ee12074ef9290170e
+RWQ0XEjKMixyZ6YYBdDx+uT/q0MaQ+ld3GcFlWBJgG0d9+xr3Qma99wlDs2pUIHdadxGJjJyJrjU8KP5qVBg4ngnwJMp93fy7g0=
+SHA256 (Pkgfile) = 404e72d46afcf41d02089ca3f28a5160a31786ae82161a807b1be9a176688e1b
 SHA256 (.footprint) = f3b8139a248da913bf432df5ef2e53b16b248a994fa2f95fd53e35e71b56d816
 SHA256 (grub-2.06.tar.xz) = b79ea44af91b93d17cd3fe80bdae6ed43770678a9a5ae192ccea803ebb657ee1
 SHA256 (grub.default) = e8e48d3fb12fc5c171c814c75280a551b13e8acd754895832e1fd9c745872e47
