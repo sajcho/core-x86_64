@@ -1,7 +1,7 @@
 # Description:	Kernel module utilities and library
 # URL:		http://git.kernel.org/?p=utils/kernel/kmod/kmod.git
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	openssl3 zstd
+# Depends on:	zstd
 
 name=kmod
 version=31
