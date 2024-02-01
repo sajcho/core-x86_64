@@ -1,0 +1,701 @@
+prt-get: updating /usr/ports/opt-x86_64/graphite2
+prt-get: starting build Thu Feb  1 17:58:10 2024
+=======> Building '/home/devel/packages/graphite2#1.3.14-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/graphite2-1.3.14.tgz
++ build
++ cd graphite2-1.3.14
++ mkdir build
++ cd build
++ cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -DGRAPHITE2_COMPARE_RENDERER=ON -Wno-dev
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.12.1", minimum required is "3.6") 
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Build: Release
+-- Building library: shared
+-- File Face support: enabled
+-- Tracing support: disabled
+-- Using vm machine type: direct
+-- Compiler ID is: GNU
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of size_t
+-- Check size of size_t - done
+-- Found Freetype: /usr/lib/libfreetype.so (found version "2.13.2") 
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/devel/building/work/src/graphite2-1.3.14/build
++ make -O -j 8 V=1 VERBOSE=1
+/usr/bin/cmake -S/home/devel/building/work/src/graphite2-1.3.14 -B/home/devel/building/work/src/graphite2-1.3.14/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/devel/building/work/src/graphite2-1.3.14/build/CMakeFiles /home/devel/building/work/src/graphite2-1.3.14/build//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make  -f src/CMakeFiles/graphite2.dir/build.make src/CMakeFiles/graphite2.dir/depend
+make  -f tests/CMakeFiles/graphite2-base.dir/build.make tests/CMakeFiles/graphite2-base.dir/depend
+make  -f tests/CMakeFiles/graphite2-file.dir/build.make tests/CMakeFiles/graphite2-file.dir/depend
+make  -f tests/endian/CMakeFiles/endiantest.dir/build.make tests/endian/CMakeFiles/endiantest.dir/depend
+make  -f tests/grlist/CMakeFiles/grlisttest.dir/build.make tests/grlist/CMakeFiles/grlisttest.dir/depend
+make  -f tests/json/CMakeFiles/jsontest.dir/build.make tests/json/CMakeFiles/jsontest.dir/depend
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests/grlist /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests/grlist /home/devel/building/work/src/graphite2-1.3.14/build/tests/grlist/CMakeFiles/grlisttest.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests /home/devel/building/work/src/graphite2-1.3.14/build/tests/CMakeFiles/graphite2-file.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests/json /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests/json /home/devel/building/work/src/graphite2-1.3.14/build/tests/json/CMakeFiles/jsontest.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests/endian /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests/endian /home/devel/building/work/src/graphite2-1.3.14/build/tests/endian/CMakeFiles/endiantest.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests /home/devel/building/work/src/graphite2-1.3.14/build/tests/CMakeFiles/graphite2-base.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f tests/grlist/CMakeFiles/grlisttest.dir/build.make tests/grlist/CMakeFiles/grlisttest.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/src /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/src /home/devel/building/work/src/graphite2-1.3.14/build/src/CMakeFiles/graphite2.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f tests/CMakeFiles/graphite2-base.dir/build.make tests/CMakeFiles/graphite2-base.dir/build
+make  -f src/CMakeFiles/graphite2.dir/build.make src/CMakeFiles/graphite2.dir/build
+make  -f tests/CMakeFiles/graphite2-file.dir/build.make tests/CMakeFiles/graphite2-file.dir/build
+make  -f tests/endian/CMakeFiles/endiantest.dir/build.make tests/endian/CMakeFiles/endiantest.dir/build
+make  -f tests/json/CMakeFiles/jsontest.dir/build.make tests/json/CMakeFiles/jsontest.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[  3%] Building CXX object tests/json/CMakeFiles/jsontest.dir/jsontest.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/json && /usr/bin/c++  -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -MD -MT tests/json/CMakeFiles/jsontest.dir/jsontest.cpp.o -MF CMakeFiles/jsontest.dir/jsontest.cpp.o.d -o CMakeFiles/jsontest.dir/jsontest.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/tests/json/jsontest.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[  2%] Building CXX object tests/endian/CMakeFiles/endiantest.dir/endiantest.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/endian && /usr/bin/c++  -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -MD -MT tests/endian/CMakeFiles/endiantest.dir/endiantest.cpp.o -MF CMakeFiles/endiantest.dir/endiantest.cpp.o.d -o CMakeFiles/endiantest.dir/endiantest.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/tests/endian/endiantest.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[  6%] Building CXX object tests/CMakeFiles/graphite2-base.dir/__/src/NameTable.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-base.dir/__/src/NameTable.cpp.o -MF CMakeFiles/graphite2-base.dir/__/src/NameTable.cpp.o.d -o CMakeFiles/graphite2-base.dir/__/src/NameTable.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/NameTable.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 10%] Building CXX object tests/json/CMakeFiles/jsontest.dir/__/__/src/json.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/json && /usr/bin/c++  -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -MD -MT tests/json/CMakeFiles/jsontest.dir/__/__/src/json.cpp.o -MF CMakeFiles/jsontest.dir/__/__/src/json.cpp.o.d -o CMakeFiles/jsontest.dir/__/__/src/json.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/json.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[  4%] Building CXX object tests/CMakeFiles/graphite2-base.dir/__/src/FeatureMap.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-base.dir/__/src/FeatureMap.cpp.o -MF CMakeFiles/graphite2-base.dir/__/src/FeatureMap.cpp.o.d -o CMakeFiles/graphite2-base.dir/__/src/FeatureMap.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/FeatureMap.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 11%] Linking CXX executable endiantest
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/endian && /usr/bin/cmake -E cmake_link_script CMakeFiles/endiantest.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -rdynamic CMakeFiles/endiantest.dir/endiantest.cpp.o -o endiantest 
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 14%] Built target endiantest
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 15%] Building CXX object tests/CMakeFiles/graphite2-base.dir/__/src/UtfCodec.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-base.dir/__/src/UtfCodec.cpp.o -MF CMakeFiles/graphite2-base.dir/__/src/UtfCodec.cpp.o.d -o CMakeFiles/graphite2-base.dir/__/src/UtfCodec.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/UtfCodec.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[  5%] Building CXX object tests/grlist/CMakeFiles/grlisttest.dir/grlisttest.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/grlist && /usr/bin/c++  -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -MD -MT tests/grlist/CMakeFiles/grlisttest.dir/grlisttest.cpp.o -MF CMakeFiles/grlisttest.dir/grlisttest.cpp.o.d -o CMakeFiles/grlisttest.dir/grlisttest.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/tests/grlist/grlisttest.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[  8%] Building CXX object tests/CMakeFiles/graphite2-base.dir/__/src/Intervals.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-base.dir/__/src/Intervals.cpp.o -MF CMakeFiles/graphite2-base.dir/__/src/Intervals.cpp.o.d -o CMakeFiles/graphite2-base.dir/__/src/Intervals.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Intervals.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 12%] Building CXX object tests/CMakeFiles/graphite2-base.dir/__/src/Sparse.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-base.dir/__/src/Sparse.cpp.o -MF CMakeFiles/graphite2-base.dir/__/src/Sparse.cpp.o.d -o CMakeFiles/graphite2-base.dir/__/src/Sparse.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Sparse.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 20%] Building CXX object src/CMakeFiles/graphite2.dir/gr_char_info.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/gr_char_info.cpp.o -MF CMakeFiles/graphite2.dir/gr_char_info.cpp.o.d -o CMakeFiles/graphite2.dir/gr_char_info.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/gr_char_info.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[  7%] Building CXX object src/CMakeFiles/graphite2.dir/direct_machine.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/direct_machine.cpp.o -MF CMakeFiles/graphite2.dir/direct_machine.cpp.o.d -o CMakeFiles/graphite2.dir/direct_machine.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/direct_machine.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 14%] Building CXX object tests/CMakeFiles/graphite2-base.dir/__/src/TtfUtil.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-base.dir/__/src/TtfUtil.cpp.o -MF CMakeFiles/graphite2-base.dir/__/src/TtfUtil.cpp.o.d -o CMakeFiles/graphite2-base.dir/__/src/TtfUtil.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/TtfUtil.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[  2%] Building CXX object tests/CMakeFiles/graphite2-file.dir/__/src/call_machine.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra  -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-file.dir/__/src/call_machine.cpp.o -MF CMakeFiles/graphite2-file.dir/__/src/call_machine.cpp.o.d -o CMakeFiles/graphite2-file.dir/__/src/call_machine.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/call_machine.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 23%] Linking C static library libgraphite2-base.a
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/cmake -P CMakeFiles/graphite2-base.dir/cmake_clean_target.cmake
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/cmake -E cmake_link_script CMakeFiles/graphite2-base.dir/link.txt --verbose=1
+/usr/bin/ar qc libgraphite2-base.a "CMakeFiles/graphite2-base.dir/__/src/FeatureMap.cpp.o" "CMakeFiles/graphite2-base.dir/__/src/Intervals.cpp.o" "CMakeFiles/graphite2-base.dir/__/src/NameTable.cpp.o" "CMakeFiles/graphite2-base.dir/__/src/Sparse.cpp.o" "CMakeFiles/graphite2-base.dir/__/src/TtfUtil.cpp.o" "CMakeFiles/graphite2-base.dir/__/src/UtfCodec.cpp.o"
+/usr/bin/ranlib libgraphite2-base.a
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 21%] Building CXX object tests/CMakeFiles/graphite2-file.dir/__/src/CmapCache.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra  -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-file.dir/__/src/CmapCache.cpp.o -MF CMakeFiles/graphite2-file.dir/__/src/CmapCache.cpp.o.d -o CMakeFiles/graphite2-file.dir/__/src/CmapCache.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/CmapCache.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 13%] Linking CXX executable jsontest
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/json && /usr/bin/cmake -E cmake_link_script CMakeFiles/jsontest.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -rdynamic CMakeFiles/jsontest.dir/jsontest.cpp.o CMakeFiles/jsontest.dir/__/__/src/json.cpp.o -o jsontest 
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 24%] Built target graphite2-base
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 25%] Built target jsontest
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 22%] Building CXX object src/CMakeFiles/graphite2.dir/gr_features.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/gr_features.cpp.o -MF CMakeFiles/graphite2.dir/gr_features.cpp.o.d -o CMakeFiles/graphite2.dir/gr_features.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/gr_features.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 24%] Building CXX object tests/CMakeFiles/graphite2-file.dir/__/src/Decompressor.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra  -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-file.dir/__/src/Decompressor.cpp.o -MF CMakeFiles/graphite2-file.dir/__/src/Decompressor.cpp.o.d -o CMakeFiles/graphite2-file.dir/__/src/Decompressor.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Decompressor.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 26%] Building CXX object tests/CMakeFiles/graphite2-file.dir/__/src/FileFace.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra  -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-file.dir/__/src/FileFace.cpp.o -MF CMakeFiles/graphite2-file.dir/__/src/FileFace.cpp.o.d -o CMakeFiles/graphite2-file.dir/__/src/FileFace.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/FileFace.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f tests/bittwiddling/CMakeFiles/bits.dir/build.make tests/bittwiddling/CMakeFiles/bits.dir/depend
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests/bittwiddling /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests/bittwiddling /home/devel/building/work/src/graphite2-1.3.14/build/tests/bittwiddling/CMakeFiles/bits.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f tests/bittwiddling/CMakeFiles/bits.dir/build.make tests/bittwiddling/CMakeFiles/bits.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 17%] Linking CXX executable grlisttest
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/grlist && /usr/bin/cmake -E cmake_link_script CMakeFiles/grlisttest.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -rdynamic CMakeFiles/grlisttest.dir/grlisttest.cpp.o -o grlisttest 
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 31%] Built target grlisttest
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f tests/nametabletest/CMakeFiles/nametabletest.dir/build.make tests/nametabletest/CMakeFiles/nametabletest.dir/depend
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 30%] Building CXX object src/CMakeFiles/graphite2.dir/gr_font.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/gr_font.cpp.o -MF CMakeFiles/graphite2.dir/gr_font.cpp.o.d -o CMakeFiles/graphite2.dir/gr_font.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/gr_font.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests/nametabletest /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests/nametabletest /home/devel/building/work/src/graphite2-1.3.14/build/tests/nametabletest/CMakeFiles/nametabletest.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f tests/nametabletest/CMakeFiles/nametabletest.dir/build.make tests/nametabletest/CMakeFiles/nametabletest.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 27%] Building CXX object src/CMakeFiles/graphite2.dir/gr_face.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/gr_face.cpp.o -MF CMakeFiles/graphite2.dir/gr_face.cpp.o.d -o CMakeFiles/graphite2.dir/gr_face.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/gr_face.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 16%] Building CXX object tests/CMakeFiles/graphite2-file.dir/__/src/Code.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra  -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-file.dir/__/src/Code.cpp.o -MF CMakeFiles/graphite2-file.dir/__/src/Code.cpp.o.d -o CMakeFiles/graphite2-file.dir/__/src/Code.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Code.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 32%] Building CXX object src/CMakeFiles/graphite2.dir/gr_logging.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/gr_logging.cpp.o -MF CMakeFiles/graphite2.dir/gr_logging.cpp.o.d -o CMakeFiles/graphite2.dir/gr_logging.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/gr_logging.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f tests/sparsetest/CMakeFiles/sparsetest.dir/build.make tests/sparsetest/CMakeFiles/sparsetest.dir/depend
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 25%] Building CXX object tests/CMakeFiles/graphite2-file.dir/__/src/Face.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra  -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-file.dir/__/src/Face.cpp.o -MF CMakeFiles/graphite2-file.dir/__/src/Face.cpp.o.d -o CMakeFiles/graphite2-file.dir/__/src/Face.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Face.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests/sparsetest /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests/sparsetest /home/devel/building/work/src/graphite2-1.3.14/build/tests/sparsetest/CMakeFiles/sparsetest.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f tests/sparsetest/CMakeFiles/sparsetest.dir/build.make tests/sparsetest/CMakeFiles/sparsetest.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 33%] Building CXX object tests/nametabletest/CMakeFiles/nametabletest.dir/nametabletest.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/nametabletest && /usr/bin/c++  -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -MD -MT tests/nametabletest/CMakeFiles/nametabletest.dir/nametabletest.cpp.o -MF CMakeFiles/nametabletest.dir/nametabletest.cpp.o.d -o CMakeFiles/nametabletest.dir/nametabletest.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/tests/nametabletest/nametabletest.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 28%] Building CXX object tests/CMakeFiles/graphite2-file.dir/__/src/GlyphCache.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra  -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-file.dir/__/src/GlyphCache.cpp.o -MF CMakeFiles/graphite2-file.dir/__/src/GlyphCache.cpp.o.d -o CMakeFiles/graphite2-file.dir/__/src/GlyphCache.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/GlyphCache.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 31%] Building CXX object tests/bittwiddling/CMakeFiles/bits.dir/bits.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/bittwiddling && /usr/bin/c++  -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -MD -MT tests/bittwiddling/CMakeFiles/bits.dir/bits.cpp.o -MF CMakeFiles/bits.dir/bits.cpp.o.d -o CMakeFiles/bits.dir/bits.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/tests/bittwiddling/bits.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 35%] Building CXX object tests/CMakeFiles/graphite2-file.dir/__/src/GlyphFace.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra  -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-file.dir/__/src/GlyphFace.cpp.o -MF CMakeFiles/graphite2-file.dir/__/src/GlyphFace.cpp.o.d -o CMakeFiles/graphite2-file.dir/__/src/GlyphFace.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/GlyphFace.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 40%] Building CXX object src/CMakeFiles/graphite2.dir/CmapCache.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/CmapCache.cpp.o -MF CMakeFiles/graphite2.dir/CmapCache.cpp.o.d -o CMakeFiles/graphite2.dir/CmapCache.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/CmapCache.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 36%] Building CXX object src/CMakeFiles/graphite2.dir/gr_slot.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/gr_slot.cpp.o -MF CMakeFiles/graphite2.dir/gr_slot.cpp.o.d -o CMakeFiles/graphite2.dir/gr_slot.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/gr_slot.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 34%] Building CXX object src/CMakeFiles/graphite2.dir/gr_segment.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/gr_segment.cpp.o -MF CMakeFiles/graphite2.dir/gr_segment.cpp.o.d -o CMakeFiles/graphite2.dir/gr_segment.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/gr_segment.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 20%] Building CXX object tests/CMakeFiles/graphite2-file.dir/__/src/Collider.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra  -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-file.dir/__/src/Collider.cpp.o -MF CMakeFiles/graphite2-file.dir/__/src/Collider.cpp.o.d -o CMakeFiles/graphite2-file.dir/__/src/Collider.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Collider.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 37%] Building CXX object tests/sparsetest/CMakeFiles/sparsetest.dir/sparsetest.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/sparsetest && /usr/bin/c++  -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -MD -MT tests/sparsetest/CMakeFiles/sparsetest.dir/sparsetest.cpp.o -MF CMakeFiles/sparsetest.dir/sparsetest.cpp.o.d -o CMakeFiles/sparsetest.dir/sparsetest.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/tests/sparsetest/sparsetest.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 38%] Linking CXX executable nametabletest
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/nametabletest && /usr/bin/cmake -E cmake_link_script CMakeFiles/nametabletest.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -rdynamic CMakeFiles/nametabletest.dir/nametabletest.cpp.o -o nametabletest  ../libgraphite2-base.a 
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 41%] Linking CXX executable bits
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/bittwiddling && /usr/bin/cmake -E cmake_link_script CMakeFiles/bits.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -rdynamic CMakeFiles/bits.dir/bits.cpp.o -o bits  ../libgraphite2-base.a 
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 47%] Built target bits
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 47%] Built target nametabletest
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 45%] Building CXX object src/CMakeFiles/graphite2.dir/Decompressor.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/Decompressor.cpp.o -MF CMakeFiles/graphite2.dir/Decompressor.cpp.o.d -o CMakeFiles/graphite2.dir/Decompressor.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Decompressor.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 44%] Building CXX object tests/CMakeFiles/graphite2-file.dir/__/src/gr_logging.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra  -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-file.dir/__/src/gr_logging.cpp.o -MF CMakeFiles/graphite2-file.dir/__/src/gr_logging.cpp.o.d -o CMakeFiles/graphite2-file.dir/__/src/gr_logging.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/gr_logging.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 47%] Linking CXX executable sparsetest
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/sparsetest && /usr/bin/cmake -E cmake_link_script CMakeFiles/sparsetest.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -rdynamic CMakeFiles/sparsetest.dir/sparsetest.cpp.o -o sparsetest  ../libgraphite2-base.a 
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 52%] Built target sparsetest
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 42%] Building CXX object src/CMakeFiles/graphite2.dir/Code.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/Code.cpp.o -MF CMakeFiles/graphite2.dir/Code.cpp.o.d -o CMakeFiles/graphite2.dir/Code.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Code.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 51%] Building CXX object src/CMakeFiles/graphite2.dir/Face.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/Face.cpp.o -MF CMakeFiles/graphite2.dir/Face.cpp.o.d -o CMakeFiles/graphite2.dir/Face.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Face.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 50%] Building CXX object tests/CMakeFiles/graphite2-file.dir/__/src/Silf.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra  -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-file.dir/__/src/Silf.cpp.o -MF CMakeFiles/graphite2-file.dir/__/src/Silf.cpp.o.d -o CMakeFiles/graphite2-file.dir/__/src/Silf.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Silf.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 48%] Building CXX object tests/CMakeFiles/graphite2-file.dir/__/src/Segment.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra  -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-file.dir/__/src/Segment.cpp.o -MF CMakeFiles/graphite2-file.dir/__/src/Segment.cpp.o.d -o CMakeFiles/graphite2-file.dir/__/src/Segment.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Segment.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 52%] Building CXX object tests/CMakeFiles/graphite2-file.dir/__/src/Slot.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra  -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-file.dir/__/src/Slot.cpp.o -MF CMakeFiles/graphite2-file.dir/__/src/Slot.cpp.o.d -o CMakeFiles/graphite2-file.dir/__/src/Slot.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Slot.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 53%] Building CXX object src/CMakeFiles/graphite2.dir/FeatureMap.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/FeatureMap.cpp.o -MF CMakeFiles/graphite2.dir/FeatureMap.cpp.o.d -o CMakeFiles/graphite2.dir/FeatureMap.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/FeatureMap.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 55%] Building CXX object src/CMakeFiles/graphite2.dir/GlyphFace.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/GlyphFace.cpp.o -MF CMakeFiles/graphite2.dir/GlyphFace.cpp.o.d -o CMakeFiles/graphite2.dir/GlyphFace.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/GlyphFace.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 54%] Building CXX object src/CMakeFiles/graphite2.dir/Font.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/Font.cpp.o -MF CMakeFiles/graphite2.dir/Font.cpp.o.d -o CMakeFiles/graphite2.dir/Font.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Font.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 46%] Building CXX object tests/CMakeFiles/graphite2-file.dir/__/src/Pass.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/c++ -DGRAPHITE2_NTRACING -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -Wall -Wextra  -Wno-class-memaccess -fno-rtti -fno-exceptions -MD -MT tests/CMakeFiles/graphite2-file.dir/__/src/Pass.cpp.o -MF CMakeFiles/graphite2-file.dir/__/src/Pass.cpp.o.d -o CMakeFiles/graphite2-file.dir/__/src/Pass.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Pass.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 62%] Building CXX object src/CMakeFiles/graphite2.dir/Position.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/Position.cpp.o -MF CMakeFiles/graphite2.dir/Position.cpp.o.d -o CMakeFiles/graphite2.dir/Position.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Position.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 63%] Linking C static library libgraphite2-file.a
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/cmake -P CMakeFiles/graphite2-file.dir/cmake_clean_target.cmake
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests && /usr/bin/cmake -E cmake_link_script CMakeFiles/graphite2-file.dir/link.txt --verbose=1
+/usr/bin/ar qc libgraphite2-file.a "CMakeFiles/graphite2-file.dir/__/src/call_machine.cpp.o" "CMakeFiles/graphite2-file.dir/__/src/Code.cpp.o" "CMakeFiles/graphite2-file.dir/__/src/Collider.cpp.o" "CMakeFiles/graphite2-file.dir/__/src/CmapCache.cpp.o" "CMakeFiles/graphite2-file.dir/__/src/Decompressor.cpp.o" "CMakeFiles/graphite2-file.dir/__/src/Face.cpp.o" "CMakeFiles/graphite2-file.dir/__/src/FileFace.cpp.o" "CMakeFiles/graphite2-file.dir/__/src/GlyphCache.cpp.o" "CMakeFiles/graphite2-file.dir/__/src/GlyphFace.cpp.o" "CMakeFiles/graphite2-file.dir/__/src/gr_logging.cpp.o" "CMakeFiles/graphite2-file.dir/__/src/Pass.cpp.o" "CMakeFiles/graphite2-file.dir/__/src/Segment.cpp.o" "CMakeFiles/graphite2-file.dir/__/src/Silf.cpp.o" "CMakeFiles/graphite2-file.dir/__/src/Slot.cpp.o"
+/usr/bin/ranlib libgraphite2-file.a
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 64%] Built target graphite2-file
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 43%] Building CXX object src/CMakeFiles/graphite2.dir/Collider.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/Collider.cpp.o -MF CMakeFiles/graphite2.dir/Collider.cpp.o.d -o CMakeFiles/graphite2.dir/Collider.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Collider.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 60%] Building CXX object src/CMakeFiles/graphite2.dir/NameTable.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/NameTable.cpp.o -MF CMakeFiles/graphite2.dir/NameTable.cpp.o.d -o CMakeFiles/graphite2.dir/NameTable.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/NameTable.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 56%] Building CXX object src/CMakeFiles/graphite2.dir/GlyphCache.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/GlyphCache.cpp.o -MF CMakeFiles/graphite2.dir/GlyphCache.cpp.o.d -o CMakeFiles/graphite2.dir/GlyphCache.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/GlyphCache.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 57%] Building CXX object src/CMakeFiles/graphite2.dir/Intervals.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/Intervals.cpp.o -MF CMakeFiles/graphite2.dir/Intervals.cpp.o.d -o CMakeFiles/graphite2.dir/Intervals.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Intervals.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 58%] Building CXX object src/CMakeFiles/graphite2.dir/Justifier.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/Justifier.cpp.o -MF CMakeFiles/graphite2.dir/Justifier.cpp.o.d -o CMakeFiles/graphite2.dir/Justifier.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Justifier.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 70%] Building CXX object src/CMakeFiles/graphite2.dir/UtfCodec.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/UtfCodec.cpp.o -MF CMakeFiles/graphite2.dir/UtfCodec.cpp.o.d -o CMakeFiles/graphite2.dir/UtfCodec.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/UtfCodec.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 71%] Building CXX object src/CMakeFiles/graphite2.dir/FileFace.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/FileFace.cpp.o -MF CMakeFiles/graphite2.dir/FileFace.cpp.o.d -o CMakeFiles/graphite2.dir/FileFace.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/FileFace.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 67%] Building CXX object src/CMakeFiles/graphite2.dir/Sparse.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/Sparse.cpp.o -MF CMakeFiles/graphite2.dir/Sparse.cpp.o.d -o CMakeFiles/graphite2.dir/Sparse.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Sparse.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 68%] Building CXX object src/CMakeFiles/graphite2.dir/TtfUtil.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/TtfUtil.cpp.o -MF CMakeFiles/graphite2.dir/TtfUtil.cpp.o.d -o CMakeFiles/graphite2.dir/TtfUtil.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/TtfUtil.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 65%] Building CXX object src/CMakeFiles/graphite2.dir/Silf.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/Silf.cpp.o -MF CMakeFiles/graphite2.dir/Silf.cpp.o.d -o CMakeFiles/graphite2.dir/Silf.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Silf.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 64%] Building CXX object src/CMakeFiles/graphite2.dir/Segment.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/Segment.cpp.o -MF CMakeFiles/graphite2.dir/Segment.cpp.o.d -o CMakeFiles/graphite2.dir/Segment.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Segment.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 61%] Building CXX object src/CMakeFiles/graphite2.dir/Pass.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/Pass.cpp.o -MF CMakeFiles/graphite2.dir/Pass.cpp.o.d -o CMakeFiles/graphite2.dir/Pass.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Pass.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 66%] Building CXX object src/CMakeFiles/graphite2.dir/Slot.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/c++ -DGRAPHITE2_NTRACING -Dgraphite2_EXPORTS -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -fPIC   -mfpmath=sse -msse2 -Wno-class-memaccess -Wdouble-promotion -Wall -Wextra -Wno-unknown-pragmas -Wendif-labels -Wshadow -Wctor-dtor-privacy -Wnon-virtual-dtor -fno-rtti -fno-exceptions -fvisibility=hidden -fvisibility-inlines-hidden -MD -MT src/CMakeFiles/graphite2.dir/Slot.cpp.o -MF CMakeFiles/graphite2.dir/Slot.cpp.o.d -o CMakeFiles/graphite2.dir/Slot.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/Slot.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 72%] Linking C shared library libgraphite2.so
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/cmake -E cmake_link_script CMakeFiles/graphite2.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -nodefaultlibs  -shared -Wl,-soname,libgraphite2.so.3 -o libgraphite2.so.3.2.1 CMakeFiles/graphite2.dir/direct_machine.cpp.o CMakeFiles/graphite2.dir/gr_char_info.cpp.o CMakeFiles/graphite2.dir/gr_features.cpp.o CMakeFiles/graphite2.dir/gr_face.cpp.o CMakeFiles/graphite2.dir/gr_font.cpp.o CMakeFiles/graphite2.dir/gr_logging.cpp.o CMakeFiles/graphite2.dir/gr_segment.cpp.o CMakeFiles/graphite2.dir/gr_slot.cpp.o CMakeFiles/graphite2.dir/CmapCache.cpp.o CMakeFiles/graphite2.dir/Code.cpp.o CMakeFiles/graphite2.dir/Collider.cpp.o CMakeFiles/graphite2.dir/Decompressor.cpp.o CMakeFiles/graphite2.dir/Face.cpp.o CMakeFiles/graphite2.dir/FeatureMap.cpp.o CMakeFiles/graphite2.dir/Font.cpp.o CMakeFiles/graphite2.dir/GlyphFace.cpp.o CMakeFiles/graphite2.dir/GlyphCache.cpp.o CMakeFiles/graphite2.dir/Intervals.cpp.o CMakeFiles/graphite2.dir/Justifier.cpp.o CMakeFiles/graphite2.dir/NameTable.cpp.o CMakeFiles/graphite2.dir/Pass.cpp.o CMakeFiles/graphite2.dir/Position.cpp.o CMakeFiles/graphite2.dir/Segment.cpp.o CMakeFiles/graphite2.dir/Silf.cpp.o CMakeFiles/graphite2.dir/Slot.cpp.o CMakeFiles/graphite2.dir/Sparse.cpp.o CMakeFiles/graphite2.dir/TtfUtil.cpp.o CMakeFiles/graphite2.dir/UtfCodec.cpp.o CMakeFiles/graphite2.dir/FileFace.cpp.o  -lc -lgcc 
+cd /home/devel/building/work/src/graphite2-1.3.14/build/src && /usr/bin/cmake -E cmake_symlink_library libgraphite2.so.3.2.1 libgraphite2.so.3 libgraphite2.so
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 72%] Built target graphite2
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f tests/comparerenderer/CMakeFiles/comparerenderer.dir/build.make tests/comparerenderer/CMakeFiles/comparerenderer.dir/depend
+make  -f tests/examples/CMakeFiles/simple.dir/build.make tests/examples/CMakeFiles/simple.dir/depend
+make  -f tests/examples/CMakeFiles/features.dir/build.make tests/examples/CMakeFiles/features.dir/depend
+make  -f tests/examples/CMakeFiles/clusters.dir/build.make tests/examples/CMakeFiles/clusters.dir/depend
+make  -f tests/examples/CMakeFiles/linebreak.dir/build.make tests/examples/CMakeFiles/linebreak.dir/depend
+make  -f tests/examples/CMakeFiles/freetype.dir/build.make tests/examples/CMakeFiles/freetype.dir/depend
+make  -f tests/featuremap/CMakeFiles/featuremaptest.dir/build.make tests/featuremap/CMakeFiles/featuremaptest.dir/depend
+make  -f tests/utftest/CMakeFiles/utftest.dir/build.make tests/utftest/CMakeFiles/utftest.dir/depend
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests/examples /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples/CMakeFiles/clusters.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests/examples /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples/CMakeFiles/linebreak.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests/examples /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples/CMakeFiles/freetype.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests/examples /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples/CMakeFiles/simple.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests/examples /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples/CMakeFiles/features.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests/featuremap /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests/featuremap /home/devel/building/work/src/graphite2-1.3.14/build/tests/featuremap/CMakeFiles/featuremaptest.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f tests/examples/CMakeFiles/clusters.dir/build.make tests/examples/CMakeFiles/clusters.dir/build
+make  -f tests/examples/CMakeFiles/simple.dir/build.make tests/examples/CMakeFiles/simple.dir/build
+make  -f tests/examples/CMakeFiles/features.dir/build.make tests/examples/CMakeFiles/features.dir/build
+make  -f tests/examples/CMakeFiles/linebreak.dir/build.make tests/examples/CMakeFiles/linebreak.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests/comparerenderer /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests/comparerenderer /home/devel/building/work/src/graphite2-1.3.14/build/tests/comparerenderer/CMakeFiles/comparerenderer.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f tests/comparerenderer/CMakeFiles/comparerenderer.dir/build.make tests/comparerenderer/CMakeFiles/comparerenderer.dir/build
+make  -f tests/examples/CMakeFiles/freetype.dir/build.make tests/examples/CMakeFiles/freetype.dir/build
+make  -f tests/featuremap/CMakeFiles/featuremaptest.dir/build.make tests/featuremap/CMakeFiles/featuremaptest.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests/utftest /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests/utftest /home/devel/building/work/src/graphite2-1.3.14/build/tests/utftest/CMakeFiles/utftest.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f tests/utftest/CMakeFiles/utftest.dir/build.make tests/utftest/CMakeFiles/utftest.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 76%] Building C object tests/examples/CMakeFiles/features.dir/features.c.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples && /usr/bin/cc -DSIZEOF_SIZE_T=8 -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -I/home/devel/building/work/src/graphite2-1.3.14/tests/examples/../../src -I/usr/include/freetype2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -MD -MT tests/examples/CMakeFiles/features.dir/features.c.o -MF CMakeFiles/features.dir/features.c.o.d -o CMakeFiles/features.dir/features.c.o -c /home/devel/building/work/src/graphite2-1.3.14/tests/examples/features.c
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 81%] Building CXX object tests/utftest/CMakeFiles/utftest.dir/utftest.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/utftest && /usr/bin/c++  -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -MD -MT tests/utftest/CMakeFiles/utftest.dir/utftest.cpp.o -MF CMakeFiles/utftest.dir/utftest.cpp.o.d -o CMakeFiles/utftest.dir/utftest.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/tests/utftest/utftest.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 77%] Building C object tests/examples/CMakeFiles/freetype.dir/freetype.c.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples && /usr/bin/cc -DSIZEOF_SIZE_T=8 -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -I/home/devel/building/work/src/graphite2-1.3.14/tests/examples/../../src -I/usr/include/freetype2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -MD -MT tests/examples/CMakeFiles/freetype.dir/freetype.c.o -MF CMakeFiles/freetype.dir/freetype.c.o.d -o CMakeFiles/freetype.dir/freetype.c.o -c /home/devel/building/work/src/graphite2-1.3.14/tests/examples/freetype.c
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 75%] Building C object tests/examples/CMakeFiles/linebreak.dir/linebreak.c.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples && /usr/bin/cc -DSIZEOF_SIZE_T=8 -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -I/home/devel/building/work/src/graphite2-1.3.14/tests/examples/../../src -I/usr/include/freetype2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -MD -MT tests/examples/CMakeFiles/linebreak.dir/linebreak.c.o -MF CMakeFiles/linebreak.dir/linebreak.c.o.d -o CMakeFiles/linebreak.dir/linebreak.c.o -c /home/devel/building/work/src/graphite2-1.3.14/tests/examples/linebreak.c
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 75%] Building C object tests/examples/CMakeFiles/clusters.dir/cluster.c.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples && /usr/bin/cc -DSIZEOF_SIZE_T=8 -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -I/home/devel/building/work/src/graphite2-1.3.14/tests/examples/../../src -I/usr/include/freetype2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -MD -MT tests/examples/CMakeFiles/clusters.dir/cluster.c.o -MF CMakeFiles/clusters.dir/cluster.c.o.d -o CMakeFiles/clusters.dir/cluster.c.o -c /home/devel/building/work/src/graphite2-1.3.14/tests/examples/cluster.c
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 78%] Building C object tests/examples/CMakeFiles/simple.dir/simple.c.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples && /usr/bin/cc -DSIZEOF_SIZE_T=8 -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -I/home/devel/building/work/src/graphite2-1.3.14/tests/examples/../../src -I/usr/include/freetype2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -MD -MT tests/examples/CMakeFiles/simple.dir/simple.c.o -MF CMakeFiles/simple.dir/simple.c.o.d -o CMakeFiles/simple.dir/simple.c.o -c /home/devel/building/work/src/graphite2-1.3.14/tests/examples/simple.c
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 85%] Linking C executable linebreak
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/linebreak.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -rdynamic CMakeFiles/linebreak.dir/linebreak.c.o -o linebreak  -Wl,-rpath,/home/devel/building/work/src/graphite2-1.3.14/build/src ../../src/libgraphite2.so.3.2.1 -lc -lgcc 
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 87%] Built target linebreak
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f tests/vm/CMakeFiles/vm-test-common.dir/build.make tests/vm/CMakeFiles/vm-test-common.dir/depend
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests/vm /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests/vm /home/devel/building/work/src/graphite2-1.3.14/build/tests/vm/CMakeFiles/vm-test-common.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f tests/vm/CMakeFiles/vm-test-common.dir/build.make tests/vm/CMakeFiles/vm-test-common.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 82%] Linking C executable features
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/features.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -rdynamic CMakeFiles/features.dir/features.c.o -o features  -Wl,-rpath,/home/devel/building/work/src/graphite2-1.3.14/build/src ../../src/libgraphite2.so.3.2.1 -lc -lgcc 
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 86%] Linking C executable clusters
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/clusters.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -rdynamic CMakeFiles/clusters.dir/cluster.c.o -o clusters  -Wl,-rpath,/home/devel/building/work/src/graphite2-1.3.14/build/src ../../src/libgraphite2.so.3.2.1 -lc -lgcc 
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 84%] Linking C executable freetype
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/freetype.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -rdynamic CMakeFiles/freetype.dir/freetype.c.o -o freetype  -Wl,-rpath,/home/devel/building/work/src/graphite2-1.3.14/build/src ../../src/libgraphite2.so.3.2.1 -lfreetype -lc -lgcc 
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 88%] Built target clusters
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 88%] Built target features
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f gr2fonttest/CMakeFiles/gr2fonttest.dir/build.make gr2fonttest/CMakeFiles/gr2fonttest.dir/depend
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 88%] Built target freetype
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/gr2fonttest /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/gr2fonttest /home/devel/building/work/src/graphite2-1.3.14/build/gr2fonttest/CMakeFiles/gr2fonttest.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f gr2fonttest/CMakeFiles/gr2fonttest.dir/build.make gr2fonttest/CMakeFiles/gr2fonttest.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 87%] Linking C executable simple
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/examples && /usr/bin/cmake -E cmake_link_script CMakeFiles/simple.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -rdynamic CMakeFiles/simple.dir/simple.c.o -o simple  -Wl,-rpath,/home/devel/building/work/src/graphite2-1.3.14/build/src ../../src/libgraphite2.so.3.2.1 -lc -lgcc 
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 90%] Built target simple
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 91%] Building CXX object gr2fonttest/CMakeFiles/gr2fonttest.dir/UtfCodec.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/gr2fonttest && /usr/bin/c++  -I/home/devel/building/work/src/graphite2-1.3.14/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -MD -MT gr2fonttest/CMakeFiles/gr2fonttest.dir/UtfCodec.cpp.o -MF CMakeFiles/gr2fonttest.dir/UtfCodec.cpp.o.d -o CMakeFiles/gr2fonttest.dir/UtfCodec.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/gr2fonttest/UtfCodec.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 83%] Linking CXX executable utftest
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/utftest && /usr/bin/cmake -E cmake_link_script CMakeFiles/utftest.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -rdynamic CMakeFiles/utftest.dir/utftest.cpp.o -o utftest  -Wl,-rpath,/home/devel/building/work/src/graphite2-1.3.14/build/src ../../src/libgraphite2.so.3.2.1 -lc -lgcc 
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 91%] Built target utftest
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 88%] Building CXX object tests/vm/CMakeFiles/vm-test-common.dir/basic_test.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/vm && /usr/bin/c++ -DGRAPHITE2_NTRACING -DNDEBUG -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11   -fno-rtti -fno-exceptions -fomit-frame-pointer -MD -MT tests/vm/CMakeFiles/vm-test-common.dir/basic_test.cpp.o -MF CMakeFiles/vm-test-common.dir/basic_test.cpp.o.d -o CMakeFiles/vm-test-common.dir/basic_test.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/tests/vm/basic_test.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 90%] Building CXX object gr2fonttest/CMakeFiles/gr2fonttest.dir/gr2FontTest.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/gr2fonttest && /usr/bin/c++  -I/home/devel/building/work/src/graphite2-1.3.14/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -MD -MT gr2fonttest/CMakeFiles/gr2fonttest.dir/gr2FontTest.cpp.o -MF CMakeFiles/gr2fonttest.dir/gr2FontTest.cpp.o.d -o CMakeFiles/gr2fonttest.dir/gr2FontTest.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/gr2fonttest/gr2FontTest.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 92%] Linking CXX static library libvm-test-common.a
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/vm && /usr/bin/cmake -P CMakeFiles/vm-test-common.dir/cmake_clean_target.cmake
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/vm && /usr/bin/cmake -E cmake_link_script CMakeFiles/vm-test-common.dir/link.txt --verbose=1
+/usr/bin/ar qc libvm-test-common.a "CMakeFiles/vm-test-common.dir/basic_test.cpp.o"
+/usr/bin/ranlib libvm-test-common.a
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 93%] Built target vm-test-common
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f tests/vm/CMakeFiles/vm-test-call.dir/build.make tests/vm/CMakeFiles/vm-test-call.dir/depend
+make  -f tests/vm/CMakeFiles/vm-test-direct.dir/build.make tests/vm/CMakeFiles/vm-test-direct.dir/depend
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests/vm /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests/vm /home/devel/building/work/src/graphite2-1.3.14/build/tests/vm/CMakeFiles/vm-test-direct.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/tests/vm /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/tests/vm /home/devel/building/work/src/graphite2-1.3.14/build/tests/vm/CMakeFiles/vm-test-call.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f tests/vm/CMakeFiles/vm-test-call.dir/build.make tests/vm/CMakeFiles/vm-test-call.dir/build
+make  -f tests/vm/CMakeFiles/vm-test-direct.dir/build.make tests/vm/CMakeFiles/vm-test-direct.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 75%] Building CXX object tests/comparerenderer/CMakeFiles/comparerenderer.dir/CompareRenderer.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/comparerenderer && /usr/bin/c++  -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -I/home/devel/building/work/src/graphite2-1.3.14/tests/comparerenderer/../common -I/home/devel/building/work/src/graphite2-1.3.14/tests/comparerenderer/../../src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -std=c++11 -MD -MT tests/comparerenderer/CMakeFiles/comparerenderer.dir/CompareRenderer.cpp.o -MF CMakeFiles/comparerenderer.dir/CompareRenderer.cpp.o.d -o CMakeFiles/comparerenderer.dir/CompareRenderer.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/tests/comparerenderer/CompareRenderer.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 93%] Linking CXX executable gr2fonttest
+cd /home/devel/building/work/src/graphite2-1.3.14/build/gr2fonttest && /usr/bin/cmake -E cmake_link_script CMakeFiles/gr2fonttest.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -rdynamic CMakeFiles/gr2fonttest.dir/gr2FontTest.cpp.o CMakeFiles/gr2fonttest.dir/UtfCodec.cpp.o -o gr2fonttest  -Wl,-rpath,/home/devel/building/work/src/graphite2-1.3.14/build/src: ../src/libgraphite2.so.3.2.1 -lc -lgcc 
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 96%] Built target gr2fonttest
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f gr2fonttest/CMakeFiles/gr2fonttest_copy_dll.dir/build.make gr2fonttest/CMakeFiles/gr2fonttest_copy_dll.dir/depend
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/graphite2-1.3.14 /home/devel/building/work/src/graphite2-1.3.14/gr2fonttest /home/devel/building/work/src/graphite2-1.3.14/build /home/devel/building/work/src/graphite2-1.3.14/build/gr2fonttest /home/devel/building/work/src/graphite2-1.3.14/build/gr2fonttest/CMakeFiles/gr2fonttest_copy_dll.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make  -f gr2fonttest/CMakeFiles/gr2fonttest_copy_dll.dir/build.make gr2fonttest/CMakeFiles/gr2fonttest_copy_dll.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+cd /home/devel/building/work/src/graphite2-1.3.14/build/gr2fonttest && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/graphite2-1.3.14/build/src/./libgraphite2.so /home/devel/building/work/src/graphite2-1.3.14/build/gr2fonttest/.
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 96%] Built target gr2fonttest_copy_dll
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 80%] Building CXX object tests/featuremap/CMakeFiles/featuremaptest.dir/featuremaptest.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/featuremap && /usr/bin/c++  -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11 -MD -MT tests/featuremap/CMakeFiles/featuremaptest.dir/featuremaptest.cpp.o -MF CMakeFiles/featuremaptest.dir/featuremaptest.cpp.o.d -o CMakeFiles/featuremaptest.dir/featuremaptest.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/tests/featuremap/featuremaptest.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 95%] Building CXX object tests/vm/CMakeFiles/vm-test-direct.dir/__/__/src/direct_machine.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/vm && /usr/bin/c++ -DGRAPHITE2_NTRACING -DNDEBUG -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11   -fno-rtti -fno-exceptions -fomit-frame-pointer -MD -MT tests/vm/CMakeFiles/vm-test-direct.dir/__/__/src/direct_machine.cpp.o -MF CMakeFiles/vm-test-direct.dir/__/__/src/direct_machine.cpp.o.d -o CMakeFiles/vm-test-direct.dir/__/__/src/direct_machine.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/direct_machine.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 95%] Building CXX object tests/vm/CMakeFiles/vm-test-call.dir/__/__/src/call_machine.cpp.o
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/vm && /usr/bin/c++ -DGRAPHITE2_NTRACING -DNDEBUG -I/home/devel/building/work/src/graphite2-1.3.14/include -I/home/devel/building/work/src/graphite2-1.3.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -std=gnu++11   -fno-rtti -fno-exceptions -fomit-frame-pointer -MD -MT tests/vm/CMakeFiles/vm-test-call.dir/__/__/src/call_machine.cpp.o -MF CMakeFiles/vm-test-call.dir/__/__/src/call_machine.cpp.o.d -o CMakeFiles/vm-test-call.dir/__/__/src/call_machine.cpp.o -c /home/devel/building/work/src/graphite2-1.3.14/src/call_machine.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 96%] Linking CXX executable comparerenderer
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/comparerenderer && /usr/bin/cmake -E cmake_link_script CMakeFiles/comparerenderer.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -rdynamic CMakeFiles/comparerenderer.dir/CompareRenderer.cpp.o -o comparerenderer  -Wl,-rpath,/home/devel/building/work/src/graphite2-1.3.14/build/src ../libgraphite2-base.a ../../src/libgraphite2.so.3.2.1 -lrt -lc -lgcc 
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[100%] Built target comparerenderer
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 97%] Linking CXX executable featuremaptest
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/featuremap && /usr/bin/cmake -E cmake_link_script CMakeFiles/featuremaptest.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -rdynamic CMakeFiles/featuremaptest.dir/featuremaptest.cpp.o -o featuremaptest  -Wl,-rpath,/home/devel/building/work/src/graphite2-1.3.14/build/src ../../src/libgraphite2.so.3.2.1 ../libgraphite2-base.a ../libgraphite2-file.a ../libgraphite2-base.a -lc -lgcc 
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[100%] Built target featuremaptest
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[100%] Linking CXX executable vm-test-call
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/vm && /usr/bin/cmake -E cmake_link_script CMakeFiles/vm-test-call.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -rdynamic "CMakeFiles/vm-test-call.dir/__/__/src/call_machine.cpp.o" -o vm-test-call  -Wl,-rpath,/home/devel/building/work/src/graphite2-1.3.14/build/src libvm-test-common.a ../../src/libgraphite2.so.3.2.1 -lc -lgcc ../libgraphite2-file.a ../libgraphite2-base.a 
+/home/devel/building/work/src/graphite2-1.3.14/src/inc/Segment.h:78:7: warning: type 'struct Segment' violates the C++ One Definition Rule [-Wodr]
+   78 | class Segment
+      |       ^
+/home/devel/building/work/src/graphite2-1.3.14/tests/vm/basic_test.cpp:51:18: note: a different type is defined in another translation unit
+   51 | class graphite2::Segment {};
+      |                  ^
+/home/devel/building/work/src/graphite2-1.3.14/src/inc/Segment.h:162:21: note: the first difference of corresponding definitions is field 'm_advance'
+  162 |     Position        m_advance;          // whole segment advance
+      |                     ^
+/home/devel/building/work/src/graphite2-1.3.14/tests/vm/basic_test.cpp:51:18: note: a type with different number of fields is defined in another translation unit
+   51 | class graphite2::Segment {};
+      |                  ^
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[100%] Built target vm-test-call
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[2]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[ 98%] Linking CXX executable vm-test-direct
+cd /home/devel/building/work/src/graphite2-1.3.14/build/tests/vm && /usr/bin/cmake -E cmake_link_script CMakeFiles/vm-test-direct.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -O3 -DNDEBUG -rdynamic "CMakeFiles/vm-test-direct.dir/__/__/src/direct_machine.cpp.o" -o vm-test-direct  -Wl,-rpath,/home/devel/building/work/src/graphite2-1.3.14/build/src libvm-test-common.a ../../src/libgraphite2.so.3.2.1 -lc -lgcc ../libgraphite2-file.a ../libgraphite2-base.a 
+/home/devel/building/work/src/graphite2-1.3.14/src/inc/Segment.h:78:7: warning: type 'struct Segment' violates the C++ One Definition Rule [-Wodr]
+   78 | class Segment
+      |       ^
+/home/devel/building/work/src/graphite2-1.3.14/tests/vm/basic_test.cpp:51:18: note: a different type is defined in another translation unit
+   51 | class graphite2::Segment {};
+      |                  ^
+/home/devel/building/work/src/graphite2-1.3.14/src/inc/Segment.h:162:21: note: the first difference of corresponding definitions is field 'm_advance'
+  162 |     Position        m_advance;          // whole segment advance
+      |                     ^
+/home/devel/building/work/src/graphite2-1.3.14/tests/vm/basic_test.cpp:51:18: note: a type with different number of fields is defined in another translation unit
+   51 | class graphite2::Segment {};
+      |                  ^
+make[2]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+make[1]: Entering directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+[100%] Built target vm-test-direct
+make[1]: Leaving directory '/home/devel/building/work/src/graphite2-1.3.14/build'
+/usr/bin/cmake -E cmake_progress_start /home/devel/building/work/src/graphite2-1.3.14/build/CMakeFiles 0
++ make DESTDIR=/home/devel/building/work/pkg install
+[  6%] Built target endiantest
+[  7%] Built target jsontest
+[  6%] Built target grlisttest
+[ 15%] Built target graphite2-base
+[ 32%] Built target graphite2-file
+[ 42%] Built target sparsetest
+[ 42%] Built target nametabletest
+[ 42%] Built target bits
+[ 72%] Built target graphite2
+[ 85%] Built target freetype
+[ 85%] Built target simple
+[ 85%] Built target features
+[ 85%] Built target linebreak
+[ 85%] Built target comparerenderer
+[ 87%] Built target utftest
+[ 85%] Built target featuremaptest
+[ 90%] Built target clusters
+[ 95%] Built target gr2fonttest
+[ 95%] Built target vm-test-common
+[100%] Built target vm-test-direct
+[100%] Built target vm-test-call
+[100%] Built target gr2fonttest_copy_dll
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/devel/building/work/pkg/usr/lib/pkgconfig/graphite2.pc
+-- Installing: /home/devel/building/work/pkg/usr/lib/libgraphite2.la
+-- Installing: /home/devel/building/work/pkg/usr/lib/libgraphite2.so.3.2.1
+-- Installing: /home/devel/building/work/pkg/usr/lib/libgraphite2.so.3
+-- Installing: /home/devel/building/work/pkg/usr/lib/libgraphite2.so
+-- Installing: /home/devel/building/work/pkg/usr/include/graphite2/Font.h
+-- Installing: /home/devel/building/work/pkg/usr/include/graphite2/Segment.h
+-- Installing: /home/devel/building/work/pkg/usr/include/graphite2/Types.h
+-- Installing: /home/devel/building/work/pkg/usr/include/graphite2/Log.h
+-- Installing: /home/devel/building/work/pkg/usr/share/graphite2/graphite2.cmake
+-- Installing: /home/devel/building/work/pkg/usr/share/graphite2/graphite2-release.cmake
+-- Installing: /home/devel/building/work/pkg/usr/bin/gr2fonttest
+-- Set non-toolchain portion of runtime path of "/home/devel/building/work/pkg/usr/bin/gr2fonttest" to ""
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/bin/
+-rwxr-xr-x  0 root   root    27232 Feb  1 17:58 usr/bin/gr2fonttest
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/share/graphite2/
+-rw-r--r--  0 root   root     3716 Feb  1 17:58 usr/share/graphite2/graphite2.cmake
+-rw-r--r--  0 root   root      906 Feb  1 17:58 usr/share/graphite2/graphite2-release.cmake
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/include/graphite2/
+-rw-r--r--  0 root   root    18738 Apr  1  2020 usr/include/graphite2/Font.h
+-rw-r--r--  0 root   root    20303 Apr  1  2020 usr/include/graphite2/Segment.h
+-rw-r--r--  0 root   root     3082 Apr  1  2020 usr/include/graphite2/Types.h
+-rw-r--r--  0 root   root     2963 Apr  1  2020 usr/include/graphite2/Log.h
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/lib/pkgconfig/
+-rwxr-xr-x  0 root   root   157888 Feb  1 17:58 usr/lib/libgraphite2.so.3.2.1
+lrwxrwxrwx  0 root   root        0 Feb  1 17:58 usr/lib/libgraphite2.so.3 -> libgraphite2.so.3.2.1
+lrwxrwxrwx  0 root   root        0 Feb  1 17:58 usr/lib/libgraphite2.so -> libgraphite2.so.3
+-rw-r--r--  0 root   root      140 Feb  1 17:58 usr/lib/pkgconfig/graphite2.pc
+=======> Building '/home/devel/packages/graphite2#1.3.14-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling graphite2 1.3.14-1
+prt-get: /usr/bin/pkgadd -u graphite2#1.3.14-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 17:58:17 2024
+

@@ -1,0 +1,97 @@
+prt-get: updating /usr/ports/wayland-x86_64/giflib
+prt-get: starting build Thu Feb  1 17:42:30 2024
+=======> Building '/home/devel/packages/giflib#5.2.1-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/giflib-5.2.1.tar.gz
++ build
++ cd giflib-5.2.1
++ make V=1
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2   -c -o dgif_lib.o dgif_lib.c
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2   -c -o egif_lib.o egif_lib.c
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2   -c -o gifalloc.o gifalloc.c
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2   -c -o gif_err.o gif_err.c
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2   -c -o gif_font.o gif_font.c
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2   -c -o gif_hash.o gif_hash.c
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2   -c -o openbsd-reallocarray.o openbsd-reallocarray.c
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2   -c -o qprintf.o qprintf.c
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2   -c -o quantize.o quantize.c
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2   -c -o getarg.o getarg.c
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2 -shared  -Wl,-soname -Wl,libutil.so.7 -o libutil.so qprintf.o quantize.o getarg.o
+ar rcs libutil.a qprintf.o quantize.o getarg.o
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2 -shared  -Wl,-soname -Wl,libgif.so.7 -o libgif.so dgif_lib.o egif_lib.o gifalloc.o gif_err.o gif_font.o gif_hash.o openbsd-reallocarray.o
+ar rcs libgif.a dgif_lib.o egif_lib.o gifalloc.o gif_err.o gif_font.o gif_hash.o openbsd-reallocarray.o
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2    gif2rgb.c libgif.a libutil.a  libgif.a -lm -o gif2rgb
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2    gifbuild.c libgif.a libutil.a  libgif.a -lm -o gifbuild
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2    giffix.c libgif.a libutil.a  libgif.a -lm -o giffix
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2    giftext.c libgif.a libutil.a  libgif.a -lm -o giftext
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2    giftool.c libgif.a libutil.a  libgif.a -lm -o giftool
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2    gifclrmp.c libgif.a libutil.a  libgif.a -lm -o gifclrmp
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2    gifbg.c libgif.a libutil.a  libgif.a -lm -o gifbg
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2    gifcolor.c libgif.a libutil.a  libgif.a -lm -o gifcolor
+giftool.c: In function 'getbool':
+giftool.c:66:29: warning: '%s' directive argument is null [-Wformat-overflow=]
+   66 |                   "giftool: %s is not a valid boolean argument.\n",
+      |                             ^~
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2    gifecho.c libgif.a libutil.a  libgif.a -lm -o gifecho
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2    giffilter.c libgif.a libutil.a  libgif.a -lm -o giffilter
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2    gifhisto.c libgif.a libutil.a  libgif.a -lm -o gifhisto
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2    gifinto.c libgif.a libutil.a  libgif.a -lm -o gifinto
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2    gifsponge.c libgif.a libutil.a  libgif.a -lm -o gifsponge
+cc -std=gnu99 -fPIC -Wall -Wno-format-truncation -O2    gifwedge.c libgif.a libutil.a  libgif.a -lm -o gifwedge
+make -C doc
+make[1]: Entering directory '/home/devel/building/work/src/giflib-5.2.1/doc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/devel/building/work/src/giflib-5.2.1/doc'
++ make PREFIX=/home/devel/building/work/pkg/usr install
+make -C doc
+install -d "/home/devel/building/work/pkg/usr/bin"
+install -d "/home/devel/building/work/pkg/usr/include"
+install -d "/home/devel/building/work/pkg/usr/lib"
+install -d "/home/devel/building/work/pkg/usr/share/man/man1"
+install gif2rgb gifbuild giffix giftext giftool gifclrmp "/home/devel/building/work/pkg/usr/bin"
+install -m 644 gif_lib.h "/home/devel/building/work/pkg/usr/include"
+install -m 644 libgif.a "/home/devel/building/work/pkg/usr/lib/libgif.a"
+make[1]: Entering directory '/home/devel/building/work/src/giflib-5.2.1/doc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/devel/building/work/src/giflib-5.2.1/doc'
+install -m 644 doc/*.1 "/home/devel/building/work/pkg/usr/share/man/man1"
+install -m 755 libgif.so "/home/devel/building/work/pkg/usr/lib/libgif.so.7.2.0"
+ln -sf libgif.so.7.2.0 "/home/devel/building/work/pkg/usr/lib/libgif.so.7"
+ln -sf libgif.so.7 "/home/devel/building/work/pkg/usr/lib/libgif.so"
++ find /home/devel/building/work/pkg -type f -name '*.a' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/bin/
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/share/man/man1/
+-rw-r--r--  0 root   root     1144 Feb  1 17:42 usr/share/man/man1/gif2rgb.1.gz
+-rw-r--r--  0 root   root     1348 Feb  1 17:42 usr/share/man/man1/gifbg.1.gz
+-rw-r--r--  0 root   root     2932 Feb  1 17:42 usr/share/man/man1/gifbuild.1.gz
+-rw-r--r--  0 root   root     1220 Feb  1 17:42 usr/share/man/man1/gifclrmp.1.gz
+-rw-r--r--  0 root   root     1053 Feb  1 17:42 usr/share/man/man1/gifcolor.1.gz
+-rw-r--r--  0 root   root     1421 Feb  1 17:42 usr/share/man/man1/gifecho.1.gz
+-rw-r--r--  0 root   root      831 Feb  1 17:42 usr/share/man/man1/giffix.1.gz
+-rw-r--r--  0 root   root     1272 Feb  1 17:42 usr/share/man/man1/gifhisto.1.gz
+-rw-r--r--  0 root   root     1024 Feb  1 17:42 usr/share/man/man1/gifinto.1.gz
+-rw-r--r--  0 root   root      999 Feb  1 17:42 usr/share/man/man1/giflib.1.gz
+-rw-r--r--  0 root   root     1091 Feb  1 17:42 usr/share/man/man1/giftext.1.gz
+-rw-r--r--  0 root   root     1886 Feb  1 17:42 usr/share/man/man1/giftool.1.gz
+-rw-r--r--  0 root   root      947 Feb  1 17:42 usr/share/man/man1/gifwedge.1.gz
+-rwxr-xr-x  0 root   root    39296 Feb  1 17:42 usr/lib/libgif.so.7.2.0
+lrwxrwxrwx  0 root   root        0 Feb  1 17:42 usr/lib/libgif.so.7 -> libgif.so.7.2.0
+lrwxrwxrwx  0 root   root        0 Feb  1 17:42 usr/lib/libgif.so -> libgif.so.7
+-rw-r--r--  0 root   root    12986 Feb  1 17:42 usr/include/gif_lib.h
+-rwxr-xr-x  0 root   root    43336 Feb  1 17:42 usr/bin/gif2rgb
+-rwxr-xr-x  0 root   root    51648 Feb  1 17:42 usr/bin/gifbuild
+-rwxr-xr-x  0 root   root    39128 Feb  1 17:42 usr/bin/giffix
+-rwxr-xr-x  0 root   root    35072 Feb  1 17:42 usr/bin/giftext
+-rwxr-xr-x  0 root   root    35064 Feb  1 17:42 usr/bin/giftool
+-rwxr-xr-x  0 root   root    39176 Feb  1 17:42 usr/bin/gifclrmp
+=======> Building '/home/devel/packages/giflib#5.2.1-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling giflib 5.2.1-1
+prt-get: /usr/bin/pkgadd -u giflib#5.2.1-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 17:42:31 2024
+

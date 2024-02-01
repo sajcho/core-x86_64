@@ -1,0 +1,512 @@
+prt-get: updating /usr/ports/core-x86_64/libnftnl
+prt-get: starting build Thu Feb  1 18:14:34 2024
+=======> Building '/home/devel/packages/libnftnl#1.2.6-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/libnftnl-1.2.6.tar.xz
++ build
++ cd libnftnl-1.2.6
++ ./configure --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --prefix=/usr
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for x86_64-unknown-linux-gnu-gcc... x86_64-unknown-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... yes
+checking for x86_64-unknown-linux-gnu-gcc option to accept ISO C89... none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... yes
+checking for x86_64-unknown-linux-gnu-ar... x86_64-unknown-linux-gnu-ar
+checking the archiver (x86_64-unknown-linux-gnu-ar) interface... ar
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking how to create a pax tar archive... gnutar
+checking dependency style of x86_64-unknown-linux-gnu-gcc... gcc3
+checking whether make supports nested variables... (cached) yes
+checking for x86_64-unknown-linux-gnu-pkg-config... /usr/bin/x86_64-unknown-linux-gnu-pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libmnl >= 1.0.4... yes
+checking for x86_64-unknown-linux-gnu-gcc... (cached) x86_64-unknown-linux-gnu-gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... (cached) yes
+checking for x86_64-unknown-linux-gnu-gcc option to accept ISO C89... (cached) none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... (cached) yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-unknown-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/x86_64-unknown-linux-gnu-nm -B
+checking the name lister (/usr/bin/x86_64-unknown-linux-gnu-nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-unknown-linux-gnu-objdump... x86_64-unknown-linux-gnu-objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-unknown-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-unknown-linux-gnu-ar... (cached) x86_64-unknown-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-unknown-linux-gnu-strip... x86_64-unknown-linux-gnu-strip
+checking for x86_64-unknown-linux-gnu-ranlib... x86_64-unknown-linux-gnu-ranlib
+checking command to parse /usr/bin/x86_64-unknown-linux-gnu-nm -B output from x86_64-unknown-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for x86_64-unknown-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... x86_64-unknown-linux-gnu-gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-unknown-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-unknown-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-unknown-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-unknown-linux-gnu-gcc static flag -static works... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-unknown-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether compiler accepts -fvisibility=hidden... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating include/Makefile
+config.status: creating include/libnftnl/Makefile
+config.status: creating include/linux/Makefile
+config.status: creating include/linux/netfilter/Makefile
+config.status: creating examples/Makefile
+config.status: creating tests/Makefile
+config.status: creating libnftnl.pc
+config.status: creating doxygen.cfg
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6'
+Making all in src
+make[2]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/src'
+depbase=`echo utils.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT utils.lo -MD -MP -MF $depbase.Tpo -c -o utils.lo utils.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo batch.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT batch.lo -MD -MP -MF $depbase.Tpo -c -o batch.lo batch.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo flowtable.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT flowtable.lo -MD -MP -MF $depbase.Tpo -c -o flowtable.lo flowtable.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo common.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT common.lo -MD -MP -MF $depbase.Tpo -c -o common.lo common.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo gen.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT gen.lo -MD -MP -MF $depbase.Tpo -c -o gen.lo gen.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo table.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT table.lo -MD -MP -MF $depbase.Tpo -c -o table.lo table.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo trace.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT trace.lo -MD -MP -MF $depbase.Tpo -c -o trace.lo trace.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo chain.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT chain.lo -MD -MP -MF $depbase.Tpo -c -o chain.lo chain.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT flowtable.lo -MD -MP -MF .deps/flowtable.Tpo -c flowtable.c  -fPIC -DPIC -o .libs/flowtable.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT utils.lo -MD -MP -MF .deps/utils.Tpo -c utils.c  -fPIC -DPIC -o .libs/utils.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT table.lo -MD -MP -MF .deps/table.Tpo -c table.c  -fPIC -DPIC -o .libs/table.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT common.lo -MD -MP -MF .deps/common.Tpo -c common.c  -fPIC -DPIC -o .libs/common.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT chain.lo -MD -MP -MF .deps/chain.Tpo -c chain.c  -fPIC -DPIC -o .libs/chain.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT trace.lo -MD -MP -MF .deps/trace.Tpo -c trace.c  -fPIC -DPIC -o .libs/trace.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT batch.lo -MD -MP -MF .deps/batch.Tpo -c batch.c  -fPIC -DPIC -o .libs/batch.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT gen.lo -MD -MP -MF .deps/gen.Tpo -c gen.c  -fPIC -DPIC -o .libs/gen.o
+depbase=`echo object.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT object.lo -MD -MP -MF $depbase.Tpo -c -o object.lo object.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo rule.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT rule.lo -MD -MP -MF $depbase.Tpo -c -o rule.lo rule.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo set.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT set.lo -MD -MP -MF $depbase.Tpo -c -o set.lo set.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT object.lo -MD -MP -MF .deps/object.Tpo -c object.c  -fPIC -DPIC -o .libs/object.o
+depbase=`echo set_elem.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT set_elem.lo -MD -MP -MF $depbase.Tpo -c -o set_elem.lo set_elem.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ruleset.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT ruleset.lo -MD -MP -MF $depbase.Tpo -c -o ruleset.lo ruleset.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT rule.lo -MD -MP -MF .deps/rule.Tpo -c rule.c  -fPIC -DPIC -o .libs/rule.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT set.lo -MD -MP -MF .deps/set.Tpo -c set.c  -fPIC -DPIC -o .libs/set.o
+depbase=`echo udata.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT udata.lo -MD -MP -MF $depbase.Tpo -c -o udata.lo udata.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT set_elem.lo -MD -MP -MF .deps/set_elem.Tpo -c set_elem.c  -fPIC -DPIC -o .libs/set_elem.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT ruleset.lo -MD -MP -MF .deps/ruleset.Tpo -c ruleset.c  -fPIC -DPIC -o .libs/ruleset.o
+depbase=`echo expr.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr.lo -MD -MP -MF $depbase.Tpo -c -o expr.lo expr.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT udata.lo -MD -MP -MF .deps/udata.Tpo -c udata.c  -fPIC -DPIC -o .libs/udata.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr.lo -MD -MP -MF .deps/expr.Tpo -c expr.c  -fPIC -DPIC -o .libs/expr.o
+depbase=`echo expr_ops.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr_ops.lo -MD -MP -MF $depbase.Tpo -c -o expr_ops.lo expr_ops.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/bitwise.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/bitwise.lo -MD -MP -MF $depbase.Tpo -c -o expr/bitwise.lo expr/bitwise.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/byteorder.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/byteorder.lo -MD -MP -MF $depbase.Tpo -c -o expr/byteorder.lo expr/byteorder.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr_ops.lo -MD -MP -MF .deps/expr_ops.Tpo -c expr_ops.c  -fPIC -DPIC -o .libs/expr_ops.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/byteorder.lo -MD -MP -MF expr/.deps/byteorder.Tpo -c expr/byteorder.c  -fPIC -DPIC -o expr/.libs/byteorder.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/bitwise.lo -MD -MP -MF expr/.deps/bitwise.Tpo -c expr/bitwise.c  -fPIC -DPIC -o expr/.libs/bitwise.o
+depbase=`echo expr/cmp.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/cmp.lo -MD -MP -MF $depbase.Tpo -c -o expr/cmp.lo expr/cmp.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/range.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/range.lo -MD -MP -MF $depbase.Tpo -c -o expr/range.lo expr/range.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/connlimit.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/connlimit.lo -MD -MP -MF $depbase.Tpo -c -o expr/connlimit.lo expr/connlimit.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/counter.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/counter.lo -MD -MP -MF $depbase.Tpo -c -o expr/counter.lo expr/counter.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/cmp.lo -MD -MP -MF expr/.deps/cmp.Tpo -c expr/cmp.c  -fPIC -DPIC -o expr/.libs/cmp.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/range.lo -MD -MP -MF expr/.deps/range.Tpo -c expr/range.c  -fPIC -DPIC -o expr/.libs/range.o
+depbase=`echo expr/ct.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/ct.lo -MD -MP -MF $depbase.Tpo -c -o expr/ct.lo expr/ct.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/data_reg.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/data_reg.lo -MD -MP -MF $depbase.Tpo -c -o expr/data_reg.lo expr/data_reg.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/dup.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/dup.lo -MD -MP -MF $depbase.Tpo -c -o expr/dup.lo expr/dup.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/exthdr.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/exthdr.lo -MD -MP -MF $depbase.Tpo -c -o expr/exthdr.lo expr/exthdr.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/ct.lo -MD -MP -MF expr/.deps/ct.Tpo -c expr/ct.c  -fPIC -DPIC -o expr/.libs/ct.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/data_reg.lo -MD -MP -MF expr/.deps/data_reg.Tpo -c expr/data_reg.c  -fPIC -DPIC -o expr/.libs/data_reg.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/counter.lo -MD -MP -MF expr/.deps/counter.Tpo -c expr/counter.c  -fPIC -DPIC -o expr/.libs/counter.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/connlimit.lo -MD -MP -MF expr/.deps/connlimit.Tpo -c expr/connlimit.c  -fPIC -DPIC -o expr/.libs/connlimit.o
+depbase=`echo expr/flow_offload.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/flow_offload.lo -MD -MP -MF $depbase.Tpo -c -o expr/flow_offload.lo expr/flow_offload.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/dup.lo -MD -MP -MF expr/.deps/dup.Tpo -c expr/dup.c  -fPIC -DPIC -o expr/.libs/dup.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/exthdr.lo -MD -MP -MF expr/.deps/exthdr.Tpo -c expr/exthdr.c  -fPIC -DPIC -o expr/.libs/exthdr.o
+depbase=`echo expr/fib.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/fib.lo -MD -MP -MF $depbase.Tpo -c -o expr/fib.lo expr/fib.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/fwd.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/fwd.lo -MD -MP -MF $depbase.Tpo -c -o expr/fwd.lo expr/fwd.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/last.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/last.lo -MD -MP -MF $depbase.Tpo -c -o expr/last.lo expr/last.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/limit.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/limit.lo -MD -MP -MF $depbase.Tpo -c -o expr/limit.lo expr/limit.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/fib.lo -MD -MP -MF expr/.deps/fib.Tpo -c expr/fib.c  -fPIC -DPIC -o expr/.libs/fib.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/flow_offload.lo -MD -MP -MF expr/.deps/flow_offload.Tpo -c expr/flow_offload.c  -fPIC -DPIC -o expr/.libs/flow_offload.o
+depbase=`echo expr/log.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/log.lo -MD -MP -MF $depbase.Tpo -c -o expr/log.lo expr/log.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/fwd.lo -MD -MP -MF expr/.deps/fwd.Tpo -c expr/fwd.c  -fPIC -DPIC -o expr/.libs/fwd.o
+depbase=`echo expr/lookup.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/lookup.lo -MD -MP -MF $depbase.Tpo -c -o expr/lookup.lo expr/lookup.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/last.lo -MD -MP -MF expr/.deps/last.Tpo -c expr/last.c  -fPIC -DPIC -o expr/.libs/last.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/limit.lo -MD -MP -MF expr/.deps/limit.Tpo -c expr/limit.c  -fPIC -DPIC -o expr/.libs/limit.o
+depbase=`echo expr/dynset.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/dynset.lo -MD -MP -MF $depbase.Tpo -c -o expr/dynset.lo expr/dynset.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/log.lo -MD -MP -MF expr/.deps/log.Tpo -c expr/log.c  -fPIC -DPIC -o expr/.libs/log.o
+depbase=`echo expr/immediate.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/immediate.lo -MD -MP -MF $depbase.Tpo -c -o expr/immediate.lo expr/immediate.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/lookup.lo -MD -MP -MF expr/.deps/lookup.Tpo -c expr/lookup.c  -fPIC -DPIC -o expr/.libs/lookup.o
+depbase=`echo expr/inner.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/inner.lo -MD -MP -MF $depbase.Tpo -c -o expr/inner.lo expr/inner.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/match.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/match.lo -MD -MP -MF $depbase.Tpo -c -o expr/match.lo expr/match.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/meta.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/meta.lo -MD -MP -MF $depbase.Tpo -c -o expr/meta.lo expr/meta.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/dynset.lo -MD -MP -MF expr/.deps/dynset.Tpo -c expr/dynset.c  -fPIC -DPIC -o expr/.libs/dynset.o
+depbase=`echo expr/numgen.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/numgen.lo -MD -MP -MF $depbase.Tpo -c -o expr/numgen.lo expr/numgen.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/match.lo -MD -MP -MF expr/.deps/match.Tpo -c expr/match.c  -fPIC -DPIC -o expr/.libs/match.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/meta.lo -MD -MP -MF expr/.deps/meta.Tpo -c expr/meta.c  -fPIC -DPIC -o expr/.libs/meta.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/inner.lo -MD -MP -MF expr/.deps/inner.Tpo -c expr/inner.c  -fPIC -DPIC -o expr/.libs/inner.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/numgen.lo -MD -MP -MF expr/.deps/numgen.Tpo -c expr/numgen.c  -fPIC -DPIC -o expr/.libs/numgen.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/immediate.lo -MD -MP -MF expr/.deps/immediate.Tpo -c expr/immediate.c  -fPIC -DPIC -o expr/.libs/immediate.o
+depbase=`echo expr/nat.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/nat.lo -MD -MP -MF $depbase.Tpo -c -o expr/nat.lo expr/nat.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/tproxy.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/tproxy.lo -MD -MP -MF $depbase.Tpo -c -o expr/tproxy.lo expr/tproxy.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/objref.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/objref.lo -MD -MP -MF $depbase.Tpo -c -o expr/objref.lo expr/objref.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/payload.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/payload.lo -MD -MP -MF $depbase.Tpo -c -o expr/payload.lo expr/payload.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/nat.lo -MD -MP -MF expr/.deps/nat.Tpo -c expr/nat.c  -fPIC -DPIC -o expr/.libs/nat.o
+depbase=`echo expr/queue.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/queue.lo -MD -MP -MF $depbase.Tpo -c -o expr/queue.lo expr/queue.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/quota.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/quota.lo -MD -MP -MF $depbase.Tpo -c -o expr/quota.lo expr/quota.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/tproxy.lo -MD -MP -MF expr/.deps/tproxy.Tpo -c expr/tproxy.c  -fPIC -DPIC -o expr/.libs/tproxy.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/objref.lo -MD -MP -MF expr/.deps/objref.Tpo -c expr/objref.c  -fPIC -DPIC -o expr/.libs/objref.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/payload.lo -MD -MP -MF expr/.deps/payload.Tpo -c expr/payload.c  -fPIC -DPIC -o expr/.libs/payload.o
+depbase=`echo expr/reject.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/reject.lo -MD -MP -MF $depbase.Tpo -c -o expr/reject.lo expr/reject.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/rt.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/rt.lo -MD -MP -MF $depbase.Tpo -c -o expr/rt.lo expr/rt.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/queue.lo -MD -MP -MF expr/.deps/queue.Tpo -c expr/queue.c  -fPIC -DPIC -o expr/.libs/queue.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/quota.lo -MD -MP -MF expr/.deps/quota.Tpo -c expr/quota.c  -fPIC -DPIC -o expr/.libs/quota.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/reject.lo -MD -MP -MF expr/.deps/reject.Tpo -c expr/reject.c  -fPIC -DPIC -o expr/.libs/reject.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/rt.lo -MD -MP -MF expr/.deps/rt.Tpo -c expr/rt.c  -fPIC -DPIC -o expr/.libs/rt.o
+depbase=`echo expr/target.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/target.lo -MD -MP -MF $depbase.Tpo -c -o expr/target.lo expr/target.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/tunnel.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/tunnel.lo -MD -MP -MF $depbase.Tpo -c -o expr/tunnel.lo expr/tunnel.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/masq.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/masq.lo -MD -MP -MF $depbase.Tpo -c -o expr/masq.lo expr/masq.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/redir.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/redir.lo -MD -MP -MF $depbase.Tpo -c -o expr/redir.lo expr/redir.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/hash.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/hash.lo -MD -MP -MF $depbase.Tpo -c -o expr/hash.lo expr/hash.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/tunnel.lo -MD -MP -MF expr/.deps/tunnel.Tpo -c expr/tunnel.c  -fPIC -DPIC -o expr/.libs/tunnel.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/masq.lo -MD -MP -MF expr/.deps/masq.Tpo -c expr/masq.c  -fPIC -DPIC -o expr/.libs/masq.o
+depbase=`echo expr/socket.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/socket.lo -MD -MP -MF $depbase.Tpo -c -o expr/socket.lo expr/socket.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expr/synproxy.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/synproxy.lo -MD -MP -MF $depbase.Tpo -c -o expr/synproxy.lo expr/synproxy.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/redir.lo -MD -MP -MF expr/.deps/redir.Tpo -c expr/redir.c  -fPIC -DPIC -o expr/.libs/redir.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/target.lo -MD -MP -MF expr/.deps/target.Tpo -c expr/target.c  -fPIC -DPIC -o expr/.libs/target.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/hash.lo -MD -MP -MF expr/.deps/hash.Tpo -c expr/hash.c  -fPIC -DPIC -o expr/.libs/hash.o
+depbase=`echo expr/osf.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/osf.lo -MD -MP -MF $depbase.Tpo -c -o expr/osf.lo expr/osf.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/synproxy.lo -MD -MP -MF expr/.deps/synproxy.Tpo -c expr/synproxy.c  -fPIC -DPIC -o expr/.libs/synproxy.o
+depbase=`echo expr/xfrm.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/xfrm.lo -MD -MP -MF $depbase.Tpo -c -o expr/xfrm.lo expr/xfrm.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo obj/counter.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/counter.lo -MD -MP -MF $depbase.Tpo -c -o obj/counter.lo obj/counter.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/socket.lo -MD -MP -MF expr/.deps/socket.Tpo -c expr/socket.c  -fPIC -DPIC -o expr/.libs/socket.o
+depbase=`echo obj/ct_helper.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/ct_helper.lo -MD -MP -MF $depbase.Tpo -c -o obj/ct_helper.lo obj/ct_helper.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/osf.lo -MD -MP -MF expr/.deps/osf.Tpo -c expr/osf.c  -fPIC -DPIC -o expr/.libs/osf.o
+depbase=`echo obj/quota.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/quota.lo -MD -MP -MF $depbase.Tpo -c -o obj/quota.lo obj/quota.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo obj/tunnel.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/tunnel.lo -MD -MP -MF $depbase.Tpo -c -o obj/tunnel.lo obj/tunnel.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expr/xfrm.lo -MD -MP -MF expr/.deps/xfrm.Tpo -c expr/xfrm.c  -fPIC -DPIC -o expr/.libs/xfrm.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/counter.lo -MD -MP -MF obj/.deps/counter.Tpo -c obj/counter.c  -fPIC -DPIC -o obj/.libs/counter.o
+depbase=`echo obj/limit.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/limit.lo -MD -MP -MF $depbase.Tpo -c -o obj/limit.lo obj/limit.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/ct_helper.lo -MD -MP -MF obj/.deps/ct_helper.Tpo -c obj/ct_helper.c  -fPIC -DPIC -o obj/.libs/ct_helper.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/tunnel.lo -MD -MP -MF obj/.deps/tunnel.Tpo -c obj/tunnel.c  -fPIC -DPIC -o obj/.libs/tunnel.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/quota.lo -MD -MP -MF obj/.deps/quota.Tpo -c obj/quota.c  -fPIC -DPIC -o obj/.libs/quota.o
+depbase=`echo obj/synproxy.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/synproxy.lo -MD -MP -MF $depbase.Tpo -c -o obj/synproxy.lo obj/synproxy.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/limit.lo -MD -MP -MF obj/.deps/limit.Tpo -c obj/limit.c  -fPIC -DPIC -o obj/.libs/limit.o
+depbase=`echo obj/ct_timeout.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/ct_timeout.lo -MD -MP -MF $depbase.Tpo -c -o obj/ct_timeout.lo obj/ct_timeout.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo obj/secmark.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/secmark.lo -MD -MP -MF $depbase.Tpo -c -o obj/secmark.lo obj/secmark.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo obj/ct_expect.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include    -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/ct_expect.lo -MD -MP -MF $depbase.Tpo -c -o obj/ct_expect.lo obj/ct_expect.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/synproxy.lo -MD -MP -MF obj/.deps/synproxy.Tpo -c obj/synproxy.c  -fPIC -DPIC -o obj/.libs/synproxy.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/ct_timeout.lo -MD -MP -MF obj/.deps/ct_timeout.Tpo -c obj/ct_timeout.c  -fPIC -DPIC -o obj/.libs/ct_timeout.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/secmark.lo -MD -MP -MF obj/.deps/secmark.Tpo -c obj/secmark.c  -fPIC -DPIC -o obj/.libs/secmark.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I../include -Wall -Waggregate-return -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wstrict-prototypes -Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT obj/ct_expect.lo -MD -MP -MF obj/.deps/ct_expect.Tpo -c obj/ct_expect.c  -fPIC -DPIC -o obj/.libs/ct_expect.o
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc -Wall -Waggregate-return -Wmissing-declarations 	-Wmissing-prototypes -Wshadow -Wstrict-prototypes 	-Wformat=2 -Wwrite-strings -pipe -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--version-script=./libnftnl.map -version-info 17:0:6  -o libnftnl.la -rpath /usr/lib utils.lo batch.lo flowtable.lo common.lo gen.lo table.lo trace.lo chain.lo object.lo rule.lo set.lo set_elem.lo ruleset.lo udata.lo expr.lo expr_ops.lo expr/bitwise.lo expr/byteorder.lo expr/cmp.lo expr/range.lo expr/connlimit.lo expr/counter.lo expr/ct.lo expr/data_reg.lo expr/dup.lo expr/exthdr.lo expr/flow_offload.lo expr/fib.lo expr/fwd.lo expr/last.lo expr/limit.lo expr/log.lo expr/lookup.lo expr/dynset.lo expr/immediate.lo expr/inner.lo expr/match.lo expr/meta.lo expr/numgen.lo expr/nat.lo expr/tproxy.lo expr/objref.lo expr/payload.lo expr/queue.lo expr/quota.lo expr/reject.lo expr/rt.lo expr/target.lo expr/tunnel.lo expr/masq.lo expr/redir.lo expr/hash.lo expr/socket.lo expr/synproxy.lo expr/osf.lo expr/xfrm.lo obj/counter.lo obj/ct_helper.lo obj/quota.lo obj/tunnel.lo obj/limit.lo obj/synproxy.lo obj/ct_timeout.lo obj/secmark.lo obj/ct_expect.lo -lmnl 
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/utils.o .libs/batch.o .libs/flowtable.o .libs/common.o .libs/gen.o .libs/table.o .libs/trace.o .libs/chain.o .libs/object.o .libs/rule.o .libs/set.o .libs/set_elem.o .libs/ruleset.o .libs/udata.o .libs/expr.o .libs/expr_ops.o expr/.libs/bitwise.o expr/.libs/byteorder.o expr/.libs/cmp.o expr/.libs/range.o expr/.libs/connlimit.o expr/.libs/counter.o expr/.libs/ct.o expr/.libs/data_reg.o expr/.libs/dup.o expr/.libs/exthdr.o expr/.libs/flow_offload.o expr/.libs/fib.o expr/.libs/fwd.o expr/.libs/last.o expr/.libs/limit.o expr/.libs/log.o expr/.libs/lookup.o expr/.libs/dynset.o expr/.libs/immediate.o expr/.libs/inner.o expr/.libs/match.o expr/.libs/meta.o expr/.libs/numgen.o expr/.libs/nat.o expr/.libs/tproxy.o expr/.libs/objref.o expr/.libs/payload.o expr/.libs/queue.o expr/.libs/quota.o expr/.libs/reject.o expr/.libs/rt.o expr/.libs/target.o expr/.libs/tunnel.o expr/.libs/masq.o expr/.libs/redir.o expr/.libs/hash.o expr/.libs/socket.o expr/.libs/synproxy.o expr/.libs/osf.o expr/.libs/xfrm.o obj/.libs/counter.o obj/.libs/ct_helper.o obj/.libs/quota.o obj/.libs/tunnel.o obj/.libs/limit.o obj/.libs/synproxy.o obj/.libs/ct_timeout.o obj/.libs/secmark.o obj/.libs/ct_expect.o   -lmnl  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -Wl,--version-script=./libnftnl.map   -Wl,-soname -Wl,libnftnl.so.11 -o .libs/libnftnl.so.11.6.0
+libtool: link: (cd ".libs" && rm -f "libnftnl.so.11" && ln -s "libnftnl.so.11.6.0" "libnftnl.so.11")
+libtool: link: (cd ".libs" && rm -f "libnftnl.so" && ln -s "libnftnl.so.11.6.0" "libnftnl.so")
+libtool: link: ( cd ".libs" && rm -f "libnftnl.la" && ln -s "../libnftnl.la" "libnftnl.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/src'
+Making all in include
+make[2]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/include'
+Making all in libnftnl
+make[3]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/include/libnftnl'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/include/libnftnl'
+Making all in linux
+make[3]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/include/linux'
+Making all in netfilter
+make[4]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/include/linux/netfilter'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/include/linux/netfilter'
+make[4]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/include/linux'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/include/linux'
+make[3]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/include/linux'
+make[3]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/include'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/include'
+make[2]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/include'
+Making all in examples
+make[2]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/examples'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/examples'
+Making all in tests
+make[2]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/tests'
+make[2]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6'
+make[2]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6'
+make[1]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in src
+make[1]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/src'
+make[2]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/src'
+make[2]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libnftnl.la '/home/devel/building/work/pkg/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libnftnl.so.11.6.0 /home/devel/building/work/pkg/usr/lib/libnftnl.so.11.6.0
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libnftnl.so.11.6.0 libnftnl.so.11 || { rm -f libnftnl.so.11 && ln -s libnftnl.so.11.6.0 libnftnl.so.11; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libnftnl.so.11.6.0 libnftnl.so || { rm -f libnftnl.so && ln -s libnftnl.so.11.6.0 libnftnl.so; }; })
+libtool: install: /usr/bin/install -c .libs/libnftnl.lai /home/devel/building/work/pkg/usr/lib/libnftnl.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make[2]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/src'
+make[1]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/src'
+Making install in include
+make[1]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/include'
+Making install in libnftnl
+make[2]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/include/libnftnl'
+make[3]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/include/libnftnl'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/libnftnl'
+ /usr/bin/install -c -m 644 batch.h table.h trace.h chain.h object.h rule.h expr.h set.h flowtable.h ruleset.h common.h udata.h gen.h '/home/devel/building/work/pkg/usr/include/libnftnl'
+make[3]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/include/libnftnl'
+make[2]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/include/libnftnl'
+Making install in linux
+make[2]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/include/linux'
+Making install in netfilter
+make[3]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/include/linux/netfilter'
+make[4]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/include/linux/netfilter'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/include/linux/netfilter'
+make[3]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/include/linux/netfilter'
+make[3]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/include/linux'
+make[4]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/include/linux'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/include/linux'
+make[3]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/include/linux'
+make[2]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/include/linux'
+make[2]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/include'
+make[3]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/include'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/include'
+make[2]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/include'
+make[1]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/include'
+Making install in examples
+make[1]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/examples'
+make[2]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/examples'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/examples'
+make[1]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/examples'
+Making install in tests
+make[1]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/tests'
+make[2]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/tests'
+make[1]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6/tests'
+make[1]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6'
+make[2]: Entering directory '/home/devel/building/work/src/libnftnl-1.2.6'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libnftnl.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+make[2]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6'
+make[1]: Leaving directory '/home/devel/building/work/src/libnftnl-1.2.6'
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 18:14 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 18:14 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 18:14 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 18:14 usr/include/libnftnl/
+-rw-r--r--  0 root   root      631 Feb  1 18:14 usr/include/libnftnl/batch.h
+-rw-r--r--  0 root   root     3320 Feb  1 18:14 usr/include/libnftnl/table.h
+-rw-r--r--  0 root   root     1436 Feb  1 18:14 usr/include/libnftnl/trace.h
+-rw-r--r--  0 root   root     4760 Feb  1 18:14 usr/include/libnftnl/chain.h
+-rw-r--r--  0 root   root     5183 Feb  1 18:14 usr/include/libnftnl/object.h
+-rw-r--r--  0 root   root     3875 Feb  1 18:14 usr/include/libnftnl/rule.h
+-rw-r--r--  0 root   root     7284 Feb  1 18:14 usr/include/libnftnl/expr.h
+-rw-r--r--  0 root   root     6952 Feb  1 18:14 usr/include/libnftnl/set.h
+-rw-r--r--  0 root   root     3635 Feb  1 18:14 usr/include/libnftnl/flowtable.h
+-rw-r--r--  0 root   root     2381 Feb  1 18:14 usr/include/libnftnl/ruleset.h
+-rw-r--r--  0 root   root     1288 Feb  1 18:14 usr/include/libnftnl/common.h
+-rw-r--r--  0 root   root     3869 Feb  1 18:14 usr/include/libnftnl/udata.h
+-rw-r--r--  0 root   root     1502 Feb  1 18:14 usr/include/libnftnl/gen.h
+-rwxr-xr-x  0 root   root   200696 Feb  1 18:14 usr/lib/libnftnl.so.11.6.0
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/lib/libnftnl.so.11 -> libnftnl.so.11.6.0
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/lib/libnftnl.so -> libnftnl.so.11.6.0
+drwxr-xr-x  0 root   root        0 Feb  1 18:14 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      345 Feb  1 18:14 usr/lib/pkgconfig/libnftnl.pc
+=======> Building '/home/devel/packages/libnftnl#1.2.6-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling libnftnl 1.2.6-1
+prt-get: /usr/bin/pkgadd -u libnftnl#1.2.6-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 18:14:40 2024
+

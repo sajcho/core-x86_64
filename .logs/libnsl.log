@@ -1,0 +1,259 @@
+prt-get: updating /usr/ports/core-x86_64/libnsl
+prt-get: starting build Thu Feb  1 18:15:05 2024
+=======> Building '/home/devel/packages/libnsl#2.0.1-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/libnsl-2.0.1.tar.xz
++ build
++ cd libnsl-2.0.1
++ ./configure --prefix=/usr --disable-static
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking how to run the C preprocessor... gcc -E
+checking for library containing strerror... none required
+checking whether make sets $(MAKE)... (cached) yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libtirpc... yes
+checking whether NLS is requested... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating libnsl.pc
+config.status: creating po/Makefile.in
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/libnsl-2.0.1'
+Making all in po
+make[2]: Entering directory '/home/devel/building/work/src/libnsl-2.0.1/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libnsl-2.0.1/po'
+Making all in src
+make[2]: Entering directory '/home/devel/building/work/src/libnsl-2.0.1/src'
+depbase=`echo yp_xdr.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\"  -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yp_xdr.lo -MD -MP -MF $depbase.Tpo -c -o yp_xdr.lo yp_xdr.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo do_ypcall.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\"  -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT do_ypcall.lo -MD -MP -MF $depbase.Tpo -c -o do_ypcall.lo do_ypcall.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ypprot_err.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\"  -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT ypprot_err.lo -MD -MP -MF $depbase.Tpo -c -o ypprot_err.lo ypprot_err.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo yp_master.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\"  -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yp_master.lo -MD -MP -MF $depbase.Tpo -c -o yp_master.lo yp_master.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo yp_maplist.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\"  -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yp_maplist.lo -MD -MP -MF $depbase.Tpo -c -o yp_maplist.lo yp_maplist.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo yp_order.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\"  -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yp_order.lo -MD -MP -MF $depbase.Tpo -c -o yp_order.lo yp_order.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo yp_first.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\"  -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yp_first.lo -MD -MP -MF $depbase.Tpo -c -o yp_first.lo yp_first.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo yp_next.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\"  -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yp_next.lo -MD -MP -MF $depbase.Tpo -c -o yp_next.lo yp_next.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\" -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yp_xdr.lo -MD -MP -MF .deps/yp_xdr.Tpo -c yp_xdr.c  -fPIC -DPIC -o .libs/yp_xdr.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\" -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT do_ypcall.lo -MD -MP -MF .deps/do_ypcall.Tpo -c do_ypcall.c  -fPIC -DPIC -o .libs/do_ypcall.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\" -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yp_order.lo -MD -MP -MF .deps/yp_order.Tpo -c yp_order.c  -fPIC -DPIC -o .libs/yp_order.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\" -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT ypprot_err.lo -MD -MP -MF .deps/ypprot_err.Tpo -c ypprot_err.c  -fPIC -DPIC -o .libs/ypprot_err.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\" -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yp_next.lo -MD -MP -MF .deps/yp_next.Tpo -c yp_next.c  -fPIC -DPIC -o .libs/yp_next.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\" -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yp_first.lo -MD -MP -MF .deps/yp_first.Tpo -c yp_first.c  -fPIC -DPIC -o .libs/yp_first.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\" -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yp_maplist.lo -MD -MP -MF .deps/yp_maplist.Tpo -c yp_maplist.c  -fPIC -DPIC -o .libs/yp_maplist.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\" -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yp_master.lo -MD -MP -MF .deps/yp_master.Tpo -c yp_master.c  -fPIC -DPIC -o .libs/yp_master.o
+depbase=`echo yp_match.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\"  -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yp_match.lo -MD -MP -MF $depbase.Tpo -c -o yp_match.lo yp_match.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo yperr_string.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\"  -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yperr_string.lo -MD -MP -MF $depbase.Tpo -c -o yperr_string.lo yperr_string.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ypbinderr_string.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\"  -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT ypbinderr_string.lo -MD -MP -MF $depbase.Tpo -c -o ypbinderr_string.lo ypbinderr_string.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo yp_get_default_domain.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\"  -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yp_get_default_domain.lo -MD -MP -MF $depbase.Tpo -c -o yp_get_default_domain.lo yp_get_default_domain.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo taddr2host.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\"  -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT taddr2host.lo -MD -MP -MF $depbase.Tpo -c -o taddr2host.lo taddr2host.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo taddr2ipstr.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\"  -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT taddr2ipstr.lo -MD -MP -MF $depbase.Tpo -c -o taddr2ipstr.lo taddr2ipstr.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\" -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yp_match.lo -MD -MP -MF .deps/yp_match.Tpo -c yp_match.c  -fPIC -DPIC -o .libs/yp_match.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\" -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yperr_string.lo -MD -MP -MF .deps/yperr_string.Tpo -c yperr_string.c  -fPIC -DPIC -o .libs/yperr_string.o
+depbase=`echo taddr2port.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\"  -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT taddr2port.lo -MD -MP -MF $depbase.Tpo -c -o taddr2port.lo taddr2port.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\" -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT ypbinderr_string.lo -MD -MP -MF .deps/ypbinderr_string.Tpo -c ypbinderr_string.c  -fPIC -DPIC -o .libs/ypbinderr_string.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\" -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT taddr2host.lo -MD -MP -MF .deps/taddr2host.Tpo -c taddr2host.c  -fPIC -DPIC -o .libs/taddr2host.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\" -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT taddr2ipstr.lo -MD -MP -MF .deps/taddr2ipstr.Tpo -c taddr2ipstr.c  -fPIC -DPIC -o .libs/taddr2ipstr.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\" -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT yp_get_default_domain.lo -MD -MP -MF .deps/yp_get_default_domain.Tpo -c yp_get_default_domain.c  -fPIC -DPIC -o .libs/yp_get_default_domain.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I. -I/usr/include/tirpc -DLOCALEDIR=\"/usr/share/locale\" -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT taddr2port.lo -MD -MP -MF .deps/taddr2port.Tpo -c taddr2port.c  -fPIC -DPIC -o .libs/taddr2port.o
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -W -Wall -Wbad-function-cast -Wcast-align -Winline -Wnested-externs -Wshadow -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -D_REENTRANT=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -version-info 3:0:0 -Wl,--no-undefined -Wl,--version-script=./libnsl.map  -o libnsl.la -rpath /usr/lib yp_xdr.lo do_ypcall.lo ypprot_err.lo yp_master.lo yp_maplist.lo yp_order.lo yp_first.lo yp_next.lo yp_match.lo yperr_string.lo ypbinderr_string.lo yp_get_default_domain.lo taddr2host.lo taddr2ipstr.lo taddr2port.lo -ltirpc  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/yp_xdr.o .libs/do_ypcall.o .libs/ypprot_err.o .libs/yp_master.o .libs/yp_maplist.o .libs/yp_order.o .libs/yp_first.o .libs/yp_next.o .libs/yp_match.o .libs/yperr_string.o .libs/ypbinderr_string.o .libs/yp_get_default_domain.o .libs/taddr2host.o .libs/taddr2ipstr.o .libs/taddr2port.o   -ltirpc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -Wl,--no-undefined -Wl,--version-script=./libnsl.map   -Wl,-soname -Wl,libnsl.so.3 -o .libs/libnsl.so.3.0.0
+libtool: link: (cd ".libs" && rm -f "libnsl.so.3" && ln -s "libnsl.so.3.0.0" "libnsl.so.3")
+libtool: link: (cd ".libs" && rm -f "libnsl.so" && ln -s "libnsl.so.3.0.0" "libnsl.so")
+libtool: link: ( cd ".libs" && rm -f "libnsl.la" && ln -s "../libnsl.la" "libnsl.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/libnsl-2.0.1/src'
+make[2]: Entering directory '/home/devel/building/work/src/libnsl-2.0.1'
+make[2]: Leaving directory '/home/devel/building/work/src/libnsl-2.0.1'
+make[1]: Leaving directory '/home/devel/building/work/src/libnsl-2.0.1'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in po
+make[1]: Entering directory '/home/devel/building/work/src/libnsl-2.0.1/po'
+if test "libnsl" = "gettext-tools"; then \
+  /bin/mkdir -p /home/devel/building/work/pkg/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /home/devel/building/work/pkg/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/devel/building/work/pkg/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/devel/building/work/src/libnsl-2.0.1/po'
+Making install in src
+make[1]: Entering directory '/home/devel/building/work/src/libnsl-2.0.1/src'
+make[2]: Entering directory '/home/devel/building/work/src/libnsl-2.0.1/src'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/rpcsvc'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libnsl.la '/home/devel/building/work/pkg/usr/lib'
+ /usr/bin/install -c -m 644 rpcsvc/ypclnt.h rpcsvc/ypupd.h rpcsvc/yp_prot.h rpcsvc/yp.x rpcsvc/yp.h rpcsvc/yppasswd.x rpcsvc/yppasswd.h '/home/devel/building/work/pkg/usr/include/rpcsvc'
+libtool: install: /usr/bin/install -c .libs/libnsl.so.3.0.0 /home/devel/building/work/pkg/usr/lib/libnsl.so.3.0.0
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libnsl.so.3.0.0 libnsl.so.3 || { rm -f libnsl.so.3 && ln -s libnsl.so.3.0.0 libnsl.so.3; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libnsl.so.3.0.0 libnsl.so || { rm -f libnsl.so && ln -s libnsl.so.3.0.0 libnsl.so; }; })
+libtool: install: /usr/bin/install -c .libs/libnsl.lai /home/devel/building/work/pkg/usr/lib/libnsl.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make[2]: Leaving directory '/home/devel/building/work/src/libnsl-2.0.1/src'
+make[1]: Leaving directory '/home/devel/building/work/src/libnsl-2.0.1/src'
+make[1]: Entering directory '/home/devel/building/work/src/libnsl-2.0.1'
+make[2]: Entering directory '/home/devel/building/work/src/libnsl-2.0.1'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libnsl.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+make[2]: Leaving directory '/home/devel/building/work/src/libnsl-2.0.1'
+make[1]: Leaving directory '/home/devel/building/work/src/libnsl-2.0.1'
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 18:15 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 18:15 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 18:15 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 18:15 usr/include/rpcsvc/
+-rw-r--r--  0 root   root     3481 Feb  1 18:15 usr/include/rpcsvc/ypclnt.h
+-rw-r--r--  0 root   root     3027 Feb  1 18:15 usr/include/rpcsvc/ypupd.h
+-rw-r--r--  0 root   root    14920 Feb  1 18:15 usr/include/rpcsvc/yp_prot.h
+-rw-r--r--  0 root   root     6981 Feb  1 18:15 usr/include/rpcsvc/yp.x
+-rw-r--r--  0 root   root     7964 Feb  1 18:15 usr/include/rpcsvc/yp.h
+-rw-r--r--  0 root   root     2286 Feb  1 18:15 usr/include/rpcsvc/yppasswd.x
+-rw-r--r--  0 root   root      913 Feb  1 18:15 usr/include/rpcsvc/yppasswd.h
+-rwxr-xr-x  0 root   root    31232 Feb  1 18:15 usr/lib/libnsl.so.3.0.0
+lrwxrwxrwx  0 root   root        0 Feb  1 18:15 usr/lib/libnsl.so.3 -> libnsl.so.3.0.0
+lrwxrwxrwx  0 root   root        0 Feb  1 18:15 usr/lib/libnsl.so -> libnsl.so.3.0.0
+drwxr-xr-x  0 root   root        0 Feb  1 18:15 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      282 Feb  1 18:15 usr/lib/pkgconfig/libnsl.pc
+=======> Building '/home/devel/packages/libnsl#2.0.1-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling libnsl 2.0.1-1
+prt-get: /usr/bin/pkgadd -u libnsl#2.0.1-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 18:15:08 2024
+

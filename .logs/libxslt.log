@@ -1,0 +1,548 @@
+prt-get: updating /usr/ports/opt-x86_64/libxslt
+prt-get: starting build Thu Feb  1 18:22:25 2024
+=======> Building '/home/devel/packages/libxslt#1.1.39-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/libxslt-1.1.39.tar.xz
++ build
++ cd libxslt-1.1.39
++ ./configure --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --prefix=/usr --disable-static --without-python --without-crypto
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for x86_64-unknown-linux-gnu-gcc... x86_64-unknown-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... yes
+checking for x86_64-unknown-linux-gnu-gcc option to enable C11 features... none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking dependency style of x86_64-unknown-linux-gnu-gcc... gcc3
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking whether make supports nested variables... (cached) yes
+checking for x86_64-unknown-linux-gnu-gcc... (cached) x86_64-unknown-linux-gnu-gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... (cached) yes
+checking for x86_64-unknown-linux-gnu-gcc option to enable C11 features... (cached) none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... (cached) yes
+checking how to run the C preprocessor... x86_64-unknown-linux-gnu-gcc -E
+checking for xmllint... /usr/bin/xmllint
+checking for xsltproc... /usr/bin/xsltproc
+checking for x86_64-unknown-linux-gnu-pkg-config... /usr/bin/x86_64-unknown-linux-gnu-pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-unknown-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/x86_64-unknown-linux-gnu-nm -B
+checking the name lister (/usr/bin/x86_64-unknown-linux-gnu-nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-unknown-linux-gnu-objdump... x86_64-unknown-linux-gnu-objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-unknown-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-unknown-linux-gnu-ar... x86_64-unknown-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-unknown-linux-gnu-strip... x86_64-unknown-linux-gnu-strip
+checking for x86_64-unknown-linux-gnu-ranlib... x86_64-unknown-linux-gnu-ranlib
+checking command to parse /usr/bin/x86_64-unknown-linux-gnu-nm -B output from x86_64-unknown-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for x86_64-unknown-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-unknown-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-unknown-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-unknown-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-unknown-linux-gnu-gcc static flag -static works... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-unknown-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for cos in -lm... yes
+checking for sys/types.h... (cached) yes
+checking for sys/time.h... yes
+checking for unistd.h... (cached) yes
+checking how to pass version script to the linker (/usr/bin/ld -m elf_x86_64)... checking whether the linker accepts -Wl,--undefined-version... yes
+ -Wl,--undefined-version -Wl,--version-script=
+checking for pthread.h... yes
+checking for pthread_join in -lpthread... yes
+checking for locale.h... yes
+checking for xlocale.h... no
+checking for strxfrm_l... yes
+checking for sys/timeb.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/select.h... yes
+checking for stat... yes
+checking for _stat... no
+checking for gettimeofday... yes
+checking for localtime_r... yes
+checking for gmtime_r... yes
+checking for ftime... yes
+checking for snprintf... yes
+checking for vsnprintf... yes
+checking for clock_gettime... yes
+checking for perl... perl
+Disabling crypto support
+Enabling debugger
+Enabling profiler
+checking for x86_64-unknown-linux-gnu-xml2-config... no
+checking for xml2-config... /usr/bin/xml2-config
+checking for LIBXML... yes
+checking whether shared libraries will be built (required for plugins)... yes
+checking libxml2 module support... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libxslt.pc
+config.status: creating libexslt.pc
+config.status: creating libxslt-config.cmake
+config.status: creating libxslt/Makefile
+config.status: creating libxslt/xsltconfig.h
+config.status: creating libexslt/Makefile
+config.status: creating libexslt/exsltconfig.h
+config.status: creating xsltproc/Makefile
+config.status: creating python/Makefile
+config.status: creating python/setup.py
+config.status: creating python/tests/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/xmlspec/Makefile
+config.status: creating tests/multiple/Makefile
+config.status: creating tests/xinclude/Makefile
+config.status: creating tests/XSLTMark/Makefile
+config.status: creating tests/docbook/Makefile
+config.status: creating tests/fuzz/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/devhelp/Makefile
+config.status: creating doc/EXSLT/devhelp/Makefile
+config.status: creating libxslt.spec
+config.status: creating xslt-config
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
++ sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39'
+Making all in libxslt
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/libxslt'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT attrvt.lo -MD -MP -MF .deps/attrvt.Tpo -c -o attrvt.lo attrvt.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xslt.lo -MD -MP -MF .deps/xslt.Tpo -c -o xslt.lo xslt.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xsltlocale.lo -MD -MP -MF .deps/xsltlocale.Tpo -c -o xsltlocale.lo xsltlocale.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xsltutils.lo -MD -MP -MF .deps/xsltutils.Tpo -c -o xsltutils.lo xsltutils.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT pattern.lo -MD -MP -MF .deps/pattern.Tpo -c -o pattern.lo pattern.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT templates.lo -MD -MP -MF .deps/templates.Tpo -c -o templates.lo templates.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT variables.lo -MD -MP -MF .deps/variables.Tpo -c -o variables.lo variables.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT keys.lo -MD -MP -MF .deps/keys.Tpo -c -o keys.lo keys.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xsltutils.lo -MD -MP -MF .deps/xsltutils.Tpo -c xsltutils.c  -fPIC -DPIC -o .libs/xsltutils.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT pattern.lo -MD -MP -MF .deps/pattern.Tpo -c pattern.c  -fPIC -DPIC -o .libs/pattern.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xslt.lo -MD -MP -MF .deps/xslt.Tpo -c xslt.c  -fPIC -DPIC -o .libs/xslt.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT templates.lo -MD -MP -MF .deps/templates.Tpo -c templates.c  -fPIC -DPIC -o .libs/templates.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT keys.lo -MD -MP -MF .deps/keys.Tpo -c keys.c  -fPIC -DPIC -o .libs/keys.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT attrvt.lo -MD -MP -MF .deps/attrvt.Tpo -c attrvt.c  -fPIC -DPIC -o .libs/attrvt.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT variables.lo -MD -MP -MF .deps/variables.Tpo -c variables.c  -fPIC -DPIC -o .libs/variables.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xsltlocale.lo -MD -MP -MF .deps/xsltlocale.Tpo -c xsltlocale.c  -fPIC -DPIC -o .libs/xsltlocale.o
+mv -f .deps/attrvt.Tpo .deps/attrvt.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT numbers.lo -MD -MP -MF .deps/numbers.Tpo -c -o numbers.lo numbers.c
+mv -f .deps/xsltlocale.Tpo .deps/xsltlocale.Plo
+mv -f .deps/templates.Tpo .deps/templates.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT extensions.lo -MD -MP -MF .deps/extensions.Tpo -c -o extensions.lo extensions.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT extra.lo -MD -MP -MF .deps/extra.Tpo -c -o extra.lo extra.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT numbers.lo -MD -MP -MF .deps/numbers.Tpo -c numbers.c  -fPIC -DPIC -o .libs/numbers.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT extra.lo -MD -MP -MF .deps/extra.Tpo -c extra.c  -fPIC -DPIC -o .libs/extra.o
+mv -f .deps/keys.Tpo .deps/keys.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT functions.lo -MD -MP -MF .deps/functions.Tpo -c -o functions.lo functions.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT extensions.lo -MD -MP -MF .deps/extensions.Tpo -c extensions.c  -fPIC -DPIC -o .libs/extensions.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT functions.lo -MD -MP -MF .deps/functions.Tpo -c functions.c  -fPIC -DPIC -o .libs/functions.o
+mv -f .deps/extra.Tpo .deps/extra.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT namespaces.lo -MD -MP -MF .deps/namespaces.Tpo -c -o namespaces.lo namespaces.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT namespaces.lo -MD -MP -MF .deps/namespaces.Tpo -c namespaces.c  -fPIC -DPIC -o .libs/namespaces.o
+mv -f .deps/variables.Tpo .deps/variables.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT imports.lo -MD -MP -MF .deps/imports.Tpo -c -o imports.lo imports.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT imports.lo -MD -MP -MF .deps/imports.Tpo -c imports.c  -fPIC -DPIC -o .libs/imports.o
+mv -f .deps/namespaces.Tpo .deps/namespaces.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT attributes.lo -MD -MP -MF .deps/attributes.Tpo -c -o attributes.lo attributes.c
+mv -f .deps/functions.Tpo .deps/functions.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT documents.lo -MD -MP -MF .deps/documents.Tpo -c -o documents.lo documents.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT documents.lo -MD -MP -MF .deps/documents.Tpo -c documents.c  -fPIC -DPIC -o .libs/documents.o
+mv -f .deps/numbers.Tpo .deps/numbers.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT preproc.lo -MD -MP -MF .deps/preproc.Tpo -c -o preproc.lo preproc.c
+mv -f .deps/imports.Tpo .deps/imports.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT transform.lo -MD -MP -MF .deps/transform.Tpo -c -o transform.lo transform.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT attributes.lo -MD -MP -MF .deps/attributes.Tpo -c attributes.c  -fPIC -DPIC -o .libs/attributes.o
+mv -f .deps/extensions.Tpo .deps/extensions.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT security.lo -MD -MP -MF .deps/security.Tpo -c -o security.lo security.c
+mv -f .deps/xsltutils.Tpo .deps/xsltutils.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT preproc.lo -MD -MP -MF .deps/preproc.Tpo -c preproc.c  -fPIC -DPIC -o .libs/preproc.o
+mv -f .deps/pattern.Tpo .deps/pattern.Plo
+mv -f .deps/xslt.Tpo .deps/xslt.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT security.lo -MD -MP -MF .deps/security.Tpo -c security.c  -fPIC -DPIC -o .libs/security.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT transform.lo -MD -MP -MF .deps/transform.Tpo -c transform.c  -fPIC -DPIC -o .libs/transform.o
+mv -f .deps/documents.Tpo .deps/documents.Plo
+mv -f .deps/security.Tpo .deps/security.Plo
+mv -f .deps/attributes.Tpo .deps/attributes.Plo
+mv -f .deps/preproc.Tpo .deps/preproc.Plo
+mv -f .deps/transform.Tpo .deps/transform.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -no-undefined -Wl,--undefined-version -Wl,--version-script=./libxslt.syms -version-info 2:39:1  -o libxslt.la -rpath /usr/lib attrvt.lo xslt.lo xsltlocale.lo xsltutils.lo pattern.lo templates.lo variables.lo keys.lo numbers.lo extensions.lo extra.lo functions.lo namespaces.lo imports.lo attributes.lo documents.lo preproc.lo transform.lo security.lo -lxml2  -lm 
+libtool: link: x86_64-unknown-linux-gnu-gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/attrvt.o .libs/xslt.o .libs/xsltlocale.o .libs/xsltutils.o .libs/pattern.o .libs/templates.o .libs/variables.o .libs/keys.o .libs/numbers.o .libs/extensions.o .libs/extra.o .libs/functions.o .libs/namespaces.o .libs/imports.o .libs/attributes.o .libs/documents.o .libs/preproc.o .libs/transform.o .libs/security.o   -lxml2 -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -Wl,--undefined-version -Wl,--version-script=./libxslt.syms   -Wl,-soname -Wl,libxslt.so.1 -o .libs/libxslt.so.1.1.39
+libtool: link: (cd ".libs" && rm -f "libxslt.so.1" && ln -s "libxslt.so.1.1.39" "libxslt.so.1")
+libtool: link: (cd ".libs" && rm -f "libxslt.so" && ln -s "libxslt.so.1.1.39" "libxslt.so")
+libtool: link: ( cd ".libs" && rm -f "libxslt.la" && ln -s "../libxslt.la" "libxslt.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/libxslt'
+Making all in libexslt
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/libexslt'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-exslt.lo -MD -MP -MF .deps/libexslt_la-exslt.Tpo -c -o libexslt_la-exslt.lo `test -f 'exslt.c' || echo './'`exslt.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-common.lo -MD -MP -MF .deps/libexslt_la-common.Tpo -c -o libexslt_la-common.lo `test -f 'common.c' || echo './'`common.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-crypto.lo -MD -MP -MF .deps/libexslt_la-crypto.Tpo -c -o libexslt_la-crypto.lo `test -f 'crypto.c' || echo './'`crypto.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-math.lo -MD -MP -MF .deps/libexslt_la-math.Tpo -c -o libexslt_la-math.lo `test -f 'math.c' || echo './'`math.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-sets.lo -MD -MP -MF .deps/libexslt_la-sets.Tpo -c -o libexslt_la-sets.lo `test -f 'sets.c' || echo './'`sets.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-functions.lo -MD -MP -MF .deps/libexslt_la-functions.Tpo -c -o libexslt_la-functions.lo `test -f 'functions.c' || echo './'`functions.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-strings.lo -MD -MP -MF .deps/libexslt_la-strings.Tpo -c -o libexslt_la-strings.lo `test -f 'strings.c' || echo './'`strings.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-date.lo -MD -MP -MF .deps/libexslt_la-date.Tpo -c -o libexslt_la-date.lo `test -f 'date.c' || echo './'`date.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-common.lo -MD -MP -MF .deps/libexslt_la-common.Tpo -c common.c  -fPIC -DPIC -o .libs/libexslt_la-common.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-strings.lo -MD -MP -MF .deps/libexslt_la-strings.Tpo -c strings.c  -fPIC -DPIC -o .libs/libexslt_la-strings.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-exslt.lo -MD -MP -MF .deps/libexslt_la-exslt.Tpo -c exslt.c  -fPIC -DPIC -o .libs/libexslt_la-exslt.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-math.lo -MD -MP -MF .deps/libexslt_la-math.Tpo -c math.c  -fPIC -DPIC -o .libs/libexslt_la-math.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-functions.lo -MD -MP -MF .deps/libexslt_la-functions.Tpo -c functions.c  -fPIC -DPIC -o .libs/libexslt_la-functions.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-sets.lo -MD -MP -MF .deps/libexslt_la-sets.Tpo -c sets.c  -fPIC -DPIC -o .libs/libexslt_la-sets.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-crypto.lo -MD -MP -MF .deps/libexslt_la-crypto.Tpo -c crypto.c  -fPIC -DPIC -o .libs/libexslt_la-crypto.o
+mv -f .deps/libexslt_la-exslt.Tpo .deps/libexslt_la-exslt.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-saxon.lo -MD -MP -MF .deps/libexslt_la-saxon.Tpo -c -o libexslt_la-saxon.lo `test -f 'saxon.c' || echo './'`saxon.c
+mv -f .deps/libexslt_la-common.Tpo .deps/libexslt_la-common.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-dynamic.lo -MD -MP -MF .deps/libexslt_la-dynamic.Tpo -c -o libexslt_la-dynamic.lo `test -f 'dynamic.c' || echo './'`dynamic.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-date.lo -MD -MP -MF .deps/libexslt_la-date.Tpo -c date.c  -fPIC -DPIC -o .libs/libexslt_la-date.o
+mv -f .deps/libexslt_la-crypto.Tpo .deps/libexslt_la-crypto.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-dynamic.lo -MD -MP -MF .deps/libexslt_la-dynamic.Tpo -c dynamic.c  -fPIC -DPIC -o .libs/libexslt_la-dynamic.o
+mv -f .deps/libexslt_la-sets.Tpo .deps/libexslt_la-sets.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libexslt_la-saxon.lo -MD -MP -MF .deps/libexslt_la-saxon.Tpo -c saxon.c  -fPIC -DPIC -o .libs/libexslt_la-saxon.o
+mv -f .deps/libexslt_la-dynamic.Tpo .deps/libexslt_la-dynamic.Plo
+mv -f .deps/libexslt_la-functions.Tpo .deps/libexslt_la-functions.Plo
+mv -f .deps/libexslt_la-saxon.Tpo .deps/libexslt_la-saxon.Plo
+mv -f .deps/libexslt_la-strings.Tpo .deps/libexslt_la-strings.Plo
+mv -f .deps/libexslt_la-math.Tpo .deps/libexslt_la-math.Plo
+mv -f .deps/libexslt_la-date.Tpo .deps/libexslt_la-date.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -no-undefined -version-info 8:21:8  -o libexslt.la -rpath /usr/lib libexslt_la-exslt.lo libexslt_la-common.lo libexslt_la-crypto.lo libexslt_la-math.lo libexslt_la-sets.lo libexslt_la-functions.lo libexslt_la-strings.lo libexslt_la-date.lo libexslt_la-saxon.lo libexslt_la-dynamic.lo ../libxslt/libxslt.la -lxml2   -lm 
+libtool: link: x86_64-unknown-linux-gnu-gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/libexslt_la-exslt.o .libs/libexslt_la-common.o .libs/libexslt_la-crypto.o .libs/libexslt_la-math.o .libs/libexslt_la-sets.o .libs/libexslt_la-functions.o .libs/libexslt_la-strings.o .libs/libexslt_la-date.o .libs/libexslt_la-saxon.o .libs/libexslt_la-dynamic.o   -Wl,-rpath -Wl,/home/devel/building/work/src/libxslt-1.1.39/libxslt/.libs ../libxslt/.libs/libxslt.so -lxml2 -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,libexslt.so.0 -o .libs/libexslt.so.0.8.21
+libtool: link: (cd ".libs" && rm -f "libexslt.so.0" && ln -s "libexslt.so.0.8.21" "libexslt.so.0")
+libtool: link: (cd ".libs" && rm -f "libexslt.so" && ln -s "libexslt.so.0.8.21" "libexslt.so")
+libtool: link: ( cd ".libs" && rm -f "libexslt.la" && ln -s "../libexslt.la" "libexslt.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/libexslt'
+Making all in xsltproc
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/xsltproc'
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I../libxslt -I../libexslt -I.. -I../libxslt -I../libexslt  -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xsltproc.o -MD -MP -MF .deps/xsltproc.Tpo -c -o xsltproc.o xsltproc.c
+mv -f .deps/xsltproc.Tpo .deps/xsltproc.Po
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o xsltproc xsltproc.o ../libxslt/libxslt.la ../libexslt/libexslt.la -lxml2  -lm 
+libtool: link: x86_64-unknown-linux-gnu-gcc -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/xsltproc xsltproc.o  ../libxslt/.libs/libxslt.so ../libexslt/.libs/libexslt.so -lxml2 -lm
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/xsltproc'
+Making all in doc
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/doc'
+Making all in devhelp
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/doc/devhelp'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/doc/devhelp'
+Making all in EXSLT/devhelp
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/doc/EXSLT/devhelp'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/doc/EXSLT/devhelp'
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/doc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/doc'
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/doc'
+Making all in tests
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests'
+Making all in xmlspec
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/xmlspec'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/xmlspec'
+Making all in multiple
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/multiple'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/multiple'
+Making all in xinclude
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/xinclude'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/xinclude'
+Making all in XSLTMark
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/XSLTMark'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/XSLTMark'
+Making all in docbook
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/docbook'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/docbook'
+Making all in fuzz
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/fuzz'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/fuzz'
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests'
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests'
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39'
+sed -e 's?\@XSLT_LIBDIR\@?-L/usr/lib?g' \
+    -e 's?\@XSLT_INCLUDEDIR\@?-I/usr/include?g' \
+    -e 's?\@VERSION\@?1.1.39?g' \
+    -e 's?\@XSLT_LIBS\@?-lxslt -lxml2 ?g' \
+    -e 's?\@XSLT_PRIVATE_LIBS\@?-lm?g' \
+       < ./xsltConf.sh.in > xsltConf.tmp \
+&& mv xsltConf.tmp xsltConf.sh
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39'
+make[1]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in libxslt
+make[1]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/libxslt'
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/libxslt'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/libxslt'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man3'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/libxslt'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libxslt.la '/home/devel/building/work/pkg/usr/lib'
+ /usr/bin/install -c -m 644 xsltconfig.h '/home/devel/building/work/pkg/usr/include/libxslt'
+ /usr/bin/install -c -m 644 xslt.h xsltutils.h pattern.h templates.h variables.h keys.h numbersInternals.h extensions.h extra.h functions.h namespaces.h imports.h attributes.h documents.h preproc.h transform.h security.h xsltInternals.h xsltexports.h xsltlocale.h '/home/devel/building/work/pkg/usr/include/libxslt'
+ /usr/bin/install -c -m 644 libxslt.3 '/home/devel/building/work/pkg/usr/share/man/man3'
+libtool: install: /usr/bin/install -c .libs/libxslt.so.1.1.39 /home/devel/building/work/pkg/usr/lib/libxslt.so.1.1.39
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libxslt.so.1.1.39 libxslt.so.1 || { rm -f libxslt.so.1 && ln -s libxslt.so.1.1.39 libxslt.so.1; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libxslt.so.1.1.39 libxslt.so || { rm -f libxslt.so && ln -s libxslt.so.1.1.39 libxslt.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxslt.lai /home/devel/building/work/pkg/usr/lib/libxslt.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make  install-exec-hook
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/libxslt'
+/bin/mkdir -p "/home/devel/building/work/pkg/usr/lib/libxslt-plugins"
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/libxslt'
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/libxslt'
+make[1]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/libxslt'
+Making install in libexslt
+make[1]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/libexslt'
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/libexslt'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/libexslt'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libexslt.la '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/libexslt'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man3'
+ /usr/bin/install -c -m 644 exslt.h exsltexports.h '/home/devel/building/work/pkg/usr/include/libexslt'
+ /usr/bin/install -c -m 644 exsltconfig.h '/home/devel/building/work/pkg/usr/include/libexslt'
+ /usr/bin/install -c -m 644 libexslt.3 '/home/devel/building/work/pkg/usr/share/man/man3'
+libtool: warning: relinking 'libexslt.la'
+libtool: install: (cd /home/devel/building/work/src/libxslt-1.1.39/libexslt; /bin/sh "/home/devel/building/work/src/libxslt-1.1.39/libtool"  --tag CC --mode=relink x86_64-unknown-linux-gnu-gcc -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Waggregate-return -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Winline -Wredundant-decls -I/usr/include/libxml2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -no-undefined -version-info 8:21:8 -o libexslt.la -rpath /usr/lib libexslt_la-exslt.lo libexslt_la-common.lo libexslt_la-crypto.lo libexslt_la-math.lo libexslt_la-sets.lo libexslt_la-functions.lo libexslt_la-strings.lo libexslt_la-date.lo libexslt_la-saxon.lo libexslt_la-dynamic.lo ../libxslt/libxslt.la -lxml2 -lm -inst-prefix-dir /home/devel/building/work/pkg)
+libtool: relink: x86_64-unknown-linux-gnu-gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/libexslt_la-exslt.o .libs/libexslt_la-common.o .libs/libexslt_la-crypto.o .libs/libexslt_la-math.o .libs/libexslt_la-sets.o .libs/libexslt_la-functions.o .libs/libexslt_la-strings.o .libs/libexslt_la-date.o .libs/libexslt_la-saxon.o .libs/libexslt_la-dynamic.o   -L/home/devel/building/work/pkg/usr/lib -L/usr/lib -lxslt -lxml2 -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,libexslt.so.0 -o .libs/libexslt.so.0.8.21
+libtool: install: /usr/bin/install -c .libs/libexslt.so.0.8.21T /home/devel/building/work/pkg/usr/lib/libexslt.so.0.8.21
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libexslt.so.0.8.21 libexslt.so.0 || { rm -f libexslt.so.0 && ln -s libexslt.so.0.8.21 libexslt.so.0; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libexslt.so.0.8.21 libexslt.so || { rm -f libexslt.so && ln -s libexslt.so.0.8.21 libexslt.so; }; })
+libtool: install: /usr/bin/install -c .libs/libexslt.lai /home/devel/building/work/pkg/usr/lib/libexslt.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/libexslt'
+make[1]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/libexslt'
+Making install in xsltproc
+make[1]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/xsltproc'
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/xsltproc'
+make[2]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c xsltproc '/home/devel/building/work/pkg/usr/bin'
+libtool: warning: '../libxslt/libxslt.la' has not been installed in '/usr/lib'
+libtool: warning: '../libexslt/libexslt.la' has not been installed in '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/xsltproc /home/devel/building/work/pkg/usr/bin/xsltproc
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/xsltproc'
+make[1]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/xsltproc'
+Making install in doc
+make[1]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/doc'
+Making install in devhelp
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/doc/devhelp'
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/doc/devhelp'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/gtk-doc/html/libxslt'
+ /usr/bin/install -c -m 644 libxslt.devhelp2 general.html index.html libxslt-attributes.html libxslt-documents.html libxslt-extensions.html libxslt-extra.html libxslt-functions.html libxslt-imports.html libxslt-keys.html libxslt-namespaces.html libxslt-numbersInternals.html libxslt-pattern.html libxslt-preproc.html libxslt-security.html libxslt-templates.html libxslt-transform.html libxslt-variables.html libxslt-xsltexports.html libxslt-xslt.html libxslt-xsltInternals.html libxslt-xsltlocale.html libxslt-xsltutils.html home.png left.png right.png up.png style.css '/home/devel/building/work/pkg/usr/share/gtk-doc/html/libxslt'
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/doc/devhelp'
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/doc/devhelp'
+Making install in EXSLT/devhelp
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/doc/EXSLT/devhelp'
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/doc/EXSLT/devhelp'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/gtk-doc/html/libexslt'
+ /usr/bin/install -c -m 644 libexslt.devhelp2 general.html index.html libexslt-exsltexports.html libexslt-exslt.html home.png left.png right.png up.png style.css '/home/devel/building/work/pkg/usr/share/gtk-doc/html/libexslt'
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/doc/EXSLT/devhelp'
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/doc/EXSLT/devhelp'
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/doc'
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/libxslt'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man1'
+ /usr/bin/install -c -m 644 xsltproc.1 '/home/devel/building/work/pkg/usr/share/man/man1'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/libxslt/tutorial2'
+ /usr/bin/install -c -m 644  tutorial2/libxslt_pipes.c tutorial2/libxslt_pipes.html '/home/devel/building/work/pkg/usr/share/doc/libxslt/tutorial2'
+ /usr/bin/install -c -m 644  xsltproc.html '/home/devel/building/work/pkg/usr/share/doc/libxslt/.'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/libxslt/tutorial'
+ /usr/bin/install -c -m 644  tutorial/libxslt_tutorial.c tutorial/libxslttutorial.html '/home/devel/building/work/pkg/usr/share/doc/libxslt/tutorial'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/libxslt/tutorial/images/callouts'
+ /usr/bin/install -c -m 644  tutorial/images/callouts/1.png tutorial/images/callouts/10.png tutorial/images/callouts/2.png tutorial/images/callouts/3.png tutorial/images/callouts/4.png tutorial/images/callouts/5.png tutorial/images/callouts/6.png tutorial/images/callouts/7.png tutorial/images/callouts/8.png tutorial/images/callouts/9.png '/home/devel/building/work/pkg/usr/share/doc/libxslt/tutorial/images/callouts'
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/doc'
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/doc'
+make[1]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/doc'
+Making install in tests
+make[1]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests'
+Making install in xmlspec
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/xmlspec'
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/xmlspec'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/xmlspec'
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/xmlspec'
+Making install in multiple
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/multiple'
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/multiple'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/multiple'
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/multiple'
+Making install in xinclude
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/xinclude'
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/xinclude'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/xinclude'
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/xinclude'
+Making install in XSLTMark
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/XSLTMark'
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/XSLTMark'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/XSLTMark'
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/XSLTMark'
+Making install in docbook
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/docbook'
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/docbook'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/docbook'
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/docbook'
+Making install in fuzz
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/fuzz'
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests/fuzz'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/fuzz'
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests/fuzz'
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests'
+make[3]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests'
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests'
+make[1]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39/tests'
+make[1]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39'
+make[2]: Entering directory '/home/devel/building/work/src/libxslt-1.1.39'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/cmake/libxslt'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/cmake/libxslt'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/aclocal'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libxslt-config.cmake '/home/devel/building/work/pkg/usr/lib/cmake/libxslt'
+ /usr/bin/install -c -m 644 FindGcrypt.cmake '/home/devel/building/work/pkg/usr/lib/cmake/libxslt'
+ /usr/bin/install -c xslt-config '/home/devel/building/work/pkg/usr/bin'
+ /usr/bin/install -c -m 644 xsltConf.sh '/home/devel/building/work/pkg/usr/lib'
+ /usr/bin/install -c -m 644 libxslt.m4 '/home/devel/building/work/pkg/usr/share/aclocal'
+ /usr/bin/install -c -m 644 libxslt.pc libexslt.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+make[2]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39'
+make[1]: Leaving directory '/home/devel/building/work/src/libxslt-1.1.39'
++ rm -r /home/devel/building/work/pkg/usr/share/gtk-doc /home/devel/building/work/pkg/usr/share/doc
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 18:22 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 18:22 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 18:22 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 18:22 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 18:22 usr/bin/
+-rwxr-xr-x  0 root   root    27168 Feb  1 18:22 usr/bin/xsltproc
+-rwxr-xr-x  0 root   root     2554 Feb  1 18:22 usr/bin/xslt-config
+drwxr-xr-x  0 root   root        0 Feb  1 18:22 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb  1 18:22 usr/share/aclocal/
+-rw-r--r--  0 root   root     8016 Feb  1 18:22 usr/share/aclocal/libxslt.m4
+drwxr-xr-x  0 root   root        0 Feb  1 18:22 usr/share/man/man3/
+drwxr-xr-x  0 root   root        0 Feb  1 18:22 usr/share/man/man1/
+-rw-r--r--  0 root   root     3465 Feb  1 18:22 usr/share/man/man1/xsltproc.1.gz
+-rw-r--r--  0 root   root      475 Feb  1 18:22 usr/share/man/man3/libxslt.3.gz
+-rw-r--r--  0 root   root     1910 Feb  1 18:22 usr/share/man/man3/libexslt.3.gz
+drwxr-xr-x  0 root   root        0 Feb  1 18:22 usr/include/libxslt/
+drwxr-xr-x  0 root   root        0 Feb  1 18:22 usr/include/libexslt/
+-rw-r--r--  0 root   root     3114 Feb  1 18:22 usr/include/libexslt/exslt.h
+-rw-r--r--  0 root   root     1077 Feb  1 18:22 usr/include/libexslt/exsltexports.h
+-rw-r--r--  0 root   root     1172 Feb  1 18:22 usr/include/libexslt/exsltconfig.h
+-rw-r--r--  0 root   root     3660 Feb  1 18:22 usr/include/libxslt/xsltconfig.h
+-rw-r--r--  0 root   root     1964 Feb  1 18:22 usr/include/libxslt/xslt.h
+-rw-r--r--  0 root   root     9085 Feb  1 18:22 usr/include/libxslt/xsltutils.h
+-rw-r--r--  0 root   root     2110 Feb  1 18:22 usr/include/libxslt/pattern.h
+-rw-r--r--  0 root   root     2268 Feb  1 18:22 usr/include/libxslt/templates.h
+-rw-r--r--  0 root   root     3143 Feb  1 18:22 usr/include/libxslt/variables.h
+-rw-r--r--  0 root   root     1155 Feb  1 18:22 usr/include/libxslt/keys.h
+-rw-r--r--  0 root   root     2019 Feb  1 18:22 usr/include/libxslt/numbersInternals.h
+-rw-r--r--  0 root   root     6899 Feb  1 18:22 usr/include/libxslt/extensions.h
+-rw-r--r--  0 root   root     1640 Feb  1 18:22 usr/include/libxslt/extra.h
+-rw-r--r--  0 root   root     1972 Feb  1 18:22 usr/include/libxslt/functions.h
+-rw-r--r--  0 root   root     1666 Feb  1 18:22 usr/include/libxslt/namespaces.h
+-rw-r--r--  0 root   root     1840 Feb  1 18:22 usr/include/libxslt/imports.h
+-rw-r--r--  0 root   root      957 Feb  1 18:22 usr/include/libxslt/attributes.h
+-rw-r--r--  0 root   root     2704 Feb  1 18:22 usr/include/libxslt/documents.h
+-rw-r--r--  0 root   root      896 Feb  1 18:22 usr/include/libxslt/preproc.h
+-rw-r--r--  0 root   root     6311 Feb  1 18:22 usr/include/libxslt/transform.h
+-rw-r--r--  0 root   root     2652 Feb  1 18:22 usr/include/libxslt/security.h
+-rw-r--r--  0 root   root    57894 Feb  1 18:22 usr/include/libxslt/xsltInternals.h
+-rw-r--r--  0 root   root     1124 Feb  1 18:22 usr/include/libxslt/xsltexports.h
+-rw-r--r--  0 root   root      942 Feb  1 18:22 usr/include/libxslt/xsltlocale.h
+-rwxr-xr-x  0 root   root   267264 Feb  1 18:22 usr/lib/libxslt.so.1.1.39
+lrwxrwxrwx  0 root   root        0 Feb  1 18:22 usr/lib/libxslt.so.1 -> libxslt.so.1.1.39
+lrwxrwxrwx  0 root   root        0 Feb  1 18:22 usr/lib/libxslt.so -> libxslt.so.1.1.39
+drwxr-xr-x  0 root   root        0 Feb  1 18:22 usr/lib/libxslt-plugins/
+-rwxr-xr-x  0 root   root    89168 Feb  1 18:22 usr/lib/libexslt.so.0.8.21
+lrwxrwxrwx  0 root   root        0 Feb  1 18:22 usr/lib/libexslt.so.0 -> libexslt.so.0.8.21
+lrwxrwxrwx  0 root   root        0 Feb  1 18:22 usr/lib/libexslt.so -> libexslt.so.0.8.21
+drwxr-xr-x  0 root   root        0 Feb  1 18:22 usr/lib/cmake/
+drwxr-xr-x  0 root   root        0 Feb  1 18:22 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      190 Feb  1 18:22 usr/lib/xsltConf.sh
+-rw-r--r--  0 root   root      247 Feb  1 18:22 usr/lib/pkgconfig/libxslt.pc
+-rw-r--r--  0 root   root      259 Feb  1 18:22 usr/lib/pkgconfig/libexslt.pc
+drwxr-xr-x  0 root   root        0 Feb  1 18:22 usr/lib/cmake/libxslt/
+-rw-r--r--  0 root   root     5271 Feb  1 18:22 usr/lib/cmake/libxslt/libxslt-config.cmake
+-rw-r--r--  0 root   root     1470 Feb  1 18:22 usr/lib/cmake/libxslt/FindGcrypt.cmake
+=======> Building '/home/devel/packages/libxslt#1.1.39-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling libxslt 1.1.39-1
+prt-get: /usr/bin/pkgadd -u libxslt#1.1.39-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 18:22:34 2024
+

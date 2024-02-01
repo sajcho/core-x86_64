@@ -1,0 +1,744 @@
+prt-get: updating /usr/ports/opt-x86_64/libevent
+prt-get: starting build Thu Feb  1 18:11:42 2024
+=======> Building '/home/devel/packages/libevent#2.1.12-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/libevent-2.1.12-stable.tar.gz
++ build
++ cd libevent-2.1.12-stable
++ ./configure --prefix=/usr --disable-static
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking whether ln -s works... yes
+checking for a sed that does not truncate output... /bin/sed
+checking whether gcc needs -traditional... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for library containing inet_ntoa... none required
+checking for library containing socket... none required
+checking for library containing inet_aton... none required
+checking for library containing clock_gettime... none required
+checking for clock_gettime... yes
+checking for library containing sendfile... none required
+checking for WIN32... no
+checking for MIDIPIX... no
+checking for CYGWIN... no
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking for library containing inflateEnd... -lz
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for pkg-config... /usr/bin/pkg-config
+checking if pkg-config is at least version 0.15.0... yes
+checking openssl/ssl.h usability... yes
+checking openssl/ssl.h presence... yes
+checking for openssl/ssl.h... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking ifaddrs.h usability... yes
+checking ifaddrs.h presence... yes
+checking for ifaddrs.h... yes
+checking mach/mach_time.h usability... no
+checking mach/mach_time.h presence... no
+checking for mach/mach_time.h... no
+checking mach/mach.h usability... no
+checking mach/mach.h presence... no
+checking for mach/mach.h... no
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking netinet/in6.h usability... no
+checking netinet/in6.h presence... no
+checking for netinet/in6.h... no
+checking netinet/tcp.h usability... yes
+checking netinet/tcp.h presence... yes
+checking for netinet/tcp.h... yes
+checking sys/un.h usability... yes
+checking sys/un.h presence... yes
+checking for sys/un.h... yes
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking port.h usability... no
+checking port.h presence... no
+checking for port.h... no
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking sys/devpoll.h usability... no
+checking sys/devpoll.h presence... no
+checking for sys/devpoll.h... no
+checking sys/epoll.h usability... yes
+checking sys/epoll.h presence... yes
+checking for sys/epoll.h... yes
+checking sys/event.h usability... no
+checking sys/event.h presence... no
+checking for sys/event.h... no
+checking sys/eventfd.h usability... yes
+checking sys/eventfd.h presence... yes
+checking for sys/eventfd.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/queue.h usability... yes
+checking sys/queue.h presence... yes
+checking for sys/queue.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/sendfile.h usability... yes
+checking sys/sendfile.h presence... yes
+checking for sys/sendfile.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/timerfd.h usability... yes
+checking sys/timerfd.h presence... yes
+checking for sys/timerfd.h... yes
+checking sys/uio.h usability... yes
+checking sys/uio.h presence... yes
+checking for sys/uio.h... yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking sys/random.h usability... yes
+checking sys/random.h presence... yes
+checking for sys/random.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking afunix.h usability... no
+checking afunix.h presence... no
+checking for afunix.h... no
+checking for TAILQ_FOREACH in sys/queue.h... yes
+checking for timeradd in sys/time.h... yes
+checking for timercmp in sys/time.h... yes
+checking for timerclear in sys/time.h... yes
+checking for timerisset in sys/time.h... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking whether time.h and sys/time.h may both be included... yes
+checking for accept4... yes
+checking for arc4random... yes
+checking for arc4random_buf... yes
+checking for arc4random_addrandom... no
+checking for eventfd... yes
+checking for epoll_create1... yes
+checking for fcntl... yes
+checking for getegid... yes
+checking for geteuid... yes
+checking for getifaddrs... yes
+checking for gettimeofday... yes
+checking for issetugid... no
+checking for mach_absolute_time... no
+checking for mmap... yes
+checking for nanosleep... yes
+checking for pipe... yes
+checking for pipe2... yes
+checking for putenv... yes
+checking for sendfile... yes
+checking for setenv... yes
+checking for setrlimit... yes
+checking for sigaction... yes
+checking for signal... yes
+checking for splice... yes
+checking for strlcpy... yes
+checking for strsep... yes
+checking for strtok_r... yes
+checking for strtoll... yes
+checking for sysctl... no
+checking for timerfd_create... yes
+checking for umask... yes
+checking for unsetenv... yes
+checking for usleep... yes
+checking for vasprintf... yes
+checking for getrandom... yes
+checking for getnameinfo... yes
+checking for getprotobynumber... yes
+checking for getservbyname... yes
+checking for inet_ntop... yes
+checking for inet_pton... yes
+checking for getaddrinfo... yes
+checking for F_SETFD in fcntl.h... yes
+checking for select... yes
+checking for poll... yes
+checking for epoll_ctl... yes
+checking for port_create... no
+checking for pid_t... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for uint64_t... yes
+checking for uint32_t... yes
+checking for uint16_t... yes
+checking for uint8_t... yes
+checking for uintptr_t... yes
+checking for fd_mask... yes
+checking size of long long... 8
+checking size of long... 8
+checking size of int... 4
+checking size of short... 2
+checking size of size_t... 8
+checking size of void *... 8
+checking size of off_t... 8
+checking size of time_t... 8
+checking for struct in6_addr... yes
+checking for struct sockaddr_in6... yes
+checking for struct sockaddr_un... yes
+checking for sa_family_t... yes
+checking for struct addrinfo... yes
+checking for struct sockaddr_storage... yes
+checking for struct in6_addr.s6_addr32... yes
+checking for struct in6_addr.s6_addr16... yes
+checking for struct sockaddr_in.sin_len... no
+checking for struct sockaddr_in6.sin6_len... no
+checking for struct sockaddr_storage.ss_family... yes
+checking for struct sockaddr_storage.__ss_family... no
+checking for struct linger... yes
+checking for socklen_t... yes
+checking whether our compiler supports __func__... yes
+checking whether our compiler supports __FUNCTION__... yes
+checking for the pthreads library -lpthreads... no
+checking whether pthreads work without any flags... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking size of pthread_t... 8
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating libevent.pc
+config.status: creating libevent_openssl.pc
+config.status: creating libevent_pthreads.pc
+config.status: creating libevent_core.pc
+config.status: creating libevent_extra.pc
+config.status: creating Makefile
+config.status: creating config.h
+config.status: creating evconfig-private.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
++ make V=1
+date -u > test/rpcgen-attempted
+if ./test/rpcgen_wrapper.sh ./test; then \
+   true; \
+else \
+   echo "No Python installed; stubbing out RPC test." >&2; \
+   echo " "> test/regress.gen.c; \
+   echo "#define NO_PYTHON_EXISTS" > test/regress.gen.h; \
+fi
+test -d include/event2 || /bin/mkdir -p include/event2
+/bin/sed -f ./make-event-config.sed < config.h > include/event2/event-config.hT
+mv -f include/event2/event-config.hT include/event2/event-config.h
+make  all-am
+make[1]: Entering directory '/home/devel/building/work/src/libevent-2.1.12-stable'
+depbase=`echo buffer.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT buffer.lo -MD -MP -MF $depbase.Tpo -c -o buffer.lo buffer.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo bufferevent.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT bufferevent.lo -MD -MP -MF $depbase.Tpo -c -o bufferevent.lo bufferevent.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo bufferevent_filter.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT bufferevent_filter.lo -MD -MP -MF $depbase.Tpo -c -o bufferevent_filter.lo bufferevent_filter.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo bufferevent_pair.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT bufferevent_pair.lo -MD -MP -MF $depbase.Tpo -c -o bufferevent_pair.lo bufferevent_pair.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo bufferevent_ratelim.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT bufferevent_ratelim.lo -MD -MP -MF $depbase.Tpo -c -o bufferevent_ratelim.lo bufferevent_ratelim.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo bufferevent_sock.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT bufferevent_sock.lo -MD -MP -MF $depbase.Tpo -c -o bufferevent_sock.lo bufferevent_sock.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo event.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT event.lo -MD -MP -MF $depbase.Tpo -c -o event.lo event.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo evmap.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT evmap.lo -MD -MP -MF $depbase.Tpo -c -o evmap.lo evmap.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT evmap.lo -MD -MP -MF .deps/evmap.Tpo -c evmap.c  -fPIC -DPIC -o .libs/evmap.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT bufferevent_pair.lo -MD -MP -MF .deps/bufferevent_pair.Tpo -c bufferevent_pair.c  -fPIC -DPIC -o .libs/bufferevent_pair.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT buffer.lo -MD -MP -MF .deps/buffer.Tpo -c buffer.c  -fPIC -DPIC -o .libs/buffer.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT bufferevent_filter.lo -MD -MP -MF .deps/bufferevent_filter.Tpo -c bufferevent_filter.c  -fPIC -DPIC -o .libs/bufferevent_filter.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT bufferevent_sock.lo -MD -MP -MF .deps/bufferevent_sock.Tpo -c bufferevent_sock.c  -fPIC -DPIC -o .libs/bufferevent_sock.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT bufferevent_ratelim.lo -MD -MP -MF .deps/bufferevent_ratelim.Tpo -c bufferevent_ratelim.c  -fPIC -DPIC -o .libs/bufferevent_ratelim.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT bufferevent.lo -MD -MP -MF .deps/bufferevent.Tpo -c bufferevent.c  -fPIC -DPIC -o .libs/bufferevent.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT event.lo -MD -MP -MF .deps/event.Tpo -c event.c  -fPIC -DPIC -o .libs/event.o
+event.c: In function 'event_signal_closure':
+event.c:1362:32: warning: storing the address of local variable 'ncalls' in 'ev_34(D)->ev_.ev_signal.ev_pncalls' [-Wdangling-pointer=]
+ 1362 |                 ev->ev_pncalls = &ncalls;
+      |                 ~~~~~~~~~~~~~~~^~~~~~~~~
+event.c:1356:15: note: 'ncalls' declared here
+ 1356 |         short ncalls;
+      |               ^~~~~~
+event.c:1354:61: note: 'ev' declared here
+ 1354 | event_signal_closure(struct event_base *base, struct event *ev)
+      |                                               ~~~~~~~~~~~~~~^~
+depbase=`echo evthread.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT evthread.lo -MD -MP -MF $depbase.Tpo -c -o evthread.lo evthread.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo evutil.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT evutil.lo -MD -MP -MF $depbase.Tpo -c -o evutil.lo evutil.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo evutil_rand.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT evutil_rand.lo -MD -MP -MF $depbase.Tpo -c -o evutil_rand.lo evutil_rand.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT evutil.lo -MD -MP -MF .deps/evutil.Tpo -c evutil.c  -fPIC -DPIC -o .libs/evutil.o
+evutil.c:213:21: warning: argument 4 of type 'int[2]' with mismatched bound [-Warray-parameter=]
+  213 |     evutil_socket_t fd[2])
+In file included from evutil.c:85:
+./include/event2/util.h:310:25: note: previously declared as 'int[]'
+  310 | #define evutil_socket_t int
+util-internal.h:306:47: note: in expansion of macro 'evutil_socket_t'
+  306 | int evutil_ersatz_socketpair_(int, int , int, evutil_socket_t[]);
+      |                                               ^~~~~~~~~~~~~~~
+depbase=`echo evutil_time.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT evutil_time.lo -MD -MP -MF $depbase.Tpo -c -o evutil_time.lo evutil_time.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT evthread.lo -MD -MP -MF .deps/evthread.Tpo -c evthread.c  -fPIC -DPIC -o .libs/evthread.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT evutil_rand.lo -MD -MP -MF .deps/evutil_rand.Tpo -c evutil_rand.c  -fPIC -DPIC -o .libs/evutil_rand.o
+depbase=`echo listener.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT listener.lo -MD -MP -MF $depbase.Tpo -c -o listener.lo listener.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo log.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT log.lo -MD -MP -MF $depbase.Tpo -c -o log.lo log.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT evutil_time.lo -MD -MP -MF .deps/evutil_time.Tpo -c evutil_time.c  -fPIC -DPIC -o .libs/evutil_time.o
+depbase=`echo select.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT select.lo -MD -MP -MF $depbase.Tpo -c -o select.lo select.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT listener.lo -MD -MP -MF .deps/listener.Tpo -c listener.c  -fPIC -DPIC -o .libs/listener.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT log.lo -MD -MP -MF .deps/log.Tpo -c log.c  -fPIC -DPIC -o .libs/log.o
+depbase=`echo poll.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT poll.lo -MD -MP -MF $depbase.Tpo -c -o poll.lo poll.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT select.lo -MD -MP -MF .deps/select.Tpo -c select.c  -fPIC -DPIC -o .libs/select.o
+depbase=`echo epoll.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT epoll.lo -MD -MP -MF $depbase.Tpo -c -o epoll.lo epoll.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo signal.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT signal.lo -MD -MP -MF $depbase.Tpo -c -o signal.lo signal.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT poll.lo -MD -MP -MF .deps/poll.Tpo -c poll.c  -fPIC -DPIC -o .libs/poll.o
+depbase=`echo evdns.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT evdns.lo -MD -MP -MF $depbase.Tpo -c -o evdns.lo evdns.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT signal.lo -MD -MP -MF .deps/signal.Tpo -c signal.c  -fPIC -DPIC -o .libs/signal.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT epoll.lo -MD -MP -MF .deps/epoll.Tpo -c epoll.c  -fPIC -DPIC -o .libs/epoll.o
+depbase=`echo event_tagging.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT event_tagging.lo -MD -MP -MF $depbase.Tpo -c -o event_tagging.lo event_tagging.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo evrpc.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT evrpc.lo -MD -MP -MF $depbase.Tpo -c -o evrpc.lo evrpc.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT evdns.lo -MD -MP -MF .deps/evdns.Tpo -c evdns.c  -fPIC -DPIC -o .libs/evdns.o
+depbase=`echo http.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT http.lo -MD -MP -MF $depbase.Tpo -c -o http.lo http.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT evrpc.lo -MD -MP -MF .deps/evrpc.Tpo -c evrpc.c  -fPIC -DPIC -o .libs/evrpc.o
+depbase=`echo sample/event-read-fifo.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT sample/event-read-fifo.o -MD -MP -MF $depbase.Tpo -c -o sample/event-read-fifo.o sample/event-read-fifo.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo sample/hello-world.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT sample/hello-world.o -MD -MP -MF $depbase.Tpo -c -o sample/hello-world.o sample/hello-world.c &&\
+mv -f $depbase.Tpo $depbase.Po
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT event_tagging.lo -MD -MP -MF .deps/event_tagging.Tpo -c event_tagging.c  -fPIC -DPIC -o .libs/event_tagging.o
+depbase=`echo sample/http-server.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT sample/http-server.o -MD -MP -MF $depbase.Tpo -c -o sample/http-server.o sample/http-server.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo sample/http-connect.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT sample/http-connect.o -MD -MP -MF $depbase.Tpo -c -o sample/http-connect.o sample/http-connect.c &&\
+mv -f $depbase.Tpo $depbase.Po
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT http.lo -MD -MP -MF .deps/http.Tpo -c http.c  -fPIC -DPIC -o .libs/http.o
+depbase=`echo sample/signal-test.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT sample/signal-test.o -MD -MP -MF $depbase.Tpo -c -o sample/signal-test.o sample/signal-test.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo sample/time-test.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT sample/time-test.o -MD -MP -MF $depbase.Tpo -c -o sample/time-test.o sample/time-test.c &&\
+mv -f $depbase.Tpo $depbase.Po
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include      -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT sample/le_proxy-le-proxy.o -MD -MP -MF sample/.deps/le_proxy-le-proxy.Tpo -c -o sample/le_proxy-le-proxy.o `test -f 'sample/le-proxy.c' || echo './'`sample/le-proxy.c
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include      -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT libevent_openssl_la-bufferevent_openssl.lo -MD -MP -MF .deps/libevent_openssl_la-bufferevent_openssl.Tpo -c -o libevent_openssl_la-bufferevent_openssl.lo `test -f 'bufferevent_openssl.c' || echo './'`bufferevent_openssl.c
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include      -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT sample/https_client-https-client.o -MD -MP -MF sample/.deps/https_client-https-client.Tpo -c -o sample/https_client-https-client.o `test -f 'sample/https-client.c' || echo './'`sample/https-client.c
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include      -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT sample/https_client-hostcheck.o -MD -MP -MF sample/.deps/https_client-hostcheck.Tpo -c -o sample/https_client-hostcheck.o `test -f 'sample/hostcheck.c' || echo './'`sample/hostcheck.c
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include      -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT sample/https_client-openssl_hostname_validation.o -MD -MP -MF sample/.deps/https_client-openssl_hostname_validation.Tpo -c -o sample/https_client-openssl_hostname_validation.o `test -f 'sample/openssl_hostname_validation.c' || echo './'`sample/openssl_hostname_validation.c
+sample/le-proxy.c: In function 'eventcb':
+sample/le-proxy.c:116:37: warning: 'ERR_func_error_string' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  116 |                                     ERR_func_error_string(err);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~
+In file included from sample/le-proxy.c:35:
+/usr/include/openssl/err.h:459:35: note: declared here
+  459 | OSSL_DEPRECATEDIN_3_0 const char *ERR_func_error_string(unsigned long e);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT libevent_openssl_la-bufferevent_openssl.lo -MD -MP -MF .deps/libevent_openssl_la-bufferevent_openssl.Tpo -c bufferevent_openssl.c  -fPIC -DPIC -o .libs/libevent_openssl_la-bufferevent_openssl.o
+mv -f sample/.deps/le_proxy-le-proxy.Tpo sample/.deps/le_proxy-le-proxy.Po
+mv -f sample/.deps/https_client-hostcheck.Tpo sample/.deps/https_client-hostcheck.Po
+depbase=`echo evthread_pthread.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT evthread_pthread.lo -MD -MP -MF $depbase.Tpo -c -o evthread_pthread.lo evthread_pthread.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+mv -f sample/.deps/https_client-openssl_hostname_validation.Tpo sample/.deps/https_client-openssl_hostname_validation.Po
+depbase=`echo sample/dns-example.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT sample/dns-example.o -MD -MP -MF $depbase.Tpo -c -o sample/dns-example.o sample/dns-example.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo test/bench.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/bench.o -MD -MP -MF $depbase.Tpo -c -o test/bench.o test/bench.c &&\
+mv -f $depbase.Tpo $depbase.Po
+mv -f sample/.deps/https_client-https-client.Tpo sample/.deps/https_client-https-client.Po
+depbase=`echo test/bench_cascade.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/bench_cascade.o -MD -MP -MF $depbase.Tpo -c -o test/bench_cascade.o test/bench_cascade.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo test/bench_http.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/bench_http.o -MD -MP -MF $depbase.Tpo -c -o test/bench_http.o test/bench_http.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo test/bench_httpclient.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/bench_httpclient.o -MD -MP -MF $depbase.Tpo -c -o test/bench_httpclient.o test/bench_httpclient.c &&\
+mv -f $depbase.Tpo $depbase.Po
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT evthread_pthread.lo -MD -MP -MF .deps/evthread_pthread.Tpo -c evthread_pthread.c  -fPIC -DPIC -o .libs/evthread_pthread.o
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -version-info 7:1:0 -release 2.1    -o libevent_core.la -rpath /usr/lib buffer.lo bufferevent.lo bufferevent_filter.lo bufferevent_pair.lo bufferevent_ratelim.lo bufferevent_sock.lo event.lo evmap.lo evthread.lo evutil.lo evutil_rand.lo evutil_time.lo listener.lo log.lo  select.lo poll.lo   epoll.lo  signal.lo   
+depbase=`echo test/test-changelist.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/test-changelist.o -MD -MP -MF $depbase.Tpo -c -o test/test-changelist.o test/test-changelist.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo test/test-dumpevents.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/test-dumpevents.o -MD -MP -MF $depbase.Tpo -c -o test/test-dumpevents.o test/test-dumpevents.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo test/test-eof.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/test-eof.o -MD -MP -MF $depbase.Tpo -c -o test/test-eof.o test/test-eof.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo test/test-closed.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/test-closed.o -MD -MP -MF $depbase.Tpo -c -o test/test-closed.o test/test-closed.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo test/test-fdleak.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/test-fdleak.o -MD -MP -MF $depbase.Tpo -c -o test/test-fdleak.o test/test-fdleak.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo test/test-init.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/test-init.o -MD -MP -MF $depbase.Tpo -c -o test/test-init.o test/test-init.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo test/test-ratelim.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/test-ratelim.o -MD -MP -MF $depbase.Tpo -c -o test/test-ratelim.o test/test-ratelim.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo test/test-time.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/test-time.o -MD -MP -MF $depbase.Tpo -c -o test/test-time.o test/test-time.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo test/test-weof.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/test-weof.o -MD -MP -MF $depbase.Tpo -c -o test/test-weof.o test/test-weof.c &&\
+mv -f $depbase.Tpo $depbase.Po
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-regress.o -MD -MP -MF test/.deps/regress-regress.Tpo -c -o test/regress-regress.o `test -f 'test/regress.c' || echo './'`test/regress.c
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/buffer.o .libs/bufferevent.o .libs/bufferevent_filter.o .libs/bufferevent_pair.o .libs/bufferevent_ratelim.o .libs/bufferevent_sock.o .libs/event.o .libs/evmap.o .libs/evthread.o .libs/evutil.o .libs/evutil_rand.o .libs/evutil_time.o .libs/listener.o .libs/log.o .libs/select.o .libs/poll.o .libs/epoll.o .libs/signal.o    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,libevent_core-2.1.so.7 -o .libs/libevent_core-2.1.so.7.0.1
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-regress.gen.o -MD -MP -MF test/.deps/regress-regress.gen.Tpo -c -o test/regress-regress.gen.o `test -f 'test/regress.gen.c' || echo './'`test/regress.gen.c
+mv -f .deps/libevent_openssl_la-bufferevent_openssl.Tpo .deps/libevent_openssl_la-bufferevent_openssl.Plo
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-regress_buffer.o -MD -MP -MF test/.deps/regress-regress_buffer.Tpo -c -o test/regress-regress_buffer.o `test -f 'test/regress_buffer.c' || echo './'`test/regress_buffer.c
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-regress_bufferevent.o -MD -MP -MF test/.deps/regress-regress_bufferevent.Tpo -c -o test/regress-regress_bufferevent.o `test -f 'test/regress_bufferevent.c' || echo './'`test/regress_bufferevent.c
+In file included from test/regress.h:35,
+                 from test/regress_buffer.c:64:
+test/regress_buffer.c: In function 'test_evbuffer_pullup_with_empty':
+test/tinytest_macros.h:116:22: warning: cast from function call of type 'unsigned char *' to non-matching type 'long int' [-Wbad-function-cast]
+  116 |         type val1_ = (type)(a);                                         \
+      |                      ^
+test/tinytest_macros.h:144:9: note: in expansion of macro 'tt_assert_test_fmt_type'
+  144 |         tt_assert_test_fmt_type(a,b,str_test,type,test,type,fmt,        \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~
+test/tinytest_macros.h:158:9: note: in expansion of macro 'tt_assert_test_type'
+  158 |         tt_assert_test_type(a,b,#a" "#op" "#b,long,(val1_ op val2_), \
+      |         ^~~~~~~~~~~~~~~~~~~
+test/regress_buffer.c:444:9: note: in expansion of macro 'tt_int_op'
+  444 |         tt_int_op(evbuffer_pullup(buf, -1), ==, NULL);
+      |         ^~~~~~~~~
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-regress_dns.o -MD -MP -MF test/.deps/regress-regress_dns.Tpo -c -o test/regress-regress_dns.o `test -f 'test/regress_dns.c' || echo './'`test/regress_dns.c
+mv -f test/.deps/regress-regress.gen.Tpo test/.deps/regress-regress.gen.Po
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-regress_et.o -MD -MP -MF test/.deps/regress-regress_et.Tpo -c -o test/regress-regress_et.o `test -f 'test/regress_et.c' || echo './'`test/regress_et.c
+mv -f test/.deps/regress-regress_et.Tpo test/.deps/regress-regress_et.Po
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-regress_finalize.o -MD -MP -MF test/.deps/regress-regress_finalize.Tpo -c -o test/regress-regress_finalize.o `test -f 'test/regress_finalize.c' || echo './'`test/regress_finalize.c
+mv -f test/.deps/regress-regress_bufferevent.Tpo test/.deps/regress-regress_bufferevent.Po
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-regress_http.o -MD -MP -MF test/.deps/regress-regress_http.Tpo -c -o test/regress-regress_http.o `test -f 'test/regress_http.c' || echo './'`test/regress_http.c
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-regress_listener.o -MD -MP -MF test/.deps/regress-regress_listener.Tpo -c -o test/regress-regress_listener.o `test -f 'test/regress_listener.c' || echo './'`test/regress_listener.c
+mv -f test/.deps/regress-regress_finalize.Tpo test/.deps/regress-regress_finalize.Po
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-regress_main.o -MD -MP -MF test/.deps/regress-regress_main.Tpo -c -o test/regress-regress_main.o `test -f 'test/regress_main.c' || echo './'`test/regress_main.c
+mv -f test/.deps/regress-regress_listener.Tpo test/.deps/regress-regress_listener.Po
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-regress_minheap.o -MD -MP -MF test/.deps/regress-regress_minheap.Tpo -c -o test/regress-regress_minheap.o `test -f 'test/regress_minheap.c' || echo './'`test/regress_minheap.c
+mv -f test/.deps/regress-regress_main.Tpo test/.deps/regress-regress_main.Po
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-regress_rpc.o -MD -MP -MF test/.deps/regress-regress_rpc.Tpo -c -o test/regress-regress_rpc.o `test -f 'test/regress_rpc.c' || echo './'`test/regress_rpc.c
+mv -f test/.deps/regress-regress_minheap.Tpo test/.deps/regress-regress_minheap.Po
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-regress_testutils.o -MD -MP -MF test/.deps/regress-regress_testutils.Tpo -c -o test/regress-regress_testutils.o `test -f 'test/regress_testutils.c' || echo './'`test/regress_testutils.c
+mv -f test/.deps/regress-regress_testutils.Tpo test/.deps/regress-regress_testutils.Po
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-regress_util.o -MD -MP -MF test/.deps/regress-regress_util.Tpo -c -o test/regress-regress_util.o `test -f 'test/regress_util.c' || echo './'`test/regress_util.c
+mv -f test/.deps/regress-regress.Tpo test/.deps/regress-regress.Po
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-tinytest.o -MD -MP -MF test/.deps/regress-tinytest.Tpo -c -o test/regress-tinytest.o `test -f 'test/tinytest.c' || echo './'`test/tinytest.c
+mv -f test/.deps/regress-regress_rpc.Tpo test/.deps/regress-regress_rpc.Po
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-regress_thread.o -MD -MP -MF test/.deps/regress-regress_thread.Tpo -c -o test/regress-regress_thread.o `test -f 'test/regress_thread.c' || echo './'`test/regress_thread.c
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-regress_zlib.o -MD -MP -MF test/.deps/regress-regress_zlib.Tpo -c -o test/regress-regress_zlib.o `test -f 'test/regress_zlib.c' || echo './'`test/regress_zlib.c
+mv -f test/.deps/regress-tinytest.Tpo test/.deps/regress-tinytest.Po
+gcc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include     -Itest    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -MT test/regress-regress_ssl.o -MD -MP -MF test/.deps/regress-regress_ssl.Tpo -c -o test/regress-regress_ssl.o `test -f 'test/regress_ssl.c' || echo './'`test/regress_ssl.c
+mv -f test/.deps/regress-regress_dns.Tpo test/.deps/regress-regress_dns.Po
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -version-info 7:1:0 -release 2.1    -o libevent_extra.la -rpath /usr/lib evdns.lo event_tagging.lo evrpc.lo http.lo   
+libtool: link: (cd ".libs" && rm -f "libevent_core-2.1.so.7" && ln -s "libevent_core-2.1.so.7.0.1" "libevent_core-2.1.so.7")
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/evdns.o .libs/event_tagging.o .libs/evrpc.o .libs/http.o    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,libevent_extra-2.1.so.7 -o .libs/libevent_extra-2.1.so.7.0.1
+libtool: link: (cd ".libs" && rm -f "libevent_core.so" && ln -s "libevent_core-2.1.so.7.0.1" "libevent_core.so")
+libtool: link: ( cd ".libs" && rm -f "libevent_core.la" && ln -s "../libevent_core.la" "libevent_core.la" )
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -version-info 7:1:0 -release 2.1    -o libevent_pthreads.la -rpath /usr/lib evthread_pthread.lo  
+mv -f test/.deps/regress-regress_zlib.Tpo test/.deps/regress-regress_zlib.Po
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -version-info 7:1:0 -release 2.1    -o libevent.la -rpath /usr/lib buffer.lo bufferevent.lo bufferevent_filter.lo bufferevent_pair.lo bufferevent_ratelim.lo bufferevent_sock.lo event.lo evmap.lo evthread.lo evutil.lo evutil_rand.lo evutil_time.lo listener.lo log.lo  select.lo poll.lo   epoll.lo  signal.lo evdns.lo event_tagging.lo evrpc.lo http.lo   
+mv -f test/.deps/regress-regress_thread.Tpo test/.deps/regress-regress_thread.Po
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -version-info 7:1:0 -release 2.1    -o libevent_openssl.la -rpath /usr/lib libevent_openssl_la-bufferevent_openssl.lo  -lssl -lcrypto    
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/evthread_pthread.o    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,libevent_pthreads-2.1.so.7 -o .libs/libevent_pthreads-2.1.so.7.0.1
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libevent_openssl_la-bufferevent_openssl.o   -lssl -lcrypto  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,libevent_openssl-2.1.so.7 -o .libs/libevent_openssl-2.1.so.7.0.1
+libtool: link: (cd ".libs" && rm -f "libevent_pthreads-2.1.so.7" && ln -s "libevent_pthreads-2.1.so.7.0.1" "libevent_pthreads-2.1.so.7")
+libtool: link: (cd ".libs" && rm -f "libevent_pthreads.so" && ln -s "libevent_pthreads-2.1.so.7.0.1" "libevent_pthreads.so")
+libtool: link: ( cd ".libs" && rm -f "libevent_pthreads.la" && ln -s "../libevent_pthreads.la" "libevent_pthreads.la" )
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/buffer.o .libs/bufferevent.o .libs/bufferevent_filter.o .libs/bufferevent_pair.o .libs/bufferevent_ratelim.o .libs/bufferevent_sock.o .libs/event.o .libs/evmap.o .libs/evthread.o .libs/evutil.o .libs/evutil_rand.o .libs/evutil_time.o .libs/listener.o .libs/log.o .libs/select.o .libs/poll.o .libs/epoll.o .libs/signal.o .libs/evdns.o .libs/event_tagging.o .libs/evrpc.o .libs/http.o    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,libevent-2.1.so.7 -o .libs/libevent-2.1.so.7.0.1
+mv -f test/.deps/regress-regress_ssl.Tpo test/.deps/regress-regress_ssl.Po
+mv -f test/.deps/regress-regress_buffer.Tpo test/.deps/regress-regress_buffer.Po
+libtool: link: (cd ".libs" && rm -f "libevent_openssl-2.1.so.7" && ln -s "libevent_openssl-2.1.so.7.0.1" "libevent_openssl-2.1.so.7")
+libtool: link: (cd ".libs" && rm -f "libevent_openssl.so" && ln -s "libevent_openssl-2.1.so.7.0.1" "libevent_openssl.so")
+libtool: link: ( cd ".libs" && rm -f "libevent_openssl.la" && ln -s "../libevent_openssl.la" "libevent_openssl.la" )
+mv -f test/.deps/regress-regress_util.Tpo test/.deps/regress-regress_util.Po
+libtool: link: (cd ".libs" && rm -f "libevent_extra-2.1.so.7" && ln -s "libevent_extra-2.1.so.7.0.1" "libevent_extra-2.1.so.7")
+libtool: link: (cd ".libs" && rm -f "libevent_extra.so" && ln -s "libevent_extra-2.1.so.7.0.1" "libevent_extra.so")
+libtool: link: ( cd ".libs" && rm -f "libevent_extra.la" && ln -s "../libevent_extra.la" "libevent_extra.la" )
+mv -f test/.deps/regress-regress_http.Tpo test/.deps/regress-regress_http.Po
+libtool: link: (cd ".libs" && rm -f "libevent-2.1.so.7" && ln -s "libevent-2.1.so.7.0.1" "libevent-2.1.so.7")
+libtool: link: (cd ".libs" && rm -f "libevent.so" && ln -s "libevent-2.1.so.7.0.1" "libevent.so")
+libtool: link: ( cd ".libs" && rm -f "libevent.la" && ln -s "../libevent.la" "libevent.la" )
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o sample/dns-example sample/dns-example.o  libevent.la 
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o sample/event-read-fifo sample/event-read-fifo.o  libevent.la 
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o sample/hello-world sample/hello-world.o  libevent.la 
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o sample/http-server sample/http-server.o  libevent.la 
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o sample/http-connect sample/http-connect.o  libevent.la 
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o sample/signal-test sample/signal-test.o  libevent.la 
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o sample/time-test sample/time-test.o  libevent.la 
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o sample/le-proxy sample/le_proxy-le-proxy.o libevent.la libevent_openssl.la -lssl -lcrypto     
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o sample/.libs/time-test sample/time-test.o  ./.libs/libevent.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o sample/.libs/dns-example sample/dns-example.o  ./.libs/libevent.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o sample/.libs/hello-world sample/hello-world.o  ./.libs/libevent.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o sample/.libs/signal-test sample/signal-test.o  ./.libs/libevent.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o sample/.libs/http-server sample/http-server.o  ./.libs/libevent.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o sample/.libs/event-read-fifo sample/event-read-fifo.o  ./.libs/libevent.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o sample/.libs/le-proxy sample/le_proxy-le-proxy.o  ./.libs/libevent.so ./.libs/libevent_openssl.so -lssl -lcrypto
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o sample/.libs/http-connect sample/http-connect.o  ./.libs/libevent.so
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o test/bench test/bench.o  libevent.la 
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o sample/https-client sample/https_client-https-client.o sample/https_client-hostcheck.o sample/https_client-openssl_hostname_validation.o libevent.la libevent_openssl.la -lssl -lcrypto      
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o test/bench_cascade test/bench_cascade.o  libevent.la 
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o test/bench_http test/bench_http.o  libevent.la 
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o test/bench_httpclient test/bench_httpclient.o  libevent_core.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o test/.libs/bench_http test/bench_http.o  ./.libs/libevent.so
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o test/test-changelist test/test-changelist.o libevent_core.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o test/.libs/bench test/bench.o  ./.libs/libevent.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o sample/.libs/https-client sample/https_client-https-client.o sample/https_client-hostcheck.o sample/https_client-openssl_hostname_validation.o  ./.libs/libevent.so ./.libs/libevent_openssl.so -lssl -lcrypto
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o test/.libs/bench_cascade test/bench_cascade.o  ./.libs/libevent.so
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o test/test-dumpevents test/test-dumpevents.o libevent_core.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o test/.libs/bench_httpclient test/bench_httpclient.o  ./.libs/libevent_core.so
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o test/test-eof test/test-eof.o libevent_core.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o test/.libs/test-dumpevents test/test-dumpevents.o  ./.libs/libevent_core.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o test/.libs/test-changelist test/test-changelist.o  ./.libs/libevent_core.so
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o test/test-closed test/test-closed.o libevent_core.la 
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o test/test-fdleak test/test-fdleak.o libevent_core.la 
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o test/test-init test/test-init.o libevent_core.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o test/.libs/test-eof test/test-eof.o  ./.libs/libevent_core.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o test/.libs/test-closed test/test-closed.o  ./.libs/libevent_core.so
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o test/test-ratelim test/test-ratelim.o libevent_core.la -lm 
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o test/test-time test/test-time.o libevent_core.la 
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o test/test-weof test/test-weof.o libevent_core.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o test/.libs/test-fdleak test/test-fdleak.o  ./.libs/libevent_core.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o test/.libs/test-init test/test-init.o  ./.libs/libevent_core.so
+/bin/sh ./libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op   -o test/regress test/regress-regress.o test/regress-regress.gen.o test/regress-regress_buffer.o test/regress-regress_bufferevent.o test/regress-regress_dns.o test/regress-regress_et.o test/regress-regress_finalize.o test/regress-regress_http.o test/regress-regress_listener.o test/regress-regress_main.o test/regress-regress_minheap.o test/regress-regress_rpc.o test/regress-regress_testutils.o test/regress-regress_util.o test/regress-tinytest.o test/regress-regress_thread.o test/regress-regress_zlib.o  test/regress-regress_ssl.o  libevent_core.la libevent_extra.la libevent_pthreads.la -lz  libevent_openssl.la -lssl -lcrypto     
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o test/.libs/test-time test/test-time.o  ./.libs/libevent_core.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o test/.libs/test-ratelim test/test-ratelim.o  ./.libs/libevent_core.so -lm
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o test/.libs/test-weof test/test-weof.o  ./.libs/libevent_core.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wmissing-declarations -Wnested-externs -Wbad-function-cast -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -o test/.libs/regress test/regress-regress.o test/regress-regress.gen.o test/regress-regress_buffer.o test/regress-regress_bufferevent.o test/regress-regress_dns.o test/regress-regress_et.o test/regress-regress_finalize.o test/regress-regress_http.o test/regress-regress_listener.o test/regress-regress_main.o test/regress-regress_minheap.o test/regress-regress_rpc.o test/regress-regress_testutils.o test/regress-regress_util.o test/regress-tinytest.o test/regress-regress_thread.o test/regress-regress_zlib.o test/regress-regress_ssl.o  ./.libs/libevent_core.so ./.libs/libevent_extra.so ./.libs/libevent_pthreads.so -lz ./.libs/libevent_openssl.so -lssl -lcrypto
+make[1]: Leaving directory '/home/devel/building/work/src/libevent-2.1.12-stable'
++ make -j1 DESTDIR=/home/devel/building/work/pkg install
+make  install-am
+make[1]: Entering directory '/home/devel/building/work/src/libevent-2.1.12-stable'
+make[2]: Entering directory '/home/devel/building/work/src/libevent-2.1.12-stable'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+ /usr/bin/install -c event_rpcgen.py '/home/devel/building/work/pkg/usr/bin'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libevent.la libevent_core.la libevent_extra.la libevent_pthreads.la libevent_openssl.la '/home/devel/building/work/pkg/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libevent-2.1.so.7.0.1 /home/devel/building/work/pkg/usr/lib/libevent-2.1.so.7.0.1
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libevent-2.1.so.7.0.1 libevent-2.1.so.7 || { rm -f libevent-2.1.so.7 && ln -s libevent-2.1.so.7.0.1 libevent-2.1.so.7; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libevent-2.1.so.7.0.1 libevent.so || { rm -f libevent.so && ln -s libevent-2.1.so.7.0.1 libevent.so; }; })
+libtool: install: /usr/bin/install -c .libs/libevent.lai /home/devel/building/work/pkg/usr/lib/libevent.la
+libtool: install: /usr/bin/install -c .libs/libevent_core-2.1.so.7.0.1 /home/devel/building/work/pkg/usr/lib/libevent_core-2.1.so.7.0.1
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libevent_core-2.1.so.7.0.1 libevent_core-2.1.so.7 || { rm -f libevent_core-2.1.so.7 && ln -s libevent_core-2.1.so.7.0.1 libevent_core-2.1.so.7; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libevent_core-2.1.so.7.0.1 libevent_core.so || { rm -f libevent_core.so && ln -s libevent_core-2.1.so.7.0.1 libevent_core.so; }; })
+libtool: install: /usr/bin/install -c .libs/libevent_core.lai /home/devel/building/work/pkg/usr/lib/libevent_core.la
+libtool: install: /usr/bin/install -c .libs/libevent_extra-2.1.so.7.0.1 /home/devel/building/work/pkg/usr/lib/libevent_extra-2.1.so.7.0.1
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libevent_extra-2.1.so.7.0.1 libevent_extra-2.1.so.7 || { rm -f libevent_extra-2.1.so.7 && ln -s libevent_extra-2.1.so.7.0.1 libevent_extra-2.1.so.7; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libevent_extra-2.1.so.7.0.1 libevent_extra.so || { rm -f libevent_extra.so && ln -s libevent_extra-2.1.so.7.0.1 libevent_extra.so; }; })
+libtool: install: /usr/bin/install -c .libs/libevent_extra.lai /home/devel/building/work/pkg/usr/lib/libevent_extra.la
+libtool: install: /usr/bin/install -c .libs/libevent_pthreads-2.1.so.7.0.1 /home/devel/building/work/pkg/usr/lib/libevent_pthreads-2.1.so.7.0.1
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libevent_pthreads-2.1.so.7.0.1 libevent_pthreads-2.1.so.7 || { rm -f libevent_pthreads-2.1.so.7 && ln -s libevent_pthreads-2.1.so.7.0.1 libevent_pthreads-2.1.so.7; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libevent_pthreads-2.1.so.7.0.1 libevent_pthreads.so || { rm -f libevent_pthreads.so && ln -s libevent_pthreads-2.1.so.7.0.1 libevent_pthreads.so; }; })
+libtool: install: /usr/bin/install -c .libs/libevent_pthreads.lai /home/devel/building/work/pkg/usr/lib/libevent_pthreads.la
+libtool: install: /usr/bin/install -c .libs/libevent_openssl-2.1.so.7.0.1 /home/devel/building/work/pkg/usr/lib/libevent_openssl-2.1.so.7.0.1
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libevent_openssl-2.1.so.7.0.1 libevent_openssl-2.1.so.7 || { rm -f libevent_openssl-2.1.so.7 && ln -s libevent_openssl-2.1.so.7.0.1 libevent_openssl-2.1.so.7; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libevent_openssl-2.1.so.7.0.1 libevent_openssl.so || { rm -f libevent_openssl.so && ln -s libevent_openssl-2.1.so.7.0.1 libevent_openssl.so; }; })
+libtool: install: /usr/bin/install -c .libs/libevent_openssl.lai /home/devel/building/work/pkg/usr/lib/libevent_openssl.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include'
+ /usr/bin/install -c -m 644 include/evdns.h include/event.h include/evhttp.h include/evrpc.h include/evutil.h '/home/devel/building/work/pkg/usr/include'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/event2'
+ /usr/bin/install -c -m 644 include/event2/buffer.h include/event2/buffer_compat.h include/event2/bufferevent.h include/event2/bufferevent_compat.h include/event2/bufferevent_struct.h include/event2/dns.h include/event2/dns_compat.h include/event2/dns_struct.h include/event2/event.h include/event2/event_compat.h include/event2/event_struct.h include/event2/http.h include/event2/http_compat.h include/event2/http_struct.h include/event2/keyvalq_struct.h include/event2/listener.h include/event2/rpc.h include/event2/rpc_compat.h include/event2/rpc_struct.h include/event2/tag.h include/event2/tag_compat.h include/event2/thread.h include/event2/util.h include/event2/visibility.h include/event2/bufferevent_ssl.h '/home/devel/building/work/pkg/usr/include/event2'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/event2'
+ /usr/bin/install -c -m 644 include/event2/event-config.h '/home/devel/building/work/pkg/usr/include/event2'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libevent.pc libevent_core.pc libevent_extra.pc libevent_pthreads.pc libevent_openssl.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+make[2]: Leaving directory '/home/devel/building/work/src/libevent-2.1.12-stable'
+make[1]: Leaving directory '/home/devel/building/work/src/libevent-2.1.12-stable'
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 18:11 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 18:11 usr/bin/
+drwxr-xr-x  0 root   root        0 Feb  1 18:11 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 18:11 usr/include/
+-rw-r--r--  0 root   root     2019 Feb  1 18:11 usr/include/evdns.h
+-rw-r--r--  0 root   root     2744 Feb  1 18:11 usr/include/event.h
+-rw-r--r--  0 root   root     2035 Feb  1 18:11 usr/include/evhttp.h
+-rw-r--r--  0 root   root     2015 Feb  1 18:11 usr/include/evrpc.h
+-rw-r--r--  0 root   root     1782 Feb  1 18:11 usr/include/evutil.h
+drwxr-xr-x  0 root   root        0 Feb  1 18:11 usr/include/event2/
+-rw-r--r--  0 root   root    39189 Feb  1 18:11 usr/include/event2/buffer.h
+-rw-r--r--  0 root   root     4741 Feb  1 18:11 usr/include/event2/buffer_compat.h
+-rw-r--r--  0 root   root    34683 Feb  1 18:11 usr/include/event2/bufferevent.h
+-rw-r--r--  0 root   root     4538 Feb  1 18:11 usr/include/event2/bufferevent_compat.h
+-rw-r--r--  0 root   root     4135 Feb  1 18:11 usr/include/event2/bufferevent_struct.h
+-rw-r--r--  0 root   root    28018 Feb  1 18:11 usr/include/event2/dns.h
+-rw-r--r--  0 root   root    12588 Feb  1 18:11 usr/include/event2/dns_compat.h
+-rw-r--r--  0 root   root     2596 Feb  1 18:11 usr/include/event2/dns_struct.h
+-rw-r--r--  0 root   root    62337 Feb  1 18:11 usr/include/event2/event.h
+-rw-r--r--  0 root   root     7639 Feb  1 18:11 usr/include/event2/event_compat.h
+-rw-r--r--  0 root   root     5024 Feb  1 18:11 usr/include/event2/event_struct.h
+-rw-r--r--  0 root   root    42809 Feb  1 18:11 usr/include/event2/http.h
+-rw-r--r--  0 root   root     3265 Feb  1 18:11 usr/include/event2/http_compat.h
+-rw-r--r--  0 root   root     4809 Feb  1 18:11 usr/include/event2/http_struct.h
+-rw-r--r--  0 root   root     2603 Feb  1 18:11 usr/include/event2/keyvalq_struct.h
+-rw-r--r--  0 root   root     7991 Feb  1 18:11 usr/include/event2/listener.h
+-rw-r--r--  0 root   root    21764 Feb  1 18:11 usr/include/event2/rpc.h
+-rw-r--r--  0 root   root     2351 Feb  1 18:11 usr/include/event2/rpc_compat.h
+-rw-r--r--  0 root   root     3598 Feb  1 18:11 usr/include/event2/rpc_struct.h
+-rw-r--r--  0 root   root     4914 Feb  1 18:11 usr/include/event2/tag.h
+-rw-r--r--  0 root   root     2141 Feb  1 18:11 usr/include/event2/tag_compat.h
+-rw-r--r--  0 root   root     9952 Feb  1 18:11 usr/include/event2/thread.h
+-rw-r--r--  0 root   root    29420 Feb  1 18:11 usr/include/event2/util.h
+-rw-r--r--  0 root   root     2871 Feb  1 18:11 usr/include/event2/visibility.h
+-rw-r--r--  0 root   root     4848 Feb  1 18:11 usr/include/event2/bufferevent_ssl.h
+-rw-r--r--  0 root   root    17366 Feb  1 18:11 usr/include/event2/event-config.h
+-rwxr-xr-x  0 root   root   337776 Feb  1 18:11 usr/lib/libevent-2.1.so.7.0.1
+lrwxrwxrwx  0 root   root        0 Feb  1 18:11 usr/lib/libevent-2.1.so.7 -> libevent-2.1.so.7.0.1
+lrwxrwxrwx  0 root   root        0 Feb  1 18:11 usr/lib/libevent.so -> libevent-2.1.so.7.0.1
+-rwxr-xr-x  0 root   root   213504 Feb  1 18:11 usr/lib/libevent_core-2.1.so.7.0.1
+lrwxrwxrwx  0 root   root        0 Feb  1 18:11 usr/lib/libevent_core-2.1.so.7 -> libevent_core-2.1.so.7.0.1
+lrwxrwxrwx  0 root   root        0 Feb  1 18:11 usr/lib/libevent_core.so -> libevent_core-2.1.so.7.0.1
+-rwxr-xr-x  0 root   root   143344 Feb  1 18:11 usr/lib/libevent_extra-2.1.so.7.0.1
+lrwxrwxrwx  0 root   root        0 Feb  1 18:11 usr/lib/libevent_extra-2.1.so.7 -> libevent_extra-2.1.so.7.0.1
+lrwxrwxrwx  0 root   root        0 Feb  1 18:11 usr/lib/libevent_extra.so -> libevent_extra-2.1.so.7.0.1
+-rwxr-xr-x  0 root   root    14384 Feb  1 18:11 usr/lib/libevent_pthreads-2.1.so.7.0.1
+lrwxrwxrwx  0 root   root        0 Feb  1 18:11 usr/lib/libevent_pthreads-2.1.so.7 -> libevent_pthreads-2.1.so.7.0.1
+lrwxrwxrwx  0 root   root        0 Feb  1 18:11 usr/lib/libevent_pthreads.so -> libevent_pthreads-2.1.so.7.0.1
+-rwxr-xr-x  0 root   root    27328 Feb  1 18:11 usr/lib/libevent_openssl-2.1.so.7.0.1
+lrwxrwxrwx  0 root   root        0 Feb  1 18:11 usr/lib/libevent_openssl-2.1.so.7 -> libevent_openssl-2.1.so.7.0.1
+lrwxrwxrwx  0 root   root        0 Feb  1 18:11 usr/lib/libevent_openssl.so -> libevent_openssl-2.1.so.7.0.1
+drwxr-xr-x  0 root   root        0 Feb  1 18:11 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      322 Feb  1 18:11 usr/lib/pkgconfig/libevent.pc
+-rw-r--r--  0 root   root      286 Feb  1 18:11 usr/lib/pkgconfig/libevent_core.pc
+-rw-r--r--  0 root   root      289 Feb  1 18:11 usr/lib/pkgconfig/libevent_extra.pc
+-rw-r--r--  0 root   root      359 Feb  1 18:11 usr/lib/pkgconfig/libevent_pthreads.pc
+-rw-r--r--  0 root   root      366 Feb  1 18:11 usr/lib/pkgconfig/libevent_openssl.pc
+-rwxr-xr-x  0 root   root    54938 Feb  1 18:11 usr/bin/event_rpcgen.py
+=======> Building '/home/devel/packages/libevent#2.1.12-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling libevent 2.1.12-1
+prt-get: /usr/bin/pkgadd -u libevent#2.1.12-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 18:11:57 2024
+

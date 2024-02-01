@@ -1,0 +1,457 @@
+prt-get: updating /usr/ports/opt-x86_64/srt
+prt-get: starting build Thu Feb  1 20:09:34 2024
+=======> Building '/home/devel/packages/srt#1.4.3-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/srt-1.4.3.tar.gz
+cp fix-cmake.patch /home/devel/building/work/src
++ build
++ cd srt-1.4.3
++ patch -p1 -i /home/devel/building/work/src/fix-cmake.patch
+patching file CMakeLists.txt
+Hunk #1 succeeded at 42 with fuzz 2 (offset 8 lines).
+Hunk #2 succeeded at 58 (offset 5 lines).
++ mkdir build
++ cd build
++ cmake .. -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DENABLE_UNITTESTS=OFF -DENABLE_TESTING=OFF -DENABLE_STATIC=OFF
+CMake Deprecation Warning at CMakeLists.txt:10 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.1.0") 
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- BUILD TYPE: None
+-- LOGGING: ENABLED
+-- USE_BUSY_WAITING: OFF (default)
+-- No WITH_COMPILER_PREFIX - using C++ compiler /usr/bin/c++
+-- Looking for inet_pton
+-- Looking for inet_pton - found
+-- Checking for module 'openssl libcrypto'
+--   Found openssl libcrypto, version 
+-- SSL via pkg-config: -L /usr/lib -I /usr/include -l;ssl;crypto
+-- ENCRYPTION: ENABLED, using: openssl libcrypto
+-- SSL libraries: ssl;crypto
+-- COMPILER: GNU (/usr/bin/c++) - GNU compat
+-- NOTE: GNU 13.2.0 - assuming default C++11.
+-- STDCXX_SYNC: OFF
+-- DETECTED SYSTEM: LINUX;  LINUX=1
+-- APP: srt_virtual: using default C++ standard
+-- ADDING TRANSITIVE LINK DEP to:srt_shared :  
+-- INSTALL DIRS: bin=bin lib=lib shlib=lib include=include
+-- APPS: ENABLED, std=
+-- APP: srtsupport_virtual: using default C++ standard
+-- APP: srt-live-transmit: using default C++ standard
+-- APP: srt-file-transmit: using default C++ standard
+-- APP: srt-tunnel: using default C++ standard
+-- DEVEL APPS (testing): DISABLED
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/devel/building/work/src/srt-1.4.3/build
++ make -O -j 8 V=1 VERBOSE=1
+/usr/bin/cmake -S/home/devel/building/work/src/srt-1.4.3 -B/home/devel/building/work/src/srt-1.4.3/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/devel/building/work/src/srt-1.4.3/build/CMakeFiles /home/devel/building/work/src/srt-1.4.3/build//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make  -f CMakeFiles/srt_virtual.dir/build.make CMakeFiles/srt_virtual.dir/depend
+make  -f CMakeFiles/srtsupport_virtual.dir/build.make CMakeFiles/srtsupport_virtual.dir/depend
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+cd /home/devel/building/work/src/srt-1.4.3/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/srt-1.4.3 /home/devel/building/work/src/srt-1.4.3 /home/devel/building/work/src/srt-1.4.3/build /home/devel/building/work/src/srt-1.4.3/build /home/devel/building/work/src/srt-1.4.3/build/CMakeFiles/srtsupport_virtual.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make  -f CMakeFiles/srtsupport_virtual.dir/build.make CMakeFiles/srtsupport_virtual.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+cd /home/devel/building/work/src/srt-1.4.3/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/srt-1.4.3 /home/devel/building/work/src/srt-1.4.3 /home/devel/building/work/src/srt-1.4.3/build /home/devel/building/work/src/srt-1.4.3/build /home/devel/building/work/src/srt-1.4.3/build/CMakeFiles/srt_virtual.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make  -f CMakeFiles/srt_virtual.dir/build.make CMakeFiles/srt_virtual.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[  8%] Building CXX object CMakeFiles/srtsupport_virtual.dir/apps/logsupport_appdefs.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srtsupport_virtual.dir/apps/logsupport_appdefs.cpp.o -MF CMakeFiles/srtsupport_virtual.dir/apps/logsupport_appdefs.cpp.o.d -o CMakeFiles/srtsupport_virtual.dir/apps/logsupport_appdefs.cpp.o -c /home/devel/building/work/src/srt-1.4.3/apps/logsupport_appdefs.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 14%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/cache.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/cache.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/cache.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/cache.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/cache.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[  4%] Building CXX object CMakeFiles/srtsupport_virtual.dir/apps/logsupport.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srtsupport_virtual.dir/apps/logsupport.cpp.o -MF CMakeFiles/srtsupport_virtual.dir/apps/logsupport.cpp.o.d -o CMakeFiles/srtsupport_virtual.dir/apps/logsupport.cpp.o -c /home/devel/building/work/src/srt-1.4.3/apps/logsupport.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 12%] Building CXX object CMakeFiles/srtsupport_virtual.dir/apps/socketoptions.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srtsupport_virtual.dir/apps/socketoptions.cpp.o -MF CMakeFiles/srtsupport_virtual.dir/apps/socketoptions.cpp.o.d -o CMakeFiles/srtsupport_virtual.dir/apps/socketoptions.cpp.o -c /home/devel/building/work/src/srt-1.4.3/apps/socketoptions.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 20%] Building CXX object CMakeFiles/srtsupport_virtual.dir/apps/verbose.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srtsupport_virtual.dir/apps/verbose.cpp.o -MF CMakeFiles/srtsupport_virtual.dir/apps/verbose.cpp.o.d -o CMakeFiles/srtsupport_virtual.dir/apps/verbose.cpp.o -c /home/devel/building/work/src/srt-1.4.3/apps/verbose.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 10%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/buffer.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/buffer.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/buffer.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/buffer.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/buffer.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 18%] Building CXX object CMakeFiles/srtsupport_virtual.dir/apps/uriparser.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srtsupport_virtual.dir/apps/uriparser.cpp.o -MF CMakeFiles/srtsupport_virtual.dir/apps/uriparser.cpp.o.d -o CMakeFiles/srtsupport_virtual.dir/apps/uriparser.cpp.o -c /home/devel/building/work/src/srt-1.4.3/apps/uriparser.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[  4%] Building CXX object CMakeFiles/srtsupport_virtual.dir/apps/apputil.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srtsupport_virtual.dir/apps/apputil.cpp.o -MF CMakeFiles/srtsupport_virtual.dir/apps/apputil.cpp.o.d -o CMakeFiles/srtsupport_virtual.dir/apps/apputil.cpp.o -c /home/devel/building/work/src/srt-1.4.3/apps/apputil.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 22%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/channel.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/channel.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/channel.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/channel.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/channel.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 16%] Building CXX object CMakeFiles/srtsupport_virtual.dir/apps/transmitmedia.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srtsupport_virtual.dir/apps/transmitmedia.cpp.o -MF CMakeFiles/srtsupport_virtual.dir/apps/transmitmedia.cpp.o.d -o CMakeFiles/srtsupport_virtual.dir/apps/transmitmedia.cpp.o -c /home/devel/building/work/src/srt-1.4.3/apps/transmitmedia.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[1]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 34%] Built target srtsupport_virtual
+make[1]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 26%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/common.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/common.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/common.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/common.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/common.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 28%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/crypto.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/crypto.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/crypto.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/crypto.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/crypto.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 38%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/logger_default.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/logger_default.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/logger_default.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/logger_default.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/logger_default.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 34%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/handshake.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/handshake.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/handshake.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/handshake.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/handshake.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 42%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/md5.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/md5.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/md5.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/md5.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/md5.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[  6%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/api.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/api.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/api.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/api.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/api.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 36%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/list.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/list.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/list.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/list.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/list.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 30%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/epoll.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/epoll.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/epoll.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/epoll.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/epoll.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 40%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/logger_defs.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/logger_defs.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/logger_defs.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/logger_defs.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/logger_defs.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 44%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/packet.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/packet.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/packet.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/packet.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/packet.cpp
+/home/devel/building/work/src/srt-1.4.3/srtcore/packet.cpp: In constructor 'CPacket::CPacket()':
+/home/devel/building/work/src/srt-1.4.3/srtcore/packet.cpp:180:21: warning: member 'CPacket::m_nHeader' is used uninitialized [-Wuninitialized]
+  180 | m_iSeqNo((int32_t&)(m_nHeader[SRT_PH_SEQNO])),
+      |                     ^~~~~~~~~
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 52%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/srt_c_api.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/srt_c_api.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/srt_c_api.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/srt_c_api.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/srt_c_api.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 54%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/window.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/window.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/window.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/window.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/window.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 58%] Building C object CMakeFiles/srt_virtual.dir/srtcore/srt_compat.c.o
+/usr/bin/cc -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/srt_compat.c.o -MF CMakeFiles/srt_virtual.dir/srtcore/srt_compat.c.o.d -o CMakeFiles/srt_virtual.dir/srtcore/srt_compat.c.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/srt_compat.c
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 60%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/strerror_defs.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/strerror_defs.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/strerror_defs.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/strerror_defs.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/strerror_defs.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 50%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/congctl.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/congctl.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/congctl.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/congctl.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/congctl.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 66%] Building C object CMakeFiles/srt_virtual.dir/haicrypt/cryspr.c.o
+/usr/bin/cc -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/haicrypt/cryspr.c.o -MF CMakeFiles/srt_virtual.dir/haicrypt/cryspr.c.o.d -o CMakeFiles/srt_virtual.dir/haicrypt/cryspr.c.o -c /home/devel/building/work/src/srt-1.4.3/haicrypt/cryspr.c
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 68%] Building C object CMakeFiles/srt_virtual.dir/haicrypt/cryspr-openssl.c.o
+/usr/bin/cc -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/haicrypt/cryspr-openssl.c.o -MF CMakeFiles/srt_virtual.dir/haicrypt/cryspr-openssl.c.o.d -o CMakeFiles/srt_virtual.dir/haicrypt/cryspr-openssl.c.o -c /home/devel/building/work/src/srt-1.4.3/haicrypt/cryspr-openssl.c
+/home/devel/building/work/src/srt-1.4.3/haicrypt/cryspr-openssl.c: In function 'crysprOpenSSL_AES_SetKey':
+/home/devel/building/work/src/srt-1.4.3/haicrypt/cryspr-openssl.c:43:9: warning: 'AES_set_encrypt_key' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   43 |         if (AES_set_encrypt_key(kstr, kstr_len * 8, aes_key)) {
+      |         ^~
+In file included from /home/devel/building/work/src/srt-1.4.3/haicrypt/cryspr-openssl.h:24,
+                 from /home/devel/building/work/src/srt-1.4.3/haicrypt/cryspr-config.h:9,
+                 from /home/devel/building/work/src/srt-1.4.3/haicrypt/cryspr.h:39,
+                 from /home/devel/building/work/src/srt-1.4.3/haicrypt/hcrypt.h:52,
+                 from /home/devel/building/work/src/srt-1.4.3/haicrypt/cryspr-openssl.c:20:
+/usr/include/openssl/aes.h:51:5: note: declared here
+   51 | int AES_set_encrypt_key(const unsigned char *userKey, const int bits,
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/devel/building/work/src/srt-1.4.3/haicrypt/cryspr-openssl.c:48:9: warning: 'AES_set_decrypt_key' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   48 |         if (AES_set_decrypt_key(kstr, kstr_len * 8, aes_key)) {
+      |         ^~
+/usr/include/openssl/aes.h:54:5: note: declared here
+   54 | int AES_set_decrypt_key(const unsigned char *userKey, const int bits,
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/devel/building/work/src/srt-1.4.3/haicrypt/cryspr-openssl.c: In function 'crysprOpenSSL_AES_CtrCipher':
+/home/devel/building/work/src/srt-1.4.3/haicrypt/cryspr-openssl.c:119:27: warning: 'AES_encrypt' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  119 |                           inlen, aes_key, iv, ctr, &blk_ofs, (block128_f) AES_encrypt);
+      |                           ^~~~~
+/usr/include/openssl/aes.h:57:6: note: declared here
+   57 | void AES_encrypt(const unsigned char *in, unsigned char *out,
+      |      ^~~~~~~~~~~
+/home/devel/building/work/src/srt-1.4.3/haicrypt/cryspr-openssl.c: In function 'crysprOpenSSL_KmWrap':
+/home/devel/building/work/src/srt-1.4.3/haicrypt/cryspr-openssl.c:154:5: warning: 'AES_wrap_key' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  154 |     return(((seklen + HAICRYPT_WRAPKEY_SIGN_SZ) == (unsigned int)AES_wrap_key(kek, NULL, wrap, sek, seklen)) ? 0 : -1);
+      |     ^~~~~~
+/usr/include/openssl/aes.h:97:5: note: declared here
+   97 | int AES_wrap_key(AES_KEY *key, const unsigned char *iv,
+      |     ^~~~~~~~~~~~
+/home/devel/building/work/src/srt-1.4.3/haicrypt/cryspr-openssl.c: In function 'crysprOpenSSL_KmUnwrap':
+/home/devel/building/work/src/srt-1.4.3/haicrypt/cryspr-openssl.c:166:5: warning: 'AES_unwrap_key' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  166 |     return(((wraplen - HAICRYPT_WRAPKEY_SIGN_SZ) == (unsigned int)AES_unwrap_key(kek, NULL, sek, wrap, wraplen)) ? 0 : -1);
+      |     ^~~~~~
+/usr/include/openssl/aes.h:101:5: note: declared here
+  101 | int AES_unwrap_key(AES_KEY *key, const unsigned char *iv,
+      |     ^~~~~~~~~~~~~~
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 46%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/packetfilter.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/packetfilter.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/packetfilter.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/packetfilter.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/packetfilter.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 70%] Building C object CMakeFiles/srt_virtual.dir/haicrypt/hcrypt.c.o
+/usr/bin/cc -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/haicrypt/hcrypt.c.o -MF CMakeFiles/srt_virtual.dir/haicrypt/hcrypt.c.o.d -o CMakeFiles/srt_virtual.dir/haicrypt/hcrypt.c.o -c /home/devel/building/work/src/srt-1.4.3/haicrypt/hcrypt.c
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 72%] Building C object CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_ctx_rx.c.o
+/usr/bin/cc -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_ctx_rx.c.o -MF CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_ctx_rx.c.o.d -o CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_ctx_rx.c.o -c /home/devel/building/work/src/srt-1.4.3/haicrypt/hcrypt_ctx_rx.c
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 76%] Building C object CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_rx.c.o
+/usr/bin/cc -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_rx.c.o -MF CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_rx.c.o.d -o CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_rx.c.o -c /home/devel/building/work/src/srt-1.4.3/haicrypt/hcrypt_rx.c
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 74%] Building C object CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_ctx_tx.c.o
+/usr/bin/cc -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_ctx_tx.c.o -MF CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_ctx_tx.c.o.d -o CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_ctx_tx.c.o -c /home/devel/building/work/src/srt-1.4.3/haicrypt/hcrypt_ctx_tx.c
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 78%] Building C object CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_sa.c.o
+/usr/bin/cc -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_sa.c.o -MF CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_sa.c.o.d -o CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_sa.c.o -c /home/devel/building/work/src/srt-1.4.3/haicrypt/hcrypt_sa.c
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 48%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/queue.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/queue.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/queue.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/queue.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/queue.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 84%] Building CXX object CMakeFiles/srt_virtual.dir/haicrypt/haicrypt_log.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/haicrypt/haicrypt_log.cpp.o -MF CMakeFiles/srt_virtual.dir/haicrypt/haicrypt_log.cpp.o.d -o CMakeFiles/srt_virtual.dir/haicrypt/haicrypt_log.cpp.o -c /home/devel/building/work/src/srt-1.4.3/haicrypt/haicrypt_log.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 80%] Building C object CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_tx.c.o
+/usr/bin/cc -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_tx.c.o -MF CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_tx.c.o.d -o CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_tx.c.o -c /home/devel/building/work/src/srt-1.4.3/haicrypt/hcrypt_tx.c
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 82%] Building C object CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_xpt_srt.c.o
+/usr/bin/cc -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_xpt_srt.c.o -MF CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_xpt_srt.c.o.d -o CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_xpt_srt.c.o -c /home/devel/building/work/src/srt-1.4.3/haicrypt/hcrypt_xpt_srt.c
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 56%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/socketconfig.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/socketconfig.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/socketconfig.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/socketconfig.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/socketconfig.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 32%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/fec.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/fec.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/fec.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/fec.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/fec.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 64%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/sync.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/sync.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/sync.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/sync.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/sync.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 64%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/sync_posix.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/sync_posix.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/sync_posix.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/sync_posix.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/sync_posix.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 26%] Building CXX object CMakeFiles/srt_virtual.dir/srtcore/core.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_DYNAMIC -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_EXPORTS -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_virtual.dir/srtcore/core.cpp.o -MF CMakeFiles/srt_virtual.dir/srtcore/core.cpp.o.d -o CMakeFiles/srt_virtual.dir/srtcore/core.cpp.o -c /home/devel/building/work/src/srt-1.4.3/srtcore/core.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[1]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 84%] Built target srt_virtual
+make[1]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make  -f CMakeFiles/srt_shared.dir/build.make CMakeFiles/srt_shared.dir/depend
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+cd /home/devel/building/work/src/srt-1.4.3/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/srt-1.4.3 /home/devel/building/work/src/srt-1.4.3 /home/devel/building/work/src/srt-1.4.3/build /home/devel/building/work/src/srt-1.4.3/build /home/devel/building/work/src/srt-1.4.3/build/CMakeFiles/srt_shared.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make  -f CMakeFiles/srt_shared.dir/build.make CMakeFiles/srt_shared.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 86%] Building C object CMakeFiles/srt_shared.dir/cmake_object_lib_support.c.o
+/usr/bin/cc -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -Dsrt_shared_EXPORTS -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIC -MD -MT CMakeFiles/srt_shared.dir/cmake_object_lib_support.c.o -MF CMakeFiles/srt_shared.dir/cmake_object_lib_support.c.o.d -o CMakeFiles/srt_shared.dir/cmake_object_lib_support.c.o -c /home/devel/building/work/src/srt-1.4.3/cmake_object_lib_support.c
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 88%] Linking CXX shared library libsrt.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/srt_shared.dir/link.txt --verbose=1
+/usr/bin/c++ -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -shared -Wl,-soname,libsrt.so.1.4 -o libsrt.so.1.4.3 CMakeFiles/srt_shared.dir/cmake_object_lib_support.c.o CMakeFiles/srt_virtual.dir/srtcore/api.cpp.o CMakeFiles/srt_virtual.dir/srtcore/buffer.cpp.o CMakeFiles/srt_virtual.dir/srtcore/cache.cpp.o CMakeFiles/srt_virtual.dir/srtcore/channel.cpp.o CMakeFiles/srt_virtual.dir/srtcore/common.cpp.o CMakeFiles/srt_virtual.dir/srtcore/core.cpp.o CMakeFiles/srt_virtual.dir/srtcore/crypto.cpp.o CMakeFiles/srt_virtual.dir/srtcore/epoll.cpp.o CMakeFiles/srt_virtual.dir/srtcore/fec.cpp.o CMakeFiles/srt_virtual.dir/srtcore/handshake.cpp.o CMakeFiles/srt_virtual.dir/srtcore/list.cpp.o CMakeFiles/srt_virtual.dir/srtcore/logger_default.cpp.o CMakeFiles/srt_virtual.dir/srtcore/logger_defs.cpp.o CMakeFiles/srt_virtual.dir/srtcore/md5.cpp.o CMakeFiles/srt_virtual.dir/srtcore/packet.cpp.o CMakeFiles/srt_virtual.dir/srtcore/packetfilter.cpp.o CMakeFiles/srt_virtual.dir/srtcore/queue.cpp.o CMakeFiles/srt_virtual.dir/srtcore/congctl.cpp.o CMakeFiles/srt_virtual.dir/srtcore/srt_c_api.cpp.o CMakeFiles/srt_virtual.dir/srtcore/window.cpp.o CMakeFiles/srt_virtual.dir/srtcore/socketconfig.cpp.o CMakeFiles/srt_virtual.dir/srtcore/srt_compat.c.o CMakeFiles/srt_virtual.dir/srtcore/strerror_defs.cpp.o CMakeFiles/srt_virtual.dir/srtcore/sync.cpp.o CMakeFiles/srt_virtual.dir/srtcore/sync_posix.cpp.o CMakeFiles/srt_virtual.dir/haicrypt/cryspr.c.o "CMakeFiles/srt_virtual.dir/haicrypt/cryspr-openssl.c.o" CMakeFiles/srt_virtual.dir/haicrypt/hcrypt.c.o CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_ctx_rx.c.o CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_ctx_tx.c.o CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_rx.c.o CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_sa.c.o CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_tx.c.o CMakeFiles/srt_virtual.dir/haicrypt/hcrypt_xpt_srt.c.o CMakeFiles/srt_virtual.dir/haicrypt/haicrypt_log.cpp.o  -lssl -lcrypto 
+/home/devel/building/work/src/srt-1.4.3/srtcore/queue.cpp: In member function 'init':
+/home/devel/building/work/src/srt-1.4.3/srtcore/queue.cpp:106:31: warning: argument 1 value '18446744073709551615' exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+  106 |         tempu = new CUnit[size];
+      |                               ^
+/usr/include/c++/13.2.0/new:128:26: note: in a call to allocation function 'operator new []' declared here
+  128 | _GLIBCXX_NODISCARD void* operator new[](std::size_t) _GLIBCXX_THROW (std::bad_alloc)
+      |                          ^
+/home/devel/building/work/src/srt-1.4.3/srtcore/queue.cpp: In member function 'increase':
+/home/devel/building/work/src/srt-1.4.3/srtcore/queue.cpp:172:31: warning: argument 1 value '18446744073709551615' exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+  172 |         tempu = new CUnit[size];
+      |                               ^
+/usr/include/c++/13.2.0/new:128:26: note: in a call to allocation function 'operator new []' declared here
+  128 | _GLIBCXX_NODISCARD void* operator new[](std::size_t) _GLIBCXX_THROW (std::bad_alloc)
+      |                          ^
+/usr/bin/cmake -E cmake_symlink_library libsrt.so.1.4.3 libsrt.so.1.4 libsrt.so
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[1]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 88%] Built target srt_shared
+make[1]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make  -f CMakeFiles/srt-live-transmit.dir/build.make CMakeFiles/srt-live-transmit.dir/depend
+make  -f CMakeFiles/srt-file-transmit.dir/build.make CMakeFiles/srt-file-transmit.dir/depend
+make  -f CMakeFiles/srt-tunnel.dir/build.make CMakeFiles/srt-tunnel.dir/depend
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+cd /home/devel/building/work/src/srt-1.4.3/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/srt-1.4.3 /home/devel/building/work/src/srt-1.4.3 /home/devel/building/work/src/srt-1.4.3/build /home/devel/building/work/src/srt-1.4.3/build /home/devel/building/work/src/srt-1.4.3/build/CMakeFiles/srt-live-transmit.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+cd /home/devel/building/work/src/srt-1.4.3/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/srt-1.4.3 /home/devel/building/work/src/srt-1.4.3 /home/devel/building/work/src/srt-1.4.3/build /home/devel/building/work/src/srt-1.4.3/build /home/devel/building/work/src/srt-1.4.3/build/CMakeFiles/srt-file-transmit.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make  -f CMakeFiles/srt-live-transmit.dir/build.make CMakeFiles/srt-live-transmit.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+cd /home/devel/building/work/src/srt-1.4.3/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/srt-1.4.3 /home/devel/building/work/src/srt-1.4.3 /home/devel/building/work/src/srt-1.4.3/build /home/devel/building/work/src/srt-1.4.3/build /home/devel/building/work/src/srt-1.4.3/build/CMakeFiles/srt-tunnel.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make  -f CMakeFiles/srt-file-transmit.dir/build.make CMakeFiles/srt-file-transmit.dir/build
+make  -f CMakeFiles/srt-tunnel.dir/build.make CMakeFiles/srt-tunnel.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 92%] Building CXX object CMakeFiles/srt-live-transmit.dir/apps/srt-live-transmit.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -I/home/devel/building/work/src/srt-1.4.3/apps -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIE -MD -MT CMakeFiles/srt-live-transmit.dir/apps/srt-live-transmit.cpp.o -MF CMakeFiles/srt-live-transmit.dir/apps/srt-live-transmit.cpp.o.d -o CMakeFiles/srt-live-transmit.dir/apps/srt-live-transmit.cpp.o -c /home/devel/building/work/src/srt-1.4.3/apps/srt-live-transmit.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 92%] Building CXX object CMakeFiles/srt-file-transmit.dir/apps/srt-file-transmit.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -I/home/devel/building/work/src/srt-1.4.3/apps -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIE -MD -MT CMakeFiles/srt-file-transmit.dir/apps/srt-file-transmit.cpp.o -MF CMakeFiles/srt-file-transmit.dir/apps/srt-file-transmit.cpp.o.d -o CMakeFiles/srt-file-transmit.dir/apps/srt-file-transmit.cpp.o -c /home/devel/building/work/src/srt-1.4.3/apps/srt-file-transmit.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 94%] Building CXX object CMakeFiles/srt-tunnel.dir/apps/srt-tunnel.cpp.o
+/usr/bin/c++ -DENABLE_SOCK_CLOEXEC=1 -DHAI_ENABLE_SRT=1 -DHAI_PATCH=1 -DHAVE_INET_PTON=1 -DLINUX=1 -DSRT_ENABLE_APP_READER -DSRT_ENABLE_BINDTODEVICE -DSRT_ENABLE_CLOSE_SYNCH -DSRT_ENABLE_ENCRYPTION -DSRT_ENABLE_VERBOSE_LOCK -DSRT_VERSION=\"1.4.3\" -DUSE_OPENSSL=1 -D_GNU_SOURCE -I/home/devel/building/work/src/srt-1.4.3/common -I/home/devel/building/work/src/srt-1.4.3/srtcore -I/home/devel/building/work/src/srt-1.4.3/haicrypt -I/home/devel/building/work/src/srt-1.4.3/build -I/home/devel/building/work/src/srt-1.4.3/apps -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -fPIE -MD -MT CMakeFiles/srt-tunnel.dir/apps/srt-tunnel.cpp.o -MF CMakeFiles/srt-tunnel.dir/apps/srt-tunnel.cpp.o.d -o CMakeFiles/srt-tunnel.dir/apps/srt-tunnel.cpp.o -c /home/devel/building/work/src/srt-1.4.3/apps/srt-tunnel.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 98%] Linking CXX executable srt-file-transmit
+/usr/bin/cmake -E cmake_link_script CMakeFiles/srt-file-transmit.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -rdynamic "CMakeFiles/srt-file-transmit.dir/apps/srt-file-transmit.cpp.o" CMakeFiles/srtsupport_virtual.dir/apps/apputil.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/logsupport.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/logsupport_appdefs.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/socketoptions.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/transmitmedia.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/uriparser.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/verbose.cpp.o -o srt-file-transmit  -Wl,-rpath,/home/devel/building/work/src/srt-1.4.3/build: libsrt.so.1.4.3 
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[1]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[100%] Built target srt-file-transmit
+make[1]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[ 96%] Linking CXX executable srt-live-transmit
+/usr/bin/cmake -E cmake_link_script CMakeFiles/srt-live-transmit.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -rdynamic "CMakeFiles/srt-live-transmit.dir/apps/srt-live-transmit.cpp.o" CMakeFiles/srtsupport_virtual.dir/apps/apputil.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/logsupport.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/logsupport_appdefs.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/socketoptions.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/transmitmedia.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/uriparser.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/verbose.cpp.o -o srt-live-transmit  -Wl,-rpath,/home/devel/building/work/src/srt-1.4.3/build: libsrt.so.1.4.3 
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[1]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[100%] Built target srt-live-transmit
+make[1]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[2]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[100%] Linking CXX executable srt-tunnel
+/usr/bin/cmake -E cmake_link_script CMakeFiles/srt-tunnel.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -DENABLE_LOGGING=1 -Wall -Wextra -rdynamic "CMakeFiles/srt-tunnel.dir/apps/srt-tunnel.cpp.o" CMakeFiles/srtsupport_virtual.dir/apps/apputil.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/logsupport.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/logsupport_appdefs.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/socketoptions.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/transmitmedia.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/uriparser.cpp.o CMakeFiles/srtsupport_virtual.dir/apps/verbose.cpp.o -o srt-tunnel  -Wl,-rpath,/home/devel/building/work/src/srt-1.4.3/build: libsrt.so.1.4.3 
+/home/devel/building/work/src/srt-1.4.3/apps/verbose.hpp:30:7: warning: type 'struct Log' violates the C++ One Definition Rule [-Wodr]
+   30 | class Log
+      |       ^
+/home/devel/building/work/src/srt-1.4.3/apps/verbose.hpp:30:7: note: a different type is defined in another translation unit
+   30 | class Log
+      |       ^
+/home/devel/building/work/src/srt-1.4.3/apps/verbose.hpp:34:10: note: the first difference of corresponding definitions is field 'lockline'
+   34 |     bool lockline = false;
+      |          ^
+/home/devel/building/work/src/srt-1.4.3/apps/verbose.hpp:30:7: note: a type with different number of fields is defined in another translation unit
+   30 | class Log
+      |       ^
+/home/devel/building/work/src/srt-1.4.3/apps/verbose.hpp:56:5: warning: type of '__dt_comp ' does not match original declaration [-Wlto-type-mismatch]
+   56 |     ~Log();
+      |     ^
+/home/devel/building/work/src/srt-1.4.3/apps/verbose.cpp:39:5: note: '__dt_comp ' was previously declared here
+   39 |     Log::~Log()
+      |     ^
+/home/devel/building/work/src/srt-1.4.3/apps/verbose.cpp:39:5: note: code may be misoptimized unless '-fno-strict-aliasing' is used
+make[2]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+make[1]: Entering directory '/home/devel/building/work/src/srt-1.4.3/build'
+[100%] Built target srt-tunnel
+make[1]: Leaving directory '/home/devel/building/work/src/srt-1.4.3/build'
+/usr/bin/cmake -E cmake_progress_start /home/devel/building/work/src/srt-1.4.3/build/CMakeFiles 0
++ make DESTDIR=/home/devel/building/work/pkg install
+[ 14%] Built target srtsupport_virtual
+[ 84%] Built target srt_virtual
+[ 88%] Built target srt_shared
+[ 98%] Built target srt-live-transmit
+[ 98%] Built target srt-file-transmit
+[100%] Built target srt-tunnel
+Install the project...
+-- Install configuration: "None"
+-- Installing: /home/devel/building/work/pkg/usr/lib/libsrt.so.1.4.3
+-- Installing: /home/devel/building/work/pkg/usr/lib/libsrt.so.1.4
+-- Installing: /home/devel/building/work/pkg/usr/lib/libsrt.so
+-- Installing: /home/devel/building/work/pkg/usr/include/srt/version.h
+-- Installing: /home/devel/building/work/pkg/usr/include/srt/srt.h
+-- Installing: /home/devel/building/work/pkg/usr/include/srt/logging_api.h
+-- Installing: /home/devel/building/work/pkg/usr/include/srt/access_control.h
+-- Installing: /home/devel/building/work/pkg/usr/include/srt/platform_sys.h
+-- Installing: /home/devel/building/work/pkg/usr/include/srt/udt.h
+-- Installing: /home/devel/building/work/pkg/usr/lib/pkgconfig/haisrt.pc
+-- Installing: /home/devel/building/work/pkg/usr/lib/pkgconfig/srt.pc
+-- Installing: /home/devel/building/work/pkg/usr/bin/srt-live-transmit
+-- Set non-toolchain portion of runtime path of "/home/devel/building/work/pkg/usr/bin/srt-live-transmit" to ""
+-- Up-to-date: /home/devel/building/work/pkg/usr/bin/srt-live-transmit
+-- Installing: /home/devel/building/work/pkg/usr/bin/srt-file-transmit
+-- Set non-toolchain portion of runtime path of "/home/devel/building/work/pkg/usr/bin/srt-file-transmit" to ""
+-- Up-to-date: /home/devel/building/work/pkg/usr/bin/srt-file-transmit
+-- Installing: /home/devel/building/work/pkg/usr/bin/srt-tunnel
+-- Set non-toolchain portion of runtime path of "/home/devel/building/work/pkg/usr/bin/srt-tunnel" to ""
+-- Up-to-date: /home/devel/building/work/pkg/usr/bin/srt-tunnel
+-- Installing: /home/devel/building/work/pkg/usr/bin/srt-ffplay
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 20:09 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 20:09 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 20:09 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 20:09 usr/bin/
+-rwxr-xr-x  0 root   root   204184 Feb  1 20:09 usr/bin/srt-live-transmit
+-rwxr-xr-x  0 root   root   204160 Feb  1 20:09 usr/bin/srt-file-transmit
+-rwxr-xr-x  0 root   root   212472 Feb  1 20:09 usr/bin/srt-tunnel
+-rwxr-xr-x  0 root   root      797 Apr 27  2021 usr/bin/srt-ffplay
+drwxr-xr-x  0 root   root        0 Feb  1 20:09 usr/include/srt/
+-rw-r--r--  0 root   root     1029 Feb  1 20:09 usr/include/srt/version.h
+-rw-r--r--  0 root   root    43539 Apr 27  2021 usr/include/srt/srt.h
+-rw-r--r--  0 root   root     2809 Apr 27  2021 usr/include/srt/logging_api.h
+-rw-r--r--  0 root   root     5174 Apr 27  2021 usr/include/srt/access_control.h
+-rw-r--r--  0 root   root     2416 Apr 27  2021 usr/include/srt/platform_sys.h
+-rw-r--r--  0 root   root    12354 Apr 27  2021 usr/include/srt/udt.h
+-rwxr-xr-x  0 root   root   680504 Feb  1 20:09 usr/lib/libsrt.so.1.4.3
+lrwxrwxrwx  0 root   root        0 Feb  1 20:09 usr/lib/libsrt.so.1.4 -> libsrt.so.1.4.3
+lrwxrwxrwx  0 root   root        0 Feb  1 20:09 usr/lib/libsrt.so -> libsrt.so.1.4
+drwxr-xr-x  0 root   root        0 Feb  1 20:09 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      311 Feb  1 20:09 usr/lib/pkgconfig/haisrt.pc
+-rw-r--r--  0 root   root      311 Feb  1 20:09 usr/lib/pkgconfig/srt.pc
+=======> Building '/home/devel/packages/srt#1.4.3-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling srt 1.4.3-1
+prt-get: /usr/bin/pkgadd -u srt#1.4.3-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 20:09:44 2024
+

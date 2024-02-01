@@ -1,0 +1,91 @@
+prt-get: updating /usr/ports/opt-x86_64/asciidoctor
+prt-get: starting build Thu Feb  1 15:16:16 2024
+=======> Building '/home/devel/packages/asciidoctor#2.0.20-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/asciidoctor-2.0.20.tar.gz
++ build
++ cd asciidoctor-2.0.20
++ install -D bin/asciidoctor /home/devel/building/work/pkg/usr/bin/asciidoctor
++ install -D lib/asciidoctor.rb /home/devel/building/work/pkg/usr/lib/ruby/vendor_ruby/asciidoctor.rb
++ cp -r lib/asciidoctor /home/devel/building/work/pkg/usr/lib/ruby/vendor_ruby/asciidoctor
++ install -D data/stylesheets/asciidoctor-default.css /home/devel/building/work/pkg/usr/lib/ruby/data/stylesheets/asciidoctor-default.css
++ install -D data/stylesheets/coderay-asciidoctor.css /home/devel/building/work/pkg/usr/lib/ruby/data/stylesheets/coderay-asciidoctor.css
++ gzip man/asciidoctor.1
++ install -D man/asciidoctor.1.gz /home/devel/building/work/pkg/usr/share/man/man1/asciidoctor.1.gz
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/bin/
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/share/man/man1/
+-rwxr-xr-x  0 root   root     3682 Feb  1 15:16 usr/share/man/man1/asciidoctor.1.gz
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/lib/ruby/
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/lib/ruby/vendor_ruby/
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/lib/ruby/data/
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/lib/ruby/data/stylesheets/
+-rwxr-xr-x  0 root   root    29021 Feb  1 15:16 usr/lib/ruby/data/stylesheets/asciidoctor-default.css
+-rwxr-xr-x  0 root   root     3484 Feb  1 15:16 usr/lib/ruby/data/stylesheets/coderay-asciidoctor.css
+-rwxr-xr-x  0 root   root    21200 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor.rb
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/
+-rw-r--r--  0 root   root    18687 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/abstract_block.rb
+-rw-r--r--  0 root   root    23884 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/abstract_node.rb
+-rw-r--r--  0 root   root     6036 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/attribute_list.rb
+-rw-r--r--  0 root   root     5581 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/block.rb
+-rw-r--r--  0 root   root     3137 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/callouts.rb
+-rw-r--r--  0 root   root      111 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/cli.rb
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/cli/
+-rw-r--r--  0 root   root     9434 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/convert.rb
+-rw-r--r--  0 root   root    16347 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/converter.rb
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/converter/
+-rw-r--r--  0 root   root      282 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/core_ext.rb
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/core_ext/
+-rw-r--r--  0 root   root    53790 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/document.rb
+-rw-r--r--  0 root   root    58339 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/extensions.rb
+-rw-r--r--  0 root   root    11800 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/helpers.rb
+-rw-r--r--  0 root   root     1841 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/inline.rb
+-rw-r--r--  0 root   root     3582 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/list.rb
+-rw-r--r--  0 root   root     4878 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/load.rb
+-rw-r--r--  0 root   root     2853 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/logging.rb
+-rw-r--r--  0 root   root   117890 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/parser.rb
+-rw-r--r--  0 root   root    19970 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/path_resolver.rb
+-rw-r--r--  0 root   root    50386 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/reader.rb
+-rw-r--r--  0 root   root     1486 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/rouge_ext.rb
+-rw-r--r--  0 root   root    21927 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/rx.rb
+-rw-r--r--  0 root   root     7536 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/section.rb
+-rw-r--r--  0 root   root     2694 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/stylesheets.rb
+-rw-r--r--  0 root   root    59142 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/substitutors.rb
+-rw-r--r--  0 root   root    11128 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/syntax_highlighter.rb
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/syntax_highlighter/
+-rw-r--r--  0 root   root    24710 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/table.rb
+-rw-r--r--  0 root   root     1409 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/timings.rb
+-rw-r--r--  0 root   root       74 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/version.rb
+-rw-r--r--  0 root   root      888 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/writer.rb
+-rw-r--r--  0 root   root     2344 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/syntax_highlighter/coderay.rb
+-rw-r--r--  0 root   root     1254 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/syntax_highlighter/highlightjs.rb
+-rw-r--r--  0 root   root      276 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/syntax_highlighter/html_pipeline.rb
+-rw-r--r--  0 root   root      968 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/syntax_highlighter/prettify.rb
+-rw-r--r--  0 root   root     6010 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/syntax_highlighter/pygments.rb
+-rw-r--r--  0 root   root     4667 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/syntax_highlighter/rouge.rb
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/core_ext/float/
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/core_ext/hash/
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/core_ext/match_data/
+-rw-r--r--  0 root   root      645 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/core_ext/nil_or_empty.rb
+drwxr-xr-x  0 root   root        0 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/core_ext/regexp/
+-rw-r--r--  0 root   root      169 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/core_ext/regexp/is_match.rb
+-rw-r--r--  0 root   root      200 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/core_ext/match_data/names.rb
+-rw-r--r--  0 root   root      365 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/core_ext/hash/merge.rb
+-rw-r--r--  0 root   root      630 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/core_ext/float/truncate.rb
+-rw-r--r--  0 root   root     1986 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/converter/composite.rb
+-rw-r--r--  0 root   root    30321 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/converter/docbook5.rb
+-rw-r--r--  0 root   root    54405 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/converter/html5.rb
+-rw-r--r--  0 root   root    23472 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/converter/manpage.rb
+-rw-r--r--  0 root   root    10900 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/converter/template.rb
+-rw-r--r--  0 root   root     5611 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/cli/invoker.rb
+-rw-r--r--  0 root   root    14686 Feb  1 15:16 usr/lib/ruby/vendor_ruby/asciidoctor/cli/options.rb
+-rwxr-xr-x  0 root   root      376 Feb  1 15:16 usr/bin/asciidoctor
+=======> Building '/home/devel/packages/asciidoctor#2.0.20-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling asciidoctor 2.0.20-1
+prt-get: /usr/bin/pkgadd -u asciidoctor#2.0.20-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 15:16:16 2024
+

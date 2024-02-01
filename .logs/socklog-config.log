@@ -1,0 +1,91 @@
+prt-get: updating /usr/ports/core-x86_64/socklog-config
+prt-get: starting build Thu Feb  1 20:08:37 2024
+=======> Building '/home/devel/packages/socklog-config#20200115-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/socklog-void-20200115.tar.gz
++ build
++ cd socklog-void-20200115
++ sed -i 's|bin|sbin|g' Makefile
++ sed -i 's|nobody:nogroup|socklog:socklog|' sv/nanoklogd/run
++ sed -i '1 a setcap cap_syslog+ep /usr/sbin/nanoklogd' sv/nanoklogd/run
++ sed -i '2 a chown -R root:socklog /var/log/socklog' sv/nanoklogd/run
++ sed -i 's|nobody:nogroup|socklog:socklog|' sv/socklog-unix/run
++ make
+cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects    nanoklogd.c   -o nanoklogd
++ make DESTDIR=/home/devel/building/work/pkg install
+install -Dm755 nanoklogd /home/devel/building/work/pkg/usr/sbin/nanoklogd
+install -Dm755 svlogtail /home/devel/building/work/pkg/usr/sbin/svlogtail
+install -Dm755 syslog-stripdate /home/devel/building/work/pkg/usr/sbin/syslog-stripdate
+mkdir -p /home/devel/building/work/pkg/etc /home/devel/building/work/pkg/var/log
+cp -a sv /home/devel/building/work/pkg/etc
+cp -a socklog /home/devel/building/work/pkg/var/log
++ chown -R root:socklog /home/devel/building/work/pkg/var/log/socklog
++ chmod 2750 /home/devel/building/work/pkg/var/log/socklog/cron /home/devel/building/work/pkg/var/log/socklog/daemon /home/devel/building/work/pkg/var/log/socklog/debug /home/devel/building/work/pkg/var/log/socklog/errors /home/devel/building/work/pkg/var/log/socklog/everything /home/devel/building/work/pkg/var/log/socklog/kernel /home/devel/building/work/pkg/var/log/socklog/lpr /home/devel/building/work/pkg/var/log/socklog/mail /home/devel/building/work/pkg/var/log/socklog/messages /home/devel/building/work/pkg/var/log/socklog/remote-udp /home/devel/building/work/pkg/var/log/socklog/secure /home/devel/building/work/pkg/var/log/socklog/tty12 /home/devel/building/work/pkg/var/log/socklog/user /home/devel/building/work/pkg/var/log/socklog/xbps
++ chmod 0644 /home/devel/building/work/pkg/var/log/socklog/cron/config /home/devel/building/work/pkg/var/log/socklog/daemon/config /home/devel/building/work/pkg/var/log/socklog/debug/config /home/devel/building/work/pkg/var/log/socklog/errors/config /home/devel/building/work/pkg/var/log/socklog/everything/config /home/devel/building/work/pkg/var/log/socklog/kernel/config /home/devel/building/work/pkg/var/log/socklog/lpr/config /home/devel/building/work/pkg/var/log/socklog/mail/config /home/devel/building/work/pkg/var/log/socklog/messages/config /home/devel/building/work/pkg/var/log/socklog/remote-udp/config /home/devel/building/work/pkg/var/log/socklog/secure/config /home/devel/building/work/pkg/var/log/socklog/tty12/config /home/devel/building/work/pkg/var/log/socklog/user/config /home/devel/building/work/pkg/var/log/socklog/xbps/config
++ rm -r /home/devel/building/work/pkg/var/log/socklog/lpr /home/devel/building/work/pkg/var/log/socklog/xbps
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 20:08 etc/
+drwxrwxr-x  0 root   root        0 Jan 15  2020 etc/sv/
+drwxrwxr-x  0 root   root        0 Feb  1 20:08 etc/sv/nanoklogd/
+drwxrwxr-x  0 root   root        0 Feb  1 20:08 etc/sv/socklog-unix/
+-rwxrwxr-x  0 root   root       55 Jan 15  2020 etc/sv/socklog-unix/check
+drwxrwxr-x  0 root   root        0 Jan 15  2020 etc/sv/socklog-unix/log/
+lrwxrwxrwx  0 root   root        0 Jan 15  2020 etc/sv/socklog-unix/supervise -> /run/runit/supervise.socklog-unix
+-rwxrwxr-x  0 root   root       67 Feb  1 20:08 etc/sv/socklog-unix/run
+-rwxrwxr-x  0 root   root       60 Jan 15  2020 etc/sv/socklog-unix/log/run
+lrwxrwxrwx  0 root   root        0 Jan 15  2020 etc/sv/socklog-unix/log/supervise -> /run/runit/supervise.socklog-unix-log
+lrwxrwxrwx  0 root   root        0 Jan 15  2020 etc/sv/nanoklogd/supervise -> /run/runit/supervise.nanoklogd
+-rwxrwxr-x  0 root   root      130 Feb  1 20:08 etc/sv/nanoklogd/run
+drwxr-xr-x  0 root   root        0 Feb  1 20:08 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 20:08 usr/sbin/
+-rwxr-xr-x  0 root   root    14440 Feb  1 20:08 usr/sbin/nanoklogd
+-rwxr-xr-x  0 root   root      654 Feb  1 20:08 usr/sbin/svlogtail
+-rwxr-xr-x  0 root   root      420 Feb  1 20:08 usr/sbin/syslog-stripdate
+drwxr-xr-x  0 root   root        0 Feb  1 20:08 var/
+drwxr-xr-x  0 root   root        0 Feb  1 20:08 var/log/
+drwxrwxr-x  0 root   socklog     0 Feb  1 20:08 var/log/socklog/
+drwxr-s---  0 root   socklog     0 Jan 15  2020 var/log/socklog/cron/
+drwxr-s---  0 root   socklog     0 Jan 15  2020 var/log/socklog/daemon/
+drwxr-s---  0 root   socklog     0 Jan 15  2020 var/log/socklog/debug/
+drwxr-s---  0 root   socklog     0 Jan 15  2020 var/log/socklog/errors/
+drwxr-s---  0 root   socklog     0 Jan 15  2020 var/log/socklog/everything/
+drwxr-s---  0 root   socklog     0 Jan 15  2020 var/log/socklog/kernel/
+drwxr-s---  0 root   socklog     0 Jan 15  2020 var/log/socklog/mail/
+drwxr-s---  0 root   socklog     0 Jan 15  2020 var/log/socklog/messages/
+drwxr-s---  0 root   socklog     0 Jan 15  2020 var/log/socklog/remote-udp/
+drwxr-s---  0 root   socklog     0 Jan 15  2020 var/log/socklog/secure/
+drwxr-s---  0 root   socklog     0 Jan 15  2020 var/log/socklog/tty12/
+drwxr-s---  0 root   socklog     0 Jan 15  2020 var/log/socklog/user/
+-rw-r--r--  0 root   socklog    29 Jan 15  2020 var/log/socklog/user/config
+-rw-r--r--  0 root   socklog   110 Jan 15  2020 var/log/socklog/tty12/config
+-rw-r--r--  0 root   socklog    41 Jan 15  2020 var/log/socklog/secure/config
+-rw-r--r--  0 root   socklog    87 Jan 15  2020 var/log/socklog/remote-udp/config
+-rw-r--r--  0 root   socklog    97 Jan 15  2020 var/log/socklog/messages/config
+-rw-r--r--  0 root   socklog    29 Jan 15  2020 var/log/socklog/mail/config
+-rw-r--r--  0 root   socklog    11 Jan 15  2020 var/log/socklog/kernel/config
+-rw-r--r--  0 root   socklog    38 Jan 15  2020 var/log/socklog/everything/config
+-rw-r--r--  0 root   socklog    73 Jan 15  2020 var/log/socklog/errors/config
+-rw-r--r--  0 root   socklog    32 Jan 15  2020 var/log/socklog/debug/config
+-rw-r--r--  0 root   socklog    31 Jan 15  2020 var/log/socklog/daemon/config
+-rw-r--r--  0 root   socklog    29 Jan 15  2020 var/log/socklog/cron/config
+=======> Building '/home/devel/packages/socklog-config#20200115-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling socklog-config 20200115-1
+prt-get: /usr/bin/pkgadd -u socklog-config#20200115-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 20:08:38 2024
+
+pkgadd: rejecting etc/sv/nanoklogd/, keeping existing version
+pkgadd: rejecting etc/sv/socklog-unix/, keeping existing version
+pkgadd: rejecting etc/sv/socklog-unix/log/, keeping existing version
+pkgadd: rejecting var/log/socklog/, keeping existing version
+pkgadd: rejecting var/log/socklog/cron/, keeping existing version
+pkgadd: rejecting var/log/socklog/daemon/, keeping existing version
+pkgadd: rejecting var/log/socklog/debug/, keeping existing version
+pkgadd: rejecting var/log/socklog/errors/, keeping existing version
+pkgadd: rejecting var/log/socklog/everything/, keeping existing version
+pkgadd: rejecting var/log/socklog/kernel/, keeping existing version
+pkgadd: rejecting var/log/socklog/mail/, keeping existing version
+pkgadd: rejecting var/log/socklog/messages/, keeping existing version
+pkgadd: rejecting var/log/socklog/remote-udp/, keeping existing version
+pkgadd: rejecting var/log/socklog/secure/, keeping existing version
+pkgadd: rejecting var/log/socklog/tty12/, keeping existing version
+pkgadd: rejecting var/log/socklog/user/, keeping existing version

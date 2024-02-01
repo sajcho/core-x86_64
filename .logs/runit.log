@@ -1,0 +1,552 @@
+prt-get: updating /usr/ports/core-x86_64/runit
+prt-get: starting build Thu Feb  1 19:47:31 2024
+=======> Building '/home/devel/packages/runit#2.1.2-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/runit-2.1.2.tar.gz
+cp _sv /home/devel/building/work/src
+cp sv /home/devel/building/work/src
+cp clearmem.patch /home/devel/building/work/src
+cp cross.patch /home/devel/building/work/src
+cp svlogd.patch /home/devel/building/work/src
+cp utmpset-time_t.patch /home/devel/building/work/src
++ build
++ cd /home/devel/building/work/src/admin/runit-2.1.2
++ patch -p1 -i /home/devel/building/work/src/clearmem.patch
+patching file src/svlogd.c
++ patch -p1 -i /home/devel/building/work/src/cross.patch
+patching file src/Makefile
++ patch -p1 -i /home/devel/building/work/src/svlogd.patch
+patching file src/svlogd.c
++ patch -p1 -i /home/devel/building/work/src/utmpset-time_t.patch
+patching file src/utmpset.c
++ sed -i -e 's:^char \*varservice ="/service/";$:char \*varservice ="/var/service/";:' src/sv.c
++ sed -i -e 's:short x\[4\];$:gid_t x[4];:' src/chkshsgr.c
++ sed -i -e '/#include "iopause.h"/a #include <string.h>' src/svlogd.c
++ sed -i -e 's|#define INFO "- runit: "|#define INFO " - runit: "|' src/runit.c
++ CFLAGS='-O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -static'
++ LDFLAGS=' -static'
++ package/compile
+Linking ./src/* into ./compile...
+Compiling everything in ./compile...
++ cd compile
++ exec make
+sh find-systype.sh > systype
+rm -f choose
+cat warn-auto.sh choose.sh \
+> choose
+cat warn-auto.sh > compilehost
+rm -f loadhost
+chmod 555 choose
+chmod 555 compilehost
+./compilehost chkshsgr.c
+chmod 555 loadhost
+chkshsgr.c: In function 'main':
+chkshsgr.c:10:32: warning: implicit declaration of function 'setgroups'; did you mean 'getgroups'? [-Wimplicit-function-declaration]
+   10 |   if (getgroups(1,x) == 0) if (setgroups(1,x) == -1) _exit(1);
+      |                                ^~~~~~~~~
+      |                                getgroups
+./loadhost chkshsgr 
+#!/bin/sh
+# WARNING: This file was auto-generated. Do not edit!
+rm -f compile
+rm -f load
+rm -f makelib
+sh print-cc.sh > compile
+sh print-ld.sh > load
+sh print-ar.sh > makelib
+chmod 555 makelib
+chmod 555 compile
+chmod 555 load
+./choose c trydrent direntry.h1 direntry.h2 > direntry.h
+./choose c trysysel select.h1 select.h2 > select.h
+./choose clr tryulong64 uint64.h1 uint64.h2 > uint64.h
+./choose c tryreboot reboot_system.h1 reboot_system.h2 > \
+  reboot_system.h
+( ./compile tryuwtmpx.c 2>/dev/null && cat uw_tmp.h2 >uw_tmp.h ) || \
+( ./compile tryuwtmp.c 2>/dev/null && cat uw_tmp.h1 >uw_tmp.h )
+./compile trysocketlib.c
+./compile uidgid.c
+./compile alloc.c
+./compile alloc_re.c
+./compile buffer.c
+./compile buffer_0.c
+( ./load trysocketlib >/dev/null 2>&1 || \
+  ( ./load trysocketlib -lxnet >/dev/null 2>&1 && echo '-lxnet' ) || \
+  ( ./load trysocketlib -lsocket -lnsl >/dev/null 2>&1 && \
+    echo '-lsocket -lnsl' ) \
+) >socket.lib
+./compile buffer_1.c
+rm -f tryuwtmp.o tryuwtmpx.o
+./compile buffer_2.c
+./compile buffer_get.c
+./compile buffer_put.c
+./compile buffer_read.c
+./compile buffer_write.c
+./compile coe.c
+./compile env.c
+rm -f trysocketlib.o trysocketlib
+./compile error.c
+./compile error_str.c
+./compile fd_copy.c
+./compile fd_move.c
+./compile ndelay_off.c
+./compile ndelay_on.c
+./compile open_append.c
+./compile open_read.c
+./compile open_trunc.c
+./compile open_write.c
+./compile openreadclose.c
+./compile pathexec_env.c
+./compile pathexec_run.c
+./compile readclose.c
+pathexec_run.c: In function 'pathexec_run':
+pathexec_run.c:18:5: warning: implicit declaration of function 'execve' [-Wimplicit-function-declaration]
+   18 |     execve(file,argv,envp);
+      |     ^~~~~~
+pathexec_run.c:18:17: warning: passing argument 2 of 'execve' from incompatible pointer type [-Wincompatible-pointer-types]
+   18 |     execve(file,argv,envp);
+      |                 ^~~~
+      |                 |
+      |                 const char * const*
+pathexec_run.c:18:17: note: expected 'char * const*' but argument is of type 'const char * const*'
+pathexec_run.c:18:22: warning: passing argument 3 of 'execve' from incompatible pointer type [-Wincompatible-pointer-types]
+   18 |     execve(file,argv,envp);
+      |                      ^~~~
+      |                      |
+      |                      const char * const*
+pathexec_run.c:18:22: note: expected 'char * const*' but argument is of type 'const char * const*'
+pathexec_run.c:35:18: warning: passing argument 2 of 'execve' from incompatible pointer type [-Wincompatible-pointer-types]
+   35 |     execve(tmp.s,argv,envp);
+      |                  ^~~~
+      |                  |
+      |                  const char * const*
+pathexec_run.c:35:18: note: expected 'char * const*' but argument is of type 'const char * const*'
+pathexec_run.c:35:23: warning: passing argument 3 of 'execve' from incompatible pointer type [-Wincompatible-pointer-types]
+   35 |     execve(tmp.s,argv,envp);
+      |                       ^~~~
+      |                       |
+      |                       const char * const*
+pathexec_run.c:35:23: note: expected 'char * const*' but argument is of type 'const char * const*'
+./compile seek_set.c
+./compile sgetopt.c
+./compile sig.c
+./compile stralloc_cat.c
+./compile stralloc_catb.c
+seek_set.c: In function 'seek_set':
+seek_set.c:9:7: warning: implicit declaration of function 'lseek' [-Wimplicit-function-declaration]
+    9 | { if (lseek(fd,(off_t) pos,SET) == -1) return -1; return 0; }
+      |       ^~~~~
+./compile stralloc_cats.c
+./compile stralloc_eady.c
+./compile stralloc_opyb.c
+./compile stralloc_opys.c
+./compile stralloc_pend.c
+./compile strerr_die.c
+./compile strerr_sys.c
+./compile subgetopt.c
+./compile byte_chr.c
+./compile byte_copy.c
+./compile byte_cr.c
+./compile byte_diff.c
+./compile byte_rchr.c
+byte_chr.c: In function 'byte_chr':
+byte_chr.c:16:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   16 |     if (!n) break; if (*t == ch) break; ++t; --n;
+      |     ^~
+byte_chr.c:16:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   16 |     if (!n) break; if (*t == ch) break; ++t; --n;
+      |                    ^~
+byte_chr.c:17:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   17 |     if (!n) break; if (*t == ch) break; ++t; --n;
+      |     ^~
+byte_chr.c:17:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   17 |     if (!n) break; if (*t == ch) break; ++t; --n;
+      |                    ^~
+byte_chr.c:18:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   18 |     if (!n) break; if (*t == ch) break; ++t; --n;
+      |     ^~
+byte_chr.c:18:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   18 |     if (!n) break; if (*t == ch) break; ++t; --n;
+      |                    ^~
+byte_chr.c:19:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   19 |     if (!n) break; if (*t == ch) break; ++t; --n;
+      |     ^~
+byte_chr.c:19:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   19 |     if (!n) break; if (*t == ch) break; ++t; --n;
+      |                    ^~
+byte_copy.c: In function 'byte_copy':
+byte_diff.c: In function 'byte_diff':
+byte_rchr.c: In function 'byte_rchr':
+byte_copy.c:11:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   11 |     if (!n) return; *to++ = *from++; --n;
+      |     ^~
+byte_diff.c:11:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   11 |     if (!n) return 0; if (*s != *t) break; ++s; ++t; --n;
+      |     ^~
+byte_cr.c: In function 'byte_copyr':
+byte_rchr.c:18:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   18 |     if (!n) break; if (*t == ch) u = t; ++t; --n;
+      |     ^~
+byte_cr.c:13:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   13 |     if (!n) return; *--to = *--from; --n;
+      |     ^~
+byte_copy.c:11:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   11 |     if (!n) return; *to++ = *from++; --n;
+      |                     ^
+byte_diff.c:11:23: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   11 |     if (!n) return 0; if (*s != *t) break; ++s; ++t; --n;
+      |                       ^~
+byte_rchr.c:18:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   18 |     if (!n) break; if (*t == ch) u = t; ++t; --n;
+      |                    ^~
+byte_cr.c:13:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   13 |     if (!n) return; *--to = *--from; --n;
+      |                     ^
+byte_copy.c:12:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   12 |     if (!n) return; *to++ = *from++; --n;
+      |     ^~
+byte_cr.c:14:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   14 |     if (!n) return; *--to = *--from; --n;
+      |     ^~
+byte_copy.c:12:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   12 |     if (!n) return; *to++ = *from++; --n;
+      |                     ^
+byte_cr.c:14:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   14 |     if (!n) return; *--to = *--from; --n;
+      |                     ^
+byte_rchr.c:19:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   19 |     if (!n) break; if (*t == ch) u = t; ++t; --n;
+      |     ^~
+byte_rchr.c:19:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   19 |     if (!n) break; if (*t == ch) u = t; ++t; --n;
+      |                    ^~
+byte_copy.c:13:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   13 |     if (!n) return; *to++ = *from++; --n;
+      |     ^~
+byte_diff.c:12:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   12 |     if (!n) return 0; if (*s != *t) break; ++s; ++t; --n;
+      |     ^~
+byte_cr.c:15:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   15 |     if (!n) return; *--to = *--from; --n;
+      |     ^~
+byte_copy.c:13:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   13 |     if (!n) return; *to++ = *from++; --n;
+      |                     ^
+byte_diff.c:12:23: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   12 |     if (!n) return 0; if (*s != *t) break; ++s; ++t; --n;
+      |                       ^~
+byte_cr.c:15:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   15 |     if (!n) return; *--to = *--from; --n;
+      |                     ^
+byte_rchr.c:20:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   20 |     if (!n) break; if (*t == ch) u = t; ++t; --n;
+      |     ^~
+byte_copy.c:14:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   14 |     if (!n) return; *to++ = *from++; --n;
+      |     ^~
+byte_cr.c:16:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   16 |     if (!n) return; *--to = *--from; --n;
+      |     ^~
+byte_copy.c:14:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   14 |     if (!n) return; *to++ = *from++; --n;
+      |                     ^
+byte_rchr.c:20:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   20 |     if (!n) break; if (*t == ch) u = t; ++t; --n;
+      |                    ^~
+byte_diff.c:13:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   13 |     if (!n) return 0; if (*s != *t) break; ++s; ++t; --n;
+      |     ^~
+byte_cr.c:16:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   16 |     if (!n) return; *--to = *--from; --n;
+      |                     ^
+byte_diff.c:13:23: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   13 |     if (!n) return 0; if (*s != *t) break; ++s; ++t; --n;
+      |                       ^~
+byte_rchr.c:21:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   21 |     if (!n) break; if (*t == ch) u = t; ++t; --n;
+      |     ^~
+byte_rchr.c:21:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   21 |     if (!n) break; if (*t == ch) u = t; ++t; --n;
+      |                    ^~
+byte_diff.c:14:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   14 |     if (!n) return 0; if (*s != *t) break; ++s; ++t; --n;
+      |     ^~
+byte_diff.c:14:23: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   14 |     if (!n) return 0; if (*s != *t) break; ++s; ++t; --n;
+      |                       ^~
+./compile fmt_uint.c
+./compile fmt_uint0.c
+./compile fmt_ulong.c
+./compile scan_ulong.c
+./compile str_chr.c
+./compile str_diff.c
+./compile str_len.c
+str_chr.c: In function 'str_chr':
+str_chr.c:13:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   13 |     if (!*t) break; if (*t == ch) break; ++t;
+      |     ^~
+str_chr.c:13:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   13 |     if (!*t) break; if (*t == ch) break; ++t;
+      |                     ^~
+str_chr.c:14:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   14 |     if (!*t) break; if (*t == ch) break; ++t;
+      |     ^~
+str_chr.c:14:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   14 |     if (!*t) break; if (*t == ch) break; ++t;
+      |                     ^~
+str_chr.c:15:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   15 |     if (!*t) break; if (*t == ch) break; ++t;
+      |     ^~
+str_chr.c:15:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   15 |     if (!*t) break; if (*t == ch) break; ++t;
+      |                     ^~
+str_chr.c:16:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   16 |     if (!*t) break; if (*t == ch) break; ++t;
+      |     ^~
+str_chr.c:16:21: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   16 |     if (!*t) break; if (*t == ch) break; ++t;
+      |                     ^~
+str_len.c: In function 'str_len':
+str_len.c:11:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   11 |     if (!*t) return t - s; ++t;
+      |     ^~
+str_len.c:11:28: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   11 |     if (!*t) return t - s; ++t;
+      |                            ^~
+str_len.c:12:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   12 |     if (!*t) return t - s; ++t;
+      |     ^~
+str_len.c:12:28: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   12 |     if (!*t) return t - s; ++t;
+      |                            ^~
+str_len.c:13:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   13 |     if (!*t) return t - s; ++t;
+      |     ^~
+str_len.c:13:28: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   13 |     if (!*t) return t - s; ++t;
+      |                            ^~
+str_len.c:14:5: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   14 |     if (!*t) return t - s; ++t;
+      |     ^~
+str_len.c:14:28: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   14 |     if (!*t) return t - s; ++t;
+      |                            ^~
+./compile str_start.c
+./compile runit-init.c
+./compile tai_now.c
+./compile tai_pack.c
+./compile tai_sub.c
+./compile tai_unpack.c
+./compile taia_add.c
+./compile taia_approx.c
+./compile taia_frac.c
+./compile taia_less.c
+./compile taia_now.c
+./compile taia_pack.c
+./compile taia_sub.c
+./compile taia_uint.c
+./compile runsvchdir.c
+./compile pmatch.c
+./choose cl tryflock hasflock.h1 hasflock.h2 > hasflock.h
+./choose cl trymkffo hasmkffo.h1 hasmkffo.h2 > hasmkffo.h
+./choose cl trysgact hassgact.h1 hassgact.h2 > hassgact.h
+./choose cl trysgprm hassgprm.h1 hassgprm.h2 > hassgprm.h
+./chkshsgr || ( cat warn-shsgr; exit 1 )
+./choose cl trywaitp haswaitp.h1 haswaitp.h2 > haswaitp.h
+./choose clr tryshsgr hasshsgr.h1 hasshsgr.h2 > hasshsgr.h
+./choose clr trypoll iopause.h1 iopause.h2 > iopause.h
+./makelib byte.a byte_chr.o byte_copy.o byte_cr.o byte_diff.o \
+byte_rchr.o fmt_uint.o fmt_uint0.o fmt_ulong.o scan_ulong.o str_chr.o \
+str_diff.o str_len.o str_start.o
+./compile sig_block.c
+./compile sig_pause.c
+./compile fifo.c
+./compile lock_ex.c
+./compile lock_exnb.c
+./compile sig_catch.c
+./compile wait_nohang.c
+./compile wait_pid.c
+./compile prot.c
+prot.c: In function 'prot_gid':
+prot.c:13:7: warning: implicit declaration of function 'setgroups' [-Wimplicit-function-declaration]
+   13 |   if (setgroups(1,&gid) == -1) return -1;
+      |       ^~~~~~~~~
+prot.c:15:10: warning: implicit declaration of function 'setgid' [-Wimplicit-function-declaration]
+   15 |   return setgid(gid); /* _should_ be redundant, but on some systems it isn't */
+      |          ^~~~~~
+prot.c: In function 'prot_uid':
+prot.c:20:10: warning: implicit declaration of function 'setuid' [-Wimplicit-function-declaration]
+   20 |   return setuid(uid);
+      |          ^~~~~~
+rm -f sysdeps
+./compile iopause.c
+cat systype compile load socket.lib >>sysdeps
+grep sysdep direntry.h >>sysdeps
+grep sysdep haswaitp.h >>sysdeps
+./makelib unix.a alloc.o alloc_re.o buffer.o buffer_0.o buffer_1.o \
+buffer_2.o buffer_get.o buffer_put.o buffer_read.o buffer_write.o \
+coe.o env.o error.o error_str.o fd_copy.o fd_move.o fifo.o lock_ex.o \
+lock_exnb.o ndelay_off.o ndelay_on.o open_append.o open_read.o \
+open_trunc.o open_write.o openreadclose.o pathexec_env.o \
+pathexec_run.o prot.o readclose.o seek_set.o sgetopt.o sig.o \
+sig_block.o sig_catch.o sig_pause.o stralloc_cat.o stralloc_catb.o \
+stralloc_cats.o stralloc_eady.o stralloc_opyb.o stralloc_opys.o \
+stralloc_pend.o strerr_die.o strerr_sys.o subgetopt.o wait_nohang.o \
+wait_pid.o
+grep sysdep hassgact.h >>sysdeps
+grep sysdep hassgprm.h >>sysdeps
+grep sysdep select.h >>sysdeps
+grep sysdep uint64.h >>sysdeps
+grep sysdep iopause.h >>sysdeps
+grep sysdep hasmkffo.h >>sysdeps
+grep sysdep hasflock.h >>sysdeps
+grep sysdep hasshsgr.h >>sysdeps
+./makelib time.a iopause.o tai_now.o tai_pack.o tai_sub.o \
+tai_unpack.o taia_add.o taia_approx.o taia_frac.o taia_less.o \
+taia_now.o taia_pack.o taia_sub.o taia_uint.o
+grep sysdep reboot_system.h >>sysdeps
+grep sysdep uw_tmp.h >>sysdeps
+cat sysdeps
+linux-6.7.1-saux-:-:-:genuineintel-000906ec-bfebfbff-:-
+#!/bin/sh
+# WARNING: This file was auto-generated. Do not edit!
+exec gcc -O2 -Wall -c ${1+"$@"}
+#!/bin/sh
+# WARNING: This file was auto-generated. Do not edit!
+main="$1"; shift
+exec gcc -s -o "$main" "$main".o ${1+"$@"}
+/* sysdep: +dirent */
+/* sysdep: +waitpid */
+/* sysdep: +sigaction */
+/* sysdep: +sigprocmask */
+/* sysdep: +sysselect */
+/* sysdep: +ulong64 */
+/* sysdep: +poll */
+/* sysdep: +mkfifo */
+/* sysdep: +flock */
+/* sysdep: -shortsetgroups */
+/* sysdep: +std reboot */
+/* sysdep: -utmpx */
+./compile chpst.c
+./compile runit.c
+./compile runsv.c
+./compile runsvdir.c
+./compile sv.c
+./compile svlogd.c
+sv.c: In function 'main':
+chpst.c: In function 'suidgid':
+sv.c:293:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  293 |   if (!(action =*argv++)) usage(); --argc;
+      |   ^~
+chpst.c:80:7: warning: implicit declaration of function 'setgroups'; did you mean 'getgroups'? [-Wimplicit-function-declaration]
+   80 |   if (setgroups(ugid.gids, ugid.gid) == -1) fatal("unable to setgroups");
+      |       ^~~~~~~~~
+      |       getgroups
+sv.c:293:36: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  293 |   if (!(action =*argv++)) usage(); --argc;
+      |                                    ^~
+chpst.c: In function 'main':
+chpst.c:311:33: warning: operation on 'subgetoptarg' may be undefined [-Wsequence-point]
+  311 |           if (optarg[scan_ulong(++optarg, &ul)]) usage(); nicelvl =ul;
+chpst.c:311:11: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  311 |           if (optarg[scan_ulong(++optarg, &ul)]) usage(); nicelvl =ul;
+      |           ^~
+chpst.c:311:59: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  311 |           if (optarg[scan_ulong(++optarg, &ul)]) usage(); nicelvl =ul;
+      |                                                           ^~~~~~~
+chpst.c:316:11: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  316 |           if (optarg[scan_ulong(optarg, &ul)]) usage(); nicelvl =ul;
+      |           ^~
+chpst.c:316:57: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  316 |           if (optarg[scan_ulong(optarg, &ul)]) usage(); nicelvl =ul;
+      |                                                         ^~~~~~~
+svlogd.c: In function 'ip4_scan':
+svlogd.c:395:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  395 |   if (*s != '.') return 0; ++s; ++len;
+      |   ^~
+svlogd.c:395:28: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  395 |   if (*s != '.') return 0; ++s; ++len;
+      |                            ^~
+svlogd.c:397:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  397 |   if (*s != '.') return 0; ++s; ++len;
+      |   ^~
+svlogd.c:397:28: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  397 |   if (*s != '.') return 0; ++s; ++len;
+      |                            ^~
+svlogd.c:399:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  399 |   if (*s != '.') return 0; ++s; ++len;
+      |   ^~
+svlogd.c:399:28: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  399 |   if (*s != '.') return 0; ++s; ++len;
+      |                            ^~
+./compile fmt_ptime.c
+./compile utmpset.c
+./load runit-init unix.a byte.a -static
+./load runsvchdir unix.a byte.a
+./load utmpset unix.a byte.a
+./load runit unix.a byte.a -static
+./load runsvdir unix.a byte.a time.a
+./load runsv unix.a byte.a time.a
+./load sv unix.a byte.a time.a
+./load chpst uidgid.o unix.a byte.a
+./load svlogd pmatch.o fmt_ptime.o unix.a byte.a time.a \
+`cat socket.lib`
+Copying commands into ./command...
++ mkdir -v /home/devel/building/work/pkg/var
+mkdir: created directory '/home/devel/building/work/pkg/var'
++ ln -s ../run/runit/runsvdir/current /home/devel/building/work/pkg/var/service
++ mkdir -v /home/devel/building/work/pkg/sbin
+mkdir: created directory '/home/devel/building/work/pkg/sbin'
++ cp -v command/chpst command/runit command/runit-init command/runsv command/runsvchdir command/runsvdir command/sv command/svlogd command/utmpset /home/devel/building/work/pkg/sbin/
+'command/chpst' -> '/home/devel/building/work/pkg/sbin/chpst'
+'command/runit' -> '/home/devel/building/work/pkg/sbin/runit'
+'command/runit-init' -> '/home/devel/building/work/pkg/sbin/runit-init'
+'command/runsv' -> '/home/devel/building/work/pkg/sbin/runsv'
+'command/runsvchdir' -> '/home/devel/building/work/pkg/sbin/runsvchdir'
+'command/runsvdir' -> '/home/devel/building/work/pkg/sbin/runsvdir'
+'command/sv' -> '/home/devel/building/work/pkg/sbin/sv'
+'command/svlogd' -> '/home/devel/building/work/pkg/sbin/svlogd'
+'command/utmpset' -> '/home/devel/building/work/pkg/sbin/utmpset'
++ install -d -m 0755 /home/devel/building/work/pkg/usr/share/man/man8
++ install -D -m 0644 /home/devel/building/work/src/admin/runit-2.1.2/man/chpst.8 /home/devel/building/work/src/admin/runit-2.1.2/man/runit-init.8 /home/devel/building/work/src/admin/runit-2.1.2/man/runit.8 /home/devel/building/work/src/admin/runit-2.1.2/man/runsv.8 /home/devel/building/work/src/admin/runit-2.1.2/man/runsvchdir.8 /home/devel/building/work/src/admin/runit-2.1.2/man/runsvdir.8 /home/devel/building/work/src/admin/runit-2.1.2/man/sv.8 /home/devel/building/work/src/admin/runit-2.1.2/man/svlogd.8 /home/devel/building/work/src/admin/runit-2.1.2/man/utmpset.8 /home/devel/building/work/pkg/usr/share/man/man8
++ install -d -m 0755 /home/devel/building/work/pkg/usr/share/zsh/site-functions
++ install -D -m 0644 /home/devel/building/work/src/_sv /home/devel/building/work/pkg/usr/share/zsh/site-functions
++ install -d -m 0755 /home/devel/building/work/pkg/usr/share/bash-completion/completions
++ install -D -m 0644 /home/devel/building/work/src/sv /home/devel/building/work/pkg/usr/share/bash-completion/completions
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 19:47 sbin/
+-rwxr-xr-x  0 root   root    35328 Feb  1 19:47 sbin/chpst
+-rwxr-xr-x  0 root   root   668296 Feb  1 19:47 sbin/runit
+-rwxr-xr-x  0 root   root   655976 Feb  1 19:47 sbin/runit-init
+-rwxr-xr-x  0 root   root    31200 Feb  1 19:47 sbin/runsv
+-rwxr-xr-x  0 root   root    18784 Feb  1 19:47 sbin/runsvchdir
+-rwxr-xr-x  0 root   root    27088 Feb  1 19:47 sbin/runsvdir
+-rwxr-xr-x  0 root   root    27032 Feb  1 19:47 sbin/sv
+-rwxr-xr-x  0 root   root    47680 Feb  1 19:47 sbin/svlogd
+-rwxr-xr-x  0 root   root    22824 Feb  1 19:47 sbin/utmpset
+drwxr-xr-x  0 root   root        0 Feb  1 19:47 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 19:47 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 19:47 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb  1 19:47 usr/share/zsh/
+drwxr-xr-x  0 root   root        0 Feb  1 19:47 usr/share/bash-completion/
+drwxr-xr-x  0 root   root        0 Feb  1 19:47 usr/share/bash-completion/completions/
+-rw-r--r--  0 root   root      691 Feb  1 19:47 usr/share/bash-completion/completions/sv
+drwxr-xr-x  0 root   root        0 Feb  1 19:47 usr/share/zsh/site-functions/
+-rw-r--r--  0 root   root      958 Feb  1 19:47 usr/share/zsh/site-functions/_sv
+drwxr-xr-x  0 root   root        0 Feb  1 19:47 usr/share/man/man8/
+-rw-r--r--  0 root   root     1640 Feb  1 19:47 usr/share/man/man8/chpst.8.gz
+-rw-r--r--  0 root   root      548 Feb  1 19:47 usr/share/man/man8/runit-init.8.gz
+-rw-r--r--  0 root   root      850 Feb  1 19:47 usr/share/man/man8/runit.8.gz
+-rw-r--r--  0 root   root     1710 Feb  1 19:47 usr/share/man/man8/runsv.8.gz
+-rw-r--r--  0 root   root      465 Feb  1 19:47 usr/share/man/man8/runsvchdir.8.gz
+-rw-r--r--  0 root   root      954 Feb  1 19:47 usr/share/man/man8/runsvdir.8.gz
+-rw-r--r--  0 root   root     1922 Feb  1 19:47 usr/share/man/man8/sv.8.gz
+-rw-r--r--  0 root   root     3414 Feb  1 19:47 usr/share/man/man8/svlogd.8.gz
+-rw-r--r--  0 root   root      595 Feb  1 19:47 usr/share/man/man8/utmpset.8.gz
+drwxr-xr-x  0 root   root        0 Feb  1 19:47 var/
+lrwxrwxrwx  0 root   root        0 Feb  1 19:47 var/service -> ../run/runit/runsvdir/current
+=======> Building '/home/devel/packages/runit#2.1.2-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling runit 2.1.2-1
+prt-get: /usr/bin/pkgadd -u runit#2.1.2-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 19:47:32 2024
+

@@ -1,0 +1,95 @@
+prt-get: updating /usr/ports/wayland-x86_64/grim
+prt-get: starting build Thu Feb  1 17:58:45 2024
+=======> Building '/home/devel/packages/grim#1.4.1-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/v1.4.1.tar.gz
++ build
++ cd grim-v1.4.1
++ build-meson . build
+The Meson build system
+Version: 1.3.1
+Source dir: /home/devel/building/work/src/grim-v1.4.1
+Build dir: /home/devel/building/work/src/grim-v1.4.1/build
+Build type: native build
+Project name: grim
+Project version: 1.4.1
+C compiler for the host machine: cc (gcc 13.2.0 "cc (SAUX-x86_64) 13.2.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 2.1.0
+Run-time dependency libpng found: YES 1.6.40
+Run-time dependency libjpeg found: YES 3.0.1
+Library m found: YES
+Run-time dependency pixman-1 found: YES 0.43.0
+Library rt found: YES
+Run-time dependency wayland-client found: YES 1.22.0
+Run-time dependency wayland-protocols found: YES 1.33
+Program wayland-scanner found: YES (/usr/bin/wayland-scanner)
+Program scdoc found: YES (/usr/bin/scdoc)
+Build targets in project: 3
+
+grim 1.4.1
+
+  User defined options
+    auto_features     : auto
+    bindir            : /usr/bin
+    buildtype         : plain
+    datadir           : /usr/share
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    libexecdir        : /usr/lib
+    localstatedir     : /var
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sbindir           : /usr/sbin
+    sharedstatedir    : /var/lib
+    sysconfdir        : /etc
+    werror            : false
+    wrap_mode         : nodownload
+    python.bytecompile: 0
+    b_lto             : false
+    b_pie             : true
+    b_staticpic       : true
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -v -C build
+ninja: entering directory '/home/devel/building/work/src/grim-v1.4.1/build'
+[1/19] /usr/bin/meson --internal exe --capture grim.1 --feed ../grim.1.scd -- /usr/bin/scdoc
+[2/19] /usr/bin/wayland-scanner client-header //usr/share/wayland-protocols/unstable/xdg-output/xdg-output-unstable-v1.xml grim.p/xdg-output-unstable-v1-client-protocol.h
+[3/19] /usr/bin/wayland-scanner client-header ../protocol/wlr-screencopy-unstable-v1.xml grim.p/wlr-screencopy-unstable-v1-client-protocol.h
+[4/19] /usr/bin/wayland-scanner private-code ../protocol/wlr-screencopy-unstable-v1.xml protocol/libclient_protos.a.p/wlr-screencopy-unstable-v1-protocol.c
+[5/19] /usr/bin/wayland-scanner client-header //usr/share/wayland-protocols/unstable/xdg-output/xdg-output-unstable-v1.xml protocol/libclient_protos.a.p/xdg-output-unstable-v1-client-protocol.h
+[6/19] /usr/bin/wayland-scanner client-header ../protocol/wlr-screencopy-unstable-v1.xml protocol/libclient_protos.a.p/wlr-screencopy-unstable-v1-client-protocol.h
+[7/19] /usr/bin/wayland-scanner private-code //usr/share/wayland-protocols/unstable/xdg-output/xdg-output-unstable-v1.xml protocol/libclient_protos.a.p/xdg-output-unstable-v1-protocol.c
+[8/19] cc -Igrim.p -I. -I.. -I../include -I/usr/include/pixman-1 -I/usr/include/libpng16 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -Wno-unused-parameter -DHAVE_JPEG -DGRIM_LITTLE_ENDIAN=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ grim.p/write_jpg.c.o -MF grim.p/write_jpg.c.o.d -o grim.p/write_jpg.c.o -c ../write_jpg.c
+[9/19] cc -Igrim.p -I. -I.. -I../include -I/usr/include/pixman-1 -I/usr/include/libpng16 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -Wno-unused-parameter -DHAVE_JPEG -DGRIM_LITTLE_ENDIAN=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ grim.p/write_png.c.o -MF grim.p/write_png.c.o.d -o grim.p/write_png.c.o -c ../write_png.c
+[10/19] cc -Igrim.p -I. -I.. -I../include -I/usr/include/pixman-1 -I/usr/include/libpng16 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -Wno-unused-parameter -DHAVE_JPEG -DGRIM_LITTLE_ENDIAN=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ grim.p/write_ppm.c.o -MF grim.p/write_ppm.c.o.d -o grim.p/write_ppm.c.o -c ../write_ppm.c
+[11/19] cc -Igrim.p -I. -I.. -I../include -I/usr/include/pixman-1 -I/usr/include/libpng16 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -Wno-unused-parameter -DHAVE_JPEG -DGRIM_LITTLE_ENDIAN=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ grim.p/render.c.o -MF grim.p/render.c.o.d -o grim.p/render.c.o -c ../render.c
+[12/19] cc -Igrim.p -I. -I.. -I../include -I/usr/include/pixman-1 -I/usr/include/libpng16 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -Wno-unused-parameter -DHAVE_JPEG -DGRIM_LITTLE_ENDIAN=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ grim.p/output-layout.c.o -MF grim.p/output-layout.c.o.d -o grim.p/output-layout.c.o -c ../output-layout.c
+[13/19] cc -Igrim.p -I. -I.. -I../include -I/usr/include/pixman-1 -I/usr/include/libpng16 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -Wno-unused-parameter -DHAVE_JPEG -DGRIM_LITTLE_ENDIAN=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ grim.p/main.c.o -MF grim.p/main.c.o.d -o grim.p/main.c.o -c ../main.c
+[14/19] cc -Iprotocol/libclient_protos.a.p -Iprotocol -I../protocol -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -Wno-unused-parameter -DHAVE_JPEG -DGRIM_LITTLE_ENDIAN=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ protocol/libclient_protos.a.p/meson-generated_xdg-output-unstable-v1-protocol.c.o -MF protocol/libclient_protos.a.p/meson-generated_xdg-output-unstable-v1-protocol.c.o.d -o protocol/libclient_protos.a.p/meson-generated_xdg-output-unstable-v1-protocol.c.o -c protocol/libclient_protos.a.p/xdg-output-unstable-v1-protocol.c
+[15/19] cc -Igrim.p -I. -I.. -I../include -I/usr/include/pixman-1 -I/usr/include/libpng16 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -Wno-unused-parameter -DHAVE_JPEG -DGRIM_LITTLE_ENDIAN=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ grim.p/buffer.c.o -MF grim.p/buffer.c.o.d -o grim.p/buffer.c.o -c ../buffer.c
+[16/19] cc -Igrim.p -I. -I.. -I../include -I/usr/include/pixman-1 -I/usr/include/libpng16 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -Wno-unused-parameter -DHAVE_JPEG -DGRIM_LITTLE_ENDIAN=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ grim.p/box.c.o -MF grim.p/box.c.o.d -o grim.p/box.c.o -c ../box.c
+[17/19] cc -Iprotocol/libclient_protos.a.p -Iprotocol -I../protocol -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -Wno-unused-parameter -DHAVE_JPEG -DGRIM_LITTLE_ENDIAN=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ protocol/libclient_protos.a.p/meson-generated_wlr-screencopy-unstable-v1-protocol.c.o -MF protocol/libclient_protos.a.p/meson-generated_wlr-screencopy-unstable-v1-protocol.c.o.d -o protocol/libclient_protos.a.p/meson-generated_wlr-screencopy-unstable-v1-protocol.c.o -c protocol/libclient_protos.a.p/wlr-screencopy-unstable-v1-protocol.c
+[18/19] rm -f protocol/libclient_protos.a && gcc-ar csrDT protocol/libclient_protos.a protocol/libclient_protos.a.p/meson-generated_xdg-output-unstable-v1-protocol.c.o protocol/libclient_protos.a.p/meson-generated_wlr-screencopy-unstable-v1-protocol.c.o
+[19/19] cc  -o grim grim.p/box.c.o grim.p/buffer.c.o grim.p/main.c.o grim.p/output-layout.c.o grim.p/render.c.o grim.p/write_ppm.c.o grim.p/write_png.c.o grim.p/write_jpg.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--start-group protocol/libclient_protos.a -lm /usr/lib/libpixman-1.so /usr/lib/libpng16.so -lrt /usr/lib/libwayland-client.so /usr/lib/libjpeg.so -Wl,--end-group
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/grim-v1.4.1/build -j 8 -v
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Installing grim to /home/devel/building/work/pkg/usr/bin
+Installing grim.1 to /home/devel/building/work/pkg/usr/share/man/man1
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/bin/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/share/man/man1/
+-rw-r--r--  0 root   root     1189 Feb  1 17:58 usr/share/man/man1/grim.1.gz
+-rwxr-xr-x  0 root   root    35960 Feb  1 17:58 usr/bin/grim
+=======> Building '/home/devel/packages/grim#1.4.1-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling grim 1.4.1-1
+prt-get: /usr/bin/pkgadd -u grim#1.4.1-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 17:58:46 2024
+

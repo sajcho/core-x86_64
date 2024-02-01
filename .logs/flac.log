@@ -1,0 +1,1451 @@
+prt-get: updating /usr/ports/opt-x86_64/flac
+prt-get: starting build Thu Feb  1 16:06:07 2024
+=======> Building '/home/devel/packages/flac#1.4.3-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/flac-1.4.3.tar.xz
++ build
++ cd flac-1.4.3
++ ./configure --prefix=/usr --enable-ogg --disable-thorough-tests
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking how to create a pax tar archive... gnutar
+checking whether make supports nested variables... (cached) yes
+checking whether to enable debugging... no
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+/usr/bin/grep: warning: stray \ before -
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether we are using the CLANG C compiler... no
+checking whether make sets $(MAKE)... (cached) yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking size of off_t... 8
+checking size of void*... 8
+checking for library containing lround... -lm
+checking for inline... inline
+checking for typeof syntax and keyword spelling... typeof
+checking for stdint.h... (cached) yes
+checking for stdbool.h... yes
+checking for inttypes.h... (cached) yes
+checking for byteswap.h... yes
+checking for sys/auxv.h... yes
+checking for sys/param.h... yes
+checking for sys/ioctl.h... yes
+checking for termios.h... yes
+checking for x86intrin.h... yes
+checking for cpuid.h... yes
+checking for arm_neon.h... no
+checking for bswap32 intrinsic... yes
+checking for bswap16 intrinsic... yes
+checking whether byte ordering is bigendian... no
+checking for getauxval... yes
+checking for getopt_long... yes
+checking size of void*... (cached) 8
+checking for doxygen... no
+checking for Ogg... yes
+checking for ld used by gcc... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking how to run the C preprocessor... gcc -E
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for nl_langinfo and CODESET... yes
+checking for pandoc... no
+checking for clock_gettime in -lrt... yes
+checking for version of gcc... 13.2.0
+checking if gcc accepts -Wdeclaration-after-statement... yes
+checking whether to add -D_FORTIFY_SOURCE=2 to CPPFLAGS... yes
+checking if g++ accepts -Weffc++... yes
+checking if gcc supports stack smash protection... yes
+checking if g++ supports stack smash protection... yes
+checking for git... yes
+checking whether C compiler accepts -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/libFLAC/Makefile
+config.status: creating src/libFLAC/flac.pc
+config.status: creating src/libFLAC/include/Makefile
+config.status: creating src/libFLAC/include/private/Makefile
+config.status: creating src/libFLAC/include/protected/Makefile
+config.status: creating src/libFLAC++/Makefile
+config.status: creating src/libFLAC++/flac++.pc
+config.status: creating src/flac/Makefile
+config.status: creating src/metaflac/Makefile
+config.status: creating src/share/Makefile
+config.status: creating src/test_grabbag/Makefile
+config.status: creating src/test_grabbag/cuesheet/Makefile
+config.status: creating src/test_grabbag/picture/Makefile
+config.status: creating src/test_libs_common/Makefile
+config.status: creating src/test_libFLAC/Makefile
+config.status: creating src/test_libFLAC++/Makefile
+config.status: creating src/test_seeking/Makefile
+config.status: creating src/test_streams/Makefile
+config.status: creating src/utils/Makefile
+config.status: creating src/utils/flacdiff/Makefile
+config.status: creating src/utils/flactimer/Makefile
+config.status: creating examples/Makefile
+config.status: creating examples/c/Makefile
+config.status: creating examples/c/decode/Makefile
+config.status: creating examples/c/decode/file/Makefile
+config.status: creating examples/c/encode/Makefile
+config.status: creating examples/c/encode/file/Makefile
+config.status: creating examples/cpp/Makefile
+config.status: creating examples/cpp/decode/Makefile
+config.status: creating examples/cpp/decode/file/Makefile
+config.status: creating examples/cpp/encode/Makefile
+config.status: creating examples/cpp/encode/file/Makefile
+config.status: creating include/Makefile
+config.status: creating include/FLAC/Makefile
+config.status: creating include/FLAC++/Makefile
+config.status: creating include/share/Makefile
+config.status: creating include/share/grabbag/Makefile
+config.status: creating include/test_libs_common/Makefile
+config.status: creating doc/Doxyfile
+config.status: creating doc/Makefile
+config.status: creating doc/images/Makefile
+config.status: creating m4/Makefile
+config.status: creating man/Makefile
+config.status: creating test/common.sh
+config.status: creating test/Makefile
+config.status: creating test/cuesheets/Makefile
+config.status: creating test/foreign-metadata-test-files/Makefile
+config.status: creating test/flac-to-flac-metadata-test-files/Makefile
+config.status: creating test/metaflac-test-files/Makefile
+config.status: creating test/pictures/Makefile
+config.status: creating microbench/Makefile
+config.status: creating oss-fuzz/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+-=-=-=-=-=-=-=-=-=-= Configuration Complete =-=-=-=-=-=-=-=-=-=-
+
+  Configuration summary :
+
+    FLAC version : ............................ 1.4.3
+
+    Host CPU : ................................ x86_64
+    Host Vendor : ............................. pc
+    Host OS : ................................. linux-gnu
+
+
+    Compiler is GCC : ......................... yes
+    GCC version : ............................. 13.2.0
+    Compiler is Clang : ....................... no
+    Asm optimizations : ....................... yes
+    Ogg/FLAC support : ........................ yes
+    Stack protector  : ........................ yes
+    Fuzzing support (Clang only) : ............ no
+
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/flac-1.4.3'
+Making all in doc
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/doc'
+Making all in .
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/doc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/doc'
+Making all in images
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/doc/images'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/doc/images'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/doc'
+Making all in include
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include'
+Making all in FLAC
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include/FLAC'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include/FLAC'
+Making all in FLAC++
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include/FLAC++'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include/FLAC++'
+Making all in share
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include/share'
+Making all in grabbag
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include/share/grabbag'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include/share/grabbag'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include/share'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include/share'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include/share'
+Making all in test_libs_common
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include/test_libs_common'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include/test_libs_common'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include'
+Making all in m4
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/m4'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/m4'
+Making all in man
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/man'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/man'
+Making all in src
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src'
+Making all in libFLAC
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC'
+Making all in include
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include'
+Making all in private
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include/private'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include/private'
+Making all in protected
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include/protected'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include/protected'
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include'
+make[5]: Nothing to be done for 'all-am'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include'
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include'
+Making all in .
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC'
+depbase=`echo bitmath.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT bitmath.lo -MD -MP -MF $depbase.Tpo -c -o bitmath.lo bitmath.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo bitreader.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT bitreader.lo -MD -MP -MF $depbase.Tpo -c -o bitreader.lo bitreader.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo bitwriter.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT bitwriter.lo -MD -MP -MF $depbase.Tpo -c -o bitwriter.lo bitwriter.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo cpu.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT cpu.lo -MD -MP -MF $depbase.Tpo -c -o cpu.lo cpu.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo crc.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT crc.lo -MD -MP -MF $depbase.Tpo -c -o crc.lo crc.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo fixed.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT fixed.lo -MD -MP -MF $depbase.Tpo -c -o fixed.lo fixed.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo fixed_intrin_sse2.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT fixed_intrin_sse2.lo -MD -MP -MF $depbase.Tpo -c -o fixed_intrin_sse2.lo fixed_intrin_sse2.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo fixed_intrin_ssse3.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT fixed_intrin_ssse3.lo -MD -MP -MF $depbase.Tpo -c -o fixed_intrin_ssse3.lo fixed_intrin_ssse3.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT cpu.lo -MD -MP -MF .deps/cpu.Tpo -c cpu.c  -fPIC -DPIC -o .libs/cpu.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT bitwriter.lo -MD -MP -MF .deps/bitwriter.Tpo -c bitwriter.c  -fPIC -DPIC -o .libs/bitwriter.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT crc.lo -MD -MP -MF .deps/crc.Tpo -c crc.c  -fPIC -DPIC -o .libs/crc.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT fixed_intrin_ssse3.lo -MD -MP -MF .deps/fixed_intrin_ssse3.Tpo -c fixed_intrin_ssse3.c  -fPIC -DPIC -o .libs/fixed_intrin_ssse3.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT fixed_intrin_sse2.lo -MD -MP -MF .deps/fixed_intrin_sse2.Tpo -c fixed_intrin_sse2.c  -fPIC -DPIC -o .libs/fixed_intrin_sse2.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT fixed.lo -MD -MP -MF .deps/fixed.Tpo -c fixed.c  -fPIC -DPIC -o .libs/fixed.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT bitreader.lo -MD -MP -MF .deps/bitreader.Tpo -c bitreader.c  -fPIC -DPIC -o .libs/bitreader.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT bitmath.lo -MD -MP -MF .deps/bitmath.Tpo -c bitmath.c  -fPIC -DPIC -o .libs/bitmath.o
+depbase=`echo fixed_intrin_sse42.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT fixed_intrin_sse42.lo -MD -MP -MF $depbase.Tpo -c -o fixed_intrin_sse42.lo fixed_intrin_sse42.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo fixed_intrin_avx2.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT fixed_intrin_avx2.lo -MD -MP -MF $depbase.Tpo -c -o fixed_intrin_avx2.lo fixed_intrin_avx2.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo float.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT float.lo -MD -MP -MF $depbase.Tpo -c -o float.lo float.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT fixed_intrin_sse42.lo -MD -MP -MF .deps/fixed_intrin_sse42.Tpo -c fixed_intrin_sse42.c  -fPIC -DPIC -o .libs/fixed_intrin_sse42.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT float.lo -MD -MP -MF .deps/float.Tpo -c float.c  -fPIC -DPIC -o .libs/float.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT fixed_intrin_avx2.lo -MD -MP -MF .deps/fixed_intrin_avx2.Tpo -c fixed_intrin_avx2.c  -fPIC -DPIC -o .libs/fixed_intrin_avx2.o
+depbase=`echo format.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT format.lo -MD -MP -MF $depbase.Tpo -c -o format.lo format.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo lpc.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT lpc.lo -MD -MP -MF $depbase.Tpo -c -o lpc.lo lpc.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo lpc_intrin_sse2.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT lpc_intrin_sse2.lo -MD -MP -MF $depbase.Tpo -c -o lpc_intrin_sse2.lo lpc_intrin_sse2.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT format.lo -MD -MP -MF .deps/format.Tpo -c format.c  -fPIC -DPIC -o .libs/format.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT lpc.lo -MD -MP -MF .deps/lpc.Tpo -c lpc.c  -fPIC -DPIC -o .libs/lpc.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT lpc_intrin_sse2.lo -MD -MP -MF .deps/lpc_intrin_sse2.Tpo -c lpc_intrin_sse2.c  -fPIC -DPIC -o .libs/lpc_intrin_sse2.o
+depbase=`echo lpc_intrin_sse41.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT lpc_intrin_sse41.lo -MD -MP -MF $depbase.Tpo -c -o lpc_intrin_sse41.lo lpc_intrin_sse41.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT lpc_intrin_sse41.lo -MD -MP -MF .deps/lpc_intrin_sse41.Tpo -c lpc_intrin_sse41.c  -fPIC -DPIC -o .libs/lpc_intrin_sse41.o
+depbase=`echo lpc_intrin_avx2.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT lpc_intrin_avx2.lo -MD -MP -MF $depbase.Tpo -c -o lpc_intrin_avx2.lo lpc_intrin_avx2.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo lpc_intrin_fma.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT lpc_intrin_fma.lo -MD -MP -MF $depbase.Tpo -c -o lpc_intrin_fma.lo lpc_intrin_fma.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT lpc_intrin_avx2.lo -MD -MP -MF .deps/lpc_intrin_avx2.Tpo -c lpc_intrin_avx2.c  -fPIC -DPIC -o .libs/lpc_intrin_avx2.o
+depbase=`echo lpc_intrin_neon.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT lpc_intrin_neon.lo -MD -MP -MF $depbase.Tpo -c -o lpc_intrin_neon.lo lpc_intrin_neon.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT lpc_intrin_fma.lo -MD -MP -MF .deps/lpc_intrin_fma.Tpo -c lpc_intrin_fma.c  -fPIC -DPIC -o .libs/lpc_intrin_fma.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT lpc_intrin_neon.lo -MD -MP -MF .deps/lpc_intrin_neon.Tpo -c lpc_intrin_neon.c  -fPIC -DPIC -o .libs/lpc_intrin_neon.o
+depbase=`echo md5.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT md5.lo -MD -MP -MF $depbase.Tpo -c -o md5.lo md5.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo memory.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT memory.lo -MD -MP -MF $depbase.Tpo -c -o memory.lo memory.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT md5.lo -MD -MP -MF .deps/md5.Tpo -c md5.c  -fPIC -DPIC -o .libs/md5.o
+depbase=`echo metadata_iterators.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT metadata_iterators.lo -MD -MP -MF $depbase.Tpo -c -o metadata_iterators.lo metadata_iterators.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo metadata_object.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT metadata_object.lo -MD -MP -MF $depbase.Tpo -c -o metadata_object.lo metadata_object.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo stream_decoder.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT stream_decoder.lo -MD -MP -MF $depbase.Tpo -c -o stream_decoder.lo stream_decoder.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT memory.lo -MD -MP -MF .deps/memory.Tpo -c memory.c  -fPIC -DPIC -o .libs/memory.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT stream_decoder.lo -MD -MP -MF .deps/stream_decoder.Tpo -c stream_decoder.c  -fPIC -DPIC -o .libs/stream_decoder.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT metadata_object.lo -MD -MP -MF .deps/metadata_object.Tpo -c metadata_object.c  -fPIC -DPIC -o .libs/metadata_object.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT metadata_iterators.lo -MD -MP -MF .deps/metadata_iterators.Tpo -c metadata_iterators.c  -fPIC -DPIC -o .libs/metadata_iterators.o
+depbase=`echo stream_encoder.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT stream_encoder.lo -MD -MP -MF $depbase.Tpo -c -o stream_encoder.lo stream_encoder.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT stream_encoder.lo -MD -MP -MF .deps/stream_encoder.Tpo -c stream_encoder.c  -fPIC -DPIC -o .libs/stream_encoder.o
+depbase=`echo stream_encoder_intrin_sse2.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT stream_encoder_intrin_sse2.lo -MD -MP -MF $depbase.Tpo -c -o stream_encoder_intrin_sse2.lo stream_encoder_intrin_sse2.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT stream_encoder_intrin_sse2.lo -MD -MP -MF .deps/stream_encoder_intrin_sse2.Tpo -c stream_encoder_intrin_sse2.c  -fPIC -DPIC -o .libs/stream_encoder_intrin_sse2.o
+depbase=`echo stream_encoder_intrin_ssse3.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT stream_encoder_intrin_ssse3.lo -MD -MP -MF $depbase.Tpo -c -o stream_encoder_intrin_ssse3.lo stream_encoder_intrin_ssse3.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT stream_encoder_intrin_ssse3.lo -MD -MP -MF .deps/stream_encoder_intrin_ssse3.Tpo -c stream_encoder_intrin_ssse3.c  -fPIC -DPIC -o .libs/stream_encoder_intrin_ssse3.o
+depbase=`echo stream_encoder_intrin_avx2.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT stream_encoder_intrin_avx2.lo -MD -MP -MF $depbase.Tpo -c -o stream_encoder_intrin_avx2.lo stream_encoder_intrin_avx2.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT stream_encoder_intrin_avx2.lo -MD -MP -MF .deps/stream_encoder_intrin_avx2.Tpo -c stream_encoder_intrin_avx2.c  -fPIC -DPIC -o .libs/stream_encoder_intrin_avx2.o
+depbase=`echo stream_encoder_framing.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT stream_encoder_framing.lo -MD -MP -MF $depbase.Tpo -c -o stream_encoder_framing.lo stream_encoder_framing.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT stream_encoder_framing.lo -MD -MP -MF .deps/stream_encoder_framing.Tpo -c stream_encoder_framing.c  -fPIC -DPIC -o .libs/stream_encoder_framing.o
+depbase=`echo window.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT window.lo -MD -MP -MF $depbase.Tpo -c -o window.lo window.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT window.lo -MD -MP -MF .deps/window.Tpo -c window.c  -fPIC -DPIC -o .libs/window.o
+depbase=`echo ogg_decoder_aspect.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT ogg_decoder_aspect.lo -MD -MP -MF $depbase.Tpo -c -o ogg_decoder_aspect.lo ogg_decoder_aspect.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ogg_encoder_aspect.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT ogg_encoder_aspect.lo -MD -MP -MF $depbase.Tpo -c -o ogg_encoder_aspect.lo ogg_encoder_aspect.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT ogg_encoder_aspect.lo -MD -MP -MF .deps/ogg_encoder_aspect.Tpo -c ogg_encoder_aspect.c  -fPIC -DPIC -o .libs/ogg_encoder_aspect.o
+depbase=`echo ogg_helper.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT ogg_helper.lo -MD -MP -MF $depbase.Tpo -c -o ogg_helper.lo ogg_helper.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT ogg_decoder_aspect.lo -MD -MP -MF .deps/ogg_decoder_aspect.Tpo -c ogg_decoder_aspect.c  -fPIC -DPIC -o .libs/ogg_decoder_aspect.o
+depbase=`echo ogg_mapping.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT ogg_mapping.lo -MD -MP -MF $depbase.Tpo -c -o ogg_mapping.lo ogg_mapping.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT ogg_mapping.lo -MD -MP -MF .deps/ogg_mapping.Tpo -c ogg_mapping.c  -fPIC -DPIC -o .libs/ogg_mapping.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT ogg_helper.lo -MD -MP -MF .deps/ogg_helper.Tpo -c ogg_helper.c  -fPIC -DPIC -o .libs/ogg_helper.o
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong  -no-undefined -version-info 13:0:1   -o libFLAC.la -rpath /usr/lib bitmath.lo bitreader.lo bitwriter.lo cpu.lo crc.lo fixed.lo fixed_intrin_sse2.lo fixed_intrin_ssse3.lo fixed_intrin_sse42.lo fixed_intrin_avx2.lo float.lo format.lo lpc.lo lpc_intrin_sse2.lo lpc_intrin_sse41.lo lpc_intrin_avx2.lo lpc_intrin_fma.lo lpc_intrin_neon.lo md5.lo memory.lo metadata_iterators.lo metadata_object.lo stream_decoder.lo stream_encoder.lo stream_encoder_intrin_sse2.lo stream_encoder_intrin_ssse3.lo stream_encoder_intrin_avx2.lo stream_encoder_framing.lo window.lo  ogg_decoder_aspect.lo ogg_encoder_aspect.lo ogg_helper.lo ogg_mapping.lo -L/usr/lib -logg -lm -lm 
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -fassociative-math -fno-signed-zeros -fno-trapping-math -freciprocal-math -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong   -o libFLAC-static.la  bitmath.lo bitreader.lo bitwriter.lo cpu.lo crc.lo fixed.lo fixed_intrin_sse2.lo fixed_intrin_ssse3.lo fixed_intrin_sse42.lo fixed_intrin_avx2.lo float.lo format.lo lpc.lo lpc_intrin_sse2.lo lpc_intrin_sse41.lo lpc_intrin_avx2.lo lpc_intrin_fma.lo lpc_intrin_neon.lo md5.lo memory.lo metadata_iterators.lo metadata_object.lo stream_decoder.lo stream_encoder.lo stream_encoder_intrin_sse2.lo stream_encoder_intrin_ssse3.lo stream_encoder_intrin_avx2.lo stream_encoder_framing.lo window.lo  ogg_decoder_aspect.lo ogg_encoder_aspect.lo ogg_helper.lo ogg_mapping.lo  -lm 
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/bitmath.o .libs/bitreader.o .libs/bitwriter.o .libs/cpu.o .libs/crc.o .libs/fixed.o .libs/fixed_intrin_sse2.o .libs/fixed_intrin_ssse3.o .libs/fixed_intrin_sse42.o .libs/fixed_intrin_avx2.o .libs/float.o .libs/format.o .libs/lpc.o .libs/lpc_intrin_sse2.o .libs/lpc_intrin_sse41.o .libs/lpc_intrin_avx2.o .libs/lpc_intrin_fma.o .libs/lpc_intrin_neon.o .libs/md5.o .libs/memory.o .libs/metadata_iterators.o .libs/metadata_object.o .libs/stream_decoder.o .libs/stream_encoder.o .libs/stream_encoder_intrin_sse2.o .libs/stream_encoder_intrin_ssse3.o .libs/stream_encoder_intrin_avx2.o .libs/stream_encoder_framing.o .libs/window.o .libs/ogg_decoder_aspect.o .libs/ogg_encoder_aspect.o .libs/ogg_helper.o .libs/ogg_mapping.o   -L/usr/lib -logg -lm  -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -fstack-protector-strong   -Wl,-soname -Wl,libFLAC.so.12 -o .libs/libFLAC.so.12.1.0
+libtool: link: ar cr .libs/libFLAC-static.a .libs/bitmath.o .libs/bitreader.o .libs/bitwriter.o .libs/cpu.o .libs/crc.o .libs/fixed.o .libs/fixed_intrin_sse2.o .libs/fixed_intrin_ssse3.o .libs/fixed_intrin_sse42.o .libs/fixed_intrin_avx2.o .libs/float.o .libs/format.o .libs/lpc.o .libs/lpc_intrin_sse2.o .libs/lpc_intrin_sse41.o .libs/lpc_intrin_avx2.o .libs/lpc_intrin_fma.o .libs/lpc_intrin_neon.o .libs/md5.o .libs/memory.o .libs/metadata_iterators.o .libs/metadata_object.o .libs/stream_decoder.o .libs/stream_encoder.o .libs/stream_encoder_intrin_sse2.o .libs/stream_encoder_intrin_ssse3.o .libs/stream_encoder_intrin_avx2.o .libs/stream_encoder_framing.o .libs/window.o .libs/ogg_decoder_aspect.o .libs/ogg_encoder_aspect.o .libs/ogg_helper.o .libs/ogg_mapping.o 
+libtool: link: ranlib .libs/libFLAC-static.a
+libtool: link: ( cd ".libs" && rm -f "libFLAC-static.la" && ln -s "../libFLAC-static.la" "libFLAC-static.la" )
+bitwriter.c: In function 'FLAC__add_metadata_block':
+bitwriter.c:354:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32': call is unlikely and code size would grow [-Winline]
+  354 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32(FLAC__BitWriter *bw, FLAC__uint32 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:92:29: note: called from here
+   92 |                         if(!FLAC__bitwriter_write_raw_uint32(bw, metadata->data.stream_info.sample_rate, FLAC__STREAM_METADATA_STREAMINFO_SAMPLE_RATE_LEN))
+      |                             ^
+bitwriter.c:354:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32': call is unlikely and code size would grow [-Winline]
+  354 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32(FLAC__BitWriter *bw, FLAC__uint32 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:96:29: note: called from here
+   96 |                         if(!FLAC__bitwriter_write_raw_uint32(bw, metadata->data.stream_info.channels-1, FLAC__STREAM_METADATA_STREAMINFO_CHANNELS_LEN))
+      |                             ^
+bitwriter.c:354:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32': call is unlikely and code size would grow [-Winline]
+  354 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32(FLAC__BitWriter *bw, FLAC__uint32 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:100:29: note: called from here
+  100 |                         if(!FLAC__bitwriter_write_raw_uint32(bw, metadata->data.stream_info.bits_per_sample-1, FLAC__STREAM_METADATA_STREAMINFO_BITS_PER_SAMPLE_LEN))
+      |                             ^
+bitwriter.c:372:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint64': --param max-inline-insns-single limit reached [-Winline]
+  372 | inline FLAC__bool FLAC__bitwriter_write_raw_uint64(FLAC__BitWriter *bw, FLAC__uint64 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:103:37: note: called from here
+  103 |                                 if(!FLAC__bitwriter_write_raw_uint64(bw, 0, FLAC__STREAM_METADATA_STREAMINFO_TOTAL_SAMPLES_LEN))
+      |                                     ^
+bitwriter.c:372:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint64': --param max-inline-insns-single limit reached [-Winline]
+  372 | inline FLAC__bool FLAC__bitwriter_write_raw_uint64(FLAC__BitWriter *bw, FLAC__uint64 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:106:37: note: called from here
+  106 |                                 if(!FLAC__bitwriter_write_raw_uint64(bw, metadata->data.stream_info.total_samples, FLAC__STREAM_METADATA_STREAMINFO_TOTAL_SAMPLES_LEN))
+      |                                     ^
+bitwriter.c:409:19: warning: inlining failed in call to 'FLAC__bitwriter_write_byte_block': call is unlikely and code size would grow [-Winline]
+  409 | inline FLAC__bool FLAC__bitwriter_write_byte_block(FLAC__BitWriter *bw, const FLAC__byte vals[], uint32_t nvals)
+      |                   ^
+stream_encoder_framing.c:109:29: note: called from here
+  109 |                         if(!FLAC__bitwriter_write_byte_block(bw, metadata->data.stream_info.md5sum, 16))
+      |                             ^
+bitwriter.c:372:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint64': --param max-inline-insns-single limit reached [-Winline]
+  372 | inline FLAC__bool FLAC__bitwriter_write_raw_uint64(FLAC__BitWriter *bw, FLAC__uint64 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:124:37: note: called from here
+  124 |                                 if(!FLAC__bitwriter_write_raw_uint64(bw, metadata->data.seek_table.points[i].sample_number, FLAC__STREAM_METADATA_SEEKPOINT_SAMPLE_NUMBER_LEN))
+      |                                     ^
+bitwriter.c:372:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint64': --param max-inline-insns-single limit reached [-Winline]
+  372 | inline FLAC__bool FLAC__bitwriter_write_raw_uint64(FLAC__BitWriter *bw, FLAC__uint64 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:126:37: note: called from here
+  126 |                                 if(!FLAC__bitwriter_write_raw_uint64(bw, metadata->data.seek_table.points[i].stream_offset, FLAC__STREAM_METADATA_SEEKPOINT_STREAM_OFFSET_LEN))
+      |                                     ^
+bitwriter.c:393:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32_little_endian': --param max-inline-insns-single limit reached [-Winline]
+  393 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32_little_endian(FLAC__BitWriter *bw, FLAC__uint32 val)
+      |                   ^
+stream_encoder_framing.c:134:37: note: called from here
+  134 |                                 if(!FLAC__bitwriter_write_raw_uint32_little_endian(bw, vendor_string_length))
+      |                                     ^
+bitwriter.c:393:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32_little_endian': --param max-inline-insns-single limit reached [-Winline]
+  393 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32_little_endian(FLAC__BitWriter *bw, FLAC__uint32 val)
+      |                   ^
+stream_encoder_framing.c:140:37: note: called from here
+  140 |                                 if(!FLAC__bitwriter_write_raw_uint32_little_endian(bw, metadata->data.vorbis_comment.vendor_string.length))
+      |                                     ^
+bitwriter.c:393:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32_little_endian': --param max-inline-insns-single limit reached [-Winline]
+  393 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32_little_endian(FLAC__BitWriter *bw, FLAC__uint32 val)
+      |                   ^
+stream_encoder_framing.c:145:29: note: called from here
+  145 |                         if(!FLAC__bitwriter_write_raw_uint32_little_endian(bw, metadata->data.vorbis_comment.num_comments))
+      |                             ^
+bitwriter.c:393:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32_little_endian': --param max-inline-insns-single limit reached [-Winline]
+  393 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32_little_endian(FLAC__BitWriter *bw, FLAC__uint32 val)
+      |                   ^
+stream_encoder_framing.c:148:37: note: called from here
+  148 |                                 if(!FLAC__bitwriter_write_raw_uint32_little_endian(bw, metadata->data.vorbis_comment.comments[i].length))
+      |                                     ^
+bitwriter.c:372:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint64': --param max-inline-insns-single limit reached [-Winline]
+  372 | inline FLAC__bool FLAC__bitwriter_write_raw_uint64(FLAC__BitWriter *bw, FLAC__uint64 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:158:29: note: called from here
+  158 |                         if(!FLAC__bitwriter_write_raw_uint64(bw, metadata->data.cue_sheet.lead_in, FLAC__STREAM_METADATA_CUESHEET_LEAD_IN_LEN))
+      |                             ^
+bitwriter.c:354:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32': call is unlikely and code size would grow [-Winline]
+  354 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32(FLAC__BitWriter *bw, FLAC__uint32 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:164:29: note: called from here
+  164 |                         if(!FLAC__bitwriter_write_raw_uint32(bw, metadata->data.cue_sheet.num_tracks, FLAC__STREAM_METADATA_CUESHEET_NUM_TRACKS_LEN))
+      |                             ^
+bitwriter.c:372:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint64': --param max-inline-insns-single limit reached [-Winline]
+  372 | inline FLAC__bool FLAC__bitwriter_write_raw_uint64(FLAC__BitWriter *bw, FLAC__uint64 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:169:37: note: called from here
+  169 |                                 if(!FLAC__bitwriter_write_raw_uint64(bw, track->offset, FLAC__STREAM_METADATA_CUESHEET_TRACK_OFFSET_LEN))
+      |                                     ^
+bitwriter.c:354:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32': call is unlikely and code size would grow [-Winline]
+  354 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32(FLAC__BitWriter *bw, FLAC__uint32 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:171:37: note: called from here
+  171 |                                 if(!FLAC__bitwriter_write_raw_uint32(bw, track->number, FLAC__STREAM_METADATA_CUESHEET_TRACK_NUMBER_LEN))
+      |                                     ^
+bitwriter.c:409:19: warning: inlining failed in call to 'FLAC__bitwriter_write_byte_block': call is unlikely and code size would grow [-Winline]
+  409 | inline FLAC__bool FLAC__bitwriter_write_byte_block(FLAC__BitWriter *bw, const FLAC__byte vals[], uint32_t nvals)
+      |                   ^
+stream_encoder_framing.c:174:37: note: called from here
+  174 |                                 if(!FLAC__bitwriter_write_byte_block(bw, (const FLAC__byte*)track->isrc, FLAC__STREAM_METADATA_CUESHEET_TRACK_ISRC_LEN/8))
+      |                                     ^
+bitwriter.c:354:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32': call is unlikely and code size would grow [-Winline]
+  354 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32(FLAC__BitWriter *bw, FLAC__uint32 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:176:37: note: called from here
+  176 |                                 if(!FLAC__bitwriter_write_raw_uint32(bw, track->type, FLAC__STREAM_METADATA_CUESHEET_TRACK_TYPE_LEN))
+      |                                     ^
+bitwriter.c:354:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32': call is unlikely and code size would grow [-Winline]
+  354 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32(FLAC__BitWriter *bw, FLAC__uint32 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:178:37: note: called from here
+  178 |                                 if(!FLAC__bitwriter_write_raw_uint32(bw, track->pre_emphasis, FLAC__STREAM_METADATA_CUESHEET_TRACK_PRE_EMPHASIS_LEN))
+      |                                     ^
+bitwriter.c:354:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32': call is unlikely and code size would grow [-Winline]
+  354 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32(FLAC__BitWriter *bw, FLAC__uint32 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:182:37: note: called from here
+  182 |                                 if(!FLAC__bitwriter_write_raw_uint32(bw, track->num_indices, FLAC__STREAM_METADATA_CUESHEET_TRACK_NUM_INDICES_LEN))
+      |                                     ^
+bitwriter.c:372:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint64': --param max-inline-insns-single limit reached [-Winline]
+  372 | inline FLAC__bool FLAC__bitwriter_write_raw_uint64(FLAC__BitWriter *bw, FLAC__uint64 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:187:45: note: called from here
+  187 |                                         if(!FLAC__bitwriter_write_raw_uint64(bw, indx->offset, FLAC__STREAM_METADATA_CUESHEET_INDEX_OFFSET_LEN))
+      |                                             ^
+bitwriter.c:409:19: warning: inlining failed in call to 'FLAC__bitwriter_write_byte_block': call is unlikely and code size would grow [-Winline]
+  409 | inline FLAC__bool FLAC__bitwriter_write_byte_block(FLAC__BitWriter *bw, const FLAC__byte vals[], uint32_t nvals)
+      |                   ^
+stream_encoder_framing.c:209:37: note: called from here
+  209 |                                 if(!FLAC__bitwriter_write_byte_block(bw, metadata->data.picture.description, len))
+      |                                     ^
+bitwriter.c:354:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32': call is unlikely and code size would grow [-Winline]
+  354 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32(FLAC__BitWriter *bw, FLAC__uint32 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:211:37: note: called from here
+  211 |                                 if(!FLAC__bitwriter_write_raw_uint32(bw, metadata->data.picture.width, FLAC__STREAM_METADATA_PICTURE_WIDTH_LEN))
+      |                                     ^
+bitwriter.c:354:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32': call is unlikely and code size would grow [-Winline]
+  354 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32(FLAC__BitWriter *bw, FLAC__uint32 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:213:37: note: called from here
+  213 |                                 if(!FLAC__bitwriter_write_raw_uint32(bw, metadata->data.picture.height, FLAC__STREAM_METADATA_PICTURE_HEIGHT_LEN))
+      |                                     ^
+bitwriter.c:354:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32': call is unlikely and code size would grow [-Winline]
+  354 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32(FLAC__BitWriter *bw, FLAC__uint32 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:215:37: note: called from here
+  215 |                                 if(!FLAC__bitwriter_write_raw_uint32(bw, metadata->data.picture.depth, FLAC__STREAM_METADATA_PICTURE_DEPTH_LEN))
+      |                                     ^
+bitwriter.c:354:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32': call is unlikely and code size would grow [-Winline]
+  354 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32(FLAC__BitWriter *bw, FLAC__uint32 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:217:37: note: called from here
+  217 |                                 if(!FLAC__bitwriter_write_raw_uint32(bw, metadata->data.picture.colors, FLAC__STREAM_METADATA_PICTURE_COLORS_LEN))
+      |                                     ^
+bitwriter.c:354:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32': call is unlikely and code size would grow [-Winline]
+  354 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32(FLAC__BitWriter *bw, FLAC__uint32 val, uint32_t bits)
+      |                   ^
+stream_encoder_framing.c:219:37: note: called from here
+  219 |                                 if(!FLAC__bitwriter_write_raw_uint32(bw, metadata->data.picture.data_length, FLAC__STREAM_METADATA_PICTURE_DATA_LENGTH_LEN))
+      |                                     ^
+bitwriter.c:409:19: warning: inlining failed in call to 'FLAC__bitwriter_write_byte_block': call is unlikely and code size would grow [-Winline]
+  409 | inline FLAC__bool FLAC__bitwriter_write_byte_block(FLAC__BitWriter *bw, const FLAC__byte vals[], uint32_t nvals)
+      |                   ^
+stream_encoder_framing.c:221:37: note: called from here
+  221 |                                 if(!FLAC__bitwriter_write_byte_block(bw, metadata->data.picture.data, metadata->data.picture.data_length))
+      |                                     ^
+bitwriter.c: In function 'init_stream_internal_':
+bitwriter.c:354:19: warning: inlining failed in call to 'FLAC__bitwriter_write_raw_uint32': call is unlikely and code size would grow [-Winline]
+  354 | inline FLAC__bool FLAC__bitwriter_write_raw_uint32(FLAC__BitWriter *bw, FLAC__uint32 val, uint32_t bits)
+      |                   ^
+stream_encoder.c:1183:13: note: called from here
+ 1183 |         if(!FLAC__bitwriter_write_raw_uint32(encoder->private_->frame, FLAC__STREAM_SYNC, FLAC__STREAM_SYNC_LEN)) {
+      |             ^
+libtool: link: (cd ".libs" && rm -f "libFLAC.so.12" && ln -s "libFLAC.so.12.1.0" "libFLAC.so.12")
+libtool: link: (cd ".libs" && rm -f "libFLAC.so" && ln -s "libFLAC.so.12.1.0" "libFLAC.so")
+libtool: link: ( cd ".libs" && rm -f "libFLAC.la" && ln -s "../libFLAC.la" "libFLAC.la" )
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC'
+Making all in share
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/share'
+depbase=`echo getopt/getopt.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT getopt/getopt.lo -MD -MP -MF $depbase.Tpo -c -o getopt/getopt.lo getopt/getopt.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo getopt/getopt1.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT getopt/getopt1.lo -MD -MP -MF $depbase.Tpo -c -o getopt/getopt1.lo getopt/getopt1.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo grabbag/alloc.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT grabbag/alloc.lo -MD -MP -MF $depbase.Tpo -c -o grabbag/alloc.lo grabbag/alloc.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo grabbag/cuesheet.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT grabbag/cuesheet.lo -MD -MP -MF $depbase.Tpo -c -o grabbag/cuesheet.lo grabbag/cuesheet.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo grabbag/file.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT grabbag/file.lo -MD -MP -MF $depbase.Tpo -c -o grabbag/file.lo grabbag/file.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo grabbag/picture.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT grabbag/picture.lo -MD -MP -MF $depbase.Tpo -c -o grabbag/picture.lo grabbag/picture.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo grabbag/replaygain.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT grabbag/replaygain.lo -MD -MP -MF $depbase.Tpo -c -o grabbag/replaygain.lo grabbag/replaygain.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT getopt/getopt1.lo -MD -MP -MF getopt/.deps/getopt1.Tpo -c getopt/getopt1.c  -fPIC -DPIC -o getopt/.libs/getopt1.o
+depbase=`echo grabbag/seektable.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT grabbag/seektable.lo -MD -MP -MF $depbase.Tpo -c -o grabbag/seektable.lo grabbag/seektable.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT grabbag/alloc.lo -MD -MP -MF grabbag/.deps/alloc.Tpo -c grabbag/alloc.c  -fPIC -DPIC -o grabbag/.libs/alloc.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT grabbag/cuesheet.lo -MD -MP -MF grabbag/.deps/cuesheet.Tpo -c grabbag/cuesheet.c  -fPIC -DPIC -o grabbag/.libs/cuesheet.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT grabbag/picture.lo -MD -MP -MF grabbag/.deps/picture.Tpo -c grabbag/picture.c  -fPIC -DPIC -o grabbag/.libs/picture.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT getopt/getopt.lo -MD -MP -MF getopt/.deps/getopt.Tpo -c getopt/getopt.c  -fPIC -DPIC -o getopt/.libs/getopt.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT grabbag/file.lo -MD -MP -MF grabbag/.deps/file.Tpo -c grabbag/file.c  -fPIC -DPIC -o grabbag/.libs/file.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT grabbag/replaygain.lo -MD -MP -MF grabbag/.deps/replaygain.Tpo -c grabbag/replaygain.c  -fPIC -DPIC -o grabbag/.libs/replaygain.o
+depbase=`echo grabbag/snprintf.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT grabbag/snprintf.lo -MD -MP -MF $depbase.Tpo -c -o grabbag/snprintf.lo grabbag/snprintf.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo utf8/charset.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT utf8/charset.lo -MD -MP -MF $depbase.Tpo -c -o utf8/charset.lo utf8/charset.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT grabbag/seektable.lo -MD -MP -MF grabbag/.deps/seektable.Tpo -c grabbag/seektable.c  -fPIC -DPIC -o grabbag/.libs/seektable.o
+depbase=`echo utf8/iconvert.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT utf8/iconvert.lo -MD -MP -MF $depbase.Tpo -c -o utf8/iconvert.lo utf8/iconvert.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT grabbag/snprintf.lo -MD -MP -MF grabbag/.deps/snprintf.Tpo -c grabbag/snprintf.c  -fPIC -DPIC -o grabbag/.libs/snprintf.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT utf8/charset.lo -MD -MP -MF utf8/.deps/charset.Tpo -c utf8/charset.c  -fPIC -DPIC -o utf8/.libs/charset.o
+depbase=`echo utf8/utf8.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT utf8/utf8.lo -MD -MP -MF $depbase.Tpo -c -o utf8/utf8.lo utf8/utf8.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo replaygain_analysis/replaygain_analysis.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT replaygain_analysis/replaygain_analysis.lo -MD -MP -MF $depbase.Tpo -c -o replaygain_analysis/replaygain_analysis.lo replaygain_analysis/replaygain_analysis.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT utf8/iconvert.lo -MD -MP -MF utf8/.deps/iconvert.Tpo -c utf8/iconvert.c  -fPIC -DPIC -o utf8/.libs/iconvert.o
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I ../../src/share/replaygain_synthesis/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT replaygain_synthesis/libreplaygain_synthesis_la-replaygain_synthesis.lo -MD -MP -MF replaygain_synthesis/.deps/libreplaygain_synthesis_la-replaygain_synthesis.Tpo -c -o replaygain_synthesis/libreplaygain_synthesis_la-replaygain_synthesis.lo `test -f 'replaygain_synthesis/replaygain_synthesis.c' || echo './'`replaygain_synthesis/replaygain_synthesis.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT utf8/utf8.lo -MD -MP -MF utf8/.deps/utf8.Tpo -c utf8/utf8.c  -fPIC -DPIC -o utf8/.libs/utf8.o
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong   -o getopt/libgetopt.la  getopt/getopt.lo getopt/getopt1.lo  -lm 
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I ../../src/share/replaygain_synthesis/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT replaygain_synthesis/libreplaygain_synthesis_la-replaygain_synthesis.lo -MD -MP -MF replaygain_synthesis/.deps/libreplaygain_synthesis_la-replaygain_synthesis.Tpo -c replaygain_synthesis/replaygain_synthesis.c  -fPIC -DPIC -o replaygain_synthesis/.libs/libreplaygain_synthesis_la-replaygain_synthesis.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT replaygain_analysis/replaygain_analysis.lo -MD -MP -MF replaygain_analysis/.deps/replaygain_analysis.Tpo -c replaygain_analysis/replaygain_analysis.c  -fPIC -DPIC -o replaygain_analysis/.libs/replaygain_analysis.o
+libtool: link: ar cr getopt/.libs/libgetopt.a getopt/.libs/getopt.o getopt/.libs/getopt1.o 
+libtool: link: ranlib getopt/.libs/libgetopt.a
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong   -o utf8/libutf8.la  utf8/charset.lo utf8/iconvert.lo utf8/utf8.lo  -lm 
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong   -o grabbag/libgrabbag.la  grabbag/alloc.lo grabbag/cuesheet.lo grabbag/file.lo grabbag/picture.lo grabbag/replaygain.lo grabbag/seektable.lo grabbag/snprintf.lo  -lm 
+libtool: link: ( cd "getopt/.libs" && rm -f "libgetopt.la" && ln -s "../libgetopt.la" "libgetopt.la" )
+mv -f replaygain_synthesis/.deps/libreplaygain_synthesis_la-replaygain_synthesis.Tpo replaygain_synthesis/.deps/libreplaygain_synthesis_la-replaygain_synthesis.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc -I ../../src/share/replaygain_synthesis/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong   -o replaygain_synthesis/libreplaygain_synthesis.la  replaygain_synthesis/libreplaygain_synthesis_la-replaygain_synthesis.lo  -lm 
+libtool: link: ar cr utf8/.libs/libutf8.a utf8/.libs/charset.o utf8/.libs/iconvert.o utf8/.libs/utf8.o 
+libtool: link: ranlib utf8/.libs/libutf8.a
+libtool: link: ar cr grabbag/.libs/libgrabbag.a grabbag/.libs/alloc.o grabbag/.libs/cuesheet.o grabbag/.libs/file.o grabbag/.libs/picture.o grabbag/.libs/replaygain.o grabbag/.libs/seektable.o grabbag/.libs/snprintf.o 
+libtool: link: ranlib grabbag/.libs/libgrabbag.a
+libtool: link: ( cd "utf8/.libs" && rm -f "libutf8.la" && ln -s "../libutf8.la" "libutf8.la" )
+libtool: link: ar cr replaygain_synthesis/.libs/libreplaygain_synthesis.a replaygain_synthesis/.libs/libreplaygain_synthesis_la-replaygain_synthesis.o 
+libtool: link: ( cd "grabbag/.libs" && rm -f "libgrabbag.la" && ln -s "../libgrabbag.la" "libgrabbag.la" )
+libtool: link: ranlib replaygain_synthesis/.libs/libreplaygain_synthesis.a
+libtool: link: ( cd "replaygain_synthesis/.libs" && rm -f "libreplaygain_synthesis.la" && ln -s "../libreplaygain_synthesis.la" "libreplaygain_synthesis.la" )
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong   -o replaygain_analysis/libreplaygain_analysis.la  replaygain_analysis/replaygain_analysis.lo  -lm 
+libtool: link: ar cr replaygain_analysis/.libs/libreplaygain_analysis.a replaygain_analysis/.libs/replaygain_analysis.o 
+libtool: link: ranlib replaygain_analysis/.libs/libreplaygain_analysis.a
+libtool: link: ( cd "replaygain_analysis/.libs" && rm -f "libreplaygain_analysis.la" && ln -s "../libreplaygain_analysis.la" "libreplaygain_analysis.la" )
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/share'
+Making all in flac
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/flac'
+depbase=`echo analyze.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT analyze.o -MD -MP -MF $depbase.Tpo -c -o analyze.o analyze.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo decode.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT decode.o -MD -MP -MF $depbase.Tpo -c -o decode.o decode.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo encode.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT encode.o -MD -MP -MF $depbase.Tpo -c -o encode.o encode.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo foreign_metadata.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT foreign_metadata.o -MD -MP -MF $depbase.Tpo -c -o foreign_metadata.o foreign_metadata.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo main.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT main.o -MD -MP -MF $depbase.Tpo -c -o main.o main.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo local_string_utils.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT local_string_utils.o -MD -MP -MF $depbase.Tpo -c -o local_string_utils.o local_string_utils.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo utils.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT utils.o -MD -MP -MF $depbase.Tpo -c -o utils.o utils.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo vorbiscomment.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT vorbiscomment.o -MD -MP -MF $depbase.Tpo -c -o vorbiscomment.o vorbiscomment.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong    -o flac analyze.o decode.o encode.o foreign_metadata.o main.o local_string_utils.o utils.o vorbiscomment.o ../../src/share/utf8/libutf8.la ../../src/share/grabbag/libgrabbag.la ../../src/share/getopt/libgetopt.la ../../src/share/replaygain_analysis/libreplaygain_analysis.la ../../src/share/replaygain_synthesis/libreplaygain_synthesis.la ../../src/libFLAC/libFLAC.la  -lm -lm 
+libtool: link: gcc -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -o .libs/flac analyze.o decode.o encode.o foreign_metadata.o main.o local_string_utils.o utils.o vorbiscomment.o  ../../src/share/utf8/.libs/libutf8.a ../../src/share/grabbag/.libs/libgrabbag.a ../../src/share/getopt/.libs/libgetopt.a ../../src/share/replaygain_analysis/.libs/libreplaygain_analysis.a ../../src/share/replaygain_synthesis/.libs/libreplaygain_synthesis.a ../../src/libFLAC/.libs/libFLAC.so -lm
+In function 'convert_to_seek_table_template',
+    inlined from 'EncoderSession_init_encoder' at encode.c:1659:6:
+encode.c:2144:11: warning: 'has_real_points' may be used uninitialized [-Wmaybe-uninitialized]
+ 2144 |         if(has_real_points) {
+      |           ^
+encode.c: In function 'EncoderSession_init_encoder':
+encode.c:2108:20: note: 'has_real_points' was declared here
+ 2108 |         FLAC__bool has_real_points;
+      |                    ^
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/flac'
+Making all in metaflac
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/metaflac'
+depbase=`echo main.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT main.o -MD -MP -MF $depbase.Tpo -c -o main.o main.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo operations.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT operations.o -MD -MP -MF $depbase.Tpo -c -o operations.o operations.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo operations_shorthand_cuesheet.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT operations_shorthand_cuesheet.o -MD -MP -MF $depbase.Tpo -c -o operations_shorthand_cuesheet.o operations_shorthand_cuesheet.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo operations_shorthand_picture.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT operations_shorthand_picture.o -MD -MP -MF $depbase.Tpo -c -o operations_shorthand_picture.o operations_shorthand_picture.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo operations_shorthand_seektable.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT operations_shorthand_seektable.o -MD -MP -MF $depbase.Tpo -c -o operations_shorthand_seektable.o operations_shorthand_seektable.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo operations_shorthand_streaminfo.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT operations_shorthand_streaminfo.o -MD -MP -MF $depbase.Tpo -c -o operations_shorthand_streaminfo.o operations_shorthand_streaminfo.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo operations_shorthand_vorbiscomment.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT operations_shorthand_vorbiscomment.o -MD -MP -MF $depbase.Tpo -c -o operations_shorthand_vorbiscomment.o operations_shorthand_vorbiscomment.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo options.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT options.o -MD -MP -MF $depbase.Tpo -c -o options.o options.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo usage.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT usage.o -MD -MP -MF $depbase.Tpo -c -o usage.o usage.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo utils.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT utils.o -MD -MP -MF $depbase.Tpo -c -o utils.o utils.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong    -o metaflac main.o operations.o operations_shorthand_cuesheet.o operations_shorthand_picture.o operations_shorthand_seektable.o operations_shorthand_streaminfo.o operations_shorthand_vorbiscomment.o options.o usage.o utils.o ../../src/share/grabbag/libgrabbag.la ../../src/share/replaygain_analysis/libreplaygain_analysis.la ../../src/share/getopt/libgetopt.la ../../src/share/utf8/libutf8.la ../../src/libFLAC/libFLAC.la   -lm 
+libtool: link: gcc -I/usr/include -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -o .libs/metaflac main.o operations.o operations_shorthand_cuesheet.o operations_shorthand_picture.o operations_shorthand_seektable.o operations_shorthand_streaminfo.o operations_shorthand_vorbiscomment.o options.o usage.o utils.o  ../../src/share/grabbag/.libs/libgrabbag.a ../../src/share/replaygain_analysis/.libs/libreplaygain_analysis.a ../../src/share/getopt/.libs/libgetopt.a ../../src/share/utf8/.libs/libutf8.a ../../src/libFLAC/.libs/libFLAC.so -lm
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/metaflac'
+Making all in test_grabbag
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag'
+Making all in cuesheet
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag/cuesheet'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag/cuesheet'
+Making all in picture
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag/picture'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag/picture'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag'
+Making all in test_libs_common
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_libs_common'
+depbase=`echo file_utils_flac.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT file_utils_flac.lo -MD -MP -MF $depbase.Tpo -c -o file_utils_flac.lo file_utils_flac.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo metadata_utils.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT metadata_utils.lo -MD -MP -MF $depbase.Tpo -c -o metadata_utils.lo metadata_utils.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT metadata_utils.lo -MD -MP -MF .deps/metadata_utils.Tpo -c metadata_utils.c  -fPIC -DPIC -o .libs/metadata_utils.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT file_utils_flac.lo -MD -MP -MF .deps/file_utils_flac.Tpo -c file_utils_flac.c  -fPIC -DPIC -o .libs/file_utils_flac.o
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong   -o libtest_libs_common.la  file_utils_flac.lo metadata_utils.lo  -lm 
+libtool: link: ar cr .libs/libtest_libs_common.a .libs/file_utils_flac.o .libs/metadata_utils.o 
+libtool: link: ranlib .libs/libtest_libs_common.a
+libtool: link: ( cd ".libs" && rm -f "libtest_libs_common.la" && ln -s "../libtest_libs_common.la" "libtest_libs_common.la" )
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_libs_common'
+Making all in test_libFLAC
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_libFLAC'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_libFLAC'
+Making all in test_seeking
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_seeking'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_seeking'
+Making all in test_streams
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_streams'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_streams'
+Making all in utils
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/utils'
+Making all in flacdiff
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/utils/flacdiff'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/utils/flacdiff'
+Making all in flactimer
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/utils/flactimer'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/utils/flactimer'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/utils'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/utils'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/utils'
+Making all in libFLAC++
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC++'
+depbase=`echo metadata.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef  -Weffc++ -fvisibility=hidden -fstack-protector-strong -MT metadata.lo -MD -MP -MF $depbase.Tpo -c -o metadata.lo metadata.cpp &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo stream_decoder.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef  -Weffc++ -fvisibility=hidden -fstack-protector-strong -MT stream_decoder.lo -MD -MP -MF $depbase.Tpo -c -o stream_decoder.lo stream_decoder.cpp &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo stream_encoder.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../../libtool  --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../..  -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef  -Weffc++ -fvisibility=hidden -fstack-protector-strong -MT stream_encoder.lo -MD -MP -MF $depbase.Tpo -c -o stream_encoder.lo stream_encoder.cpp &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef -Weffc++ -fvisibility=hidden -fstack-protector-strong -MT metadata.lo -MD -MP -MF .deps/metadata.Tpo -c metadata.cpp  -fPIC -DPIC -o .libs/metadata.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef -Weffc++ -fvisibility=hidden -fstack-protector-strong -MT stream_decoder.lo -MD -MP -MF .deps/stream_decoder.Tpo -c stream_decoder.cpp  -fPIC -DPIC -o .libs/stream_decoder.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../.. -I../.. -I./include -I../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef -Weffc++ -fvisibility=hidden -fstack-protector-strong -MT stream_encoder.lo -MD -MP -MF .deps/stream_encoder.Tpo -c stream_encoder.cpp  -fPIC -DPIC -o .libs/stream_encoder.o
+/bin/sh ../../libtool  --tag=CXX   --mode=link g++  -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef  -Weffc++ -fvisibility=hidden -fstack-protector-strong  -no-undefined -version-info 10:1:0   -o libFLAC++.la -rpath /usr/lib metadata.lo stream_decoder.lo stream_encoder.lo ../libFLAC/libFLAC.la -lm 
+/bin/sh ../../libtool  --tag=CXX   --mode=link g++  -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef  -Weffc++ -fvisibility=hidden -fstack-protector-strong   -o libFLAC++-static.la  metadata.lo stream_decoder.lo stream_encoder.lo ../libFLAC/libFLAC-static.la -lm 
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbeginS.o  .libs/metadata.o .libs/stream_decoder.o .libs/stream_encoder.o   -Wl,-rpath -Wl,/home/devel/building/work/src/flac-1.4.3/src/libFLAC/.libs -Wl,-rpath -Wl,/usr/lib/../lib -Wl,-rpath -Wl,/usr/lib/../lib ../libFLAC/.libs/libFLAC.so -L/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../.. /usr/lib/../lib/libstdc++.so -lm -lc -lgcc_s /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib/crtn.o  -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -fstack-protector-strong   -Wl,-soname -Wl,libFLAC++.so.10 -o .libs/libFLAC++.so.10.0.1
+libtool: link: (cd .libs/libFLAC++-static.lax/libFLAC-static.a && ar x "/home/devel/building/work/src/flac-1.4.3/src/libFLAC++/../libFLAC/.libs/libFLAC-static.a")
+copying selected object files to avoid basename conflicts...
+libtool: link: ln .libs/libFLAC++-static.lax/libFLAC-static.a/stream_decoder.o .libs/libFLAC++-static.lax/lt1-stream_decoder.o || cp .libs/libFLAC++-static.lax/libFLAC-static.a/stream_decoder.o .libs/libFLAC++-static.lax/lt1-stream_decoder.o
+libtool: link: ln .libs/libFLAC++-static.lax/libFLAC-static.a/stream_encoder.o .libs/libFLAC++-static.lax/lt2-stream_encoder.o || cp .libs/libFLAC++-static.lax/libFLAC-static.a/stream_encoder.o .libs/libFLAC++-static.lax/lt2-stream_encoder.o
+libtool: link: ar cr .libs/libFLAC++-static.a .libs/metadata.o .libs/stream_decoder.o .libs/stream_encoder.o .libs/libFLAC++-static.lax/libFLAC-static.a/bitmath.o .libs/libFLAC++-static.lax/libFLAC-static.a/bitreader.o .libs/libFLAC++-static.lax/libFLAC-static.a/bitwriter.o .libs/libFLAC++-static.lax/libFLAC-static.a/cpu.o .libs/libFLAC++-static.lax/libFLAC-static.a/crc.o .libs/libFLAC++-static.lax/libFLAC-static.a/fixed.o .libs/libFLAC++-static.lax/libFLAC-static.a/fixed_intrin_avx2.o .libs/libFLAC++-static.lax/libFLAC-static.a/fixed_intrin_sse2.o .libs/libFLAC++-static.lax/libFLAC-static.a/fixed_intrin_sse42.o .libs/libFLAC++-static.lax/libFLAC-static.a/fixed_intrin_ssse3.o .libs/libFLAC++-static.lax/libFLAC-static.a/float.o .libs/libFLAC++-static.lax/libFLAC-static.a/format.o .libs/libFLAC++-static.lax/libFLAC-static.a/lpc.o .libs/libFLAC++-static.lax/libFLAC-static.a/lpc_intrin_avx2.o .libs/libFLAC++-static.lax/libFLAC-static.a/lpc_intrin_fma.o .libs/libFLAC++-static.lax/libFLAC-static.a/lpc_intrin_neon.o .libs/libFLAC++-static.lax/libFLAC-static.a/lpc_intrin_sse2.o .libs/libFLAC++-static.lax/libFLAC-static.a/lpc_intrin_sse41.o .libs/libFLAC++-static.lax/libFLAC-static.a/md5.o .libs/libFLAC++-static.lax/libFLAC-static.a/memory.o .libs/libFLAC++-static.lax/libFLAC-static.a/metadata_iterators.o .libs/libFLAC++-static.lax/libFLAC-static.a/metadata_object.o .libs/libFLAC++-static.lax/libFLAC-static.a/ogg_decoder_aspect.o .libs/libFLAC++-static.lax/libFLAC-static.a/ogg_encoder_aspect.o .libs/libFLAC++-static.lax/libFLAC-static.a/ogg_helper.o .libs/libFLAC++-static.lax/libFLAC-static.a/ogg_mapping.o .libs/libFLAC++-static.lax/lt1-stream_decoder.o .libs/libFLAC++-static.lax/lt2-stream_encoder.o .libs/libFLAC++-static.lax/libFLAC-static.a/stream_encoder_framing.o .libs/libFLAC++-static.lax/libFLAC-static.a/stream_encoder_intrin_avx2.o .libs/libFLAC++-static.lax/libFLAC-static.a/stream_encoder_intrin_sse2.o .libs/libFLAC++-static.lax/libFLAC-static.a/stream_encoder_intrin_ssse3.o .libs/libFLAC++-static.lax/libFLAC-static.a/window.o
+libtool: link: ranlib .libs/libFLAC++-static.a
+libtool: link: rm -fr .libs/libFLAC++-static.lax .libs/libFLAC++-static.lax
+libtool: link: ( cd ".libs" && rm -f "libFLAC++-static.la" && ln -s "../libFLAC++-static.la" "libFLAC++-static.la" )
+libtool: link: (cd ".libs" && rm -f "libFLAC++.so.10" && ln -s "libFLAC++.so.10.0.1" "libFLAC++.so.10")
+libtool: link: (cd ".libs" && rm -f "libFLAC++.so" && ln -s "libFLAC++.so.10.0.1" "libFLAC++.so")
+libtool: link: ( cd ".libs" && rm -f "libFLAC++.la" && ln -s "../libFLAC++.la" "libFLAC++.la" )
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC++'
+Making all in test_libFLAC++
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_libFLAC++'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_libFLAC++'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src'
+Making all in test
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test'
+Making all in cuesheets
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test/cuesheets'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test/cuesheets'
+Making all in foreign-metadata-test-files
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test/foreign-metadata-test-files'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test/foreign-metadata-test-files'
+Making all in flac-to-flac-metadata-test-files
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test/flac-to-flac-metadata-test-files'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test/flac-to-flac-metadata-test-files'
+Making all in metaflac-test-files
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test/metaflac-test-files'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test/metaflac-test-files'
+Making all in pictures
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test/pictures'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test/pictures'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test'
+Making all in microbench
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/microbench'
+depbase=`echo benchmark_residual.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../src/libFLAC/include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT benchmark_residual.o -MD -MP -MF $depbase.Tpo -c -o benchmark_residual.o benchmark_residual.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo util.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../src/libFLAC/include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT util.o -MD -MP -MF $depbase.Tpo -c -o util.o util.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong   -o benchmark_residual benchmark_residual.o util.o -lrt -lm 
+libtool: link: gcc -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -o benchmark_residual benchmark_residual.o util.o  -lrt -lm
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/microbench'
+Making all in oss-fuzz
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/oss-fuzz'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/oss-fuzz'
+Making all in examples
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples'
+Making all in c
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c'
+Making all in decode
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c/decode'
+Making all in file
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c/decode/file'
+depbase=`echo main.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../../../..  -I../../../.. -I./include -I../../../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT main.o -MD -MP -MF $depbase.Tpo -c -o main.o main.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/sh ../../../../libtool  --tag=CC   --mode=link gcc  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong   -o example_c_decode_file main.o ../../../../src/libFLAC/libFLAC.la -lm 
+libtool: link: gcc -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -o .libs/example_c_decode_file main.o  ../../../../src/libFLAC/.libs/libFLAC.so -lm
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c/decode/file'
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c/decode'
+make[5]: Nothing to be done for 'all-am'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c/decode'
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c/decode'
+Making all in encode
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c/encode'
+Making all in file
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c/encode/file'
+depbase=`echo main.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I../../../..  -I../../../.. -I./include -I../../../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -MT main.o -MD -MP -MF $depbase.Tpo -c -o main.o main.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/sh ../../../../libtool  --tag=CC   --mode=link gcc  -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline  -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong   -o example_c_encode_file main.o ../../../../src/libFLAC/libFLAC.la -L/usr/lib -logg -lm -lm 
+libtool: link: gcc -O3 -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wstrict-prototypes -Wmissing-prototypes -Waggregate-return -Wcast-align -Wnested-externs -Wshadow -Wundef -Wmissing-declarations -Winline -Wdeclaration-after-statement -fvisibility=hidden -fstack-protector-strong -o .libs/example_c_encode_file main.o  ../../../../src/libFLAC/.libs/libFLAC.so -L/usr/lib -logg -lm
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c/encode/file'
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c/encode'
+make[5]: Nothing to be done for 'all-am'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c/encode'
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c/encode'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c'
+Making all in cpp
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp'
+Making all in decode
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/decode'
+Making all in file
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/decode/file'
+depbase=`echo main.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I../../../..  -I../../../.. -I./include -I../../../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef  -Weffc++ -fvisibility=hidden -fstack-protector-strong -MT main.o -MD -MP -MF $depbase.Tpo -c -o main.o main.cpp &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/sh ../../../../libtool  --tag=CXX   --mode=link g++  -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef  -Weffc++ -fvisibility=hidden -fstack-protector-strong   -o example_cpp_decode_file main.o ../../../../src/libFLAC++/libFLAC++.la ../../../../src/libFLAC/libFLAC.la -L/usr/lib -logg -lm -lm 
+libtool: link: g++ -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef -Weffc++ -fvisibility=hidden -fstack-protector-strong -o .libs/example_cpp_decode_file main.o  ../../../../src/libFLAC++/.libs/libFLAC++.so ../../../../src/libFLAC/.libs/libFLAC.so -L/usr/lib -logg -lm
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/decode/file'
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/decode'
+make[5]: Nothing to be done for 'all-am'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/decode'
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/decode'
+Making all in encode
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/encode'
+Making all in file
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/encode/file'
+depbase=`echo main.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+g++ -DHAVE_CONFIG_H -I. -I../../../..  -I../../../.. -I./include -I../../../../include -D_FORTIFY_SOURCE=2 -DFLAC__USE_VISIBILITY_ATTR  -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef  -Weffc++ -fvisibility=hidden -fstack-protector-strong -MT main.o -MD -MP -MF $depbase.Tpo -c -o main.o main.cpp &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/sh ../../../../libtool  --tag=CXX   --mode=link g++  -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef  -Weffc++ -fvisibility=hidden -fstack-protector-strong   -o example_cpp_encode_file main.o ../../../../src/libFLAC++/libFLAC++.la ../../../../src/libFLAC/libFLAC.la -L/usr/lib -logg -lm -lm 
+libtool: link: g++ -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef -Weffc++ -fvisibility=hidden -fstack-protector-strong -o .libs/example_cpp_encode_file main.o  ../../../../src/libFLAC++/.libs/libFLAC++.so ../../../../src/libFLAC/.libs/libFLAC.so -L/usr/lib -logg -lm
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/encode/file'
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/encode'
+make[5]: Nothing to be done for 'all-am'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/encode'
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/encode'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples'
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3'
+make[1]: Leaving directory '/home/devel/building/work/src/flac-1.4.3'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in doc
+make[1]: Entering directory '/home/devel/building/work/src/flac-1.4.3/doc'
+Making install in .
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/doc'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+/bin/sh /home/devel/building/work/src/flac-1.4.3/install-sh -d /home/devel/building/work/pkg/usr/share/doc/flac/api
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/flac'
+ /usr/bin/install -c -m 644 FLAC.tag '/home/devel/building/work/pkg/usr/share/doc/flac'
+(cd ./api && /usr/bin/install -c -m 644 * /home/devel/building/work/pkg/usr/share/doc/flac/api)
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/doc'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/doc'
+Making install in images
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/doc/images'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/doc/images'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/flac/images'
+ /usr/bin/install -c -m 644 logo.svg logo130.gif '/home/devel/building/work/pkg/usr/share/doc/flac/images'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/doc/images'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/doc/images'
+make[1]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/doc'
+Making install in include
+make[1]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include'
+Making install in FLAC
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include/FLAC'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include/FLAC'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/FLAC'
+ /usr/bin/install -c -m 644 all.h assert.h callback.h export.h format.h metadata.h ordinals.h stream_decoder.h stream_encoder.h '/home/devel/building/work/pkg/usr/include/FLAC'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include/FLAC'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include/FLAC'
+Making install in FLAC++
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include/FLAC++'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include/FLAC++'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/FLAC++'
+ /usr/bin/install -c -m 644 all.h decoder.h encoder.h export.h metadata.h '/home/devel/building/work/pkg/usr/include/FLAC++'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include/FLAC++'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include/FLAC++'
+Making install in share
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include/share'
+Making install in grabbag
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include/share/grabbag'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include/share/grabbag'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include/share/grabbag'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include/share/grabbag'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include/share'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include/share'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include/share'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include/share'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include/share'
+Making install in test_libs_common
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include/test_libs_common'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include/test_libs_common'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include/test_libs_common'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include/test_libs_common'
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/include'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include'
+make[1]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/include'
+Making install in m4
+make[1]: Entering directory '/home/devel/building/work/src/flac-1.4.3/m4'
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/m4'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/m4'
+make[1]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/m4'
+Making install in man
+make[1]: Entering directory '/home/devel/building/work/src/flac-1.4.3/man'
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/man'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man1'
+ /usr/bin/install -c -m 644 flac.1 metaflac.1 '/home/devel/building/work/pkg/usr/share/man/man1'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/man'
+make[1]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/man'
+Making install in src
+make[1]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src'
+Making install in libFLAC
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC'
+Making install in include
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include'
+Making install in private
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include/private'
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include/private'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include/private'
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include/private'
+Making install in protected
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include/protected'
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include/protected'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include/protected'
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include/protected'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include'
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include'
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC/include'
+Making install in .
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/aclocal'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libFLAC.la '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libFLAC.m4 '/home/devel/building/work/pkg/usr/share/aclocal'
+ /usr/bin/install -c -m 644 flac.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+libtool: install: /usr/bin/install -c .libs/libFLAC.so.12.1.0 /home/devel/building/work/pkg/usr/lib/libFLAC.so.12.1.0
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libFLAC.so.12.1.0 libFLAC.so.12 || { rm -f libFLAC.so.12 && ln -s libFLAC.so.12.1.0 libFLAC.so.12; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libFLAC.so.12.1.0 libFLAC.so || { rm -f libFLAC.so && ln -s libFLAC.so.12.1.0 libFLAC.so; }; })
+libtool: install: /usr/bin/install -c .libs/libFLAC.lai /home/devel/building/work/pkg/usr/lib/libFLAC.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC'
+Making install in share
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/share'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/share'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/share'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/share'
+Making install in flac
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/flac'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/flac'
+make[3]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c flac '/home/devel/building/work/pkg/usr/bin'
+libtool: warning: '../../src/libFLAC/libFLAC.la' has not been installed in '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/flac /home/devel/building/work/pkg/usr/bin/flac
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/flac'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/flac'
+Making install in metaflac
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/metaflac'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/metaflac'
+make[3]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c metaflac '/home/devel/building/work/pkg/usr/bin'
+libtool: warning: '../../src/libFLAC/libFLAC.la' has not been installed in '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/metaflac /home/devel/building/work/pkg/usr/bin/metaflac
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/metaflac'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/metaflac'
+Making install in test_grabbag
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag'
+Making install in cuesheet
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag/cuesheet'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag/cuesheet'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag/cuesheet'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag/cuesheet'
+Making install in picture
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag/picture'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag/picture'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag/picture'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag/picture'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_grabbag'
+Making install in test_libs_common
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_libs_common'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_libs_common'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_libs_common'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_libs_common'
+Making install in test_libFLAC
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_libFLAC'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_libFLAC'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_libFLAC'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_libFLAC'
+Making install in test_seeking
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_seeking'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_seeking'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_seeking'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_seeking'
+Making install in test_streams
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_streams'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_streams'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_streams'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_streams'
+Making install in utils
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/utils'
+Making install in flacdiff
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/utils/flacdiff'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/utils/flacdiff'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/utils/flacdiff'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/utils/flacdiff'
+Making install in flactimer
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/utils/flactimer'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/utils/flactimer'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/utils/flactimer'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/utils/flactimer'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/utils'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/utils'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/utils'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/utils'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/utils'
+Making install in libFLAC++
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC++'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC++'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/aclocal'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libFLAC++.la '/home/devel/building/work/pkg/usr/lib'
+ /usr/bin/install -c -m 644 libFLAC++.m4 '/home/devel/building/work/pkg/usr/share/aclocal'
+ /usr/bin/install -c -m 644 flac++.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+libtool: warning: relinking 'libFLAC++.la'
+libtool: install: (cd /home/devel/building/work/src/flac-1.4.3/src/libFLAC++; /bin/sh "/home/devel/building/work/src/flac-1.4.3/libtool"  --tag CXX --mode=relink g++ -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wcast-align -Wshadow -Wwrite-strings -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -Wsign-promo -Wundef -Weffc++ -fvisibility=hidden -fstack-protector-strong -no-undefined -version-info 10:1:0 -o libFLAC++.la -rpath /usr/lib metadata.lo stream_decoder.lo stream_encoder.lo ../libFLAC/libFLAC.la -lm -inst-prefix-dir /home/devel/building/work/pkg)
+libtool: relink: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbeginS.o  .libs/metadata.o .libs/stream_decoder.o .libs/stream_encoder.o   -Wl,-rpath -Wl,/usr/lib/../lib -L/home/devel/building/work/pkg/usr/lib -L/usr/lib -lFLAC -L/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../.. -L/home/devel/building/work/pkg/usr/lib/../lib -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib/crtn.o  -O3 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -fstack-protector-strong   -Wl,-soname -Wl,libFLAC++.so.10 -o .libs/libFLAC++.so.10.0.1
+libtool: install: /usr/bin/install -c .libs/libFLAC++.so.10.0.1T /home/devel/building/work/pkg/usr/lib/libFLAC++.so.10.0.1
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libFLAC++.so.10.0.1 libFLAC++.so.10 || { rm -f libFLAC++.so.10 && ln -s libFLAC++.so.10.0.1 libFLAC++.so.10; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libFLAC++.so.10.0.1 libFLAC++.so || { rm -f libFLAC++.so && ln -s libFLAC++.so.10.0.1 libFLAC++.so; }; })
+libtool: install: /usr/bin/install -c .libs/libFLAC++.lai /home/devel/building/work/pkg/usr/lib/libFLAC++.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC++'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/libFLAC++'
+Making install in test_libFLAC++
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_libFLAC++'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src/test_libFLAC++'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_libFLAC++'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src/test_libFLAC++'
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/src'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src'
+make[1]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/src'
+Making install in test
+make[1]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test'
+Making install in cuesheets
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test/cuesheets'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test/cuesheets'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test/cuesheets'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test/cuesheets'
+Making install in foreign-metadata-test-files
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test/foreign-metadata-test-files'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test/foreign-metadata-test-files'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test/foreign-metadata-test-files'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test/foreign-metadata-test-files'
+Making install in flac-to-flac-metadata-test-files
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test/flac-to-flac-metadata-test-files'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test/flac-to-flac-metadata-test-files'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test/flac-to-flac-metadata-test-files'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test/flac-to-flac-metadata-test-files'
+Making install in metaflac-test-files
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test/metaflac-test-files'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test/metaflac-test-files'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test/metaflac-test-files'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test/metaflac-test-files'
+Making install in pictures
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test/pictures'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test/pictures'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test/pictures'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test/pictures'
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/test'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test'
+make[1]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/test'
+Making install in microbench
+make[1]: Entering directory '/home/devel/building/work/src/flac-1.4.3/microbench'
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/microbench'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/microbench'
+make[1]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/microbench'
+Making install in oss-fuzz
+make[1]: Entering directory '/home/devel/building/work/src/flac-1.4.3/oss-fuzz'
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/oss-fuzz'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/oss-fuzz'
+make[1]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/oss-fuzz'
+Making install in examples
+make[1]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples'
+Making install in c
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c'
+Making install in decode
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c/decode'
+Making install in file
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c/decode/file'
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c/decode/file'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c/decode/file'
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c/decode/file'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c/decode'
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c/decode'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c/decode'
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c/decode'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c/decode'
+Making install in encode
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c/encode'
+Making install in file
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c/encode/file'
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c/encode/file'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c/encode/file'
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c/encode/file'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c/encode'
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c/encode'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c/encode'
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c/encode'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c/encode'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/c'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/c'
+Making install in cpp
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp'
+Making install in decode
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/decode'
+Making install in file
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/decode/file'
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/decode/file'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/decode/file'
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/decode/file'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/decode'
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/decode'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/decode'
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/decode'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/decode'
+Making install in encode
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/encode'
+Making install in file
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/encode/file'
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/encode/file'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/encode/file'
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/encode/file'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/encode'
+make[5]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/encode'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/encode'
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/encode'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp/encode'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp'
+make[4]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp'
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples/cpp'
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples'
+make[3]: Entering directory '/home/devel/building/work/src/flac-1.4.3/examples'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples'
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples'
+make[1]: Leaving directory '/home/devel/building/work/src/flac-1.4.3/examples'
+make[1]: Entering directory '/home/devel/building/work/src/flac-1.4.3'
+make[2]: Entering directory '/home/devel/building/work/src/flac-1.4.3'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/flac-1.4.3'
+make[1]: Leaving directory '/home/devel/building/work/src/flac-1.4.3'
++ rm -r /home/devel/building/work/pkg/usr/share/doc
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 16:06 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 16:06 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 16:06 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 16:06 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 16:06 usr/bin/
+-rwxr-xr-x  0 root   root   232152 Feb  1 16:06 usr/bin/flac
+-rwxr-xr-x  0 root   root   131952 Feb  1 16:06 usr/bin/metaflac
+drwxr-xr-x  0 root   root        0 Feb  1 16:06 usr/lib/pkgconfig/
+-rwxr-xr-x  0 root   root   408704 Feb  1 16:06 usr/lib/libFLAC.so.12.1.0
+lrwxrwxrwx  0 root   root        0 Feb  1 16:06 usr/lib/libFLAC.so.12 -> libFLAC.so.12.1.0
+lrwxrwxrwx  0 root   root        0 Feb  1 16:06 usr/lib/libFLAC.so -> libFLAC.so.12.1.0
+-rwxr-xr-x  0 root   root   110592 Feb  1 16:06 usr/lib/libFLAC++.so.10.0.1
+lrwxrwxrwx  0 root   root        0 Feb  1 16:06 usr/lib/libFLAC++.so.10 -> libFLAC++.so.10.0.1
+lrwxrwxrwx  0 root   root        0 Feb  1 16:06 usr/lib/libFLAC++.so -> libFLAC++.so.10.0.1
+-rw-r--r--  0 root   root      252 Feb  1 16:06 usr/lib/pkgconfig/flac.pc
+-rw-r--r--  0 root   root      241 Feb  1 16:06 usr/lib/pkgconfig/flac++.pc
+drwxr-xr-x  0 root   root        0 Feb  1 16:06 usr/include/FLAC/
+drwxr-xr-x  0 root   root        0 Feb  1 16:06 usr/include/FLAC++/
+-rw-r--r--  0 root   root     1976 Feb  1 16:06 usr/include/FLAC++/all.h
+-rw-r--r--  0 root   root    12789 Feb  1 16:06 usr/include/FLAC++/decoder.h
+-rw-r--r--  0 root   root    15668 Feb  1 16:06 usr/include/FLAC++/encoder.h
+-rw-r--r--  0 root   root     3932 Feb  1 16:06 usr/include/FLAC++/export.h
+-rw-r--r--  0 root   root    51538 Feb  1 16:06 usr/include/FLAC++/metadata.h
+-rw-r--r--  0 root   root    19896 Feb  1 16:06 usr/include/FLAC/all.h
+-rw-r--r--  0 root   root     2153 Feb  1 16:06 usr/include/FLAC/assert.h
+-rw-r--r--  0 root   root     7649 Feb  1 16:06 usr/include/FLAC/callback.h
+-rw-r--r--  0 root   root     4102 Feb  1 16:06 usr/include/FLAC/export.h
+-rw-r--r--  0 root   root    41367 Feb  1 16:06 usr/include/FLAC/format.h
+-rw-r--r--  0 root   root   101800 Feb  1 16:06 usr/include/FLAC/metadata.h
+-rw-r--r--  0 root   root     2081 Feb  1 16:06 usr/include/FLAC/ordinals.h
+-rw-r--r--  0 root   root    71583 Feb  1 16:06 usr/include/FLAC/stream_decoder.h
+-rw-r--r--  0 root   root    84581 Feb  1 16:06 usr/include/FLAC/stream_encoder.h
+drwxr-xr-x  0 root   root        0 Feb  1 16:06 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb  1 16:06 usr/share/aclocal/
+-rw-r--r--  0 root   root     4439 Feb  1 16:06 usr/share/aclocal/libFLAC.m4
+-rw-r--r--  0 root   root     4571 Feb  1 16:06 usr/share/aclocal/libFLAC++.m4
+drwxr-xr-x  0 root   root        0 Feb  1 16:06 usr/share/man/man1/
+-rw-r--r--  0 root   root    11718 Feb  1 16:06 usr/share/man/man1/flac.1.gz
+-rw-r--r--  0 root   root     4391 Feb  1 16:06 usr/share/man/man1/metaflac.1.gz
+=======> Building '/home/devel/packages/flac#1.4.3-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling flac 1.4.3-1
+prt-get: /usr/bin/pkgadd -u flac#1.4.3-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 16:06:23 2024
+

@@ -1,0 +1,250 @@
+prt-get: updating /usr/ports/core-x86_64/libusb
+prt-get: starting build Thu Feb  1 18:20:04 2024
+=======> Building '/home/devel/packages/libusb#1.0.26-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/libusb-1.0.26.tar.bz2
++ build
++ cd libusb-1.0.26
++ ./configure --prefix=/usr --disable-static
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for inline... inline
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking dependency style of gcc... gcc3
+checking dependency style of g++... gcc3
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+/usr/bin/grep: warning: stray \ before -
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for windres... no
+checking whether make supports nested variables... (cached) yes
+checking if gcc supports -std=gnu11... yes
+checking operating system... Linux
+checking for nfds_t... yes
+checking for pipe2... yes
+checking if gcc recognizes -pthread... yes
+checking for library containing pthread_create... none required
+checking for library containing __atomic_fetch_add_4... -latomic
+checking for library containing clock_gettime... none required
+checking for pthread_setname_np... yes
+checking libudev.h usability... yes
+checking libudev.h presence... yes
+checking for libudev.h... yes
+checking for udev_new in -ludev... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for UMOCKDEV... no
+checking for UMOCKDEV_HOTPLUG... no
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for clock_gettime... yes
+checking whether CLOCK_MONOTONIC is declared... yes
+checking for pthread_condattr_setclock... yes
+checking sys/eventfd.h usability... yes
+checking sys/eventfd.h presence... yes
+checking for sys/eventfd.h... yes
+checking whether EFD_NONBLOCK is declared... yes
+checking whether EFD_CLOEXEC is declared... yes
+checking for eventfd... yes
+checking whether to use eventfd for signalling... yes
+checking sys/timerfd.h usability... yes
+checking sys/timerfd.h presence... yes
+checking for sys/timerfd.h... yes
+checking whether TFD_NONBLOCK is declared... yes
+checking whether TFD_CLOEXEC is declared... yes
+checking for timerfd_create... yes
+checking whether to use timerfd for timing... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating libusb-1.0.pc
+config.status: creating Makefile
+config.status: creating libusb/Makefile
+config.status: creating examples/Makefile
+config.status: creating tests/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/doxygen.cfg
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/libusb-1.0.26'
+Making all in libusb
+make[2]: Entering directory '/home/devel/building/work/src/libusb-1.0.26/libusb'
+depbase=`echo core.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -std=gnu11  -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT core.lo -MD -MP -MF $depbase.Tpo -c -o core.lo core.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo descriptor.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -std=gnu11  -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT descriptor.lo -MD -MP -MF $depbase.Tpo -c -o descriptor.lo descriptor.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo hotplug.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -std=gnu11  -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT hotplug.lo -MD -MP -MF $depbase.Tpo -c -o hotplug.lo hotplug.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo io.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -std=gnu11  -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT io.lo -MD -MP -MF $depbase.Tpo -c -o io.lo io.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo strerror.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -std=gnu11  -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT strerror.lo -MD -MP -MF $depbase.Tpo -c -o strerror.lo strerror.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo sync.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -std=gnu11  -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sync.lo -MD -MP -MF $depbase.Tpo -c -o sync.lo sync.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo os/events_posix.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -std=gnu11  -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT os/events_posix.lo -MD -MP -MF $depbase.Tpo -c -o os/events_posix.lo os/events_posix.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo os/threads_posix.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -std=gnu11  -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT os/threads_posix.lo -MD -MP -MF $depbase.Tpo -c -o os/threads_posix.lo os/threads_posix.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -std=gnu11 -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT hotplug.lo -MD -MP -MF .deps/hotplug.Tpo -c hotplug.c  -fPIC -DPIC -o .libs/hotplug.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -std=gnu11 -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT io.lo -MD -MP -MF .deps/io.Tpo -c io.c  -fPIC -DPIC -o .libs/io.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -std=gnu11 -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT descriptor.lo -MD -MP -MF .deps/descriptor.Tpo -c descriptor.c  -fPIC -DPIC -o .libs/descriptor.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -std=gnu11 -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sync.lo -MD -MP -MF .deps/sync.Tpo -c sync.c  -fPIC -DPIC -o .libs/sync.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -std=gnu11 -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT os/threads_posix.lo -MD -MP -MF os/.deps/threads_posix.Tpo -c os/threads_posix.c  -fPIC -DPIC -o os/.libs/threads_posix.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -std=gnu11 -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT os/events_posix.lo -MD -MP -MF os/.deps/events_posix.Tpo -c os/events_posix.c  -fPIC -DPIC -o os/.libs/events_posix.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -std=gnu11 -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT strerror.lo -MD -MP -MF .deps/strerror.Tpo -c strerror.c  -fPIC -DPIC -o .libs/strerror.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -std=gnu11 -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT core.lo -MD -MP -MF .deps/core.Tpo -c core.c  -fPIC -DPIC -o .libs/core.o
+depbase=`echo os/linux_usbfs.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -std=gnu11  -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT os/linux_usbfs.lo -MD -MP -MF $depbase.Tpo -c -o os/linux_usbfs.lo os/linux_usbfs.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo os/linux_udev.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -std=gnu11  -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT os/linux_udev.lo -MD -MP -MF $depbase.Tpo -c -o os/linux_udev.lo os/linux_udev.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -std=gnu11 -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT os/linux_usbfs.lo -MD -MP -MF os/.deps/linux_usbfs.Tpo -c os/linux_usbfs.c  -fPIC -DPIC -o os/.libs/linux_usbfs.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -std=gnu11 -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT os/linux_udev.lo -MD -MP -MF os/.deps/linux_udev.Tpo -c os/linux_udev.c  -fPIC -DPIC -o os/.libs/linux_udev.o
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -std=gnu11  -Wall -Wextra -Wshadow -Wunused -Wwrite-strings -Werror=format-security -Werror=implicit-function-declaration -Werror=implicit-int -Werror=init-self -Werror=missing-prototypes -Werror=strict-prototypes -Werror=undef -Werror=uninitialized -fvisibility=hidden -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -version-info 3:0:3 -no-undefined   -o libusb-1.0.la -rpath /usr/lib core.lo descriptor.lo hotplug.lo io.lo strerror.lo sync.lo os/events_posix.lo os/threads_posix.lo os/linux_usbfs.lo os/linux_udev.lo   -ludev -latomic 
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/core.o .libs/descriptor.o .libs/hotplug.o .libs/io.o .libs/strerror.o .libs/sync.o os/.libs/events_posix.o os/.libs/threads_posix.o os/.libs/linux_usbfs.o os/.libs/linux_udev.o   -Wl,-rpath -Wl,/usr/lib/../lib -Wl,-rpath -Wl,/usr/lib/../lib -ludev /usr/lib/../lib/libatomic.so  -pthread -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -pthread -Wl,-soname -Wl,libusb-1.0.so.0 -o .libs/libusb-1.0.so.0.3.0
+libtool: link: (cd ".libs" && rm -f "libusb-1.0.so.0" && ln -s "libusb-1.0.so.0.3.0" "libusb-1.0.so.0")
+libtool: link: (cd ".libs" && rm -f "libusb-1.0.so" && ln -s "libusb-1.0.so.0.3.0" "libusb-1.0.so")
+libtool: link: ( cd ".libs" && rm -f "libusb-1.0.la" && ln -s "../libusb-1.0.la" "libusb-1.0.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/libusb-1.0.26/libusb'
+make[2]: Entering directory '/home/devel/building/work/src/libusb-1.0.26'
+make[2]: Leaving directory '/home/devel/building/work/src/libusb-1.0.26'
+make[1]: Leaving directory '/home/devel/building/work/src/libusb-1.0.26'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in libusb
+make[1]: Entering directory '/home/devel/building/work/src/libusb-1.0.26/libusb'
+make[2]: Entering directory '/home/devel/building/work/src/libusb-1.0.26/libusb'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/libusb-1.0'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libusb-1.0.la '/home/devel/building/work/pkg/usr/lib'
+ /usr/bin/install -c -m 644 libusb.h '/home/devel/building/work/pkg/usr/include/libusb-1.0'
+libtool: install: /usr/bin/install -c .libs/libusb-1.0.so.0.3.0 /home/devel/building/work/pkg/usr/lib/libusb-1.0.so.0.3.0
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libusb-1.0.so.0.3.0 libusb-1.0.so.0 || { rm -f libusb-1.0.so.0 && ln -s libusb-1.0.so.0.3.0 libusb-1.0.so.0; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libusb-1.0.so.0.3.0 libusb-1.0.so || { rm -f libusb-1.0.so && ln -s libusb-1.0.so.0.3.0 libusb-1.0.so; }; })
+libtool: install: /usr/bin/install -c .libs/libusb-1.0.lai /home/devel/building/work/pkg/usr/lib/libusb-1.0.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make[2]: Leaving directory '/home/devel/building/work/src/libusb-1.0.26/libusb'
+make[1]: Leaving directory '/home/devel/building/work/src/libusb-1.0.26/libusb'
+make[1]: Entering directory '/home/devel/building/work/src/libusb-1.0.26'
+make[2]: Entering directory '/home/devel/building/work/src/libusb-1.0.26'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libusb-1.0.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+make[2]: Leaving directory '/home/devel/building/work/src/libusb-1.0.26'
+make[1]: Leaving directory '/home/devel/building/work/src/libusb-1.0.26'
++ install -d /home/devel/building/work/pkg/lib
++ mv /home/devel/building/work/pkg/usr/lib/libusb-1.0.so.0 /home/devel/building/work/pkg/usr/lib/libusb-1.0.so.0.3.0 /home/devel/building/work/pkg/lib
+++ readlink /home/devel/building/work/pkg/lib/libusb-1.0.so.0
++ ln -sf ../../lib/libusb-1.0.so.0.3.0 /home/devel/building/work/pkg/usr/lib/libusb-1.0.so
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 18:20 lib/
+lrwxrwxrwx  0 root   root        0 Feb  1 18:20 lib/libusb-1.0.so.0 -> libusb-1.0.so.0.3.0
+-rwxr-xr-x  0 root   root   113752 Feb  1 18:20 lib/libusb-1.0.so.0.3.0
+drwxr-xr-x  0 root   root        0 Feb  1 18:20 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 18:20 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 18:20 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 18:20 usr/include/libusb-1.0/
+-rw-r--r--  0 root   root    76208 Feb  1 18:20 usr/include/libusb-1.0/libusb.h
+drwxr-xr-x  0 root   root        0 Feb  1 18:20 usr/lib/pkgconfig/
+lrwxrwxrwx  0 root   root        0 Feb  1 18:20 usr/lib/libusb-1.0.so -> ../../lib/libusb-1.0.so.0.3.0
+-rw-r--r--  0 root   root      326 Feb  1 18:20 usr/lib/pkgconfig/libusb-1.0.pc
+=======> Building '/home/devel/packages/libusb#1.0.26-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling libusb 1.0.26-1
+prt-get: /usr/bin/pkgadd -u libusb#1.0.26-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 18:20:10 2024
+

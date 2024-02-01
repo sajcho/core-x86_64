@@ -1,0 +1,309 @@
+prt-get: updating /usr/ports/wayland-x86_64/gsettings-desktop-schemas
+prt-get: starting build Thu Feb  1 18:00:58 2024
+=======> Building '/home/devel/packages/gsettings-desktop-schemas#45.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/gsettings-desktop-schemas-45.0.tar.xz
++ build
++ cd gsettings-desktop-schemas-45.0
++ build-meson . build
+The Meson build system
+Version: 1.3.1
+Source dir: /home/devel/building/work/src/gsettings-desktop-schemas-45.0
+Build dir: /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build
+Build type: native build
+Project name: gsettings-desktop-schemas
+Project version: 45.0
+C compiler for the host machine: cc (gcc 13.2.0 "cc (SAUX-x86_64) 13.2.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Message: Building gsettings-desktop-schemas 45.0
+Configuring gsettings-desktop-schemas.pc using configuration
+Program glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Found pkg-config: YES (/usr/bin/pkg-config) 2.1.0
+Run-time dependency gobject-introspection-1.0 found: YES 1.78.1
+Dependency gobject-introspection-1.0 found: YES 1.78.1 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 found: YES 1.78.1 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Configuring org.gnome.desktop.default-applications.gschema.xml using configuration
+Configuring org.gnome.desktop.interface.gschema.xml using configuration
+Configuring org.gnome.desktop.lockdown.gschema.xml using configuration
+Configuring org.gnome.system.locale.gschema.xml using configuration
+Configuring org.gnome.system.location.gschema.xml using configuration
+Configuring org.gnome.system.proxy.gschema.xml using configuration
+Configuring org.gnome.desktop.sound.gschema.xml using configuration
+Configuring org.gnome.desktop.thumbnail-cache.gschema.xml using configuration
+Configuring org.gnome.desktop.a11y.gschema.xml using configuration
+Configuring org.gnome.desktop.a11y.keyboard.gschema.xml using configuration
+Configuring org.gnome.desktop.a11y.applications.gschema.xml using configuration
+Configuring org.gnome.desktop.a11y.interface.gschema.xml using configuration
+Configuring org.gnome.desktop.a11y.magnifier.gschema.xml using configuration
+Configuring org.gnome.desktop.a11y.mouse.gschema.xml using configuration
+Configuring org.gnome.desktop.thumbnailers.gschema.xml using configuration
+Configuring org.gnome.desktop.session.gschema.xml using configuration
+Configuring org.gnome.desktop.background.gschema.xml using configuration
+Configuring org.gnome.desktop.calendar.gschema.xml using configuration
+Configuring org.gnome.desktop.datetime.gschema.xml using configuration
+Configuring org.gnome.desktop.media-handling.gschema.xml using configuration
+Configuring org.gnome.desktop.screensaver.gschema.xml using configuration
+Configuring org.gnome.desktop.search-providers.gschema.xml using configuration
+Configuring org.gnome.desktop.wm.keybindings.gschema.xml using configuration
+Configuring org.gnome.desktop.wm.preferences.gschema.xml using configuration
+Configuring org.gnome.desktop.input-sources.gschema.xml using configuration
+Configuring org.gnome.desktop.privacy.gschema.xml using configuration
+Configuring org.gnome.desktop.notifications.gschema.xml using configuration
+Configuring org.gnome.desktop.app-folders.gschema.xml using configuration
+Configuring org.gnome.desktop.peripherals.gschema.xml using configuration
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Build-time dependency gio-2.0 found: YES 2.78.4
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Build targets in project: 66
+
+gsettings-desktop-schemas 45.0
+
+  User defined options
+    auto_features     : auto
+    bindir            : /usr/bin
+    buildtype         : plain
+    datadir           : /usr/share
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    libexecdir        : /usr/lib
+    localstatedir     : /var
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sbindir           : /usr/sbin
+    sharedstatedir    : /var/lib
+    sysconfdir        : /etc
+    werror            : false
+    wrap_mode         : nodownload
+    python.bytecompile: 0
+    b_lto             : false
+    b_pie             : true
+    b_staticpic       : true
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -v -C build
+ninja: entering directory '/home/devel/building/work/src/gsettings-desktop-schemas-45.0/build'
+[1/63] /usr/bin/msgfmt -o po/ug/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/ug.po
+[2/63] /usr/bin/msgfmt -o po/zh_TW/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/zh_TW.po
+[3/63] /usr/bin/msgfmt -o po/zh_HK/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/zh_HK.po
+[4/63] /usr/bin/msgfmt -o po/zh_CN/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/zh_CN.po
+[5/63] /usr/bin/msgfmt -o po/vi/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/vi.po
+[6/63] /usr/bin/msgfmt -o po/uk/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/uk.po
+[7/63] /usr/bin/msgfmt -o po/tr/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/tr.po
+[8/63] /usr/bin/msgfmt -o po/tg/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/tg.po
+[9/63] /usr/bin/msgfmt -o po/sv/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/sv.po
+[10/63] /usr/bin/msgfmt -o po/sr@latin/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/sr@latin.po
+[11/63] /usr/bin/msgfmt -o po/sr/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/sr.po
+[12/63] /usr/bin/msgfmt -o po/sl/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/sl.po
+[13/63] /usr/bin/msgfmt -o po/sk/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/sk.po
+[14/63] /usr/bin/msgfmt -o po/ru/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/ru.po
+[15/63] /usr/bin/msgfmt -o po/ro/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/ro.po
+[16/63] /usr/bin/msgfmt -o po/pt_BR/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/pt_BR.po
+[17/63] /usr/bin/msgfmt -o po/pt/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/pt.po
+[18/63] /usr/bin/msgfmt -o po/pl/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/pl.po
+[19/63] /usr/bin/msgfmt -o po/pa/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/pa.po
+[20/63] /usr/bin/msgfmt -o po/or/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/or.po
+[21/63] /usr/bin/msgfmt -o po/oc/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/oc.po
+[22/63] /usr/bin/msgfmt -o po/nl/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/nl.po
+[23/63] /usr/bin/msgfmt -o po/ne/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/ne.po
+[24/63] /usr/bin/msgfmt -o po/nb/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/nb.po
+[25/63] /usr/bin/msgfmt -o po/ms/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/ms.po
+[26/63] /usr/bin/msgfmt -o po/ml/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/ml.po
+[27/63] /usr/bin/msgfmt -o po/lv/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/lv.po
+[28/63] /usr/bin/msgfmt -o po/lt/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/lt.po
+[29/63] /usr/bin/msgfmt -o po/kk/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/kk.po
+[30/63] /usr/bin/msgfmt -o po/ka/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/ka.po
+[31/63] /usr/bin/msgfmt -o po/ja/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/ja.po
+[32/63] /usr/bin/msgfmt -o po/it/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/it.po
+[33/63] /usr/bin/msgfmt -o po/is/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/is.po
+[34/63] /usr/bin/msgfmt -o po/id/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/id.po
+[35/63] /usr/bin/msgfmt -o po/hu/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/hu.po
+[36/63] /usr/bin/msgfmt -o po/hr/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/hr.po
+[37/63] /usr/bin/msgfmt -o po/hi/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/hi.po
+[38/63] /usr/bin/msgfmt -o po/he/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/he.po
+[39/63] /usr/bin/msgfmt -o po/gu/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/gu.po
+[40/63] /usr/bin/msgfmt -o po/gl/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/gl.po
+[41/63] /usr/bin/msgfmt -o po/fur/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/fur.po
+[42/63] /usr/bin/msgfmt -o po/fr/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/fr.po
+[43/63] /usr/bin/msgfmt -o po/fi/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/fi.po
+[44/63] /usr/bin/msgfmt -o po/fa/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/fa.po
+[45/63] /usr/bin/msgfmt -o po/eu/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/eu.po
+[46/63] /usr/bin/msgfmt -o po/es/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/es.po
+[47/63] /usr/bin/msgfmt -o po/eo/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/eo.po
+[48/63] /usr/bin/msgfmt -o po/en_GB/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/en_GB.po
+[49/63] /usr/bin/msgfmt -o po/el/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/el.po
+[50/63] /usr/bin/msgfmt -o po/de/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/de.po
+[51/63] /usr/bin/msgfmt -o po/da/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/da.po
+[52/63] /usr/bin/msgfmt -o po/cs/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/cs.po
+[53/63] /usr/bin/msgfmt -o po/ca@valencia/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/ca@valencia.po
+[54/63] /usr/bin/msgfmt -o po/ca/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/ca.po
+[55/63] /usr/bin/msgfmt -o po/bs/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/bs.po
+[56/63] /usr/bin/msgfmt -o po/bg/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/bg.po
+[57/63] /usr/bin/msgfmt -o po/be/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/be.po
+[58/63] /usr/bin/msgfmt -o po/as/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/as.po
+[59/63] /usr/bin/msgfmt -o po/ab/LC_MESSAGES/gsettings-desktop-schemas.mo ../po/ab.po
+[60/63] cc  -o headers/libnoinst.so  -Wl,--as-needed -Wl,--no-undefined -shared -fPIC -Wl,--start-group -Wl,-soname,libnoinst.so -Wl,--end-group -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects
+[61/63] /usr/bin/meson --internal exe --capture headers/org.gnome.desktop.enums.xml -- /usr/bin/glib-mkenums --comments '<!-- @comment@ -->' --fhead '<schemalist>' --vhead '<@type@ id="org.gnome.desktop.@EnumName@">' --vprod '    <value nick="@valuenick@" value="@valuenum@"/>' --vtail '  </@type@>' --ftail '</schemalist>' ../headers/gdesktop-enums.h
+[62/63] env PKG_CONFIG_PATH=/usr/lib/pkgconfig:/usr/share/pkgconfig:/home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/meson-uninstalled PKG_CONFIG=/usr/bin/pkg-config CC=cc /usr/bin/g-ir-scanner --quiet --no-libtool --namespace=GDesktopEnums --nsversion=3.0 --warn-all --output headers/GDesktopEnums-3.0.gir --header-only -I/home/devel/building/work/src/gsettings-desktop-schemas-45.0/headers -I/home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/headers --filelist=/home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/headers/libnoinst.so.p/GDesktopEnums_3.0_gir_filelist --identifier-prefix=GDesktop --cflags-begin -I/usr/include/gobject-introspection-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include --cflags-end --add-include-path=/usr/share/gir-1.0 -L/home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/headers --library noinst --extra-library=girepository-1.0 --extra-library=gobject-2.0 --extra-library=glib-2.0 --sources-top-dirs /home/devel/building/work/src/gsettings-desktop-schemas-45.0/ --sources-top-dirs /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/
+[63/63] /usr/bin/g-ir-compiler headers/GDesktopEnums-3.0.gir --output headers/GDesktopEnums-3.0.typelib --includedir=/usr/share/gir-1.0
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build -j 8 -v
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Installing headers/org.gnome.desktop.enums.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing headers/GDesktopEnums-3.0.gir to /home/devel/building/work/pkg/usr/share/gir-1.0
+Installing headers/GDesktopEnums-3.0.typelib to /home/devel/building/work/pkg/usr/lib/girepository-1.0
+Installing po/ab/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/ab/LC_MESSAGES
+Installing po/as/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/as/LC_MESSAGES
+Installing po/be/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/be/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/bg/LC_MESSAGES
+Installing po/bs/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/bs/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/ca/LC_MESSAGES
+Installing po/ca@valencia/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/ca@valencia/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/de/LC_MESSAGES
+Installing po/el/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/el/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/en_GB/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/es/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/eu/LC_MESSAGES
+Installing po/fa/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/fa/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/fi/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/fur/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/gl/LC_MESSAGES
+Installing po/gu/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/gu/LC_MESSAGES
+Installing po/he/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/he/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/hu/LC_MESSAGES
+Installing po/id/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/id/LC_MESSAGES
+Installing po/is/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/is/LC_MESSAGES
+Installing po/it/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/ka/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/kk/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/lt/LC_MESSAGES
+Installing po/lv/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/lv/LC_MESSAGES
+Installing po/ml/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/ml/LC_MESSAGES
+Installing po/ms/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/ms/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/nb/LC_MESSAGES
+Installing po/ne/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/ne/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/nl/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/oc/LC_MESSAGES
+Installing po/or/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/or/LC_MESSAGES
+Installing po/pa/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/pa/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/pl/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/ru/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/sl/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/sr/LC_MESSAGES
+Installing po/sr@latin/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/sr@latin/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/sv/LC_MESSAGES
+Installing po/tg/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/tg/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/tr/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/uk/LC_MESSAGES
+Installing po/vi/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/vi/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_HK/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/zh_HK/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/zh_TW/LC_MESSAGES
+Installing po/ug/LC_MESSAGES/gsettings-desktop-schemas.mo to /home/devel/building/work/pkg/usr/share/locale/ug/LC_MESSAGES
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/headers/gdesktop-enums.h to /home/devel/building/work/pkg/usr/include/gsettings-desktop-schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/gsettings-desktop-schemas.pc to /home/devel/building/work/pkg/usr/share/pkgconfig
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.default-applications.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.interface.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.lockdown.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.system.locale.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.system.location.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.system.proxy.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.sound.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.thumbnail-cache.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.a11y.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.a11y.keyboard.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.a11y.applications.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.a11y.interface.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.a11y.magnifier.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.a11y.mouse.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.thumbnailers.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.session.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.background.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.calendar.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.datetime.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.media-handling.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.screensaver.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.search-providers.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.wm.keybindings.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.wm.preferences.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.input-sources.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.privacy.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.notifications.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.app-folders.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/build/schemas/org.gnome.desktop.peripherals.gschema.xml to /home/devel/building/work/pkg/usr/share/glib-2.0/schemas
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/schemas/gsettings-desktop-schemas.convert to /home/devel/building/work/pkg/usr/share/GConf/gsettings
+Installing /home/devel/building/work/src/gsettings-desktop-schemas-45.0/schemas/wm-schemas.convert to /home/devel/building/work/pkg/usr/share/GConf/gsettings
+Skipping custom install script because DESTDIR is set '/usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas'
++ rm -r /home/devel/building/work/pkg/usr/share/locale
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 18:01 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 18:01 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 18:01 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 18:01 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 18:01 usr/include/gsettings-desktop-schemas/
+-rw-r--r--  0 root   root     7035 Sep 16 18:49 usr/include/gsettings-desktop-schemas/gdesktop-enums.h
+drwxr-xr-x  0 root   root        0 Feb  1 18:01 usr/lib/girepository-1.0/
+-rw-r--r--  0 root   root    10212 Feb  1 18:01 usr/lib/girepository-1.0/GDesktopEnums-3.0.typelib
+drwxr-xr-x  0 root   root        0 Feb  1 18:01 usr/share/glib-2.0/
+drwxr-xr-x  0 root   root        0 Feb  1 18:01 usr/share/gir-1.0/
+drwxr-xr-x  0 root   root        0 Feb  1 18:01 usr/share/pkgconfig/
+drwxr-xr-x  0 root   root        0 Feb  1 18:01 usr/share/GConf/
+drwxr-xr-x  0 root   root        0 Feb  1 18:01 usr/share/GConf/gsettings/
+-rw-r--r--  0 root   root     8426 Sep 16 18:49 usr/share/GConf/gsettings/gsettings-desktop-schemas.convert
+-rw-r--r--  0 root   root     6870 Sep 16 18:49 usr/share/GConf/gsettings/wm-schemas.convert
+-rw-r--r--  0 root   root      188 Feb  1 18:00 usr/share/pkgconfig/gsettings-desktop-schemas.pc
+-rw-r--r--  0 root   root    21702 Feb  1 18:01 usr/share/gir-1.0/GDesktopEnums-3.0.gir
+drwxr-xr-x  0 root   root        0 Feb  1 18:01 usr/share/glib-2.0/schemas/
+-rw-r--r--  0 root   root     6756 Feb  1 18:01 usr/share/glib-2.0/schemas/org.gnome.desktop.enums.xml
+-rw-r--r--  0 root   root     3092 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.default-applications.gschema.xml
+-rw-r--r--  0 root   root    12476 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.interface.gschema.xml
+-rw-r--r--  0 root   root     3454 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.lockdown.gschema.xml
+-rw-r--r--  0 root   root      448 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.system.locale.gschema.xml
+-rw-r--r--  0 root   root     1159 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.system.location.gschema.xml
+-rw-r--r--  0 root   root     6363 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.system.proxy.gschema.xml
+-rw-r--r--  0 root   root     1055 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.sound.gschema.xml
+-rw-r--r--  0 root   root      600 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.thumbnail-cache.gschema.xml
+-rw-r--r--  0 root   root      828 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.gschema.xml
+-rw-r--r--  0 root   root     4897 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.keyboard.gschema.xml
+-rw-r--r--  0 root   root      845 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.applications.gschema.xml
+-rw-r--r--  0 root   root      422 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.interface.gschema.xml
+-rw-r--r--  0 root   root     9380 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.magnifier.gschema.xml
+-rw-r--r--  0 root   root     2907 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.mouse.gschema.xml
+-rw-r--r--  0 root   root      866 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.thumbnailers.gschema.xml
+-rw-r--r--  0 root   root      668 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.session.gschema.xml
+-rw-r--r--  0 root   root     2612 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.background.gschema.xml
+-rw-r--r--  0 root   root      427 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.calendar.gschema.xml
+-rw-r--r--  0 root   root      439 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.datetime.gschema.xml
+-rw-r--r--  0 root   root     2604 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.media-handling.gschema.xml
+-rw-r--r--  0 root   root     5965 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.screensaver.gschema.xml
+-rw-r--r--  0 root   root     1907 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.search-providers.gschema.xml
+-rw-r--r--  0 root   root    13506 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.wm.keybindings.gschema.xml
+-rw-r--r--  0 root   root    12390 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.wm.preferences.gschema.xml
+-rw-r--r--  0 root   root     2549 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.input-sources.gschema.xml
+-rw-r--r--  0 root   root     4907 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.privacy.gschema.xml
+-rw-r--r--  0 root   root     2838 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.notifications.gschema.xml
+-rw-r--r--  0 root   root     1841 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.app-folders.gschema.xml
+-rw-r--r--  0 root   root    16020 Feb  1 18:00 usr/share/glib-2.0/schemas/org.gnome.desktop.peripherals.gschema.xml
+=======> Building '/home/devel/packages/gsettings-desktop-schemas#45.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling gsettings-desktop-schemas 45.0-1
+prt-get: /usr/bin/pkgadd -u gsettings-desktop-schemas#45.0-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 18:01:00 2024
+

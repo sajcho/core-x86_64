@@ -1,0 +1,160 @@
+prt-get: updating /usr/ports/core-x86_64/gperf
+prt-get: starting build Thu Feb  1 17:57:59 2024
+=======> Building '/home/devel/packages/gperf#3.1-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/gperf-3.1.tar.gz
++ build
++ cd gperf-3.1
++ ./configure --prefix=/usr
+checking whether make sets $(MAKE)... yes
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in lib (/home/devel/building/work/src/gperf-3.1/lib)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=/usr'  --cache-file=/dev/null --srcdir=.
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for ar... ar
+checking for ranlib... ranlib
+checking for a BSD compatible install... /usr/bin/install -c
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in src (/home/devel/building/work/src/gperf-3.1/src)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=/usr'  --cache-file=/dev/null --srcdir=.
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for a BSD compatible install... /usr/bin/install -c
+checking for stack-allocated variable-size arrays... yes
+checking for rand in -lm... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+=== configuring in tests (/home/devel/building/work/src/gperf-3.1/tests)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=/usr'  --cache-file=/dev/null --srcdir=.
+checking whether make sets $(MAKE)... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C++ preprocessor... g++ -E
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in doc (/home/devel/building/work/src/gperf-3.1/doc)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=/usr'  --cache-file=/dev/null --srcdir=.
+checking whether make sets $(MAKE)... yes
+checking for a BSD compatible install... /usr/bin/install -c
+configure: creating ./config.status
+config.status: creating Makefile
++ make V=1
+cd lib; make all
+make[1]: Entering directory '/home/devel/building/work/src/gperf-3.1/lib'
+gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I. -c ./getopt.c
+gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I. -c ./getopt1.c
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I. -c ./getline.cc
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I. -c ./hash.cc
+./getline.cc: In function 'int getstr(char**, size_t*, FILE*, char, size_t)':
+./getline.cc:58:20: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+   58 |       register int c = getc (stream);
+      |                    ^
+rm -f libgp.a
+ar rc libgp.a getopt.o getopt1.o getline.o hash.o
+ranlib libgp.a
+make[1]: Leaving directory '/home/devel/building/work/src/gperf-3.1/lib'
+cd src; make all
+make[1]: Entering directory '/home/devel/building/work/src/gperf-3.1/src'
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I. -I./../lib -c ./version.cc
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I. -I./../lib -c ./positions.cc
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I. -I./../lib -c ./options.cc
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I. -I./../lib -c ./keyword.cc
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I. -I./../lib -c ./keyword-list.cc
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I. -I./../lib -c ./input.cc
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I. -I./../lib -c ./bool-array.cc
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I. -I./../lib -c ./hash-table.cc
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I. -I./../lib -c ./search.cc
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I. -I./../lib -c ./output.cc
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I. -I./../lib -c ./main.cc
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o gperf version.o positions.o options.o keyword.o keyword-list.o input.o bool-array.o hash-table.o search.o output.o main.o ../lib/libgp.a -lm
+make[1]: Leaving directory '/home/devel/building/work/src/gperf-3.1/src'
+cd tests; make all
+make[1]: Entering directory '/home/devel/building/work/src/gperf-3.1/tests'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/devel/building/work/src/gperf-3.1/tests'
+cd doc; make all
+make[1]: Entering directory '/home/devel/building/work/src/gperf-3.1/doc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/devel/building/work/src/gperf-3.1/doc'
++ make DESTDIR=/home/devel/building/work/pkg install
+cd lib; make install
+make[1]: Entering directory '/home/devel/building/work/src/gperf-3.1/lib'
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/home/devel/building/work/src/gperf-3.1/lib'
+cd src; make install
+make[1]: Entering directory '/home/devel/building/work/src/gperf-3.1/src'
+/bin/sh ./../build-aux/mkinstalldirs /home/devel/building/work/pkg/usr/bin
+mkdir -p -- /home/devel/building/work/pkg/usr/bin
+/usr/bin/install -c gperf /home/devel/building/work/pkg/usr/bin/gperf
+make[1]: Leaving directory '/home/devel/building/work/src/gperf-3.1/src'
+cd tests; make install
+make[1]: Entering directory '/home/devel/building/work/src/gperf-3.1/tests'
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/home/devel/building/work/src/gperf-3.1/tests'
+cd doc; make install
+make[1]: Entering directory '/home/devel/building/work/src/gperf-3.1/doc'
+/bin/sh ./../build-aux/mkinstalldirs /home/devel/building/work/pkg/usr/share/info
+mkdir -p -- /home/devel/building/work/pkg/usr/share/info
+/usr/bin/install -c -m 644 ./gperf.info /home/devel/building/work/pkg/usr/share/info/gperf.info
+/bin/sh ./../build-aux/mkinstalldirs /home/devel/building/work/pkg/usr/share/man/man1
+mkdir -p -- /home/devel/building/work/pkg/usr/share/man/man1
+/usr/bin/install -c -m 644 ./gperf.1 /home/devel/building/work/pkg/usr/share/man/man1/gperf.1
+/bin/sh ./../build-aux/mkinstalldirs /home/devel/building/work/pkg/usr/share/doc/
+mkdir -p -- /home/devel/building/work/pkg/usr/share/doc/
+/usr/bin/install -c -m 644 ./gperf.html /home/devel/building/work/pkg/usr/share/doc//gperf.html
+make[1]: Leaving directory '/home/devel/building/work/src/gperf-3.1/doc'
++ rm -r /home/devel/building/work/pkg/usr/share/doc /home/devel/building/work/pkg/usr/share/info
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/bin/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/share/man/man1/
+-rw-r--r--  0 root   root     3158 Feb  1 17:58 usr/share/man/man1/gperf.1.gz
+-rwxr-xr-x  0 root   root    88584 Feb  1 17:58 usr/bin/gperf
+=======> Building '/home/devel/packages/gperf#3.1-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling gperf 3.1-1
+prt-get: /usr/bin/pkgadd -u gperf#3.1-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 17:58:03 2024
+

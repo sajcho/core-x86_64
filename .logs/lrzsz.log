@@ -1,0 +1,371 @@
+prt-get: updating /usr/ports/opt-x86_64/lrzsz
+prt-get: starting build Thu Feb  1 18:53:54 2024
+=======> Building '/home/devel/packages/lrzsz#0.12.20-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/lrzsz-0.12.20.tar.gz
+cp lrzsz.patch /home/devel/building/work/src
++ build
++ cd lrzsz-0.12.20
++ patch -p1 -i /home/devel/building/work/src/lrzsz.patch
+patching file src/Makefile.am
+patching file src/Makefile.in
++ ./configure --prefix=/usr --mandir=/usr/share/man --program-transform-name=s/l//
+creating cache ./config.cache
+checking for a BSD compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking whether make sets ${MAKE}... yes
+checking for working aclocal... found
+checking for working autoconf... found
+checking for working automake... found
+checking for working autoheader... found
+checking for working makeinfo... found
+checking for gcc... gcc
+checking whether the C compiler (gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ) works... yes
+checking whether the C compiler (gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ) is a cross-compiler... no
+checking whether we are using GNU C... yes
+checking whether gcc accepts -g... yes
+checking how to run the C preprocessor... gcc -E
+checking whether gcc needs -traditional... no
+checking for ranlib... ranlib
+checking for POSIXized ISC... no
+checking for AIX... no
+checking for minix/config.h... no
+checking for gcc option to accept ANSI C... none needed
+checking for function prototypes... yes
+checking for working const... yes
+checking for inline... inline
+checking for syslog in -lsocket... no
+checking for syslog in -lbe... no
+checking for gethostbyname in -lnsl... yes
+checking for ANSI C header files... yes
+checking for fcntl.h... yes
+checking for limits.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/time.h... yes
+checking for unistd.h... yes
+checking for sys/times.h... yes
+checking for termios.h... yes
+checking for sys/termios.h... yes
+checking for termio.h... yes
+checking for sys/termio.h... no
+checking for sgtty.h... yes
+checking for termios.h... (cached) yes
+checking for sys/termios.h... (cached) yes
+checking for termio.h... (cached) yes
+checking for sys/termio.h... (cached) no
+checking for sgtty.h... (cached) yes
+checking for sys/mman.h... yes
+checking for utime.h... yes
+checking for syslog.h... yes
+checking for sys/syslog.h... yes
+checking for sys/param.h... yes
+checking for sys/select.h... yes
+checking for strings.h... yes
+checking for arpa/inet.h... yes
+checking for size_t... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for speed_t... yes
+checking for st_rdev in struct stat... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking whether sys/time.h and sys/select.h may both be included... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for errno declaration... yes
+checking whether setvbuf arguments are reversed... no
+checking return type of signal handlers... void
+checking for unistd.h... (cached) yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for gettimeofday... yes
+checking for settimeofday... yes
+checking for strchr... yes
+checking for memcpy... yes
+checking for select... yes
+checking for vprintf... yes
+checking for times... yes
+checking for rdchk... no
+checking for utime... yes
+checking for syslog... yes
+checking for siginterrupt... yes
+checking for mkdir... yes
+checking for mktime... yes
+checking for strerror... yes
+checking for strstr... yes
+checking for strdup... yes
+checking for strtoul... yes
+checking for strtol... yes
+checking for strpbrk... yes
+checking for stpcpy... yes
+checking for strftime... yes
+checking for vasprintf... yes
+checking for getopt_long... yes
+checking for ftime... yes
+checking that ftime works correctly... yes
+checking for timezone variable... yes
+checking for LOG_UUCP... yes
+checking for argz.h... yes
+checking for limits.h... (cached) yes
+checking for locale.h... yes
+checking for nl_types.h... yes
+checking for malloc.h... yes
+checking for string.h... yes
+checking for unistd.h... (cached) yes
+checking for values.h... yes
+checking for sys/param.h... (cached) yes
+checking for getcwd... yes
+checking for munmap... yes
+checking for putenv... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for strchr... (cached) yes
+checking for strcasecmp... yes
+checking for __argz_count... yes
+checking for __argz_stringify... yes
+checking for __argz_next... yes
+checking for LC_MESSAGES... yes
+checking whether NLS is requested... yes
+checking whether included gettext is requested... no
+checking for libintl.h... yes
+checking for gettext in libc... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for dcgettext... yes
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for catalogs to be installed...  de
+updating cache ./config.cache
+creating ./config.status
+creating Makefile
+creating intl/Makefile
+creating lib/Makefile
+creating testsuite/Makefile
+creating man/Makefile
+creating po/Makefile.in
+creating src/Makefile
+creating debian/rules
+creating Specfile
+creating systype
+creating src/lrzszbug
+creating config.h
++ make -j1 V=1
+make all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/lrzsz-0.12.20'
+Making all in lib
+make[2]: Entering directory '/home/devel/building/work/src/lrzsz-0.12.20/lib'
+gcc -DHAVE_CONFIG_H -I. -I. -I..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c long-options.c
+long-options.c: In function 'parse_long_options':
+long-options.c:65:11: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+   65 |           exit (0);
+      |           ^~~~
+long-options.c:27:1: note: include '<stdlib.h>' or provide a declaration of 'exit'
+   26 | #include "long-options.h"
+  +++ |+#include <stdlib.h>
+   27 | 
+long-options.c:65:11: warning: incompatible implicit declaration of built-in function 'exit' [-Wbuiltin-declaration-mismatch]
+   65 |           exit (0);
+      |           ^~~~
+long-options.c:65:11: note: include '<stdlib.h>' or provide a declaration of 'exit'
+gcc -DHAVE_CONFIG_H -I. -I. -I..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c xstrtol.c
+gcc -DHAVE_CONFIG_H -I. -I. -I..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c xstrtoul.c
+gcc -DHAVE_CONFIG_H -I. -I. -I..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c error.c
+rm -f libzmodem.a
+ar cru libzmodem.a long-options.o xstrtol.o xstrtoul.o error.o 
+ar: `u' modifier ignored since `D' is the default (see `U')
+ranlib libzmodem.a
+make[2]: Leaving directory '/home/devel/building/work/src/lrzsz-0.12.20/lib'
+Making all in intl
+make[2]: Entering directory '/home/devel/building/work/src/lrzsz-0.12.20/intl'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/lrzsz-0.12.20/intl'
+Making all in src
+make[2]: Entering directory '/home/devel/building/work/src/lrzsz-0.12.20/src'
+gcc -DNFGVMIN -DHAVE_CONFIG_H -DLOCALEDIR=\"/usr/share/locale\" -I.. -I. -I../src -I../intl -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c lrz.c
+lrz.c: In function 'main':
+lrz.c:485:9: warning: 'siginterrupt' is deprecated: Use sigaction with SA_RESTART instead [-Wdeprecated-declarations]
+  485 |         siginterrupt(SIGALRM,1);
+      |         ^~~~~~~~~~~~
+In file included from lrz.c:30:
+/usr/include/signal.h:324:12: note: declared here
+  324 | extern int siginterrupt (int __sig, int __interrupt) __THROW
+      |            ^~~~~~~~~~~~
+gcc -DNFGVMIN -DHAVE_CONFIG_H -DLOCALEDIR=\"/usr/share/locale\" -I.. -I. -I../src -I../intl -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c timing.c
+gcc -DNFGVMIN -DHAVE_CONFIG_H -DLOCALEDIR=\"/usr/share/locale\" -I.. -I. -I../src -I../intl -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c zperr.c
+gcc -DNFGVMIN -DHAVE_CONFIG_H -DLOCALEDIR=\"/usr/share/locale\" -I.. -I. -I../src -I../intl -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c zreadline.c
+gcc -DNFGVMIN -DHAVE_CONFIG_H -DLOCALEDIR=\"/usr/share/locale\" -I.. -I. -I../src -I../intl -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c crctab.c
+gcc -DNFGVMIN -DHAVE_CONFIG_H -DLOCALEDIR=\"/usr/share/locale\" -I.. -I. -I../src -I../intl -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c rbsb.c
+gcc -DNFGVMIN -DHAVE_CONFIG_H -DLOCALEDIR=\"/usr/share/locale\" -I.. -I. -I../src -I../intl -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c zm.c
+gcc -DNFGVMIN -DHAVE_CONFIG_H -DLOCALEDIR=\"/usr/share/locale\" -I.. -I. -I../src -I../intl -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c protname.c
+gcc -DNFGVMIN -DHAVE_CONFIG_H -DLOCALEDIR=\"/usr/share/locale\" -I.. -I. -I../src -I../intl -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c tcp.c
+tcp.c: In function 'tcp_server':
+tcp.c:75:56: warning: passing argument 3 of 'getsockname' from incompatible pointer type [-Wincompatible-pointer-types]
+   75 |         if (getsockname (sock, (struct sockaddr *) &t, &len)) {
+      |                                                        ^~~~
+      |                                                        |
+      |                                                        size_t * {aka long unsigned int *}
+In file included from tcp.c:26:
+/usr/include/sys/socket.h:117:47: note: expected 'socklen_t * restrict' {aka 'unsigned int * restrict'} but argument is of type 'size_t *' {aka 'long unsigned int *'}
+  117 |                         socklen_t *__restrict __len) __THROW;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~^~~~~
+tcp.c:83:52: warning: passing argument 3 of 'getsockname' from incompatible pointer type [-Wincompatible-pointer-types]
+   83 |         getsockname (sock, (struct sockaddr *) &t, &len);
+      |                                                    ^~~~
+      |                                                    |
+      |                                                    size_t * {aka long unsigned int *}
+/usr/include/sys/socket.h:117:47: note: expected 'socklen_t * restrict' {aka 'unsigned int * restrict'} but argument is of type 'size_t *' {aka 'long unsigned int *'}
+  117 |                         socklen_t *__restrict __len) __THROW;
+      |                         ~~~~~~~~~~~~~~~~~~~~~~^~~~~
+tcp.c: In function 'tcp_accept':
+tcp.c:103:51: warning: passing argument 3 of 'accept' from incompatible pointer type [-Wincompatible-pointer-types]
+  103 |         if ((so = accept(d, (struct sockaddr*)&s, &namelen)) < 0) {
+      |                                                   ^~~~~~~~
+      |                                                   |
+      |                                                   size_t * {aka long unsigned int *}
+/usr/include/sys/socket.h:307:42: note: expected 'socklen_t * restrict' {aka 'unsigned int * restrict'} but argument is of type 'size_t *' {aka 'long unsigned int *'}
+  307 |                    socklen_t *__restrict __addr_len);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+gcc -DNFGVMIN -DHAVE_CONFIG_H -DLOCALEDIR=\"/usr/share/locale\" -I.. -I. -I../src -I../intl -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c lsyslog.c
+lsyslog.c: In function 'lsyslog':
+lsyslog.c:67:25: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   67 |                         sprintf(uid_string,"#%lu",(unsigned long) uid);
+      |                         ^~~~~~~
+lsyslog.c:26:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   25 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+   26 | #include <string.h>
+lsyslog.c:67:25: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   67 |                         sprintf(uid_string,"#%lu",(unsigned long) uid);
+      |                         ^~~~~~~
+lsyslog.c:67:25: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+lsyslog.c:72:5: warning: implicit declaration of function 'vasprintf'; did you mean 'vstringf'? [-Wimplicit-function-declaration]
+   72 |     vasprintf(&s,format, ap);
+      |     ^~~~~~~~~
+      |     vstringf
+gcc -DNFGVMIN -DHAVE_CONFIG_H -DLOCALEDIR=\"/usr/share/locale\" -I.. -I. -I../src -I../intl -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c canit.c
+gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o lrz  lrz.o timing.o zperr.o zreadline.o crctab.o rbsb.o zm.o protname.o tcp.o lsyslog.o canit.o ../lib/libzmodem.a  -lnsl 
+gcc -DNFGVMIN -DHAVE_CONFIG_H -DLOCALEDIR=\"/usr/share/locale\" -I.. -I. -I../src -I../intl -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c lsz.c
+lsz.c: In function 'main':
+lsz.c:618:9: warning: 'siginterrupt' is deprecated: Use sigaction with SA_RESTART instead [-Wdeprecated-declarations]
+  618 |         siginterrupt(SIGALRM,1);
+      |         ^~~~~~~~~~~~
+In file included from lsz.c:31:
+/usr/include/signal.h:324:12: note: declared here
+  324 | extern int siginterrupt (int __sig, int __interrupt) __THROW
+      |            ^~~~~~~~~~~~
+gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o lsz  lsz.o timing.o zperr.o zreadline.o crctab.o rbsb.o zm.o protname.o tcp.o lsyslog.o canit.o ../lib/libzmodem.a  -lnsl 
+make[2]: Leaving directory '/home/devel/building/work/src/lrzsz-0.12.20/src'
+Making all in po
+Making all in man
+make[2]: Entering directory '/home/devel/building/work/src/lrzsz-0.12.20/man'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/lrzsz-0.12.20/man'
+Making all in testsuite
+make[2]: Entering directory '/home/devel/building/work/src/lrzsz-0.12.20/testsuite'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/lrzsz-0.12.20/testsuite'
+make[1]: Leaving directory '/home/devel/building/work/src/lrzsz-0.12.20'
++ make -j1 DESTDIR=/home/devel/building/work/pkg install
+Making install in lib
+Making install in intl
+make[1]: Entering directory '/home/devel/building/work/src/lrzsz-0.12.20/intl'
+if test "lrzsz" = "gettext" \
+   && test '' = 'intl-compat.o'; then \
+  if test -r ./mkinstalldirs; then \
+    ./mkinstalldirs /usr/lib /usr/include; \
+  else \
+    ../mkinstalldirs /usr/lib /usr/include; \
+  fi; \
+  /usr/bin/install -c -m 644 intlh.inst /usr/include/libintl.h; \
+  /usr/bin/install -c -m 644 libintl.a /usr/lib/libintl.a; \
+else \
+  : ; \
+fi
+if test "lrzsz" = "gettext"; then \
+  if test -r ./mkinstalldirs; then \
+    ./mkinstalldirs /usr/share/gettext/intl; \
+  else \
+    ../mkinstalldirs /usr/share/gettext/intl; \
+  fi; \
+  /usr/bin/install -c -m 644 VERSION /usr/share/gettext/intl/VERSION; \
+  dists="ChangeLog Makefile.in linux-msg.sed po2tbl.sed.in xopen-msg.sed gettext.h gettextP.h hash-string.h libgettext.h loadinfo.h bindtextdom.c dcgettext.c dgettext.c gettext.c finddomain.c loadmsgcat.c localealias.c textdomain.c l10nflist.c explodename.c intl-compat.c cat-compat.c"; \
+  for file in $dists; do \
+    /usr/bin/install -c -m 644 ./$file /usr/share/gettext/intl/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/devel/building/work/src/lrzsz-0.12.20/intl'
+Making install in src
+make[1]: Entering directory '/home/devel/building/work/src/lrzsz-0.12.20/src'
+/bin/sh ../mkinstalldirs /home/devel/building/work/pkg/usr/bin
+mkdir /home/devel/building/work/pkg/usr
+mkdir /home/devel/building/work/pkg/usr/bin
+  /usr/bin/install -c lrz /home/devel/building/work/pkg/usr/bin/rz
+  /usr/bin/install -c lsz /home/devel/building/work/pkg/usr/bin/sz
+rm -f /home/devel/building/work/pkg//usr/bin/`echo lsb | sed -e 's/l//'`
+ln /home/devel/building/work/pkg//usr/bin/`echo lsz |sed -e 's/l//'` \
+	/home/devel/building/work/pkg//usr/bin/`echo lsb |sed -e 's/l//'` 
+rm -f /home/devel/building/work/pkg//usr/bin/`echo lsx | sed -e 's/l//'`
+ln /home/devel/building/work/pkg//usr/bin/`echo lsz |sed -e 's/l//'` \
+	/home/devel/building/work/pkg//usr/bin/`echo lsx |sed -e 's/l//'` 
+rm -f /home/devel/building/work/pkg//usr/bin/`echo lrb | sed -e 's/l//'`
+ln /home/devel/building/work/pkg//usr/bin/`echo lrz |sed -e 's/l//'` \
+	/home/devel/building/work/pkg//usr/bin/`echo lrb |sed -e 's/l//'` 
+rm -f /home/devel/building/work/pkg//usr/bin/`echo lrx | sed -e 's/l//'`
+ln /home/devel/building/work/pkg//usr/bin/`echo lrz |sed -e 's/l//'` \
+	/home/devel/building/work/pkg//usr/bin/`echo lrx |sed -e 's/l//'` 
+make[1]: Leaving directory '/home/devel/building/work/src/lrzsz-0.12.20/src'
+Making install in po
+make[1]: Entering directory '/home/devel/building/work/src/lrzsz-0.12.20/po'
+if test -r .././mkinstalldirs; then \
+  .././mkinstalldirs /usr/share; \
+else \
+  ../mkinstalldirs /usr/share; \
+fi
+installing de.gmo as /usr/share/locale/de/LC_MESSAGES/lrzsz.mo
+if test "lrzsz" = "gettext"; then \
+  if test -r .././mkinstalldirs; then \
+    .././mkinstalldirs /usr/share/gettext/po; \
+  else \
+    ../mkinstalldirs /usr/share/gettext/po; \
+  fi; \
+  /usr/bin/install -c -m 644 ./Makefile.in.in \
+		  /usr/share/gettext/po/Makefile.in.in; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/devel/building/work/src/lrzsz-0.12.20/po'
+Making install in man
+make[1]: Entering directory '/home/devel/building/work/src/lrzsz-0.12.20/man'
+make install-man1
+make[2]: Entering directory '/home/devel/building/work/src/lrzsz-0.12.20/man'
+/bin/sh ../mkinstalldirs /home/devel/building/work/pkg/usr/share/man/man1
+mkdir /home/devel/building/work/pkg/usr/share
+mkdir /home/devel/building/work/pkg/usr/share/man
+mkdir /home/devel/building/work/pkg/usr/share/man/man1
+ /usr/bin/install -c -m 644 ./lrz.1 /home/devel/building/work/pkg/usr/share/man/man1/rz.1
+ /usr/bin/install -c -m 644 ./lsz.1 /home/devel/building/work/pkg/usr/share/man/man1/sz.1
+make[2]: Leaving directory '/home/devel/building/work/src/lrzsz-0.12.20/man'
+make[1]: Leaving directory '/home/devel/building/work/src/lrzsz-0.12.20/man'
+Making install in testsuite
+strip: usr/bin/sb: file format not recognized
+strip: error: the input file 'usr/bin/rx' is empty
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 18:54 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 18:54 usr/bin/
+drwxr-xr-x  0 root   root        0 Feb  1 18:54 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 18:54 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb  1 18:54 usr/share/man/man1/
+-rw-r--r--  0 root   root     5815 Feb  1 18:54 usr/share/man/man1/rz.1.gz
+-rw-r--r--  0 root   root     7395 Feb  1 18:54 usr/share/man/man1/sz.1.gz
+-rwxr-xr-x  0 root   root    64376 Feb  1 18:54 usr/bin/rz
+-rwxr-xr-x  0 root   root    72584 Feb  1 18:54 usr/bin/sz
+hrwxr-xr-x  0 root   root        0 Feb  1 18:54 usr/bin/sb link to usr/bin/sz
+hrwxr-xr-x  0 root   root        0 Feb  1 18:54 usr/bin/sx link to usr/bin/sz
+hrwxr-xr-x  0 root   root        0 Feb  1 18:54 usr/bin/rb link to usr/bin/rz
+hrwxr-xr-x  0 root   root        0 Feb  1 18:54 usr/bin/rx link to usr/bin/rz
+=======> Building '/home/devel/packages/lrzsz#0.12.20-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling lrzsz 0.12.20-1
+prt-get: /usr/bin/pkgadd -u lrzsz#0.12.20-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 18:54:11 2024
+

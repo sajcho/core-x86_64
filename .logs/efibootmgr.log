@@ -1,0 +1,55 @@
+prt-get: updating /usr/ports/opt-x86_64/efibootmgr
+prt-get: starting build Thu Feb  1 15:35:52 2024
+=======> Building '/home/devel/packages/efibootmgr#18-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/efibootmgr-18.tar.gz
++ build
++ cd efibootmgr-18
++ export 'CFLAGS=-O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wno-error=pointer-sign'
++ CFLAGS='-O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wno-error=pointer-sign'
++ EFIDIR=/boot/efi
++ make V=1
+Building with EFIDIR as /boot/efi
+make[1]: Entering directory '/home/devel/building/work/src/efibootmgr-18/src'
+make -f /home/devel/building/work/src/efibootmgr-18/Make.deps \
+	SOURCES="efibootmgr.c efi.c parse_loader_data.c" \
+	SUBDIR_CFLAGS="-I/home/devel/building/work/src/efibootmgr-18/src/include" \
+	PKGS="efivar efiboot popt" \
+	deps
+make[2]: Entering directory '/home/devel/building/work/src/efibootmgr-18/src'
+gcc   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wno-error=pointer-sign -I/home/devel/building/work/src/efibootmgr-18/src/include -Werror -Wall -Wextra -Wsign-compare -Wstrict-aliasing -std=gnu11 -fPIC -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DLOCALEDIR=\"/usr/share/locale/\" -DEFIBOOTMGR_VERSION="\"18\"" -DDEFAULT_LOADER=\"\\\\EFI\\\\/boot/efi\\\\grub.efi\"   -I/usr/include/efivar  -MM -MG -MF .efibootmgr.d efibootmgr.c
+gcc   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wno-error=pointer-sign -I/home/devel/building/work/src/efibootmgr-18/src/include -Werror -Wall -Wextra -Wsign-compare -Wstrict-aliasing -std=gnu11 -fPIC -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DLOCALEDIR=\"/usr/share/locale/\" -DEFIBOOTMGR_VERSION="\"18\"" -DDEFAULT_LOADER=\"\\\\EFI\\\\/boot/efi\\\\grub.efi\"   -I/usr/include/efivar  -MM -MG -MF .efi.d efi.c
+gcc   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wno-error=pointer-sign -I/home/devel/building/work/src/efibootmgr-18/src/include -Werror -Wall -Wextra -Wsign-compare -Wstrict-aliasing -std=gnu11 -fPIC -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DLOCALEDIR=\"/usr/share/locale/\" -DEFIBOOTMGR_VERSION="\"18\"" -DDEFAULT_LOADER=\"\\\\EFI\\\\/boot/efi\\\\grub.efi\"   -I/usr/include/efivar  -MM -MG -MF .parse_loader_data.d parse_loader_data.c
+make[2]: Leaving directory '/home/devel/building/work/src/efibootmgr-18/src'
+make[1]: Leaving directory '/home/devel/building/work/src/efibootmgr-18/src'
+make[1]: Entering directory '/home/devel/building/work/src/efibootmgr-18/src'
+make -f /home/devel/building/work/src/efibootmgr-18/Make.deps \
+	SOURCES="efibootmgr.c efi.c parse_loader_data.c" \
+	SUBDIR_CFLAGS="-I/home/devel/building/work/src/efibootmgr-18/src/include" \
+	PKGS="efivar efiboot popt" \
+	deps
+gcc   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wno-error=pointer-sign -I/home/devel/building/work/src/efibootmgr-18/src/include -Werror -Wall -Wextra -Wsign-compare -Wstrict-aliasing -std=gnu11 -fPIC -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DLOCALEDIR=\"/usr/share/locale/\" -DEFIBOOTMGR_VERSION="\"18\"" -DDEFAULT_LOADER=\"\\\\EFI\\\\/boot/efi\\\\grub.efi\"   -I/usr/include/efivar  -c -o efibootmgr.o efibootmgr.c
+make[2]: Entering directory '/home/devel/building/work/src/efibootmgr-18/src'
+make[2]: Nothing to be done for 'deps'.
+make[2]: Leaving directory '/home/devel/building/work/src/efibootmgr-18/src'
+gcc   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wno-error=pointer-sign -I/home/devel/building/work/src/efibootmgr-18/src/include -Werror -Wall -Wextra -Wsign-compare -Wstrict-aliasing -std=gnu11 -fPIC -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DLOCALEDIR=\"/usr/share/locale/\" -DEFIBOOTMGR_VERSION="\"18\"" -DDEFAULT_LOADER=\"\\\\EFI\\\\/boot/efi\\\\grub.efi\"   -I/usr/include/efivar  -c -o efi.o efi.c
+gcc   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wno-error=pointer-sign -I/home/devel/building/work/src/efibootmgr-18/src/include -Werror -Wall -Wextra -Wsign-compare -Wstrict-aliasing -std=gnu11 -fPIC -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DLOCALEDIR=\"/usr/share/locale/\" -DEFIBOOTMGR_VERSION="\"18\"" -DDEFAULT_LOADER=\"\\\\EFI\\\\/boot/efi\\\\grub.efi\"   -I/usr/include/efivar  -c -o parse_loader_data.o parse_loader_data.c
+gcc   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wno-error=pointer-sign -I/home/devel/building/work/src/efibootmgr-18/src/include -Werror -Wall -Wextra -Wsign-compare -Wstrict-aliasing -std=gnu11 -fPIC -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DLOCALEDIR=\"/usr/share/locale/\" -DEFIBOOTMGR_VERSION="\"18\"" -DDEFAULT_LOADER=\"\\\\EFI\\\\/boot/efi\\\\grub.efi\"   -I/usr/include/efivar  -c -o efibootdump.o efibootdump.c
+gcc   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wno-error=pointer-sign -I/home/devel/building/work/src/efibootmgr-18/src/include -Werror -Wall -Wextra -Wsign-compare -Wstrict-aliasing -std=gnu11 -fPIC -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DLOCALEDIR=\"/usr/share/locale/\" -DEFIBOOTMGR_VERSION="\"18\"" -DDEFAULT_LOADER=\"\\\\EFI\\\\/boot/efi\\\\grub.efi\"   -I/usr/include/efivar    -fno-merge-constants -Wl,--fatal-warnings,--no-allow-shlib-undefined -Wl,-O2 -Wl,--no-undefined-version -L/usr/lib64  -o efibootdump efibootdump.o parse_loader_data.o  -lefivar -lefiboot -lpopt
+gcc   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wno-error=pointer-sign -I/home/devel/building/work/src/efibootmgr-18/src/include -Werror -Wall -Wextra -Wsign-compare -Wstrict-aliasing -std=gnu11 -fPIC -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE -DLOCALEDIR=\"/usr/share/locale/\" -DEFIBOOTMGR_VERSION="\"18\"" -DDEFAULT_LOADER=\"\\\\EFI\\\\/boot/efi\\\\grub.efi\"   -I/usr/include/efivar    -fno-merge-constants -Wl,--fatal-warnings,--no-allow-shlib-undefined -Wl,-O2 -Wl,--no-undefined-version -L/usr/lib64  -o efibootmgr efibootmgr.o efi.o parse_loader_data.o  -lefivar -lefiboot
+make[1]: Leaving directory '/home/devel/building/work/src/efibootmgr-18/src'
++ install -D src/efibootmgr /home/devel/building/work/pkg/usr/sbin/efibootmgr
++ install -D src/efibootmgr.8 /home/devel/building/work/pkg/usr/share/man/man8/efibootmgr.8
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 15:35 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 15:35 usr/sbin/
+drwxr-xr-x  0 root   root        0 Feb  1 15:35 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 15:35 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb  1 15:35 usr/share/man/man8/
+-rwxr-xr-x  0 root   root     3358 Feb  1 15:35 usr/share/man/man8/efibootmgr.8.gz
+-rwxr-xr-x  0 root   root    45024 Feb  1 15:35 usr/sbin/efibootmgr
+=======> Building '/home/devel/packages/efibootmgr#18-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling efibootmgr 18-1
+prt-get: /usr/bin/pkgadd -u efibootmgr#18-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 15:35:52 2024
+

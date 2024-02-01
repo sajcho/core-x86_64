@@ -1,0 +1,329 @@
+prt-get: updating /usr/ports/opt-x86_64/json-glib
+prt-get: starting build Thu Feb  1 18:08:55 2024
+=======> Building '/home/devel/packages/json-glib#1.8.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/json-glib-1.8.0.tar.xz
++ build
++ cd json-glib-1.8.0
++ build-meson -Dtests=false . build
+The Meson build system
+Version: 1.3.1
+Source dir: /home/devel/building/work/src/json-glib-1.8.0
+Build dir: /home/devel/building/work/src/json-glib-1.8.0/build
+Build type: native build
+Project name: json-glib
+Project version: 1.8.0
+C compiler for the host machine: cc (gcc 13.2.0 "cc (SAUX-x86_64) 13.2.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 2.1.0
+Run-time dependency gio-2.0 found: YES 2.78.4
+Has header "unistd.h" : YES 
+Compiler for C supports arguments -Wcast-align: YES 
+Compiler for C supports arguments -Wlogical-op: YES 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Compiler for C supports arguments -Wmissing-format-attribute: YES 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Wmissing-noreturn: YES 
+Compiler for C supports arguments -Wold-style-definition: YES 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Compiler for C supports arguments -Wshadow: YES 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Compiler for C supports arguments -Wunused: YES 
+Compiler for C supports arguments -Wno-discarded-qualifiers: YES 
+Compiler for C supports arguments -Wno-int-conversion: YES 
+Compiler for C supports arguments -fno-strict-aliasing: YES 
+Compiler for C supports arguments -Wno-uninitialized: YES 
+Compiler for C supports arguments -Werror=address: YES 
+Compiler for C supports arguments -Werror=array-bounds: YES 
+Compiler for C supports arguments -Werror=empty-body: YES 
+Compiler for C supports arguments -Werror=format=2: YES 
+Compiler for C supports arguments -Werror=implicit: YES 
+Compiler for C supports arguments -Werror=init-self: YES 
+Compiler for C supports arguments -Werror=int-to-pointer-cast: YES 
+Compiler for C supports arguments -Werror=main: YES 
+Compiler for C supports arguments -Werror=missing-braces: YES 
+Compiler for C supports arguments -Werror=nested-externs: YES 
+Compiler for C supports arguments -Werror=nonnull: YES 
+Compiler for C supports arguments -Werror=pointer-to-int-cast: YES 
+Compiler for C supports arguments -Werror=return-type: YES 
+Compiler for C supports arguments -Werror=sequence-point: YES 
+Compiler for C supports arguments -Werror=trigraphs: YES 
+Compiler for C supports arguments -Werror=undef: YES 
+Compiler for C supports arguments -Werror=write-strings: YES 
+Compiler for C supports arguments -fvisibility=hidden: YES 
+Compiler for C supports link arguments -Wl,-Bsymbolic: YES 
+Compiler for C supports link arguments -Wl,-z,relro: YES 
+Compiler for C supports link arguments -Wl,-z,now: YES 
+Compiler for C supports link arguments -Wl,--default-symver: YES 
+Program python3 found: YES (/usr/bin/python3)
+Configuring config.h using configuration
+Build-time dependency glib-2.0 found: YES 2.78.4
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.78.4 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Configuring json-version.h using configuration
+Program g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Run-time dependency gobject-introspection-1.0 found: YES 1.78.1
+Dependency gobject-introspection-1.0 found: YES 1.78.1 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 found: YES 1.78.1 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program xgettext found: YES (/usr/bin/xgettext)
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Program xsltproc found: YES (/usr/bin/xsltproc)
+Build targets in project: 70
+
+json-glib 1.8.0
+
+  Directories
+    prefix            : /usr
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    datadir           : /usr/share
+
+  Build
+    Introspection     : YES
+    Documentation     : YES
+    Manual pages      : NO
+    Tests             : NO
+
+  User defined options
+    auto_features     : auto
+    bindir            : /usr/bin
+    buildtype         : plain
+    datadir           : /usr/share
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    libexecdir        : /usr/lib
+    localstatedir     : /var
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sbindir           : /usr/sbin
+    sharedstatedir    : /var/lib
+    sysconfdir        : /etc
+    werror            : false
+    wrap_mode         : nodownload
+    python.bytecompile: 0
+    b_lto             : false
+    b_pie             : true
+    b_staticpic       : true
+    tests             : false
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -v -C build
+ninja: entering directory '/home/devel/building/work/src/json-glib-1.8.0/build'
+[1/87] /usr/bin/msgfmt -o po/zh_TW/LC_MESSAGES/json-glib-1.0.mo ../po/zh_TW.po
+[2/87] /usr/bin/msgfmt -o po/zh_HK/LC_MESSAGES/json-glib-1.0.mo ../po/zh_HK.po
+[3/87] /usr/bin/msgfmt -o po/zh_CN/LC_MESSAGES/json-glib-1.0.mo ../po/zh_CN.po
+[4/87] /usr/bin/msgfmt -o po/vi/LC_MESSAGES/json-glib-1.0.mo ../po/vi.po
+[5/87] /usr/bin/msgfmt -o po/uk/LC_MESSAGES/json-glib-1.0.mo ../po/uk.po
+[6/87] /usr/bin/msgfmt -o po/ug/LC_MESSAGES/json-glib-1.0.mo ../po/ug.po
+[7/87] /usr/bin/msgfmt -o po/tr/LC_MESSAGES/json-glib-1.0.mo ../po/tr.po
+[8/87] /usr/bin/msgfmt -o po/tg/LC_MESSAGES/json-glib-1.0.mo ../po/tg.po
+[9/87] /usr/bin/msgfmt -o po/te/LC_MESSAGES/json-glib-1.0.mo ../po/te.po
+[10/87] /usr/bin/msgfmt -o po/sv/LC_MESSAGES/json-glib-1.0.mo ../po/sv.po
+[11/87] /usr/bin/msgfmt -o po/sr/LC_MESSAGES/json-glib-1.0.mo ../po/sr.po
+[12/87] /usr/bin/msgfmt -o po/sr@latin/LC_MESSAGES/json-glib-1.0.mo ../po/sr@latin.po
+[13/87] /usr/bin/msgfmt -o po/sl/LC_MESSAGES/json-glib-1.0.mo ../po/sl.po
+[14/87] /usr/bin/msgfmt -o po/sk/LC_MESSAGES/json-glib-1.0.mo ../po/sk.po
+[15/87] /usr/bin/msgfmt -o po/ru/LC_MESSAGES/json-glib-1.0.mo ../po/ru.po
+[16/87] /usr/bin/msgfmt -o po/ro/LC_MESSAGES/json-glib-1.0.mo ../po/ro.po
+[17/87] /usr/bin/msgfmt -o po/pt/LC_MESSAGES/json-glib-1.0.mo ../po/pt.po
+[18/87] /usr/bin/msgfmt -o po/pt_BR/LC_MESSAGES/json-glib-1.0.mo ../po/pt_BR.po
+[19/87] /usr/bin/msgfmt -o po/pl/LC_MESSAGES/json-glib-1.0.mo ../po/pl.po
+[20/87] /usr/bin/msgfmt -o po/pa/LC_MESSAGES/json-glib-1.0.mo ../po/pa.po
+[21/87] /usr/bin/msgfmt -o po/or/LC_MESSAGES/json-glib-1.0.mo ../po/or.po
+[22/87] /usr/bin/msgfmt -o po/oc/LC_MESSAGES/json-glib-1.0.mo ../po/oc.po
+[23/87] /usr/bin/msgfmt -o po/nl/LC_MESSAGES/json-glib-1.0.mo ../po/nl.po
+[24/87] /usr/bin/msgfmt -o po/ne/LC_MESSAGES/json-glib-1.0.mo ../po/ne.po
+[25/87] /usr/bin/msgfmt -o po/nb/LC_MESSAGES/json-glib-1.0.mo ../po/nb.po
+[26/87] /usr/bin/msgfmt -o po/ms/LC_MESSAGES/json-glib-1.0.mo ../po/ms.po
+[27/87] /usr/bin/msgfmt -o po/ml/LC_MESSAGES/json-glib-1.0.mo ../po/ml.po
+[28/87] /usr/bin/msgfmt -o po/lv/LC_MESSAGES/json-glib-1.0.mo ../po/lv.po
+[29/87] /usr/bin/msgfmt -o po/lt/LC_MESSAGES/json-glib-1.0.mo ../po/lt.po
+[30/87] /usr/bin/msgfmt -o po/ky/LC_MESSAGES/json-glib-1.0.mo ../po/ky.po
+[31/87] /usr/bin/msgfmt -o po/ko/LC_MESSAGES/json-glib-1.0.mo ../po/ko.po
+[32/87] /usr/bin/msgfmt -o po/ka/LC_MESSAGES/json-glib-1.0.mo ../po/ka.po
+[33/87] /usr/bin/msgfmt -o po/ja/LC_MESSAGES/json-glib-1.0.mo ../po/ja.po
+[34/87] /usr/bin/msgfmt -o po/it/LC_MESSAGES/json-glib-1.0.mo ../po/it.po
+[35/87] /usr/bin/msgfmt -o po/id/LC_MESSAGES/json-glib-1.0.mo ../po/id.po
+[36/87] /usr/bin/msgfmt -o po/hu/LC_MESSAGES/json-glib-1.0.mo ../po/hu.po
+[37/87] /usr/bin/msgfmt -o po/hr/LC_MESSAGES/json-glib-1.0.mo ../po/hr.po
+[38/87] /usr/bin/msgfmt -o po/hi/LC_MESSAGES/json-glib-1.0.mo ../po/hi.po
+[39/87] /usr/bin/msgfmt -o po/he/LC_MESSAGES/json-glib-1.0.mo ../po/he.po
+[40/87] /usr/bin/msgfmt -o po/gl/LC_MESSAGES/json-glib-1.0.mo ../po/gl.po
+[41/87] /usr/bin/msgfmt -o po/fur/LC_MESSAGES/json-glib-1.0.mo ../po/fur.po
+[42/87] /usr/bin/msgfmt -o po/fr/LC_MESSAGES/json-glib-1.0.mo ../po/fr.po
+[43/87] /usr/bin/msgfmt -o po/fa/LC_MESSAGES/json-glib-1.0.mo ../po/fa.po
+[44/87] /usr/bin/msgfmt -o po/eu/LC_MESSAGES/json-glib-1.0.mo ../po/eu.po
+[45/87] /usr/bin/msgfmt -o po/et/LC_MESSAGES/json-glib-1.0.mo ../po/et.po
+[46/87] /usr/bin/msgfmt -o po/es/LC_MESSAGES/json-glib-1.0.mo ../po/es.po
+[47/87] /usr/bin/msgfmt -o po/eo/LC_MESSAGES/json-glib-1.0.mo ../po/eo.po
+[48/87] /usr/bin/msgfmt -o po/en_GB/LC_MESSAGES/json-glib-1.0.mo ../po/en_GB.po
+[49/87] /usr/bin/msgfmt -o po/el/LC_MESSAGES/json-glib-1.0.mo ../po/el.po
+[50/87] /usr/bin/msgfmt -o po/de/LC_MESSAGES/json-glib-1.0.mo ../po/de.po
+[51/87] /usr/bin/msgfmt -o po/da/LC_MESSAGES/json-glib-1.0.mo ../po/da.po
+[52/87] /usr/bin/msgfmt -o po/cs/LC_MESSAGES/json-glib-1.0.mo ../po/cs.po
+[53/87] /usr/bin/msgfmt -o po/ca@valencia/LC_MESSAGES/json-glib-1.0.mo ../po/ca@valencia.po
+[54/87] /usr/bin/msgfmt -o po/ca/LC_MESSAGES/json-glib-1.0.mo ../po/ca.po
+[55/87] /usr/bin/msgfmt -o po/bs/LC_MESSAGES/json-glib-1.0.mo ../po/bs.po
+[56/87] /usr/bin/msgfmt -o po/bn_IN/LC_MESSAGES/json-glib-1.0.mo ../po/bn_IN.po
+[57/87] /usr/bin/msgfmt -o po/bg/LC_MESSAGES/json-glib-1.0.mo ../po/bg.po
+[58/87] /usr/bin/msgfmt -o po/be/LC_MESSAGES/json-glib-1.0.mo ../po/be.po
+[59/87] /usr/bin/msgfmt -o po/as/LC_MESSAGES/json-glib-1.0.mo ../po/as.po
+[60/87] /usr/bin/msgfmt -o po/ab/LC_MESSAGES/json-glib-1.0.mo ../po/ab.po
+[61/87] /usr/bin/meson --internal exe --capture json-glib/json-enum-types.h -- /usr/bin/glib-mkenums --template /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-enum-types.h.in /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-builder.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-generator.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-gobject.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-gvariant.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-parser.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-path.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-reader.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-types.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-utils.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-version-macros.h
+[62/87] cc -Ijson-glib/json-glib-format.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -MD -MQ json-glib/json-glib-format.p/json-glib-format.c.o -MF json-glib/json-glib-format.p/json-glib-format.c.o.d -o json-glib/json-glib-format.p/json-glib-format.c.o -c ../json-glib/json-glib-format.c
+[63/87] cc -Ijson-glib/json-glib-validate.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -MD -MQ json-glib/json-glib-validate.p/json-glib-validate.c.o -MF json-glib/json-glib-validate.p/json-glib-validate.c.o.d -o json-glib/json-glib-validate.p/json-glib-validate.c.o -c ../json-glib/json-glib-validate.c
+[64/87] cc -Ijson-glib/libjson-glib-1.0.so.0.800.0.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-prototypes -Wmissing-noreturn -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wunused -Wno-discarded-qualifiers -Wno-int-conversion -fno-strict-aliasing -Wno-uninitialized -Werror=address -Werror=array-bounds -Werror=empty-body -Werror=format=2 -Werror=implicit -Werror=init-self -Werror=int-to-pointer-cast -Werror=main -Werror=missing-braces -Werror=nested-externs -Werror=nonnull -Werror=pointer-to-int-cast -Werror=return-type -Werror=sequence-point -Werror=trigraphs -Werror=undef -Werror=write-strings -fvisibility=hidden -MD -MQ json-glib/libjson-glib-1.0.so.0.800.0.p/json-value.c.o -MF json-glib/libjson-glib-1.0.so.0.800.0.p/json-value.c.o.d -o json-glib/libjson-glib-1.0.so.0.800.0.p/json-value.c.o -c ../json-glib/json-value.c
+[65/87] cc -Ijson-glib/libjson-glib-1.0.so.0.800.0.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-prototypes -Wmissing-noreturn -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wunused -Wno-discarded-qualifiers -Wno-int-conversion -fno-strict-aliasing -Wno-uninitialized -Werror=address -Werror=array-bounds -Werror=empty-body -Werror=format=2 -Werror=implicit -Werror=init-self -Werror=int-to-pointer-cast -Werror=main -Werror=missing-braces -Werror=nested-externs -Werror=nonnull -Werror=pointer-to-int-cast -Werror=return-type -Werror=sequence-point -Werror=trigraphs -Werror=undef -Werror=write-strings -fvisibility=hidden -MD -MQ json-glib/libjson-glib-1.0.so.0.800.0.p/json-utils.c.o -MF json-glib/libjson-glib-1.0.so.0.800.0.p/json-utils.c.o.d -o json-glib/libjson-glib-1.0.so.0.800.0.p/json-utils.c.o -c ../json-glib/json-utils.c
+[66/87] cc -Ijson-glib/libjson-glib-1.0.so.0.800.0.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-prototypes -Wmissing-noreturn -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wunused -Wno-discarded-qualifiers -Wno-int-conversion -fno-strict-aliasing -Wno-uninitialized -Werror=address -Werror=array-bounds -Werror=empty-body -Werror=format=2 -Werror=implicit -Werror=init-self -Werror=int-to-pointer-cast -Werror=main -Werror=missing-braces -Werror=nested-externs -Werror=nonnull -Werror=pointer-to-int-cast -Werror=return-type -Werror=sequence-point -Werror=trigraphs -Werror=undef -Werror=write-strings -fvisibility=hidden -MD -MQ json-glib/libjson-glib-1.0.so.0.800.0.p/json-serializable.c.o -MF json-glib/libjson-glib-1.0.so.0.800.0.p/json-serializable.c.o.d -o json-glib/libjson-glib-1.0.so.0.800.0.p/json-serializable.c.o -c ../json-glib/json-serializable.c
+[67/87] cc -Ijson-glib/libjson-glib-1.0.so.0.800.0.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-prototypes -Wmissing-noreturn -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wunused -Wno-discarded-qualifiers -Wno-int-conversion -fno-strict-aliasing -Wno-uninitialized -Werror=address -Werror=array-bounds -Werror=empty-body -Werror=format=2 -Werror=implicit -Werror=init-self -Werror=int-to-pointer-cast -Werror=main -Werror=missing-braces -Werror=nested-externs -Werror=nonnull -Werror=pointer-to-int-cast -Werror=return-type -Werror=sequence-point -Werror=trigraphs -Werror=undef -Werror=write-strings -fvisibility=hidden -MD -MQ json-glib/libjson-glib-1.0.so.0.800.0.p/json-scanner.c.o -MF json-glib/libjson-glib-1.0.so.0.800.0.p/json-scanner.c.o.d -o json-glib/libjson-glib-1.0.so.0.800.0.p/json-scanner.c.o -c ../json-glib/json-scanner.c
+[68/87] cc -Ijson-glib/libjson-glib-1.0.so.0.800.0.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-prototypes -Wmissing-noreturn -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wunused -Wno-discarded-qualifiers -Wno-int-conversion -fno-strict-aliasing -Wno-uninitialized -Werror=address -Werror=array-bounds -Werror=empty-body -Werror=format=2 -Werror=implicit -Werror=init-self -Werror=int-to-pointer-cast -Werror=main -Werror=missing-braces -Werror=nested-externs -Werror=nonnull -Werror=pointer-to-int-cast -Werror=return-type -Werror=sequence-point -Werror=trigraphs -Werror=undef -Werror=write-strings -fvisibility=hidden -MD -MQ json-glib/libjson-glib-1.0.so.0.800.0.p/json-reader.c.o -MF json-glib/libjson-glib-1.0.so.0.800.0.p/json-reader.c.o.d -o json-glib/libjson-glib-1.0.so.0.800.0.p/json-reader.c.o -c ../json-glib/json-reader.c
+[69/87] cc -Ijson-glib/libjson-glib-1.0.so.0.800.0.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-prototypes -Wmissing-noreturn -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wunused -Wno-discarded-qualifiers -Wno-int-conversion -fno-strict-aliasing -Wno-uninitialized -Werror=address -Werror=array-bounds -Werror=empty-body -Werror=format=2 -Werror=implicit -Werror=init-self -Werror=int-to-pointer-cast -Werror=main -Werror=missing-braces -Werror=nested-externs -Werror=nonnull -Werror=pointer-to-int-cast -Werror=return-type -Werror=sequence-point -Werror=trigraphs -Werror=undef -Werror=write-strings -fvisibility=hidden -MD -MQ json-glib/libjson-glib-1.0.so.0.800.0.p/json-path.c.o -MF json-glib/libjson-glib-1.0.so.0.800.0.p/json-path.c.o.d -o json-glib/libjson-glib-1.0.so.0.800.0.p/json-path.c.o -c ../json-glib/json-path.c
+[70/87] cc -Ijson-glib/libjson-glib-1.0.so.0.800.0.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-prototypes -Wmissing-noreturn -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wunused -Wno-discarded-qualifiers -Wno-int-conversion -fno-strict-aliasing -Wno-uninitialized -Werror=address -Werror=array-bounds -Werror=empty-body -Werror=format=2 -Werror=implicit -Werror=init-self -Werror=int-to-pointer-cast -Werror=main -Werror=missing-braces -Werror=nested-externs -Werror=nonnull -Werror=pointer-to-int-cast -Werror=return-type -Werror=sequence-point -Werror=trigraphs -Werror=undef -Werror=write-strings -fvisibility=hidden -MD -MQ json-glib/libjson-glib-1.0.so.0.800.0.p/json-parser.c.o -MF json-glib/libjson-glib-1.0.so.0.800.0.p/json-parser.c.o.d -o json-glib/libjson-glib-1.0.so.0.800.0.p/json-parser.c.o -c ../json-glib/json-parser.c
+[71/87] cc -Ijson-glib/libjson-glib-1.0.so.0.800.0.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-prototypes -Wmissing-noreturn -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wunused -Wno-discarded-qualifiers -Wno-int-conversion -fno-strict-aliasing -Wno-uninitialized -Werror=address -Werror=array-bounds -Werror=empty-body -Werror=format=2 -Werror=implicit -Werror=init-self -Werror=int-to-pointer-cast -Werror=main -Werror=missing-braces -Werror=nested-externs -Werror=nonnull -Werror=pointer-to-int-cast -Werror=return-type -Werror=sequence-point -Werror=trigraphs -Werror=undef -Werror=write-strings -fvisibility=hidden -MD -MQ json-glib/libjson-glib-1.0.so.0.800.0.p/json-object.c.o -MF json-glib/libjson-glib-1.0.so.0.800.0.p/json-object.c.o.d -o json-glib/libjson-glib-1.0.so.0.800.0.p/json-object.c.o -c ../json-glib/json-object.c
+[72/87] cc -Ijson-glib/libjson-glib-1.0.so.0.800.0.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-prototypes -Wmissing-noreturn -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wunused -Wno-discarded-qualifiers -Wno-int-conversion -fno-strict-aliasing -Wno-uninitialized -Werror=address -Werror=array-bounds -Werror=empty-body -Werror=format=2 -Werror=implicit -Werror=init-self -Werror=int-to-pointer-cast -Werror=main -Werror=missing-braces -Werror=nested-externs -Werror=nonnull -Werror=pointer-to-int-cast -Werror=return-type -Werror=sequence-point -Werror=trigraphs -Werror=undef -Werror=write-strings -fvisibility=hidden -MD -MQ json-glib/libjson-glib-1.0.so.0.800.0.p/json-node.c.o -MF json-glib/libjson-glib-1.0.so.0.800.0.p/json-node.c.o.d -o json-glib/libjson-glib-1.0.so.0.800.0.p/json-node.c.o -c ../json-glib/json-node.c
+[73/87] cc -Ijson-glib/libjson-glib-1.0.so.0.800.0.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-prototypes -Wmissing-noreturn -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wunused -Wno-discarded-qualifiers -Wno-int-conversion -fno-strict-aliasing -Wno-uninitialized -Werror=address -Werror=array-bounds -Werror=empty-body -Werror=format=2 -Werror=implicit -Werror=init-self -Werror=int-to-pointer-cast -Werror=main -Werror=missing-braces -Werror=nested-externs -Werror=nonnull -Werror=pointer-to-int-cast -Werror=return-type -Werror=sequence-point -Werror=trigraphs -Werror=undef -Werror=write-strings -fvisibility=hidden -MD -MQ json-glib/libjson-glib-1.0.so.0.800.0.p/json-gvariant.c.o -MF json-glib/libjson-glib-1.0.so.0.800.0.p/json-gvariant.c.o.d -o json-glib/libjson-glib-1.0.so.0.800.0.p/json-gvariant.c.o -c ../json-glib/json-gvariant.c
+[74/87] cc -Ijson-glib/libjson-glib-1.0.so.0.800.0.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-prototypes -Wmissing-noreturn -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wunused -Wno-discarded-qualifiers -Wno-int-conversion -fno-strict-aliasing -Wno-uninitialized -Werror=address -Werror=array-bounds -Werror=empty-body -Werror=format=2 -Werror=implicit -Werror=init-self -Werror=int-to-pointer-cast -Werror=main -Werror=missing-braces -Werror=nested-externs -Werror=nonnull -Werror=pointer-to-int-cast -Werror=return-type -Werror=sequence-point -Werror=trigraphs -Werror=undef -Werror=write-strings -fvisibility=hidden -MD -MQ json-glib/libjson-glib-1.0.so.0.800.0.p/json-gobject.c.o -MF json-glib/libjson-glib-1.0.so.0.800.0.p/json-gobject.c.o.d -o json-glib/libjson-glib-1.0.so.0.800.0.p/json-gobject.c.o -c ../json-glib/json-gobject.c
+[75/87] cc -Ijson-glib/libjson-glib-1.0.so.0.800.0.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-prototypes -Wmissing-noreturn -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wunused -Wno-discarded-qualifiers -Wno-int-conversion -fno-strict-aliasing -Wno-uninitialized -Werror=address -Werror=array-bounds -Werror=empty-body -Werror=format=2 -Werror=implicit -Werror=init-self -Werror=int-to-pointer-cast -Werror=main -Werror=missing-braces -Werror=nested-externs -Werror=nonnull -Werror=pointer-to-int-cast -Werror=return-type -Werror=sequence-point -Werror=trigraphs -Werror=undef -Werror=write-strings -fvisibility=hidden -MD -MQ json-glib/libjson-glib-1.0.so.0.800.0.p/json-generator.c.o -MF json-glib/libjson-glib-1.0.so.0.800.0.p/json-generator.c.o.d -o json-glib/libjson-glib-1.0.so.0.800.0.p/json-generator.c.o -c ../json-glib/json-generator.c
+[76/87] cc -Ijson-glib/libjson-glib-1.0.so.0.800.0.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-prototypes -Wmissing-noreturn -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wunused -Wno-discarded-qualifiers -Wno-int-conversion -fno-strict-aliasing -Wno-uninitialized -Werror=address -Werror=array-bounds -Werror=empty-body -Werror=format=2 -Werror=implicit -Werror=init-self -Werror=int-to-pointer-cast -Werror=main -Werror=missing-braces -Werror=nested-externs -Werror=nonnull -Werror=pointer-to-int-cast -Werror=return-type -Werror=sequence-point -Werror=trigraphs -Werror=undef -Werror=write-strings -fvisibility=hidden -MD -MQ json-glib/libjson-glib-1.0.so.0.800.0.p/json-gboxed.c.o -MF json-glib/libjson-glib-1.0.so.0.800.0.p/json-gboxed.c.o.d -o json-glib/libjson-glib-1.0.so.0.800.0.p/json-gboxed.c.o -c ../json-glib/json-gboxed.c
+[77/87] cc -Ijson-glib/libjson-glib-1.0.so.0.800.0.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-prototypes -Wmissing-noreturn -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wunused -Wno-discarded-qualifiers -Wno-int-conversion -fno-strict-aliasing -Wno-uninitialized -Werror=address -Werror=array-bounds -Werror=empty-body -Werror=format=2 -Werror=implicit -Werror=init-self -Werror=int-to-pointer-cast -Werror=main -Werror=missing-braces -Werror=nested-externs -Werror=nonnull -Werror=pointer-to-int-cast -Werror=return-type -Werror=sequence-point -Werror=trigraphs -Werror=undef -Werror=write-strings -fvisibility=hidden -MD -MQ json-glib/libjson-glib-1.0.so.0.800.0.p/json-debug.c.o -MF json-glib/libjson-glib-1.0.so.0.800.0.p/json-debug.c.o.d -o json-glib/libjson-glib-1.0.so.0.800.0.p/json-debug.c.o -c ../json-glib/json-debug.c
+[78/87] cc -Ijson-glib/libjson-glib-1.0.so.0.800.0.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-prototypes -Wmissing-noreturn -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wunused -Wno-discarded-qualifiers -Wno-int-conversion -fno-strict-aliasing -Wno-uninitialized -Werror=address -Werror=array-bounds -Werror=empty-body -Werror=format=2 -Werror=implicit -Werror=init-self -Werror=int-to-pointer-cast -Werror=main -Werror=missing-braces -Werror=nested-externs -Werror=nonnull -Werror=pointer-to-int-cast -Werror=return-type -Werror=sequence-point -Werror=trigraphs -Werror=undef -Werror=write-strings -fvisibility=hidden -MD -MQ json-glib/libjson-glib-1.0.so.0.800.0.p/json-builder.c.o -MF json-glib/libjson-glib-1.0.so.0.800.0.p/json-builder.c.o.d -o json-glib/libjson-glib-1.0.so.0.800.0.p/json-builder.c.o -c ../json-glib/json-builder.c
+[79/87] cc -Ijson-glib/libjson-glib-1.0.so.0.800.0.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-prototypes -Wmissing-noreturn -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wunused -Wno-discarded-qualifiers -Wno-int-conversion -fno-strict-aliasing -Wno-uninitialized -Werror=address -Werror=array-bounds -Werror=empty-body -Werror=format=2 -Werror=implicit -Werror=init-self -Werror=int-to-pointer-cast -Werror=main -Werror=missing-braces -Werror=nested-externs -Werror=nonnull -Werror=pointer-to-int-cast -Werror=return-type -Werror=sequence-point -Werror=trigraphs -Werror=undef -Werror=write-strings -fvisibility=hidden -MD -MQ json-glib/libjson-glib-1.0.so.0.800.0.p/json-array.c.o -MF json-glib/libjson-glib-1.0.so.0.800.0.p/json-array.c.o.d -o json-glib/libjson-glib-1.0.so.0.800.0.p/json-array.c.o -c ../json-glib/json-array.c
+[80/87] /usr/bin/meson --internal exe --capture json-glib/json-enum-types.c -- /usr/bin/glib-mkenums --template /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-enum-types.c.in /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-builder.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-generator.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-gobject.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-gvariant.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-parser.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-path.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-reader.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-types.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-utils.h /home/devel/building/work/src/json-glib-1.8.0/build/../json-glib/json-version-macros.h
+[81/87] cc -Ijson-glib/libjson-glib-1.0.so.0.800.0.p -Ijson-glib -I../json-glib -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread '-DG_LOG_DOMAIN="Json"' -DG_LOG_USE_STRUCTURED=1 -DJSON_COMPILATION '-DJSON_LOCALEDIR="/usr/share/locale"' -Wcast-align -Wlogical-op -Wmissing-declarations -Wmissing-format-attribute -Wmissing-prototypes -Wmissing-noreturn -Wold-style-definition -Wpointer-arith -Wshadow -Wstrict-prototypes -Wunused -Wno-discarded-qualifiers -Wno-int-conversion -fno-strict-aliasing -Wno-uninitialized -Werror=address -Werror=array-bounds -Werror=empty-body -Werror=format=2 -Werror=implicit -Werror=init-self -Werror=int-to-pointer-cast -Werror=main -Werror=missing-braces -Werror=nested-externs -Werror=nonnull -Werror=pointer-to-int-cast -Werror=return-type -Werror=sequence-point -Werror=trigraphs -Werror=undef -Werror=write-strings -fvisibility=hidden -MD -MQ json-glib/libjson-glib-1.0.so.0.800.0.p/meson-generated_.._json-enum-types.c.o -MF json-glib/libjson-glib-1.0.so.0.800.0.p/meson-generated_.._json-enum-types.c.o.d -o json-glib/libjson-glib-1.0.so.0.800.0.p/meson-generated_.._json-enum-types.c.o -c json-glib/json-enum-types.c
+[82/87] cc  -o json-glib/libjson-glib-1.0.so.0.800.0 json-glib/libjson-glib-1.0.so.0.800.0.p/meson-generated_.._json-enum-types.c.o json-glib/libjson-glib-1.0.so.0.800.0.p/json-array.c.o json-glib/libjson-glib-1.0.so.0.800.0.p/json-builder.c.o json-glib/libjson-glib-1.0.so.0.800.0.p/json-debug.c.o json-glib/libjson-glib-1.0.so.0.800.0.p/json-gboxed.c.o json-glib/libjson-glib-1.0.so.0.800.0.p/json-generator.c.o json-glib/libjson-glib-1.0.so.0.800.0.p/json-gobject.c.o json-glib/libjson-glib-1.0.so.0.800.0.p/json-gvariant.c.o json-glib/libjson-glib-1.0.so.0.800.0.p/json-node.c.o json-glib/libjson-glib-1.0.so.0.800.0.p/json-object.c.o json-glib/libjson-glib-1.0.so.0.800.0.p/json-parser.c.o json-glib/libjson-glib-1.0.so.0.800.0.p/json-path.c.o json-glib/libjson-glib-1.0.so.0.800.0.p/json-reader.c.o json-glib/libjson-glib-1.0.so.0.800.0.p/json-scanner.c.o json-glib/libjson-glib-1.0.so.0.800.0.p/json-serializable.c.o json-glib/libjson-glib-1.0.so.0.800.0.p/json-utils.c.o json-glib/libjson-glib-1.0.so.0.800.0.p/json-value.c.o -Wl,--as-needed -Wl,--no-undefined -shared -fPIC -Wl,--start-group -Wl,-soname,libjson-glib-1.0.so.0 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,-Bsymbolic -Wl,-z,relro -Wl,-z,now -Wl,--default-symver /usr/lib/libgio-2.0.so /usr/lib/libgobject-2.0.so /usr/lib/libglib-2.0.so -Wl,--end-group
+[83/87] env PKG_CONFIG_PATH=/usr/lib/pkgconfig:/usr/share/pkgconfig:/home/devel/building/work/src/json-glib-1.8.0/build/meson-uninstalled PKG_CONFIG=/usr/bin/pkg-config CC=cc /usr/bin/g-ir-scanner --quiet --no-libtool --namespace=Json --nsversion=1.0 --warn-all --output json-glib/Json-1.0.gir --c-include=json-glib/json-glib.h --quiet --warn-all -DJSON_COMPILATION -I/home/devel/building/work/src/json-glib-1.8.0/json-glib -I/home/devel/building/work/src/json-glib-1.8.0/build/json-glib -I/home/devel/building/work/src/json-glib-1.8.0/. -I/home/devel/building/work/src/json-glib-1.8.0/build/. --filelist=/home/devel/building/work/src/json-glib-1.8.0/build/json-glib/libjson-glib-1.0.so.0.800.0.p/Json_1.0_gir_filelist --include=GObject-2.0 --include=Gio-2.0 --symbol-prefix=json --identifier-prefix=Json --pkg-export=json-glib-1.0 --cflags-begin -I/home/devel/building/work/src/json-glib-1.8.0/. -I/home/devel/building/work/src/json-glib-1.8.0/build/. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gobject-introspection-1.0 --cflags-end --add-include-path=/usr/share/gir-1.0 -L/home/devel/building/work/src/json-glib-1.8.0/build/json-glib --library json-glib-1.0 --extra-library=gio-2.0 --extra-library=gobject-2.0 --extra-library=glib-2.0 --extra-library=girepository-1.0 --sources-top-dirs /home/devel/building/work/src/json-glib-1.8.0/ --sources-top-dirs /home/devel/building/work/src/json-glib-1.8.0/build/ --warn-error
+[84/87] /usr/bin/meson --internal symbolextractor /home/devel/building/work/src/json-glib-1.8.0/build json-glib/libjson-glib-1.0.so.0.800.0 json-glib/libjson-glib-1.0.so.0.800.0 json-glib/libjson-glib-1.0.so.0.800.0.p/libjson-glib-1.0.so.0.800.0.symbols 
+[85/87] cc  -o json-glib/json-glib-format json-glib/json-glib-format.p/json-glib-format.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects '-Wl,-rpath,$ORIGIN/' -Wl,-rpath-link,/home/devel/building/work/src/json-glib-1.8.0/build/json-glib -Wl,--start-group json-glib/libjson-glib-1.0.so.0.800.0 /usr/lib/libgio-2.0.so /usr/lib/libgobject-2.0.so /usr/lib/libglib-2.0.so -Wl,--end-group
+[86/87] cc  -o json-glib/json-glib-validate json-glib/json-glib-validate.p/json-glib-validate.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects '-Wl,-rpath,$ORIGIN/' -Wl,-rpath-link,/home/devel/building/work/src/json-glib-1.8.0/build/json-glib -Wl,--start-group json-glib/libjson-glib-1.0.so.0.800.0 /usr/lib/libgio-2.0.so /usr/lib/libgobject-2.0.so /usr/lib/libglib-2.0.so -Wl,--end-group
+[87/87] /usr/bin/g-ir-compiler json-glib/Json-1.0.gir --output json-glib/Json-1.0.typelib --includedir=/usr/share/gir-1.0
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/json-glib-1.8.0/build -j 8 -v
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Installing json-glib/json-enum-types.h to /home/devel/building/work/pkg/usr/include/json-glib-1.0/json-glib
+Installing json-glib/libjson-glib-1.0.so.0.800.0 to /home/devel/building/work/pkg/usr/lib
+Installing json-glib/Json-1.0.gir to /home/devel/building/work/pkg/usr/share/gir-1.0
+Installing json-glib/Json-1.0.typelib to /home/devel/building/work/pkg/usr/lib/girepository-1.0
+Installing json-glib/json-glib-validate to /home/devel/building/work/pkg/usr/bin
+Installing json-glib/json-glib-format to /home/devel/building/work/pkg/usr/bin
+Installing po/ab/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/ab/LC_MESSAGES
+Installing po/as/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/as/LC_MESSAGES
+Installing po/be/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/be/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/bg/LC_MESSAGES
+Installing po/bn_IN/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/bn_IN/LC_MESSAGES
+Installing po/bs/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/bs/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/ca/LC_MESSAGES
+Installing po/ca@valencia/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/ca@valencia/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/de/LC_MESSAGES
+Installing po/el/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/el/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/en_GB/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/es/LC_MESSAGES
+Installing po/et/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/et/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/eu/LC_MESSAGES
+Installing po/fa/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/fa/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/fur/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/gl/LC_MESSAGES
+Installing po/he/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/he/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/hu/LC_MESSAGES
+Installing po/id/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/id/LC_MESSAGES
+Installing po/it/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/ka/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/ko/LC_MESSAGES
+Installing po/ky/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/ky/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/lt/LC_MESSAGES
+Installing po/lv/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/lv/LC_MESSAGES
+Installing po/ml/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/ml/LC_MESSAGES
+Installing po/ms/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/ms/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/nb/LC_MESSAGES
+Installing po/ne/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/ne/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/nl/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/oc/LC_MESSAGES
+Installing po/or/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/or/LC_MESSAGES
+Installing po/pa/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/pa/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/pl/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/pt/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/ru/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/sl/LC_MESSAGES
+Installing po/sr@latin/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/sr@latin/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/sr/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/sv/LC_MESSAGES
+Installing po/te/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/te/LC_MESSAGES
+Installing po/tg/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/tg/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/tr/LC_MESSAGES
+Installing po/ug/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/ug/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/uk/LC_MESSAGES
+Installing po/vi/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/vi/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_HK/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/zh_HK/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/json-glib-1.0.mo to /home/devel/building/work/pkg/usr/share/locale/zh_TW/LC_MESSAGES
+Installing /home/devel/building/work/src/json-glib-1.8.0/json-glib/json-builder.h to /home/devel/building/work/pkg/usr/include/json-glib-1.0/json-glib
+Installing /home/devel/building/work/src/json-glib-1.8.0/json-glib/json-generator.h to /home/devel/building/work/pkg/usr/include/json-glib-1.0/json-glib
+Installing /home/devel/building/work/src/json-glib-1.8.0/json-glib/json-gobject.h to /home/devel/building/work/pkg/usr/include/json-glib-1.0/json-glib
+Installing /home/devel/building/work/src/json-glib-1.8.0/json-glib/json-gvariant.h to /home/devel/building/work/pkg/usr/include/json-glib-1.0/json-glib
+Installing /home/devel/building/work/src/json-glib-1.8.0/json-glib/json-parser.h to /home/devel/building/work/pkg/usr/include/json-glib-1.0/json-glib
+Installing /home/devel/building/work/src/json-glib-1.8.0/json-glib/json-path.h to /home/devel/building/work/pkg/usr/include/json-glib-1.0/json-glib
+Installing /home/devel/building/work/src/json-glib-1.8.0/json-glib/json-reader.h to /home/devel/building/work/pkg/usr/include/json-glib-1.0/json-glib
+Installing /home/devel/building/work/src/json-glib-1.8.0/json-glib/json-types.h to /home/devel/building/work/pkg/usr/include/json-glib-1.0/json-glib
+Installing /home/devel/building/work/src/json-glib-1.8.0/json-glib/json-utils.h to /home/devel/building/work/pkg/usr/include/json-glib-1.0/json-glib
+Installing /home/devel/building/work/src/json-glib-1.8.0/json-glib/json-version-macros.h to /home/devel/building/work/pkg/usr/include/json-glib-1.0/json-glib
+Installing /home/devel/building/work/src/json-glib-1.8.0/json-glib/json-glib.h to /home/devel/building/work/pkg/usr/include/json-glib-1.0/json-glib
+Installing /home/devel/building/work/src/json-glib-1.8.0/build/json-glib/json-version.h to /home/devel/building/work/pkg/usr/include/json-glib-1.0/json-glib
+Installing /home/devel/building/work/src/json-glib-1.8.0/build/meson-private/json-glib-1.0.pc to /home/devel/building/work/pkg/usr/lib/pkgconfig
+Installing symlink pointing to libjson-glib-1.0.so.0.800.0 to /home/devel/building/work/pkg/usr/lib/libjson-glib-1.0.so.0
+Installing symlink pointing to libjson-glib-1.0.so.0 to /home/devel/building/work/pkg/usr/lib/libjson-glib-1.0.so
++ rm -r /home/devel/building/work/pkg/usr/share/locale
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 18:08 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 18:08 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 18:08 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 18:08 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 18:08 usr/bin/
+-rwxr-xr-x  0 root   root    14760 Feb  1 18:08 usr/bin/json-glib-validate
+-rwxr-xr-x  0 root   root    19096 Feb  1 18:08 usr/bin/json-glib-format
+drwxr-xr-x  0 root   root        0 Feb  1 18:08 usr/share/gir-1.0/
+-rw-r--r--  0 root   root   376128 Feb  1 18:08 usr/share/gir-1.0/Json-1.0.gir
+-rwxr-xr-x  0 root   root   170032 Feb  1 18:08 usr/lib/libjson-glib-1.0.so.0.800.0
+drwxr-xr-x  0 root   root        0 Feb  1 18:08 usr/lib/girepository-1.0/
+drwxr-xr-x  0 root   root        0 Feb  1 18:08 usr/lib/pkgconfig/
+lrwxrwxrwx  0 root   root        0 Feb  1 18:08 usr/lib/libjson-glib-1.0.so.0 -> libjson-glib-1.0.so.0.800.0
+lrwxrwxrwx  0 root   root        0 Feb  1 18:08 usr/lib/libjson-glib-1.0.so -> libjson-glib-1.0.so.0
+-rw-r--r--  0 root   root      230 Feb  1 18:08 usr/lib/pkgconfig/json-glib-1.0.pc
+-rw-r--r--  0 root   root    26052 Feb  1 18:08 usr/lib/girepository-1.0/Json-1.0.typelib
+drwxr-xr-x  0 root   root        0 Feb  1 18:08 usr/include/json-glib-1.0/
+drwxr-xr-x  0 root   root        0 Feb  1 18:08 usr/include/json-glib-1.0/json-glib/
+-rw-r--r--  0 root   root     1269 Feb  1 18:08 usr/include/json-glib-1.0/json-glib/json-enum-types.h
+-rw-r--r--  0 root   root     4118 Sep 16 13:45 usr/include/json-glib-1.0/json-glib/json-builder.h
+-rw-r--r--  0 root   root     4632 Sep 16 13:45 usr/include/json-glib-1.0/json-glib/json-generator.h
+-rw-r--r--  0 root   root    11381 Sep 16 13:45 usr/include/json-glib-1.0/json-glib/json-gobject.h
+-rw-r--r--  0 root   root     1921 Sep 16 13:45 usr/include/json-glib-1.0/json-glib/json-gvariant.h
+-rw-r--r--  0 root   root     7854 Sep 16 13:45 usr/include/json-glib-1.0/json-glib/json-parser.h
+-rw-r--r--  0 root   root     2713 Sep 16 13:45 usr/include/json-glib-1.0/json-glib/json-path.h
+-rw-r--r--  0 root   root     5880 Sep 16 13:45 usr/include/json-glib-1.0/json-glib/json-reader.h
+-rw-r--r--  0 root   root    23700 Sep 16 13:45 usr/include/json-glib-1.0/json-glib/json-types.h
+-rw-r--r--  0 root   root     1354 Sep 16 13:45 usr/include/json-glib-1.0/json-glib/json-utils.h
+-rw-r--r--  0 root   root     7686 Sep 16 13:45 usr/include/json-glib-1.0/json-glib/json-version-macros.h
+-rw-r--r--  0 root   root     1454 Sep 16 13:45 usr/include/json-glib-1.0/json-glib/json-glib.h
+-rw-r--r--  0 root   root     3030 Feb  1 18:08 usr/include/json-glib-1.0/json-glib/json-version.h
+=======> Building '/home/devel/packages/json-glib#1.8.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling json-glib 1.8.0-1
+prt-get: /usr/bin/pkgadd -u json-glib#1.8.0-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 18:08:59 2024
+

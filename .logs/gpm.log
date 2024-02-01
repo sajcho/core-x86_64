@@ -1,0 +1,725 @@
+prt-get: updating /usr/ports/core-x86_64/gpm
+prt-get: starting build Thu Feb  1 17:58:03 2024
+=======> Building '/home/devel/packages/gpm#1.20.7-2.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/gpm-1.20.7.tar.bz2
+cp gpm-1.20.7-consolidated-1.patch /home/devel/building/work/src
+cp gpm.run /home/devel/building/work/src
++ build
++ cd gpm-1.20.7
++ patch -Np1 -i /home/devel/building/work/src/gpm-1.20.7-consolidated-1.patch
+patching file src/daemon/open_console.c
+patching file src/headers/daemon.h
+patching file src/prog/display-buttons.c
+patching file src/prog/display-coords.c
+patching file src/prog/get-versions.c
+patching file src/prog/gpm-root.y
++ sed -e /paths.h/d -e 's|\/var\/run|\/run\/gpm|' -i src/headers/gpm.h
++ ./autogen.sh
+rm -f config/config.guess
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'config'.
+libtoolize: linking file 'config/config.guess'
+rm -f config/config.sub
+libtoolize: linking file 'config/config.sub'
+rm -f config/install-sh
+libtoolize: linking file 'config/install-sh'
+rm -f config/ltmain.sh
+libtoolize: linking file 'config/ltmain.sh'
+libtoolize: Consider adding 'AC_CONFIG_MACRO_DIRS([m4])' to configure.ac,
+libtoolize: and rerunning libtoolize and aclocal.
+libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'config'.
+libtoolize: copying file 'config/config.guess'
+libtoolize: copying file 'config/config.sub'
+libtoolize: copying file 'config/install-sh'
+libtoolize: copying file 'config/ltmain.sh'
+libtoolize: Consider adding 'AC_CONFIG_MACRO_DIRS([m4])' to configure.ac,
+libtoolize: and rerunning libtoolize and aclocal.
+libtoolize: Consider adding '-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+configure.ac:14: warning: The macro 'AC_CONFIG_HEADER' is obsolete.
+configure.ac:14: You should run autoupdate.
+./lib/autoconf/status.m4:719: AC_CONFIG_HEADER is expanded from...
+configure.ac:14: the top level
+configure.ac:43: warning: The macro 'AC_PROG_LIBTOOL' is obsolete.
+configure.ac:43: You should run autoupdate.
+aclocal.m4:114: AC_PROG_LIBTOOL is expanded from...
+configure.ac:43: the top level
+configure.ac:104: warning: The macro 'AC_TRY_COMPILE' is obsolete.
+configure.ac:104: You should run autoupdate.
+./lib/autoconf/general.m4:2845: AC_TRY_COMPILE is expanded from...
+acinclude.m4:28: ITZ_CHECK_TYPE is expanded from...
+configure.ac:104: the top level
+configure.ac:109: warning: The macro 'ac_cv_prog_gcc' is obsolete.
+configure.ac:109: You should run autoupdate.
+./lib/autoconf/c.m4:448: ac_cv_prog_gcc is expanded from...
+acinclude.m4:2: ITZ_SYS_ELF is expanded from...
+configure.ac:109: the top level
+configure.ac:110: warning: The macro 'ac_cv_prog_gcc' is obsolete.
+configure.ac:110: You should run autoupdate.
+./lib/autoconf/c.m4:448: ac_cv_prog_gcc is expanded from...
+configure.ac:110: the top level
+configure.ac:161: warning: AC_OUTPUT should be used without arguments.
+configure.ac:161: You should run autoupdate.
++ CFLAGS='-O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon'
++ ./configure --prefix=/usr --sysconfdir=/etc --disable-static
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking for gawk... gawk
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for bison... bison -y
+checking whether ln -s works... yes
+checking for dvips... no
+checking for texi2html... no
+checking for tex... no
+checking for texindex... /usr/bin/texindex
+checking for makeinfo... /usr/bin/makeinfo
+checking for diff... /usr/bin/diff
+checking for sed... (cached) /bin/sed
+checking for emacs... no
+checking for syslog.h... yes
+checking for linux/input.h... yes
+checking for linux/joystick.h... yes
+checking for ncurses.h... yes
+checking for ncurses/curses.h... no
+checking for curses.h... yes
+checking for sys/sysmacros.h... yes
+checking for linux/major.h... yes
+checking for linux/tty.h... yes
+checking for sys/socket.h... yes
+checking for __u32... yes
+checking how to run the C preprocessor... gcc -E
+checking for egrep -e... (cached) /usr/bin/grep -E
+checking whether system is ELF... yes
+checking for vsyslog... yes
+checking for syslog... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for tputs in -ltinfo... yes
+checking for wgetch in -lncurses... yes
+configure: creating ./config.status
+config.status: creating Makefile.include
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating src/Makefile
+config.status: creating contrib/Makefile
+config.status: creating doc/doc.gpm
+config.status: creating src/headers/config.h
+config.status: executing libtool commands
++ touch doc/gpm.info
++ make V=1
+touch src/.depend # to prevent unecessary warnings
+make -C src dep
+make[1]: Entering directory '/home/devel/building/work/src/gpm-1.20.7/src'
+bison -y  /home/devel/building/work/src/gpm-1.20.7/src/prog/gpm-root.y && mv y.tab.c prog/gpm-root.c
+# make links in srcdir
+make[1]: [Makefile:92: .depend] Error 1 (ignored)
+# create dependencies
+for DEPS in `echo *.c */*.c`; do \
+gcc -I. -I /home/devel/building/work/src/gpm-1.20.7/src -M  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  $DEPS | \
+/bin/sed 's/^\(.*\)\.o\([ :]+\)/\1.o \1.lo\2/g' >> .depend ; done
+# make links in srcdir
+make[1]: [Makefile:92: dep] Error 1 (ignored)
+# create dependencies
+for DEPS in `echo *.c */*.c`; do \
+gcc -I. -I /home/devel/building/work/src/gpm-1.20.7/src -M  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  $DEPS | \
+/bin/sed 's/^\(.*\)\.o\([ :]+\)/\1.o \1.lo\2/g' >> .depend ; done
+make[1]: Leaving directory '/home/devel/building/work/src/gpm-1.20.7/src'
+make[1]: Entering directory '/home/devel/building/work/src/gpm-1.20.7/src'
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o mice.o mice.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o twiddler.o twiddler.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o synaptics.o synaptics.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/add_mouse.o daemon/add_mouse.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/init_mice.o daemon/init_mice.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/reset_mice.o daemon/reset_mice.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/build_argv.o daemon/build_argv.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/disable_paste.o daemon/disable_paste.c
+twiddler.c: In function 'twiddler_key':
+twiddler.c:253:10: warning: variable 'val' set but not used [-Wunused-but-set-variable]
+  253 |    char *val;
+      |          ^~~
+twiddler.c: In function 'twiddler_rest_to_value':
+mice.c: In function 'option_modem_lines':
+mice.c:187:37: warning: pointer targets in initialization of 'int *' from 'unsigned int *' differ in signedness [-Wpointer-sign]
+  187 |       {"dtr",  ARGV_BOOL, u: {iptr: &lines}, value: TIOCM_DTR},
+      |                                     ^
+mice.c:187:37: note: (near initialization for 'optioninfo[0].u.iptr')
+twiddler.c:432:14: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  432 |       return (char *)twiddler_escape_sequence(ptr+1, &len /* unused */);
+      |              ^
+mice.c:188:37: warning: pointer targets in initialization of 'int *' from 'unsigned int *' differ in signedness [-Wpointer-sign]
+  188 |       {"rts",  ARGV_BOOL, u: {iptr: &lines}, value: TIOCM_RTS},
+      |                                     ^
+mice.c:188:37: note: (near initialization for 'optioninfo[1].u.iptr')
+mice.c:189:37: warning: pointer targets in initialization of 'int *' from 'unsigned int *' differ in signedness [-Wpointer-sign]
+  189 |       {"both", ARGV_BOOL, u: {iptr: &lines}, value: TIOCM_DTR | TIOCM_RTS},
+      |                                     ^
+mice.c:189:37: note: (near initialization for 'optioninfo[2].u.iptr')
+mice.c: In function 'M_summa':
+mice.c:345:4: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  345 |    if (y<0) y=0; if (y>summamaxy) y=summamaxy;
+      |    ^~
+mice.c:345:18: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  345 |    if (y<0) y=0; if (y>summamaxy) y=summamaxy;
+      |                  ^~
+mice.c: In function 'R_msc':
+mice.c:537:12: warning: variable 'dy' set but not used [-Wunused-but-set-variable]
+  537 |    int dx, dy;
+      |            ^~
+mice.c:537:8: warning: variable 'dx' set but not used [-Wunused-but-set-variable]
+  537 |    int dx, dy;
+      |        ^~
+mice.c: In function 'M_wacom':
+mice.c:897:7: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  897 |       if (x>wmaxx) x=wmaxx; if (x<0) x=0;
+      |       ^~
+mice.c:897:29: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  897 |       if (x>wmaxx) x=wmaxx; if (x<0) x=0;
+      |                             ^~
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/do_client.o daemon/do_client.c
+mice.c:898:7: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  898 |       if (y>wmaxy) y=wmaxy; if (y<0) y=0;
+      |       ^~
+mice.c:898:29: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  898 |       if (y>wmaxy) y=wmaxy; if (y<0) y=0;
+      |                             ^~
+mice.c:907:7: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  907 |       if( abs(x-ox)>(wmaxx/wcmodell[WacomModell].treshold)
+      |       ^~
+mice.c:908:68: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  908 |        || abs(y-oy)>(wmaxy/wcmodell[WacomModell].treshold) ) ox=x; oy=y;
+      |                                                                    ^~
+mice.c: In function 'M_gunze':
+mice.c:1341:18: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+ 1341 |    if(sscanf(data+1, "%d,%d", &x, &y)!= 2) {
+      |              ~~~~^~
+      |                  |
+      |                  unsigned char *
+In file included from mice.c:45:
+/usr/include/stdio.h:430:43: note: expected 'const char * restrict' but argument is of type 'unsigned char *'
+  430 | extern int sscanf (const char *__restrict __s,
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~
+mice.c:1356:4: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+ 1356 |    if (x<0) x = 0; if (x > REALPOS_MAX) x = REALPOS_MAX;
+      |    ^~
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/do_selection.o daemon/do_selection.c
+mice.c:1356:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+ 1356 |    if (x<0) x = 0; if (x > REALPOS_MAX) x = REALPOS_MAX;
+      |                    ^~
+mice.c:1357:4: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+ 1357 |    if (y<0) y = 0; if (y > REALPOS_MAX) y = REALPOS_MAX;
+      |    ^~
+mice.c:1357:20: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+ 1357 |    if (y<0) y = 0; if (y > REALPOS_MAX) y = REALPOS_MAX;
+      |                    ^~
+mice.c: In function 'M_etouch':
+mice.c:1452:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+ 1452 |   if (x<0) x = 0; if (x > REALPOS_MAX) x = REALPOS_MAX;
+      |   ^~
+mice.c:1452:19: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+ 1452 |   if (x<0) x = 0; if (x > REALPOS_MAX) x = REALPOS_MAX;
+      |                   ^~
+mice.c:1453:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+ 1453 |   if (y<0) y = 0; if (y > REALPOS_MAX) y = REALPOS_MAX;
+      |   ^~
+mice.c:1453:19: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+ 1453 |   if (y<0) y = 0; if (y > REALPOS_MAX) y = REALPOS_MAX;
+      |                   ^~
+synaptics.c: In function 'tp_hextoint':
+synaptics.c:2253:11: warning: pointer targets in passing argument 1 of 'sscanf' differ in signedness [-Wpointer-sign]
+ 2253 |   sscanf (bytes, "%x", &result);
+      |           ^~~~~
+      |           |
+      |           unsigned char *
+In file included from synaptics.c:213:
+/usr/include/stdio.h:430:43: note: expected 'const char * restrict' but argument is of type 'unsigned char *'
+  430 | extern int sscanf (const char *__restrict __s,
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~
+synaptics.c: In function 'tp_serial_send_cmd':
+synaptics.c:2320:27: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+ 2320 |   write (fd, cmd, strlen (cmd));
+      |                           ^~~
+      |                           |
+      |                           unsigned char *
+In file included from synaptics.c:216:
+/usr/include/string.h:407:35: note: expected 'const char *' but argument is of type 'unsigned char *'
+  407 | extern size_t strlen (const char *__s)
+      |                       ~~~~~~~~~~~~^~~
+synaptics.c:2321:37: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+ 2321 |   tp_serial_read (fd, junk, strlen (cmd));
+      |                                     ^~~
+      |                                     |
+      |                                     unsigned char *
+/usr/include/string.h:407:35: note: expected 'const char *' but argument is of type 'unsigned char *'
+  407 | extern size_t strlen (const char *__s)
+      |                       ~~~~~~~~~~~~^~~
+synaptics.c: In function 'syn_serial_set_mode':
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/get_console_size.o daemon/get_console_size.c
+synaptics.c:2334:12: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+ 2334 |   sprintf (bytes, "%%C3B%02X5555", mode);
+      |            ^~~~~
+      |            |
+      |            unsigned char *
+/usr/include/stdio.h:365:38: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+  365 | extern int sprintf (char *__restrict __s,
+      |                     ~~~~~~~~~~~~~~~~~^~~
+synaptics.c: In function 'syn_serial_read_ident':
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/get_data.o daemon/get_data.c
+synaptics.c:2347:27: warning: pointer targets in passing argument 2 of 'tp_serial_send_cmd' differ in signedness [-Wpointer-sign]
+ 2347 |   tp_serial_send_cmd (fd, "%A");
+      |                           ^~~~
+      |                           |
+      |                           char *
+synaptics.c:2315:47: note: expected 'unsigned char *' but argument is of type 'char *'
+ 2315 |                                unsigned char *cmd)
+      |                                ~~~~~~~~~~~~~~~^~~
+synaptics.c: In function 'syn_serial_read_model_id':
+synaptics.c:2388:29: warning: pointer targets in passing argument 2 of 'tp_serial_send_cmd' differ in signedness [-Wpointer-sign]
+ 2388 |     tp_serial_send_cmd (fd, "%D");
+      |                             ^~~~
+      |                             |
+      |                             char *
+synaptics.c:2315:47: note: expected 'unsigned char *' but argument is of type 'char *'
+ 2315 |                                unsigned char *cmd)
+      |                                ~~~~~~~~~~~~~~~^~~
+synaptics.c: In function 'syn_serial_read_cap':
+synaptics.c:2416:27: warning: pointer targets in passing argument 2 of 'tp_serial_send_cmd' differ in signedness [-Wpointer-sign]
+ 2416 |   tp_serial_send_cmd (fd, "%B");
+      |                           ^~~~
+      |                           |
+      |                           char *
+synaptics.c:2315:47: note: expected 'unsigned char *' but argument is of type 'char *'
+ 2315 |                                unsigned char *cmd)
+      |                                ~~~~~~~~~~~~~~~^~~
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/getmousedata.o daemon/getmousedata.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/gpm.o daemon/gpm.c
+mice.c: In function 'I_summa_reset_summa':
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/gpm-killed.o daemon/gpm-killed.c
+mice.c:2057:4: warning: argument 2 is null but the corresponding size argument 3 value is 1 [-Wnonnull]
+ 2057 |    write(fd,0,1); /* Reset */
+      |    ^~~~~~~~~~~~~
+In file included from mice.c:52:
+/usr/include/unistd.h:378:16: note: in a call to function 'write' declared with attribute 'access (read_only, 2, 3)'
+  378 | extern ssize_t write (int __fd, const void *__buf, size_t __n) __wur
+      |                ^~~~~
+mice.c: In function 'I_wacom':
+mice.c:1843:10: warning: 'p' is used uninitialized [-Wuninitialized]
+ 1843 |    while(I_wacom_RequestData(NULL, fd, buffer, BUFFER_SIZE, p)) ;
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mice.c:1820:31: note: 'p' was declared here
+ 1820 |    char buffer[BUFFER_SIZE], *p;
+      |                               ^
+daemon/getmousedata.c: In function 'getMouseData':
+daemon/getmousedata.c:39:16: warning: pointer targets in initialization of 'char *' from 'unsigned char *' differ in signedness [-Wpointer-sign]
+   39 |    char *edata=data+type->packetlen;
+      |                ^~~~
+daemon/getmousedata.c:58:17: warning: pointer targets in returning 'unsigned char *' from a function with return type 'char *' differ in signedness [-Wpointer-sign]
+   58 |          return data;
+      |                 ^~~~
+daemon/getmousedata.c:89:11: warning: pointer targets in returning 'unsigned char *' from a function with return type 'char *' differ in signedness [-Wpointer-sign]
+   89 |    return data;
+      |           ^~~~
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/header.o daemon/header.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/main.o daemon/main.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/old_main.o daemon/old_main.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/open_console.o daemon/open_console.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/check_kill.o daemon/check_kill.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/gpm_exited.o daemon/gpm_exited.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o generic/isodigit.o generic/isodigit.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o generic/getsym.o generic/getsym.c
+daemon/old_main.c: In function 'old_main':
+daemon/old_main.c:198:16: warning: value computed is not used [-Wunused-value]
+  198 |                ||  do_selection(&event);
+      |                ^~
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/processspecial.o daemon/processspecial.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/processconn.o daemon/processconn.c
+daemon/open_console.c: In function 'open_console':
+daemon/open_console.c:52:21: warning: 'si.line' may be used uninitialized [-Wmaybe-uninitialized]
+   52 |               if (si.line > 0) {
+      |                   ~~^~~~~
+daemon/open_console.c:43:25: note: 'si' declared here
+   43 |    struct serial_struct si;
+      |                         ^~
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/processmouse.o daemon/processmouse.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/processrequest.o daemon/processrequest.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/selection_copy.o daemon/selection_copy.c
+daemon/processconn.c: In function 'processConn':
+daemon/processconn.c:117:7: warning: 'strncpy' specified bound depends on the length of the source argument [-Wstringop-truncation]
+  117 |       strncpy(tty, option.consolename, strlen(option.consolename) - 1);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+daemon/processconn.c:117:40: note: length computed here
+  117 |       strncpy(tty, option.consolename, strlen(option.consolename) - 1);
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+daemon/processmouse.c: In function 'processMouse':
+daemon/processmouse.c:82:57: warning: pointer targets in passing argument 2 of 'which_mouse->m_type->fun' differ in signedness [-Wpointer-sign]
+   82 |             || ((*((which_mouse->m_type)->fun))(&nEvent,data)==-1) ) {
+      |                                                         ^~~~
+      |                                                         |
+      |                                                         char *
+daemon/processmouse.c:82:57: note: expected 'unsigned char *' but argument is of type 'char *'
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/selection_paste.o daemon/selection_paste.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/cmdline.o daemon/cmdline.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/loadlut.o daemon/loadlut.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/find_mouse_by_name.o daemon/find_mouse_by_name.c
+daemon/cmdline.c: In function 'cmdline':
+daemon/cmdline.c:46:20: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   46 |                    if (optarg)
+      |                    ^~
+daemon/cmdline.c:47:58: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   47 |                      opt_age_limit = atoi(optarg);       break;
+      |                                                          ^~~~~
+daemon/cmdline.c:71:13: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+   71 |             else (which_mouse->opt_scale)=100/(which_mouse->opt_scale);                break;
+      |             ^~~~
+daemon/cmdline.c:71:88: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+   71 |             else (which_mouse->opt_scale)=100/(which_mouse->opt_scale);                break;
+      |                                                                                        ^~~~~
+daemon/cmdline.c:75:13: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+   75 |             else        option.repeater_type = "msc";    break;
+      |             ^~~~
+daemon/cmdline.c:75:58: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+   75 |             else        option.repeater_type = "msc";    break;
+      |                                                          ^~~~~
+daemon/cmdline.c:78:20: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+   78 |                    else opt_special="";                  break;
+      |                    ^~~~
+daemon/cmdline.c:78:58: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+   78 |                    else opt_special="";                  break;
+      |                                                          ^~~~~
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/usage.o daemon/usage.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/check_uniqueness.o daemon/check_uniqueness.c
+daemon/loadlut.c: In function 'loadlut':
+daemon/loadlut.c:53:26: warning: pointer targets in passing argument 1 of 'getsym' differ in signedness [-Wpointer-sign]
+   53 |       i += getsym(charset+i, &this);
+      |                   ~~~~~~~^~
+      |                          |
+      |                          char *
+In file included from daemon/loadlut.c:30:
+/home/devel/building/work/src/gpm-1.20.7/src/headers/daemon.h:201:35: note: expected 'const unsigned char *' but argument is of type 'char *'
+  201 | int   getsym(const unsigned char *p0, unsigned char *res);
+      |              ~~~~~~~~~~~~~~~~~~~~~^~
+daemon/loadlut.c:55:31: warning: pointer targets in passing argument 1 of 'getsym' differ in signedness [-Wpointer-sign]
+   55 |          i += getsym(charset+i+1, &next) + 1;
+      |                      ~~~~~~~~~^~
+      |                               |
+      |                               char *
+/home/devel/building/work/src/gpm-1.20.7/src/headers/daemon.h:201:35: note: expected 'const unsigned char *' but argument is of type 'char *'
+  201 | int   getsym(const unsigned char *p0, unsigned char *res);
+      |              ~~~~~~~~~~~~~~~~~~~~~^~
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/startup.o daemon/startup.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o daemon/wait_text.o daemon/wait_text.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o report.o report.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o tools.o tools.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -DPIC -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o lib/liblow.lo lib/liblow.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -DPIC -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o lib/libhigh.lo lib/libhigh.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -DPIC -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o lib/libxtra.lo lib/libxtra.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -DPIC -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o lib/report-lib.lo lib/report-lib.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -DPIC -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o tools.lo tools.c
+gcc  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -DPIC -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o lib/libcurses.lo lib/libcurses.c
+lib/report-lib.c: In function 'gpm_report':
+lib/report-lib.c:50:4: warning: 'log_level' may be used uninitialized [-Wmaybe-uninitialized]
+   50 |    syslog(log_level, string);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+lib/report-lib.c:30:8: note: 'log_level' was declared here
+   30 |    int log_level;
+      |        ^~~~~~~~~
+gcc -Iheaders  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o prog/mev.o prog/mev.c
+gcc -Iheaders  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o prog/hltest.o prog/hltest.c
+lib/libcurses.c: In function 'Gpm_Wgetch':
+lib/libcurses.c:148:25: warning: pointer targets in passing argument 1 of 'gpm_convert_event' differ in signedness [-Wpointer-sign]
+  148 |       gpm_convert_event(mdata,&ev);
+      |                         ^~~~~
+      |                         |
+      |                         unsigned char *
+lib/libcurses.c:98:40: note: expected 'char *' but argument is of type 'unsigned char *'
+   98 |     extern int gpm_convert_event(char *data, Gpm_Event *event);
+      |                                  ~~~~~~^~~~
+gcc -Iheaders  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o prog/mouse-test.o prog/mouse-test.c
+gcc -Iheaders  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o prog/open_console.o prog/open_console.c
+gcc -Iheaders  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o prog/disable-paste.o prog/disable-paste.c
+prog/mouse-test.c: In function 'main':
+prog/mouse-test.c:536:52: warning: pointer targets in passing argument 2 of 'cur->this->fun' differ in signedness [-Wpointer-sign]
+  536 |                  if ((*(cur->this->fun))(&event,buf+i)==-1) {
+      |                                                 ~~~^~
+      |                                                    |
+      |                                                    char *
+prog/mouse-test.c:536:52: note: expected 'unsigned char *' but argument is of type 'char *'
+prog/mouse-test.c:205:40: warning: value computed is not used [-Wunused-value]
+  205 | #define CHECKFAIL(count)   ((count)==0 && noneofthem())
+      |                                        ^~
+prog/mouse-test.c:569:4: note: in expansion of macro 'CHECKFAIL'
+  569 |    CHECKFAIL(typecount);
+      |    ^~~~~~~~~
+prog/mouse-test.c:610:50: warning: pointer targets in passing argument 2 of 'cur->this->fun' differ in signedness [-Wpointer-sign]
+  610 |                if ((*(cur->this->fun))(&event,buf+i)==-1) continue;
+      |                                               ~~~^~
+      |                                                  |
+      |                                                  char *
+prog/mouse-test.c:610:50: note: expected 'unsigned char *' but argument is of type 'char *'
+prog/mouse-test.c:205:40: warning: value computed is not used [-Wunused-value]
+  205 | #define CHECKFAIL(count)   ((count)==0 && noneofthem())
+      |                                        ^~
+prog/mouse-test.c:622:4: note: in expansion of macro 'CHECKFAIL'
+  622 |    CHECKFAIL(typecount);
+      |    ^~~~~~~~~
+prog/mouse-test.c:652:50: warning: pointer targets in passing argument 2 of 'cur->this->fun' differ in signedness [-Wpointer-sign]
+  652 |                if ((*(cur->this->fun))(&event,buf+i)==-1) continue;
+      |                                               ~~~^~
+      |                                                  |
+      |                                                  char *
+prog/mouse-test.c:652:50: note: expected 'unsigned char *' but argument is of type 'char *'
+prog/mouse-test.c:205:40: warning: value computed is not used [-Wunused-value]
+  205 | #define CHECKFAIL(count)   ((count)==0 && noneofthem())
+      |                                        ^~
+prog/mouse-test.c:671:4: note: in expansion of macro 'CHECKFAIL'
+  671 |    CHECKFAIL(typecount);
+      |    ^~~~~~~~~
+gcc -Iheaders  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o prog/display-buttons.o prog/display-buttons.c
+gcc -Iheaders  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o prog/display-coords.o prog/display-coords.c
+prog/display-coords.c: In function 'display_data':
+prog/display-coords.c:53:14: warning: format '%d' expects argument of type 'int', but argument 2 has type 'time_t' {aka 'long int'} [-Wformat=]
+   53 |    printf("[%d] delta: %ds",now,delta);
+      |             ~^              ~~~
+      |              |              |
+      |              int            time_t {aka long int}
+      |             %ld
+prog/display-buttons.c: In function 'display_data':
+prog/display-buttons.c:52:14: warning: format '%d' expects argument of type 'int', but argument 2 has type 'time_t' {aka 'long int'} [-Wformat=]
+   52 |    printf("[%d] delta: %ds",now,delta);
+      |             ~^              ~~~
+      |              |              |
+      |              int            time_t {aka long int}
+      |             %ld
+gcc -Iheaders  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o prog/get-versions.o prog/get-versions.c
+gcc -fPIC -shared -Wl,-soname,libgpm.so.2 \
+ -L/home/devel/building/work/src/gpm-1.20.7/src  -o lib/libgpm.so.2.1.0 lib/liblow.lo lib/libhigh.lo lib/libxtra.lo lib/report-lib.lo tools.lo lib/libcurses.lo  -lncurses  -ltinfo  -lc 	
+gcc  -L/home/devel/building/work/src/gpm-1.20.7/src  -o gpm mice.o twiddler.o synaptics.o daemon/add_mouse.o daemon/init_mice.o daemon/reset_mice.o daemon/build_argv.o daemon/disable_paste.o daemon/do_client.o daemon/do_selection.o daemon/get_console_size.o daemon/get_data.o daemon/getmousedata.o daemon/gpm.o daemon/gpm-killed.o daemon/header.o daemon/main.o daemon/old_main.o daemon/open_console.o daemon/check_kill.o daemon/gpm_exited.o generic/isodigit.o generic/getsym.o daemon/processspecial.o daemon/processconn.o daemon/processmouse.o daemon/processrequest.o daemon/selection_copy.o daemon/selection_paste.o daemon/cmdline.o daemon/loadlut.o daemon/find_mouse_by_name.o daemon/usage.o daemon/check_uniqueness.o daemon/startup.o daemon/wait_text.o report.o tools.o   -lm
+/home/devel/building/work/src/gpm-1.20.7/src/headers/daemon.h:175:25: warning: type of 'cinfo' does not match original declaration [-Wlto-type-mismatch]
+  175 | extern Gpm_Cinfo       *cinfo[MAX_VC+1];
+      |                         ^
+daemon/gpm.c:96:12: note: array types have different bounds
+   96 | Gpm_Cinfo *cinfo[MAX_VC+1];
+      |            ^
+daemon/gpm.c:96:12: note: 'cinfo' was previously declared here
+ln -s -f libgpm.so.2.1.0 lib/libgpm.so.2
+gcc  -L/home/devel/building/work/src/gpm-1.20.7/src  -o prog/mev prog/mev.o lib/libgpm.so.2  
+gcc  -L/home/devel/building/work/src/gpm-1.20.7/src  -o prog/hltest prog/hltest.o lib/libgpm.so.2  
+gcc  -L/home/devel/building/work/src/gpm-1.20.7/src  -o prog/mouse-test prog/mouse-test.o mice.o twiddler.o synaptics.o prog/open_console.o lib/libgpm.so.2   -lm
+gcc  -L/home/devel/building/work/src/gpm-1.20.7/src  -o prog/disable-paste prog/disable-paste.o lib/libgpm.so.2  
+gcc  -L/home/devel/building/work/src/gpm-1.20.7/src  -o prog/display-buttons prog/display-buttons.o lib/libgpm.so.2  
+gcc  -L/home/devel/building/work/src/gpm-1.20.7/src  -o prog/display-coords prog/display-coords.o lib/libgpm.so.2  
+gcc  -L/home/devel/building/work/src/gpm-1.20.7/src  -o prog/get-versions prog/get-versions.o lib/libgpm.so.2  
+gcc -I.  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/etc\"" -DSBINDIR="\"/usr/sbin\"" -D_GNU_SOURCE  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fcommon -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o prog/gpm-root.o prog/gpm-root.c
+/home/devel/building/work/src/gpm-1.20.7/src/prog/gpm-root.y: In function 'postmenu':
+/home/devel/building/work/src/gpm-1.20.7/src/prog/gpm-root.y:1030:32: warning: pointer targets in assignment from 'char *' to 'unsigned char *' differ in signedness [-Wpointer-sign]
+ 1030 | #define PUTS(s,f,b)   for(curr2=s;*curr2;PUTC(*(curr2++),f,b))
+      |                                ^
+/home/devel/building/work/src/gpm-1.20.7/src/prog/gpm-root.y:1045:10: note: in expansion of macro 'PUTS'
+ 1045 |          PUTS(draw->title,draw->head,draw->back);
+      |          ^~~~
+/home/devel/building/work/src/gpm-1.20.7/src/prog/gpm-root.y:1030:32: warning: pointer targets in assignment from 'char *' to 'unsigned char *' differ in signedness [-Wpointer-sign]
+ 1030 | #define PUTS(s,f,b)   for(curr2=s;*curr2;PUTC(*(curr2++),f,b))
+      |                                ^
+/home/devel/building/work/src/gpm-1.20.7/src/prog/gpm-root.y:1053:10: note: in expansion of macro 'PUTS'
+ 1053 |          PUTS(item->name,draw->fore,draw->back); i+=strlen(item->name);
+      |          ^~~~
+gcc  -L/home/devel/building/work/src/gpm-1.20.7/src  -o prog/gpm-root prog/gpm-root.o   lib/libgpm.so.2
+rm prog/mev.o prog/disable-paste.o prog/display-buttons.o prog/hltest.o prog/get-versions.o prog/display-coords.o
+make[1]: Leaving directory '/home/devel/building/work/src/gpm-1.20.7/src'
+make[1]: Entering directory '/home/devel/building/work/src/gpm-1.20.7/doc'
+awk -f /home/devel/building/work/src/gpm-1.20.7/doc/manpager doc.gpm
+awk: /home/devel/building/work/src/gpm-1.20.7/doc/manpager:35: warning: escape sequence `\{' treated as plain `{'
+awk: /home/devel/building/work/src/gpm-1.20.7/doc/manpager:36: warning: escape sequence `\}' treated as plain `}'
+awk: /home/devel/building/work/src/gpm-1.20.7/doc/manpager:93: (FILENAME=doc.gpm FNR=196) warning: regexp escape sequence `\%' is not a known regexp operator
+for i in gpm-root.1 gpm-types.7 gpm.8 mev.1 mouse-test.1; do \
+	expand $i | sed s/^'[ ]*'//g > $i.new; \
+	mv $i.new $i; \
+done;
+touch gpm.man
+make[1]: Leaving directory '/home/devel/building/work/src/gpm-1.20.7/doc'
+make[1]: Entering directory '/home/devel/building/work/src/gpm-1.20.7/contrib'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/devel/building/work/src/gpm-1.20.7/contrib'
++ make DESTDIR=/home/devel/building/work/pkg install
+make -C src dep
+mkdir -p  /home/devel/building/work/pkg/usr/lib /home/devel/building/work/pkg/usr/bin /home/devel/building/work/pkg/usr/sbin /home/devel/building/work/pkg/usr/include /home/devel/building/work/pkg/etc; \
+if test "x" != "x" ; then \
+	mkdir -p  /home/devel/building/work/pkg/usr/share/emacs/site-lisp ; \
+fi
+make[1]: Entering directory '/home/devel/building/work/src/gpm-1.20.7/src'
+# make links in srcdir
+make[1]: [Makefile:92: dep] Error 1 (ignored)
+# create dependencies
+for DEPS in `echo *.c */*.c`; do \
+gcc -I. -I /home/devel/building/work/src/gpm-1.20.7/src -M  -I/home/devel/building/work/src/gpm-1.20.7/src -DHAVE_CONFIG_H -include headers/config.h -Wall -DSYSCONFDIR="\"/home/devel/building/work/pkg/etc\"" -DSBINDIR="\"/home/devel/building/work/pkg/usr/sbin\"" -D_GNU_SOURCE  $DEPS | \
+/bin/sed 's/^\(.*\)\.o\([ :]+\)/\1.o \1.lo\2/g' >> .depend ; done
+make[1]: Leaving directory '/home/devel/building/work/src/gpm-1.20.7/src'
+make[1]: Entering directory '/home/devel/building/work/src/gpm-1.20.7/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/devel/building/work/src/gpm-1.20.7/src'
+make[1]: Entering directory '/home/devel/building/work/src/gpm-1.20.7/src'
+/usr/bin/install -c gpm /home/devel/building/work/pkg/usr/sbin/gpm
+if [ -f lib/libgpm.a ] ; then \
+/usr/bin/install -c -m 644 -m 644 lib/libgpm.a /home/devel/building/work/pkg/usr/lib/libgpm.a ; \
+fi
+/usr/bin/install -c -m 644 -m 644 /home/devel/building/work/src/gpm-1.20.7/src/headers/gpm.h /home/devel/building/work/pkg/usr/include/gpm.h
+# POSIX requires the range of a for loop be nonempty and Bash
+# 2.x goes along; unfortunately that means an additional
+make[1]: Entering directory '/home/devel/building/work/src/gpm-1.20.7/doc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/devel/building/work/src/gpm-1.20.7/doc'
+# headache in cases like this
+if test "xlibgpm.so" != "x" ; then \
+	/usr/bin/install -c -m 644 -m 644 lib/libgpm.so.2.1.0 /home/devel/building/work/pkg/usr/lib/libgpm.so.2.1.0	;	\
+	cd /home/devel/building/work/pkg/usr/lib && ln -s -f libgpm.so.2.1.0 libgpm.so.2 					;	\
+      echo "WARNING: We installed a lib, you should now call ldconfig" 						; 	\
+      echo "f.i.: ldconfig -n -l /home/devel/building/work/pkg/usr/lib/libgpm.so.2.1.0" 								;	\
+      echo "Or to update everything just type ldconfig"											;	\
+fi
+make[1]: Entering directory '/home/devel/building/work/src/gpm-1.20.7/contrib'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/devel/building/work/src/gpm-1.20.7/contrib'
+WARNING: We installed a lib, you should now call ldconfig
+f.i.: ldconfig -n -l /home/devel/building/work/pkg/usr/lib/libgpm.so.2.1.0
+Or to update everything just type ldconfig
+for i in prog/mev prog/hltest prog/mouse-test prog/disable-paste prog/display-buttons prog/display-coords prog/get-versions prog/gpm-root; do \
+	/usr/bin/install -c $i /home/devel/building/work/pkg/usr/bin/`echo $i | sed 's,prog/,,'` ;\
+done
+make[1]: Leaving directory '/home/devel/building/work/src/gpm-1.20.7/src'
+make[1]: Entering directory '/home/devel/building/work/src/gpm-1.20.7/doc'
+mkdir -p  /home/devel/building/work/pkg/usr/share/man/man1 /home/devel/building/work/pkg/usr/share/man/man7 /home/devel/building/work/pkg/usr/share/man/man8 /home/devel/building/work/pkg/usr/share/info	
+/usr/bin/install -c -m 644 -m 644 mev.1          /home/devel/building/work/pkg/usr/share/man/man1
+/usr/bin/install -c -m 644 -m 644 mouse-test.1   /home/devel/building/work/pkg/usr/share/man/man1
+/usr/bin/install -c -m 644 -m 644 gpm-root.1     /home/devel/building/work/pkg/usr/share/man/man1
+/usr/bin/install -c -m 644 -m 644 gpm-types.7    /home/devel/building/work/pkg/usr/share/man/man7
+/usr/bin/install -c -m 644 -m 644 gpm.8          /home/devel/building/work/pkg/usr/share/man/man8
+/usr/bin/install -c -m 644 -m 644 /home/devel/building/work/src/gpm-1.20.7/doc/gpm.info       /home/devel/building/work/pkg/usr/share/info
+# Use install-info if available
+if /bin/sh -c 'install-info --version' >/dev/null 2>&1; then \
+  if [ -f /home/devel/building/work/pkg/usr/share/info/dir ] ; then \
+	install-info --dir-file=/home/devel/building/work/pkg/usr/share/info/dir /home/devel/building/work/pkg/usr/share/info/gpm.info; \
+  fi; \
+fi
+#itz Sat Dec 26 23:21:05 PST 1998
+#i keep all my infopages compressed and i'm tired to do it by
+#hand, so check if there are any compressed pages and do this
+#one too
+ls /home/devel/building/work/pkg/usr/share/info/*[-.]info.gz >/dev/null 2>&1 \
+	&& gzip -f /home/devel/building/work/pkg/usr/share/info/gpm.info
+make[1]: [Makefile:129: install] Error 2 (ignored)
+# Hmm.... shouldn't man pages be compressed too?
+make[1]: Leaving directory '/home/devel/building/work/src/gpm-1.20.7/doc'
+make[1]: Entering directory '/home/devel/building/work/src/gpm-1.20.7/contrib'
+if [ -n "" ]; then for i in `echo `; do \
+	/usr/bin/install -c -m 644 /home/devel/building/work/src/gpm-1.20.7/contrib/$i /home/devel/building/work/pkg/usr/share/emacs/site-lisp/`basename $i` ;\
+done; fi
+make[1]: Leaving directory '/home/devel/building/work/src/gpm-1.20.7/contrib'
++ ln -s libgpm.so.2.1.0 /home/devel/building/work/pkg/usr/lib/libgpm.so
++ install -m 0644 conf/gpm-root.conf /home/devel/building/work/pkg/etc
++ install -d /home/devel/building/work/pkg/etc/sv/gpm
++ install -m 0755 -D /home/devel/building/work/src/gpm.run /home/devel/building/work/pkg/etc/sv/gpm/run
++ ln -s /run/runit/supervise.gpm /home/devel/building/work/pkg/etc/sv/gpm/supervise
++ rm -r /home/devel/building/work/pkg/usr/share/info
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 etc/
+-rw-r--r--  0 root   root     1756 Feb  1 17:58 etc/gpm-root.conf
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 etc/sv/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 etc/sv/gpm/
+-rwxr-xr-x  0 root   root      111 Feb  1 17:58 etc/sv/gpm/run
+lrwxrwxrwx  0 root   root        0 Feb  1 17:58 etc/sv/gpm/supervise -> /run/runit/supervise.gpm
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/bin/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/sbin/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/share/man/man1/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/share/man/man7/
+drwxr-xr-x  0 root   root        0 Feb  1 17:58 usr/share/man/man8/
+-rw-r--r--  0 root   root     5541 Feb  1 17:58 usr/share/man/man8/gpm.8.gz
+-rw-r--r--  0 root   root     3710 Feb  1 17:58 usr/share/man/man7/gpm-types.7.gz
+-rw-r--r--  0 root   root     1736 Feb  1 17:58 usr/share/man/man1/mev.1.gz
+-rw-r--r--  0 root   root      569 Feb  1 17:58 usr/share/man/man1/mouse-test.1.gz
+-rw-r--r--  0 root   root     3083 Feb  1 17:58 usr/share/man/man1/gpm-root.1.gz
+-rw-r--r--  0 root   root     9783 Feb  1 17:58 usr/include/gpm.h
+-rwxr-xr-x  0 root   root    94240 Feb  1 17:58 usr/sbin/gpm
+-rwxr-xr-x  0 root   root    19088 Feb  1 17:58 usr/bin/mev
+-rwxr-xr-x  0 root   root    18792 Feb  1 17:58 usr/bin/hltest
+-rwxr-xr-x  0 root   root    81536 Feb  1 17:58 usr/bin/mouse-test
+-rwxr-xr-x  0 root   root    14424 Feb  1 17:58 usr/bin/disable-paste
+-rwxr-xr-x  0 root   root    14448 Feb  1 17:58 usr/bin/display-buttons
+-rwxr-xr-x  0 root   root    14448 Feb  1 17:58 usr/bin/display-coords
+-rwxr-xr-x  0 root   root    14408 Feb  1 17:58 usr/bin/get-versions
+-rwxr-xr-x  0 root   root    36136 Feb  1 17:58 usr/bin/gpm-root
+-rw-r--r--  0 root   root    27104 Feb  1 17:58 usr/lib/libgpm.so.2.1.0
+lrwxrwxrwx  0 root   root        0 Feb  1 17:58 usr/lib/libgpm.so.2 -> libgpm.so.2.1.0
+lrwxrwxrwx  0 root   root        0 Feb  1 17:58 usr/lib/libgpm.so -> libgpm.so.2.1.0
+=======> Building '/home/devel/packages/gpm#1.20.7-2.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling gpm 1.20.7-2
+prt-get: /usr/bin/pkgadd -u gpm#1.20.7-2.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 17:58:10 2024
+

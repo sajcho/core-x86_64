@@ -1,0 +1,26 @@
+prt-get: updating /usr/ports/core-x86_64/dumb_runtime_dir
+prt-get: starting build Thu Feb  1 15:35:28 2024
+=======> Building '/home/devel/packages/dumb_runtime_dir#1.0.4-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/dumb_runtime_dir-1.0.4.tar.gz
++ build
++ make -C dumb_runtime_dir-1.0.4
+make: Entering directory '/home/devel/building/work/src/dumb_runtime_dir-1.0.4'
+cc -o pam_dumb_runtime_dir.so pam_dumb_runtime_dir.c -shared -fPIC -std=c99 \
+	$(pkg-config --cflags --libs pam) -Os -Wall -Wextra -Wpedantic -Wconversion -Werror  \
+	'-DRUNTIME_DIR_PARENT="/run/user"'
+make: Leaving directory '/home/devel/building/work/src/dumb_runtime_dir-1.0.4'
++ make -C dumb_runtime_dir-1.0.4 DESTDIR=/home/devel/building/work/pkg PAMDIR=/lib/security install
+make: Entering directory '/home/devel/building/work/src/dumb_runtime_dir-1.0.4'
+mkdir -p /home/devel/building/work/pkg/lib/security
+cp -f pam_dumb_runtime_dir.so /home/devel/building/work/pkg/lib/security
+make: Leaving directory '/home/devel/building/work/src/dumb_runtime_dir-1.0.4'
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 15:35 lib/
+drwxr-xr-x  0 root   root        0 Feb  1 15:35 lib/security/
+-rwxr-xr-x  0 root   root    14360 Feb  1 15:35 lib/security/pam_dumb_runtime_dir.so
+=======> Building '/home/devel/packages/dumb_runtime_dir#1.0.4-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling dumb_runtime_dir 1.0.4-1
+prt-get: /usr/bin/pkgadd -u dumb_runtime_dir#1.0.4-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 15:35:28 2024
+

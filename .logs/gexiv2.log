@@ -1,0 +1,150 @@
+prt-get: updating /usr/ports/wayland-x86_64/gexiv2
+prt-get: starting build Thu Feb  1 17:42:22 2024
+=======> Building '/home/devel/packages/gexiv2#0.14.2-2.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/gexiv2-0.14.2.tar.xz
++ build
++ cd gexiv2-0.14.2
++ build-meson -Dintrospection=true -Dvapi=false -Dgtk_doc=false . build
+The Meson build system
+Version: 1.3.1
+Source dir: /home/devel/building/work/src/gexiv2-0.14.2
+Build dir: /home/devel/building/work/src/gexiv2-0.14.2/build
+Build type: native build
+Project name: gexiv2
+Project version: 0.14.2
+C compiler for the host machine: cc (gcc 13.2.0 "cc (SAUX-x86_64) 13.2.0")
+C linker for the host machine: cc ld.bfd 2.42
+C++ compiler for the host machine: c++ (gcc 13.2.0 "c++ (SAUX-x86_64) 13.2.0")
+C++ linker for the host machine: c++ ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Message: Project API version: 0.10
+Found pkg-config: YES (/usr/bin/pkg-config) 2.1.0
+Run-time dependency exiv2 found: YES 0.28.1
+Run-time dependency gobject-2.0 found: YES 2.78.4
+Run-time dependency gio-2.0 found: YES 2.78.4
+Library m found: YES
+Checking if "BMFF support in exiv2" with dependency exiv2 compiles: YES 
+Checking if "DataBuf is sealead in exiv2" with dependency exiv2 compiles: YES 
+Checking if "AnyError exists in exiv2" with dependency exiv2 compiles: NO 
+Checking if "Xmpdatum has toLong() in exiv2" with dependency exiv2 compiles: NO 
+Checking if "Exifdatum has toLong() in exiv2" with dependency exiv2 compiles: NO 
+Configuring config.h using configuration
+Program g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Configuring gexiv2-version.h using configuration
+Build-time dependency glib-2.0 found: YES 2.78.4
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.78.4 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Run-time dependency gobject-introspection-1.0 found: YES 1.78.1
+Dependency gobject-introspection-1.0 found: YES 1.78.1 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 found: YES 1.78.1 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program python3 (gi) found: YES (/usr/bin/python3) modules: gi
+Build targets in project: 5
+
+gexiv2 0.14.2
+
+  User defined options
+    auto_features     : auto
+    bindir            : /usr/bin
+    buildtype         : plain
+    datadir           : /usr/share
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    libexecdir        : /usr/lib
+    localstatedir     : /var
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sbindir           : /usr/sbin
+    sharedstatedir    : /var/lib
+    sysconfdir        : /etc
+    werror            : false
+    wrap_mode         : nodownload
+    python.bytecompile: 0
+    b_lto             : false
+    b_pie             : true
+    b_staticpic       : true
+    gtk_doc           : false
+    introspection     : true
+    vapi              : false
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -v -C build
+ninja: entering directory '/home/devel/building/work/src/gexiv2-0.14.2/build'
+[1/16] /usr/bin/meson --internal exe --capture gexiv2/gexiv2-enums.h -- /usr/bin/glib-mkenums --identifier-prefix gexiv2 --symbol-prefix GExiv2 --template /home/devel/building/work/src/gexiv2-0.14.2/build/../gexiv2/gexiv2-enums.h.template /home/devel/building/work/src/gexiv2-0.14.2/build/../gexiv2/gexiv2-metadata.h /home/devel/building/work/src/gexiv2-0.14.2/build/../gexiv2/gexiv2-log.h
+[2/16] c++ -Igexiv2/libgexiv2.so.2.14.2.p -Igexiv2 -I../gexiv2 -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ gexiv2/libgexiv2.so.2.14.2.p/gexiv2-startup.cpp.o -MF gexiv2/libgexiv2.so.2.14.2.p/gexiv2-startup.cpp.o.d -o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-startup.cpp.o -c ../gexiv2/gexiv2-startup.cpp
+[3/16] c++ -Igexiv2/libgexiv2.so.2.14.2.p -Igexiv2 -I../gexiv2 -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ gexiv2/libgexiv2.so.2.14.2.p/gexiv2-log.cpp.o -MF gexiv2/libgexiv2.so.2.14.2.p/gexiv2-log.cpp.o.d -o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-log.cpp.o -c ../gexiv2/gexiv2-log.cpp
+[4/16] c++ -Igexiv2/libgexiv2.so.2.14.2.p -Igexiv2 -I../gexiv2 -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ gexiv2/libgexiv2.so.2.14.2.p/gexiv2-preview-image.cpp.o -MF gexiv2/libgexiv2.so.2.14.2.p/gexiv2-preview-image.cpp.o.d -o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-preview-image.cpp.o -c ../gexiv2/gexiv2-preview-image.cpp
+[5/16] c++ -Igexiv2/libgexiv2.so.2.14.2.p -Igexiv2 -I../gexiv2 -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ gexiv2/libgexiv2.so.2.14.2.p/gexiv2-preview-properties.cpp.o -MF gexiv2/libgexiv2.so.2.14.2.p/gexiv2-preview-properties.cpp.o.d -o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-preview-properties.cpp.o -c ../gexiv2/gexiv2-preview-properties.cpp
+[6/16] c++ -Igexiv2/libgexiv2.so.2.14.2.p -Igexiv2 -I../gexiv2 -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ gexiv2/libgexiv2.so.2.14.2.p/gexiv2-stream-io.cpp.o -MF gexiv2/libgexiv2.so.2.14.2.p/gexiv2-stream-io.cpp.o.d -o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-stream-io.cpp.o -c ../gexiv2/gexiv2-stream-io.cpp
+[7/16] c++ -Igexiv2/libgexiv2.so.2.14.2.p -Igexiv2 -I../gexiv2 -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata-xmp.cpp.o -MF gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata-xmp.cpp.o.d -o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata-xmp.cpp.o -c ../gexiv2/gexiv2-metadata-xmp.cpp
+[8/16] c++ -Igexiv2/libgexiv2.so.2.14.2.p -Igexiv2 -I../gexiv2 -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata-iptc.cpp.o -MF gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata-iptc.cpp.o.d -o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata-iptc.cpp.o -c ../gexiv2/gexiv2-metadata-iptc.cpp
+[9/16] c++ -Igexiv2/libgexiv2.so.2.14.2.p -Igexiv2 -I../gexiv2 -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata-gps.cpp.o -MF gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata-gps.cpp.o.d -o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata-gps.cpp.o -c ../gexiv2/gexiv2-metadata-gps.cpp
+[10/16] c++ -Igexiv2/libgexiv2.so.2.14.2.p -Igexiv2 -I../gexiv2 -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata-exif.cpp.o -MF gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata-exif.cpp.o.d -o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata-exif.cpp.o -c ../gexiv2/gexiv2-metadata-exif.cpp
+[11/16] c++ -Igexiv2/libgexiv2.so.2.14.2.p -Igexiv2 -I../gexiv2 -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata.cpp.o -MF gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata.cpp.o.d -o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata.cpp.o -c ../gexiv2/gexiv2-metadata.cpp
+[12/16] /usr/bin/meson --internal exe --capture gexiv2/gexiv2-enums.cpp -- /usr/bin/glib-mkenums --identifier-prefix gexiv2 --symbol-prefix GExiv2 --template /home/devel/building/work/src/gexiv2-0.14.2/build/../gexiv2/gexiv2-enums.cpp.template /home/devel/building/work/src/gexiv2-0.14.2/build/../gexiv2/gexiv2-metadata.h /home/devel/building/work/src/gexiv2-0.14.2/build/../gexiv2/gexiv2-log.h
+[13/16] c++ -Igexiv2/libgexiv2.so.2.14.2.p -Igexiv2 -I../gexiv2 -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ gexiv2/libgexiv2.so.2.14.2.p/meson-generated_.._gexiv2-enums.cpp.o -MF gexiv2/libgexiv2.so.2.14.2.p/meson-generated_.._gexiv2-enums.cpp.o.d -o gexiv2/libgexiv2.so.2.14.2.p/meson-generated_.._gexiv2-enums.cpp.o -c gexiv2/gexiv2-enums.cpp
+[14/16] c++  -o gexiv2/libgexiv2.so.2.14.2 gexiv2/libgexiv2.so.2.14.2.p/meson-generated_.._gexiv2-enums.cpp.o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata.cpp.o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata-exif.cpp.o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata-gps.cpp.o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata-iptc.cpp.o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-metadata-xmp.cpp.o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-stream-io.cpp.o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-preview-properties.cpp.o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-preview-image.cpp.o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-log.cpp.o gexiv2/libgexiv2.so.2.14.2.p/gexiv2-startup.cpp.o -Wl,--as-needed -Wl,--no-undefined -shared -fPIC -Wl,--start-group -Wl,-soname,libgexiv2.so.2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects /usr/lib/libgobject-2.0.so /usr/lib/libglib-2.0.so /usr/lib/libexiv2.so /usr/lib/libgio-2.0.so -Wl,--end-group
+[15/16] env PKG_CONFIG_PATH=/usr/lib/pkgconfig:/usr/share/pkgconfig:/home/devel/building/work/src/gexiv2-0.14.2/build/meson-uninstalled PKG_CONFIG=/usr/bin/pkg-config CC=cc /usr/bin/g-ir-scanner --quiet --no-libtool --namespace=GExiv2 --nsversion=0.10 --warn-all --output gexiv2/GExiv2-0.10.gir --c-include=gexiv2/gexiv2.h -I/home/devel/building/work/src/gexiv2-0.14.2/gexiv2 -I/home/devel/building/work/src/gexiv2-0.14.2/build/gexiv2 -I/home/devel/building/work/src/gexiv2-0.14.2/gexiv2/.. -I/home/devel/building/work/src/gexiv2-0.14.2/build/gexiv2/.. --filelist=/home/devel/building/work/src/gexiv2-0.14.2/build/gexiv2/libgexiv2.so.2.14.2.p/GExiv2_0.10_gir_filelist --include=GObject-2.0 --include=Gio-2.0 --symbol-prefix=gexiv2 --identifier-prefix=GExiv2 --pkg-export=gexiv2 --cflags-begin -I/home/devel/building/work/src/gexiv2-0.14.2/gexiv2/.. -I/home/devel/building/work/src/gexiv2-0.14.2/build/gexiv2/.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gobject-introspection-1.0 --cflags-end --add-include-path=/usr/share/gir-1.0 -L/home/devel/building/work/src/gexiv2-0.14.2/build/gexiv2 --library gexiv2 --extra-library=gobject-2.0 --extra-library=glib-2.0 --extra-library=exiv2 --extra-library=gio-2.0 --extra-library=girepository-1.0 --sources-top-dirs /home/devel/building/work/src/gexiv2-0.14.2/ --sources-top-dirs /home/devel/building/work/src/gexiv2-0.14.2/build/
+[16/16] /usr/bin/g-ir-compiler gexiv2/GExiv2-0.10.gir --output gexiv2/GExiv2-0.10.typelib --includedir=/usr/share/gir-1.0
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/gexiv2-0.14.2/build -j 8 -v
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Compiling '/home/devel/building/work/pkg/usr/lib/python3.12/site-packages/gi/overrides/GExiv2.py'...
+Installing gexiv2/gexiv2-enums.h to /home/devel/building/work/pkg/usr/include/gexiv2
+Installing gexiv2/libgexiv2.so.2.14.2 to /home/devel/building/work/pkg/usr/lib
+Installing gexiv2/GExiv2-0.10.gir to /home/devel/building/work/pkg/usr/share/gir-1.0
+Installing gexiv2/GExiv2-0.10.typelib to /home/devel/building/work/pkg/usr/lib/girepository-1.0
+Installing /home/devel/building/work/src/gexiv2-0.14.2/gexiv2/gexiv2-metadata.h to /home/devel/building/work/pkg/usr/include/gexiv2
+Installing /home/devel/building/work/src/gexiv2-0.14.2/gexiv2/gexiv2-log.h to /home/devel/building/work/pkg/usr/include/gexiv2
+Installing /home/devel/building/work/src/gexiv2-0.14.2/gexiv2/gexiv2.h to /home/devel/building/work/pkg/usr/include/gexiv2
+Installing /home/devel/building/work/src/gexiv2-0.14.2/gexiv2/gexiv2-managed-stream.h to /home/devel/building/work/pkg/usr/include/gexiv2
+Installing /home/devel/building/work/src/gexiv2-0.14.2/gexiv2/gexiv2-preview-properties.h to /home/devel/building/work/pkg/usr/include/gexiv2
+Installing /home/devel/building/work/src/gexiv2-0.14.2/gexiv2/gexiv2-preview-image.h to /home/devel/building/work/pkg/usr/include/gexiv2
+Installing /home/devel/building/work/src/gexiv2-0.14.2/gexiv2/gexiv2-startup.h to /home/devel/building/work/pkg/usr/include/gexiv2
+Installing /home/devel/building/work/src/gexiv2-0.14.2/build/gexiv2/gexiv2-version.h to /home/devel/building/work/pkg/usr/include/gexiv2
+Installing /home/devel/building/work/src/gexiv2-0.14.2/build/meson-private/gexiv2.pc to /home/devel/building/work/pkg/usr/lib/pkgconfig
+Installing /home/devel/building/work/src/gexiv2-0.14.2/GExiv2.py to /home/devel/building/work/pkg/usr/lib/python3.12/site-packages/gi/overrides
+Installing symlink pointing to libgexiv2.so.2.14.2 to /home/devel/building/work/pkg/usr/lib/libgexiv2.so.2
+Installing symlink pointing to libgexiv2.so.2 to /home/devel/building/work/pkg/usr/lib/libgexiv2.so
+Running custom install script '/usr/bin/python3 /home/devel/building/work/src/gexiv2-0.14.2/build/meson-private/pycompile.py python-3.12-installed.json 0'
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/share/gir-1.0/
+-rw-r--r--  0 root   root   218077 Feb  1 17:42 usr/share/gir-1.0/GExiv2-0.10.gir
+-rwxr-xr-x  0 root   root   213152 Feb  1 17:42 usr/lib/libgexiv2.so.2.14.2
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/lib/girepository-1.0/
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/lib/pkgconfig/
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/lib/python3.12/
+lrwxrwxrwx  0 root   root        0 Feb  1 17:42 usr/lib/libgexiv2.so.2 -> libgexiv2.so.2.14.2
+lrwxrwxrwx  0 root   root        0 Feb  1 17:42 usr/lib/libgexiv2.so -> libgexiv2.so.2
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/lib/python3.12/site-packages/
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/lib/python3.12/site-packages/gi/
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/lib/python3.12/site-packages/gi/overrides/
+-rw-r--r--  0 root   root     3563 Jul 24  2023 usr/lib/python3.12/site-packages/gi/overrides/GExiv2.py
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/lib/python3.12/site-packages/gi/overrides/__pycache__/
+-rw-r--r--  0 root   root     5358 Feb  1 17:42 usr/lib/python3.12/site-packages/gi/overrides/__pycache__/GExiv2.cpython-312.pyc
+-rw-r--r--  0 root   root      323 Feb  1 17:42 usr/lib/pkgconfig/gexiv2.pc
+-rw-r--r--  0 root   root    17720 Feb  1 17:42 usr/lib/girepository-1.0/GExiv2-0.10.typelib
+drwxr-xr-x  0 root   root        0 Feb  1 17:42 usr/include/gexiv2/
+-rw-r--r--  0 root   root     1102 Feb  1 17:42 usr/include/gexiv2/gexiv2-enums.h
+-rw-r--r--  0 root   root    69735 Jul 24  2023 usr/include/gexiv2/gexiv2-metadata.h
+-rw-r--r--  0 root   root     3276 Jul 24  2023 usr/include/gexiv2/gexiv2-log.h
+-rw-r--r--  0 root   root      448 Jul 24  2023 usr/include/gexiv2/gexiv2.h
+-rw-r--r--  0 root   root     4933 Jul 24  2023 usr/include/gexiv2/gexiv2-managed-stream.h
+-rw-r--r--  0 root   root     2917 Jul 24  2023 usr/include/gexiv2/gexiv2-preview-properties.h
+-rw-r--r--  0 root   root     3900 Jul 24  2023 usr/include/gexiv2/gexiv2-preview-image.h
+-rw-r--r--  0 root   root      822 Jul 24  2023 usr/include/gexiv2/gexiv2-startup.h
+-rw-r--r--  0 root   root     1147 Feb  1 17:42 usr/include/gexiv2/gexiv2-version.h
+=======> Building '/home/devel/packages/gexiv2#0.14.2-2.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling gexiv2 0.14.2-2
+prt-get: /usr/bin/pkgadd -u gexiv2#0.14.2-2.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 17:42:30 2024
+

@@ -1,0 +1,362 @@
+prt-get: updating /usr/ports/core-x86_64/expat
+prt-get: starting build Thu Feb  1 15:37:25 2024
+=======> Building '/home/devel/packages/expat#2.5.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/expat-2.5.0.tar.bz2
++ build
++ cd expat-2.5.0
++ ./configure --prefix=/usr --disable-static
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for sys/param.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether C compiler accepts -Wall... yes
+checking whether C compiler accepts -Wextra... yes
+checking whether C compiler accepts -fexceptions... yes
+checking whether C compiler accepts -fno-strict-aliasing... yes
+checking whether C compiler accepts -Wmissing-prototypes... yes
+checking whether C compiler accepts -Wstrict-prototypes... yes
+checking whether C compiler accepts -pedantic... yes
+checking whether C compiler accepts -Wduplicated-cond... yes
+checking whether C compiler accepts -Wduplicated-branches... yes
+checking whether C compiler accepts -Wlogical-op... yes
+checking whether C compiler accepts -Wrestrict... yes
+checking whether C compiler accepts -Wnull-dereference... yes
+checking whether C compiler accepts -Wjump-misses-init... yes
+checking whether C compiler accepts -Wdouble-promotion... yes
+checking whether C compiler accepts -Wshadow... yes
+checking whether C compiler accepts -Wformat=2... yes
+checking whether C compiler accepts -Wno-pedantic-ms-format... yes
+checking whether C compiler accepts -Wmisleading-indentation... yes
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether C++ compiler accepts -Wall... yes
+checking whether C++ compiler accepts -Wextra... yes
+checking whether C++ compiler accepts -fexceptions... yes
+checking whether C++ compiler accepts -fno-strict-aliasing... yes
+checking whether the linker accepts -fno-strict-aliasing... yes
+checking whether compiler supports visibility... yes
+checking whether byte ordering is bigendian... no
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking for cos in -lm... yes
+checking for arc4random_buf (BSD or libbsd)... yes
+checking for getrandom (Linux 3.17+, glibc 2.25+)... yes
+checking for syscall SYS_getrandom (Linux 3.17+)... yes
+checking for fcntl.h... yes
+checking for unistd.h... (cached) yes
+checking for off_t... yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking for docbook2x-man... no
+checking for db2x_docbook2man... no
+checking for docbook2man... no
+checking for docbook-to-man... no
+checking size of void *... 8
+checking for shared library name prefix... lib
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating expat.pc
+config.status: creating cmake/expat-config.cmake
+config.status: creating cmake/autotools/expat-config-version.cmake
+config.status: creating cmake/autotools/expat-noconfig.cmake
+config.status: creating doc/Makefile
+config.status: creating examples/Makefile
+config.status: creating lib/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/benchmark/Makefile
+config.status: creating xmlwf/Makefile
+config.status: creating run.sh
+config.status: creating expat_config.h
+config.status: expat_config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure:
+
+Automake flags (can be overridden by user flags):
+  AM_CPPFLAGS: -DXML_ENABLE_VISIBILITY=1
+    AM_CFLAGS: -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden
+  AM_CXXFLAGS: -Wall -Wextra -fexceptions -fno-strict-aliasing
+   AM_LDFLAGS: -fno-strict-aliasing
+
+User flags (override Automake flags on conflict):
+     CPPFLAGS: 
+       CFLAGS: -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects
+     CXXFLAGS: -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects
+      LDFLAGS: 
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/expat-2.5.0'
+Making all in lib
+make[2]: Entering directory '/home/devel/building/work/src/expat-2.5.0/lib'
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DXML_ENABLE_VISIBILITY=1  -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xmlparse.lo -MD -MP -MF .deps/xmlparse.Tpo -c -o xmlparse.lo xmlparse.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DXML_ENABLE_VISIBILITY=1  -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xmltok.lo -MD -MP -MF .deps/xmltok.Tpo -c -o xmltok.lo xmltok.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DXML_ENABLE_VISIBILITY=1  -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xmlrole.lo -MD -MP -MF .deps/xmlrole.Tpo -c -o xmlrole.lo xmlrole.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DXML_ENABLE_VISIBILITY=1 -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xmltok.lo -MD -MP -MF .deps/xmltok.Tpo -c xmltok.c  -fPIC -DPIC -o .libs/xmltok.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DXML_ENABLE_VISIBILITY=1 -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xmlrole.lo -MD -MP -MF .deps/xmlrole.Tpo -c xmlrole.c  -fPIC -DPIC -o .libs/xmlrole.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DXML_ENABLE_VISIBILITY=1 -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xmlparse.lo -MD -MP -MF .deps/xmlparse.Tpo -c xmlparse.c  -fPIC -DPIC -o .libs/xmlparse.o
+mv -f .deps/xmlrole.Tpo .deps/xmlrole.Plo
+mv -f .deps/xmlparse.Tpo .deps/xmlparse.Plo
+mv -f .deps/xmltok.Tpo .deps/xmltok.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fno-strict-aliasing  -o libexpatinternal.la  xmlparse.lo xmltok.lo xmlrole.lo  
+libtool: link: ar cr .libs/libexpatinternal.a .libs/xmlparse.o .libs/xmltok.o .libs/xmlrole.o 
+libtool: link: ranlib .libs/libexpatinternal.a
+libtool: link: ( cd ".libs" && rm -f "libexpatinternal.la" && ln -s "../libexpatinternal.la" "libexpatinternal.la" )
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fno-strict-aliasing -lm -no-undefined -version-info 9:10:8  -o libexpat.la -rpath /usr/lib  libexpatinternal.la 
+libtool: link: gcc -shared  -fPIC -DPIC  -Wl,--whole-archive ./.libs/libexpatinternal.a -Wl,--no-whole-archive  -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,libexpat.so.1 -o .libs/libexpat.so.1.8.10
+libtool: link: (cd ".libs" && rm -f "libexpat.so.1" && ln -s "libexpat.so.1.8.10" "libexpat.so.1")
+libtool: link: (cd ".libs" && rm -f "libexpat.so" && ln -s "libexpat.so.1.8.10" "libexpat.so")
+libtool: link: ( cd ".libs" && rm -f "libexpat.la" && ln -s "../libexpat.la" "libexpat.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/lib'
+Making all in examples
+make[2]: Entering directory '/home/devel/building/work/src/expat-2.5.0/examples'
+gcc -DHAVE_CONFIG_H -I. -I..  -DXML_ENABLE_VISIBILITY=1 -I./../lib  -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT elements.o -MD -MP -MF .deps/elements.Tpo -c -o elements.o elements.c
+gcc -DHAVE_CONFIG_H -I. -I..  -DXML_ENABLE_VISIBILITY=1 -I./../lib  -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT outline.o -MD -MP -MF .deps/outline.Tpo -c -o outline.o outline.c
+mv -f .deps/elements.Tpo .deps/elements.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fno-strict-aliasing  -o elements elements.o ../lib/libexpat.la 
+mv -f .deps/outline.Tpo .deps/outline.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fno-strict-aliasing  -o outline outline.o ../lib/libexpat.la 
+libtool: link: gcc -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fno-strict-aliasing -o .libs/elements elements.o  ../lib/.libs/libexpat.so -lm
+libtool: link: gcc -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fno-strict-aliasing -o .libs/outline outline.o  ../lib/.libs/libexpat.so -lm
+make[2]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/examples'
+Making all in tests
+make[2]: Entering directory '/home/devel/building/work/src/expat-2.5.0/tests'
+Making all in .
+make[3]: Entering directory '/home/devel/building/work/src/expat-2.5.0/tests'
+gcc -DHAVE_CONFIG_H -I. -I..  -DXML_ENABLE_VISIBILITY=1 -I./../lib  -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT chardata.o -MD -MP -MF .deps/chardata.Tpo -c -o chardata.o chardata.c
+gcc -DHAVE_CONFIG_H -I. -I..  -DXML_ENABLE_VISIBILITY=1 -I./../lib  -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT structdata.o -MD -MP -MF .deps/structdata.Tpo -c -o structdata.o structdata.c
+gcc -DHAVE_CONFIG_H -I. -I..  -DXML_ENABLE_VISIBILITY=1 -I./../lib  -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT memcheck.o -MD -MP -MF .deps/memcheck.Tpo -c -o memcheck.o memcheck.c
+gcc -DHAVE_CONFIG_H -I. -I..  -DXML_ENABLE_VISIBILITY=1 -I./../lib  -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT minicheck.o -MD -MP -MF .deps/minicheck.Tpo -c -o minicheck.o minicheck.c
+memcheck.c: In function 'tracking_realloc':
+memcheck.c:168:25: warning: pointer 'ptr_13(D)' may be used after 'realloc' [-Wuse-after-free]
+  168 |       entry->allocation = ptr;
+      |       ~~~~~~~~~~~~~~~~~~^~~~~
+memcheck.c:165:25: note: call to 'realloc' here
+  165 |     entry->allocation = realloc(ptr, size);
+      |                         ^~~~~~~~~~~~~~~~~~
+At top level:
+cc1: note: unrecognized command-line option '-Wno-pedantic-ms-format' may have been intended to silence earlier diagnostics
+mv -f .deps/memcheck.Tpo .deps/memcheck.Po
+mv -f .deps/chardata.Tpo .deps/chardata.Po
+mv -f .deps/structdata.Tpo .deps/structdata.Po
+mv -f .deps/minicheck.Tpo .deps/minicheck.Po
+rm -f libruntests.a
+ar cru libruntests.a chardata.o structdata.o memcheck.o minicheck.o 
+ar: `u' modifier ignored since `D' is the default (see `U')
+ranlib libruntests.a
+make[3]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/tests'
+Making all in benchmark
+make[3]: Entering directory '/home/devel/building/work/src/expat-2.5.0/tests/benchmark'
+gcc -DHAVE_CONFIG_H -I. -I../..  -DXML_ENABLE_VISIBILITY=1 -I./../../lib  -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT benchmark.o -MD -MP -MF .deps/benchmark.Tpo -c -o benchmark.o benchmark.c
+mv -f .deps/benchmark.Tpo .deps/benchmark.Po
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fno-strict-aliasing  -o benchmark benchmark.o ../../lib/libexpat.la 
+libtool: link: gcc -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fno-strict-aliasing -o .libs/benchmark benchmark.o  ../../lib/.libs/libexpat.so -lm
+make[3]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/tests/benchmark'
+make[2]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/tests'
+Making all in xmlwf
+make[2]: Entering directory '/home/devel/building/work/src/expat-2.5.0/xmlwf'
+gcc -DHAVE_CONFIG_H -I. -I..  -DXML_ENABLE_VISIBILITY=1 -I./../lib   -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xmlwf-xmlwf.o -MD -MP -MF .deps/xmlwf-xmlwf.Tpo -c -o xmlwf-xmlwf.o `test -f 'xmlwf.c' || echo './'`xmlwf.c
+gcc -DHAVE_CONFIG_H -I. -I..  -DXML_ENABLE_VISIBILITY=1 -I./../lib   -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xmlwf-xmlfile.o -MD -MP -MF .deps/xmlwf-xmlfile.Tpo -c -o xmlwf-xmlfile.o `test -f 'xmlfile.c' || echo './'`xmlfile.c
+gcc -DHAVE_CONFIG_H -I. -I..  -DXML_ENABLE_VISIBILITY=1 -I./../lib   -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xmlwf-codepage.o -MD -MP -MF .deps/xmlwf-codepage.Tpo -c -o xmlwf-codepage.o `test -f 'codepage.c' || echo './'`codepage.c
+gcc -DHAVE_CONFIG_H -I. -I..  -DXML_ENABLE_VISIBILITY=1 -I./../lib   -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xmlwf-unixfilemap.o -MD -MP -MF .deps/xmlwf-unixfilemap.Tpo -c -o xmlwf-unixfilemap.o `test -f 'unixfilemap.c' || echo './'`unixfilemap.c
+mv -f .deps/xmlwf-codepage.Tpo .deps/xmlwf-codepage.Po
+mv -f .deps/xmlwf-unixfilemap.Tpo .deps/xmlwf-unixfilemap.Po
+mv -f .deps/xmlwf-xmlfile.Tpo .deps/xmlwf-xmlfile.Po
+mv -f .deps/xmlwf-xmlwf.Tpo .deps/xmlwf-xmlwf.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fno-strict-aliasing -lm   -o xmlwf xmlwf-xmlwf.o xmlwf-xmlfile.o xmlwf-codepage.o xmlwf-unixfilemap.o ../lib/libexpat.la 
+libtool: link: gcc -Wall -Wextra -fexceptions -fno-strict-aliasing -Wmissing-prototypes -Wstrict-prototypes -pedantic -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wrestrict -Wnull-dereference -Wjump-misses-init -Wdouble-promotion -Wshadow -Wformat=2 -Wno-pedantic-ms-format -Wmisleading-indentation -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fno-strict-aliasing -o .libs/xmlwf xmlwf-xmlwf.o xmlwf-xmlfile.o xmlwf-codepage.o xmlwf-unixfilemap.o  ../lib/.libs/libexpat.so -lm
+make[2]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/xmlwf'
+Making all in doc
+make[2]: Entering directory '/home/devel/building/work/src/expat-2.5.0/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/doc'
+make[2]: Entering directory '/home/devel/building/work/src/expat-2.5.0'
+make[2]: Leaving directory '/home/devel/building/work/src/expat-2.5.0'
+make[1]: Leaving directory '/home/devel/building/work/src/expat-2.5.0'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in lib
+make[1]: Entering directory '/home/devel/building/work/src/expat-2.5.0/lib'
+make[2]: Entering directory '/home/devel/building/work/src/expat-2.5.0/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/expat'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libexpat.la '/home/devel/building/work/pkg/usr/lib'
+ /usr/bin/install -c -m 644 ../AUTHORS ../Changes '/home/devel/building/work/pkg/usr/share/doc/expat'
+ /usr/bin/install -c -m 644 ../expat_config.h expat.h expat_external.h '/home/devel/building/work/pkg/usr/include'
+make  install-data-hook
+make[3]: Entering directory '/home/devel/building/work/src/expat-2.5.0/lib'
+cd "/home/devel/building/work/pkg/usr/share/doc/expat" && mv -f Changes changelog
+make[3]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/lib'
+libtool: install: /usr/bin/install -c .libs/libexpat.so.1.8.10 /home/devel/building/work/pkg/usr/lib/libexpat.so.1.8.10
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libexpat.so.1.8.10 libexpat.so.1 || { rm -f libexpat.so.1 && ln -s libexpat.so.1.8.10 libexpat.so.1; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libexpat.so.1.8.10 libexpat.so || { rm -f libexpat.so && ln -s libexpat.so.1.8.10 libexpat.so; }; })
+libtool: install: /usr/bin/install -c .libs/libexpat.lai /home/devel/building/work/pkg/usr/lib/libexpat.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make[2]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/lib'
+make[1]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/lib'
+Making install in examples
+make[1]: Entering directory '/home/devel/building/work/src/expat-2.5.0/examples'
+make[2]: Entering directory '/home/devel/building/work/src/expat-2.5.0/examples'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/examples'
+make[1]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/examples'
+Making install in tests
+make[1]: Entering directory '/home/devel/building/work/src/expat-2.5.0/tests'
+Making install in .
+make[2]: Entering directory '/home/devel/building/work/src/expat-2.5.0/tests'
+make[3]: Entering directory '/home/devel/building/work/src/expat-2.5.0/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/tests'
+make[2]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/tests'
+Making install in benchmark
+make[2]: Entering directory '/home/devel/building/work/src/expat-2.5.0/tests/benchmark'
+make[3]: Entering directory '/home/devel/building/work/src/expat-2.5.0/tests/benchmark'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/tests/benchmark'
+make[2]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/tests/benchmark'
+make[1]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/tests'
+Making install in xmlwf
+make[1]: Entering directory '/home/devel/building/work/src/expat-2.5.0/xmlwf'
+make[2]: Entering directory '/home/devel/building/work/src/expat-2.5.0/xmlwf'
+make[2]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c xmlwf '/home/devel/building/work/pkg/usr/bin'
+libtool: warning: '../lib/libexpat.la' has not been installed in '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/xmlwf /home/devel/building/work/pkg/usr/bin/xmlwf
+make[2]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/xmlwf'
+make[1]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/xmlwf'
+Making install in doc
+make[1]: Entering directory '/home/devel/building/work/src/expat-2.5.0/doc'
+make[2]: Entering directory '/home/devel/building/work/src/expat-2.5.0/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/doc'
+make[1]: Leaving directory '/home/devel/building/work/src/expat-2.5.0/doc'
+make[1]: Entering directory '/home/devel/building/work/src/expat-2.5.0'
+make[2]: Entering directory '/home/devel/building/work/src/expat-2.5.0'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/cmake/expat-2.5.0'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/cmake/expat-2.5.0'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 cmake/autotools/expat.cmake '/home/devel/building/work/pkg/usr/lib/cmake/expat-2.5.0'
+ /usr/bin/install -c -m 644 cmake/autotools/expat-config-version.cmake cmake/autotools/expat-noconfig.cmake cmake/expat-config.cmake '/home/devel/building/work/pkg/usr/lib/cmake/expat-2.5.0'
+ /usr/bin/install -c -m 644 expat.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+make[2]: Leaving directory '/home/devel/building/work/src/expat-2.5.0'
+make[1]: Leaving directory '/home/devel/building/work/src/expat-2.5.0'
++ install -D -m 0644 doc/xmlwf.1 /home/devel/building/work/pkg/usr/share/man/man1/xmlwf.1
++ rm -r /home/devel/building/work/pkg/usr/lib/cmake /home/devel/building/work/pkg/usr/share/doc
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/bin/
+-rwxr-xr-x  0 root   root    35400 Feb  1 15:37 usr/bin/xmlwf
+-rw-r--r--  0 root   root     4052 Feb  1 15:37 usr/include/expat_config.h
+-rw-r--r--  0 root   root    43535 Feb  1 15:37 usr/include/expat.h
+-rw-r--r--  0 root   root     6029 Feb  1 15:37 usr/include/expat_external.h
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/share/man/man1/
+-rw-r--r--  0 root   root     4096 Feb  1 15:37 usr/share/man/man1/xmlwf.1.gz
+-rwxr-xr-x  0 root   root   170160 Feb  1 15:37 usr/lib/libexpat.so.1.8.10
+lrwxrwxrwx  0 root   root        0 Feb  1 15:37 usr/lib/libexpat.so.1 -> libexpat.so.1.8.10
+lrwxrwxrwx  0 root   root        0 Feb  1 15:37 usr/lib/libexpat.so -> libexpat.so.1.8.10
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      248 Feb  1 15:37 usr/lib/pkgconfig/expat.pc
+=======> Building '/home/devel/packages/expat#2.5.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling expat 2.5.0-1
+prt-get: /usr/bin/pkgadd -u expat#2.5.0-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 15:37:31 2024
+

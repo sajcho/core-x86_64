@@ -1,0 +1,215 @@
+prt-get: updating /usr/ports/wayland-x86_64/xcb-util
+prt-get: starting build Thu Feb  1 20:19:02 2024
+=======> Building '/home/devel/packages/xcb-util#0.4.1-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/xcb-util-0.4.1.tar.xz
++ build
++ cd xcb-util-0.4.1
++ ./configure --prefix=/usr --disable-static
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether __clang__ is declared... no
+checking whether __INTEL_COMPILER is declared... no
+checking whether __SUNPRO_C is declared... no
+checking for XCB... yes
+checking whether libxcb was compiled against xcb-proto >= 1.6... checking for gawk... (cached) gawk
+yes
+checking if gcc supports -Werror=unknown-warning-option... no
+checking if gcc supports -Werror=unused-command-line-argument... no
+checking if gcc supports -Wall... yes
+checking if gcc supports -Wpointer-arith... yes
+checking if gcc supports -Wmissing-declarations... yes
+checking if gcc supports -Wformat=2... yes
+checking if gcc supports -Wstrict-prototypes... yes
+checking if gcc supports -Wmissing-prototypes... yes
+checking if gcc supports -Wnested-externs... yes
+checking if gcc supports -Wbad-function-cast... yes
+checking if gcc supports -Wold-style-definition... yes
+checking if gcc supports -Wdeclaration-after-statement... yes
+checking if gcc supports -Wunused... yes
+checking if gcc supports -Wuninitialized... yes
+checking if gcc supports -Wshadow... yes
+checking if gcc supports -Wmissing-noreturn... yes
+checking if gcc supports -Wmissing-format-attribute... yes
+checking if gcc supports -Wredundant-decls... yes
+checking if gcc supports -Wlogical-op... yes
+checking if gcc supports -Werror=implicit... yes
+checking if gcc supports -Werror=nonnull... yes
+checking if gcc supports -Werror=init-self... yes
+checking if gcc supports -Werror=main... yes
+checking if gcc supports -Werror=missing-braces... yes
+checking if gcc supports -Werror=sequence-point... yes
+checking if gcc supports -Werror=return-type... yes
+checking if gcc supports -Werror=trigraphs... yes
+checking if gcc supports -Werror=array-bounds... yes
+checking if gcc supports -Werror=write-strings... yes
+checking if gcc supports -Werror=address... yes
+checking if gcc supports -Werror=int-to-pointer-cast... yes
+checking if gcc supports -Werror=pointer-to-int-cast... yes
+checking if gcc supports -pedantic... yes
+checking if gcc supports -Werror... yes
+checking if gcc supports -Werror=attributes... yes
+Package xorg-macros was not found in the pkg-config search path.
+Perhaps you should add the directory containing `xorg-macros.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'xorg-macros', required by 'virtual:world', not found
+checking whether make supports nested variables... (cached) yes
+checking whether to build developer documentation... yes
+checking for doxygen... no
+configure: WARNING: doxygen not found - documentation targets will be skipped
+checking for vasprintf... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating xcb-atom.pc
+config.status: creating xcb-aux.pc
+config.status: creating xcb-event.pc
+config.status: creating xcb-util.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/xcb-util-0.4.1'
+Making all in src
+make[2]: Entering directory '/home/devel/building/work/src/xcb-util-0.4.1/src'
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT atoms.lo -MD -MP -MF .deps/atoms.Tpo -c -o atoms.lo atoms.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT event.lo -MD -MP -MF .deps/event.Tpo -c -o event.lo event.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..    -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xcb_aux.lo -MD -MP -MF .deps/xcb_aux.Tpo -c -o xcb_aux.lo xcb_aux.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT atoms.lo -MD -MP -MF .deps/atoms.Tpo -c atoms.c  -fPIC -DPIC -o .libs/atoms.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT event.lo -MD -MP -MF .deps/event.Tpo -c event.c  -fPIC -DPIC -o .libs/event.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xcb_aux.lo -MD -MP -MF .deps/xcb_aux.Tpo -c xcb_aux.c  -fPIC -DPIC -o .libs/xcb_aux.o
+mv -f .deps/event.Tpo .deps/event.Plo
+mv -f .deps/atoms.Tpo .deps/atoms.Plo
+mv -f .deps/xcb_aux.Tpo .deps/xcb_aux.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -Wall -Wpointer-arith -Wmissing-declarations -Wformat=2 -Wstrict-prototypes -Wmissing-prototypes -Wnested-externs -Wbad-function-cast -Wold-style-definition -Wdeclaration-after-statement -Wunused -Wuninitialized -Wshadow -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wlogical-op -Werror=implicit -Werror=nonnull -Werror=init-self -Werror=main -Werror=missing-braces -Werror=sequence-point -Werror=return-type -Werror=trigraphs -Werror=array-bounds -Werror=write-strings -Werror=address -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -fno-strict-aliasing -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -version-info 1:0:0 -no-undefined  -o libxcb-util.la -rpath /usr/lib atoms.lo event.lo xcb_aux.lo -lxcb 
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/atoms.o .libs/event.o .libs/xcb_aux.o   -lxcb  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,libxcb-util.so.1 -o .libs/libxcb-util.so.1.0.0
+libtool: link: (cd ".libs" && rm -f "libxcb-util.so.1" && ln -s "libxcb-util.so.1.0.0" "libxcb-util.so.1")
+libtool: link: (cd ".libs" && rm -f "libxcb-util.so" && ln -s "libxcb-util.so.1.0.0" "libxcb-util.so")
+libtool: link: ( cd ".libs" && rm -f "libxcb-util.la" && ln -s "../libxcb-util.la" "libxcb-util.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/xcb-util-0.4.1/src'
+make[2]: Entering directory '/home/devel/building/work/src/xcb-util-0.4.1'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/xcb-util-0.4.1'
+make[1]: Leaving directory '/home/devel/building/work/src/xcb-util-0.4.1'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in src
+make[1]: Entering directory '/home/devel/building/work/src/xcb-util-0.4.1/src'
+make[2]: Entering directory '/home/devel/building/work/src/xcb-util-0.4.1/src'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/xcb'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libxcb-util.la '/home/devel/building/work/pkg/usr/lib'
+ /usr/bin/install -c -m 644 xcb_util.h xcb_atom.h xcb_aux.h xcb_event.h '/home/devel/building/work/pkg/usr/include/xcb'
+libtool: install: /usr/bin/install -c .libs/libxcb-util.so.1.0.0 /home/devel/building/work/pkg/usr/lib/libxcb-util.so.1.0.0
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libxcb-util.so.1.0.0 libxcb-util.so.1 || { rm -f libxcb-util.so.1 && ln -s libxcb-util.so.1.0.0 libxcb-util.so.1; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libxcb-util.so.1.0.0 libxcb-util.so || { rm -f libxcb-util.so && ln -s libxcb-util.so.1.0.0 libxcb-util.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxcb-util.lai /home/devel/building/work/pkg/usr/lib/libxcb-util.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make[2]: Leaving directory '/home/devel/building/work/src/xcb-util-0.4.1/src'
+make[1]: Leaving directory '/home/devel/building/work/src/xcb-util-0.4.1/src'
+make[1]: Entering directory '/home/devel/building/work/src/xcb-util-0.4.1'
+make[2]: Entering directory '/home/devel/building/work/src/xcb-util-0.4.1'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 xcb-atom.pc xcb-aux.pc xcb-event.pc xcb-util.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+make[2]: Leaving directory '/home/devel/building/work/src/xcb-util-0.4.1'
+make[1]: Leaving directory '/home/devel/building/work/src/xcb-util-0.4.1'
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 20:19 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 20:19 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 20:19 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 20:19 usr/include/xcb/
+-rw-r--r--  0 root   root      154 Feb  1 20:19 usr/include/xcb/xcb_util.h
+-rw-r--r--  0 root   root      361 Feb  1 20:19 usr/include/xcb/xcb_atom.h
+-rw-r--r--  0 root   root     6832 Feb  1 20:19 usr/include/xcb/xcb_aux.h
+-rw-r--r--  0 root   root     3000 Feb  1 20:19 usr/include/xcb/xcb_event.h
+-rwxr-xr-x  0 root   root    26880 Feb  1 20:19 usr/lib/libxcb-util.so.1.0.0
+lrwxrwxrwx  0 root   root        0 Feb  1 20:19 usr/lib/libxcb-util.so.1 -> libxcb-util.so.1.0.0
+lrwxrwxrwx  0 root   root        0 Feb  1 20:19 usr/lib/libxcb-util.so -> libxcb-util.so.1.0.0
+drwxr-xr-x  0 root   root        0 Feb  1 20:19 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      223 Feb  1 20:19 usr/lib/pkgconfig/xcb-atom.pc
+-rw-r--r--  0 root   root      232 Feb  1 20:19 usr/lib/pkgconfig/xcb-aux.pc
+-rw-r--r--  0 root   root      238 Feb  1 20:19 usr/lib/pkgconfig/xcb-event.pc
+-rw-r--r--  0 root   root      237 Feb  1 20:19 usr/lib/pkgconfig/xcb-util.pc
+=======> Building '/home/devel/packages/xcb-util#0.4.1-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling xcb-util 0.4.1-1
+prt-get: /usr/bin/pkgadd -u xcb-util#0.4.1-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 20:19:07 2024
+

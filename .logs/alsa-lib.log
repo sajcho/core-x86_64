@@ -1,0 +1,1191 @@
+prt-get: updating /usr/ports/opt-x86_64/alsa-lib
+prt-get: starting build Thu Feb  1 15:14:30 2024
+=======> Building '/home/devel/packages/alsa-lib#1.2.10-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/alsa-lib-1.2.10.tar.gz
++ build
++ cd alsa-lib-1.2.10
++ autoreconf -fiv
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force -I m4
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: aclocal --force -I m4
+autoreconf: running: /usr/bin/autoconf --force
+configure.ac:36: warning: The macro 'AC_LIBTOOL_DLOPEN' is obsolete.
+configure.ac:36: You should run autoupdate.
+m4/ltoptions.m4:113: AC_LIBTOOL_DLOPEN is expanded from...
+configure.ac:36: the top level
+configure.ac:36: warning: AC_LIBTOOL_DLOPEN: Remove this warning and the call to _LT_SET_OPTION when you
+configure.ac:36: put the 'dlopen' option into LT_INIT's first parameter.
+./lib/autoconf/general.m4:2434: AC_DIAGNOSE is expanded from...
+m4/ltoptions.m4:113: AC_LIBTOOL_DLOPEN is expanded from...
+configure.ac:36: the top level
+configure.ac:37: warning: The macro 'AM_PROG_LIBTOOL' is obsolete.
+configure.ac:37: You should run autoupdate.
+m4/libtool.m4:101: AM_PROG_LIBTOOL is expanded from...
+configure.ac:37: the top level
+configure.ac:42: warning: The macro 'AC_HEADER_STDC' is obsolete.
+configure.ac:42: You should run autoupdate.
+./lib/autoconf/headers.m4:663: AC_HEADER_STDC is expanded from...
+configure.ac:42: the top level
+configure.ac:48: warning: The macro 'AC_HEADER_TIME' is obsolete.
+configure.ac:48: You should run autoupdate.
+./lib/autoconf/headers.m4:702: AC_HEADER_TIME is expanded from...
+configure.ac:48: the top level
+configure.ac:52: warning: The macro 'AC_PROG_GCC_TRADITIONAL' is obsolete.
+configure.ac:52: You should run autoupdate.
+./lib/autoconf/c.m4:1676: AC_PROG_GCC_TRADITIONAL is expanded from...
+configure.ac:52: the top level
+configure.ac:244: warning: The macro 'AC_TRY_LINK' is obsolete.
+configure.ac:244: You should run autoupdate.
+./lib/autoconf/general.m4:2918: AC_TRY_LINK is expanded from...
+configure.ac:244: the top level
+configure.ac:351: warning: The macro 'AC_ERROR' is obsolete.
+configure.ac:351: You should run autoupdate.
+./lib/autoconf/oldnames.m4:34: AC_ERROR is expanded from...
+configure.ac:351: the top level
+configure.ac:526: warning: The macro 'AC_TRY_LINK' is obsolete.
+configure.ac:526: You should run autoupdate.
+./lib/autoconf/general.m4:2918: AC_TRY_LINK is expanded from...
+configure.ac:526: the top level
+configure.ac:538: warning: The macro 'AC_TRY_LINK' is obsolete.
+configure.ac:538: You should run autoupdate.
+./lib/autoconf/general.m4:2918: AC_TRY_LINK is expanded from...
+configure.ac:538: the top level
+configure.ac:722: warning: The macro 'AC_ERROR' is obsolete.
+configure.ac:722: You should run autoupdate.
+./lib/autoconf/oldnames.m4:34: AC_ERROR is expanded from...
+configure.ac:722: the top level
+configure.ac:724: warning: The macro 'AC_ERROR' is obsolete.
+configure.ac:724: You should run autoupdate.
+./lib/autoconf/oldnames.m4:34: AC_ERROR is expanded from...
+configure.ac:724: the top level
+configure.ac:750: warning: AC_OUTPUT should be used without arguments.
+configure.ac:750: You should run autoupdate.
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:30: installing './compile'
+configure.ac:15: installing './config.guess'
+configure.ac:15: installing './config.sub'
+configure.ac:16: installing './install-sh'
+configure.ac:16: installing './missing'
+alsalisp/Makefile.am: installing './depcomp'
+doc/pictures/Makefile.am:1: warning: wildcard *.gif: non-POSIX variable name
+doc/pictures/Makefile.am:1: (probably a GNU make extension)
+doc/pictures/Makefile.am:2: warning: wildcard *.puml: non-POSIX variable name
+doc/pictures/Makefile.am:2: (probably a GNU make extension)
+parallel-tests: installing './test-driver'
+autoreconf: './config.sub' is updated
+autoreconf: './config.guess' is updated
+autoreconf: './install-sh' is updated
+autoreconf: Leaving directory '.'
++ CFLAGS+=' -flto-partition=none'
++ ./configure --prefix=/usr --disable-python --with-plugindir=/usr/lib/alsa-lib --without-debug
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking whether make supports nested variables... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for sys/time.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking whether ln -s works... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... yes
+checking whether a program can dlopen itself... yes
+checking whether a statically linked program can dlopen itself... no
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking if gcc supports -Wl,--no-undefined flag... yes
+checking if gcc supports -Wl,-z,defs flag... yes
+checking for egrep... (cached) /usr/bin/grep -E
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for uselocale... yes
+checking for eaccess... yes
+checking for gcc option to enable large file support... none needed
+checking for library version... major 1 minor 2 subminor 10 extrastr  extraver 1000000
+checking for versioned symbols... yes
+checking for symbolic-functions... no
+checking for custom symbol prefixes... 
+checking for debug... no
+checking for tmpdir... /tmp
+checking for softfloat... no
+checking for LFS calls... yes
+checking for libdl... checking for library containing dlsym... none required
+checking for pthread... checking for pthread_join in -lpthread... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether PTHREAD_MUTEX_RECURSIVE is declared... yes
+checking for __thread... yes
+checking for librt... checking for clock_gettime in -lrt... yes
+checking for use of wordexp... no
+checking for endian.h... yes
+checking for sys/endian.h... no
+checking for sys/shm.h... yes
+checking for malloc.h... yes
+checking for resmgr support... no
+checking for aload* support... yes
+checking for ALSA device file directory... /dev/snd/
+checking for aload* device file directory... /dev/
+checking whether GCC supports builtin atomic intrinsics... yes
+checking for default lockless dmix... no
+checking for max number of cards... 32
+checking for thread-safe API functions... yes
+Making a symlink include/alsa
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/pictures/Makefile
+config.status: creating doc/doxygen.cfg
+config.status: creating include/Makefile
+config.status: creating include/sound/Makefile
+config.status: creating include/sound/uapi/Makefile
+config.status: creating src/Versions
+config.status: creating src/Makefile
+config.status: creating src/control/Makefile
+config.status: creating src/mixer/Makefile
+config.status: creating src/pcm/Makefile
+config.status: creating src/pcm/scopes/Makefile
+config.status: creating src/rawmidi/Makefile
+config.status: creating src/timer/Makefile
+config.status: creating src/hwdep/Makefile
+config.status: creating src/seq/Makefile
+config.status: creating src/ucm/Makefile
+config.status: creating src/alisp/Makefile
+config.status: creating src/topology/Makefile
+config.status: creating src/conf/Makefile
+config.status: creating src/conf/cards/Makefile
+config.status: creating src/conf/ctl/Makefile
+config.status: creating src/conf/pcm/Makefile
+config.status: creating modules/Makefile
+config.status: creating modules/mixer/Makefile
+config.status: creating modules/mixer/simple/Makefile
+config.status: creating alsalisp/Makefile
+config.status: creating aserver/Makefile
+config.status: creating test/Makefile
+config.status: creating test/lsb/Makefile
+config.status: creating utils/Makefile
+config.status: creating utils/alsa-lib.spec
+config.status: creating utils/alsa.pc
+config.status: creating utils/alsa-topology.pc
+config.status: creating include/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+Creating asoundlib.h...
++ make V=1
+Making all in doc
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/doc'
+Making all in pictures
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/doc/pictures'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/doc/pictures'
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/doc'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/doc'
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/doc'
+Making all in include
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/include'
+make  all-recursive
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/include'
+Making all in sound
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/include/sound'
+Making all in uapi
+make[4]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/include/sound/uapi'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/include/sound/uapi'
+make[4]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/include/sound'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/include/sound'
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/include/sound'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/include'
+if ! test -r alsa/local.h; then \
+	ln -s ../include alsa; \
+fi
+Updating version.h
+for f in asoundlib.h version.h; do \
+	if ! test -r ../include/$f; then \
+		ln -s /home/devel/building/work/src/alsa-lib-1.2.10/include/$f ../include/$f; \
+	fi; \
+done
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/include'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/include'
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/include'
+Making all in src
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src'
+Making all in control
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/control'
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT cards.lo -MD -MP -MF .deps/cards.Tpo -c -o cards.lo cards.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT tlv.lo -MD -MP -MF .deps/tlv.Tpo -c -o tlv.lo tlv.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT eld.lo -MD -MP -MF .deps/eld.Tpo -c -o eld.lo eld.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT namehint.lo -MD -MP -MF .deps/namehint.Tpo -c -o namehint.lo namehint.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT hcontrol.lo -MD -MP -MF .deps/hcontrol.Tpo -c -o hcontrol.lo hcontrol.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT control.lo -MD -MP -MF .deps/control.Tpo -c -o control.lo control.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT control_hw.lo -MD -MP -MF .deps/control_hw.Tpo -c -o control_hw.lo control_hw.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT control_empty.lo -MD -MP -MF .deps/control_empty.Tpo -c -o control_empty.lo control_empty.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT hcontrol.lo -MD -MP -MF .deps/hcontrol.Tpo -c hcontrol.c  -fPIC -DPIC -o .libs/hcontrol.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT control.lo -MD -MP -MF .deps/control.Tpo -c control.c  -fPIC -DPIC -o .libs/control.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT tlv.lo -MD -MP -MF .deps/tlv.Tpo -c tlv.c  -fPIC -DPIC -o .libs/tlv.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT control_empty.lo -MD -MP -MF .deps/control_empty.Tpo -c control_empty.c  -fPIC -DPIC -o .libs/control_empty.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT eld.lo -MD -MP -MF .deps/eld.Tpo -c eld.c  -fPIC -DPIC -o .libs/eld.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT namehint.lo -MD -MP -MF .deps/namehint.Tpo -c namehint.c  -fPIC -DPIC -o .libs/namehint.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT cards.lo -MD -MP -MF .deps/cards.Tpo -c cards.c  -fPIC -DPIC -o .libs/cards.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT control_hw.lo -MD -MP -MF .deps/control_hw.Tpo -c control_hw.c  -fPIC -DPIC -o .libs/control_hw.o
+mv -f .deps/control_empty.Tpo .deps/control_empty.Plo
+mv -f .deps/eld.Tpo .deps/eld.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT setup.lo -MD -MP -MF .deps/setup.Tpo -c -o setup.lo setup.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ctlparse.lo -MD -MP -MF .deps/ctlparse.Tpo -c -o ctlparse.lo ctlparse.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT setup.lo -MD -MP -MF .deps/setup.Tpo -c setup.c  -fPIC -DPIC -o .libs/setup.o
+mv -f .deps/cards.Tpo .deps/cards.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT control_plugin.lo -MD -MP -MF .deps/control_plugin.Tpo -c -o control_plugin.lo control_plugin.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ctlparse.lo -MD -MP -MF .deps/ctlparse.Tpo -c ctlparse.c  -fPIC -DPIC -o .libs/ctlparse.o
+mv -f .deps/tlv.Tpo .deps/tlv.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT control_symbols.lo -MD -MP -MF .deps/control_symbols.Tpo -c -o control_symbols.lo control_symbols.c
+mv -f .deps/control_hw.Tpo .deps/control_hw.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT control_remap.lo -MD -MP -MF .deps/control_remap.Tpo -c -o control_remap.lo control_remap.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT control_symbols.lo -MD -MP -MF .deps/control_symbols.Tpo -c control_symbols.c  -fPIC -DPIC -o .libs/control_symbols.o
+mv -f .deps/control_symbols.Tpo .deps/control_symbols.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT control_shm.lo -MD -MP -MF .deps/control_shm.Tpo -c -o control_shm.lo control_shm.c
+mv -f .deps/hcontrol.Tpo .deps/hcontrol.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT control_ext.lo -MD -MP -MF .deps/control_ext.Tpo -c -o control_ext.lo control_ext.c
+mv -f .deps/namehint.Tpo .deps/namehint.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT control_remap.lo -MD -MP -MF .deps/control_remap.Tpo -c control_remap.c  -fPIC -DPIC -o .libs/control_remap.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT control_plugin.lo -MD -MP -MF .deps/control_plugin.Tpo -c control_plugin.c  -fPIC -DPIC -o .libs/control_plugin.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT control_shm.lo -MD -MP -MF .deps/control_shm.Tpo -c control_shm.c  -fPIC -DPIC -o .libs/control_shm.o
+mv -f .deps/control_plugin.Tpo .deps/control_plugin.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT control_ext.lo -MD -MP -MF .deps/control_ext.Tpo -c control_ext.c  -fPIC -DPIC -o .libs/control_ext.o
+mv -f .deps/setup.Tpo .deps/setup.Plo
+mv -f .deps/ctlparse.Tpo .deps/ctlparse.Plo
+mv -f .deps/control_ext.Tpo .deps/control_ext.Plo
+mv -f .deps/control.Tpo .deps/control.Plo
+mv -f .deps/control_shm.Tpo .deps/control_shm.Plo
+mv -f .deps/control_remap.Tpo .deps/control_remap.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none   -o libcontrol.la  cards.lo tlv.lo eld.lo namehint.lo hcontrol.lo control.lo control_hw.lo control_empty.lo setup.lo ctlparse.lo control_plugin.lo control_symbols.lo control_remap.lo control_shm.lo control_ext.lo  
+libtool: link: ar cr .libs/libcontrol.a .libs/cards.o .libs/tlv.o .libs/eld.o .libs/namehint.o .libs/hcontrol.o .libs/control.o .libs/control_hw.o .libs/control_empty.o .libs/setup.o .libs/ctlparse.o .libs/control_plugin.o .libs/control_symbols.o .libs/control_remap.o .libs/control_shm.o .libs/control_ext.o 
+libtool: link: ranlib .libs/libcontrol.a
+libtool: link: ( cd ".libs" && rm -f "libcontrol.la" && ln -s "../libcontrol.la" "libcontrol.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/control'
+Making all in mixer
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/mixer'
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT bag.lo -MD -MP -MF .deps/bag.Tpo -c -o bag.lo bag.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT mixer.lo -MD -MP -MF .deps/mixer.Tpo -c -o mixer.lo mixer.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT simple.lo -MD -MP -MF .deps/simple.Tpo -c -o simple.lo simple.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT simple_none.lo -MD -MP -MF .deps/simple_none.Tpo -c -o simple_none.lo simple_none.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT simple_abst.lo -MD -MP -MF .deps/simple_abst.Tpo -c -o simple_abst.lo simple_abst.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT bag.lo -MD -MP -MF .deps/bag.Tpo -c bag.c  -fPIC -DPIC -o .libs/bag.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT simple_none.lo -MD -MP -MF .deps/simple_none.Tpo -c simple_none.c  -fPIC -DPIC -o .libs/simple_none.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT simple.lo -MD -MP -MF .deps/simple.Tpo -c simple.c  -fPIC -DPIC -o .libs/simple.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT simple_abst.lo -MD -MP -MF .deps/simple_abst.Tpo -c simple_abst.c  -fPIC -DPIC -o .libs/simple_abst.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT mixer.lo -MD -MP -MF .deps/mixer.Tpo -c mixer.c  -fPIC -DPIC -o .libs/mixer.o
+mv -f .deps/bag.Tpo .deps/bag.Plo
+mv -f .deps/simple_abst.Tpo .deps/simple_abst.Plo
+mv -f .deps/mixer.Tpo .deps/mixer.Plo
+mv -f .deps/simple.Tpo .deps/simple.Plo
+mv -f .deps/simple_none.Tpo .deps/simple_none.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none   -o libmixer.la  bag.lo mixer.lo simple.lo simple_none.lo simple_abst.lo  
+libtool: link: ar cr .libs/libmixer.a .libs/bag.o .libs/mixer.o .libs/simple.o .libs/simple_none.o .libs/simple_abst.o 
+libtool: link: ranlib .libs/libmixer.a
+libtool: link: ( cd ".libs" && rm -f "libmixer.la" && ln -s "../libmixer.la" "libmixer.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/mixer'
+Making all in pcm
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/pcm'
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT mask.lo -MD -MP -MF .deps/mask.Tpo -c -o mask.lo mask.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT interval.lo -MD -MP -MF .deps/interval.Tpo -c -o interval.lo interval.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm.lo -MD -MP -MF .deps/pcm.Tpo -c -o pcm.lo pcm.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_params.lo -MD -MP -MF .deps/pcm_params.Tpo -c -o pcm_params.lo pcm_params.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_simple.lo -MD -MP -MF .deps/pcm_simple.Tpo -c -o pcm_simple.lo pcm_simple.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_hw.lo -MD -MP -MF .deps/pcm_hw.Tpo -c -o pcm_hw.lo pcm_hw.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_misc.lo -MD -MP -MF .deps/pcm_misc.Tpo -c -o pcm_misc.lo pcm_misc.c
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/pcm'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/pcm'
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_mmap.lo -MD -MP -MF .deps/pcm_mmap.Tpo -c -o pcm_mmap.lo pcm_mmap.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm.lo -MD -MP -MF .deps/pcm.Tpo -c pcm.c  -fPIC -DPIC -o .libs/pcm.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT mask.lo -MD -MP -MF .deps/mask.Tpo -c mask.c  -fPIC -DPIC -o .libs/mask.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_params.lo -MD -MP -MF .deps/pcm_params.Tpo -c pcm_params.c  -fPIC -DPIC -o .libs/pcm_params.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_misc.lo -MD -MP -MF .deps/pcm_misc.Tpo -c pcm_misc.c  -fPIC -DPIC -o .libs/pcm_misc.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_hw.lo -MD -MP -MF .deps/pcm_hw.Tpo -c pcm_hw.c  -fPIC -DPIC -o .libs/pcm_hw.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_mmap.lo -MD -MP -MF .deps/pcm_mmap.Tpo -c pcm_mmap.c  -fPIC -DPIC -o .libs/pcm_mmap.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_simple.lo -MD -MP -MF .deps/pcm_simple.Tpo -c pcm_simple.c  -fPIC -DPIC -o .libs/pcm_simple.o
+mv -f .deps/mask.Tpo .deps/mask.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_symbols.lo -MD -MP -MF .deps/pcm_symbols.Tpo -c -o pcm_symbols.lo pcm_symbols.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_symbols.lo -MD -MP -MF .deps/pcm_symbols.Tpo -c pcm_symbols.c  -fPIC -DPIC -o .libs/pcm_symbols.o
+mv -f .deps/pcm_symbols.Tpo .deps/pcm_symbols.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_generic.lo -MD -MP -MF .deps/pcm_generic.Tpo -c -o pcm_generic.lo pcm_generic.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT interval.lo -MD -MP -MF .deps/interval.Tpo -c interval.c  -fPIC -DPIC -o .libs/interval.o
+mv -f .deps/pcm_simple.Tpo .deps/pcm_simple.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_plugin.lo -MD -MP -MF .deps/pcm_plugin.Tpo -c -o pcm_plugin.lo pcm_plugin.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_generic.lo -MD -MP -MF .deps/pcm_generic.Tpo -c pcm_generic.c  -fPIC -DPIC -o .libs/pcm_generic.o
+mv -f .deps/pcm_misc.Tpo .deps/pcm_misc.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_copy.lo -MD -MP -MF .deps/pcm_copy.Tpo -c -o pcm_copy.lo pcm_copy.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_copy.lo -MD -MP -MF .deps/pcm_copy.Tpo -c pcm_copy.c  -fPIC -DPIC -o .libs/pcm_copy.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_plugin.lo -MD -MP -MF .deps/pcm_plugin.Tpo -c pcm_plugin.c  -fPIC -DPIC -o .libs/pcm_plugin.o
+mv -f .deps/pcm_mmap.Tpo .deps/pcm_mmap.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_linear.lo -MD -MP -MF .deps/pcm_linear.Tpo -c -o pcm_linear.lo pcm_linear.c
+mv -f .deps/pcm_generic.Tpo .deps/pcm_generic.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_route.lo -MD -MP -MF .deps/pcm_route.Tpo -c -o pcm_route.lo pcm_route.c
+mv -f .deps/pcm_copy.Tpo .deps/pcm_copy.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_mulaw.lo -MD -MP -MF .deps/pcm_mulaw.Tpo -c -o pcm_mulaw.lo pcm_mulaw.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_linear.lo -MD -MP -MF .deps/pcm_linear.Tpo -c pcm_linear.c  -fPIC -DPIC -o .libs/pcm_linear.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_route.lo -MD -MP -MF .deps/pcm_route.Tpo -c pcm_route.c  -fPIC -DPIC -o .libs/pcm_route.o
+mv -f .deps/interval.Tpo .deps/interval.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_alaw.lo -MD -MP -MF .deps/pcm_alaw.Tpo -c -o pcm_alaw.lo pcm_alaw.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_mulaw.lo -MD -MP -MF .deps/pcm_mulaw.Tpo -c pcm_mulaw.c  -fPIC -DPIC -o .libs/pcm_mulaw.o
+mv -f .deps/pcm_plugin.Tpo .deps/pcm_plugin.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_adpcm.lo -MD -MP -MF .deps/pcm_adpcm.Tpo -c -o pcm_adpcm.lo pcm_adpcm.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_adpcm.lo -MD -MP -MF .deps/pcm_adpcm.Tpo -c pcm_adpcm.c  -fPIC -DPIC -o .libs/pcm_adpcm.o
+mv -f .deps/pcm_hw.Tpo .deps/pcm_hw.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_rate.lo -MD -MP -MF .deps/pcm_rate.Tpo -c -o pcm_rate.lo pcm_rate.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_alaw.lo -MD -MP -MF .deps/pcm_alaw.Tpo -c pcm_alaw.c  -fPIC -DPIC -o .libs/pcm_alaw.o
+mv -f .deps/pcm_params.Tpo .deps/pcm_params.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_rate_linear.lo -MD -MP -MF .deps/pcm_rate_linear.Tpo -c -o pcm_rate_linear.lo pcm_rate_linear.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_rate_linear.lo -MD -MP -MF .deps/pcm_rate_linear.Tpo -c pcm_rate_linear.c  -fPIC -DPIC -o .libs/pcm_rate_linear.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_rate.lo -MD -MP -MF .deps/pcm_rate.Tpo -c pcm_rate.c  -fPIC -DPIC -o .libs/pcm_rate.o
+mv -f .deps/pcm_mulaw.Tpo .deps/pcm_mulaw.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_plug.lo -MD -MP -MF .deps/pcm_plug.Tpo -c -o pcm_plug.lo pcm_plug.c
+mv -f .deps/pcm_linear.Tpo .deps/pcm_linear.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_multi.lo -MD -MP -MF .deps/pcm_multi.Tpo -c -o pcm_multi.lo pcm_multi.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_plug.lo -MD -MP -MF .deps/pcm_plug.Tpo -c pcm_plug.c  -fPIC -DPIC -o .libs/pcm_plug.o
+mv -f .deps/pcm_alaw.Tpo .deps/pcm_alaw.Plo
+mv -f .deps/pcm_adpcm.Tpo .deps/pcm_adpcm.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_shm.lo -MD -MP -MF .deps/pcm_shm.Tpo -c -o pcm_shm.lo pcm_shm.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_file.lo -MD -MP -MF .deps/pcm_file.Tpo -c -o pcm_file.lo pcm_file.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_multi.lo -MD -MP -MF .deps/pcm_multi.Tpo -c pcm_multi.c  -fPIC -DPIC -o .libs/pcm_multi.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_shm.lo -MD -MP -MF .deps/pcm_shm.Tpo -c pcm_shm.c  -fPIC -DPIC -o .libs/pcm_shm.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_file.lo -MD -MP -MF .deps/pcm_file.Tpo -c pcm_file.c  -fPIC -DPIC -o .libs/pcm_file.o
+mv -f .deps/pcm_rate_linear.Tpo .deps/pcm_rate_linear.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_null.lo -MD -MP -MF .deps/pcm_null.Tpo -c -o pcm_null.lo pcm_null.c
+mv -f .deps/pcm_route.Tpo .deps/pcm_route.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_empty.lo -MD -MP -MF .deps/pcm_empty.Tpo -c -o pcm_empty.lo pcm_empty.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_null.lo -MD -MP -MF .deps/pcm_null.Tpo -c pcm_null.c  -fPIC -DPIC -o .libs/pcm_null.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_empty.lo -MD -MP -MF .deps/pcm_empty.Tpo -c pcm_empty.c  -fPIC -DPIC -o .libs/pcm_empty.o
+mv -f .deps/pcm_shm.Tpo .deps/pcm_shm.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_share.lo -MD -MP -MF .deps/pcm_share.Tpo -c -o pcm_share.lo pcm_share.c
+mv -f .deps/pcm_plug.Tpo .deps/pcm_plug.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_meter.lo -MD -MP -MF .deps/pcm_meter.Tpo -c -o pcm_meter.lo pcm_meter.c
+mv -f .deps/pcm_rate.Tpo .deps/pcm_rate.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_hooks.lo -MD -MP -MF .deps/pcm_hooks.Tpo -c -o pcm_hooks.lo pcm_hooks.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_share.lo -MD -MP -MF .deps/pcm_share.Tpo -c pcm_share.c  -fPIC -DPIC -o .libs/pcm_share.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_meter.lo -MD -MP -MF .deps/pcm_meter.Tpo -c pcm_meter.c  -fPIC -DPIC -o .libs/pcm_meter.o
+mv -f .deps/pcm_empty.Tpo .deps/pcm_empty.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_lfloat.lo -MD -MP -MF .deps/pcm_lfloat.Tpo -c -o pcm_lfloat.lo pcm_lfloat.c
+mv -f .deps/pcm_null.Tpo .deps/pcm_null.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_ladspa.lo -MD -MP -MF .deps/pcm_ladspa.Tpo -c -o pcm_ladspa.lo pcm_ladspa.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_lfloat.lo -MD -MP -MF .deps/pcm_lfloat.Tpo -c pcm_lfloat.c  -fPIC -DPIC -o .libs/pcm_lfloat.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_hooks.lo -MD -MP -MF .deps/pcm_hooks.Tpo -c pcm_hooks.c  -fPIC -DPIC -o .libs/pcm_hooks.o
+mv -f .deps/pcm_file.Tpo .deps/pcm_file.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_dmix.lo -MD -MP -MF .deps/pcm_dmix.Tpo -c -o pcm_dmix.lo pcm_dmix.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_ladspa.lo -MD -MP -MF .deps/pcm_ladspa.Tpo -c pcm_ladspa.c  -fPIC -DPIC -o .libs/pcm_ladspa.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_dmix.lo -MD -MP -MF .deps/pcm_dmix.Tpo -c pcm_dmix.c  -fPIC -DPIC -o .libs/pcm_dmix.o
+mv -f .deps/pcm_multi.Tpo .deps/pcm_multi.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_dshare.lo -MD -MP -MF .deps/pcm_dshare.Tpo -c -o pcm_dshare.lo pcm_dshare.c
+mv -f .deps/pcm_hooks.Tpo .deps/pcm_hooks.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_dsnoop.lo -MD -MP -MF .deps/pcm_dsnoop.Tpo -c -o pcm_dsnoop.lo pcm_dsnoop.c
+mv -f .deps/pcm_lfloat.Tpo .deps/pcm_lfloat.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_direct.lo -MD -MP -MF .deps/pcm_direct.Tpo -c -o pcm_direct.lo pcm_direct.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_dshare.lo -MD -MP -MF .deps/pcm_dshare.Tpo -c pcm_dshare.c  -fPIC -DPIC -o .libs/pcm_dshare.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_direct.lo -MD -MP -MF .deps/pcm_direct.Tpo -c pcm_direct.c  -fPIC -DPIC -o .libs/pcm_direct.o
+mv -f .deps/pcm_meter.Tpo .deps/pcm_meter.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_asym.lo -MD -MP -MF .deps/pcm_asym.Tpo -c -o pcm_asym.lo pcm_asym.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_dsnoop.lo -MD -MP -MF .deps/pcm_dsnoop.Tpo -c pcm_dsnoop.c  -fPIC -DPIC -o .libs/pcm_dsnoop.o
+mv -f .deps/pcm.Tpo .deps/pcm.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_iec958.lo -MD -MP -MF .deps/pcm_iec958.Tpo -c -o pcm_iec958.lo pcm_iec958.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_asym.lo -MD -MP -MF .deps/pcm_asym.Tpo -c pcm_asym.c  -fPIC -DPIC -o .libs/pcm_asym.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_iec958.lo -MD -MP -MF .deps/pcm_iec958.Tpo -c pcm_iec958.c  -fPIC -DPIC -o .libs/pcm_iec958.o
+mv -f .deps/pcm_share.Tpo .deps/pcm_share.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_softvol.lo -MD -MP -MF .deps/pcm_softvol.Tpo -c -o pcm_softvol.lo pcm_softvol.c
+mv -f .deps/pcm_asym.Tpo .deps/pcm_asym.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_extplug.lo -MD -MP -MF .deps/pcm_extplug.Tpo -c -o pcm_extplug.lo pcm_extplug.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_softvol.lo -MD -MP -MF .deps/pcm_softvol.Tpo -c pcm_softvol.c  -fPIC -DPIC -o .libs/pcm_softvol.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_extplug.lo -MD -MP -MF .deps/pcm_extplug.Tpo -c pcm_extplug.c  -fPIC -DPIC -o .libs/pcm_extplug.o
+mv -f .deps/pcm_dsnoop.Tpo .deps/pcm_dsnoop.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_ioplug.lo -MD -MP -MF .deps/pcm_ioplug.Tpo -c -o pcm_ioplug.lo pcm_ioplug.c
+mv -f .deps/pcm_dshare.Tpo .deps/pcm_dshare.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_mmap_emul.lo -MD -MP -MF .deps/pcm_mmap_emul.Tpo -c -o pcm_mmap_emul.lo pcm_mmap_emul.c
+mv -f .deps/pcm_dmix.Tpo .deps/pcm_dmix.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_ioplug.lo -MD -MP -MF .deps/pcm_ioplug.Tpo -c pcm_ioplug.c  -fPIC -DPIC -o .libs/pcm_ioplug.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm_mmap_emul.lo -MD -MP -MF .deps/pcm_mmap_emul.Tpo -c pcm_mmap_emul.c  -fPIC -DPIC -o .libs/pcm_mmap_emul.o
+mv -f .deps/pcm_ladspa.Tpo .deps/pcm_ladspa.Plo
+mv -f .deps/pcm_iec958.Tpo .deps/pcm_iec958.Plo
+mv -f .deps/pcm_extplug.Tpo .deps/pcm_extplug.Plo
+mv -f .deps/pcm_mmap_emul.Tpo .deps/pcm_mmap_emul.Plo
+mv -f .deps/pcm_direct.Tpo .deps/pcm_direct.Plo
+mv -f .deps/pcm_ioplug.Tpo .deps/pcm_ioplug.Plo
+mv -f .deps/pcm_softvol.Tpo .deps/pcm_softvol.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none   -o libpcm.la  mask.lo interval.lo pcm.lo pcm_params.lo pcm_simple.lo pcm_hw.lo pcm_misc.lo pcm_mmap.lo pcm_symbols.lo pcm_generic.lo pcm_plugin.lo pcm_copy.lo pcm_linear.lo pcm_route.lo pcm_mulaw.lo pcm_alaw.lo pcm_adpcm.lo pcm_rate.lo pcm_rate_linear.lo pcm_plug.lo pcm_multi.lo pcm_shm.lo pcm_file.lo pcm_null.lo pcm_empty.lo pcm_share.lo pcm_meter.lo pcm_hooks.lo pcm_lfloat.lo pcm_ladspa.lo pcm_dmix.lo pcm_dshare.lo pcm_dsnoop.lo pcm_direct.lo   pcm_asym.lo pcm_iec958.lo pcm_softvol.lo pcm_extplug.lo pcm_ioplug.lo pcm_mmap_emul.lo  
+libtool: link: ar cr .libs/libpcm.a .libs/mask.o .libs/interval.o .libs/pcm.o .libs/pcm_params.o .libs/pcm_simple.o .libs/pcm_hw.o .libs/pcm_misc.o .libs/pcm_mmap.o .libs/pcm_symbols.o .libs/pcm_generic.o .libs/pcm_plugin.o .libs/pcm_copy.o .libs/pcm_linear.o .libs/pcm_route.o .libs/pcm_mulaw.o .libs/pcm_alaw.o .libs/pcm_adpcm.o .libs/pcm_rate.o .libs/pcm_rate_linear.o .libs/pcm_plug.o .libs/pcm_multi.o .libs/pcm_shm.o .libs/pcm_file.o .libs/pcm_null.o .libs/pcm_empty.o .libs/pcm_share.o .libs/pcm_meter.o .libs/pcm_hooks.o .libs/pcm_lfloat.o .libs/pcm_ladspa.o .libs/pcm_dmix.o .libs/pcm_dshare.o .libs/pcm_dsnoop.o .libs/pcm_direct.o .libs/pcm_asym.o .libs/pcm_iec958.o .libs/pcm_softvol.o .libs/pcm_extplug.o .libs/pcm_ioplug.o .libs/pcm_mmap_emul.o 
+libtool: link: ranlib .libs/libpcm.a
+libtool: link: ( cd ".libs" && rm -f "libpcm.la" && ln -s "../libpcm.la" "libpcm.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/pcm'
+Making all in timer
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/timer'
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT timer.lo -MD -MP -MF .deps/timer.Tpo -c -o timer.lo timer.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT timer_hw.lo -MD -MP -MF .deps/timer_hw.Tpo -c -o timer_hw.lo timer_hw.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT timer_query.lo -MD -MP -MF .deps/timer_query.Tpo -c -o timer_query.lo timer_query.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT timer_query_hw.lo -MD -MP -MF .deps/timer_query_hw.Tpo -c -o timer_query_hw.lo timer_query_hw.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT timer_symbols.lo -MD -MP -MF .deps/timer_symbols.Tpo -c -o timer_symbols.lo timer_symbols.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT timer.lo -MD -MP -MF .deps/timer.Tpo -c timer.c  -fPIC -DPIC -o .libs/timer.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT timer_hw.lo -MD -MP -MF .deps/timer_hw.Tpo -c timer_hw.c  -fPIC -DPIC -o .libs/timer_hw.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT timer_query_hw.lo -MD -MP -MF .deps/timer_query_hw.Tpo -c timer_query_hw.c  -fPIC -DPIC -o .libs/timer_query_hw.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT timer_query.lo -MD -MP -MF .deps/timer_query.Tpo -c timer_query.c  -fPIC -DPIC -o .libs/timer_query.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT timer_symbols.lo -MD -MP -MF .deps/timer_symbols.Tpo -c timer_symbols.c  -fPIC -DPIC -o .libs/timer_symbols.o
+mv -f .deps/timer_symbols.Tpo .deps/timer_symbols.Plo
+mv -f .deps/timer_query_hw.Tpo .deps/timer_query_hw.Plo
+mv -f .deps/timer_query.Tpo .deps/timer_query.Plo
+mv -f .deps/timer_hw.Tpo .deps/timer_hw.Plo
+mv -f .deps/timer.Tpo .deps/timer.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none   -o libtimer.la  timer.lo timer_hw.lo timer_query.lo timer_query_hw.lo timer_symbols.lo  
+libtool: link: ar cr .libs/libtimer.a .libs/timer.o .libs/timer_hw.o .libs/timer_query.o .libs/timer_query_hw.o .libs/timer_symbols.o 
+libtool: link: ranlib .libs/libtimer.a
+libtool: link: ( cd ".libs" && rm -f "libtimer.la" && ln -s "../libtimer.la" "libtimer.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/timer'
+Making all in rawmidi
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/rawmidi'
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT rawmidi.lo -MD -MP -MF .deps/rawmidi.Tpo -c -o rawmidi.lo rawmidi.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT rawmidi_hw.lo -MD -MP -MF .deps/rawmidi_hw.Tpo -c -o rawmidi_hw.lo rawmidi_hw.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT rawmidi_symbols.lo -MD -MP -MF .deps/rawmidi_symbols.Tpo -c -o rawmidi_symbols.lo rawmidi_symbols.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ump.lo -MD -MP -MF .deps/ump.Tpo -c -o ump.lo ump.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT rawmidi_virt.lo -MD -MP -MF .deps/rawmidi_virt.Tpo -c -o rawmidi_virt.lo rawmidi_virt.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT rawmidi_virt.lo -MD -MP -MF .deps/rawmidi_virt.Tpo -c rawmidi_virt.c  -fPIC -DPIC -o .libs/rawmidi_virt.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ump.lo -MD -MP -MF .deps/ump.Tpo -c ump.c  -fPIC -DPIC -o .libs/ump.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT rawmidi.lo -MD -MP -MF .deps/rawmidi.Tpo -c rawmidi.c  -fPIC -DPIC -o .libs/rawmidi.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT rawmidi_hw.lo -MD -MP -MF .deps/rawmidi_hw.Tpo -c rawmidi_hw.c  -fPIC -DPIC -o .libs/rawmidi_hw.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT rawmidi_symbols.lo -MD -MP -MF .deps/rawmidi_symbols.Tpo -c rawmidi_symbols.c  -fPIC -DPIC -o .libs/rawmidi_symbols.o
+mv -f .deps/rawmidi_symbols.Tpo .deps/rawmidi_symbols.Plo
+mv -f .deps/rawmidi_virt.Tpo .deps/rawmidi_virt.Plo
+mv -f .deps/ump.Tpo .deps/ump.Plo
+mv -f .deps/rawmidi_hw.Tpo .deps/rawmidi_hw.Plo
+mv -f .deps/rawmidi.Tpo .deps/rawmidi.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none   -o librawmidi.la  rawmidi.lo rawmidi_hw.lo rawmidi_symbols.lo ump.lo rawmidi_virt.lo  
+libtool: link: ar cr .libs/librawmidi.a .libs/rawmidi.o .libs/rawmidi_hw.o .libs/rawmidi_symbols.o .libs/ump.o .libs/rawmidi_virt.o 
+libtool: link: ranlib .libs/librawmidi.a
+libtool: link: ( cd ".libs" && rm -f "librawmidi.la" && ln -s "../librawmidi.la" "librawmidi.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/rawmidi'
+Making all in hwdep
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/hwdep'
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT hwdep.lo -MD -MP -MF .deps/hwdep.Tpo -c -o hwdep.lo hwdep.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT hwdep_hw.lo -MD -MP -MF .deps/hwdep_hw.Tpo -c -o hwdep_hw.lo hwdep_hw.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT hwdep_symbols.lo -MD -MP -MF .deps/hwdep_symbols.Tpo -c -o hwdep_symbols.lo hwdep_symbols.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT hwdep_symbols.lo -MD -MP -MF .deps/hwdep_symbols.Tpo -c hwdep_symbols.c  -fPIC -DPIC -o .libs/hwdep_symbols.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT hwdep.lo -MD -MP -MF .deps/hwdep.Tpo -c hwdep.c  -fPIC -DPIC -o .libs/hwdep.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT hwdep_hw.lo -MD -MP -MF .deps/hwdep_hw.Tpo -c hwdep_hw.c  -fPIC -DPIC -o .libs/hwdep_hw.o
+mv -f .deps/hwdep_symbols.Tpo .deps/hwdep_symbols.Plo
+mv -f .deps/hwdep_hw.Tpo .deps/hwdep_hw.Plo
+mv -f .deps/hwdep.Tpo .deps/hwdep.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none   -o libhwdep.la  hwdep.lo hwdep_hw.lo hwdep_symbols.lo  
+libtool: link: ar cr .libs/libhwdep.a .libs/hwdep.o .libs/hwdep_hw.o .libs/hwdep_symbols.o 
+libtool: link: ranlib .libs/libhwdep.a
+libtool: link: ( cd ".libs" && rm -f "libhwdep.la" && ln -s "../libhwdep.la" "libhwdep.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/hwdep'
+Making all in seq
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/seq'
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT seq_hw.lo -MD -MP -MF .deps/seq_hw.Tpo -c -o seq_hw.lo seq_hw.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT seq.lo -MD -MP -MF .deps/seq.Tpo -c -o seq.lo seq.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT seq_event.lo -MD -MP -MF .deps/seq_event.Tpo -c -o seq_event.lo seq_event.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT seqmid.lo -MD -MP -MF .deps/seqmid.Tpo -c -o seqmid.lo seqmid.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT seq_midi_event.lo -MD -MP -MF .deps/seq_midi_event.Tpo -c -o seq_midi_event.lo seq_midi_event.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT seq_symbols.lo -MD -MP -MF .deps/seq_symbols.Tpo -c -o seq_symbols.lo seq_symbols.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT seq_old.lo -MD -MP -MF .deps/seq_old.Tpo -c -o seq_old.lo seq_old.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT seq_event.lo -MD -MP -MF .deps/seq_event.Tpo -c seq_event.c  -fPIC -DPIC -o .libs/seq_event.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT seq_midi_event.lo -MD -MP -MF .deps/seq_midi_event.Tpo -c seq_midi_event.c  -fPIC -DPIC -o .libs/seq_midi_event.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT seq_old.lo -MD -MP -MF .deps/seq_old.Tpo -c seq_old.c  -fPIC -DPIC -o .libs/seq_old.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT seqmid.lo -MD -MP -MF .deps/seqmid.Tpo -c seqmid.c  -fPIC -DPIC -o .libs/seqmid.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT seq_symbols.lo -MD -MP -MF .deps/seq_symbols.Tpo -c seq_symbols.c  -fPIC -DPIC -o .libs/seq_symbols.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT seq_hw.lo -MD -MP -MF .deps/seq_hw.Tpo -c seq_hw.c  -fPIC -DPIC -o .libs/seq_hw.o
+mv -f .deps/seq_symbols.Tpo .deps/seq_symbols.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT seq.lo -MD -MP -MF .deps/seq.Tpo -c seq.c  -fPIC -DPIC -o .libs/seq.o
+mv -f .deps/seq_event.Tpo .deps/seq_event.Plo
+mv -f .deps/seq_old.Tpo .deps/seq_old.Plo
+mv -f .deps/seqmid.Tpo .deps/seqmid.Plo
+mv -f .deps/seq_midi_event.Tpo .deps/seq_midi_event.Plo
+mv -f .deps/seq_hw.Tpo .deps/seq_hw.Plo
+mv -f .deps/seq.Tpo .deps/seq.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none   -o libseq.la  seq_hw.lo seq.lo seq_event.lo seqmid.lo seq_midi_event.lo seq_symbols.lo seq_old.lo  
+libtool: link: ar cr .libs/libseq.a .libs/seq_hw.o .libs/seq.o .libs/seq_event.o .libs/seqmid.o .libs/seq_midi_event.o .libs/seq_symbols.o .libs/seq_old.o 
+libtool: link: ranlib .libs/libseq.a
+libtool: link: ( cd ".libs" && rm -f "libseq.la" && ln -s "../libseq.la" "libseq.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/seq'
+Making all in ucm
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/ucm'
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT utils.lo -MD -MP -MF .deps/utils.Tpo -c -o utils.lo utils.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT parser.lo -MD -MP -MF .deps/parser.Tpo -c -o parser.lo parser.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ucm_cond.lo -MD -MP -MF .deps/ucm_cond.Tpo -c -o ucm_cond.lo ucm_cond.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ucm_subs.lo -MD -MP -MF .deps/ucm_subs.Tpo -c -o ucm_subs.lo ucm_subs.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ucm_include.lo -MD -MP -MF .deps/ucm_include.Tpo -c -o ucm_include.lo ucm_include.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ucm_regex.lo -MD -MP -MF .deps/ucm_regex.Tpo -c -o ucm_regex.lo ucm_regex.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ucm_exec.lo -MD -MP -MF .deps/ucm_exec.Tpo -c -o ucm_exec.lo ucm_exec.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT main.lo -MD -MP -MF .deps/main.Tpo -c -o main.lo main.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ucm_cond.lo -MD -MP -MF .deps/ucm_cond.Tpo -c ucm_cond.c  -fPIC -DPIC -o .libs/ucm_cond.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ucm_include.lo -MD -MP -MF .deps/ucm_include.Tpo -c ucm_include.c  -fPIC -DPIC -o .libs/ucm_include.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ucm_regex.lo -MD -MP -MF .deps/ucm_regex.Tpo -c ucm_regex.c  -fPIC -DPIC -o .libs/ucm_regex.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT main.lo -MD -MP -MF .deps/main.Tpo -c main.c  -fPIC -DPIC -o .libs/main.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT parser.lo -MD -MP -MF .deps/parser.Tpo -c parser.c  -fPIC -DPIC -o .libs/parser.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ucm_exec.lo -MD -MP -MF .deps/ucm_exec.Tpo -c ucm_exec.c  -fPIC -DPIC -o .libs/ucm_exec.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT utils.lo -MD -MP -MF .deps/utils.Tpo -c utils.c  -fPIC -DPIC -o .libs/utils.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ucm_subs.lo -MD -MP -MF .deps/ucm_subs.Tpo -c ucm_subs.c  -fPIC -DPIC -o .libs/ucm_subs.o
+mv -f .deps/ucm_regex.Tpo .deps/ucm_regex.Plo
+mv -f .deps/ucm_include.Tpo .deps/ucm_include.Plo
+mv -f .deps/ucm_exec.Tpo .deps/ucm_exec.Plo
+mv -f .deps/ucm_cond.Tpo .deps/ucm_cond.Plo
+mv -f .deps/utils.Tpo .deps/utils.Plo
+mv -f .deps/ucm_subs.Tpo .deps/ucm_subs.Plo
+mv -f .deps/main.Tpo .deps/main.Plo
+mv -f .deps/parser.Tpo .deps/parser.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none   -o libucm.la  utils.lo parser.lo ucm_cond.lo ucm_subs.lo ucm_include.lo ucm_regex.lo ucm_exec.lo main.lo  
+libtool: link: ar cr .libs/libucm.a .libs/utils.o .libs/parser.o .libs/ucm_cond.o .libs/ucm_subs.o .libs/ucm_include.o .libs/ucm_regex.o .libs/ucm_exec.o .libs/main.o 
+libtool: link: ranlib .libs/libucm.a
+libtool: link: ( cd ".libs" && rm -f "libucm.la" && ln -s "../libucm.la" "libucm.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/ucm'
+Making all in conf
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf'
+Making all in cards
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/cards'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/cards'
+Making all in ctl
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/ctl'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/ctl'
+Making all in pcm
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/pcm'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/pcm'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf'
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src'
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT conf.lo -MD -MP -MF .deps/conf.Tpo -c -o conf.lo conf.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT confeval.lo -MD -MP -MF .deps/confeval.Tpo -c -o confeval.lo confeval.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT confmisc.lo -MD -MP -MF .deps/confmisc.Tpo -c -o confmisc.lo confmisc.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT input.lo -MD -MP -MF .deps/input.Tpo -c -o input.lo input.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT output.lo -MD -MP -MF .deps/output.Tpo -c -o output.lo output.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT async.lo -MD -MP -MF .deps/async.Tpo -c -o async.lo async.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT error.lo -MD -MP -MF .deps/error.Tpo -c -o error.lo error.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT dlmisc.lo -MD -MP -MF .deps/dlmisc.Tpo -c -o dlmisc.lo dlmisc.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT conf.lo -MD -MP -MF .deps/conf.Tpo -c conf.c  -fPIC -DPIC -o .libs/conf.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT error.lo -MD -MP -MF .deps/error.Tpo -c error.c  -fPIC -DPIC -o .libs/error.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT confeval.lo -MD -MP -MF .deps/confeval.Tpo -c confeval.c  -fPIC -DPIC -o .libs/confeval.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT confmisc.lo -MD -MP -MF .deps/confmisc.Tpo -c confmisc.c  -fPIC -DPIC -o .libs/confmisc.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT output.lo -MD -MP -MF .deps/output.Tpo -c output.c  -fPIC -DPIC -o .libs/output.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT async.lo -MD -MP -MF .deps/async.Tpo -c async.c  -fPIC -DPIC -o .libs/async.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT dlmisc.lo -MD -MP -MF .deps/dlmisc.Tpo -c dlmisc.c  -fPIC -DPIC -o .libs/dlmisc.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT input.lo -MD -MP -MF .deps/input.Tpo -c input.c  -fPIC -DPIC -o .libs/input.o
+mv -f .deps/error.Tpo .deps/error.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT socket.lo -MD -MP -MF .deps/socket.Tpo -c -o socket.lo socket.c
+mv -f .deps/async.Tpo .deps/async.Plo
+mv -f .deps/output.Tpo .deps/output.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT shmarea.lo -MD -MP -MF .deps/shmarea.Tpo -c -o shmarea.lo shmarea.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT userfile.lo -MD -MP -MF .deps/userfile.Tpo -c -o userfile.lo userfile.c
+mv -f .deps/confeval.Tpo .deps/confeval.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT names.lo -MD -MP -MF .deps/names.Tpo -c -o names.lo names.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT socket.lo -MD -MP -MF .deps/socket.Tpo -c socket.c  -fPIC -DPIC -o .libs/socket.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT shmarea.lo -MD -MP -MF .deps/shmarea.Tpo -c shmarea.c  -fPIC -DPIC -o .libs/shmarea.o
+mv -f .deps/input.Tpo .deps/input.Plo
+mv -f .deps/dlmisc.Tpo .deps/dlmisc.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT userfile.lo -MD -MP -MF .deps/userfile.Tpo -c userfile.c  -fPIC -DPIC -o .libs/userfile.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT names.lo -MD -MP -MF .deps/names.Tpo -c names.c  -fPIC -DPIC -o .libs/names.o
+mv -f .deps/shmarea.Tpo .deps/shmarea.Plo
+mv -f .deps/socket.Tpo .deps/socket.Plo
+mv -f .deps/userfile.Tpo .deps/userfile.Plo
+mv -f .deps/names.Tpo .deps/names.Plo
+mv -f .deps/confmisc.Tpo .deps/confmisc.Plo
+mv -f .deps/conf.Tpo .deps/conf.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -version-info 2:0:0 -Wl,--version-script=Versions  -Wl,-z,defs  -o libasound.la -rpath /usr/lib conf.lo confeval.lo confmisc.lo input.lo output.lo async.lo error.lo dlmisc.lo socket.lo shmarea.lo userfile.lo names.lo control/libcontrol.la mixer/libmixer.la pcm/libpcm.la timer/libtimer.la rawmidi/librawmidi.la hwdep/libhwdep.la seq/libseq.la ucm/libucm.la  -lm -lpthread -lrt  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/conf.o .libs/confeval.o .libs/confmisc.o .libs/input.o .libs/output.o .libs/async.o .libs/error.o .libs/dlmisc.o .libs/socket.o .libs/shmarea.o .libs/userfile.o .libs/names.o  -Wl,--whole-archive control/.libs/libcontrol.a mixer/.libs/libmixer.a pcm/.libs/libpcm.a timer/.libs/libtimer.a rawmidi/.libs/librawmidi.a hwdep/.libs/libhwdep.a seq/.libs/libseq.a ucm/.libs/libucm.a -Wl,--no-whole-archive  -lm -lpthread -lrt  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -flto-partition=none -Wl,--version-script=Versions -Wl,-z -Wl,defs   -Wl,-soname -Wl,libasound.so.2 -o .libs/libasound.so.2.0.0
+libtool: link: (cd ".libs" && rm -f "libasound.so.2" && ln -s "libasound.so.2.0.0" "libasound.so.2")
+libtool: link: (cd ".libs" && rm -f "libasound.so" && ln -s "libasound.so.2.0.0" "libasound.so")
+libtool: link: ( cd ".libs" && rm -f "libasound.la" && ln -s "../libasound.la" "libasound.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src'
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src'
+Making all in src/topology
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/topology'
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT parser.lo -MD -MP -MF .deps/parser.Tpo -c -o parser.lo parser.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT builder.lo -MD -MP -MF .deps/builder.Tpo -c -o builder.lo builder.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ctl.lo -MD -MP -MF .deps/ctl.Tpo -c -o ctl.lo ctl.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT dapm.lo -MD -MP -MF .deps/dapm.Tpo -c -o dapm.lo dapm.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm.lo -MD -MP -MF .deps/pcm.Tpo -c -o pcm.lo pcm.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT data.lo -MD -MP -MF .deps/data.Tpo -c -o data.lo data.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT text.lo -MD -MP -MF .deps/text.Tpo -c -o text.lo text.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT channel.lo -MD -MP -MF .deps/channel.Tpo -c -o channel.lo channel.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT parser.lo -MD -MP -MF .deps/parser.Tpo -c parser.c  -fPIC -DPIC -o .libs/parser.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT builder.lo -MD -MP -MF .deps/builder.Tpo -c builder.c  -fPIC -DPIC -o .libs/builder.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT dapm.lo -MD -MP -MF .deps/dapm.Tpo -c dapm.c  -fPIC -DPIC -o .libs/dapm.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ctl.lo -MD -MP -MF .deps/ctl.Tpo -c ctl.c  -fPIC -DPIC -o .libs/ctl.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT pcm.lo -MD -MP -MF .deps/pcm.Tpo -c pcm.c  -fPIC -DPIC -o .libs/pcm.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT channel.lo -MD -MP -MF .deps/channel.Tpo -c channel.c  -fPIC -DPIC -o .libs/channel.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT text.lo -MD -MP -MF .deps/text.Tpo -c text.c  -fPIC -DPIC -o .libs/text.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT data.lo -MD -MP -MF .deps/data.Tpo -c data.c  -fPIC -DPIC -o .libs/data.o
+mv -f .deps/text.Tpo .deps/text.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ops.lo -MD -MP -MF .deps/ops.Tpo -c -o ops.lo ops.c
+mv -f .deps/channel.Tpo .deps/channel.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT elem.lo -MD -MP -MF .deps/elem.Tpo -c -o elem.lo elem.c
+mv -f .deps/builder.Tpo .deps/builder.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT save.lo -MD -MP -MF .deps/save.Tpo -c -o save.lo save.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT ops.lo -MD -MP -MF .deps/ops.Tpo -c ops.c  -fPIC -DPIC -o .libs/ops.o
+mv -f .deps/parser.Tpo .deps/parser.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT decoder.lo -MD -MP -MF .deps/decoder.Tpo -c -o decoder.lo decoder.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT save.lo -MD -MP -MF .deps/save.Tpo -c save.c  -fPIC -DPIC -o .libs/save.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT elem.lo -MD -MP -MF .deps/elem.Tpo -c elem.c  -fPIC -DPIC -o .libs/elem.o
+mv -f .deps/ops.Tpo .deps/ops.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../../include  -I../../include   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT log.lo -MD -MP -MF .deps/log.Tpo -c -o log.lo log.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT decoder.lo -MD -MP -MF .deps/decoder.Tpo -c decoder.c  -fPIC -DPIC -o .libs/decoder.o
+mv -f .deps/dapm.Tpo .deps/dapm.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../../include -I../../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT log.lo -MD -MP -MF .deps/log.Tpo -c log.c  -fPIC -DPIC -o .libs/log.o
+mv -f .deps/elem.Tpo .deps/elem.Plo
+mv -f .deps/decoder.Tpo .deps/decoder.Plo
+mv -f .deps/log.Tpo .deps/log.Plo
+mv -f .deps/save.Tpo .deps/save.Plo
+mv -f .deps/ctl.Tpo .deps/ctl.Plo
+mv -f .deps/pcm.Tpo .deps/pcm.Plo
+mv -f .deps/data.Tpo .deps/data.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -version-info 2:0:0 -Wl,--version-script=../Versions  -Wl,-z,defs  -o libatopology.la -rpath /usr/lib parser.lo builder.lo ctl.lo dapm.lo pcm.lo data.lo text.lo channel.lo ops.lo elem.lo save.lo decoder.lo log.lo ../libasound.la 
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/parser.o .libs/builder.o .libs/ctl.o .libs/dapm.o .libs/pcm.o .libs/data.o .libs/text.o .libs/channel.o .libs/ops.o .libs/elem.o .libs/save.o .libs/decoder.o .libs/log.o   -Wl,-rpath -Wl,/home/devel/building/work/src/alsa-lib-1.2.10/src/.libs ../.libs/libasound.so -lm -lpthread -lrt  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -flto-partition=none -Wl,--version-script=../Versions -Wl,-z -Wl,defs   -Wl,-soname -Wl,libatopology.so.2 -o .libs/libatopology.so.2.0.0
+libtool: link: (cd ".libs" && rm -f "libatopology.so.2" && ln -s "libatopology.so.2.0.0" "libatopology.so.2")
+libtool: link: (cd ".libs" && rm -f "libatopology.so" && ln -s "libatopology.so.2.0.0" "libatopology.so")
+libtool: link: ( cd ".libs" && rm -f "libatopology.la" && ln -s "../libatopology.la" "libatopology.la" )
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/topology'
+Making all in modules
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules'
+Making all in mixer
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules/mixer'
+Making all in simple
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules/mixer/simple'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules/mixer/simple'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules/mixer'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules/mixer'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules/mixer'
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules'
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules'
+Making all in aserver
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/aserver'
+gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -I../src/pcm   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -MT aserver.o -MD -MP -MF .deps/aserver.Tpo -c -o aserver.o aserver.c
+mv -f .deps/aserver.Tpo .deps/aserver.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none   -o aserver aserver.o ../src/libasound.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -o .libs/aserver aserver.o  ../src/.libs/libasound.so -lm -lpthread -lrt
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/aserver'
+Making all in test
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/test'
+Making all in .
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/test'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/test'
+Making all in lsb
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/test/lsb'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/test/lsb'
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/test'
+Making all in utils
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/utils'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/utils'
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in doc
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/doc'
+Making install in pictures
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/doc/pictures'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/doc/pictures'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/doc/pictures'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/doc/pictures'
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/doc'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/doc'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/doc'
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/doc'
+Making install in include
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/include'
+Making install in sound
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/include/sound'
+Making install in uapi
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/include/sound/uapi'
+make[4]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/include/sound/uapi'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/alsa/sound/uapi'
+ /usr/bin/install -c -m 644 asound_fm.h hdsp.h hdspm.h sb16_csp.h sscape_ioctl.h emu10k1.h asoc.h tlv.h '/home/devel/building/work/pkg/usr/include/alsa/sound/uapi'
+make[4]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/include/sound/uapi'
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/include/sound/uapi'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/include/sound'
+make[4]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/include/sound'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/alsa/sound'
+ /usr/bin/install -c -m 644 asound_fm.h hdsp.h hdspm.h sb16_csp.h sscape_ioctl.h emu10k1.h asoc.h tlv.h type_compat.h '/home/devel/building/work/pkg/usr/include/alsa/sound'
+make[4]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/include/sound'
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/include/sound'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/include/sound'
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/include'
+if ! test -r alsa/local.h; then \
+	ln -s ../include alsa; \
+fi
+for f in asoundlib.h version.h; do \
+	if ! test -r ../include/$f; then \
+		ln -s /home/devel/building/work/src/alsa-lib-1.2.10/include/$f ../include/$f; \
+	fi; \
+done
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/include'
+make[3]: Nothing to be done for 'install-exec-am'.
+if ! test -r alsa/local.h; then \
+	ln -s ../include alsa; \
+fi
+for f in asoundlib.h version.h; do \
+	if ! test -r ../include/$f; then \
+		ln -s /home/devel/building/work/src/alsa-lib-1.2.10/include/$f ../include/$f; \
+	fi; \
+done
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/alsa'
+ /usr/bin/install -c -m 644 asoundlib.h asoundef.h version.h global.h input.h output.h error.h conf.h control.h control_plugin.h control_external.h pcm.h pcm_old.h timer.h pcm_plugin.h pcm_rate.h pcm_external.h pcm_extplug.h pcm_ioplug.h rawmidi.h ump.h ump_msg.h hwdep.h mixer.h mixer_abst.h seq_event.h seq.h seqmid.h seq_midi_event.h use-case.h topology.h '/home/devel/building/work/pkg/usr/include/alsa'
+make  install-data-hook
+make[4]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/include'
+test -d /home/devel/building/work/pkg/usr/include/sys || mkdir -p /home/devel/building/work/pkg/usr/include/sys
+/usr/bin/install -c -m 644 ./sys.h /home/devel/building/work/pkg/usr/include/sys/asoundlib.h
+/usr/bin/install -c -m 644 ./sys.h /home/devel/building/work/pkg/usr/include/asoundlib.h
+make[4]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/include'
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/include'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/include'
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/include'
+Making install in src
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src'
+Making install in control
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/control'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/control'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/control'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/control'
+Making install in mixer
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/mixer'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/mixer'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/mixer'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/mixer'
+Making install in pcm
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/pcm'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/pcm'
+make[4]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/pcm'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/pcm'
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/pcm'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/pcm'
+Making install in timer
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/timer'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/timer'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/timer'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/timer'
+Making install in rawmidi
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/rawmidi'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/rawmidi'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/rawmidi'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/rawmidi'
+Making install in hwdep
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/hwdep'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/hwdep'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/hwdep'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/hwdep'
+Making install in seq
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/seq'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/seq'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/seq'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/seq'
+Making install in ucm
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/ucm'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/ucm'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/ucm'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/ucm'
+Making install in conf
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf'
+Making install in cards
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/cards'
+make[4]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/cards'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/alsa/cards'
+ /usr/bin/install -c -m 644 aliases.conf AACI.conf ATIIXP.conf ATIIXP-SPDMA.conf ATIIXP-MODEM.conf AU8810.conf AU8820.conf AU8830.conf Audigy.conf Audigy2.conf Aureon51.conf Aureon71.conf CA0106.conf CMI8338.conf CMI8338-SWIEC.conf CMI8738-MC6.conf CMI8738-MC8.conf CMI8788.conf CS46xx.conf Echo_Echo3G.conf EMU10K1.conf EMU10K1X.conf ENS1370.conf ENS1371.conf ES1968.conf FM801.conf FWSpeakers.conf FireWave.conf GUS.conf HDA-Intel.conf HdmiLpeAudio.conf ICE1712.conf ICE1724.conf ICH.conf ICH4.conf ICH-MODEM.conf Loopback.conf Maestro3.conf NFORCE.conf PC-Speaker.conf '/home/devel/building/work/pkg/usr/share/alsa/cards'
+ /usr/bin/install -c -m 644 pistachio-card.conf PMac.conf PMacToonie.conf PS3.conf RME9636.conf RME9652.conf SI7018.conf SB-XFi.conf TRID4DWAVENX.conf USB-Audio.conf YMF744.conf vc4-hdmi.conf VIA686A.conf VIA8233.conf VIA8233A.conf VIA8237.conf VX222.conf VXPocket.conf VXPocket440.conf '/home/devel/building/work/pkg/usr/share/alsa/cards'
+make[4]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/cards'
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/cards'
+Making install in ctl
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/ctl'
+make[4]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/ctl'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/alsa/ctl'
+ /usr/bin/install -c -m 644 default.conf '/home/devel/building/work/pkg/usr/share/alsa/ctl'
+make[4]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/ctl'
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/ctl'
+Making install in pcm
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/pcm'
+make[4]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/pcm'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/alsa/pcm'
+ /usr/bin/install -c -m 644 default.conf front.conf rear.conf center_lfe.conf side.conf surround21.conf surround40.conf surround41.conf surround50.conf surround51.conf surround71.conf iec958.conf hdmi.conf modem.conf dmix.conf dsnoop.conf dpl.conf '/home/devel/building/work/pkg/usr/share/alsa/pcm'
+make[4]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/pcm'
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf/pcm'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf'
+make[4]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/alsa'
+ /usr/bin/install -c -m 644 alsa.conf '/home/devel/building/work/pkg/usr/share/alsa'
+make[4]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf'
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/conf'
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src'
+make[3]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libasound.la '/home/devel/building/work/pkg/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libasound.so.2.0.0 /home/devel/building/work/pkg/usr/lib/libasound.so.2.0.0
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libasound.so.2.0.0 libasound.so.2 || { rm -f libasound.so.2 && ln -s libasound.so.2.0.0 libasound.so.2; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libasound.so.2.0.0 libasound.so || { rm -f libasound.so && ln -s libasound.so.2.0.0 libasound.so; }; })
+libtool: install: /usr/bin/install -c .libs/libasound.lai /home/devel/building/work/pkg/usr/lib/libasound.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src'
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src'
+Making install in src/topology
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/topology'
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/topology'
+make[2]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libatopology.la '/home/devel/building/work/pkg/usr/lib'
+libtool: warning: relinking 'libatopology.la'
+libtool: install: (cd /home/devel/building/work/src/alsa-lib-1.2.10/src/topology; /bin/sh "/home/devel/building/work/src/alsa-lib-1.2.10/libtool"  --tag CC --mode=relink gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -flto-partition=none -version-info 2:0:0 -Wl,--version-script=../Versions -Wl,-z,defs -o libatopology.la -rpath /usr/lib parser.lo builder.lo ctl.lo dapm.lo pcm.lo data.lo text.lo channel.lo ops.lo elem.lo save.lo decoder.lo log.lo ../libasound.la -inst-prefix-dir /home/devel/building/work/pkg)
+libtool: relink: gcc -shared  -fPIC -DPIC  .libs/parser.o .libs/builder.o .libs/ctl.o .libs/dapm.o .libs/pcm.o .libs/data.o .libs/text.o .libs/channel.o .libs/ops.o .libs/elem.o .libs/save.o .libs/decoder.o .libs/log.o   -L/home/devel/building/work/pkg/usr/lib -L/usr/lib -lasound -lm -lpthread -lrt  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -flto-partition=none -Wl,--version-script=../Versions -Wl,-z -Wl,defs   -Wl,-soname -Wl,libatopology.so.2 -o .libs/libatopology.so.2.0.0
+libtool: install: /usr/bin/install -c .libs/libatopology.so.2.0.0T /home/devel/building/work/pkg/usr/lib/libatopology.so.2.0.0
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libatopology.so.2.0.0 libatopology.so.2 || { rm -f libatopology.so.2 && ln -s libatopology.so.2.0.0 libatopology.so.2; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libatopology.so.2.0.0 libatopology.so || { rm -f libatopology.so && ln -s libatopology.so.2.0.0 libatopology.so; }; })
+libtool: install: /usr/bin/install -c .libs/libatopology.lai /home/devel/building/work/pkg/usr/lib/libatopology.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/topology'
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/src/topology'
+Making install in modules
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules'
+Making install in mixer
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules/mixer'
+Making install in simple
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules/mixer/simple'
+make[4]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules/mixer/simple'
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules/mixer/simple'
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules/mixer/simple'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules/mixer'
+make[4]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules/mixer'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules/mixer'
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules/mixer'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules/mixer'
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules'
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/modules'
+Making install in aserver
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/aserver'
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/aserver'
+make[2]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c aserver '/home/devel/building/work/pkg/usr/bin'
+libtool: warning: '../src/libasound.la' has not been installed in '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/aserver /home/devel/building/work/pkg/usr/bin/aserver
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/aserver'
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/aserver'
+Making install in test
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/test'
+Making install in .
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/test'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/test'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/test'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/test'
+Making install in lsb
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/test/lsb'
+make[3]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/test/lsb'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/test/lsb'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/test/lsb'
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/test'
+Making install in utils
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/utils'
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10/utils'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/aclocal'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 alsa.m4 '/home/devel/building/work/pkg/usr/share/aclocal'
+ /usr/bin/install -c -m 644 alsa.pc alsa-topology.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/utils'
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10/utils'
+make[1]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10'
+make[2]: Entering directory '/home/devel/building/work/src/alsa-lib-1.2.10'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10'
+make[1]: Leaving directory '/home/devel/building/work/src/alsa-lib-1.2.10'
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 15:14 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 15:14 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 15:14 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 15:14 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 15:14 usr/bin/
+-rwxr-xr-x  0 root   root    27536 Feb  1 15:14 usr/bin/aserver
+-rwxr-xr-x  0 root   root   955024 Feb  1 15:14 usr/lib/libasound.so.2.0.0
+lrwxrwxrwx  0 root   root        0 Feb  1 15:14 usr/lib/libasound.so.2 -> libasound.so.2.0.0
+lrwxrwxrwx  0 root   root        0 Feb  1 15:14 usr/lib/libasound.so -> libasound.so.2.0.0
+-rwxr-xr-x  0 root   root   119152 Feb  1 15:14 usr/lib/libatopology.so.2.0.0
+lrwxrwxrwx  0 root   root        0 Feb  1 15:14 usr/lib/libatopology.so.2 -> libatopology.so.2.0.0
+lrwxrwxrwx  0 root   root        0 Feb  1 15:14 usr/lib/libatopology.so -> libatopology.so.2.0.0
+drwxr-xr-x  0 root   root        0 Feb  1 15:14 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      271 Feb  1 15:14 usr/lib/pkgconfig/alsa.pc
+-rw-r--r--  0 root   root      152 Feb  1 15:14 usr/lib/pkgconfig/alsa-topology.pc
+drwxr-xr-x  0 root   root        0 Feb  1 15:14 usr/share/alsa/
+drwxr-xr-x  0 root   root        0 Feb  1 15:14 usr/share/aclocal/
+-rw-r--r--  0 root   root     6103 Feb  1 15:14 usr/share/aclocal/alsa.m4
+drwxr-xr-x  0 root   root        0 Feb  1 15:14 usr/share/alsa/cards/
+drwxr-xr-x  0 root   root        0 Feb  1 15:14 usr/share/alsa/ctl/
+drwxr-xr-x  0 root   root        0 Feb  1 15:14 usr/share/alsa/pcm/
+-rw-r--r--  0 root   root    10119 Feb  1 15:14 usr/share/alsa/alsa.conf
+-rw-r--r--  0 root   root      760 Feb  1 15:14 usr/share/alsa/pcm/default.conf
+-rw-r--r--  0 root   root      802 Feb  1 15:14 usr/share/alsa/pcm/front.conf
+-rw-r--r--  0 root   root      742 Feb  1 15:14 usr/share/alsa/pcm/rear.conf
+-rw-r--r--  0 root   root      803 Feb  1 15:14 usr/share/alsa/pcm/center_lfe.conf
+-rw-r--r--  0 root   root      742 Feb  1 15:14 usr/share/alsa/pcm/side.conf
+-rw-r--r--  0 root   root      923 Feb  1 15:14 usr/share/alsa/pcm/surround21.conf
+-rw-r--r--  0 root   root      901 Feb  1 15:14 usr/share/alsa/pcm/surround40.conf
+-rw-r--r--  0 root   root     1004 Feb  1 15:14 usr/share/alsa/pcm/surround41.conf
+-rw-r--r--  0 root   root     1003 Feb  1 15:14 usr/share/alsa/pcm/surround50.conf
+-rw-r--r--  0 root   root      954 Feb  1 15:14 usr/share/alsa/pcm/surround51.conf
+-rw-r--r--  0 root   root     1002 Feb  1 15:14 usr/share/alsa/pcm/surround71.conf
+-rw-r--r--  0 root   root     1218 Feb  1 15:14 usr/share/alsa/pcm/iec958.conf
+-rw-r--r--  0 root   root     1186 Feb  1 15:14 usr/share/alsa/pcm/hdmi.conf
+-rw-r--r--  0 root   root     1312 Feb  1 15:14 usr/share/alsa/pcm/modem.conf
+-rw-r--r--  0 root   root     1708 Feb  1 15:14 usr/share/alsa/pcm/dmix.conf
+-rw-r--r--  0 root   root     1590 Feb  1 15:14 usr/share/alsa/pcm/dsnoop.conf
+-rw-r--r--  0 root   root      645 Feb  1 15:14 usr/share/alsa/pcm/dpl.conf
+-rw-r--r--  0 root   root      539 Feb  1 15:14 usr/share/alsa/ctl/default.conf
+-rw-r--r--  0 root   root     1487 Feb  1 15:14 usr/share/alsa/cards/aliases.conf
+-rw-r--r--  0 root   root      669 Feb  1 15:14 usr/share/alsa/cards/AACI.conf
+-rw-r--r--  0 root   root     2483 Feb  1 15:14 usr/share/alsa/cards/ATIIXP.conf
+-rw-r--r--  0 root   root     2237 Feb  1 15:14 usr/share/alsa/cards/ATIIXP-SPDMA.conf
+-rw-r--r--  0 root   root      302 Feb  1 15:14 usr/share/alsa/cards/ATIIXP-MODEM.conf
+-rw-r--r--  0 root   root      437 Feb  1 15:14 usr/share/alsa/cards/AU8810.conf
+-rw-r--r--  0 root   root      159 Feb  1 15:14 usr/share/alsa/cards/AU8820.conf
+-rw-r--r--  0 root   root      520 Feb  1 15:14 usr/share/alsa/cards/AU8830.conf
+-rw-r--r--  0 root   root     4098 Feb  1 15:14 usr/share/alsa/cards/Audigy.conf
+-rw-r--r--  0 root   root     5554 Feb  1 15:14 usr/share/alsa/cards/Audigy2.conf
+-rw-r--r--  0 root   root     2369 Feb  1 15:14 usr/share/alsa/cards/Aureon51.conf
+-rw-r--r--  0 root   root     2499 Feb  1 15:14 usr/share/alsa/cards/Aureon71.conf
+-rw-r--r--  0 root   root     3848 Feb  1 15:14 usr/share/alsa/cards/CA0106.conf
+-rw-r--r--  0 root   root     1911 Feb  1 15:14 usr/share/alsa/cards/CMI8338.conf
+-rw-r--r--  0 root   root     1784 Feb  1 15:14 usr/share/alsa/cards/CMI8338-SWIEC.conf
+-rw-r--r--  0 root   root     2131 Feb  1 15:14 usr/share/alsa/cards/CMI8738-MC6.conf
+-rw-r--r--  0 root   root     2982 Feb  1 15:14 usr/share/alsa/cards/CMI8738-MC8.conf
+-rw-r--r--  0 root   root     1641 Feb  1 15:14 usr/share/alsa/cards/CMI8788.conf
+-rw-r--r--  0 root   root     2945 Feb  1 15:14 usr/share/alsa/cards/CS46xx.conf
+-rw-r--r--  0 root   root     4399 Feb  1 15:14 usr/share/alsa/cards/Echo_Echo3G.conf
+-rw-r--r--  0 root   root     4420 Feb  1 15:14 usr/share/alsa/cards/EMU10K1.conf
+-rw-r--r--  0 root   root     2754 Feb  1 15:14 usr/share/alsa/cards/EMU10K1X.conf
+-rw-r--r--  0 root   root     1367 Feb  1 15:14 usr/share/alsa/cards/ENS1370.conf
+-rw-r--r--  0 root   root     1806 Feb  1 15:14 usr/share/alsa/cards/ENS1371.conf
+-rw-r--r--  0 root   root      152 Feb  1 15:14 usr/share/alsa/cards/ES1968.conf
+-rw-r--r--  0 root   root     1227 Feb  1 15:14 usr/share/alsa/cards/FM801.conf
+-rw-r--r--  0 root   root      333 Feb  1 15:14 usr/share/alsa/cards/FWSpeakers.conf
+-rw-r--r--  0 root   root      702 Feb  1 15:14 usr/share/alsa/cards/FireWave.conf
+-rw-r--r--  0 root   root      217 Feb  1 15:14 usr/share/alsa/cards/GUS.conf
+-rw-r--r--  0 root   root     8074 Feb  1 15:14 usr/share/alsa/cards/HDA-Intel.conf
+-rw-r--r--  0 root   root     1509 Feb  1 15:14 usr/share/alsa/cards/HdmiLpeAudio.conf
+-rw-r--r--  0 root   root     2409 Feb  1 15:14 usr/share/alsa/cards/ICE1712.conf
+-rw-r--r--  0 root   root     2891 Feb  1 15:14 usr/share/alsa/cards/ICE1724.conf
+-rw-r--r--  0 root   root     3054 Feb  1 15:14 usr/share/alsa/cards/ICH.conf
+-rw-r--r--  0 root   root     2886 Feb  1 15:14 usr/share/alsa/cards/ICH4.conf
+-rw-r--r--  0 root   root      192 Feb  1 15:14 usr/share/alsa/cards/ICH-MODEM.conf
+-rw-r--r--  0 root   root     1272 Feb  1 15:14 usr/share/alsa/cards/Loopback.conf
+-rw-r--r--  0 root   root      558 Feb  1 15:14 usr/share/alsa/cards/Maestro3.conf
+-rw-r--r--  0 root   root     4803 Feb  1 15:14 usr/share/alsa/cards/NFORCE.conf
+-rw-r--r--  0 root   root      657 Feb  1 15:14 usr/share/alsa/cards/PC-Speaker.conf
+-rw-r--r--  0 root   root     1889 Feb  1 15:14 usr/share/alsa/cards/pistachio-card.conf
+-rw-r--r--  0 root   root      486 Feb  1 15:14 usr/share/alsa/cards/PMac.conf
+-rw-r--r--  0 root   root      705 Feb  1 15:14 usr/share/alsa/cards/PMacToonie.conf
+-rw-r--r--  0 root   root     1152 Feb  1 15:14 usr/share/alsa/cards/PS3.conf
+-rw-r--r--  0 root   root      780 Feb  1 15:14 usr/share/alsa/cards/RME9636.conf
+-rw-r--r--  0 root   root      780 Feb  1 15:14 usr/share/alsa/cards/RME9652.conf
+-rw-r--r--  0 root   root     2278 Feb  1 15:14 usr/share/alsa/cards/SI7018.conf
+-rw-r--r--  0 root   root     1502 Feb  1 15:14 usr/share/alsa/cards/SB-XFi.conf
+-rw-r--r--  0 root   root     1792 Feb  1 15:14 usr/share/alsa/cards/TRID4DWAVENX.conf
+-rw-r--r--  0 root   root     9742 Feb  1 15:14 usr/share/alsa/cards/USB-Audio.conf
+-rw-r--r--  0 root   root     1357 Feb  1 15:14 usr/share/alsa/cards/YMF744.conf
+-rw-r--r--  0 root   root     1428 Feb  1 15:14 usr/share/alsa/cards/vc4-hdmi.conf
+-rw-r--r--  0 root   root     1199 Feb  1 15:14 usr/share/alsa/cards/VIA686A.conf
+-rw-r--r--  0 root   root     2756 Feb  1 15:14 usr/share/alsa/cards/VIA8233.conf
+-rw-r--r--  0 root   root     2812 Feb  1 15:14 usr/share/alsa/cards/VIA8233A.conf
+-rw-r--r--  0 root   root     2586 Feb  1 15:14 usr/share/alsa/cards/VIA8237.conf
+-rw-r--r--  0 root   root      830 Feb  1 15:14 usr/share/alsa/cards/VX222.conf
+-rw-r--r--  0 root   root      839 Feb  1 15:14 usr/share/alsa/cards/VXPocket.conf
+-rw-r--r--  0 root   root     1480 Feb  1 15:14 usr/share/alsa/cards/VXPocket440.conf
+drwxr-xr-x  0 root   root        0 Feb  1 15:14 usr/include/alsa/
+drwxr-xr-x  0 root   root        0 Feb  1 15:14 usr/include/sys/
+-rw-r--r--  0 root   root       96 Feb  1 15:14 usr/include/asoundlib.h
+-rw-r--r--  0 root   root       96 Feb  1 15:14 usr/include/sys/asoundlib.h
+drwxr-xr-x  0 root   root        0 Feb  1 15:14 usr/include/alsa/sound/
+-rw-r--r--  0 root   root     1918 Feb  1 15:14 usr/include/alsa/asoundlib.h
+-rw-r--r--  0 root   root    20720 Feb  1 15:14 usr/include/alsa/asoundef.h
+-rw-r--r--  0 root   root      551 Feb  1 15:14 usr/include/alsa/version.h
+-rw-r--r--  0 root   root     5257 Feb  1 15:14 usr/include/alsa/global.h
+-rw-r--r--  0 root   root     2613 Feb  1 15:14 usr/include/alsa/input.h
+-rw-r--r--  0 root   root     2847 Feb  1 15:14 usr/include/alsa/output.h
+-rw-r--r--  0 root   root     3226 Feb  1 15:14 usr/include/alsa/error.h
+-rw-r--r--  0 root   root     9869 Feb  1 15:14 usr/include/alsa/conf.h
+-rw-r--r--  0 root   root    35369 Feb  1 15:14 usr/include/alsa/control.h
+-rw-r--r--  0 root   root     1939 Feb  1 15:14 usr/include/alsa/control_plugin.h
+-rw-r--r--  0 root   root     8793 Feb  1 15:14 usr/include/alsa/control_external.h
+-rw-r--r--  0 root   root    63070 Feb  1 15:14 usr/include/alsa/pcm.h
+-rw-r--r--  0 root   root    18308 Feb  1 15:14 usr/include/alsa/pcm_old.h
+-rw-r--r--  0 root   root    11382 Feb  1 15:14 usr/include/alsa/timer.h
+-rw-r--r--  0 root   root     7062 Feb  1 15:14 usr/include/alsa/pcm_plugin.h
+-rw-r--r--  0 root   root     6138 Feb  1 15:14 usr/include/alsa/pcm_rate.h
+-rw-r--r--  0 root   root     1927 Feb  1 15:14 usr/include/alsa/pcm_external.h
+-rw-r--r--  0 root   root     6334 Feb  1 15:14 usr/include/alsa/pcm_extplug.h
+-rw-r--r--  0 root   root     8003 Feb  1 15:14 usr/include/alsa/pcm_ioplug.h
+-rw-r--r--  0 root   root     8213 Feb  1 15:14 usr/include/alsa/rawmidi.h
+-rw-r--r--  0 root   root     6514 Feb  1 15:14 usr/include/alsa/ump.h
+-rw-r--r--  0 root   root    20346 Feb  1 15:14 usr/include/alsa/ump_msg.h
+-rw-r--r--  0 root   root     7504 Feb  1 15:14 usr/include/alsa/hwdep.h
+-rw-r--r--  0 root   root    14474 Feb  1 15:14 usr/include/alsa/mixer.h
+-rw-r--r--  0 root   root     4220 Feb  1 15:14 usr/include/alsa/mixer_abst.h
+-rw-r--r--  0 root   root    12499 Feb  1 15:14 usr/include/alsa/seq_event.h
+-rw-r--r--  0 root   root    34945 Feb  1 15:14 usr/include/alsa/seq.h
+-rw-r--r--  0 root   root    15139 Feb  1 15:14 usr/include/alsa/seqmid.h
+-rw-r--r--  0 root   root     2390 Feb  1 15:14 usr/include/alsa/seq_midi_event.h
+-rw-r--r--  0 root   root    23112 Feb  1 15:14 usr/include/alsa/use-case.h
+-rw-r--r--  0 root   root    37039 Feb  1 15:14 usr/include/alsa/topology.h
+drwxr-xr-x  0 root   root        0 Feb  1 15:14 usr/include/alsa/sound/uapi/
+-rw-r--r--  0 root   root       39 Feb  1 15:14 usr/include/alsa/sound/asound_fm.h
+-rw-r--r--  0 root   root      447 Feb  1 15:14 usr/include/alsa/sound/hdsp.h
+-rw-r--r--  0 root   root      386 Feb  1 15:14 usr/include/alsa/sound/hdspm.h
+-rw-r--r--  0 root   root      169 Feb  1 15:14 usr/include/alsa/sound/sb16_csp.h
+-rw-r--r--  0 root   root       42 Feb  1 15:14 usr/include/alsa/sound/sscape_ioctl.h
+-rw-r--r--  0 root   root      526 Feb  1 15:14 usr/include/alsa/sound/emu10k1.h
+-rw-r--r--  0 root   root       34 Feb  1 15:14 usr/include/alsa/sound/asoc.h
+-rw-r--r--  0 root   root       33 Feb  1 15:14 usr/include/alsa/sound/tlv.h
+-rw-r--r--  0 root   root     1241 Feb  1 15:14 usr/include/alsa/sound/type_compat.h
+-rw-r--r--  0 root   root     4377 Feb  1 15:14 usr/include/alsa/sound/uapi/asound_fm.h
+-rw-r--r--  0 root   root     2802 Feb  1 15:14 usr/include/alsa/sound/uapi/hdsp.h
+-rw-r--r--  0 root   root     5211 Feb  1 15:14 usr/include/alsa/sound/uapi/hdspm.h
+-rw-r--r--  0 root   root     4304 Feb  1 15:14 usr/include/alsa/sound/uapi/sb16_csp.h
+-rw-r--r--  0 root   root      368 Feb  1 15:14 usr/include/alsa/sound/uapi/sscape_ioctl.h
+-rw-r--r--  0 root   root    17340 Feb  1 15:14 usr/include/alsa/sound/uapi/emu10k1.h
+-rw-r--r--  0 root   root    22580 Feb  1 15:14 usr/include/alsa/sound/uapi/asoc.h
+-rw-r--r--  0 root   root     4601 Feb  1 15:14 usr/include/alsa/sound/uapi/tlv.h
+=======> Building '/home/devel/packages/alsa-lib#1.2.10-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling alsa-lib 1.2.10-1
+prt-get: /usr/bin/pkgadd -u alsa-lib#1.2.10-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 15:14:57 2024
+

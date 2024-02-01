@@ -1,0 +1,132 @@
+prt-get: updating /usr/ports/opt-x86_64/zip
+prt-get: starting build Thu Feb  1 20:20:08 2024
+=======> Building '/home/devel/packages/zip#3.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/zip30.tar.gz
+cp 10-zip-3.0-build.patch /home/devel/building/work/src
+cp 20-zip-3.0-exec-stack.patch /home/devel/building/work/src
+cp 30-zip-3.0-pic.patch /home/devel/building/work/src
+cp 40-fix-zipnote.patch /home/devel/building/work/src
++ build
++ cd zip30
++ patch -p1 -i /home/devel/building/work/src/10-zip-3.0-build.patch
+patching file unix/configure
++ patch -p1 -i /home/devel/building/work/src/20-zip-3.0-exec-stack.patch
+patching file crc_i386.S
+patching file match.S
++ patch -p1 -i /home/devel/building/work/src/30-zip-3.0-pic.patch
+patching file unix/configure
++ patch -p1 -i /home/devel/building/work/src/40-fix-zipnote.patch
+patching file zipnote.c
++ make V=1 -f unix/Makefile 'LOCAL_ZIP=-O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects' prefix=/usr generic
+sh unix/configure "cc" "-I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects" ""
+Check C compiler type (optimization options)
+  GNU C (-O3)
+Check bzip2 support
+  Check for bzip2 in bzip2 directory
+  Check if OS already has bzip2 library installed
+-- OS supports bzip2 - linking in bzip2
+Check for the C preprocessor
+Check if we can use asm code
+Checking if compiler wants to create pic code
+unix/configure: 233: [: unexpected operator
+Check for ANSI options
+Check for prototypes
+Check the handling of const
+Check for time_t
+Check for size_t
+Check for off_t
+Check size of UIDs and GIDs
+(Now zip stores variable size UIDs/GIDs using a new extra field.  This
+ tests if this OS uses 16-bit UIDs/GIDs and so if the old 16-bit storage
+ should also be used for backward compatibility.)
+  s.st_uid is 4 bytes
+  s.st_gid is 4 bytes
+-- UID not 2 bytes - disabling old 16-bit UID/GID support
+Check for Large File Support
+  off_t is 8 bytes
+-- yes we have Large File Support!
+Check for wide char support
+-- have wchar_t - enabling Unicode support
+Check for gcc no-builtin flag
+Check for rmdir
+Check for strchr
+Check for strrchr
+Check for rename
+Check for mktemp
+Check for mktime
+Check for mkstemp
+Check for memset
+Check for memmove
+Check for strerror
+Check for errno declaration
+Check for directory libraries
+Check for readlink
+Check for directory include file
+Check for nonexistent include files
+Check for term I/O include file
+Check for valloc
+Check for /usr/local/bin and /usr/local/man
+Check for OS-specific flags
+Check for symbolic links
+eval make -f unix/Makefile zips `cat flags`
+make[1]: Entering directory '/home/devel/building/work/src/zip30'
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H zip.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H zipfile.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H zipup.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H fileio.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H util.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H globals.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H crypt.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H ttyio.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H unix/unix.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H crc32.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H zbz2err.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H deflate.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H trees.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H zipcloak.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DUTIL -o zipfile_.o zipfile.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DUTIL -o fileio_.o fileio.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DUTIL -o util_.o util.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DUTIL -o unix_.o unix/unix.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DUTIL -o crc32_.o crc32.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DUTIL -o crypt_.o crypt.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H zipnote.c
+cc -c -I. -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DBZIP2_SUPPORT -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DHAVE_DIRENT_H -DHAVE_TERMIOS_H zipsplit.c
+cc -o zipcloak  zipcloak.o zipfile_.o fileio_.o util_.o globals.o unix_.o crc32_.o   crypt_.o ttyio.o -lbz2
+cc -o zipnote  zipnote.o  zipfile_.o fileio_.o util_.o globals.o unix_.o crc32_.o  -lbz2
+cc -o zipsplit  zipsplit.o zipfile_.o fileio_.o util_.o globals.o unix_.o crc32_.o  -lbz2
+cc -o zip  zip.o zipfile.o zipup.o fileio.o util.o globals.o crypt.o ttyio.o unix.o crc32.o zbz2err.o deflate.o trees.o  -lbz2
+make[1]: Leaving directory '/home/devel/building/work/src/zip30'
++ make -f unix/Makefile INSTALL=install prefix=/home/devel/building/work/pkg/usr MANDIR=/home/devel/building/work/pkg/usr/share/man/man1 install
+mkdir -p /home/devel/building/work/pkg/usr/bin
+cp zip zipcloak zipnote zipsplit /home/devel/building/work/pkg/usr/bin
+cd /home/devel/building/work/pkg/usr/bin; chmod 755 zip zipcloak zipnote zipsplit
+mkdir -p /home/devel/building/work/pkg/usr/share/man/man1
+cp man/zip.1 /home/devel/building/work/pkg/usr/share/man/man1/zip.1
+chmod 644 /home/devel/building/work/pkg/usr/share/man/man1/zip.1
+cp man/zipcloak.1 /home/devel/building/work/pkg/usr/share/man/man1/zipcloak.1
+chmod 644 /home/devel/building/work/pkg/usr/share/man/man1/zipcloak.1
+cp man/zipnote.1 /home/devel/building/work/pkg/usr/share/man/man1/zipnote.1
+chmod 644 /home/devel/building/work/pkg/usr/share/man/man1/zipnote.1
+cp man/zipsplit.1 /home/devel/building/work/pkg/usr/share/man/man1/zipsplit.1
+chmod 644 /home/devel/building/work/pkg/usr/share/man/man1/zipsplit.1
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 20:20 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 20:20 usr/bin/
+drwxr-xr-x  0 root   root        0 Feb  1 20:20 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 20:20 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb  1 20:20 usr/share/man/man1/
+-rw-r--r--  0 root   root    28502 Feb  1 20:20 usr/share/man/man1/zip.1.gz
+-rw-r--r--  0 root   root      962 Feb  1 20:20 usr/share/man/man1/zipcloak.1.gz
+-rw-r--r--  0 root   root      803 Feb  1 20:20 usr/share/man/man1/zipnote.1.gz
+-rw-r--r--  0 root   root      607 Feb  1 20:20 usr/share/man/man1/zipsplit.1.gz
+-rwxr-xr-x  0 root   root   179648 Feb  1 20:20 usr/bin/zip
+-rwxr-xr-x  0 root   root    64048 Feb  1 20:20 usr/bin/zipcloak
+-rwxr-xr-x  0 root   root    59856 Feb  1 20:20 usr/bin/zipnote
+-rwxr-xr-x  0 root   root    51648 Feb  1 20:20 usr/bin/zipsplit
+=======> Building '/home/devel/packages/zip#3.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling zip 3.0-1
+prt-get: /usr/bin/pkgadd -u zip#3.0-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 20:20:10 2024
+

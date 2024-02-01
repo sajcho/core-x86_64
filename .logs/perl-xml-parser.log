@@ -1,0 +1,181 @@
+prt-get: updating /usr/ports/opt-x86_64/perl-xml-parser
+prt-get: starting build Thu Feb  1 19:32:55 2024
+=======> Building '/home/devel/packages/perl-xml-parser#2.46-3.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/XML-Parser-2.46.tar.gz
++ build
++ cd XML-Parser-2.46
+++ perl -MConfig -E 'say $Config{ccflags}'
++ export 'CFLAGS=-D_REENTRANT -D_GNU_SOURCE -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2'
++ CFLAGS='-D_REENTRANT -D_GNU_SOURCE -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2'
++ PERL_MM_USE_DEFAULT=1
++ perl Makefile.PL INSTALLDIRS=vendor
+Warning: prerequisite LWP::UserAgent 0 not found.
+Checking if your kit is complete...
+Looks good
+Writing MYMETA.yml and MYMETA.json
+Generating a Unix-style Makefile
+Writing Makefile for XML::Parser
+Writing MYMETA.yml and MYMETA.json
++ make V=1
+make[1]: Entering directory '/home/devel/building/work/src/XML-Parser-2.46/Expat'
+Running Mkbootstrap for Expat ()
+"/usr/bin/perl5.38.2" "/usr/lib/perl5/5.38/ExtUtils/xsubpp" -noprototypes -typemap '/usr/lib/perl5/5.38/ExtUtils/typemap' -typemap '/home/devel/building/work/src/XML-Parser-2.46/Expat/typemap'  Expat.xs > Expat.xsc
+chmod 644 "Expat.bs"
+"/usr/bin/perl5.38.2" -MExtUtils::Command::MM -e 'cp_nonempty' -- Expat.bs ../blib/arch/auto/XML/Parser/Expat/Expat.bs 644
+cp Parser/Style/Tree.pm blib/lib/XML/Parser/Style/Tree.pm
+cp Parser/Encodings/windows-1252.enc blib/lib/XML/Parser/Encodings/windows-1252.enc
+cp Parser/Encodings/iso-8859-5.enc blib/lib/XML/Parser/Encodings/iso-8859-5.enc
+cp Parser/Encodings/iso-8859-15.enc blib/lib/XML/Parser/Encodings/iso-8859-15.enc
+cp Parser.pm blib/lib/XML/Parser.pm
+cp Parser/Encodings/euc-kr.enc blib/lib/XML/Parser/Encodings/euc-kr.enc
+cp Parser/Style/Stream.pm blib/lib/XML/Parser/Style/Stream.pm
+cp Parser/Encodings/iso-8859-9.enc blib/lib/XML/Parser/Encodings/iso-8859-9.enc
+cp Parser/Encodings/windows-1250.enc blib/lib/XML/Parser/Encodings/windows-1250.enc
+cp Parser/Encodings/x-euc-jp-jisx0221.enc blib/lib/XML/Parser/Encodings/x-euc-jp-jisx0221.enc
+cp Parser/Encodings/ibm866.enc blib/lib/XML/Parser/Encodings/ibm866.enc
+cp Parser/Encodings/Japanese_Encodings.msg blib/lib/XML/Parser/Encodings/Japanese_Encodings.msg
+cp Parser/Encodings/windows-1255.enc blib/lib/XML/Parser/Encodings/windows-1255.enc
+cp Parser/Encodings/x-euc-jp-unicode.enc blib/lib/XML/Parser/Encodings/x-euc-jp-unicode.enc
+cp Parser/Style/Subs.pm blib/lib/XML/Parser/Style/Subs.pm
+cp Parser/Encodings/iso-8859-2.enc blib/lib/XML/Parser/Encodings/iso-8859-2.enc
+cp Parser/Encodings/x-sjis-jdk117.enc blib/lib/XML/Parser/Encodings/x-sjis-jdk117.enc
+cp Parser/Encodings/iso-8859-3.enc blib/lib/XML/Parser/Encodings/iso-8859-3.enc
+cp Parser/Style/Objects.pm blib/lib/XML/Parser/Style/Objects.pm
+cp Parser/LWPExternEnt.pl blib/lib/XML/Parser/LWPExternEnt.pl
+cp Parser/Encodings/x-sjis-unicode.enc blib/lib/XML/Parser/Encodings/x-sjis-unicode.enc
+cp Parser/Encodings/x-sjis-jisx0221.enc blib/lib/XML/Parser/Encodings/x-sjis-jisx0221.enc
+cp Parser/Encodings/iso-8859-4.enc blib/lib/XML/Parser/Encodings/iso-8859-4.enc
+cp Parser/Encodings/windows-1251.enc blib/lib/XML/Parser/Encodings/windows-1251.enc
+cp Parser/Encodings/iso-8859-7.enc blib/lib/XML/Parser/Encodings/iso-8859-7.enc
+cp Parser/Encodings/koi8-r.enc blib/lib/XML/Parser/Encodings/koi8-r.enc
+cp Parser/Encodings/README blib/lib/XML/Parser/Encodings/README
+cp Parser/Style/Debug.pm blib/lib/XML/Parser/Style/Debug.pm
+cp Parser/Encodings/iso-8859-8.enc blib/lib/XML/Parser/Encodings/iso-8859-8.enc
+cp Parser/Encodings/x-sjis-cp932.enc blib/lib/XML/Parser/Encodings/x-sjis-cp932.enc
+cp Parser/Encodings/big5.enc blib/lib/XML/Parser/Encodings/big5.enc
+cp Expat.pm ../blib/lib/XML/Parser/Expat.pm
+mv Expat.xsc Expat.c
+cc -c   -D_REENTRANT -D_GNU_SOURCE -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fwrapv -fno-strict-aliasing -pipe -fstack-protector-strong -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_FORTIFY_SOURCE=2    -DVERSION=\"2.46\" -DXS_VERSION=\"2.46\" -fPIC "-I/usr/lib/perl5/5.38/x86_64-linux-thread-multi/CORE"   Expat.c
+rm -f ../blib/arch/auto/XML/Parser/Expat/Expat.so
+LD_RUN_PATH="/usr/lib" cc  -shared -Wl,-z,relro -Wl,--as-needed -Wl,-z,now -fstack-protector-strong  Expat.o  -o ../blib/arch/auto/XML/Parser/Expat/Expat.so  \
+   -lexpat   \
+  
+chmod 755 ../blib/arch/auto/XML/Parser/Expat/Expat.so
+Manifying 1 pod document
+make[1]: Leaving directory '/home/devel/building/work/src/XML-Parser-2.46/Expat'
+Manifying 6 pod documents
++ make DESTDIR=/home/devel/building/work/pkg install
+make[1]: Entering directory '/home/devel/building/work/src/XML-Parser-2.46/Expat'
+"/usr/bin/perl5.38.2" -MExtUtils::Command::MM -e 'cp_nonempty' -- Expat.bs ../blib/arch/auto/XML/Parser/Expat/Expat.bs 644
+Manifying 1 pod document
+make[1]: Leaving directory '/home/devel/building/work/src/XML-Parser-2.46/Expat'
+Manifying 6 pod documents
+Appending installation info to /home/devel/building/work/pkg/usr/lib/perl5/5.38/x86_64-linux-thread-multi/perllocal.pod
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/auto/XML/Parser/Expat/Expat.so
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser.pm
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Expat.pm
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/LWPExternEnt.pl
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Style/Tree.pm
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Style/Stream.pm
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Style/Subs.pm
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Style/Objects.pm
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Style/Debug.pm
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/windows-1252.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/iso-8859-5.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/iso-8859-15.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/euc-kr.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/iso-8859-9.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/windows-1250.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/x-euc-jp-jisx0221.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/ibm866.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/Japanese_Encodings.msg
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/windows-1255.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/x-euc-jp-unicode.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/iso-8859-2.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/x-sjis-jdk117.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/iso-8859-3.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/x-sjis-unicode.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/x-sjis-jisx0221.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/iso-8859-4.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/windows-1251.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/iso-8859-7.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/koi8-r.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/README
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/iso-8859-8.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/x-sjis-cp932.enc
+Installing /home/devel/building/work/pkg/usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/big5.enc
+Installing /home/devel/building/work/pkg/usr/share/man/man3/XML::Parser::Expat.3pm
+Installing /home/devel/building/work/pkg/usr/share/man/man3/XML::Parser.3pm
+Installing /home/devel/building/work/pkg/usr/share/man/man3/XML::Parser::Style::Debug.3pm
+Installing /home/devel/building/work/pkg/usr/share/man/man3/XML::Parser::Style::Objects.3pm
+Installing /home/devel/building/work/pkg/usr/share/man/man3/XML::Parser::Style::Stream.3pm
+Installing /home/devel/building/work/pkg/usr/share/man/man3/XML::Parser::Style::Subs.3pm
+Installing /home/devel/building/work/pkg/usr/share/man/man3/XML::Parser::Style::Tree.3pm
++ find /home/devel/building/work/pkg -name perllocal.pod -o -name .packlist -o -name '*.bs' -o -name README
++ xargs rm
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/share/man/man3/
+-r--r--r--  0 root   root     7812 Feb  1 19:32 usr/share/man/man3/XML::Parser::Expat.3pm.gz
+-r--r--r--  0 root   root     7874 Feb  1 19:32 usr/share/man/man3/XML::Parser.3pm.gz
+-r--r--r--  0 root   root     1030 Feb  1 19:32 usr/share/man/man3/XML::Parser::Style::Debug.3pm.gz
+-r--r--r--  0 root   root     1237 Feb  1 19:32 usr/share/man/man3/XML::Parser::Style::Objects.3pm.gz
+-r--r--r--  0 root   root     1555 Feb  1 19:32 usr/share/man/man3/XML::Parser::Style::Stream.3pm.gz
+-r--r--r--  0 root   root     1191 Feb  1 19:32 usr/share/man/man3/XML::Parser::Style::Subs.3pm.gz
+-r--r--r--  0 root   root     1471 Feb  1 19:32 usr/share/man/man3/XML::Parser::Style::Tree.3pm.gz
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/lib/perl5/
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/lib/perl5/5.38/
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/lib/perl5/site_perl/
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/lib/perl5/site_perl/5.38/
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/auto/
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/auto/XML/
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/auto/XML/Parser/
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/auto/XML/Parser/Expat/
+-r-xr-xr-x  0 root   root    79872 Feb  1 19:32 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/auto/XML/Parser/Expat/Expat.so
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/
+-r--r--r--  0 root   root    27721 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser.pm
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Style/
+-r--r--r--  0 root   root    35152 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Expat.pm
+-r--r--r--  0 root   root     1582 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/LWPExternEnt.pl
+-r--r--r--  0 root   root     2282 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Style/Tree.pm
+-r--r--r--  0 root   root     3629 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Style/Stream.pm
+-r--r--r--  0 root   root     1151 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Style/Subs.pm
+-r--r--r--  0 root   root     1866 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Style/Objects.pm
+-r--r--r--  0 root   root     1028 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Style/Debug.pm
+-r--r--r--  0 root   root     1072 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/windows-1252.enc
+-r--r--r--  0 root   root     1072 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/iso-8859-5.enc
+-r--r--r--  0 root   root     1072 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/iso-8859-15.enc
+-r--r--r--  0 root   root    45802 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/euc-kr.enc
+-r--r--r--  0 root   root     1072 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/iso-8859-9.enc
+-r--r--r--  0 root   root     1072 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/windows-1250.enc
+-r--r--r--  0 root   root    37890 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/x-euc-jp-jisx0221.enc
+-r--r--r--  0 root   root     1072 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/ibm866.enc
+-r--r--r--  0 root   root     4821 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/Japanese_Encodings.msg
+-r--r--r--  0 root   root     1072 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/windows-1255.enc
+-r--r--r--  0 root   root    37890 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/x-euc-jp-unicode.enc
+-r--r--r--  0 root   root     1072 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/iso-8859-2.enc
+-r--r--r--  0 root   root    18202 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/x-sjis-jdk117.enc
+-r--r--r--  0 root   root     1072 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/iso-8859-3.enc
+-r--r--r--  0 root   root    18202 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/x-sjis-unicode.enc
+-r--r--r--  0 root   root    18202 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/x-sjis-jisx0221.enc
+-r--r--r--  0 root   root     1072 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/iso-8859-4.enc
+-r--r--r--  0 root   root     1072 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/windows-1251.enc
+-r--r--r--  0 root   root     1072 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/iso-8859-7.enc
+-r--r--r--  0 root   root     1072 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/koi8-r.enc
+-r--r--r--  0 root   root     1072 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/iso-8859-8.enc
+-r--r--r--  0 root   root    20368 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/x-sjis-cp932.enc
+-r--r--r--  0 root   root    40706 Sep 24  2019 usr/lib/perl5/site_perl/5.38/x86_64-linux-thread-multi/XML/Parser/Encodings/big5.enc
+drwxr-xr-x  0 root   root        0 Feb  1 19:32 usr/lib/perl5/5.38/x86_64-linux-thread-multi/
+=======> Building '/home/devel/packages/perl-xml-parser#2.46-3.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling perl-xml-parser 2.46-3
+prt-get: /usr/bin/pkgadd -u perl-xml-parser#2.46-3.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 19:32:57 2024
+

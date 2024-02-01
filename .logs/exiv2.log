@@ -1,0 +1,679 @@
+prt-get: updating /usr/ports/opt-x86_64/exiv2
+prt-get: starting build Thu Feb  1 15:36:57 2024
+=======> Building '/home/devel/packages/exiv2#0.28.1-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/exiv2-0.28.1.tar.gz
++ build
++ cd exiv2-0.28.1
++ mkdir build
++ cd build
++ cmake .. -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DEXIV2_BUILD_SAMPLES=OFF -Wno-dev
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: /usr/bin/python3.12 (found version "3.12.1") found components: Interpreter 
+-- Looking for C++ include filesystem
+-- Looking for C++ include filesystem - found
+-- Performing Test CXX_FILESYSTEM_NO_LINK_NEEDED
+-- Performing Test CXX_FILESYSTEM_NO_LINK_NEEDED - Success
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.1")  
+-- Found Brotli: /usr/lib/libbrotlidec.so  
+-- Found EXPAT: /usr/lib/libexpat.so (found version "2.5.0") 
+-- Performing Test Iconv_IS_BUILT_IN
+-- Performing Test Iconv_IS_BUILT_IN - Success
+-- Found Iconv: built in to C library  
+-- Iconv_INCLUDE_DIRS : 
+-- Iconv_LIBRARIES : 
+-- Found inih: /usr/lib/libinih.so  
+-- inih_INCLUDE_DIRS : /usr/include
+-- inih_LIBRARIES : /usr/lib/libinih.so
+-- inih_inireader_INCLUDE_DIRS : /usr/include
+-- inih_inireader_LIBRARIES : /usr/lib/libINIReader.so
+-- Performing Test HAS_FSTACK_CLASH_PROTECTION
+-- Performing Test HAS_FSTACK_CLASH_PROTECTION - Success
+-- Performing Test HAS_FCF_PROTECTION
+-- Performing Test HAS_FCF_PROTECTION - Success
+-- Performing Test HAS_FSTACK_PROTECTOR_STRONG
+-- Performing Test HAS_FSTACK_PROTECTOR_STRONG - Success
+-- Looking for strerror_r
+-- Looking for strerror_r - found
+-- Performing Test EXV_STRERROR_R_CHAR_P
+-- Performing Test EXV_STRERROR_R_CHAR_P - Success
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Install prefix:    /usr
+-- ------------------------------------------------------------------
+-- CMake Generator:   Unix Makefiles
+-- CMAKE_BUILD_TYPE:  None
+-- Compiler info: GNU (/usr/bin/c++) ; version: 13.2.0
+-- CMAKE_CXX_STANDARD:17
+--  --- Compiler flags --- 
+-- General:           -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects
+	 -fstack-clash-protection
+	 -fcf-protection
+	 -fstack-protector-strong
+	 -Wp,-D_GLIBCXX_ASSERTIONS
+	 -Wall
+	 -Wcast-align
+	 -Wpointer-arith
+	 -Wformat-security
+	 -Wmissing-format-attribute
+	 -Woverloaded-virtual
+	 -W
+	 -Wno-error=format-nonliteral
+-- Extra:              
+-- Debug:             -g3 -gstrict-dwarf -O0
+-- Release:           -O3 -DNDEBUG
+-- RelWithDebInfo:    -O2 -g -DNDEBUG
+-- MinSizeRel:        -Os -DNDEBUG
+--  --- Linker flags --- 
+-- General:           
+-- Debug:             
+-- Release:           
+-- RelWithDebInfo:    
+-- MinSizeRel:        
+-- 
+-- Compiler Options
+-- Warnings as errors:                 NO
+-- Use extra compiler warning flags:   NO
+-- 
+-- ------------------------------------------------------------------
+-- Building shared library:            YES
+-- Building PNG support:               YES
+-- XMP metadata support:               YES
+-- Building BMFF support:              YES
+-- Brotli support for JPEG XL:         YES
+-- Native language support:            NO
+-- Building video support:             YES
+-- Nikon lens database:                YES
+-- Building webready support:          NO
+-- Building exiv2 command:             YES
+-- Building samples:                   NO
+-- Building unit tests:                NO
+-- Building fuzz tests:                NO
+-- Building doc:                       NO
+-- Building with coverage flags:       NO
+-- Using ccache:                       NO
+-- Configuring done (2.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/devel/building/work/src/exiv2-0.28.1/build
++ make -O -j 8 V=1 VERBOSE=1
+/usr/bin/cmake -S/home/devel/building/work/src/exiv2-0.28.1 -B/home/devel/building/work/src/exiv2-0.28.1/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/devel/building/work/src/exiv2-0.28.1/build/CMakeFiles /home/devel/building/work/src/exiv2-0.28.1/build//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make  -f xmpsdk/CMakeFiles/exiv2-xmp.dir/build.make xmpsdk/CMakeFiles/exiv2-xmp.dir/depend
+make  -f src/CMakeFiles/exiv2lib_int.dir/build.make src/CMakeFiles/exiv2lib_int.dir/depend
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+cd /home/devel/building/work/src/exiv2-0.28.1/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/exiv2-0.28.1 /home/devel/building/work/src/exiv2-0.28.1/xmpsdk /home/devel/building/work/src/exiv2-0.28.1/build /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk/CMakeFiles/exiv2-xmp.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+cd /home/devel/building/work/src/exiv2-0.28.1/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/exiv2-0.28.1 /home/devel/building/work/src/exiv2-0.28.1/src /home/devel/building/work/src/exiv2-0.28.1/build /home/devel/building/work/src/exiv2-0.28.1/build/src /home/devel/building/work/src/exiv2-0.28.1/build/src/CMakeFiles/exiv2lib_int.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make  -f xmpsdk/CMakeFiles/exiv2-xmp.dir/build.make xmpsdk/CMakeFiles/exiv2-xmp.dir/build
+make  -f src/CMakeFiles/exiv2lib_int.dir/build.make src/CMakeFiles/exiv2lib_int.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[  4%] Building CXX object xmpsdk/CMakeFiles/exiv2-xmp.dir/src/MD5.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk && /usr/bin/c++ -DBanAllEntityUsage=1 -I/home/devel/building/work/src/exiv2-0.28.1/build -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT xmpsdk/CMakeFiles/exiv2-xmp.dir/src/MD5.cpp.o -MF CMakeFiles/exiv2-xmp.dir/src/MD5.cpp.o.d -o CMakeFiles/exiv2-xmp.dir/src/MD5.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/MD5.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[  8%] Building CXX object xmpsdk/CMakeFiles/exiv2-xmp.dir/src/WXMPIterator.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk && /usr/bin/c++ -DBanAllEntityUsage=1 -I/home/devel/building/work/src/exiv2-0.28.1/build -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT xmpsdk/CMakeFiles/exiv2-xmp.dir/src/WXMPIterator.cpp.o -MF CMakeFiles/exiv2-xmp.dir/src/WXMPIterator.cpp.o.d -o CMakeFiles/exiv2-xmp.dir/src/WXMPIterator.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/WXMPIterator.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[  4%] Building CXX object xmpsdk/CMakeFiles/exiv2-xmp.dir/src/ExpatAdapter.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk && /usr/bin/c++ -DBanAllEntityUsage=1 -I/home/devel/building/work/src/exiv2-0.28.1/build -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT xmpsdk/CMakeFiles/exiv2-xmp.dir/src/ExpatAdapter.cpp.o -MF CMakeFiles/exiv2-xmp.dir/src/ExpatAdapter.cpp.o.d -o CMakeFiles/exiv2-xmp.dir/src/ExpatAdapter.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/ExpatAdapter.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[  7%] Building CXX object xmpsdk/CMakeFiles/exiv2-xmp.dir/src/UnicodeConversions.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk && /usr/bin/c++ -DBanAllEntityUsage=1 -I/home/devel/building/work/src/exiv2-0.28.1/build -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT xmpsdk/CMakeFiles/exiv2-xmp.dir/src/UnicodeConversions.cpp.o -MF CMakeFiles/exiv2-xmp.dir/src/UnicodeConversions.cpp.o.d -o CMakeFiles/exiv2-xmp.dir/src/UnicodeConversions.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/UnicodeConversions.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[  7%] Building CXX object xmpsdk/CMakeFiles/exiv2-xmp.dir/src/ParseRDF.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk && /usr/bin/c++ -DBanAllEntityUsage=1 -I/home/devel/building/work/src/exiv2-0.28.1/build -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT xmpsdk/CMakeFiles/exiv2-xmp.dir/src/ParseRDF.cpp.o -MF CMakeFiles/exiv2-xmp.dir/src/ParseRDF.cpp.o.d -o CMakeFiles/exiv2-xmp.dir/src/ParseRDF.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/ParseRDF.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[  4%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/cr2header_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/cr2header_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/cr2header_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/cr2header_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/cr2header_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 11%] Building CXX object xmpsdk/CMakeFiles/exiv2-xmp.dir/src/WXMPUtils.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk && /usr/bin/c++ -DBanAllEntityUsage=1 -I/home/devel/building/work/src/exiv2-0.28.1/build -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT xmpsdk/CMakeFiles/exiv2-xmp.dir/src/WXMPUtils.cpp.o -MF CMakeFiles/exiv2-xmp.dir/src/WXMPUtils.cpp.o.d -o CMakeFiles/exiv2-xmp.dir/src/WXMPUtils.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/WXMPUtils.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 10%] Building CXX object xmpsdk/CMakeFiles/exiv2-xmp.dir/src/WXMPMeta.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk && /usr/bin/c++ -DBanAllEntityUsage=1 -I/home/devel/building/work/src/exiv2-0.28.1/build -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT xmpsdk/CMakeFiles/exiv2-xmp.dir/src/WXMPMeta.cpp.o -MF CMakeFiles/exiv2-xmp.dir/src/WXMPMeta.cpp.o.d -o CMakeFiles/exiv2-xmp.dir/src/WXMPMeta.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/WXMPMeta.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[  5%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/casiomn_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/casiomn_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/casiomn_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/casiomn_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/casiomn_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 12%] Building CXX object xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XML_Node.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk && /usr/bin/c++ -DBanAllEntityUsage=1 -I/home/devel/building/work/src/exiv2-0.28.1/build -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XML_Node.cpp.o -MF CMakeFiles/exiv2-xmp.dir/src/XML_Node.cpp.o.d -o CMakeFiles/exiv2-xmp.dir/src/XML_Node.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/XML_Node.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 19%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/image_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/image_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/image_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/image_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/image_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 17%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/helper_functions.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/helper_functions.cpp.o -MF CMakeFiles/exiv2lib_int.dir/helper_functions.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/helper_functions.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/helper_functions.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 14%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/fujimn_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/fujimn_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/fujimn_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/fujimn_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/fujimn_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 16%] Building CXX object xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPIterator.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk && /usr/bin/c++ -DBanAllEntityUsage=1 -I/home/devel/building/work/src/exiv2-0.28.1/build -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPIterator.cpp.o -MF CMakeFiles/exiv2-xmp.dir/src/XMPIterator.cpp.o.d -o CMakeFiles/exiv2-xmp.dir/src/XMPIterator.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/XMPIterator.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 21%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/jp2image_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/jp2image_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/jp2image_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/jp2image_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/jp2image_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 20%] Building CXX object xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPMeta-GetSet.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk && /usr/bin/c++ -DBanAllEntityUsage=1 -I/home/devel/building/work/src/exiv2-0.28.1/build -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPMeta-GetSet.cpp.o -MF CMakeFiles/exiv2-xmp.dir/src/XMPMeta-GetSet.cpp.o.d -o CMakeFiles/exiv2-xmp.dir/src/XMPMeta-GetSet.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/XMPMeta-GetSet.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 15%] Building CXX object xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPCore_Impl.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk && /usr/bin/c++ -DBanAllEntityUsage=1 -I/home/devel/building/work/src/exiv2-0.28.1/build -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPCore_Impl.cpp.o -MF CMakeFiles/exiv2-xmp.dir/src/XMPCore_Impl.cpp.o.d -o CMakeFiles/exiv2-xmp.dir/src/XMPCore_Impl.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/XMPCore_Impl.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 22%] Building CXX object xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPMeta-Parse.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk && /usr/bin/c++ -DBanAllEntityUsage=1 -I/home/devel/building/work/src/exiv2-0.28.1/build -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPMeta-Parse.cpp.o -MF CMakeFiles/exiv2-xmp.dir/src/XMPMeta-Parse.cpp.o.d -o CMakeFiles/exiv2-xmp.dir/src/XMPMeta-Parse.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/XMPMeta-Parse.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 13%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/crwimage_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/crwimage_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/crwimage_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/crwimage_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/crwimage_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 24%] Building CXX object xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPMeta-Serialize.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk && /usr/bin/c++ -DBanAllEntityUsage=1 -I/home/devel/building/work/src/exiv2-0.28.1/build -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPMeta-Serialize.cpp.o -MF CMakeFiles/exiv2-xmp.dir/src/XMPMeta-Serialize.cpp.o.d -o CMakeFiles/exiv2-xmp.dir/src/XMPMeta-Serialize.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/XMPMeta-Serialize.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 23%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/makernote_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/makernote_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/makernote_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/makernote_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/makernote_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 25%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/minoltamn_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/minoltamn_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/minoltamn_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/minoltamn_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/minoltamn_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 29%] Building CXX object xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPUtils-FileInfo.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk && /usr/bin/c++ -DBanAllEntityUsage=1 -I/home/devel/building/work/src/exiv2-0.28.1/build -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPUtils-FileInfo.cpp.o -MF CMakeFiles/exiv2-xmp.dir/src/XMPUtils-FileInfo.cpp.o.d -o CMakeFiles/exiv2-xmp.dir/src/XMPUtils-FileInfo.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/XMPUtils-FileInfo.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 28%] Building CXX object xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPMeta.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk && /usr/bin/c++ -DBanAllEntityUsage=1 -I/home/devel/building/work/src/exiv2-0.28.1/build -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPMeta.cpp.o -MF CMakeFiles/exiv2-xmp.dir/src/XMPMeta.cpp.o.d -o CMakeFiles/exiv2-xmp.dir/src/XMPMeta.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/XMPMeta.cpp
+/home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/XMPMeta.cpp: In function 'XMP_Status DumpNodeOptions(XMP_OptionBits, XMP_TextOutputProc, void*)':
+/home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/XMPMeta.cpp:90:70: warning: format '%lX' expects argument of type 'long unsigned int', but argument 4 has type 'XMP_OptionBits' {aka 'unsigned int'} [-Wformat=]
+   90 | #define OutProcHexInt(num)      { snprintf ( buffer, sizeof(buffer), "%lX", (num) ); /* AUDIT: Using sizeof for snprintf length is safe */      \
+      |                                                                      ^~~~~  ~~~~~
+/home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/XMPMeta.cpp:241:17: note: in expansion of macro 'OutProcHexInt'
+  241 |                 OutProcHexInt ( options );
+      |                 ^~~~~~~~~~~~~
+/home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/XMPMeta.cpp:90:73: note: format string is defined here
+   90 | #define OutProcHexInt(num)      { snprintf ( buffer, sizeof(buffer), "%lX", (num) ); /* AUDIT: Using sizeof for snprintf length is safe */      \
+      |                                                                       ~~^
+      |                                                                         |
+      |                                                                         long unsigned int
+      |                                                                       %X
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 30%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/olympusmn_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/olympusmn_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/olympusmn_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/olympusmn_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/olympusmn_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 26%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/nikonmn_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/nikonmn_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/nikonmn_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/nikonmn_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/nikonmn_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 31%] Building CXX object xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPUtils.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/xmpsdk && /usr/bin/c++ -DBanAllEntityUsage=1 -I/home/devel/building/work/src/exiv2-0.28.1/build -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPUtils.cpp.o -MF CMakeFiles/exiv2-xmp.dir/src/XMPUtils.cpp.o.d -o CMakeFiles/exiv2-xmp.dir/src/XMPUtils.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/XMPUtils.cpp
+/home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/XMPUtils.cpp: In static member function 'static XMP_Int64 XMPUtils::ConvertToInt64(XMP_StringPtr)':
+/home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/XMPUtils.cpp:1221:48: warning: format '%lld' expects argument of type 'long long int*', but argument 3 has type 'XMP_Int64*' {aka 'long int*'} [-Wformat=]
+ 1221 |                 count = sscanf ( strValue, "%lld%c", &result, &nextCh );
+      |                                             ~~~^     ~~~~~~~
+      |                                                |     |
+      |                                                |     XMP_Int64* {aka long int*}
+      |                                                long long int*
+      |                                             %ld
+/home/devel/building/work/src/exiv2-0.28.1/xmpsdk/src/XMPUtils.cpp:1223:48: warning: format '%llx' expects argument of type 'long long unsigned int*', but argument 3 has type 'XMP_Int64*' {aka 'long int*'} [-Wformat=]
+ 1223 |                 count = sscanf ( strValue, "%llx%c", &result, &nextCh );
+      |                                             ~~~^     ~~~~~~~
+      |                                                |     |
+      |                                                |     XMP_Int64* {aka long int*}
+      |                                                long long unsigned int*
+      |                                             %lx
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[1]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 37%] Built target exiv2-xmp
+make[1]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 32%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/orfimage_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/orfimage_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/orfimage_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/orfimage_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/orfimage_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 35%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/rw2image_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/rw2image_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/rw2image_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/rw2image_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/rw2image_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 33%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/panasonicmn_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/panasonicmn_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/panasonicmn_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/panasonicmn_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/panasonicmn_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 37%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/samsungmn_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/samsungmn_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/samsungmn_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/samsungmn_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/samsungmn_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[  4%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/canonmn_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/canonmn_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/canonmn_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/canonmn_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/canonmn_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 39%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/sigmamn_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/sigmamn_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/sigmamn_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/sigmamn_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/sigmamn_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 34%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/pentaxmn_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/pentaxmn_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/pentaxmn_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/pentaxmn_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/pentaxmn_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 44%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/utils.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/utils.cpp.o -MF CMakeFiles/exiv2lib_int.dir/utils.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/utils.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/utils.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 40%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/tags_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/tags_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/tags_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/tags_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/tags_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 46%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/pngchunk_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/pngchunk_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/pngchunk_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/pngchunk_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/pngchunk_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 38%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/sonymn_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/sonymn_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/sonymn_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/sonymn_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/sonymn_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 41%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/tiffcomposite_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/tiffcomposite_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/tiffcomposite_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/tiffcomposite_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/tiffcomposite_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 43%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/tiffvisitor_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/tiffvisitor_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/tiffvisitor_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/tiffvisitor_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/tiffvisitor_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 42%] Building CXX object src/CMakeFiles/exiv2lib_int.dir/tiffimage_int.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib_int.dir/tiffimage_int.cpp.o -MF CMakeFiles/exiv2lib_int.dir/tiffimage_int.cpp.o.d -o CMakeFiles/exiv2lib_int.dir/tiffimage_int.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/tiffimage_int.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[1]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 46%] Built target exiv2lib_int
+make[1]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make  -f src/CMakeFiles/exiv2lib.dir/build.make src/CMakeFiles/exiv2lib.dir/depend
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+cd /home/devel/building/work/src/exiv2-0.28.1/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/exiv2-0.28.1 /home/devel/building/work/src/exiv2-0.28.1/src /home/devel/building/work/src/exiv2-0.28.1/build /home/devel/building/work/src/exiv2-0.28.1/build/src /home/devel/building/work/src/exiv2-0.28.1/build/src/CMakeFiles/exiv2lib.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make  -f src/CMakeFiles/exiv2lib.dir/build.make src/CMakeFiles/exiv2lib.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 53%] Building CXX object src/CMakeFiles/exiv2lib.dir/bmpimage.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/bmpimage.cpp.o -MF CMakeFiles/exiv2lib.dir/bmpimage.cpp.o.d -o CMakeFiles/exiv2lib.dir/bmpimage.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/bmpimage.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 53%] Building CXX object src/CMakeFiles/exiv2lib.dir/crwimage.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/crwimage.cpp.o -MF CMakeFiles/exiv2lib.dir/crwimage.cpp.o.d -o CMakeFiles/exiv2lib.dir/crwimage.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/crwimage.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 50%] Building CXX object src/CMakeFiles/exiv2lib.dir/cr2image.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/cr2image.cpp.o -MF CMakeFiles/exiv2lib.dir/cr2image.cpp.o.d -o CMakeFiles/exiv2lib.dir/cr2image.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/cr2image.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 58%] Building CXX object src/CMakeFiles/exiv2lib.dir/error.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/error.cpp.o -MF CMakeFiles/exiv2lib.dir/error.cpp.o.d -o CMakeFiles/exiv2lib.dir/error.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/error.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 56%] Building CXX object src/CMakeFiles/exiv2lib.dir/easyaccess.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/easyaccess.cpp.o -MF CMakeFiles/exiv2lib.dir/easyaccess.cpp.o.d -o CMakeFiles/exiv2lib.dir/easyaccess.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/easyaccess.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 51%] Building CXX object src/CMakeFiles/exiv2lib.dir/bmffimage.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/bmffimage.cpp.o -MF CMakeFiles/exiv2lib.dir/bmffimage.cpp.o.d -o CMakeFiles/exiv2lib.dir/bmffimage.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/bmffimage.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 50%] Building CXX object src/CMakeFiles/exiv2lib.dir/asfvideo.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/asfvideo.cpp.o -MF CMakeFiles/exiv2lib.dir/asfvideo.cpp.o.d -o CMakeFiles/exiv2lib.dir/asfvideo.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/asfvideo.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 50%] Building CXX object src/CMakeFiles/exiv2lib.dir/basicio.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/basicio.cpp.o -MF CMakeFiles/exiv2lib.dir/basicio.cpp.o.d -o CMakeFiles/exiv2lib.dir/basicio.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/basicio.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 50%] Building CXX object src/CMakeFiles/exiv2lib.dir/convert.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/convert.cpp.o -MF CMakeFiles/exiv2lib.dir/convert.cpp.o.d -o CMakeFiles/exiv2lib.dir/convert.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/convert.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 60%] Building CXX object src/CMakeFiles/exiv2lib.dir/futils.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/futils.cpp.o -MF CMakeFiles/exiv2lib.dir/futils.cpp.o.d -o CMakeFiles/exiv2lib.dir/futils.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/futils.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 61%] Building CXX object src/CMakeFiles/exiv2lib.dir/gifimage.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/gifimage.cpp.o -MF CMakeFiles/exiv2lib.dir/gifimage.cpp.o.d -o CMakeFiles/exiv2lib.dir/gifimage.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/gifimage.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 62%] Building CXX object src/CMakeFiles/exiv2lib.dir/http.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/http.cpp.o -MF CMakeFiles/exiv2lib.dir/http.cpp.o.d -o CMakeFiles/exiv2lib.dir/http.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/http.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 55%] Building CXX object src/CMakeFiles/exiv2lib.dir/datasets.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/datasets.cpp.o -MF CMakeFiles/exiv2lib.dir/datasets.cpp.o.d -o CMakeFiles/exiv2lib.dir/datasets.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/datasets.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 68%] Building CXX object src/CMakeFiles/exiv2lib.dir/metadatum.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/metadatum.cpp.o -MF CMakeFiles/exiv2lib.dir/metadatum.cpp.o.d -o CMakeFiles/exiv2lib.dir/metadatum.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/metadatum.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 64%] Building CXX object src/CMakeFiles/exiv2lib.dir/image.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/image.cpp.o -MF CMakeFiles/exiv2lib.dir/image.cpp.o.d -o CMakeFiles/exiv2lib.dir/image.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/image.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 65%] Building CXX object src/CMakeFiles/exiv2lib.dir/iptc.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/iptc.cpp.o -MF CMakeFiles/exiv2lib.dir/iptc.cpp.o.d -o CMakeFiles/exiv2lib.dir/iptc.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/iptc.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 57%] Building CXX object src/CMakeFiles/exiv2lib.dir/epsimage.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/epsimage.cpp.o -MF CMakeFiles/exiv2lib.dir/epsimage.cpp.o.d -o CMakeFiles/exiv2lib.dir/epsimage.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/epsimage.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 66%] Building CXX object src/CMakeFiles/exiv2lib.dir/jp2image.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/jp2image.cpp.o -MF CMakeFiles/exiv2lib.dir/jp2image.cpp.o.d -o CMakeFiles/exiv2lib.dir/jp2image.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/jp2image.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 59%] Building CXX object src/CMakeFiles/exiv2lib.dir/exif.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/exif.cpp.o -MF CMakeFiles/exiv2lib.dir/exif.cpp.o.d -o CMakeFiles/exiv2lib.dir/exif.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/exif.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 67%] Building CXX object src/CMakeFiles/exiv2lib.dir/jpgimage.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/jpgimage.cpp.o -MF CMakeFiles/exiv2lib.dir/jpgimage.cpp.o.d -o CMakeFiles/exiv2lib.dir/jpgimage.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/jpgimage.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 69%] Building CXX object src/CMakeFiles/exiv2lib.dir/mrwimage.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/mrwimage.cpp.o -MF CMakeFiles/exiv2lib.dir/mrwimage.cpp.o.d -o CMakeFiles/exiv2lib.dir/mrwimage.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/mrwimage.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 73%] Building CXX object src/CMakeFiles/exiv2lib.dir/photoshop.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/photoshop.cpp.o -MF CMakeFiles/exiv2lib.dir/photoshop.cpp.o.d -o CMakeFiles/exiv2lib.dir/photoshop.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/photoshop.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 70%] Building CXX object src/CMakeFiles/exiv2lib.dir/orfimage.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/orfimage.cpp.o -MF CMakeFiles/exiv2lib.dir/orfimage.cpp.o.d -o CMakeFiles/exiv2lib.dir/orfimage.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/orfimage.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 71%] Building CXX object src/CMakeFiles/exiv2lib.dir/pgfimage.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/pgfimage.cpp.o -MF CMakeFiles/exiv2lib.dir/pgfimage.cpp.o.d -o CMakeFiles/exiv2lib.dir/pgfimage.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/pgfimage.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 76%] Building CXX object src/CMakeFiles/exiv2lib.dir/psdimage.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/psdimage.cpp.o -MF CMakeFiles/exiv2lib.dir/psdimage.cpp.o.d -o CMakeFiles/exiv2lib.dir/psdimage.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/psdimage.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 75%] Building CXX object src/CMakeFiles/exiv2lib.dir/properties.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/properties.cpp.o -MF CMakeFiles/exiv2lib.dir/properties.cpp.o.d -o CMakeFiles/exiv2lib.dir/properties.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/properties.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 79%] Building CXX object src/CMakeFiles/exiv2lib.dir/tags.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/tags.cpp.o -MF CMakeFiles/exiv2lib.dir/tags.cpp.o.d -o CMakeFiles/exiv2lib.dir/tags.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/tags.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 80%] Building CXX object src/CMakeFiles/exiv2lib.dir/tgaimage.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/tgaimage.cpp.o -MF CMakeFiles/exiv2lib.dir/tgaimage.cpp.o.d -o CMakeFiles/exiv2lib.dir/tgaimage.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/tgaimage.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 78%] Building CXX object src/CMakeFiles/exiv2lib.dir/rw2image.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/rw2image.cpp.o -MF CMakeFiles/exiv2lib.dir/rw2image.cpp.o.d -o CMakeFiles/exiv2lib.dir/rw2image.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/rw2image.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 77%] Building CXX object src/CMakeFiles/exiv2lib.dir/rafimage.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/rafimage.cpp.o -MF CMakeFiles/exiv2lib.dir/rafimage.cpp.o.d -o CMakeFiles/exiv2lib.dir/rafimage.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/rafimage.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 82%] Building CXX object src/CMakeFiles/exiv2lib.dir/tiffimage.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/tiffimage.cpp.o -MF CMakeFiles/exiv2lib.dir/tiffimage.cpp.o.d -o CMakeFiles/exiv2lib.dir/tiffimage.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/tiffimage.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 74%] Building CXX object src/CMakeFiles/exiv2lib.dir/preview.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/preview.cpp.o -MF CMakeFiles/exiv2lib.dir/preview.cpp.o.d -o CMakeFiles/exiv2lib.dir/preview.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/preview.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 83%] Building CXX object src/CMakeFiles/exiv2lib.dir/types.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/types.cpp.o -MF CMakeFiles/exiv2lib.dir/types.cpp.o.d -o CMakeFiles/exiv2lib.dir/types.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/types.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 86%] Building CXX object src/CMakeFiles/exiv2lib.dir/webpimage.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/webpimage.cpp.o -MF CMakeFiles/exiv2lib.dir/webpimage.cpp.o.d -o CMakeFiles/exiv2lib.dir/webpimage.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/webpimage.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 88%] Building CXX object src/CMakeFiles/exiv2lib.dir/xmpsidecar.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/xmpsidecar.cpp.o -MF CMakeFiles/exiv2lib.dir/xmpsidecar.cpp.o.d -o CMakeFiles/exiv2lib.dir/xmpsidecar.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/xmpsidecar.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 89%] Building CXX object src/CMakeFiles/exiv2lib.dir/pngimage.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/pngimage.cpp.o -MF CMakeFiles/exiv2lib.dir/pngimage.cpp.o.d -o CMakeFiles/exiv2lib.dir/pngimage.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/pngimage.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 85%] Building CXX object src/CMakeFiles/exiv2lib.dir/version.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/version.cpp.o -MF CMakeFiles/exiv2lib.dir/version.cpp.o.d -o CMakeFiles/exiv2lib.dir/version.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/version.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 91%] Building CXX object src/CMakeFiles/exiv2lib.dir/matroskavideo.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/matroskavideo.cpp.o -MF CMakeFiles/exiv2lib.dir/matroskavideo.cpp.o.d -o CMakeFiles/exiv2lib.dir/matroskavideo.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/matroskavideo.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 87%] Building CXX object src/CMakeFiles/exiv2lib.dir/xmp.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/xmp.cpp.o -MF CMakeFiles/exiv2lib.dir/xmp.cpp.o.d -o CMakeFiles/exiv2lib.dir/xmp.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/xmp.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 92%] Building CXX object src/CMakeFiles/exiv2lib.dir/quicktimevideo.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/quicktimevideo.cpp.o -MF CMakeFiles/exiv2lib.dir/quicktimevideo.cpp.o.d -o CMakeFiles/exiv2lib.dir/quicktimevideo.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/quicktimevideo.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 93%] Building CXX object src/CMakeFiles/exiv2lib.dir/riffvideo.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/riffvideo.cpp.o -MF CMakeFiles/exiv2lib.dir/riffvideo.cpp.o.d -o CMakeFiles/exiv2lib.dir/riffvideo.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/riffvideo.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 84%] Building CXX object src/CMakeFiles/exiv2lib.dir/value.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/c++ -Dexiv2lib_EXPORTS -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/build/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -isystem /home/devel/building/work/src/exiv2-0.28.1/xmpsdk/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT src/CMakeFiles/exiv2lib.dir/value.cpp.o -MF CMakeFiles/exiv2lib.dir/value.cpp.o.d -o CMakeFiles/exiv2lib.dir/value.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/src/value.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 94%] Linking CXX shared library ../lib/libexiv2.so
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/cmake -E cmake_link_script CMakeFiles/exiv2lib.dir/link.txt --verbose=1
+/usr/bin/c++ -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fstack-protector-strong -shared -Wl,-soname,libexiv2.so.28 -o ../lib/libexiv2.so.0.28.1 CMakeFiles/exiv2lib.dir/asfvideo.cpp.o CMakeFiles/exiv2lib.dir/basicio.cpp.o CMakeFiles/exiv2lib.dir/bmffimage.cpp.o CMakeFiles/exiv2lib.dir/bmpimage.cpp.o CMakeFiles/exiv2lib.dir/convert.cpp.o CMakeFiles/exiv2lib.dir/cr2image.cpp.o CMakeFiles/exiv2lib.dir/crwimage.cpp.o CMakeFiles/exiv2lib.dir/datasets.cpp.o CMakeFiles/exiv2lib.dir/easyaccess.cpp.o CMakeFiles/exiv2lib.dir/epsimage.cpp.o CMakeFiles/exiv2lib.dir/error.cpp.o CMakeFiles/exiv2lib.dir/exif.cpp.o CMakeFiles/exiv2lib.dir/futils.cpp.o CMakeFiles/exiv2lib.dir/gifimage.cpp.o CMakeFiles/exiv2lib.dir/http.cpp.o CMakeFiles/exiv2lib.dir/image.cpp.o CMakeFiles/exiv2lib.dir/iptc.cpp.o CMakeFiles/exiv2lib.dir/jp2image.cpp.o CMakeFiles/exiv2lib.dir/jpgimage.cpp.o CMakeFiles/exiv2lib.dir/metadatum.cpp.o CMakeFiles/exiv2lib.dir/mrwimage.cpp.o CMakeFiles/exiv2lib.dir/orfimage.cpp.o CMakeFiles/exiv2lib.dir/pgfimage.cpp.o CMakeFiles/exiv2lib.dir/photoshop.cpp.o CMakeFiles/exiv2lib.dir/preview.cpp.o CMakeFiles/exiv2lib.dir/properties.cpp.o CMakeFiles/exiv2lib.dir/psdimage.cpp.o CMakeFiles/exiv2lib.dir/rafimage.cpp.o CMakeFiles/exiv2lib.dir/rw2image.cpp.o CMakeFiles/exiv2lib.dir/tags.cpp.o CMakeFiles/exiv2lib.dir/tgaimage.cpp.o CMakeFiles/exiv2lib.dir/tiffimage.cpp.o CMakeFiles/exiv2lib.dir/types.cpp.o CMakeFiles/exiv2lib.dir/value.cpp.o CMakeFiles/exiv2lib.dir/version.cpp.o CMakeFiles/exiv2lib.dir/webpimage.cpp.o CMakeFiles/exiv2lib.dir/xmp.cpp.o CMakeFiles/exiv2lib.dir/xmpsidecar.cpp.o CMakeFiles/exiv2lib.dir/pngimage.cpp.o CMakeFiles/exiv2lib.dir/matroskavideo.cpp.o CMakeFiles/exiv2lib.dir/quicktimevideo.cpp.o CMakeFiles/exiv2lib.dir/riffvideo.cpp.o CMakeFiles/exiv2lib_int.dir/canonmn_int.cpp.o CMakeFiles/exiv2lib_int.dir/casiomn_int.cpp.o CMakeFiles/exiv2lib_int.dir/cr2header_int.cpp.o CMakeFiles/exiv2lib_int.dir/crwimage_int.cpp.o CMakeFiles/exiv2lib_int.dir/fujimn_int.cpp.o CMakeFiles/exiv2lib_int.dir/helper_functions.cpp.o CMakeFiles/exiv2lib_int.dir/image_int.cpp.o CMakeFiles/exiv2lib_int.dir/jp2image_int.cpp.o CMakeFiles/exiv2lib_int.dir/makernote_int.cpp.o CMakeFiles/exiv2lib_int.dir/minoltamn_int.cpp.o CMakeFiles/exiv2lib_int.dir/nikonmn_int.cpp.o CMakeFiles/exiv2lib_int.dir/olympusmn_int.cpp.o CMakeFiles/exiv2lib_int.dir/orfimage_int.cpp.o CMakeFiles/exiv2lib_int.dir/panasonicmn_int.cpp.o CMakeFiles/exiv2lib_int.dir/pentaxmn_int.cpp.o CMakeFiles/exiv2lib_int.dir/rw2image_int.cpp.o CMakeFiles/exiv2lib_int.dir/samsungmn_int.cpp.o CMakeFiles/exiv2lib_int.dir/sigmamn_int.cpp.o CMakeFiles/exiv2lib_int.dir/sonymn_int.cpp.o CMakeFiles/exiv2lib_int.dir/tags_int.cpp.o CMakeFiles/exiv2lib_int.dir/tiffcomposite_int.cpp.o CMakeFiles/exiv2lib_int.dir/tiffimage_int.cpp.o CMakeFiles/exiv2lib_int.dir/tiffvisitor_int.cpp.o CMakeFiles/exiv2lib_int.dir/utils.cpp.o CMakeFiles/exiv2lib_int.dir/pngchunk_int.cpp.o "../xmpsdk/CMakeFiles/exiv2-xmp.dir/src/ExpatAdapter.cpp.o" "../xmpsdk/CMakeFiles/exiv2-xmp.dir/src/MD5.cpp.o" "../xmpsdk/CMakeFiles/exiv2-xmp.dir/src/ParseRDF.cpp.o" "../xmpsdk/CMakeFiles/exiv2-xmp.dir/src/UnicodeConversions.cpp.o" "../xmpsdk/CMakeFiles/exiv2-xmp.dir/src/WXMPIterator.cpp.o" "../xmpsdk/CMakeFiles/exiv2-xmp.dir/src/WXMPMeta.cpp.o" "../xmpsdk/CMakeFiles/exiv2-xmp.dir/src/WXMPUtils.cpp.o" "../xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XML_Node.cpp.o" "../xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPCore_Impl.cpp.o" "../xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPIterator.cpp.o" "../xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPMeta-GetSet.cpp.o" "../xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPMeta-Parse.cpp.o" "../xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPMeta-Serialize.cpp.o" "../xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPMeta.cpp.o" "../xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPUtils-FileInfo.cpp.o" "../xmpsdk/CMakeFiles/exiv2-xmp.dir/src/XMPUtils.cpp.o"  -Wl,-rpath,:::::::::::::: /usr/lib/libexpat.so /usr/lib/libz.so /usr/lib/libbrotlicommon.so /usr/lib/libbrotlidec.so /usr/lib/libinih.so /usr/lib/libINIReader.so 
+cd /home/devel/building/work/src/exiv2-0.28.1/build/src && /usr/bin/cmake -E cmake_symlink_library ../lib/libexiv2.so.0.28.1 ../lib/libexiv2.so.28 ../lib/libexiv2.so
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[1]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 94%] Built target exiv2lib
+make[1]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make  -f app/CMakeFiles/exiv2.dir/build.make app/CMakeFiles/exiv2.dir/depend
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+cd /home/devel/building/work/src/exiv2-0.28.1/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/devel/building/work/src/exiv2-0.28.1 /home/devel/building/work/src/exiv2-0.28.1/app /home/devel/building/work/src/exiv2-0.28.1/build /home/devel/building/work/src/exiv2-0.28.1/build/app /home/devel/building/work/src/exiv2-0.28.1/build/app/CMakeFiles/exiv2.dir/DependInfo.cmake "--color="
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make  -f app/CMakeFiles/exiv2.dir/build.make app/CMakeFiles/exiv2.dir/build
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 98%] Building CXX object app/CMakeFiles/exiv2.dir/app_utils.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/app && /usr/bin/c++  -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT app/CMakeFiles/exiv2.dir/app_utils.cpp.o -MF CMakeFiles/exiv2.dir/app_utils.cpp.o.d -o CMakeFiles/exiv2.dir/app_utils.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/app/app_utils.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 98%] Building CXX object app/CMakeFiles/exiv2.dir/getopt.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/app && /usr/bin/c++  -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT app/CMakeFiles/exiv2.dir/getopt.cpp.o -MF CMakeFiles/exiv2.dir/getopt.cpp.o.d -o CMakeFiles/exiv2.dir/getopt.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/app/getopt.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 98%] Building CXX object app/CMakeFiles/exiv2.dir/actions.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/app && /usr/bin/c++  -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT app/CMakeFiles/exiv2.dir/actions.cpp.o -MF CMakeFiles/exiv2.dir/actions.cpp.o.d -o CMakeFiles/exiv2.dir/actions.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/app/actions.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[ 98%] Building CXX object app/CMakeFiles/exiv2.dir/exiv2.cpp.o
+cd /home/devel/building/work/src/exiv2-0.28.1/build/app && /usr/bin/c++  -I/home/devel/building/work/src/exiv2-0.28.1/build -I/home/devel/building/work/src/exiv2-0.28.1/src -I/home/devel/building/work/src/exiv2-0.28.1/include/exiv2 -I/home/devel/building/work/src/exiv2-0.28.1/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++17 -fvisibility=hidden -fvisibility-inlines-hidden -fstack-clash-protection -fcf-protection -fstack-protector-strong -Wp,-D_GLIBCXX_ASSERTIONS -Wall -Wcast-align -Wpointer-arith -Wformat-security -Wmissing-format-attribute -Woverloaded-virtual -W -Wno-error=format-nonliteral -MD -MT app/CMakeFiles/exiv2.dir/exiv2.cpp.o -MF CMakeFiles/exiv2.dir/exiv2.cpp.o.d -o CMakeFiles/exiv2.dir/exiv2.cpp.o -c /home/devel/building/work/src/exiv2-0.28.1/app/exiv2.cpp
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[2]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[100%] Linking CXX executable ../bin/exiv2
+cd /home/devel/building/work/src/exiv2-0.28.1/build/app && /usr/bin/cmake -E cmake_link_script CMakeFiles/exiv2.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fstack-protector-strong CMakeFiles/exiv2.dir/exiv2.cpp.o CMakeFiles/exiv2.dir/actions.cpp.o CMakeFiles/exiv2.dir/getopt.cpp.o CMakeFiles/exiv2.dir/app_utils.cpp.o -o ../bin/exiv2  -Wl,-rpath,/home/devel/building/work/src/exiv2-0.28.1/build/lib: ../lib/libexiv2.so.0.28.1 
+make[2]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+make[1]: Entering directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+[100%] Built target exiv2
+make[1]: Leaving directory '/home/devel/building/work/src/exiv2-0.28.1/build'
+/usr/bin/cmake -E cmake_progress_start /home/devel/building/work/src/exiv2-0.28.1/build/CMakeFiles 0
++ make DESTDIR=/home/devel/building/work/pkg install
+[ 17%] Built target exiv2-xmp
+[ 46%] Built target exiv2lib_int
+[ 94%] Built target exiv2lib
+[100%] Built target exiv2
+Install the project...
+-- Install configuration: "None"
+-- Installing: /home/devel/building/work/pkg/usr/lib/pkgconfig/exiv2.pc
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man1/exiv2.1
+-- Installing: /home/devel/building/work/pkg/usr/lib/libexiv2.so.0.28.1
+-- Installing: /home/devel/building/work/pkg/usr/lib/libexiv2.so.28
+-- Set non-toolchain portion of runtime path of "/home/devel/building/work/pkg/usr/lib/libexiv2.so.0.28.1" to "$ORIGIN/../lib"
+-- Installing: /home/devel/building/work/pkg/usr/lib/libexiv2.so
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/basicio.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/bmffimage.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/bmpimage.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/config.h
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/convert.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/cr2image.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/crwimage.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/datasets.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/easyaccess.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/epsimage.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/error.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/exif.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/exiv2.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/futils.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/gifimage.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/http.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/image.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/image_types.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/iptc.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/jp2image.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/jpgimage.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/metadatum.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/mrwimage.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/orfimage.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/pgfimage.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/photoshop.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/preview.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/properties.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/psdimage.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/rafimage.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/rw2image.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/slice.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/tags.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/tgaimage.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/tiffimage.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/types.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/value.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/version.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/webpimage.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/xmp_exiv2.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/xmpsidecar.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/pngimage.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/asfvideo.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/matroskavideo.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/quicktimevideo.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/riffvideo.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/exv_conf.h
+-- Installing: /home/devel/building/work/pkg/usr/include/exiv2/exiv2lib_export.h
+-- Installing: /home/devel/building/work/pkg/usr/share/cmake/exiv2/exiv2Export.cmake
+-- Installing: /home/devel/building/work/pkg/usr/share/cmake/exiv2/exiv2Export-none.cmake
+-- Installing: /home/devel/building/work/pkg/usr/share/cmake/exiv2/exiv2ConfigVersion.cmake
+-- Installing: /home/devel/building/work/pkg/usr/share/cmake/exiv2/exiv2Config.cmake
+-- Installing: /home/devel/building/work/pkg/usr/bin/exiv2
+-- Set non-toolchain portion of runtime path of "/home/devel/building/work/pkg/usr/bin/exiv2" to "$ORIGIN/../lib"
++ find /home/devel/building/work/pkg -type f -name '*.a' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/bin/
+-rwxr-xr-x  0 root   root   308360 Feb  1 15:37 usr/bin/exiv2
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/include/exiv2/
+-rw-r--r--  0 root   root    34078 Nov  6 13:17 usr/include/exiv2/basicio.hpp
+-rw-r--r--  0 root   root     5616 Nov  6 13:17 usr/include/exiv2/bmffimage.hpp
+-rw-r--r--  0 root   root     2811 Nov  6 13:17 usr/include/exiv2/bmpimage.hpp
+-rw-r--r--  0 root   root     1630 Nov  6 13:17 usr/include/exiv2/config.h
+-rw-r--r--  0 root   root     4009 Nov  6 13:17 usr/include/exiv2/convert.hpp
+-rw-r--r--  0 root   root     4187 Nov  6 13:17 usr/include/exiv2/cr2image.hpp
+-rw-r--r--  0 root   root     4826 Nov  6 13:17 usr/include/exiv2/crwimage.hpp
+-rw-r--r--  0 root   root    11129 Nov  6 13:17 usr/include/exiv2/datasets.hpp
+-rw-r--r--  0 root   root    10219 Nov  6 13:17 usr/include/exiv2/easyaccess.hpp
+-rw-r--r--  0 root   root     3482 Nov  6 13:17 usr/include/exiv2/epsimage.hpp
+-rw-r--r--  0 root   root     9404 Nov  6 13:17 usr/include/exiv2/error.hpp
+-rw-r--r--  0 root   root    20633 Nov  6 13:17 usr/include/exiv2/exif.hpp
+-rw-r--r--  0 root   root     1365 Nov  6 13:17 usr/include/exiv2/exiv2.hpp
+-rw-r--r--  0 root   root     4231 Nov  6 13:17 usr/include/exiv2/futils.hpp
+-rw-r--r--  0 root   root     2991 Nov  6 13:17 usr/include/exiv2/gifimage.hpp
+-rw-r--r--  0 root   root      574 Nov  6 13:17 usr/include/exiv2/http.hpp
+-rw-r--r--  0 root   root    26793 Nov  6 13:17 usr/include/exiv2/image.hpp
+-rw-r--r--  0 root   root      540 Nov  6 13:17 usr/include/exiv2/image_types.hpp
+-rw-r--r--  0 root   root    10179 Nov  6 13:17 usr/include/exiv2/iptc.hpp
+-rw-r--r--  0 root   root     3496 Nov  6 13:17 usr/include/exiv2/jp2image.hpp
+-rw-r--r--  0 root   root     9028 Nov  6 13:17 usr/include/exiv2/jpgimage.hpp
+-rw-r--r--  0 root   root    10598 Nov  6 13:17 usr/include/exiv2/metadatum.hpp
+-rw-r--r--  0 root   root     3452 Nov  6 13:17 usr/include/exiv2/mrwimage.hpp
+-rw-r--r--  0 root   root     3727 Nov  6 13:17 usr/include/exiv2/orfimage.hpp
+-rw-r--r--  0 root   root     3224 Nov  6 13:17 usr/include/exiv2/pgfimage.hpp
+-rw-r--r--  0 root   root     3490 Nov  6 13:17 usr/include/exiv2/photoshop.hpp
+-rw-r--r--  0 root   root     4114 Nov  6 13:17 usr/include/exiv2/preview.hpp
+-rw-r--r--  0 root   root     9530 Nov  6 13:17 usr/include/exiv2/properties.hpp
+-rw-r--r--  0 root   root     3512 Nov  6 13:17 usr/include/exiv2/psdimage.hpp
+-rw-r--r--  0 root   root     3544 Nov  6 13:17 usr/include/exiv2/rafimage.hpp
+-rw-r--r--  0 root   root     3888 Nov  6 13:17 usr/include/exiv2/rw2image.hpp
+-rw-r--r--  0 root   root    19059 Nov  6 13:17 usr/include/exiv2/slice.hpp
+-rw-r--r--  0 root   root     9163 Nov  6 13:17 usr/include/exiv2/tags.hpp
+-rw-r--r--  0 root   root     3006 Nov  6 13:17 usr/include/exiv2/tgaimage.hpp
+-rw-r--r--  0 root   root     6433 Nov  6 13:17 usr/include/exiv2/tiffimage.hpp
+-rw-r--r--  0 root   root    17750 Nov  6 13:17 usr/include/exiv2/types.hpp
+-rw-r--r--  0 root   root    51833 Nov  6 13:17 usr/include/exiv2/value.hpp
+-rw-r--r--  0 root   root     3707 Nov  6 13:17 usr/include/exiv2/version.hpp
+-rw-r--r--  0 root   root     3827 Nov  6 13:17 usr/include/exiv2/webpimage.hpp
+-rw-r--r--  0 root   root    14186 Nov  6 13:17 usr/include/exiv2/xmp_exiv2.hpp
+-rw-r--r--  0 root   root     2590 Nov  6 13:17 usr/include/exiv2/xmpsidecar.hpp
+-rw-r--r--  0 root   root     3224 Nov  6 13:17 usr/include/exiv2/pngimage.hpp
+-rw-r--r--  0 root   root     5372 Nov  6 13:17 usr/include/exiv2/asfvideo.hpp
+-rw-r--r--  0 root   root     6102 Nov  6 13:17 usr/include/exiv2/matroskavideo.hpp
+-rw-r--r--  0 root   root     7814 Nov  6 13:17 usr/include/exiv2/quicktimevideo.hpp
+-rw-r--r--  0 root   root     6196 Nov  6 13:17 usr/include/exiv2/riffvideo.hpp
+-rw-r--r--  0 root   root     1978 Feb  1 15:36 usr/include/exiv2/exv_conf.h
+-rw-r--r--  0 root   root      992 Feb  1 15:36 usr/include/exiv2/exiv2lib_export.h
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/share/cmake/
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/share/cmake/exiv2/
+-rw-r--r--  0 root   root     3900 Feb  1 15:36 usr/share/cmake/exiv2/exiv2Export.cmake
+-rw-r--r--  0 root   root      840 Feb  1 15:36 usr/share/cmake/exiv2/exiv2Export-none.cmake
+-rw-r--r--  0 root   root     3252 Feb  1 15:36 usr/share/cmake/exiv2/exiv2ConfigVersion.cmake
+-rw-r--r--  0 root   root     1184 Feb  1 15:36 usr/share/cmake/exiv2/exiv2Config.cmake
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/share/man/man1/
+-rw-r--r--  0 root   root      153 Nov  6 13:17 usr/share/man/man1/exiv2.1.gz
+drwxr-xr-x  0 root   root        0 Feb  1 15:37 usr/lib/pkgconfig/
+-rwxr-xr-x  0 root   root  3556400 Feb  1 15:37 usr/lib/libexiv2.so.0.28.1
+lrwxrwxrwx  0 root   root        0 Feb  1 15:37 usr/lib/libexiv2.so.28 -> libexiv2.so.0.28.1
+lrwxrwxrwx  0 root   root        0 Feb  1 15:37 usr/lib/libexiv2.so -> libexiv2.so.28
+-rw-r--r--  0 root   root      357 Feb  1 15:36 usr/lib/pkgconfig/exiv2.pc
+=======> Building '/home/devel/packages/exiv2#0.28.1-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling exiv2 0.28.1-1
+prt-get: /usr/bin/pkgadd -u exiv2#0.28.1-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 15:37:24 2024
+

@@ -1,0 +1,24 @@
+prt-get: updating /usr/ports/wayland-x86_64/font-awesome-ttf
+prt-get: starting build Thu Feb  1 16:07:13 2024
+=======> Building '/home/devel/packages/font-awesome-ttf#6.4.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/Font-Awesome-6.4.0.tar.gz
++ build
++ cd Font-Awesome-6.4.0
++ install -d /home/devel/building/work/pkg/usr/share/fonts/truetype/awesome
++ install -m 0644 ./webfonts/fa-brands-400.ttf ./webfonts/fa-regular-400.ttf ./webfonts/fa-solid-900.ttf ./webfonts/fa-v4compatibility.ttf /home/devel/building/work/pkg/usr/share/fonts/truetype/awesome
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 16:07 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 16:07 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 16:07 usr/share/fonts/
+drwxr-xr-x  0 root   root        0 Feb  1 16:07 usr/share/fonts/truetype/
+drwxr-xr-x  0 root   root        0 Feb  1 16:07 usr/share/fonts/truetype/awesome/
+-rw-r--r--  0 root   root   187208 Feb  1 16:07 usr/share/fonts/truetype/awesome/fa-brands-400.ttf
+-rw-r--r--  0 root   root    63952 Feb  1 16:07 usr/share/fonts/truetype/awesome/fa-regular-400.ttf
+-rw-r--r--  0 root   root   394628 Feb  1 16:07 usr/share/fonts/truetype/awesome/fa-solid-900.ttf
+-rw-r--r--  0 root   root    10172 Feb  1 16:07 usr/share/fonts/truetype/awesome/fa-v4compatibility.ttf
+=======> Building '/home/devel/packages/font-awesome-ttf#6.4.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling font-awesome-ttf 6.4.0-1
+prt-get: /usr/bin/pkgadd -u font-awesome-ttf#6.4.0-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 16:07:13 2024
+

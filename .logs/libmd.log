@@ -1,0 +1,496 @@
+prt-get: updating /usr/ports/core-x86_64/libmd
+prt-get: starting build Thu Feb  1 18:14:20 2024
+=======> Building '/home/devel/packages/libmd#1.1.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/libmd-1.1.0.tar.xz
++ build
++ cd libmd-1.1.0
++ ./configure --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --prefix=/usr --disable-static
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking whether make supports the include directive... yes (GNU style)
+checking for x86_64-unknown-linux-gnu-gcc... x86_64-unknown-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... yes
+checking for x86_64-unknown-linux-gnu-gcc option to enable C11 features... none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... yes
+checking dependency style of x86_64-unknown-linux-gnu-gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for x86_64-unknown-linux-gnu-ar... x86_64-unknown-linux-gnu-ar
+checking the archiver (x86_64-unknown-linux-gnu-ar) interface... ar
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-unknown-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/x86_64-unknown-linux-gnu-nm -B
+checking the name lister (/usr/bin/x86_64-unknown-linux-gnu-nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-unknown-linux-gnu-file... no
+checking for file... file
+checking for x86_64-unknown-linux-gnu-objdump... x86_64-unknown-linux-gnu-objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-unknown-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-unknown-linux-gnu-ar... (cached) x86_64-unknown-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-unknown-linux-gnu-strip... x86_64-unknown-linux-gnu-strip
+checking for x86_64-unknown-linux-gnu-ranlib... x86_64-unknown-linux-gnu-ranlib
+checking command to parse /usr/bin/x86_64-unknown-linux-gnu-nm -B output from x86_64-unknown-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for x86_64-unknown-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-unknown-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-unknown-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-unknown-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-unknown-linux-gnu-gcc static flag -static works... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-unknown-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for --version-script linker flag... yes
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for x86_64-unknown-linux-gnu-gcc... (cached) x86_64-unknown-linux-gnu-gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... (cached) yes
+checking for x86_64-unknown-linux-gnu-gcc option to enable C11 features... (cached) none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... (cached) yes
+checking dependency style of x86_64-unknown-linux-gnu-gcc... (cached) gcc3
+checking for unistd.h... (cached) yes
+checking whether byte ordering is bigendian... no
+checking for off_t... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating man/Makefile
+config.status: creating src/Makefile
+config.status: creating src/libmd.pc
+config.status: creating test/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/libmd-1.1.0'
+Making all in include
+make[2]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/include'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/include'
+Making all in man
+make[2]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/man'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/man'
+Making all in src
+make[2]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/src'
+make  all-am
+make[3]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/src'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -I. -I../include    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT md2.lo -MD -MP -MF .deps/md2.Tpo -c -o md2.lo md2.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -I. -I../include    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT md4.lo -MD -MP -MF .deps/md4.Tpo -c -o md4.lo md4.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -I. -I../include    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT md5.lo -MD -MP -MF .deps/md5.Tpo -c -o md5.lo md5.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -I. -I../include    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT rmd160.lo -MD -MP -MF .deps/rmd160.Tpo -c -o rmd160.lo rmd160.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -I. -I../include    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sha1.lo -MD -MP -MF .deps/sha1.Tpo -c -o sha1.lo sha1.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -I. -I../include    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sha2.lo -MD -MP -MF .deps/sha2.Tpo -c -o sha2.lo sha2.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -I. -I../include    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT md2hl.lo -MD -MP -MF .deps/md2hl.Tpo -c -o md2hl.lo md2hl.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -I. -I../include    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT md4hl.lo -MD -MP -MF .deps/md4hl.Tpo -c -o md4hl.lo md4hl.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -I. -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT rmd160.lo -MD -MP -MF .deps/rmd160.Tpo -c rmd160.c  -fPIC -DPIC -o .libs/rmd160.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -I. -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT md4hl.lo -MD -MP -MF .deps/md4hl.Tpo -c md4hl.c  -fPIC -DPIC -o .libs/md4hl.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -I. -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT md5.lo -MD -MP -MF .deps/md5.Tpo -c md5.c  -fPIC -DPIC -o .libs/md5.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -I. -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT md4.lo -MD -MP -MF .deps/md4.Tpo -c md4.c  -fPIC -DPIC -o .libs/md4.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -I. -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT md2.lo -MD -MP -MF .deps/md2.Tpo -c md2.c  -fPIC -DPIC -o .libs/md2.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -I. -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sha1.lo -MD -MP -MF .deps/sha1.Tpo -c sha1.c  -fPIC -DPIC -o .libs/sha1.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -I. -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT md2hl.lo -MD -MP -MF .deps/md2hl.Tpo -c md2hl.c  -fPIC -DPIC -o .libs/md2hl.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -I. -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sha2.lo -MD -MP -MF .deps/sha2.Tpo -c sha2.c  -fPIC -DPIC -o .libs/sha2.o
+mv -f .deps/md2.Tpo .deps/md2.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -I. -I../include    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT md5hl.lo -MD -MP -MF .deps/md5hl.Tpo -c -o md5hl.lo md5hl.c
+mv -f .deps/md4hl.Tpo .deps/md4hl.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -I. -I../include    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT rmd160hl.lo -MD -MP -MF .deps/rmd160hl.Tpo -c -o rmd160hl.lo rmd160hl.c
+mv -f .deps/md2hl.Tpo .deps/md2hl.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -I. -I../include    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sha1hl.lo -MD -MP -MF .deps/sha1hl.Tpo -c -o sha1hl.lo sha1hl.c
+mv -f .deps/md4.Tpo .deps/md4.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -I. -I../include    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sha224hl.lo -MD -MP -MF .deps/sha224hl.Tpo -c -o sha224hl.lo sha224hl.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -I. -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT rmd160hl.lo -MD -MP -MF .deps/rmd160hl.Tpo -c rmd160hl.c  -fPIC -DPIC -o .libs/rmd160hl.o
+mv -f .deps/md5.Tpo .deps/md5.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -I. -I../include    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sha256hl.lo -MD -MP -MF .deps/sha256hl.Tpo -c -o sha256hl.lo sha256hl.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -I. -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT md5hl.lo -MD -MP -MF .deps/md5hl.Tpo -c md5hl.c  -fPIC -DPIC -o .libs/md5hl.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -I. -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sha224hl.lo -MD -MP -MF .deps/sha224hl.Tpo -c sha224hl.c  -fPIC -DPIC -o .libs/sha224hl.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -I. -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sha256hl.lo -MD -MP -MF .deps/sha256hl.Tpo -c sha256hl.c  -fPIC -DPIC -o .libs/sha256hl.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -I. -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sha1hl.lo -MD -MP -MF .deps/sha1hl.Tpo -c sha1hl.c  -fPIC -DPIC -o .libs/sha1hl.o
+mv -f .deps/rmd160hl.Tpo .deps/rmd160hl.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -I. -I../include    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sha384hl.lo -MD -MP -MF .deps/sha384hl.Tpo -c -o sha384hl.lo sha384hl.c
+mv -f .deps/sha224hl.Tpo .deps/sha224hl.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -I. -I../include    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sha512hl.lo -MD -MP -MF .deps/sha512hl.Tpo -c -o sha512hl.lo sha512hl.c
+mv -f .deps/sha1.Tpo .deps/sha1.Plo
+mv -f .deps/md5hl.Tpo .deps/md5hl.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -I. -I../include    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sha512_256hl.lo -MD -MP -MF .deps/sha512_256hl.Tpo -c -o sha512_256hl.lo sha512_256hl.c
+mv -f .deps/rmd160.Tpo .deps/rmd160.Plo
+mv -f .deps/sha1hl.Tpo .deps/sha1hl.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -I. -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sha384hl.lo -MD -MP -MF .deps/sha384hl.Tpo -c sha384hl.c  -fPIC -DPIC -o .libs/sha384hl.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -I. -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sha512_256hl.lo -MD -MP -MF .deps/sha512_256hl.Tpo -c sha512_256hl.c  -fPIC -DPIC -o .libs/sha512_256hl.o
+mv -f .deps/sha256hl.Tpo .deps/sha256hl.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -I. -I../include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sha512hl.lo -MD -MP -MF .deps/sha512hl.Tpo -c sha512hl.c  -fPIC -DPIC -o .libs/sha512hl.o
+mv -f .deps/sha384hl.Tpo .deps/sha384hl.Plo
+mv -f .deps/sha512_256hl.Tpo .deps/sha512_256hl.Plo
+mv -f .deps/sha512hl.Tpo .deps/sha512hl.Plo
+mv -f .deps/sha2.Tpo .deps/sha2.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -no-undefined -version-number 0:1:0 -Wl,--version-script=./libmd.map    -o libmd.la -rpath /usr/lib md2.lo md4.lo md5.lo rmd160.lo sha1.lo sha2.lo md2hl.lo md4hl.lo md5hl.lo rmd160hl.lo sha1hl.lo sha224hl.lo sha256hl.lo sha384hl.lo sha512hl.lo sha512_256hl.lo  
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/md2.o .libs/md4.o .libs/md5.o .libs/rmd160.o .libs/sha1.o .libs/sha2.o .libs/md2hl.o .libs/md4hl.o .libs/md5hl.o .libs/rmd160hl.o .libs/sha1hl.o .libs/sha224hl.o .libs/sha256hl.o .libs/sha384hl.o .libs/sha512hl.o .libs/sha512_256hl.o    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -Wl,--version-script=./libmd.map   -Wl,-soname -Wl,libmd.so.0 -o .libs/libmd.so.0.1.0
+libtool: link: (cd ".libs" && rm -f "libmd.so.0" && ln -s "libmd.so.0.1.0" "libmd.so.0")
+libtool: link: (cd ".libs" && rm -f "libmd.so" && ln -s "libmd.so.0.1.0" "libmd.so")
+libtool: link: ( cd ".libs" && rm -f "libmd.la" && ln -s "../libmd.la" "libmd.la" )
+make[3]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/src'
+make[2]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/src'
+Making all in test
+make[2]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/test'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/test'
+make[2]: Entering directory '/home/devel/building/work/src/libmd-1.1.0'
+make[2]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0'
+make[1]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0'
++ make check
+Making check in include
+make[1]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/include'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/include'
+Making check in man
+make[1]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/man'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/man'
+Making check in src
+make[1]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/src'
+make  check-am
+make[2]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/src'
+make[2]: Nothing to be done for 'check-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/src'
+make[1]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/src'
+Making check in test
+make[1]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/test'
+make  md2 md4 md5 rmd160 sha1 sha2 test.h 
+make[2]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/test'
+  CC       md2.o
+  CC       md4.o
+  CC       md5.o
+  CC       rmd160.o
+  CC       sha1.o
+  CC       sha2.o
+make[2]: Nothing to be done for 'test.h'.
+  CCLD     md4
+  CCLD     md2
+  CCLD     rmd160
+  CCLD     sha1
+  CCLD     md5
+  CCLD     sha2
+make[2]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/test'
+make  check-TESTS
+make[2]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/test'
+make[3]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/test'
+PASS: rmd160
+PASS: md4
+PASS: md2
+PASS: md5
+PASS: sha1
+PASS: sha2
+============================================================================
+Testsuite summary for libmd 1.1.0
+============================================================================
+# TOTAL: 6
+# PASS:  6
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[3]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/test'
+make[2]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/test'
+make[1]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/test'
+make[1]: Entering directory '/home/devel/building/work/src/libmd-1.1.0'
+make[1]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in include
+make[1]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/include'
+make[2]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/include'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include'
+ /usr/bin/install -c -m 644 md2.h md4.h md5.h rmd160.h sha1.h sha2.h ripemd.h sha.h sha256.h sha512.h '/home/devel/building/work/pkg/usr/include'
+make[2]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/include'
+make[1]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/include'
+Making install in man
+make[1]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/man'
+make[2]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/man'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man3'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man7'
+ /usr/bin/install -c -m 644 md2.3 md4.3 md5.3 rmd160.3 sha1.3 sha2.3 '/home/devel/building/work/pkg/usr/share/man/man3'
+ /usr/bin/install -c -m 644 libmd.7 '/home/devel/building/work/pkg/usr/share/man/man7'
+make  install-data-hook
+make[3]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/man'
+ln -s -f md2.3 /home/devel/building/work/pkg/usr/share/man/man3/MD2Transform.3
+ln -s -f md2.3 /home/devel/building/work/pkg/usr/share/man/man3/MD2Init.3
+ln -s -f md2.3 /home/devel/building/work/pkg/usr/share/man/man3/MD2Final.3
+ln -s -f md2.3 /home/devel/building/work/pkg/usr/share/man/man3/MD2Update.3
+ln -s -f md2.3 /home/devel/building/work/pkg/usr/share/man/man3/MD2End.3
+ln -s -f md2.3 /home/devel/building/work/pkg/usr/share/man/man3/MD2File.3
+ln -s -f md2.3 /home/devel/building/work/pkg/usr/share/man/man3/MD2FileChunk.3
+ln -s -f md2.3 /home/devel/building/work/pkg/usr/share/man/man3/MD2Data.3
+ln -s -f md4.3 /home/devel/building/work/pkg/usr/share/man/man3/MD4Transform.3
+ln -s -f md4.3 /home/devel/building/work/pkg/usr/share/man/man3/MD4Init.3
+ln -s -f md4.3 /home/devel/building/work/pkg/usr/share/man/man3/MD4Final.3
+ln -s -f md4.3 /home/devel/building/work/pkg/usr/share/man/man3/MD4Update.3
+ln -s -f md4.3 /home/devel/building/work/pkg/usr/share/man/man3/MD4End.3
+ln -s -f md4.3 /home/devel/building/work/pkg/usr/share/man/man3/MD4File.3
+ln -s -f md4.3 /home/devel/building/work/pkg/usr/share/man/man3/MD4FileChunk.3
+ln -s -f md4.3 /home/devel/building/work/pkg/usr/share/man/man3/MD4Pad.3
+ln -s -f md4.3 /home/devel/building/work/pkg/usr/share/man/man3/MD4Data.3
+ln -s -f md5.3 /home/devel/building/work/pkg/usr/share/man/man3/MD5Transform.3
+ln -s -f md5.3 /home/devel/building/work/pkg/usr/share/man/man3/MD5Init.3
+ln -s -f md5.3 /home/devel/building/work/pkg/usr/share/man/man3/MD5Final.3
+ln -s -f md5.3 /home/devel/building/work/pkg/usr/share/man/man3/MD5Update.3
+ln -s -f md5.3 /home/devel/building/work/pkg/usr/share/man/man3/MD5End.3
+ln -s -f md5.3 /home/devel/building/work/pkg/usr/share/man/man3/MD5File.3
+ln -s -f md5.3 /home/devel/building/work/pkg/usr/share/man/man3/MD5FileChunk.3
+ln -s -f md5.3 /home/devel/building/work/pkg/usr/share/man/man3/MD5Pad.3
+ln -s -f md5.3 /home/devel/building/work/pkg/usr/share/man/man3/MD5Data.3
+ln -s -f rmd160.3 /home/devel/building/work/pkg/usr/share/man/man3/RMD160Transform.3
+ln -s -f rmd160.3 /home/devel/building/work/pkg/usr/share/man/man3/RMD160Init.3
+ln -s -f rmd160.3 /home/devel/building/work/pkg/usr/share/man/man3/RMD160Final.3
+ln -s -f rmd160.3 /home/devel/building/work/pkg/usr/share/man/man3/RMD160Update.3
+ln -s -f rmd160.3 /home/devel/building/work/pkg/usr/share/man/man3/RMD160End.3
+ln -s -f rmd160.3 /home/devel/building/work/pkg/usr/share/man/man3/RMD160File.3
+ln -s -f rmd160.3 /home/devel/building/work/pkg/usr/share/man/man3/RMD160FileChunk.3
+ln -s -f rmd160.3 /home/devel/building/work/pkg/usr/share/man/man3/RMD160Pad.3
+ln -s -f rmd160.3 /home/devel/building/work/pkg/usr/share/man/man3/RMD160Data.3
+ln -s -f sha1.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA1Transform.3
+ln -s -f sha1.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA1Init.3
+ln -s -f sha1.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA1Final.3
+ln -s -f sha1.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA1Update.3
+ln -s -f sha1.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA1End.3
+ln -s -f sha1.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA1File.3
+ln -s -f sha1.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA1FileChunk.3
+ln -s -f sha1.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA1Pad.3
+ln -s -f sha1.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA1Data.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA256Init.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA256Update.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA256Pad.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA256Final.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA256Transform.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA256End.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA256File.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA256FileChunk.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA256Data.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA384Init.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA384Update.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA384Pad.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA384Final.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA384Transform.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA384End.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA384File.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA384FileChunk.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA384Data.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA512Init.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA512Update.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA512Pad.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA512Final.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA512Transform.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA512End.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA512File.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA512FileChunk.3
+ln -s -f sha2.3 /home/devel/building/work/pkg/usr/share/man/man3/SHA512Data.3
+make[3]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/man'
+make[2]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/man'
+make[1]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/man'
+Making install in src
+make[1]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/src'
+make  install-am
+make[2]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/src'
+make[3]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/src'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libmd.la '/home/devel/building/work/pkg/usr/lib'
+ /usr/bin/install -c -m 644 libmd.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+libtool: install: /usr/bin/install -c .libs/libmd.so.0.1.0 /home/devel/building/work/pkg/usr/lib/libmd.so.0.1.0
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libmd.so.0.1.0 libmd.so.0 || { rm -f libmd.so.0 && ln -s libmd.so.0.1.0 libmd.so.0; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libmd.so.0.1.0 libmd.so || { rm -f libmd.so && ln -s libmd.so.0.1.0 libmd.so; }; })
+libtool: install: /usr/bin/install -c .libs/libmd.lai /home/devel/building/work/pkg/usr/lib/libmd.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make  install-exec-hook
+make[4]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/src'
+if [ "/usr/lib" != "/usr/lib" ]; then \
+	/bin/mkdir -p /home/devel/building/work/pkg/usr/lib; \
+	mv /home/devel/building/work/pkg/usr/lib/libmd*.so.* \
+	   /home/devel/building/work/pkg/usr/lib/; \
+	soname=`readlink /home/devel/building/work/pkg/usr/lib/libmd.so`; \
+	sorelprefix=`echo /usr/lib | /bin/sed -r -e 's:(^/)?[^/]+:..:g'`; \
+	ln -sf $sorelprefix/usr/lib/$soname \
+	       /home/devel/building/work/pkg/usr/lib/libmd.so; \
+fi
+make[4]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/src'
+make[3]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/src'
+make[2]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/src'
+make[1]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/src'
+Making install in test
+make[1]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/test'
+make[2]: Entering directory '/home/devel/building/work/src/libmd-1.1.0/test'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/test'
+make[1]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0/test'
+make[1]: Entering directory '/home/devel/building/work/src/libmd-1.1.0'
+make[2]: Entering directory '/home/devel/building/work/src/libmd-1.1.0'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0'
+make[1]: Leaving directory '/home/devel/building/work/src/libmd-1.1.0'
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 18:14 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 18:14 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 18:14 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 18:14 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 18:14 usr/lib/pkgconfig/
+-rwxr-xr-x  0 root   root    56112 Feb  1 18:14 usr/lib/libmd.so.0.1.0
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/lib/libmd.so.0 -> libmd.so.0.1.0
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/lib/libmd.so -> libmd.so.0.1.0
+-rw-r--r--  0 root   root      264 Feb  1 18:14 usr/lib/pkgconfig/libmd.pc
+drwxr-xr-x  0 root   root        0 Feb  1 18:14 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb  1 18:14 usr/share/man/man3/
+drwxr-xr-x  0 root   root        0 Feb  1 18:14 usr/share/man/man7/
+-rw-r--r--  0 root   root     1576 Feb  1 18:14 usr/share/man/man7/libmd.7.gz
+-rw-r--r--  0 root   root     2405 Feb  1 18:14 usr/share/man/man3/md2.3.gz
+-rw-r--r--  0 root   root     2408 Feb  1 18:14 usr/share/man/man3/md4.3.gz
+-rw-r--r--  0 root   root     2407 Feb  1 18:14 usr/share/man/man3/md5.3.gz
+-rw-r--r--  0 root   root     2743 Feb  1 18:14 usr/share/man/man3/rmd160.3.gz
+-rw-r--r--  0 root   root     2728 Feb  1 18:14 usr/share/man/man3/sha1.3.gz
+-rw-r--r--  0 root   root     3041 Feb  1 18:14 usr/share/man/man3/sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD2Transform.3.gz -> md2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD2Init.3.gz -> md2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD2Final.3.gz -> md2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD2Update.3.gz -> md2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD2End.3.gz -> md2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD2File.3.gz -> md2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD2FileChunk.3.gz -> md2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD2Data.3.gz -> md2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD4Transform.3.gz -> md4.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD4Init.3.gz -> md4.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD4Final.3.gz -> md4.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD4Update.3.gz -> md4.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD4End.3.gz -> md4.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD4File.3.gz -> md4.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD4FileChunk.3.gz -> md4.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD4Pad.3.gz -> md4.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD4Data.3.gz -> md4.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD5Transform.3.gz -> md5.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD5Init.3.gz -> md5.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD5Final.3.gz -> md5.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD5Update.3.gz -> md5.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD5End.3.gz -> md5.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD5File.3.gz -> md5.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD5FileChunk.3.gz -> md5.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD5Pad.3.gz -> md5.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/MD5Data.3.gz -> md5.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/RMD160Transform.3.gz -> rmd160.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/RMD160Init.3.gz -> rmd160.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/RMD160Final.3.gz -> rmd160.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/RMD160Update.3.gz -> rmd160.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/RMD160End.3.gz -> rmd160.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/RMD160File.3.gz -> rmd160.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/RMD160FileChunk.3.gz -> rmd160.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/RMD160Pad.3.gz -> rmd160.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/RMD160Data.3.gz -> rmd160.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA1Transform.3.gz -> sha1.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA1Init.3.gz -> sha1.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA1Final.3.gz -> sha1.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA1Update.3.gz -> sha1.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA1End.3.gz -> sha1.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA1File.3.gz -> sha1.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA1FileChunk.3.gz -> sha1.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA1Pad.3.gz -> sha1.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA1Data.3.gz -> sha1.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA256Init.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA256Update.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA256Pad.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA256Final.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA256Transform.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA256End.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA256File.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA256FileChunk.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA256Data.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA384Init.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA384Update.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA384Pad.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA384Final.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA384Transform.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA384End.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA384File.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA384FileChunk.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA384Data.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA512Init.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA512Update.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA512Pad.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA512Final.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA512Transform.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA512End.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA512File.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA512FileChunk.3.gz -> sha2.3.gz
+lrwxrwxrwx  0 root   root        0 Feb  1 18:14 usr/share/man/man3/SHA512Data.3.gz -> sha2.3.gz
+-rw-r--r--  0 root   root      794 Feb  1 18:14 usr/include/md2.h
+-rw-r--r--  0 root   root     1457 Feb  1 18:14 usr/include/md4.h
+-rw-r--r--  0 root   root     2002 Feb  1 18:14 usr/include/md5.h
+-rw-r--r--  0 root   root     2353 Feb  1 18:14 usr/include/rmd160.h
+-rw-r--r--  0 root   root     1786 Feb  1 18:14 usr/include/sha1.h
+-rw-r--r--  0 root   root     5174 Feb  1 18:14 usr/include/sha2.h
+-rw-r--r--  0 root   root     1914 Feb  1 18:14 usr/include/ripemd.h
+-rw-r--r--  0 root   root     1861 Feb  1 18:14 usr/include/sha.h
+-rw-r--r--  0 root   root     1851 Feb  1 18:14 usr/include/sha256.h
+-rw-r--r--  0 root   root     2118 Feb  1 18:14 usr/include/sha512.h
+=======> Building '/home/devel/packages/libmd#1.1.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling libmd 1.1.0-1
+prt-get: /usr/bin/pkgadd -u libmd#1.1.0-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 18:14:25 2024
+

@@ -1,0 +1,500 @@
+prt-get: updating /usr/ports/wayland-x86_64/libfilezilla
+prt-get: starting build Thu Feb  1 18:12:09 2024
+=======> Building '/home/devel/packages/libfilezilla#0.44.0-2.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/libfilezilla-0.44.0.tar.xz
++ build
++ cd libfilezilla-0.44.0
++ ./configure --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --prefix=/usr --sysconfdir=/etc --disable-locales --disable-static
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for x86_64-unknown-linux-gnu-g++... x86_64-unknown-linux-gnu-g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether x86_64-unknown-linux-gnu-g++ accepts -g... yes
+checking for x86_64-unknown-linux-gnu-g++ option to enable C++11 features... none needed
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of x86_64-unknown-linux-gnu-g++... gcc3
+checking for x86_64-unknown-linux-gnu-gcc... x86_64-unknown-linux-gnu-gcc
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... yes
+checking for x86_64-unknown-linux-gnu-gcc option to enable C11 features... none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... yes
+checking dependency style of x86_64-unknown-linux-gnu-gcc... gcc3
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-unknown-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/x86_64-unknown-linux-gnu-nm -B
+checking the name lister (/usr/bin/x86_64-unknown-linux-gnu-nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-unknown-linux-gnu-objdump... x86_64-unknown-linux-gnu-objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-unknown-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-unknown-linux-gnu-ar... x86_64-unknown-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-unknown-linux-gnu-strip... x86_64-unknown-linux-gnu-strip
+checking for x86_64-unknown-linux-gnu-ranlib... x86_64-unknown-linux-gnu-ranlib
+checking command to parse /usr/bin/x86_64-unknown-linux-gnu-nm -B output from x86_64-unknown-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for x86_64-unknown-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-unknown-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-unknown-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-unknown-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-unknown-linux-gnu-gcc static flag -static works... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-unknown-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... x86_64-unknown-linux-gnu-g++ -E
+checking for ld used by x86_64-unknown-linux-gnu-g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the x86_64-unknown-linux-gnu-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+/usr/bin/grep: warning: stray \ before -
+checking for x86_64-unknown-linux-gnu-g++ option to produce PIC... -fPIC -DPIC
+checking if x86_64-unknown-linux-gnu-g++ PIC flag -fPIC -DPIC works... yes
+checking if x86_64-unknown-linux-gnu-g++ static flag -static works... yes
+checking if x86_64-unknown-linux-gnu-g++ supports -c -o file.o... yes
+checking if x86_64-unknown-linux-gnu-g++ supports -c -o file.o... (cached) yes
+checking whether the x86_64-unknown-linux-gnu-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether C compiler accepts -Werror=partial-availability... no
+checking whether the linker accepts -Wl,-no_weak_imports... no
+checking whether x86_64-unknown-linux-gnu-g++ supports C++17 features with -std=c++17... yes
+checking for whether we need -stdlib=libc++... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking whether std::chrono::steady_clock is steady... yes
+checking for thread_local... yes
+checking for x86_64-unknown-linux-gnu-gcc options needed to detect all undeclared functions... none needed
+checking whether CLOCK_MONOTONIC is declared... yes
+checking for poll... yes
+checking for posix_fadvise... yes
+checking for pipe2... yes
+checking for accept4... yes
+checking for eventfd... yes
+checking for d_type member in directory struct... yes
+checking for localtime_r... yes
+checking for gmtime_r... yes
+checking for timegm... yes
+checking for clock_gettime... yes
+checking whether pthread_condattr_setclock is declared... yes
+checking whether iconv can be used without link library... yes
+checking for memfd_create... yes
+checking for getrandom... yes
+checking for TCP_INFO... yes
+checking for x86_64-unknown-linux-gnu-pkg-config... /usr/bin/x86_64-unknown-linux-gnu-pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for gmp >= 6.2... yes
+checking for nettle >= 3.3... yes
+checking for hogweed >= 3.3... yes
+checking for gnutls >= 3.7.0... yes
+checking whether to use windres... no
+checking whether the linker accepts -Wl,--dynamicbase... no
+checking whether the linker accepts -Wl,--nxcompat... no
+checking for cppunit >= 1.13.0... no
+checking for x86_64-unknown-linux-gnu-doxygen... no
+checking for doxygen... no
+configure: WARNING: doxygen not found - will not generate any doxygen documentation
+checking for x86_64-unknown-linux-gnu-perl... no
+checking for perl... /usr/bin/perl
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating lib/Makefile
+config.status: creating lib/libfilezilla.pc
+config.status: creating lib/libfilezilla/version.hpp
+config.status: creating lib/windows/version.rc
+config.status: creating demos/Makefile
+config.status: creating doc/Doxyfile
+config.status: creating doc/Makefile
+config.status: creating locales/Makefile
+config.status: creating tests/Makefile
+config.status: creating config/config.hpp
+config.status: executing depfiles commands
+config.status: executing libtool commands
++ make V=1
+Making all in .
+make[1]: Entering directory '/home/devel/building/work/src/libfilezilla-0.44.0'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/home/devel/building/work/src/libfilezilla-0.44.0'
+Making all in lib
+make[1]: Entering directory '/home/devel/building/work/src/libfilezilla-0.44.0/lib'
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-ascii_layer.lo -MD -MP -MF .deps/libfilezilla_la-ascii_layer.Tpo -c -o libfilezilla_la-ascii_layer.lo `test -f 'ascii_layer.cpp' || echo './'`ascii_layer.cpp
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-buffer.lo -MD -MP -MF .deps/libfilezilla_la-buffer.Tpo -c -o libfilezilla_la-buffer.lo `test -f 'buffer.cpp' || echo './'`buffer.cpp
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-encode.lo -MD -MP -MF .deps/libfilezilla_la-encode.Tpo -c -o libfilezilla_la-encode.lo `test -f 'encode.cpp' || echo './'`encode.cpp
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-encryption.lo -MD -MP -MF .deps/libfilezilla_la-encryption.Tpo -c -o libfilezilla_la-encryption.lo `test -f 'encryption.cpp' || echo './'`encryption.cpp
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-event.lo -MD -MP -MF .deps/libfilezilla_la-event.Tpo -c -o libfilezilla_la-event.lo `test -f 'event.cpp' || echo './'`event.cpp
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-event_handler.lo -MD -MP -MF .deps/libfilezilla_la-event_handler.Tpo -c -o libfilezilla_la-event_handler.lo `test -f 'event_handler.cpp' || echo './'`event_handler.cpp
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-event_loop.lo -MD -MP -MF .deps/libfilezilla_la-event_loop.Tpo -c -o libfilezilla_la-event_loop.lo `test -f 'event_loop.cpp' || echo './'`event_loop.cpp
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-file.lo -MD -MP -MF .deps/libfilezilla_la-file.Tpo -c -o libfilezilla_la-file.lo `test -f 'file.cpp' || echo './'`file.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-event.lo -MD -MP -MF .deps/libfilezilla_la-event.Tpo -c event.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-event.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-event_loop.lo -MD -MP -MF .deps/libfilezilla_la-event_loop.Tpo -c event_loop.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-event_loop.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-file.lo -MD -MP -MF .deps/libfilezilla_la-file.Tpo -c file.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-file.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-buffer.lo -MD -MP -MF .deps/libfilezilla_la-buffer.Tpo -c buffer.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-buffer.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-event_handler.lo -MD -MP -MF .deps/libfilezilla_la-event_handler.Tpo -c event_handler.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-event_handler.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-encryption.lo -MD -MP -MF .deps/libfilezilla_la-encryption.Tpo -c encryption.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-encryption.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-encode.lo -MD -MP -MF .deps/libfilezilla_la-encode.Tpo -c encode.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-encode.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-ascii_layer.lo -MD -MP -MF .deps/libfilezilla_la-ascii_layer.Tpo -c ascii_layer.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-ascii_layer.o
+mv -f .deps/libfilezilla_la-buffer.Tpo .deps/libfilezilla_la-buffer.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-hash.lo -MD -MP -MF .deps/libfilezilla_la-hash.Tpo -c -o libfilezilla_la-hash.lo `test -f 'hash.cpp' || echo './'`hash.cpp
+mv -f .deps/libfilezilla_la-file.Tpo .deps/libfilezilla_la-file.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-hostname_lookup.lo -MD -MP -MF .deps/libfilezilla_la-hostname_lookup.Tpo -c -o libfilezilla_la-hostname_lookup.lo `test -f 'hostname_lookup.cpp' || echo './'`hostname_lookup.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-hash.lo -MD -MP -MF .deps/libfilezilla_la-hash.Tpo -c hash.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-hash.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-hostname_lookup.lo -MD -MP -MF .deps/libfilezilla_la-hostname_lookup.Tpo -c hostname_lookup.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-hostname_lookup.o
+mv -f .deps/libfilezilla_la-event_handler.Tpo .deps/libfilezilla_la-event_handler.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-impersonation.lo -MD -MP -MF .deps/libfilezilla_la-impersonation.Tpo -c -o libfilezilla_la-impersonation.lo `test -f 'impersonation.cpp' || echo './'`impersonation.cpp
+mv -f .deps/libfilezilla_la-event.Tpo .deps/libfilezilla_la-event.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-invoker.lo -MD -MP -MF .deps/libfilezilla_la-invoker.Tpo -c -o libfilezilla_la-invoker.lo `test -f 'invoker.cpp' || echo './'`invoker.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-invoker.lo -MD -MP -MF .deps/libfilezilla_la-invoker.Tpo -c invoker.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-invoker.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-impersonation.lo -MD -MP -MF .deps/libfilezilla_la-impersonation.Tpo -c impersonation.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-impersonation.o
+mv -f .deps/libfilezilla_la-ascii_layer.Tpo .deps/libfilezilla_la-ascii_layer.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-iputils.lo -MD -MP -MF .deps/libfilezilla_la-iputils.Tpo -c -o libfilezilla_la-iputils.lo `test -f 'iputils.cpp' || echo './'`iputils.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-iputils.lo -MD -MP -MF .deps/libfilezilla_la-iputils.Tpo -c iputils.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-iputils.o
+mv -f .deps/libfilezilla_la-encryption.Tpo .deps/libfilezilla_la-encryption.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-json.lo -MD -MP -MF .deps/libfilezilla_la-json.Tpo -c -o libfilezilla_la-json.lo `test -f 'json.cpp' || echo './'`json.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-json.lo -MD -MP -MF .deps/libfilezilla_la-json.Tpo -c json.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-json.o
+mv -f .deps/libfilezilla_la-hash.Tpo .deps/libfilezilla_la-hash.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-jws.lo -MD -MP -MF .deps/libfilezilla_la-jws.Tpo -c -o libfilezilla_la-jws.lo `test -f 'jws.cpp' || echo './'`jws.cpp
+mv -f .deps/libfilezilla_la-invoker.Tpo .deps/libfilezilla_la-invoker.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-jws.lo -MD -MP -MF .deps/libfilezilla_la-jws.Tpo -c jws.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-jws.o
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-local_filesys.lo -MD -MP -MF .deps/libfilezilla_la-local_filesys.Tpo -c -o libfilezilla_la-local_filesys.lo `test -f 'local_filesys.cpp' || echo './'`local_filesys.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-local_filesys.lo -MD -MP -MF .deps/libfilezilla_la-local_filesys.Tpo -c local_filesys.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-local_filesys.o
+mv -f .deps/libfilezilla_la-event_loop.Tpo .deps/libfilezilla_la-event_loop.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-logger.lo -MD -MP -MF .deps/libfilezilla_la-logger.Tpo -c -o libfilezilla_la-logger.lo `test -f 'logger.cpp' || echo './'`logger.cpp
+mv -f .deps/libfilezilla_la-hostname_lookup.Tpo .deps/libfilezilla_la-hostname_lookup.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-mutex.lo -MD -MP -MF .deps/libfilezilla_la-mutex.Tpo -c -o libfilezilla_la-mutex.lo `test -f 'mutex.cpp' || echo './'`mutex.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-logger.lo -MD -MP -MF .deps/libfilezilla_la-logger.Tpo -c logger.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-logger.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-mutex.lo -MD -MP -MF .deps/libfilezilla_la-mutex.Tpo -c mutex.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-mutex.o
+mv -f .deps/libfilezilla_la-impersonation.Tpo .deps/libfilezilla_la-impersonation.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-nonowning_buffer.lo -MD -MP -MF .deps/libfilezilla_la-nonowning_buffer.Tpo -c -o libfilezilla_la-nonowning_buffer.lo `test -f 'nonowning_buffer.cpp' || echo './'`nonowning_buffer.cpp
+mv -f .deps/libfilezilla_la-encode.Tpo .deps/libfilezilla_la-encode.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-process.lo -MD -MP -MF .deps/libfilezilla_la-process.Tpo -c -o libfilezilla_la-process.lo `test -f 'process.cpp' || echo './'`process.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-nonowning_buffer.lo -MD -MP -MF .deps/libfilezilla_la-nonowning_buffer.Tpo -c nonowning_buffer.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-nonowning_buffer.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-process.lo -MD -MP -MF .deps/libfilezilla_la-process.Tpo -c process.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-process.o
+mv -f .deps/libfilezilla_la-mutex.Tpo .deps/libfilezilla_la-mutex.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-rate_limiter.lo -MD -MP -MF .deps/libfilezilla_la-rate_limiter.Tpo -c -o libfilezilla_la-rate_limiter.lo `test -f 'rate_limiter.cpp' || echo './'`rate_limiter.cpp
+mv -f .deps/libfilezilla_la-nonowning_buffer.Tpo .deps/libfilezilla_la-nonowning_buffer.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-rate_limited_layer.lo -MD -MP -MF .deps/libfilezilla_la-rate_limited_layer.Tpo -c -o libfilezilla_la-rate_limited_layer.lo `test -f 'rate_limited_layer.cpp' || echo './'`rate_limited_layer.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-rate_limiter.lo -MD -MP -MF .deps/libfilezilla_la-rate_limiter.Tpo -c rate_limiter.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-rate_limiter.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-rate_limited_layer.lo -MD -MP -MF .deps/libfilezilla_la-rate_limited_layer.Tpo -c rate_limited_layer.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-rate_limited_layer.o
+mv -f .deps/libfilezilla_la-local_filesys.Tpo .deps/libfilezilla_la-local_filesys.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-recursive_remove.lo -MD -MP -MF .deps/libfilezilla_la-recursive_remove.Tpo -c -o libfilezilla_la-recursive_remove.lo `test -f 'recursive_remove.cpp' || echo './'`recursive_remove.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-recursive_remove.lo -MD -MP -MF .deps/libfilezilla_la-recursive_remove.Tpo -c recursive_remove.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-recursive_remove.o
+mv -f .deps/libfilezilla_la-logger.Tpo .deps/libfilezilla_la-logger.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-signature.lo -MD -MP -MF .deps/libfilezilla_la-signature.Tpo -c -o libfilezilla_la-signature.lo `test -f 'signature.cpp' || echo './'`signature.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-signature.lo -MD -MP -MF .deps/libfilezilla_la-signature.Tpo -c signature.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-signature.o
+mv -f .deps/libfilezilla_la-process.Tpo .deps/libfilezilla_la-process.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-socket.lo -MD -MP -MF .deps/libfilezilla_la-socket.Tpo -c -o libfilezilla_la-socket.lo `test -f 'socket.cpp' || echo './'`socket.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-socket.lo -MD -MP -MF .deps/libfilezilla_la-socket.Tpo -c socket.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-socket.o
+mv -f .deps/libfilezilla_la-recursive_remove.Tpo .deps/libfilezilla_la-recursive_remove.Plo
+mv -f .deps/libfilezilla_la-rate_limited_layer.Tpo .deps/libfilezilla_la-rate_limited_layer.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-socket_errors.lo -MD -MP -MF .deps/libfilezilla_la-socket_errors.Tpo -c -o libfilezilla_la-socket_errors.lo `test -f 'socket_errors.cpp' || echo './'`socket_errors.cpp
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-string.lo -MD -MP -MF .deps/libfilezilla_la-string.Tpo -c -o libfilezilla_la-string.lo `test -f 'string.cpp' || echo './'`string.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-string.lo -MD -MP -MF .deps/libfilezilla_la-string.Tpo -c string.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-string.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-socket_errors.lo -MD -MP -MF .deps/libfilezilla_la-socket_errors.Tpo -c socket_errors.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-socket_errors.o
+mv -f .deps/libfilezilla_la-rate_limiter.Tpo .deps/libfilezilla_la-rate_limiter.Plo
+mv -f .deps/libfilezilla_la-signature.Tpo .deps/libfilezilla_la-signature.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-thread.lo -MD -MP -MF .deps/libfilezilla_la-thread.Tpo -c -o libfilezilla_la-thread.lo `test -f 'thread.cpp' || echo './'`thread.cpp
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-thread_pool.lo -MD -MP -MF .deps/libfilezilla_la-thread_pool.Tpo -c -o libfilezilla_la-thread_pool.lo `test -f 'thread_pool.cpp' || echo './'`thread_pool.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-thread_pool.lo -MD -MP -MF .deps/libfilezilla_la-thread_pool.Tpo -c thread_pool.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-thread_pool.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-thread.lo -MD -MP -MF .deps/libfilezilla_la-thread.Tpo -c thread.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-thread.o
+mv -f .deps/libfilezilla_la-json.Tpo .deps/libfilezilla_la-json.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-tls_info.lo -MD -MP -MF .deps/libfilezilla_la-tls_info.Tpo -c -o libfilezilla_la-tls_info.lo `test -f 'tls_info.cpp' || echo './'`tls_info.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-tls_info.lo -MD -MP -MF .deps/libfilezilla_la-tls_info.Tpo -c tls_info.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-tls_info.o
+mv -f .deps/libfilezilla_la-iputils.Tpo .deps/libfilezilla_la-iputils.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-tls_layer.lo -MD -MP -MF .deps/libfilezilla_la-tls_layer.Tpo -c -o libfilezilla_la-tls_layer.lo `test -f 'tls_layer.cpp' || echo './'`tls_layer.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-tls_layer.lo -MD -MP -MF .deps/libfilezilla_la-tls_layer.Tpo -c tls_layer.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-tls_layer.o
+mv -f .deps/libfilezilla_la-thread.Tpo .deps/libfilezilla_la-thread.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-tls_layer_impl.lo -MD -MP -MF .deps/libfilezilla_la-tls_layer_impl.Tpo -c -o libfilezilla_la-tls_layer_impl.lo `test -f 'tls_layer_impl.cpp' || echo './'`tls_layer_impl.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-tls_layer_impl.lo -MD -MP -MF .deps/libfilezilla_la-tls_layer_impl.Tpo -c tls_layer_impl.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-tls_layer_impl.o
+mv -f .deps/libfilezilla_la-jws.Tpo .deps/libfilezilla_la-jws.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-tls_system_trust_store.lo -MD -MP -MF .deps/libfilezilla_la-tls_system_trust_store.Tpo -c -o libfilezilla_la-tls_system_trust_store.lo `test -f 'tls_system_trust_store.cpp' || echo './'`tls_system_trust_store.cpp
+mv -f .deps/libfilezilla_la-thread_pool.Tpo .deps/libfilezilla_la-thread_pool.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-tls_system_trust_store.lo -MD -MP -MF .deps/libfilezilla_la-tls_system_trust_store.Tpo -c tls_system_trust_store.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-tls_system_trust_store.o
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-time.lo -MD -MP -MF .deps/libfilezilla_la-time.Tpo -c -o libfilezilla_la-time.lo `test -f 'time.cpp' || echo './'`time.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-time.lo -MD -MP -MF .deps/libfilezilla_la-time.Tpo -c time.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-time.o
+mv -f .deps/libfilezilla_la-string.Tpo .deps/libfilezilla_la-string.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-translate.lo -MD -MP -MF .deps/libfilezilla_la-translate.Tpo -c -o libfilezilla_la-translate.lo `test -f 'translate.cpp' || echo './'`translate.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-translate.lo -MD -MP -MF .deps/libfilezilla_la-translate.Tpo -c translate.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-translate.o
+mv -f .deps/libfilezilla_la-tls_system_trust_store.Tpo .deps/libfilezilla_la-tls_system_trust_store.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-uri.lo -MD -MP -MF .deps/libfilezilla_la-uri.Tpo -c -o libfilezilla_la-uri.lo `test -f 'uri.cpp' || echo './'`uri.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-uri.lo -MD -MP -MF .deps/libfilezilla_la-uri.Tpo -c uri.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-uri.o
+mv -f .deps/libfilezilla_la-translate.Tpo .deps/libfilezilla_la-translate.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-util.lo -MD -MP -MF .deps/libfilezilla_la-util.Tpo -c -o libfilezilla_la-util.lo `test -f 'util.cpp' || echo './'`util.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-util.lo -MD -MP -MF .deps/libfilezilla_la-util.Tpo -c util.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-util.o
+mv -f .deps/libfilezilla_la-socket.Tpo .deps/libfilezilla_la-socket.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-version.lo -MD -MP -MF .deps/libfilezilla_la-version.Tpo -c -o libfilezilla_la-version.lo `test -f 'version.cpp' || echo './'`version.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-version.lo -MD -MP -MF .deps/libfilezilla_la-version.Tpo -c version.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-version.o
+mv -f .deps/libfilezilla_la-tls_layer.Tpo .deps/libfilezilla_la-tls_layer.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-xml.lo -MD -MP -MF .deps/libfilezilla_la-xml.Tpo -c -o libfilezilla_la-xml.lo `test -f 'xml.cpp' || echo './'`xml.cpp
+mv -f .deps/libfilezilla_la-socket_errors.Tpo .deps/libfilezilla_la-socket_errors.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT aio/libfilezilla_la-aio.lo -MD -MP -MF aio/.deps/libfilezilla_la-aio.Tpo -c -o aio/libfilezilla_la-aio.lo `test -f 'aio/aio.cpp' || echo './'`aio/aio.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT libfilezilla_la-xml.lo -MD -MP -MF .deps/libfilezilla_la-xml.Tpo -c xml.cpp  -fPIC -DPIC -o .libs/libfilezilla_la-xml.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT aio/libfilezilla_la-aio.lo -MD -MP -MF aio/.deps/libfilezilla_la-aio.Tpo -c aio/aio.cpp  -fPIC -DPIC -o aio/.libs/libfilezilla_la-aio.o
+mv -f .deps/libfilezilla_la-tls_info.Tpo .deps/libfilezilla_la-tls_info.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT aio/libfilezilla_la-reader.lo -MD -MP -MF aio/.deps/libfilezilla_la-reader.Tpo -c -o aio/libfilezilla_la-reader.lo `test -f 'aio/reader.cpp' || echo './'`aio/reader.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT aio/libfilezilla_la-reader.lo -MD -MP -MF aio/.deps/libfilezilla_la-reader.Tpo -c aio/reader.cpp  -fPIC -DPIC -o aio/.libs/libfilezilla_la-reader.o
+mv -f .deps/libfilezilla_la-version.Tpo .deps/libfilezilla_la-version.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT aio/libfilezilla_la-writer.lo -MD -MP -MF aio/.deps/libfilezilla_la-writer.Tpo -c -o aio/libfilezilla_la-writer.lo `test -f 'aio/writer.cpp' || echo './'`aio/writer.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT aio/libfilezilla_la-writer.lo -MD -MP -MF aio/.deps/libfilezilla_la-writer.Tpo -c aio/writer.cpp  -fPIC -DPIC -o aio/.libs/libfilezilla_la-writer.o
+mv -f .deps/libfilezilla_la-util.Tpo .deps/libfilezilla_la-util.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT aio/libfilezilla_la-xml_writer.lo -MD -MP -MF aio/.deps/libfilezilla_la-xml_writer.Tpo -c -o aio/libfilezilla_la-xml_writer.lo `test -f 'aio/xml_writer.cpp' || echo './'`aio/xml_writer.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT aio/libfilezilla_la-xml_writer.lo -MD -MP -MF aio/.deps/libfilezilla_la-xml_writer.Tpo -c aio/xml_writer.cpp  -fPIC -DPIC -o aio/.libs/libfilezilla_la-xml_writer.o
+mv -f .deps/libfilezilla_la-time.Tpo .deps/libfilezilla_la-time.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT http/libfilezilla_la-client.lo -MD -MP -MF http/.deps/libfilezilla_la-client.Tpo -c -o http/libfilezilla_la-client.lo `test -f 'http/client.cpp' || echo './'`http/client.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT http/libfilezilla_la-client.lo -MD -MP -MF http/.deps/libfilezilla_la-client.Tpo -c http/client.cpp  -fPIC -DPIC -o http/.libs/libfilezilla_la-client.o
+mv -f .deps/libfilezilla_la-uri.Tpo .deps/libfilezilla_la-uri.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT http/libfilezilla_la-client_request.lo -MD -MP -MF http/.deps/libfilezilla_la-client_request.Tpo -c -o http/libfilezilla_la-client_request.lo `test -f 'http/client_request.cpp' || echo './'`http/client_request.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT http/libfilezilla_la-client_request.lo -MD -MP -MF http/.deps/libfilezilla_la-client_request.Tpo -c http/client_request.cpp  -fPIC -DPIC -o http/.libs/libfilezilla_la-client_request.o
+mv -f aio/.deps/libfilezilla_la-aio.Tpo aio/.deps/libfilezilla_la-aio.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT http/libfilezilla_la-client_response.lo -MD -MP -MF http/.deps/libfilezilla_la-client_response.Tpo -c -o http/libfilezilla_la-client_response.lo `test -f 'http/client_response.cpp' || echo './'`http/client_response.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT http/libfilezilla_la-client_response.lo -MD -MP -MF http/.deps/libfilezilla_la-client_response.Tpo -c http/client_response.cpp  -fPIC -DPIC -o http/.libs/libfilezilla_la-client_response.o
+mv -f aio/.deps/libfilezilla_la-reader.Tpo aio/.deps/libfilezilla_la-reader.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT http/libfilezilla_la-digest.lo -MD -MP -MF http/.deps/libfilezilla_la-digest.Tpo -c -o http/libfilezilla_la-digest.lo `test -f 'http/digest.cpp' || echo './'`http/digest.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT http/libfilezilla_la-digest.lo -MD -MP -MF http/.deps/libfilezilla_la-digest.Tpo -c http/digest.cpp  -fPIC -DPIC -o http/.libs/libfilezilla_la-digest.o
+mv -f aio/.deps/libfilezilla_la-xml_writer.Tpo aio/.deps/libfilezilla_la-xml_writer.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT http/libfilezilla_la-headers.lo -MD -MP -MF http/.deps/libfilezilla_la-headers.Tpo -c -o http/libfilezilla_la-headers.lo `test -f 'http/headers.cpp' || echo './'`http/headers.cpp
+mv -f http/.deps/libfilezilla_la-client_request.Tpo http/.deps/libfilezilla_la-client_request.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT http/libfilezilla_la-throttler.lo -MD -MP -MF http/.deps/libfilezilla_la-throttler.Tpo -c -o http/libfilezilla_la-throttler.lo `test -f 'http/throttler.cpp' || echo './'`http/throttler.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT http/libfilezilla_la-headers.lo -MD -MP -MF http/.deps/libfilezilla_la-headers.Tpo -c http/headers.cpp  -fPIC -DPIC -o http/.libs/libfilezilla_la-headers.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT http/libfilezilla_la-throttler.lo -MD -MP -MF http/.deps/libfilezilla_la-throttler.Tpo -c http/throttler.cpp  -fPIC -DPIC -o http/.libs/libfilezilla_la-throttler.o
+mv -f http/.deps/libfilezilla_la-client_response.Tpo http/.deps/libfilezilla_la-client_response.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT glue/libfilezilla_la-unix.lo -MD -MP -MF glue/.deps/libfilezilla_la-unix.Tpo -c -o glue/libfilezilla_la-unix.lo `test -f 'glue/unix.cpp' || echo './'`glue/unix.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT glue/libfilezilla_la-unix.lo -MD -MP -MF glue/.deps/libfilezilla_la-unix.Tpo -c glue/unix.cpp  -fPIC -DPIC -o glue/.libs/libfilezilla_la-unix.o
+mv -f http/.deps/libfilezilla_la-throttler.Tpo http/.deps/libfilezilla_la-throttler.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=compile x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../config -DBUILDING_LIBFILEZILLA   -I/usr/include/p11-kit-1 -I. -I./libfilezilla   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT unix/libfilezilla_la-poller.lo -MD -MP -MF unix/.deps/libfilezilla_la-poller.Tpo -c -o unix/libfilezilla_la-poller.lo `test -f 'unix/poller.cpp' || echo './'`unix/poller.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H -I../config -DBUILDING_LIBFILEZILLA -I/usr/include/p11-kit-1 -I. -I./libfilezilla -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT unix/libfilezilla_la-poller.lo -MD -MP -MF unix/.deps/libfilezilla_la-poller.Tpo -c unix/poller.cpp  -fPIC -DPIC -o unix/.libs/libfilezilla_la-poller.o
+mv -f aio/.deps/libfilezilla_la-writer.Tpo aio/.deps/libfilezilla_la-writer.Plo
+mv -f glue/.deps/libfilezilla_la-unix.Tpo glue/.deps/libfilezilla_la-unix.Plo
+mv -f http/.deps/libfilezilla_la-headers.Tpo http/.deps/libfilezilla_la-headers.Plo
+mv -f unix/.deps/libfilezilla_la-poller.Tpo unix/.deps/libfilezilla_la-poller.Plo
+mv -f .deps/libfilezilla_la-xml.Tpo .deps/libfilezilla_la-xml.Plo
+mv -f http/.deps/libfilezilla_la-digest.Tpo http/.deps/libfilezilla_la-digest.Plo
+mv -f http/.deps/libfilezilla_la-client.Tpo http/.deps/libfilezilla_la-client.Plo
+mv -f .deps/libfilezilla_la-tls_layer_impl.Tpo .deps/libfilezilla_la-tls_layer_impl.Plo
+/bin/sh ../libtool  --tag=CXX   --mode=link x86_64-unknown-linux-gnu-g++ -std=c++17  -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g    -lcrypt -no-undefined -version-info 40:0:0  -o libfilezilla.la -rpath /usr/lib aio/libfilezilla_la-aio.lo aio/libfilezilla_la-reader.lo aio/libfilezilla_la-writer.lo aio/libfilezilla_la-xml_writer.lo libfilezilla_la-ascii_layer.lo libfilezilla_la-buffer.lo libfilezilla_la-encode.lo libfilezilla_la-encryption.lo libfilezilla_la-event.lo libfilezilla_la-event_handler.lo libfilezilla_la-event_loop.lo libfilezilla_la-file.lo libfilezilla_la-hash.lo http/libfilezilla_la-client.lo http/libfilezilla_la-client_request.lo http/libfilezilla_la-client_response.lo http/libfilezilla_la-digest.lo http/libfilezilla_la-headers.lo http/libfilezilla_la-throttler.lo libfilezilla_la-hostname_lookup.lo libfilezilla_la-impersonation.lo libfilezilla_la-invoker.lo libfilezilla_la-iputils.lo libfilezilla_la-json.lo libfilezilla_la-jws.lo libfilezilla_la-local_filesys.lo libfilezilla_la-logger.lo libfilezilla_la-mutex.lo libfilezilla_la-nonowning_buffer.lo libfilezilla_la-process.lo libfilezilla_la-rate_limiter.lo libfilezilla_la-rate_limited_layer.lo libfilezilla_la-recursive_remove.lo libfilezilla_la-signature.lo libfilezilla_la-socket.lo libfilezilla_la-socket_errors.lo libfilezilla_la-string.lo libfilezilla_la-thread.lo libfilezilla_la-thread_pool.lo libfilezilla_la-tls_info.lo libfilezilla_la-tls_layer.lo libfilezilla_la-tls_layer_impl.lo libfilezilla_la-tls_system_trust_store.lo libfilezilla_la-time.lo libfilezilla_la-translate.lo libfilezilla_la-uri.lo libfilezilla_la-util.lo libfilezilla_la-version.lo libfilezilla_la-xml.lo  glue/libfilezilla_la-unix.lo unix/libfilezilla_la-poller.lo -lpthread -lgnutls -lnettle -lhogweed -lgmp 
+libtool: link: x86_64-unknown-linux-gnu-g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbeginS.o  aio/.libs/libfilezilla_la-aio.o aio/.libs/libfilezilla_la-reader.o aio/.libs/libfilezilla_la-writer.o aio/.libs/libfilezilla_la-xml_writer.o .libs/libfilezilla_la-ascii_layer.o .libs/libfilezilla_la-buffer.o .libs/libfilezilla_la-encode.o .libs/libfilezilla_la-encryption.o .libs/libfilezilla_la-event.o .libs/libfilezilla_la-event_handler.o .libs/libfilezilla_la-event_loop.o .libs/libfilezilla_la-file.o .libs/libfilezilla_la-hash.o http/.libs/libfilezilla_la-client.o http/.libs/libfilezilla_la-client_request.o http/.libs/libfilezilla_la-client_response.o http/.libs/libfilezilla_la-digest.o http/.libs/libfilezilla_la-headers.o http/.libs/libfilezilla_la-throttler.o .libs/libfilezilla_la-hostname_lookup.o .libs/libfilezilla_la-impersonation.o .libs/libfilezilla_la-invoker.o .libs/libfilezilla_la-iputils.o .libs/libfilezilla_la-json.o .libs/libfilezilla_la-jws.o .libs/libfilezilla_la-local_filesys.o .libs/libfilezilla_la-logger.o .libs/libfilezilla_la-mutex.o .libs/libfilezilla_la-nonowning_buffer.o .libs/libfilezilla_la-process.o .libs/libfilezilla_la-rate_limiter.o .libs/libfilezilla_la-rate_limited_layer.o .libs/libfilezilla_la-recursive_remove.o .libs/libfilezilla_la-signature.o .libs/libfilezilla_la-socket.o .libs/libfilezilla_la-socket_errors.o .libs/libfilezilla_la-string.o .libs/libfilezilla_la-thread.o .libs/libfilezilla_la-thread_pool.o .libs/libfilezilla_la-tls_info.o .libs/libfilezilla_la-tls_layer.o .libs/libfilezilla_la-tls_layer_impl.o .libs/libfilezilla_la-tls_system_trust_store.o .libs/libfilezilla_la-time.o .libs/libfilezilla_la-translate.o .libs/libfilezilla_la-uri.o .libs/libfilezilla_la-util.o .libs/libfilezilla_la-version.o .libs/libfilezilla_la-xml.o glue/.libs/libfilezilla_la-unix.o unix/.libs/libfilezilla_la-poller.o   -Wl,-rpath -Wl,/usr/lib/../lib -Wl,-rpath -Wl,/usr/lib/../lib -lcrypt -lpthread -lgnutls -lnettle -lhogweed /usr/lib/libgmp.so -L/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../.. /usr/lib/../lib/libstdc++.so -lm -lc -lgcc_s /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib/crtn.o  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -g   -Wl,-soname -Wl,libfilezilla.so.40 -o .libs/libfilezilla.so.40.0.0
+libtool: link: (cd ".libs" && rm -f "libfilezilla.so.40" && ln -s "libfilezilla.so.40.0.0" "libfilezilla.so.40")
+libtool: link: (cd ".libs" && rm -f "libfilezilla.so" && ln -s "libfilezilla.so.40.0.0" "libfilezilla.so")
+libtool: link: ( cd ".libs" && rm -f "libfilezilla.la" && ln -s "../libfilezilla.la" "libfilezilla.la" )
+make[1]: Leaving directory '/home/devel/building/work/src/libfilezilla-0.44.0/lib'
+Making all in demos
+make[1]: Entering directory '/home/devel/building/work/src/libfilezilla-0.44.0/demos'
+x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../lib   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT timer_fizzbuzz-timer_fizzbuzz.o -MD -MP -MF .deps/timer_fizzbuzz-timer_fizzbuzz.Tpo -c -o timer_fizzbuzz-timer_fizzbuzz.o `test -f 'timer_fizzbuzz.cpp' || echo './'`timer_fizzbuzz.cpp
+x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../lib   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT process-process.o -MD -MP -MF .deps/process-process.Tpo -c -o process-process.o `test -f 'process.cpp' || echo './'`process.cpp
+x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../lib   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT nonblocking_process-nonblocking_process.o -MD -MP -MF .deps/nonblocking_process-nonblocking_process.Tpo -c -o nonblocking_process-nonblocking_process.o `test -f 'nonblocking_process.cpp' || echo './'`nonblocking_process.cpp
+x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../lib   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT events-events.o -MD -MP -MF .deps/events-events.Tpo -c -o events-events.o `test -f 'events.cpp' || echo './'`events.cpp
+x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../lib   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT list-list.o -MD -MP -MF .deps/list-list.Tpo -c -o list-list.o `test -f 'list.cpp' || echo './'`list.cpp
+x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../lib   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT https-https.o -MD -MP -MF .deps/https-https.Tpo -c -o https-https.o `test -f 'https.cpp' || echo './'`https.cpp
+x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../lib   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT raw_https-raw_https.o -MD -MP -MF .deps/raw_https-raw_https.Tpo -c -o raw_https-raw_https.o `test -f 'raw_https.cpp' || echo './'`raw_https.cpp
+x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../lib   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT aio-aio.o -MD -MP -MF .deps/aio-aio.Tpo -c -o aio-aio.o `test -f 'aio.cpp' || echo './'`aio.cpp
+mv -f .deps/list-list.Tpo .deps/list-list.Po
+x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../lib   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT impersonation-impersonation.o -MD -MP -MF .deps/impersonation-impersonation.Tpo -c -o impersonation-impersonation.o `test -f 'impersonation.cpp' || echo './'`impersonation.cpp
+mv -f .deps/process-process.Tpo .deps/process-process.Po
+x86_64-unknown-linux-gnu-g++ -std=c++17 -DHAVE_CONFIG_H    -I../lib   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -MT xml_pp-xml_pp.o -MD -MP -MF .deps/xml_pp-xml_pp.Tpo -c -o xml_pp-xml_pp.o `test -f 'xml_pp.cpp' || echo './'`xml_pp.cpp
+mv -f .deps/timer_fizzbuzz-timer_fizzbuzz.Tpo .deps/timer_fizzbuzz-timer_fizzbuzz.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link x86_64-unknown-linux-gnu-g++ -std=c++17  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g  -no-install  -o process process-process.o ../lib/libfilezilla.la -lpthread 
+mv -f .deps/events-events.Tpo .deps/events-events.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link x86_64-unknown-linux-gnu-g++ -std=c++17  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g  -no-install  -o list list-list.o ../lib/libfilezilla.la -lpthread 
+libtool: link: x86_64-unknown-linux-gnu-g++ -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -o process process-process.o  ../lib/.libs/libfilezilla.so -lpthread -Wl,-rpath -Wl,/home/devel/building/work/src/libfilezilla-0.44.0/lib/.libs
+mv -f .deps/nonblocking_process-nonblocking_process.Tpo .deps/nonblocking_process-nonblocking_process.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link x86_64-unknown-linux-gnu-g++ -std=c++17  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g  -no-install  -o timer_fizzbuzz timer_fizzbuzz-timer_fizzbuzz.o ../lib/libfilezilla.la -lpthread 
+libtool: link: x86_64-unknown-linux-gnu-g++ -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -o list list-list.o  ../lib/.libs/libfilezilla.so -lpthread -Wl,-rpath -Wl,/home/devel/building/work/src/libfilezilla-0.44.0/lib/.libs
+libtool: link: x86_64-unknown-linux-gnu-g++ -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -o timer_fizzbuzz timer_fizzbuzz-timer_fizzbuzz.o  ../lib/.libs/libfilezilla.so -lpthread -Wl,-rpath -Wl,/home/devel/building/work/src/libfilezilla-0.44.0/lib/.libs
+/bin/sh ../libtool  --tag=CXX   --mode=link x86_64-unknown-linux-gnu-g++ -std=c++17  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g  -no-install  -o nonblocking_process nonblocking_process-nonblocking_process.o ../lib/libfilezilla.la -lpthread 
+/bin/sh ../libtool  --tag=CXX   --mode=link x86_64-unknown-linux-gnu-g++ -std=c++17  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g  -no-install  -o events events-events.o ../lib/libfilezilla.la -lpthread 
+libtool: link: x86_64-unknown-linux-gnu-g++ -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -o nonblocking_process nonblocking_process-nonblocking_process.o  ../lib/.libs/libfilezilla.so -lpthread -Wl,-rpath -Wl,/home/devel/building/work/src/libfilezilla-0.44.0/lib/.libs
+libtool: link: x86_64-unknown-linux-gnu-g++ -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -o events events-events.o  ../lib/.libs/libfilezilla.so -lpthread -Wl,-rpath -Wl,/home/devel/building/work/src/libfilezilla-0.44.0/lib/.libs
+mv -f .deps/raw_https-raw_https.Tpo .deps/raw_https-raw_https.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link x86_64-unknown-linux-gnu-g++ -std=c++17  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g  -no-install  -o raw_https raw_https-raw_https.o ../lib/libfilezilla.la -lpthread 
+mv -f .deps/xml_pp-xml_pp.Tpo .deps/xml_pp-xml_pp.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link x86_64-unknown-linux-gnu-g++ -std=c++17  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g  -no-install  -o xml_pp xml_pp-xml_pp.o ../lib/libfilezilla.la -lpthread 
+libtool: link: x86_64-unknown-linux-gnu-g++ -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -o raw_https raw_https-raw_https.o  ../lib/.libs/libfilezilla.so -lpthread -Wl,-rpath -Wl,/home/devel/building/work/src/libfilezilla-0.44.0/lib/.libs
+libtool: link: x86_64-unknown-linux-gnu-g++ -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -o xml_pp xml_pp-xml_pp.o  ../lib/.libs/libfilezilla.so -lpthread -Wl,-rpath -Wl,/home/devel/building/work/src/libfilezilla-0.44.0/lib/.libs
+mv -f .deps/impersonation-impersonation.Tpo .deps/impersonation-impersonation.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link x86_64-unknown-linux-gnu-g++ -std=c++17  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g  -no-install  -o impersonation impersonation-impersonation.o ../lib/libfilezilla.la -lpthread 
+libtool: link: x86_64-unknown-linux-gnu-g++ -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -o impersonation impersonation-impersonation.o  ../lib/.libs/libfilezilla.so -lpthread -Wl,-rpath -Wl,/home/devel/building/work/src/libfilezilla-0.44.0/lib/.libs
+mv -f .deps/aio-aio.Tpo .deps/aio-aio.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link x86_64-unknown-linux-gnu-g++ -std=c++17  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g  -no-install  -o aio aio-aio.o ../lib/libfilezilla.la -lpthread 
+libtool: link: x86_64-unknown-linux-gnu-g++ -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -o aio aio-aio.o  ../lib/.libs/libfilezilla.so -lpthread -Wl,-rpath -Wl,/home/devel/building/work/src/libfilezilla-0.44.0/lib/.libs
+mv -f .deps/https-https.Tpo .deps/https-https.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link x86_64-unknown-linux-gnu-g++ -std=c++17  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g  -no-install  -o https https-https.o ../lib/libfilezilla.la -lpthread 
+libtool: link: x86_64-unknown-linux-gnu-g++ -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -g -o https https-https.o  ../lib/.libs/libfilezilla.so -lpthread -Wl,-rpath -Wl,/home/devel/building/work/src/libfilezilla-0.44.0/lib/.libs
+make[1]: Leaving directory '/home/devel/building/work/src/libfilezilla-0.44.0/demos'
+Making all in doc
+make[1]: Entering directory '/home/devel/building/work/src/libfilezilla-0.44.0/doc'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/devel/building/work/src/libfilezilla-0.44.0/doc'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in .
+make[1]: Entering directory '/home/devel/building/work/src/libfilezilla-0.44.0'
+make[2]: Entering directory '/home/devel/building/work/src/libfilezilla-0.44.0'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libfilezilla-0.44.0'
+make[1]: Leaving directory '/home/devel/building/work/src/libfilezilla-0.44.0'
+Making install in lib
+make[1]: Entering directory '/home/devel/building/work/src/libfilezilla-0.44.0/lib'
+make[2]: Entering directory '/home/devel/building/work/src/libfilezilla-0.44.0/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libfilezilla.la '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libfilezilla.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/libfilezilla'
+ /usr/bin/install -c -m 644  libfilezilla/ascii_layer.hpp libfilezilla/apply.hpp libfilezilla/buffer.hpp libfilezilla/encode.hpp libfilezilla/encryption.hpp libfilezilla/event.hpp libfilezilla/event_handler.hpp libfilezilla/event_loop.hpp libfilezilla/file.hpp libfilezilla/format.hpp libfilezilla/fsresult.hpp libfilezilla/hash.hpp libfilezilla/hostname_lookup.hpp libfilezilla/impersonation.hpp libfilezilla/invoker.hpp libfilezilla/iputils.hpp libfilezilla/json.hpp libfilezilla/jws.hpp libfilezilla/libfilezilla.hpp libfilezilla/local_filesys.hpp libfilezilla/logger.hpp libfilezilla/mutex.hpp libfilezilla/nonowning_buffer.hpp libfilezilla/optional.hpp libfilezilla/process.hpp libfilezilla/rate_limiter.hpp libfilezilla/rate_limited_layer.hpp libfilezilla/recursive_remove.hpp libfilezilla/rwmutex.hpp libfilezilla/shared.hpp libfilezilla/signature.hpp libfilezilla/socket.hpp libfilezilla/string.hpp libfilezilla/thread.hpp libfilezilla/thread_pool.hpp libfilezilla/time.hpp libfilezilla/tls_info.hpp libfilezilla/tls_layer.hpp libfilezilla/tls_system_trust_store.hpp libfilezilla/translate.hpp '/home/devel/building/work/pkg/usr/include/libfilezilla'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/libfilezilla'
+libtool: install: /usr/bin/install -c .libs/libfilezilla.so.40.0.0 /home/devel/building/work/pkg/usr/lib/libfilezilla.so.40.0.0
+ /usr/bin/install -c -m 644  libfilezilla/version.hpp '/home/devel/building/work/pkg/usr/include/libfilezilla'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/libfilezilla/aio'
+ /usr/bin/install -c -m 644  libfilezilla/aio/aio.hpp libfilezilla/aio/reader.hpp libfilezilla/aio/writer.hpp libfilezilla/aio/xml_writer.hpp '/home/devel/building/work/pkg/usr/include/libfilezilla/aio'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/libfilezilla'
+ /usr/bin/install -c -m 644  libfilezilla/uri.hpp libfilezilla/util.hpp libfilezilla/visibility_helper.hpp libfilezilla/xml.hpp '/home/devel/building/work/pkg/usr/include/libfilezilla'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/libfilezilla/private'
+ /usr/bin/install -c -m 644  libfilezilla/private/defs.hpp libfilezilla/private/visibility.hpp '/home/devel/building/work/pkg/usr/include/libfilezilla/private'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/libfilezilla/glue'
+ /usr/bin/install -c -m 644  libfilezilla/glue/wx.hpp libfilezilla/glue/wxinvoker.hpp libfilezilla/glue/unix.hpp '/home/devel/building/work/pkg/usr/include/libfilezilla/glue'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/libfilezilla/http'
+ /usr/bin/install -c -m 644  libfilezilla/http/client.hpp libfilezilla/http/client_request.hpp libfilezilla/http/client_response.hpp libfilezilla/http/digest.hpp libfilezilla/http/headers.hpp '/home/devel/building/work/pkg/usr/include/libfilezilla/http'
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libfilezilla.so.40.0.0 libfilezilla.so.40 || { rm -f libfilezilla.so.40 && ln -s libfilezilla.so.40.0.0 libfilezilla.so.40; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libfilezilla.so.40.0.0 libfilezilla.so || { rm -f libfilezilla.so && ln -s libfilezilla.so.40.0.0 libfilezilla.so; }; })
+libtool: install: /usr/bin/install -c .libs/libfilezilla.lai /home/devel/building/work/pkg/usr/lib/libfilezilla.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make[2]: Leaving directory '/home/devel/building/work/src/libfilezilla-0.44.0/lib'
+make[1]: Leaving directory '/home/devel/building/work/src/libfilezilla-0.44.0/lib'
+Making install in demos
+make[1]: Entering directory '/home/devel/building/work/src/libfilezilla-0.44.0/demos'
+make[2]: Entering directory '/home/devel/building/work/src/libfilezilla-0.44.0/demos'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libfilezilla-0.44.0/demos'
+make[1]: Leaving directory '/home/devel/building/work/src/libfilezilla-0.44.0/demos'
+Making install in doc
+make[1]: Entering directory '/home/devel/building/work/src/libfilezilla-0.44.0/doc'
+make[2]: Entering directory '/home/devel/building/work/src/libfilezilla-0.44.0/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libfilezilla-0.44.0/doc'
+make[1]: Leaving directory '/home/devel/building/work/src/libfilezilla-0.44.0/doc'
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 18:12 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 18:12 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 18:12 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 18:12 usr/include/libfilezilla/
+-rw-r--r--  0 root   root     1320 Feb  1 18:12 usr/include/libfilezilla/ascii_layer.hpp
+-rw-r--r--  0 root   root     1522 Feb  1 18:12 usr/include/libfilezilla/apply.hpp
+-rw-r--r--  0 root   root     4184 Feb  1 18:12 usr/include/libfilezilla/buffer.hpp
+-rw-r--r--  0 root   root     6801 Feb  1 18:12 usr/include/libfilezilla/encode.hpp
+-rw-r--r--  0 root   root    11836 Feb  1 18:12 usr/include/libfilezilla/encryption.hpp
+-rw-r--r--  0 root   root     3431 Feb  1 18:12 usr/include/libfilezilla/event.hpp
+-rw-r--r--  0 root   root     8122 Feb  1 18:12 usr/include/libfilezilla/event_handler.hpp
+-rw-r--r--  0 root   root     3763 Feb  1 18:12 usr/include/libfilezilla/event_loop.hpp
+-rw-r--r--  0 root   root     5496 Feb  1 18:12 usr/include/libfilezilla/file.hpp
+-rw-r--r--  0 root   root    11110 Feb  1 18:12 usr/include/libfilezilla/format.hpp
+-rw-r--r--  0 root   root     2202 Feb  1 18:12 usr/include/libfilezilla/fsresult.hpp
+-rw-r--r--  0 root   root     3828 Feb  1 18:12 usr/include/libfilezilla/hash.hpp
+-rw-r--r--  0 root   root     1266 Feb  1 18:12 usr/include/libfilezilla/hostname_lookup.hpp
+-rw-r--r--  0 root   root     2491 Feb  1 18:12 usr/include/libfilezilla/impersonation.hpp
+-rw-r--r--  0 root   root     2870 Feb  1 18:12 usr/include/libfilezilla/invoker.hpp
+-rw-r--r--  0 root   root     1762 Feb  1 18:12 usr/include/libfilezilla/iputils.hpp
+-rw-r--r--  0 root   root     6460 Feb  1 18:12 usr/include/libfilezilla/json.hpp
+-rw-r--r--  0 root   root     1300 Feb  1 18:12 usr/include/libfilezilla/jws.hpp
+-rw-r--r--  0 root   root     2847 Feb  1 18:12 usr/include/libfilezilla/libfilezilla.hpp
+-rw-r--r--  0 root   root     6351 Feb  1 18:12 usr/include/libfilezilla/local_filesys.hpp
+-rw-r--r--  0 root   root     4685 Feb  1 18:12 usr/include/libfilezilla/logger.hpp
+-rw-r--r--  0 root   root     5642 Feb  1 18:12 usr/include/libfilezilla/mutex.hpp
+-rw-r--r--  0 root   root     2766 Feb  1 18:12 usr/include/libfilezilla/nonowning_buffer.hpp
+-rw-r--r--  0 root   root     2785 Feb  1 18:12 usr/include/libfilezilla/optional.hpp
+-rw-r--r--  0 root   root     6313 Feb  1 18:12 usr/include/libfilezilla/process.hpp
+-rw-r--r--  0 root   root     8533 Feb  1 18:12 usr/include/libfilezilla/rate_limiter.hpp
+-rw-r--r--  0 root   root     2150 Feb  1 18:12 usr/include/libfilezilla/rate_limited_layer.hpp
+-rw-r--r--  0 root   root     1432 Feb  1 18:12 usr/include/libfilezilla/recursive_remove.hpp
+-rw-r--r--  0 root   root     4756 Feb  1 18:12 usr/include/libfilezilla/rwmutex.hpp
+-rw-r--r--  0 root   root     4722 Feb  1 18:12 usr/include/libfilezilla/shared.hpp
+-rw-r--r--  0 root   root     3205 Feb  1 18:12 usr/include/libfilezilla/signature.hpp
+-rw-r--r--  0 root   root    24354 Feb  1 18:12 usr/include/libfilezilla/socket.hpp
+-rw-r--r--  0 root   root    25448 Feb  1 18:12 usr/include/libfilezilla/string.hpp
+-rw-r--r--  0 root   root     1843 Feb  1 18:12 usr/include/libfilezilla/thread.hpp
+-rw-r--r--  0 root   root     2077 Feb  1 18:12 usr/include/libfilezilla/thread_pool.hpp
+-rw-r--r--  0 root   root    14790 Feb  1 18:12 usr/include/libfilezilla/time.hpp
+-rw-r--r--  0 root   root     8560 Feb  1 18:12 usr/include/libfilezilla/tls_info.hpp
+-rw-r--r--  0 root   root    11873 Feb  1 18:12 usr/include/libfilezilla/tls_layer.hpp
+-rw-r--r--  0 root   root      953 Feb  1 18:12 usr/include/libfilezilla/tls_system_trust_store.hpp
+-rw-r--r--  0 root   root      965 Feb  1 18:12 usr/include/libfilezilla/translate.hpp
+-rw-r--r--  0 root   root      847 Feb  1 18:12 usr/include/libfilezilla/version.hpp
+drwxr-xr-x  0 root   root        0 Feb  1 18:12 usr/include/libfilezilla/aio/
+-rw-r--r--  0 root   root     3429 Feb  1 18:12 usr/include/libfilezilla/uri.hpp
+-rw-r--r--  0 root   root     3284 Feb  1 18:12 usr/include/libfilezilla/util.hpp
+-rw-r--r--  0 root   root     2193 Feb  1 18:12 usr/include/libfilezilla/visibility_helper.hpp
+-rw-r--r--  0 root   root     6387 Feb  1 18:12 usr/include/libfilezilla/xml.hpp
+drwxr-xr-x  0 root   root        0 Feb  1 18:12 usr/include/libfilezilla/private/
+drwxr-xr-x  0 root   root        0 Feb  1 18:12 usr/include/libfilezilla/glue/
+drwxr-xr-x  0 root   root        0 Feb  1 18:12 usr/include/libfilezilla/http/
+-rw-r--r--  0 root   root     3211 Feb  1 18:12 usr/include/libfilezilla/http/client.hpp
+-rw-r--r--  0 root   root     1024 Feb  1 18:12 usr/include/libfilezilla/http/client_request.hpp
+-rw-r--r--  0 root   root     2232 Feb  1 18:12 usr/include/libfilezilla/http/client_response.hpp
+-rw-r--r--  0 root   root      822 Feb  1 18:12 usr/include/libfilezilla/http/digest.hpp
+-rw-r--r--  0 root   root     1098 Feb  1 18:12 usr/include/libfilezilla/http/headers.hpp
+-rw-r--r--  0 root   root     1143 Feb  1 18:12 usr/include/libfilezilla/glue/wx.hpp
+-rw-r--r--  0 root   root     1061 Feb  1 18:12 usr/include/libfilezilla/glue/wxinvoker.hpp
+-rw-r--r--  0 root   root     2098 Feb  1 18:12 usr/include/libfilezilla/glue/unix.hpp
+-rw-r--r--  0 root   root     1068 Feb  1 18:12 usr/include/libfilezilla/private/defs.hpp
+-rw-r--r--  0 root   root      511 Feb  1 18:12 usr/include/libfilezilla/private/visibility.hpp
+-rw-r--r--  0 root   root     5922 Feb  1 18:12 usr/include/libfilezilla/aio/aio.hpp
+-rw-r--r--  0 root   root    11812 Feb  1 18:12 usr/include/libfilezilla/aio/reader.hpp
+-rw-r--r--  0 root   root    10720 Feb  1 18:12 usr/include/libfilezilla/aio/writer.hpp
+-rw-r--r--  0 root   root     1476 Feb  1 18:12 usr/include/libfilezilla/aio/xml_writer.hpp
+drwxr-xr-x  0 root   root        0 Feb  1 18:12 usr/lib/pkgconfig/
+-rwxr-xr-x  0 root   root   802688 Feb  1 18:12 usr/lib/libfilezilla.so.40.0.0
+lrwxrwxrwx  0 root   root        0 Feb  1 18:12 usr/lib/libfilezilla.so.40 -> libfilezilla.so.40.0.0
+lrwxrwxrwx  0 root   root        0 Feb  1 18:12 usr/lib/libfilezilla.so -> libfilezilla.so.40.0.0
+-rw-r--r--  0 root   root      307 Feb  1 18:12 usr/lib/pkgconfig/libfilezilla.pc
+=======> Building '/home/devel/packages/libfilezilla#0.44.0-2.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling libfilezilla 0.44.0-2
+prt-get: /usr/bin/pkgadd -u libfilezilla#0.44.0-2.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 18:12:26 2024
+

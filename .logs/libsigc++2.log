@@ -1,0 +1,354 @@
+prt-get: updating /usr/ports/opt-x86_64/libsigc++2
+prt-get: starting build Thu Feb  1 18:17:35 2024
+=======> Building '/home/devel/packages/libsigc++2#2.12.1-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/libsigc++-2.12.1.tar.xz
++ build
++ cd libsigc++-2.12.1
++ NOCONFIGURE=1
++ ./autogen.sh
+mm-common-prepare: putting auxiliary files in './build'.
+mm-common-prepare: copying file 'compile-binding.am'
+mm-common-prepare: copying file 'dist-changelog.am'
+mm-common-prepare: copying file 'doc-reference.am'
+mm-common-prepare: copying file 'generate-binding.am'
+mm-common-prepare: putting documentation utilities in './docs'.
+mm-common-prepare: copying file 'doc-install.pl'
+mm-common-prepare: copying file 'doc-postprocess.pl'
+mm-common-prepare: copying file 'doxygen.css'
+mm-common-prepare: copying file 'doxygen-extra.css'
+mm-common-prepare: copying file 'tagfile-to-devhelp2.xsl'
+autoreconf: export WARNINGS=all
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force -I build ${ACLOCAL_FLAGS}
+autoreconf: configure.ac: tracing
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting auxiliary files in AC_CONFIG_AUX_DIR, 'build'.
+libtoolize: copying file 'build/ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'build'.
+libtoolize: copying file 'build/libtool.m4'
+libtoolize: copying file 'build/ltoptions.m4'
+libtoolize: copying file 'build/ltsugar.m4'
+libtoolize: copying file 'build/ltversion.m4'
+libtoolize: copying file 'build/lt~obsolete.m4'
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: aclocal --force -I build ${ACLOCAL_FLAGS}
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:43: installing 'build/compile'
+configure.ac:43: installing 'build/config.guess'
+configure.ac:43: installing 'build/config.sub'
+configure.ac:28: installing 'build/install-sh'
+configure.ac:28: installing 'build/missing'
+examples/Makefile.am: installing 'build/depcomp'
+parallel-tests: installing 'build/test-driver'
+autoreconf: 'build/install-sh' is updated
+autoreconf: 'build/config.sub' is updated
+autoreconf: 'build/config.guess' is updated
+autoreconf: Leaving directory '.'
++ ./configure --prefix=/usr --disable-documentation
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether UID '0' is supported by ustar format... yes
+checking whether GID '0' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports nested variables... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make supports GNU make features... yes
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of g++... gcc3
+checking whether g++ supports C++11 features with -std=c++11... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for gcc... gcc
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... g++ -std=c++11 -E
+checking for ld used by g++ -std=c++11... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ -std=c++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ -std=c++11 option to produce PIC... -fPIC -DPIC
+checking if g++ -std=c++11 PIC flag -fPIC -DPIC works... yes
+checking if g++ -std=c++11 static flag -static works... yes
+checking if g++ -std=c++11 supports -c -o file.o... yes
+checking if g++ -std=c++11 supports -c -o file.o... (cached) yes
+checking whether the g++ -std=c++11 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for gm4... no
+checking for m4... m4
+checking for perl... /usr/bin/perl
+checking for dot... dot
+checking for doxygen... doxygen
+checking for xsltproc... /usr/bin/xsltproc
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking if C++ compiler supports the use of a particular specialization when calling operator() template methods.... yes
+checking if C++ compiler supports the use of a particular specialization when calling operator() template methods omitting the template keyword.... yes
+checking if C++ preprocessor supports pragma push_macro() and pop_macro().... yes
+checking for non-standard Sun libCstd reverse_iterator... no
+checking which C++ compiler warning flags to use... -Wall
+configure: Deprecated API will be built, for backwards-compatibility.
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating sigc++-2.0.pc
+config.status: creating sigc++-2.0-uninstalled.pc
+config.status: creating sigc++/Makefile
+config.status: creating examples/Makefile
+config.status: creating tests/Makefile
+config.status: creating docs/Makefile
+config.status: creating docs/reference/Doxyfile
+config.status: creating MSVC_NMake/sigc.rc
+config.status: creating config.h
+config.status: creating sigc++config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing MSVC_NMake/sigc++config.h commands
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/libsigc++-2.12.1'
+Making all in sigc++
+make[2]: Entering directory '/home/devel/building/work/src/libsigc++-2.12.1/sigc++'
+m4 -I ./macros -I macros macros/signal.h.m4 >signal.h
+m4 -I ./macros -I macros macros/limit_reference.h.m4 >limit_reference.h
+m4 -I ./macros -I macros functors/macros/functor_trait.h.m4 >functors/functor_trait.h
+m4 -I ./macros -I macros functors/macros/slot.h.m4 >functors/slot.h
+m4 -I ./macros -I macros functors/macros/ptr_fun.h.m4 >functors/ptr_fun.h
+m4 -I ./macros -I macros functors/macros/mem_fun.h.m4 >functors/mem_fun.h
+m4 -I ./macros -I macros adaptors/macros/deduce_result_type.h.m4 >adaptors/deduce_result_type.h
+m4 -I ./macros -I macros adaptors/macros/adaptor_trait.h.m4 >adaptors/adaptor_trait.h
+m4 -I ./macros -I macros adaptors/macros/bind.h.m4 >adaptors/bind.h
+m4 -I ./macros -I macros adaptors/macros/bind_return.h.m4 >adaptors/bind_return.h
+m4 -I ./macros -I macros adaptors/macros/retype_return.h.m4 >adaptors/retype_return.h
+m4 -I ./macros -I macros adaptors/macros/hide.h.m4 >adaptors/hide.h
+m4 -I ./macros -I macros adaptors/macros/retype.h.m4 >adaptors/retype.h
+m4 -I ./macros -I macros adaptors/macros/compose.h.m4 >adaptors/compose.h
+m4 -I ./macros -I macros adaptors/macros/exception_catch.h.m4 >adaptors/exception_catch.h
+m4 -I ./macros -I macros adaptors/macros/track_obj.h.m4 >adaptors/track_obj.h
+m4 -I ./macros -I macros adaptors/lambda/macros/base.h.m4 >adaptors/lambda/base.h
+m4 -I ./macros -I macros adaptors/lambda/macros/select.h.m4 >adaptors/lambda/select.h
+m4 -I ./macros -I macros adaptors/lambda/macros/lambda.cc.m4 >adaptors/lambda/lambda.cc
+make  all-am
+make[3]: Entering directory '/home/devel/building/work/src/libsigc++-2.12.1/sigc++'
+depbase=`echo signal_base.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H   -I.. -I..  -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT signal_base.lo -MD -MP -MF $depbase.Tpo -c -o signal_base.lo signal_base.cc &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo trackable.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H   -I.. -I..  -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT trackable.lo -MD -MP -MF $depbase.Tpo -c -o trackable.lo trackable.cc &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo connection.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H   -I.. -I..  -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT connection.lo -MD -MP -MF $depbase.Tpo -c -o connection.lo connection.cc &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo functors/slot_base.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H   -I.. -I..  -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT functors/slot_base.lo -MD -MP -MF $depbase.Tpo -c -o functors/slot_base.lo functors/slot_base.cc &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo adaptors/lambda/lambda.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CXX   --mode=compile g++ -std=c++11 -DHAVE_CONFIG_H   -I.. -I..  -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT adaptors/lambda/lambda.lo -MD -MP -MF $depbase.Tpo -c -o adaptors/lambda/lambda.lo adaptors/lambda/lambda.cc &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I.. -I.. -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT signal_base.lo -MD -MP -MF .deps/signal_base.Tpo -c signal_base.cc  -fPIC -DPIC -o .libs/signal_base.o
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I.. -I.. -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT trackable.lo -MD -MP -MF .deps/trackable.Tpo -c trackable.cc  -fPIC -DPIC -o .libs/trackable.o
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I.. -I.. -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT connection.lo -MD -MP -MF .deps/connection.Tpo -c connection.cc  -fPIC -DPIC -o .libs/connection.o
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I.. -I.. -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT functors/slot_base.lo -MD -MP -MF functors/.deps/slot_base.Tpo -c functors/slot_base.cc  -fPIC -DPIC -o functors/.libs/slot_base.o
+libtool: compile:  g++ -std=c++11 -DHAVE_CONFIG_H -I.. -I.. -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT adaptors/lambda/lambda.lo -MD -MP -MF adaptors/lambda/.deps/lambda.Tpo -c adaptors/lambda/lambda.cc  -fPIC -DPIC -o adaptors/lambda/.libs/lambda.o
+/bin/sh ../libtool  --tag=CXX   --mode=link g++ -std=c++11 -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -no-undefined -version-info 0:0:0  -o libsigc-2.0.la -rpath /usr/lib signal_base.lo trackable.lo connection.lo functors/slot_base.lo adaptors/lambda/lambda.lo  
+libtool: link: g++ -std=c++11  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbeginS.o  .libs/signal_base.o .libs/trackable.o .libs/connection.o functors/.libs/slot_base.o adaptors/lambda/.libs/lambda.o   -Wl,-rpath -Wl,/usr/lib/../lib -Wl,-rpath -Wl,/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../.. /usr/lib/../lib/libstdc++.so -lm -lc -lgcc_s /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib/crtn.o  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,libsigc-2.0.so.0 -o .libs/libsigc-2.0.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libsigc-2.0.so.0" && ln -s "libsigc-2.0.so.0.0.0" "libsigc-2.0.so.0")
+libtool: link: (cd ".libs" && rm -f "libsigc-2.0.so" && ln -s "libsigc-2.0.so.0.0.0" "libsigc-2.0.so")
+libtool: link: ( cd ".libs" && rm -f "libsigc-2.0.la" && ln -s "../libsigc-2.0.la" "libsigc-2.0.la" )
+make[3]: Leaving directory '/home/devel/building/work/src/libsigc++-2.12.1/sigc++'
+make[2]: Leaving directory '/home/devel/building/work/src/libsigc++-2.12.1/sigc++'
+Making all in tests
+make[2]: Entering directory '/home/devel/building/work/src/libsigc++-2.12.1/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libsigc++-2.12.1/tests'
+Making all in examples
+make[2]: Entering directory '/home/devel/building/work/src/libsigc++-2.12.1/examples'
+g++ -std=c++11 -DHAVE_CONFIG_H   -I.. -I..  -Wall -DSIGCXX_DISABLE_DEPRECATED -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT hello_world.o -MD -MP -MF .deps/hello_world.Tpo -c -o hello_world.o hello_world.cc
+g++ -std=c++11 -DHAVE_CONFIG_H   -I.. -I..  -Wall -DSIGCXX_DISABLE_DEPRECATED -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT member_method.o -MD -MP -MF .deps/member_method.Tpo -c -o member_method.o member_method.cc
+mv -f .deps/hello_world.Tpo .deps/hello_world.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link g++ -std=c++11 -Wall -DSIGCXX_DISABLE_DEPRECATED -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o hello_world hello_world.o ../sigc++/libsigc-2.0.la 
+mv -f .deps/member_method.Tpo .deps/member_method.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link g++ -std=c++11 -Wall -DSIGCXX_DISABLE_DEPRECATED -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o member_method member_method.o ../sigc++/libsigc-2.0.la 
+libtool: link: g++ -std=c++11 -Wall -DSIGCXX_DISABLE_DEPRECATED -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/hello_world hello_world.o  ../sigc++/.libs/libsigc-2.0.so /usr/lib/../lib/libstdc++.so -lm -Wl,-rpath -Wl,/usr/lib/../lib
+libtool: link: g++ -std=c++11 -Wall -DSIGCXX_DISABLE_DEPRECATED -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/member_method member_method.o  ../sigc++/.libs/libsigc-2.0.so /usr/lib/../lib/libstdc++.so -lm -Wl,-rpath -Wl,/usr/lib/../lib
+make[2]: Leaving directory '/home/devel/building/work/src/libsigc++-2.12.1/examples'
+make[2]: Entering directory '/home/devel/building/work/src/libsigc++-2.12.1'
+make[2]: Leaving directory '/home/devel/building/work/src/libsigc++-2.12.1'
+make[1]: Leaving directory '/home/devel/building/work/src/libsigc++-2.12.1'
++ make install DESTDIR=/home/devel/building/work/pkg
+Making install in sigc++
+make[1]: Entering directory '/home/devel/building/work/src/libsigc++-2.12.1/sigc++'
+make  install-am
+make[2]: Entering directory '/home/devel/building/work/src/libsigc++-2.12.1/sigc++'
+make[3]: Entering directory '/home/devel/building/work/src/libsigc++-2.12.1/sigc++'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/sigc++-2.0/sigc++'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libsigc-2.0.la '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/sigc++-2.0/sigc++/adaptors/lambda'
+ /usr/bin/install -c -m 644  adaptors/lambda/base.h adaptors/lambda/select.h '/home/devel/building/work/pkg/usr/include/sigc++-2.0/sigc++/adaptors/lambda'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/sigc++-2.0/sigc++/adaptors'
+ /usr/bin/install -c -m 644  adaptors/adaptors.h adaptors/bound_argument.h adaptors/deduce_result_type.h adaptors/adaptor_trait.h adaptors/bind.h adaptors/bind_return.h adaptors/retype_return.h adaptors/hide.h adaptors/retype.h adaptors/compose.h adaptors/exception_catch.h adaptors/track_obj.h '/home/devel/building/work/pkg/usr/include/sigc++-2.0/sigc++/adaptors'
+ /usr/bin/install -c -m 644  sigc++.h bind.h bind_return.h connection.h reference_wrapper.h retype_return.h signal_base.h slot.h trackable.h type_traits.h visit_each.h signal.h limit_reference.h '/home/devel/building/work/pkg/usr/include/sigc++-2.0/sigc++/.'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/sigc++-2.0/sigc++/functors'
+ /usr/bin/install -c -m 644  functors/functors.h functors/slot_base.h functors/functor_trait.h functors/slot.h functors/ptr_fun.h functors/mem_fun.h '/home/devel/building/work/pkg/usr/include/sigc++-2.0/sigc++/functors'
+libtool: install: /usr/bin/install -c .libs/libsigc-2.0.so.0.0.0 /home/devel/building/work/pkg/usr/lib/libsigc-2.0.so.0.0.0
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libsigc-2.0.so.0.0.0 libsigc-2.0.so.0 || { rm -f libsigc-2.0.so.0 && ln -s libsigc-2.0.so.0.0.0 libsigc-2.0.so.0; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libsigc-2.0.so.0.0.0 libsigc-2.0.so || { rm -f libsigc-2.0.so && ln -s libsigc-2.0.so.0.0.0 libsigc-2.0.so; }; })
+libtool: install: /usr/bin/install -c .libs/libsigc-2.0.lai /home/devel/building/work/pkg/usr/lib/libsigc-2.0.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make[3]: Leaving directory '/home/devel/building/work/src/libsigc++-2.12.1/sigc++'
+make[2]: Leaving directory '/home/devel/building/work/src/libsigc++-2.12.1/sigc++'
+make[1]: Leaving directory '/home/devel/building/work/src/libsigc++-2.12.1/sigc++'
+Making install in tests
+make[1]: Entering directory '/home/devel/building/work/src/libsigc++-2.12.1/tests'
+make[2]: Entering directory '/home/devel/building/work/src/libsigc++-2.12.1/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libsigc++-2.12.1/tests'
+make[1]: Leaving directory '/home/devel/building/work/src/libsigc++-2.12.1/tests'
+Making install in examples
+make[1]: Entering directory '/home/devel/building/work/src/libsigc++-2.12.1/examples'
+make[2]: Entering directory '/home/devel/building/work/src/libsigc++-2.12.1/examples'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libsigc++-2.12.1/examples'
+make[1]: Leaving directory '/home/devel/building/work/src/libsigc++-2.12.1/examples'
+make[1]: Entering directory '/home/devel/building/work/src/libsigc++-2.12.1'
+make[2]: Entering directory '/home/devel/building/work/src/libsigc++-2.12.1'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/sigc++-2.0/include'
+ /usr/bin/install -c -m 644 sigc++-2.0.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 sigc++config.h '/home/devel/building/work/pkg/usr/lib/sigc++-2.0/include'
+make[2]: Leaving directory '/home/devel/building/work/src/libsigc++-2.12.1'
+make[1]: Leaving directory '/home/devel/building/work/src/libsigc++-2.12.1'
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 18:17 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 18:17 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 18:17 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 18:17 usr/include/sigc++-2.0/
+drwxr-xr-x  0 root   root        0 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/
+drwxr-xr-x  0 root   root        0 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/adaptors/
+-rw-r--r--  0 root   root     4735 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/sigc++.h
+-rw-r--r--  0 root   root      920 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/bind.h
+-rw-r--r--  0 root   root      949 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/bind_return.h
+-rw-r--r--  0 root   root     4535 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/connection.h
+-rw-r--r--  0 root   root     3903 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/reference_wrapper.h
+-rw-r--r--  0 root   root      957 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/retype_return.h
+-rw-r--r--  0 root   root    14942 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/signal_base.h
+-rw-r--r--  0 root   root      830 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/slot.h
+-rw-r--r--  0 root   root     5571 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/trackable.h
+-rw-r--r--  0 root   root     1660 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/type_traits.h
+-rw-r--r--  0 root   root     7325 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/visit_each.h
+-rw-r--r--  0 root   root   195276 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/signal.h
+-rw-r--r--  0 root   root    15310 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/limit_reference.h
+drwxr-xr-x  0 root   root        0 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/functors/
+-rw-r--r--  0 root   root     1018 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/functors/functors.h
+-rw-r--r--  0 root   root    13744 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/functors/slot_base.h
+-rw-r--r--  0 root   root    17881 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/functors/functor_trait.h
+-rw-r--r--  0 root   root    89642 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/functors/slot.h
+-rw-r--r--  0 root   root    22425 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/functors/ptr_fun.h
+-rw-r--r--  0 root   root   331067 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/functors/mem_fun.h
+drwxr-xr-x  0 root   root        0 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/adaptors/lambda/
+-rw-r--r--  0 root   root     1219 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/adaptors/adaptors.h
+-rw-r--r--  0 root   root     6577 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/adaptors/bound_argument.h
+-rw-r--r--  0 root   root     2520 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/adaptors/deduce_result_type.h
+-rw-r--r--  0 root   root    16645 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/adaptors/adaptor_trait.h
+-rw-r--r--  0 root   root   135396 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/adaptors/bind.h
+-rw-r--r--  0 root   root    12206 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/adaptors/bind_return.h
+-rw-r--r--  0 root   root    15738 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/adaptors/retype_return.h
+-rw-r--r--  0 root   root    59625 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/adaptors/hide.h
+-rw-r--r--  0 root   root    73281 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/adaptors/retype.h
+-rw-r--r--  0 root   root    14403 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/adaptors/compose.h
+-rw-r--r--  0 root   root    12291 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/adaptors/exception_catch.h
+-rw-r--r--  0 root   root    45216 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/adaptors/track_obj.h
+-rw-r--r--  0 root   root    12028 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/adaptors/lambda/base.h
+-rw-r--r--  0 root   root    19560 Feb  1 18:17 usr/include/sigc++-2.0/sigc++/adaptors/lambda/select.h
+-rwxr-xr-x  0 root   root    31112 Feb  1 18:17 usr/lib/libsigc-2.0.so.0.0.0
+lrwxrwxrwx  0 root   root        0 Feb  1 18:17 usr/lib/libsigc-2.0.so.0 -> libsigc-2.0.so.0.0.0
+lrwxrwxrwx  0 root   root        0 Feb  1 18:17 usr/lib/libsigc-2.0.so -> libsigc-2.0.so.0.0.0
+-rwxr-xr-x  0 root   root      954 Feb  1 18:17 usr/lib/libsigc-2.0.la
+drwxr-xr-x  0 root   root        0 Feb  1 18:17 usr/lib/pkgconfig/
+drwxr-xr-x  0 root   root        0 Feb  1 18:17 usr/lib/sigc++-2.0/
+drwxr-xr-x  0 root   root        0 Feb  1 18:17 usr/lib/sigc++-2.0/include/
+-rw-r--r--  0 root   root     2722 Feb  1 18:17 usr/lib/sigc++-2.0/include/sigc++config.h
+-rw-r--r--  0 root   root      567 Feb  1 18:17 usr/lib/pkgconfig/sigc++-2.0.pc
+=======> Building '/home/devel/packages/libsigc++2#2.12.1-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling libsigc++2 2.12.1-1
+prt-get: /usr/bin/pkgadd -u libsigc++2#2.12.1-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 18:17:45 2024
+

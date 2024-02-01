@@ -1,0 +1,129 @@
+prt-get: updating /usr/ports/opt-x86_64/l-smash
+prt-get: starting build Thu Feb  1 18:09:25 2024
+=======> Building '/home/devel/packages/l-smash#2.14.5-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/l-smash-2.14.5.tar.gz
++ build
++ cd l-smash-2.14.5
++ sed 's|-Os -ffast-math|-O2 -ffast-math|' -i configure
++ ./configure --prefix=/usr --enable-shared --disable-static '--extra-cflags=-O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects' --extra-ldflags=
+
+generating config.mak ...
+
+SRCDIR = .
+DESTDIR = 
+prefix = /usr
+exec_prefix = ${prefix}
+bindir = ${exec_prefix}/bin
+libdir = ${exec_prefix}/lib
+includedir = ${prefix}/include
+CC = gcc
+AR = ar
+LD = gcc
+RANLIB = ranlib
+STRIP = strip
+STATICLIBNAME = liblsmash.a
+STATICLIB = 
+SHAREDLIBNAME = liblsmash.so.2
+SHAREDLIB = liblsmash.so.2
+IMPLIB = 
+CFLAGS = -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast
+LDFLAGS = -L. -fPIC 
+SO_LDFLAGS = -shared -Wl,-soname,$@ -Wl,--version-script,liblsmash.ver
+LIBS = -lm 
+LIBARCH = 
+DEFNAME = 
+SLIB_CMD = 
+
+configure finished
+
+  type 'make'             : compile library and tools
+  type 'make install'     : install all into system
+  type 'make lib'         : compile library only
+  type 'make install-lib' : install library and header into system
+
++ make V=1
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o common/alloc.o common/alloc.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o common/bits.o common/bits.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o common/bytes.o common/bytes.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o common/list.o common/list.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o common/multibuf.o common/multibuf.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o common/osdep.o common/osdep.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o common/utils.o common/utils.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o codecs/a52.o codecs/a52.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o codecs/alac.o codecs/alac.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o codecs/description.o codecs/description.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o codecs/dts.o codecs/dts.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o codecs/h264.o codecs/h264.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o codecs/hevc.o codecs/hevc.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o codecs/id.o codecs/id.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o codecs/mp4sys.o codecs/mp4sys.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o codecs/mp4a.o codecs/mp4a.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o codecs/mp4v.o codecs/mp4v.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o codecs/nalu.o codecs/nalu.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o codecs/qt_wfex.o codecs/qt_wfex.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o codecs/vc1.o codecs/vc1.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o codecs/wma.o codecs/wma.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o importer/a52_imp.o importer/a52_imp.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o importer/adts_imp.o importer/adts_imp.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o importer/als_imp.o importer/als_imp.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o importer/amr_imp.o importer/amr_imp.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o importer/dts_imp.o importer/dts_imp.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o importer/importer.o importer/importer.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o importer/isobm_imp.o importer/isobm_imp.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o importer/mp3_imp.o importer/mp3_imp.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o importer/nalu_imp.o importer/nalu_imp.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o importer/vc1_imp.o importer/vc1_imp.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o importer/wave_imp.o importer/wave_imp.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o core/box.o core/box.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o core/box_default.o core/box_default.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o core/box_type.o core/box_type.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o core/chapter.o core/chapter.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o core/file.o core/file.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o core/fragment.o core/fragment.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o core/isom.o core/isom.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o core/meta.o core/meta.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o core/print.o core/print.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o core/read.o core/read.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o core/summary.o core/summary.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o core/timeline.o core/timeline.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o core/write.o core/write.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o cli/muxer.o cli/muxer.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o cli/cli.o cli/cli.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o cli/remuxer.o cli/remuxer.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o cli/boxdumper.o cli/boxdumper.c
+gcc -c -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -o cli/timelineeditor.o cli/timelineeditor.c
+gcc -shared -Wl,-soname,liblsmash.so.2 -Wl,--version-script,liblsmash.ver -L. -fPIC  -o liblsmash.so.2 common/alloc.o common/bits.o common/bytes.o common/list.o common/multibuf.o common/osdep.o common/utils.o codecs/a52.o codecs/alac.o codecs/description.o codecs/dts.o codecs/h264.o codecs/hevc.o codecs/id.o codecs/mp4sys.o codecs/mp4a.o codecs/mp4v.o codecs/nalu.o codecs/qt_wfex.o codecs/vc1.o codecs/wma.o importer/a52_imp.o importer/adts_imp.o importer/als_imp.o importer/amr_imp.o importer/dts_imp.o importer/importer.o importer/isobm_imp.o importer/mp3_imp.o importer/nalu_imp.o importer/vc1_imp.o importer/wave_imp.o core/box.o core/box_default.o core/box_type.o core/chapter.o core/file.o core/fragment.o core/isom.o core/meta.o core/print.o core/read.o core/summary.o core/timeline.o core/write.o -lm 
+ln -sf liblsmash.so.2 liblsmash.so
+gcc -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -L. -fPIC  -o cli/muxer cli/muxer.o  cli/cli.o -llsmash -lm 
+gcc -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -L. -fPIC  -o cli/remuxer cli/remuxer.o  cli/cli.o -llsmash -lm 
+gcc -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -L. -fPIC  -o cli/boxdumper cli/boxdumper.o  cli/cli.o -llsmash -lm 
+gcc -O2 -ffast-math -Wshadow -Wall -std=c99 -pedantic -I. -I. -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fexcess-precision=fast -L. -fPIC  -o cli/timelineeditor cli/timelineeditor.o  cli/cli.o -llsmash -lm 
++ make -j1 DESTDIR=/home/devel/building/work/pkg install
+install -d /home/devel/building/work/pkg/usr/include
+install -m 644 ./lsmash.h /home/devel/building/work/pkg/usr/include
+install -d /home/devel/building/work/pkg/usr/lib/pkgconfig
+install -m 644 liblsmash.pc /home/devel/building/work/pkg/usr/lib/pkgconfig
+install -m 644 liblsmash.so.2 /home/devel/building/work/pkg/usr/lib
+ln -sf liblsmash.so.2 /home/devel/building/work/pkg/usr/lib/liblsmash.so
+install -d /home/devel/building/work/pkg/usr/bin
+install -m 755 cli/muxer cli/remuxer cli/boxdumper cli/timelineeditor /home/devel/building/work/pkg/usr/bin
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 18:09 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 18:09 usr/include/
+drwxr-xr-x  0 root   root        0 Feb  1 18:09 usr/lib/
+drwxr-xr-x  0 root   root        0 Feb  1 18:09 usr/bin/
+-rwxr-xr-x  0 root   root    43632 Feb  1 18:09 usr/bin/muxer
+-rwxr-xr-x  0 root   root    43792 Feb  1 18:09 usr/bin/remuxer
+-rwxr-xr-x  0 root   root    14560 Feb  1 18:09 usr/bin/boxdumper
+-rwxr-xr-x  0 root   root    35440 Feb  1 18:09 usr/bin/timelineeditor
+drwxr-xr-x  0 root   root        0 Feb  1 18:09 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root   712032 Feb  1 18:09 usr/lib/liblsmash.so.2
+lrwxrwxrwx  0 root   root        0 Feb  1 18:09 usr/lib/liblsmash.so -> liblsmash.so.2
+-rw-r--r--  0 root   root      320 Feb  1 18:09 usr/lib/pkgconfig/liblsmash.pc
+-rw-r--r--  0 root   root   237120 Feb  1 18:09 usr/include/lsmash.h
+=======> Building '/home/devel/packages/l-smash#2.14.5-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling l-smash 2.14.5-1
+prt-get: /usr/bin/pkgadd -u l-smash#2.14.5-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 18:09:30 2024
+

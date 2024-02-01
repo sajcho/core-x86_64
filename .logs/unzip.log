@@ -1,0 +1,181 @@
+prt-get: updating /usr/ports/opt-x86_64/unzip
+prt-get: starting build Thu Feb  1 20:13:19 2024
+=======> Building '/home/devel/packages/unzip#6.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/unzip60.tar.gz
+cp unzip-6.0-overflow.patch /home/devel/building/work/src
+cp unzip-6.0-attribs-overflow.patch /home/devel/building/work/src
+cp unzip-6.0-heap-overflow-infloop.patch /home/devel/building/work/src
+cp unzip-6.0-cve-2014-8139.patch /home/devel/building/work/src
+cp unzip-6.0-cve-2014-8140.patch /home/devel/building/work/src
+cp unzip-6.0-cve-2014-8141.patch /home/devel/building/work/src
+cp 0001-Fix-CVE-2016-9844-rhbz-1404283.patch /home/devel/building/work/src
+cp unzip-6.0-cve-2018-1000035-heap-based-overflow.patch /home/devel/building/work/src
+cp unzip-6.0-alt-iconv-utf8-print.patch /home/devel/building/work/src
++ build
++ cd unzip60
++ patch -p1 -i /home/devel/building/work/src/unzip-6.0-overflow.patch
+patching file extract.c
+Hunk #1 succeeded at 2217 (offset 3 lines).
+Hunk #2 succeeded at 2227 (offset 3 lines).
++ patch -p1 -i /home/devel/building/work/src/unzip-6.0-attribs-overflow.patch
+patching file zipinfo.c
++ patch -p1 -i /home/devel/building/work/src/unzip-6.0-heap-overflow-infloop.patch
+patching file crypt.c
+patching file extract.c
+Hunk #1 succeeded at 2708 (offset -25 lines).
+patching file extract.c
+Hunk #1 succeeded at 1255 (offset -2 lines).
++ patch -p1 -i /home/devel/building/work/src/unzip-6.0-cve-2014-8139.patch
+patching file extract.c
+Hunk #3 succeeded at 2034 (offset 12 lines).
+Hunk #4 succeeded at 2170 (offset 12 lines).
+patching file unzpriv.h
++ patch -p1 -i /home/devel/building/work/src/unzip-6.0-cve-2014-8140.patch
+patching file extract.c
+Hunk #1 succeeded at 2252 with fuzz 1 (offset 12 lines).
++ patch -p1 -i /home/devel/building/work/src/unzip-6.0-cve-2014-8141.patch
+patching file fileio.c
+Hunk #2 succeeded at 2297 with fuzz 2 (offset -5 lines).
+patching file process.c
+Hunk #2 succeeded at 1888 (offset -6 lines).
++ patch -p1 -i /home/devel/building/work/src/0001-Fix-CVE-2016-9844-rhbz-1404283.patch
+patching file zipinfo.c
+Hunk #1 succeeded at 1921 (offset -63 lines).
++ patch -p1 -i /home/devel/building/work/src/unzip-6.0-cve-2018-1000035-heap-based-overflow.patch
+patching file fileio.c
++ patch -p1 -i /home/devel/building/work/src/unzip-6.0-alt-iconv-utf8-print.patch
+patching file extract.c
+Hunk #1 succeeded at 2586 (offset -62 lines).
+Hunk #2 succeeded at 2612 (offset -62 lines).
+Hunk #3 succeeded at 2781 (offset -62 lines).
+Hunk #4 succeeded at 2826 (offset -62 lines).
+patching file unzpriv.h
+Hunk #1 succeeded at 1211 (offset -1 lines).
+Hunk #2 succeeded at 2396 (offset -15 lines).
++ sed -i s/-O3/-O2/ unix/configure
++ make -f unix/Makefile CC=x86_64-unknown-linux-gnu-gcc 'LOCAL_UNZIP=-O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -DNO_LCHMOD' prefix=/usr generic
+sh unix/configure "x86_64-unknown-linux-gnu-gcc" "-I. -Ibzip2 -DUNIX  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -DNO_LCHMOD" "bzip2"
+Check C compiler operation
+  Ok
+Check C compiler type (optimization options)
+  GNU C (-O2)
+Check for the C preprocessor
+Check if we can use asm code
+Check for ANSI options
+Check for prototypes
+Check the handling of const
+Check for time_t
+Check for size_t
+Check for off_t
+Check for Large File Support
+  off_t is 8 bytes
+-- yes we have Large File Support!
+Check for wide char support
+  __STDC_ISO_10646__ = 201706
+-- have wchar_t with known UCS encoding - enabling Unicode support!
+Check for setlocale support (needed for UNICODE Native check)
+-- have setlocale, can check for charset type
+--  - enabling UTF8-native support!
+Check for gcc no-builtin flag
+Check for fchmod
+Check for fchown
+Check for lchown
+Check for nl_langinfo
+Check for lchmod
+Check for memset
+Check for errno declaration
+Check for directory libraries
+Check for readlink
+Check for directory include file
+Check for non existent include files
+Check for term I/O include file
+Check for MBCS include files
+Check for MBCS support
+-- have MBCS support
+Check for MBCS mbschr
+Check for MBCS mbsrchr
+Check for valloc
+Check for /usr/local/bin and /usr/local/man
+Checking for OS specialties
+Check for symbolic links
+Check bzip2 support
+  Check for bzip2 sources in unzip's bzip2 subdirectory
+-- bzip2 sources not found - no bzip2 support
+eval make -f unix/Makefile unzips ACONF_DEP=flags `cat flags`
+make[1]: Entering directory '/home/devel/building/work/src/unzip60'
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  unzip.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  crc32.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  crypt.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  envargs.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  explode.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  extract.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  fileio.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  globals.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  inflate.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  list.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  match.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  process.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  ttyio.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  ubz2err.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  unreduce.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  unshrink.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  zipinfo.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  unix/unix.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  funzip.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DFUNZIP -o cryptf.o crypt.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DFUNZIP -o globalsf.o globals.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DFUNZIP -o inflatef.o inflate.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DFUNZIP -o ttyiof.o ttyio.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o unzipsfx.o unzip.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o crc32_.o crc32.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o crypt_.o crypt.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o extract_.o extract.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o fileio_.o fileio.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o globals_.o globals.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o inflate_.o inflate.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o match_.o match.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o process_.o process.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o ttyio_.o ttyio.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o ubz2err_.o ubz2err.c
+x86_64-unknown-linux-gnu-gcc -c -I. -Ibzip2 -DUNIX -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNO_LCHMOD -O2 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -D_MBCS  -DSFX -o unix_.o unix/unix.c
+x86_64-unknown-linux-gnu-gcc -o funzip  funzip.o crc32.o  cryptf.o globalsf.o inflatef.o ttyiof.o -s
+x86_64-unknown-linux-gnu-gcc -o unzipsfx  unzipsfx.o crc32_.o  crypt_.o extract_.o fileio_.o globals_.o inflate_.o match_.o process_.o ttyio_.o ubz2err_.o unix_.o -s
+x86_64-unknown-linux-gnu-gcc -o unzip  -Lbzip2 unzip.o crc32.o  crypt.o envargs.o explode.o extract.o fileio.o globals.o inflate.o list.o match.o process.o ttyio.o ubz2err.o unreduce.o unshrink.o zipinfo.o unix.o  -s
+make[1]: Leaving directory '/home/devel/building/work/src/unzip60'
++ make -f unix/Makefile prefix=/home/devel/building/work/pkg/usr MANDIR=/home/devel/building/work/pkg/usr/share/man/man1/ install
+mkdir -p /home/devel/building/work/pkg/usr/bin
+cp unzip funzip unzipsfx /home/devel/building/work/pkg/usr/bin
+cp unix/zipgrep /home/devel/building/work/pkg/usr/bin
+rm -f /home/devel/building/work/pkg/usr/bin/zipinfo
+ln /home/devel/building/work/pkg/usr/bin/unzip /home/devel/building/work/pkg/usr/bin/zipinfo
+mkdir -p /home/devel/building/work/pkg/usr/share/man/man1/
+cp man/funzip.1 /home/devel/building/work/pkg/usr/share/man/man1//funzip.1
+cp man/unzip.1 /home/devel/building/work/pkg/usr/share/man/man1//unzip.1
+cp man/unzipsfx.1 /home/devel/building/work/pkg/usr/share/man/man1//unzipsfx.1
+cp man/zipgrep.1 /home/devel/building/work/pkg/usr/share/man/man1//zipgrep.1
+cp man/zipinfo.1 /home/devel/building/work/pkg/usr/share/man/man1//zipinfo.1
+chmod 755 /home/devel/building/work/pkg/usr/bin/funzip /home/devel/building/work/pkg/usr/bin/unzip /home/devel/building/work/pkg/usr/bin/unzipsfx /home/devel/building/work/pkg/usr/bin/zipgrep /home/devel/building/work/pkg/usr/bin/zipinfo
+chmod 644 /home/devel/building/work/pkg/usr/share/man/man1//funzip.1 /home/devel/building/work/pkg/usr/share/man/man1//unzip.1 /home/devel/building/work/pkg/usr/share/man/man1//unzipsfx.1 /home/devel/building/work/pkg/usr/share/man/man1//zipgrep.1 /home/devel/building/work/pkg/usr/share/man/man1//zipinfo.1
++ ln -sf unzip /home/devel/building/work/pkg/usr/bin/zipinfo
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Feb  1 20:13 usr/
+drwxr-xr-x  0 root   root        0 Feb  1 20:13 usr/bin/
+drwxr-xr-x  0 root   root        0 Feb  1 20:13 usr/share/
+drwxr-xr-x  0 root   root        0 Feb  1 20:13 usr/share/man/
+drwxr-xr-x  0 root   root        0 Feb  1 20:13 usr/share/man/man1/
+-rw-r--r--  0 root   root     1993 Feb  1 20:13 usr/share/man/man1/funzip.1.gz
+-rw-r--r--  0 root   root    18141 Feb  1 20:13 usr/share/man/man1/unzip.1.gz
+-rw-r--r--  0 root   root     5523 Feb  1 20:13 usr/share/man/man1/unzipsfx.1.gz
+-rw-r--r--  0 root   root     1553 Feb  1 20:13 usr/share/man/man1/zipgrep.1.gz
+-rw-r--r--  0 root   root     8899 Feb  1 20:13 usr/share/man/man1/zipinfo.1.gz
+-rwxr-xr-x  0 root   root   150176 Feb  1 20:13 usr/bin/unzip
+-rwxr-xr-x  0 root   root    22744 Feb  1 20:13 usr/bin/funzip
+-rwxr-xr-x  0 root   root    68192 Feb  1 20:13 usr/bin/unzipsfx
+-rwxr-xr-x  0 root   root     2953 Feb  1 20:13 usr/bin/zipgrep
+lrwxrwxrwx  0 root   root        0 Feb  1 20:13 usr/bin/zipinfo -> unzip
+=======> Building '/home/devel/packages/unzip#6.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling unzip 6.0-1
+prt-get: /usr/bin/pkgadd -u unzip#6.0-1.x86_64.pkg.tar.zst
+prt-get: build done Thu Feb  1 20:13:22 2024
+
