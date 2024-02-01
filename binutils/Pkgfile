@@ -4,7 +4,7 @@
 # Depends on:	flex texinfo zlib
 
 name=binutils
-version=2.41
+version=2.42
 release=1
 source=(https://sourceware.org/pub/${name}/releases/${name}-${version}.tar.xz)
 
@@ -30,6 +30,7 @@ build() {
 		--enable-pgo-build=lto \
 		--enable-install-libiberty \
 		--enable-default-execstack=no \
+		--enable-error-execstack=no \
 		--enable-deterministic-archives \
 		--disable-nls \
 		--disable-werror \

@@ -150,10 +150,11 @@ drwxr-xr-x	root/root	usr/lib/ldscripts/
 -rw-r--r--	root/root	usr/lib/ldscripts/elf_x86_64.xu
 -rw-r--r--	root/root	usr/lib/ldscripts/elf_x86_64.xw
 -rw-r--r--	root/root	usr/lib/ldscripts/elf_x86_64.xwe
--rwxr-xr-x	root/root	usr/lib/libbfd-2.41.so
+-rw-r--r--	root/root	usr/lib/ldscripts/stamp (EMPTY)
+-rwxr-xr-x	root/root	usr/lib/libbfd-2.42.so
 -rw-r--r--	root/root	usr/lib/libbfd.a
 -rwxr-xr-x	root/root	usr/lib/libbfd.la
-lrwxrwxrwx	root/root	usr/lib/libbfd.so -> libbfd-2.41.so
+lrwxrwxrwx	root/root	usr/lib/libbfd.so -> libbfd-2.42.so
 -rw-r--r--	root/root	usr/lib/libctf-nobfd.a
 -rwxr-xr-x	root/root	usr/lib/libctf-nobfd.la
 lrwxrwxrwx	root/root	usr/lib/libctf-nobfd.so -> libctf-nobfd.so.0.0.0
@@ -165,10 +166,10 @@ lrwxrwxrwx	root/root	usr/lib/libctf.so -> libctf.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libctf.so.0 -> libctf.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libctf.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libiberty.a
--rwxr-xr-x	root/root	usr/lib/libopcodes-2.41.so
+-rwxr-xr-x	root/root	usr/lib/libopcodes-2.42.so
 -rw-r--r--	root/root	usr/lib/libopcodes.a
 -rwxr-xr-x	root/root	usr/lib/libopcodes.la
-lrwxrwxrwx	root/root	usr/lib/libopcodes.so -> libopcodes-2.41.so
+lrwxrwxrwx	root/root	usr/lib/libopcodes.so -> libopcodes-2.42.so
 -rw-r--r--	root/root	usr/lib/libsframe.a
 -rwxr-xr-x	root/root	usr/lib/libsframe.la
 lrwxrwxrwx	root/root	usr/lib/libsframe.so -> libsframe.so.1.0.0
