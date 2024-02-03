@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ2gpmjVs1BSzr02ziBehrFFY/80v9rYcHAmm0+JmErN0dRzMBdHsITYKBmjMC+51cWlLzgGSX9a5NBxpmCRA2gw=
-SHA256 (Pkgfile) = fcc1b0cc92ebfd7a92a66610f749926cbda1a9a44c325a2f9f7b1e804dfe03cf
-SHA256 (.footprint) = 12fda3e31cb8a80b3a0aad7476cb0bf6f739101d91a6ac0cbfbe27be703927ac
-SHA256 (libidn2-2.3.4.tar.gz) = 93caba72b4e051d1f8d4f5a076ab63c99b77faee019b72b9783b267986dbb45f
+RWQ0XEjKMixyZ4EJ37TBBVy6jrxvKUOeSWlVncRDvbvMOgx62DKnxnT7iOUlA7vy6lgcNgJm4gWwEIz5SJxdgS2LuZ0mlVGfdgg=
+SHA256 (Pkgfile) = 19f110e86eea33bdfd0b04eefc549851f998d475607b84fe1a6d9d18c9202dac
+SHA256 (.footprint) = 17b0a080e649d5d066d6c0ee3e488293502591fbde554b9d2abc8e951360b747
+SHA256 (libidn2-2.3.7.tar.gz) = 4c21a791b610b9519b9d0e12b8097bf2f359b12f8dd92647611a929e6bfd7d64
