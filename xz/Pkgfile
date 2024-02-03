@@ -3,9 +3,9 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=xz
-version=5.4.5
+version=5.4.6
 release=1
-source=(http://tukaani.org/xz/${name}-${version}.tar.xz)
+source=(https://github.com/tukaani-project/xz/releases/download/v${version}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
