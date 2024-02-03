@@ -18,16 +18,16 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/install/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/install/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/install/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/install/__pycache__/__init__.cpython-312.pyc
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip-23.3.2.dist-info/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.2.dist-info/AUTHORS.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.2.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.2.dist-info/LICENSE.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.2.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.2.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.2.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.2.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.2.dist-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-23.3.2.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip-24.0.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-24.0.dist-info/AUTHORS.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-24.0.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-24.0.dist-info/LICENSE.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-24.0.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-24.0.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-24.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-24.0.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-24.0.dist-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-24.0.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/__main__.py
