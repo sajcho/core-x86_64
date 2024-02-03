@@ -1,17 +1,14 @@
-# Description:	Berkeley DB
+# Description:	Berkeley DB.
 # URL:		http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=db
-version=5.3.28
+version=6.2.32
 release=1
-source=(http://download.oracle.com/berkeley-db/${name}-${version}.tar.gz \
-	0001-atomic-Rename-local-__atomic_compare_exchange-to-avo.patch)
+source=(http://download.oracle.com/berkeley-db/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
-
-	patch -p1 -i $SRC/0001-atomic-Rename-local-__atomic_compare_exchange-to-avo.patch
 
 	cd build_unix
 
@@ -20,6 +17,8 @@ build() {
 			--enable-compat185 \
 			--enable-shared \
 			--enable-cxx \
+			--enable-dbm \
+			--enable-stl \
 			--disable-static \
 			--build=$CHOST \
 			--host=$CHOST
