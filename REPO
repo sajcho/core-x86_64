@@ -583,9 +583,9 @@ f:e4b2514348ea8776dac3e7ec4a2d9644:diffutils/Pkgfile
 f:5ca44e12822d1527ec19bf250e2cd4a5:libcap/.footprint
 f:f825febbb8a8c1cf18097a173abdb290:libcap/.signature
 f:276cf8adb2919ac7a7399112b449a611:libcap/Pkgfile
-f:e47531c4eecda0bed220ce8308f70d68:python3-setuptools/.footprint
-f:2d8b5eac4aa0c357e8b38aead4087318:python3-setuptools/.signature
-f:6c54b11f93ac72fa4b1566277b7ab76c:python3-setuptools/Pkgfile
+f:a442906315a4d1bacc5beb4d24e47efd:python3-setuptools/.footprint
+f:b229e58e800bccdbed64bdd518ad631e:python3-setuptools/.signature
+f:7ed6a06aa1051332e2c8ecb34e62f4e3:python3-setuptools/Pkgfile
 f:05ada03b255d820320650f21dc75fa98:ncurses/.footprint
 f:0ad21e2d174e49f8b0c2a4eac83796df:ncurses/.signature
 f:83724f19238b6f080aa3cf0d3ad6fd30:ncurses/Pkgfile
@@ -662,9 +662,9 @@ f:06afba284e69da36a25c212442a7e9b9:plocate/.signature
 f:64c16c563503cb95fc9dc940cebb1669:plocate/updatedb.conf
 f:de84a61d98b3cbd1ddaba3045c23c797:plocate/Pkgfile
 f:e4a50f4a3d5559e5ccd30e936672dc37:plocate/plocate
-f:c712731c297b814ec36ae636ec28e872:expat/.footprint
-f:4e7c5a399608e5e6cf1fbb40cca3406a:expat/.signature
-f:d5370e2e08d2700e6a184c27803c7d72:expat/Pkgfile
+f:3831609b24cef56afe63eef489600ccf:expat/.footprint
+f:1e10c917b9fefa3c99bff2b0be58317e:expat/.signature
+f:2809a40648d5c43ae95282ef154397d0:expat/Pkgfile
 f:23bad69a803040ec1f85215b016390e1:mpdecimal/.footprint
 f:f8f70f934183d835d2b9a2dd58136c0f:mpdecimal/.signature
 f:3ee5fc05902fb124830bc45872a5fa28:mpdecimal/Pkgfile
