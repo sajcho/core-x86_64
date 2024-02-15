@@ -5,7 +5,7 @@
 
 name=python3
 _realname=Python
-version=3.12.1
+version=3.12.2
 release=1
 source=(https://www.python.org/ftp/python/${version}/${_realname}-${version}.tar.xz)
 
@@ -58,7 +58,7 @@ build() {
 	ln -s python${version%.*} $PKG/usr/lib/$name
 
 	rm $PKG/usr/lib/python${version%.*}/ctypes/macholib/README.ctypes
-	rm $PKG/usr/lib/python${version%.*}/idlelib/{ChangeLog,NEWS.txt,NEWS2x.txt}
+	rm $PKG/usr/lib/python${version%.*}/idlelib/{ChangeLog,NEWS2x.txt,News3.txt}
 	rm $PKG/usr/lib/python${version%.*}/idlelib/{README,TODO,CREDITS,HISTORY}.txt
 	rm $PKG/usr/lib/python${version%.*}/idlelib/Icons/README.txt
 	rm $PKG/usr/lib/python${version%.*}/site-packages/README.txt
