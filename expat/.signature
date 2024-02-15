@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ4g8gJEhr4T0fVxOhff6bjX+Gi2+sS2nQQLL+olagG6nzbCIbtubgFLE6RW+w341BBBzDZt+B6XX04a8bo7Ifw4=
-SHA256 (Pkgfile) = 229784968851002f1e2fe672e754b2753e8f3a179ee31fd7bbaf32ab3f3aafef
-SHA256 (.footprint) = cf576d5842fabc1f0d63f36202ee26af7c1a47835dc2729884a98755864e8abc
-SHA256 (expat-2.5.0.tar.bz2) = 6f0e6e01f7b30025fa05c85fdad1e5d0ec7fd35d9f61b22f34998de11969ff67
+RWQ0XEjKMixyZwiBqBi/hX1Dqu9eECulbAHcV+GA33qK6/kRJJyVlqyVNzdjD/DmWkZbMbqopjY9cw27kAWtJdLJMuYVYntEagU=
+SHA256 (Pkgfile) = 78e1248c9896cdc4f8f7866243037b425195f2bd1950a9041ced343c5a3e53f4
+SHA256 (.footprint) = 0fb8342adcb35f8c6a60f22b42ffe37922db5e864dc7695c7ad1341d487fbe72
+SHA256 (expat-2.6.0.tar.bz2) = ff60e6a6b6ce570ae012dc7b73169c7fdf4b6bf08c12ed0ec6f55736b78d85ba
