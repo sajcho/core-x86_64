@@ -1,0 +1,988 @@
+From 64bc0c85af452cb7d48cddad83f16b527ae5f0b7 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Tue, 13 Feb 2024 17:51:24 +0100
+Subject: [PATCH] fix: implicit declarations, incompatible types, argv type *
+ Debian tracker * From: Jan <cloux@rote.ch> * Date: Sat, 2 Mar 2019 15:41:59
+ +0100 * Subject: fix: implicit declarations, incompatible types, argv type
+
+---
+ admin/runit-2.1.2/src/chkshsgr.c     |  4 +++-
+ admin/runit-2.1.2/src/chpst.c        | 31 ++++++++++++++--------------
+ admin/runit-2.1.2/src/pathexec.h     |  6 +++---
+ admin/runit-2.1.2/src/pathexec_env.c |  8 +++----
+ admin/runit-2.1.2/src/pathexec_run.c |  3 ++-
+ admin/runit-2.1.2/src/prot.c         |  7 +++++--
+ admin/runit-2.1.2/src/prot.h         |  2 +-
+ admin/runit-2.1.2/src/runsvdir.c     |  4 ++--
+ admin/runit-2.1.2/src/seek_set.c     |  1 +
+ admin/runit-2.1.2/src/sgetopt.c      |  2 +-
+ admin/runit-2.1.2/src/sgetopt.h      |  2 +-
+ admin/runit-2.1.2/src/subgetopt.c    |  2 +-
+ admin/runit-2.1.2/src/subgetopt.h    |  2 +-
+ admin/runit-2.1.2/src/sv.c           |  2 +-
+ admin/runit-2.1.2/src/svlogd.c       |  4 ++--
+ admin/runit-2.1.2/src/utmpset.c      |  2 +-
+ 16 files changed, 45 insertions(+), 37 deletions(-)
+
+diff --git a/admin/runit-2.1.2/src/chkshsgr.c b/admin/runit-2.1.2/src/chkshsgr.c
+index 38c352d..a7a8e04 100644
+--- a/admin/runit-2.1.2/src/chkshsgr.c
++++ b/admin/runit-2.1.2/src/chkshsgr.c
+@@ -1,10 +1,12 @@
+ /* Public domain. */
+ 
++#include <sys/types.h>
+ #include <unistd.h>
++#include <grp.h>
+ 
+ int main()
+ {
+-  short x[4];
++  gid_t x[4];
+ 
+   x[0] = x[1] = 0;
+   if (getgroups(1,x) == 0) if (setgroups(1,x) == -1) _exit(1);
+diff --git a/admin/runit-2.1.2/src/chpst.c b/admin/runit-2.1.2/src/chpst.c
+index f1b8ed9..2b9eb01 100644
+--- a/admin/runit-2.1.2/src/chpst.c
++++ b/admin/runit-2.1.2/src/chpst.c
+@@ -3,6 +3,7 @@
+ #include <sys/time.h>
+ #include <sys/resource.h>
+ #include <unistd.h>
++#include <grp.h>
+ #include "sgetopt.h"
+ #include "error.h"
+ #include "strerr.h"
+@@ -40,7 +41,7 @@ void usage() { strerr_die4x(100, "usage: ", progname, USAGE_MAIN, "\n"); }
+ 
+ char *set_user =0;
+ char *env_user =0;
+-const char *argv0 =0;
++char *argv0 =0;
+ const char *env_dir =0;
+ unsigned int verbose =0;
+ unsigned int pgrp =0;
+@@ -258,14 +259,14 @@ void slimit() {
+ }
+ 
+ /* argv[0] */
+-void setuidgid(int, const char *const *);
+-void envuidgid(int, const char *const *);
+-void envdir(int, const char *const *);
+-void pgrphack(int, const char *const *);
+-void setlock(int, const char *const *);
+-void softlimit(int, const char *const *);
+-
+-int main(int argc, const char **argv) {
++void setuidgid(int, char *const *);
++void envuidgid(int, char *const *);
++void envdir(int, char *const *);
++void pgrphack(int, char *const *);
++void setlock(int, char *const *);
++void softlimit(int, char *const *);
++
++int main(int argc, char **argv) {
+   int opt;
+   int i;
+   unsigned long ul;
+@@ -366,7 +367,7 @@ int main(int argc, const char **argv) {
+ void setuidgid_usage() {
+   strerr_die4x(100, "usage: ", progname, USAGE_SETUIDGID, "\n");
+ }
+-void setuidgid(int argc, const char *const *argv) {
++void setuidgid(int argc, char *const *argv) {
+   const char *account;
+ 
+   if (! (account =*++argv)) setuidgid_usage();
+@@ -379,7 +380,7 @@ void setuidgid(int argc, const char *const *argv) {
+ void envuidgid_usage() {
+   strerr_die4x(100, "usage: ", progname, USAGE_ENVUIDGID, "\n");
+ }
+-void envuidgid(int argc, const char *const *argv) {
++void envuidgid(int argc, char *const *argv) {
+   const char *account;
+ 
+   if (! (account =*++argv)) envuidgid_usage();
+@@ -392,7 +393,7 @@ void envuidgid(int argc, const char *const *argv) {
+ void envdir_usage() {
+   strerr_die4x(100, "usage: ", progname, USAGE_ENVDIR, "\n");
+ }
+-void envdir(int argc, const char *const *argv) {
++void envdir(int argc, char *const *argv) {
+   const char *dir;
+ 
+   if (! (dir =*++argv)) envdir_usage();
+@@ -405,7 +406,7 @@ void envdir(int argc, const char *const *argv) {
+ void pgrphack_usage() {
+   strerr_die4x(100, "usage: ", progname, USAGE_PGRPHACK, "\n");
+ }
+-void pgrphack(int argc, const char *const *argv) {
++void pgrphack(int argc, char *const *argv) {
+   if (! *++argv) pgrphack_usage();
+   setsid();
+   pathexec(argv);
+@@ -415,7 +416,7 @@ void pgrphack(int argc, const char *const *argv) {
+ void setlock_usage() {
+   strerr_die4x(100, "usage: ", progname, USAGE_SETLOCK, "\n");
+ }
+-void setlock(int argc, const char *const *argv) {
++void setlock(int argc, char *const *argv) {
+   int opt;
+   unsigned int delay =0;
+   unsigned int x =0;
+@@ -449,7 +450,7 @@ void getlarg(long *l) {
+   if (optarg[scan_ulong(optarg, &ul)]) usage();
+   *l =ul;
+ }
+-void softlimit(int argc, const char *const *argv) {
++void softlimit(int argc, char *const *argv) {
+   int opt;
+   
+   while ((opt =getopt(argc,argv,"a:c:d:f:l:m:o:p:r:s:t:")) != opteof)
+diff --git a/admin/runit-2.1.2/src/pathexec.h b/admin/runit-2.1.2/src/pathexec.h
+index d46ab17..8d850e7 100644
+--- a/admin/runit-2.1.2/src/pathexec.h
++++ b/admin/runit-2.1.2/src/pathexec.h
+@@ -3,9 +3,9 @@
+ #ifndef PATHEXEC_H
+ #define PATHEXEC_H
+ 
+-extern void pathexec_run(const char *,const char * const *,const char * const *);
++extern void pathexec_run(const char *, char *const *, char *const *);
+ extern int pathexec_env(const char *,const char *);
+-extern void pathexec_env_run(const char *, const char * const *);
+-extern void pathexec(const char * const *);
++extern void pathexec_env_run(const char *, char *const *);
++extern void pathexec(char * const *);
+ 
+ #endif
+diff --git a/admin/runit-2.1.2/src/pathexec_env.c b/admin/runit-2.1.2/src/pathexec_env.c
+index 1305469..f873094 100644
+--- a/admin/runit-2.1.2/src/pathexec_env.c
++++ b/admin/runit-2.1.2/src/pathexec_env.c
+@@ -22,9 +22,9 @@ int pathexec_env(const char *s,const char *t)
+   return stralloc_cat(&plus,&tmp);
+ }
+ 
+-void pathexec_env_run(const char *file, const char *const *argv)
++void pathexec_env_run(const char *file, char *const *argv)
+ {
+-  const char **e;
++  char **e;
+   unsigned int elen;
+   unsigned int i;
+   unsigned int j;
+@@ -40,7 +40,7 @@ void pathexec_env_run(const char *file, const char *const *argv)
+     if (!plus.s[i])
+       ++elen;
+ 
+-  e = (const char **) alloc((elen + 1) * sizeof(char *));
++  e = (char **) alloc((elen + 1) * sizeof(char *));
+   if (!e) return;
+ 
+   elen = 0;
+@@ -68,7 +68,7 @@ void pathexec_env_run(const char *file, const char *const *argv)
+   alloc_free(e);
+ }
+ 
+-void pathexec(const char *const *argv)
++void pathexec(char *const *argv)
+ {
+   return pathexec_env_run(*argv, argv);
+ }
+diff --git a/admin/runit-2.1.2/src/pathexec_run.c b/admin/runit-2.1.2/src/pathexec_run.c
+index 1770ac7..51f13ea 100644
+--- a/admin/runit-2.1.2/src/pathexec_run.c
++++ b/admin/runit-2.1.2/src/pathexec_run.c
+@@ -1,5 +1,6 @@
+ /* Public domain. */
+ 
++#include <unistd.h>
+ #include "error.h"
+ #include "stralloc.h"
+ #include "str.h"
+@@ -8,7 +9,7 @@
+ 
+ static stralloc tmp;
+ 
+-void pathexec_run(const char *file,const char * const *argv,const char * const *envp)
++void pathexec_run(const char *file, char *const *argv, char *const *envp)
+ {
+   const char *path;
+   unsigned int split;
+diff --git a/admin/runit-2.1.2/src/prot.c b/admin/runit-2.1.2/src/prot.c
+index 79a88c5..1ffd20c 100644
+--- a/admin/runit-2.1.2/src/prot.c
++++ b/admin/runit-2.1.2/src/prot.c
+@@ -1,12 +1,15 @@
+ /* Public domain. */
+ 
++#include <sys/types.h>
++#include <unistd.h>
++#include <grp.h>
+ #include "hasshsgr.h"
+ #include "prot.h"
+ 
+-int prot_gid(int gid)
++int prot_gid(gid_t gid)
+ {
+ #ifdef HASSHORTSETGROUPS
+-  short x[2];
++  gid_t x[2];
+   x[0] = gid; x[1] = 73; /* catch errors */
+   if (setgroups(1,x) == -1) return -1;
+ #else
+diff --git a/admin/runit-2.1.2/src/prot.h b/admin/runit-2.1.2/src/prot.h
+index 2e5cb81..47a4204 100644
+--- a/admin/runit-2.1.2/src/prot.h
++++ b/admin/runit-2.1.2/src/prot.h
+@@ -3,7 +3,7 @@
+ #ifndef PROT_H
+ #define PROT_H
+ 
+-extern int prot_gid(int);
++extern int prot_gid(gid_t);
+ extern int prot_uid(int);
+ 
+ #endif
+diff --git a/admin/runit-2.1.2/src/runsvdir.c b/admin/runit-2.1.2/src/runsvdir.c
+index 07c1d8e..c45b4ee 100644
+--- a/admin/runit-2.1.2/src/runsvdir.c
++++ b/admin/runit-2.1.2/src/runsvdir.c
+@@ -63,7 +63,7 @@ void runsv(int no, char *name) {
+   }
+   if (pid == 0) {
+     /* child */
+-    const char *prog[3];
++    char *prog[3];
+ 
+     prog[0] ="runsv";
+     prog[1] =name;
+@@ -71,7 +71,7 @@ void runsv(int no, char *name) {
+     sig_uncatch(sig_hangup);
+     sig_uncatch(sig_term);
+     if (pgrp) setsid();
+-    pathexec_run(*prog, prog, (const char* const*)environ);
++    pathexec_run(*prog, prog, (char * const *)environ);
+     fatal("unable to start runsv ", name);
+   }
+   sv[no].pid =pid;
+diff --git a/admin/runit-2.1.2/src/seek_set.c b/admin/runit-2.1.2/src/seek_set.c
+index 19b8265..a1a36d0 100644
+--- a/admin/runit-2.1.2/src/seek_set.c
++++ b/admin/runit-2.1.2/src/seek_set.c
+@@ -1,6 +1,7 @@
+ /* Public domain. */
+ 
+ #include <sys/types.h>
++#include <unistd.h>
+ #include "seek.h"
+ 
+ #define SET 0 /* sigh */
+diff --git a/admin/runit-2.1.2/src/sgetopt.c b/admin/runit-2.1.2/src/sgetopt.c
+index 8bb608f..778bca2 100644
+--- a/admin/runit-2.1.2/src/sgetopt.c
++++ b/admin/runit-2.1.2/src/sgetopt.c
+@@ -27,7 +27,7 @@ Documentation in sgetopt.3.
+ int opterr = 1;
+ const char *optprogname = 0;
+ 
+-int getopt(int argc,const char *const *argv,const char *opts)
++int getopt(int argc,char *const *argv,const char *opts)
+ {
+   int c;
+   const char *s;
+diff --git a/admin/runit-2.1.2/src/sgetopt.h b/admin/runit-2.1.2/src/sgetopt.h
+index bf8bce6..eb4cbf8 100644
+--- a/admin/runit-2.1.2/src/sgetopt.h
++++ b/admin/runit-2.1.2/src/sgetopt.h
+@@ -16,7 +16,7 @@
+ 
+ #include "subgetopt.h"
+ 
+-extern int sgetoptmine(int,const char *const *,const char *);
++extern int sgetoptmine(int,char *const *,const char *);
+ extern int sgetopterr;
+ extern const char *sgetoptprogname;
+ 
+diff --git a/admin/runit-2.1.2/src/subgetopt.c b/admin/runit-2.1.2/src/subgetopt.c
+index 85ace96..a23e0d7 100644
+--- a/admin/runit-2.1.2/src/subgetopt.c
++++ b/admin/runit-2.1.2/src/subgetopt.c
+@@ -16,7 +16,7 @@ const char *optarg = 0;
+ int optproblem = 0;
+ int optdone = SUBGETOPTDONE;
+ 
+-int sgopt(int argc,const char *const *argv,const char *opts)
++int sgopt(int argc,char *const *argv,const char *opts)
+ {
+   int c;
+   const char *s;
+diff --git a/admin/runit-2.1.2/src/subgetopt.h b/admin/runit-2.1.2/src/subgetopt.h
+index 41ad26a..5163148 100644
+--- a/admin/runit-2.1.2/src/subgetopt.h
++++ b/admin/runit-2.1.2/src/subgetopt.h
+@@ -15,7 +15,7 @@
+ 
+ #define SUBGETOPTDONE -1
+ 
+-extern int subgetopt(int,const char *const *,const char *);
++extern int subgetopt(int,char *const *,const char *);
+ extern const char *subgetoptarg;
+ extern int subgetoptind;
+ extern int subgetoptpos;
+diff --git a/admin/runit-2.1.2/src/sv.c b/admin/runit-2.1.2/src/sv.c
+index 0125795..e9c7f21 100644
+--- a/admin/runit-2.1.2/src/sv.c
++++ b/admin/runit-2.1.2/src/sv.c
+@@ -281,7 +281,7 @@ int main(int argc, char **argv) {
+   lsb =(str_diff(progname, "sv"));
+   if ((x =env_get("SVDIR"))) varservice =x;
+   if ((x =env_get("SVWAIT"))) scan_ulong(x, &wait);
+-  while ((i =getopt(argc, (const char* const*)argv, "w:vV")) != opteof) {
++  while ((i =getopt(argc, (char* const*)argv, "w:vV")) != opteof) {
+     switch(i) {
+     case 'w': scan_ulong(optarg, &wait);
+     case 'v': verbose =1; break;
+diff --git a/admin/runit-2.1.2/src/svlogd.c b/admin/runit-2.1.2/src/svlogd.c
+index 90a3321..082e20c 100644
+--- a/admin/runit-2.1.2/src/svlogd.c
++++ b/admin/runit-2.1.2/src/svlogd.c
+@@ -52,7 +52,7 @@ unsigned long linelen;
+ const char *replace ="";
+ char repl =0;
+ 
+-const char **fndir;
++char **fndir;
+ int fdwdir;
+ struct stat st;
+ stralloc sa;
+@@ -661,7 +661,7 @@ void logmatch(struct logdir *ld) {
+     i +=byte_chr(&ld->inst.s[i], ld->inst.len -i, 0);
+   }
+ }
+-int main(int argc, const char **argv) {
++int main(int argc, char **argv) {
+   int i;
+   int opt;
+ 
+diff --git a/admin/runit-2.1.2/src/utmpset.c b/admin/runit-2.1.2/src/utmpset.c
+index eea41a5..227e457 100644
+--- a/admin/runit-2.1.2/src/utmpset.c
++++ b/admin/runit-2.1.2/src/utmpset.c
+@@ -81,7 +81,7 @@ int wtmp_logout(const char *line) {
+   return(1);
+ }
+ 
+-int main (int argc, const char * const *argv, const char * const *envp) {
++int main (int argc, char * const *argv, char * const *envp) {
+   int opt;
+   int wtmp =0;
+ 
+-- 
+2.43.1
+
+From e0d977b50044017a1708f49b2af6ad4bf6342172 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Tue, 13 Feb 2024 17:57:23 +0100
+Subject: [PATCH] fix: 34 cases of -Wmisleading-indentation warnings * Debian
+ tracker * From: Jan <cloux@rote.ch> * Date: Sat, 2 Mar 2019 21:47:29 +0100 *
+ Subject: fix: 34 cases of -Wmisleading-indentation warnings
+
+---
+ admin/runit-2.1.2/src/byte_chr.c  | 16 ++++++++++++----
+ admin/runit-2.1.2/src/byte_copy.c | 12 ++++++++----
+ admin/runit-2.1.2/src/byte_cr.c   | 12 ++++++++----
+ admin/runit-2.1.2/src/byte_diff.c | 16 ++++++++++++----
+ admin/runit-2.1.2/src/byte_rchr.c | 16 ++++++++++++----
+ admin/runit-2.1.2/src/chpst.c     |  6 ++++--
+ admin/runit-2.1.2/src/str_chr.c   | 16 ++++++++++++----
+ admin/runit-2.1.2/src/str_len.c   | 12 ++++++++----
+ admin/runit-2.1.2/src/sv.c        |  3 ++-
+ admin/runit-2.1.2/src/svlogd.c    | 25 ++++++++++++++++++-------
+ 10 files changed, 96 insertions(+), 38 deletions(-)
+
+diff --git a/admin/runit-2.1.2/src/byte_chr.c b/admin/runit-2.1.2/src/byte_chr.c
+index fd56056..020b230 100644
+--- a/admin/runit-2.1.2/src/byte_chr.c
++++ b/admin/runit-2.1.2/src/byte_chr.c
+@@ -13,10 +13,18 @@ int c;
+   ch = c;
+   t = s;
+   for (;;) {
+-    if (!n) break; if (*t == ch) break; ++t; --n;
+-    if (!n) break; if (*t == ch) break; ++t; --n;
+-    if (!n) break; if (*t == ch) break; ++t; --n;
+-    if (!n) break; if (*t == ch) break; ++t; --n;
++    if (!n) break;
++    if (*t == ch) break;
++    ++t; --n;
++    if (!n) break;
++    if (*t == ch) break;
++    ++t; --n;
++    if (!n) break;
++    if (*t == ch) break;
++    ++t; --n;
++    if (!n) break;
++    if (*t == ch) break;
++    ++t; --n;
+   }
+   return t - s;
+ }
+diff --git a/admin/runit-2.1.2/src/byte_copy.c b/admin/runit-2.1.2/src/byte_copy.c
+index 74c9e4a..d33dacd 100644
+--- a/admin/runit-2.1.2/src/byte_copy.c
++++ b/admin/runit-2.1.2/src/byte_copy.c
+@@ -8,9 +8,13 @@ register unsigned int n;
+ register char *from;
+ {
+   for (;;) {
+-    if (!n) return; *to++ = *from++; --n;
+-    if (!n) return; *to++ = *from++; --n;
+-    if (!n) return; *to++ = *from++; --n;
+-    if (!n) return; *to++ = *from++; --n;
++    if (!n) return;
++    *to++ = *from++; --n;
++    if (!n) return;
++    *to++ = *from++; --n;
++    if (!n) return;
++    *to++ = *from++; --n;
++    if (!n) return;
++    *to++ = *from++; --n;
+   }
+ }
+diff --git a/admin/runit-2.1.2/src/byte_cr.c b/admin/runit-2.1.2/src/byte_cr.c
+index 52dc251..b17300e 100644
+--- a/admin/runit-2.1.2/src/byte_cr.c
++++ b/admin/runit-2.1.2/src/byte_cr.c
+@@ -10,9 +10,13 @@ register char *from;
+   to += n;
+   from += n;
+   for (;;) {
+-    if (!n) return; *--to = *--from; --n;
+-    if (!n) return; *--to = *--from; --n;
+-    if (!n) return; *--to = *--from; --n;
+-    if (!n) return; *--to = *--from; --n;
++    if (!n) return;
++    *--to = *--from; --n;
++    if (!n) return;
++    *--to = *--from; --n;
++    if (!n) return;
++    *--to = *--from; --n;
++    if (!n) return;
++    *--to = *--from; --n;
+   }
+ }
+diff --git a/admin/runit-2.1.2/src/byte_diff.c b/admin/runit-2.1.2/src/byte_diff.c
+index 0c4d17b..7abc766 100644
+--- a/admin/runit-2.1.2/src/byte_diff.c
++++ b/admin/runit-2.1.2/src/byte_diff.c
+@@ -8,10 +8,18 @@ register unsigned int n;
+ register char *t;
+ {
+   for (;;) {
+-    if (!n) return 0; if (*s != *t) break; ++s; ++t; --n;
+-    if (!n) return 0; if (*s != *t) break; ++s; ++t; --n;
+-    if (!n) return 0; if (*s != *t) break; ++s; ++t; --n;
+-    if (!n) return 0; if (*s != *t) break; ++s; ++t; --n;
++    if (!n) return 0;
++    if (*s != *t) break;
++    ++s; ++t; --n;
++    if (!n) return 0;
++    if (*s != *t) break;
++    ++s; ++t; --n;
++    if (!n) return 0;
++    if (*s != *t) break;
++    ++s; ++t; --n;
++    if (!n) return 0;
++    if (*s != *t) break;
++    ++s; ++t; --n;
+   }
+   return ((int)(unsigned int)(unsigned char) *s)
+        - ((int)(unsigned int)(unsigned char) *t);
+diff --git a/admin/runit-2.1.2/src/byte_rchr.c b/admin/runit-2.1.2/src/byte_rchr.c
+index 7ea9948..35db62d 100644
+--- a/admin/runit-2.1.2/src/byte_rchr.c
++++ b/admin/runit-2.1.2/src/byte_rchr.c
+@@ -15,10 +15,18 @@ int c;
+   t = s;
+   u = 0;
+   for (;;) {
+-    if (!n) break; if (*t == ch) u = t; ++t; --n;
+-    if (!n) break; if (*t == ch) u = t; ++t; --n;
+-    if (!n) break; if (*t == ch) u = t; ++t; --n;
+-    if (!n) break; if (*t == ch) u = t; ++t; --n;
++    if (!n) break;
++    if (*t == ch) u = t;
++    ++t; --n;
++    if (!n) break;
++    if (*t == ch) u = t;
++    ++t; --n;
++    if (!n) break;
++    if (*t == ch) u = t;
++    ++t; --n;
++    if (!n) break;
++    if (*t == ch) u = t;
++    ++t; --n;
+   }
+   if (!u) u = t;
+   return u - s;
+diff --git a/admin/runit-2.1.2/src/chpst.c b/admin/runit-2.1.2/src/chpst.c
+index 2b9eb01..8de213f 100644
+--- a/admin/runit-2.1.2/src/chpst.c
++++ b/admin/runit-2.1.2/src/chpst.c
+@@ -309,12 +309,14 @@ int main(int argc, char **argv) {
+     case 'n':
+       switch (*optarg) {
+         case '-':
+-          if (optarg[scan_ulong(++optarg, &ul)]) usage(); nicelvl =ul;
++          if (optarg[scan_ulong(++optarg, &ul)]) usage();
++          nicelvl =ul;
+           nicelvl *=-1;
+           break;
+         case '+': ++optarg;
+         default:
+-          if (optarg[scan_ulong(optarg, &ul)]) usage(); nicelvl =ul;
++          if (optarg[scan_ulong(optarg, &ul)]) usage();
++          nicelvl =ul;
+           break;
+       }
+       break;
+diff --git a/admin/runit-2.1.2/src/str_chr.c b/admin/runit-2.1.2/src/str_chr.c
+index 9b467eb..a29d600 100644
+--- a/admin/runit-2.1.2/src/str_chr.c
++++ b/admin/runit-2.1.2/src/str_chr.c
+@@ -10,10 +10,18 @@ unsigned int str_chr(register const char *s,int c)
+   ch = c;
+   t = s;
+   for (;;) {
+-    if (!*t) break; if (*t == ch) break; ++t;
+-    if (!*t) break; if (*t == ch) break; ++t;
+-    if (!*t) break; if (*t == ch) break; ++t;
+-    if (!*t) break; if (*t == ch) break; ++t;
++    if (!*t) break;
++    if (*t == ch) break;
++    ++t;
++    if (!*t) break;
++    if (*t == ch) break;
++    ++t;
++    if (!*t) break;
++    if (*t == ch) break;
++    ++t;
++    if (!*t) break;
++    if (*t == ch) break;
++    ++t;
+   }
+   return t - s;
+ }
+diff --git a/admin/runit-2.1.2/src/str_len.c b/admin/runit-2.1.2/src/str_len.c
+index dedd005..38c6e28 100644
+--- a/admin/runit-2.1.2/src/str_len.c
++++ b/admin/runit-2.1.2/src/str_len.c
+@@ -8,9 +8,13 @@ unsigned int str_len(const char *s)
+ 
+   t = s;
+   for (;;) {
+-    if (!*t) return t - s; ++t;
+-    if (!*t) return t - s; ++t;
+-    if (!*t) return t - s; ++t;
+-    if (!*t) return t - s; ++t;
++    if (!*t) return t - s;
++    ++t;
++    if (!*t) return t - s;
++    ++t;
++    if (!*t) return t - s;
++    ++t;
++    if (!*t) return t - s;
++    ++t;
+   }
+ }
+diff --git a/admin/runit-2.1.2/src/sv.c b/admin/runit-2.1.2/src/sv.c
+index e9c7f21..3553d5b 100644
+--- a/admin/runit-2.1.2/src/sv.c
++++ b/admin/runit-2.1.2/src/sv.c
+@@ -290,7 +290,8 @@ int main(int argc, char **argv) {
+     }
+   }
+   argv +=optind; argc -=optind;
+-  if (!(action =*argv++)) usage(); --argc;
++  if (!(action =*argv++)) usage();
++  --argc;
+   if (!lsb) { service =argv; services =argc; }
+   if (!*service) usage();
+ 
+diff --git a/admin/runit-2.1.2/src/svlogd.c b/admin/runit-2.1.2/src/svlogd.c
+index 082e20c..7a5720b 100644
+--- a/admin/runit-2.1.2/src/svlogd.c
++++ b/admin/runit-2.1.2/src/svlogd.c
+@@ -390,13 +390,24 @@ unsigned int ip4_scan(const char *s,char ip[4])
+   unsigned long u;
+  
+   len = 0;
+-  i = scan_ulong(s,&u); if (!i) return 0; ip[0] = u; s += i; len += i;
+-  if (*s != '.') return 0; ++s; ++len;
+-  i = scan_ulong(s,&u); if (!i) return 0; ip[1] = u; s += i; len += i;
+-  if (*s != '.') return 0; ++s; ++len;
+-  i = scan_ulong(s,&u); if (!i) return 0; ip[2] = u; s += i; len += i;
+-  if (*s != '.') return 0; ++s; ++len;
+-  i = scan_ulong(s,&u); if (!i) return 0; ip[3] = u; s += i; len += i;
++  i = scan_ulong(s,&u);
++  if (!i) return 0;
++  ip[0] = u; s += i; len += i;
++  if (*s != '.') return 0;
++  ++s; ++len;
++  i = scan_ulong(s,&u);
++  if (!i) return 0;
++  ip[1] = u; s += i; len += i;
++  if (*s != '.') return 0;
++  ++s; ++len;
++  i = scan_ulong(s,&u);
++  if (!i) return 0;
++  ip[2] = u; s += i; len += i;
++  if (*s != '.') return 0;
++  ++s; ++len;
++  i = scan_ulong(s,&u);
++  if (!i) return 0;
++  ip[3] = u; s += i; len += i;
+   return len;
+ }
+ 
+-- 
+2.43.1
+
+From 0a709618f2c2e9f7d03a1333f62af7906764a3bb Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Tue, 13 Feb 2024 18:01:25 +0100
+Subject: [PATCH] fix: warning for undefined operation on sequence point in
+ chpst.c * Debian tracker * From: Jan <cloux@rote.ch> * Date: Sat, 2 Mar 2019
+ 22:56:30 +0100 * Subject: fix: warning for undefined operation on sequence
+ point in chpst.c
+
+---
+ admin/runit-2.1.2/src/chpst.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/admin/runit-2.1.2/src/chpst.c b/admin/runit-2.1.2/src/chpst.c
+index 8de213f..1c3073f 100644
+--- a/admin/runit-2.1.2/src/chpst.c
++++ b/admin/runit-2.1.2/src/chpst.c
+@@ -309,7 +309,8 @@ int main(int argc, char **argv) {
+     case 'n':
+       switch (*optarg) {
+         case '-':
+-          if (optarg[scan_ulong(++optarg, &ul)]) usage();
++          ++optarg;
++          if (optarg[scan_ulong(optarg, &ul)]) usage();
+           nicelvl =ul;
+           nicelvl *=-1;
+           break;
+-- 
+2.43.1
+
+From ae388d7c76b11716fa4532879c87ec48901ee2bb Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Tue, 13 Feb 2024 18:04:14 +0100
+Subject: [PATCH] fix: replace obsolete usleep with nanosleep * Debian tracker
+ * From: Jan <cloux@rote.ch> * Date: Wed, 6 Mar 2019 18:38:04 +0100 * Subject:
+ fix: replace obsolete usleep with nanosleep
+
+---
+ admin/runit-2.1.2/src/sv.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/admin/runit-2.1.2/src/sv.c b/admin/runit-2.1.2/src/sv.c
+index 3553d5b..c602c19 100644
+--- a/admin/runit-2.1.2/src/sv.c
++++ b/admin/runit-2.1.2/src/sv.c
+@@ -1,5 +1,6 @@
+ #include <sys/types.h>
+ #include <sys/stat.h>
++#include <time.h>
+ #include <unistd.h>
+ #include "str.h"
+ #include "strerr.h"
+@@ -271,6 +272,7 @@ int control(char *a) {
+ int main(int argc, char **argv) {
+   unsigned int i, done;
+   char *x;
++  const struct timespec sleeptime = {0, 420000000};
+ 
+   progname =*argv;
+   for (i =str_len(*argv); i; --i) if ((*argv)[i -1] == '/') break;
+@@ -388,7 +390,7 @@ int main(int argc, char **argv) {
+           fatal("unable to change to original directory");
+       }
+       if (done) break;
+-      usleep(420000);
++      nanosleep(&sleeptime, NULL);
+       taia_now(&tnow);
+     }
+   return(rc > 99 ? 99 : rc);
+-- 
+2.43.1
+
+From 10648223eea95903499e662c25202d0222757997 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Tue, 13 Feb 2024 21:10:50 +0100
+Subject: [PATCH] utmpset.c: mixes "int32_t *" and "time_t *" * From: Gerrit
+ Pape <pape@smarden.org> * Date: Thu, 31 Jul 2014 12:25:49 +0000 * Subject:
+ [PATCH] utmpset.c: mixes "int32_t *" and "time_t *"
+
+---
+ admin/runit-2.1.2/src/utmpset.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+diff --git a/admin/runit-2.1.2/src/utmpset.c b/admin/runit-2.1.2/src/utmpset.c
+index 227e457..286d680 100644
+--- a/admin/runit-2.1.2/src/utmpset.c
++++ b/admin/runit-2.1.2/src/utmpset.c
+@@ -24,6 +24,7 @@ void usage(void) { strerr_die4x(1, "usage: ", progname, USAGE, "\n"); }
+ int utmp_logout(const char *line) {
+   int fd;
+   uw_tmp ut;
++  time_t t;
+   int ok =-1;
+ 
+   if ((fd =open(UW_TMP_UFILE, O_RDWR, 0)) < 0)
+@@ -35,7 +36,8 @@ int utmp_logout(const char *line) {
+     if (!ut.ut_name[0] || (str_diff(ut.ut_line, line) != 0)) continue;
+     memset(ut.ut_name, 0, sizeof ut.ut_name);
+     memset(ut.ut_host, 0, sizeof ut.ut_host);
+-    if (time(&ut.ut_time) == -1) break;
++    if (time(&t) == -1) break;
++    ut.ut_time = t;
+ #ifdef DEAD_PROCESS
+     ut.ut_type =DEAD_PROCESS;
+ #endif
+@@ -52,6 +54,7 @@ int wtmp_logout(const char *line) {
+   int len;
+   struct stat st;
+   uw_tmp ut;
++  time_t t;
+ 
+   if ((fd = open_append(UW_TMP_WFILE)) == -1)
+     strerr_die4sys(111, FATAL, "unable to open ", UW_TMP_WFILE, ": ");
+@@ -65,10 +68,11 @@ int wtmp_logout(const char *line) {
+   memset(&ut, 0, sizeof(uw_tmp));
+   if ((len =str_len(line)) > sizeof ut.ut_line) len =sizeof ut.ut_line -2;
+   byte_copy(ut.ut_line, len, line);
+-  if (time(&ut.ut_time) == -1) {
++  if (time(&t) == -1) {
+     close(fd);
+     return(-1);
+   }
++  ut.ut_time = t;
+ #ifdef DEAD_PROCESS
+   ut.ut_type =DEAD_PROCESS;
+ #endif
+-- 
+2.43.1
+
+From ff07aa97b73d707f8fecf6812769b73f21383e23 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Thu, 15 Feb 2024 06:53:46 +0100
+Subject: [PATCH] Makefile: chskshsgr must be built for the host.
+
+---
+ admin/runit-2.1.2/src/Makefile | 22 ++++++++++++++++++----
+ 1 file changed, 18 insertions(+), 4 deletions(-)
+
+diff --git a/admin/runit-2.1.2/src/Makefile b/admin/runit-2.1.2/src/Makefile
+index d9624de..5d39f71 100644
+--- a/admin/runit-2.1.2/src/Makefile
++++ b/admin/runit-2.1.2/src/Makefile
+@@ -170,11 +170,11 @@ byte_diff.o: byte.h byte_diff.c compile
+ byte_rchr.o: byte.h byte_rchr.c compile
+ 	./compile byte_rchr.c
+ 
+-chkshsgr: chkshsgr.o load
+-	./load chkshsgr 
++chkshsgr: chkshsgr.o loadhost
++	./loadhost chkshsgr 
+ 
+-chkshsgr.o: chkshsgr.c compile
+-	./compile chkshsgr.c
++chkshsgr.o: chkshsgr.c compilehost
++	./compilehost chkshsgr.c
+ 
+ choose: choose.sh warn-auto.sh
+ 	rm -f choose
+@@ -185,6 +185,11 @@ choose: choose.sh warn-auto.sh
+ coe.o: coe.c coe.h compile
+ 	./compile coe.c
+ 
++compilehost:
++	cat warn-auto.sh > compilehost
++	@echo 'exec cc -c $${1+"$$@"}' >> compilehost
++	chmod 555 compilehost
++
+ compile: conf-cc print-cc.sh systype warn-auto.sh
+ 	rm -f compile
+ 	sh print-cc.sh > compile
+@@ -246,6 +251,15 @@ iopause.h: choose compile iopause.h1 iopause.h2 load trypoll.c
+ iopause.o: compile iopause.c iopause.h select.h tai.h taia.h uint64.h
+ 	./compile iopause.c
+ 
++loadhost:
++	rm -f loadhost
++	@echo > loadhost
++	@echo 'systype="`cat systype`"' >> loadhost
++	@echo 'cat warn-auto.sh' >> loadhost
++	@echo 'main="$$1"; shift' >> loadhost
++	@echo 'exec cc -o "$$main" "$$main".o $${1+"$$@"}' >> loadhost
++	chmod 555 loadhost
++
+ load: conf-ld print-ld.sh systype warn-auto.sh
+ 	rm -f load
+ 	sh print-ld.sh > load
+-- 
+2.43.1
+
+From ff7fc10bde842dea4e4ee6a3006ff67de023b13b Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Thu, 15 Feb 2024 07:01:17 +0100
+Subject: [PATCH] svlogd.c: Initialize all fields of sockaddr_in. *
+ http://skarnet.org/cgi-bin/archive.cgi?2:mss:1163:201602:gpiglpbjdemlioaeabbn
+
+---
+ admin/runit-2.1.2/src/svlogd.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/admin/runit-2.1.2/src/svlogd.c b/admin/runit-2.1.2/src/svlogd.c
+index 7a5720b..e94585d 100644
+--- a/admin/runit-2.1.2/src/svlogd.c
++++ b/admin/runit-2.1.2/src/svlogd.c
+@@ -441,6 +441,7 @@ unsigned int logdir_open(struct logdir *ld, const char *fn) {
+   ld->name =(char*)fn;
+   ld->ppid =0;
+   ld->match ='+';
++  ld->udpaddr.sin_family =AF_INET;
+   ld->udpaddr.sin_port =0;
+   ld->udponly =0;
+   while (! stralloc_copys(&ld->prefix, "")) pause_nomem();
+-- 
+2.43.1
+
+From 59aa4ee9c0f506084e735a7e0c49949ab2aed4b5 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Thu, 15 Feb 2024 07:08:29 +0100
+Subject: [PATCH] sig_pause.c: fix - build use gcc ver. 14 * when we use gcc
+ version 14 to compile we end up with an error. * * sig_pause.c: In function
+ 'sig_pause': * sig_pause.c:14:3: error: implicit declaration of function
+ 'sigpause'; did you mean 'sig_pause'? [-Wimplicit-function-declaration] *   
+ 14 |   sigpause(0); *       |   ^~~~~~~~ *       |   sig_pause * make: ***
+ [Makefile:324: sig_pause.o] Error 1
+
+---
+ admin/runit-2.1.2/src/sig_pause.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/admin/runit-2.1.2/src/sig_pause.c b/admin/runit-2.1.2/src/sig_pause.c
+index 3d1a793..5569c77 100644
+--- a/admin/runit-2.1.2/src/sig_pause.c
++++ b/admin/runit-2.1.2/src/sig_pause.c
+@@ -1,5 +1,9 @@
+ /* Public domain. */
+ 
++#ifndef _GNU_SOURCE
++#define _GNU_SOURCE
++#endif
++
+ #include <signal.h>
+ #include "sig.h"
+ #include "hassgprm.h"
+-- 
+2.43.1
+
+From 1d9bd9465cd38763ba2b28be3ae44552e774f88f Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Thu, 15 Feb 2024 07:24:40 +0100
+Subject: [PATCH] runit.c: cosmetic - align output
+
+---
+ admin/runit-2.1.2/src/runit.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/admin/runit-2.1.2/src/runit.c b/admin/runit-2.1.2/src/runit.c
+index 48620b3..cda379e 100644
+--- a/admin/runit-2.1.2/src/runit.c
++++ b/admin/runit-2.1.2/src/runit.c
+@@ -18,7 +18,7 @@
+ 
+ /* #define DEBUG */
+ 
+-#define INFO "- runit: "
++#define INFO " - runit: "
+ #define WARNING "- runit: warning: "
+ #define FATAL "- runit: fatal: "
+ 
+@@ -109,7 +109,7 @@ int main (int argc, const char * const *argv, char * const *envp) {
+       /* stage 1 gets full control of console */
+       if (st == 0) {
+         if ((ttyfd =open("/dev/console", O_RDWR)) != -1) {
+-#ifdef TIOCSCTTY 
++#ifdef TIOCSCTTY
+           ioctl(ttyfd, TIOCSCTTY, (char *)0);
+ #endif
+           dup2(ttyfd, 0);
+@@ -131,7 +131,7 @@ int main (int argc, const char * const *argv, char * const *envp) {
+       sig_uncatch(sig_int);
+       sig_unblock(sig_pipe);
+       sig_unblock(sig_term);
+-            
++
+       strerr_warn3(INFO, "enter stage: ", stage[st], 0);
+       execve(*prog, (char *const *)prog, envp);
+       strerr_die4sys(0, FATAL, "unable to start child: ", stage[st], ": ");
+@@ -156,7 +156,7 @@ int main (int argc, const char * const *argv, char * const *envp) {
+       sig_block(sig_cont);
+       sig_block(sig_child);
+       sig_block(sig_int);
+-      
++
+       while (read(selfpipe[0], &ch, 1) == 1) {}
+       while ((child =wait_nohang(&wstat)) > 0)
+         if (child == pid) break;
+@@ -259,7 +259,7 @@ int main (int argc, const char * const *argv, char * const *envp) {
+             break;
+           }
+           if (child) continue;
+-          if (child == -1) 
++          if (child == -1)
+             strerr_warn2(WARNING, "wait_nohang: ", &strerr_sys);
+ #ifdef DEBUG
+           strerr_warn2(WARNING, "waiting...", 0);
+-- 
+2.43.1
+
+From 22f8120b29e2452f129d652b92de67a872cbdbb5 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Thu, 15 Feb 2024 08:10:12 +0100
+Subject: [PATCH] Makefile: don't use -static to link runit, runit-init * From:
+ Gerrit Pape <pape@smarden.org> * Date: Thu, 31 Jul 2014 12:54:32 +0000
+
+---
+ admin/runit-2.1.2/src/Makefile | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/admin/runit-2.1.2/src/Makefile b/admin/runit-2.1.2/src/Makefile
+index 5d39f71..0731d00 100644
+--- a/admin/runit-2.1.2/src/Makefile
++++ b/admin/runit-2.1.2/src/Makefile
+@@ -6,10 +6,10 @@ check: $(IT)
+ 	./check-local $(IT)
+ 
+ runit: load runit.o unix.a byte.a
+-	./load runit unix.a byte.a -static
++	./load runit unix.a byte.a
+ 
+ runit-init: load runit-init.o unix.a byte.a
+-	./load runit-init unix.a byte.a -static
++	./load runit-init unix.a byte.a
+ 
+ runsv: load runsv.o unix.a byte.a time.a
+ 	./load runsv unix.a byte.a time.a
+-- 
+2.43.1
+

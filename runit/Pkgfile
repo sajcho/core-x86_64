@@ -4,30 +4,20 @@
 
 name=runit
 version=2.1.2
-release=1
+release=2
 source=(http://smarden.org/${name}/${name}-${version}.tar.gz \
-	_sv sv clearmem.patch cross.patch svlogd.patch utmpset-time_t.patch)
+	runit-patchset-by-saux.patch \
+	_sv sv)
 
 build() {
 	cd $SRC/admin/${name}-${version}
 
-	# apply patches
-	patch -p1 -i $SRC/clearmem.patch
-	patch -p1 -i $SRC/cross.patch
-	patch -p1 -i $SRC/svlogd.patch
-	patch -p1 -i $SRC/utmpset-time_t.patch
+	# apply patch
+	patch -d $SRC -p1 -i $SRC/runit-patchset-by-saux.patch
 
-	# set default service path to /var/service
-	sed -i -e 's:^char \*varservice ="/service/";$:char \*varservice ="/var/service/";:' src/sv.c
-	# change type short to gid_t for getgroups(2) and setgroups(2)
-	sed -i -e 's:short x\[4\];$:gid_t x[4];:' src/chkshsgr.c
-	# note: include '<string.h>' or provide a declaration of 'memset'
-	sed -i -e '/#include "iopause.h"/a #include <string.h>' src/svlogd.c
-	# cosmetic - runit messages
-	sed -i -e 's|#define INFO "- runit: "|#define INFO " - runit: "|' src/runit.c
-
-	CFLAGS="${CFLAGS} -static"
-	LDFLAGS="${LDFLAGS} -static"
+	# add custom CFLAGS and LDFLAGS instead of predefined ones by the source
+	echo "gcc -Wall -Wno-deprecated-declarations" > src/conf-cc
+	echo "gcc -s" > src/conf-ld
 
 	package/compile
 
