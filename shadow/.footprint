@@ -7,12 +7,14 @@ drwxr-xr-x	root/root	etc/cron/daily/
 -rw-r--r--	root/root	etc/login.defs
 drwxr-xr-x	root/root	etc/pam.d/
 -rw-r--r--	root/root	etc/pam.d/chfn
+-rw-r--r--	root/root	etc/pam.d/chpasswd
 -rw-r--r--	root/root	etc/pam.d/chsh
 -rw-r--r--	root/root	etc/pam.d/groupadd
 -rw-r--r--	root/root	etc/pam.d/groupdel
 -rw-r--r--	root/root	etc/pam.d/groupmems
 -rw-r--r--	root/root	etc/pam.d/groupmod
 -rw-r--r--	root/root	etc/pam.d/login
+-rw-r--r--	root/root	etc/pam.d/newusers
 -rw-r--r--	root/root	etc/pam.d/passwd
 -rw-r--r--	root/root	etc/pam.d/su
 -rw-r--r--	root/root	etc/pam.d/useradd
