@@ -5,8 +5,8 @@
 
 name=libpcre2
 _realname=pcre2
-version=10.42
-release=2
+version=10.43
+release=1
 source=(https://github.com/PhilipHazel/${_realname}/releases/download/${_realname}-${version}/${_realname}-${version}.tar.gz)
 
 build() {
