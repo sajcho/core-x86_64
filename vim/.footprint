@@ -407,6 +407,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/apache.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/arch.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/art.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/asciidoc.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/asm.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/aspvbs.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/automake.vim
@@ -508,6 +509,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/hostsaccess.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/html.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/htmldjango.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/hurl.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/i3config.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/icon.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/indent.vim
