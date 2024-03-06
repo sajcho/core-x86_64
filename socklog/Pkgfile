@@ -5,17 +5,22 @@
 
 name=socklog
 version=2.1.0
-release=1
-source=(http://smarden.org/${name}/${name}-${version}.tar.gz \
-	cross.patch)
+release=2
+source=(https://smarden.org/${name}/${name}-${version}.tar.gz \
+	cross.patch \
+	patches-fix-build-warnings.patch \
+	tryto-c.patch)
 
 build() {
 	cd $SRC/admin/${name}-${version}
 
-	patch -d $SRC/admin/${name}-${version}/src -p1 -i $SRC/cross.patch
+	patch -p1 -i $SRC/cross.patch
+	patch -p1 -i $SRC/patches-fix-build-warnings.patch
+	patch -p1 -i $SRC/tryto-c.patch
 
-	CFLAGS="${CFLAGS} -static"
-	LDFLAGS="${LDFLAGS} -static"
+	# add custom CFLAGS and LDFLAGS instead of predefined ones by the source
+	echo "gcc -D_GNU_SOURCE -Wno-deprecated-declarations $CFLAGS" > src/conf-cc
+	echo "gcc $LDFLAGS -Wl,-z -Wl,noexecstack" >src/conf-ld
 
 	package/compile
 
