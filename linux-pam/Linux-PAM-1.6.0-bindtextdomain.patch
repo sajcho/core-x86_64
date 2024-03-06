@@ -1,0 +1,13 @@
+--- Linux-PAM-1.6.0/libpam/pam_start.c.orig	2024-01-17 11:29:36.000000000 +0100
++++ Linux-PAM-1.6.0/libpam/pam_start.c	2024-03-05 21:41:50.038667244 +0100
+@@ -15,6 +15,10 @@
+ #include <string.h>
+ #include <syslog.h>
+ 
++#ifdef HAVE_BINDTEXTDOMAIN
++#include <libintl.h>
++#endif
++
+ static int _pam_start_internal (
+     const char *service_name,
+     const char *user,

@@ -5,12 +5,16 @@
 
 name=linux-pam
 version=1.6.0
-release=1
+release=2
 source=(https://github.com/${name}/${name}/releases/download/v${version}/Linux-PAM-${version}.tar.xz \
+	Linux-PAM-1.6.0-bindtextdomain.patch \
 	common-account common-auth common-password common-session other)
 
 build() {
 	cd Linux-PAM-${version}
+
+	# fix - https://github.com/linux-pam/linux-pam/pull/773
+	patch -p1 -i $SRC/Linux-PAM-1.6.0-bindtextdomain.patch
 
 	CONFIG_SHELL=/bin/bash \
 	./configure \
