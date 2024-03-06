@@ -27,6 +27,8 @@ build() {
 	cd build
 
 	../configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
 		--with-headers=$PKG/usr/include \
@@ -40,8 +42,6 @@ build() {
 		--disable-timezone-tools \
 		--with-pkgversion=SAUX-x86_64 \
 		--without-gd \
-		--build=$CHOST \
-		--host=$CHOST \
 		libc_cv_slibdir=/lib \
 		libc_cv_complocaledir=/usr/lib/locale
 

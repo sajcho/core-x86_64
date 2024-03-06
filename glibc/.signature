@@ -1,6 +1,6 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ7jPiahz8dhNb0+WsJlFn+yE357F7K0mFqt+4s8vZkSPgUtAqjVjx0qOfqnEU41+PdSKB+cMgLt3C5COrw7Wtg8=
-SHA256 (Pkgfile) = 7d091fcfd02c5953f9fb1946cb94e555ce93b6f5a82b2b6e78f270f593485d58
+RWQ0XEjKMixyZ14RJdaN51Rnx+VUCi5LV/QFYizd7YUuWQpFGqC6vdSojsA4A7GfXI+mNkgjpPZmIjRCwgjnaR/y1ht3TSFkfAw=
+SHA256 (Pkgfile) = d114a1bca979de358d681ebd6af7f7ab4ee648bb93b1fa181a5e91d5d009c2eb
 SHA256 (.footprint) = 99eb6630a7025684fc67aaf0f6341b8d381760e3abb857aa66383d0636ad846d
 SHA256 (glibc-2.39.tar.xz) = f77bd47cf8170c57365ae7bf86696c118adb3b120d3259c64c502d3dc1e2d926
 SHA256 (linux-6.7.1.tar.xz) = 1ecffa568e86a2202ba5533ad9034bc263a9aa14e189597a94f09b3854ad68c3
