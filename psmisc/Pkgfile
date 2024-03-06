@@ -4,7 +4,7 @@
 # Depends on:	ncurses
 
 name=psmisc
-version=23.6
+version=23.7
 release=1
 source=(http://downloads.sourceforge.net/project/${name}/${name}/${name}-${version}.tar.xz)
 
@@ -14,6 +14,8 @@ build() {
 	export LINGUAS=' '
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--disable-nls
 
