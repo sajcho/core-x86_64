@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ+C7Qcse/auXp2kzHoAGlXeGak2cfF8xnJ+ySa1PuSjONuTf+snYJ/C5OIwhBF73plWKzI+xlA1Ybw5RR0OxSwQ=
-SHA256 (Pkgfile) = dd138595c6f321a15642b5e20464fbcd079cb7ae3b28850676c71d3fcd87f501
-SHA256 (.footprint) = b2260996ff948a0b8bf8849f925f78ec99afa7d7c4f709acb1bb741ac8d8c84b
-SHA256 (libbsd-0.11.8.tar.xz) = 55fdfa2696fb4d55a592fa9ad14a9df897c7b0008ddb3b30c419914841f85f33
+RWQ0XEjKMixyZ57/+cxRB6PPzWzGGU32c3Hcof2plTTSDLLDZIqq+8mL1AxhmzITJ0JZWgbtBtFZUDC0Te6TfAh7HEagCP/KrAs=
+SHA256 (Pkgfile) = 78ce923ef176e97d5f827167e4c8f881c4d5a604ebc9728bab2cd18b72e200ce
+SHA256 (.footprint) = 80901c8ddfbbe5f1b7d49f4e349c0d225643386c009cc6667ae3b171a7c40798
+SHA256 (libbsd-0.12.1.tar.xz) = d7747f8ec1baa6ff5c096a9dd587c061233dec90da0f1aedd66d830f6db6996a
