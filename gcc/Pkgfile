@@ -4,16 +4,17 @@
 # Depends on:	isl mpc zstd
 
 name=gcc
-version=13.2.0
+version=14.0.1
+_develversion=14-20240303
 release=1
-source=(https://sourceware.org/pub/${name}/releases/${name}-${version}/${name}-${version}.tar.xz \
+source=(https://ftp.fu-berlin.de/unix/languages/gcc/snapshots/${_develversion}/${name}-${_develversion}.tar.xz \
 	c89 c99)
 
 build() {
-	cd ${name}-${version}
+	cd ${name}-${_develversion}
 
-	sed -i 's|lib64|lib|' $SRC/${name}-${version}/${name}/config/i386/t-linux64
-	sed -i 's|lib64|lib|' $SRC/${name}-${version}/${name}/config/i386/linux64.h
+	sed -i 's|lib64|lib|' $SRC/${name}-${_develversion}/${name}/config/i386/t-linux64
+	sed -i 's|lib64|lib|' $SRC/${name}-${_develversion}/${name}/config/i386/linux64.h
 
 	export CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/}"
 	export CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/}"
@@ -22,11 +23,14 @@ build() {
 	cd build
 
 	../configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
 		--enable-bootstrap \
 		--enable-languages=c,c++,fortran,lto \
 		--enable-plugin \
+		--enable-shared \
 		--enable-threads=posix \
 		--enable-__cxa_atexit \
 		--enable-clocale=gnu \
@@ -35,7 +39,8 @@ build() {
 		--enable-checking=release \
 		--enable-link-serialization=1 \
 		--enable-gnu-indirect-function \
-		--enable-libstdcxx-backtrace=yes \
+		--enable-gnu-unique-object \
+		--enable-libstdcxx-backtrace \
 		--disable-nls \
 		--disable-multilib \
 		--disable-libunwind-exceptions \
@@ -44,8 +49,7 @@ build() {
 		--with-linker-hash-style=gnu \
 		--with-build-config=bootstrap-lto \
 		--with-pkgversion="SAUX-x86_64" \
-		--build=$CHOST \
-		--host=$CHOST
+		--without-cuda-driver
 
 	make V=1 \
 		BOOT_CFLAGS="-O2 -mtune=generic -Wall -Wformat-security -Wp,-D_GLIBCXX_ASSERTIONS" \
@@ -54,8 +58,8 @@ build() {
 
 	# Optional
 	#make -k check || :
-	#$SRC/${name}-${version}/contrib/test_summary \
-	#	> $PKGMK_PACKAGE_DIR/${name}-${version}-check-result.txt
+	#$SRC/${name}-${_develversion}/contrib/test_summary \
+	#	> $PKGMK_PACKAGE_DIR/${name}-${_develversion}-check-result.txt
 
 	make -j1 DESTDIR=$PKG install
 
