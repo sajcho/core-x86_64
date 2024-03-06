@@ -4,23 +4,29 @@
 
 name=sharutils
 version=4.15.2
-release=1
-source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
+release=2
+source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
+	sharutils-4.15.2-CVE-2018-1000097.patch \
+	sharutils-4.15.2-gcc-10.patch \
+	sharutils-4.15.2-glibc228.patch)
 
 build(){
 	cd ${name}-${version}
 
+	patch -p1 -i $SRC/sharutils-4.15.2-CVE-2018-1000097.patch
+	patch -p1 -i $SRC/sharutils-4.15.2-gcc-10.patch
+	patch -p1 -i $SRC/sharutils-4.15.2-glibc228.patch
+
+	CFLAGS+=" -fcommon -Wno-error=format-security"
+
 	./configure \
 		--build=$CHOST \
 		--host=$CHOST \
-		--prefix=/usr \
-		--disable-nls
+		--prefix=/usr
 
-	sed 's/FUNC_FFLUSH_STDIN/-1/g' -i lib/fseeko.c
-
-	make V=1 CFLAGS+=" -fcommon"
+	make V=1
 
 	make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/share/info
+	rm -r $PKG/usr/share/{info,locale}
 }

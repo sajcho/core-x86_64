@@ -1,5 +1,8 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZwWSDZhXGdzAe1+BwDNaWH8YPNqFq5nW9dUbJuoiCGNi3UnC1pZrAjCV/zIO3gVxTGWNg7lqQR9Mr35jPugaJgI=
-SHA256 (Pkgfile) = f102935345e6f6e33eb2cf090c6e48fa351a02ddd1a44f112301d661aaa3d0fd
+RWQ0XEjKMixyZx+ghIQoe1cyqFct8WXQPtFNh6CGzyhOIu+b7OrQaMe56nsiMMe/0d+2KMIsIyWwb2HH2lXcLqNBfPYY4Je+6AI=
+SHA256 (Pkgfile) = 70a819602b2330ae757e81b17af41d3d322c474af86fe483962bd00ee17e6371
 SHA256 (.footprint) = 6362b9ff82a8e0a95e39cb4b7e7154da1b716f1f3dcb21dea58d1a25dd9e7419
 SHA256 (sharutils-4.15.2.tar.xz) = 2b05cff7de5d7b646dc1669bc36c35fdac02ac6ae4b6c19cb3340d87ec553a9a
+SHA256 (sharutils-4.15.2-CVE-2018-1000097.patch) = e24081b99b64e4c6699dccfe367ac7b8334cd2c3a16834b7fa7c7d9cb9a3d84f
+SHA256 (sharutils-4.15.2-gcc-10.patch) = 8abe6347849248d9357877cd1a5402a44363dc34a11976c2b96bcf5c60dc7def
+SHA256 (sharutils-4.15.2-glibc228.patch) = 6c6e210e09fb9ffd1411a0bfa3a8ea0864adeae117c15973341625ed2c967796
