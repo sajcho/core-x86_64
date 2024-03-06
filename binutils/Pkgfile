@@ -18,6 +18,8 @@ build() {
 	cd build
 
 	../configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--sysconfdir=/etc \
 		--enable-ld=default \
@@ -44,9 +46,7 @@ build() {
 		--disable-readline \
 		--with-pic \
 		--with-system-zlib \
-		--with-pkgversion=SAUX-x86_64 \
-		--build=$CHOST \
-		--host=$CHOST
+		--with-pkgversion=SAUX-x86_64
 
 	make V=1 tooldir=/usr
 
