@@ -4,7 +4,7 @@
 # Depends on:	bzip2 xz zlib
 
 name=elfutils
-version=0.190
+version=0.191
 release=1
 source=(https://sourceware.org/${name}/ftp/${version}/${name}-${version}.tar.bz2)
 
@@ -15,6 +15,8 @@ build() {
 	CXXFLAGS+=" -Wp,-D_FORTIFY_SOURCE=2"
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--program-prefix=eu- \
 		--enable-deterministic-archives \
