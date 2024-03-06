@@ -5,14 +5,31 @@
 
 name=expect
 version=5.45.4
-release=1
-source=(https://downloads.sourceforge.net/${name}/${name}${version}.tar.gz)
+release=2
+source=(https://downloads.sourceforge.net/${name}/${name}${version}.tar.gz \
+	expect-5.45-format-security.patch \
+	expect-5.45-headers.patch \
+	expect-5.45-warnings.patch \
+	expect-5.45.4-configure-in.patch)
 
 build() {
 	cd ${name}${version}
 
+	patch -p1 -i $SRC/expect-5.45-format-security.patch
+	patch -p1 -i $SRC/expect-5.45-headers.patch
+	patch -p1 -i $SRC/expect-5.45-warnings.patch
+	patch -p1 -i $SRC/expect-5.45.4-configure-in.patch
+
+	sed -i 's:ifdef HAVE_SYS_WAIT_H:ifndef NO_SYS_WAIT_H:' *.c
+	mv configure.{in,ac}
+
+	autoconf
+
+	CFLAGS+=" -std=gnu89"
+
 	./configure \
 		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--mandir=/usr/share/man \
 		--enable-shared \

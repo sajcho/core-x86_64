@@ -1,5 +1,9 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZyc/A3a0teAcrzZDLxKqPMzDPlPkipHGJU4qTTcuX2LHJb0ir8UYJoILYBjg1QTnxMPQ+yNyZQv4PGlrnFnWCw8=
-SHA256 (Pkgfile) = 1991f90bd6af2a371c0aed11b7408a911de9f8d43f10b7922342eebc6dadfc71
+RWQ0XEjKMixyZ8/EIwz4mRvn+IzyAOggxE1YylDUK38E2vEysUDnRYothEPbuUwxHWlf3iEEVYF1ZBNhYxFnKWUePGphT0lhZAg=
+SHA256 (Pkgfile) = 3dc9f4afbc8a4760676aef70deeaac12881250b0ba176776e93cec41922928b2
 SHA256 (.footprint) = 8ccc6268a53272504d8aab60dfdbc40609882b4a634ee818b12ae671127618bf
 SHA256 (expect5.45.4.tar.gz) = 49a7da83b0bdd9f46d04a04deec19c7767bb9a323e40c4781f89caf760b92c34
+SHA256 (expect-5.45-format-security.patch) = bec8125e223f014e99fe5e967bc3c8e18d3e9fbfd8fbc3c083532a5f1055402d
+SHA256 (expect-5.45-headers.patch) = a1c49b2491b0d8d5650afa938521e36e4738a2d486ca1b95df05b084113c493f
+SHA256 (expect-5.45-warnings.patch) = 97768ff44e6e4fcb2f3930da317bbb2a9767034fb5aab2a7b6b2075bcea55d60
+SHA256 (expect-5.45.4-configure-in.patch) = 18b542a4c0aa3c4ea55443b46c8b6c88da46137aa9205198109aebd6d5a10725
