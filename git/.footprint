@@ -136,6 +136,7 @@ lrwxrwxrwx	root/root	usr/lib/git-core/git-remote-ftps -> git-remote-http
 lrwxrwxrwx	root/root	usr/lib/git-core/git-remote-https -> git-remote-http
 lrwxrwxrwx	root/root	usr/lib/git-core/git-repack -> ../../bin/git
 lrwxrwxrwx	root/root	usr/lib/git-core/git-replace -> ../../bin/git
+lrwxrwxrwx	root/root	usr/lib/git-core/git-replay -> ../../bin/git
 -rwxr-xr-x	root/root	usr/lib/git-core/git-request-pull
 lrwxrwxrwx	root/root	usr/lib/git-core/git-rerere -> ../../bin/git
 lrwxrwxrwx	root/root	usr/lib/git-core/git-reset -> ../../bin/git
@@ -376,6 +377,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/git-remote.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-repack.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-replace.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/git-replay.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-request-pull.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-rerere.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-reset.1.gz
