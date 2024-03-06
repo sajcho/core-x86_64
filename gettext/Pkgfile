@@ -4,9 +4,9 @@
 # Depends on:	ncurses acl
 
 name=gettext
-version=0.22.4
+version=0.22.5
 release=1
-source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
+source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
