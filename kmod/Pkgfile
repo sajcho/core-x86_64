@@ -4,7 +4,7 @@
 # Depends on:	zstd
 
 name=kmod
-version=31
+version=32
 release=1
 source=(https://www.kernel.org/pub/linux/utils/kernel/${name}/${name}-${version}.tar.xz)
 
@@ -12,6 +12,8 @@ build() {
 	cd ${name}-${version}
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--bindir=/sbin \
 		--sysconfdir=/etc \
@@ -33,12 +35,6 @@ build() {
 	install -m 0644 man/*.5 $PKG/usr/share/man/man5
 	install -m 0644 man/*.8 $PKG/usr/share/man/man8
 
-	ln -s kmod $PKG/sbin/modinfo
-	ln -s kmod $PKG/sbin/depmod
-	ln -s kmod $PKG/sbin/insmod
-	ln -s kmod $PKG/sbin/lsmod
-	ln -s kmod $PKG/sbin/rmmod
-	ln -s kmod $PKG/sbin/modprobe
 	ln -s ../sbin/kmod $PKG/bin/lsmod
 	ln -s ../sbin/kmod $PKG/bin/modinfo
 
