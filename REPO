@@ -201,9 +201,9 @@ f:c3af0088020ac062e51ddc2b6a18814b:sysfsutils/Pkgfile
 f:cb16f26de91da8792221c4bb295a5329:kbd/.footprint
 f:ac66a48f805102fcc6ef98f78acb7950:kbd/.signature
 f:aabe0b4adc8269f8d0e0e2327bd2846d:kbd/Pkgfile
-f:9bdc2f61f8cc0f9c814ccaec95c3b9ab:kmod/.footprint
-f:7499105cd2a90ea8363125a1b13dff3a:kmod/.signature
-f:9e9a4809ac96112d86b51d24f8517569:kmod/Pkgfile
+f:67d9cc4789397a00918f5eb619f333e4:kmod/.footprint
+f:39aa39e67d80c07421b41f5fad5e1b26:kmod/.signature
+f:7a6674f2fb27fd5ca294490de4f5a10a:kmod/Pkgfile
 f:159aefdfbc12502327a3deffee4be70e:runit-saux/.footprint
 f:496d56593187f13c48f17b633ef5b006:runit-saux/.signature
 f:467ca5ac8637d63d0ff4361fbbeefc16:runit-saux/Pkgfile
