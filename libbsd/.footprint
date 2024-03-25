@@ -34,8 +34,8 @@ drwxr-xr-x	root/root	usr/include/bsd/sys/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libbsd-ctor.a
 -rw-r--r--	root/root	usr/lib/libbsd.so
-lrwxrwxrwx	root/root	usr/lib/libbsd.so.0 -> libbsd.so.0.12.1
--rwxr-xr-x	root/root	usr/lib/libbsd.so.0.12.1
+lrwxrwxrwx	root/root	usr/lib/libbsd.so.0 -> libbsd.so.0.12.2
+-rwxr-xr-x	root/root	usr/lib/libbsd.so.0.12.2
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libbsd-ctor.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libbsd-overlay.pc
@@ -170,8 +170,6 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/TAILQ_PREV.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/TAILQ_REMOVE.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/TAILQ_SWAP.3bsd.gz
--rw-r--r--	root/root	usr/share/man/man3/TIMESPEC_TO_TIMEVAL.3bsd.gz
--rw-r--r--	root/root	usr/share/man/man3/TIMEVAL_TO_TIMESPEC.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/arc4random.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/arc4random_addrandom.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/arc4random_buf.3bsd.gz
@@ -265,18 +263,19 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/timercmp.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/timerisset.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/timersub.3bsd.gz
--rw-r--r--	root/root	usr/share/man/man3/timespec.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/timespecadd.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/timespecclear.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/timespeccmp.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/timespecisset.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/timespecsub.3bsd.gz
--rw-r--r--	root/root	usr/share/man/man3/timeval.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/tree.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/uid_from_user.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/unvis.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/user_from_uid.3bsd.gz
+-rw-r--r--	root/root	usr/share/man/man3/verrc.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/vis.3bsd.gz
+-rw-r--r--	root/root	usr/share/man/man3/vwarnc.3bsd.gz
+-rw-r--r--	root/root	usr/share/man/man3/warnc.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/wcslcat.3bsd.gz
 -rw-r--r--	root/root	usr/share/man/man3/wcslcpy.3bsd.gz
 drwxr-xr-x	root/root	usr/share/man/man7/
