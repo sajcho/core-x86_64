@@ -15,6 +15,9 @@ build() {
 	# apply patch
 	patch -d $SRC -p1 -i $SRC/runit-patchset-by-saux.patch
 
+	# Fix - change service directory path
+	sed -i -e 's:^char \*varservice ="/service/";$:char \*varservice ="/var/service/";:' src/sv.c
+
 	# add custom CFLAGS and LDFLAGS instead of predefined ones by the source
 	echo "gcc -Wall -Wno-deprecated-declarations" > src/conf-cc
 	echo "gcc -s" > src/conf-ld

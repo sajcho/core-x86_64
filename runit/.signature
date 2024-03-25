@@ -1,6 +1,6 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZwqDvwg2rkfKfgwqmmm80ofXHOuTOAqfT26vexhCZtfwZEBnrMtGnLgoTymn7Vzfg3dTUaaIIdaUTIsqjHJhcwg=
-SHA256 (Pkgfile) = 32f6ba5995a2627a3cf7f784299763812d06e4ad054a5043ce3395ec3e805afc
+RWQ0XEjKMixyZ1x8yCFUOY3gVj7qYK0dMhfrpvvU2k7pmCthtp5qd9Qxq1MsgpLaw7Vhm5/ypcvMglFSAYli0v/eXcBLS0+EFgY=
+SHA256 (Pkgfile) = 25b97ab43d93d34bbf6d9d8379747effe5468d3bdd250120650a02103aba54d0
 SHA256 (.footprint) = 9f8023c1392a46edb594a2618db6c7f43d07b28ccb9cd710d5fce71dd58164a2
 SHA256 (runit-2.1.2.tar.gz) = 6fd0160cb0cf1207de4e66754b6d39750cff14bb0aa66ab49490992c0c47ba18
 SHA256 (runit-patchset-by-saux.patch) = 7631497029ecaebe2cac62709014c9415db622a3d9b39ad4a4e0a55319030439
