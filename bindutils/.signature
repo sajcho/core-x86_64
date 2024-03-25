@@ -1,6 +1,6 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ0QuQm3mZi7GZYARvbbPKcy2OhrwxLvP6qr9l5sH5Qn9lXAoPD70VfIaQ2nRl3uaCSXowMnwVUJ2t001aNmsfg4=
-SHA256 (Pkgfile) = b0c7ab10d3ecfdd0f5b07cc3f0bfc3d0a7ad5f96b8b6a0e9fbde5d6e54056453
-SHA256 (.footprint) = eacae057da4fb8a4f9f3cfc2b5b1af1d6c7d1389efbfeb16c88fa1ee74f38c3a
-SHA256 (bind-9.18.24.tar.xz) = 709d73023c9115ddad3bab65b6c8c79a590196d0d114f5d0ca2533dbd52ddf66
+RWQ0XEjKMixyZ7LlmUPWjKq7qTff4A43nEFMKw5Ob4rAr5/dLjy+1uXVsPZZuCyKbau2z11K0shWSl2iTeDUghh9HgEighqk5QM=
+SHA256 (Pkgfile) = f5f0edb158fdf06173c7d58957f1c9126047e5497b160fbb13f014b75eafe35f
+SHA256 (.footprint) = 35b5c3ee77fd7b3c19c15f73e15fca7d95734b3b60976080e3379f20dd6bd4c1
+SHA256 (bind-9.18.25.tar.xz) = 5a4a70432a33d009f0e6e9dbb328aae7a5e27507e98e28bf3c0c6b250ccb2ab3
 SHA256 (utils.patch) = 300e6a789ae99aca1a414a0e6d5ef67ec7b41baff99449e69c7c6b94785fc465
