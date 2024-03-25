@@ -5,7 +5,7 @@
 
 name=gcc
 version=14.0.1
-_develversion=14-20240303
+_develversion=14-20240324
 release=1
 source=(https://ftp.fu-berlin.de/unix/languages/gcc/snapshots/${_develversion}/${name}-${_develversion}.tar.xz \
 	c89 c99)
