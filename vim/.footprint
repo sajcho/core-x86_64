@@ -444,6 +444,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/css.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/cucumber.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/cvsrc.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/deb822sources.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/debchangelog.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/debcontrol.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/debsources.vim
