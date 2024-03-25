@@ -907,6 +907,8 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/TAILQ_PREV.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/TAILQ_REMOVE.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/TAILQ_SWAP.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/TIMESPEC_TO_TIMEVAL.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/TIMEVAL_TO_TIMESPEC.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/_Generic.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/_Static_assert.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/__after_morecore_hook.3.gz
