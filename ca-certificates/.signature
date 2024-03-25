@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ9ltCRzKdAvqI5vAZE1IoRzdpzHpbtXhA9ddiYzE/Z11iJHrGivANjM2VePwH6VWtbgFMEjtGDm2ECPrLUaQLQw=
-SHA256 (Pkgfile) = ecb126744fdf9349856d7bfaefe0284aad87f22a17ffe18815a1997cc55fcbeb
+RWQ0XEjKMixyZ72Dwh9VTe/jtzHSzMU0o3laFk98Xpn+GeBOJ8rXlNkhxxnmd/fgQX75TOyoKgEeRW0tdgEyNiJIDQfqnOv/ew4=
+SHA256 (Pkgfile) = 89416eeb2fe1d5f14dd840562212b59df620ed954540f688fe4382f947d4c504
 SHA256 (.footprint) = 92930b2d9b1d5da08760f16fa80c1ff0c13e811e50cb4414f98265cef748bf40
-SHA256 (cacert.pem) = ccbdfc2fe1a0d7bbbb9cc15710271acf1bb1afe4c8f1725fe95c4c7733fcbe5a
+SHA256 (cacert.pem) = 1794c1d4f7055b7d02c2170337b61b48a2ef6c90d77e95444fd2596f4cac609f
