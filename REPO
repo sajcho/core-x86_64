@@ -235,9 +235,9 @@ f:d16f4bdc3ffb93ef76d51ca64bf330ad:expect/Pkgfile
 f:75d175b1a539ff46b375a72b841c01bc:expect/expect-5.45.4-configure-in.patch
 f:ee74423a07e4a3a48a34f5de7dfec7b7:expect/expect-5.45-headers.patch
 f:43b6b692c8ee3b43aba00372ed7e65b3:pkgconf/x86_64-unknown-linux-gnu.personality
-f:052888a71e8598d797e422b8e1d12fbe:pkgconf/.footprint
-f:fd4d382287ddac16f350b1c659d42f66:pkgconf/.signature
-f:5330ed975f93f4f1acad3ac780c18f0e:pkgconf/Pkgfile
+f:91f023f9606942fc217244df4e8ed022:pkgconf/.footprint
+f:9dc677070db4d830c66013733368ecee:pkgconf/.signature
+f:9f955092655015469e04279040170985:pkgconf/Pkgfile
 f:655acc31c6f42843fd303b4ad16f6cd2:libmnl/.footprint
 f:5d60e70cd3e892f08923a58ea2c55f68:libmnl/.signature
 f:e025a7900e583ccd612e570300b3e2b9:libmnl/Pkgfile
