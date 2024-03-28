@@ -413,9 +413,9 @@ f:7847c9fd5d498dbc48cf3ea5f9dba652:openssl3/.signature
 f:b72697bfd620f1a7e87bfc15bb3d0c02:openssl3/Pkgfile
 f:91f85842d2118003ee465c34259047e6:openssl3/mksslcert.sh
 f:089085b6322f7d3bb6f073790e127a99:zstd/disable-warning-decompression-multi-thread.patch
-f:e63d5188bf4e3b20ed4d2b0694ec9e0d:zstd/.footprint
-f:fbf2fc1cf5e70d22b5583ec7a241743b:zstd/.signature
-f:05f3ac95d50859a4fc9b90fefa09b66a:zstd/Pkgfile
+f:2c92eeb97437aca745f356ff43cedb84:zstd/.footprint
+f:5bb4d708c2af26285e488f4f29b9fbb2:zstd/.signature
+f:10f488b851f390c8066c026d5790b70f:zstd/Pkgfile
 f:214c9d71e1e9250acbbceb9de3685dbc:socklog-config/.footprint
 f:af20b5dd8a92aaa06b7f6a89cce79b68:socklog-config/.signature
 f:7e4c7f348a249b228a042569e8b49ba2:socklog-config/Pkgfile
