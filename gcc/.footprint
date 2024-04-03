@@ -312,6 +312,7 @@ drwxr-xr-x	root/root	usr/include/c++/14.0.1/experimental/bits/
 -rw-r--r--	root/root	usr/include/c++/14.0.1/experimental/bits/simd_neon.h
 -rw-r--r--	root/root	usr/include/c++/14.0.1/experimental/bits/simd_ppc.h
 -rw-r--r--	root/root	usr/include/c++/14.0.1/experimental/bits/simd_scalar.h
+-rw-r--r--	root/root	usr/include/c++/14.0.1/experimental/bits/simd_sve.h
 -rw-r--r--	root/root	usr/include/c++/14.0.1/experimental/bits/simd_x86.h
 -rw-r--r--	root/root	usr/include/c++/14.0.1/experimental/bits/simd_x86_conversions.h
 -rw-r--r--	root/root	usr/include/c++/14.0.1/experimental/bits/string_view.tcc
