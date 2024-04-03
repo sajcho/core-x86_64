@@ -21,12 +21,16 @@ lrwxrwxrwx	root/root	lib/libblkid.so.1 -> libblkid.so.1.1.0
 -rwxr-xr-x	root/root	lib/libblkid.so.1.1.0
 lrwxrwxrwx	root/root	lib/libfdisk.so.1 -> libfdisk.so.1.1.0
 -rwxr-xr-x	root/root	lib/libfdisk.so.1.1.0
+lrwxrwxrwx	root/root	lib/liblastlog2.so.2 -> liblastlog2.so.2.0.0
+-rwxr-xr-x	root/root	lib/liblastlog2.so.2.0.0
 lrwxrwxrwx	root/root	lib/libmount.so.1 -> libmount.so.1.1.0
 -rwxr-xr-x	root/root	lib/libmount.so.1.1.0
 lrwxrwxrwx	root/root	lib/libsmartcols.so.1 -> libsmartcols.so.1.1.0
 -rwxr-xr-x	root/root	lib/libsmartcols.so.1.1.0
 lrwxrwxrwx	root/root	lib/libuuid.so.1 -> libuuid.so.1.3.0
 -rwxr-xr-x	root/root	lib/libuuid.so.1.3.0
+drwxr-xr-x	root/root	lib/security/
+-rwxr-xr-x	root/root	lib/security/pam_lastlog2.so
 drwxr-xr-x	root/root	run/
 drwxr-xr-x	root/root	run/uuidd/
 drwxr-xr-x	root/root	sbin/
@@ -70,6 +74,8 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/colrm
 -rwxr-xr-x	root/root	usr/bin/column
 -rwxr-xr-x	root/root	usr/bin/eject
+-rwxr-xr-x	root/root	usr/bin/enosys
+-rwxr-xr-x	root/root	usr/bin/exch
 -rwxr-xr-x	root/root	usr/bin/fadvise
 -rwxr-xr-x	root/root	usr/bin/fallocate
 -rwxr-xr-x	root/root	usr/bin/fincore
@@ -86,10 +92,12 @@ lrwxrwxrwx	root/root	usr/bin/i386 -> setarch
 -rwxr-xr-x	root/root	usr/bin/isosize
 -rwxr-xr-x	root/root	usr/bin/last
 lrwxrwxrwx	root/root	usr/bin/lastb -> last
+-rwxr-xr-x	root/root	usr/bin/lastlog2
 lrwxrwxrwx	root/root	usr/bin/linux32 -> setarch
 lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 -rwxr-xr-x	root/root	usr/bin/logger
 -rwxr-xr-x	root/root	usr/bin/look
+-rwxr-xr-x	root/root	usr/bin/lsclocks
 -rwxr-xr-x	root/root	usr/bin/lscpu
 -rwxr-xr-x	root/root	usr/bin/lsipc
 -rwxr-xr-x	root/root	usr/bin/lsirq
@@ -109,6 +117,7 @@ lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 -rwxr-xr-x	root/root	usr/bin/scriptlive
 -rwxr-xr-x	root/root	usr/bin/scriptreplay
 -rwxr-xr-x	root/root	usr/bin/setarch
+-rwxr-xr-x	root/root	usr/bin/setpgid
 -rwxr-xr-x	root/root	usr/bin/setpriv
 -rwxr-xr-x	root/root	usr/bin/setsid
 -rwxr-xr-x	root/root	usr/bin/setterm
@@ -130,6 +139,8 @@ drwxr-xr-x	root/root	usr/include/blkid/
 -rw-r--r--	root/root	usr/include/blkid/blkid.h
 drwxr-xr-x	root/root	usr/include/libfdisk/
 -rw-r--r--	root/root	usr/include/libfdisk/libfdisk.h
+drwxr-xr-x	root/root	usr/include/liblastlog2/
+-rw-r--r--	root/root	usr/include/liblastlog2/lastlog2.h
 drwxr-xr-x	root/root	usr/include/libmount/
 -rw-r--r--	root/root	usr/include/libmount/libmount.h
 drwxr-xr-x	root/root	usr/include/libsmartcols/
@@ -139,12 +150,14 @@ drwxr-xr-x	root/root	usr/include/uuid/
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libblkid.so -> ../../lib/libblkid.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libfdisk.so -> ../../lib/libfdisk.so.1.1.0
+lrwxrwxrwx	root/root	usr/lib/liblastlog2.so -> ../../lib/liblastlog2.so.2.0.0
 lrwxrwxrwx	root/root	usr/lib/libmount.so -> ../../lib/libmount.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libsmartcols.so -> ../../lib/libsmartcols.so.1.1.0
 lrwxrwxrwx	root/root	usr/lib/libuuid.so -> ../../lib/libuuid.so.1.3.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/blkid.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/fdisk.pc
+-rw-r--r--	root/root	usr/lib/pkgconfig/lastlog2.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/mount.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/smartcols.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/uuid.pc
@@ -170,6 +183,8 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/column.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/dmesg.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/eject.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/enosys.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/exch.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/fadvise.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/fallocate.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/fincore.1.gz
@@ -187,6 +202,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/lastb.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/logger.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/look.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/lsclocks.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/lscpu.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/lsfd.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/lsipc.1.gz
@@ -207,6 +223,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/script.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/scriptlive.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/scriptreplay.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/setpgid.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/setpriv.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/setsid.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/setterm.1.gz
@@ -222,7 +239,15 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/whereis.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/write.1.gz
 drwxr-xr-x	root/root	usr/share/man/man3/
+-rw-r--r--	root/root	usr/share/man/man3/lastlog2.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/libblkid.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/ll2_import_lastlog.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/ll2_read_all.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/ll2_read_entry.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/ll2_remove_entry.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/ll2_rename_user.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/ll2_update_login_time.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/ll2_write_entry.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/uuid.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/uuid_clear.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/uuid_compare.3.gz
@@ -238,6 +263,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/adjtime_config.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/fstab.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/scols-filter.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/terminal-colors.d.5.gz
 drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/addpart.8.gz
@@ -261,6 +287,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/fstrim.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/hwclock.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/isosize.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/lastlog2.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/ldattach.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/losetup.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/lsblk.8.gz
@@ -270,6 +297,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/mkfs.cramfs.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/mkswap.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/mount.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/pam_lastlog2.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/partx.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/pivot_root.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/readprofile.8.gz

@@ -1,0 +1,32 @@
+From 2722b40012740372daf3585b7c071fcbede13359 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Thomas=20Wei=C3=9Fschuh?= <thomas@t-8ch.de>
+Date: Mon, 1 Apr 2024 22:53:32 +0200
+Subject: [PATCH] pam_lastlog2: link against liblastlog
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+While at it also drop the duplicated include path.
+
+Fixes #2897
+Signed-off-by: Thomas Weißschuh <thomas@t-8ch.de>
+---
+ pam_lastlog2/src/Makemodule.am | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/pam_lastlog2/src/Makemodule.am b/pam_lastlog2/src/Makemodule.am
+index 988441676f..f9a9b6b41f 100644
+--- a/pam_lastlog2/src/Makemodule.am
++++ b/pam_lastlog2/src/Makemodule.am
+@@ -10,8 +10,9 @@ EXTRA_pam_lastlog2_la_DEPENDENCIES = \
+ pam_lastlog2_la_CFLAGS = \
+ 	$(AM_CFLAGS) \
+ 	 $(SOLIB_CFLAGS) \
+-	 -I$(ul_liblastlog2_incdir) \
+-	 -Iliblastlog2/src
++	 -I$(ul_liblastlog2_incdir)
++
++pam_lastlog2_la_LIBADD = liblastlog2.la
+ 
+ pam_lastlog2_la_LDFLAGS = $(SOLIB_LDFLAGS) -module -avoid-version -shared
+ if HAVE_VSCRIPT
