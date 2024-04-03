@@ -1,6 +1,7 @@
 # Description:	Creates an XDG_RUNTIME_DIR on login and never removes it
 # URL:		https://github.com/ifreund/dumb_runtime_dir
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	linux-pam
 
 name=dumb_runtime_dir
 version=1.0.4
