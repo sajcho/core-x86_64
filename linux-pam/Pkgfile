@@ -4,8 +4,8 @@
 # Depends on:	libxcrypt
 
 name=linux-pam
-version=1.6.0
-release=2
+version=1.6.1
+release=1
 source=(https://github.com/${name}/${name}/releases/download/v${version}/Linux-PAM-${version}.tar.xz \
 	Linux-PAM-1.6.0-bindtextdomain.patch \
 	common-account common-auth common-password common-session other)
@@ -27,7 +27,7 @@ build() {
 		--disable-nis \
 		--disable-nls \
 		--disable-prelude \
-		--enable-db=no \
+		--enable-db=no
 
 
 	make V=1
