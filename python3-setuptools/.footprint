@@ -19,6 +19,12 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/__py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/__pycache__/typing_extensions.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/__pycache__/zipp.cpython-312.pyc
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/backports/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/backports/__init__.py (EMPTY)
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/backports/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/backports/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/backports/__pycache__/tarfile.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/backports/tarfile.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/importlib_resources/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/importlib_resources/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/importlib_resources/__pycache__/
@@ -45,9 +51,13 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jara
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jaraco/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jaraco/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jaraco/__pycache__/context.cpython-312.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jaraco/__pycache__/functools.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jaraco/context.py
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jaraco/functools.py
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jaraco/functools/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jaraco/functools/__init__.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jaraco/functools/__init__.pyi
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jaraco/functools/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jaraco/functools/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jaraco/functools/py.typed (EMPTY)
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jaraco/text/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jaraco/text/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/_vendor/jaraco/text/__pycache__/
@@ -120,16 +130,16 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/extern/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/extern/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pkg_resources/extern/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pkg_resources/extern/__pycache__/__init__.cpython-312.pyc
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools-69.2.0.dist-info/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.2.0.dist-info/INSTALLER
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.2.0.dist-info/LICENSE
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.2.0.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.2.0.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.2.0.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.2.0.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.2.0.dist-info/direct_url.json
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.2.0.dist-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.2.0.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools-69.5.1.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.5.1.dist-info/INSTALLER
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.5.1.dist-info/LICENSE
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.5.1.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.5.1.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.5.1.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.5.1.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.5.1.dist-info/direct_url.json
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.5.1.dist-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools-69.5.1.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/__pycache__/
@@ -172,6 +182,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/_collections.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/_functools.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/_itertools.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/_log.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/_macos_compat.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/_modified.cpython-312.pyc
@@ -204,8 +215,10 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/util.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/version.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/versionpredicate.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/__pycache__/zosccompiler.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/_collections.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/_functools.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/_itertools.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/_log.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/_macos_compat.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/_modified.py
@@ -236,7 +249,6 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/comm
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/command/__pycache__/install_headers.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/command/__pycache__/install_lib.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/command/__pycache__/install_scripts.cpython-312.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/command/__pycache__/py37compat.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/command/__pycache__/register.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/command/__pycache__/sdist.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/command/__pycache__/upload.cpython-312.pyc
@@ -258,10 +270,15 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/comm
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/command/install_headers.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/command/install_lib.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/command/install_scripts.py
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/command/py37compat.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/command/register.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/command/sdist.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/command/upload.py
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/compat/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/compat/__init__.py
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/compat/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/compat/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/compat/__pycache__/py38.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/compat/py38.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/config.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/core.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/cygwinccompiler.py
@@ -286,6 +303,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/comm
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/util.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/version.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/versionpredicate.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_distutils/zosccompiler.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_entry_points.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_imp.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_importlib.py
@@ -300,6 +318,12 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/__pycac
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/__pycache__/ordered_set.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/__pycache__/typing_extensions.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/__pycache__/zipp.cpython-312.pyc
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/backports/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/backports/__init__.py (EMPTY)
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/backports/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/backports/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/backports/__pycache__/tarfile.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/backports/tarfile.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importlib_metadata/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importlib_metadata/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/importlib_metadata/__pycache__/
@@ -347,9 +371,13 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/__pycache__/context.cpython-312.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/__pycache__/functools.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/context.py
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/functools.py
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/functools/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/functools/__init__.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/functools/__init__.pyi
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/functools/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/functools/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/functools/py.typed (EMPTY)
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/text/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/text/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/setuptools/_vendor/jaraco/text/__pycache__/
