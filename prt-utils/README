@@ -1,0 +1,9 @@
+README for prt-utils
+
+Starting with version 1.3.2, the user-facing part of prtverify has
+two alternative implementations: bash and gawk. The `make install` 
+rule creates /usr/bin/prtverify pointing to the gawk version. 
+Feel free to change the target of the symlink, define an alias 
+in your profile (e.g., alias prtverify="/usr/bin/prtverify.sh "),
+or put a different prtverify earlier in $PATH, if you prefer 
+a more traditional wrapper for the awk tests.
