@@ -559,9 +559,9 @@ f:0209cffd3e886ca5a9f24f56a0726c2d:prt-get/README
 f:67df2d4a0915a2f8ebc8a9704390b25d:lz4/.footprint
 f:72637dd812202dcefafb03e0764d941d:lz4/.signature
 f:5a3b35521ec239bcb3d1acab5b35e7c6:lz4/Pkgfile
-f:c7f9240a9e11d3be51e14d77fa841a5c:libarchive/.footprint
-f:14cd96c54a796ca38c70b0dcf428d72f:libarchive/.signature
-f:bccadd5877fe4696ee2b84b2cc78a344:libarchive/Pkgfile
+f:d6b24f3dfe61ad9a944842063a05638d:libarchive/.footprint
+f:382902c28036561e3cfd69981dd8bfae:libarchive/.signature
+f:64c12c35b19609da39df163c673ae9ea:libarchive/Pkgfile
 f:b9e3d56125cb82aa9b9342be38d262b3:ca-certificates/.footprint
 f:23ca2ca8f33de9006dc1450af3875a87:ca-certificates/.signature
 f:e4011555330e5b56573c7e725e8a5d66:ca-certificates/Pkgfile
@@ -683,8 +683,8 @@ f:a98cb3bec29ec19898280d032258b09a:signify3/.footprint
 f:7e7d1e15b16845475ee18cd2ca36843d:signify3/.signature
 f:356291eec103387a38d45267c1ca26be:signify3/Pkgfile
 f:3e155d4a7adb32da44665179758ec66b:ed/.footprint
-f:bed10738692d70ca7ceb1aa03a539888:ed/.signature
-f:f5f81be97766573089a46bc00c4da9ec:ed/Pkgfile
+f:34adfa932a658508465ebe1eef6658b5:ed/.signature
+f:d532e767f86f8cf404b3cb3bd92524e1:ed/Pkgfile
 f:bcb33e71700ee52629f732e4488a5955:eudev/.footprint
 f:83e7ba837a4c25ecc8b66f36bed97c9d:eudev/50-firmware.rules
 f:412b445e93871342bdf1622e4ba3c1ed:eudev/.signature
