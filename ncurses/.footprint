@@ -1,7 +1,7 @@
 drwxr-xr-x	root/root	lib/
-lrwxrwxrwx	root/root	lib/libncurses.so.6 -> libncursesw.so.6.4
-lrwxrwxrwx	root/root	lib/libncursesw.so.6 -> libncursesw.so.6.4
--rwxr-xr-x	root/root	lib/libncursesw.so.6.4
+lrwxrwxrwx	root/root	lib/libncurses.so.6 -> libncursesw.so.6.5
+lrwxrwxrwx	root/root	lib/libncursesw.so.6 -> libncursesw.so.6.5
+-rwxr-xr-x	root/root	lib/libncursesw.so.6.5
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/captoinfo -> tic
@@ -27,41 +27,39 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/etip.h
 -rw-r--r--	root/root	usr/include/form.h
 -rw-r--r--	root/root	usr/include/menu.h
--rw-r--r--	root/root	usr/include/nc_tparm.h
 lrwxrwxrwx	root/root	usr/include/ncurses.h -> curses.h
 -rw-r--r--	root/root	usr/include/ncurses_dll.h
 -rw-r--r--	root/root	usr/include/panel.h
 -rw-r--r--	root/root	usr/include/term.h
 -rw-r--r--	root/root	usr/include/term_entry.h
 -rw-r--r--	root/root	usr/include/termcap.h
--rw-r--r--	root/root	usr/include/tic.h
 -rw-r--r--	root/root	usr/include/unctrl.h
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libcurses.so -> libncurses.so
 -rw-r--r--	root/root	usr/lib/libcursesw.so
 -rw-r--r--	root/root	usr/lib/libform.so
 lrwxrwxrwx	root/root	usr/lib/libformw.so -> libformw.so.6
-lrwxrwxrwx	root/root	usr/lib/libformw.so.6 -> libformw.so.6.4
--rwxr-xr-x	root/root	usr/lib/libformw.so.6.4
+lrwxrwxrwx	root/root	usr/lib/libformw.so.6 -> libformw.so.6.5
+-rwxr-xr-x	root/root	usr/lib/libformw.so.6.5
 -rw-r--r--	root/root	usr/lib/libmenu.so
 lrwxrwxrwx	root/root	usr/lib/libmenuw.so -> libmenuw.so.6
-lrwxrwxrwx	root/root	usr/lib/libmenuw.so.6 -> libmenuw.so.6.4
--rwxr-xr-x	root/root	usr/lib/libmenuw.so.6.4
+lrwxrwxrwx	root/root	usr/lib/libmenuw.so.6 -> libmenuw.so.6.5
+-rwxr-xr-x	root/root	usr/lib/libmenuw.so.6.5
 lrwxrwxrwx	root/root	usr/lib/libncurses++w.so -> libncurses++w.so.6
-lrwxrwxrwx	root/root	usr/lib/libncurses++w.so.6 -> libncurses++w.so.6.4
--rwxr-xr-x	root/root	usr/lib/libncurses++w.so.6.4
+lrwxrwxrwx	root/root	usr/lib/libncurses++w.so.6 -> libncurses++w.so.6.5
+-rwxr-xr-x	root/root	usr/lib/libncurses++w.so.6.5
 -rw-r--r--	root/root	usr/lib/libncurses.so
-lrwxrwxrwx	root/root	usr/lib/libncursesw.so -> ../../lib/libncursesw.so.6.4
+lrwxrwxrwx	root/root	usr/lib/libncursesw.so -> ../../lib/libncursesw.so.6.5
 -rw-r--r--	root/root	usr/lib/libpanel.so
 lrwxrwxrwx	root/root	usr/lib/libpanelw.so -> libpanelw.so.6
-lrwxrwxrwx	root/root	usr/lib/libpanelw.so.6 -> libpanelw.so.6.4
--rwxr-xr-x	root/root	usr/lib/libpanelw.so.6.4
+lrwxrwxrwx	root/root	usr/lib/libpanelw.so.6 -> libpanelw.so.6.5
+-rwxr-xr-x	root/root	usr/lib/libpanelw.so.6.5
 lrwxrwxrwx	root/root	usr/lib/libtic.so -> libtic.so.6
-lrwxrwxrwx	root/root	usr/lib/libtic.so.6 -> libtic.so.6.4
--rwxr-xr-x	root/root	usr/lib/libtic.so.6.4
+lrwxrwxrwx	root/root	usr/lib/libtic.so.6 -> libtic.so.6.5
+-rwxr-xr-x	root/root	usr/lib/libtic.so.6.5
 lrwxrwxrwx	root/root	usr/lib/libtinfo.so -> libtinfo.so.6
-lrwxrwxrwx	root/root	usr/lib/libtinfo.so.6 -> libtinfo.so.6.4
--rwxr-xr-x	root/root	usr/lib/libtinfo.so.6.4
+lrwxrwxrwx	root/root	usr/lib/libtinfo.so.6 -> libtinfo.so.6.5
+-rwxr-xr-x	root/root	usr/lib/libtinfo.so.6.5
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 lrwxrwxrwx	root/root	usr/lib/pkgconfig/form.pc -> formw.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/formw.pc
@@ -91,15 +89,30 @@ lrwxrwxrwx	root/root	usr/share/man/man1/reset.1.gz -> tset.1.gz
 drwxr-xr-x	root/root	usr/share/man/man3/
 lrwxrwxrwx	root/root	usr/share/man/man3/BC.3x.gz -> curs_termcap.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/COLORS.3x.gz -> curs_variables.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/COLOR_BLACK.3x.gz -> curs_color.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/COLOR_BLUE.3x.gz -> curs_color.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/COLOR_CYAN.3x.gz -> curs_color.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/COLOR_GREEN.3x.gz -> curs_color.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/COLOR_MAGENTA.3x.gz -> curs_color.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/COLOR_PAIR.3x.gz -> curs_color.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/COLOR_PAIRS.3x.gz -> curs_variables.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/COLOR_RED.3x.gz -> curs_color.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/COLOR_WHITE.3x.gz -> curs_color.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/COLOR_YELLOW.3x.gz -> curs_color.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/COLS.3x.gz -> curs_variables.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/ERR.3x.gz -> curs_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/ESCDELAY.3x.gz -> curs_variables.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/FALSE.3x.gz -> curs_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/LINES.3x.gz -> curs_variables.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/NCURSES_SCREEN_CB.3x.gz -> curs_threads.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/NCURSES_WINDOW_CB.3x.gz -> curs_threads.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/OK.3x.gz -> curs_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/PAIR_NUMBER.3x.gz -> curs_color.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/PC.3x.gz -> curs_termcap.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/SCREEN.3x.gz -> curs_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/SP.3x.gz -> term_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/TABSIZE.3x.gz -> curs_variables.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/TRUE.3x.gz -> curs_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/TYPE_ALNUM.3x.gz -> form_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/TYPE_ALPHA.3x.gz -> form_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/TYPE_ENUM.3x.gz -> form_variables.3x.gz
@@ -108,6 +121,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/TYPE_IPV4.3x.gz -> form_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/TYPE_NUMERIC.3x.gz -> form_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/TYPE_REGEXP.3x.gz -> form_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/UP.3x.gz -> curs_termcap.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/WINDOW.3x.gz -> curs_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/_nc_free_and_exit.3x.gz -> curs_memleaks.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/_nc_free_tinfo.3x.gz -> curs_memleaks.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/_nc_freeall.3x.gz -> curs_memleaks.3x.gz
@@ -141,6 +155,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/attr_get.3x.gz -> curs_attr.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/attr_off.3x.gz -> curs_attr.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/attr_on.3x.gz -> curs_attr.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/attr_set.3x.gz -> curs_attr.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/attr_t.3x.gz -> curs_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/attroff.3x.gz -> curs_attr.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/attron.3x.gz -> curs_attr.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/attrset.3x.gz -> curs_attr.3x.gz
@@ -152,6 +167,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/bkgd.3x.gz -> curs_bkgd.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/bkgdset.3x.gz -> curs_bkgd.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/bkgrnd.3x.gz -> curs_bkgrnd.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/bkgrndset.3x.gz -> curs_bkgrnd.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/bool.3x.gz -> curs_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/boolcodes.3x.gz -> term_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/boolfnames.3x.gz -> term_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/boolnames.3x.gz -> term_variables.3x.gz
@@ -164,8 +180,10 @@ lrwxrwxrwx	root/root	usr/share/man/man3/can_change_color.3x.gz -> curs_color.3x.
 lrwxrwxrwx	root/root	usr/share/man/man3/can_change_color_sp.3x.gz -> curs_sp_funcs.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/cbreak.3x.gz -> curs_inopts.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/cbreak_sp.3x.gz -> curs_sp_funcs.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/cchar_t.3x.gz -> curs_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/ceiling_panel.3x.gz -> panel.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/chgat.3x.gz -> curs_attr.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/chtype.3x.gz -> curs_variables.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/clear.3x.gz -> curs_clear.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/clearok.3x.gz -> curs_outopts.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/clrtobot.3x.gz -> curs_clear.3x.gz
@@ -429,16 +447,24 @@ lrwxrwxrwx	root/root	usr/share/man/man3/instr.3x.gz -> curs_instr.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/intrflush.3x.gz -> curs_inopts.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/intrflush_sp.3x.gz -> curs_sp_funcs.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/inwstr.3x.gz -> curs_inwstr.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/is_cbreak.3x.gz -> curs_inopts.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/is_cbreak_sp.3x.gz -> curs_sp_funcs.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/is_cleared.3x.gz -> curs_opaque.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/is_echo.3x.gz -> curs_inopts.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/is_echo_sp.3x.gz -> curs_sp_funcs.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/is_idcok.3x.gz -> curs_opaque.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/is_idlok.3x.gz -> curs_opaque.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/is_immedok.3x.gz -> curs_opaque.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/is_keypad.3x.gz -> curs_opaque.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/is_leaveok.3x.gz -> curs_opaque.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/is_linetouched.3x.gz -> curs_touch.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/is_nl.3x.gz -> curs_inopts.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/is_nl_sp.3x.gz -> curs_sp_funcs.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/is_nodelay.3x.gz -> curs_opaque.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/is_notimeout.3x.gz -> curs_opaque.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/is_pad.3x.gz -> curs_opaque.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/is_raw.3x.gz -> curs_inopts.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/is_raw_sp.3x.gz -> curs_sp_funcs.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/is_scrollok.3x.gz -> curs_opaque.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/is_subwin.3x.gz -> curs_opaque.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/is_syncok.3x.gz -> curs_opaque.3x.gz
@@ -766,6 +792,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/set_top_row.3x.gz -> mitem_current.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/setcchar.3x.gz -> curs_getcchar.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/setscrreg.3x.gz -> curs_outopts.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/setsyx.3x.gz -> curs_kernel.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/setterm.3x.gz -> curs_terminfo.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/setupterm.3x.gz -> curs_terminfo.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/show_panel.3x.gz -> panel.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/slk_attr.3x.gz -> curs_slk.3x.gz
@@ -835,6 +862,8 @@ lrwxrwxrwx	root/root	usr/share/man/man3/tigetstr.3x.gz -> curs_terminfo.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tigetstr_sp.3x.gz -> curs_sp_funcs.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/timeout.3x.gz -> curs_inopts.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/tiparm.3x.gz -> curs_terminfo.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/tiparm_s.3x.gz -> curs_terminfo.3x.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/tiscan_s.3x.gz -> curs_terminfo.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/top_panel.3x.gz -> panel.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/top_row.3x.gz -> mitem_current.3x.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/touchline.3x.gz -> curs_touch.3x.gz
@@ -1201,6 +1230,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/a/
 -rw-r--r--	root/root	usr/share/terminfo/a/ampex80
 -rw-r--r--	root/root	usr/share/terminfo/a/annarbor4080
 -rw-r--r--	root/root	usr/share/terminfo/a/ansi
+-rw-r--r--	root/root	usr/share/terminfo/a/ansi+apparrows
 -rw-r--r--	root/root	usr/share/terminfo/a/ansi+arrows
 -rw-r--r--	root/root	usr/share/terminfo/a/ansi+cpr
 -rw-r--r--	root/root	usr/share/terminfo/a/ansi+csr
@@ -1564,6 +1594,9 @@ drwxr-xr-x	root/root	usr/share/terminfo/c/
 -rw-r--r--	root/root	usr/share/terminfo/c/contel301
 -rw-r--r--	root/root	usr/share/terminfo/c/contel320
 -rw-r--r--	root/root	usr/share/terminfo/c/contel321
+-rw-r--r--	root/root	usr/share/terminfo/c/contour
+-rw-r--r--	root/root	usr/share/terminfo/c/contour-direct
+-rw-r--r--	root/root	usr/share/terminfo/c/contour-latest
 -rw-r--r--	root/root	usr/share/terminfo/c/cops
 -rw-r--r--	root/root	usr/share/terminfo/c/cops-10
 -rw-r--r--	root/root	usr/share/terminfo/c/cops10
@@ -2277,6 +2310,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/l/
 -rw-r--r--	root/root	usr/share/terminfo/l/lft-pc850
 -rw-r--r--	root/root	usr/share/terminfo/l/linux
 -rw-r--r--	root/root	usr/share/terminfo/l/linux+decid
+-rw-r--r--	root/root	usr/share/terminfo/l/linux+kbs
 -rw-r--r--	root/root	usr/share/terminfo/l/linux+sfkeys
 -rw-r--r--	root/root	usr/share/terminfo/l/linux-16color
 -rw-r--r--	root/root	usr/share/terminfo/l/linux-basic
@@ -2383,6 +2417,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/m/
 -rw-r--r--	root/root	usr/share/terminfo/m/morphos
 -rw-r--r--	root/root	usr/share/terminfo/m/mosh
 -rw-r--r--	root/root	usr/share/terminfo/m/mosh-256color
+-rw-r--r--	root/root	usr/share/terminfo/m/mostlike
 -rw-r--r--	root/root	usr/share/terminfo/m/mouse-sun
 -rw-r--r--	root/root	usr/share/terminfo/m/mrxvt
 -rw-r--r--	root/root	usr/share/terminfo/m/mrxvt-256color
@@ -2390,6 +2425,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/m/
 -rw-r--r--	root/root	usr/share/terminfo/m/ms-vt-utf8
 -rw-r--r--	root/root	usr/share/terminfo/m/ms-vt100
 -rw-r--r--	root/root	usr/share/terminfo/m/ms-vt100+
+-rw-r--r--	root/root	usr/share/terminfo/m/ms-vt100-16color
 -rw-r--r--	root/root	usr/share/terminfo/m/ms-vt100-color
 -rw-r--r--	root/root	usr/share/terminfo/m/msk227
 -rw-r--r--	root/root	usr/share/terminfo/m/msk22714
@@ -2617,6 +2653,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/o/
 -rw-r--r--	root/root	usr/share/terminfo/o/oldibmpc3
 -rw-r--r--	root/root	usr/share/terminfo/o/oldpc3
 -rw-r--r--	root/root	usr/share/terminfo/o/oldsun
+-rw-r--r--	root/root	usr/share/terminfo/o/oldxterm+sm+1006
 -rw-r--r--	root/root	usr/share/terminfo/o/omron
 -rw-r--r--	root/root	usr/share/terminfo/o/opennt
 -rw-r--r--	root/root	usr/share/terminfo/o/opennt-100
@@ -2779,6 +2816,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/p/
 -rw-r--r--	root/root	usr/share/terminfo/p/pt505-24
 -rw-r--r--	root/root	usr/share/terminfo/p/pty
 -rw-r--r--	root/root	usr/share/terminfo/p/putty
+-rw-r--r--	root/root	usr/share/terminfo/p/putty+cursor
 -rw-r--r--	root/root	usr/share/terminfo/p/putty+fnkeys
 -rw-r--r--	root/root	usr/share/terminfo/p/putty+fnkeys+esc
 -rw-r--r--	root/root	usr/share/terminfo/p/putty+fnkeys+linux
@@ -2854,6 +2892,10 @@ drwxr-xr-x	root/root	usr/share/terminfo/r/
 -rw-r--r--	root/root	usr/share/terminfo/r/regent40
 -rw-r--r--	root/root	usr/share/terminfo/r/regent40+
 -rw-r--r--	root/root	usr/share/terminfo/r/regent60
+-rw-r--r--	root/root	usr/share/terminfo/r/report+da2
+-rw-r--r--	root/root	usr/share/terminfo/r/report+version
+-rw-r--r--	root/root	usr/share/terminfo/r/rio
+-rw-r--r--	root/root	usr/share/terminfo/r/rio-direct
 -rw-r--r--	root/root	usr/share/terminfo/r/rt6221
 -rw-r--r--	root/root	usr/share/terminfo/r/rt6221-w
 -rw-r--r--	root/root	usr/share/terminfo/r/rtpc
@@ -3340,6 +3382,8 @@ drwxr-xr-x	root/root	usr/share/terminfo/v/
 -rw-r--r--	root/root	usr/share/terminfo/v/vt100+enq
 -rw-r--r--	root/root	usr/share/terminfo/v/vt100+fnkeys
 -rw-r--r--	root/root	usr/share/terminfo/v/vt100+keypad
+-rw-r--r--	root/root	usr/share/terminfo/v/vt100+noapp
+-rw-r--r--	root/root	usr/share/terminfo/v/vt100+noapp+pc
 -rw-r--r--	root/root	usr/share/terminfo/v/vt100+pfkeys
 -rw-r--r--	root/root	usr/share/terminfo/v/vt100-am
 -rw-r--r--	root/root	usr/share/terminfo/v/vt100-bm
@@ -3413,6 +3457,7 @@ drwxr-xr-x	root/root	usr/share/terminfo/v/
 -rw-r--r--	root/root	usr/share/terminfo/v/vt510pc
 -rw-r--r--	root/root	usr/share/terminfo/v/vt510pcdos
 -rw-r--r--	root/root	usr/share/terminfo/v/vt52
+-rw-r--r--	root/root	usr/share/terminfo/v/vt52+arrows
 -rw-r--r--	root/root	usr/share/terminfo/v/vt52+keypad
 -rw-r--r--	root/root	usr/share/terminfo/v/vt52-basic
 -rw-r--r--	root/root	usr/share/terminfo/v/vt520
@@ -3434,6 +3479,8 @@ drwxr-xr-x	root/root	usr/share/terminfo/v/
 -rw-r--r--	root/root	usr/share/terminfo/v/vv100
 -rw-r--r--	root/root	usr/share/terminfo/v/vwmterm
 drwxr-xr-x	root/root	usr/share/terminfo/w/
+-rw-r--r--	root/root	usr/share/terminfo/w/wezterm
+-rw-r--r--	root/root	usr/share/terminfo/w/winconsole
 -rw-r--r--	root/root	usr/share/terminfo/w/wren
 -rw-r--r--	root/root	usr/share/terminfo/w/wrenw
 -rw-r--r--	root/root	usr/share/terminfo/w/wsiris
@@ -3753,6 +3800,8 @@ drwxr-xr-x	root/root	usr/share/terminfo/x/
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+alt1049
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+alt47
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+app
+-rw-r--r--	root/root	usr/share/terminfo/x/xterm+app+pc
+-rw-r--r--	root/root	usr/share/terminfo/x/xterm+decedit
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+direct
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+direct16
 -rw-r--r--	root/root	usr/share/terminfo/x/xterm+direct2

@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=ncurses
-version=6.4
+version=6.5
 release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
@@ -15,6 +15,7 @@ build() {
 		--mandir=/usr/share/man \
 		--enable-widec \
 		--enable-pc-files \
+		--enable-check-size \
 		--with-shared \
 		--with-cxx-shared \
 		--with-cxx-binding \
