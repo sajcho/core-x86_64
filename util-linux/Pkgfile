@@ -4,7 +4,7 @@
 # Depends on:	eudev file libcap-ng
 
 name=util-linux
-version=2.40
+version=2.40.1
 release=1
 source=(https://www.kernel.org/pub/linux/utils/${name}/v${version:0:4}/${name}-${version}.tar.xz \
 	pam_lastlog2.patch \
