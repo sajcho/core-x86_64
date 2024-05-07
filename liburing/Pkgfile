@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=liburing
-version=2.5
+version=2.6
 release=1
 source=(https://git.kernel.dk/cgit/${name}/snapshot/${name}-${version}.tar.bz2)
 
