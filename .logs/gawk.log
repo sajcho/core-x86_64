@@ -1,0 +1,890 @@
+prt-get: updating /usr/ports/core-x86_64/gawk
+prt-get: starting build Tue May  7 21:15:50 2024
+=======> Building '/home/devel/packages/gawk#5.3.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/gawk-5.3.0.tar.xz
++ build
++ cd gawk-5.3.0
++ ./configure --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib --disable-nls --disable-pma
+checking for a BSD-compatible install... ./build-aux/install-sh -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking whether make supports the include directive... yes (GNU style)
+checking for x86_64-unknown-linux-gnu-gcc... x86_64-unknown-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... yes
+checking for x86_64-unknown-linux-gnu-gcc option to enable C11 features... none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... yes
+checking dependency style of x86_64-unknown-linux-gnu-gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for stdbool.h... yes
+checking for sys/time.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for bison... bison -y
+checking whether ln -s works... yes
+checking for x86_64-unknown-linux-gnu-gcc... (cached) x86_64-unknown-linux-gnu-gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... (cached) yes
+checking for x86_64-unknown-linux-gnu-gcc option to enable C11 features... (cached) none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... (cached) yes
+checking dependency style of x86_64-unknown-linux-gnu-gcc... (cached) gcc3
+checking how to run the C preprocessor... x86_64-unknown-linux-gnu-gcc -E
+checking for variable-length arrays... yes
+checking how to run the C preprocessor... x86_64-unknown-linux-gnu-gcc -E
+checking for x86_64-unknown-linux-gnu-ranlib... x86_64-unknown-linux-gnu-ranlib
+checking whether make sets $(MAKE)... (cached) yes
+checking for x86_64-unknown-linux-gnu-ar... x86_64-unknown-linux-gnu-ar
+checking the archiver (x86_64-unknown-linux-gnu-ar) interface... ar
+checking for special development options... no
+checking for z/OS USS compilation... no
+checking for library containing strerror... none required
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking if we are using EBCDIC... no
+checking for a sed that does not truncate output... /bin/sed
+checking whether NLS is requested... no
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by x86_64-unknown-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking whether to use NLS... no
+checking for nl_langinfo and CODESET... yes
+checking for LC_MESSAGES... yes
+checking for arpa/inet.h... yes
+checking for fcntl.h... yes
+checking for locale.h... yes
+checking for libintl.h... yes
+checking for mcheck.h... yes
+checking for netdb.h... yes
+checking for netinet/in.h... yes
+checking for stddef.h... yes
+checking for string.h... (cached) yes
+checking for sys/ioctl.h... yes
+checking for sys/param.h... yes
+checking for sys/select.h... yes
+checking for sys/socket.h... yes
+checking for sys/time.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for termios.h... yes
+checking for stropts.h... no
+checking for wchar.h... (cached) yes
+checking for wctype.h... yes
+checking for bool, true, false... no
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for memory.h... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for uid_t in sys/types.h... yes
+checking type of array argument to getgroups... gid_t
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking for unsigned long long int... (cached) yes
+checking for intmax_t... yes
+checking for uintmax_t... yes
+checking for ssize_t... yes
+checking size of unsigned int... 4
+checking size of unsigned long... 8
+checking for socklen_t... yes
+checking for alarm... yes
+checking for working mktime... yes
+checking for getaddrinfo... yes
+checking for library containing fmod... -lm
+checking for library containing isinf... none required
+checking for library containing ismod... no
+checking for library containing isnan... none required
+checking for __etoa_l... no
+checking for atexit... yes
+checking for btowc... yes
+checking for fmod... yes
+checking for fwrite_unlocked... yes
+checking for gai_strerror... yes
+checking for getgrent... yes
+checking for getgroups... yes
+checking for grantpt... yes
+checking for isascii... yes
+checking for isblank... yes
+checking for iswctype... yes
+checking for iswlower... yes
+checking for iswupper... yes
+checking for lstat... yes
+checking for mbrlen... yes
+checking for memcmp... yes
+checking for memcpy... yes
+checking for memmove... yes
+checking for memset... yes
+checking for mkstemp... yes
+checking for mtrace... yes
+checking for posix_openpt... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for setsid... yes
+checking for sigprocmask... yes
+checking for snprintf... yes
+checking for strcasecmp... yes
+checking for strchr... yes
+checking for strcoll... yes
+checking for strerror... yes
+checking for strftime... yes
+checking for strncasecmp... yes
+checking for strsignal... yes
+checking for strtod... yes
+checking for strtoul... yes
+checking for system... yes
+checking for timegm... yes
+checking for tmpfile... yes
+checking for towlower... yes
+checking for towupper... yes
+checking for tzset... yes
+checking for usleep... yes
+checking for waitpid... yes
+checking for wcrtomb... yes
+checking for wcscoll... yes
+checking for wctype... yes
+checking whether mbrtowc and mbstate_t are properly declared... yes
+checking whether C compiler accepts ... yes
+checking size of void *... 8
+checking for dlfcn.h... yes
+checking for library containing dlopen... none required
+checking whether getpgrp requires zero arguments... yes
+checking for printf %F format... yes
+checking for printf %a format... yes
+checking for gethostbyname... yes
+checking for connect... yes
+checking where to find the socket library calls... the standard library
+checking whether readline via "-lreadline" is present and sane... yes
+checking for history_list in -lreadline... yes
+checking whether mpfr via "-lmpfr -lgmp" is present and usable... yes
+checking for struct stat.st_blksize... yes
+checking for struct passwd.pw_passwd... yes
+checking for struct group.gr_passwd... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for x86_64-unknown-linux-gnu-gcc options needed to detect all undeclared functions... none needed
+checking for struct tm.tm_zone... yes
+checking whether char is unsigned... no
+checking for an ANSI C-conforming const... yes
+checking for C/C++ restrict keyword... __restrict__
+checking for inline... inline
+checking for preprocessor stringizing operator... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating support/Makefile
+config.status: creating awklib/Makefile
+config.status: creating doc/Makefile
+config.status: creating extras/Makefile
+config.status: creating po/Makefile.in
+config.status: creating test/Makefile
+config.status: creating gawkbug
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+=== configuring in extension (/home/devel/building/work/src/gawk-5.3.0/extension)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=/usr'  '--build=x86_64-unknown-linux-gnu' '--host=x86_64-unknown-linux-gnu' '--sysconfdir=/etc' '--libexecdir=/usr/lib' '--disable-nls' '--disable-pma' 'build_alias=x86_64-unknown-linux-gnu' 'host_alias=x86_64-unknown-linux-gnu' 'CFLAGS=-O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects' --cache-file=/dev/null --srcdir=.
+checking for a BSD-compatible install... ./build-aux/install-sh -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking whether make supports the include directive... yes (GNU style)
+checking for x86_64-unknown-linux-gnu-gcc... x86_64-unknown-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... yes
+checking for x86_64-unknown-linux-gnu-gcc option to enable C11 features... none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... yes
+checking dependency style of x86_64-unknown-linux-gnu-gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for sys/time.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for z/OS USS compilation... no
+checking for a sed that does not truncate output... /bin/sed
+checking whether NLS is requested... no
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by x86_64-unknown-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking how to run the C preprocessor... x86_64-unknown-linux-gnu-gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking whether to use NLS... no
+checking for nl_langinfo and CODESET... yes
+checking for LC_MESSAGES... yes
+checking for struct stat.st_blksize... yes
+checking for x86_64-unknown-linux-gnu-ar... x86_64-unknown-linux-gnu-ar
+checking the archiver (x86_64-unknown-linux-gnu-ar) interface... ar
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking whether C compiler accepts ... yes
+checking size of void *... 8
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-unknown-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/x86_64-unknown-linux-gnu-nm -B
+checking the name lister (/usr/bin/x86_64-unknown-linux-gnu-nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-unknown-linux-gnu-file... no
+checking for file... file
+checking for x86_64-unknown-linux-gnu-objdump... x86_64-unknown-linux-gnu-objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-unknown-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-unknown-linux-gnu-ar... (cached) x86_64-unknown-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-unknown-linux-gnu-strip... x86_64-unknown-linux-gnu-strip
+checking for x86_64-unknown-linux-gnu-ranlib... x86_64-unknown-linux-gnu-ranlib
+checking command to parse /usr/bin/x86_64-unknown-linux-gnu-nm -B output from x86_64-unknown-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for x86_64-unknown-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-unknown-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-unknown-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-unknown-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-unknown-linux-gnu-gcc static flag -static works... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-unknown-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for special development options... no
+checking for fnmatch.h... yes
+checking for limits.h... yes
+checking for sys/mkdev.h... no
+checking for sys/param.h... yes
+checking for sys/select.h... yes
+checking for sys/statvfs.h... yes
+checking for sys/sysmacros.h... yes
+checking for sys/time.h... (cached) yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking whether mpfr via "-lmpfr -lgmp" is present and usable... yes
+checking for library containing fmod... -lm
+checking for fdopendir... yes
+checking for fmod... yes
+checking for fnmatch... yes
+checking for getdtablesize... yes
+checking for gettimeofday... yes
+checking for nanosleep... yes
+checking for select... yes
+checking for statvfs... yes
+checking for GetSystemTimeAsFileTime... no
+checking for strptime... yes
+checking for x86_64-unknown-linux-gnu-gcc options needed to detect all undeclared functions... none needed
+checking for dirfd... yes
+checking whether dirfd is declared... yes
+checking whether dirfd is a macro... no
+checking how to get the file descriptor associated with an open DIR*... no_such_member
+checking for inline... inline
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating po/Makefile.in
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing libtool commands
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/gawk-5.3.0'
+Making all in support
+make[2]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/support'
+depbase=`echo dfa.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -MT dfa.o -MD -MP -MF $depbase.Tpo -c -o dfa.o dfa.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo getopt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -MT getopt.o -MD -MP -MF $depbase.Tpo -c -o getopt.o getopt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo getopt1.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -MT getopt1.o -MD -MP -MF $depbase.Tpo -c -o getopt1.o getopt1.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo localeinfo.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -MT localeinfo.o -MD -MP -MF $depbase.Tpo -c -o localeinfo.o localeinfo.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo random.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -MT random.o -MD -MP -MF $depbase.Tpo -c -o random.o random.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo regex.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -MT regex.o -MD -MP -MF $depbase.Tpo -c -o regex.o regex.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo malloc/dynarray_at_failure.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -MT malloc/dynarray_at_failure.o -MD -MP -MF $depbase.Tpo -c -o malloc/dynarray_at_failure.o malloc/dynarray_at_failure.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo malloc/dynarray_emplace_enlarge.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -MT malloc/dynarray_emplace_enlarge.o -MD -MP -MF $depbase.Tpo -c -o malloc/dynarray_emplace_enlarge.o malloc/dynarray_emplace_enlarge.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo malloc/dynarray_finalize.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -MT malloc/dynarray_finalize.o -MD -MP -MF $depbase.Tpo -c -o malloc/dynarray_finalize.o malloc/dynarray_finalize.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo malloc/dynarray_resize.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -MT malloc/dynarray_resize.o -MD -MP -MF $depbase.Tpo -c -o malloc/dynarray_resize.o malloc/dynarray_resize.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo malloc/dynarray_resize_clear.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DGAWK -DHAVE_CONFIG_H -I"./.." -I. -I..    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG  -MT malloc/dynarray_resize_clear.o -MD -MP -MF $depbase.Tpo -c -o malloc/dynarray_resize_clear.o malloc/dynarray_resize_clear.c &&\
+mv -f $depbase.Tpo $depbase.Po
+rm -f libsupport.a
+x86_64-unknown-linux-gnu-ar cru libsupport.a dfa.o getopt.o getopt1.o localeinfo.o random.o regex.o malloc/dynarray_at_failure.o malloc/dynarray_emplace_enlarge.o malloc/dynarray_finalize.o malloc/dynarray_resize.o malloc/dynarray_resize_clear.o  
+x86_64-unknown-linux-gnu-ar: `u' modifier ignored since `D' is the default (see `U')
+x86_64-unknown-linux-gnu-ranlib libsupport.a
+make[2]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/support'
+Making all in .
+make[2]: Entering directory '/home/devel/building/work/src/gawk-5.3.0'
+depbase=`echo array.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT array.o -MD -MP -MF $depbase.Tpo -c -o array.o array.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo awkgram.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT awkgram.o -MD -MP -MF $depbase.Tpo -c -o awkgram.o awkgram.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo builtin.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT builtin.o -MD -MP -MF $depbase.Tpo -c -o builtin.o builtin.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo cint_array.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT cint_array.o -MD -MP -MF $depbase.Tpo -c -o cint_array.o cint_array.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo command.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT command.o -MD -MP -MF $depbase.Tpo -c -o command.o command.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo debug.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT debug.o -MD -MP -MF $depbase.Tpo -c -o debug.o debug.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo eval.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT eval.o -MD -MP -MF $depbase.Tpo -c -o eval.o eval.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ext.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT ext.o -MD -MP -MF $depbase.Tpo -c -o ext.o ext.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo field.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT field.o -MD -MP -MF $depbase.Tpo -c -o field.o field.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo floatcomp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT floatcomp.o -MD -MP -MF $depbase.Tpo -c -o floatcomp.o floatcomp.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo gawkapi.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT gawkapi.o -MD -MP -MF $depbase.Tpo -c -o gawkapi.o gawkapi.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo gawkmisc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT gawkmisc.o -MD -MP -MF $depbase.Tpo -c -o gawkmisc.o gawkmisc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo int_array.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT int_array.o -MD -MP -MF $depbase.Tpo -c -o int_array.o int_array.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo io.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT io.o -MD -MP -MF $depbase.Tpo -c -o io.o io.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo main.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT main.o -MD -MP -MF $depbase.Tpo -c -o main.o main.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo mpfr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT mpfr.o -MD -MP -MF $depbase.Tpo -c -o mpfr.o mpfr.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo msg.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT msg.o -MD -MP -MF $depbase.Tpo -c -o msg.o msg.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo node.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT node.o -MD -MP -MF $depbase.Tpo -c -o node.o node.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo profile.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT profile.o -MD -MP -MF $depbase.Tpo -c -o profile.o profile.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo re.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT re.o -MD -MP -MF $depbase.Tpo -c -o re.o re.c &&\
+mv -f $depbase.Tpo $depbase.Po
+profile.c: In function 'pp_group3':
+profile.c:1963:17: warning: 'memcpy' writing between 5 and 9223372036854775805 bytes into a region of size 0 overflows the destination [-Wstringop-overflow=]
+ 1963 |                 memcpy(s, s1, len1);
+      |                 ^~~~~~~~~~~~~~~~~~~
+In file included from profile.c:26:
+In function 'emalloc_real',
+    inlined from 'pp_group3' at profile.c:1960:2:
+awk.h:2067:15: note: destination object of size 0 allocated by 'malloc'
+ 2067 |         ret = (void *) malloc(count);
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+depbase=`echo replace.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT replace.o -MD -MP -MF $depbase.Tpo -c -o replace.o replace.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo str_array.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT str_array.o -MD -MP -MF $depbase.Tpo -c -o str_array.o str_array.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo symbol.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT symbol.o -MD -MP -MF $depbase.Tpo -c -o symbol.o symbol.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo version.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DDEFPATH='".:/usr/share/awk"' -DDEFLIBPATH="\"/usr/lib/gawk\"" -DSHLIBEXT="\"so"\" -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR='"/usr/share/locale"' -I"./support" -I.    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT version.o -MD -MP -MF $depbase.Tpo -c -o version.o version.c &&\
+mv -f $depbase.Tpo $depbase.Po
+x86_64-unknown-linux-gnu-gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG   -o gawk array.o awkgram.o builtin.o cint_array.o command.o debug.o eval.o ext.o field.o floatcomp.o gawkapi.o gawkmisc.o int_array.o io.o main.o mpfr.o msg.o node.o profile.o re.o replace.o str_array.o symbol.o version.o support/libsupport.a    -lreadline -lmpfr -lgmp  -lm 
+profile.c: In function 'pp_group3':
+profile.c:1963:17: warning: 'memcpy' writing between 5 and 9223372036854775805 bytes into a region of size 0 overflows the destination [-Wstringop-overflow=]
+ 1963 |                 memcpy(s, s1, len1);
+      |                 ^
+In function 'emalloc_real',
+    inlined from 'pp_group3' at profile.c:1960:2:
+awk.h:2067:15: note: destination object of size 0 allocated by 'malloc'
+ 2067 |         ret = (void *) malloc(count);
+      |               ^
+make[2]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0'
+Making all in extension
+make[2]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/extension'
+make  all-recursive
+make[3]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/extension'
+Making all in po
+make[4]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/extension/po'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/extension/po'
+make[4]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/extension'
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT testext.lo -MD -MP -MF .deps/testext.Tpo -c -o testext.lo testext.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT filefuncs.lo -MD -MP -MF .deps/filefuncs.Tpo -c -o filefuncs.lo filefuncs.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT stack.lo -MD -MP -MF .deps/stack.Tpo -c -o stack.lo stack.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT gawkfts.lo -MD -MP -MF .deps/gawkfts.Tpo -c -o gawkfts.lo gawkfts.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT fnmatch.lo -MD -MP -MF .deps/fnmatch.Tpo -c -o fnmatch.lo fnmatch.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT fork.lo -MD -MP -MF .deps/fork.Tpo -c -o fork.lo fork.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT inplace.lo -MD -MP -MF .deps/inplace.Tpo -c -o inplace.lo inplace.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT intdiv.lo -MD -MP -MF .deps/intdiv.Tpo -c -o intdiv.lo intdiv.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./.. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT intdiv.lo -MD -MP -MF .deps/intdiv.Tpo -c intdiv.c  -fPIC -DPIC -o .libs/intdiv.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./.. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT gawkfts.lo -MD -MP -MF .deps/gawkfts.Tpo -c gawkfts.c  -fPIC -DPIC -o .libs/gawkfts.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./.. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT filefuncs.lo -MD -MP -MF .deps/filefuncs.Tpo -c filefuncs.c  -fPIC -DPIC -o .libs/filefuncs.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./.. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT testext.lo -MD -MP -MF .deps/testext.Tpo -c testext.c  -fPIC -DPIC -o .libs/testext.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./.. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT stack.lo -MD -MP -MF .deps/stack.Tpo -c stack.c  -fPIC -DPIC -o .libs/stack.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./.. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT fnmatch.lo -MD -MP -MF .deps/fnmatch.Tpo -c fnmatch.c  -fPIC -DPIC -o .libs/fnmatch.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./.. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT inplace.lo -MD -MP -MF .deps/inplace.Tpo -c inplace.c  -fPIC -DPIC -o .libs/inplace.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./.. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT fork.lo -MD -MP -MF .deps/fork.Tpo -c fork.c  -fPIC -DPIC -o .libs/fork.o
+mv -f .deps/stack.Tpo .deps/stack.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT ordchr.lo -MD -MP -MF .deps/ordchr.Tpo -c -o ordchr.lo ordchr.c
+mv -f .deps/fnmatch.Tpo .deps/fnmatch.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT readdir.lo -MD -MP -MF .deps/readdir.Tpo -c -o readdir.lo readdir.c
+mv -f .deps/inplace.Tpo .deps/inplace.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT readfile.lo -MD -MP -MF .deps/readfile.Tpo -c -o readfile.lo readfile.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./.. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT ordchr.lo -MD -MP -MF .deps/ordchr.Tpo -c ordchr.c  -fPIC -DPIC -o .libs/ordchr.o
+mv -f .deps/fork.Tpo .deps/fork.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT revoutput.lo -MD -MP -MF .deps/revoutput.Tpo -c -o revoutput.lo revoutput.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./.. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT readfile.lo -MD -MP -MF .deps/readfile.Tpo -c readfile.c  -fPIC -DPIC -o .libs/readfile.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./.. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT readdir.lo -MD -MP -MF .deps/readdir.Tpo -c readdir.c  -fPIC -DPIC -o .libs/readdir.o
+mv -f .deps/intdiv.Tpo .deps/intdiv.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT revtwoway.lo -MD -MP -MF .deps/revtwoway.Tpo -c -o revtwoway.lo revtwoway.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./.. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT revoutput.lo -MD -MP -MF .deps/revoutput.Tpo -c revoutput.c  -fPIC -DPIC -o .libs/revoutput.o
+mv -f .deps/ordchr.Tpo .deps/ordchr.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT rwarray.lo -MD -MP -MF .deps/rwarray.Tpo -c -o rwarray.lo rwarray.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./.. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT revtwoway.lo -MD -MP -MF .deps/revtwoway.Tpo -c revtwoway.c  -fPIC -DPIC -o .libs/revtwoway.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./.. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT rwarray.lo -MD -MP -MF .deps/rwarray.Tpo -c rwarray.c  -fPIC -DPIC -o .libs/rwarray.o
+readdir.c: In function 'dir_get_record':
+readdir.c:221:27: warning: array subscript 1 is above array bounds of 'struct awk_field_info[1]' [-Warray-bounds=]
+  221 |         the_dir->fw.fields[1].len = flen-1;
+      |         ~~~~~~~~~~~~~~~~~~^~~
+In file included from readdir.c:65:
+./../gawkapi.h:142:11: note: while referencing 'fields'
+  142 |         } fields[1];            /* actual dimension should be nf */
+      |           ^~~~~~
+readdir.c:225:27: warning: array subscript 2 is above array bounds of 'struct awk_field_info[1]' [-Warray-bounds=]
+  225 |         the_dir->fw.fields[2].len = flen-1;
+      |         ~~~~~~~~~~~~~~~~~~^~~
+./../gawkapi.h:142:11: note: while referencing 'fields'
+  142 |         } fields[1];            /* actual dimension should be nf */
+      |           ^~~~~~
+readdir.c: In function 'dir_take_control_of':
+readdir.c:303:27: warning: array subscript 1 is above array bounds of 'struct awk_field_info[1]' [-Warray-bounds=]
+  303 |         the_dir->fw.fields[1].skip = 1; /* single '/' separator */
+      |         ~~~~~~~~~~~~~~~~~~^~~
+./../gawkapi.h:142:11: note: while referencing 'fields'
+  142 |         } fields[1];            /* actual dimension should be nf */
+      |           ^~~~~~
+readdir.c:304:27: warning: array subscript 2 is above array bounds of 'struct awk_field_info[1]' [-Warray-bounds=]
+  304 |         the_dir->fw.fields[2].skip = 1; /* single '/' separator */
+      |         ~~~~~~~~~~~~~~~~~~^~~
+./../gawkapi.h:142:11: note: while referencing 'fields'
+  142 |         } fields[1];            /* actual dimension should be nf */
+      |           ^~~~~~
+mv -f .deps/readfile.Tpo .deps/readfile.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./..   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT time.lo -MD -MP -MF .deps/time.Tpo -c -o time.lo time.c
+mv -f .deps/revoutput.Tpo .deps/revoutput.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -module -avoid-version -no-undefined  -o fnmatch.la -rpath /usr/lib/gawk fnmatch.lo  -lm 
+mv -f .deps/readdir.Tpo .deps/readdir.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -module -avoid-version -no-undefined  -o fork.la -rpath /usr/lib/gawk fork.lo  -lm 
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./.. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -MT time.lo -MD -MP -MF .deps/time.Tpo -c time.c  -fPIC -DPIC -o .libs/time.o
+mv -f .deps/filefuncs.Tpo .deps/filefuncs.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -module -avoid-version -no-undefined  -o inplace.la -rpath /usr/lib/gawk inplace.lo  -lm 
+mv -f .deps/gawkfts.Tpo .deps/gawkfts.Plo
+mv -f .deps/revtwoway.Tpo .deps/revtwoway.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -module -avoid-version -no-undefined  -o intdiv.la -rpath /usr/lib/gawk intdiv.lo  -lmpfr -lgmp -lm -lm 
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -module -avoid-version -no-undefined  -o ordchr.la -rpath /usr/lib/gawk ordchr.lo  -lm 
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/fnmatch.o   -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,fnmatch.so -o .libs/fnmatch.so
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/fork.o   -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,fork.so -o .libs/fork.so
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/inplace.o   -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,inplace.so -o .libs/inplace.so
+mv -f .deps/time.Tpo .deps/time.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -module -avoid-version -no-undefined  -o readdir.la -rpath /usr/lib/gawk readdir.lo  -lm 
+mv -f .deps/testext.Tpo .deps/testext.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -module -avoid-version -no-undefined  -o readfile.la -rpath /usr/lib/gawk readfile.lo  -lm 
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/intdiv.o   -lmpfr /usr/lib/libgmp.so -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,intdiv.so -o .libs/intdiv.so
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/readdir.o   -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,readdir.so -o .libs/readdir.so
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/ordchr.o   -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,ordchr.so -o .libs/ordchr.so
+libtool: link: ( cd ".libs" && rm -f "fork.la" && ln -s "../fork.la" "fork.la" )
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -module -avoid-version -no-undefined  -o revoutput.la -rpath /usr/lib/gawk revoutput.lo  -lm 
+libtool: link: ( cd ".libs" && rm -f "fnmatch.la" && ln -s "../fnmatch.la" "fnmatch.la" )
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -module -avoid-version -no-undefined  -o revtwoway.la -rpath /usr/lib/gawk revtwoway.lo  -lm 
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/readfile.o   -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,readfile.so -o .libs/readfile.so
+mv -f .deps/rwarray.Tpo .deps/rwarray.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -module -avoid-version -no-undefined  -o time.la -rpath /usr/lib/gawk time.lo  -lm 
+libtool: link: ( cd ".libs" && rm -f "inplace.la" && ln -s "../inplace.la" "inplace.la" )
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/revoutput.o   -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,revoutput.so -o .libs/revoutput.so
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -module -avoid-version -no-undefined -rpath /foo  -o testext.la  testext.lo  -lmpfr -lgmp -lm 
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/revtwoway.o   -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,revtwoway.so -o .libs/revtwoway.so
+libtool: link: ( cd ".libs" && rm -f "ordchr.la" && ln -s "../ordchr.la" "ordchr.la" )
+libtool: link: ( cd ".libs" && rm -f "readdir.la" && ln -s "../readdir.la" "readdir.la" )
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -module -avoid-version -no-undefined  -o filefuncs.la -rpath /usr/lib/gawk filefuncs.lo stack.lo gawkfts.lo  -lm 
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -DNDEBUG -module -avoid-version -no-undefined  -o rwarray.la -rpath /usr/lib/gawk rwarray.lo  -lmpfr -lgmp -lm 
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/testext.o   -lmpfr /usr/lib/libgmp.so -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,testext.so -o .libs/testext.so
+libtool: link: ( cd ".libs" && rm -f "readfile.la" && ln -s "../readfile.la" "readfile.la" )
+libtool: link: ( cd ".libs" && rm -f "intdiv.la" && ln -s "../intdiv.la" "intdiv.la" )
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/filefuncs.o .libs/stack.o .libs/gawkfts.o   -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,filefuncs.so -o .libs/filefuncs.so
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/time.o   -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,time.so -o .libs/time.so
+libtool: link: ( cd ".libs" && rm -f "revoutput.la" && ln -s "../revoutput.la" "revoutput.la" )
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/rwarray.o   -lmpfr /usr/lib/libgmp.so -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,rwarray.so -o .libs/rwarray.so
+libtool: link: ( cd ".libs" && rm -f "time.la" && ln -s "../time.la" "time.la" )
+libtool: link: ( cd ".libs" && rm -f "revtwoway.la" && ln -s "../revtwoway.la" "revtwoway.la" )
+libtool: link: ( cd ".libs" && rm -f "rwarray.la" && ln -s "../rwarray.la" "rwarray.la" )
+libtool: link: ( cd ".libs" && rm -f "testext.la" && ln -s "../testext.la" "testext.la" )
+libtool: link: ( cd ".libs" && rm -f "filefuncs.la" && ln -s "../filefuncs.la" "filefuncs.la" )
+make[4]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/extension'
+make[3]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/extension'
+make[2]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/extension'
+Making all in extras
+make[2]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/extras'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/extras'
+Making all in doc
+make[2]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/doc'
+Making all in awklib
+make[2]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/awklib'
+rm -f pwcat.c
+rm -f grcat.c
+sed 's;/usr/local/libexec/awk;/usr/lib/awk;' < ./eg/lib/passwdawk.in > passwd.awk
+ln -s ./eg/lib/pwcat.c .
+ln -s ./eg/lib/grcat.c .
+sed 's;/usr/local/libexec/awk;/usr/lib/awk;' < ./eg/lib/groupawk.in > group.awk
+depbase=`echo pwcat.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I.. -I../support   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT pwcat.o -MD -MP -MF $depbase.Tpo -c -o pwcat.o pwcat.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo grcat.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I.. -I.. -I../support   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -MT grcat.o -MD -MP -MF $depbase.Tpo -c -o grcat.o grcat.c &&\
+mv -f $depbase.Tpo $depbase.Po
+x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG   -o pwcat pwcat.o  -lm 
+x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG   -o grcat grcat.o  -lm 
+make[2]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/awklib'
+Making all in po
+make[2]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/po'
+Making all in test
+make[2]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/test'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/test'
+make[1]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0'
++ make DESTDIR=/home/devel/building/work/pkg install
+make  install-recursive
+make[1]: Entering directory '/home/devel/building/work/src/gawk-5.3.0'
+Making install in support
+make[2]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/support'
+make[3]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/support'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/support'
+make[2]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/support'
+Making install in .
+make[2]: Entering directory '/home/devel/building/work/src/gawk-5.3.0'
+make[3]: Entering directory '/home/devel/building/work/src/gawk-5.3.0'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+ ./build-aux/install-sh -c -m 644 gawkapi.h '/home/devel/building/work/pkg/usr/include'
+ ./build-aux/install-sh -c gawkbug '/home/devel/building/work/pkg/usr/bin'
+  ./build-aux/install-sh -c gawk '/home/devel/building/work/pkg/usr/bin'
+make  install-exec-hook
+make[4]: Entering directory '/home/devel/building/work/src/gawk-5.3.0'
+(cd /home/devel/building/work/pkg/usr/bin; \
+name=`echo gawk | sed 's,x,x,'` ; \
+if [ ! -f gawk-5.3.0 ]; \
+then	ln ${name} gawk-5.3.0 2>/dev/null ; \
+fi; \
+if [ ! -f awk ]; \
+then	ln -s ${name} awk; \
+fi; exit 0)
+make[4]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0'
+make[3]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0'
+make[2]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0'
+Making install in extension
+make[2]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/extension'
+Making install in po
+make[3]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/extension/po'
+if test "gawk-extensions" = "gettext-tools"; then \
+  /bin/mkdir -p /home/devel/building/work/pkg/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    .././../build-aux//install-sh -c -m 644 ./$file \
+		    /home/devel/building/work/pkg/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/devel/building/work/pkg/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[3]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/extension/po'
+make[3]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/extension'
+make[4]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/extension'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man3'
+ ./../build-aux//install-sh -c -m 644 filefuncs.3am fnmatch.3am fork.3am inplace.3am ordchr.3am readdir.3am readfile.3am revoutput.3am revtwoway.3am rwarray.3am time.3am '/home/devel/building/work/pkg/usr/share/man/man3'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/gawk'
+ /bin/sh ./libtool   --mode=install ./../build-aux//install-sh -c   filefuncs.la fnmatch.la fork.la inplace.la intdiv.la ordchr.la readdir.la readfile.la revoutput.la revtwoway.la rwarray.la time.la '/home/devel/building/work/pkg/usr/lib/gawk'
+libtool: install: ./../build-aux//install-sh -c .libs/filefuncs.so /home/devel/building/work/pkg/usr/lib/gawk/filefuncs.so
+libtool: install: ./../build-aux//install-sh -c .libs/filefuncs.lai /home/devel/building/work/pkg/usr/lib/gawk/filefuncs.la
+libtool: install: ./../build-aux//install-sh -c .libs/fnmatch.so /home/devel/building/work/pkg/usr/lib/gawk/fnmatch.so
+libtool: install: ./../build-aux//install-sh -c .libs/fnmatch.lai /home/devel/building/work/pkg/usr/lib/gawk/fnmatch.la
+libtool: install: ./../build-aux//install-sh -c .libs/fork.so /home/devel/building/work/pkg/usr/lib/gawk/fork.so
+libtool: install: ./../build-aux//install-sh -c .libs/fork.lai /home/devel/building/work/pkg/usr/lib/gawk/fork.la
+libtool: install: ./../build-aux//install-sh -c .libs/inplace.so /home/devel/building/work/pkg/usr/lib/gawk/inplace.so
+libtool: install: ./../build-aux//install-sh -c .libs/inplace.lai /home/devel/building/work/pkg/usr/lib/gawk/inplace.la
+libtool: install: ./../build-aux//install-sh -c .libs/intdiv.so /home/devel/building/work/pkg/usr/lib/gawk/intdiv.so
+libtool: install: ./../build-aux//install-sh -c .libs/intdiv.lai /home/devel/building/work/pkg/usr/lib/gawk/intdiv.la
+libtool: install: ./../build-aux//install-sh -c .libs/ordchr.so /home/devel/building/work/pkg/usr/lib/gawk/ordchr.so
+libtool: install: ./../build-aux//install-sh -c .libs/ordchr.lai /home/devel/building/work/pkg/usr/lib/gawk/ordchr.la
+libtool: install: ./../build-aux//install-sh -c .libs/readdir.so /home/devel/building/work/pkg/usr/lib/gawk/readdir.so
+libtool: install: ./../build-aux//install-sh -c .libs/readdir.lai /home/devel/building/work/pkg/usr/lib/gawk/readdir.la
+libtool: install: ./../build-aux//install-sh -c .libs/readfile.so /home/devel/building/work/pkg/usr/lib/gawk/readfile.so
+libtool: install: ./../build-aux//install-sh -c .libs/readfile.lai /home/devel/building/work/pkg/usr/lib/gawk/readfile.la
+libtool: install: ./../build-aux//install-sh -c .libs/revoutput.so /home/devel/building/work/pkg/usr/lib/gawk/revoutput.so
+libtool: install: ./../build-aux//install-sh -c .libs/revoutput.lai /home/devel/building/work/pkg/usr/lib/gawk/revoutput.la
+libtool: install: ./../build-aux//install-sh -c .libs/revtwoway.so /home/devel/building/work/pkg/usr/lib/gawk/revtwoway.so
+libtool: install: ./../build-aux//install-sh -c .libs/revtwoway.lai /home/devel/building/work/pkg/usr/lib/gawk/revtwoway.la
+libtool: install: ./../build-aux//install-sh -c .libs/rwarray.so /home/devel/building/work/pkg/usr/lib/gawk/rwarray.so
+libtool: install: ./../build-aux//install-sh -c .libs/rwarray.lai /home/devel/building/work/pkg/usr/lib/gawk/rwarray.la
+libtool: install: ./../build-aux//install-sh -c .libs/time.so /home/devel/building/work/pkg/usr/lib/gawk/time.so
+libtool: install: ./../build-aux//install-sh -c .libs/time.lai /home/devel/building/work/pkg/usr/lib/gawk/time.la
+libtool: warning: remember to run 'libtool --finish /usr/lib/gawk'
+make  install-data-hook
+make[5]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/extension'
+for i in filefuncs.la fnmatch.la fork.la inplace.la intdiv.la ordchr.la readdir.la readfile.la revoutput.la revtwoway.la rwarray.la time.la ; do \
+	rm -f /home/devel/building/work/pkg/usr/lib/gawk/$i ; \
+done
+make[5]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/extension'
+make[4]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/extension'
+make[3]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/extension'
+make[2]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/extension'
+Making install in extras
+make[2]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/extras'
+make[3]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/extras'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/etc/profile.d'
+ .././build-aux/install-sh -c -m 644 gawk.sh gawk.csh '/home/devel/building/work/pkg/etc/profile.d'
+make[3]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/extras'
+make[2]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/extras'
+Making install in doc
+make[2]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/doc'
+make[3]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/info'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man1'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/info'
+ .././build-aux/install-sh -c -m 644 gawk_api-figure1.png gawk_api-figure2.png gawk_api-figure3.png gawk_array-elements.png gawk_general-program.png gawk_process-flow.png gawk_statist.jpg '/home/devel/building/work/pkg/usr/share/info'
+ .././build-aux/install-sh -c -m 644 gawk.1 gawkbug.1 pm-gawk.1 '/home/devel/building/work/pkg/usr/share/man/man1'
+ .././build-aux/install-sh -c -m 644 ./gawk.info ./gawkinet.info ./gawkworkflow.info ./pm-gawk.info '/home/devel/building/work/pkg/usr/share/info'
+ install-info --info-dir='/home/devel/building/work/pkg/usr/share/info' '/home/devel/building/work/pkg/usr/share/info/gawk.info'
+ install-info --info-dir='/home/devel/building/work/pkg/usr/share/info' '/home/devel/building/work/pkg/usr/share/info/gawkinet.info'
+ install-info --info-dir='/home/devel/building/work/pkg/usr/share/info' '/home/devel/building/work/pkg/usr/share/info/gawkworkflow.info'
+ install-info --info-dir='/home/devel/building/work/pkg/usr/share/info' '/home/devel/building/work/pkg/usr/share/info/pm-gawk.info'
+make[3]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/doc'
+make[2]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/doc'
+Making install in awklib
+make[2]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/awklib'
+make[3]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/awklib'
+make[3]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/awk'
+  .././build-aux/install-sh -c pwcat grcat '/home/devel/building/work/pkg/usr/lib/awk'
+make  install-exec-hook
+make[4]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/awklib'
+/bin/sh /home/devel/building/work/src/gawk-5.3.0/build-aux/install-sh -d /home/devel/building/work/pkg/usr/share/awk
+for i in passwd.awk group.awk ./eg/lib/*.awk ; do \
+	progname=`echo $i | sed 's;.*/;;'` ; \
+	.././build-aux/install-sh -c -m 644 $i /home/devel/building/work/pkg/usr/share/awk/$progname ; \
+done
+make[4]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/awklib'
+make[3]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/awklib'
+make[2]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/awklib'
+Making install in po
+make[2]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/po'
+if test "gawk" = "gettext-tools"; then \
+  /bin/mkdir -p /home/devel/building/work/pkg/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    .././build-aux/install-sh -c -m 644 ./$file \
+		    /home/devel/building/work/pkg/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/devel/building/work/pkg/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/po'
+Making install in test
+make[2]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/test'
+make[3]: Entering directory '/home/devel/building/work/src/gawk-5.3.0/test'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/test'
+make[2]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0/test'
+make[1]: Leaving directory '/home/devel/building/work/src/gawk-5.3.0'
++ rm -r /home/devel/building/work/pkg/etc /home/devel/building/work/pkg/usr/share/info
++ rm /home/devel/building/work/pkg/usr/share/man/man1/pm-gawk.1
++ rm /home/devel/building/work/pkg/usr/bin/gawk-5.3.0
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 21:16 usr/
+drwxr-xr-x  0 root   root        0 May  7 21:16 usr/bin/
+drwxr-xr-x  0 root   root        0 May  7 21:16 usr/include/
+drwxr-xr-x  0 root   root        0 May  7 21:16 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 21:16 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 21:16 usr/lib/gawk/
+drwxr-xr-x  0 root   root        0 May  7 21:16 usr/lib/awk/
+-rwxr-xr-x  0 root   root    14408 May  7 21:16 usr/lib/awk/pwcat
+-rwxr-xr-x  0 root   root    14416 May  7 21:16 usr/lib/awk/grcat
+-rwxr-xr-x  0 root   root    31232 May  7 21:16 usr/lib/gawk/filefuncs.so
+-rwxr-xr-x  0 root   root    14512 May  7 21:16 usr/lib/gawk/fnmatch.so
+-rwxr-xr-x  0 root   root    14560 May  7 21:16 usr/lib/gawk/fork.so
+-rwxr-xr-x  0 root   root    14608 May  7 21:16 usr/lib/gawk/inplace.so
+-rwxr-xr-x  0 root   root    14464 May  7 21:16 usr/lib/gawk/intdiv.so
+-rwxr-xr-x  0 root   root    14448 May  7 21:16 usr/lib/gawk/ordchr.so
+-rwxr-xr-x  0 root   root    14448 May  7 21:16 usr/lib/gawk/readdir.so
+-rwxr-xr-x  0 root   root    14480 May  7 21:16 usr/lib/gawk/readfile.so
+-rwxr-xr-x  0 root   root    14384 May  7 21:16 usr/lib/gawk/revoutput.so
+-rwxr-xr-x  0 root   root    14496 May  7 21:16 usr/lib/gawk/revtwoway.so
+-rwxr-xr-x  0 root   root    18832 May  7 21:16 usr/lib/gawk/rwarray.so
+-rwxr-xr-x  0 root   root    14528 May  7 21:16 usr/lib/gawk/time.so
+drwxr-xr-x  0 root   root        0 May  7 21:16 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  7 21:16 usr/share/awk/
+-rw-r--r--  0 root   root     1195 May  7 21:16 usr/share/awk/passwd.awk
+-rw-r--r--  0 root   root     1761 May  7 21:16 usr/share/awk/group.awk
+-rw-r--r--  0 root   root      383 May  7 21:16 usr/share/awk/assert.awk
+-rw-r--r--  0 root   root      334 May  7 21:16 usr/share/awk/bits2str.awk
+-rw-r--r--  0 root   root      307 May  7 21:16 usr/share/awk/cliff_rand.awk
+-rw-r--r--  0 root   root      234 May  7 21:16 usr/share/awk/ctime.awk
+-rw-r--r--  0 root   root      315 May  7 21:16 usr/share/awk/ftrans.awk
+-rw-r--r--  0 root   root     3270 May  7 21:16 usr/share/awk/getopt.awk
+-rw-r--r--  0 root   root     2491 May  7 21:16 usr/share/awk/gettime.awk
+-rw-r--r--  0 root   root      221 May  7 21:16 usr/share/awk/have_mpfr.awk
+-rw-r--r--  0 root   root     2335 May  7 21:16 usr/share/awk/inplace.awk
+-rw-r--r--  0 root   root      462 May  7 21:16 usr/share/awk/intdiv0.awk
+-rw-r--r--  0 root   root      284 May  7 21:16 usr/share/awk/isnumeric.awk
+-rw-r--r--  0 root   root      378 May  7 21:16 usr/share/awk/join.awk
+-rw-r--r--  0 root   root      238 May  7 21:16 usr/share/awk/libintl.awk
+-rw-r--r--  0 root   root      422 May  7 21:16 usr/share/awk/noassign.awk
+-rw-r--r--  0 root   root     1282 May  7 21:16 usr/share/awk/ns_passwd.awk
+-rw-r--r--  0 root   root      937 May  7 21:16 usr/share/awk/ord.awk
+-rw-r--r--  0 root   root      355 May  7 21:16 usr/share/awk/processarray.awk
+-rw-r--r--  0 root   root     1031 May  7 21:16 usr/share/awk/quicksort.awk
+-rw-r--r--  0 root   root      489 May  7 21:16 usr/share/awk/readable.awk
+-rw-r--r--  0 root   root      267 May  7 21:16 usr/share/awk/readfile.awk
+-rw-r--r--  0 root   root      404 May  7 21:16 usr/share/awk/rewind.awk
+-rw-r--r--  0 root   root      661 May  7 21:16 usr/share/awk/round.awk
+-rw-r--r--  0 root   root      472 May  7 21:16 usr/share/awk/shellquote.awk
+-rw-r--r--  0 root   root     1454 May  7 21:16 usr/share/awk/strtonum.awk
+-rw-r--r--  0 root   root      836 May  7 21:16 usr/share/awk/tocsv.awk
+-rw-r--r--  0 root   root      214 May  7 21:16 usr/share/awk/walkarray.awk
+-rw-r--r--  0 root   root      424 May  7 21:16 usr/share/awk/zerofile.awk
+drwxr-xr-x  0 root   root        0 May  7 21:16 usr/share/man/man3/
+drwxr-xr-x  0 root   root        0 May  7 21:16 usr/share/man/man1/
+-rw-r--r--  0 root   root    19618 May  7 21:16 usr/share/man/man1/gawk.1.gz
+-rw-r--r--  0 root   root     1000 May  7 21:16 usr/share/man/man1/gawkbug.1.gz
+-rw-r--r--  0 root   root     3472 May  7 21:16 usr/share/man/man3/filefuncs.3am.gz
+-rw-r--r--  0 root   root     1321 May  7 21:16 usr/share/man/man3/fnmatch.3am.gz
+-rw-r--r--  0 root   root     1227 May  7 21:16 usr/share/man/man3/fork.3am.gz
+-rw-r--r--  0 root   root     1400 May  7 21:16 usr/share/man/man3/inplace.3am.gz
+-rw-r--r--  0 root   root     1030 May  7 21:16 usr/share/man/man3/ordchr.3am.gz
+-rw-r--r--  0 root   root     1571 May  7 21:16 usr/share/man/man3/readdir.3am.gz
+-rw-r--r--  0 root   root     1165 May  7 21:16 usr/share/man/man3/readfile.3am.gz
+-rw-r--r--  0 root   root     1016 May  7 21:16 usr/share/man/man3/revoutput.3am.gz
+-rw-r--r--  0 root   root      975 May  7 21:16 usr/share/man/man3/revtwoway.3am.gz
+-rw-r--r--  0 root   root     1657 May  7 21:16 usr/share/man/man3/rwarray.3am.gz
+-rw-r--r--  0 root   root     1684 May  7 21:16 usr/share/man/man3/time.3am.gz
+-rw-r--r--  0 root   root    42138 May  7 21:16 usr/include/gawkapi.h
+-rwxr-xr-x  0 root   root     6680 May  7 21:16 usr/bin/gawkbug
+-rwxr-xr-x  0 root   root   707032 May  7 21:16 usr/bin/gawk
+lrwxrwxrwx  0 root   root        0 May  7 21:16 usr/bin/awk -> gawk
+=======> Building '/home/devel/packages/gawk#5.3.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling gawk 5.3.0-1
+prt-get: /usr/bin/pkgadd -u gawk#5.3.0-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 21:16:10 2024
+

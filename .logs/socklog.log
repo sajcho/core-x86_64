@@ -1,0 +1,235 @@
+prt-get: updating /usr/ports/core-x86_64/socklog
+prt-get: starting build Wed May  8 01:33:17 2024
+=======> Building '/home/devel/packages/socklog#2.1.0-2.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/socklog-2.1.0.tar.gz
+cp cross.patch /home/devel/building/work/src
+cp patches-fix-build-warnings.patch /home/devel/building/work/src
+cp tryto-c.patch /home/devel/building/work/src
++ build
++ cd /home/devel/building/work/src/admin/socklog-2.1.0
++ patch -p1 -i /home/devel/building/work/src/cross.patch
+patching file src/Makefile
++ patch -p1 -i /home/devel/building/work/src/patches-fix-build-warnings.patch
+patching file src/chkshsgr.c
+patching file src/pathexec.h
+patching file src/pathexec_run.c
+patching file src/prot.c
+patching file src/seek_set.c
+patching file src/socklog-conf.c
+patching file src/socklog.c
++ patch -p1 -i /home/devel/building/work/src/tryto-c.patch
+patching file src/tryto.c
++ echo 'gcc -D_GNU_SOURCE -Wno-deprecated-declarations -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects'
++ echo 'gcc  -Wl,-z -Wl,noexecstack'
++ package/compile
+Linking ./src/* into ./compile...
+Compiling everything in ./compile...
++ cd compile
++ exec make
+sh find-systype.sh > systype
+rm -f choose
+cat warn-auto.sh choose.sh \
+> choose
+cat warn-auto.sh > compilehost
+rm -f loadhost
+chmod 555 choose
+chmod 555 compilehost
+./compilehost chkshsgr.c
+chmod 555 loadhost
+rm -f compile
+rm -f load
+rm -f makelib
+sh print-cc.sh > compile
+sh print-ld.sh > load
+sh print-ar.sh > makelib
+chmod 555 makelib
+chmod 555 compile
+chmod 555 load
+./choose c trydrent direntry.h1 direntry.h2 > direntry.h
+./choose c trysysel select.h1 select.h2 > select.h
+./choose clr tryulong64 uint64.h1 uint64.h2 > uint64.h
+./compile socklog.c
+./compile alloc.c
+./compile alloc_re.c
+./compile buffer.c
+./compile buffer_0.c
+./compile buffer_1.c
+./compile buffer_2.c
+./compile buffer_get.c
+./compile buffer_put.c
+./compile buffer_read.c
+./compile buffer_write.c
+./compile coe.c
+./compile env.c
+./compile error.c
+./compile error_str.c
+./compile fd_copy.c
+./compile fd_move.c
+./compile ndelay_off.c
+./compile ndelay_on.c
+./compile open_append.c
+./compile open_read.c
+./compile open_trunc.c
+./compile open_write.c
+./compile openreadclose.c
+./compile pathexec_env.c
+./compile pathexec_run.c
+./compile readclose.c
+./compile seek_set.c
+./compile sgetopt.c
+./compile sig.c
+./compile stralloc_cat.c
+./compile stralloc_catb.c
+./compile stralloc_cats.c
+./compile stralloc_eady.c
+./compile stralloc_opyb.c
+./compile stralloc_opys.c
+./compile stralloc_pend.c
+./compile strerr_die.c
+./compile strerr_sys.c
+./compile subgetopt.c
+./compile byte_chr.c
+./compile byte_copy.c
+./compile byte_cr.c
+./compile byte_diff.c
+./compile byte_rchr.c
+./compile byte_zero.c
+./compile fmt_uint.c
+./compile fmt_uint0.c
+./compile fmt_ulong.c
+./compile scan_ulong.c
+./compile str_chr.c
+./compile str_diff.c
+./compile str_len.c
+./compile str_start.c
+./compile trysocketlib.c
+./compile socklog-check.c
+./compile socklog-conf.c
+./compile tai_now.c
+./compile tai_pack.c
+./compile tai_sub.c
+./compile tai_unpack.c
+./compile taia_add.c
+./compile taia_approx.c
+( ./load trysocketlib >/dev/null 2>&1 || \
+  ( ./load trysocketlib -lxnet >/dev/null 2>&1 && echo '-lxnet' ) || \
+  ( ./load trysocketlib -lsocket -lnsl >/dev/null 2>&1 && \
+    echo '-lsocket -lnsl' ) \
+) >socket.lib
+./compile taia_frac.c
+./compile taia_less.c
+./compile taia_now.c
+./compile taia_pack.c
+./compile taia_sub.c
+./compile taia_uint.c
+./choose cl tryflock hasflock.h1 hasflock.h2 > hasflock.h
+./choose cl trymkffo hasmkffo.h1 hasmkffo.h2 > hasmkffo.h
+./choose cl trysgact hassgact.h1 hassgact.h2 > hassgact.h
+./choose cl trysgprm hassgprm.h1 hassgprm.h2 > hassgprm.h
+./loadhost chkshsgr 
+./choose cl trywaitp haswaitp.h1 haswaitp.h2 > haswaitp.h
+./choose clr trypoll iopause.h1 iopause.h2 > iopause.h
+#!/bin/sh
+# WARNING: This file was auto-generated. Do not edit!
+./compile lock_ex.c
+./compile lock_exnb.c
+rm -f trysocketlib.o trysocketlib
+./compile sig_block.c
+./compile sig_catch.c
+./compile sig_pause.c
+./compile wait_nohang.c
+./compile wait_pid.c
+./makelib byte.a byte_chr.o byte_copy.o byte_cr.o byte_diff.o \
+byte_rchr.o byte_zero.o fmt_uint.o fmt_uint0.o fmt_ulong.o \
+scan_ulong.o str_chr.o str_diff.o str_len.o str_start.o
+./compile tryto.c
+./compile iopause.c
+./compile uncat.c
+./chkshsgr || ( cat warn-shsgr; exit 1 )
+./choose clr tryshsgr hasshsgr.h1 hasshsgr.h2 > hasshsgr.h
+rm -f sysdeps
+./compile fifo.c
+./compile prot.c
+cat systype compile load >> sysdeps
+grep sysdep direntry.h >> sysdeps
+grep sysdep haswaitp.h >> sysdeps
+grep sysdep hassgact.h >> sysdeps
+grep sysdep hassgprm.h >> sysdeps
+grep sysdep select.h >> sysdeps
+grep sysdep uint64.h >> sysdeps
+grep sysdep iopause.h >> sysdeps
+grep sysdep hasmkffo.h >> sysdeps
+grep sysdep hasflock.h >> sysdeps
+./makelib unix.a alloc.o alloc_re.o buffer.o buffer_0.o buffer_1.o \
+buffer_2.o buffer_get.o buffer_put.o buffer_read.o buffer_write.o \
+coe.o env.o error.o error_str.o fd_copy.o fd_move.o fifo.o lock_ex.o \
+lock_exnb.o ndelay_off.o ndelay_on.o open_append.o open_read.o \
+open_trunc.o open_write.o openreadclose.o pathexec_env.o \
+pathexec_run.o prot.o readclose.o seek_set.o sgetopt.o sig.o \
+sig_block.o sig_catch.o sig_pause.o stralloc_cat.o stralloc_catb.o \
+stralloc_cats.o stralloc_eady.o stralloc_opyb.o stralloc_opys.o \
+stralloc_pend.o strerr_die.o strerr_sys.o subgetopt.o wait_nohang.o \
+wait_pid.o
+./makelib time.a iopause.o tai_now.o tai_pack.o tai_sub.o \
+tai_unpack.o taia_add.o taia_approx.o taia_frac.o taia_less.o \
+taia_now.o taia_pack.o taia_sub.o taia_uint.o
+grep sysdep hasshsgr.h >> sysdeps
+cat sysdeps
+linux-6.8.9-saux-:-:-:x86_64-:-
+#!/bin/sh
+# WARNING: This file was auto-generated. Do not edit!
+exec gcc -D_GNU_SOURCE -Wno-deprecated-declarations -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c ${1+"$@"}
+#!/bin/sh
+# WARNING: This file was auto-generated. Do not edit!
+main="$1"; shift
+exec gcc  -Wl,-z -Wl,noexecstack -o "$main" "$main".o ${1+"$@"}
+/* sysdep: +dirent */
+/* sysdep: -waitpid */
+/* sysdep: -sigaction */
+/* sysdep: -sigprocmask */
+/* sysdep: +sysselect */
+/* sysdep: -ulong64 */
+/* sysdep: -poll */
+/* sysdep: +mkfifo */
+/* sysdep: -flock */
+/* sysdep: -shortsetgroups */
+./load socklog unix.a byte.a `cat socket.lib`
+./load socklog-check unix.a byte.a `cat socket.lib`
+./load socklog-conf unix.a byte.a
+./load uncat unix.a byte.a time.a
+./load tryto unix.a byte.a time.a
+Copying commands into ./command...
++ mkdir -v /home/devel/building/work/pkg/sbin
+mkdir: created directory '/home/devel/building/work/pkg/sbin'
++ cp -v command/socklog command/socklog-check command/socklog-conf command/tryto command/uncat /home/devel/building/work/pkg/sbin/
+'command/socklog' -> '/home/devel/building/work/pkg/sbin/socklog'
+'command/socklog-check' -> '/home/devel/building/work/pkg/sbin/socklog-check'
+'command/socklog-conf' -> '/home/devel/building/work/pkg/sbin/socklog-conf'
+'command/tryto' -> '/home/devel/building/work/pkg/sbin/tryto'
+'command/uncat' -> '/home/devel/building/work/pkg/sbin/uncat'
++ install -d -m 0755 /home/devel/building/work/pkg/usr/share/man/man1 /home/devel/building/work/pkg/usr/share/man/man8
++ install -D -m 0644 /home/devel/building/work/src/admin/socklog-2.1.0/man/tryto.1 /home/devel/building/work/src/admin/socklog-2.1.0/man/uncat.1 /home/devel/building/work/pkg/usr/share/man/man1
++ install -D -m 0644 /home/devel/building/work/src/admin/socklog-2.1.0/man/socklog-check.8 /home/devel/building/work/src/admin/socklog-2.1.0/man/socklog-conf.8 /home/devel/building/work/src/admin/socklog-2.1.0/man/socklog.8 /home/devel/building/work/pkg/usr/share/man/man8
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 01:33 sbin/
+-rwxr-xr-x  0 root   root    23440 May  8 01:33 sbin/socklog
+-rwxr-xr-x  0 root   root    14512 May  8 01:33 sbin/socklog-check
+-rwxr-xr-x  0 root   root    22752 May  8 01:33 sbin/socklog-conf
+-rwxr-xr-x  0 root   root    26984 May  8 01:33 sbin/tryto
+-rwxr-xr-x  0 root   root    22856 May  8 01:33 sbin/uncat
+drwxr-xr-x  0 root   root        0 May  8 01:33 usr/
+drwxr-xr-x  0 root   root        0 May  8 01:33 usr/share/
+drwxr-xr-x  0 root   root        0 May  8 01:33 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  8 01:33 usr/share/man/man1/
+drwxr-xr-x  0 root   root        0 May  8 01:33 usr/share/man/man8/
+-rw-r--r--  0 root   root      665 May  8 01:33 usr/share/man/man8/socklog-check.8.gz
+-rw-r--r--  0 root   root     1060 May  8 01:33 usr/share/man/man8/socklog-conf.8.gz
+-rw-r--r--  0 root   root     1303 May  8 01:33 usr/share/man/man8/socklog.8.gz
+-rw-r--r--  0 root   root     1157 May  8 01:33 usr/share/man/man1/tryto.1.gz
+-rw-r--r--  0 root   root      789 May  8 01:33 usr/share/man/man1/uncat.1.gz
+=======> Building '/home/devel/packages/socklog#2.1.0-2.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling socklog 2.1.0-2
+prt-get: /usr/bin/pkgadd -u socklog#2.1.0-2.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 01:33:18 2024
+

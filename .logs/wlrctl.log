@@ -1,0 +1,101 @@
+prt-get: updating /usr/ports/wayland-x86_64/wlrctl
+prt-get: starting build Wed May  8 01:41:15 2024
+=======> Building '/home/devel/packages/wlrctl#0.2.2-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/wlrctl-v0.2.2.tar.gz
++ build
++ cd wlrctl-v0.2.2
++ build-meson -Dzsh-completions=false . build
+The Meson build system
+Version: 1.4.0
+Source dir: /home/devel/building/work/src/wlrctl-v0.2.2
+Build dir: /home/devel/building/work/src/wlrctl-v0.2.2/build
+Build type: native build
+Project name: wlrctl
+Project version: 0.2.2
+C compiler for the host machine: cc (gcc 14.1.0 "cc (SAUX-x86_64) 14.1.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Checking for function "memfd_create" : YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 2.2.0
+Run-time dependency xkbcommon found: YES 1.7.0
+Run-time dependency wayland-client found: YES 1.22.0
+Program wayland-scanner found: YES (/usr/bin/wayland-scanner)
+Build-time dependency scdoc found: YES 1.11.3
+Program /usr/bin/scdoc found: YES (/usr/bin/scdoc)
+Program sh found: YES (/bin/sh)
+Build targets in project: 3
+
+wlrctl 0.2.2
+
+  User defined options
+    auto_features     : auto
+    bindir            : /usr/bin
+    buildtype         : plain
+    datadir           : /usr/share
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    libexecdir        : /usr/lib
+    localstatedir     : /var
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sbindir           : /usr/sbin
+    sharedstatedir    : /var/lib
+    sysconfdir        : /etc
+    werror            : false
+    wrap_mode         : nodownload
+    python.bytecompile: 0
+    b_lto             : false
+    b_pie             : true
+    b_staticpic       : true
+    zsh-completions   : false
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -v -C build
+ninja: entering directory '/home/devel/building/work/src/wlrctl-v0.2.2/build'
+[1/26] /bin/sh -c '/usr/bin/scdoc < ../wlrctl.1.scd > wlrctl.1'
+[2/26] /usr/bin/wayland-scanner client-header ../protocol/wlr-virtual-pointer-unstable-v1.xml wlrctl.p/wlr-virtual-pointer-unstable-v1-client-protocol.h
+[3/26] /usr/bin/wayland-scanner client-header ../protocol/wlr-output-management-unstable-v1.xml wlrctl.p/wlr-output-management-unstable-v1-client-protocol.h
+[4/26] /usr/bin/wayland-scanner client-header ../protocol/wlr-foreign-toplevel-management-unstable-v1.xml wlrctl.p/wlr-foreign-toplevel-management-unstable-v1-client-protocol.h
+[5/26] /usr/bin/wayland-scanner client-header ../protocol/virtual-keyboard-unstable-v1.xml wlrctl.p/virtual-keyboard-unstable-v1-client-protocol.h
+[6/26] /usr/bin/wayland-scanner private-code ../protocol/wlr-output-management-unstable-v1.xml protocol/libclient_protos.a.p/wlr-output-management-unstable-v1-protocol.c
+[7/26] /usr/bin/wayland-scanner private-code ../protocol/wlr-foreign-toplevel-management-unstable-v1.xml protocol/libclient_protos.a.p/wlr-foreign-toplevel-management-unstable-v1-protocol.c
+[8/26] /usr/bin/wayland-scanner private-code ../protocol/wlr-virtual-pointer-unstable-v1.xml protocol/libclient_protos.a.p/wlr-virtual-pointer-unstable-v1-protocol.c
+[9/26] /usr/bin/wayland-scanner client-header ../protocol/wlr-virtual-pointer-unstable-v1.xml protocol/libclient_protos.a.p/wlr-virtual-pointer-unstable-v1-client-protocol.h
+[10/26] /usr/bin/wayland-scanner client-header ../protocol/wlr-output-management-unstable-v1.xml protocol/libclient_protos.a.p/wlr-output-management-unstable-v1-client-protocol.h
+[11/26] /usr/bin/wayland-scanner client-header ../protocol/wlr-foreign-toplevel-management-unstable-v1.xml protocol/libclient_protos.a.p/wlr-foreign-toplevel-management-unstable-v1-client-protocol.h
+[12/26] /usr/bin/wayland-scanner client-header ../protocol/virtual-keyboard-unstable-v1.xml protocol/libclient_protos.a.p/virtual-keyboard-unstable-v1-client-protocol.h
+[13/26] /usr/bin/wayland-scanner private-code ../protocol/virtual-keyboard-unstable-v1.xml protocol/libclient_protos.a.p/virtual-keyboard-unstable-v1-protocol.c
+[14/26] cc -Iwlrctl.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -Wno-unused-parameter -Wno-missing-braces '-DWLRCTL_VERSION="0.2.2"' -DMEMFD_CREATE -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ wlrctl.p/util.c.o -MF wlrctl.p/util.c.o.d -o wlrctl.p/util.c.o -c ../util.c
+[15/26] cc -Iwlrctl.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -Wno-unused-parameter -Wno-missing-braces '-DWLRCTL_VERSION="0.2.2"' -DMEMFD_CREATE -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ wlrctl.p/output.c.o -MF wlrctl.p/output.c.o.d -o wlrctl.p/output.c.o -c ../output.c
+[16/26] cc -Iwlrctl.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -Wno-unused-parameter -Wno-missing-braces '-DWLRCTL_VERSION="0.2.2"' -DMEMFD_CREATE -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ wlrctl.p/toplevel.c.o -MF wlrctl.p/toplevel.c.o.d -o wlrctl.p/toplevel.c.o -c ../toplevel.c
+[17/26] cc -Iwlrctl.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -Wno-unused-parameter -Wno-missing-braces '-DWLRCTL_VERSION="0.2.2"' -DMEMFD_CREATE -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ wlrctl.p/pointer.c.o -MF wlrctl.p/pointer.c.o.d -o wlrctl.p/pointer.c.o -c ../pointer.c
+[18/26] cc -Iwlrctl.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -Wno-unused-parameter -Wno-missing-braces '-DWLRCTL_VERSION="0.2.2"' -DMEMFD_CREATE -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ wlrctl.p/keyboard.c.o -MF wlrctl.p/keyboard.c.o.d -o wlrctl.p/keyboard.c.o -c ../keyboard.c
+[19/26] cc -Iwlrctl.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -Wno-unused-parameter -Wno-missing-braces '-DWLRCTL_VERSION="0.2.2"' -DMEMFD_CREATE -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ wlrctl.p/ascii_raw_keymap.c.o -MF wlrctl.p/ascii_raw_keymap.c.o.d -o wlrctl.p/ascii_raw_keymap.c.o -c ../ascii_raw_keymap.c
+[20/26] cc -Iwlrctl.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -Wno-unused-parameter -Wno-missing-braces '-DWLRCTL_VERSION="0.2.2"' -DMEMFD_CREATE -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ wlrctl.p/main.c.o -MF wlrctl.p/main.c.o.d -o wlrctl.p/main.c.o -c ../main.c
+[21/26] cc -Iprotocol/libclient_protos.a.p -Iprotocol -I../protocol -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -Wno-unused-parameter -Wno-missing-braces '-DWLRCTL_VERSION="0.2.2"' -DMEMFD_CREATE -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ protocol/libclient_protos.a.p/meson-generated_virtual-keyboard-unstable-v1-protocol.c.o -MF protocol/libclient_protos.a.p/meson-generated_virtual-keyboard-unstable-v1-protocol.c.o.d -o protocol/libclient_protos.a.p/meson-generated_virtual-keyboard-unstable-v1-protocol.c.o -c protocol/libclient_protos.a.p/virtual-keyboard-unstable-v1-protocol.c
+[22/26] cc -Iprotocol/libclient_protos.a.p -Iprotocol -I../protocol -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -Wno-unused-parameter -Wno-missing-braces '-DWLRCTL_VERSION="0.2.2"' -DMEMFD_CREATE -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ protocol/libclient_protos.a.p/meson-generated_wlr-output-management-unstable-v1-protocol.c.o -MF protocol/libclient_protos.a.p/meson-generated_wlr-output-management-unstable-v1-protocol.c.o.d -o protocol/libclient_protos.a.p/meson-generated_wlr-output-management-unstable-v1-protocol.c.o -c protocol/libclient_protos.a.p/wlr-output-management-unstable-v1-protocol.c
+[23/26] cc -Iprotocol/libclient_protos.a.p -Iprotocol -I../protocol -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -Wno-unused-parameter -Wno-missing-braces '-DWLRCTL_VERSION="0.2.2"' -DMEMFD_CREATE -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ protocol/libclient_protos.a.p/meson-generated_wlr-foreign-toplevel-management-unstable-v1-protocol.c.o -MF protocol/libclient_protos.a.p/meson-generated_wlr-foreign-toplevel-management-unstable-v1-protocol.c.o.d -o protocol/libclient_protos.a.p/meson-generated_wlr-foreign-toplevel-management-unstable-v1-protocol.c.o -c protocol/libclient_protos.a.p/wlr-foreign-toplevel-management-unstable-v1-protocol.c
+[24/26] cc -Iprotocol/libclient_protos.a.p -Iprotocol -I../protocol -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c11 -Wno-unused-parameter -Wno-missing-braces '-DWLRCTL_VERSION="0.2.2"' -DMEMFD_CREATE -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ protocol/libclient_protos.a.p/meson-generated_wlr-virtual-pointer-unstable-v1-protocol.c.o -MF protocol/libclient_protos.a.p/meson-generated_wlr-virtual-pointer-unstable-v1-protocol.c.o.d -o protocol/libclient_protos.a.p/meson-generated_wlr-virtual-pointer-unstable-v1-protocol.c.o -c protocol/libclient_protos.a.p/wlr-virtual-pointer-unstable-v1-protocol.c
+[25/26] rm -f protocol/libclient_protos.a && gcc-ar csrDT protocol/libclient_protos.a protocol/libclient_protos.a.p/meson-generated_virtual-keyboard-unstable-v1-protocol.c.o protocol/libclient_protos.a.p/meson-generated_wlr-virtual-pointer-unstable-v1-protocol.c.o protocol/libclient_protos.a.p/meson-generated_wlr-foreign-toplevel-management-unstable-v1-protocol.c.o protocol/libclient_protos.a.p/meson-generated_wlr-output-management-unstable-v1-protocol.c.o
+[26/26] cc  -o wlrctl wlrctl.p/main.c.o wlrctl.p/ascii_raw_keymap.c.o wlrctl.p/keyboard.c.o wlrctl.p/pointer.c.o wlrctl.p/toplevel.c.o wlrctl.p/output.c.o wlrctl.p/util.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--start-group protocol/libclient_protos.a /usr/lib/libwayland-client.so /usr/lib/libxkbcommon.so -Wl,--end-group
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/wlrctl-v0.2.2/build -j 8 -v
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Installing wlrctl to /home/devel/building/work/pkg/usr/bin
+Installing wlrctl.1 to /home/devel/building/work/pkg/usr/share/man/man1
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 01:41 usr/
+drwxr-xr-x  0 root   root        0 May  8 01:41 usr/bin/
+drwxr-xr-x  0 root   root        0 May  8 01:41 usr/share/
+drwxr-xr-x  0 root   root        0 May  8 01:41 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  8 01:41 usr/share/man/man1/
+-rw-r--r--  0 root   root     1540 May  8 01:41 usr/share/man/man1/wlrctl.1.gz
+-rwxr-xr-x  0 root   root    48424 May  8 01:41 usr/bin/wlrctl
+=======> Building '/home/devel/packages/wlrctl#0.2.2-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling wlrctl 0.2.2-1
+prt-get: /usr/bin/pkgadd -u wlrctl#0.2.2-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 01:41:16 2024
+

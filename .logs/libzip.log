@@ -1,0 +1,737 @@
+prt-get: updating /usr/ports/opt-x86_64/libzip
+prt-get: starting build Tue May  7 23:38:07 2024
+=======> Building '/home/devel/packages/libzip#1.10.1-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/libzip-1.10.1.tar.xz
++ build
++ cd libzip-1.10.1
++ mkdir build
++ cd build
++ cmake .. -G Ninja -DCMAKE_BUILD_TYPE=None '-DCMAKE_C_FLAGS_RELEASE=-O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects' -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DENABLE_GNUTLS=OFF -Wno-dev
+-- The C compiler identification is GNU 14.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Looking for include file CommonCrypto/CommonCrypto.h
+-- Looking for include file CommonCrypto/CommonCrypto.h - not found
+-- Could NOT find MbedTLS (missing: MbedTLS_LIBRARY MbedTLS_INCLUDE_DIR) (Required is at least version "1.0")
+-- Found OpenSSL: /usr/lib/libcrypto.so (found version "3.3.0")
+-- Looking for _close
+-- Looking for _close - not found
+-- Looking for _dup
+-- Looking for _dup - not found
+-- Looking for _fdopen
+-- Looking for _fdopen - not found
+-- Looking for _fileno
+-- Looking for _fileno - not found
+-- Looking for _setmode
+-- Looking for _setmode - not found
+-- Looking for _snprintf
+-- Looking for _snprintf - not found
+-- Looking for _snprintf_s
+-- Looking for _snprintf_s - not found
+-- Looking for _snwprintf_s
+-- Looking for _snwprintf_s - not found
+-- Looking for _strdup
+-- Looking for _strdup - not found
+-- Looking for _stricmp
+-- Looking for _stricmp - not found
+-- Looking for _strtoi64
+-- Looking for _strtoi64 - not found
+-- Looking for _strtoui64
+-- Looking for _strtoui64 - not found
+-- Looking for _unlink
+-- Looking for _unlink - not found
+-- Looking for arc4random
+-- Looking for arc4random - found
+-- Looking for clonefile
+-- Looking for clonefile - not found
+-- Looking for explicit_bzero
+-- Looking for explicit_bzero - found
+-- Looking for explicit_memset
+-- Looking for explicit_memset - not found
+-- Looking for fchmod
+-- Looking for fchmod - found
+-- Looking for fileno
+-- Looking for fileno - found
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Looking for ftello
+-- Looking for ftello - found
+-- Looking for getprogname
+-- Looking for getprogname - not found
+-- Looking for localtime_r
+-- Looking for localtime_r - found
+-- Looking for localtime_s
+-- Looking for localtime_s - not found
+-- Looking for memcpy_s
+-- Looking for memcpy_s - not found
+-- Looking for random
+-- Looking for random - found
+-- Looking for setmode
+-- Looking for setmode - not found
+-- Looking for snprintf
+-- Looking for snprintf - found
+-- Looking for snprintf_s
+-- Looking for snprintf_s - not found
+-- Looking for strcasecmp
+-- Looking for strcasecmp - found
+-- Looking for strdup
+-- Looking for strdup - found
+-- Looking for strerror_s
+-- Looking for strerror_s - not found
+-- Looking for strerrorlen_s
+-- Looking for strerrorlen_s - not found
+-- Looking for stricmp
+-- Looking for stricmp - not found
+-- Looking for strncpy_s
+-- Looking for strncpy_s - not found
+-- Looking for strtoll
+-- Looking for strtoll - found
+-- Looking for strtoull
+-- Looking for strtoull - found
+-- Looking for 3 include files sys/types.h, ..., fts.h
+-- Looking for 3 include files sys/types.h, ..., fts.h - found
+-- Looking for fts_open
+-- Looking for fts_open - found
+-- Looking for include file stdbool.h
+-- Looking for include file stdbool.h - found
+-- Looking for include file strings.h
+-- Looking for include file strings.h - found
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - found
+-- Looking for include file inttypes.h
+-- Looking for include file inttypes.h - found
+-- Looking for include file stdint.h
+-- Looking for include file stdint.h - found
+-- Looking for include file sys/types.h
+-- Looking for include file sys/types.h - found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of __int8
+-- Check size of __int8 - failed
+-- Check size of int8_t
+-- Check size of int8_t - done
+-- Check size of uint8_t
+-- Check size of uint8_t - done
+-- Check size of __int16
+-- Check size of __int16 - failed
+-- Check size of int16_t
+-- Check size of int16_t - done
+-- Check size of uint16_t
+-- Check size of uint16_t - done
+-- Check size of __int32
+-- Check size of __int32 - failed
+-- Check size of int32_t
+-- Check size of int32_t - done
+-- Check size of uint32_t
+-- Check size of uint32_t - done
+-- Check size of __int64
+-- Check size of __int64 - failed
+-- Check size of int64_t
+-- Check size of int64_t - done
+-- Check size of uint64_t
+-- Check size of uint64_t - done
+-- Check size of short
+-- Check size of short - done
+-- Check size of int
+-- Check size of int - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of long long
+-- Check size of long long - done
+-- Check size of off_t
+-- Check size of off_t - done
+-- Check size of size_t
+-- Check size of size_t - done
+-- Performing Test HAVE_FICLONERANGE
+-- Performing Test HAVE_FICLONERANGE - Success
+-- Performing Test HAVE_NULLABLE
+-- Performing Test HAVE_NULLABLE - Failed
+-- Found ZLIB: /usr/lib/libz.so (found suitable version "1.3.1", minimum required is "1.1.2")
+-- Found BZip2: /usr/lib/libbz2.so (found version "1.0.8")
+-- Looking for BZ2_bzCompressInit
+-- Looking for BZ2_bzCompressInit - found
+-- Looking for lzma_auto_decoder in /usr/lib/liblzma.so
+-- Looking for lzma_auto_decoder in /usr/lib/liblzma.so - found
+-- Looking for lzma_easy_encoder in /usr/lib/liblzma.so
+-- Looking for lzma_easy_encoder in /usr/lib/liblzma.so - found
+-- Looking for lzma_lzma_preset in /usr/lib/liblzma.so
+-- Looking for lzma_lzma_preset in /usr/lib/liblzma.so - found
+-- Found LibLZMA: /usr/lib/liblzma.so (found suitable version "5.4.6", minimum required is "5.2")
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.2.0")
+-- Found zstd: /usr/lib/libzstd.so (Required is at least version "1.3.6")
+-- Looking for getopt
+-- Looking for getopt - found
+CMake Warning at CMakeLists.txt:318 (message):
+  -- nihtest not found, regression testing disabled
+
+
+-- Configuring done (4.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/devel/building/work/src/libzip-1.10.1/build
++ ninja -v
+[1/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/ziptool.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/ziptool.1
+[2/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zipmerge.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zipmerge.1
+[3/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zipcmp.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zipcmp.1
+[4/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_unchange_archive.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_unchange_archive.3
+[5/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_unchange_all.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_unchange_all.3
+[6/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_unchange.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_unchange.3
+[7/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_stat_init.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_stat_init.3
+[8/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_stat.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_stat.3
+[9/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_zip_file.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_zip_file.3
+[10/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_zip.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_zip.3
+[11/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_write.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_write.3
+[12/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_window_create.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_window_create.3
+[13/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_win32w.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_win32w.3
+[14/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_win32handle.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_win32handle.3
+[15/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_win32a.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_win32a.3
+[16/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_tell_write.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_tell_write.3
+[17/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_tell.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_tell.3
+[18/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_stat.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_stat.3
+[19/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_seek_write.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_seek_write.3
+[20/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_seek_compute_offset.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_seek_compute_offset.3
+[21/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_seek.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_seek.3
+[22/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_rollback_write.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_rollback_write.3
+[23/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_read.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_read.3
+[24/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_open.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_open.3
+[25/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_make_command_bitmap.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_make_command_bitmap.3
+[26/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_keep.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_keep.3
+[27/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_layered.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_layered.3
+[28/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_is_seekable.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_is_seekable.3
+[29/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_is_deleted.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_is_deleted.3
+[30/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_function.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_function.3
+[31/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_free.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_free.3
+[32/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_filep.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_filep.3
+[33/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_file.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_file.3
+[34/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_error.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_error.3
+[35/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_commit_write.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_commit_write.3
+[36/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_close.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_close.3
+[37/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_buffer_fragment.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_buffer_fragment.3
+[38/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_buffer.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_buffer.3
+[39/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source_begin_write.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source_begin_write.3
+[40/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_source.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_source.3
+[41/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_set_file_compression.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_set_file_compression.3
+[42/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_set_file_comment.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_set_file_comment.3
+[43/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_set_default_password.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_set_default_password.3
+[44/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_set_archive_flag.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_set_archive_flag.3
+[45/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_set_archive_comment.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_set_archive_comment.3
+[46/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_rename.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_rename.3
+[47/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_register_progress_callback_with_state.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_register_progress_callback_with_state.3
+[48/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_register_progress_callback.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_register_progress_callback.3
+[49/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_register_cancel_callback_with_state.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_register_cancel_callback_with_state.3
+[50/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_open.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_open.3
+[51/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_name_locate.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_name_locate.3
+[52/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_libzip_version.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_libzip_version.3
+[53/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_get_num_files.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_get_num_files.3
+[54/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_get_num_entries.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_get_num_entries.3
+[55/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_get_name.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_get_name.3
+[56/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_get_file_comment.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_get_file_comment.3
+[57/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_get_error.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_get_error.3
+[58/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_get_archive_flag.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_get_archive_flag.3
+[59/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_get_archive_comment.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_get_archive_comment.3
+[60/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_ftell.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_ftell.3
+[61/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_fseek.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_fseek.3
+[62/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_fread.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_fread.3
+[63/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_fopen_encrypted.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_fopen_encrypted.3
+[64/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_fopen.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_fopen.3
+[65/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_file_strerror.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_file_strerror.3
+[66/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_file_set_mtime.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_file_set_mtime.3
+[67/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_file_set_external_attributes.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_file_set_external_attributes.3
+[68/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_file_set_encryption.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_file_set_encryption.3
+[69/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_file_set_comment.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_file_set_comment.3
+[70/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_file_rename.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_file_rename.3
+[71/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_file_get_external_attributes.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_file_get_external_attributes.3
+[72/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_file_get_error.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_file_get_error.3
+[73/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_file_get_comment.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_file_get_comment.3
+[74/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_file_extra_fields_count.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_file_extra_fields_count.3
+[75/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_file_extra_field_set.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_file_extra_field_set.3
+[76/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_file_extra_field_get.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_file_extra_field_get.3
+[77/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_file_extra_field_delete.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_file_extra_field_delete.3
+[78/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_file_attributes_init.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_file_attributes_init.3
+[79/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_file_add.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_file_add.3
+[80/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_fdopen.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_fdopen.3
+[81/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_fclose.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_fclose.3
+[82/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_errors.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_errors.3
+[83/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_error_to_str.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_error_to_str.3
+[84/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_error_to_data.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_error_to_data.3
+[85/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_error_system_type.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_error_system_type.3
+[86/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_error_strerror.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_error_strerror.3
+[87/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_error_set.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_error_set.3
+[88/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_error_init.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_error_init.3
+[89/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_error_get_sys_type.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_error_get_sys_type.3
+[90/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_error_get.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_error_get.3
+[91/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_error_fini.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_error_fini.3
+[92/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_error_code_zip.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_error_code_zip.3
+[93/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_error_code_system.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_error_code_system.3
+[94/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_error_clear.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_error_clear.3
+[95/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_encryption_method_supported.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_encryption_method_supported.3
+[96/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_discard.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_discard.3
+[97/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_dir_add.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_dir_add.3
+[98/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_delete.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_delete.3
+[99/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_compression_method_supported.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_compression_method_supported.3
+[100/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_close.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_close.3
+[101/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_add_dir.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_add_dir.3
+[102/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/zip_add.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/zip_add.3
+[103/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/libzip.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/libzip.3
+[104/239] cd /home/devel/building/work/src/libzip-1.10.1/build/man && /usr/bin/cmake -E copy_if_different /home/devel/building/work/src/libzip-1.10.1/man/ZIP_SOURCE_GET_ARGS.mdoc /home/devel/building/work/src/libzip-1.10.1/build/man/ZIP_SOURCE_GET_ARGS.3
+[105/239] cd /home/devel/building/work/src/libzip-1.10.1/build/lib && /usr/bin/cmake -DPROJECT_SOURCE_DIR=/home/devel/building/work/src/libzip-1.10.1 -DCMAKE_CURRENT_BINARY_DIR=/home/devel/building/work/src/libzip-1.10.1/build/lib -P /home/devel/building/work/src/libzip-1.10.1/cmake/GenerateZipErrorStrings.cmake
+[106/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_err_str.c.o -MF lib/CMakeFiles/zip.dir/zip_err_str.c.o.d -o lib/CMakeFiles/zip.dir/zip_err_str.c.o -c /home/devel/building/work/src/libzip-1.10.1/build/lib/zip_err_str.c
+[107/239] /usr/bin/cc  -I/home/devel/building/work/src/libzip-1.10.1/examples/BEFORE -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MD -MT examples/CMakeFiles/in-memory.dir/in-memory.c.o -MF examples/CMakeFiles/in-memory.dir/in-memory.c.o.d -o examples/CMakeFiles/in-memory.dir/in-memory.c.o -c /home/devel/building/work/src/libzip-1.10.1/examples/in-memory.c
+[108/239] /usr/bin/cc  -I/home/devel/building/work/src/libzip-1.10.1/examples/BEFORE -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MD -MT examples/CMakeFiles/autoclose-archive.dir/autoclose-archive.c.o -MF examples/CMakeFiles/autoclose-archive.dir/autoclose-archive.c.o.d -o examples/CMakeFiles/autoclose-archive.dir/autoclose-archive.c.o -c /home/devel/building/work/src/libzip-1.10.1/examples/autoclose-archive.c
+[109/239] /usr/bin/cc  -I/home/devel/building/work/src/libzip-1.10.1/examples/BEFORE -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MD -MT examples/CMakeFiles/add-compressed-data.dir/add-compressed-data.c.o -MF examples/CMakeFiles/add-compressed-data.dir/add-compressed-data.c.o.d -o examples/CMakeFiles/add-compressed-data.dir/add-compressed-data.c.o -c /home/devel/building/work/src/libzip-1.10.1/examples/add-compressed-data.c
+[110/239] /usr/bin/cc  -I/home/devel/building/work/src/libzip-1.10.1/src/BEFORE -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MD -MT src/CMakeFiles/ziptool.dir/ziptool.c.o -MF src/CMakeFiles/ziptool.dir/ziptool.c.o.d -o src/CMakeFiles/ziptool.dir/ziptool.c.o -c /home/devel/building/work/src/libzip-1.10.1/src/ziptool.c
+[111/239] /usr/bin/cc  -I/home/devel/building/work/src/libzip-1.10.1/src/BEFORE -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MD -MT src/CMakeFiles/zipmerge.dir/zipmerge.c.o -MF src/CMakeFiles/zipmerge.dir/zipmerge.c.o.d -o src/CMakeFiles/zipmerge.dir/zipmerge.c.o -c /home/devel/building/work/src/libzip-1.10.1/src/zipmerge.c
+[112/239] /usr/bin/cc  -I/home/devel/building/work/src/libzip-1.10.1/src/BEFORE -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MD -MT src/CMakeFiles/zipcmp.dir/diff_output.c.o -MF src/CMakeFiles/zipcmp.dir/diff_output.c.o.d -o src/CMakeFiles/zipcmp.dir/diff_output.c.o -c /home/devel/building/work/src/libzip-1.10.1/src/diff_output.c
+[113/239] /usr/bin/cc  -I/home/devel/building/work/src/libzip-1.10.1/src/BEFORE -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MD -MT src/CMakeFiles/zipcmp.dir/zipcmp.c.o -MF src/CMakeFiles/zipcmp.dir/zipcmp.c.o.d -o src/CMakeFiles/zipcmp.dir/zipcmp.c.o -c /home/devel/building/work/src/libzip-1.10.1/src/zipcmp.c
+[114/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_winzip_aes_encode.c.o -MF lib/CMakeFiles/zip.dir/zip_source_winzip_aes_encode.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_winzip_aes_encode.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_winzip_aes_encode.c
+[115/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_winzip_aes_decode.c.o -MF lib/CMakeFiles/zip.dir/zip_source_winzip_aes_decode.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_winzip_aes_decode.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_winzip_aes_decode.c
+[116/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_winzip_aes.c.o -MF lib/CMakeFiles/zip.dir/zip_winzip_aes.c.o.d -o lib/CMakeFiles/zip.dir/zip_winzip_aes.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_winzip_aes.c
+[117/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_crypto_openssl.c.o -MF lib/CMakeFiles/zip.dir/zip_crypto_openssl.c.o.d -o lib/CMakeFiles/zip.dir/zip_crypto_openssl.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_crypto_openssl.c
+[118/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_algorithm_zstd.c.o -MF lib/CMakeFiles/zip.dir/zip_algorithm_zstd.c.o.d -o lib/CMakeFiles/zip.dir/zip_algorithm_zstd.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_algorithm_zstd.c
+[119/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_algorithm_xz.c.o -MF lib/CMakeFiles/zip.dir/zip_algorithm_xz.c.o.d -o lib/CMakeFiles/zip.dir/zip_algorithm_xz.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_algorithm_xz.c
+[120/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_algorithm_bzip2.c.o -MF lib/CMakeFiles/zip.dir/zip_algorithm_bzip2.c.o.d -o lib/CMakeFiles/zip.dir/zip_algorithm_bzip2.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_algorithm_bzip2.c
+[121/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_random_unix.c.o -MF lib/CMakeFiles/zip.dir/zip_random_unix.c.o.d -o lib/CMakeFiles/zip.dir/zip_random_unix.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_random_unix.c
+[122/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_file_stdio_named.c.o -MF lib/CMakeFiles/zip.dir/zip_source_file_stdio_named.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_file_stdio_named.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_file_stdio_named.c
+[123/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_utf-8.c.o -MF lib/CMakeFiles/zip.dir/zip_utf-8.c.o.d -o lib/CMakeFiles/zip.dir/zip_utf-8.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_utf-8.c
+[124/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_unchange_data.c.o -MF lib/CMakeFiles/zip.dir/zip_unchange_data.c.o.d -o lib/CMakeFiles/zip.dir/zip_unchange_data.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_unchange_data.c
+[125/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_unchange_archive.c.o -MF lib/CMakeFiles/zip.dir/zip_unchange_archive.c.o.d -o lib/CMakeFiles/zip.dir/zip_unchange_archive.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_unchange_archive.c
+[126/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_unchange_all.c.o -MF lib/CMakeFiles/zip.dir/zip_unchange_all.c.o.d -o lib/CMakeFiles/zip.dir/zip_unchange_all.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_unchange_all.c
+[127/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_unchange.c.o -MF lib/CMakeFiles/zip.dir/zip_unchange.c.o.d -o lib/CMakeFiles/zip.dir/zip_unchange.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_unchange.c
+[128/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_string.c.o -MF lib/CMakeFiles/zip.dir/zip_string.c.o.d -o lib/CMakeFiles/zip.dir/zip_string.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_string.c
+[129/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_strerror.c.o -MF lib/CMakeFiles/zip.dir/zip_strerror.c.o.d -o lib/CMakeFiles/zip.dir/zip_strerror.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_strerror.c
+[130/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_stat_init.c.o -MF lib/CMakeFiles/zip.dir/zip_stat_init.c.o.d -o lib/CMakeFiles/zip.dir/zip_stat_init.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_stat_init.c
+[131/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_stat_index.c.o -MF lib/CMakeFiles/zip.dir/zip_stat_index.c.o.d -o lib/CMakeFiles/zip.dir/zip_stat_index.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_stat_index.c
+[132/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_stat.c.o -MF lib/CMakeFiles/zip.dir/zip_stat.c.o.d -o lib/CMakeFiles/zip.dir/zip_stat.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_stat.c
+[133/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_zip_new.c.o -MF lib/CMakeFiles/zip.dir/zip_source_zip_new.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_zip_new.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_zip_new.c
+[134/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_zip.c.o -MF lib/CMakeFiles/zip.dir/zip_source_zip.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_zip.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_zip.c
+[135/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_write.c.o -MF lib/CMakeFiles/zip.dir/zip_source_write.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_write.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_write.c
+[136/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_window.c.o -MF lib/CMakeFiles/zip.dir/zip_source_window.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_window.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_window.c
+[137/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_tell_write.c.o -MF lib/CMakeFiles/zip.dir/zip_source_tell_write.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_tell_write.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_tell_write.c
+[138/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_tell.c.o -MF lib/CMakeFiles/zip.dir/zip_source_tell.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_tell.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_tell.c
+[139/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_supports.c.o -MF lib/CMakeFiles/zip.dir/zip_source_supports.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_supports.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_supports.c
+[140/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_stat.c.o -MF lib/CMakeFiles/zip.dir/zip_source_stat.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_stat.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_stat.c
+[141/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_seek_write.c.o -MF lib/CMakeFiles/zip.dir/zip_source_seek_write.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_seek_write.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_seek_write.c
+[142/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_seek.c.o -MF lib/CMakeFiles/zip.dir/zip_source_seek.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_seek.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_seek.c
+[143/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_rollback_write.c.o -MF lib/CMakeFiles/zip.dir/zip_source_rollback_write.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_rollback_write.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_rollback_write.c
+[144/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_remove.c.o -MF lib/CMakeFiles/zip.dir/zip_source_remove.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_remove.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_remove.c
+[145/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_read.c.o -MF lib/CMakeFiles/zip.dir/zip_source_read.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_read.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_read.c
+[146/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_pkware_encode.c.o -MF lib/CMakeFiles/zip.dir/zip_source_pkware_encode.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_pkware_encode.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_pkware_encode.c
+[147/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_pkware_decode.c.o -MF lib/CMakeFiles/zip.dir/zip_source_pkware_decode.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_pkware_decode.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_pkware_decode.c
+[148/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_pass_to_lower_layer.c.o -MF lib/CMakeFiles/zip.dir/zip_source_pass_to_lower_layer.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_pass_to_lower_layer.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_pass_to_lower_layer.c
+[149/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_open.c.o -MF lib/CMakeFiles/zip.dir/zip_source_open.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_open.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_open.c
+[150/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_layered.c.o -MF lib/CMakeFiles/zip.dir/zip_source_layered.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_layered.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_layered.c
+[151/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_is_deleted.c.o -MF lib/CMakeFiles/zip.dir/zip_source_is_deleted.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_is_deleted.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_is_deleted.c
+[152/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_get_file_attributes.c.o -MF lib/CMakeFiles/zip.dir/zip_source_get_file_attributes.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_get_file_attributes.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_get_file_attributes.c
+[153/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_function.c.o -MF lib/CMakeFiles/zip.dir/zip_source_function.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_function.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_function.c
+[154/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_free.c.o -MF lib/CMakeFiles/zip.dir/zip_source_free.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_free.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_free.c
+[155/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_file_stdio.c.o -MF lib/CMakeFiles/zip.dir/zip_source_file_stdio.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_file_stdio.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_file_stdio.c
+[156/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_file_common.c.o -MF lib/CMakeFiles/zip.dir/zip_source_file_common.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_file_common.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_file_common.c
+[157/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_error.c.o -MF lib/CMakeFiles/zip.dir/zip_source_error.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_error.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_error.c
+[158/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_crc.c.o -MF lib/CMakeFiles/zip.dir/zip_source_crc.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_crc.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_crc.c
+[159/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_compress.c.o -MF lib/CMakeFiles/zip.dir/zip_source_compress.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_compress.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_compress.c
+[160/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_commit_write.c.o -MF lib/CMakeFiles/zip.dir/zip_source_commit_write.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_commit_write.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_commit_write.c
+[161/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_close.c.o -MF lib/CMakeFiles/zip.dir/zip_source_close.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_close.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_close.c
+[162/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_call.c.o -MF lib/CMakeFiles/zip.dir/zip_source_call.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_call.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_call.c
+[163/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_buffer.c.o -MF lib/CMakeFiles/zip.dir/zip_source_buffer.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_buffer.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_buffer.c
+[164/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_begin_write_cloning.c.o -MF lib/CMakeFiles/zip.dir/zip_source_begin_write_cloning.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_begin_write_cloning.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_begin_write_cloning.c
+[165/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_begin_write.c.o -MF lib/CMakeFiles/zip.dir/zip_source_begin_write.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_begin_write.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_begin_write.c
+[166/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_source_accept_empty.c.o -MF lib/CMakeFiles/zip.dir/zip_source_accept_empty.c.o.d -o lib/CMakeFiles/zip.dir/zip_source_accept_empty.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_source_accept_empty.c
+[167/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_set_name.c.o -MF lib/CMakeFiles/zip.dir/zip_set_name.c.o.d -o lib/CMakeFiles/zip.dir/zip_set_name.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_set_name.c
+[168/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_set_file_compression.c.o -MF lib/CMakeFiles/zip.dir/zip_set_file_compression.c.o.d -o lib/CMakeFiles/zip.dir/zip_set_file_compression.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_set_file_compression.c
+[169/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_set_file_comment.c.o -MF lib/CMakeFiles/zip.dir/zip_set_file_comment.c.o.d -o lib/CMakeFiles/zip.dir/zip_set_file_comment.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_set_file_comment.c
+[170/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_set_default_password.c.o -MF lib/CMakeFiles/zip.dir/zip_set_default_password.c.o.d -o lib/CMakeFiles/zip.dir/zip_set_default_password.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_set_default_password.c
+[171/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_set_archive_flag.c.o -MF lib/CMakeFiles/zip.dir/zip_set_archive_flag.c.o.d -o lib/CMakeFiles/zip.dir/zip_set_archive_flag.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_set_archive_flag.c
+[172/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_set_archive_comment.c.o -MF lib/CMakeFiles/zip.dir/zip_set_archive_comment.c.o.d -o lib/CMakeFiles/zip.dir/zip_set_archive_comment.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_set_archive_comment.c
+[173/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_replace.c.o -MF lib/CMakeFiles/zip.dir/zip_replace.c.o.d -o lib/CMakeFiles/zip.dir/zip_replace.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_replace.c
+[174/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_rename.c.o -MF lib/CMakeFiles/zip.dir/zip_rename.c.o.d -o lib/CMakeFiles/zip.dir/zip_rename.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_rename.c
+[175/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_progress.c.o -MF lib/CMakeFiles/zip.dir/zip_progress.c.o.d -o lib/CMakeFiles/zip.dir/zip_progress.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_progress.c
+[176/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_pkware.c.o -MF lib/CMakeFiles/zip.dir/zip_pkware.c.o.d -o lib/CMakeFiles/zip.dir/zip_pkware.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_pkware.c
+[177/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_open.c.o -MF lib/CMakeFiles/zip.dir/zip_open.c.o.d -o lib/CMakeFiles/zip.dir/zip_open.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_open.c
+[178/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_new.c.o -MF lib/CMakeFiles/zip.dir/zip_new.c.o.d -o lib/CMakeFiles/zip.dir/zip_new.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_new.c
+[179/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_name_locate.c.o -MF lib/CMakeFiles/zip.dir/zip_name_locate.c.o.d -o lib/CMakeFiles/zip.dir/zip_name_locate.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_name_locate.c
+[180/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_memdup.c.o -MF lib/CMakeFiles/zip.dir/zip_memdup.c.o.d -o lib/CMakeFiles/zip.dir/zip_memdup.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_memdup.c
+[181/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_libzip_version.c.o -MF lib/CMakeFiles/zip.dir/zip_libzip_version.c.o.d -o lib/CMakeFiles/zip.dir/zip_libzip_version.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_libzip_version.c
+[182/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_io_util.c.o -MF lib/CMakeFiles/zip.dir/zip_io_util.c.o.d -o lib/CMakeFiles/zip.dir/zip_io_util.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_io_util.c
+[183/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_hash.c.o -MF lib/CMakeFiles/zip.dir/zip_hash.c.o.d -o lib/CMakeFiles/zip.dir/zip_hash.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_hash.c
+[184/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_get_num_files.c.o -MF lib/CMakeFiles/zip.dir/zip_get_num_files.c.o.d -o lib/CMakeFiles/zip.dir/zip_get_num_files.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_get_num_files.c
+[185/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_get_num_entries.c.o -MF lib/CMakeFiles/zip.dir/zip_get_num_entries.c.o.d -o lib/CMakeFiles/zip.dir/zip_get_num_entries.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_get_num_entries.c
+[186/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_get_name.c.o -MF lib/CMakeFiles/zip.dir/zip_get_name.c.o.d -o lib/CMakeFiles/zip.dir/zip_get_name.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_get_name.c
+[187/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_get_file_comment.c.o -MF lib/CMakeFiles/zip.dir/zip_get_file_comment.c.o.d -o lib/CMakeFiles/zip.dir/zip_get_file_comment.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_get_file_comment.c
+[188/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_get_encryption_implementation.c.o -MF lib/CMakeFiles/zip.dir/zip_get_encryption_implementation.c.o.d -o lib/CMakeFiles/zip.dir/zip_get_encryption_implementation.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_get_encryption_implementation.c
+[189/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_get_archive_flag.c.o -MF lib/CMakeFiles/zip.dir/zip_get_archive_flag.c.o.d -o lib/CMakeFiles/zip.dir/zip_get_archive_flag.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_get_archive_flag.c
+[190/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_get_archive_comment.c.o -MF lib/CMakeFiles/zip.dir/zip_get_archive_comment.c.o.d -o lib/CMakeFiles/zip.dir/zip_get_archive_comment.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_get_archive_comment.c
+[191/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_ftell.c.o -MF lib/CMakeFiles/zip.dir/zip_ftell.c.o.d -o lib/CMakeFiles/zip.dir/zip_ftell.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_ftell.c
+[192/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_fseek.c.o -MF lib/CMakeFiles/zip.dir/zip_fseek.c.o.d -o lib/CMakeFiles/zip.dir/zip_fseek.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_fseek.c
+[193/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_fread.c.o -MF lib/CMakeFiles/zip.dir/zip_fread.c.o.d -o lib/CMakeFiles/zip.dir/zip_fread.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_fread.c
+[194/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_fopen_index_encrypted.c.o -MF lib/CMakeFiles/zip.dir/zip_fopen_index_encrypted.c.o.d -o lib/CMakeFiles/zip.dir/zip_fopen_index_encrypted.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_fopen_index_encrypted.c
+[195/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_fopen_index.c.o -MF lib/CMakeFiles/zip.dir/zip_fopen_index.c.o.d -o lib/CMakeFiles/zip.dir/zip_fopen_index.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_fopen_index.c
+[196/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_fopen_encrypted.c.o -MF lib/CMakeFiles/zip.dir/zip_fopen_encrypted.c.o.d -o lib/CMakeFiles/zip.dir/zip_fopen_encrypted.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_fopen_encrypted.c
+[197/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_fopen.c.o -MF lib/CMakeFiles/zip.dir/zip_fopen.c.o.d -o lib/CMakeFiles/zip.dir/zip_fopen.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_fopen.c
+[198/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_file_strerror.c.o -MF lib/CMakeFiles/zip.dir/zip_file_strerror.c.o.d -o lib/CMakeFiles/zip.dir/zip_file_strerror.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_file_strerror.c
+[199/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_file_set_mtime.c.o -MF lib/CMakeFiles/zip.dir/zip_file_set_mtime.c.o.d -o lib/CMakeFiles/zip.dir/zip_file_set_mtime.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_file_set_mtime.c
+[200/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_file_set_external_attributes.c.o -MF lib/CMakeFiles/zip.dir/zip_file_set_external_attributes.c.o.d -o lib/CMakeFiles/zip.dir/zip_file_set_external_attributes.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_file_set_external_attributes.c
+[201/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_file_set_encryption.c.o -MF lib/CMakeFiles/zip.dir/zip_file_set_encryption.c.o.d -o lib/CMakeFiles/zip.dir/zip_file_set_encryption.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_file_set_encryption.c
+[202/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_file_set_comment.c.o -MF lib/CMakeFiles/zip.dir/zip_file_set_comment.c.o.d -o lib/CMakeFiles/zip.dir/zip_file_set_comment.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_file_set_comment.c
+[203/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_file_replace.c.o -MF lib/CMakeFiles/zip.dir/zip_file_replace.c.o.d -o lib/CMakeFiles/zip.dir/zip_file_replace.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_file_replace.c
+[204/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_file_rename.c.o -MF lib/CMakeFiles/zip.dir/zip_file_rename.c.o.d -o lib/CMakeFiles/zip.dir/zip_file_rename.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_file_rename.c
+[205/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_file_get_offset.c.o -MF lib/CMakeFiles/zip.dir/zip_file_get_offset.c.o.d -o lib/CMakeFiles/zip.dir/zip_file_get_offset.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_file_get_offset.c
+[206/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_file_get_external_attributes.c.o -MF lib/CMakeFiles/zip.dir/zip_file_get_external_attributes.c.o.d -o lib/CMakeFiles/zip.dir/zip_file_get_external_attributes.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_file_get_external_attributes.c
+[207/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_file_get_comment.c.o -MF lib/CMakeFiles/zip.dir/zip_file_get_comment.c.o.d -o lib/CMakeFiles/zip.dir/zip_file_get_comment.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_file_get_comment.c
+[208/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_file_error_get.c.o -MF lib/CMakeFiles/zip.dir/zip_file_error_get.c.o.d -o lib/CMakeFiles/zip.dir/zip_file_error_get.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_file_error_get.c
+[209/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_file_error_clear.c.o -MF lib/CMakeFiles/zip.dir/zip_file_error_clear.c.o.d -o lib/CMakeFiles/zip.dir/zip_file_error_clear.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_file_error_clear.c
+[210/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_file_add.c.o -MF lib/CMakeFiles/zip.dir/zip_file_add.c.o.d -o lib/CMakeFiles/zip.dir/zip_file_add.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_file_add.c
+[211/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_fdopen.c.o -MF lib/CMakeFiles/zip.dir/zip_fdopen.c.o.d -o lib/CMakeFiles/zip.dir/zip_fdopen.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_fdopen.c
+[212/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_fclose.c.o -MF lib/CMakeFiles/zip.dir/zip_fclose.c.o.d -o lib/CMakeFiles/zip.dir/zip_fclose.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_fclose.c
+[213/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_extra_field_api.c.o -MF lib/CMakeFiles/zip.dir/zip_extra_field_api.c.o.d -o lib/CMakeFiles/zip.dir/zip_extra_field_api.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_extra_field_api.c
+[214/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_extra_field.c.o -MF lib/CMakeFiles/zip.dir/zip_extra_field.c.o.d -o lib/CMakeFiles/zip.dir/zip_extra_field.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_extra_field.c
+[215/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_error_to_str.c.o -MF lib/CMakeFiles/zip.dir/zip_error_to_str.c.o.d -o lib/CMakeFiles/zip.dir/zip_error_to_str.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_error_to_str.c
+[216/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_error_strerror.c.o -MF lib/CMakeFiles/zip.dir/zip_error_strerror.c.o.d -o lib/CMakeFiles/zip.dir/zip_error_strerror.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_error_strerror.c
+[217/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_error_get_sys_type.c.o -MF lib/CMakeFiles/zip.dir/zip_error_get_sys_type.c.o.d -o lib/CMakeFiles/zip.dir/zip_error_get_sys_type.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_error_get_sys_type.c
+[218/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_error_get.c.o -MF lib/CMakeFiles/zip.dir/zip_error_get.c.o.d -o lib/CMakeFiles/zip.dir/zip_error_get.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_error_get.c
+[219/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_error_clear.c.o -MF lib/CMakeFiles/zip.dir/zip_error_clear.c.o.d -o lib/CMakeFiles/zip.dir/zip_error_clear.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_error_clear.c
+[220/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_error.c.o -MF lib/CMakeFiles/zip.dir/zip_error.c.o.d -o lib/CMakeFiles/zip.dir/zip_error.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_error.c
+[221/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_entry.c.o -MF lib/CMakeFiles/zip.dir/zip_entry.c.o.d -o lib/CMakeFiles/zip.dir/zip_entry.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_entry.c
+[222/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_discard.c.o -MF lib/CMakeFiles/zip.dir/zip_discard.c.o.d -o lib/CMakeFiles/zip.dir/zip_discard.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_discard.c
+[223/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_dirent.c.o -MF lib/CMakeFiles/zip.dir/zip_dirent.c.o.d -o lib/CMakeFiles/zip.dir/zip_dirent.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_dirent.c
+[224/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_dir_add.c.o -MF lib/CMakeFiles/zip.dir/zip_dir_add.c.o.d -o lib/CMakeFiles/zip.dir/zip_dir_add.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_dir_add.c
+[225/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_delete.c.o -MF lib/CMakeFiles/zip.dir/zip_delete.c.o.d -o lib/CMakeFiles/zip.dir/zip_delete.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_delete.c
+[226/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_close.c.o -MF lib/CMakeFiles/zip.dir/zip_close.c.o.d -o lib/CMakeFiles/zip.dir/zip_close.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_close.c
+[227/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_buffer.c.o -MF lib/CMakeFiles/zip.dir/zip_buffer.c.o.d -o lib/CMakeFiles/zip.dir/zip_buffer.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_buffer.c
+[228/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_algorithm_deflate.c.o -MF lib/CMakeFiles/zip.dir/zip_algorithm_deflate.c.o.d -o lib/CMakeFiles/zip.dir/zip_algorithm_deflate.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_algorithm_deflate.c
+[229/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_add_entry.c.o -MF lib/CMakeFiles/zip.dir/zip_add_entry.c.o.d -o lib/CMakeFiles/zip.dir/zip_add_entry.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_add_entry.c
+[230/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_add_dir.c.o -MF lib/CMakeFiles/zip.dir/zip_add_dir.c.o.d -o lib/CMakeFiles/zip.dir/zip_add_dir.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_add_dir.c
+[231/239] /usr/bin/cc -Dzip_EXPORTS -I/home/devel/building/work/src/libzip-1.10.1/lib -I/home/devel/building/work/src/libzip-1.10.1/build -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden -MD -MT lib/CMakeFiles/zip.dir/zip_add.c.o -MF lib/CMakeFiles/zip.dir/zip_add.c.o.d -o lib/CMakeFiles/zip.dir/zip_add.c.o -c /home/devel/building/work/src/libzip-1.10.1/lib/zip_add.c
+[232/239] : && /usr/bin/cc -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -shared -Wl,-soname,libzip.so.5 -o lib/libzip.so.5.5 lib/CMakeFiles/zip.dir/zip_add.c.o lib/CMakeFiles/zip.dir/zip_add_dir.c.o lib/CMakeFiles/zip.dir/zip_add_entry.c.o lib/CMakeFiles/zip.dir/zip_algorithm_deflate.c.o lib/CMakeFiles/zip.dir/zip_buffer.c.o lib/CMakeFiles/zip.dir/zip_close.c.o lib/CMakeFiles/zip.dir/zip_delete.c.o lib/CMakeFiles/zip.dir/zip_dir_add.c.o lib/CMakeFiles/zip.dir/zip_dirent.c.o lib/CMakeFiles/zip.dir/zip_discard.c.o lib/CMakeFiles/zip.dir/zip_entry.c.o lib/CMakeFiles/zip.dir/zip_error.c.o lib/CMakeFiles/zip.dir/zip_error_clear.c.o lib/CMakeFiles/zip.dir/zip_error_get.c.o lib/CMakeFiles/zip.dir/zip_error_get_sys_type.c.o lib/CMakeFiles/zip.dir/zip_error_strerror.c.o lib/CMakeFiles/zip.dir/zip_error_to_str.c.o lib/CMakeFiles/zip.dir/zip_extra_field.c.o lib/CMakeFiles/zip.dir/zip_extra_field_api.c.o lib/CMakeFiles/zip.dir/zip_fclose.c.o lib/CMakeFiles/zip.dir/zip_fdopen.c.o lib/CMakeFiles/zip.dir/zip_file_add.c.o lib/CMakeFiles/zip.dir/zip_file_error_clear.c.o lib/CMakeFiles/zip.dir/zip_file_error_get.c.o lib/CMakeFiles/zip.dir/zip_file_get_comment.c.o lib/CMakeFiles/zip.dir/zip_file_get_external_attributes.c.o lib/CMakeFiles/zip.dir/zip_file_get_offset.c.o lib/CMakeFiles/zip.dir/zip_file_rename.c.o lib/CMakeFiles/zip.dir/zip_file_replace.c.o lib/CMakeFiles/zip.dir/zip_file_set_comment.c.o lib/CMakeFiles/zip.dir/zip_file_set_encryption.c.o lib/CMakeFiles/zip.dir/zip_file_set_external_attributes.c.o lib/CMakeFiles/zip.dir/zip_file_set_mtime.c.o lib/CMakeFiles/zip.dir/zip_file_strerror.c.o lib/CMakeFiles/zip.dir/zip_fopen.c.o lib/CMakeFiles/zip.dir/zip_fopen_encrypted.c.o lib/CMakeFiles/zip.dir/zip_fopen_index.c.o lib/CMakeFiles/zip.dir/zip_fopen_index_encrypted.c.o lib/CMakeFiles/zip.dir/zip_fread.c.o lib/CMakeFiles/zip.dir/zip_fseek.c.o lib/CMakeFiles/zip.dir/zip_ftell.c.o lib/CMakeFiles/zip.dir/zip_get_archive_comment.c.o lib/CMakeFiles/zip.dir/zip_get_archive_flag.c.o lib/CMakeFiles/zip.dir/zip_get_encryption_implementation.c.o lib/CMakeFiles/zip.dir/zip_get_file_comment.c.o lib/CMakeFiles/zip.dir/zip_get_name.c.o lib/CMakeFiles/zip.dir/zip_get_num_entries.c.o lib/CMakeFiles/zip.dir/zip_get_num_files.c.o lib/CMakeFiles/zip.dir/zip_hash.c.o lib/CMakeFiles/zip.dir/zip_io_util.c.o lib/CMakeFiles/zip.dir/zip_libzip_version.c.o lib/CMakeFiles/zip.dir/zip_memdup.c.o lib/CMakeFiles/zip.dir/zip_name_locate.c.o lib/CMakeFiles/zip.dir/zip_new.c.o lib/CMakeFiles/zip.dir/zip_open.c.o lib/CMakeFiles/zip.dir/zip_pkware.c.o lib/CMakeFiles/zip.dir/zip_progress.c.o lib/CMakeFiles/zip.dir/zip_rename.c.o lib/CMakeFiles/zip.dir/zip_replace.c.o lib/CMakeFiles/zip.dir/zip_set_archive_comment.c.o lib/CMakeFiles/zip.dir/zip_set_archive_flag.c.o lib/CMakeFiles/zip.dir/zip_set_default_password.c.o lib/CMakeFiles/zip.dir/zip_set_file_comment.c.o lib/CMakeFiles/zip.dir/zip_set_file_compression.c.o lib/CMakeFiles/zip.dir/zip_set_name.c.o lib/CMakeFiles/zip.dir/zip_source_accept_empty.c.o lib/CMakeFiles/zip.dir/zip_source_begin_write.c.o lib/CMakeFiles/zip.dir/zip_source_begin_write_cloning.c.o lib/CMakeFiles/zip.dir/zip_source_buffer.c.o lib/CMakeFiles/zip.dir/zip_source_call.c.o lib/CMakeFiles/zip.dir/zip_source_close.c.o lib/CMakeFiles/zip.dir/zip_source_commit_write.c.o lib/CMakeFiles/zip.dir/zip_source_compress.c.o lib/CMakeFiles/zip.dir/zip_source_crc.c.o lib/CMakeFiles/zip.dir/zip_source_error.c.o lib/CMakeFiles/zip.dir/zip_source_file_common.c.o lib/CMakeFiles/zip.dir/zip_source_file_stdio.c.o lib/CMakeFiles/zip.dir/zip_source_free.c.o lib/CMakeFiles/zip.dir/zip_source_function.c.o lib/CMakeFiles/zip.dir/zip_source_get_file_attributes.c.o lib/CMakeFiles/zip.dir/zip_source_is_deleted.c.o lib/CMakeFiles/zip.dir/zip_source_layered.c.o lib/CMakeFiles/zip.dir/zip_source_open.c.o lib/CMakeFiles/zip.dir/zip_source_pass_to_lower_layer.c.o lib/CMakeFiles/zip.dir/zip_source_pkware_decode.c.o lib/CMakeFiles/zip.dir/zip_source_pkware_encode.c.o lib/CMakeFiles/zip.dir/zip_source_read.c.o lib/CMakeFiles/zip.dir/zip_source_remove.c.o lib/CMakeFiles/zip.dir/zip_source_rollback_write.c.o lib/CMakeFiles/zip.dir/zip_source_seek.c.o lib/CMakeFiles/zip.dir/zip_source_seek_write.c.o lib/CMakeFiles/zip.dir/zip_source_stat.c.o lib/CMakeFiles/zip.dir/zip_source_supports.c.o lib/CMakeFiles/zip.dir/zip_source_tell.c.o lib/CMakeFiles/zip.dir/zip_source_tell_write.c.o lib/CMakeFiles/zip.dir/zip_source_window.c.o lib/CMakeFiles/zip.dir/zip_source_write.c.o lib/CMakeFiles/zip.dir/zip_source_zip.c.o lib/CMakeFiles/zip.dir/zip_source_zip_new.c.o lib/CMakeFiles/zip.dir/zip_stat.c.o lib/CMakeFiles/zip.dir/zip_stat_index.c.o lib/CMakeFiles/zip.dir/zip_stat_init.c.o lib/CMakeFiles/zip.dir/zip_strerror.c.o lib/CMakeFiles/zip.dir/zip_string.c.o lib/CMakeFiles/zip.dir/zip_unchange.c.o lib/CMakeFiles/zip.dir/zip_unchange_all.c.o lib/CMakeFiles/zip.dir/zip_unchange_archive.c.o lib/CMakeFiles/zip.dir/zip_unchange_data.c.o lib/CMakeFiles/zip.dir/zip_utf-8.c.o lib/CMakeFiles/zip.dir/zip_err_str.c.o lib/CMakeFiles/zip.dir/zip_source_file_stdio_named.c.o lib/CMakeFiles/zip.dir/zip_random_unix.c.o lib/CMakeFiles/zip.dir/zip_algorithm_bzip2.c.o lib/CMakeFiles/zip.dir/zip_algorithm_xz.c.o lib/CMakeFiles/zip.dir/zip_algorithm_zstd.c.o lib/CMakeFiles/zip.dir/zip_crypto_openssl.c.o lib/CMakeFiles/zip.dir/zip_winzip_aes.c.o lib/CMakeFiles/zip.dir/zip_source_winzip_aes_decode.c.o lib/CMakeFiles/zip.dir/zip_source_winzip_aes_encode.c.o  /usr/lib/libbz2.so  /usr/lib/liblzma.so  /usr/lib/libzstd.so  /usr/lib/libcrypto.so  /usr/lib/libz.so && :
+[233/239] /usr/bin/cmake -E cmake_symlink_library lib/libzip.so.5.5  lib/libzip.so.5 lib/libzip.so && :
+[234/239] : && /usr/bin/cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  examples/CMakeFiles/in-memory.dir/in-memory.c.o -o examples/in-memory  -Wl,-rpath,/home/devel/building/work/src/libzip-1.10.1/build/lib  lib/libzip.so.5.5 && :
+[235/239] : && /usr/bin/cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  examples/CMakeFiles/autoclose-archive.dir/autoclose-archive.c.o -o examples/autoclose-archive  -Wl,-rpath,/home/devel/building/work/src/libzip-1.10.1/build/lib  lib/libzip.so.5.5 && :
+[236/239] : && /usr/bin/cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  examples/CMakeFiles/add-compressed-data.dir/add-compressed-data.c.o -o examples/add-compressed-data  -Wl,-rpath,/home/devel/building/work/src/libzip-1.10.1/build/lib  lib/libzip.so.5.5 && :
+[237/239] : && /usr/bin/cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  src/CMakeFiles/ziptool.dir/ziptool.c.o -o src/ziptool  -Wl,-rpath,/home/devel/building/work/src/libzip-1.10.1/build/lib:  lib/libzip.so.5.5 && :
+[238/239] : && /usr/bin/cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  src/CMakeFiles/zipmerge.dir/zipmerge.c.o -o src/zipmerge  -Wl,-rpath,/home/devel/building/work/src/libzip-1.10.1/build/lib:  lib/libzip.so.5.5 && :
+[239/239] : && /usr/bin/cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  src/CMakeFiles/zipcmp.dir/zipcmp.c.o src/CMakeFiles/zipcmp.dir/diff_output.c.o -o src/zipcmp  -Wl,-rpath,/home/devel/building/work/src/libzip-1.10.1/build/lib:  lib/libzip.so.5.5  /usr/lib/libz.so && :
++ DESTDIR=/home/devel/building/work/pkg
++ ninja install
+[1/1] Install the project...
+-- Install configuration: "None"
+-- Installing: /home/devel/building/work/pkg/usr/lib/pkgconfig/libzip.pc
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/libzip/modules/FindNettle.cmake
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/libzip/modules/Findzstd.cmake
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/libzip/modules/FindMbedTLS.cmake
+-- Installing: /home/devel/building/work/pkg/usr/include/zipconf.h
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/libzip/libzip-config.cmake
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/libzip/libzip-config-version.cmake
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/libzip/libzip-targets.cmake
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/libzip/libzip-targets-none.cmake
+-- Installing: /home/devel/building/work/pkg/usr/lib/libzip.so.5.5
+-- Installing: /home/devel/building/work/pkg/usr/lib/libzip.so.5
+-- Installing: /home/devel/building/work/pkg/usr/lib/libzip.so
+-- Installing: /home/devel/building/work/pkg/usr/include/zip.h
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/ZIP_SOURCE_GET_ARGS.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/libzip.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_add.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_add_dir.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_close.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_compression_method_supported.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_delete.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_dir_add.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_discard.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_encryption_method_supported.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_error_clear.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_error_code_system.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_error_code_zip.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_error_fini.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_error_get.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_error_get_sys_type.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_error_init.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_error_set.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_error_strerror.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_error_system_type.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_error_to_data.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_error_to_str.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_errors.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_fclose.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_fdopen.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_add.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_attributes_init.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_extra_field_delete.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_extra_field_get.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_extra_field_set.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_extra_fields_count.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_get_comment.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_get_error.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_get_external_attributes.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_rename.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_set_comment.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_set_encryption.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_set_external_attributes.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_set_mtime.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_strerror.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_fopen.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_fopen_encrypted.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_fread.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_fseek.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_ftell.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_get_archive_comment.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_get_archive_flag.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_get_error.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_get_file_comment.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_get_name.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_get_num_entries.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_get_num_files.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_libzip_version.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_name_locate.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_open.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_register_cancel_callback_with_state.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_register_progress_callback.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_register_progress_callback_with_state.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_rename.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_set_archive_comment.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_set_archive_flag.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_set_default_password.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_set_file_comment.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_set_file_compression.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_begin_write.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_buffer.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_buffer_fragment.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_close.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_commit_write.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_error.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_file.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_filep.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_free.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_function.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_is_deleted.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_is_seekable.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_layered.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_keep.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_make_command_bitmap.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_open.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_read.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_rollback_write.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_seek.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_seek_compute_offset.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_seek_write.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_stat.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_tell.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_tell_write.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_win32a.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_win32handle.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_win32w.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_window_create.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_write.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_zip.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_zip_file.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_stat.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_stat_init.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_unchange.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_unchange_all.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_unchange_archive.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man1/zipcmp.1
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man1/zipmerge.1
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man1/ziptool.1
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_replace.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_error_clear.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_error_get.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_error_init_with_code.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_replace.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_extra_field_delete_by_id.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_extra_field_get_by_id.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_extra_fields_count_by_id.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_set_dostime.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_strerror.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_fopen_index.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_fopen_index_encrypted.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_file_is_seekable.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_open_from_source.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_begin_write_cloning.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_buffer_create.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_buffer_fragment_create.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_file_create.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_filep_create.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_function_create.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_layered_create.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_win32a_create.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_win32handle_create.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_win32w_create.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_zip_create.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_source_zip_file_create.3
+-- Installing: /home/devel/building/work/pkg/usr/share/man/man3/zip_stat_index.3
+-- Installing: /home/devel/building/work/pkg/usr/bin/zipcmp
+-- Set non-toolchain portion of runtime path of "/home/devel/building/work/pkg/usr/bin/zipcmp" to ""
+-- Installing: /home/devel/building/work/pkg/usr/bin/zipmerge
+-- Set non-toolchain portion of runtime path of "/home/devel/building/work/pkg/usr/bin/zipmerge" to ""
+-- Installing: /home/devel/building/work/pkg/usr/bin/ziptool
+-- Set non-toolchain portion of runtime path of "/home/devel/building/work/pkg/usr/bin/ziptool" to ""
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 23:38 usr/
+drwxr-xr-x  0 root   root        0 May  7 23:38 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 23:38 usr/include/
+drwxr-xr-x  0 root   root        0 May  7 23:38 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 23:38 usr/bin/
+-rwxr-xr-x  0 root   root    27704 May  7 23:38 usr/bin/zipcmp
+-rwxr-xr-x  0 root   root    15288 May  7 23:38 usr/bin/zipmerge
+-rwxr-xr-x  0 root   root    35416 May  7 23:38 usr/bin/ziptool
+drwxr-xr-x  0 root   root        0 May  7 23:38 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  7 23:38 usr/share/man/man3/
+drwxr-xr-x  0 root   root        0 May  7 23:38 usr/share/man/man1/
+-rw-r--r--  0 root   root     1632 May  7 23:38 usr/share/man/man1/zipcmp.1.gz
+-rw-r--r--  0 root   root     1627 May  7 23:38 usr/share/man/man1/zipmerge.1.gz
+-rw-r--r--  0 root   root     2877 May  7 23:38 usr/share/man/man1/ziptool.1.gz
+-rw-r--r--  0 root   root     1333 May  7 23:38 usr/share/man/man3/ZIP_SOURCE_GET_ARGS.3.gz
+-rw-r--r--  0 root   root     2490 May  7 23:38 usr/share/man/man3/libzip.3.gz
+-rw-r--r--  0 root   root     1383 May  7 23:38 usr/share/man/man3/zip_add.3.gz
+-rw-r--r--  0 root   root     1281 May  7 23:38 usr/share/man/man3/zip_add_dir.3.gz
+-rw-r--r--  0 root   root     1989 May  7 23:38 usr/share/man/man3/zip_close.3.gz
+-rw-r--r--  0 root   root     1270 May  7 23:38 usr/share/man/man3/zip_compression_method_supported.3.gz
+-rw-r--r--  0 root   root     1348 May  7 23:38 usr/share/man/man3/zip_delete.3.gz
+-rw-r--r--  0 root   root     1686 May  7 23:38 usr/share/man/man3/zip_dir_add.3.gz
+-rw-r--r--  0 root   root     1194 May  7 23:38 usr/share/man/man3/zip_discard.3.gz
+-rw-r--r--  0 root   root     1270 May  7 23:38 usr/share/man/man3/zip_encryption_method_supported.3.gz
+-rw-r--r--  0 root   root     1217 May  7 23:38 usr/share/man/man3/zip_error_clear.3.gz
+-rw-r--r--  0 root   root     1244 May  7 23:38 usr/share/man/man3/zip_error_code_system.3.gz
+-rw-r--r--  0 root   root     1188 May  7 23:38 usr/share/man/man3/zip_error_code_zip.3.gz
+-rw-r--r--  0 root   root     1193 May  7 23:38 usr/share/man/man3/zip_error_fini.3.gz
+-rw-r--r--  0 root   root     1414 May  7 23:38 usr/share/man/man3/zip_error_get.3.gz
+-rw-r--r--  0 root   root     1313 May  7 23:38 usr/share/man/man3/zip_error_get_sys_type.3.gz
+-rw-r--r--  0 root   root     1334 May  7 23:38 usr/share/man/man3/zip_error_init.3.gz
+-rw-r--r--  0 root   root     1247 May  7 23:38 usr/share/man/man3/zip_error_set.3.gz
+-rw-r--r--  0 root   root     1258 May  7 23:38 usr/share/man/man3/zip_error_strerror.3.gz
+-rw-r--r--  0 root   root     1304 May  7 23:38 usr/share/man/man3/zip_error_system_type.3.gz
+-rw-r--r--  0 root   root     1349 May  7 23:38 usr/share/man/man3/zip_error_to_data.3.gz
+-rw-r--r--  0 root   root     1416 May  7 23:38 usr/share/man/man3/zip_error_to_str.3.gz
+-rw-r--r--  0 root   root     1646 May  7 23:38 usr/share/man/man3/zip_errors.3.gz
+-rw-r--r--  0 root   root     1228 May  7 23:38 usr/share/man/man3/zip_fclose.3.gz
+-rw-r--r--  0 root   root     1909 May  7 23:38 usr/share/man/man3/zip_fdopen.3.gz
+-rw-r--r--  0 root   root     2060 May  7 23:38 usr/share/man/man3/zip_file_add.3.gz
+-rw-r--r--  0 root   root     1230 May  7 23:38 usr/share/man/man3/zip_file_attributes_init.3.gz
+-rw-r--r--  0 root   root     1809 May  7 23:38 usr/share/man/man3/zip_file_extra_field_delete.3.gz
+-rw-r--r--  0 root   root     2061 May  7 23:38 usr/share/man/man3/zip_file_extra_field_get.3.gz
+-rw-r--r--  0 root   root     1850 May  7 23:38 usr/share/man/man3/zip_file_extra_field_set.3.gz
+-rw-r--r--  0 root   root     1752 May  7 23:38 usr/share/man/man3/zip_file_extra_fields_count.3.gz
+-rw-r--r--  0 root   root     1860 May  7 23:38 usr/share/man/man3/zip_file_get_comment.3.gz
+-rw-r--r--  0 root   root     1168 May  7 23:38 usr/share/man/man3/zip_file_get_error.3.gz
+-rw-r--r--  0 root   root     2036 May  7 23:38 usr/share/man/man3/zip_file_get_external_attributes.3.gz
+-rw-r--r--  0 root   root     1632 May  7 23:38 usr/share/man/man3/zip_file_rename.3.gz
+-rw-r--r--  0 root   root     1703 May  7 23:38 usr/share/man/man3/zip_file_set_comment.3.gz
+-rw-r--r--  0 root   root     1808 May  7 23:38 usr/share/man/man3/zip_file_set_encryption.3.gz
+-rw-r--r--  0 root   root     1529 May  7 23:38 usr/share/man/man3/zip_file_set_external_attributes.3.gz
+-rw-r--r--  0 root   root     1907 May  7 23:38 usr/share/man/man3/zip_file_set_mtime.3.gz
+-rw-r--r--  0 root   root     1381 May  7 23:38 usr/share/man/man3/zip_file_strerror.3.gz
+-rw-r--r--  0 root   root     2039 May  7 23:38 usr/share/man/man3/zip_fopen.3.gz
+-rw-r--r--  0 root   root     1970 May  7 23:38 usr/share/man/man3/zip_fopen_encrypted.3.gz
+-rw-r--r--  0 root   root     1389 May  7 23:38 usr/share/man/man3/zip_fread.3.gz
+-rw-r--r--  0 root   root     1416 May  7 23:38 usr/share/man/man3/zip_fseek.3.gz
+-rw-r--r--  0 root   root     1231 May  7 23:38 usr/share/man/man3/zip_ftell.3.gz
+-rw-r--r--  0 root   root     1801 May  7 23:38 usr/share/man/man3/zip_get_archive_comment.3.gz
+-rw-r--r--  0 root   root     1659 May  7 23:38 usr/share/man/man3/zip_get_archive_flag.3.gz
+-rw-r--r--  0 root   root     1167 May  7 23:38 usr/share/man/man3/zip_get_error.3.gz
+-rw-r--r--  0 root   root     1320 May  7 23:38 usr/share/man/man3/zip_get_file_comment.3.gz
+-rw-r--r--  0 root   root     1870 May  7 23:38 usr/share/man/man3/zip_get_name.3.gz
+-rw-r--r--  0 root   root     1462 May  7 23:38 usr/share/man/man3/zip_get_num_entries.3.gz
+-rw-r--r--  0 root   root     1294 May  7 23:38 usr/share/man/man3/zip_get_num_files.3.gz
+-rw-r--r--  0 root   root     1253 May  7 23:38 usr/share/man/man3/zip_libzip_version.3.gz
+-rw-r--r--  0 root   root     1963 May  7 23:38 usr/share/man/man3/zip_name_locate.3.gz
+-rw-r--r--  0 root   root     2272 May  7 23:38 usr/share/man/man3/zip_open.3.gz
+-rw-r--r--  0 root   root     1551 May  7 23:38 usr/share/man/man3/zip_register_cancel_callback_with_state.3.gz
+-rw-r--r--  0 root   root     1435 May  7 23:38 usr/share/man/man3/zip_register_progress_callback.3.gz
+-rw-r--r--  0 root   root     1622 May  7 23:38 usr/share/man/man3/zip_register_progress_callback_with_state.3.gz
+-rw-r--r--  0 root   root     1265 May  7 23:38 usr/share/man/man3/zip_rename.3.gz
+-rw-r--r--  0 root   root     1538 May  7 23:38 usr/share/man/man3/zip_set_archive_comment.3.gz
+-rw-r--r--  0 root   root     1581 May  7 23:38 usr/share/man/man3/zip_set_archive_flag.3.gz
+-rw-r--r--  0 root   root     1567 May  7 23:38 usr/share/man/man3/zip_set_default_password.3.gz
+-rw-r--r--  0 root   root     1351 May  7 23:38 usr/share/man/man3/zip_set_file_comment.3.gz
+-rw-r--r--  0 root   root     1998 May  7 23:38 usr/share/man/man3/zip_set_file_compression.3.gz
+-rw-r--r--  0 root   root     1447 May  7 23:38 usr/share/man/man3/zip_source.3.gz
+-rw-r--r--  0 root   root     1463 May  7 23:38 usr/share/man/man3/zip_source_begin_write.3.gz
+-rw-r--r--  0 root   root     1550 May  7 23:38 usr/share/man/man3/zip_source_buffer.3.gz
+-rw-r--r--  0 root   root     1713 May  7 23:38 usr/share/man/man3/zip_source_buffer_fragment.3.gz
+-rw-r--r--  0 root   root     1290 May  7 23:38 usr/share/man/man3/zip_source_close.3.gz
+-rw-r--r--  0 root   root     1326 May  7 23:38 usr/share/man/man3/zip_source_commit_write.3.gz
+-rw-r--r--  0 root   root     1178 May  7 23:38 usr/share/man/man3/zip_source_error.3.gz
+-rw-r--r--  0 root   root     1946 May  7 23:38 usr/share/man/man3/zip_source_file.3.gz
+-rw-r--r--  0 root   root     1616 May  7 23:38 usr/share/man/man3/zip_source_filep.3.gz
+-rw-r--r--  0 root   root     1297 May  7 23:38 usr/share/man/man3/zip_source_free.3.gz
+-rw-r--r--  0 root   root     4461 May  7 23:38 usr/share/man/man3/zip_source_function.3.gz
+-rw-r--r--  0 root   root     1254 May  7 23:38 usr/share/man/man3/zip_source_is_deleted.3.gz
+-rw-r--r--  0 root   root     1232 May  7 23:38 usr/share/man/man3/zip_source_is_seekable.3.gz
+-rw-r--r--  0 root   root     2396 May  7 23:38 usr/share/man/man3/zip_source_layered.3.gz
+-rw-r--r--  0 root   root     1173 May  7 23:38 usr/share/man/man3/zip_source_keep.3.gz
+-rw-r--r--  0 root   root     1292 May  7 23:38 usr/share/man/man3/zip_source_make_command_bitmap.3.gz
+-rw-r--r--  0 root   root     1272 May  7 23:38 usr/share/man/man3/zip_source_open.3.gz
+-rw-r--r--  0 root   root     1404 May  7 23:38 usr/share/man/man3/zip_source_read.3.gz
+-rw-r--r--  0 root   root     1277 May  7 23:38 usr/share/man/man3/zip_source_rollback_write.3.gz
+-rw-r--r--  0 root   root     1398 May  7 23:38 usr/share/man/man3/zip_source_seek.3.gz
+-rw-r--r--  0 root   root     1462 May  7 23:38 usr/share/man/man3/zip_source_seek_compute_offset.3.gz
+-rw-r--r--  0 root   root     1430 May  7 23:38 usr/share/man/man3/zip_source_seek_write.3.gz
+-rw-r--r--  0 root   root     1868 May  7 23:38 usr/share/man/man3/zip_source_stat.3.gz
+-rw-r--r--  0 root   root     1334 May  7 23:38 usr/share/man/man3/zip_source_tell.3.gz
+-rw-r--r--  0 root   root     1371 May  7 23:38 usr/share/man/man3/zip_source_tell_write.3.gz
+-rw-r--r--  0 root   root     1689 May  7 23:38 usr/share/man/man3/zip_source_win32a.3.gz
+-rw-r--r--  0 root   root     1642 May  7 23:38 usr/share/man/man3/zip_source_win32handle.3.gz
+-rw-r--r--  0 root   root     1693 May  7 23:38 usr/share/man/man3/zip_source_win32w.3.gz
+-rw-r--r--  0 root   root     1586 May  7 23:38 usr/share/man/man3/zip_source_window_create.3.gz
+-rw-r--r--  0 root   root     1388 May  7 23:38 usr/share/man/man3/zip_source_write.3.gz
+-rw-r--r--  0 root   root     1908 May  7 23:38 usr/share/man/man3/zip_source_zip.3.gz
+-rw-r--r--  0 root   root     1931 May  7 23:38 usr/share/man/man3/zip_source_zip_file.3.gz
+-rw-r--r--  0 root   root     2159 May  7 23:38 usr/share/man/man3/zip_stat.3.gz
+-rw-r--r--  0 root   root     1365 May  7 23:38 usr/share/man/man3/zip_stat_init.3.gz
+-rw-r--r--  0 root   root     1392 May  7 23:38 usr/share/man/man3/zip_unchange.3.gz
+-rw-r--r--  0 root   root     1266 May  7 23:38 usr/share/man/man3/zip_unchange_all.3.gz
+-rw-r--r--  0 root   root     1284 May  7 23:38 usr/share/man/man3/zip_unchange_archive.3.gz
+-rw-r--r--  0 root   root     1387 May  7 23:38 usr/share/man/man3/zip_replace.3.gz
+-rw-r--r--  0 root   root     1222 May  7 23:38 usr/share/man/man3/zip_file_error_clear.3.gz
+-rw-r--r--  0 root   root     1419 May  7 23:38 usr/share/man/man3/zip_file_error_get.3.gz
+-rw-r--r--  0 root   root     1344 May  7 23:38 usr/share/man/man3/zip_error_init_with_code.3.gz
+-rw-r--r--  0 root   root     2064 May  7 23:38 usr/share/man/man3/zip_file_replace.3.gz
+-rw-r--r--  0 root   root     1815 May  7 23:38 usr/share/man/man3/zip_file_extra_field_delete_by_id.3.gz
+-rw-r--r--  0 root   root     2067 May  7 23:38 usr/share/man/man3/zip_file_extra_field_get_by_id.3.gz
+-rw-r--r--  0 root   root     1758 May  7 23:38 usr/share/man/man3/zip_file_extra_fields_count_by_id.3.gz
+-rw-r--r--  0 root   root     1909 May  7 23:38 usr/share/man/man3/zip_file_set_dostime.3.gz
+-rw-r--r--  0 root   root     1376 May  7 23:38 usr/share/man/man3/zip_strerror.3.gz
+-rw-r--r--  0 root   root     2045 May  7 23:38 usr/share/man/man3/zip_fopen_index.3.gz
+-rw-r--r--  0 root   root     1976 May  7 23:38 usr/share/man/man3/zip_fopen_index_encrypted.3.gz
+-rw-r--r--  0 root   root     1427 May  7 23:38 usr/share/man/man3/zip_file_is_seekable.3.gz
+-rw-r--r--  0 root   root     2284 May  7 23:38 usr/share/man/man3/zip_open_from_source.3.gz
+-rw-r--r--  0 root   root     1471 May  7 23:38 usr/share/man/man3/zip_source_begin_write_cloning.3.gz
+-rw-r--r--  0 root   root     1557 May  7 23:38 usr/share/man/man3/zip_source_buffer_create.3.gz
+-rw-r--r--  0 root   root     1720 May  7 23:38 usr/share/man/man3/zip_source_buffer_fragment_create.3.gz
+-rw-r--r--  0 root   root     1953 May  7 23:38 usr/share/man/man3/zip_source_file_create.3.gz
+-rw-r--r--  0 root   root     1623 May  7 23:38 usr/share/man/man3/zip_source_filep_create.3.gz
+-rw-r--r--  0 root   root     4468 May  7 23:38 usr/share/man/man3/zip_source_function_create.3.gz
+-rw-r--r--  0 root   root     2403 May  7 23:38 usr/share/man/man3/zip_source_layered_create.3.gz
+-rw-r--r--  0 root   root     1696 May  7 23:38 usr/share/man/man3/zip_source_win32a_create.3.gz
+-rw-r--r--  0 root   root     1649 May  7 23:38 usr/share/man/man3/zip_source_win32handle_create.3.gz
+-rw-r--r--  0 root   root     1700 May  7 23:38 usr/share/man/man3/zip_source_win32w_create.3.gz
+-rw-r--r--  0 root   root     1915 May  7 23:38 usr/share/man/man3/zip_source_zip_create.3.gz
+-rw-r--r--  0 root   root     1938 May  7 23:38 usr/share/man/man3/zip_source_zip_file_create.3.gz
+-rw-r--r--  0 root   root     2165 May  7 23:38 usr/share/man/man3/zip_stat_index.3.gz
+-rw-r--r--  0 root   root     1183 May  7 23:38 usr/include/zipconf.h
+-rw-r--r--  0 root   root    29270 Aug 23  2023 usr/include/zip.h
+drwxr-xr-x  0 root   root        0 May  7 23:38 usr/lib/pkgconfig/
+drwxr-xr-x  0 root   root        0 May  7 23:38 usr/lib/cmake/
+-rwxr-xr-x  0 root   root   131304 May  7 23:38 usr/lib/libzip.so.5.5
+lrwxrwxrwx  0 root   root        0 May  7 23:38 usr/lib/libzip.so.5 -> libzip.so.5.5
+lrwxrwxrwx  0 root   root        0 May  7 23:38 usr/lib/libzip.so -> libzip.so.5
+drwxr-xr-x  0 root   root        0 May  7 23:38 usr/lib/cmake/libzip/
+drwxr-xr-x  0 root   root        0 May  7 23:38 usr/lib/cmake/libzip/modules/
+-rw-r--r--  0 root   root     2208 May  7 23:38 usr/lib/cmake/libzip/libzip-config.cmake
+-rw-r--r--  0 root   root     1862 May  7 23:38 usr/lib/cmake/libzip/libzip-config-version.cmake
+-rw-r--r--  0 root   root     4786 May  7 23:38 usr/lib/cmake/libzip/libzip-targets.cmake
+-rw-r--r--  0 root   root     2080 May  7 23:38 usr/lib/cmake/libzip/libzip-targets-none.cmake
+-rw-r--r--  0 root   root     4422 Aug 23  2023 usr/lib/cmake/libzip/modules/FindNettle.cmake
+-rw-r--r--  0 root   root     5766 Aug 23  2023 usr/lib/cmake/libzip/modules/Findzstd.cmake
+-rw-r--r--  0 root   root     4488 Aug 23  2023 usr/lib/cmake/libzip/modules/FindMbedTLS.cmake
+-rw-r--r--  0 root   root      310 May  7 23:38 usr/lib/pkgconfig/libzip.pc
+=======> Building '/home/devel/packages/libzip#1.10.1-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling libzip 1.10.1-1
+prt-get: /usr/bin/pkgadd -u libzip#1.10.1-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 23:38:14 2024
+

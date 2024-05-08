@@ -1,0 +1,282 @@
+prt-get: updating /usr/ports/opt-x86_64/yaml
+prt-get: starting build Wed May  8 01:45:49 2024
+=======> Building '/home/devel/packages/yaml#0.2.5-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/yaml-0.2.5.tar.gz
++ build
++ cd yaml-0.2.5
++ ./configure --prefix=/usr --disable-static
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for doxygen... false
+checking for ANSI C header files... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating yaml-0.1.pc
+config.status: creating include/Makefile
+config.status: creating src/Makefile
+config.status: creating Makefile
+config.status: creating tests/Makefile
+config.status: creating include/config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
++ make V=1
+Making all in include
+make[1]: Entering directory '/home/devel/building/work/src/yaml-0.2.5/include'
+make  all-am
+make[2]: Entering directory '/home/devel/building/work/src/yaml-0.2.5/include'
+make[2]: Leaving directory '/home/devel/building/work/src/yaml-0.2.5/include'
+make[1]: Leaving directory '/home/devel/building/work/src/yaml-0.2.5/include'
+Making all in src
+make[1]: Entering directory '/home/devel/building/work/src/yaml-0.2.5/src'
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT api.lo -MD -MP -MF .deps/api.Tpo -c -o api.lo api.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT reader.lo -MD -MP -MF .deps/reader.Tpo -c -o reader.lo reader.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT scanner.lo -MD -MP -MF .deps/scanner.Tpo -c -o scanner.lo scanner.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT parser.lo -MD -MP -MF .deps/parser.Tpo -c -o parser.lo parser.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT loader.lo -MD -MP -MF .deps/loader.Tpo -c -o loader.lo loader.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT writer.lo -MD -MP -MF .deps/writer.Tpo -c -o writer.lo writer.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT emitter.lo -MD -MP -MF .deps/emitter.Tpo -c -o emitter.lo emitter.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT dumper.lo -MD -MP -MF .deps/dumper.Tpo -c -o dumper.lo dumper.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT parser.lo -MD -MP -MF .deps/parser.Tpo -c parser.c  -fPIC -DPIC -o .libs/parser.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT api.lo -MD -MP -MF .deps/api.Tpo -c api.c  -fPIC -DPIC -o .libs/api.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT scanner.lo -MD -MP -MF .deps/scanner.Tpo -c scanner.c  -fPIC -DPIC -o .libs/scanner.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT loader.lo -MD -MP -MF .deps/loader.Tpo -c loader.c  -fPIC -DPIC -o .libs/loader.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT dumper.lo -MD -MP -MF .deps/dumper.Tpo -c dumper.c  -fPIC -DPIC -o .libs/dumper.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT reader.lo -MD -MP -MF .deps/reader.Tpo -c reader.c  -fPIC -DPIC -o .libs/reader.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT emitter.lo -MD -MP -MF .deps/emitter.Tpo -c emitter.c  -fPIC -DPIC -o .libs/emitter.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../include -I../include -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT writer.lo -MD -MP -MF .deps/writer.Tpo -c writer.c  -fPIC -DPIC -o .libs/writer.o
+emitter.c: In function 'yaml_emitter_write_plain_scalar':
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+   28 |      && ((emitter->line_break == YAML_CR_BREAK ?                                \
+      |      ^~
+emitter.c:56:11: note: in expansion of macro 'PUT_BREAK'
+   56 |          (PUT_BREAK(emitter),                                                   \
+      |           ^~~~~~~~~
+emitter.c:1962:18: note: in expansion of macro 'WRITE_BREAK'
+ 1962 |             if (!WRITE_BREAK(emitter, string)) return 0;
+      |                  ^~~~~~~~~~~
+emitter.c: In function 'yaml_emitter_write_single_quoted_scalar':
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+   28 |      && ((emitter->line_break == YAML_CR_BREAK ?                                \
+      |      ^~
+emitter.c:56:11: note: in expansion of macro 'PUT_BREAK'
+   56 |          (PUT_BREAK(emitter),                                                   \
+      |           ^~~~~~~~~
+emitter.c:2019:18: note: in expansion of macro 'WRITE_BREAK'
+ 2019 |             if (!WRITE_BREAK(emitter, string)) return 0;
+      |                  ^~~~~~~~~~~
+emitter.c: In function 'yaml_emitter_write_literal_scalar':
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+   28 |      && ((emitter->line_break == YAML_CR_BREAK ?                                \
+      |      ^~
+emitter.c:56:11: note: in expansion of macro 'PUT_BREAK'
+   56 |          (PUT_BREAK(emitter),                                                   \
+      |           ^~~~~~~~~
+emitter.c:2285:18: note: in expansion of macro 'WRITE_BREAK'
+ 2285 |             if (!WRITE_BREAK(emitter, string)) return 0;
+      |                  ^~~~~~~~~~~
+emitter.c: In function 'yaml_emitter_write_folded_scalar':
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+   28 |      && ((emitter->line_break == YAML_CR_BREAK ?                                \
+      |      ^~
+emitter.c:56:11: note: in expansion of macro 'PUT_BREAK'
+   56 |          (PUT_BREAK(emitter),                                                   \
+      |           ^~~~~~~~~
+emitter.c:2334:18: note: in expansion of macro 'WRITE_BREAK'
+ 2334 |             if (!WRITE_BREAK(emitter, string)) return 0;
+      |                  ^~~~~~~~~~~
+mv -f .deps/reader.Tpo .deps/reader.Plo
+mv -f .deps/dumper.Tpo .deps/dumper.Plo
+mv -f .deps/loader.Tpo .deps/loader.Plo
+mv -f .deps/writer.Tpo .deps/writer.Plo
+mv -f .deps/parser.Tpo .deps/parser.Plo
+mv -f .deps/api.Tpo .deps/api.Plo
+mv -f .deps/emitter.Tpo .deps/emitter.Plo
+mv -f .deps/scanner.Tpo .deps/scanner.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -no-undefined -release 0 -version-info 2:9:0  -o libyaml.la -rpath /usr/lib api.lo reader.lo scanner.lo parser.lo loader.lo writer.lo emitter.lo dumper.lo  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/api.o .libs/reader.o .libs/scanner.o .libs/parser.o .libs/loader.o .libs/writer.o .libs/emitter.o .libs/dumper.o    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,libyaml-0.so.2 -o .libs/libyaml-0.so.2.0.9
+libtool: link: (cd ".libs" && rm -f "libyaml-0.so.2" && ln -s "libyaml-0.so.2.0.9" "libyaml-0.so.2")
+libtool: link: (cd ".libs" && rm -f "libyaml.so" && ln -s "libyaml-0.so.2.0.9" "libyaml.so")
+libtool: link: ( cd ".libs" && rm -f "libyaml.la" && ln -s "../libyaml.la" "libyaml.la" )
+make[1]: Leaving directory '/home/devel/building/work/src/yaml-0.2.5/src'
+Making all in .
+make[1]: Entering directory '/home/devel/building/work/src/yaml-0.2.5'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/home/devel/building/work/src/yaml-0.2.5'
+Making all in tests
+make[1]: Entering directory '/home/devel/building/work/src/yaml-0.2.5/tests'
+gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT run-scanner.o -MD -MP -MF .deps/run-scanner.Tpo -c -o run-scanner.o run-scanner.c
+gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT run-parser.o -MD -MP -MF .deps/run-parser.Tpo -c -o run-parser.o run-parser.c
+gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT run-loader.o -MD -MP -MF .deps/run-loader.Tpo -c -o run-loader.o run-loader.c
+gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT run-emitter.o -MD -MP -MF .deps/run-emitter.Tpo -c -o run-emitter.o run-emitter.c
+gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT run-dumper.o -MD -MP -MF .deps/run-dumper.Tpo -c -o run-dumper.o run-dumper.c
+gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT example-reformatter.o -MD -MP -MF .deps/example-reformatter.Tpo -c -o example-reformatter.o example-reformatter.c
+gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT example-reformatter-alt.o -MD -MP -MF .deps/example-reformatter-alt.Tpo -c -o example-reformatter-alt.o example-reformatter-alt.c
+gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT example-deconstructor.o -MD -MP -MF .deps/example-deconstructor.Tpo -c -o example-deconstructor.o example-deconstructor.c
+mv -f .deps/run-scanner.Tpo .deps/run-scanner.Po
+mv -f .deps/run-loader.Tpo .deps/run-loader.Po
+gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT example-deconstructor-alt.o -MD -MP -MF .deps/example-deconstructor-alt.Tpo -c -o example-deconstructor-alt.o example-deconstructor-alt.c
+gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT run-parser-test-suite.o -MD -MP -MF .deps/run-parser-test-suite.Tpo -c -o run-parser-test-suite.o run-parser-test-suite.c
+mv -f .deps/run-parser.Tpo .deps/run-parser.Po
+gcc -DHAVE_CONFIG_H -I. -I../include  -I../include -Wall   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT run-emitter-test-suite.o -MD -MP -MF .deps/run-emitter-test-suite.Tpo -c -o run-emitter-test-suite.o run-emitter-test-suite.c
+mv -f .deps/example-reformatter.Tpo .deps/example-reformatter.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o run-scanner run-scanner.o ../src/libyaml.la 
+mv -f .deps/example-reformatter-alt.Tpo .deps/example-reformatter-alt.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o run-parser run-parser.o ../src/libyaml.la 
+mv -f .deps/run-emitter.Tpo .deps/run-emitter.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o run-loader run-loader.o ../src/libyaml.la 
+mv -f .deps/run-parser-test-suite.Tpo .deps/run-parser-test-suite.Po
+mv -f .deps/run-dumper.Tpo .deps/run-dumper.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o run-emitter run-emitter.o ../src/libyaml.la 
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o example-reformatter example-reformatter.o ../src/libyaml.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/run-scanner run-scanner.o  ../src/.libs/libyaml.so
+mv -f .deps/run-emitter-test-suite.Tpo .deps/run-emitter-test-suite.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o example-reformatter-alt example-reformatter-alt.o ../src/libyaml.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/run-parser run-parser.o  ../src/.libs/libyaml.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/run-loader run-loader.o  ../src/.libs/libyaml.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/example-reformatter example-reformatter.o  ../src/.libs/libyaml.so
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o run-parser-test-suite run-parser-test-suite.o ../src/libyaml.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/run-emitter run-emitter.o  ../src/.libs/libyaml.so
+mv -f .deps/example-deconstructor-alt.Tpo .deps/example-deconstructor-alt.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o run-emitter-test-suite run-emitter-test-suite.o ../src/libyaml.la 
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o run-dumper run-dumper.o ../src/libyaml.la 
+mv -f .deps/example-deconstructor.Tpo .deps/example-deconstructor.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o example-deconstructor-alt example-deconstructor-alt.o ../src/libyaml.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/example-reformatter-alt example-reformatter-alt.o  ../src/.libs/libyaml.so
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o example-deconstructor example-deconstructor.o ../src/libyaml.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/run-parser-test-suite run-parser-test-suite.o  ../src/.libs/libyaml.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/run-emitter-test-suite run-emitter-test-suite.o  ../src/.libs/libyaml.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/run-dumper run-dumper.o  ../src/.libs/libyaml.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/example-deconstructor-alt example-deconstructor-alt.o  ../src/.libs/libyaml.so
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/example-deconstructor example-deconstructor.o  ../src/.libs/libyaml.so
+make[1]: Leaving directory '/home/devel/building/work/src/yaml-0.2.5/tests'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in include
+make[1]: Entering directory '/home/devel/building/work/src/yaml-0.2.5/include'
+make[2]: Entering directory '/home/devel/building/work/src/yaml-0.2.5/include'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include'
+ /usr/bin/install -c -m 644  yaml.h '/home/devel/building/work/pkg/usr/include/.'
+make[2]: Leaving directory '/home/devel/building/work/src/yaml-0.2.5/include'
+make[1]: Leaving directory '/home/devel/building/work/src/yaml-0.2.5/include'
+Making install in src
+make[1]: Entering directory '/home/devel/building/work/src/yaml-0.2.5/src'
+make[2]: Entering directory '/home/devel/building/work/src/yaml-0.2.5/src'
+make[2]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libyaml.la '/home/devel/building/work/pkg/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libyaml-0.so.2.0.9 /home/devel/building/work/pkg/usr/lib/libyaml-0.so.2.0.9
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libyaml-0.so.2.0.9 libyaml-0.so.2 || { rm -f libyaml-0.so.2 && ln -s libyaml-0.so.2.0.9 libyaml-0.so.2; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libyaml-0.so.2.0.9 libyaml.so || { rm -f libyaml.so && ln -s libyaml-0.so.2.0.9 libyaml.so; }; })
+libtool: install: /usr/bin/install -c .libs/libyaml.lai /home/devel/building/work/pkg/usr/lib/libyaml.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make[2]: Leaving directory '/home/devel/building/work/src/yaml-0.2.5/src'
+make[1]: Leaving directory '/home/devel/building/work/src/yaml-0.2.5/src'
+Making install in .
+make[1]: Entering directory '/home/devel/building/work/src/yaml-0.2.5'
+make[2]: Entering directory '/home/devel/building/work/src/yaml-0.2.5'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 yaml-0.1.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+make[2]: Leaving directory '/home/devel/building/work/src/yaml-0.2.5'
+make[1]: Leaving directory '/home/devel/building/work/src/yaml-0.2.5'
+Making install in tests
+make[1]: Entering directory '/home/devel/building/work/src/yaml-0.2.5/tests'
+make[2]: Entering directory '/home/devel/building/work/src/yaml-0.2.5/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/yaml-0.2.5/tests'
+make[1]: Leaving directory '/home/devel/building/work/src/yaml-0.2.5/tests'
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/include/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/lib/
+-rwxr-xr-x  0 root   root   129328 May  8 01:45 usr/lib/libyaml-0.so.2.0.9
+lrwxrwxrwx  0 root   root        0 May  8 01:45 usr/lib/libyaml-0.so.2 -> libyaml-0.so.2.0.9
+lrwxrwxrwx  0 root   root        0 May  8 01:45 usr/lib/libyaml.so -> libyaml-0.so.2.0.9
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      212 May  8 01:45 usr/lib/pkgconfig/yaml-0.1.pc
+-rw-r--r--  0 root   root    54439 May  8 01:45 usr/include/yaml.h
+=======> Building '/home/devel/packages/yaml#0.2.5-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling yaml 0.2.5-1
+prt-get: /usr/bin/pkgadd -u yaml#0.2.5-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 01:45:54 2024
+

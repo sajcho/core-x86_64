@@ -1,0 +1,587 @@
+prt-get: updating /usr/ports/opt-x86_64/libtheora
+prt-get: starting build Tue May  7 23:33:50 2024
+=======> Building '/home/devel/packages/libtheora#1.1.1-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/libtheora-1.1.1.tar.xz
++ build
++ cd libtheora-1.1.1
++ ./configure --build=x86_64-unknown-linux-gnu --prefix=/usr --disable-static --disable-examples
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... fgrep: warning: fgrep is obsolescent; using grep -F
+GNU
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking whether gcc and cc understand -c and -o together... yes
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... no
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for doxygen... false
+configure: WARNING: *** doxygen not found, API documentation will not be built
+checking for pdflatex... no
+checking for bibtex... no
+checking for fig2dev... no
+configure: WARNING: *** Format Specification will not built.
+checking for ld used by gcc... (cached) /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... (cached) yes
+checking how to control symbol export... --version-script
+checking for pkg-config... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for OGG... yes
+checking for VORBIS... yes
+checking for sdl-config... no
+checking for SDL - version >= 0.11.0... no
+*** The sdl-config script installed by SDL could not be found
+*** If SDL was installed in PREFIX, make sure PREFIX/bin is in
+*** your path, or set the SDL_CONFIG environment variable to the
+*** full path to sdl-config.
+configure: WARNING: *** Unable to find SDL -- Not compiling example players ***
+checking sys/soundcard.h usability... yes
+checking sys/soundcard.h presence... yes
+checking for sys/soundcard.h... yes
+checking for PNG... yes
+checking for library containing ftime... none required
+checking for getopt_long... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: WARNING:  'Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating lib/Makefile
+config.status: WARNING:  'lib/Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating include/Makefile
+config.status: WARNING:  'include/Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating include/theora/Makefile
+config.status: WARNING:  'include/theora/Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating examples/Makefile
+config.status: WARNING:  'examples/Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating doc/Makefile
+config.status: WARNING:  'doc/Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating doc/Doxyfile
+config.status: creating doc/spec/Makefile
+config.status: WARNING:  'doc/spec/Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating tests/Makefile
+config.status: WARNING:  'tests/Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating m4/Makefile
+config.status: WARNING:  'm4/Makefile.in' seems to ignore the --datarootdir setting
+config.status: creating libtheora.spec
+config.status: creating theora.pc
+config.status: creating theora-uninstalled.pc
+config.status: creating theoradec.pc
+config.status: creating theoradec-uninstalled.pc
+config.status: creating theoraenc.pc
+config.status: creating theoraenc-uninstalled.pc
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+------------------------------------------------------------------------
+  libtheora 1.1.1:  Automatic configuration OK.
+
+  General configuration:
+
+    Encoding support: ........... yes
+    Floating point support: ..... yes
+    Assembly optimization: ...... 64 bit x86
+    Debugging telemetry: ........ no
+    Build example code: ......... no
+    API Documentation: .......... no
+    Format Documentation: ....... no
+
+  Installation paths:
+
+    libtheora: ................... /usr/lib
+    C header files: .............. /usr/include/theora
+    Documentation: ............... /usr/share/doc/libtheora
+
+  Building:
+
+    Type 'make' to compile libtheora.
+
+    Type 'make install' to install libtheora.
+
+    Type 'make check' to run test suite (Valgrind testing not enabled)
+
+  Example programs will be built but not installed.
+------------------------------------------------------------------------
+
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1'
+Making all in lib
+make[2]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/lib'
+Makefile:842: warning: ignoring prerequisites on suffix rule definition
+source='apiwrapper.c' object='apiwrapper.lo' libtool=yes \
+depfile='.deps/apiwrapper.Plo' tmpdepfile='.deps/apiwrapper.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o apiwrapper.lo `test -f 'apiwrapper.c' || echo './'`apiwrapper.c
+source='bitpack.c' object='bitpack.lo' libtool=yes \
+depfile='.deps/bitpack.Plo' tmpdepfile='.deps/bitpack.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o bitpack.lo `test -f 'bitpack.c' || echo './'`bitpack.c
+source='decapiwrapper.c' object='decapiwrapper.lo' libtool=yes \
+depfile='.deps/decapiwrapper.Plo' tmpdepfile='.deps/decapiwrapper.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o decapiwrapper.lo `test -f 'decapiwrapper.c' || echo './'`decapiwrapper.c
+source='decinfo.c' object='decinfo.lo' libtool=yes \
+depfile='.deps/decinfo.Plo' tmpdepfile='.deps/decinfo.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o decinfo.lo `test -f 'decinfo.c' || echo './'`decinfo.c
+source='decode.c' object='decode.lo' libtool=yes \
+depfile='.deps/decode.Plo' tmpdepfile='.deps/decode.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o decode.lo `test -f 'decode.c' || echo './'`decode.c
+source='dequant.c' object='dequant.lo' libtool=yes \
+depfile='.deps/dequant.Plo' tmpdepfile='.deps/dequant.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o dequant.lo `test -f 'dequant.c' || echo './'`dequant.c
+source='fragment.c' object='fragment.lo' libtool=yes \
+depfile='.deps/fragment.Plo' tmpdepfile='.deps/fragment.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o fragment.lo `test -f 'fragment.c' || echo './'`fragment.c
+source='huffdec.c' object='huffdec.lo' libtool=yes \
+depfile='.deps/huffdec.Plo' tmpdepfile='.deps/huffdec.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o huffdec.lo `test -f 'huffdec.c' || echo './'`huffdec.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c apiwrapper.c -MT apiwrapper.lo -MD -MP -MF .deps/apiwrapper.TPlo  -fPIC -DPIC -o .libs/apiwrapper.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c bitpack.c -MT bitpack.lo -MD -MP -MF .deps/bitpack.TPlo  -fPIC -DPIC -o .libs/bitpack.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c dequant.c -MT dequant.lo -MD -MP -MF .deps/dequant.TPlo  -fPIC -DPIC -o .libs/dequant.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c decode.c -MT decode.lo -MD -MP -MF .deps/decode.TPlo  -fPIC -DPIC -o .libs/decode.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c decapiwrapper.c -MT decapiwrapper.lo -MD -MP -MF .deps/decapiwrapper.TPlo  -fPIC -DPIC -o .libs/decapiwrapper.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c huffdec.c -MT huffdec.lo -MD -MP -MF .deps/huffdec.TPlo  -fPIC -DPIC -o .libs/huffdec.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c fragment.c -MT fragment.lo -MD -MP -MF .deps/fragment.TPlo  -fPIC -DPIC -o .libs/fragment.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c decinfo.c -MT decinfo.lo -MD -MP -MF .deps/decinfo.TPlo  -fPIC -DPIC -o .libs/decinfo.o
+source='idct.c' object='idct.lo' libtool=yes \
+depfile='.deps/idct.Plo' tmpdepfile='.deps/idct.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o idct.lo `test -f 'idct.c' || echo './'`idct.c
+source='info.c' object='info.lo' libtool=yes \
+depfile='.deps/info.Plo' tmpdepfile='.deps/info.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o info.lo `test -f 'info.c' || echo './'`info.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c idct.c -MT idct.lo -MD -MP -MF .deps/idct.TPlo  -fPIC -DPIC -o .libs/idct.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c info.c -MT info.lo -MD -MP -MF .deps/info.TPlo  -fPIC -DPIC -o .libs/info.o
+source='internal.c' object='internal.lo' libtool=yes \
+depfile='.deps/internal.Plo' tmpdepfile='.deps/internal.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o internal.lo `test -f 'internal.c' || echo './'`internal.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c internal.c -MT internal.lo -MD -MP -MF .deps/internal.TPlo  -fPIC -DPIC -o .libs/internal.o
+source='quant.c' object='quant.lo' libtool=yes \
+depfile='.deps/quant.Plo' tmpdepfile='.deps/quant.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o quant.lo `test -f 'quant.c' || echo './'`quant.c
+source='state.c' object='state.lo' libtool=yes \
+depfile='.deps/state.Plo' tmpdepfile='.deps/state.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o state.lo `test -f 'state.c' || echo './'`state.c
+source='x86/mmxidct.c' object='mmxidct.lo' libtool=yes \
+depfile='.deps/mmxidct.Plo' tmpdepfile='.deps/mmxidct.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o mmxidct.lo `test -f 'x86/mmxidct.c' || echo './'`x86/mmxidct.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c quant.c -MT quant.lo -MD -MP -MF .deps/quant.TPlo  -fPIC -DPIC -o .libs/quant.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c state.c -MT state.lo -MD -MP -MF .deps/state.TPlo  -fPIC -DPIC -o .libs/state.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c x86/mmxidct.c -MT mmxidct.lo -MD -MP -MF .deps/mmxidct.TPlo  -fPIC -DPIC -o .libs/mmxidct.o
+state.c:986:59: warning: argument 2 of type 'int[256]' with mismatched bound [-Warray-parameter=]
+  986 | int oc_state_loop_filter_init(oc_theora_state *_state,int _bv[256]){
+      |                                                       ~~~~^~~~~~~~
+In file included from state.c:20:
+internal.h:440:60: note: previously declared as 'int *'
+  440 | int oc_state_loop_filter_init(oc_theora_state *_state,int *_bv);
+      |                                                       ~~~~~^~~
+state.c:1015:74: warning: argument 2 of type 'int *' declared as a pointer [-Warray-parameter=]
+ 1015 | void oc_state_loop_filter_frag_rows_c(const oc_theora_state *_state,int *_bv,
+      |                                                                     ~~~~~^~~
+internal.h:483:6: note: previously declared as an array 'int[256]'
+  483 |  int _bv[256],int _refi,int _pli,int _fragy0,int _fragy_end);
+      |  ~~~~^~~~~~~~
+source='x86/mmxfrag.c' object='mmxfrag.lo' libtool=yes \
+depfile='.deps/mmxfrag.Plo' tmpdepfile='.deps/mmxfrag.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o mmxfrag.lo `test -f 'x86/mmxfrag.c' || echo './'`x86/mmxfrag.c
+source='x86/mmxstate.c' object='mmxstate.lo' libtool=yes \
+depfile='.deps/mmxstate.Plo' tmpdepfile='.deps/mmxstate.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o mmxstate.lo `test -f 'x86/mmxstate.c' || echo './'`x86/mmxstate.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c x86/mmxstate.c -MT mmxstate.lo -MD -MP -MF .deps/mmxstate.TPlo  -fPIC -DPIC -o .libs/mmxstate.o
+source='x86/x86state.c' object='x86state.lo' libtool=yes \
+depfile='.deps/x86state.Plo' tmpdepfile='.deps/x86state.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o x86state.lo `test -f 'x86/x86state.c' || echo './'`x86/x86state.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c x86/x86state.c -MT x86state.lo -MD -MP -MF .deps/x86state.TPlo  -fPIC -DPIC -o .libs/x86state.o
+source='analyze.c' object='analyze.lo' libtool=yes \
+depfile='.deps/analyze.Plo' tmpdepfile='.deps/analyze.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o analyze.lo `test -f 'analyze.c' || echo './'`analyze.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c x86/mmxfrag.c -MT mmxfrag.lo -MD -MP -MF .deps/mmxfrag.TPlo  -fPIC -DPIC -o .libs/mmxfrag.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c analyze.c -MT analyze.lo -MD -MP -MF .deps/analyze.TPlo  -fPIC -DPIC -o .libs/analyze.o
+source='fdct.c' object='fdct.lo' libtool=yes \
+depfile='.deps/fdct.Plo' tmpdepfile='.deps/fdct.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o fdct.lo `test -f 'fdct.c' || echo './'`fdct.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c fdct.c -MT fdct.lo -MD -MP -MF .deps/fdct.TPlo  -fPIC -DPIC -o .libs/fdct.o
+source='encfrag.c' object='encfrag.lo' libtool=yes \
+depfile='.deps/encfrag.Plo' tmpdepfile='.deps/encfrag.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o encfrag.lo `test -f 'encfrag.c' || echo './'`encfrag.c
+source='encapiwrapper.c' object='encapiwrapper.lo' libtool=yes \
+depfile='.deps/encapiwrapper.Plo' tmpdepfile='.deps/encapiwrapper.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o encapiwrapper.lo `test -f 'encapiwrapper.c' || echo './'`encapiwrapper.c
+analyze.c: In function 'oc_enc_sb_transform_quantize_intra_chroma':
+analyze.c:1198:20: warning: variable 'sb_flags' set but not used [-Wunused-but-set-variable]
+ 1198 |   oc_sb_flags     *sb_flags;
+      |                    ^~~~~~~~
+analyze.c: In function 'oc_enc_analyze_intra':
+analyze.c:1235:27: warning: variable 'embs' set but not used [-Wunused-but-set-variable]
+ 1235 |   oc_mb_enc_info         *embs;
+      |                           ^~~~
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c encfrag.c -MT encfrag.lo -MD -MP -MF .deps/encfrag.TPlo  -fPIC -DPIC -o .libs/encfrag.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c encapiwrapper.c -MT encapiwrapper.lo -MD -MP -MF .deps/encapiwrapper.TPlo  -fPIC -DPIC -o .libs/encapiwrapper.o
+analyze.c: In function 'oc_enc_analyze_inter':
+analyze.c:1879:27: warning: variable 'vdec' set but not used [-Wunused-but-set-variable]
+ 1879 |   int                     vdec;
+      |                           ^~~~
+analyze.c:1874:27: warning: variable 'qi' set but not used [-Wunused-but-set-variable]
+ 1874 |   int                     qi;
+      |                           ^~
+source='encinfo.c' object='encinfo.lo' libtool=yes \
+depfile='.deps/encinfo.Plo' tmpdepfile='.deps/encinfo.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o encinfo.lo `test -f 'encinfo.c' || echo './'`encinfo.c
+source='encode.c' object='encode.lo' libtool=yes \
+depfile='.deps/encode.Plo' tmpdepfile='.deps/encode.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o encode.lo `test -f 'encode.c' || echo './'`encode.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c encinfo.c -MT encinfo.lo -MD -MP -MF .deps/encinfo.TPlo  -fPIC -DPIC -o .libs/encinfo.o
+encfrag.c:43:41: warning: argument 1 of type 'ogg_int16_t *' {aka 'short int *'} declared as a pointer [-Warray-parameter=]
+   43 | void oc_enc_frag_sub_128_c(ogg_int16_t *_diff,
+      |                            ~~~~~~~~~~~~~^~~~~
+In file included from encfrag.c:19:
+encint.h:474:40: note: previously declared as an array 'ogg_int16_t[64]' {aka 'short int[64]'}
+  474 | void oc_enc_frag_sub_128_c(ogg_int16_t _diff[64],
+      |                            ~~~~~~~~~~~~^~~~~~~~~
+In function 'oc_dec_init',
+    inlined from 'th_decode_alloc' at decode.c:1957:17:
+decode.c:400:49: warning: iteration 2 invokes undefined behavior [-Waggressive-loop-optimizations]
+  400 |       qsum+=_dec->state.dequant_tables[qti][pli][qi][12]+
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+decode.c:396:14: note: within this loop
+  396 |   for(qi=0;qi<64;qi++){
+      |            ~~^~~
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c encode.c -MT encode.lo -MD -MP -MF .deps/encode.TPlo  -fPIC -DPIC -o .libs/encode.o
+source='enquant.c' object='enquant.lo' libtool=yes \
+depfile='.deps/enquant.Plo' tmpdepfile='.deps/enquant.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o enquant.lo `test -f 'enquant.c' || echo './'`enquant.c
+source='huffenc.c' object='huffenc.lo' libtool=yes \
+depfile='.deps/huffenc.Plo' tmpdepfile='.deps/huffenc.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o huffenc.lo `test -f 'huffenc.c' || echo './'`huffenc.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c huffenc.c -MT huffenc.lo -MD -MP -MF .deps/huffenc.TPlo  -fPIC -DPIC -o .libs/huffenc.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c enquant.c -MT enquant.lo -MD -MP -MF .deps/enquant.TPlo  -fPIC -DPIC -o .libs/enquant.o
+source='mathops.c' object='mathops.lo' libtool=yes \
+depfile='.deps/mathops.Plo' tmpdepfile='.deps/mathops.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o mathops.lo `test -f 'mathops.c' || echo './'`mathops.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c mathops.c -MT mathops.lo -MD -MP -MF .deps/mathops.TPlo  -fPIC -DPIC -o .libs/mathops.o
+source='mcenc.c' object='mcenc.lo' libtool=yes \
+depfile='.deps/mcenc.Plo' tmpdepfile='.deps/mcenc.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o mcenc.lo `test -f 'mcenc.c' || echo './'`mcenc.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c mcenc.c -MT mcenc.lo -MD -MP -MF .deps/mcenc.TPlo  -fPIC -DPIC -o .libs/mcenc.o
+source='rate.c' object='rate.lo' libtool=yes \
+depfile='.deps/rate.Plo' tmpdepfile='.deps/rate.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o rate.lo `test -f 'rate.c' || echo './'`rate.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c rate.c -MT rate.lo -MD -MP -MF .deps/rate.TPlo  -fPIC -DPIC -o .libs/rate.o
+source='tokenize.c' object='tokenize.lo' libtool=yes \
+depfile='.deps/tokenize.Plo' tmpdepfile='.deps/tokenize.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o tokenize.lo `test -f 'tokenize.c' || echo './'`tokenize.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c tokenize.c -MT tokenize.lo -MD -MP -MF .deps/tokenize.TPlo  -fPIC -DPIC -o .libs/tokenize.o
+source='x86/mmxencfrag.c' object='mmxencfrag.lo' libtool=yes \
+depfile='.deps/mmxencfrag.Plo' tmpdepfile='.deps/mmxencfrag.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o mmxencfrag.lo `test -f 'x86/mmxencfrag.c' || echo './'`x86/mmxencfrag.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c x86/mmxencfrag.c -MT mmxencfrag.lo -MD -MP -MF .deps/mmxencfrag.TPlo  -fPIC -DPIC -o .libs/mmxencfrag.o
+source='x86/mmxfdct.c' object='mmxfdct.lo' libtool=yes \
+depfile='.deps/mmxfdct.Plo' tmpdepfile='.deps/mmxfdct.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o mmxfdct.lo `test -f 'x86/mmxfdct.c' || echo './'`x86/mmxfdct.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c x86/mmxfdct.c -MT mmxfdct.lo -MD -MP -MF .deps/mmxfdct.TPlo  -fPIC -DPIC -o .libs/mmxfdct.o
+source='x86/x86enc.c' object='x86enc.lo' libtool=yes \
+depfile='.deps/x86enc.Plo' tmpdepfile='.deps/x86enc.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o x86enc.lo `test -f 'x86/x86enc.c' || echo './'`x86/x86enc.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c x86/x86enc.c -MT x86enc.lo -MD -MP -MF .deps/x86enc.TPlo  -fPIC -DPIC -o .libs/x86enc.o
+source='x86/sse2fdct.c' object='sse2fdct.lo' libtool=yes \
+depfile='.deps/sse2fdct.Plo' tmpdepfile='.deps/sse2fdct.TPlo' \
+depmode=gcc3 /bin/sh ../depcomp \
+/bin/sh ../libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c -o sse2fdct.lo `test -f 'x86/sse2fdct.c' || echo './'`x86/sse2fdct.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I.. -I../include -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c x86/sse2fdct.c -MT sse2fdct.lo -MD -MP -MF .deps/sse2fdct.TPlo  -fPIC -DPIC -o .libs/sse2fdct.o
+/bin/sh ../libtool --mode=link gcc   -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o libtheoradec.la -rpath /usr/lib -version-info 2:4:1 -Wl,--version-script=./Version_script-dec  apiwrapper.lo bitpack.lo decapiwrapper.lo decinfo.lo decode.lo dequant.lo fragment.lo huffdec.lo idct.lo info.lo internal.lo quant.lo state.lo mmxidct.lo mmxfrag.lo mmxstate.lo x86state.lo  
+libtool: link: gcc -shared  .libs/apiwrapper.o .libs/bitpack.o .libs/decapiwrapper.o .libs/decinfo.o .libs/decode.o .libs/dequant.o .libs/fragment.o .libs/huffdec.o .libs/idct.o .libs/info.o .libs/internal.o .libs/quant.o .libs/state.o .libs/mmxidct.o .libs/mmxfrag.o .libs/mmxstate.o .libs/x86state.o    -m64 -march=x86-64 -mtune=generic -Wl,--version-script=./Version_script-dec   -Wl,-soname -Wl,libtheoradec.so.1 -o .libs/libtheoradec.so.1.1.4
+/bin/sh ../libtool --mode=link gcc   -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o libtheoraenc.la -rpath /usr/lib -version-info 2:2:1 -Wl,--version-script=./Version_script-enc -logg apiwrapper.lo fragment.lo idct.lo internal.lo state.lo quant.lo mmxfrag.lo mmxidct.lo mmxstate.lo x86state.lo  analyze.lo fdct.lo encfrag.lo encapiwrapper.lo encinfo.lo encode.lo enquant.lo huffenc.lo mathops.lo mcenc.lo rate.lo tokenize.lo mmxencfrag.lo mmxfdct.lo x86enc.lo sse2fdct.lo  
+/bin/sh ../libtool --mode=link gcc   -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o libtheora.la -rpath /usr/lib -version-info 3:10:3 -Wl,--version-script=./Version_script  -logg apiwrapper.lo bitpack.lo decapiwrapper.lo decinfo.lo decode.lo dequant.lo fragment.lo huffdec.lo idct.lo info.lo internal.lo quant.lo state.lo mmxidct.lo mmxfrag.lo mmxstate.lo x86state.lo analyze.lo fdct.lo encfrag.lo encapiwrapper.lo encinfo.lo encode.lo enquant.lo huffenc.lo mathops.lo mcenc.lo rate.lo tokenize.lo mmxencfrag.lo mmxfdct.lo x86enc.lo sse2fdct.lo  
+libtool: link: gcc -shared  .libs/apiwrapper.o .libs/fragment.o .libs/idct.o .libs/internal.o .libs/state.o .libs/quant.o .libs/mmxfrag.o .libs/mmxidct.o .libs/mmxstate.o .libs/x86state.o .libs/analyze.o .libs/fdct.o .libs/encfrag.o .libs/encapiwrapper.o .libs/encinfo.o .libs/encode.o .libs/enquant.o .libs/huffenc.o .libs/mathops.o .libs/mcenc.o .libs/rate.o .libs/tokenize.o .libs/mmxencfrag.o .libs/mmxfdct.o .libs/x86enc.o .libs/sse2fdct.o   -logg  -m64 -march=x86-64 -mtune=generic -Wl,--version-script=./Version_script-enc   -Wl,-soname -Wl,libtheoraenc.so.1 -o .libs/libtheoraenc.so.1.1.2
+libtool: link: gcc -shared  .libs/apiwrapper.o .libs/bitpack.o .libs/decapiwrapper.o .libs/decinfo.o .libs/decode.o .libs/dequant.o .libs/fragment.o .libs/huffdec.o .libs/idct.o .libs/info.o .libs/internal.o .libs/quant.o .libs/state.o .libs/mmxidct.o .libs/mmxfrag.o .libs/mmxstate.o .libs/x86state.o .libs/analyze.o .libs/fdct.o .libs/encfrag.o .libs/encapiwrapper.o .libs/encinfo.o .libs/encode.o .libs/enquant.o .libs/huffenc.o .libs/mathops.o .libs/mcenc.o .libs/rate.o .libs/tokenize.o .libs/mmxencfrag.o .libs/mmxfdct.o .libs/x86enc.o .libs/sse2fdct.o   -logg  -m64 -march=x86-64 -mtune=generic -Wl,--version-script=./Version_script   -Wl,-soname -Wl,libtheora.so.0 -o .libs/libtheora.so.0.3.10
+In function 'oc_dec_init',
+    inlined from 'th_decode_alloc' at decode.c:1957:17:
+decode.c:400:49: warning: iteration 2 invokes undefined behavior [-Waggressive-loop-optimizations]
+  400 |       qsum+=_dec->state.dequant_tables[qti][pli][qi][12]+
+      |                                                 ^
+decode.c:396:14: note: within this loop
+  396 |   for(qi=0;qi<64;qi++){
+      |              ^
+libtool: link: (cd ".libs" && rm -f "libtheoraenc.so.1" && ln -s "libtheoraenc.so.1.1.2" "libtheoraenc.so.1")
+libtool: link: (cd ".libs" && rm -f "libtheoraenc.so" && ln -s "libtheoraenc.so.1.1.2" "libtheoraenc.so")
+libtool: link: ( cd ".libs" && rm -f "libtheoraenc.la" && ln -s "../libtheoraenc.la" "libtheoraenc.la" )
+libtool: link: (cd ".libs" && rm -f "libtheoradec.so.1" && ln -s "libtheoradec.so.1.1.4" "libtheoradec.so.1")
+libtool: link: (cd ".libs" && rm -f "libtheoradec.so" && ln -s "libtheoradec.so.1.1.4" "libtheoradec.so")
+libtool: link: ( cd ".libs" && rm -f "libtheoradec.la" && ln -s "../libtheoradec.la" "libtheoradec.la" )
+In function 'oc_dec_init',
+    inlined from 'th_decode_alloc' at decode.c:1957:17,
+    inlined from 'theora_decode_init' at decapiwrapper.c:111:23:
+decode.c:400:49: warning: iteration 2 invokes undefined behavior [-Waggressive-loop-optimizations]
+  400 |       qsum+=_dec->state.dequant_tables[qti][pli][qi][12]+
+      |                                                 ^
+decode.c:396:14: note: within this loop
+  396 |   for(qi=0;qi<64;qi++){
+      |              ^
+libtool: link: (cd ".libs" && rm -f "libtheora.so.0" && ln -s "libtheora.so.0.3.10" "libtheora.so.0")
+libtool: link: (cd ".libs" && rm -f "libtheora.so" && ln -s "libtheora.so.0.3.10" "libtheora.so")
+libtool: link: ( cd ".libs" && rm -f "libtheora.la" && ln -s "../libtheora.la" "libtheora.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/lib'
+Making all in include
+make[2]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/include'
+Making all in theora
+make[3]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/include/theora'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/include/theora'
+make[3]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/include'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/include'
+make[2]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/include'
+Making all in doc
+make[2]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/doc'
+Making all in spec
+make[3]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/doc/spec'
+source='vp3huff.c' object='vp3huff.o' libtool=no \
+depfile='.deps/vp3huff.Po' tmpdepfile='.deps/vp3huff.TPo' \
+depmode=gcc3 /bin/sh ../../depcomp \
+gcc -DHAVE_CONFIG_H -I. -I. -I../..     -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c `test -f 'vp3huff.c' || echo './'`vp3huff.c
+/bin/sh ../../libtool --mode=link gcc  -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o vp3huff  vp3huff.o  
+libtool: link: gcc -Wall -Wno-parentheses -O3 -fforce-addr -fomit-frame-pointer -finline-functions -funroll-loops -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o vp3huff vp3huff.o 
+make[3]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/doc/spec'
+make[3]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/doc'
+echo "*** Warning: Doxygen not found; documentation will not be built."
+*** Warning: Doxygen not found; documentation will not be built.
+touch doxygen-build.stamp
+make[3]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/doc'
+make[2]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/doc'
+Making all in tests
+make[2]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/tests'
+Making all in m4
+make[2]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/m4'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/m4'
+make[2]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1'
+make[2]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1'
+make[1]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in lib
+make[1]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/lib'
+Makefile:842: warning: ignoring prerequisites on suffix rule definition
+make[2]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/lib'
+Makefile:842: warning: ignoring prerequisites on suffix rule definition
+/bin/sh ../mkinstalldirs /home/devel/building/work/pkg/usr/lib
+make[2]: Nothing to be done for 'install-data-am'.
+mkdir -p -- /home/devel/building/work/pkg/usr/lib
+ /bin/sh ../libtool --mode=install /usr/bin/install -c  libtheoradec.la /home/devel/building/work/pkg/usr/lib/libtheoradec.la
+libtool: install: /usr/bin/install -c .libs/libtheoradec.so.1.1.4 /home/devel/building/work/pkg/usr/lib/libtheoradec.so.1.1.4
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libtheoradec.so.1.1.4 libtheoradec.so.1 || { rm -f libtheoradec.so.1 && ln -s libtheoradec.so.1.1.4 libtheoradec.so.1; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libtheoradec.so.1.1.4 libtheoradec.so || { rm -f libtheoradec.so && ln -s libtheoradec.so.1.1.4 libtheoradec.so; }; })
+libtool: install: /usr/bin/install -c .libs/libtheoradec.lai /home/devel/building/work/pkg/usr/lib/libtheoradec.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib'
+ /bin/sh ../libtool --mode=install /usr/bin/install -c  libtheoraenc.la /home/devel/building/work/pkg/usr/lib/libtheoraenc.la
+libtool: install: /usr/bin/install -c .libs/libtheoraenc.so.1.1.2 /home/devel/building/work/pkg/usr/lib/libtheoraenc.so.1.1.2
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libtheoraenc.so.1.1.2 libtheoraenc.so.1 || { rm -f libtheoraenc.so.1 && ln -s libtheoraenc.so.1.1.2 libtheoraenc.so.1; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libtheoraenc.so.1.1.2 libtheoraenc.so || { rm -f libtheoraenc.so && ln -s libtheoraenc.so.1.1.2 libtheoraenc.so; }; })
+libtool: install: /usr/bin/install -c .libs/libtheoraenc.lai /home/devel/building/work/pkg/usr/lib/libtheoraenc.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib'
+ /bin/sh ../libtool --mode=install /usr/bin/install -c  libtheora.la /home/devel/building/work/pkg/usr/lib/libtheora.la
+libtool: install: /usr/bin/install -c .libs/libtheora.so.0.3.10 /home/devel/building/work/pkg/usr/lib/libtheora.so.0.3.10
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libtheora.so.0.3.10 libtheora.so.0 || { rm -f libtheora.so.0 && ln -s libtheora.so.0.3.10 libtheora.so.0; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libtheora.so.0.3.10 libtheora.so || { rm -f libtheora.so && ln -s libtheora.so.0.3.10 libtheora.so; }; })
+libtool: install: /usr/bin/install -c .libs/libtheora.lai /home/devel/building/work/pkg/usr/lib/libtheora.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib'
+make[2]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/lib'
+make[1]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/lib'
+Making install in include
+make[1]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/include'
+Making install in theora
+make[2]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/include/theora'
+make[3]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/include/theora'
+make[3]: Nothing to be done for 'install-exec-am'.
+/bin/sh ../../mkinstalldirs /home/devel/building/work/pkg/usr/include/theora
+mkdir -p -- /home/devel/building/work/pkg/usr/include/theora
+ /usr/bin/install -c -m 644 theora.h /home/devel/building/work/pkg/usr/include/theora/theora.h
+ /usr/bin/install -c -m 644 theoradec.h /home/devel/building/work/pkg/usr/include/theora/theoradec.h
+ /usr/bin/install -c -m 644 theoraenc.h /home/devel/building/work/pkg/usr/include/theora/theoraenc.h
+ /usr/bin/install -c -m 644 codec.h /home/devel/building/work/pkg/usr/include/theora/codec.h
+make[3]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/include/theora'
+make[2]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/include/theora'
+make[2]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/include'
+make[3]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/include'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/include'
+make[2]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/include'
+make[1]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/include'
+Making install in doc
+make[1]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/doc'
+Making install in spec
+make[2]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/doc/spec'
+make[3]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/doc/spec'
+make[3]: Nothing to be done for 'install-exec-am'.
+/bin/sh ../../mkinstalldirs /home/devel/building/work/pkg/usr/share/doc/libtheora-1.1.1
+mkdir -p -- /home/devel/building/work/pkg/usr/share/doc/libtheora-1.1.1
+make[3]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/doc/spec'
+make[2]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/doc/spec'
+make[2]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/doc'
+make[3]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+/bin/sh ../mkinstalldirs /home/devel/building/work/pkg/usr/share/doc/libtheora-1.1.1
+/bin/sh ../mkinstalldirs /home/devel/building/work/pkg/usr/share/doc/libtheora-1.1.1
+if test -d libtheora; then \
+  for dir in libtheora/*; do \
+    if test -d $dir; then \
+      b=`basename $dir`; \
+      /bin/sh ../mkinstalldirs /home/devel/building/work/pkg/usr/share/doc/libtheora-1.1.1/$b; \
+      for f in $dir/*; do \
+	/usr/bin/install -c -m 644 $f /home/devel/building/work/pkg/usr/share/doc/libtheora-1.1.1/$b; \
+      done \
+    fi \
+  done \
+fi
+mkdir -p -- /home/devel/building/work/pkg/usr/share/doc/libtheora-1.1.1/html
+ /usr/bin/install -c -m 644 vp3-format.txt /home/devel/building/work/pkg/usr/share/doc/libtheora-1.1.1/vp3-format.txt
+ /usr/bin/install -c -m 644 color.html /home/devel/building/work/pkg/usr/share/doc/libtheora-1.1.1/color.html
+ /usr/bin/install -c -m 644 draft-ietf-avt-rtp-theora-00.xml /home/devel/building/work/pkg/usr/share/doc/libtheora-1.1.1/draft-ietf-avt-rtp-theora-00.xml
+ /usr/bin/install -c -m 644 draft-ietf-avt-rtp-theora-00.txt /home/devel/building/work/pkg/usr/share/doc/libtheora-1.1.1/draft-ietf-avt-rtp-theora-00.txt
+ /usr/bin/install -c -m 644 doxygen-build.stamp /home/devel/building/work/pkg/usr/share/doc/libtheora-1.1.1/doxygen-build.stamp
+mkdir -p -- /home/devel/building/work/pkg/usr/share/doc/libtheora-1.1.1/latex
+make[3]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/doc'
+make[2]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/doc'
+make[1]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/doc'
+Making install in tests
+make[1]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/tests'
+make[2]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/tests'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/tests'
+make[1]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/tests'
+Making install in m4
+make[1]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/m4'
+make[2]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1/m4'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/m4'
+make[1]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1/m4'
+make[1]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1'
+make[2]: Entering directory '/home/devel/building/work/src/libtheora-1.1.1'
+make[2]: Nothing to be done for 'install-exec-am'.
+/bin/sh ./mkinstalldirs /home/devel/building/work/pkg/usr/lib/pkgconfig
+mkdir -p -- /home/devel/building/work/pkg/usr/lib/pkgconfig
+ /usr/bin/install -c -m 644 theora.pc /home/devel/building/work/pkg/usr/lib/pkgconfig/theora.pc
+ /usr/bin/install -c -m 644 theoradec.pc /home/devel/building/work/pkg/usr/lib/pkgconfig/theoradec.pc
+ /usr/bin/install -c -m 644 theoraenc.pc /home/devel/building/work/pkg/usr/lib/pkgconfig/theoraenc.pc
+make[2]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1'
+make[1]: Leaving directory '/home/devel/building/work/src/libtheora-1.1.1'
++ rm -r /home/devel/building/work/pkg/usr/share
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 23:33 usr/
+drwxr-xr-x  0 root   root        0 May  7 23:33 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 23:33 usr/include/
+drwxr-xr-x  0 root   root        0 May  7 23:33 usr/include/theora/
+-rw-r--r--  0 root   root    33293 May  7 23:33 usr/include/theora/theora.h
+-rw-r--r--  0 root   root    15877 May  7 23:33 usr/include/theora/theoradec.h
+-rw-r--r--  0 root   root    25309 May  7 23:33 usr/include/theora/theoraenc.h
+-rw-r--r--  0 root   root    25695 May  7 23:33 usr/include/theora/codec.h
+-rwxr-xr-x  0 root   root   100712 May  7 23:33 usr/lib/libtheoradec.so.1.1.4
+lrwxrwxrwx  0 root   root        0 May  7 23:33 usr/lib/libtheoradec.so.1 -> libtheoradec.so.1.1.4
+lrwxrwxrwx  0 root   root        0 May  7 23:33 usr/lib/libtheoradec.so -> libtheoradec.so.1.1.4
+-rwxr-xr-x  0 root   root   227640 May  7 23:33 usr/lib/libtheoraenc.so.1.1.2
+lrwxrwxrwx  0 root   root        0 May  7 23:33 usr/lib/libtheoraenc.so.1 -> libtheoraenc.so.1.1.2
+lrwxrwxrwx  0 root   root        0 May  7 23:33 usr/lib/libtheoraenc.so -> libtheoraenc.so.1.1.2
+-rwxr-xr-x  0 root   root   284952 May  7 23:33 usr/lib/libtheora.so.0.3.10
+lrwxrwxrwx  0 root   root        0 May  7 23:33 usr/lib/libtheora.so.0 -> libtheora.so.0.3.10
+lrwxrwxrwx  0 root   root        0 May  7 23:33 usr/lib/libtheora.so -> libtheora.so.0.3.10
+drwxr-xr-x  0 root   root        0 May  7 23:33 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      269 May  7 23:33 usr/lib/pkgconfig/theora.pc
+-rw-r--r--  0 root   root      285 May  7 23:33 usr/lib/pkgconfig/theoradec.pc
+-rw-r--r--  0 root   root      296 May  7 23:33 usr/lib/pkgconfig/theoraenc.pc
+=======> Building '/home/devel/packages/libtheora#1.1.1-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling libtheora 1.1.1-1
+prt-get: /usr/bin/pkgadd -u libtheora#1.1.1-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 23:33:57 2024
+

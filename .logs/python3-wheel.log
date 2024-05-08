@@ -1,0 +1,106 @@
+prt-get: updating /usr/ports/core-x86_64/python3-wheel
+prt-get: starting build Wed May  8 01:05:17 2024
+=======> Building '/home/devel/packages/python3-wheel#0.43.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/wheel-0.43.0.tar.gz
++ build
++ cd wheel-0.43.0
++ /usr/bin/pip3 wheel -w dist --no-cache-dir --no-build-isolation --no-deps /home/devel/building/work/src/wheel-0.43.0
+Processing /home/devel/building/work/src/wheel-0.43.0
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: wheel
+  Building wheel for wheel (pyproject.toml): started
+  Building wheel for wheel (pyproject.toml): finished with status 'done'
+  Created wheel for wheel: filename=wheel-0.43.0-py3-none-any.whl size=65775 sha256=b1d9badbcda1857993ce58fc40356a18f7cb87e513a06b509d5822461d761a62
+  Stored in directory: /tmp/pip-ephem-wheel-cache-tp1e4iqq/wheels/7e/29/c5/2277ded9587f336832735d4697bbe04aba062fb4dfd56f29a9
+Successfully built wheel
++ PIP_CONFIG_FILE=/dev/null
++ /usr/bin/pip3 install --root-user-action=ignore --no-warn-script-location --ignore-installed --no-deps dist/wheel-0.43.0-py3-none-any.whl --no-cache-dir --no-index --isolated --root=/home/devel/building/work/pkg
+Processing ./dist/wheel-0.43.0-py3-none-any.whl
+Installing collected packages: wheel
+Successfully installed wheel-0.43.0
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/bin/
+-rwxr-xr-x  0 root   root      208 May  8 01:05 usr/bin/wheel
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/python3.12/
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/wheel/
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/wheel-0.43.0.dist-info/
+-rw-r--r--  0 root   root      104 May  8 01:05 usr/lib/python3.12/site-packages/wheel-0.43.0.dist-info/entry_points.txt
+-rw-r--r--  0 root   root     1107 May  8 01:05 usr/lib/python3.12/site-packages/wheel-0.43.0.dist-info/LICENSE.txt
+-rw-r--r--  0 root   root       81 May  8 01:05 usr/lib/python3.12/site-packages/wheel-0.43.0.dist-info/WHEEL
+-rw-r--r--  0 root   root     2153 May  8 01:05 usr/lib/python3.12/site-packages/wheel-0.43.0.dist-info/METADATA
+-rw-r--r--  0 root   root        4 May  8 01:05 usr/lib/python3.12/site-packages/wheel-0.43.0.dist-info/INSTALLER
+-rw-r--r--  0 root   root      286 May  8 01:05 usr/lib/python3.12/site-packages/wheel-0.43.0.dist-info/direct_url.json
+-rw-r--r--  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/wheel-0.43.0.dist-info/REQUESTED
+-rw-r--r--  0 root   root     4655 May  8 01:05 usr/lib/python3.12/site-packages/wheel-0.43.0.dist-info/RECORD
+-rw-r--r--  0 root   root       59 May  8 01:05 usr/lib/python3.12/site-packages/wheel/__init__.py
+-rw-r--r--  0 root   root      455 May  8 01:05 usr/lib/python3.12/site-packages/wheel/__main__.py
+-rw-r--r--  0 root   root      746 May  8 01:05 usr/lib/python3.12/site-packages/wheel/_setuptools_logging.py
+-rw-r--r--  0 root   root    20938 May  8 01:05 usr/lib/python3.12/site-packages/wheel/bdist_wheel.py
+-rw-r--r--  0 root   root    16103 May  8 01:05 usr/lib/python3.12/site-packages/wheel/macosx_libfile.py
+-rw-r--r--  0 root   root     5884 May  8 01:05 usr/lib/python3.12/site-packages/wheel/metadata.py
+-rw-r--r--  0 root   root      621 May  8 01:05 usr/lib/python3.12/site-packages/wheel/util.py
+-rw-r--r--  0 root   root     7694 May  8 01:05 usr/lib/python3.12/site-packages/wheel/wheelfile.py
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/wheel/cli/
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/wheel/__pycache__/
+-rw-r--r--  0 root   root      256 May  8 01:05 usr/lib/python3.12/site-packages/wheel/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--  0 root   root      991 May  8 01:05 usr/lib/python3.12/site-packages/wheel/__pycache__/__main__.cpython-312.pyc
+-rw-r--r--  0 root   root     1345 May  8 01:05 usr/lib/python3.12/site-packages/wheel/__pycache__/_setuptools_logging.cpython-312.pyc
+-rw-r--r--  0 root   root    24883 May  8 01:05 usr/lib/python3.12/site-packages/wheel/__pycache__/bdist_wheel.cpython-312.pyc
+-rw-r--r--  0 root   root    15644 May  8 01:05 usr/lib/python3.12/site-packages/wheel/__pycache__/macosx_libfile.cpython-312.pyc
+-rw-r--r--  0 root   root     8279 May  8 01:05 usr/lib/python3.12/site-packages/wheel/__pycache__/metadata.cpython-312.pyc
+-rw-r--r--  0 root   root     1185 May  8 01:05 usr/lib/python3.12/site-packages/wheel/__pycache__/util.cpython-312.pyc
+-rw-r--r--  0 root   root    10500 May  8 01:05 usr/lib/python3.12/site-packages/wheel/__pycache__/wheelfile.cpython-312.pyc
+-rw-r--r--  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/__init__.py
+-rw-r--r--  0 root   root       16 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/vendor.txt
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/__pycache__/
+-rw-r--r--  0 root   root      186 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/__init__.py
+-rw-r--r--  0 root   root     3266 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/_elffile.py
+-rw-r--r--  0 root   root     9588 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/_manylinux.py
+-rw-r--r--  0 root   root     2674 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/_musllinux.py
+-rw-r--r--  0 root   root    10347 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/_parser.py
+-rw-r--r--  0 root   root     1431 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/_structures.py
+-rw-r--r--  0 root   root     5292 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/_tokenizer.py
+-rw-r--r--  0 root   root     8232 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/markers.py
+-rw-r--r--  0 root   root     2933 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/requirements.py
+-rw-r--r--  0 root   root    39778 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/specifiers.py
+-rw-r--r--  0 root   root    18950 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/tags.py
+-rw-r--r--  0 root   root     5268 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/utils.py
+-rw-r--r--  0 root   root    16234 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/version.py
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/__pycache__/
+-rw-r--r--  0 root   root      196 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--  0 root   root     5029 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/__pycache__/_elffile.cpython-312.pyc
+-rw-r--r--  0 root   root     9894 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/__pycache__/_manylinux.cpython-312.pyc
+-rw-r--r--  0 root   root     4577 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/__pycache__/_musllinux.cpython-312.pyc
+-rw-r--r--  0 root   root    14067 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/__pycache__/_parser.cpython-312.pyc
+-rw-r--r--  0 root   root     3244 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/__pycache__/_structures.cpython-312.pyc
+-rw-r--r--  0 root   root     7940 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/__pycache__/_tokenizer.cpython-312.pyc
+-rw-r--r--  0 root   root    10517 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/__pycache__/markers.cpython-312.pyc
+-rw-r--r--  0 root   root     4457 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/__pycache__/requirements.cpython-312.pyc
+-rw-r--r--  0 root   root    39552 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/__pycache__/specifiers.cpython-312.pyc
+-rw-r--r--  0 root   root    21764 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/__pycache__/tags.cpython-312.pyc
+-rw-r--r--  0 root   root     7287 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/__pycache__/utils.cpython-312.pyc
+-rw-r--r--  0 root   root    20000 May  8 01:05 usr/lib/python3.12/site-packages/wheel/vendored/packaging/__pycache__/version.cpython-312.pyc
+-rw-r--r--  0 root   root     4264 May  8 01:05 usr/lib/python3.12/site-packages/wheel/cli/__init__.py
+-rw-r--r--  0 root   root     9439 May  8 01:05 usr/lib/python3.12/site-packages/wheel/cli/convert.py
+-rw-r--r--  0 root   root     3103 May  8 01:05 usr/lib/python3.12/site-packages/wheel/cli/pack.py
+-rw-r--r--  0 root   root     4760 May  8 01:05 usr/lib/python3.12/site-packages/wheel/cli/tags.py
+-rw-r--r--  0 root   root     1021 May  8 01:05 usr/lib/python3.12/site-packages/wheel/cli/unpack.py
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/wheel/cli/__pycache__/
+-rw-r--r--  0 root   root     6876 May  8 01:05 usr/lib/python3.12/site-packages/wheel/cli/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--  0 root   root    10825 May  8 01:05 usr/lib/python3.12/site-packages/wheel/cli/__pycache__/convert.cpython-312.pyc
+-rw-r--r--  0 root   root     4452 May  8 01:05 usr/lib/python3.12/site-packages/wheel/cli/__pycache__/pack.cpython-312.pyc
+-rw-r--r--  0 root   root     6742 May  8 01:05 usr/lib/python3.12/site-packages/wheel/cli/__pycache__/tags.cpython-312.pyc
+-rw-r--r--  0 root   root     1526 May  8 01:05 usr/lib/python3.12/site-packages/wheel/cli/__pycache__/unpack.cpython-312.pyc
+=======> Building '/home/devel/packages/python3-wheel#0.43.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling python3-wheel 0.43.0-1
+prt-get: /usr/bin/pkgadd -u python3-wheel#0.43.0-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 01:05:18 2024
+

@@ -1,0 +1,1773 @@
+prt-get: updating /usr/ports/opt-x86_64/iso-codes
+prt-get: starting build Tue May  7 23:22:57 2024
+=======> Building '/home/devel/packages/iso-codes#4.16.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/iso-codes-v4.16.0.tar.gz
++ build
++ cd iso-codes-v4.16.0
++ ./configure --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --prefix=/usr
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether ln -s works... yes
+checking for msgmerge... /usr/bin/msgmerge
+checking for msgfmt... /usr/bin/msgfmt
+checking for msgfilter... /usr/bin/msgfilter
+checking for msgattrib... /usr/bin/msgattrib
+checking for recode-sr-latin... /usr/bin/recode-sr-latin
+checking if /usr/bin/msgfmt is GNU msgfmt... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating iso-codes.pc
+config.status: creating iso_639-2/Makefile
+config.status: creating iso_639-3/Makefile
+config.status: creating iso_639-5/Makefile
+config.status: creating iso_3166-1/Makefile
+config.status: creating iso_3166-2/Makefile
+config.status: creating iso_3166-3/Makefile
+config.status: creating iso_4217/Makefile
+config.status: creating iso_15924/Makefile
++ make V=1
+Making all in iso_639-2
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-2'
+python3 ../bin/xml_from_json.py iso_639-2 ../data iso_639-2.xml
+/usr/bin/msgfmt --verbose --check -o af.mo af.po
+/usr/bin/msgfmt --verbose --check -o am.mo am.po
+/usr/bin/msgfmt --verbose --check -o ar.mo ar.po
+/usr/bin/msgfmt --verbose --check -o as.mo as.po
+/usr/bin/msgfmt --verbose --check -o ast.mo ast.po
+/usr/bin/msgfmt --verbose --check -o az.mo az.po
+/usr/bin/msgfmt --verbose --check -o be.mo be.po
+157 translated messages, 146 fuzzy translations, 185 untranslated messages.
+118 translated messages, 51 fuzzy translations, 319 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o bg.mo bg.po
+az.po:11: warning: header field 'Language' still has the initial default value
+24 translated messages, 161 fuzzy translations, 303 untranslated messages.
+181 translated messages, 113 fuzzy translations/usr/bin/msgfmt --verbose --check -o bn.mo bn.po
+, 194 untranslated messages.
+477 translated messages, 6 fuzzy translations, 5 untranslated messages.
+477 translated messages, 6 fuzzy translations, 5 untranslated messages.
+488 translated messages.
+/usr/bin/msgfmt --verbose --check -o bn_BD.mo bn_BD.po
+/usr/bin/msgfmt --verbose --check -o br.mo br.po
+/usr/bin/msgfmt --verbose --check -o bs.mo bs.po
+/usr/bin/msgfmt --verbose --check -o byn.mo byn.po
+/usr/bin/msgfmt --verbose --check -o ca.mo ca.po
+258 translated messages, 3 fuzzy translations, 227 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o crh.mo crh.po
+24 translated messages, 464 untranslated messages.
+487 translated messages, 1 untranslated message.
+176 translated messages, 38 fuzzy translations, 274 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o cs.mo cs.po
+bs.po:12: warning: header field 'Language' still has the initial default value
+47 translated messages, 117 fuzzy translations, 324 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o cy.mo cy.po
+byn.po:10: warning: header field 'Language' still has the initial default value
+/usr/bin/msgfmt --verbose --check -o da.mo da.po
+119 translated messages, 49 fuzzy translations, 320 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o de.mo de.po
+/usr/bin/msgfmt --verbose --check -o el.mo el.po
+488 translated messages.
+427 translated messages, 39 fuzzy translations, 22 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o eo.mo eo.po
+/usr/bin/msgfmt --verbose --check -o es.mo es.po
+375 translated messages, 44 fuzzy translations, 69 untranslated messages.
+488 translated messages.
+487 translated messages, 1 untranslated message.
+137 translated messages, 39 fuzzy translations, 312 untranslated messages.
+488 translated messages.
+/usr/bin/msgfmt --verbose --check -o et.mo et.po
+/usr/bin/msgfmt --verbose --check -o eu.mo eu.po
+/usr/bin/msgfmt --verbose --check -o fa.mo fa.po
+/usr/bin/msgfmt --verbose --check -o fi.mo fi.po
+/usr/bin/msgfmt --verbose --check -o fr.mo fr.po
+485 translated messages, 1 fuzzy translation, 2 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o fur.mo fur.po
+488 translated messages.
+488 translated messages.
+/usr/bin/msgfmt --verbose --check -o ga.mo ga.po
+449 translated messages, 5 fuzzy translations, 34 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o gez.mo gez.po
+303 translated messages, 79 fuzzy translations, 106 untranslated messages.
+478 translated messages, 5 fuzzy translations, 5 untranslated messages.
+488 translated messages.
+488 translated messages.
+/usr/bin/msgfmt --verbose --check -o gl.mo gl.po
+gez.po:10: warning: header field 'Language' still has the initial default value
+119 translated messages, 49 fuzzy translations, 320 untranslated messages.
+283 translated messages, 3 fuzzy translations, 202 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o gu.mo gu.po
+/usr/bin/msgfmt --verbose --check -o he.mo he.po
+/usr/bin/msgfmt --verbose --check -o hi.mo hi.po
+/usr/bin/msgfmt --verbose --check -o hr.mo hr.po
+/usr/bin/msgfmt --verbose --check -o hu.mo hu.po
+/usr/bin/msgfmt --verbose --check -o hy.mo hy.po
+/usr/bin/msgfmt --verbose --check -o id.mo id.po
+478 translated messages, 5 fuzzy translations, 5 untranslated messages.
+119 translated messages, 91 fuzzy translations, 278 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o is.mo is.po
+119 translated messages, 49 fuzzy translations, 320 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o it.mo it.po
+488 translated messages.
+294 translated messages, 194 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ja.mo ja.po
+488 translated messages.
+488 translated messages.
+480 translated messages, 5 fuzzy translations, 3 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ka.mo ka.po
+/usr/bin/msgfmt --verbose --check -o kab.mo kab.po
+/usr/bin/msgfmt --verbose --check -o kn.mo kn.po
+/usr/bin/msgfmt --verbose --check -o ko.mo ko.po
+/usr/bin/msgfmt --verbose --check -o kok.mo kok.po
+488 translated messages.
+488 translated messages/usr/bin/msgfmt --verbose --check -o lt.mo lt.po
+.
+241 translated messages, 247 untranslated messages.
+185 translated messages, 303 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o lv.mo lv.po
+kok.po:10: warning: header field 'Language' still has the initial default value
+/usr/bin/msgfmt --verbose --check -o mi.mo mi.po
+118 translated messages, 54 fuzzy translations, 316 untranslated messages.
+441 translated messages, 37 fuzzy translations, 10 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o mk.mo mk.po
+488 translated messages.
+/usr/bin/msgfmt --verbose --check -o ml.mo ml.po
+475 translated messages, 7 fuzzy translations, 6 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o mn.mo mn.po
+/usr/bin/msgfmt --verbose --check -o mr.mo mr.po
+/usr/bin/msgfmt --verbose --check -o ms.mo ms.po
+488 translated messages.
+/usr/bin/msgfmt --verbose --check -o mt.mo mt.po
+24 translated messages, 154 fuzzy translations, 310 untranslated messages.
+480 translated messages, 5 fuzzy translations, 3 untranslated messages.
+mk.po:11: warning: header field 'Language' still has the initial default value
+/usr/bin/msgfmt --verbose --check -o nb_NO.mo nb_NO.po
+35 translated messages, 143 fuzzy translations, 310 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nl.mo nl.po
+/usr/bin/msgfmt --verbose --check -o nn.mo nn.po
+135 translated messages, 173 fuzzy translations, 180 untranslated messages.
+45 translated messages, 138 fuzzy translations, 305 untranslated messages.
+475 translated messages, 7 fuzzy translations, 6 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nso.mo nso.po
+487 translated messages, 1 untranslated message.
+/usr/bin/msgfmt --verbose --check -o oc.mo oc.po
+/usr/bin/msgfmt --verbose --check -o or.mo or.po
+/usr/bin/msgfmt --verbose --check -o pa.mo pa.po
+240 translated messages, 169 fuzzy translations, 79 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pa_PK.mo pa_PK.po
+161 translated messages, 105 fuzzy translations, 222 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pl.mo pl.po
+217 translated messages, 85 fuzzy translations, 186 untranslated messages.
+488 translated messages.
+55 translated messages, 99 fuzzy translations, 334 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ps.mo ps.po
+/usr/bin/msgfmt --verbose --check -o pt.mo pt.po
+161 translated messages, 25 fuzzy translations, 302 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pt_BR.mo pt_BR.po
+/usr/bin/msgfmt --verbose --check -o ro.mo ro.po
+487 translated messages, 1 untranslated message.
+488 translated messages.
+/usr/bin/msgfmt --verbose --check -o ro_MD.mo ro_MD.po
+277 translated messages, 1 fuzzy translation, 210 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ru.mo ru.po
+/usr/bin/msgfmt --verbose --check -o rw.mo rw.po
+488 translated messages.
+/usr/bin/msgfmt --verbose --check -o sc.mo sc.po
+ps.po:10: warning: header field 'Language' still has the initial default value
+29 translated messages, 33 fuzzy translations, 426 untranslated messages.
+488 translated messages.
+/usr/bin/msgfmt --verbose --check -o sk.mo sk.po
+488 translated messages.
+488 translated messages.
+1 translated message, 487 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sl.mo sl.po
+/usr/bin/msgfmt --verbose --check -o sq.mo sq.po
+/usr/bin/msgfmt --verbose --check -o sr.mo sr.po
+/usr/bin/msgfmt --verbose --check -o sr@latin.mo sr@latin.po
+356 translated messages, 95 fuzzy translations, 37 untranslated messages.
+487 translated messages, 1 untranslated message.
+/usr/bin/msgfmt --verbose --check -o sv.mo sv.po
+/usr/bin/msgfmt --verbose --check -o ta.mo ta.po
+488 translated messages.
+/usr/bin/msgfmt --verbose --check -o te.mo te.po
+488 translated messages.
+/usr/bin/msgfmt --verbose --check -o tg.mo tg.po
+480 translated messages, 5 fuzzy translations, 3 untranslated messages.
+488 translated messages.
+/usr/bin/msgfmt --verbose --check -o th.mo th.po
+487 translated messages, 1 untranslated message.
+487 translated messages, 1 untranslated message.
+/usr/bin/msgfmt --verbose --check -o ti.mo ti.po
+/usr/bin/msgfmt --verbose --check -o tig.mo tig.po
+/usr/bin/msgfmt --verbose --check -o tr.mo tr.po
+488 translated messages.
+/usr/bin/msgfmt --verbose --check -o tt.mo tt.po
+488 translated messages.
+475 translated messages, 7 fuzzy translations, 6 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o tt@iqtelif.mo tt@iqtelif.po
+88 translated messages, 400 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o tzm.mo tzm.po
+/usr/bin/msgfmt --verbose --check -o uk.mo uk.po
+ti.po:10: warning: header field 'Language' still has the initial default value
+tig.po:10: warning: header field 'Language' still has the initial default value
+119 translated messages, 49 fuzzy translations, 320 untranslated messages.
+119 translated messages, 49 fuzzy translations, 320 untranslated messages.
+269 translated messages, 3 fuzzy translations, 216 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ve.mo ve.po
+/usr/bin/msgfmt --verbose --check -o vi.mo vi.po
+/usr/bin/msgfmt --verbose --check -o wa.mo wa.po
+488 translated messages.
+tt.po:10: warning: header field 'Language' still has the initial default value
+148 translated messages, 66 fuzzy translations, 274 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o xh.mo xh.po
+/usr/bin/msgfmt --verbose --check -o zh_CN.mo zh_CN.po
+tt@iqtelif.po:10: warning: header field 'Language' still has the initial default value
+148 translated messages, 66 fuzzy translations, 274 untranslated messages.
+2 translated messages, 486 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o zh_HK.mo zh_HK.po
+/usr/bin/msgfmt --verbose --check -o zh_TW.mo zh_TW.po
+488 translated messages.
+37 translated messages, 255 fuzzy translations, 196 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o zu.mo zu.po
+478 translated messages, 5 fuzzy translations, 5 untranslated messages.
+480 translated messages, 5 fuzzy translations, 3 untranslated messages.
+49 translated messages, 137 fuzzy translations, 302 untranslated messages.
+488 translated messages.
+488 translated messages.
+488 translated messages.
+44 translated messages, 134 fuzzy translations, 310 untranslated messages.
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-2'
+Making all in iso_639-3
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-3'
+python3 ../bin/xml_from_json.py iso_639-3 ../data iso_639-3.xml
+/usr/bin/msgfmt --verbose --check -o af.mo af.po
+/usr/bin/msgfmt --verbose --check -o am.mo am.po
+/usr/bin/msgfmt --verbose --check -o ar.mo ar.po
+/usr/bin/msgfmt --verbose --check -o ast.mo ast.po
+/usr/bin/msgfmt --verbose --check -o az.mo az.po
+/usr/bin/msgfmt --verbose --check -o be.mo be.po
+/usr/bin/msgfmt --verbose --check -o bg.mo bg.po
+367 translated messages, 38 fuzzy translations, 8921 untranslated messages.
+393 translated messages, 63 fuzzy translations, 8870 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o bn.mo bn.po
+/usr/bin/msgfmt --verbose --check -o br.mo br.po
+az.po:11: warning: header field 'Language' still has the initial default value
+25 translated messages, 3108 fuzzy translations, 6193 untranslated messages.
+119 translated messages, 2981 fuzzy translations, 6226 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o bs.mo bs.po
+129 translated messages, 4172 fuzzy translations, 5025 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o byn.mo byn.po
+157 translated messages, 3072 fuzzy translations, 6097 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ca.mo ca.po
+/usr/bin/msgfmt --verbose --check -o crh.mo crh.po
+7441 translated messages, 1328 fuzzy translations, 557 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o cs.mo cs.po
+/usr/bin/msgfmt --verbose --check -o cy.mo cy.po
+796 translated messages, 581 fuzzy translations, 7949 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o da.mo da.po
+bs.po:12: warning: header field 'Language' still has the initial default value
+51 translated messages, 2716 fuzzy translations, 6559 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o de.mo de.po
+byn.po:10: warning: header field 'Language' still has the initial default value
+120 translated messages, 2979 fuzzy translations, 6227 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o el.mo el.po
+582 translated messages, 3802 fuzzy translations, 4942 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o eo.mo eo.po
+1625 translated messages, 4008 fuzzy translations, 3693 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o es.mo es.po
+6430 translated messages, 1263 fuzzy translations, 1633 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o et.mo et.po
+334 translated messages, 3486 fuzzy translations, 5506 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o eu.mo eu.po
+370 translated messages, 3941 fuzzy translations, 5015 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o fa.mo fa.po
+829 translated messages, 529 fuzzy translations, 7968 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o fi.mo fi.po
+433 translated messages, 4907 fuzzy translations, 3986 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o fr.mo fr.po
+937 translated messages, 4546 fuzzy translations, 3843 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o fur.mo fur.po
+795 translated messages, 4828 fuzzy translations, 3703 untranslated messages.
+757 translated messages, 2134 fuzzy translations, 6435 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ga.mo ga.po
+8918 translated messages, 343 fuzzy translations, 65 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o gez.mo gez.po
+/usr/bin/msgfmt --verbose --check -o gl.mo gl.po
+480 translated messages, 2708 fuzzy translations, 6138 untranslated messages.
+280 translated messages, 4666 fuzzy translations, 4380 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o gu.mo gu.po
+/usr/bin/msgfmt --verbose --check -o he.mo he.po
+7 translated messages, 9319 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o hi.mo hi.po
+338 translated messages, 4929 fuzzy translations, 4059 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o hr.mo hr.po
+gez.po:10: warning: header field 'Language' still has the initial default value
+120 translated messages, 2979 fuzzy translations, 6227 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o hu.mo hu.po
+9326 translated messages.
+201 translated messages, 3810 fuzzy translations, 5315 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o id.mo id.po
+/usr/bin/msgfmt --verbose --check -o is.mo is.po
+866 translated messages, 474 fuzzy translations, 7986 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o it.mo it.po
+7321 translated messages, 1417 fuzzy translations, 588 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ja.mo ja.po
+121 translated messages, 2902 fuzzy translations, 6303 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ka.mo ka.po
+937 translated messages, 82 fuzzy translations, 8307 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o kab.mo kab.po
+122 translated messages, 3015 fuzzy translations, 6189 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o kmr.mo kmr.po
+968 translated messages, 4342 fuzzy translations, 4016 untranslated messages.
+3509 translated messages, 1453 fuzzy translations, 4364 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o kn.mo kn.po
+/usr/bin/msgfmt --verbose --check -o ko.mo ko.po
+7076 translated messages, 599 fuzzy translations, 1651 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o kok.mo kok.po
+8452 translated messages, 619 fuzzy translations, 255 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o lt.mo lt.po
+ka.po:10: warning: header field 'PO-Revision-Date' still has the initial default value
+0 translated messages, 9326 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o lv.mo lv.po
+347 translated messages, 4934 fuzzy translations, 4045 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o mi.mo mi.po
+11 translated messages, 1 fuzzy translation, 9314 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o mk.mo mk.po
+5 translated messages, 4 fuzzy translations, 9317 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o mn.mo mn.po
+380 translated messages, 2969 fuzzy translations, 5977 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o mr.mo mr.po
+kok.po:10: warning: header field 'Language' still has the initial default value
+119 translated messages, 2998 fuzzy translations, 6209 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ms.mo ms.po
+632 translated messages, 674 fuzzy translations, 8020 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o mt.mo mt.po
+lv.po:11: warning: header field 'Language' still has the initial default value
+254 translated messages, 2948 fuzzy translations, 6124 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nb_NO.mo nb_NO.po
+6479 translated messages, 1452 fuzzy translations, 1395 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nl.mo nl.po
+28 translated messages, 2963 fuzzy translations, 6335 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nn.mo nn.po
+mk.po:11: warning: header field 'Language' still has the initial default value
+39 translated messages, 2952 fuzzy translations, 6335 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nso.mo nso.po
+140 translated messages, 4420 fuzzy translations, 4766 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o oc.mo oc.po
+49 translated messages, 2942 fuzzy translations, 6335 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o or.mo or.po
+239 translated messages, 4949 fuzzy translations, 4138 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pa.mo pa.po
+133 translated messages, 3980 fuzzy translations, 5213 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pl.mo pl.po
+7340 translated messages, 1423 fuzzy translations, 563 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ps.mo ps.po
+1914 translated messages, 3450 fuzzy translations, 3962 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pt.mo pt.po
+175 translated messages, 3731 fuzzy translations, 5420 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pt_BR.mo pt_BR.po
+59 translated messages, 2909 fuzzy translations, 6358 untranslated messages.
+oc.po:11: warning: header field 'Language' still has the initial default value
+/usr/bin/msgfmt --verbose --check -o ro.mo ro.po
+78 translated messages, 162 fuzzy translations, 9086 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ru.mo ru.po
+29 translated messages, 1100 fuzzy translations, 8197 untranslated messages.
+2616 translated messages, 128 fuzzy translations, 6582 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o rw.mo rw.po
+/usr/bin/msgfmt --verbose --check -o sc.mo sc.po
+3471 translated messages, 1117 fuzzy translations, 4738 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sk.mo sk.po
+368 translated messages, 4820 fuzzy translations, 4138 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sl.mo sl.po
+433 translated messages, 2135 fuzzy translations, 6758 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o so.mo so.po
+7229 translated messages, 1488 fuzzy translations, 609 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sq.mo sq.po
+246 translated messages, 3108 fuzzy translations, 5972 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sr.mo sr.po
+359 translated messages, 4772 fuzzy translations, 4195 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sr@latin.mo sr@latin.po
+479 translated messages, 46 fuzzy translations, 8801 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sv.mo sv.po
+328 translated messages, 4977 fuzzy translations, 4021 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ta.mo ta.po
+255 translated messages, 2947 fuzzy translations, 6124 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o th.mo th.po
+so.po:10: warning: header field 'PO-Revision-Date' still has the initial default value
+0 translated messages, 9326 untranslated messages.
+322 translated messages, 4141 fuzzy translations, 4863 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ti.mo ti.po
+/usr/bin/msgfmt --verbose --check -o tig.mo tig.po
+sq.po:10: warning: header field 'PO-Revision-Date' still has the initial default value
+0 translated messages, 9326 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o tr.mo tr.po
+348 translated messages, 4969 fuzzy translations, 4009 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o tt.mo tt.po
+348 translated messages, 4969 fuzzy translations, 4009 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o tt@iqtelif.mo tt@iqtelif.po
+710 translated messages, 266 fuzzy translations, 8350 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o uk.mo uk.po
+9083 translated messages, 178 fuzzy translations, 65 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ve.mo ve.po
+121 translated messages, 2978 fuzzy translations, 6227 untranslated messages.
+tig.po:10: warning: header field 'Language' still has the initial default value
+120 translated messages, 2979 fuzzy translations, 6227 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o vi.mo vi.po
+/usr/bin/msgfmt --verbose --check -o wa.mo wa.po
+8006 translated messages, 175 fuzzy translations, 1145 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o xh.mo xh.po
+7228 translated messages, 1491 fuzzy translations, 607 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o zh_CN.mo zh_CN.po
+tt.po:10: warning: header field 'Language' still has the initial default value
+149 translated messages, 3376 fuzzy translations, 5801 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o zh_TW.mo zh_TW.po
+tt@iqtelif.po:10: warning: header field 'Language' still has the initial default value
+149 translated messages, 3376 fuzzy translations, 5801 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o zu.mo zu.po
+40 translated messages, 4388 fuzzy translations, 4898 untranslated messages.
+wa.po:11: warning: header field 'Language' still has the initial default value
+321 translated messages, 4140 fuzzy translations, 4865 untranslated messages.
+339 translated messages, 4942 fuzzy translations, 4045 untranslated messages.
+52 translated messages, 2855 fuzzy translations, 6419 untranslated messages.
+9326 translated messages.
+308 translated messages, 3012 fuzzy translations, 6006 untranslated messages.
+633 translated messages, 2710 fuzzy translations, 5983 untranslated messages.
+49 translated messages, 2942 fuzzy translations, 6335 untranslated messages.
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-3'
+Making all in iso_639-5
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-5'
+python3 ../bin/xml_from_json.py iso_639-5 ../data iso_639-5.xml
+/usr/bin/msgfmt --verbose --check -o ab.mo ab.po
+/usr/bin/msgfmt --verbose --check -o ast.mo ast.po
+/usr/bin/msgfmt --verbose --check -o be.mo be.po
+/usr/bin/msgfmt --verbose --check -o bn.mo bn.po
+/usr/bin/msgfmt --verbose --check -o bn_BD.mo bn_BD.po
+/usr/bin/msgfmt --verbose --check -o cs.mo cs.po
+/usr/bin/msgfmt --verbose --check -o cy.mo cy.po
+ab.po:10: warning: header field 'PO-Revision-Date' still has the initial default value
+0 translated messages, 115 untranslated messages.
+ast.po:10: warning: header field 'PO-Revision-Date' still has the initial default value
+60 translated messages, 55 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o da.mo da.po
+64 translated messages, 51 untranslated messages.
+115 translated messages.
+28 translated messages, 87 untranslated messages.
+cs.po:10: warning: header field 'PO-Revision-Date' still has the initial default value
+60 translated messages, 55 untranslated messages.
+26 translated messages, 25 fuzzy translations, 64 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o de.mo de.po
+/usr/bin/msgfmt --verbose --check -o el.mo el.po
+/usr/bin/msgfmt --verbose --check -o eo.mo eo.po
+/usr/bin/msgfmt --verbose --check -o et.mo et.po
+/usr/bin/msgfmt --verbose --check -o fr.mo fr.po
+/usr/bin/msgfmt --verbose --check -o fur.mo fur.po
+60 translated messages, 55 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o hi.mo hi.po
+115 translated messages.
+23 translated messages, 20 fuzzy translations, 72 untranslated messages.
+100 translated messages, 15 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o hr.mo hr.po
+115 translated messages.
+/usr/bin/msgfmt --verbose --check -o hu.mo hu.po
+115 translated messages.
+/usr/bin/msgfmt --verbose --check -o id.mo id.po
+115 translated messages.
+/usr/bin/msgfmt --verbose --check -o is.mo is.po
+/usr/bin/msgfmt --verbose --check -o it.mo it.po
+/usr/bin/msgfmt --verbose --check -o ka.mo ka.po
+1 translated message, 30 fuzzy translations, 84 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o kab.mo kab.po
+115 translated messages.
+115 translated messages.
+95 translated messages, 20 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o lt.mo lt.po
+115 translated messages.
+/usr/bin/msgfmt --verbose --check -o nb_NO.mo nb_NO.po
+106 translated messages, 9 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nl.mo nl.po
+/usr/bin/msgfmt --verbose --check -o oc.mo oc.po
+115 translated messages.
+/usr/bin/msgfmt --verbose --check -o pl.mo pl.po
+kab.po:10: warning: header field 'PO-Revision-Date' still has the initial default value
+0 translated messages, 115 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pt_BR.mo pt_BR.po
+/usr/bin/msgfmt --verbose --check -o ro.mo ro.po
+12 translated messages, 1 fuzzy translation114 translated messages, 102 untranslated messages, 1 untranslated message.
+.
+/usr/bin/msgfmt --verbose --check -o ru.mo ru.po
+115 translated messages.
+6 translated messages, 24 fuzzy translations, 85 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sc.mo sc.po
+115 translated messages.
+115 translated messages.
+/usr/bin/msgfmt --verbose --check -o sq.mo sq.po
+/usr/bin/msgfmt --verbose --check -o sr.mo sr.po
+/usr/bin/msgfmt --verbose --check -o sr@latin.mo sr@latin.po
+115 translated messages.
+/usr/bin/msgfmt --verbose --check -o sv.mo sv.po
+/usr/bin/msgfmt --verbose --check -o ta.mo ta.po
+115 translated messages.
+115 translated messages.
+/usr/bin/msgfmt --verbose --check -o tr.mo tr.po
+/usr/bin/msgfmt --verbose --check -o uk.mo uk.po
+sq.po:10: warning: header field 'PO-Revision-Date' still has the initial default value
+60 translated messages, 55 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o zh_Hans.mo zh_Hans.po
+75 translated messages, 40 untranslated messages.
+75 translated messages, 40 untranslated messages.
+115 translated messages.
+115 translated messages.
+115 translated messages.
+/usr/bin/msgfmt --verbose --check -o zh_Hant.mo zh_Hant.po
+115 translated messages.
+6 translated messages, 109 untranslated messages.
+115 translated messages.
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-5'
+Making all in iso_3166-1
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-1'
+python3 ../bin/xml_from_json.py iso_3166-1 ../data iso_3166-1.xml
+/usr/bin/msgfmt --verbose --check -o ab.mo ab.po
+/usr/bin/msgfmt --verbose --check -o ace.mo ace.po
+/usr/bin/msgfmt --verbose --check -o ach.mo ach.po
+/usr/bin/msgfmt --verbose --check -o af.mo af.po
+/usr/bin/msgfmt --verbose --check -o ak.mo ak.po
+/usr/bin/msgfmt --verbose --check -o am.mo am.po
+/usr/bin/msgfmt --verbose --check -o an.mo an.po
+0 translated messages, 50 fuzzy translations, 375 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ar.mo ar.po
+0 translated messages, 182 fuzzy translations, 243 untranslated messages.
+211 translated messages, 3 fuzzy translations, 211 untranslated messages.
+0 translated messages, 44 fuzzy translations, 381 untranslated messages.
+401 translated messages, 11 fuzzy translations, 13 untranslated messages.
+122 translated messages, 173 fuzzy translations, 130 untranslated messages.
+61 translated messages, 181 fuzzy translations, 183 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o as.mo as.po
+/usr/bin/msgfmt --verbose --check -o ast.mo ast.po
+/usr/bin/msgfmt --verbose --check -o ay.mo ay.po
+/usr/bin/msgfmt --verbose --check -o az.mo az.po
+/usr/bin/msgfmt --verbose --check -o ba.mo ba.po
+/usr/bin/msgfmt --verbose --check -o bar.mo bar.po
+418 translated messages, 3 fuzzy translations, 4 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o be.mo be.po
+0 translated messages, 69 fuzzy translations, 356 untranslated messages.
+404 translated messages, 13 fuzzy translations, 8 untranslated messages.
+221 translated messages, 190 fuzzy translations, 14 untranslated messages.
+0 translated messages, 202 fuzzy translations, 223 untranslated messages.
+152 translated messages, 4 fuzzy translations, 269 untranslated messages396 translated messages.
+, 19 fuzzy translations, 10 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o bg.mo bg.po
+/usr/bin/msgfmt --verbose --check -o bi.mo bi.po
+/usr/bin/msgfmt --verbose --check -o bn.mo bn.po
+/usr/bin/msgfmt --verbose --check -o bn_IN.mo bn_IN.po
+/usr/bin/msgfmt --verbose --check -o br.mo br.po
+/usr/bin/msgfmt --verbose --check -o bs.mo bs.po
+425 translated messages.
+0 translated messages, 81 fuzzy translations, 344 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o byn.mo byn.po
+425 translated messages.
+228 translated messages, 16 fuzzy translations, 181 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ca.mo ca.po
+/usr/bin/msgfmt --verbose --check -o ce.mo ce.po
+420 translated messages, 1 fuzzy translation, 4 untranslated messages.
+402 translated messages, 16 fuzzy translations, 7 untranslated messages.
+424 translated messages, 1 fuzzy translation.
+112 translated messages, 17 fuzzy translations, 296 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ch.mo ch.po
+/usr/bin/msgfmt --verbose --check -o chr.mo chr.po
+/usr/bin/msgfmt --verbose --check -o ckb.mo ckb.po
+/usr/bin/msgfmt --verbose --check -o crh.mo crh.po
+/usr/bin/msgfmt --verbose --check -o cs.mo cs.po
+200 translated messages, 6 fuzzy translations, 219 untranslated messages.
+425 translated messages.
+22 translated messages, 403 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o csb.mo csb.po
+/usr/bin/msgfmt --verbose --check -o cv.mo cv.po
+99 translated messages, 4 fuzzy translations, 322 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o cy.mo cy.po
+196 translated messages, 4 fuzzy translations, 225 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o da.mo da.po
+389 translated messages, 23 fuzzy translations, 13 untranslated messages.
+425 translated messages.
+/usr/bin/msgfmt --verbose --check -o de.mo de.po
+/usr/bin/msgfmt --verbose --check -o dv.mo dv.po
+/usr/bin/msgfmt --verbose --check -o dz.mo dz.po
+/usr/bin/msgfmt --verbose --check -o ee.mo ee.po
+93 translated messages, 3 fuzzy translations, 329 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o el.mo el.po
+201 translated messages, 6 fuzzy translations, 218 untranslated messages.
+425 translated messages.
+418 translated messages, 3 fuzzy translations, 4 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o eo.mo eo.po
+/usr/bin/msgfmt --verbose --check -o es.mo es.po
+/usr/bin/msgfmt --verbose --check -o et.mo et.po
+202 translated messages, 6 fuzzy translations, 217 untranslated messages.
+425 translated messages.
+0 translated messages, 150 fuzzy translations, 275 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o eu.mo eu.po
+396 translated messages, 19 fuzzy translations, 10 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o fa.mo fa.po
+/usr/bin/msgfmt --verbose --check -o ff.mo ff.po
+/usr/bin/msgfmt --verbose --check -o fi.mo fi.po
+418 translated messages, 3 fuzzy translations, 4 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o fil.mo fil.po
+420 translated messages, 1 fuzzy translation, 4 untranslated messages.
+425 translated messages.
+425 translated messages.
+/usr/bin/msgfmt --verbose --check -o fo.mo fo.po
+/usr/bin/msgfmt --verbose --check -o fr.mo fr.po
+/usr/bin/msgfmt --verbose --check -o frp.mo frp.po
+420 translated messages, 1 fuzzy translation, 4 untranslated messages.
+81 translated messages, 3 fuzzy translations, 341 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o fur.mo fur.po
+418 translated messages, 3 fuzzy translations, 4 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o fy.mo fy.po
+403 translated messages, 15 fuzzy translations, 7 untranslated messages.
+420 translated messages, 1 fuzzy translation, 4 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ga.mo ga.po
+/usr/bin/msgfmt --verbose --check -o gez.mo gez.po
+126 translated messages, 15 fuzzy translations, 284 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o gl.mo gl.po
+/usr/bin/msgfmt --verbose --check -o gn.mo gn.po
+203 translated messages, 6 fuzzy translations, 216 untranslated messages.
+425 translated messages.
+208 translated messages, 6 fuzzy translations, 211 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o gu.mo gu.po
+425 translated messages.
+/usr/bin/msgfmt --verbose --check -o gv.mo gv.po
+/usr/bin/msgfmt --verbose --check -o ha.mo ha.po
+/usr/bin/msgfmt --verbose --check -o haw.mo haw.po
+112 translated messages, 17 fuzzy translations, 296 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o he.mo he.po
+406 translated messages, 13 fuzzy translations, 6 untranslated messages.
+208 translated messages, 5 fuzzy translations, 212 untranslated messages.
+410 translated messages, 11 fuzzy translations, 4 untranslated messages.
+118 translated messages, 4 fuzzy translations, 303 untranslated messages.
+190 translated messages, 4 fuzzy translations, 231 untranslated messages.
+19 translated messages, 86 fuzzy translations, 320 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o hi.mo hi.po
+/usr/bin/msgfmt --verbose --check -o hr.mo hr.po
+420 translated messages, 1 fuzzy translation, 4 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ht.mo ht.po
+/usr/bin/msgfmt --verbose --check -o hu.mo hu.po
+/usr/bin/msgfmt --verbose --check -o hy.mo hy.po
+/usr/bin/msgfmt --verbose --check -o ia.mo ia.po
+/usr/bin/msgfmt --verbose --check -o id.mo id.po
+425 translated messages.
+/usr/bin/msgfmt --verbose --check -o io.mo io.po
+186 translated messages, 3 fuzzy translations, 236 untranslated messages.
+422 translated messages, 3 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o is.mo is.po
+420 translated messages, 1 fuzzy translation, 4 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o it.mo it.po
+425 translated messages.
+418 translated messages, 3 fuzzy translations, 4 untranslated messages.
+425 translated messages.
+407 translated messages, 11 fuzzy translations, 7 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o iu.mo iu.po
+/usr/bin/msgfmt --verbose --check -o ja.mo ja.po
+/usr/bin/msgfmt --verbose --check -o jam.mo jam.po
+/usr/bin/msgfmt --verbose --check -o ka.mo ka.po
+209 translated messages, 6 fuzzy translations, 210 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o kab.mo kab.po
+/usr/bin/msgfmt --verbose --check -o ki.mo ki.po
+425 translated messages.
+420 translated messages, 1 fuzzy translation, 4 untranslated messages.
+25 translated messages, 3 fuzzy translations, 397 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o kk.mo kk.po
+/usr/bin/msgfmt --verbose --check -o kl.mo kl.po
+/usr/bin/msgfmt --verbose --check -o km.mo km.po
+190 translated messages, 4 fuzzy translations, 231 untranslated messages.
+143 translated messages, 4 fuzzy translations, 278 untranslated messages.
+412 translated messages, 7 fuzzy translations, 6 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o kmr.mo kmr.po
+/usr/bin/msgfmt --verbose --check -o kn.mo kn.po
+425 translated messages.
+/usr/bin/msgfmt --verbose --check -o ko.mo ko.po
+114 translated messages, 4 fuzzy translations, 307 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o kv.mo kv.po
+/usr/bin/msgfmt --verbose --check -o kw.mo kw.po
+0 translated messages, 98 fuzzy translations, 327 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ky.mo ky.po
+422 translated messages, 3 untranslated messages.
+425 translated messages.
+/usr/bin/msgfmt --verbose --check -o lo.mo lo.po
+403 translated messages, 14 fuzzy translations, 8 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o lt.mo lt.po
+425 translated messages.
+/usr/bin/msgfmt --verbose --check -o lv.mo lv.po
+382 translated messages, 26 fuzzy translations, 17 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o mai.mo mai.po
+/usr/bin/msgfmt --verbose --check -o mhr.mo mhr.po
+108 translated messages, 4 fuzzy translations, 313 untranslated messages.
+210 translated messages, 6 fuzzy translations, 209 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o mi.mo mi.po
+/usr/bin/msgfmt --verbose --check -o mk.mo mk.po
+413 translated messages, 7 fuzzy translations, 5 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ml.mo ml.po
+78 translated messages, 3 fuzzy translations, 344 untranslated messages.
+72 translated messages, 3 fuzzy translations, 350 untranslated messages.
+425 translated messages.
+/usr/bin/msgfmt --verbose --check -o mn.mo mn.po
+409 translated messages, 10 fuzzy translations, 6 untranslated messages.
+106 translated messages, 3 fuzzy translations, 316 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o mr.mo mr.po
+/usr/bin/msgfmt --verbose --check -o ms.mo ms.po
+/usr/bin/msgfmt --verbose --check -o mt.mo mt.po
+/usr/bin/msgfmt --verbose --check -o my.mo my.po
+208 translated messages, 98 fuzzy translations, 119 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o na.mo na.po
+401 translated messages, 16 fuzzy translations, 8 untranslated messages.
+389 translated messages, 23 fuzzy translations, 13 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nah.mo nah.po
+194 translated messages, 100 fuzzy translations, 131 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nb_NO.mo nb_NO.po
+/usr/bin/msgfmt --verbose --check -o ne.mo ne.po
+262 translated messages, 27 fuzzy translations, 136 untranslated messages.
+205 translated messages, 103 fuzzy translations, 117 untranslated messages.
+418 translated messages, 3 fuzzy translations, 4 untranslated messages.
+184 translated messages, 4 fuzzy translations, 237 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nl.mo nl.po
+/usr/bin/msgfmt --verbose --check -o nn.mo nn.po
+150 translated messages, 4 fuzzy translations, 271 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nso.mo nso.po
+/usr/bin/msgfmt --verbose --check -o nv.mo nv.po
+/usr/bin/msgfmt --verbose --check -o oc.mo oc.po
+181 translated messages, 4 fuzzy translations, 240 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o or.mo or.po
+425 translated messages.
+399 translated messages, 18 fuzzy translations, 8 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pa.mo pa.po
+425 translated messages.
+/usr/bin/msgfmt --verbose --check -o pap.mo pap.po
+84 translated messages, 4 fuzzy translations, 337 untranslated messages.
+183 translated messages, 122 fuzzy translations, 120 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pi.mo pi.po
+401 translated messages, 13 fuzzy translations, 11 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pl.mo pl.po
+424 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o ps.mo ps.po
+/usr/bin/msgfmt --verbose --check -o pt.mo pt.po
+/usr/bin/msgfmt --verbose --check -o pt_BR.mo pt_BR.po
+418 translated messages, 3 fuzzy translations, 4 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ro.mo ro.po
+0 translated messages, 184 fuzzy translations, 241 untranslated messages.
+160 translated messages, 1 fuzzy translation, 264 untranslated messages.
+425 translated messages.
+146 translated messages, 6 fuzzy translations/usr/bin/msgfmt --verbose --check -o ro_MD.mo ro_MD.po
+, 273 untranslated messages.
+425 translated messages.
+/usr/bin/msgfmt --verbose --check -o ru.mo ru.po
+/usr/bin/msgfmt --verbose --check -o rw.mo rw.po
+421 translated messages, 1 fuzzy translation, 3 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sc.mo sc.po
+422 translated messages, 3 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sd.mo sd.po
+/usr/bin/msgfmt --verbose --check -o si.mo si.po
+/usr/bin/msgfmt --verbose --check -o sk.mo sk.po
+425 translated messages.
+26 translated messages, 399 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sl.mo sl.po
+/usr/bin/msgfmt --verbose --check -o so.mo so.po
+383 translated messages, 26 fuzzy translations, 16 untranslated messages.
+75 translated messages, 4 fuzzy translations, 346 untranslated messages.
+420 translated messages, 1 fuzzy translation, 4 untranslated messages.
+425 translated messages.
+/usr/bin/msgfmt --verbose --check -o son.mo son.po
+/usr/bin/msgfmt --verbose --check -o sq.mo sq.po
+/usr/bin/msgfmt --verbose --check -o sr.mo sr.po
+425 translated messages.
+/usr/bin/msgfmt --verbose --check -o sr@latin.mo sr@latin.po
+403 translated messages, 14 fuzzy translations, 8 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sv.mo sv.po
+131 translated messages, 51 fuzzy translations, 243 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sw.mo sw.po
+409 translated messages, 10 fuzzy translations, 6 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ta.mo ta.po
+/usr/bin/msgfmt --verbose --check -o te.mo te.po
+210 translated messages, 3 fuzzy translations, 212 untranslated messages.
+420 translated messages, 2 fuzzy translations, 3 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o tg.mo tg.po
+/usr/bin/msgfmt --verbose --check -o th.mo th.po
+418 translated messages, 3 fuzzy translations, 4 untranslated messages.
+425 translated messages.
+418 translated messages, 3 fuzzy translations, 4 untranslated messages.
+167 translated messages, 80 fuzzy translations, 178 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ti.mo ti.po
+/usr/bin/msgfmt --verbose --check -o tig.mo tig.po
+/usr/bin/msgfmt --verbose --check -o tk.mo tk.po
+/usr/bin/msgfmt --verbose --check -o tl.mo tl.po
+425 translated messages.
+401 translated messages, 14 fuzzy translations, 10 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o tr.mo tr.po
+418 translated messages, 3 fuzzy translations, 4 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o tt.mo tt.po
+412 translated messages, 8 fuzzy translations, 5 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o tt@iqtelif.mo tt@iqtelif.po
+208 translated messages, 14 fuzzy translations, 203 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o tzm.mo tzm.po
+112 translated messages, 17 fuzzy translations, 296 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ug.mo ug.po
+335 translated messages, 28 fuzzy translations, 62 untranslated messages.
+385 translated messages, 23 fuzzy translations, 17 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o uk.mo uk.po
+/usr/bin/msgfmt --verbose --check -o ur.mo ur.po
+/usr/bin/msgfmt --verbose --check -o uz.mo uz.po
+425 translated messages.
+343 translated messages, 28 fuzzy translations, 54 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ve.mo ve.po
+343 translated messages, 28 fuzzy translations, 54 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o vi.mo vi.po
+/usr/bin/msgfmt --verbose --check -o wa.mo wa.po
+1 translated message, 424 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o wal.mo wal.po
+221 translated messages, 6 fuzzy translations, 198 untranslated messages.
+418 translated messages, 3 fuzzy translations, 4 untranslated messages.
+197 translated messages, 6 fuzzy translations, 222 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o wo.mo wo.po
+425 translated messages.
+/usr/bin/msgfmt --verbose --check -o xh.mo xh.po
+/usr/bin/msgfmt --verbose --check -o yo.mo yo.po
+/usr/bin/msgfmt --verbose --check -o zh_CN.mo zh_CN.po
+184 translated messages, 124 fuzzy translations, 117 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o zh_HK.mo zh_HK.po
+408 translated messages, 10 fuzzy translations, 7 untranslated messages.
+403 translated messages, 14 fuzzy translations, 8 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o zh_TW.mo zh_TW.po
+112 translated messages, 17 fuzzy translations, 296 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o zu.mo zu.po
+60 translated messages, 142 fuzzy translations, 223 untranslated messages.
+391 translated messages, 22 fuzzy translations, 12 untranslated messages.
+218 translated messages, 6 fuzzy translations, 201 untranslated messages.
+425 translated messages.
+425 translated messages.
+425 translated messages.
+129 translated messages, 116 fuzzy translations, 180 untranslated messages.
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-1'
+Making all in iso_3166-2
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-2'
+python3 ../bin/xml_from_json.py iso_3166-2 ../data iso_3166-2.xml
+/usr/bin/msgfmt --verbose --check -o ast.mo ast.po
+/usr/bin/msgfmt --verbose --check -o az.mo az.po
+/usr/bin/msgfmt --verbose --check -o be.mo be.po
+/usr/bin/msgfmt --verbose --check -o bg.mo bg.po
+/usr/bin/msgfmt --verbose --check -o bn_BD.mo bn_BD.po
+/usr/bin/msgfmt --verbose --check -o bs.mo bs.po
+/usr/bin/msgfmt --verbose --check -o ca.mo ca.po
+ast.po:10: warning: header field 'PO-Revision-Date' still has the initial default value
+0 translated messages, 4892 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o crh.mo crh.po
+9 translated messages, 3 fuzzy translations, 4880 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o cs.mo cs.po
+az.po:10: warning: header field 'Language' still has the initial default value
+67 translated messages, 2329 fuzzy translations, 2496 untranslated messages.
+68 translated messages, 2332 fuzzy translations, 2492 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o cy.mo cy.po
+/usr/bin/msgfmt --verbose --check -o da.mo da.po
+95 translated messages, 2313 fuzzy translations, 2484 untranslated messages.
+318 translated messages, 2202 fuzzy translations, 2372 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o de.mo de.po
+/usr/bin/msgfmt --verbose --check -o el.mo el.po
+3777 translated messages, 720 fuzzy translations, 395 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o en.mo en.po
+/usr/bin/msgfmt --verbose --check -o eo.mo eo.po
+74 translated messages, 78 fuzzy translations, 4740 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o es.mo es.po
+199 translated messages, 2269 fuzzy translations, 2424 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o et.mo et.po
+827 translated messages, 13 fuzzy translations, 4052 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o eu.mo eu.po
+172 translated messages, 169 fuzzy translations, 4551 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o fa.mo fa.po
+3199 translated messages, 1049 fuzzy translations, 644 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o fi.mo fi.po
+4819 translated messages, 51 fuzzy translations, 22 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o fil.mo fil.po
+2201 translated messages, 1885 fuzzy translations, 806 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o fr.mo fr.po
+965 translated messages, 1755 fuzzy translations, 2172 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ga.mo ga.po
+353 translated messages, 2089 fuzzy translations, 2450 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o he.mo he.po
+283 translated messages, 1 fuzzy translation, 4608 untranslated messages.
+fa.po:10: warning: header field 'PO-Revision-Date' still has the initial default value
+/usr/bin/msgfmt --verbose --check -o hr.mo hr.po
+0 translated messages, 4892 untranslated messages.
+575 translated messages, 1870 fuzzy translations, 2447 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o hu.mo hu.po
+/usr/bin/msgfmt --verbose --check -o id.mo id.po
+60 translated messages, 4832 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o is.mo is.po
+103 translated messages, 214 fuzzy translations, 4575 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o it.mo it.po
+3768 translated messages, 746 fuzzy translations, 378 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ja.mo ja.po
+43 translated messages, 1591 fuzzy translations, 3258 untranslated messages.
+537 translated messages, 7 fuzzy translations, 4348 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ka.mo ka.po
+907 translated messages, 1433 fuzzy translations, 2552 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o kab.mo kab.po
+91 translated messages1603 translated messages, 977 fuzzy translations, 2312 untranslated messages.
+, 79 fuzzy translations, 4722 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o km.mo km.po
+/usr/bin/msgfmt --verbose --check -o ko.mo ko.po
+/usr/bin/msgfmt --verbose --check -o ky.mo ky.po
+3743 translated messages, 763 fuzzy translations, 386 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o lt.mo lt.po
+3683 translated messages, 784 fuzzy translations, 425 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o lv.mo lv.po
+15 translated messages, 4877 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nb_NO.mo nb_NO.po
+2099 translated messages, 689 fuzzy translations, 2104 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nl.mo nl.po
+1941 translated messages, 25 fuzzy translations, 2926 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nso.mo nso.po
+km.po:10: warning: header field 'PO-Revision-Date' still has the initial default value
+0 translated messages, 4892 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o oc.mo oc.po
+17 translated messages, 5 fuzzy translations, 4870 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pa_PK.mo pa_PK.po
+89 translated messages, 1944 fuzzy translations, 2859 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pl.mo pl.po
+1665 translated messages, 922 fuzzy translations, 2305 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pt_BR.mo pt_BR.po
+lv.po:11: warning: header field 'Language' still has the initial default value
+53 translated messages, 1978 fuzzy translations, 2861 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ro.mo ro.po
+nb_NO.po:10: warning: header field 'PO-Revision-Date' still has the initial default value
+19 translated messages, 1 fuzzy translation, 4872 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ru.mo ru.po
+10 translated messages122 translated messages, 84 fuzzy translations, 4686 untranslated messages.
+, 4882 untranslated messages.
+12 translated messages, 2214 fuzzy translations, 2666 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sc.mo sc.po
+/usr/bin/msgfmt --verbose --check -o sk.mo sk.po
+/usr/bin/msgfmt --verbose --check -o sl.mo sl.po
+4892 translated messages.
+/usr/bin/msgfmt --verbose --check -o so.mo so.po
+4614 translated messages, 191 fuzzy translations, 87 untranslated messages.
+8 translated messages, 2 fuzzy translations, 4882 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sq.mo sq.po
+3775 translated messages, 146 fuzzy translations, 971 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sr.mo sr.po
+/usr/bin/msgfmt --verbose --check -o sr@latin.mo sr@latin.po
+268 translated messages, 262 fuzzy translations, 4362 untranslated messages.
+so.po:10: warning: header field 'PO-Revision-Date' still has the initial default value
+1937 translated messages, 1820 fuzzy translations, 1135 untranslated messages.
+0 translated messages, 4892 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sv.mo sv.po
+/usr/bin/msgfmt --verbose --check -o ta.mo ta.po
+/usr/bin/msgfmt --verbose --check -o th.mo th.po
+2281 translated messages, 587 fuzzy translations, 2024 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o tr.mo tr.po
+1860 translated messages, 2421 fuzzy translations, 611 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o uk.mo uk.po
+sq.po:10: warning: header field 'PO-Revision-Date' still has the initial default value
+0 translated messages, 4892 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ve.mo ve.po
+ta.po:10: warning: header field 'PO-Revision-Date' still has the initial default value
+0 translated messages, 4892 untranslated messages.
+2960 translated messages, 731 fuzzy translations, 1201 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o vi.mo vi.po
+/usr/bin/msgfmt --verbose --check -o wa.mo wa.po
+2960 translated messages, 731 fuzzy translations, 1201 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o zh_CN.mo zh_CN.po
+1398 translated messages, 580 fuzzy translations, 2914 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o zh_TW.mo zh_TW.po
+1915 translated messages, 468 fuzzy translations, 2509 untranslated messages.
+3740 translated messages, 767 fuzzy translations, 385 untranslated messages.
+12 translated messages, 2211 fuzzy translations, 2669 untranslated messages.
+4819 translated messages, 51 fuzzy translations, 22 untranslated messages.
+wa.po:11: warning: header field 'Language' still has the initial default value
+50 translated messages, 962 fuzzy translations, 3880 untranslated messages.
+3222 translated messages, 1086 fuzzy translations, 584 untranslated messages.
+2608 translated messages, 1465 fuzzy translations, 819 untranslated messages.
+425 translated messages, 4029 fuzzy translations, 438 untranslated messages.
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-2'
+Making all in iso_3166-3
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-3'
+python3 ../bin/xml_from_json.py iso_3166-3 ../data iso_3166-3.xml
+/usr/bin/msgfmt --verbose --check -o af.mo af.po
+/usr/bin/msgfmt --verbose --check -o am.mo am.po
+/usr/bin/msgfmt --verbose --check -o ar.mo ar.po
+/usr/bin/msgfmt --verbose --check -o as.mo as.po
+/usr/bin/msgfmt --verbose --check -o ast.mo ast.po
+/usr/bin/msgfmt --verbose --check -o az.mo az.po
+/usr/bin/msgfmt --verbose --check -o be.mo be.po
+9 translated messages, 1 fuzzy translation, 21 untranslated messages.
+1 translated message, 9 fuzzy translations, 21 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o bg.mo bg.po
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o bn.mo bn.po
+30 translated messages, 1 fuzzy translation.
+30 translated messages, 1 fuzzy translation.
+1 translated message, 14 fuzzy translations, 16 untranslated messages.
+31 translated messages.
+31 translated messages.
+/usr/bin/msgfmt --verbose --check -o bn_IN.mo bn_IN.po
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o br.mo br.po
+/usr/bin/msgfmt --verbose --check -o bs.mo bs.po
+/usr/bin/msgfmt --verbose --check -o byn.mo byn.po
+/usr/bin/msgfmt --verbose --check -o ca.mo ca.po
+/usr/bin/msgfmt --verbose --check -o crh.mo crh.po
+/usr/bin/msgfmt --verbose --check -o cs.mo cs.po
+30 translated messages, 1 fuzzy translation.
+20 translated messages, 1 fuzzy translation, 10 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o cy.mo cy.po
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o da.mo da.po
+1 translated message, 4 fuzzy translations, 26 untranslated messages.
+31 translated messages.
+30 translated messages, 1 fuzzy translation.
+31 translated messages.
+/usr/bin/msgfmt --verbose --check -o de.mo de.po
+/usr/bin/msgfmt --verbose --check -o dz.mo dz.po
+/usr/bin/msgfmt --verbose --check -o el.mo el.po
+/usr/bin/msgfmt --verbose --check -o eo.mo eo.po
+/usr/bin/msgfmt --verbose --check -o es.mo es.po
+31 translated messages.
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o et.mo et.po
+/usr/bin/msgfmt --verbose --check -o eu.mo eu.po
+31 translated messages.
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o fa.mo fa.po
+30 translated messages, 1 fuzzy translation.
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o fi.mo fi.po
+31 translated messages.
+/usr/bin/msgfmt --verbose --check -o fo.mo fo.po
+/usr/bin/msgfmt --verbose --check -o fr.mo fr.po
+/usr/bin/msgfmt --verbose --check -o fur.mo fur.po
+31 translated messages.
+30 translated messages, 1 fuzzy translation.
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o ga.mo ga.po
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o gez.mo gez.po
+0 translated messages, 6 fuzzy translations, 25 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o gl.mo gl.po
+31 translated messages.
+/usr/bin/msgfmt --verbose --check -o gu.mo gu.po
+13 translated messages, 18 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o haw.mo haw.po
+/usr/bin/msgfmt --verbose --check -o he.mo he.po
+/usr/bin/msgfmt --verbose --check -o hi.mo hi.po
+30 translated messages, 1 fuzzy translation.
+1 translated message, 4 fuzzy translations, 26 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o hr.mo hr.po
+30 translated messages, 1 fuzzy translation.
+30 translated messages, 1 fuzzy translation.
+0 translated messages, 31 untranslated messages.
+31 translated messages.
+/usr/bin/msgfmt --verbose --check -o hu.mo hu.po
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o hy.mo hy.po
+/usr/bin/msgfmt --verbose --check -o ia.mo ia.po
+/usr/bin/msgfmt --verbose --check -o id.mo id.po
+/usr/bin/msgfmt --verbose --check -o is.mo is.po
+/usr/bin/msgfmt --verbose --check -o it.mo it.po
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o ja.mo ja.po
+30 translated messages, 1 fuzzy translation.
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o ka.mo ka.po
+30 translated messages, 1 fuzzy translation.
+31 translated messages.
+31 translated messages.
+30 translated messages, 1 fuzzy translation.
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o kk.mo kk.po
+/usr/bin/msgfmt --verbose --check -o km.mo km.po
+/usr/bin/msgfmt --verbose --check -o kmr.mo kmr.po
+/usr/bin/msgfmt --verbose --check -o kn.mo kn.po
+/usr/bin/msgfmt --verbose --check -o ko.mo ko.po
+/usr/bin/msgfmt --verbose --check -o lt.mo lt.po
+31 translated messages.
+/usr/bin/msgfmt --verbose --check -o lv.mo lv.po
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o mi.mo mi.po
+30 translated messages, 1 fuzzy translation.
+30 translated messages, 1 fuzzy translation.
+0 translated messages, 15 fuzzy translations, 16 untranslated messages.
+31 translated messages.
+31 translated messages.
+/usr/bin/msgfmt --verbose --check -o mk.mo mk.po
+/usr/bin/msgfmt --verbose --check -o ml.mo ml.po
+/usr/bin/msgfmt --verbose --check -o mn.mo mn.po
+/usr/bin/msgfmt --verbose --check -o mr.mo mr.po
+/usr/bin/msgfmt --verbose --check -o ms.mo ms.po
+/usr/bin/msgfmt --verbose --check -o mt.mo mt.po
+30 translated messages, 1 fuzzy translation.
+0 translated messages, 1 fuzzy translation, 30 untranslated messages.
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o nb_NO.mo nb_NO.po
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o ne.mo ne.po
+0 translated messages, 8 fuzzy translations, 23 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nl.mo nl.po
+30 translated messages, 1 fuzzy translation.
+1 translated message, 10 fuzzy translations, 20 untranslated messages.
+0 translated messages, 13 fuzzy translations, 18 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nn.mo nn.po
+/usr/bin/msgfmt --verbose --check -o nso.mo nso.po
+/usr/bin/msgfmt --verbose --check -o oc.mo oc.po
+/usr/bin/msgfmt --verbose --check -o or.mo or.po
+/usr/bin/msgfmt --verbose --check -o pa.mo pa.po
+31 translated messages.
+/usr/bin/msgfmt --verbose --check -o pa_PK.mo pa_PK.po
+30 translated messages, 1 fuzzy translation.
+31 translated messages.
+30 translated messages, 1 fuzzy translation.
+1 translated message, 10 fuzzy translations, 20 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pl.mo pl.po
+12 translated messages, 1 fuzzy translation, 18 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ps.mo ps.po
+/usr/bin/msgfmt --verbose --check -o pt.mo pt.po
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o pt_BR.mo pt_BR.po
+31 translated messages.
+/usr/bin/msgfmt --verbose --check -o ro.mo ro.po
+/usr/bin/msgfmt --verbose --check -o ru.mo ru.po
+/usr/bin/msgfmt --verbose --check -o rw.mo rw.po
+1 translated message, 4 fuzzy translations, 26 untranslated messages.
+31 translated messages.
+0 translated messages, 31 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sc.mo sc.po
+30 translated messages, 1 fuzzy translation.
+31 translated messages.
+31 translated messages.
+30 translated messages, 1 fuzzy translation.
+2 translated messages, 13 fuzzy translations, 16 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o si.mo si.po
+/usr/bin/msgfmt --verbose --check -o sk.mo sk.po
+/usr/bin/msgfmt --verbose --check -o sl.mo sl.po
+/usr/bin/msgfmt --verbose --check -o so.mo so.po
+/usr/bin/msgfmt --verbose --check -o sq.mo sq.po
+/usr/bin/msgfmt --verbose --check -o sr.mo sr.po
+/usr/bin/msgfmt --verbose --check -o sr@latin.mo sr@latin.po
+31 translated messages.
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o sv.mo sv.po
+31 translated messages.
+/usr/bin/msgfmt --verbose --check -o sw.mo sw.po
+30 translated messages, 1 fuzzy translation.
+5 translated messages, 7 fuzzy translations, 19 untranslated messages.
+29 translated messages, 1 fuzzy translation, 1 untranslated message.
+30 translated messages, 1 fuzzy translation.
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o ta.mo ta.po
+/usr/bin/msgfmt --verbose --check -o te.mo te.po
+/usr/bin/msgfmt --verbose --check -o th.mo th.po
+/usr/bin/msgfmt --verbose --check -o ti.mo ti.po
+/usr/bin/msgfmt --verbose --check -o tig.mo tig.po
+/usr/bin/msgfmt --verbose --check -o tk.mo tk.po
+31 translated messages.
+0 translated messages, 2 fuzzy translations, 29 untranslated messages.
+31 translated messages.
+/usr/bin/msgfmt --verbose --check -o tl.mo tl.po
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o tr.mo tr.po
+30 translated messages, 1 fuzzy translation.
+1 translated message, 4 fuzzy translations, 26 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o tt.mo tt.po
+1 translated message, 4 fuzzy translations, 26 untranslated messages.
+0 translated messages, 12 fuzzy translations, 19 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o tt@iqtelif.mo tt@iqtelif.po
+/usr/bin/msgfmt --verbose --check -o ug.mo ug.po
+/usr/bin/msgfmt --verbose --check -o uk.mo uk.po
+/usr/bin/msgfmt --verbose --check -o ve.mo ve.po
+/usr/bin/msgfmt --verbose --check -o vi.mo vi.po
+1 translated message, 14 fuzzy translations, 16 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o wa.mo wa.po
+31 translated messages.
+1 translated message, 12 fuzzy translations, 18 untranslated messages.
+1 translated message, 12 fuzzy translations, 18 untranslated messages.
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o wal.mo wal.po
+1 translated message, 10 fuzzy translations, 20 untranslated messages.
+31 translated messages.
+/usr/bin/msgfmt --verbose --check -o wo.mo wo.po
+30 translated messages, 1 fuzzy translation.
+/usr/bin/msgfmt --verbose --check -o xh.mo xh.po
+/usr/bin/msgfmt --verbose --check -o zh_CN.mo zh_CN.po
+/usr/bin/msgfmt --verbose --check -o zh_HK.mo zh_HK.po
+/usr/bin/msgfmt --verbose --check -o zh_TW.mo zh_TW.po
+/usr/bin/msgfmt --verbose --check -o zu.mo zu.po
+30 translated messages, 1 fuzzy translation.
+1 translated message, 4 fuzzy translations, 26 untranslated messages.
+30 translated messages, 1 fuzzy translation.
+0 translated messages, 10 fuzzy translations, 21 untranslated messages.
+31 translated messages.
+31 translated messages.
+31 translated messages.
+0 translated messages, 10 fuzzy translations, 21 untranslated messages.
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-3'
+Making all in iso_4217
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_4217'
+python3 ../bin/xml_from_json.py iso_4217 ../data iso_4217.xml
+/usr/bin/msgfmt --verbose --check -o ar.mo ar.po
+/usr/bin/msgfmt --verbose --check -o ast.mo ast.po
+/usr/bin/msgfmt --verbose --check -o be.mo be.po
+/usr/bin/msgfmt --verbose --check -o bn.mo bn.po
+/usr/bin/msgfmt --verbose --check -o br.mo br.po
+/usr/bin/msgfmt --verbose --check -o ca.mo ca.po
+/usr/bin/msgfmt --verbose --check -o cs.mo cs.po
+ast.po:9: warning: header field 'PO-Revision-Date' still has the initial default value
+0 translated messages, 179 untranslated messages.
+133 translated messages, 7 fuzzy translations, 39 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o cy.mo cy.po
+/usr/bin/msgfmt --verbose --check -o da.mo da.po
+85 translated messagesbr.po:9: warning: header field 'Language' still has the initial default value
+179 translated messages.
+, 6 fuzzy translations, 88 untranslated messages.
+98 translated messages, 17 fuzzy translations, 64 untranslated messages.
+171 translated messages, 8 untranslated messages.
+172 translated messages, 1 fuzzy translation, 6 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o de.mo de.po
+/usr/bin/msgfmt --verbose --check -o el.mo el.po
+/usr/bin/msgfmt --verbose --check -o eo.mo eo.po
+/usr/bin/msgfmt --verbose --check -o es.mo es.po
+/usr/bin/msgfmt --verbose --check -o et.mo et.po
+34 translated messages, 145 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o eu.mo eu.po
+165 translated messages, 7 fuzzy translations, 7 untranslated messages.
+179 translated messages.
+/usr/bin/msgfmt --verbose --check -o fi.mo fi.po
+151 translated messages, 6 fuzzy translations, 22 untranslated messages.
+150 translated messages, 22 fuzzy translations, 7 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o fr.mo fr.po
+179 translated messages.
+179 translated messages.
+7 translated messages, 172 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ga.mo ga.po
+/usr/bin/msgfmt --verbose --check -o gl.mo gl.po
+/usr/bin/msgfmt --verbose --check -o hr.mo hr.po
+/usr/bin/msgfmt --verbose --check -o hu.mo hu.po
+/usr/bin/msgfmt --verbose --check -o id.mo id.po
+141 translated messages, 23 fuzzy translations, 15 untranslated messages.
+179 translated messages.
+/usr/bin/msgfmt --verbose --check -o is.mo is.po
+/usr/bin/msgfmt --verbose --check -o it.mo it.po
+ga.po:9: warning: header field 'Language' still has the initial default value
+70 translated messages, 24 fuzzy translations, 85 untranslated messages.
+45 translated messages, 40 fuzzy translations, 94 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ja.mo ja.po
+179 translated messages.
+179 translated messages.
+179 translated messages.
+/usr/bin/msgfmt --verbose --check -o ka.mo ka.po
+/usr/bin/msgfmt --verbose --check -o kab.mo kab.po
+/usr/bin/msgfmt --verbose --check -o km.mo km.po
+/usr/bin/msgfmt --verbose --check -o ko.mo ko.po
+176 translated messages, 3 untranslated messages.
+171 translated messages, 1 fuzzy translation, 7 untranslated messages.
+165 translated messages, 7 fuzzy translations, 7 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o lt.mo lt.po
+/usr/bin/msgfmt --verbose --check -o lv.mo lv.po
+/usr/bin/msgfmt --verbose --check -o mn.mo mn.po
+6 translated messages, 173 untranslated messages.
+57 translated messages, 122 untranslated messages.
+172 translated messages, 7 untranslated messages.
+179 translated messages.
+/usr/bin/msgfmt --verbose --check -o nb_NO.mo nb_NO.po
+/usr/bin/msgfmt --verbose --check -o nl.mo nl.po
+/usr/bin/msgfmt --verbose --check -o nn.mo nn.po
+/usr/bin/msgfmt --verbose --check -o oc.mo oc.po
+179 translated messages.
+141 translated messages, 23 fuzzy translations, 15 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pl.mo pl.po
+81 translated messages, 54 fuzzy translations, 44 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pt.mo pt.po
+154 translated messages, 18 fuzzy translations, 7 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pt_BR.mo pt_BR.po
+oc.po:9: warning: header field 'Language' still has the initial default value
+179 translated messages.
+4 translated messages, 2 fuzzy translations, 173 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ro.mo ro.po
+139 translated messages, 25 fuzzy translations, 15 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ru.mo ru.po
+/usr/bin/msgfmt --verbose --check -o rw.mo rw.po
+/usr/bin/msgfmt --verbose --check -o sc.mo sc.po
+179 translated messages.
+165 translated messages, 7 fuzzy translations, 7 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o sk.mo sk.po
+/usr/bin/msgfmt --verbose --check -o sl.mo sl.po
+165 translated messages, 7 fuzzy translations, 7 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o so.mo so.po
+179 translated messages.
+82 translated messages, 54 fuzzy translations, 43 untranslated messages.
+165 translated messages, 7 fuzzy translations, 7 untranslated messages.
+179 translated messages.
+/usr/bin/msgfmt --verbose --check -o sq.mo sq.po
+/usr/bin/msgfmt --verbose --check -o sr.mo sr.po
+/usr/bin/msgfmt --verbose --check -o sr@latin.mo sr@latin.po
+/usr/bin/msgfmt --verbose --check -o sv.mo sv.po
+/usr/bin/msgfmt --verbose --check -o ta.mo ta.po
+84 translated messages, 38 fuzzy translations, 57 untranslated messages.
+141 translated messages, 23 fuzzy translations, 15 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o th.mo th.po
+/usr/bin/msgfmt --verbose --check -o tr.mo tr.po
+so.po:9: warning: header field 'PO-Revision-Date' still has the initial default value
+0 translated messages, 179 untranslated messages.
+sq.po:9: warning: header field 'PO-Revision-Date' still has the initial default value
+/usr/bin/msgfmt --verbose --check -o tzm.mo tzm.po
+0 translated messages, 179 untranslated messages.
+148 translated messages, 24 fuzzy translations, 7 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o uk.mo uk.po
+148 translated messages, 24 fuzzy translations, 7 untranslated messages.
+174 translated messages, 5 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o vi.mo vi.po
+179 translated messages.
+/usr/bin/msgfmt --verbose --check -o zh_CN.mo zh_CN.po
+/usr/bin/msgfmt --verbose --check -o zh_HK.mo zh_HK.po
+/usr/bin/msgfmt --verbose --check -o zh_TW.mo zh_TW.po
+141 translated messages, 23 fuzzy translations, 15 untranslated messages.
+179 translated messages.
+tzm.po:9: warning: header field 'PO-Revision-Date' still has the initial default value
+0 translated messages, 179 untranslated messages.
+179 translated messages.
+141 translated messages, 23 fuzzy translations, 15 untranslated messages.
+179 translated messages.
+166 translated messages, 13 untranslated messages.
+174 translated messages, 5 untranslated messages.
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_4217'
+Making all in iso_15924
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_15924'
+python3 ../bin/xml_from_json.py iso_15924 ../data iso_15924.xml
+/usr/bin/msgfmt --verbose --check -o ar.mo ar.po
+/usr/bin/msgfmt --verbose --check -o ast.mo ast.po
+/usr/bin/msgfmt --verbose --check -o be.mo be.po
+/usr/bin/msgfmt --verbose --check -o bg.mo bg.po
+/usr/bin/msgfmt --verbose --check -o bn_BD.mo bn_BD.po
+/usr/bin/msgfmt --verbose --check -o br.mo br.po
+/usr/bin/msgfmt --verbose --check -o ca.mo ca.po
+ast.po:9: warning: header field 'PO-Revision-Date' still has the initial default value
+0 translated messages, 182 untranslated messages.
+71 translated messages, 25 fuzzy translations, 86 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o cs.mo cs.po
+30 translated messages, 8 fuzzy translations, 144 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o cv.mo cv.po
+123 translated messages, 9 fuzzy translations, 50 untranslated messages.
+182 translated messages.
+48 translated messages, 2 fuzzy translations, 132 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o cy.mo cy.po
+182 translated messages.
+/usr/bin/msgfmt --verbose --check -o da.mo da.po
+/usr/bin/msgfmt --verbose --check -o de.mo de.po
+/usr/bin/msgfmt --verbose --check -o el.mo el.po
+/usr/bin/msgfmt --verbose --check -o eo.mo eo.po
+160 translated messages, 2 fuzzy translations, 20 untranslated messages.
+177 translated messages, 5 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o es.mo es.po
+78 translated messages, 104 untranslated messages.
+182 translated messages.
+26 translated messages, 6 fuzzy translations, 150 untranslated messages.
+182 translated messages.
+162 translated messages, 4 fuzzy translations, 16 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o et.mo et.po
+/usr/bin/msgfmt --verbose --check -o eu.mo eu.po
+/usr/bin/msgfmt --verbose --check -o fa.mo fa.po
+/usr/bin/msgfmt --verbose --check -o fi.mo fi.po
+/usr/bin/msgfmt --verbose --check -o fil.mo fil.po
+/usr/bin/msgfmt --verbose --check -o fr.mo fr.po
+182 translated messages.
+/usr/bin/msgfmt --verbose --check -o gl.mo gl.po
+182 translated messages.
+40 translated messages, 8 fuzzy translations, 134 untranslated messages.
+182 translated messages.
+/usr/bin/msgfmt --verbose --check -o he.mo he.po
+158 translated messages, 4 fuzzy translations, 20 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o hr.mo hr.po
+182 translated messages.
+/usr/bin/msgfmt --verbose --check -o hu.mo hu.po
+182 translated messages.
+/usr/bin/msgfmt --verbose --check -o ia.mo ia.po
+/usr/bin/msgfmt --verbose --check -o id.mo id.po
+/usr/bin/msgfmt --verbose --check -o is.mo is.po
+144 translated messages, 5 fuzzy translations, 33 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o it.mo it.po
+57 translated messages, 8 fuzzy translations, 117 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ja.mo ja.po
+182 translated messages.
+182 translated messages.
+138 translated messages, 44 fuzzy translations.
+182 translated messages.
+182 translated messages.
+/usr/bin/msgfmt --verbose --check -o ka.mo ka.po
+/usr/bin/msgfmt --verbose --check -o kab.mo kab.po
+/usr/bin/msgfmt --verbose --check -o ko.mo ko.po
+/usr/bin/msgfmt --verbose --check -o lt.mo lt.po
+/usr/bin/msgfmt --verbose --check -o lv.mo lv.po
+171 translated messages, 11 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ml.mo ml.po
+69 translated messages, 21 fuzzy translations, 92 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nb_NO.mo nb_NO.po
+1 translated message, 181 untranslated messages.
+104 translated messages, 78 untranslated messages.
+50 translated messages, 13 fuzzy translations, 119 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o nl.mo nl.po
+/usr/bin/msgfmt --verbose --check -o nn.mo nn.po
+180 translated messages, 2 untranslated messages.
+168 translated messages, 4 fuzzy translations, 10 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o oc.mo oc.po
+/usr/bin/msgfmt --verbose --check -o pa_PK.mo pa_PK.po
+ml.po:9: warning: header field 'Language' still has the initial default value
+/usr/bin/msgfmt --verbose --check -o pl.mo pl.po
+17 translated messages, 1 fuzzy translation, 164 untranslated messages.
+84 translated messages, 23 fuzzy translations, 75 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o pt.mo pt.po
+/usr/bin/msgfmt --verbose --check -o pt_BR.mo pt_BR.po
+nn.po:9: warning: header field 'Language' still has the initial default value
+182 translated messages.
+76 translated messages, 24 fuzzy translations, 82 untranslated messages.
+oc.po:9: warning: header field 'Language' still has the initial default value
+36 translated messages, 146 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ro.mo ro.po
+17 translated messages, 165 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o ru.mo ru.po
+/usr/bin/msgfmt --verbose --check -o sc.mo sc.po
+/usr/bin/msgfmt --verbose --check -o si.mo si.po
+182 translated messages.
+169 translated messages, 13 fuzzy translations.
+/usr/bin/msgfmt --verbose --check -o sk.mo sk.po
+182 translated messages.
+/usr/bin/msgfmt --verbose --check -o sl.mo sl.po
+182 translated messages.
+/usr/bin/msgfmt --verbose --check -o so.mo so.po
+2 translated messages, 180 untranslated messages.
+182 translated messages.
+182 translated messages.
+/usr/bin/msgfmt --verbose --check -o sq.mo sq.po
+/usr/bin/msgfmt --verbose --check -o sr.mo sr.po
+/usr/bin/msgfmt --verbose --check -o sr@latin.mo sr@latin.po
+/usr/bin/msgfmt --verbose --check -o sv.mo sv.po
+/usr/bin/msgfmt --verbose --check -o ta.mo ta.po
+sk.po:12: warning: header field 'Language' still has the initial default value
+28 translated messages, 7 fuzzy translations, 147 untranslated messages.
+107 translated messages, 8 fuzzy translations, 67 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o th.mo th.po
+/usr/bin/msgfmt --verbose --check -o tr.mo tr.po
+15 translated messages, 167 untranslated messages.
+0 translated messages, 182 untranslated messages.
+/usr/bin/msgfmt --verbose --check -o tzm.mo tzm.po
+182 translated messages.
+182 translated messages.
+182 translated messages.
+/usr/bin/msgfmt --verbose --check -o uk.mo uk.po
+/usr/bin/msgfmt --verbose --check -o vi.mo vi.po
+182 translated messages.
+/usr/bin/msgfmt --verbose --check -o zh_CN.mo zh_CN.po
+/usr/bin/msgfmt --verbose --check -o zh_HK.mo zh_HK.po
+/usr/bin/msgfmt --verbose --check -o zh_TW.mo zh_TW.po
+155 translated messages, 3 fuzzy translations, 24 untranslated messages.
+182 translated messages.
+6 translated messages, 176 untranslated messages.
+129 translated messages, 8 fuzzy translations, 45 untranslated messages.
+182 translated messages.
+125 translated messages, 10 fuzzy translations, 47 untranslated messages.
+90 translated messages, 92 untranslated messages.
+182 translated messages.
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_15924'
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in iso_639-2
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-2'
+make[2]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-2'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/xml/iso-codes'
+ /usr/bin/install -c -m 644 iso_639-2.xml '/home/devel/building/work/pkg/usr/share/xml/iso-codes'
+make  install-data-hook
+make[3]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-2'
+/bin/sh /home/devel/building/work/src/iso-codes-v4.16.0/install-sh -d /home/devel/building/work/pkg/usr/share/locale
+catalogs='af.mo am.mo ar.mo as.mo ast.mo az.mo be.mo bg.mo bn.mo bn_BD.mo br.mo bs.mo byn.mo ca.mo crh.mo cs.mo cy.mo da.mo de.mo el.mo eo.mo es.mo et.mo eu.mo fa.mo fi.mo fr.mo fur.mo ga.mo gez.mo gl.mo gu.mo he.mo hi.mo hr.mo hu.mo hy.mo id.mo is.mo it.mo ja.mo ka.mo kab.mo kn.mo ko.mo kok.mo lt.mo lv.mo mi.mo mk.mo ml.mo mn.mo mr.mo ms.mo mt.mo nb_NO.mo nl.mo nn.mo nso.mo oc.mo or.mo pa.mo pa_PK.mo pl.mo ps.mo pt.mo pt_BR.mo ro.mo ro_MD.mo ru.mo rw.mo sc.mo sk.mo sl.mo sq.mo sr.mo sr@latin.mo sv.mo ta.mo te.mo tg.mo th.mo ti.mo tig.mo tr.mo tt.mo tt@iqtelif.mo tzm.mo uk.mo ve.mo vi.mo wa.mo xh.mo zh_CN.mo zh_HK.mo zh_TW.mo zu.mo'; \
+for cat in $catalogs; do \
+	cat=`basename $cat`; \
+	lang=`echo $cat | sed 's/\.mo$//'`; \
+	dir=/home/devel/building/work/pkg/usr/share/locale/$lang/LC_MESSAGES; \
+	/bin/sh /home/devel/building/work/src/iso-codes-v4.16.0/install-sh -d $dir; \
+	/usr/bin/install -c -m 644 $cat $dir/iso_639-2.mo; \
+	if [ "iso_639-2" = "iso_639-2" ]; then (cd $dir && ln -s iso_639-2.mo iso_639.mo); fi; \
+	if [ "iso_639-2" = "iso_639-3" ]; then (cd $dir && ln -s iso_639-2.mo iso_639_3.mo); fi; \
+	if [ "iso_639-2" = "iso_639-5" ]; then (cd $dir && ln -s iso_639-2.mo iso_639_5.mo); fi; \
+	if [ "iso_639-2" = "iso_3166-1" ]; then (cd $dir && ln -s iso_639-2.mo iso_3166.mo); fi; \
+	if [ "iso_639-2" = "iso_3166-2" ]; then (cd $dir && ln -s iso_639-2.mo iso_3166_2.mo); fi; \
+done
+if [ "iso_639-2" = "iso_639-2" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_639-2.xml iso_639.xml); fi
+if [ "iso_639-2" = "iso_639-3" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_639-2.xml iso_639_3.xml); fi
+if [ "iso_639-2" = "iso_639-5" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_639-2.xml iso_639_5.xml); fi
+if [ "iso_639-2" = "iso_3166-1" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_639-2.xml iso_3166.xml); fi
+if [ "iso_639-2" = "iso_3166-2" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_639-2.xml iso_3166_2.xml); fi
+make[3]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-2'
+make[2]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-2'
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-2'
+Making install in iso_639-3
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-3'
+make[2]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-3'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/xml/iso-codes'
+ /usr/bin/install -c -m 644 iso_639-3.xml '/home/devel/building/work/pkg/usr/share/xml/iso-codes'
+make  install-data-hook
+make[3]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-3'
+/bin/sh /home/devel/building/work/src/iso-codes-v4.16.0/install-sh -d /home/devel/building/work/pkg/usr/share/locale
+catalogs='af.mo am.mo ar.mo ast.mo az.mo be.mo bg.mo bn.mo br.mo bs.mo byn.mo ca.mo crh.mo cs.mo cy.mo da.mo de.mo el.mo eo.mo es.mo et.mo eu.mo fa.mo fi.mo fr.mo fur.mo ga.mo gez.mo gl.mo gu.mo he.mo hi.mo hr.mo hu.mo id.mo is.mo it.mo ja.mo ka.mo kab.mo kmr.mo kn.mo ko.mo kok.mo lt.mo lv.mo mi.mo mk.mo mn.mo mr.mo ms.mo mt.mo nb_NO.mo nl.mo nn.mo nso.mo oc.mo or.mo pa.mo pl.mo ps.mo pt.mo pt_BR.mo ro.mo ru.mo rw.mo sc.mo sk.mo sl.mo so.mo sq.mo sr.mo sr@latin.mo sv.mo ta.mo th.mo ti.mo tig.mo tr.mo tt.mo tt@iqtelif.mo uk.mo ve.mo vi.mo wa.mo xh.mo zh_CN.mo zh_TW.mo zu.mo'; \
+for cat in $catalogs; do \
+	cat=`basename $cat`; \
+	lang=`echo $cat | sed 's/\.mo$//'`; \
+	dir=/home/devel/building/work/pkg/usr/share/locale/$lang/LC_MESSAGES; \
+	/bin/sh /home/devel/building/work/src/iso-codes-v4.16.0/install-sh -d $dir; \
+	/usr/bin/install -c -m 644 $cat $dir/iso_639-3.mo; \
+	if [ "iso_639-3" = "iso_639-2" ]; then (cd $dir && ln -s iso_639-3.mo iso_639.mo); fi; \
+	if [ "iso_639-3" = "iso_639-3" ]; then (cd $dir && ln -s iso_639-3.mo iso_639_3.mo); fi; \
+	if [ "iso_639-3" = "iso_639-5" ]; then (cd $dir && ln -s iso_639-3.mo iso_639_5.mo); fi; \
+	if [ "iso_639-3" = "iso_3166-1" ]; then (cd $dir && ln -s iso_639-3.mo iso_3166.mo); fi; \
+	if [ "iso_639-3" = "iso_3166-2" ]; then (cd $dir && ln -s iso_639-3.mo iso_3166_2.mo); fi; \
+done
+if [ "iso_639-3" = "iso_639-2" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_639-3.xml iso_639.xml); fi
+if [ "iso_639-3" = "iso_639-3" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_639-3.xml iso_639_3.xml); fi
+if [ "iso_639-3" = "iso_639-5" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_639-3.xml iso_639_5.xml); fi
+if [ "iso_639-3" = "iso_3166-1" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_639-3.xml iso_3166.xml); fi
+if [ "iso_639-3" = "iso_3166-2" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_639-3.xml iso_3166_2.xml); fi
+make[3]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-3'
+make[2]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-3'
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-3'
+Making install in iso_639-5
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-5'
+make[2]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-5'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/xml/iso-codes'
+ /usr/bin/install -c -m 644 iso_639-5.xml '/home/devel/building/work/pkg/usr/share/xml/iso-codes'
+make  install-data-hook
+make[3]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-5'
+/bin/sh /home/devel/building/work/src/iso-codes-v4.16.0/install-sh -d /home/devel/building/work/pkg/usr/share/locale
+catalogs='ab.mo ast.mo be.mo bn.mo bn_BD.mo cs.mo cy.mo da.mo de.mo el.mo eo.mo et.mo fr.mo fur.mo hi.mo hr.mo hu.mo id.mo is.mo it.mo ka.mo kab.mo lt.mo nb_NO.mo nl.mo oc.mo pl.mo pt_BR.mo ro.mo ru.mo sc.mo sq.mo sr.mo sr@latin.mo sv.mo ta.mo tr.mo uk.mo zh_Hans.mo zh_Hant.mo'; \
+for cat in $catalogs; do \
+	cat=`basename $cat`; \
+	lang=`echo $cat | sed 's/\.mo$//'`; \
+	dir=/home/devel/building/work/pkg/usr/share/locale/$lang/LC_MESSAGES; \
+	/bin/sh /home/devel/building/work/src/iso-codes-v4.16.0/install-sh -d $dir; \
+	/usr/bin/install -c -m 644 $cat $dir/iso_639-5.mo; \
+	if [ "iso_639-5" = "iso_639-2" ]; then (cd $dir && ln -s iso_639-5.mo iso_639.mo); fi; \
+	if [ "iso_639-5" = "iso_639-3" ]; then (cd $dir && ln -s iso_639-5.mo iso_639_3.mo); fi; \
+	if [ "iso_639-5" = "iso_639-5" ]; then (cd $dir && ln -s iso_639-5.mo iso_639_5.mo); fi; \
+	if [ "iso_639-5" = "iso_3166-1" ]; then (cd $dir && ln -s iso_639-5.mo iso_3166.mo); fi; \
+	if [ "iso_639-5" = "iso_3166-2" ]; then (cd $dir && ln -s iso_639-5.mo iso_3166_2.mo); fi; \
+done
+if [ "iso_639-5" = "iso_639-2" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_639-5.xml iso_639.xml); fi
+if [ "iso_639-5" = "iso_639-3" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_639-5.xml iso_639_3.xml); fi
+if [ "iso_639-5" = "iso_639-5" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_639-5.xml iso_639_5.xml); fi
+if [ "iso_639-5" = "iso_3166-1" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_639-5.xml iso_3166.xml); fi
+if [ "iso_639-5" = "iso_3166-2" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_639-5.xml iso_3166_2.xml); fi
+make[3]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-5'
+make[2]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-5'
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_639-5'
+Making install in iso_3166-1
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-1'
+make[2]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-1'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/xml/iso-codes'
+ /usr/bin/install -c -m 644 iso_3166-1.xml '/home/devel/building/work/pkg/usr/share/xml/iso-codes'
+make  install-data-hook
+make[3]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-1'
+/bin/sh /home/devel/building/work/src/iso-codes-v4.16.0/install-sh -d /home/devel/building/work/pkg/usr/share/locale
+catalogs='ab.mo ace.mo ach.mo af.mo ak.mo am.mo an.mo ar.mo as.mo ast.mo ay.mo az.mo ba.mo bar.mo be.mo bg.mo bi.mo bn.mo bn_IN.mo br.mo bs.mo byn.mo ca.mo ce.mo ch.mo chr.mo ckb.mo crh.mo cs.mo csb.mo cv.mo cy.mo da.mo de.mo dv.mo dz.mo ee.mo el.mo eo.mo es.mo et.mo eu.mo fa.mo ff.mo fi.mo fil.mo fo.mo fr.mo frp.mo fur.mo fy.mo ga.mo gez.mo gl.mo gn.mo gu.mo gv.mo ha.mo haw.mo he.mo hi.mo hr.mo ht.mo hu.mo hy.mo ia.mo id.mo io.mo is.mo it.mo iu.mo ja.mo jam.mo ka.mo kab.mo ki.mo kk.mo kl.mo km.mo kmr.mo kn.mo ko.mo kv.mo kw.mo ky.mo lo.mo lt.mo lv.mo mai.mo mhr.mo mi.mo mk.mo ml.mo mn.mo mr.mo ms.mo mt.mo my.mo na.mo nah.mo nb_NO.mo ne.mo nl.mo nn.mo nso.mo nv.mo oc.mo or.mo pa.mo pap.mo pi.mo pl.mo ps.mo pt.mo pt_BR.mo ro.mo ro_MD.mo ru.mo rw.mo sc.mo sd.mo si.mo sk.mo sl.mo so.mo son.mo sq.mo sr.mo sr@latin.mo sv.mo sw.mo ta.mo te.mo tg.mo th.mo ti.mo tig.mo tk.mo tl.mo tr.mo tt.mo tt@iqtelif.mo tzm.mo ug.mo uk.mo ur.mo uz.mo ve.mo vi.mo wa.mo wal.mo wo.mo xh.mo yo.mo zh_CN.mo zh_HK.mo zh_TW.mo zu.mo'; \
+for cat in $catalogs; do \
+	cat=`basename $cat`; \
+	lang=`echo $cat | sed 's/\.mo$//'`; \
+	dir=/home/devel/building/work/pkg/usr/share/locale/$lang/LC_MESSAGES; \
+	/bin/sh /home/devel/building/work/src/iso-codes-v4.16.0/install-sh -d $dir; \
+	/usr/bin/install -c -m 644 $cat $dir/iso_3166-1.mo; \
+	if [ "iso_3166-1" = "iso_639-2" ]; then (cd $dir && ln -s iso_3166-1.mo iso_639.mo); fi; \
+	if [ "iso_3166-1" = "iso_639-3" ]; then (cd $dir && ln -s iso_3166-1.mo iso_639_3.mo); fi; \
+	if [ "iso_3166-1" = "iso_639-5" ]; then (cd $dir && ln -s iso_3166-1.mo iso_639_5.mo); fi; \
+	if [ "iso_3166-1" = "iso_3166-1" ]; then (cd $dir && ln -s iso_3166-1.mo iso_3166.mo); fi; \
+	if [ "iso_3166-1" = "iso_3166-2" ]; then (cd $dir && ln -s iso_3166-1.mo iso_3166_2.mo); fi; \
+done
+if [ "iso_3166-1" = "iso_639-2" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_3166-1.xml iso_639.xml); fi
+if [ "iso_3166-1" = "iso_639-3" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_3166-1.xml iso_639_3.xml); fi
+if [ "iso_3166-1" = "iso_639-5" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_3166-1.xml iso_639_5.xml); fi
+if [ "iso_3166-1" = "iso_3166-1" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_3166-1.xml iso_3166.xml); fi
+if [ "iso_3166-1" = "iso_3166-2" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_3166-1.xml iso_3166_2.xml); fi
+make[3]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-1'
+make[2]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-1'
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-1'
+Making install in iso_3166-2
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-2'
+make[2]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-2'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/xml/iso-codes'
+ /usr/bin/install -c -m 644 iso_3166-2.xml '/home/devel/building/work/pkg/usr/share/xml/iso-codes'
+make  install-data-hook
+make[3]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-2'
+/bin/sh /home/devel/building/work/src/iso-codes-v4.16.0/install-sh -d /home/devel/building/work/pkg/usr/share/locale
+catalogs='ast.mo az.mo be.mo bg.mo bn_BD.mo bs.mo ca.mo crh.mo cs.mo cy.mo da.mo de.mo el.mo en.mo eo.mo es.mo et.mo eu.mo fa.mo fi.mo fil.mo fr.mo ga.mo he.mo hr.mo hu.mo id.mo is.mo it.mo ja.mo ka.mo kab.mo km.mo ko.mo ky.mo lt.mo lv.mo nb_NO.mo nl.mo nso.mo oc.mo pa_PK.mo pl.mo pt_BR.mo ro.mo ru.mo sc.mo sk.mo sl.mo so.mo sq.mo sr.mo sr@latin.mo sv.mo ta.mo th.mo tr.mo uk.mo ve.mo vi.mo wa.mo zh_CN.mo zh_TW.mo'; \
+for cat in $catalogs; do \
+	cat=`basename $cat`; \
+	lang=`echo $cat | sed 's/\.mo$//'`; \
+	dir=/home/devel/building/work/pkg/usr/share/locale/$lang/LC_MESSAGES; \
+	/bin/sh /home/devel/building/work/src/iso-codes-v4.16.0/install-sh -d $dir; \
+	/usr/bin/install -c -m 644 $cat $dir/iso_3166-2.mo; \
+	if [ "iso_3166-2" = "iso_639-2" ]; then (cd $dir && ln -s iso_3166-2.mo iso_639.mo); fi; \
+	if [ "iso_3166-2" = "iso_639-3" ]; then (cd $dir && ln -s iso_3166-2.mo iso_639_3.mo); fi; \
+	if [ "iso_3166-2" = "iso_639-5" ]; then (cd $dir && ln -s iso_3166-2.mo iso_639_5.mo); fi; \
+	if [ "iso_3166-2" = "iso_3166-1" ]; then (cd $dir && ln -s iso_3166-2.mo iso_3166.mo); fi; \
+	if [ "iso_3166-2" = "iso_3166-2" ]; then (cd $dir && ln -s iso_3166-2.mo iso_3166_2.mo); fi; \
+done
+if [ "iso_3166-2" = "iso_639-2" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_3166-2.xml iso_639.xml); fi
+if [ "iso_3166-2" = "iso_639-3" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_3166-2.xml iso_639_3.xml); fi
+if [ "iso_3166-2" = "iso_639-5" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_3166-2.xml iso_639_5.xml); fi
+if [ "iso_3166-2" = "iso_3166-1" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_3166-2.xml iso_3166.xml); fi
+if [ "iso_3166-2" = "iso_3166-2" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_3166-2.xml iso_3166_2.xml); fi
+make[3]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-2'
+make[2]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-2'
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-2'
+Making install in iso_3166-3
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-3'
+make[2]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-3'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/xml/iso-codes'
+ /usr/bin/install -c -m 644 iso_3166-3.xml '/home/devel/building/work/pkg/usr/share/xml/iso-codes'
+make  install-data-hook
+make[3]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-3'
+/bin/sh /home/devel/building/work/src/iso-codes-v4.16.0/install-sh -d /home/devel/building/work/pkg/usr/share/locale
+catalogs='af.mo am.mo ar.mo as.mo ast.mo az.mo be.mo bg.mo bn.mo bn_IN.mo br.mo bs.mo byn.mo ca.mo crh.mo cs.mo cy.mo da.mo de.mo dz.mo el.mo eo.mo es.mo et.mo eu.mo fa.mo fi.mo fo.mo fr.mo fur.mo ga.mo gez.mo gl.mo gu.mo haw.mo he.mo hi.mo hr.mo hu.mo hy.mo ia.mo id.mo is.mo it.mo ja.mo ka.mo kk.mo km.mo kmr.mo kn.mo ko.mo lt.mo lv.mo mi.mo mk.mo ml.mo mn.mo mr.mo ms.mo mt.mo nb_NO.mo ne.mo nl.mo nn.mo nso.mo oc.mo or.mo pa.mo pa_PK.mo pl.mo ps.mo pt.mo pt_BR.mo ro.mo ru.mo rw.mo sc.mo si.mo sk.mo sl.mo so.mo sq.mo sr.mo sr@latin.mo sv.mo sw.mo ta.mo te.mo th.mo ti.mo tig.mo tk.mo tl.mo tr.mo tt.mo tt@iqtelif.mo ug.mo uk.mo ve.mo vi.mo wa.mo wal.mo wo.mo xh.mo zh_CN.mo zh_HK.mo zh_TW.mo zu.mo'; \
+for cat in $catalogs; do \
+	cat=`basename $cat`; \
+	lang=`echo $cat | sed 's/\.mo$//'`; \
+	dir=/home/devel/building/work/pkg/usr/share/locale/$lang/LC_MESSAGES; \
+	/bin/sh /home/devel/building/work/src/iso-codes-v4.16.0/install-sh -d $dir; \
+	/usr/bin/install -c -m 644 $cat $dir/iso_3166-3.mo; \
+	if [ "iso_3166-3" = "iso_639-2" ]; then (cd $dir && ln -s iso_3166-3.mo iso_639.mo); fi; \
+	if [ "iso_3166-3" = "iso_639-3" ]; then (cd $dir && ln -s iso_3166-3.mo iso_639_3.mo); fi; \
+	if [ "iso_3166-3" = "iso_639-5" ]; then (cd $dir && ln -s iso_3166-3.mo iso_639_5.mo); fi; \
+	if [ "iso_3166-3" = "iso_3166-1" ]; then (cd $dir && ln -s iso_3166-3.mo iso_3166.mo); fi; \
+	if [ "iso_3166-3" = "iso_3166-2" ]; then (cd $dir && ln -s iso_3166-3.mo iso_3166_2.mo); fi; \
+done
+if [ "iso_3166-3" = "iso_639-2" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_3166-3.xml iso_639.xml); fi
+if [ "iso_3166-3" = "iso_639-3" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_3166-3.xml iso_639_3.xml); fi
+if [ "iso_3166-3" = "iso_639-5" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_3166-3.xml iso_639_5.xml); fi
+if [ "iso_3166-3" = "iso_3166-1" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_3166-3.xml iso_3166.xml); fi
+if [ "iso_3166-3" = "iso_3166-2" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_3166-3.xml iso_3166_2.xml); fi
+make[3]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-3'
+make[2]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-3'
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_3166-3'
+Making install in iso_4217
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_4217'
+make[2]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_4217'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/xml/iso-codes'
+ /usr/bin/install -c -m 644 iso_4217.xml '/home/devel/building/work/pkg/usr/share/xml/iso-codes'
+make  install-data-hook
+make[3]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_4217'
+/bin/sh /home/devel/building/work/src/iso-codes-v4.16.0/install-sh -d /home/devel/building/work/pkg/usr/share/locale
+catalogs='ar.mo ast.mo be.mo bn.mo br.mo ca.mo cs.mo cy.mo da.mo de.mo el.mo eo.mo es.mo et.mo eu.mo fi.mo fr.mo ga.mo gl.mo hr.mo hu.mo id.mo is.mo it.mo ja.mo ka.mo kab.mo km.mo ko.mo lt.mo lv.mo mn.mo nb_NO.mo nl.mo nn.mo oc.mo pl.mo pt.mo pt_BR.mo ro.mo ru.mo rw.mo sc.mo sk.mo sl.mo so.mo sq.mo sr.mo sr@latin.mo sv.mo ta.mo th.mo tr.mo tzm.mo uk.mo vi.mo zh_CN.mo zh_HK.mo zh_TW.mo'; \
+for cat in $catalogs; do \
+	cat=`basename $cat`; \
+	lang=`echo $cat | sed 's/\.mo$//'`; \
+	dir=/home/devel/building/work/pkg/usr/share/locale/$lang/LC_MESSAGES; \
+	/bin/sh /home/devel/building/work/src/iso-codes-v4.16.0/install-sh -d $dir; \
+	/usr/bin/install -c -m 644 $cat $dir/iso_4217.mo; \
+	if [ "iso_4217" = "iso_639-2" ]; then (cd $dir && ln -s iso_4217.mo iso_639.mo); fi; \
+	if [ "iso_4217" = "iso_639-3" ]; then (cd $dir && ln -s iso_4217.mo iso_639_3.mo); fi; \
+	if [ "iso_4217" = "iso_639-5" ]; then (cd $dir && ln -s iso_4217.mo iso_639_5.mo); fi; \
+	if [ "iso_4217" = "iso_3166-1" ]; then (cd $dir && ln -s iso_4217.mo iso_3166.mo); fi; \
+	if [ "iso_4217" = "iso_3166-2" ]; then (cd $dir && ln -s iso_4217.mo iso_3166_2.mo); fi; \
+done
+if [ "iso_4217" = "iso_639-2" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_4217.xml iso_639.xml); fi
+if [ "iso_4217" = "iso_639-3" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_4217.xml iso_639_3.xml); fi
+if [ "iso_4217" = "iso_639-5" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_4217.xml iso_639_5.xml); fi
+if [ "iso_4217" = "iso_3166-1" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_4217.xml iso_3166.xml); fi
+if [ "iso_4217" = "iso_3166-2" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_4217.xml iso_3166_2.xml); fi
+make[3]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_4217'
+make[2]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_4217'
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_4217'
+Making install in iso_15924
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_15924'
+make[2]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_15924'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/xml/iso-codes'
+ /usr/bin/install -c -m 644 iso_15924.xml '/home/devel/building/work/pkg/usr/share/xml/iso-codes'
+make  install-data-hook
+make[3]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_15924'
+/bin/sh /home/devel/building/work/src/iso-codes-v4.16.0/install-sh -d /home/devel/building/work/pkg/usr/share/locale
+catalogs='ar.mo ast.mo be.mo bg.mo bn_BD.mo br.mo ca.mo cs.mo cv.mo cy.mo da.mo de.mo el.mo eo.mo es.mo et.mo eu.mo fa.mo fi.mo fil.mo fr.mo gl.mo he.mo hr.mo hu.mo ia.mo id.mo is.mo it.mo ja.mo ka.mo kab.mo ko.mo lt.mo lv.mo ml.mo nb_NO.mo nl.mo nn.mo oc.mo pa_PK.mo pl.mo pt.mo pt_BR.mo ro.mo ru.mo sc.mo si.mo sk.mo sl.mo so.mo sq.mo sr.mo sr@latin.mo sv.mo ta.mo th.mo tr.mo tzm.mo uk.mo vi.mo zh_CN.mo zh_HK.mo zh_TW.mo'; \
+for cat in $catalogs; do \
+	cat=`basename $cat`; \
+	lang=`echo $cat | sed 's/\.mo$//'`; \
+	dir=/home/devel/building/work/pkg/usr/share/locale/$lang/LC_MESSAGES; \
+	/bin/sh /home/devel/building/work/src/iso-codes-v4.16.0/install-sh -d $dir; \
+	/usr/bin/install -c -m 644 $cat $dir/iso_15924.mo; \
+	if [ "iso_15924" = "iso_639-2" ]; then (cd $dir && ln -s iso_15924.mo iso_639.mo); fi; \
+	if [ "iso_15924" = "iso_639-3" ]; then (cd $dir && ln -s iso_15924.mo iso_639_3.mo); fi; \
+	if [ "iso_15924" = "iso_639-5" ]; then (cd $dir && ln -s iso_15924.mo iso_639_5.mo); fi; \
+	if [ "iso_15924" = "iso_3166-1" ]; then (cd $dir && ln -s iso_15924.mo iso_3166.mo); fi; \
+	if [ "iso_15924" = "iso_3166-2" ]; then (cd $dir && ln -s iso_15924.mo iso_3166_2.mo); fi; \
+done
+if [ "iso_15924" = "iso_639-2" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_15924.xml iso_639.xml); fi
+if [ "iso_15924" = "iso_639-3" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_15924.xml iso_639_3.xml); fi
+if [ "iso_15924" = "iso_639-5" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_15924.xml iso_639_5.xml); fi
+if [ "iso_15924" = "iso_3166-1" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_15924.xml iso_3166.xml); fi
+if [ "iso_15924" = "iso_3166-2" ]; then (cd /home/devel/building/work/pkg/usr/share/xml/iso-codes && ln -s iso_15924.xml iso_3166_2.xml); fi
+make[3]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_15924'
+make[2]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_15924'
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0/iso_15924'
+make[1]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0'
+make[2]: Entering directory '/home/devel/building/work/src/iso-codes-v4.16.0'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/iso-codes/json'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/pkgconfig'
+ /usr/bin/install -c -m 644 iso-codes.pc '/home/devel/building/work/pkg/usr/share/pkgconfig'
+ /usr/bin/install -c -m 644 ./data/iso_15924.json ./data/iso_3166-1.json ./data/iso_3166-2.json ./data/iso_3166-3.json ./data/iso_4217.json ./data/iso_639-2.json ./data/iso_639-3.json ./data/iso_639-5.json ./data/schema-15924.json ./data/schema-3166-1.json ./data/schema-3166-2.json ./data/schema-3166-3.json ./data/schema-4217.json ./data/schema-639-2.json ./data/schema-639-3.json ./data/schema-639-5.json '/home/devel/building/work/pkg/usr/share/iso-codes/json'
+make[2]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0'
+make[1]: Leaving directory '/home/devel/building/work/src/iso-codes-v4.16.0'
++ rm -r /home/devel/building/work/pkg/usr/share/locale
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 23:22 usr/
+drwxr-xr-x  0 root   root        0 May  7 23:23 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 23:22 usr/share/xml/
+drwxr-xr-x  0 root   root        0 May  7 23:23 usr/share/iso-codes/
+drwxr-xr-x  0 root   root        0 May  7 23:23 usr/share/pkgconfig/
+-rw-r--r--  0 root   root      214 May  7 23:23 usr/share/pkgconfig/iso-codes.pc
+drwxr-xr-x  0 root   root        0 May  7 23:23 usr/share/iso-codes/json/
+-rw-r--r--  0 root   root    17097 May  7 23:23 usr/share/iso-codes/json/iso_15924.json
+-rw-r--r--  0 root   root    43284 May  7 23:23 usr/share/iso-codes/json/iso_3166-1.json
+-rw-r--r--  0 root   root   498094 May  7 23:23 usr/share/iso-codes/json/iso_3166-2.json
+-rw-r--r--  0 root   root     6193 May  7 23:23 usr/share/iso-codes/json/iso_3166-3.json
+-rw-r--r--  0 root   root    16584 May  7 23:23 usr/share/iso-codes/json/iso_4217.json
+-rw-r--r--  0 root   root    36852 May  7 23:23 usr/share/iso-codes/json/iso_639-2.json
+-rw-r--r--  0 root   root   874782 May  7 23:23 usr/share/iso-codes/json/iso_639-3.json
+-rw-r--r--  0 root   root     8486 May  7 23:23 usr/share/iso-codes/json/iso_639-5.json
+-rw-r--r--  0 root   root      960 May  7 23:23 usr/share/iso-codes/json/schema-15924.json
+-rw-r--r--  0 root   root     1638 May  7 23:23 usr/share/iso-codes/json/schema-3166-1.json
+-rw-r--r--  0 root   root     1045 May  7 23:23 usr/share/iso-codes/json/schema-3166-2.json
+-rw-r--r--  0 root   root     1665 May  7 23:23 usr/share/iso-codes/json/schema-3166-3.json
+-rw-r--r--  0 root   root      934 May  7 23:23 usr/share/iso-codes/json/schema-4217.json
+-rw-r--r--  0 root   root     1299 May  7 23:23 usr/share/iso-codes/json/schema-639-2.json
+-rw-r--r--  0 root   root     1913 May  7 23:23 usr/share/iso-codes/json/schema-639-3.json
+-rw-r--r--  0 root   root      768 May  7 23:23 usr/share/iso-codes/json/schema-639-5.json
+drwxr-xr-x  0 root   root        0 May  7 23:23 usr/share/xml/iso-codes/
+-rw-r--r--  0 root   root    48857 May  7 23:22 usr/share/xml/iso-codes/iso_639-2.xml
+lrwxrwxrwx  0 root   root        0 May  7 23:23 usr/share/xml/iso-codes/iso_639.xml -> iso_639-2.xml
+-rw-r--r--  0 root   root  1016601 May  7 23:23 usr/share/xml/iso-codes/iso_639-3.xml
+lrwxrwxrwx  0 root   root        0 May  7 23:23 usr/share/xml/iso-codes/iso_639_3.xml -> iso_639-3.xml
+-rw-r--r--  0 root   root     8484 May  7 23:23 usr/share/xml/iso-codes/iso_639-5.xml
+lrwxrwxrwx  0 root   root        0 May  7 23:23 usr/share/xml/iso-codes/iso_639_5.xml -> iso_639-5.xml
+-rw-r--r--  0 root   root    40003 May  7 23:23 usr/share/xml/iso-codes/iso_3166-1.xml
+lrwxrwxrwx  0 root   root        0 May  7 23:23 usr/share/xml/iso-codes/iso_3166.xml -> iso_3166-1.xml
+-rw-r--r--  0 root   root   334217 May  7 23:23 usr/share/xml/iso-codes/iso_3166-2.xml
+lrwxrwxrwx  0 root   root        0 May  7 23:23 usr/share/xml/iso-codes/iso_3166_2.xml -> iso_3166-2.xml
+-rw-r--r--  0 root   root        0 May  7 23:23 usr/share/xml/iso-codes/iso_3166-3.xml
+-rw-r--r--  0 root   root    31649 May  7 23:23 usr/share/xml/iso-codes/iso_4217.xml
+-rw-r--r--  0 root   root    17766 May  7 23:23 usr/share/xml/iso-codes/iso_15924.xml
+=======> Building '/home/devel/packages/iso-codes#4.16.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling iso-codes 4.16.0-1
+prt-get: /usr/bin/pkgadd -u iso-codes#4.16.0-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 23:23:13 2024
+

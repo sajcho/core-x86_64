@@ -1,0 +1,1499 @@
+prt-get: updating /usr/ports/core-x86_64/e2fsprogs
+prt-get: starting build Tue May  7 20:43:10 2024
+=======> Building '/home/devel/packages/e2fsprogs#1.47.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/e2fsprogs-1.47.0.tar.xz
++ build
++ cd e2fsprogs-1.47.0
++ ./configure --prefix=/usr --with-root-prefix= --enable-symlink-install --enable-elf-shlibs --disable-e2initrd-helper --disable-nls --disable-fsck --disable-libblkid --disable-libuuid --disable-uuidd --disable-fuse2fs
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+Generating configuration file for e2fsprogs version 1.47.0
+Release date is February, 2023
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for dlopen in -ldl... yes
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking how to run the C preprocessor... gcc -E
+checking for additional special compiler flags... (none)
+Disabling maintainer mode by default
+Enabling symlinks for install
+Disabling relative symlinks for install by default
+Disabling symlinks for build by default
+Disabling verbose make commands
+Enabling ELF shared libraries
+Disabling BSD shared libraries by default
+Disabling profiling libraries by default
+Disabling journal debugging by default
+Disabling blkid debugging by default
+Enabling testio debugging by default
+Disabling ext4 developer features by default
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for uuid_generate in -luuid... yes
+Disabling private uuid library
+checking for pkg-config... (cached) /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for blkid_get_cache in -lblkid... yes
+Disabling private blkid library
+Enabling use of backtrace by default
+Enabling debugfs support by default
+Enabling e2image support by default
+Enabling e2resize support by default
+Enabling e4defrag support by default
+Not building fsck wrapper
+Not building e2initrd helper
+Try using thread local support by default
+checking for thread local storage (TLS) class... __thread
+Try testing for pthread support by default
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking whether gcc is Clang... no
+checking whether pthreads work with "-pthread" and "-lpthread"... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking whether more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... yes
+Not building uuidd
+Enabling mmp support by default
+Enabling tdb support by default
+Enabling bitmap statistics support by default
+Disabling additional bitmap statistics by default
+checking whether make sets $(MAKE)... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking whether NLS is requested... no
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking whether to use NLS... no
+checking whether make sets $(MAKE)... (cached) yes
+checking for GNU make... make
+checking for ln... /bin/ln
+checking whether ln -s works... yes
+checking for mv... /bin/mv
+checking for cp... /bin/cp
+checking for rm... /bin/rm
+checking for chmod... /bin/chmod
+checking for gawk... gawk
+checking for egrep... (cached) /usr/bin/grep -E
+checking for sed... (cached) /bin/sed
+checking for perl... /usr/bin/perl
+checking for ldconfig... /sbin/ldconfig
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking for makeinfo... makeinfo
+checking for dirent.h... yes
+checking for errno.h... yes
+checking for execinfo.h... yes
+checking for getopt.h... yes
+checking for malloc.h... yes
+checking for mntent.h... yes
+checking for paths.h... yes
+checking for pthread.h... yes
+checking for semaphore.h... yes
+checking for setjmp.h... yes
+checking for signal.h... yes
+checking for stdarg.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for termios.h... yes
+checking for termio.h... yes
+checking for unistd.h... (cached) yes
+checking for utime.h... yes
+checking for attr/xattr.h... no
+checking for linux/falloc.h... yes
+checking for linux/fd.h... yes
+checking for linux/fsmap.h... yes
+checking for linux/major.h... yes
+checking for linux/loop.h... yes
+checking for linux/types.h... yes
+checking for net/if_dl.h... no
+checking for netinet/in.h... yes
+checking for sys/acl.h... yes
+checking for sys/disklabel.h... no
+checking for sys/disk.h... no
+checking for sys/file.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/key.h... no
+checking for sys/mkdev.h... no
+checking for sys/mman.h... yes
+checking for sys/mount.h... yes
+checking for sys/prctl.h... yes
+checking for sys/random.h... yes
+checking for sys/resource.h... yes
+checking for sys/select.h... yes
+checking for sys/socket.h... yes
+checking for sys/sockio.h... no
+checking for sys/stat.h... (cached) yes
+checking for sys/syscall.h... yes
+checking for sys/sysmacros.h... yes
+checking for sys/time.h... yes
+checking for sys/types.h... (cached) yes
+checking for sys/un.h... yes
+checking for sys/wait.h... yes
+checking for sys/xattr.h... yes
+checking for a dd(1) program that supports iflag=fullblock... dd
+checking for net/if.h... yes
+checking for vprintf... yes
+checking for struct dirent.d_reclen... yes
+checking for struct stat.st_atim... yes
+checking for ssize_t... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether llseek is declared... no
+checking whether lseek64 is declared... yes
+checking size of short... 2
+checking size of int... 4
+checking size of long... 8
+checking size of long long... 8
+checking size of off_t... 8
+checking size of time_t... 8
+checking whether byte ordering is bigendian... no
+checking for __uNN types... using <asm/types.h>
+checking for inttypes.h... (cached) yes
+checking for intptr_t... yes
+checking whether struct stat has a st_flags field... no
+checking for struct sockaddr.sa_len... no
+checking for blkid_probe_get_topology in -lblkid... yes
+checking for blkid_topology_get_dax in -lblkid... yes
+checking for blkid_probe_enable_partitions in -lblkid... yes
+checking for __secure_getenv... no
+checking for add_key... no
+checking for backtrace... yes
+checking for chflags... no
+checking for dlopen... (cached) yes
+checking for fadvise64... no
+checking for fallocate... yes
+checking for fallocate64... yes
+checking for fchown... yes
+checking for fcntl... yes
+checking for fdatasync... yes
+checking for fstat64... yes
+checking for fsync... yes
+checking for ftruncate64... yes
+checking for futimes... yes
+checking for getcwd... yes
+checking for getdtablesize... yes
+checking for getentropy... yes
+checking for gethostname... yes
+checking for getmntinfo... no
+checking for getpwuid_r... yes
+checking for getrandom... yes
+checking for getrlimit... yes
+checking for getrusage... yes
+checking for jrand48... yes
+checking for keyctl... no
+checking for llistxattr... yes
+checking for llseek... no
+checking for lseek64... yes
+checking for mallinfo... yes
+checking for mallinfo2... yes
+checking for mbstowcs... yes
+checking for memalign... yes
+checking for mempcpy... yes
+checking for mmap... yes
+checking for msync... yes
+checking for nanosleep... yes
+checking for open64... yes
+checking for pathconf... yes
+checking for posix_fadvise... yes
+checking for posix_fadvise64... yes
+checking for posix_memalign... yes
+checking for prctl... yes
+checking for pread... yes
+checking for pwrite... yes
+checking for pread64... yes
+checking for pwrite64... yes
+checking for qsort_r... yes
+checking for secure_getenv... yes
+checking for setmntent... yes
+checking for setresgid... yes
+checking for setresuid... yes
+checking for snprintf... yes
+checking for srandom... yes
+checking for stpcpy... yes
+checking for strcasecmp... yes
+checking for strdup... yes
+checking for strnlen... yes
+checking for strptime... yes
+checking for strtoull... yes
+checking for sync_file_range... yes
+checking for sysconf... yes
+checking for usleep... yes
+checking for utime... yes
+checking for utimes... yes
+checking for valloc... yes
+checking for socket in -lsocket... no
+checking for magic_file in -lmagic... yes
+checking for magic.h... yes
+checking for clock_gettime in -lrt... yes
+Disabling fuse2fs
+checking for optreset... no
+GL_THREADS_API:
+checking for sem_init... yes
+checking whether qsort_r is GNU version... yes
+checking whether qsort_r is BSD version... no
+checking for unified diff option... -u
+checking for mount 'nosuid' option... yes
+checking for mount 'nodev' option... yes
+checking whether we can link with -static... yes
+checking for udev... yes
+checking for udev rules dir... /lib/udev/rules.d
+checking for system crontab dir... no
+checking for systemd... no
+checking for systemd system unit dir... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+configure: creating ./config.status
+config.status: creating MCONFIG
+config.status: creating Makefile
+config.status: creating util/Makefile
+config.status: creating util/subst.conf
+config.status: creating util/gen-tarball
+config.status: creating util/install-symlink
+config.status: creating lib/et/Makefile
+config.status: creating lib/ss/Makefile
+config.status: creating lib/e2p/Makefile
+config.status: creating lib/ext2fs/Makefile
+config.status: creating lib/ext2fs/ext2_types.h
+config.status: creating lib/support/Makefile
+config.status: creating lib/ss/ss.pc
+config.status: creating lib/et/com_err.pc
+config.status: creating lib/e2p/e2p.pc
+config.status: creating lib/ext2fs/ext2fs.pc
+config.status: creating misc/Makefile
+config.status: creating ext2ed/Makefile
+config.status: creating e2fsck/Makefile
+config.status: creating debugfs/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/progs/Makefile
+config.status: creating tests/fuzz/Makefile
+config.status: creating resize/Makefile
+config.status: creating doc/Makefile
+config.status: creating po/Makefile.in
+config.status: creating scrub/Makefile
+config.status: creating lib/config.h
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
++ make V=1
+cd ./util ; make subst
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/util'
+echo "/* fake dirpaths.h for config.h */" > dirpaths.h
+gcc -c  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -I. -I../lib -I../lib -DHAVE_CONFIG_H subst.c -o subst.o
+gcc   -o subst subst.o
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/util'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: 'util/subst.conf' is up to date.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: 'lib/config.h' is up to date.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+./util/subst -f ./util/subst.conf ./lib/dirpaths.h.in lib/dirpaths.h
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+cd .; CONFIG_FILES=./lib/ext2fs/ext2_types.h ./config.status
+config.status: creating ./lib/ext2fs/ext2_types.h
+config.status: creating lib/config.h
+config.status: lib/config.h is unchanged
+config.status: executing po-directories commands
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+cd .; CONFIG_FILES=./lib/blkid/blkid_types.h ./config.status
+config.status: creating ./lib/blkid/blkid_types.h
+config.status: creating lib/config.h
+config.status: lib/config.h is unchanged
+config.status: executing po-directories commands
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+cd .; CONFIG_FILES=./lib/uuid/uuid_types.h ./config.status
+config.status: creating ./lib/uuid/uuid_types.h
+config.status: creating lib/config.h
+config.status: lib/config.h is unchanged
+config.status: executing po-directories commands
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+../../util/subst -f ../../util/subst.conf ./compile_et.sh.in compile_et
+/bin/chmod +x compile_et
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+../../util/subst -f ../../util/subst.conf ./ext2_err.et.in ext2_err.et
+_ET_DIR_OVERRIDE=./../et ../et/compile_et ext2_err.et
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+_ET_DIR_OVERRIDE=./../et ../et/compile_et ./prof_err.et
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+make libs
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: 'util/subst.conf' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: 'lib/config.h' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: 'lib/dirpaths.h' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: 'lib/ext2fs/ext2_types.h' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: 'lib/blkid/blkid_types.h' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: 'lib/uuid/uuid_types.h' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+make[2]: 'compile_et' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+make[2]: 'ext2_err.h' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+make[2]: 'prof_err.h' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+making all in lib/et
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+make -s real-subdirs
+touch subdirs
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c error_message.c -o error_message.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c et_name.c -o et_name.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c init_et.c -o init_et.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c com_err.c -o com_err.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c com_right.c -o com_right.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/et_name.o -c et_name.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/init_et.o -c init_et.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/com_err.o -c com_err.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/com_right.o -c com_right.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/error_message.o -c error_message.c
+(if test -r libcom_err.a; then /bin/rm -f libcom_err.a.bak && /bin/mv libcom_err.a libcom_err.a.bak; fi)
+ar rc libcom_err.a error_message.o et_name.o init_et.o com_err.o com_right.o
+/bin/rm -f ../libcom_err.a
+(cd ..; /bin/ln  \
+	`echo lib/et | sed -e 's;lib/;;'`/libcom_err.a libcom_err.a)
+(cd elfshared; gcc -o libcom_err.so.2.1 \
+	-L../../../lib  -pthread  -fPIC -shared \
+	-Wl,-soname,libcom_err.so.2 error_message.o et_name.o init_et.o com_err.o com_right.o )
+/bin/mv elfshared/libcom_err.so.2.1 .
+/bin/rm -f ../libcom_err.so.2.1 ../libcom_err.so ../libcom_err.so.2
+(cd ..; /bin/ln  \
+	`echo lib/et | sed -e 's;lib/;;'`/libcom_err.so.2.1 libcom_err.so.2.1)
+(cd ..; /bin/ln  libcom_err.so.2.1 libcom_err.so)
+(cd ..; /bin/ln  libcom_err.so.2.1 libcom_err.so.2)
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+making all in lib/ss
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ss'
+../../util/subst -f ../../util/subst.conf ./mk_cmds.sh.in mk_cmds
+/bin/chmod +x mk_cmds
+make -s real-subdirs
+_ET_DIR_OVERRIDE=./../et ../et/compile_et ./ss_err.et
+DIR=. _SS_DIR_OVERRIDE=. ./mk_cmds ./std_rqs.ct
+_ET_DIR_OVERRIDE=./../et ../et/compile_et ./ss_err.et
+touch subdirs
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c ss_err.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c std_rqs.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c invocation.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c help.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c execute_cmd.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c listen.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c parse.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c error.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DSHARED_ELF_LIB -fPIC -shared -o elfshared/std_rqs.o -c std_rqs.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DSHARED_ELF_LIB -fPIC -shared -o elfshared/ss_err.o -c ss_err.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DSHARED_ELF_LIB -fPIC -shared -o elfshared/invocation.o -c invocation.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c prompt.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c request_tbl.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DSHARED_ELF_LIB -fPIC -shared -o elfshared/parse.o -c parse.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DSHARED_ELF_LIB -fPIC -shared -o elfshared/error.o -c error.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DSHARED_ELF_LIB -fPIC -shared -o elfshared/execute_cmd.o -c execute_cmd.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DSHARED_ELF_LIB -fPIC -shared -o elfshared/help.o -c help.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DSHARED_ELF_LIB -fPIC -shared -o elfshared/listen.o -c listen.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DSHARED_ELF_LIB -fPIC -shared -o elfshared/prompt.o -c prompt.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c list_rqs.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DSHARED_ELF_LIB -fPIC -shared -o elfshared/request_tbl.o -c request_tbl.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c pager.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c requests.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c data.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c get_readline.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DSHARED_ELF_LIB -fPIC -shared -o elfshared/data.o -c data.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DSHARED_ELF_LIB -fPIC -shared -o elfshared/requests.o -c requests.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DSHARED_ELF_LIB -fPIC -shared -o elfshared/list_rqs.o -c list_rqs.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DSHARED_ELF_LIB -fPIC -shared -o elfshared/pager.o -c pager.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DSHARED_ELF_LIB -fPIC -shared -o elfshared/get_readline.o -c get_readline.c
+(if test -r libss.a; then /bin/rm -f libss.a.bak && /bin/mv libss.a libss.a.bak; fi)
+ar rc libss.a ss_err.o std_rqs.o invocation.o help.o execute_cmd.o listen.o parse.o error.o prompt.o request_tbl.o list_rqs.o pager.o requests.o data.o get_readline.o
+/bin/rm -f ../libss.a
+(cd ..; /bin/ln  \
+	`echo lib/ss | sed -e 's;lib/;;'`/libss.a libss.a)
+(cd elfshared; gcc -o libss.so.2.0 \
+	-L../../../lib  -pthread  -fPIC -shared \
+	-Wl,-soname,libss.so.2 ss_err.o std_rqs.o invocation.o help.o execute_cmd.o listen.o parse.o error.o prompt.o request_tbl.o list_rqs.o pager.o requests.o data.o get_readline.o -lcom_err -ldl)
+/bin/mv elfshared/libss.so.2.0 .
+/bin/rm -f ../libss.so.2.0 ../libss.so ../libss.so.2
+(cd ..; /bin/ln  \
+	`echo lib/ss | sed -e 's;lib/;;'`/libss.so.2.0 libss.so.2.0)
+(cd ..; /bin/ln  libss.so.2.0 libss.so)
+(cd ..; /bin/ln  libss.so.2.0 libss.so.2)
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ss'
+making all in lib/e2p
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/e2p'
+make -s real-subdirs
+touch subdirs
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c feature.c -o feature.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c fgetflags.c -o fgetflags.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c fsetflags.c -o fsetflags.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c fgetversion.c -o fgetversion.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c fsetversion.c -o fsetversion.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c getflags.c -o getflags.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c getversion.c -o getversion.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c hashstr.c -o hashstr.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/fgetversion.o -c fgetversion.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/getflags.o -c getflags.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/fsetversion.o -c fsetversion.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/fgetflags.o -c fgetflags.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/fsetflags.o -c fsetflags.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/getversion.o -c getversion.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c iod.c -o iod.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/hashstr.o -c hashstr.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c ls.c -o ls.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c ljs.c -o ljs.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c mntopts.c -o mntopts.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c parse_num.c -o parse_num.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c pe.c -o pe.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/feature.o -c feature.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/iod.o -c iod.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c pf.c -o pf.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/parse_num.o -c parse_num.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/pe.o -c pe.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/mntopts.o -c mntopts.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c ps.c -o ps.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/pf.o -c pf.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/ljs.o -c ljs.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c setflags.c -o setflags.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c setversion.c -o setversion.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/ps.o -c ps.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/setversion.o -c setversion.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/setflags.o -c setflags.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c uuid.c -o uuid.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c ostype.c -o ostype.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c percent.c -o percent.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c crypto_mode.c -o crypto_mode.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c fgetproject.c -o fgetproject.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/ls.o -c ls.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c fsetproject.c -o fsetproject.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c encoding.c -o encoding.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/uuid.o -c uuid.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/ostype.o -c ostype.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/percent.o -c percent.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/crypto_mode.o -c crypto_mode.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/fgetproject.o -c fgetproject.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/fsetproject.o -c fsetproject.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c errcode.c -o errcode.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/encoding.o -c encoding.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/errcode.o -c errcode.c
+(if test -r libe2p.a; then /bin/rm -f libe2p.a.bak && /bin/mv libe2p.a libe2p.a.bak; fi)
+ar rc libe2p.a feature.o fgetflags.o fsetflags.o fgetversion.o fsetversion.o getflags.o getversion.o hashstr.o iod.o ls.o ljs.o mntopts.o parse_num.o pe.o pf.o ps.o setflags.o setversion.o uuid.o ostype.o percent.o crypto_mode.o fgetproject.o fsetproject.o encoding.o errcode.o
+/bin/rm -f ../libe2p.a
+(cd ..; /bin/ln  \
+	`echo lib/e2p | sed -e 's;lib/;;'`/libe2p.a libe2p.a)
+(cd elfshared; gcc -o libe2p.so.2.3 \
+	-L../../../lib  -pthread  -fPIC -shared \
+	-Wl,-soname,libe2p.so.2 feature.o fgetflags.o fsetflags.o fgetversion.o fsetversion.o getflags.o getversion.o hashstr.o iod.o ls.o ljs.o mntopts.o parse_num.o pe.o pf.o ps.o setflags.o setversion.o uuid.o ostype.o percent.o crypto_mode.o fgetproject.o fsetproject.o encoding.o errcode.o )
+/bin/mv elfshared/libe2p.so.2.3 .
+/bin/rm -f ../libe2p.so.2.3 ../libe2p.so ../libe2p.so.2
+(cd ..; /bin/ln  \
+	`echo lib/e2p | sed -e 's;lib/;;'`/libe2p.so.2.3 libe2p.so.2.3)
+(cd ..; /bin/ln  libe2p.so.2.3 libe2p.so)
+(cd ..; /bin/ln  libe2p.so.2.3 libe2p.so.2)
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/e2p'
+making all in lib/support
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+make -s real-subdirs
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c cstring.c -o cstring.o
+touch subdirs
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c mkquota.c -o mkquota.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c plausible.c -o plausible.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c profile.c -o profile.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c parse_qtype.c -o parse_qtype.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c print_fs_flags.c -o print_fs_flags.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c profile_helpers.c -o profile_helpers.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c prof_err.c -o prof_err.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c quotaio.c -o quotaio.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c quotaio_v2.c -o quotaio_v2.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c quotaio_tree.c -o quotaio_tree.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c dict.c -o dict.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c devname.c -o devname.o
+(if test -r libsupport.a; then /bin/rm -f libsupport.a.bak && /bin/mv libsupport.a libsupport.a.bak; fi)
+ar rc libsupport.a cstring.o mkquota.o plausible.o profile.o parse_qtype.o print_fs_flags.o profile_helpers.o prof_err.o quotaio.o quotaio_v2.o quotaio_tree.o dict.o devname.o
+/bin/rm -f ../libsupport.a
+(cd ..; /bin/ln  \
+	`echo lib/support | sed -e 's;lib/;;'`/libsupport.a libsupport.a)
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+making all in lib/ext2fs
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+make -s real-subdirs
+gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -I. -I../../lib -I../../lib -DHAVE_CONFIG_H   -o gen_crc32ctable \
+	./gen_crc32ctable.c
+touch subdirs
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c bb_compat.c -o bb_compat.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c inode_io.c -o inode_io.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c write_bb_file.c -o write_bb_file.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c dupfs.c -o dupfs.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c imager.c -o imager.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c test_io.c -o test_io.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c ext2_err.c -o ext2_err.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/ext2_err.o -c ext2_err.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/bb_compat.o -c bb_compat.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/write_bb_file.o -c write_bb_file.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/dupfs.o -c dupfs.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c alloc.c -o alloc.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c alloc_sb.c -o alloc_sb.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c alloc_stats.c -o alloc_stats.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/inode_io.o -c inode_io.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/imager.o -c imager.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c alloc_tables.c -o alloc_tables.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/alloc_sb.o -c alloc_sb.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c atexit.c -o atexit.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/test_io.o -c test_io.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/alloc_stats.o -c alloc_stats.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c badblocks.c -o badblocks.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c bb_inode.c -o bb_inode.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/atexit.o -c atexit.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/alloc_tables.o -c alloc_tables.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c bitmaps.c -o bitmaps.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c bitops.c -o bitops.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/bb_inode.o -c bb_inode.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/alloc.o -c alloc.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c blkmap64_ba.c -o blkmap64_ba.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c blkmap64_rb.c -o blkmap64_rb.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/badblocks.o -c badblocks.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/bitops.o -c bitops.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/bitmaps.o -c bitmaps.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c blknum.c -o blknum.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c block.c -o block.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c bmap.c -o bmap.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/blkmap64_ba.o -c blkmap64_ba.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c check_desc.c -o check_desc.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c closefs.c -o closefs.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c crc16.c -o crc16.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/check_desc.o -c check_desc.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/crc16.o -c crc16.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/blkmap64_rb.o -c blkmap64_rb.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/blknum.o -c blknum.c
+./gen_crc32ctable > crc32c_table.h
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c csum.c -o csum.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c dblist.c -o dblist.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c dblist_dir.c -o dblist_dir.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/closefs.o -c closefs.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/dblist_dir.o -c dblist_dir.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/bmap.o -c bmap.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/block.o -c block.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c dirblock.c -o dirblock.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c dirhash.c -o dirhash.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/dblist.o -c dblist.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c dir_iterate.c -o dir_iterate.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c expanddir.c -o expanddir.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/dirblock.o -c dirblock.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/csum.o -c csum.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/dirhash.o -c dirhash.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/expanddir.o -c expanddir.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c ext_attr.c -o ext_attr.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c extent.c -o extent.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/dir_iterate.o -c dir_iterate.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c fallocate.c -o fallocate.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c fileio.c -o fileio.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c finddev.c -o finddev.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c flushb.c -o flushb.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c freefs.c -o freefs.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/finddev.o -c finddev.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c gen_bitmap.c -o gen_bitmap.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/freefs.o -c freefs.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c gen_bitmap64.c -o gen_bitmap64.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/fileio.o -c fileio.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/flushb.o -c flushb.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c get_num_dirs.c -o get_num_dirs.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/fallocate.o -c fallocate.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c get_pathname.c -o get_pathname.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/get_num_dirs.o -c get_num_dirs.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/gen_bitmap.o -c gen_bitmap.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c getsize.c -o getsize.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/get_pathname.o -c get_pathname.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/extent.o -c extent.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c getsectsize.c -o getsectsize.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/getsize.o -c getsize.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/ext_attr.o -c ext_attr.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/gen_bitmap64.o -c gen_bitmap64.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c hashmap.c -o hashmap.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/getsectsize.o -c getsectsize.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/hashmap.o -c hashmap.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c i_block.c -o i_block.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c icount.c -o icount.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c ind_block.c -o ind_block.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c initialize.c -o initialize.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/ind_block.o -c ind_block.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/i_block.o -c i_block.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c inline.c -o inline.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c inline_data.c -o inline_data.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c inode.c -o inode.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/icount.o -c icount.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/initialize.o -c initialize.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c io_manager.c -o io_manager.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c ismounted.c -o ismounted.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/inline_data.o -c inline_data.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/inline.o -c inline.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/io_manager.o -c io_manager.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c link.c -o link.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/ismounted.o -c ismounted.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c llseek.c -o llseek.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/llseek.o -c llseek.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c lookup.c -o lookup.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c mkdir.c -o mkdir.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c mkjournal.c -o mkjournal.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/inode.o -c inode.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c mmp.c -o mmp.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c namei.c -o namei.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c native.c -o native.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/lookup.o -c lookup.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/mkdir.o -c mkdir.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/native.o -c native.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c newdir.c -o newdir.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/namei.o -c namei.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c nls_utf8.c -o nls_utf8.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/link.o -c link.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c openfs.c -o openfs.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/mmp.o -c mmp.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/newdir.o -c newdir.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/mkjournal.o -c mkjournal.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c orphan.c -o orphan.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c progress.c -o progress.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c punch.c -o punch.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/orphan.o -c orphan.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c qcow2.c -o qcow2.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/progress.o -c progress.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/nls_utf8.o -c nls_utf8.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/openfs.o -c openfs.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c read_bb.c -o read_bb.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c read_bb_file.c -o read_bb_file.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c res_gdt.c -o res_gdt.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/qcow2.o -c qcow2.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c rw_bitmaps.c -o rw_bitmaps.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/read_bb.o -c read_bb.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/read_bb_file.o -c read_bb_file.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/res_gdt.o -c res_gdt.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c sha512.c -o sha512.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c swapfs.c -o swapfs.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c symlink.c -o symlink.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c tdb.c -o tdb.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c undo_io.c -o undo_io.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c unix_io.c -o unix_io.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/symlink.o -c symlink.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/rw_bitmaps.o -c rw_bitmaps.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/sha512.o -c sha512.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c sparse_io.c -o sparse_io.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/swapfs.o -c swapfs.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/punch.o -c punch.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/sparse_io.o -c sparse_io.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c unlink.c -o unlink.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/undo_io.o -c undo_io.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c valid_blk.c -o valid_blk.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/unlink.o -c unlink.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c version.c -o version.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c rbtree.c -o rbtree.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -c crc32c.c -o crc32c.o
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/version.o -c version.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/unix_io.o -c unix_io.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/valid_blk.o -c valid_blk.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/rbtree.o -c rbtree.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/crc32c.o -c crc32c.c
+gcc -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -fPIC -shared -o elfshared/tdb.o -c tdb.c
+(if test -r libext2fs.a; then /bin/rm -f libext2fs.a.bak && /bin/mv libext2fs.a libext2fs.a.bak; fi)
+ar rc libext2fs.a bb_compat.o inode_io.o write_bb_file.o dupfs.o imager.o test_io.o ext2_err.o alloc.o alloc_sb.o alloc_stats.o alloc_tables.o atexit.o badblocks.o bb_inode.o bitmaps.o bitops.o blkmap64_ba.o blkmap64_rb.o blknum.o block.o bmap.o check_desc.o closefs.o crc16.o crc32c.o csum.o dblist.o dblist_dir.o dirblock.o dirhash.o dir_iterate.o expanddir.o ext_attr.o extent.o fallocate.o fileio.o finddev.o flushb.o freefs.o gen_bitmap.o gen_bitmap64.o get_num_dirs.o get_pathname.o getsize.o getsectsize.o hashmap.o i_block.o icount.o ind_block.o initialize.o inline.o inline_data.o inode.o io_manager.o ismounted.o link.o llseek.o lookup.o mkdir.o mkjournal.o mmp.o namei.o native.o newdir.o nls_utf8.o openfs.o orphan.o progress.o punch.o qcow2.o read_bb.o read_bb_file.o res_gdt.o rw_bitmaps.o sha512.o swapfs.o symlink.o tdb.o undo_io.o unix_io.o sparse_io.o unlink.o valid_blk.o version.o rbtree.o
+/bin/rm -f ../libext2fs.a
+(cd ..; /bin/ln  \
+	`echo lib/ext2fs | sed -e 's;lib/;;'`/libext2fs.a libext2fs.a)
+(cd elfshared; gcc -o libext2fs.so.2.4 \
+	-L../../../lib  -pthread  -fPIC -shared \
+	-Wl,-soname,libext2fs.so.2 bb_compat.o inode_io.o write_bb_file.o dupfs.o imager.o test_io.o ext2_err.o alloc.o alloc_sb.o alloc_stats.o alloc_tables.o atexit.o badblocks.o bb_inode.o bitmaps.o bitops.o blkmap64_ba.o blkmap64_rb.o blknum.o block.o bmap.o check_desc.o closefs.o crc16.o crc32c.o csum.o dblist.o dblist_dir.o dirblock.o dirhash.o dir_iterate.o expanddir.o ext_attr.o extent.o fallocate.o fileio.o finddev.o flushb.o freefs.o gen_bitmap.o gen_bitmap64.o get_num_dirs.o get_pathname.o getsize.o getsectsize.o hashmap.o i_block.o icount.o ind_block.o initialize.o inline.o inline_data.o inode.o io_manager.o ismounted.o link.o llseek.o lookup.o mkdir.o mkjournal.o mmp.o namei.o native.o newdir.o nls_utf8.o openfs.o orphan.o progress.o punch.o qcow2.o read_bb.o read_bb_file.o res_gdt.o rw_bitmaps.o sha512.o swapfs.o symlink.o tdb.o undo_io.o unix_io.o sparse_io.o unlink.o valid_blk.o version.o rbtree.o -lcom_err)
+/bin/mv elfshared/libext2fs.so.2.4 .
+/bin/rm -f ../libext2fs.so.2.4 ../libext2fs.so ../libext2fs.so.2
+(cd ..; /bin/ln  \
+	`echo lib/ext2fs | sed -e 's;lib/;;'`/libext2fs.so.2.4 libext2fs.so.2.4)
+(cd ..; /bin/ln  libext2fs.so.2.4 libext2fs.so)
+(cd ..; /bin/ln  libext2fs.so.2.4 libext2fs.so.2)
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make progs
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: 'util/subst.conf' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: 'lib/config.h' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: 'lib/dirpaths.h' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: 'lib/ext2fs/ext2_types.h' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: 'lib/blkid/blkid_types.h' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: 'lib/uuid/uuid_types.h' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+make[2]: 'compile_et' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+make[2]: 'ext2_err.h' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+make[2]: 'prof_err.h' is up to date.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+making all in lib/et
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+making all in lib/ss
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ss'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ss'
+making all in lib/e2p
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/e2p'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/e2p'
+making all in lib/support
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+making all in lib/ext2fs
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+making all in e2fsck
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/e2fsck'
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  unix.c -o unix.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  e2fsck.c -o e2fsck.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  super.c -o super.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  pass1.c -o pass1.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  pass1b.c -o pass1b.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  pass2.c -o pass2.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  pass3.c -o pass3.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  pass4.c -o pass4.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  pass5.c -o pass5.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  journal.c -o journal.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  badblocks.c -o badblocks.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  util.c -o util.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  dirinfo.c -o dirinfo.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  dx_dirinfo.c -o dx_dirinfo.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  ehandler.c -o ehandler.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  problem.c -o problem.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  message.c -o message.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  quota.c -o quota.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  recovery.c -o recovery.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  region.c -o region.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  revoke.c -o revoke.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  ea_refcount.c -o ea_refcount.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  rehash.c -o rehash.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  logfile.c -o logfile.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  sigcatcher.c -o sigcatcher.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  readahead.c -o readahead.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  extents.c -o extents.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  encrypted_files.c -o encrypted_files.o
+../util/subst -t -f ../util/subst.conf ./e2fsck.8.in e2fsck.8
+../util/subst -t -f ../util/subst.conf ./e2fsck.conf.5.in e2fsck.conf.5
+gcc  -pthread  -Wl,-rpath-link,../lib  -rdynamic -o e2fsck unix.o e2fsck.o super.o pass1.o pass1b.o pass2.o pass3.o pass4.o pass5.o journal.o badblocks.o util.o dirinfo.o dx_dirinfo.o ehandler.o problem.o message.o quota.o recovery.o region.o revoke.o ea_refcount.o rehash.o logfile.o sigcatcher.o  readahead.o extents.o encrypted_files.o  ../lib/libsupport.a ../lib/libext2fs.so ../lib/libcom_err.so  -lblkid  -luuid   ../lib/libe2p.so -ldl -lpthread 
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/e2fsck'
+making all in debugfs
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/debugfs'
+_SS_DIR_OVERRIDE=./../lib/ss ../lib/ss/mk_cmds ./debug_cmds.ct
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS debugfs.c -o debugfs.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS util.c -o util.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS ncheck.c -o ncheck.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS icheck.c -o icheck.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS ls.c -o ls.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS lsdel.c -o lsdel.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS dump.c -o dump.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS set_fields.c -o set_fields.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS logdump.c -o logdump.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS htree.c -o htree.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS unused.c -o unused.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS -I. ../misc/e2freefrag.c -o e2freefrag.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS filefrag.c -o filefrag.o
+_SS_DIR_OVERRIDE=./../lib/ss ../lib/ss/mk_cmds ./extent_cmds.ct
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS extent_inode.c -o extent_inode.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS zap.c -o zap.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS -I. \
+	 ./../misc/create_inode.c -o create_inode.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS quota.c -o quota.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS xattrs.c -o xattrs.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS journal.c -o journal.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS -I. \
+	./../e2fsck/revoke.c -o revoke.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS -I. \
+	./../e2fsck/recovery.c -o recovery.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS do_journal.c -o do_journal.o
+../util/subst -t -f ../util/subst.conf ./debugfs.8.in debugfs.8
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS debug_cmds.c -o debug_cmds.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H -I./../e2fsck -DDEBUGFS extent_cmds.c -o extent_cmds.o
+gcc  -pthread  -Wl,-rpath-link,../lib  -o debugfs debug_cmds.o debugfs.o util.o ncheck.o icheck.o ls.o lsdel.o dump.o set_fields.o logdump.o htree.o unused.o e2freefrag.o filefrag.o extent_cmds.o extent_inode.o zap.o create_inode.o quota.o xattrs.o journal.o revoke.o recovery.o do_journal.o  ../lib/libsupport.a ../lib/libext2fs.so ../lib/libe2p.so ../lib/libss.so  ../lib/libcom_err.so  -lblkid  -luuid  -ldl -lpthread
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/debugfs'
+making all in misc
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/misc'
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  mke2fs.c -o mke2fs.o
+if test -f ./mke2fs.conf.custom.in ; then \
+	cp ./mke2fs.conf.custom.in mke2fs.conf; \
+else \
+	cp ./mke2fs.conf.in mke2fs.conf; \
+fi
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  util.c -o util.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  mk_hugefiles.c -o mk_hugefiles.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  create_inode.c -o create_inode.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  badblocks.c -o badblocks.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  tune2fs.c -o tune2fs.o
+gcc -c -I./../e2fsck -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DDEBUGFS -I. \
+	./../debugfs/journal.c -o journal.o
+gcc -c -I./../e2fsck -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DDEBUGFS -I. \
+	./../e2fsck/recovery.c -o recovery.o
+gcc -c -I./../e2fsck -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  -DDEBUGFS -I. \
+	./../e2fsck/revoke.c -o revoke.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  dumpe2fs.c -o dumpe2fs.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  logsave.c -o logsave.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  e2image.c -o e2image.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  e2undo.c -o e2undo.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  chattr.c -o chattr.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  lsattr.c -o lsattr.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  mklost+found.c -o mklost+found.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  filefrag.c -o filefrag.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  e2freefrag.c -o e2freefrag.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  e4defrag.c -o e4defrag.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  e4crypt.c -o e4crypt.o
+../util/subst -t -f ../util/subst.conf ./tune2fs.8.in tune2fs.8
+../util/subst -t -f ../util/subst.conf ./mklost+found.8.in mklost+found.8
+../util/subst -t -f ../util/subst.conf ./mke2fs.8.in mke2fs.8
+../util/subst -t -f ../util/subst.conf ./dumpe2fs.8.in dumpe2fs.8
+../util/subst -t -f ../util/subst.conf ./badblocks.8.in badblocks.8	
+../util/subst -t -f ../util/subst.conf ./e2label.8.in e2label.8
+../util/subst -t -f ../util/subst.conf ./e2image.8.in e2image.8
+../util/subst -t -f ../util/subst.conf ./logsave.8.in logsave.8
+../util/subst -t -f ../util/subst.conf ./filefrag.8.in filefrag.8
+../util/subst -t -f ../util/subst.conf ./e2undo.8.in e2undo.8
+../util/subst -t -f ../util/subst.conf ./e4defrag.8.in e4defrag.8
+../util/subst -t -f ../util/subst.conf ./e4crypt.8.in e4crypt.8
+../util/subst -t -f ../util/subst.conf ./e2mmpstatus.8.in e2mmpstatus.8
+../util/subst -t -f ../util/subst.conf ./chattr.1.in chattr.1 
+../util/subst -t -f ../util/subst.conf ./lsattr.1.in lsattr.1 
+../util/subst -t -f ../util/subst.conf ./mke2fs.conf.5.in mke2fs.conf.5
+../util/subst -t -f ../util/subst.conf ./ext4.5.in ext4.5
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  e2fuzz.c -o e2fuzz.o
+gawk -f ./profile-to-c.awk < mke2fs.conf \
+	>  default_profile.c
+gcc  -pthread  -Wl,-rpath-link,../lib  -o badblocks badblocks.o ../lib/libext2fs.so ../lib/libcom_err.so   ../lib/libsupport.a \
+	 -lpthread
+gcc  -pthread  -Wl,-rpath-link,../lib  -o dumpe2fs dumpe2fs.o ../lib/libext2fs.so ../lib/libcom_err.so   ../lib/libsupport.a \
+	../lib/libe2p.so ../lib/libcom_err.so  -luuid   -lpthread -lblkid  \
+	-ldl
+gcc  -pthread  -Wl,-rpath-link,../lib  -o logsave logsave.o -lpthread
+gcc  -pthread  -Wl,-rpath-link,../lib  -o e2undo e2undo.o ../lib/libext2fs.so ../lib/libcom_err.so   ../lib/libsupport.a \
+	 -lpthread
+gcc  -pthread  -Wl,-rpath-link,../lib  -o chattr chattr.o ../lib/libe2p.so ../lib/libcom_err.so  \
+	 -lpthread
+gcc  -pthread  -Wl,-rpath-link,../lib  -o lsattr lsattr.o ../lib/libe2p.so ../lib/libcom_err.so  \
+	 -lpthread
+gcc  -pthread  -Wl,-rpath-link,../lib  -o mklost+found mklost+found.o \
+	 -lpthread
+gcc  -pthread  -Wl,-rpath-link,../lib  -o filefrag filefrag.o -lpthread
+gcc  -pthread  -Wl,-rpath-link,../lib  -o e2freefrag e2freefrag.o \
+	../lib/libext2fs.so ../lib/libcom_err.so   ../lib/libsupport.a -lpthread
+gcc  -pthread  -Wl,-rpath-link,../lib  -o e4crypt e4crypt.o \
+	-luuid  ../lib/libext2fs.so ../lib/libcom_err.so   ../lib/libsupport.a -lpthread
+gcc  -pthread  -Wl,-rpath-link,../lib  -o e2fuzz e2fuzz.o ../lib/libext2fs.so ../lib/libcom_err.so   ../lib/libsupport.a \
+	-lblkid  -luuid  ../lib/libext2fs.so -lpthread
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  default_profile.c -o default_profile.o
+gcc  -pthread  -Wl,-rpath-link,../lib  -o e2image e2image.o ../lib/libext2fs.so ../lib/libcom_err.so   ../lib/libsupport.a \
+	 -lpthread -lblkid  -ldl
+gcc  -pthread  -Wl,-rpath-link,../lib  -o e4defrag e4defrag.o ../lib/libext2fs.so ../lib/libcom_err.so   ../lib/libsupport.a \
+	-lpthread
+gcc  -pthread  -Wl,-rpath-link,../lib  -o tune2fs tune2fs.o util.o journal.o recovery.o revoke.o ../lib/libext2fs.so ../lib/libcom_err.so   ../lib/libsupport.a \
+	-lblkid  -luuid  ../lib/libext2fs.so ../lib/libe2p.so ../lib/libcom_err.so  \
+	 -lpthread -lblkid  -ldl
+gcc  -pthread  -Wl,-rpath-link,../lib  -o mke2fs mke2fs.o util.o default_profile.o mk_hugefiles.o create_inode.o ../lib/libext2fs.so ../lib/libcom_err.so   ../lib/libsupport.a -lblkid  \
+	-luuid  ../lib/libext2fs.so ../lib/libe2p.so  \
+	-lpthread -ldl
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/misc'
+making all in resize
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/resize'
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  extent.c -o extent.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  resize2fs.c -o resize2fs.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  main.c -o main.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  online.c -o online.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  resource_track.c -o resource_track.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  sim_progress.c -o sim_progress.o
+gcc -c -I. -I../lib -I../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  test_extent.c -o test_extent.o
+../util/subst -t -f ../util/subst.conf ./resize2fs.8.in resize2fs.8
+gcc  -pthread  -Wl,-rpath-link,../lib  -o test_extent extent.o test_extent.o ../lib/libe2p.so ../lib/libext2fs.so ../lib/libcom_err.so   -lpthread 
+gcc  -pthread  -Wl,-rpath-link,../lib  -o resize2fs extent.o resize2fs.o main.o online.o resource_track.o sim_progress.o ../lib/libe2p.so ../lib/libext2fs.so ../lib/libcom_err.so   -lpthread 
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/resize'
+making all in tests/progs
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/tests/progs'
+gcc -c -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  test_icount.c -o test_icount.o
+_SS_DIR_OVERRIDE=./../../lib/ss ../../lib/ss/mk_cmds ./test_icount_cmds.ct
+gcc -c -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  crcsum.c -o crcsum.o
+gcc -c -I. -I../../lib -I../../lib  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -pthread  -DHAVE_CONFIG_H  test_icount_cmds.c -o test_icount_cmds.o
+gcc  -pthread  -Wl,-rpath-link,../../lib  -o crcsum crcsum.o ../../lib/libext2fs.so ../../lib/libss.so  ../../lib/libcom_err.so  -lpthread
+gcc  -pthread  -Wl,-rpath-link,../../lib  -o test_icount test_icount.o test_icount_cmds.o ../../lib/libext2fs.so ../../lib/libss.so  ../../lib/libcom_err.so  -lpthread
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/tests/progs'
+making all in tests/fuzz
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/tests/fuzz'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/tests/fuzz'
+making all in po
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/po'
+making all in scrub
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/scrub'
+../util/subst -t -f ../util/subst.conf ./e2scrub.in e2scrub
+../util/subst -t -f ../util/subst.conf ./e2scrub_all.in e2scrub_all
+chmod a+x e2scrub
+chmod a+x e2scrub_all
+../util/subst -t -f ../util/subst.conf e2scrub.8.in e2scrub.8
+../util/subst -t -f ../util/subst.conf e2scrub_all.8.in e2scrub_all.8
+../util/subst -t -f ../util/subst.conf e2scrub.conf.in e2scrub.conf
+../util/subst -t -f ../util/subst.conf e2scrub.rules.in e2scrub.rules
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/scrub'
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make docs
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/doc'
+makeinfo ./libext2fs.texinfo
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/doc'
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
++ make -j1 DESTDIR=/home/devel/building/work/pkg install install-libs
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: 'util/subst.conf' is up to date.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: 'lib/config.h' is up to date.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: 'lib/dirpaths.h' is up to date.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: 'lib/ext2fs/ext2_types.h' is up to date.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: 'lib/blkid/blkid_types.h' is up to date.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: 'lib/uuid/uuid_types.h' is up to date.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+make[1]: 'compile_et' is up to date.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+make[1]: 'ext2_err.h' is up to date.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+make[1]: 'prof_err.h' is up to date.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+making all in lib/et
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+making all in lib/ss
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ss'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ss'
+making all in lib/e2p
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/e2p'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/e2p'
+making all in lib/support
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+making all in lib/ext2fs
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+making install in e2fsck
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/e2fsck'
+	MKDIR_P /sbin /usr/share/man/man8
+	INSTALL /sbin/e2fsck
+	LINK /sbin/fsck.ext2
+	LINK /sbin/fsck.ext3
+	LINK /sbin/fsck.ext4
+	INSTALL_DATA /usr/share/man/man8/e2fsck.8
+	INSTALL_DATA /usr/share/man/man5/e2fsck.conf.5
+	LINK /usr/share/man/man8/fsck.ext2.8
+	LINK /usr/share/man/man8/fsck.ext3.8
+	LINK /usr/share/man/man8/fsck.ext4.8
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/e2fsck'
+making install in debugfs
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/debugfs'
+	MKDIR_P /sbin /usr/share/man/man8
+	INSTALL /sbin/debugfs
+	INSTALL_DATA /usr/share/man/man8/debugfs.8
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/debugfs'
+making install in misc
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/misc'
+	MKDIR_P /usr/sbin /sbin /usr/bin /usr/share/man/man1 /usr/share/man/man8 /usr/lib /etc
+	INSTALL /sbin/mke2fs
+	INSTALL /sbin/badblocks
+	INSTALL /sbin/tune2fs
+	INSTALL /sbin/dumpe2fs
+	INSTALL /sbin/logsave
+	INSTALL /sbin/e2image
+	INSTALL /sbin/e2undo
+	INSTALL /usr/sbin/mklost+found
+	INSTALL /usr/sbin/filefrag
+	INSTALL /usr/sbin/e2freefrag
+	INSTALL /usr/sbin/e4defrag
+	INSTALL /usr/sbin/e4crypt
+	LINK /sbin/mkfs.ext2
+	LINK /sbin/mkfs.ext3
+	LINK /sbin/mkfs.ext4
+	INSTALL /usr/bin/chattr
+	INSTALL /usr/bin/lsattr
+	INSTALL_DATA /usr/share/man/man8/tune2fs.8
+	INSTALL_DATA /usr/share/man/man8/mklost+found.8
+	INSTALL_DATA /usr/share/man/man8/mke2fs.8
+	INSTALL_DATA /usr/share/man/man8/dumpe2fs.8
+	INSTALL_DATA /usr/share/man/man8/badblocks.8
+	INSTALL_DATA /usr/share/man/man8/e2label.8
+	INSTALL_DATA /usr/share/man/man8/e2image.8
+	INSTALL_DATA /usr/share/man/man8/logsave.8
+	INSTALL_DATA /usr/share/man/man8/filefrag.8
+	INSTALL_DATA /usr/share/man/man8/e2freefrag.8
+	INSTALL_DATA /usr/share/man/man8/e2undo.8
+	INSTALL_DATA /usr/share/man/man8/e4defrag.8
+	INSTALL_DATA /usr/share/man/man8/e4crypt.8
+	INSTALL_DATA /usr/share/man/man8/e2mmpstatus.8
+	LINK mkfs.ext2.8
+	LINK mkfs.ext3.8
+	LINK mkfs.ext4.8
+	INSTALL_DATA /usr/share/man/man1/chattr.1
+	INSTALL_DATA /usr/share/man/man1/lsattr.1
+	INSTALL_DATA /usr/share/man/man5/mke2fs.conf.5
+	INSTALL_DATA /usr/share/man/man5/ext4.5
+	LINK ext2.5
+	LINK ext3.5
+	INSTALL_DATA /etc/mke2fs.conf
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/misc'
+making install in resize
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/resize'
+	MKDIR_P /sbin /usr/share/man/man8
+	INSTALL /sbin/resize2fs
+	INSTALL_DATA /usr/share/man/man8/resize2fs.8
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/resize'
+making install in tests/progs
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/tests/progs'
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/tests/progs'
+making install in tests/fuzz
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/tests/fuzz'
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/tests/fuzz'
+making install in po
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/po'
+if test "e2fsprogs" = "gettext-tools"; then \
+  /bin/mkdir -p /home/devel/building/work/pkg/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /home/devel/building/work/pkg/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/devel/building/work/pkg/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/po'
+making install in scrub
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/scrub'
+	MKDIR_P /lib/udev/rules.d
+	MKDIR_P /sbin /usr/share/man/man8 /etc
+	INSTALL /lib/udev/rules.d/e2scrub.rules
+	INSTALL /sbin/e2scrub
+	INSTALL /sbin/e2scrub_all
+	INSTALL_DATA /usr/share/man/man8/e2scrub.8
+	INSTALL_DATA /usr/share/man/man8/e2scrub_all.8
+	INSTALL_DATA /etc/e2scrub.conf
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/scrub'
+making install-shlibs in lib/et
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+	MKDIR_P /lib /usr/lib
+cd ../../util ; make symlinks
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/util'
+	CC symlinks.c
+	LD symlinks
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/util'
+	INSTALL-ELF-LIB /lib/libcom_err.so.2.1
+	SYMLINK /lib/libcom_err.so.2
+	SYMLINK /usr/lib/libcom_err.so
+	LDCONFIG
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+making install-shlibs in lib/ss
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ss'
+	MKDIR_P /lib /usr/lib
+	INSTALL-ELF-LIB /lib/libss.so.2.0
+	SYMLINK /lib/libss.so.2
+	SYMLINK /usr/lib/libss.so
+	LDCONFIG
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ss'
+making install-shlibs in lib/e2p
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/e2p'
+	MKDIR_P /lib /usr/lib
+	INSTALL-ELF-LIB /lib/libe2p.so.2.3
+	SYMLINK /lib/libe2p.so.2
+	SYMLINK /usr/lib/libe2p.so
+	LDCONFIG
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/e2p'
+making install-shlibs in lib/support
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+make[1]: Nothing to be done for 'install-shlibs'.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+making install-shlibs in lib/ext2fs
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+	MKDIR_P /lib /usr/lib
+	INSTALL-ELF-LIB /lib/libext2fs.so.2.4
+	SYMLINK /lib/libext2fs.so.2
+	SYMLINK /usr/lib/libext2fs.so
+	LDCONFIG
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/doc'
+	TEXI2DVI libext2fs.dvi
+You don't have a working TeX binary (tex) installed anywhere in
+your PATH, and texi2dvi cannot proceed without one.  If you want to use
+this script, you'll need to install TeX (if you don't have it) or change
+your PATH or TEX environment variable (if you do).  See the --help
+output for more details.
+
+For information about obtaining TeX, please see http://tug.org/texlive,
+or do a web search for TeX and your operating system or distro.
+make[1]: [Makefile:378: libext2fs.dvi] Error 1 (ignored)
+	MKDIR_P /usr/share/info
+	INSTALL_DATA /usr/share/info/libext2fs.info
+	GZIP /usr/share/info/libext2fs.info*
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/doc'
+make install-libs
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+making install in lib/et
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+	MKDIR_P /lib /usr/lib
+	INSTALL-ELF-LIB /lib/libcom_err.so.2.1
+	SYMLINK /lib/libcom_err.so.2
+	SYMLINK /usr/lib/libcom_err.so
+	LDCONFIG
+	MKDIR_P /usr/lib /usr/include/et /usr/share/et /usr/bin /usr/share/man/man1 /usr/share/man/man3
+	INSTALL_DATA /usr/lib/libcom_err.a
+	INSTALL_DATA /usr/include/et/com_err.h
+	INSTALL_DATA /usr/share/et/et_c.awk
+	INSTALL_DATA /usr/share/et/et_h.awk
+	INSTALL_SCRIPT /usr/bin/compile_et
+	INSTALL_DATA /usr/share/man/man3/com_err.3
+	INSTALL_DATA /usr/share/man/man1/compile_et.1
+	INSTALL_DATA /usr/lib/pkgconfig/com_err.pc
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+making install in lib/ss
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ss'
+	MKDIR_P /lib /usr/lib
+	INSTALL-ELF-LIB /lib/libss.so.2.0
+	SYMLINK /lib/libss.so.2
+	SYMLINK /usr/lib/libss.so
+	LDCONFIG
+	MKDIR_P /usr/lib /usr/include/ss /usr/share/ss /usr/bin /usr/lib/pkgconfig /usr/share/man/man1
+	INSTALL_DATA /home/devel/building/work/pkg/usr/lib/libss.a
+	INSTALL_DATA /home/devel/building/work/pkg/usr/include/ss/ss.h
+	INSTALL_DATA /usr/include/ss/ss_err.h
+	INSTALL_DATA /home/devel/building/work/pkg/usr/share/ss/ct_c.awk
+	INSTALL_DATA /home/devel/building/work/pkg/usr/share/ss/ct_c.sed
+	INSTALL /usr/bin/mk_cmds
+	INSTALL_DATA /usr/share/man/man1/mk_cmds.1
+	INSTALL_DATA /usr/lib/pkgconfig/ss.pc
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ss'
+making install in lib/e2p
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/e2p'
+	MKDIR_P /lib /usr/lib
+	INSTALL-ELF-LIB /lib/libe2p.so.2.3
+	SYMLINK /lib/libe2p.so.2
+	SYMLINK /usr/lib/libe2p.so
+	LDCONFIG
+	MKDIR_P /usr/lib /usr/include/e2p
+	INSTALL_DATA /usr/lib/libe2p.a
+	INSTALL_DATA /usr/include/e2p/e2p.h
+	INSTALL_DATA /usr/lib/pkgconfig/e2p.pc
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/e2p'
+making install in lib/support
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+make[2]: Nothing to be done for 'install'.
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+making install in lib/ext2fs
+make[2]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+	MKDIR_P /lib /usr/lib
+	INSTALL-ELF-LIB /lib/libext2fs.so.2.4
+	SYMLINK /lib/libext2fs.so.2
+	SYMLINK /usr/lib/libext2fs.so
+	LDCONFIG
+	MKDIR_P /usr/lib /usr/include/ext2fs
+	INSTALL_DATA /usr/lib/libext2fs.a
+	INSTALL_DATA /usr/include/ext2fs/bitops.h
+	INSTALL_DATA /usr/include/ext2fs/ext2fs.h
+	INSTALL_DATA /usr/include/ext2fs/ext2_io.h
+	INSTALL_DATA /usr/include/ext2fs/ext2_fs.h
+	INSTALL_DATA /usr/include/ext2fs/ext2_ext_attr.h
+	INSTALL_DATA /usr/include/ext2fs/ext3_extents.h
+	INSTALL_DATA /usr/include/ext2fs/tdb.h
+	INSTALL_DATA /usr/include/ext2fs/qcow2.h
+	INSTALL_DATA /usr/include/ext2fs/hashmap.h
+	INSTALL_DATA /usr/include/ext2fs/ext2_err.h
+	INSTALL_DATA /usr/include/ext2fs/ext2_types.h
+	INSTALL_DATA /usr/lib/pkgconfig/ext2fs.pc
+make[2]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0'
+making install in lib/et
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+	MKDIR_P /lib /usr/lib
+	INSTALL-ELF-LIB /lib/libcom_err.so.2.1
+	SYMLINK /lib/libcom_err.so.2
+	SYMLINK /usr/lib/libcom_err.so
+	LDCONFIG
+	MKDIR_P /usr/lib /usr/include/et /usr/share/et /usr/bin /usr/share/man/man1 /usr/share/man/man3
+	INSTALL_DATA /usr/lib/libcom_err.a
+	INSTALL_DATA /usr/include/et/com_err.h
+	INSTALL_DATA /usr/share/et/et_c.awk
+	INSTALL_DATA /usr/share/et/et_h.awk
+	INSTALL_SCRIPT /usr/bin/compile_et
+	INSTALL_DATA /usr/share/man/man3/com_err.3
+	INSTALL_DATA /usr/share/man/man1/compile_et.1
+	INSTALL_DATA /usr/lib/pkgconfig/com_err.pc
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/et'
+making install in lib/ss
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ss'
+	MKDIR_P /lib /usr/lib
+	INSTALL-ELF-LIB /lib/libss.so.2.0
+	SYMLINK /lib/libss.so.2
+	SYMLINK /usr/lib/libss.so
+	LDCONFIG
+	MKDIR_P /usr/lib /usr/include/ss /usr/share/ss /usr/bin /usr/lib/pkgconfig /usr/share/man/man1
+	INSTALL_DATA /home/devel/building/work/pkg/usr/lib/libss.a
+	INSTALL_DATA /home/devel/building/work/pkg/usr/include/ss/ss.h
+	INSTALL_DATA /usr/include/ss/ss_err.h
+	INSTALL_DATA /home/devel/building/work/pkg/usr/share/ss/ct_c.awk
+	INSTALL_DATA /home/devel/building/work/pkg/usr/share/ss/ct_c.sed
+	INSTALL /usr/bin/mk_cmds
+	INSTALL_DATA /usr/share/man/man1/mk_cmds.1
+	INSTALL_DATA /usr/lib/pkgconfig/ss.pc
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ss'
+making install in lib/e2p
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/e2p'
+	MKDIR_P /lib /usr/lib
+	INSTALL-ELF-LIB /lib/libe2p.so.2.3
+	SYMLINK /lib/libe2p.so.2
+	SYMLINK /usr/lib/libe2p.so
+	LDCONFIG
+	MKDIR_P /usr/lib /usr/include/e2p
+	INSTALL_DATA /usr/lib/libe2p.a
+	INSTALL_DATA /usr/include/e2p/e2p.h
+	INSTALL_DATA /usr/lib/pkgconfig/e2p.pc
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/e2p'
+making install in lib/support
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/support'
+making install in lib/ext2fs
+make[1]: Entering directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
+	MKDIR_P /lib /usr/lib
+	INSTALL-ELF-LIB /lib/libext2fs.so.2.4
+	SYMLINK /lib/libext2fs.so.2
+	SYMLINK /usr/lib/libext2fs.so
+	LDCONFIG
+	MKDIR_P /usr/lib /usr/include/ext2fs
+	INSTALL_DATA /usr/lib/libext2fs.a
+	INSTALL_DATA /usr/include/ext2fs/bitops.h
+	INSTALL_DATA /usr/include/ext2fs/ext2fs.h
+	INSTALL_DATA /usr/include/ext2fs/ext2_io.h
+	INSTALL_DATA /usr/include/ext2fs/ext2_fs.h
+	INSTALL_DATA /usr/include/ext2fs/ext2_ext_attr.h
+	INSTALL_DATA /usr/include/ext2fs/ext3_extents.h
+	INSTALL_DATA /usr/include/ext2fs/tdb.h
+	INSTALL_DATA /usr/include/ext2fs/qcow2.h
+	INSTALL_DATA /usr/include/ext2fs/hashmap.h
+	INSTALL_DATA /usr/include/ext2fs/ext2_err.h
+	INSTALL_DATA /usr/include/ext2fs/ext2_types.h
+	INSTALL_DATA /usr/lib/pkgconfig/ext2fs.pc
+make[1]: Leaving directory '/home/devel/building/work/src/e2fsprogs-1.47.0/lib/ext2fs'
++ chmod +w -R /home/devel/building/work/pkg
++ sed -i -e 's#^SS_DIR=.*#SS_DIR="/usr/share/ss"#' /home/devel/building/work/pkg/usr/bin/mk_cmds
++ sed -i -e 's#^ET_DIR=.*#ET_DIR="/usr/share/et"#' /home/devel/building/work/pkg/usr/bin/compile_et
++ rm /home/devel/building/work/pkg/usr/lib/libcom_err.a /home/devel/building/work/pkg/usr/lib/libe2p.a /home/devel/building/work/pkg/usr/lib/libext2fs.a /home/devel/building/work/pkg/usr/lib/libss.a
++ rm -r /home/devel/building/work/pkg/usr/share/info
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 20:43 etc/
+-rw-r--r--  0 root   root      813 May  7 20:43 etc/mke2fs.conf
+-rw-r--r--  0 root   root      685 May  7 20:43 etc/e2scrub.conf
+drwxr-xr-x  0 root   root        0 May  7 20:43 lib/
+drwxr-xr-x  0 root   root        0 May  7 20:43 lib/udev/
+-rwxr-xr-x  0 root   root    18744 May  7 20:43 lib/libcom_err.so.2.1
+lrwxrwxrwx  0 root   root        0 May  7 20:43 lib/libcom_err.so.2 -> libcom_err.so.2.1
+-rwxr-xr-x  0 root   root    31312 May  7 20:43 lib/libss.so.2.0
+lrwxrwxrwx  0 root   root        0 May  7 20:43 lib/libss.so.2 -> libss.so.2.0
+-rwxr-xr-x  0 root   root    45392 May  7 20:43 lib/libe2p.so.2.3
+lrwxrwxrwx  0 root   root        0 May  7 20:43 lib/libe2p.so.2 -> libe2p.so.2.3
+-rwxr-xr-x  0 root   root   438200 May  7 20:43 lib/libext2fs.so.2.4
+lrwxrwxrwx  0 root   root        0 May  7 20:43 lib/libext2fs.so.2 -> libext2fs.so.2.4
+drwxr-xr-x  0 root   root        0 May  7 20:43 lib/udev/rules.d/
+-rw-r--r--  0 root   root      171 May  7 20:43 lib/udev/rules.d/96-e2scrub.rules
+drwxr-xr-x  0 root   root        0 May  7 20:43 sbin/
+-rwxr-xr-x  0 root   root   334728 May  7 20:43 sbin/e2fsck
+lrwxrwxrwx  0 root   root        0 May  7 20:43 sbin/fsck.ext2 -> e2fsck
+lrwxrwxrwx  0 root   root        0 May  7 20:43 sbin/fsck.ext3 -> e2fsck
+lrwxrwxrwx  0 root   root        0 May  7 20:43 sbin/fsck.ext4 -> e2fsck
+-rwxr-xr-x  0 root   root   191992 May  7 20:43 sbin/debugfs
+-rwxr-xr-x  0 root   root   118880 May  7 20:43 sbin/mke2fs
+-rwxr-xr-x  0 root   root    35288 May  7 20:43 sbin/badblocks
+-rwxr-xr-x  0 root   root    98120 May  7 20:43 sbin/tune2fs
+-rwxr-xr-x  0 root   root    31480 May  7 20:43 sbin/dumpe2fs
+-rwxr-xr-x  0 root   root    14608 May  7 20:43 sbin/logsave
+-rwxr-xr-x  0 root   root    35664 May  7 20:43 sbin/e2image
+-rwxr-xr-x  0 root   root    18816 May  7 20:43 sbin/e2undo
+lrwxrwxrwx  0 root   root        0 May  7 20:43 sbin/mkfs.ext2 -> mke2fs
+lrwxrwxrwx  0 root   root        0 May  7 20:43 sbin/mkfs.ext3 -> mke2fs
+lrwxrwxrwx  0 root   root        0 May  7 20:43 sbin/mkfs.ext4 -> mke2fs
+lrwxrwxrwx  0 root   root        0 May  7 20:43 sbin/e2mmpstatus -> dumpe2fs
+lrwxrwxrwx  0 root   root        0 May  7 20:43 sbin/e2label -> tune2fs
+-rwxr-xr-x  0 root   root    56560 May  7 20:43 sbin/resize2fs
+-rwxr-xr-x  0 root   root     7294 May  7 20:43 sbin/e2scrub
+-rwxr-xr-x  0 root   root     5394 May  7 20:43 sbin/e2scrub_all
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/sbin/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/bin/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/include/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/include/et/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/include/ss/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/include/e2p/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/include/ext2fs/
+lrwxrwxrwx  0 root   root        0 May  7 20:43 usr/include/com_err.h -> et/com_err.h
+-rw-r--r--  0 root   root    19838 May  7 20:43 usr/include/ext2fs/bitops.h
+-rw-r--r--  0 root   root    76376 May  7 20:43 usr/include/ext2fs/ext2fs.h
+-rw-r--r--  0 root   root     5664 May  7 20:43 usr/include/ext2fs/ext2_io.h
+-rw-r--r--  0 root   root    44158 May  7 20:43 usr/include/ext2fs/ext2_fs.h
+-rw-r--r--  0 root   root     3137 May  7 20:43 usr/include/ext2fs/ext2_ext_attr.h
+-rw-r--r--  0 root   root     4558 May  7 20:43 usr/include/ext2fs/ext3_extents.h
+-rw-r--r--  0 root   root     8871 May  7 20:43 usr/include/ext2fs/tdb.h
+-rw-r--r--  0 root   root     2588 May  7 20:43 usr/include/ext2fs/qcow2.h
+-rw-r--r--  0 root   root     1183 May  7 20:43 usr/include/ext2fs/hashmap.h
+-rw-r--r--  0 root   root    12036 May  7 20:43 usr/include/ext2fs/ext2_err.h
+-rw-r--r--  0 root   root     4212 May  7 20:43 usr/include/ext2fs/ext2_types.h
+-rw-r--r--  0 root   root     3338 May  7 20:43 usr/include/e2p/e2p.h
+-rw-r--r--  0 root   root     3166 May  7 20:43 usr/include/ss/ss.h
+-rw-r--r--  0 root   root     1193 May  7 20:43 usr/include/ss/ss_err.h
+-rw-r--r--  0 root   root     2118 May  7 20:43 usr/include/et/com_err.h
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/lib/pkgconfig/
+lrwxrwxrwx  0 root   root        0 May  7 20:43 usr/lib/libcom_err.so -> /lib/libcom_err.so.2
+lrwxrwxrwx  0 root   root        0 May  7 20:43 usr/lib/libss.so -> /lib/libss.so.2
+lrwxrwxrwx  0 root   root        0 May  7 20:43 usr/lib/libe2p.so -> /lib/libe2p.so.2
+lrwxrwxrwx  0 root   root        0 May  7 20:43 usr/lib/libext2fs.so -> /lib/libext2fs.so.2
+-rw-r--r--  0 root   root      262 May  7 20:43 usr/lib/pkgconfig/com_err.pc
+-rw-r--r--  0 root   root      273 May  7 20:43 usr/lib/pkgconfig/ss.pc
+-rw-r--r--  0 root   root      250 May  7 20:43 usr/lib/pkgconfig/e2p.pc
+-rw-r--r--  0 root   root      247 May  7 20:43 usr/lib/pkgconfig/ext2fs.pc
+-rwxr-xr-x  0 root   root    14552 May  7 20:43 usr/bin/chattr
+-rwxr-xr-x  0 root   root    14552 May  7 20:43 usr/bin/lsattr
+-rwxr-xr-x  0 root   root     1102 May  7 20:43 usr/bin/mk_cmds
+-rwxr-xr-x  0 root   root     1342 May  7 20:43 usr/bin/compile_et
+-rwxr-xr-x  0 root   root    14472 May  7 20:43 usr/sbin/mklost+found
+-rwxr-xr-x  0 root   root    18664 May  7 20:43 usr/sbin/filefrag
+-rwxr-xr-x  0 root   root    14624 May  7 20:43 usr/sbin/e2freefrag
+-rwxr-xr-x  0 root   root    31168 May  7 20:43 usr/sbin/e4defrag
+-rwxr-xr-x  0 root   root    27016 May  7 20:43 usr/sbin/e4crypt
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/share/et/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/share/ss/
+-rw-r--r--  0 root   root     1551 May  7 20:43 usr/share/ss/ct_c.awk
+-rw-r--r--  0 root   root     2290 May  7 20:43 usr/share/ss/ct_c.sed
+-rw-r--r--  0 root   root     6485 May  7 20:43 usr/share/et/et_c.awk
+-rw-r--r--  0 root   root     4539 May  7 20:43 usr/share/et/et_h.awk
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/share/man/man8/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/share/man/man5/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/share/man/man1/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/share/man/man3/
+-rw-r--r--  0 root   root     1180 May  7 20:43 usr/share/man/man3/com_err.3.gz
+-rw-r--r--  0 root   root     3489 May  7 20:43 usr/share/man/man1/chattr.1.gz
+-rw-r--r--  0 root   root      648 May  7 20:43 usr/share/man/man1/lsattr.1.gz
+-rw-r--r--  0 root   root     1164 May  7 20:43 usr/share/man/man1/compile_et.1.gz
+-rw-r--r--  0 root   root      664 May  7 20:43 usr/share/man/man1/mk_cmds.1.gz
+-rw-r--r--  0 root   root     5808 May  7 20:43 usr/share/man/man5/e2fsck.conf.5.gz
+-rw-r--r--  0 root   root     5619 May  7 20:43 usr/share/man/man5/mke2fs.conf.5.gz
+-rw-r--r--  0 root   root    10658 May  7 20:43 usr/share/man/man5/ext4.5.gz
+lrwxrwxrwx  0 root   root        0 May  7 20:43 usr/share/man/man5/ext2.5.gz -> ext4.5.gz
+lrwxrwxrwx  0 root   root        0 May  7 20:43 usr/share/man/man5/ext3.5.gz -> ext4.5.gz
+-rw-r--r--  0 root   root     5802 May  7 20:43 usr/share/man/man8/e2fsck.8.gz
+-rw-r--r--  0 root   root     7658 May  7 20:43 usr/share/man/man8/debugfs.8.gz
+-rw-r--r--  0 root   root     8922 May  7 20:43 usr/share/man/man8/tune2fs.8.gz
+-rw-r--r--  0 root   root      710 May  7 20:43 usr/share/man/man8/mklost+found.8.gz
+-rw-r--r--  0 root   root     9069 May  7 20:43 usr/share/man/man8/mke2fs.8.gz
+-rw-r--r--  0 root   root     1389 May  7 20:43 usr/share/man/man8/dumpe2fs.8.gz
+-rw-r--r--  0 root   root     2762 May  7 20:43 usr/share/man/man8/badblocks.8.gz
+-rw-r--r--  0 root   root      714 May  7 20:43 usr/share/man/man8/e2label.8.gz
+-rw-r--r--  0 root   root     3977 May  7 20:43 usr/share/man/man8/e2image.8.gz
+-rw-r--r--  0 root   root      833 May  7 20:43 usr/share/man/man8/logsave.8.gz
+-rw-r--r--  0 root   root      992 May  7 20:43 usr/share/man/man8/filefrag.8.gz
+-rw-r--r--  0 root   root     1144 May  7 20:43 usr/share/man/man8/e2freefrag.8.gz
+-rw-r--r--  0 root   root      998 May  7 20:43 usr/share/man/man8/e2undo.8.gz
+-rw-r--r--  0 root   root     1156 May  7 20:43 usr/share/man/man8/e4defrag.8.gz
+-rw-r--r--  0 root   root     1216 May  7 20:43 usr/share/man/man8/e4crypt.8.gz
+-rw-r--r--  0 root   root      957 May  7 20:43 usr/share/man/man8/e2mmpstatus.8.gz
+-rw-r--r--  0 root   root     2371 May  7 20:43 usr/share/man/man8/resize2fs.8.gz
+-rw-r--r--  0 root   root     1060 May  7 20:43 usr/share/man/man8/e2scrub.8.gz
+-rw-r--r--  0 root   root      802 May  7 20:43 usr/share/man/man8/e2scrub_all.8.gz
+lrwxrwxrwx  0 root   root        0 May  7 20:43 usr/share/man/man8/fsck.ext2.8.gz -> e2fsck.8.gz
+lrwxrwxrwx  0 root   root        0 May  7 20:43 usr/share/man/man8/fsck.ext3.8.gz -> e2fsck.8.gz
+lrwxrwxrwx  0 root   root        0 May  7 20:43 usr/share/man/man8/fsck.ext4.8.gz -> e2fsck.8.gz
+lrwxrwxrwx  0 root   root        0 May  7 20:43 usr/share/man/man8/mkfs.ext2.8.gz -> mke2fs.8.gz
+lrwxrwxrwx  0 root   root        0 May  7 20:43 usr/share/man/man8/mkfs.ext3.8.gz -> mke2fs.8.gz
+lrwxrwxrwx  0 root   root        0 May  7 20:43 usr/share/man/man8/mkfs.ext4.8.gz -> mke2fs.8.gz
+=======> Building '/home/devel/packages/e2fsprogs#1.47.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling e2fsprogs 1.47.0-1
+prt-get: /usr/bin/pkgadd -u e2fsprogs#1.47.0-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 20:43:32 2024
+
+pkgadd: rejecting etc/mke2fs.conf, keeping existing version

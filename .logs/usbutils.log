@@ -1,0 +1,269 @@
+prt-get: updating /usr/ports/core-x86_64/usbutils
+prt-get: starting build Wed May  8 01:38:14 2024
+=======> Building '/home/devel/packages/usbutils#017-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/usbutils-017.tar.gz
+cp update-usbids.sh /home/devel/building/work/src
++ build
++ cd usbutils-017
++ autoreconf -fiv
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force 
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: adding subdirectory usbhid-dump to autoreconf
+autoreconf: Entering directory 'usbhid-dump'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force 
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not using Libtool
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:13: installing './compile'
+configure.ac:9: installing './install-sh'
+configure.ac:9: installing './missing'
+src/Makefile.am: installing './depcomp'
+autoreconf: './install-sh' is updated
+autoreconf: Leaving directory 'usbhid-dump'
+autoreconf: configure.ac: not using Libtool
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+configure.ac:12: installing './compile'
+configure.ac:8: installing './install-sh'
+configure.ac:8: installing './missing'
+Makefile.am: installing './depcomp'
+autoreconf: Leaving directory '.'
++ ./configure --prefix=/usr --datadir=/usr/share/hwdata --disable-zlib
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for gcc option to enable large file support... none needed
+checking for byteswap.h... yes
+checking for nl_langinfo... yes
+checking for iconv... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libusb-1.0 >= 1.0.14... yes
+checking for libudev >= 196... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating usbutils.pc
+config.status: WARNING:  'usbutils.pc.in' seems to ignore the --datarootdir setting
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+=== configuring in usbhid-dump (/home/devel/building/work/src/usbutils-017/usbhid-dump)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=/usr'  '--datadir=/usr/share/hwdata' '--disable-zlib' 'CFLAGS=-O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects' 'PKG_CONFIG_PATH=/usr/lib/pkgconfig:/usr/share/pkgconfig' --cache-file=/dev/null --srcdir=.
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libusb-1.0 >= 1.0.0... yes
+checking for libusb_set_option... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+
+	usbutils 017
+	=============
+
+	prefix:                 /usr
+	datarootdir:            ${prefix}/share
+	datadir:                /usr/share/hwdata
+	pkgconfigdir:		${libdir}/pkgconfig
+	mandir:                 ${datarootdir}/man
+
+	usb.ids:                /usr/share/hwdata/usb.ids
+
+	compiler:               gcc
+	cflags:                 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects
+	ldflags:                
+
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/usbutils-017'
+Making all in usbhid-dump
+make[2]: Entering directory '/home/devel/building/work/src/usbutils-017/usbhid-dump'
+make  all-recursive
+make[3]: Entering directory '/home/devel/building/work/src/usbutils-017/usbhid-dump'
+Making all in src
+make[4]: Entering directory '/home/devel/building/work/src/usbutils-017/usbhid-dump/src'
+gcc -DHAVE_CONFIG_H -I. -I..   -I/home/devel/building/work/src/usbutils-017/usbhid-dump -DNDEBUG   -Os -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I/usr/include/libusb-1.0 -MT dev.o -MD -MP -MF .deps/dev.Tpo -c -o dev.o dev.c
+gcc -DHAVE_CONFIG_H -I. -I..   -I/home/devel/building/work/src/usbutils-017/usbhid-dump -DNDEBUG   -Os -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I/usr/include/libusb-1.0 -MT dev_list.o -MD -MP -MF .deps/dev_list.Tpo -c -o dev_list.o dev_list.c
+gcc -DHAVE_CONFIG_H -I. -I..   -I/home/devel/building/work/src/usbutils-017/usbhid-dump -DNDEBUG   -Os -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I/usr/include/libusb-1.0 -MT iface.o -MD -MP -MF .deps/iface.Tpo -c -o iface.o iface.c
+gcc -DHAVE_CONFIG_H -I. -I..   -I/home/devel/building/work/src/usbutils-017/usbhid-dump -DNDEBUG   -Os -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I/usr/include/libusb-1.0 -MT iface_list.o -MD -MP -MF .deps/iface_list.Tpo -c -o iface_list.o iface_list.c
+gcc -DHAVE_CONFIG_H -I. -I..   -I/home/devel/building/work/src/usbutils-017/usbhid-dump -DNDEBUG   -Os -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I/usr/include/libusb-1.0 -MT usbhid-dump.o -MD -MP -MF .deps/usbhid-dump.Tpo -c -o usbhid-dump.o usbhid-dump.c
+mv -f .deps/dev.Tpo .deps/dev.Po
+mv -f .deps/dev_list.Tpo .deps/dev_list.Po
+mv -f .deps/iface.Tpo .deps/iface.Po
+mv -f .deps/iface_list.Tpo .deps/iface_list.Po
+mv -f .deps/usbhid-dump.Tpo .deps/usbhid-dump.Po
+gcc  -Os -Wall -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -I/usr/include/libusb-1.0   -o usbhid-dump dev.o dev_list.o iface.o iface_list.o usbhid-dump.o  -lusb-1.0
+make[4]: Leaving directory '/home/devel/building/work/src/usbutils-017/usbhid-dump/src'
+make[4]: Entering directory '/home/devel/building/work/src/usbutils-017/usbhid-dump'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/usbutils-017/usbhid-dump'
+make[3]: Leaving directory '/home/devel/building/work/src/usbutils-017/usbhid-dump'
+make[2]: Leaving directory '/home/devel/building/work/src/usbutils-017/usbhid-dump'
+make[2]: Entering directory '/home/devel/building/work/src/usbutils-017'
+gcc -DHAVE_CONFIG_H -I.   -I/usr/include/libusb-1.0    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lsusb-lsusb.o -MD -MP -MF .deps/lsusb-lsusb.Tpo -c -o lsusb-lsusb.o `test -f 'lsusb.c' || echo './'`lsusb.c
+gcc -DHAVE_CONFIG_H -I.   -I/usr/include/libusb-1.0    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lsusb-lsusb-t.o -MD -MP -MF .deps/lsusb-lsusb-t.Tpo -c -o lsusb-lsusb-t.o `test -f 'lsusb-t.c' || echo './'`lsusb-t.c
+gcc -DHAVE_CONFIG_H -I.   -I/usr/include/libusb-1.0    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lsusb-desc-defs.o -MD -MP -MF .deps/lsusb-desc-defs.Tpo -c -o lsusb-desc-defs.o `test -f 'desc-defs.c' || echo './'`desc-defs.c
+gcc -DHAVE_CONFIG_H -I.   -I/usr/include/libusb-1.0    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lsusb-desc-dump.o -MD -MP -MF .deps/lsusb-desc-dump.Tpo -c -o lsusb-desc-dump.o `test -f 'desc-dump.c' || echo './'`desc-dump.c
+gcc -DHAVE_CONFIG_H -I.   -I/usr/include/libusb-1.0    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lsusb-names.o -MD -MP -MF .deps/lsusb-names.Tpo -c -o lsusb-names.o `test -f 'names.c' || echo './'`names.c
+gcc -DHAVE_CONFIG_H -I.   -I/usr/include/libusb-1.0    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lsusb-sysfs.o -MD -MP -MF .deps/lsusb-sysfs.Tpo -c -o lsusb-sysfs.o `test -f 'sysfs.c' || echo './'`sysfs.c
+gcc -DHAVE_CONFIG_H -I.   -I/usr/include/libusb-1.0    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lsusb-usbmisc.o -MD -MP -MF .deps/lsusb-usbmisc.Tpo -c -o lsusb-usbmisc.o `test -f 'usbmisc.c' || echo './'`usbmisc.c
+gcc -DHAVE_CONFIG_H -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT usbreset.o -MD -MP -MF .deps/usbreset.Tpo -c -o usbreset.o usbreset.c
+mv -f .deps/lsusb-desc-defs.Tpo .deps/lsusb-desc-defs.Po
+sed 's|VERSION|017|g;s|@usbids@|/usr/share/hwdata/usb.ids|g' lsusb.py.in >lsusb.py
+mv -f .deps/lsusb-sysfs.Tpo .deps/lsusb-sysfs.Po
+chmod 755 lsusb.py
+sed 's|VERSION|017|g' lsusb.8.in >lsusb.8
+sed 's|VERSION|017|g' usbhid-dump.8.in >usbhid-dump.8
+mv -f .deps/usbreset.Tpo .deps/usbreset.Po
+sed 's|VERSION|017|g' usb-devices.1.in >usb-devices.1
+gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--as-needed  -o usbreset usbreset.o  
+mv -f .deps/lsusb-usbmisc.Tpo .deps/lsusb-usbmisc.Po
+mv -f .deps/lsusb-desc-dump.Tpo .deps/lsusb-desc-dump.Po
+mv -f .deps/lsusb-lsusb-t.Tpo .deps/lsusb-lsusb-t.Po
+mv -f .deps/lsusb-names.Tpo .deps/lsusb-names.Po
+mv -f .deps/lsusb-lsusb.Tpo .deps/lsusb-lsusb.Po
+gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--as-needed  -o lsusb lsusb-lsusb.o lsusb-lsusb-t.o lsusb-desc-defs.o lsusb-desc-dump.o lsusb-names.o lsusb-sysfs.o lsusb-usbmisc.o -lusb-1.0 -ludev -lrt 
+make[2]: Leaving directory '/home/devel/building/work/src/usbutils-017'
+make[1]: Leaving directory '/home/devel/building/work/src/usbutils-017'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in usbhid-dump
+make[1]: Entering directory '/home/devel/building/work/src/usbutils-017/usbhid-dump'
+Making install in src
+make[2]: Entering directory '/home/devel/building/work/src/usbutils-017/usbhid-dump/src'
+make[3]: Entering directory '/home/devel/building/work/src/usbutils-017/usbhid-dump/src'
+make[3]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+  /usr/bin/install -c usbhid-dump '/home/devel/building/work/pkg/usr/bin'
+make[3]: Leaving directory '/home/devel/building/work/src/usbutils-017/usbhid-dump/src'
+make[2]: Leaving directory '/home/devel/building/work/src/usbutils-017/usbhid-dump/src'
+make[2]: Entering directory '/home/devel/building/work/src/usbutils-017/usbhid-dump'
+make[3]: Entering directory '/home/devel/building/work/src/usbutils-017/usbhid-dump'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/usbutils-017/usbhid-dump'
+make[2]: Leaving directory '/home/devel/building/work/src/usbutils-017/usbhid-dump'
+make[1]: Leaving directory '/home/devel/building/work/src/usbutils-017/usbhid-dump'
+make[1]: Entering directory '/home/devel/building/work/src/usbutils-017'
+make[2]: Entering directory '/home/devel/building/work/src/usbutils-017'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man1'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man8'
+ /usr/bin/install -c usb-devices lsusb.py '/home/devel/building/work/pkg/usr/bin'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+ /usr/bin/install -c -m 644 usbutils.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 usb-devices.1 '/home/devel/building/work/pkg/usr/share/man/man1'
+  /usr/bin/install -c lsusb '/home/devel/building/work/pkg/usr/bin'
+ /usr/bin/install -c -m 644 lsusb.8 usbhid-dump.8 '/home/devel/building/work/pkg/usr/share/man/man8'
+make[2]: Leaving directory '/home/devel/building/work/src/usbutils-017'
+make[1]: Leaving directory '/home/devel/building/work/src/usbutils-017'
++ install -d -m 0755 /home/devel/building/work/pkg/usr/share/hwdata/
++ wget http://www.linux-usb.org/usb.ids -O /home/devel/building/work/pkg/usr/share/hwdata/usb.ids
+[0] Downloading 'http://www.linux-usb.org/usb.ids' ...
+Saving '/home/devel/building/work/pkg/usr/share/hwdata/usb.ids'
+HTTP response 200 OK [http://www.linux-usb.org/usb.ids]
++ install -D -m 0754 /home/devel/building/work/src/update-usbids.sh /home/devel/building/work/pkg/etc/cron/weekly/update-usbids.sh
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 01:38 etc/
+drwxr-xr-x  0 root   root        0 May  8 01:38 etc/cron/
+drwxr-xr-x  0 root   root        0 May  8 01:38 etc/cron/weekly/
+-rwxr-xr--  0 root   root       88 May  8 01:38 etc/cron/weekly/update-usbids.sh
+drwxr-xr-x  0 root   root        0 May  8 01:38 usr/
+drwxr-xr-x  0 root   root        0 May  8 01:38 usr/bin/
+drwxr-xr-x  0 root   root        0 May  8 01:38 usr/share/
+drwxr-xr-x  0 root   root        0 May  8 01:38 usr/lib/
+drwxr-xr-x  0 root   root        0 May  8 01:38 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      699 May  8 01:38 usr/lib/pkgconfig/usbutils.pc
+drwxr-xr-x  0 root   root        0 May  8 01:38 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  8 01:38 usr/share/hwdata/
+-rw-r--r--  0 root   root   728227 Mar 18 21:34 usr/share/hwdata/usb.ids
+drwxr-xr-x  0 root   root        0 May  8 01:38 usr/share/man/man1/
+drwxr-xr-x  0 root   root        0 May  8 01:38 usr/share/man/man8/
+-rw-r--r--  0 root   root     1002 May  8 01:38 usr/share/man/man8/lsusb.8.gz
+-rw-r--r--  0 root   root     1620 May  8 01:38 usr/share/man/man8/usbhid-dump.8.gz
+-rw-r--r--  0 root   root      843 May  8 01:38 usr/share/man/man1/usb-devices.1.gz
+-rwxr-xr-x  0 root   root    27048 May  8 01:38 usr/bin/usbhid-dump
+-rwxr-xr-x  0 root   root     4944 May  8 01:38 usr/bin/usb-devices
+-rwxr-xr-x  0 root   root    14528 May  8 01:38 usr/bin/lsusb.py
+-rwxr-xr-x  0 root   root   186784 May  8 01:38 usr/bin/lsusb
+=======> Building '/home/devel/packages/usbutils#017-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling usbutils 017-1
+prt-get: /usr/bin/pkgadd -u usbutils#017-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 01:38:25 2024
+

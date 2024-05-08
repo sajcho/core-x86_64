@@ -1,0 +1,227 @@
+prt-get: updating /usr/ports/core-x86_64/zstd
+prt-get: starting build Wed May  8 01:46:17 2024
+=======> Building '/home/devel/packages/zstd#1.5.6-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/zstd-v1.5.6.tar.gz
+cp disable-warning-decompression-multi-thread.patch /home/devel/building/work/src
++ build
++ cd zstd-1.5.6/build/meson
++ export 'CFLAGS=-O3 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects'
++ CFLAGS='-O3 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects'
++ export 'CXXFLAGS=-O3 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects'
++ CXXFLAGS='-O3 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects'
++ export 'CPPFLAGS=-O3 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects'
++ CPPFLAGS='-O3 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects'
++ patch -p1 -d /home/devel/building/work/src/zstd-1.5.6 -i /home/devel/building/work/src/disable-warning-decompression-multi-thread.patch
+patching file programs/zstdcli.c
+Hunk #1 succeeded at 1298 (offset 7 lines).
++ build-meson --default-library=both -Db_ndebug=true -Dbin_contrib=true -Dbin_programs=true -Dbacktrace=disabled -Dmulti_thread=enabled -Dlz4=enabled -Dlzma=enabled -Dzlib=enabled . build
+The Meson build system
+Version: 1.4.0
+Source dir: /home/devel/building/work/src/zstd-1.5.6/build/meson
+Build dir: /home/devel/building/work/src/zstd-1.5.6/build/meson/build
+Build type: native build
+Program GetZstdLibraryVersion.py found: YES (/usr/bin/python3 /home/devel/building/work/src/zstd-1.5.6/build/meson/GetZstdLibraryVersion.py)
+Project name: zstd
+Project version: 1.5.6
+C compiler for the host machine: cc (gcc 14.1.0 "cc (SAUX-x86_64) 14.1.0")
+C linker for the host machine: cc ld.bfd 2.42
+C++ compiler for the host machine: c++ (gcc 14.1.0 "c++ (SAUX-x86_64) 14.1.0")
+C++ linker for the host machine: c++ ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Library m found: YES
+Run-time dependency threads found: YES
+Found pkg-config: YES (/usr/bin/pkg-config) 2.2.0
+Run-time dependency zlib found: YES 1.3.1
+Run-time dependency liblzma found: YES 5.4.6
+Run-time dependency liblz4 found: YES 1.9.4
+Compiler for C supports arguments -Wundef: YES 
+Compiler for C supports arguments -Wshadow: YES 
+Compiler for C supports arguments -Wcast-align: YES 
+Compiler for C supports arguments -Wcast-qual: YES 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Compiler for C++ supports arguments -Wundef: YES 
+Compiler for C++ supports arguments -Wshadow: YES 
+Compiler for C++ supports arguments -Wcast-align: YES 
+Compiler for C++ supports arguments -Wcast-qual: YES 
+Message: Enable legacy support back to version 0.5
+Message: Enable multi-threading support
+Has header "execinfo.h" skipped: feature backtrace disabled
+Build targets in project: 7
+
+zstd 1.5.6
+
+  User defined options
+    auto_features     : auto
+    bindir            : /usr/bin
+    buildtype         : plain
+    datadir           : /usr/share
+    default_library   : both
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    libexecdir        : /usr/lib
+    localstatedir     : /var
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sbindir           : /usr/sbin
+    sharedstatedir    : /var/lib
+    sysconfdir        : /etc
+    werror            : false
+    wrap_mode         : nodownload
+    python.bytecompile: 0
+    b_lto             : false
+    b_ndebug          : true
+    b_pie             : true
+    b_staticpic       : true
+    backtrace         : disabled
+    bin_contrib       : true
+    bin_programs      : true
+    lz4               : enabled
+    lzma              : enabled
+    multi_thread      : enabled
+    zlib              : enabled
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -C build
+ninja: entering directory '/home/devel/building/work/src/zstd-1.5.6/build/meson/build'
+[1/61] Compiling C++ object contrib/gen_html/gen_html.p/.._.._.._.._contrib_gen_html_gen_html.cpp.o
+[2/61] Compiling C++ object contrib/pzstd/pzstd.p/.._.._.._.._contrib_pzstd_SkippableFrame.cpp.o
+[3/61] Compiling C++ object contrib/pzstd/pzstd.p/.._.._.._.._contrib_pzstd_Pzstd.cpp.o
+[4/61] Compiling C++ object contrib/pzstd/pzstd.p/.._.._.._.._contrib_pzstd_Options.cpp.o
+[5/61] Compiling C++ object contrib/pzstd/pzstd.p/.._.._.._.._contrib_pzstd_main.cpp.o
+[6/61] Compiling C object contrib/pzstd/pzstd.p/.._.._.._.._programs_util.c.o
+[7/61] Compiling C object programs/zstd-frugal.p/.._.._.._programs_fileio_asyncio.c.o
+[8/61] Compiling C object programs/zstd-frugal.p/.._.._.._programs_fileio.c.o
+[9/61] Compiling C object programs/zstd-frugal.p/.._.._.._programs_util.c.o
+[10/61] Compiling C object programs/zstd-frugal.p/.._.._.._programs_timefn.c.o
+[11/61] Compiling C object programs/zstd-frugal.p/.._.._.._programs_zstdcli.c.o
+[12/61] Compiling C object programs/zstd.p/.._.._.._programs_zstdcli_trace.c.o
+[13/61] Compiling C object programs/zstd.p/.._.._.._programs_dibio.c.o
+[14/61] Compiling C object programs/zstd.p/.._.._.._programs_lorem.c.o
+[15/61] Compiling C object programs/zstd.p/.._.._.._programs_datagen.c.o
+[16/61] Compiling C object programs/zstd.p/.._.._.._programs_benchzstd.c.o
+[17/61] Compiling C object programs/zstd.p/.._.._.._programs_benchfn.c.o
+[18/61] Compiling C object programs/zstd.p/.._.._.._programs_fileio_asyncio.c.o
+[19/61] Compiling C object programs/zstd.p/.._.._.._programs_fileio.c.o
+[20/61] Compiling C object programs/zstd.p/.._.._.._programs_timefn.c.o
+[21/61] Compiling C object programs/zstd.p/.._.._.._programs_util.c.o
+[01m[K../../../contrib/gen_html/gen_html.cpp:128:29:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+  128 |         /* comments of type /**< and /*!< are detected and only function declaration is highlighted (bold) */
+[01m[K../../../contrib/gen_html/gen_html.cpp:128:38:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+[01m[K../../../contrib/gen_html/gen_html.cpp:162:29:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+  162 |         /* comments of type /*! mean: this is a function declaration; switch comments with declarations */
+[01m[K../../../contrib/gen_html/gen_html.cpp:182:57:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+  182 |         } else if (exclam == '=') { /* comments of type /*= and /**= mean: use a <H3> header and show also all functions until first empty line */
+[01m[K../../../contrib/gen_html/gen_html.cpp:182:65:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+[01m[K../../../contrib/gen_html/gen_html.cpp:194:38:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+  194 |         } else { /* comments of type /** and /*- mean: this is a comment; use a <H2> header for the first line */
+[01m[K../../../contrib/gen_html/gen_html.cpp:194:46:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+[22/61] Linking target contrib/gen_html/gen_html
+[23/61] Compiling C object programs/zstd.p/.._.._.._programs_zstdcli.c.o
+[24/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_legacy_zstd_v07.c.o
+[25/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_legacy_zstd_v06.c.o
+[26/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_legacy_zstd_v05.c.o
+[27/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_decompress_huf_decompress_amd64.S.o
+[28/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_dictBuilder_zdict.c.o
+[29/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_dictBuilder_divsufsort.c.o
+[30/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_dictBuilder_fastcover.c.o
+[31/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_dictBuilder_cover.c.o
+[32/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_decompress_zstd_ddict.c.o
+[33/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_decompress_zstd_decompress_block.c.o
+[34/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_decompress_zstd_decompress.c.o
+[35/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_decompress_huf_decompress.c.o
+[36/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_compress_zstd_ldm.c.o
+[37/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_compress_zstd_opt.c.o
+[38/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_compress_zstd_lazy.c.o
+[39/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_compress_zstd_double_fast.c.o
+[40/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_compress_zstd_fast.c.o
+[41/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_compress_zstdmt_compress.c.o
+[42/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_compress_zstd_compress_superblock.c.o
+[43/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_compress_zstd_compress_sequences.c.o
+[44/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_compress_zstd_compress_literals.c.o
+[45/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_compress_zstd_compress.c.o
+[46/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_compress_huf_compress.c.o
+[47/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_compress_fse_compress.c.o
+[48/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_compress_hist.c.o
+[49/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_common_xxhash.c.o
+[50/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_common_error_private.c.o
+[51/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_common_zstd_common.c.o
+[52/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_common_pool.c.o
+[53/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_common_threading.c.o
+[54/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_common_fse_decompress.c.o
+[55/61] Compiling C object lib/libzstd.so.1.5.6.p/.._.._.._lib_common_entropy_common.c.o
+[56/61] Linking static target lib/libzstd.a
+[57/61] Linking target lib/libzstd.so.1.5.6
+[58/61] Generating symbol file lib/libzstd.so.1.5.6.p/libzstd.so.1.5.6.symbols
+[59/61] Linking target contrib/pzstd/pzstd
+[60/61] Linking target programs/zstd-frugal
+[61/61] Linking target programs/zstd
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/zstd-1.5.6/build/meson/build -j 8
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Installing symlink PosixPath('/home/devel/building/work/pkg/usr/bin/zstdcat') -> 'zstd'
+Installing symlink PosixPath('/home/devel/building/work/pkg/usr/share/man/man1/zstdcat.1') -> 'zstd.1'
+Installing symlink PosixPath('/home/devel/building/work/pkg/usr/bin/unzstd') -> 'zstd'
+Installing symlink PosixPath('/home/devel/building/work/pkg/usr/share/man/man1/unzstd.1') -> 'zstd.1'
+Installing symlink PosixPath('/home/devel/building/work/pkg/usr/bin/zstdmt') -> 'zstd'
+Installing symlink PosixPath('/home/devel/building/work/pkg/usr/share/man/man1/zstdmt.1') -> 'zstd.1'
+Installing lib/libzstd.so.1.5.6 to /home/devel/building/work/pkg/usr/lib
+Installing lib/libzstd.a to /home/devel/building/work/pkg/usr/lib
+Installing programs/zstd to /home/devel/building/work/pkg/usr/bin
+Installing programs/zstd-frugal to /home/devel/building/work/pkg/usr/bin
+Installing contrib/pzstd/pzstd to /home/devel/building/work/pkg/usr/bin
+Installing /home/devel/building/work/src/zstd-1.5.6/build/meson/lib/../../../lib/zstd.h to /home/devel/building/work/pkg/usr/include
+Installing /home/devel/building/work/src/zstd-1.5.6/build/meson/lib/../../../lib/zdict.h to /home/devel/building/work/pkg/usr/include
+Installing /home/devel/building/work/src/zstd-1.5.6/build/meson/lib/../../../lib/zstd_errors.h to /home/devel/building/work/pkg/usr/include
+Installing /home/devel/building/work/src/zstd-1.5.6/build/meson/programs/../../../programs/zstd.1 to /home/devel/building/work/pkg/usr/share/man/man1
+Installing /home/devel/building/work/src/zstd-1.5.6/build/meson/programs/../../../programs/zstdgrep.1 to /home/devel/building/work/pkg/usr/share/man/man1
+Installing /home/devel/building/work/src/zstd-1.5.6/build/meson/programs/../../../programs/zstdless.1 to /home/devel/building/work/pkg/usr/share/man/man1
+Installing /home/devel/building/work/src/zstd-1.5.6/build/meson/build/meson-private/libzstd.pc to /home/devel/building/work/pkg/usr/lib/pkgconfig
+Installing /home/devel/building/work/src/zstd-1.5.6/build/meson/programs/../../../programs/zstdgrep to /home/devel/building/work/pkg/usr/bin
+Installing /home/devel/building/work/src/zstd-1.5.6/build/meson/programs/../../../programs/zstdless to /home/devel/building/work/pkg/usr/bin
+Installing symlink pointing to libzstd.so.1.5.6 to /home/devel/building/work/pkg/usr/lib/libzstd.so.1
+Installing symlink pointing to libzstd.so.1 to /home/devel/building/work/pkg/usr/lib/libzstd.so
+Running custom install script '/usr/bin/python3 /home/devel/building/work/src/zstd-1.5.6/build/meson/programs/../InstallSymlink.py zstd zstdcat bin'
+Running custom install script '/usr/bin/python3 /home/devel/building/work/src/zstd-1.5.6/build/meson/programs/../InstallSymlink.py zstd.1 zstdcat.1 share/man/man1'
+Running custom install script '/usr/bin/python3 /home/devel/building/work/src/zstd-1.5.6/build/meson/programs/../InstallSymlink.py zstd unzstd bin'
+Running custom install script '/usr/bin/python3 /home/devel/building/work/src/zstd-1.5.6/build/meson/programs/../InstallSymlink.py zstd.1 unzstd.1 share/man/man1'
+Running custom install script '/usr/bin/python3 /home/devel/building/work/src/zstd-1.5.6/build/meson/programs/../InstallSymlink.py zstd zstdmt bin'
+Running custom install script '/usr/bin/python3 /home/devel/building/work/src/zstd-1.5.6/build/meson/programs/../InstallSymlink.py zstd.1 zstdmt.1 share/man/man1'
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 01:46 usr/
+drwxr-xr-x  0 root   root        0 May  8 01:46 usr/lib/
+drwxr-xr-x  0 root   root        0 May  8 01:46 usr/bin/
+drwxr-xr-x  0 root   root        0 May  8 01:46 usr/include/
+drwxr-xr-x  0 root   root        0 May  8 01:46 usr/share/
+drwxr-xr-x  0 root   root        0 May  8 01:46 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  8 01:46 usr/share/man/man1/
+-rw-r--r--  0 root   root    11320 Mar 21 23:05 usr/share/man/man1/zstd.1.gz
+-rw-r--r--  0 root   root      605 Mar 21 23:05 usr/share/man/man1/zstdgrep.1.gz
+-rw-r--r--  0 root   root      270 Mar 21 23:05 usr/share/man/man1/zstdless.1.gz
+lrwxrwxrwx  0 root   root        0 May  8 01:46 usr/share/man/man1/zstdcat.1.gz -> zstd.1.gz
+lrwxrwxrwx  0 root   root        0 May  8 01:46 usr/share/man/man1/unzstd.1.gz -> zstd.1.gz
+lrwxrwxrwx  0 root   root        0 May  8 01:46 usr/share/man/man1/zstdmt.1.gz -> zstd.1.gz
+-rw-r--r--  0 root   root   175838 Mar 21 23:05 usr/include/zstd.h
+-rw-r--r--  0 root   root    26433 Mar 21 23:05 usr/include/zdict.h
+-rw-r--r--  0 root   root     4532 Mar 21 23:05 usr/include/zstd_errors.h
+-rwxr-xr-x  0 root   root   203312 May  8 01:46 usr/bin/zstd
+-rwxr-xr-x  0 root   root   135320 May  8 01:46 usr/bin/zstd-frugal
+-rwxr-xr-x  0 root   root   101352 May  8 01:46 usr/bin/pzstd
+-rwxr-xr-x  0 root   root     3869 Mar 21 23:05 usr/bin/zstdgrep
+-rwxr-xr-x  0 root   root      197 Mar 21 23:05 usr/bin/zstdless
+lrwxrwxrwx  0 root   root        0 May  8 01:46 usr/bin/zstdcat -> zstd
+lrwxrwxrwx  0 root   root        0 May  8 01:46 usr/bin/unzstd -> zstd
+lrwxrwxrwx  0 root   root        0 May  8 01:46 usr/bin/zstdmt -> zstd
+-rwxr-xr-x  0 root   root   953192 May  8 01:46 usr/lib/libzstd.so.1.5.6
+-rw-r--r--  0 root   root  4741120 May  8 01:46 usr/lib/libzstd.a
+drwxr-xr-x  0 root   root        0 May  8 01:46 usr/lib/pkgconfig/
+lrwxrwxrwx  0 root   root        0 May  8 01:46 usr/lib/libzstd.so.1 -> libzstd.so.1.5.6
+lrwxrwxrwx  0 root   root        0 May  8 01:46 usr/lib/libzstd.so -> libzstd.so.1
+-rw-r--r--  0 root   root      259 May  8 01:46 usr/lib/pkgconfig/libzstd.pc
+=======> Building '/home/devel/packages/zstd#1.5.6-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling zstd 1.5.6-1
+prt-get: /usr/bin/pkgadd -u zstd#1.5.6-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 01:46:31 2024
+

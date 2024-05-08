@@ -1,0 +1,190 @@
+prt-get: updating /usr/ports/wayland-x86_64/libdisplay-info
+prt-get: starting build Tue May  7 23:26:17 2024
+=======> Building '/home/devel/packages/libdisplay-info#0.1.1-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/libdisplay-info-0.1.1.tar.gz
++ build
++ cd libdisplay-info-0.1.1
++ build-meson . build
+The Meson build system
+Version: 1.4.0
+Source dir: /home/devel/building/work/src/libdisplay-info-0.1.1
+Build dir: /home/devel/building/work/src/libdisplay-info-0.1.1/build
+Build type: native build
+Project name: libdisplay-info
+Project version: 0.1.1
+C compiler for the host machine: cc (gcc 14.1.0 "cc (SAUX-x86_64) 14.1.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 2.2.0
+Build-time dependency hwdata found: YES 0.382
+Program tool/gen-search-table.py found: YES (/home/devel/building/work/src/libdisplay-info-0.1.1/tool/gen-search-table.py)
+Library m found: YES
+Compiler for C supports arguments -Wundef: YES 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Compiler for C supports arguments -Walloca: YES 
+Compiler for C supports arguments -Wdeclaration-after-statement: YES 
+Compiler for C supports arguments -Wconversion: YES 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C supports arguments -Werror=implicit: YES 
+Program edid-decode found: NO
+Program false found: YES (/bin/false)
+Build targets in project: 3
+
+libdisplay-info 0.1.1
+
+  User defined options
+    auto_features     : auto
+    bindir            : /usr/bin
+    buildtype         : plain
+    datadir           : /usr/share
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    libexecdir        : /usr/lib
+    localstatedir     : /var
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sbindir           : /usr/sbin
+    sharedstatedir    : /var/lib
+    sysconfdir        : /etc
+    werror            : false
+    wrap_mode         : nodownload
+    python.bytecompile: 0
+    b_lto             : false
+    b_pie             : true
+    b_staticpic       : true
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -v -C build
+ninja: entering directory '/home/devel/building/work/src/libdisplay-info-0.1.1/build'
+[1/19] cc -Idi-edid-decode/di-edid-decode.p -Idi-edid-decode -I../di-edid-decode -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -D_POSIX_C_SOURCE=200809L -Wundef -Wmissing-prototypes -Walloca -Wdeclaration-after-statement -Wconversion -Wno-unused-parameter -Wno-missing-field-initializers -Werror=implicit -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ di-edid-decode/di-edid-decode.p/main.c.o -MF di-edid-decode/di-edid-decode.p/main.c.o.d -o di-edid-decode/di-edid-decode.p/main.c.o -c ../di-edid-decode/main.c
+[2/19] cc -Idi-edid-decode/di-edid-decode.p -Idi-edid-decode -I../di-edid-decode -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -D_POSIX_C_SOURCE=200809L -Wundef -Wmissing-prototypes -Walloca -Wdeclaration-after-statement -Wconversion -Wno-unused-parameter -Wno-missing-field-initializers -Werror=implicit -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ di-edid-decode/di-edid-decode.p/edid.c.o -MF di-edid-decode/di-edid-decode.p/edid.c.o.d -o di-edid-decode/di-edid-decode.p/edid.c.o -c ../di-edid-decode/edid.c
+[3/19] cc -Idi-edid-decode/di-edid-decode.p -Idi-edid-decode -I../di-edid-decode -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -D_POSIX_C_SOURCE=200809L -Wundef -Wmissing-prototypes -Walloca -Wdeclaration-after-statement -Wconversion -Wno-unused-parameter -Wno-missing-field-initializers -Werror=implicit -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ di-edid-decode/di-edid-decode.p/displayid.c.o -MF di-edid-decode/di-edid-decode.p/displayid.c.o.d -o di-edid-decode/di-edid-decode.p/displayid.c.o -c ../di-edid-decode/displayid.c
+[4/19] cc -Idi-edid-decode/di-edid-decode.p -Idi-edid-decode -I../di-edid-decode -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -D_POSIX_C_SOURCE=200809L -Wundef -Wmissing-prototypes -Walloca -Wdeclaration-after-statement -Wconversion -Wno-unused-parameter -Wno-missing-field-initializers -Werror=implicit -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ di-edid-decode/di-edid-decode.p/cta.c.o -MF di-edid-decode/di-edid-decode.p/cta.c.o.d -o di-edid-decode/di-edid-decode.p/cta.c.o -c ../di-edid-decode/cta.c
+[5/19] cc -Ilibdisplay-info.so.0.1.1.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -D_POSIX_C_SOURCE=200809L -Wundef -Wmissing-prototypes -Walloca -Wdeclaration-after-statement -Wconversion -Wno-unused-parameter -Wno-missing-field-initializers -Werror=implicit -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ libdisplay-info.so.0.1.1.p/memory-stream.c.o -MF libdisplay-info.so.0.1.1.p/memory-stream.c.o.d -o libdisplay-info.so.0.1.1.p/memory-stream.c.o -c ../memory-stream.c
+[6/19] cc -Ilibdisplay-info.so.0.1.1.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -D_POSIX_C_SOURCE=200809L -Wundef -Wmissing-prototypes -Walloca -Wdeclaration-after-statement -Wconversion -Wno-unused-parameter -Wno-missing-field-initializers -Werror=implicit -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ libdisplay-info.so.0.1.1.p/log.c.o -MF libdisplay-info.so.0.1.1.p/log.c.o.d -o libdisplay-info.so.0.1.1.p/log.c.o -c ../log.c
+[7/19] cc -Ilibdisplay-info.so.0.1.1.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -D_POSIX_C_SOURCE=200809L -Wundef -Wmissing-prototypes -Walloca -Wdeclaration-after-statement -Wconversion -Wno-unused-parameter -Wno-missing-field-initializers -Werror=implicit -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ libdisplay-info.so.0.1.1.p/info.c.o -MF libdisplay-info.so.0.1.1.p/info.c.o.d -o libdisplay-info.so.0.1.1.p/info.c.o -c ../info.c
+[8/19] cc -Ilibdisplay-info.so.0.1.1.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -D_POSIX_C_SOURCE=200809L -Wundef -Wmissing-prototypes -Walloca -Wdeclaration-after-statement -Wconversion -Wno-unused-parameter -Wno-missing-field-initializers -Werror=implicit -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ libdisplay-info.so.0.1.1.p/gtf.c.o -MF libdisplay-info.so.0.1.1.p/gtf.c.o.d -o libdisplay-info.so.0.1.1.p/gtf.c.o -c ../gtf.c
+[9/19] cc -Ilibdisplay-info.so.0.1.1.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -D_POSIX_C_SOURCE=200809L -Wundef -Wmissing-prototypes -Walloca -Wdeclaration-after-statement -Wconversion -Wno-unused-parameter -Wno-missing-field-initializers -Werror=implicit -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ libdisplay-info.so.0.1.1.p/edid.c.o -MF libdisplay-info.so.0.1.1.p/edid.c.o.d -o libdisplay-info.so.0.1.1.p/edid.c.o -c ../edid.c
+[10/19] cc -Ilibdisplay-info.so.0.1.1.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -D_POSIX_C_SOURCE=200809L -Wundef -Wmissing-prototypes -Walloca -Wdeclaration-after-statement -Wconversion -Wno-unused-parameter -Wno-missing-field-initializers -Werror=implicit -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ libdisplay-info.so.0.1.1.p/dmt-table.c.o -MF libdisplay-info.so.0.1.1.p/dmt-table.c.o.d -o libdisplay-info.so.0.1.1.p/dmt-table.c.o -c ../dmt-table.c
+[11/19] cc -Ilibdisplay-info.so.0.1.1.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -D_POSIX_C_SOURCE=200809L -Wundef -Wmissing-prototypes -Walloca -Wdeclaration-after-statement -Wconversion -Wno-unused-parameter -Wno-missing-field-initializers -Werror=implicit -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ libdisplay-info.so.0.1.1.p/displayid.c.o -MF libdisplay-info.so.0.1.1.p/displayid.c.o.d -o libdisplay-info.so.0.1.1.p/displayid.c.o -c ../displayid.c
+[01m[K../gtf.c:[m[K In function '[01m[Kdi_gtf_compute[m[K':
+[01m[K../gtf.c:116:12:[m[K [01;35m[Kwarning: [m[K'[01m[Kpixel_freq[m[K' may be used uninitialized [[01;35m[K-Wmaybe-uninitialized[m[K]
+  116 |         [01;35m[K*t = (struct di_gtf_timing) {[m[K
+      |         [01;35m[K~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  117 | [01;35m[K                .h_pixels = (int) h_pixels_rnd,[m[K
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  118 | [01;35m[K                .v_lines = options->v_lines,[m[K
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  119 | [01;35m[K                .v_sync = V_SYNC_RQD,[m[K
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~[m[K
+  120 | [01;35m[K                .h_sync = (int) h_sync,[m[K
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  121 | [01;35m[K                .v_front_porch = MIN_PORCH,[m[K
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  122 | [01;35m[K                .v_back_porch = (int) v_back_porch,[m[K
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  123 | [01;35m[K                .h_front_porch = (int) h_front_porch,[m[K
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  124 | [01;35m[K                .h_back_porch = (int) (h_front_porch + h_sync),[m[K
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  125 | [01;35m[K                .h_border = (int) h_margin,[m[K
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  126 | [01;35m[K                .v_border = (int) v_margin,[m[K
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  127 | [01;35m[K                .pixel_freq_mhz = pixel_freq,[m[K
+      |                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  128 | [01;35m[K        }[m[K;
+      |         [01;35m[K~[m[K   
+[01m[K../gtf.c:41:58:[m[K [01;36m[Knote: [m[K'[01m[Kpixel_freq[m[K' was declared here
+   41 |                v_margin, interlace, total_active_pixels, [01;36m[Kpixel_freq[m[K,
+      |                                                          [01;36m[K^~~~~~~~~~[m[K
+[01m[K../gtf.c:114:40:[m[K [01;35m[Kwarning: [m[K'[01m[Kh_blank_pixels[m[K' may be used uninitialized [[01;35m[K-Wmaybe-uninitialized[m[K]
+  114 |         h_front_porch = [01;35m[Kh_blank_pixels / 2.0[m[K - h_sync;
+      |                         [01;35m[K~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K../gtf.c:42:16:[m[K [01;36m[Knote: [m[K'[01m[Kh_blank_pixels[m[K' was declared here
+   42 |                [01;36m[Kh_blank_pixels[m[K, total_pixels, v_sync_bp, v_field_rate_rqd,
+      |                [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K../gtf.c:113:44:[m[K [01;35m[Kwarning: [m[K'[01m[Ktotal_pixels[m[K' may be used uninitialized [[01;35m[K-Wmaybe-uninitialized[m[K]
+  113 |         h_sync = round(H_SYNC_PERC / 100.0 [01;35m[K*[m[K total_pixels / CELL_GRAN) * CELL_GRAN;
+      |                                            [01;35m[K^[m[K
+[01m[K../gtf.c:42:32:[m[K [01;36m[Knote: [m[K'[01m[Ktotal_pixels[m[K' was declared here
+   42 |                h_blank_pixels, [01;36m[Ktotal_pixels[m[K, v_sync_bp, v_field_rate_rqd,
+      |                                [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K../gtf.c:112:22:[m[K [01;35m[Kwarning: [m[K'[01m[Kv_sync_bp[m[K' may be used uninitialized [[01;35m[K-Wmaybe-uninitialized[m[K]
+  112 |         v_back_porch [01;35m[K=[m[K v_sync_bp - V_SYNC_RQD;
+      |                      [01;35m[K^[m[K
+[01m[K../gtf.c:42:46:[m[K [01;36m[Knote: [m[K'[01m[Kv_sync_bp[m[K' was declared here
+   42 |                h_blank_pixels, total_pixels, [01;36m[Kv_sync_bp[m[K, v_field_rate_rqd,
+      |                                              [01;36m[K^~~~~~~~~[m[K
+[12/19] cc -Ilibdisplay-info.so.0.1.1.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -D_POSIX_C_SOURCE=200809L -Wundef -Wmissing-prototypes -Walloca -Wdeclaration-after-statement -Wconversion -Wno-unused-parameter -Wno-missing-field-initializers -Werror=implicit -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ libdisplay-info.so.0.1.1.p/cvt.c.o -MF libdisplay-info.so.0.1.1.p/cvt.c.o.d -o libdisplay-info.so.0.1.1.p/cvt.c.o -c ../cvt.c
+[13/19] cc -Ilibdisplay-info.so.0.1.1.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -D_POSIX_C_SOURCE=200809L -Wundef -Wmissing-prototypes -Walloca -Wdeclaration-after-statement -Wconversion -Wno-unused-parameter -Wno-missing-field-initializers -Werror=implicit -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ libdisplay-info.so.0.1.1.p/cta-vic-table.c.o -MF libdisplay-info.so.0.1.1.p/cta-vic-table.c.o.d -o libdisplay-info.so.0.1.1.p/cta-vic-table.c.o -c ../cta-vic-table.c
+[14/19] cc -Ilibdisplay-info.so.0.1.1.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -D_POSIX_C_SOURCE=200809L -Wundef -Wmissing-prototypes -Walloca -Wdeclaration-after-statement -Wconversion -Wno-unused-parameter -Wno-missing-field-initializers -Werror=implicit -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ libdisplay-info.so.0.1.1.p/cta.c.o -MF libdisplay-info.so.0.1.1.p/cta.c.o.d -o libdisplay-info.so.0.1.1.p/cta.c.o -c ../cta.c
+[15/19] /home/devel/building/work/src/libdisplay-info-0.1.1/tool/gen-search-table.py //usr/share/hwdata/pnp.ids pnp-id-table.c pnp_id_table
+[16/19] cc -Ilibdisplay-info.so.0.1.1.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c11 -D_POSIX_C_SOURCE=200809L -Wundef -Wmissing-prototypes -Walloca -Wdeclaration-after-statement -Wconversion -Wno-unused-parameter -Wno-missing-field-initializers -Werror=implicit -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ libdisplay-info.so.0.1.1.p/meson-generated_.._pnp-id-table.c.o -MF libdisplay-info.so.0.1.1.p/meson-generated_.._pnp-id-table.c.o.d -o libdisplay-info.so.0.1.1.p/meson-generated_.._pnp-id-table.c.o -c pnp-id-table.c
+In function '[01m[Kprint_cvt_timing_code[m[K',
+    inlined from '[01m[Kprint_display_desc[m[K' at [01m[K../di-edid-decode/edid.c:704:4[m[K,
+    inlined from '[01m[Kprint_edid[m[K' at [01m[K../di-edid-decode/edid.c:996:3[m[K:
+[01m[K../di-edid-decode/edid.c:500:51:[m[K [01;35m[Kwarning: [m[K'[01m[Khratio[m[K' may be used uninitialized [[01;35m[K-Wmaybe-uninitialized[m[K]
+  500 |         options.h_pixels = 8 * (([01;35m[K(options.v_lines * hratio)[m[K / vratio) / 8);
+      |                                  [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K../di-edid-decode/edid.c:[m[K In function '[01m[Kprint_edid[m[K':
+[01m[K../di-edid-decode/edid.c:475:13:[m[K [01;36m[Knote: [m[K'[01m[Khratio[m[K' was declared here
+  475 |         int [01;36m[Khratio[m[K, vratio;
+      |             [01;36m[K^~~~~~[m[K
+In function '[01m[Kprint_cvt_timing_code[m[K',
+    inlined from '[01m[Kprint_display_desc[m[K' at [01m[K../di-edid-decode/edid.c:704:4[m[K,
+    inlined from '[01m[Kprint_edid[m[K' at [01m[K../di-edid-decode/edid.c:996:3[m[K:
+[01m[K../di-edid-decode/edid.c:500:61:[m[K [01;35m[Kwarning: [m[K'[01m[Kvratio[m[K' may be used uninitialized [[01;35m[K-Wmaybe-uninitialized[m[K]
+  500 |         options.h_pixels = 8 * ([01;35m[K((options.v_lines * hratio) / vratio)[m[K / 8);
+      |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K../di-edid-decode/edid.c:[m[K In function '[01m[Kprint_edid[m[K':
+[01m[K../di-edid-decode/edid.c:475:21:[m[K [01;36m[Knote: [m[K'[01m[Kvratio[m[K' was declared here
+  475 |         int hratio, [01;36m[Kvratio[m[K;
+      |                     [01;36m[K^~~~~~[m[K
+[17/19] cc  -o libdisplay-info.so.0.1.1 libdisplay-info.so.0.1.1.p/meson-generated_.._pnp-id-table.c.o libdisplay-info.so.0.1.1.p/cta.c.o libdisplay-info.so.0.1.1.p/cta-vic-table.c.o libdisplay-info.so.0.1.1.p/cvt.c.o libdisplay-info.so.0.1.1.p/displayid.c.o libdisplay-info.so.0.1.1.p/dmt-table.c.o libdisplay-info.so.0.1.1.p/edid.c.o libdisplay-info.so.0.1.1.p/gtf.c.o libdisplay-info.so.0.1.1.p/info.c.o libdisplay-info.so.0.1.1.p/log.c.o libdisplay-info.so.0.1.1.p/memory-stream.c.o -Wl,--as-needed -Wl,--no-undefined -shared -fPIC -Wl,-soname,libdisplay-info.so.1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--version-script,/home/devel/building/work/src/libdisplay-info-0.1.1/libdisplay-info.map -lm
+[18/19] /usr/bin/meson --internal symbolextractor /home/devel/building/work/src/libdisplay-info-0.1.1/build libdisplay-info.so.0.1.1 libdisplay-info.so.0.1.1 libdisplay-info.so.0.1.1.p/libdisplay-info.so.0.1.1.symbols 
+[19/19] cc  -o di-edid-decode/di-edid-decode di-edid-decode/di-edid-decode.p/cta.c.o di-edid-decode/di-edid-decode.p/displayid.c.o di-edid-decode/di-edid-decode.p/edid.c.o di-edid-decode/di-edid-decode.p/main.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects '-Wl,-rpath,$ORIGIN/..' -Wl,-rpath-link,/home/devel/building/work/src/libdisplay-info-0.1.1/build/ -Wl,--start-group libdisplay-info.so.0.1.1 -lm -Wl,--end-group
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/libdisplay-info-0.1.1/build -j 8 -v
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Installing subdir /home/devel/building/work/src/libdisplay-info-0.1.1/include/libdisplay-info to /home/devel/building/work/pkg/usr/include/libdisplay-info
+Installing /home/devel/building/work/src/libdisplay-info-0.1.1/include/libdisplay-info/cta.h to /home/devel/building/work/pkg/usr/include/libdisplay-info
+Installing /home/devel/building/work/src/libdisplay-info-0.1.1/include/libdisplay-info/cvt.h to /home/devel/building/work/pkg/usr/include/libdisplay-info
+Installing /home/devel/building/work/src/libdisplay-info-0.1.1/include/libdisplay-info/displayid.h to /home/devel/building/work/pkg/usr/include/libdisplay-info
+Installing /home/devel/building/work/src/libdisplay-info-0.1.1/include/libdisplay-info/dmt.h to /home/devel/building/work/pkg/usr/include/libdisplay-info
+Installing /home/devel/building/work/src/libdisplay-info-0.1.1/include/libdisplay-info/edid.h to /home/devel/building/work/pkg/usr/include/libdisplay-info
+Installing /home/devel/building/work/src/libdisplay-info-0.1.1/include/libdisplay-info/gtf.h to /home/devel/building/work/pkg/usr/include/libdisplay-info
+Installing /home/devel/building/work/src/libdisplay-info-0.1.1/include/libdisplay-info/info.h to /home/devel/building/work/pkg/usr/include/libdisplay-info
+Installing libdisplay-info.so.0.1.1 to /home/devel/building/work/pkg/usr/lib
+Installing di-edid-decode/di-edid-decode to /home/devel/building/work/pkg/usr/bin
+Installing /home/devel/building/work/src/libdisplay-info-0.1.1/build/meson-private/libdisplay-info.pc to /home/devel/building/work/pkg/usr/lib/pkgconfig
+Installing symlink pointing to libdisplay-info.so.0.1.1 to /home/devel/building/work/pkg/usr/lib/libdisplay-info.so.1
+Installing symlink pointing to libdisplay-info.so.1 to /home/devel/building/work/pkg/usr/lib/libdisplay-info.so
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 23:26 usr/
+drwxr-xr-x  0 root   root        0 May  7 23:26 usr/include/
+drwxr-xr-x  0 root   root        0 May  7 23:26 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 23:26 usr/bin/
+-rwxr-xr-x  0 root   root    56168 May  7 23:26 usr/bin/di-edid-decode
+-rwxr-xr-x  0 root   root   211088 May  7 23:26 usr/lib/libdisplay-info.so.0.1.1
+drwxr-xr-x  0 root   root        0 May  7 23:26 usr/lib/pkgconfig/
+lrwxrwxrwx  0 root   root        0 May  7 23:26 usr/lib/libdisplay-info.so.1 -> libdisplay-info.so.0.1.1
+lrwxrwxrwx  0 root   root        0 May  7 23:26 usr/lib/libdisplay-info.so -> libdisplay-info.so.1
+-rw-r--r--  0 root   root      276 May  7 23:26 usr/lib/pkgconfig/libdisplay-info.pc
+drwxr-xr-x  0 root   root        0 May  7 23:26 usr/include/libdisplay-info/
+-rw-r--r--  0 root   root    31487 Feb 15  2023 usr/include/libdisplay-info/cta.h
+-rw-r--r--  0 root   root     2224 Feb 15  2023 usr/include/libdisplay-info/cvt.h
+-rw-r--r--  0 root   root    10107 Feb 15  2023 usr/include/libdisplay-info/displayid.h
+-rw-r--r--  0 root   root     1061 Feb 15  2023 usr/include/libdisplay-info/dmt.h
+-rw-r--r--  0 root   root    24186 Feb 15  2023 usr/include/libdisplay-info/edid.h
+-rw-r--r--  0 root   root     1699 Feb 15  2023 usr/include/libdisplay-info/gtf.h
+-rw-r--r--  0 root   root     2854 Feb 15  2023 usr/include/libdisplay-info/info.h
+=======> Building '/home/devel/packages/libdisplay-info#0.1.1-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling libdisplay-info 0.1.1-1
+prt-get: /usr/bin/pkgadd -u libdisplay-info#0.1.1-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 23:26:20 2024
+

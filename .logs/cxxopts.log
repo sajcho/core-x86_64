@@ -1,0 +1,48 @@
+prt-get: updating /usr/ports/opt-x86_64/cxxopts
+prt-get: starting build Tue May  7 20:41:35 2024
+=======> Building '/home/devel/packages/cxxopts#3.1.1-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/cxxopts-3.1.1.tar.gz
++ build
++ cd cxxopts-3.1.1
++ mkdir build
++ cd build
++ cmake .. -G Ninja -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_SHARED_LIBS=ON -DCXXOPTS_BUILD_TESTS=OFF -Wno-dev
+-- The CXX compiler identification is GNU 14.1.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/devel/building/work/src/cxxopts-3.1.1/build
++ ninja -v
+[1/2] /usr/bin/c++  -I/home/devel/building/work/src/cxxopts-3.1.1/include -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Werror -Wextra -Wshadow -Weffc++ -Wsign-compare -Wshadow -Wwrite-strings -Wpointer-arith -Winit-self -Wconversion -Wno-sign-conversion -Wsuggest-override -std=c++17 -MD -MT src/CMakeFiles/example.dir/example.cpp.o -MF src/CMakeFiles/example.dir/example.cpp.o.d -o src/CMakeFiles/example.dir/example.cpp.o -c /home/devel/building/work/src/cxxopts-3.1.1/src/example.cpp
+[2/2] : && /usr/bin/c++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Werror -Wextra -Wshadow -Weffc++ -Wsign-compare -Wshadow -Wwrite-strings -Wpointer-arith -Winit-self -Wconversion -Wno-sign-conversion -Wsuggest-override  src/CMakeFiles/example.dir/example.cpp.o -o src/example   && :
++ DESTDIR=/home/devel/building/work/pkg
++ ninja install
+[1/1] Install the project...
+-- Install configuration: "None"
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/cxxopts/cxxopts-config.cmake
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/cxxopts/cxxopts-config-version.cmake
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/cxxopts/cxxopts-targets.cmake
+-- Installing: /home/devel/building/work/pkg/usr/include/cxxopts.hpp
+-- Installing: /home/devel/building/work/pkg/usr/lib/pkgconfig/cxxopts.pc
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 20:41 usr/
+drwxr-xr-x  0 root   root        0 May  7 20:41 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 20:41 usr/include/
+-rw-r--r--  0 root   root    57387 Feb 15  2023 usr/include/cxxopts.hpp
+drwxr-xr-x  0 root   root        0 May  7 20:41 usr/lib/cmake/
+drwxr-xr-x  0 root   root        0 May  7 20:41 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      109 May  7 20:41 usr/lib/pkgconfig/cxxopts.pc
+drwxr-xr-x  0 root   root        0 May  7 20:41 usr/lib/cmake/cxxopts/
+-rw-r--r--  0 root   root     1341 May  7 20:41 usr/lib/cmake/cxxopts/cxxopts-config.cmake
+-rw-r--r--  0 root   root     1402 May  7 20:41 usr/lib/cmake/cxxopts/cxxopts-config-version.cmake
+-rw-r--r--  0 root   root     4489 May  7 20:41 usr/lib/cmake/cxxopts/cxxopts-targets.cmake
+=======> Building '/home/devel/packages/cxxopts#3.1.1-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling cxxopts 3.1.1-1
+prt-get: /usr/bin/pkgadd -u cxxopts#3.1.1-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 20:41:42 2024
+

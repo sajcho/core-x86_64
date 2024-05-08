@@ -1,0 +1,1262 @@
+prt-get: updating /usr/ports/opt-x86_64/shared-mime-info
+prt-get: starting build Wed May  8 01:32:37 2024
+=======> Building '/home/devel/packages/shared-mime-info#2.4-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/shared-mime-info-2.4.tar.gz
+cp no-xmlto.patch /home/devel/building/work/src
++ build
++ cd shared-mime-info-2.4
++ patch -p1 -i /home/devel/building/work/src/no-xmlto.patch
+patching file meson.build
+Hunk #1 succeeded at 22 (offset 1 line).
+patching file data/meson.build
+Hunk #1 succeeded at 16 (offset 2 lines).
++ build-meson -Dupdate-mimedb=false . build
+The Meson build system
+Version: 1.4.0
+Source dir: /home/devel/building/work/src/shared-mime-info-2.4
+Build dir: /home/devel/building/work/src/shared-mime-info-2.4/build
+Build type: native build
+Project name: shared-mime-info
+Project version: 2.4
+C compiler for the host machine: cc (gcc 14.1.0 "cc (SAUX-x86_64) 14.1.0")
+C linker for the host machine: cc ld.bfd 2.42
+C++ compiler for the host machine: c++ (gcc 14.1.0 "c++ (SAUX-x86_64) 14.1.0")
+C++ linker for the host machine: c++ ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program xmllint found: YES (/usr/bin/xmllint)
+Program ./xdgmime/src/print-mime-data found: NO
+Program ./xdgmime/src/test-mime-data found: NO
+Program ./xdgmime/src/test-mime found: NO
+meson.build:41: WARNING: 
+***************************************************************************
+*** xdgmime not compiled, test suite cannot run. Check HACKING for info ***
+***************************************************************************
+    
+Checking for function "fdatasync" : YES 
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Program check_translations.sh found: YES (/home/devel/building/work/src/shared-mime-info-2.4/po/check_translations.sh)
+Found pkg-config: YES (/usr/bin/pkg-config) 2.2.0
+Run-time dependency libxml-2.0 found: YES 2.12.6
+Run-time dependency glib-2.0 found: YES 2.80.0
+Run-time dependency gio-2.0 found: YES 2.80.0
+Configuring config.h using configuration
+Program test_generic_icons.sh found: YES (/home/devel/building/work/src/shared-mime-info-2.4/tests/test_generic_icons.sh)
+Program test_duplicate_mime_types.sh found: YES (/home/devel/building/work/src/shared-mime-info-2.4/tests/test_duplicate_mime_types.sh)
+Program test_case.py found: YES (/home/devel/building/work/src/shared-mime-info-2.4/tests/test_case.py)
+Program test_sub_class_ofs.py found: YES (/home/devel/building/work/src/shared-mime-info-2.4/tests/test_sub_class_ofs.py)
+Program test-case-sensitivity.sh found: YES (/home/devel/building/work/src/shared-mime-info-2.4/tests/test-case-sensitivity.sh)
+Configuring shared-mime-info.pc using configuration
+Build targets in project: 85
+NOTICE: Future-deprecated features used:
+ * 0.56.0: {'meson.source_root'}
+
+shared-mime-info 2.4
+
+  User defined options
+    auto_features     : auto
+    bindir            : /usr/bin
+    buildtype         : plain
+    datadir           : /usr/share
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    libexecdir        : /usr/lib
+    localstatedir     : /var
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sbindir           : /usr/sbin
+    sharedstatedir    : /var/lib
+    sysconfdir        : /etc
+    werror            : false
+    wrap_mode         : nodownload
+    python.bytecompile: 0
+    b_lto             : false
+    b_pie             : true
+    b_staticpic       : true
+    update-mimedb     : false
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -v -C build
+ninja: entering directory '/home/devel/building/work/src/shared-mime-info-2.4/build'
+[1/84] cc -Isrc/tree-magic.p -Isrc -I../src -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ src/tree-magic.p/test-tree-magic.c.o -MF src/tree-magic.p/test-tree-magic.c.o.d -o src/tree-magic.p/test-tree-magic.c.o -c ../src/test-tree-magic.c
+[2/84] cc -Isrc/test-subclassing.p -Isrc -I../src -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libxml2 -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ src/test-subclassing.p/test-subclassing.c.o -MF src/test-subclassing.p/test-subclassing.c.o.d -o src/test-subclassing.p/test-subclassing.c.o -c ../src/test-subclassing.c
+[3/84] /usr/bin/msgfmt -o po/zh_TW/LC_MESSAGES/shared-mime-info.mo ../po/zh_TW.po
+[4/84] /usr/bin/msgfmt -o po/zh_HK/LC_MESSAGES/shared-mime-info.mo ../po/zh_HK.po
+[5/84] /usr/bin/msgfmt -o po/zh_CN/LC_MESSAGES/shared-mime-info.mo ../po/zh_CN.po
+[6/84] /usr/bin/msgfmt -o po/wa/LC_MESSAGES/shared-mime-info.mo ../po/wa.po
+[7/84] /usr/bin/msgfmt -o po/vi/LC_MESSAGES/shared-mime-info.mo ../po/vi.po
+[8/84] /usr/bin/msgfmt -o po/uk/LC_MESSAGES/shared-mime-info.mo ../po/uk.po
+[9/84] /usr/bin/msgfmt -o po/tr/LC_MESSAGES/shared-mime-info.mo ../po/tr.po
+[10/84] /usr/bin/msgfmt -o po/th/LC_MESSAGES/shared-mime-info.mo ../po/th.po
+[11/84] /usr/bin/msgfmt -o po/te/LC_MESSAGES/shared-mime-info.mo ../po/te.po
+[12/84] /usr/bin/msgfmt -o po/ta/LC_MESSAGES/shared-mime-info.mo ../po/ta.po
+[13/84] /usr/bin/msgfmt -o po/sv/LC_MESSAGES/shared-mime-info.mo ../po/sv.po
+[14/84] /usr/bin/msgfmt -o po/sr@latin/LC_MESSAGES/shared-mime-info.mo ../po/sr@latin.po
+[15/84] /usr/bin/msgfmt -o po/sr/LC_MESSAGES/shared-mime-info.mo ../po/sr.po
+[16/84] /usr/bin/msgfmt -o po/sq/LC_MESSAGES/shared-mime-info.mo ../po/sq.po
+[17/84] /usr/bin/msgfmt -o po/sl/LC_MESSAGES/shared-mime-info.mo ../po/sl.po
+[18/84] /usr/bin/msgfmt -o po/si/LC_MESSAGES/shared-mime-info.mo ../po/si.po
+[19/84] /usr/bin/msgfmt -o po/sk/LC_MESSAGES/shared-mime-info.mo ../po/sk.po
+[20/84] /usr/bin/msgfmt -o po/rw/LC_MESSAGES/shared-mime-info.mo ../po/rw.po
+[21/84] /usr/bin/msgfmt -o po/ru/LC_MESSAGES/shared-mime-info.mo ../po/ru.po
+[22/84] /usr/bin/msgfmt -o po/ro/LC_MESSAGES/shared-mime-info.mo ../po/ro.po
+[23/84] /usr/bin/msgfmt -o po/pt_BR/LC_MESSAGES/shared-mime-info.mo ../po/pt_BR.po
+[24/84] /usr/bin/msgfmt -o po/pt/LC_MESSAGES/shared-mime-info.mo ../po/pt.po
+[25/84] /usr/bin/msgfmt -o po/pl/LC_MESSAGES/shared-mime-info.mo ../po/pl.po
+[26/84] /usr/bin/msgfmt -o po/pa/LC_MESSAGES/shared-mime-info.mo ../po/pa.po
+[27/84] /usr/bin/msgfmt -o po/or/LC_MESSAGES/shared-mime-info.mo ../po/or.po
+[28/84] /usr/bin/msgfmt -o po/oc/LC_MESSAGES/shared-mime-info.mo ../po/oc.po
+[29/84] /usr/bin/msgfmt -o po/nn/LC_MESSAGES/shared-mime-info.mo ../po/nn.po
+[30/84] /usr/bin/msgfmt -o po/nl/LC_MESSAGES/shared-mime-info.mo ../po/nl.po
+[31/84] /usr/bin/msgfmt -o po/nb/LC_MESSAGES/shared-mime-info.mo ../po/nb.po
+[32/84] /usr/bin/msgfmt -o po/ms/LC_MESSAGES/shared-mime-info.mo ../po/ms.po
+[33/84] /usr/bin/msgfmt -o po/mr/LC_MESSAGES/shared-mime-info.mo ../po/mr.po
+[34/84] /usr/bin/msgfmt -o po/ml/LC_MESSAGES/shared-mime-info.mo ../po/ml.po
+[35/84] /usr/bin/msgfmt -o po/lv/LC_MESSAGES/shared-mime-info.mo ../po/lv.po
+[36/84] cc  -o src/test-subclassing src/test-subclassing.p/test-subclassing.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--start-group /usr/lib/libglib-2.0.so /usr/lib/libxml2.so -Wl,--end-group
+[37/84] /usr/bin/msgfmt -o po/lt/LC_MESSAGES/shared-mime-info.mo ../po/lt.po
+[38/84] /usr/bin/msgfmt -o po/ky/LC_MESSAGES/shared-mime-info.mo ../po/ky.po
+[39/84] /usr/bin/msgfmt -o po/ko/LC_MESSAGES/shared-mime-info.mo ../po/ko.po
+[40/84] /usr/bin/msgfmt -o po/kn/LC_MESSAGES/shared-mime-info.mo ../po/kn.po
+[41/84] /usr/bin/msgfmt -o po/kk/LC_MESSAGES/shared-mime-info.mo ../po/kk.po
+[42/84] /usr/bin/msgfmt -o po/ka/LC_MESSAGES/shared-mime-info.mo ../po/ka.po
+[43/84] /usr/bin/msgfmt -o po/ja/LC_MESSAGES/shared-mime-info.mo ../po/ja.po
+[44/84] /usr/bin/msgfmt -o po/it/LC_MESSAGES/shared-mime-info.mo ../po/it.po
+[45/84] /usr/bin/msgfmt -o po/is/LC_MESSAGES/shared-mime-info.mo ../po/is.po
+[46/84] /usr/bin/msgfmt -o po/id/LC_MESSAGES/shared-mime-info.mo ../po/id.po
+[47/84] /usr/bin/msgfmt -o po/ia/LC_MESSAGES/shared-mime-info.mo ../po/ia.po
+[48/84] /usr/bin/msgfmt -o po/hu/LC_MESSAGES/shared-mime-info.mo ../po/hu.po
+[49/84] /usr/bin/msgfmt -o po/hr/LC_MESSAGES/shared-mime-info.mo ../po/hr.po
+[50/84] /usr/bin/msgfmt -o po/hi/LC_MESSAGES/shared-mime-info.mo ../po/hi.po
+[51/84] /usr/bin/msgfmt -o po/he/LC_MESSAGES/shared-mime-info.mo ../po/he.po
+[52/84] /usr/bin/msgfmt -o po/gu/LC_MESSAGES/shared-mime-info.mo ../po/gu.po
+[53/84] /usr/bin/msgfmt -o po/gl/LC_MESSAGES/shared-mime-info.mo ../po/gl.po
+[54/84] /usr/bin/msgfmt -o po/ga/LC_MESSAGES/shared-mime-info.mo ../po/ga.po
+[55/84] /usr/bin/msgfmt -o po/fur/LC_MESSAGES/shared-mime-info.mo ../po/fur.po
+[56/84] /usr/bin/msgfmt -o po/fr/LC_MESSAGES/shared-mime-info.mo ../po/fr.po
+[57/84] /usr/bin/msgfmt -o po/fo/LC_MESSAGES/shared-mime-info.mo ../po/fo.po
+[58/84] /usr/bin/msgfmt -o po/fi/LC_MESSAGES/shared-mime-info.mo ../po/fi.po
+[59/84] /usr/bin/msgfmt -o po/fa/LC_MESSAGES/shared-mime-info.mo ../po/fa.po
+[60/84] /usr/bin/msgfmt -o po/eu/LC_MESSAGES/shared-mime-info.mo ../po/eu.po
+[61/84] /usr/bin/msgfmt -o po/et/LC_MESSAGES/shared-mime-info.mo ../po/et.po
+[62/84] /usr/bin/msgfmt -o po/es/LC_MESSAGES/shared-mime-info.mo ../po/es.po
+[63/84] /usr/bin/msgfmt -o po/eo/LC_MESSAGES/shared-mime-info.mo ../po/eo.po
+[64/84] /usr/bin/msgfmt -o po/en_GB/LC_MESSAGES/shared-mime-info.mo ../po/en_GB.po
+[65/84] /usr/bin/msgfmt -o po/el/LC_MESSAGES/shared-mime-info.mo ../po/el.po
+[66/84] /usr/bin/msgfmt -o po/de/LC_MESSAGES/shared-mime-info.mo ../po/de.po
+[67/84] /usr/bin/msgfmt -o po/da/LC_MESSAGES/shared-mime-info.mo ../po/da.po
+[68/84] /usr/bin/msgfmt -o po/cy/LC_MESSAGES/shared-mime-info.mo ../po/cy.po
+[69/84] /usr/bin/msgfmt -o po/cs/LC_MESSAGES/shared-mime-info.mo ../po/cs.po
+[70/84] /usr/bin/msgfmt -o po/ca@valencia/LC_MESSAGES/shared-mime-info.mo ../po/ca@valencia.po
+[71/84] /usr/bin/msgfmt -o po/ca/LC_MESSAGES/shared-mime-info.mo ../po/ca.po
+[72/84] /usr/bin/msgfmt -o po/bn_IN/LC_MESSAGES/shared-mime-info.mo ../po/bn_IN.po
+[73/84] /usr/bin/msgfmt -o po/bg/LC_MESSAGES/shared-mime-info.mo ../po/bg.po
+[74/84] /usr/bin/msgfmt -o po/be@latin/LC_MESSAGES/shared-mime-info.mo ../po/be@latin.po
+[75/84] /usr/bin/msgfmt -o po/be/LC_MESSAGES/shared-mime-info.mo ../po/be.po
+[76/84] /usr/bin/msgfmt -o po/az/LC_MESSAGES/shared-mime-info.mo ../po/az.po
+[77/84] /usr/bin/msgfmt -o po/ast/LC_MESSAGES/shared-mime-info.mo ../po/ast.po
+[78/84] /usr/bin/msgfmt -o po/as/LC_MESSAGES/shared-mime-info.mo ../po/as.po
+[79/84] /usr/bin/msgfmt -o po/ar/LC_MESSAGES/shared-mime-info.mo ../po/ar.po
+[80/84] /usr/bin/msgfmt -o po/af/LC_MESSAGES/shared-mime-info.mo ../po/af.po
+[81/84] c++ -Isrc/update-mime-database.p -Isrc -I../src -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libxml2 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ src/update-mime-database.p/update-mime-database.cpp.o -MF src/update-mime-database.p/update-mime-database.cpp.o.d -o src/update-mime-database.p/update-mime-database.cpp.o -c ../src/update-mime-database.cpp
+[82/84] /usr/bin/meson --internal msgfmthelper --msgfmt=/usr/bin/msgfmt --datadirs=/home/devel/building/work/src/shared-mime-info-2.4/data/. ../data/freedesktop.org.xml.in data/freedesktop.org.xml xml ../data/../po
+[83/84] cc  -o src/tree-magic src/tree-magic.p/test-tree-magic.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--start-group /usr/lib/libglib-2.0.so /usr/lib/libgio-2.0.so /usr/lib/libgobject-2.0.so -Wl,--end-group
+[01m[K../src/update-mime-database.cpp:[m[K In function '[01m[KType*[01;32m[K get_type[m[K(const char*, GError**)[m[K':
+[01m[K../src/update-mime-database.cpp:275:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: '[01m[Kint[m[K' and '[01m[Klong unsigned int[m[K' [[01;35m[K-Wsign-compare[m[K]
+  275 |         for (i = 0; i < G_N_ELEMENTS(media_types); i++)
+[01m[K../src/update-mime-database.cpp:[m[K In function '[01m[Kvoid[01;32m[K delete_old_types[m[K(const gchar*)[m[K':
+[01m[K../src/update-mime-database.cpp:1962:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: '[01m[Kint[m[K' and '[01m[Klong unsigned int[m[K' [[01;35m[K-Wsign-compare[m[K]
+ 1962 |         for (i = 0; i < G_N_ELEMENTS(media_types); i++)
+[01m[K../src/update-mime-database.cpp:[m[K In function '[01m[Kvoid[01;32m[K write_namespaces[m[K(FILE*)[m[K':
+[01m[K../src/update-mime-database.cpp:2021:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: '[01m[Kint[m[K' and '[01m[Kguint[m[K' {aka '[01m[Kunsigned int[m[K'} [[01;35m[K-Wsign-compare[m[K]
+ 2021 |         for (i = 0; [01;35m[Ki < lines->len[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~[m[K
+[01m[K../src/update-mime-database.cpp:[m[K In function '[01m[Kvoid[01;32m[K write_aliases[m[K(FILE*)[m[K':
+[01m[K../src/update-mime-database.cpp:2080:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: '[01m[Kint[m[K' and '[01m[Kguint[m[K' {aka '[01m[Kunsigned int[m[K'} [[01;35m[K-Wsign-compare[m[K]
+ 2080 |         for (i = 0; [01;35m[Ki < lines->len[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~[m[K
+[01m[K../src/update-mime-database.cpp:[m[K In function '[01m[Kvoid[01;32m[K write_types[m[K(FILE*)[m[K':
+[01m[K../src/update-mime-database.cpp:2111:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: '[01m[Kint[m[K' and '[01m[Kguint[m[K' {aka '[01m[Kunsigned int[m[K'} [[01;35m[K-Wsign-compare[m[K]
+ 2111 |         for (i = 0; [01;35m[Ki < lines->len[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~[m[K
+[01m[K../src/update-mime-database.cpp:[m[K In function '[01m[Kgboolean[01;32m[K write_types_cache[m[K(FILE*, GHashTable*, GHashTable*, guint*)[m[K':
+[01m[K../src/update-mime-database.cpp:3218:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: '[01m[Kint[m[K' and '[01m[Kguint[m[K' {aka '[01m[Kunsigned int[m[K'} [[01;35m[K-Wsign-compare[m[K]
+ 3218 |         for (i = 0; [01;35m[Ki < lines->len[m[K; i++)
+      |                     [01;35m[K~~^~~~~~~~~~~~[m[K
+[01m[K../src/update-mime-database.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K(int, char**)[m[K':
+[01m[K../src/update-mime-database.cpp:3794:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: '[01m[Kint[m[K' and '[01m[Kguint[m[K' {aka '[01m[Kunsigned int[m[K'} [[01;35m[K-Wsign-compare[m[K]
+ 3794 |                 for (i = 0; [01;35m[Ki < magic_array->len[m[K; i++)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K../src/update-mime-database.cpp:3915:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: '[01m[Kint[m[K' and '[01m[Kguint[m[K' {aka '[01m[Kunsigned int[m[K'} [[01;35m[K-Wsign-compare[m[K]
+ 3915 |                 for (i = 0; [01;35m[Ki < tree_magic_array->len[m[K; i++)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/glib-2.0/glib/giochannel.h:36[m[K,
+                 from [01m[K/usr/include/glib-2.0/glib.h:56[m[K,
+                 from [01m[K../src/update-mime-database.cpp:14[m[K:
+[01m[K../src/update-mime-database.cpp:[m[K In function '[01m[Kvoid[01;32m[K match_value_and_mask[m[K(Match*, xmlNode*, GError**)[m[K':
+[01m[K/usr/include/glib-2.0/glib/gstring.h:73:31:[m[K [01;35m[Kwarning: [m[Kignoring return value of '[01m[Kgchar*[01;32m[K g_string_free_and_steal[m[K(GString*)[m[K' declared with attribute '[01m[Kwarn_unused_result[m[K' [[01;35m[K-Wunused-result[m[K]
+   73 |       [01;35m[Kg_string_free_and_steal (str)[m[K)            \
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K../src/update-mime-database.cpp:1488:17:[m[K [01;36m[Knote: [m[Kin expansion of macro '[01m[Kg_string_free[m[K'
+ 1488 |                 [01;36m[Kg_string_free[m[K(parsed_value, FALSE);
+      |                 [01;36m[K^~~~~~~~~~~~~[m[K
+[84/84] c++  -o src/update-mime-database src/update-mime-database.p/update-mime-database.cpp.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--start-group /usr/lib/libglib-2.0.so /usr/lib/libxml2.so -Wl,--end-group
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/shared-mime-info-2.4/build -j 8 -v
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Installing po/af/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/af/LC_MESSAGES
+Installing po/ar/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/ar/LC_MESSAGES
+Installing po/as/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/as/LC_MESSAGES
+Installing po/ast/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/ast/LC_MESSAGES
+Installing po/az/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/az/LC_MESSAGES
+Installing po/be/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/be/LC_MESSAGES
+Installing po/be@latin/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/be@latin/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/bg/LC_MESSAGES
+Installing po/bn_IN/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/bn_IN/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/ca/LC_MESSAGES
+Installing po/ca@valencia/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/ca@valencia/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/cs/LC_MESSAGES
+Installing po/cy/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/cy/LC_MESSAGES
+Installing po/da/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/de/LC_MESSAGES
+Installing po/el/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/el/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/en_GB/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/es/LC_MESSAGES
+Installing po/et/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/et/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/eu/LC_MESSAGES
+Installing po/fa/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/fa/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/fi/LC_MESSAGES
+Installing po/fo/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/fo/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/fur/LC_MESSAGES
+Installing po/ga/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/ga/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/gl/LC_MESSAGES
+Installing po/gu/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/gu/LC_MESSAGES
+Installing po/he/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/he/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/hu/LC_MESSAGES
+Installing po/ia/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/ia/LC_MESSAGES
+Installing po/id/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/id/LC_MESSAGES
+Installing po/is/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/is/LC_MESSAGES
+Installing po/it/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/ka/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/kk/LC_MESSAGES
+Installing po/kn/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/kn/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/ko/LC_MESSAGES
+Installing po/ky/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/ky/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/lt/LC_MESSAGES
+Installing po/lv/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/lv/LC_MESSAGES
+Installing po/ml/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/ml/LC_MESSAGES
+Installing po/mr/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/mr/LC_MESSAGES
+Installing po/ms/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/ms/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/nb/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/nl/LC_MESSAGES
+Installing po/nn/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/nn/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/oc/LC_MESSAGES
+Installing po/or/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/or/LC_MESSAGES
+Installing po/pa/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/pa/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/pl/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/ru/LC_MESSAGES
+Installing po/rw/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/rw/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/sk/LC_MESSAGES
+Installing po/si/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/si/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/sl/LC_MESSAGES
+Installing po/sq/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/sq/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/sr/LC_MESSAGES
+Installing po/sr@latin/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/sr@latin/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/sv/LC_MESSAGES
+Installing po/ta/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/ta/LC_MESSAGES
+Installing po/te/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/te/LC_MESSAGES
+Installing po/th/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/th/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/tr/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/uk/LC_MESSAGES
+Installing po/vi/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/vi/LC_MESSAGES
+Installing po/wa/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/wa/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_HK/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/zh_HK/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/shared-mime-info.mo to /home/devel/building/work/pkg/usr/share/locale/zh_TW/LC_MESSAGES
+Installing data/freedesktop.org.xml to /home/devel/building/work/pkg/usr/share/mime/packages
+Installing src/update-mime-database to /home/devel/building/work/pkg/usr/bin
+Installing /home/devel/building/work/src/shared-mime-info-2.4/data/update-mime-database.1 to /home/devel/building/work/pkg/usr/share/man/man1
+Installing /home/devel/building/work/src/shared-mime-info-2.4/data/its/shared-mime-info.loc to /home/devel/building/work/pkg/usr/share/gettext/its
+Installing /home/devel/building/work/src/shared-mime-info-2.4/data/its/shared-mime-info.its to /home/devel/building/work/pkg/usr/share/gettext/its
+Installing /home/devel/building/work/src/shared-mime-info-2.4/build/shared-mime-info.pc to /home/devel/building/work/pkg/usr/share/pkgconfig
++ /usr/bin/env PKGSYSTEM_ENABLE_FSYNC=0 /home/devel/building/work/pkg/usr/bin/update-mime-database /home/devel/building/work/pkg/usr/share/mime
+
+Note that '/home/devel/building/work/pkg/usr/share' is not in the search path
+set by the XDG_DATA_HOME and XDG_DATA_DIRS
+environment variables, so applications may not
+be able to find it until you set them. The
+directories currently searched are:
+
+- /root/.local/share
+- /usr/local/share/
+- /usr/share/
+
++ rm -r /home/devel/building/work/pkg/usr/share/locale
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/bin/
+-rwxr-xr-x  0 root   root    77088 May  8 01:32 usr/bin/update-mime-database
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/mime/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/gettext/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/pkgconfig/
+-rw-r--r--  0 root   root      119 May  8 01:32 usr/share/pkgconfig/shared-mime-info.pc
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/gettext/its/
+-rw-r--r--  0 root   root      202 Nov 12 09:52 usr/share/gettext/its/shared-mime-info.loc
+-rw-r--r--  0 root   root      466 Nov 12 09:52 usr/share/gettext/its/shared-mime-info.its
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/man/man1/
+-rw-r--r--  0 root   root      801 Nov 12 09:52 usr/share/man/man1/update-mime-database.1.gz
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/mime/packages/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/mime/inode/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/mime/text/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/mime/application/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/mime/model/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/mime/video/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/mime/font/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/mime/image/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/mime/audio/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/mime/multipart/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/mime/x-content/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/mime/message/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/mime/chemical/
+drwxr-xr-x  0 root   root        0 May  8 01:32 usr/share/mime/x-epoc/
+-rw-r--r--  0 root   root    34645 May  8 01:32 usr/share/mime/globs
+-rw-r--r--  0 root   root    38460 May  8 01:32 usr/share/mime/globs2
+-rw-r--r--  0 root   root    32444 May  8 01:32 usr/share/mime/magic
+-rw-r--r--  0 root   root     1896 May  8 01:32 usr/share/mime/XMLnamespaces
+-rw-r--r--  0 root   root    19355 May  8 01:32 usr/share/mime/subclasses
+-rw-r--r--  0 root   root    12371 May  8 01:32 usr/share/mime/aliases
+-rw-r--r--  0 root   root    20043 May  8 01:32 usr/share/mime/types
+-rw-r--r--  0 root   root    19834 May  8 01:32 usr/share/mime/generic-icons
+-rw-r--r--  0 root   root        0 May  8 01:32 usr/share/mime/icons
+-rw-r--r--  0 root   root     1140 May  8 01:32 usr/share/mime/treemagic
+-rw-r--r--  0 root   root   157560 May  8 01:32 usr/share/mime/mime.cache
+-rw-r--r--  0 root   root        4 May  8 01:32 usr/share/mime/version
+-rw-r--r--  0 root   root     3035 May  8 01:32 usr/share/mime/x-epoc/x-sisx-app.xml
+-rw-r--r--  0 root   root      710 May  8 01:32 usr/share/mime/chemical/x-pdb.xml
+-rw-r--r--  0 root   root      939 May  8 01:32 usr/share/mime/message/partial.xml
+-rw-r--r--  0 root   root      963 May  8 01:32 usr/share/mime/message/rfc822.xml
+-rw-r--r--  0 root   root      993 May  8 01:32 usr/share/mime/message/delivery-status.xml
+-rw-r--r--  0 root   root     3632 May  8 01:32 usr/share/mime/message/x-gnu-rmail.xml
+-rw-r--r--  0 root   root      873 May  8 01:32 usr/share/mime/message/external-body.xml
+-rw-r--r--  0 root   root      946 May  8 01:32 usr/share/mime/message/disposition-notification.xml
+-rw-r--r--  0 root   root     3830 May  8 01:32 usr/share/mime/message/news.xml
+-rw-r--r--  0 root   root     2566 May  8 01:32 usr/share/mime/x-content/ostree-repository.xml
+-rw-r--r--  0 root   root      893 May  8 01:32 usr/share/mime/x-content/blank-hddvd.xml
+-rw-r--r--  0 root   root      836 May  8 01:32 usr/share/mime/x-content/audio-cdda.xml
+-rw-r--r--  0 root   root      970 May  8 01:32 usr/share/mime/x-content/ebook-reader.xml
+-rw-r--r--  0 root   root      782 May  8 01:32 usr/share/mime/x-content/audio-dvd.xml
+-rw-r--r--  0 root   root      889 May  8 01:32 usr/share/mime/x-content/image-dcf.xml
+-rw-r--r--  0 root   root      911 May  8 01:32 usr/share/mime/x-content/software.xml
+-rw-r--r--  0 root   root     2851 May  8 01:32 usr/share/mime/x-content/image-picturecd.xml
+-rw-r--r--  0 root   root      845 May  8 01:32 usr/share/mime/x-content/video-dvd.xml
+-rw-r--r--  0 root   root     3089 May  8 01:32 usr/share/mime/x-content/win32-software.xml
+-rw-r--r--  0 root   root     3044 May  8 01:32 usr/share/mime/x-content/video-svcd.xml
+-rw-r--r--  0 root   root      895 May  8 01:32 usr/share/mime/x-content/blank-cd.xml
+-rw-r--r--  0 root   root      899 May  8 01:32 usr/share/mime/x-content/blank-bd.xml
+-rw-r--r--  0 root   root     3238 May  8 01:32 usr/share/mime/x-content/video-hddvd.xml
+-rw-r--r--  0 root   root     2859 May  8 01:32 usr/share/mime/x-content/unix-software.xml
+-rw-r--r--  0 root   root     2747 May  8 01:32 usr/share/mime/x-content/video-vcd.xml
+-rw-r--r--  0 root   root      897 May  8 01:32 usr/share/mime/x-content/blank-dvd.xml
+-rw-r--r--  0 root   root     3312 May  8 01:32 usr/share/mime/x-content/video-bluray.xml
+-rw-r--r--  0 root   root      849 May  8 01:32 usr/share/mime/x-content/audio-player.xml
+-rw-r--r--  0 root   root      771 May  8 01:32 usr/share/mime/multipart/digest.xml
+-rw-r--r--  0 root   root      736 May  8 01:32 usr/share/mime/multipart/report.xml
+-rw-r--r--  0 root   root      682 May  8 01:32 usr/share/mime/multipart/related.xml
+-rw-r--r--  0 root   root      791 May  8 01:32 usr/share/mime/multipart/encrypted.xml
+-rw-r--r--  0 root   root      763 May  8 01:32 usr/share/mime/multipart/signed.xml
+-rw-r--r--  0 root   root      885 May  8 01:32 usr/share/mime/multipart/alternative.xml
+-rw-r--r--  0 root   root      774 May  8 01:32 usr/share/mime/multipart/x-mixed-replace.xml
+-rw-r--r--  0 root   root      690 May  8 01:32 usr/share/mime/multipart/mixed.xml
+-rw-r--r--  0 root   root     4620 May  8 01:32 usr/share/mime/multipart/appledouble.xml
+-rw-r--r--  0 root   root     2943 May  8 01:32 usr/share/mime/audio/x-ape.xml
+-rw-r--r--  0 root   root     2902 May  8 01:32 usr/share/mime/audio/x-voc.xml
+-rw-r--r--  0 root   root     2834 May  8 01:32 usr/share/mime/audio/x-speex.xml
+-rw-r--r--  0 root   root     2552 May  8 01:32 usr/share/mime/audio/aac.xml
+-rw-r--r--  0 root   root     3489 May  8 01:32 usr/share/mime/audio/x-vorbis+ogg.xml
+-rw-r--r--  0 root   root     2254 May  8 01:32 usr/share/mime/audio/usac.xml
+-rw-r--r--  0 root   root     2857 May  8 01:32 usr/share/mime/audio/x-psf.xml
+-rw-r--r--  0 root   root     2416 May  8 01:32 usr/share/mime/audio/x-opus+ogg.xml
+-rw-r--r--  0 root   root     2998 May  8 01:32 usr/share/mime/audio/vnd.wave.xml
+-rw-r--r--  0 root   root     3361 May  8 01:32 usr/share/mime/audio/x-amzxml.xml
+-rw-r--r--  0 root   root     2352 May  8 01:32 usr/share/mime/audio/x-pn-audibleaudio.xml
+-rw-r--r--  0 root   root     1539 May  8 01:32 usr/share/mime/audio/mobile-xmf.xml
+-rw-r--r--  0 root   root     3004 May  8 01:32 usr/share/mime/audio/x-wavpack.xml
+-rw-r--r--  0 root   root     2045 May  8 01:32 usr/share/mime/audio/vnd.audible.aaxc.xml
+-rw-r--r--  0 root   root     4000 May  8 01:32 usr/share/mime/audio/x-scpls.xml
+-rw-r--r--  0 root   root     3578 May  8 01:32 usr/share/mime/audio/ac3.xml
+-rw-r--r--  0 root   root     3044 May  8 01:32 usr/share/mime/audio/x-musepack.xml
+-rw-r--r--  0 root   root     3424 May  8 01:32 usr/share/mime/audio/prs.sid.xml
+-rw-r--r--  0 root   root     3234 May  8 01:32 usr/share/mime/audio/x-aifc.xml
+-rw-r--r--  0 root   root     3188 May  8 01:32 usr/share/mime/audio/x-minipsf.xml
+-rw-r--r--  0 root   root     3051 May  8 01:32 usr/share/mime/audio/flac.xml
+-rw-r--r--  0 root   root     1638 May  8 01:32 usr/share/mime/audio/x-dsf.xml
+-rw-r--r--  0 root   root     2936 May  8 01:32 usr/share/mime/audio/amr.xml
+-rw-r--r--  0 root   root     3104 May  8 01:32 usr/share/mime/audio/x-tta.xml
+-rw-r--r--  0 root   root     3771 May  8 01:32 usr/share/mime/audio/x-aiff.xml
+-rw-r--r--  0 root   root     2932 May  8 01:32 usr/share/mime/audio/x-riff.xml
+-rw-r--r--  0 root   root     3150 May  8 01:32 usr/share/mime/audio/x-matroska.xml
+-rw-r--r--  0 root   root     3545 May  8 01:32 usr/share/mime/audio/x-it.xml
+-rw-r--r--  0 root   root     3118 May  8 01:32 usr/share/mime/audio/amr-wb.xml
+-rw-r--r--  0 root   root     3913 May  8 01:32 usr/share/mime/audio/x-wavpack-correction.xml
+-rw-r--r--  0 root   root     3378 May  8 01:32 usr/share/mime/audio/x-ms-wma.xml
+-rw-r--r--  0 root   root     2665 May  8 01:32 usr/share/mime/audio/x-iriver-pla.xml
+-rw-r--r--  0 root   root     2958 May  8 01:32 usr/share/mime/audio/x-adpcm.xml
+-rw-r--r--  0 root   root     2043 May  8 01:32 usr/share/mime/audio/vnd.audible.aax.xml
+-rw-r--r--  0 root   root     3852 May  8 01:32 usr/share/mime/audio/x-mod.xml
+-rw-r--r--  0 root   root     3369 May  8 01:32 usr/share/mime/audio/x-m4b.xml
+-rw-r--r--  0 root   root     3130 May  8 01:32 usr/share/mime/audio/x-flac+ogg.xml
+-rw-r--r--  0 root   root     3146 May  8 01:32 usr/share/mime/audio/midi.xml
+-rw-r--r--  0 root   root     2121 May  8 01:32 usr/share/mime/audio/ogg.xml
+-rw-r--r--  0 root   root     1662 May  8 01:32 usr/share/mime/audio/vnd.dts.hd.xml
+-rw-r--r--  0 root   root     3399 May  8 01:32 usr/share/mime/audio/vnd.rn-realaudio.xml
+-rw-r--r--  0 root   root      863 May  8 01:32 usr/share/mime/audio/x-xi.xml
+-rw-r--r--  0 root   root     3092 May  8 01:32 usr/share/mime/audio/x-gsm.xml
+-rw-r--r--  0 root   root     2140 May  8 01:32 usr/share/mime/audio/annodex.xml
+-rw-r--r--  0 root   root     3558 May  8 01:32 usr/share/mime/audio/x-xm.xml
+-rw-r--r--  0 root   root     3597 May  8 01:32 usr/share/mime/audio/x-s3m.xml
+-rw-r--r--  0 root   root     2174 May  8 01:32 usr/share/mime/audio/x-m4r.xml
+-rw-r--r--  0 root   root     2632 May  8 01:32 usr/share/mime/audio/webm.xml
+-rw-r--r--  0 root   root     2782 May  8 01:32 usr/share/mime/audio/mp2.xml
+-rw-r--r--  0 root   root     4053 May  8 01:32 usr/share/mime/audio/x-ms-asx.xml
+-rw-r--r--  0 root   root     3047 May  8 01:32 usr/share/mime/audio/mp4.xml
+-rw-r--r--  0 root   root      888 May  8 01:32 usr/share/mime/audio/x-tak.xml
+-rw-r--r--  0 root   root     1618 May  8 01:32 usr/share/mime/audio/x-dff.xml
+-rw-r--r--  0 root   root     2493 May  8 01:32 usr/share/mime/audio/vnd.dts.xml
+-rw-r--r--  0 root   root     3183 May  8 01:32 usr/share/mime/audio/x-speex+ogg.xml
+-rw-r--r--  0 root   root     3488 May  8 01:32 usr/share/mime/audio/x-stm.xml
+-rw-r--r--  0 root   root     2028 May  8 01:32 usr/share/mime/audio/x-mpegurl.xml
+-rw-r--r--  0 root   root     2875 May  8 01:32 usr/share/mime/audio/x-xmf.xml
+-rw-r--r--  0 root   root     3346 May  8 01:32 usr/share/mime/audio/basic.xml
+-rw-r--r--  0 root   root      877 May  8 01:32 usr/share/mime/audio/x-mo3.xml
+-rw-r--r--  0 root   root     3613 May  8 01:32 usr/share/mime/audio/x-psflib.xml
+-rw-r--r--  0 root   root     3095 May  8 01:32 usr/share/mime/audio/mpeg.xml
+-rw-r--r--  0 root   root     2612 May  8 01:32 usr/share/mime/image/jpx.xml
+-rw-r--r--  0 root   root     3516 May  8 01:32 usr/share/mime/image/x-macpaint.xml
+-rw-r--r--  0 root   root     2903 May  8 01:32 usr/share/mime/image/x-xfig.xml
+-rw-r--r--  0 root   root     3092 May  8 01:32 usr/share/mime/image/x-portable-anymap.xml
+-rw-r--r--  0 root   root     3051 May  8 01:32 usr/share/mime/image/x-portable-bitmap.xml
+-rw-r--r--  0 root   root     3602 May  8 01:32 usr/share/mime/image/x-sony-arw.xml
+-rw-r--r--  0 root   root     3601 May  8 01:32 usr/share/mime/image/x-sony-srf.xml
+-rw-r--r--  0 root   root     3043 May  8 01:32 usr/share/mime/image/emf.xml
+-rw-r--r--  0 root   root     2867 May  8 01:32 usr/share/mime/image/vnd.microsoft.icon.xml
+-rw-r--r--  0 root   root      962 May  8 01:32 usr/share/mime/image/x-dcraw.xml
+-rw-r--r--  0 root   root     3250 May  8 01:32 usr/share/mime/image/vnd.adobe.photoshop.xml
+-rw-r--r--  0 root   root     3227 May  8 01:32 usr/share/mime/image/x-sun-raster.xml
+-rw-r--r--  0 root   root     1152 May  8 01:32 usr/share/mime/image/apng.xml
+-rw-r--r--  0 root   root     3103 May  8 01:32 usr/share/mime/image/x-icns.xml
+-rw-r--r--  0 root   root     3061 May  8 01:32 usr/share/mime/image/vnd.djvu.xml
+-rw-r--r--  0 root   root     3090 May  8 01:32 usr/share/mime/image/gif.xml
+-rw-r--r--  0 root   root     2263 May  8 01:32 usr/share/mime/image/openraster.xml
+-rw-r--r--  0 root   root     3260 May  8 01:32 usr/share/mime/image/vnd.dwg.xml
+-rw-r--r--  0 root   root     2922 May  8 01:32 usr/share/mime/image/ief.xml
+-rw-r--r--  0 root   root     3661 May  8 01:32 usr/share/mime/image/x-kodak-kdc.xml
+-rw-r--r--  0 root   root     2911 May  8 01:32 usr/share/mime/image/vnd.zbrush.pcx.xml
+-rw-r--r--  0 root   root     2411 May  8 01:32 usr/share/mime/image/x-jp2-codestream.xml
+-rw-r--r--  0 root   root     2979 May  8 01:32 usr/share/mime/image/x-photo-cd.xml
+-rw-r--r--  0 root   root     2178 May  8 01:32 usr/share/mime/image/x-gimp-pat.xml
+-rw-r--r--  0 root   root     2728 May  8 01:32 usr/share/mime/image/ktx.xml
+-rw-r--r--  0 root   root     3314 May  8 01:32 usr/share/mime/image/x-lwo.xml
+-rw-r--r--  0 root   root     2719 May  8 01:32 usr/share/mime/image/jp2.xml
+-rw-r--r--  0 root   root     2334 May  8 01:32 usr/share/mime/image/rle.xml
+-rw-r--r--  0 root   root     2757 May  8 01:32 usr/share/mime/image/x-xcursor.xml
+-rw-r--r--  0 root   root     3697 May  8 01:32 usr/share/mime/image/x-canon-crw.xml
+-rw-r--r--  0 root   root     3416 May  8 01:32 usr/share/mime/image/x-adobe-dng.xml
+-rw-r--r--  0 root   root     2927 May  8 01:32 usr/share/mime/image/x-dib.xml
+-rw-r--r--  0 root   root     3212 May  8 01:32 usr/share/mime/image/x-tga.xml
+-rw-r--r--  0 root   root      833 May  8 01:32 usr/share/mime/image/x-bzeps.xml
+-rw-r--r--  0 root   root     3048 May  8 01:32 usr/share/mime/image/wmf.xml
+-rw-r--r--  0 root   root     3154 May  8 01:32 usr/share/mime/image/x-quicktime.xml
+-rw-r--r--  0 root   root     3235 May  8 01:32 usr/share/mime/image/x-lws.xml
+-rw-r--r--  0 root   root     3593 May  8 01:32 usr/share/mime/image/x-panasonic-rw.xml
+-rw-r--r--  0 root   root     3719 May  8 01:32 usr/share/mime/image/x-pentax-pef.xml
+-rw-r--r--  0 root   root     3005 May  8 01:32 usr/share/mime/image/svg+xml.xml
+-rw-r--r--  0 root   root     4076 May  8 01:32 usr/share/mime/image/x-gzeps.xml
+-rw-r--r--  0 root   root     3193 May  8 01:32 usr/share/mime/image/x-ilbm.xml
+-rw-r--r--  0 root   root     2246 May  8 01:32 usr/share/mime/image/x-gimp-gih.xml
+-rw-r--r--  0 root   root     2412 May  8 01:32 usr/share/mime/image/g3fax.xml
+-rw-r--r--  0 root   root     2903 May  8 01:32 usr/share/mime/image/x-niff.xml
+-rw-r--r--  0 root   root     3051 May  8 01:32 usr/share/mime/image/x-portable-pixmap.xml
+-rw-r--r--  0 root   root     2868 May  8 01:32 usr/share/mime/image/x-xbitmap.xml
+-rw-r--r--  0 root   root     3659 May  8 01:32 usr/share/mime/image/x-fuji-raf.xml
+-rw-r--r--  0 root   root     1953 May  8 01:32 usr/share/mime/image/x-nikon-nrw.xml
+-rw-r--r--  0 root   root     3280 May  8 01:32 usr/share/mime/image/x-xwindowdump.xml
+-rw-r--r--  0 root   root     3539 May  8 01:32 usr/share/mime/image/x-cmu-raster.xml
+-rw-r--r--  0 root   root     1798 May  8 01:32 usr/share/mime/image/astc.xml
+-rw-r--r--  0 root   root     2914 May  8 01:32 usr/share/mime/image/x-fpx.xml
+-rw-r--r--  0 root   root     3002 May  8 01:32 usr/share/mime/image/tiff.xml
+-rw-r--r--  0 root   root     2350 May  8 01:32 usr/share/mime/image/heif.xml
+-rw-r--r--  0 root   root     3266 May  8 01:32 usr/share/mime/image/jpeg.xml
+-rw-r--r--  0 root   root     1135 May  8 01:32 usr/share/mime/image/svg+xml-compressed.xml
+-rw-r--r--  0 root   root     3492 May  8 01:32 usr/share/mime/image/vnd.dxf.xml
+-rw-r--r--  0 root   root     3010 May  8 01:32 usr/share/mime/image/x-jng.xml
+-rw-r--r--  0 root   root     2867 May  8 01:32 usr/share/mime/image/x-exr.xml
+-rw-r--r--  0 root   root     3734 May  8 01:32 usr/share/mime/image/x-canon-cr2.xml
+-rw-r--r--  0 root   root     3088 May  8 01:32 usr/share/mime/image/png.xml
+-rw-r--r--  0 root   root     1999 May  8 01:32 usr/share/mime/image/x-canon-cr3.xml
+-rw-r--r--  0 root   root     3602 May  8 01:32 usr/share/mime/image/x-sony-sr2.xml
+-rw-r--r--  0 root   root     2012 May  8 01:32 usr/share/mime/image/cgm.xml
+-rw-r--r--  0 root   root     3830 May  8 01:32 usr/share/mime/image/x-olympus-orf.xml
+-rw-r--r--  0 root   root     2935 May  8 01:32 usr/share/mime/image/dpx.xml
+-rw-r--r--  0 root   root     3659 May  8 01:32 usr/share/mime/image/x-nikon-nef.xml
+-rw-r--r--  0 root   root      717 May  8 01:32 usr/share/mime/image/qoi.xml
+-rw-r--r--  0 root   root     2787 May  8 01:32 usr/share/mime/image/x-sgi.xml
+-rw-r--r--  0 root   root     3617 May  8 01:32 usr/share/mime/image/x-sigma-x3f.xml
+-rw-r--r--  0 root   root     3314 May  8 01:32 usr/share/mime/image/x-dds.xml
+-rw-r--r--  0 root   root     3053 May  8 01:32 usr/share/mime/image/x-eps.xml
+-rw-r--r--  0 root   root     3637 May  8 01:32 usr/share/mime/image/x-applix-graphics.xml
+-rw-r--r--  0 root   root     1616 May  8 01:32 usr/share/mime/image/avif.xml
+-rw-r--r--  0 root   root     1586 May  8 01:32 usr/share/mime/image/jxl.xml
+-rw-r--r--  0 root   root     2972 May  8 01:32 usr/share/mime/image/x-msod.xml
+-rw-r--r--  0 root   root     2945 May  8 01:32 usr/share/mime/image/x-xpixmap.xml
+-rw-r--r--  0 root   root     3053 May  8 01:32 usr/share/mime/image/x-portable-graymap.xml
+-rw-r--r--  0 root   root     2698 May  8 01:32 usr/share/mime/image/vnd.djvu+multipage.xml
+-rw-r--r--  0 root   root     2396 May  8 01:32 usr/share/mime/image/webp.xml
+-rw-r--r--  0 root   root     2062 May  8 01:32 usr/share/mime/image/vnd.ms-modi.xml
+-rw-r--r--  0 root   root     3397 May  8 01:32 usr/share/mime/image/x-3ds.xml
+-rw-r--r--  0 root   root     2730 May  8 01:32 usr/share/mime/image/ktx2.xml
+-rw-r--r--  0 root   root     1023 May  8 01:32 usr/share/mime/image/jxr.xml
+-rw-r--r--  0 root   root     2925 May  8 01:32 usr/share/mime/image/vnd.wap.wbmp.xml
+-rw-r--r--  0 root   root     2931 May  8 01:32 usr/share/mime/image/x-rgb.xml
+-rw-r--r--  0 root   root     4129 May  8 01:32 usr/share/mime/image/x-pict.xml
+-rw-r--r--  0 root   root     2982 May  8 01:32 usr/share/mime/image/x-xcf.xml
+-rw-r--r--  0 root   root     3659 May  8 01:32 usr/share/mime/image/x-kodak-dcr.xml
+-rw-r--r--  0 root   root     3132 May  8 01:32 usr/share/mime/image/x-win-bitmap.xml
+-rw-r--r--  0 root   root     2612 May  8 01:32 usr/share/mime/image/jpm.xml
+-rw-r--r--  0 root   root     3645 May  8 01:32 usr/share/mime/image/x-kodak-k25.xml
+-rw-r--r--  0 root   root     3718 May  8 01:32 usr/share/mime/image/x-minolta-mrw.xml
+-rw-r--r--  0 root   root     3219 May  8 01:32 usr/share/mime/image/x-tiff-multipage.xml
+-rw-r--r--  0 root   root     3595 May  8 01:32 usr/share/mime/image/x-panasonic-rw2.xml
+-rw-r--r--  0 root   root     1020 May  8 01:32 usr/share/mime/image/x-compressed-xcf.xml
+-rw-r--r--  0 root   root     3148 May  8 01:32 usr/share/mime/image/x-skencil.xml
+-rw-r--r--  0 root   root     2249 May  8 01:32 usr/share/mime/image/x-gimp-gbr.xml
+-rw-r--r--  0 root   root     3162 May  8 01:32 usr/share/mime/image/vnd.rn-realpix.xml
+-rw-r--r--  0 root   root     3513 May  8 01:32 usr/share/mime/image/bmp.xml
+-rw-r--r--  0 root   root     2732 May  8 01:32 usr/share/mime/font/woff.xml
+-rw-r--r--  0 root   root     2509 May  8 01:32 usr/share/mime/font/collection.xml
+-rw-r--r--  0 root   root     2518 May  8 01:32 usr/share/mime/font/woff2.xml
+-rw-r--r--  0 root   root     3230 May  8 01:32 usr/share/mime/font/ttf.xml
+-rw-r--r--  0 root   root     3386 May  8 01:32 usr/share/mime/font/otf.xml
+-rw-r--r--  0 root   root     3124 May  8 01:32 usr/share/mime/video/x-flic.xml
+-rw-r--r--  0 root   root     3173 May  8 01:32 usr/share/mime/video/x-flv.xml
+-rw-r--r--  0 root   root     2128 May  8 01:32 usr/share/mime/video/annodex.xml
+-rw-r--r--  0 root   root     2943 May  8 01:32 usr/share/mime/video/isivideo.xml
+-rw-r--r--  0 root   root     2946 May  8 01:32 usr/share/mime/video/x-ogm+ogg.xml
+-rw-r--r--  0 root   root     3434 May  8 01:32 usr/share/mime/video/x-ms-wmv.xml
+-rw-r--r--  0 root   root     1973 May  8 01:32 usr/share/mime/video/vnd.mpegurl.xml
+-rw-r--r--  0 root   root     3347 May  8 01:32 usr/share/mime/video/vnd.rn-realvideo.xml
+-rw-r--r--  0 root   root     2585 May  8 01:32 usr/share/mime/video/x-mjpeg.xml
+-rw-r--r--  0 root   root     3113 May  8 01:32 usr/share/mime/video/x-nsv.xml
+-rw-r--r--  0 root   root     2673 May  8 01:32 usr/share/mime/video/webm.xml
+-rw-r--r--  0 root   root     1418 May  8 01:32 usr/share/mime/video/vnd.radgamettools.bink.xml
+-rw-r--r--  0 root   root     3296 May  8 01:32 usr/share/mime/video/quicktime.xml
+-rw-r--r--  0 root   root     3080 May  8 01:32 usr/share/mime/video/vnd.vivo.xml
+-rw-r--r--  0 root   root     2103 May  8 01:32 usr/share/mime/video/ogg.xml
+-rw-r--r--  0 root   root     2602 May  8 01:32 usr/share/mime/video/mj2.xml
+-rw-r--r--  0 root   root     2846 May  8 01:32 usr/share/mime/video/x-matroska-3d.xml
+-rw-r--r--  0 root   root     3346 May  8 01:32 usr/share/mime/video/vnd.avi.xml
+-rw-r--r--  0 root   root     3112 May  8 01:32 usr/share/mime/video/x-mng.xml
+-rw-r--r--  0 root   root     1461 May  8 01:32 usr/share/mime/video/vnd.radgamettools.smacker.xml
+-rw-r--r--  0 root   root     3253 May  8 01:32 usr/share/mime/video/x-anim.xml
+-rw-r--r--  0 root   root     3287 May  8 01:32 usr/share/mime/video/x-theora+ogg.xml
+-rw-r--r--  0 root   root     3180 May  8 01:32 usr/share/mime/video/mp4.xml
+-rw-r--r--  0 root   root     3182 May  8 01:32 usr/share/mime/video/wavelet.xml
+-rw-r--r--  0 root   root     2975 May  8 01:32 usr/share/mime/video/x-sgi-movie.xml
+-rw-r--r--  0 root   root     2892 May  8 01:32 usr/share/mime/video/dv.xml
+-rw-r--r--  0 root   root     3679 May  8 01:32 usr/share/mime/video/mp2t.xml
+-rw-r--r--  0 root   root     3357 May  8 01:32 usr/share/mime/video/mpeg.xml
+-rw-r--r--  0 root   root     3595 May  8 01:32 usr/share/mime/video/3gpp2.xml
+-rw-r--r--  0 root   root     2650 May  8 01:32 usr/share/mime/video/vnd.youtube.yt.xml
+-rw-r--r--  0 root   root     2862 May  8 01:32 usr/share/mime/video/x-javafx.xml
+-rw-r--r--  0 root   root     4110 May  8 01:32 usr/share/mime/video/3gpp.xml
+-rw-r--r--  0 root   root     3274 May  8 01:32 usr/share/mime/video/x-matroska.xml
+-rw-r--r--  0 root   root     3349 May  8 01:32 usr/share/mime/model/vrml.xml
+-rw-r--r--  0 root   root     2374 May  8 01:32 usr/share/mime/model/stl.xml
+-rw-r--r--  0 root   root     1629 May  8 01:32 usr/share/mime/model/gltf-binary.xml
+-rw-r--r--  0 root   root     1670 May  8 01:32 usr/share/mime/model/gltf+json.xml
+-rw-r--r--  0 root   root     1604 May  8 01:32 usr/share/mime/model/3mf.xml
+-rw-r--r--  0 root   root     1904 May  8 01:32 usr/share/mime/model/mtl.xml
+-rw-r--r--  0 root   root     1590 May  8 01:32 usr/share/mime/model/obj.xml
+-rw-r--r--  0 root   root     2584 May  8 01:32 usr/share/mime/model/iges.xml
+-rw-r--r--  0 root   root      831 May  8 01:32 usr/share/mime/application/msix.xml
+-rw-r--r--  0 root   root     3089 May  8 01:32 usr/share/mime/application/x-lyx.xml
+-rw-r--r--  0 root   root     3131 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.spreadsheet-template.xml
+-rw-r--r--  0 root   root     3155 May  8 01:32 usr/share/mime/application/vnd.ms-tnef.xml
+-rw-r--r--  0 root   root     3179 May  8 01:32 usr/share/mime/application/x-font-libgrx.xml
+-rw-r--r--  0 root   root     2806 May  8 01:32 usr/share/mime/application/x-raw-floppy-disk-image.xml
+-rw-r--r--  0 root   root     2656 May  8 01:32 usr/share/mime/application/x-xz.xml
+-rw-r--r--  0 root   root     3086 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.text-web.xml
+-rw-r--r--  0 root   root     3212 May  8 01:32 usr/share/mime/application/xhtml+xml.xml
+-rw-r--r--  0 root   root      974 May  8 01:32 usr/share/mime/application/vnd.ms-officetheme.xml
+-rw-r--r--  0 root   root     3391 May  8 01:32 usr/share/mime/application/vnd.sqlite3.xml
+-rw-r--r--  0 root   root      708 May  8 01:32 usr/share/mime/application/x-perf-data.xml
+-rw-r--r--  0 root   root     1090 May  8 01:32 usr/share/mime/application/vnd.sun.xml.draw.template.xml
+-rw-r--r--  0 root   root     3059 May  8 01:32 usr/share/mime/application/metalink+xml.xml
+-rw-r--r--  0 root   root      817 May  8 01:32 usr/share/mime/application/x-zpaq.xml
+-rw-r--r--  0 root   root     3048 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.chart.xml
+-rw-r--r--  0 root   root     3632 May  8 01:32 usr/share/mime/application/vnd.emusic-emusic_package.xml
+-rw-r--r--  0 root   root      724 May  8 01:32 usr/share/mime/application/wasm.xml
+-rw-r--r--  0 root   root     3009 May  8 01:32 usr/share/mime/application/x-ustar.xml
+-rw-r--r--  0 root   root     3024 May  8 01:32 usr/share/mime/application/winhlp.xml
+-rw-r--r--  0 root   root     3004 May  8 01:32 usr/share/mime/application/gpx+xml.xml
+-rw-r--r--  0 root   root     3753 May  8 01:32 usr/share/mime/application/x-macbinary.xml
+-rw-r--r--  0 root   root     3797 May  8 01:32 usr/share/mime/application/x-netshow-channel.xml
+-rw-r--r--  0 root   root     2978 May  8 01:32 usr/share/mime/application/vnd.efi.img.xml
+-rw-r--r--  0 root   root     3830 May  8 01:32 usr/share/mime/application/xliff+xml.xml
+-rw-r--r--  0 root   root      699 May  8 01:32 usr/share/mime/application/x-ms-shortcut.xml
+-rw-r--r--  0 root   root     3387 May  8 01:32 usr/share/mime/application/vnd.visio.xml
+-rw-r--r--  0 root   root     3302 May  8 01:32 usr/share/mime/application/pkcs8-encrypted.xml
+-rw-r--r--  0 root   root      819 May  8 01:32 usr/share/mime/application/x-modrinth-modpack+zip.xml
+-rw-r--r--  0 root   root     3388 May  8 01:32 usr/share/mime/application/x-toutdoux.xml
+-rw-r--r--  0 root   root     3181 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.text.xml
+-rw-r--r--  0 root   root     2965 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.chart-template.xml
+-rw-r--r--  0 root   root     3145 May  8 01:32 usr/share/mime/application/x-7z-compressed.xml
+-rw-r--r--  0 root   root     1253 May  8 01:32 usr/share/mime/application/vnd.sun.xml.writer.global.xml
+-rw-r--r--  0 root   root     2596 May  8 01:32 usr/share/mime/application/owl+xml.xml
+-rw-r--r--  0 root   root      954 May  8 01:32 usr/share/mime/application/x-nuscript.xml
+-rw-r--r--  0 root   root     2907 May  8 01:32 usr/share/mime/application/vnd.ms-excel.addin.macroenabled.12.xml
+-rw-r--r--  0 root   root     3817 May  8 01:32 usr/share/mime/application/vnd.ms-excel.sheet.binary.macroenabled.12.xml
+-rw-r--r--  0 root   root     3187 May  8 01:32 usr/share/mime/application/vnd.openxmlformats-officedocument.wordprocessingml.document.xml
+-rw-r--r--  0 root   root     3422 May  8 01:32 usr/share/mime/application/x-wais-source.xml
+-rw-r--r--  0 root   root     2780 May  8 01:32 usr/share/mime/application/x-designer.xml
+-rw-r--r--  0 root   root     2841 May  8 01:32 usr/share/mime/application/vnd.ms-visio.template.macroenabled.main+xml.xml
+-rw-r--r--  0 root   root     2463 May  8 01:32 usr/share/mime/application/x-sega-pico-rom.xml
+-rw-r--r--  0 root   root     2934 May  8 01:32 usr/share/mime/application/x-rpm.xml
+-rw-r--r--  0 root   root     2507 May  8 01:32 usr/share/mime/application/x-pc-engine-rom.xml
+-rw-r--r--  0 root   root     3236 May  8 01:32 usr/share/mime/application/x-thomson-sap-image.xml
+-rw-r--r--  0 root   root     3807 May  8 01:32 usr/share/mime/application/x-magicpoint.xml
+-rw-r--r--  0 root   root     3076 May  8 01:32 usr/share/mime/application/x-tgif.xml
+-rw-r--r--  0 root   root     3974 May  8 01:32 usr/share/mime/application/sieve.xml
+-rw-r--r--  0 root   root     3242 May  8 01:32 usr/share/mime/application/x-awk.xml
+-rw-r--r--  0 root   root     2886 May  8 01:32 usr/share/mime/application/x-hfe-floppy-image.xml
+-rw-r--r--  0 root   root      939 May  8 01:32 usr/share/mime/application/x-tex-pk.xml
+-rw-r--r--  0 root   root     1136 May  8 01:32 usr/share/mime/application/x-bzip3-compressed-tar.xml
+-rw-r--r--  0 root   root     3404 May  8 01:32 usr/share/mime/application/x-fictionbook+xml.xml
+-rw-r--r--  0 root   root     3450 May  8 01:32 usr/share/mime/application/x-csh.xml
+-rw-r--r--  0 root   root     3137 May  8 01:32 usr/share/mime/application/java-archive.xml
+-rw-r--r--  0 root   root     1138 May  8 01:32 usr/share/mime/application/x-bat.xml
+-rw-r--r--  0 root   root      868 May  8 01:32 usr/share/mime/application/x-zerosize.xml
+-rw-r--r--  0 root   root     3662 May  8 01:32 usr/share/mime/application/x-tarz.xml
+-rw-r--r--  0 root   root     1687 May  8 01:32 usr/share/mime/application/vnd.apple.pages.xml
+-rw-r--r--  0 root   root     3010 May  8 01:32 usr/share/mime/application/x-font-dos.xml
+-rw-r--r--  0 root   root     2513 May  8 01:32 usr/share/mime/application/x-wii-wad.xml
+-rw-r--r--  0 root   root     3284 May  8 01:32 usr/share/mime/application/x-ksysv-package.xml
+-rw-r--r--  0 root   root     3366 May  8 01:32 usr/share/mime/application/x-aportisdoc.xml
+-rw-r--r--  0 root   root     2333 May  8 01:32 usr/share/mime/application/x-apple-systemprofiler+xml.xml
+-rw-r--r--  0 root   root     3966 May  8 01:32 usr/share/mime/application/x-tzo.xml
+-rw-r--r--  0 root   root     2375 May  8 01:32 usr/share/mime/application/pkcs7-mime.xml
+-rw-r--r--  0 root   root      776 May  8 01:32 usr/share/mime/application/x-ms-pdb.xml
+-rw-r--r--  0 root   root     1276 May  8 01:32 usr/share/mime/application/epub+zip.xml
+-rw-r--r--  0 root   root     2479 May  8 01:32 usr/share/mime/application/x-ipynb+json.xml
+-rw-r--r--  0 root   root     3580 May  8 01:32 usr/share/mime/application/vnd.ms-cab-compressed.xml
+-rw-r--r--  0 root   root     3733 May  8 01:32 usr/share/mime/application/x-pw.xml
+-rw-r--r--  0 root   root     2562 May  8 01:32 usr/share/mime/application/x-riff.xml
+-rw-r--r--  0 root   root     3007 May  8 01:32 usr/share/mime/application/vnd.ms-powerpoint.slide.macroenabled.12.xml
+-rw-r--r--  0 root   root     1187 May  8 01:32 usr/share/mime/application/pgp-signature.xml
+-rw-r--r--  0 root   root     3300 May  8 01:32 usr/share/mime/application/msword.xml
+-rw-r--r--  0 root   root     2259 May  8 01:32 usr/share/mime/application/x-atari-2600-rom.xml
+-rw-r--r--  0 root   root      881 May  8 01:32 usr/share/mime/application/x-core.xml
+-rw-r--r--  0 root   root     2706 May  8 01:32 usr/share/mime/application/x-thomson-cartridge-memo7.xml
+-rw-r--r--  0 root   root     2217 May  8 01:32 usr/share/mime/application/x-ms-wim.xml
+-rw-r--r--  0 root   root     2267 May  8 01:32 usr/share/mime/application/x-atari-lynx-rom.xml
+-rw-r--r--  0 root   root     3782 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.presentation-flat-xml.xml
+-rw-r--r--  0 root   root     3417 May  8 01:32 usr/share/mime/application/x-font-sunos-news.xml
+-rw-r--r--  0 root   root     3323 May  8 01:32 usr/share/mime/application/x-cdrdao-toc.xml
+-rw-r--r--  0 root   root     3663 May  8 01:32 usr/share/mime/application/x-amipro.xml
+-rw-r--r--  0 root   root     2814 May  8 01:32 usr/share/mime/application/x-wwf.xml
+-rw-r--r--  0 root   root     3118 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.formula.xml
+-rw-r--r--  0 root   root     3616 May  8 01:32 usr/share/mime/application/x-compress.xml
+-rw-r--r--  0 root   root     3224 May  8 01:32 usr/share/mime/application/vnd.ms-xpsdocument.xml
+-rw-r--r--  0 root   root     3538 May  8 01:32 usr/share/mime/application/x-e-theme.xml
+-rw-r--r--  0 root   root      484 May  8 01:32 usr/share/mime/application/x-dosexec.xml
+-rw-r--r--  0 root   root     1260 May  8 01:32 usr/share/mime/application/x-gettext-translation.xml
+-rw-r--r--  0 root   root     4024 May  8 01:32 usr/share/mime/application/x-compressed-tar.xml
+-rw-r--r--  0 root   root      831 May  8 01:32 usr/share/mime/application/appx.xml
+-rw-r--r--  0 root   root     3852 May  8 01:32 usr/share/mime/application/vnd.framemaker.xml
+-rw-r--r--  0 root   root     3702 May  8 01:32 usr/share/mime/application/vnd.ms-powerpoint.slideshow.macroenabled.12.xml
+-rw-r--r--  0 root   root     1622 May  8 01:32 usr/share/mime/application/sparql-query.xml
+-rw-r--r--  0 root   root     2981 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.formula-template.xml
+-rw-r--r--  0 root   root     3381 May  8 01:32 usr/share/mime/application/x-perl.xml
+-rw-r--r--  0 root   root     4609 May  8 01:32 usr/share/mime/application/x-gzpostscript.xml
+-rw-r--r--  0 root   root     1099 May  8 01:32 usr/share/mime/application/x-cbt.xml
+-rw-r--r--  0 root   root     3186 May  8 01:32 usr/share/mime/application/x-krita.xml
+-rw-r--r--  0 root   root     3307 May  8 01:32 usr/share/mime/application/x-gdbm.xml
+-rw-r--r--  0 root   root     2400 May  8 01:32 usr/share/mime/application/x-xar.xml
+-rw-r--r--  0 root   root     3035 May  8 01:32 usr/share/mime/application/x-matroska.xml
+-rw-r--r--  0 root   root     3854 May  8 01:32 usr/share/mime/application/x-sv4crc.xml
+-rw-r--r--  0 root   root     1517 May  8 01:32 usr/share/mime/application/schema+json.xml
+-rw-r--r--  0 root   root     3479 May  8 01:32 usr/share/mime/application/xslt+xml.xml
+-rw-r--r--  0 root   root     1015 May  8 01:32 usr/share/mime/application/x-desktop.xml
+-rw-r--r--  0 root   root     2580 May  8 01:32 usr/share/mime/application/postscript.xml
+-rw-r--r--  0 root   root     3886 May  8 01:32 usr/share/mime/application/x-windows-themepack.xml
+-rw-r--r--  0 root   root     3758 May  8 01:32 usr/share/mime/application/x-applix-word.xml
+-rw-r--r--  0 root   root     3133 May  8 01:32 usr/share/mime/application/yaml.xml
+-rw-r--r--  0 root   root     2848 May  8 01:32 usr/share/mime/application/x-qtiplot.xml
+-rw-r--r--  0 root   root     3516 May  8 01:32 usr/share/mime/application/x-zip-compressed-fb2.xml
+-rw-r--r--  0 root   root     3229 May  8 01:32 usr/share/mime/application/x-java-jce-keystore.xml
+-rw-r--r--  0 root   root     2926 May  8 01:32 usr/share/mime/application/x-arc.xml
+-rw-r--r--  0 root   root     2695 May  8 01:32 usr/share/mime/application/vnd.ms-visio.stencil.macroenabled.main+xml.xml
+-rw-r--r--  0 root   root     3206 May  8 01:32 usr/share/mime/application/x-stuffit.xml
+-rw-r--r--  0 root   root     3705 May  8 01:32 usr/share/mime/application/vnd.ms-powerpoint.template.macroenabled.12.xml
+-rw-r--r--  0 root   root     2791 May  8 01:32 usr/share/mime/application/gml+xml.xml
+-rw-r--r--  0 root   root     3692 May  8 01:32 usr/share/mime/application/x-navi-animation.xml
+-rw-r--r--  0 root   root     3805 May  8 01:32 usr/share/mime/application/x-graphite.xml
+-rw-r--r--  0 root   root     2605 May  8 01:32 usr/share/mime/application/x-qpress.xml
+-rw-r--r--  0 root   root     3623 May  8 01:32 usr/share/mime/application/x-planperfect.xml
+-rw-r--r--  0 root   root     3439 May  8 01:32 usr/share/mime/application/ecmascript.xml
+-rw-r--r--  0 root   root     4225 May  8 01:32 usr/share/mime/application/x-applix-spreadsheet.xml
+-rw-r--r--  0 root   root     4552 May  8 01:32 usr/share/mime/application/mac-binhex40.xml
+-rw-r--r--  0 root   root      567 May  8 01:32 usr/share/mime/application/x-ms-ne-executable.xml
+-rw-r--r--  0 root   root     1107 May  8 01:32 usr/share/mime/application/x-lmdb.xml
+-rw-r--r--  0 root   root     1109 May  8 01:32 usr/share/mime/application/vnd.efi.iso.xml
+-rw-r--r--  0 root   root     2971 May  8 01:32 usr/share/mime/application/pkix-cert.xml
+-rw-r--r--  0 root   root     2952 May  8 01:32 usr/share/mime/application/x-pak.xml
+-rw-r--r--  0 root   root     2567 May  8 01:32 usr/share/mime/application/x-dreamcast-rom.xml
+-rw-r--r--  0 root   root     3445 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.database.xml
+-rw-r--r--  0 root   root     3081 May  8 01:32 usr/share/mime/application/x-tar.xml
+-rw-r--r--  0 root   root     4764 May  8 01:32 usr/share/mime/application/pgp-encrypted.xml
+-rw-r--r--  0 root   root     4278 May  8 01:32 usr/share/mime/application/x-kspread-crypt.xml
+-rw-r--r--  0 root   root     3835 May  8 01:32 usr/share/mime/application/vnd.chess-pgn.xml
+-rw-r--r--  0 root   root     3630 May  8 01:32 usr/share/mime/application/x-hwp.xml
+-rw-r--r--  0 root   root     3597 May  8 01:32 usr/share/mime/application/pkix-pkipath.xml
+-rw-r--r--  0 root   root     4248 May  8 01:32 usr/share/mime/application/vnd.lotus-1-2-3.xml
+-rw-r--r--  0 root   root     1628 May  8 01:32 usr/share/mime/application/x-troff-man.xml
+-rw-r--r--  0 root   root     3256 May  8 01:32 usr/share/mime/application/vnd.openxmlformats-officedocument.presentationml.slide.xml
+-rw-r--r--  0 root   root     3263 May  8 01:32 usr/share/mime/application/fits.xml
+-rw-r--r--  0 root   root     3923 May  8 01:32 usr/share/mime/application/pkcs10.xml
+-rw-r--r--  0 root   root     2988 May  8 01:32 usr/share/mime/application/x-java-jnlp-file.xml
+-rw-r--r--  0 root   root     2174 May  8 01:32 usr/share/mime/application/x-kexi-connectiondata.xml
+-rw-r--r--  0 root   root      626 May  8 01:32 usr/share/mime/application/x-bzip1.xml
+-rw-r--r--  0 root   root     3177 May  8 01:32 usr/share/mime/application/x-arj.xml
+-rw-r--r--  0 root   root     3778 May  8 01:32 usr/share/mime/application/vnd.openxmlformats-officedocument.spreadsheetml.template.xml
+-rw-r--r--  0 root   root      952 May  8 01:32 usr/share/mime/application/x-bzip2.xml
+-rw-r--r--  0 root   root     3819 May  8 01:32 usr/share/mime/application/vnd.ms-excel.xml
+-rw-r--r--  0 root   root     3564 May  8 01:32 usr/share/mime/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.xml
+-rw-r--r--  0 root   root     2894 May  8 01:32 usr/share/mime/application/trig.xml
+-rw-r--r--  0 root   root     4154 May  8 01:32 usr/share/mime/application/x-hwt.xml
+-rw-r--r--  0 root   root      793 May  8 01:32 usr/share/mime/application/vnd.gerber.xml
+-rw-r--r--  0 root   root     3932 May  8 01:32 usr/share/mime/application/pkcs12.xml
+-rw-r--r--  0 root   root      828 May  8 01:32 usr/share/mime/application/x-bzip3.xml
+-rw-r--r--  0 root   root     3654 May  8 01:32 usr/share/mime/application/vnd.adobe.flash.movie.xml
+-rw-r--r--  0 root   root     3272 May  8 01:32 usr/share/mime/application/x-ufraw.xml
+-rw-r--r--  0 root   root     3445 May  8 01:32 usr/share/mime/application/vnd.ms-excel.template.macroenabled.12.xml
+-rw-r--r--  0 root   root     1752 May  8 01:32 usr/share/mime/application/x-vhdx-disk.xml
+-rw-r--r--  0 root   root     1120 May  8 01:32 usr/share/mime/application/vnd.sun.xml.writer.template.xml
+-rw-r--r--  0 root   root     2997 May  8 01:32 usr/share/mime/application/x-go-sgf.xml
+-rw-r--r--  0 root   root     2996 May  8 01:32 usr/share/mime/application/x-font-tex.xml
+-rw-r--r--  0 root   root     1814 May  8 01:32 usr/share/mime/application/x-bps-patch.xml
+-rw-r--r--  0 root   root     2110 May  8 01:32 usr/share/mime/application/x-appleworks-document.xml
+-rw-r--r--  0 root   root     3063 May  8 01:32 usr/share/mime/application/x-alz.xml
+-rw-r--r--  0 root   root     1126 May  8 01:32 usr/share/mime/application/vnd.tcpdump.pcap.xml
+-rw-r--r--  0 root   root     2733 May  8 01:32 usr/share/mime/application/x-m4.xml
+-rw-r--r--  0 root   root      831 May  8 01:32 usr/share/mime/application/vnd.cups-ppd.xml
+-rw-r--r--  0 root   root     2817 May  8 01:32 usr/share/mime/application/vnd.ms-visio.drawing.macroenabled.main+xml.xml
+-rw-r--r--  0 root   root     3120 May  8 01:32 usr/share/mime/application/relax-ng-compact-syntax.xml
+-rw-r--r--  0 root   root     3227 May  8 01:32 usr/share/mime/application/x-glade.xml
+-rw-r--r--  0 root   root     3166 May  8 01:32 usr/share/mime/application/x-lzip-compressed-tar.xml
+-rw-r--r--  0 root   root     3208 May  8 01:32 usr/share/mime/application/vnd.ms-word.template.macroenabled.12.xml
+-rw-r--r--  0 root   root     2769 May  8 01:32 usr/share/mime/application/mathematica.xml
+-rw-r--r--  0 root   root     2541 May  8 01:32 usr/share/mime/application/x-mame-chd.xml
+-rw-r--r--  0 root   root      831 May  8 01:32 usr/share/mime/application/its+xml.xml
+-rw-r--r--  0 root   root     3387 May  8 01:32 usr/share/mime/application/x-kivio.xml
+-rw-r--r--  0 root   root     3293 May  8 01:32 usr/share/mime/application/x-blender.xml
+-rw-r--r--  0 root   root     1853 May  8 01:32 usr/share/mime/application/vnd.apple.mpegurl.xml
+-rw-r--r--  0 root   root     3442 May  8 01:32 usr/share/mime/application/x-docbook+xml.xml
+-rw-r--r--  0 root   root     3353 May  8 01:32 usr/share/mime/application/x-mswinurl.xml
+-rw-r--r--  0 root   root      977 May  8 01:32 usr/share/mime/application/x-bzdvi.xml
+-rw-r--r--  0 root   root     2566 May  8 01:32 usr/share/mime/application/vnd.lotus-wordpro.xml
+-rw-r--r--  0 root   root     2659 May  8 01:32 usr/share/mime/application/x-neo-geo-pocket-color-rom.xml
+-rw-r--r--  0 root   root     3516 May  8 01:32 usr/share/mime/application/x-kspread.xml
+-rw-r--r--  0 root   root     2953 May  8 01:32 usr/share/mime/application/rdf+xml.xml
+-rw-r--r--  0 root   root     3444 May  8 01:32 usr/share/mime/application/x-killustrator.xml
+-rw-r--r--  0 root   root     3381 May  8 01:32 usr/share/mime/application/x-pef-executable.xml
+-rw-r--r--  0 root   root     2657 May  8 01:32 usr/share/mime/application/jrd+json.xml
+-rw-r--r--  0 root   root      883 May  8 01:32 usr/share/mime/application/x-executable.xml
+-rw-r--r--  0 root   root     2973 May  8 01:32 usr/share/mime/application/x-mswrite.xml
+-rw-r--r--  0 root   root     1149 May  8 01:32 usr/share/mime/application/vnd.comicbook-rar.xml
+-rw-r--r--  0 root   root     3656 May  8 01:32 usr/share/mime/application/x-kpresenter.xml
+-rw-r--r--  0 root   root     2878 May  8 01:32 usr/share/mime/application/sql.xml
+-rw-r--r--  0 root   root     2921 May  8 01:32 usr/share/mime/application/vnd.android.package-archive.xml
+-rw-r--r--  0 root   root     3151 May  8 01:32 usr/share/mime/application/x-zstd-compressed-tar.xml
+-rw-r--r--  0 root   root     3171 May  8 01:32 usr/share/mime/application/x-class-file.xml
+-rw-r--r--  0 root   root     3964 May  8 01:32 usr/share/mime/application/illustrator.xml
+-rw-r--r--  0 root   root     3278 May  8 01:32 usr/share/mime/application/pgp-keys.xml
+-rw-r--r--  0 root   root     1127 May  8 01:32 usr/share/mime/application/vnd.sun.xml.writer.xml
+-rw-r--r--  0 root   root     3600 May  8 01:32 usr/share/mime/application/x-gnumeric.xml
+-rw-r--r--  0 root   root     2497 May  8 01:32 usr/share/mime/application/x-neo-geo-pocket-rom.xml
+-rw-r--r--  0 root   root     2138 May  8 01:32 usr/share/mime/application/x-sg1000-rom.xml
+-rw-r--r--  0 root   root     1072 May  8 01:32 usr/share/mime/application/x-trash.xml
+-rw-r--r--  0 root   root      781 May  8 01:32 usr/share/mime/application/x-theme.xml
+-rw-r--r--  0 root   root     3303 May  8 01:32 usr/share/mime/application/x-hdf.xml
+-rw-r--r--  0 root   root     1882 May  8 01:32 usr/share/mime/application/sparql-results+xml.xml
+-rw-r--r--  0 root   root     1195 May  8 01:32 usr/share/mime/application/vnd.sun.xml.impress.xml
+-rw-r--r--  0 root   root     2833 May  8 01:32 usr/share/mime/application/x-nes-rom.xml
+-rw-r--r--  0 root   root     2823 May  8 01:32 usr/share/mime/application/mxf.xml
+-rw-r--r--  0 root   root     2046 May  8 01:32 usr/share/mime/application/x-nintendo-3ds-rom.xml
+-rw-r--r--  0 root   root     3472 May  8 01:32 usr/share/mime/application/x-gnucash.xml
+-rw-r--r--  0 root   root     3246 May  8 01:32 usr/share/mime/application/x-slp.xml
+-rw-r--r--  0 root   root     3614 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.text-flat-xml.xml
+-rw-r--r--  0 root   root     3247 May  8 01:32 usr/share/mime/application/x-subrip.xml
+-rw-r--r--  0 root   root     3391 May  8 01:32 usr/share/mime/application/vnd.stardivision.chart.xml
+-rw-r--r--  0 root   root     2659 May  8 01:32 usr/share/mime/application/x-wonderswan-color-rom.xml
+-rw-r--r--  0 root   root     3022 May  8 01:32 usr/share/mime/application/x-t602.xml
+-rw-r--r--  0 root   root     3484 May  8 01:32 usr/share/mime/application/vnd.openxmlformats-officedocument.presentationml.slideshow.xml
+-rw-r--r--  0 root   root     1722 May  8 01:32 usr/share/mime/application/x-vdi-disk.xml
+-rw-r--r--  0 root   root     3085 May  8 01:32 usr/share/mime/application/vnd.ms-asf.xml
+-rw-r--r--  0 root   root     3246 May  8 01:32 usr/share/mime/application/x-markaby.xml
+-rw-r--r--  0 root   root     3662 May  8 01:32 usr/share/mime/application/x-msi.xml
+-rw-r--r--  0 root   root     3497 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.graphics-flat-xml.xml
+-rw-r--r--  0 root   root     3576 May  8 01:32 usr/share/mime/application/vnd.openxmlformats-officedocument.wordprocessingml.template.xml
+-rw-r--r--  0 root   root     2373 May  8 01:32 usr/share/mime/application/oxps.xml
+-rw-r--r--  0 root   root     2390 May  8 01:32 usr/share/mime/application/x-thomson-cassette.xml
+-rw-r--r--  0 root   root     3442 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.spreadsheet.xml
+-rw-r--r--  0 root   root     1872 May  8 01:32 usr/share/mime/application/x-godot-shader.xml
+-rw-r--r--  0 root   root     3098 May  8 01:32 usr/share/mime/application/x-shorten.xml
+-rw-r--r--  0 root   root      776 May  8 01:32 usr/share/mime/application/json5.xml
+-rw-r--r--  0 root   root     3494 May  8 01:32 usr/share/mime/application/mathml+xml.xml
+-rw-r--r--  0 root   root     4370 May  8 01:32 usr/share/mime/application/x-gzdvi.xml
+-rw-r--r--  0 root   root     2977 May  8 01:32 usr/share/mime/application/vnd.hp-pcl.xml
+-rw-r--r--  0 root   root     2480 May  8 01:32 usr/share/mime/application/x-kexiproject-sqlite2.xml
+-rw-r--r--  0 root   root     3194 May  8 01:32 usr/share/mime/application/x-karbon.xml
+-rw-r--r--  0 root   root     3232 May  8 01:32 usr/share/mime/application/vnd.dbf.xml
+-rw-r--r--  0 root   root     3299 May  8 01:32 usr/share/mime/application/x-gnuplot.xml
+-rw-r--r--  0 root   root     2399 May  8 01:32 usr/share/mime/application/x-compressed-iso.xml
+-rw-r--r--  0 root   root     2843 May  8 01:32 usr/share/mime/application/andrew-inset.xml
+-rw-r--r--  0 root   root     2578 May  8 01:32 usr/share/mime/application/x-kexiproject-sqlite3.xml
+-rw-r--r--  0 root   root      930 May  8 01:32 usr/share/mime/application/x-bzip2-compressed-tar.xml
+-rw-r--r--  0 root   root     3912 May  8 01:32 usr/share/mime/application/x-kword-crypt.xml
+-rw-r--r--  0 root   root     3369 May  8 01:32 usr/share/mime/application/x-qw.xml
+-rw-r--r--  0 root   root     2991 May  8 01:32 usr/share/mime/application/x-font-type1.xml
+-rw-r--r--  0 root   root     2704 May  8 01:32 usr/share/mime/application/json.xml
+-rw-r--r--  0 root   root     3065 May  8 01:32 usr/share/mime/application/x-java.xml
+-rw-r--r--  0 root   root     3164 May  8 01:32 usr/share/mime/application/x-font-pcf.xml
+-rw-r--r--  0 root   root     3656 May  8 01:32 usr/share/mime/application/vnd.palm.xml
+-rw-r--r--  0 root   root     3355 May  8 01:32 usr/share/mime/application/pdf.xml
+-rw-r--r--  0 root   root     3711 May  8 01:32 usr/share/mime/application/vnd.openofficeorg.extension.xml
+-rw-r--r--  0 root   root     3359 May  8 01:32 usr/share/mime/application/vnd.ms-wpl.xml
+-rw-r--r--  0 root   root     3150 May  8 01:32 usr/share/mime/application/vnd.rar.xml
+-rw-r--r--  0 root   root     3662 May  8 01:32 usr/share/mime/application/vnd.stardivision.writer.xml
+-rw-r--r--  0 root   root     1014 May  8 01:32 usr/share/mime/application/x-shared-library-la.xml
+-rw-r--r--  0 root   root     3247 May  8 01:32 usr/share/mime/application/vnd.ms-word.document.macroenabled.12.xml
+-rw-r--r--  0 root   root     3217 May  8 01:32 usr/share/mime/application/x-dia-diagram.xml
+-rw-r--r--  0 root   root     3851 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.spreadsheet-flat-xml.xml
+-rw-r--r--  0 root   root     4958 May  8 01:32 usr/share/mime/application/x-gz-font-linux-psf.xml
+-rw-r--r--  0 root   root     2828 May  8 01:32 usr/share/mime/application/vnd.ms-visio.template.main+xml.xml
+-rw-r--r--  0 root   root     2913 May  8 01:32 usr/share/mime/application/x-wii-rom.xml
+-rw-r--r--  0 root   root     2255 May  8 01:32 usr/share/mime/application/x-discjuggler-cd-image.xml
+-rw-r--r--  0 root   root     1099 May  8 01:32 usr/share/mime/application/x-cb7.xml
+-rw-r--r--  0 root   root     2614 May  8 01:32 usr/share/mime/application/x-pagemaker.xml
+-rw-r--r--  0 root   root     3922 May  8 01:32 usr/share/mime/application/vnd.google-earth.kmz.xml
+-rw-r--r--  0 root   root     3078 May  8 01:32 usr/share/mime/application/x-nintendo-ds-rom.xml
+-rw-r--r--  0 root   root     1886 May  8 01:32 usr/share/mime/application/x-troff-man-compressed.xml
+-rw-r--r--  0 root   root     3029 May  8 01:32 usr/share/mime/application/x-dar.xml
+-rw-r--r--  0 root   root      687 May  8 01:32 usr/share/mime/application/x-tiled-tmx.xml
+-rw-r--r--  0 root   root     3344 May  8 01:32 usr/share/mime/application/x-siag.xml
+-rw-r--r--  0 root   root     3643 May  8 01:32 usr/share/mime/application/x-oleo.xml
+-rw-r--r--  0 root   root     3379 May  8 01:32 usr/share/mime/application/vnd.debian.binary-package.xml
+-rw-r--r--  0 root   root     3269 May  8 01:32 usr/share/mime/application/vnd.stardivision.math.xml
+-rw-r--r--  0 root   root     1743 May  8 01:32 usr/share/mime/application/x-bcpio.xml
+-rw-r--r--  0 root   root     4429 May  8 01:32 usr/share/mime/application/x-cpio-compressed.xml
+-rw-r--r--  0 root   root     1082 May  8 01:32 usr/share/mime/application/vnd.sun.xml.math.xml
+-rw-r--r--  0 root   root      924 May  8 01:32 usr/share/mime/application/octet-stream.xml
+-rw-r--r--  0 root   root     3334 May  8 01:32 usr/share/mime/application/x-python-bytecode.xml
+-rw-r--r--  0 root   root     3057 May  8 01:32 usr/share/mime/application/metalink4+xml.xml
+-rw-r--r--  0 root   root     3349 May  8 01:32 usr/share/mime/application/x-sqlite2.xml
+-rw-r--r--  0 root   root     3394 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.presentation.xml
+-rw-r--r--  0 root   root     1708 May  8 01:32 usr/share/mime/application/ovf.xml
+-rw-r--r--  0 root   root     2372 May  8 01:32 usr/share/mime/application/x-virtual-boy-rom.xml
+-rw-r--r--  0 root   root     3716 May  8 01:32 usr/share/mime/application/xspf+xml.xml
+-rw-r--r--  0 root   root     2584 May  8 01:32 usr/share/mime/application/x-gameboy-color-rom.xml
+-rw-r--r--  0 root   root     3124 May  8 01:32 usr/share/mime/application/x-lz4-compressed-tar.xml
+-rw-r--r--  0 root   root     2328 May  8 01:32 usr/share/mime/application/x-sms-rom.xml
+-rw-r--r--  0 root   root     4030 May  8 01:32 usr/share/mime/application/x-lzma-compressed-tar.xml
+-rw-r--r--  0 root   root     2950 May  8 01:32 usr/share/mime/application/x-nzb.xml
+-rw-r--r--  0 root   root     3190 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.text-master.xml
+-rw-r--r--  0 root   root     2258 May  8 01:32 usr/share/mime/application/x-qemu-disk.xml
+-rw-r--r--  0 root   root      685 May  8 01:32 usr/share/mime/application/x-tiled-tsx.xml
+-rw-r--r--  0 root   root     1800 May  8 01:32 usr/share/mime/application/vnd.dart.xml
+-rw-r--r--  0 root   root     1853 May  8 01:32 usr/share/mime/application/toml.xml
+-rw-r--r--  0 root   root     4267 May  8 01:32 usr/share/mime/application/x-ole-storage.xml
+-rw-r--r--  0 root   root     3018 May  8 01:32 usr/share/mime/application/x-font-bdf.xml
+-rw-r--r--  0 root   root     3573 May  8 01:32 usr/share/mime/application/vnd.ms-excel.sheet.macroenabled.12.xml
+-rw-r--r--  0 root   root     3355 May  8 01:32 usr/share/mime/application/atom+xml.xml
+-rw-r--r--  0 root   root     3786 May  8 01:32 usr/share/mime/application/x-quattropro.xml
+-rw-r--r--  0 root   root     2988 May  8 01:32 usr/share/mime/application/vnd.coffeescript.xml
+-rw-r--r--  0 root   root     3012 May  8 01:32 usr/share/mime/application/x-zoo.xml
+-rw-r--r--  0 root   root      938 May  8 01:32 usr/share/mime/application/x-shellscript.xml
+-rw-r--r--  0 root   root     3291 May  8 01:32 usr/share/mime/application/x-java-pack200.xml
+-rw-r--r--  0 root   root     2682 May  8 01:32 usr/share/mime/application/vnd.ms-visio.stencil.main+xml.xml
+-rw-r--r--  0 root   root     3882 May  8 01:32 usr/share/mime/application/x-raw-disk-image-xz-compressed.xml
+-rw-r--r--  0 root   root      637 May  8 01:32 usr/share/mime/application/x-msdownload.xml
+-rw-r--r--  0 root   root     2464 May  8 01:32 usr/share/mime/application/x-lz4.xml
+-rw-r--r--  0 root   root     1772 May  8 01:32 usr/share/mime/application/x-ips-patch.xml
+-rw-r--r--  0 root   root     3240 May  8 01:32 usr/share/mime/application/x-par2.xml
+-rw-r--r--  0 root   root     3195 May  8 01:32 usr/share/mime/application/xml.xml
+-rw-r--r--  0 root   root     3103 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.image.xml
+-rw-r--r--  0 root   root     3135 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.presentation-template.xml
+-rw-r--r--  0 root   root     3209 May  8 01:32 usr/share/mime/application/x-font-speedo.xml
+-rw-r--r--  0 root   root     3017 May  8 01:32 usr/share/mime/application/x-gamecube-rom.xml
+-rw-r--r--  0 root   root     3720 May  8 01:32 usr/share/mime/application/xml-external-parsed-entity.xml
+-rw-r--r--  0 root   root     1747 May  8 01:32 usr/share/mime/application/x-vhd-disk.xml
+-rw-r--r--  0 root   root     3832 May  8 01:32 usr/share/mime/application/vnd.ms-works.xml
+-rw-r--r--  0 root   root     5037 May  8 01:32 usr/share/mime/application/x-x509-ca-cert.xml
+-rw-r--r--  0 root   root     1310 May  8 01:32 usr/share/mime/application/vnd.microsoft.windows.thumbnail-cache.xml
+-rw-r--r--  0 root   root     3099 May  8 01:32 usr/share/mime/application/msword-template.xml
+-rw-r--r--  0 root   root     3784 May  8 01:32 usr/share/mime/application/x-font-framemaker.xml
+-rw-r--r--  0 root   root     3743 May  8 01:32 usr/share/mime/application/x-bittorrent.xml
+-rw-r--r--  0 root   root     4099 May  8 01:32 usr/share/mime/application/x-font-linux-psf.xml
+-rw-r--r--  0 root   root     2601 May  8 01:32 usr/share/mime/application/x-dia-shape.xml
+-rw-r--r--  0 root   root     1925 May  8 01:32 usr/share/mime/application/x-godot-project.xml
+-rw-r--r--  0 root   root     3178 May  8 01:32 usr/share/mime/application/rtf.xml
+-rw-r--r--  0 root   root     3666 May  8 01:32 usr/share/mime/application/x-font-afm.xml
+-rw-r--r--  0 root   root     3136 May  8 01:32 usr/share/mime/application/x-mobipocket-ebook.xml
+-rw-r--r--  0 root   root     2653 May  8 01:32 usr/share/mime/application/vnd.amazon.mobi8-ebook.xml
+-rw-r--r--  0 root   root     3029 May  8 01:32 usr/share/mime/application/x-source-rpm.xml
+-rw-r--r--  0 root   root     3680 May  8 01:32 usr/share/mime/application/x-egon.xml
+-rw-r--r--  0 root   root      722 May  8 01:32 usr/share/mime/application/x-excellon.xml
+-rw-r--r--  0 root   root     3362 May  8 01:32 usr/share/mime/application/x-font-ttx.xml
+-rw-r--r--  0 root   root     2234 May  8 01:32 usr/share/mime/application/x-gamegear-rom.xml
+-rw-r--r--  0 root   root     1022 May  8 01:32 usr/share/mime/application/x-profile.xml
+-rw-r--r--  0 root   root     1842 May  8 01:32 usr/share/mime/application/vnd.apple.numbers.xml
+-rw-r--r--  0 root   root     1129 May  8 01:32 usr/share/mime/application/mbox.xml
+-rw-r--r--  0 root   root     3989 May  8 01:32 usr/share/mime/application/x-wpg.xml
+-rw-r--r--  0 root   root     3154 May  8 01:32 usr/share/mime/application/x-kugar.xml
+-rw-r--r--  0 root   root     3472 May  8 01:32 usr/share/mime/application/x-abiword.xml
+-rw-r--r--  0 root   root     3346 May  8 01:32 usr/share/mime/application/vnd.stardivision.mail.xml
+-rw-r--r--  0 root   root     1008 May  8 01:32 usr/share/mime/application/x-bsdiff.xml
+-rw-r--r--  0 root   root     2898 May  8 01:32 usr/share/mime/application/vnd.iccprofile.xml
+-rw-r--r--  0 root   root      929 May  8 01:32 usr/share/mime/application/x-pyspread-bz-spreadsheet.xml
+-rw-r--r--  0 root   root     1798 May  8 01:32 usr/share/mime/application/x-qed-disk.xml
+-rw-r--r--  0 root   root     2267 May  8 01:32 usr/share/mime/application/vnd.snap.xml
+-rw-r--r--  0 root   root     3730 May  8 01:32 usr/share/mime/application/x-netcdf.xml
+-rw-r--r--  0 root   root     3708 May  8 01:32 usr/share/mime/application/vnd.ms-powerpoint.presentation.macroenabled.12.xml
+-rw-r--r--  0 root   root     2488 May  8 01:32 usr/share/mime/application/x-genesis-32x-rom.xml
+-rw-r--r--  0 root   root      719 May  8 01:32 usr/share/mime/application/x-powershell.xml
+-rw-r--r--  0 root   root     3060 May  8 01:32 usr/share/mime/application/vnd.appimage.xml
+-rw-r--r--  0 root   root     2753 May  8 01:32 usr/share/mime/application/x-lzip.xml
+-rw-r--r--  0 root   root     3102 May  8 01:32 usr/share/mime/application/x-ruby.xml
+-rw-r--r--  0 root   root     2886 May  8 01:32 usr/share/mime/application/x-lrzip.xml
+-rw-r--r--  0 root   root     3104 May  8 01:32 usr/share/mime/application/x-lha.xml
+-rw-r--r--  0 root   root     2162 May  8 01:32 usr/share/mime/application/x-pyspread-spreadsheet.xml
+-rw-r--r--  0 root   root     3095 May  8 01:32 usr/share/mime/application/zip.xml
+-rw-r--r--  0 root   root     1752 May  8 01:32 usr/share/mime/application/x-vmdk-disk.xml
+-rw-r--r--  0 root   root     1145 May  8 01:32 usr/share/mime/application/vnd.comicbook+zip.xml
+-rw-r--r--  0 root   root     3268 May  8 01:32 usr/share/mime/application/oda.xml
+-rw-r--r--  0 root   root     2935 May  8 01:32 usr/share/mime/application/x-mimearchive.xml
+-rw-r--r--  0 root   root     2966 May  8 01:32 usr/share/mime/application/x-spss-por.xml
+-rw-r--r--  0 root   root     3090 May  8 01:32 usr/share/mime/application/rss+xml.xml
+-rw-r--r--  0 root   root     3057 May  8 01:32 usr/share/mime/application/x-asp.xml
+-rw-r--r--  0 root   root     3619 May  8 01:32 usr/share/mime/application/x-xzpdf.xml
+-rw-r--r--  0 root   root      937 May  8 01:32 usr/share/mime/application/x-object.xml
+-rw-r--r--  0 root   root     2815 May  8 01:32 usr/share/mime/application/ld+json.xml
+-rw-r--r--  0 root   root      827 May  8 01:32 usr/share/mime/application/x-bzpdf.xml
+-rw-r--r--  0 root   root     3837 May  8 01:32 usr/share/mime/application/vnd.ms-powerpoint.xml
+-rw-r--r--  0 root   root     4021 May  8 01:32 usr/share/mime/application/x-ica.xml
+-rw-r--r--  0 root   root     3073 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.graphics.xml
+-rw-r--r--  0 root   root     2774 May  8 01:32 usr/share/mime/application/x-amiga-disk-format.xml
+-rw-r--r--  0 root   root     2736 May  8 01:32 usr/share/mime/application/x-quicktime-media-link.xml
+-rw-r--r--  0 root   root     3694 May  8 01:32 usr/share/mime/application/x-it87.xml
+-rw-r--r--  0 root   root     3312 May  8 01:32 usr/share/mime/application/vnd.ms-publisher.xml
+-rw-r--r--  0 root   root     3141 May  8 01:32 usr/share/mime/application/x-kchart.xml
+-rw-r--r--  0 root   root     3826 May  8 01:32 usr/share/mime/application/vnd.corel-draw.xml
+-rw-r--r--  0 root   root     2693 May  8 01:32 usr/share/mime/application/raml+yaml.xml
+-rw-r--r--  0 root   root      803 May  8 01:32 usr/share/mime/application/appxbundle.xml
+-rw-r--r--  0 root   root      850 May  8 01:32 usr/share/mime/application/x-bzip1-compressed-tar.xml
+-rw-r--r--  0 root   root     2850 May  8 01:32 usr/share/mime/application/x-fds-disk.xml
+-rw-r--r--  0 root   root     3070 May  8 01:32 usr/share/mime/application/x-genesis-rom.xml
+-rw-r--r--  0 root   root      980 May  8 01:32 usr/share/mime/application/x-fishscript.xml
+-rw-r--r--  0 root   root     3105 May  8 01:32 usr/share/mime/application/vnd.nintendo.snes.rom.xml
+-rw-r--r--  0 root   root     3269 May  8 01:32 usr/share/mime/application/prs.plucker.xml
+-rw-r--r--  0 root   root     3273 May  8 01:32 usr/share/mime/application/x-jbuilder-project.xml
+-rw-r--r--  0 root   root     3321 May  8 01:32 usr/share/mime/application/vnd.google-earth.kml+xml.xml
+-rw-r--r--  0 root   root     2489 May  8 01:32 usr/share/mime/application/json-patch+json.xml
+-rw-r--r--  0 root   root     3335 May  8 01:32 usr/share/mime/application/x-xbel.xml
+-rw-r--r--  0 root   root     3601 May  8 01:32 usr/share/mime/application/x-partial-download.xml
+-rw-r--r--  0 root   root     3383 May  8 01:32 usr/share/mime/application/x-ccmx.xml
+-rw-r--r--  0 root   root     3034 May  8 01:32 usr/share/mime/application/vnd.ms-powerpoint.addin.macroenabled.12.xml
+-rw-r--r--  0 root   root     3401 May  8 01:32 usr/share/mime/application/x-cue.xml
+-rw-r--r--  0 root   root     3198 May  8 01:32 usr/share/mime/application/x-cpio.xml
+-rw-r--r--  0 root   root     3770 May  8 01:32 usr/share/mime/application/vnd.mozilla.xul+xml.xml
+-rw-r--r--  0 root   root     3217 May  8 01:32 usr/share/mime/application/x-kword.xml
+-rw-r--r--  0 root   root     3328 May  8 01:32 usr/share/mime/application/x-sv4cpio.xml
+-rw-r--r--  0 root   root      864 May  8 01:32 usr/share/mime/application/x-stuffitx.xml
+-rw-r--r--  0 root   root     3348 May  8 01:32 usr/share/mime/application/x-nautilus-link.xml
+-rw-r--r--  0 root   root     3226 May  8 01:32 usr/share/mime/application/x-php.xml
+-rw-r--r--  0 root   root      780 May  8 01:32 usr/share/mime/application/vnd.microsoft.portable-executable.xml
+-rw-r--r--  0 root   root      803 May  8 01:32 usr/share/mime/application/msixbundle.xml
+-rw-r--r--  0 root   root     3205 May  8 01:32 usr/share/mime/application/x-pocket-word.xml
+-rw-r--r--  0 root   root     2305 May  8 01:32 usr/share/mime/application/x-nintendo-3ds-executable.xml
+-rw-r--r--  0 root   root     3464 May  8 01:32 usr/share/mime/application/gnunet-directory.xml
+-rw-r--r--  0 root   root     2881 May  8 01:32 usr/share/mime/application/x-sega-cd-rom.xml
+-rw-r--r--  0 root   root      850 May  8 01:32 usr/share/mime/application/x-gerber-job.xml
+-rw-r--r--  0 root   root     1905 May  8 01:32 usr/share/mime/application/x-asar.xml
+-rw-r--r--  0 root   root     2170 May  8 01:32 usr/share/mime/application/x-doom-wad.xml
+-rw-r--r--  0 root   root     4079 May  8 01:32 usr/share/mime/application/x-gzpdf.xml
+-rw-r--r--  0 root   root      827 May  8 01:32 usr/share/mime/application/x-openvpn-profile.xml
+-rw-r--r--  0 root   root     3321 May  8 01:32 usr/share/mime/application/vnd.stardivision.draw.xml
+-rw-r--r--  0 root   root     2995 May  8 01:32 usr/share/mime/application/xml-dtd.xml
+-rw-r--r--  0 root   root     1081 May  8 01:32 usr/share/mime/application/vnd.sun.xml.draw.xml
+-rw-r--r--  0 root   root     3154 May  8 01:32 usr/share/mime/application/x-kontour.xml
+-rw-r--r--  0 root   root     2989 May  8 01:32 usr/share/mime/application/vnd.symbian.install.xml
+-rw-r--r--  0 root   root     3029 May  8 01:32 usr/share/mime/application/vnd.smaf.xml
+-rw-r--r--  0 root   root      975 May  8 01:32 usr/share/mime/application/x-tex-gf.xml
+-rw-r--r--  0 root   root     2804 May  8 01:32 usr/share/mime/application/vnd.ms-visio.drawing.main+xml.xml
+-rw-r--r--  0 root   root     2988 May  8 01:32 usr/share/mime/application/geo+json.xml
+-rw-r--r--  0 root   root     3025 May  8 01:32 usr/share/mime/application/x-lzop.xml
+-rw-r--r--  0 root   root     3148 May  8 01:32 usr/share/mime/application/x-ipod-firmware.xml
+-rw-r--r--  0 root   root     4106 May  8 01:32 usr/share/mime/application/sdp.xml
+-rw-r--r--  0 root   root     3987 May  8 01:32 usr/share/mime/application/vnd.openxmlformats-officedocument.presentationml.template.xml
+-rw-r--r--  0 root   root     3616 May  8 01:32 usr/share/mime/application/ogg.xml
+-rw-r--r--  0 root   root      809 May  8 01:32 usr/share/mime/application/cbor.xml
+-rw-r--r--  0 root   root     3168 May  8 01:32 usr/share/mime/application/vnd.ms-htmlhelp.xml
+-rw-r--r--  0 root   root     3831 May  8 01:32 usr/share/mime/application/x-lrzip-compressed-tar.xml
+-rw-r--r--  0 root   root     4005 May  8 01:32 usr/share/mime/application/x-mif.xml
+-rw-r--r--  0 root   root     1459 May  8 01:32 usr/share/mime/application/vnd.apple.pkpass.xml
+-rw-r--r--  0 root   root     2431 May  8 01:32 usr/share/mime/application/x-iff.xml
+-rw-r--r--  0 root   root     1823 May  8 01:32 usr/share/mime/application/x-godot-resource.xml
+-rw-r--r--  0 root   root     3238 May  8 01:32 usr/share/mime/application/x-kformula.xml
+-rw-r--r--  0 root   root     3897 May  8 01:32 usr/share/mime/application/vnd.wordperfect.xml
+-rw-r--r--  0 root   root     3520 May  8 01:32 usr/share/mime/application/vnd.rn-realmedia.xml
+-rw-r--r--  0 root   root     3053 May  8 01:32 usr/share/mime/application/x-iso9660-appimage.xml
+-rw-r--r--  0 root   root     2839 May  8 01:32 usr/share/mime/application/vnd.flatpak.xml
+-rw-r--r--  0 root   root     1555 May  8 01:32 usr/share/mime/application/x-openzim.xml
+-rw-r--r--  0 root   root     3366 May  8 01:32 usr/share/mime/application/smil+xml.xml
+-rw-r--r--  0 root   root     2968 May  8 01:32 usr/share/mime/application/x-archive.xml
+-rw-r--r--  0 root   root     3021 May  8 01:32 usr/share/mime/application/x-java-keystore.xml
+-rw-r--r--  0 root   root     3386 May  8 01:32 usr/share/mime/application/x-gba-rom.xml
+-rw-r--r--  0 root   root      916 May  8 01:32 usr/share/mime/application/appinstaller.xml
+-rw-r--r--  0 root   root     3623 May  8 01:32 usr/share/mime/application/x-xpinstall.xml
+-rw-r--r--  0 root   root     2849 May  8 01:32 usr/share/mime/application/vnd.flatpak.ref.xml
+-rw-r--r--  0 root   root     3698 May  8 01:32 usr/share/mime/application/vnd.stardivision.calc.xml
+-rw-r--r--  0 root   root     1274 May  8 01:32 usr/share/mime/application/pkcs7-signature.xml
+-rw-r--r--  0 root   root     1192 May  8 01:32 usr/share/mime/application/vnd.sun.xml.calc.xml
+-rw-r--r--  0 root   root     1142 May  8 01:32 usr/share/mime/application/vnd.sun.xml.impress.template.xml
+-rw-r--r--  0 root   root     2439 May  8 01:32 usr/share/mime/application/x-wonderswan-rom.xml
+-rw-r--r--  0 root   root     3032 May  8 01:32 usr/share/mime/application/vnd.hp-hpgl.xml
+-rw-r--r--  0 root   root     3117 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.text-template.xml
+-rw-r--r--  0 root   root     3686 May  8 01:32 usr/share/mime/application/vnd.openxmlformats-officedocument.presentationml.presentation.xml
+-rw-r--r--  0 root   root     3236 May  8 01:32 usr/share/mime/application/x-lzpdf.xml
+-rw-r--r--  0 root   root     3392 May  8 01:32 usr/share/mime/application/x-dvi.xml
+-rw-r--r--  0 root   root     1869 May  8 01:32 usr/share/mime/application/x-godot-scene.xml
+-rw-r--r--  0 root   root     2836 May  8 01:32 usr/share/mime/application/vnd.flatpak.repo.xml
+-rw-r--r--  0 root   root     2952 May  8 01:32 usr/share/mime/application/x-ace.xml
+-rw-r--r--  0 root   root      849 May  8 01:32 usr/share/mime/application/x-eris-link+cbor.xml
+-rw-r--r--  0 root   root     3119 May  8 01:32 usr/share/mime/application/vnd.oasis.opendocument.graphics-template.xml
+-rw-r--r--  0 root   root     2509 May  8 01:32 usr/share/mime/application/zlib.xml
+-rw-r--r--  0 root   root     3412 May  8 01:32 usr/share/mime/application/annodex.xml
+-rw-r--r--  0 root   root     1095 May  8 01:32 usr/share/mime/application/vnd.sun.xml.calc.template.xml
+-rw-r--r--  0 root   root     2456 May  8 01:32 usr/share/mime/application/x-cisco-vpn-settings.xml
+-rw-r--r--  0 root   root      923 May  8 01:32 usr/share/mime/application/x-shar.xml
+-rw-r--r--  0 root   root     1109 May  8 01:32 usr/share/mime/application/pkix-crl.xml
+-rw-r--r--  0 root   root     3040 May  8 01:32 usr/share/mime/application/x-gameboy-rom.xml
+-rw-r--r--  0 root   root     1031 May  8 01:32 usr/share/mime/application/font-tdpfr.xml
+-rw-r--r--  0 root   root     3201 May  8 01:32 usr/share/mime/application/x-saturn-rom.xml
+-rw-r--r--  0 root   root     3476 May  8 01:32 usr/share/mime/application/x-mozilla-bookmarks.xml
+-rw-r--r--  0 root   root     2764 May  8 01:32 usr/share/mime/application/x-msx-rom.xml
+-rw-r--r--  0 root   root     2080 May  8 01:32 usr/share/mime/application/x-kexiproject-shortcut.xml
+-rw-r--r--  0 root   root     3003 May  8 01:32 usr/share/mime/application/x-apple-diskimage.xml
+-rw-r--r--  0 root   root     3554 May  8 01:32 usr/share/mime/application/x-pkcs7-certificates.xml
+-rw-r--r--  0 root   root     3355 May  8 01:32 usr/share/mime/application/vnd.apple.keynote.xml
+-rw-r--r--  0 root   root     3315 May  8 01:32 usr/share/mime/application/x-fluid.xml
+-rw-r--r--  0 root   root     3162 May  8 01:32 usr/share/mime/application/dicom.xml
+-rw-r--r--  0 root   root     2815 May  8 01:32 usr/share/mime/application/x-gtk-builder.xml
+-rw-r--r--  0 root   root     3573 May  8 01:32 usr/share/mime/application/vnd.ms-access.xml
+-rw-r--r--  0 root   root     2886 May  8 01:32 usr/share/mime/application/x-font-vfont.xml
+-rw-r--r--  0 root   root     3049 May  8 01:32 usr/share/mime/application/x-lzma.xml
+-rw-r--r--  0 root   root     3564 May  8 01:32 usr/share/mime/application/x-font-tex-tfm.xml
+-rw-r--r--  0 root   root     3230 May  8 01:32 usr/share/mime/application/x-sami.xml
+-rw-r--r--  0 root   root     3184 May  8 01:32 usr/share/mime/application/pkcs8.xml
+-rw-r--r--  0 root   root     3104 May  8 01:32 usr/share/mime/application/x-n64-rom.xml
+-rw-r--r--  0 root   root      882 May  8 01:32 usr/share/mime/application/x-bzpostscript.xml
+-rw-r--r--  0 root   root     2259 May  8 01:32 usr/share/mime/application/x-atari-7800-rom.xml
+-rw-r--r--  0 root   root     2704 May  8 01:32 usr/share/mime/application/ram.xml
+-rw-r--r--  0 root   root     2955 May  8 01:32 usr/share/mime/application/x-lhz.xml
+-rw-r--r--  0 root   root     2462 May  8 01:32 usr/share/mime/application/x-spss-sav.xml
+-rw-r--r--  0 root   root     2983 May  8 01:32 usr/share/mime/application/gzip.xml
+-rw-r--r--  0 root   root     3591 May  8 01:32 usr/share/mime/application/x-sc.xml
+-rw-r--r--  0 root   root     1014 May  8 01:32 usr/share/mime/application/x-sharedlib.xml
+-rw-r--r--  0 root   root     2366 May  8 01:32 usr/share/mime/application/zstd.xml
+-rw-r--r--  0 root   root     1775 May  8 01:32 usr/share/mime/application/x-gdscript.xml
+-rw-r--r--  0 root   root     3295 May  8 01:32 usr/share/mime/application/x-kpovmodeler.xml
+-rw-r--r--  0 root   root     3281 May  8 01:32 usr/share/mime/application/x-gtktalog.xml
+-rw-r--r--  0 root   root     3670 May  8 01:32 usr/share/mime/application/x-xz-compressed-tar.xml
+-rw-r--r--  0 root   root     2123 May  8 01:32 usr/share/mime/application/x-gd-rom-cue.xml
+-rw-r--r--  0 root   root     3829 May  8 01:32 usr/share/mime/application/vnd.stardivision.impress.xml
+-rw-r--r--  0 root   root     2631 May  8 01:32 usr/share/mime/application/vnd.squashfs.xml
+-rw-r--r--  0 root   root     2162 May  8 01:32 usr/share/mime/text/x-kaitai-struct.xml
+-rw-r--r--  0 root   root     1598 May  8 01:32 usr/share/mime/text/x-gradle.xml
+-rw-r--r--  0 root   root      910 May  8 01:32 usr/share/mime/text/x-credits.xml
+-rw-r--r--  0 root   root     1075 May  8 01:32 usr/share/mime/text/x-gettext-translation.xml
+-rw-r--r--  0 root   root      670 May  8 01:32 usr/share/mime/text/x-basic.xml
+-rw-r--r--  0 root   root     3250 May  8 01:32 usr/share/mime/text/x-uil.xml
+-rw-r--r--  0 root   root     3196 May  8 01:32 usr/share/mime/text/vnd.wap.wml.xml
+-rw-r--r--  0 root   root      747 May  8 01:32 usr/share/mime/text/x-vb.xml
+-rw-r--r--  0 root   root     2436 May  8 01:32 usr/share/mime/text/x-cobol.xml
+-rw-r--r--  0 root   root     3592 May  8 01:32 usr/share/mime/text/x-mrml.xml
+-rw-r--r--  0 root   root     2527 May  8 01:32 usr/share/mime/text/vnd.senx.warpscript.xml
+-rw-r--r--  0 root   root     3399 May  8 01:32 usr/share/mime/text/x-dsl.xml
+-rw-r--r--  0 root   root     2941 May  8 01:32 usr/share/mime/text/markdown.xml
+-rw-r--r--  0 root   root     3118 May  8 01:32 usr/share/mime/text/x-xslfo.xml
+-rw-r--r--  0 root   root     2934 May  8 01:32 usr/share/mime/text/x-scala.xml
+-rw-r--r--  0 root   root     3006 May  8 01:32 usr/share/mime/text/tab-separated-values.xml
+-rw-r--r--  0 root   root     1096 May  8 01:32 usr/share/mime/text/x-patch.xml
+-rw-r--r--  0 root   root     3329 May  8 01:32 usr/share/mime/text/x-subviewer.xml
+-rw-r--r--  0 root   root     2991 May  8 01:32 usr/share/mime/text/x-verilog.xml
+-rw-r--r--  0 root   root     2999 May  8 01:32 usr/share/mime/text/x-vhdl.xml
+-rw-r--r--  0 root   root     3248 May  8 01:32 usr/share/mime/text/x-csharp.xml
+-rw-r--r--  0 root   root     3716 May  8 01:32 usr/share/mime/text/x-fortran.xml
+-rw-r--r--  0 root   root     3151 May  8 01:32 usr/share/mime/text/html.xml
+-rw-r--r--  0 root   root     3442 May  8 01:32 usr/share/mime/text/x-opml+xml.xml
+-rw-r--r--  0 root   root      799 May  8 01:32 usr/share/mime/text/x-authors.xml
+-rw-r--r--  0 root   root     2844 May  8 01:32 usr/share/mime/text/x-genie.xml
+-rw-r--r--  0 root   root     1014 May  8 01:32 usr/share/mime/text/vnd.trolltech.linguist.xml
+-rw-r--r--  0 root   root      892 May  8 01:32 usr/share/mime/text/x-blueprint.xml
+-rw-r--r--  0 root   root     3360 May  8 01:32 usr/share/mime/text/x-ldif.xml
+-rw-r--r--  0 root   root     2069 May  8 01:32 usr/share/mime/text/x-matlab.xml
+-rw-r--r--  0 root   root     2961 May  8 01:32 usr/share/mime/text/x-moc.xml
+-rw-r--r--  0 root   root     2658 May  8 01:32 usr/share/mime/text/cache-manifest.xml
+-rw-r--r--  0 root   root      888 May  8 01:32 usr/share/mime/text/x-uri.xml
+-rw-r--r--  0 root   root     3273 May  8 01:32 usr/share/mime/text/x-java.xml
+-rw-r--r--  0 root   root     2956 May  8 01:32 usr/share/mime/text/x-uuencode.xml
+-rw-r--r--  0 root   root     1059 May  8 01:32 usr/share/mime/text/x-install.xml
+-rw-r--r--  0 root   root      818 May  8 01:32 usr/share/mime/text/x-devicetree-binary.xml
+-rw-r--r--  0 root   root      730 May  8 01:32 usr/share/mime/text/x-todo-txt.xml
+-rw-r--r--  0 root   root     1293 May  8 01:32 usr/share/mime/text/x-systemd-unit.xml
+-rw-r--r--  0 root   root     3188 May  8 01:32 usr/share/mime/text/vnd.graphviz.xml
+-rw-r--r--  0 root   root     3825 May  8 01:32 usr/share/mime/text/x-iptables.xml
+-rw-r--r--  0 root   root     2486 May  8 01:32 usr/share/mime/text/x-makefile.xml
+-rw-r--r--  0 root   root     1393 May  8 01:32 usr/share/mime/text/x-gcode-gx.xml
+-rw-r--r--  0 root   root     3374 May  8 01:32 usr/share/mime/text/xmcd.xml
+-rw-r--r--  0 root   root     1768 May  8 01:32 usr/share/mime/text/x-crystal.xml
+-rw-r--r--  0 root   root     3258 May  8 01:32 usr/share/mime/text/vnd.rn-realtext.xml
+-rw-r--r--  0 root   root     3807 May  8 01:32 usr/share/mime/text/vnd.familysearch.gedcom.xml
+-rw-r--r--  0 root   root     2059 May  8 01:32 usr/share/mime/text/x-mof.xml
+-rw-r--r--  0 root   root      941 May  8 01:32 usr/share/mime/text/richtext.xml
+-rw-r--r--  0 root   root     2229 May  8 01:32 usr/share/mime/text/x-gherkin.xml
+-rw-r--r--  0 root   root      987 May  8 01:32 usr/share/mime/text/x-nimscript.xml
+-rw-r--r--  0 root   root      871 May  8 01:32 usr/share/mime/text/rfc822-headers.xml
+-rw-r--r--  0 root   root     3317 May  8 01:32 usr/share/mime/text/css.xml
+-rw-r--r--  0 root   root     3184 May  8 01:32 usr/share/mime/text/csv.xml
+-rw-r--r--  0 root   root     2409 May  8 01:32 usr/share/mime/text/x-groovy.xml
+-rw-r--r--  0 root   root     3159 May  8 01:32 usr/share/mime/text/x-scons.xml
+-rw-r--r--  0 root   root     1813 May  8 01:32 usr/share/mime/text/x-elixir.xml
+-rw-r--r--  0 root   root     2190 May  8 01:32 usr/share/mime/text/vbscript.xml
+-rw-r--r--  0 root   root     3293 May  8 01:32 usr/share/mime/text/x-ocaml.xml
+-rw-r--r--  0 root   root     2683 May  8 01:32 usr/share/mime/text/x-maven+xml.xml
+-rw-r--r--  0 root   root     2503 May  8 01:32 usr/share/mime/text/x-google-video-pointer.xml
+-rw-r--r--  0 root   root     1089 May  8 01:32 usr/share/mime/text/vcard.xml
+-rw-r--r--  0 root   root     3367 May  8 01:32 usr/share/mime/text/troff.xml
+-rw-r--r--  0 root   root     1967 May  8 01:32 usr/share/mime/text/x-objc++src.xml
+-rw-r--r--  0 root   root     3811 May  8 01:32 usr/share/mime/text/x-troff-me.xml
+-rw-r--r--  0 root   root     3830 May  8 01:32 usr/share/mime/text/x-emacs-lisp.xml
+-rw-r--r--  0 root   root      956 May  8 01:32 usr/share/mime/text/x-reject.xml
+-rw-r--r--  0 root   root     3206 May  8 01:32 usr/share/mime/text/x-bibtex.xml
+-rw-r--r--  0 root   root     3190 May  8 01:32 usr/share/mime/text/x-dcl.xml
+-rw-r--r--  0 root   root     1984 May  8 01:32 usr/share/mime/text/x-sagemath.xml
+-rw-r--r--  0 root   root     2495 May  8 01:32 usr/share/mime/text/x-scss.xml
+-rw-r--r--  0 root   root     3795 May  8 01:32 usr/share/mime/text/x-troff-mm.xml
+-rw-r--r--  0 root   root     3408 May  8 01:32 usr/share/mime/text/x-rpm-spec.xml
+-rw-r--r--  0 root   root     3190 May  8 01:32 usr/share/mime/text/x-idl.xml
+-rw-r--r--  0 root   root     3759 May  8 01:32 usr/share/mime/text/x-ms-regedit.xml
+-rw-r--r--  0 root   root     2718 May  8 01:32 usr/share/mime/text/x-mup.xml
+-rw-r--r--  0 root   root      899 May  8 01:32 usr/share/mime/text/x-rst.xml
+-rw-r--r--  0 root   root     2856 May  8 01:32 usr/share/mime/text/x-ocl.xml
+-rw-r--r--  0 root   root     3428 May  8 01:32 usr/share/mime/text/x-pascal.xml
+-rw-r--r--  0 root   root     3407 May  8 01:32 usr/share/mime/text/x-erlang.xml
+-rw-r--r--  0 root   root     3509 May  8 01:32 usr/share/mime/text/x-changelog.xml
+-rw-r--r--  0 root   root     3382 May  8 01:32 usr/share/mime/text/x-cmake.xml
+-rw-r--r--  0 root   root     3230 May  8 01:32 usr/share/mime/text/x-qml.xml
+-rw-r--r--  0 root   root      961 May  8 01:32 usr/share/mime/text/x-log.xml
+-rw-r--r--  0 root   root     3239 May  8 01:32 usr/share/mime/text/vnd.wap.wmlscript.xml
+-rw-r--r--  0 root   root     2388 May  8 01:32 usr/share/mime/text/x-twig.xml
+-rw-r--r--  0 root   root     3549 May  8 01:32 usr/share/mime/text/x-haskell.xml
+-rw-r--r--  0 root   root     3795 May  8 01:32 usr/share/mime/text/x-troff-ms.xml
+-rw-r--r--  0 root   root      945 May  8 01:32 usr/share/mime/text/julia.xml
+-rw-r--r--  0 root   root     2911 May  8 01:32 usr/share/mime/text/vtt.xml
+-rw-r--r--  0 root   root     3361 May  8 01:32 usr/share/mime/text/x-microdvd.xml
+-rw-r--r--  0 root   root     2266 May  8 01:32 usr/share/mime/text/x-common-lisp.xml
+-rw-r--r--  0 root   root     3349 May  8 01:32 usr/share/mime/text/x-readme.xml
+-rw-r--r--  0 root   root      848 May  8 01:32 usr/share/mime/text/x-typst.xml
+-rw-r--r--  0 root   root     1359 May  8 01:32 usr/share/mime/text/org.xml
+-rw-r--r--  0 root   root     2960 May  8 01:32 usr/share/mime/text/x-lua.xml
+-rw-r--r--  0 root   root     3233 May  8 01:32 usr/share/mime/text/sgml.xml
+-rw-r--r--  0 root   root      959 May  8 01:32 usr/share/mime/text/x-copying.xml
+-rw-r--r--  0 root   root     3452 May  8 01:32 usr/share/mime/text/x-eiffel.xml
+-rw-r--r--  0 root   root     3251 May  8 01:32 usr/share/mime/text/x-imelody.xml
+-rw-r--r--  0 root   root     3239 May  8 01:32 usr/share/mime/text/x-literate-haskell.xml
+-rw-r--r--  0 root   root      882 May  8 01:32 usr/share/mime/text/htmlh.xml
+-rw-r--r--  0 root   root     2863 May  8 01:32 usr/share/mime/text/x-xmi.xml
+-rw-r--r--  0 root   root     3283 May  8 01:32 usr/share/mime/text/x-setext.xml
+-rw-r--r--  0 root   root      851 May  8 01:32 usr/share/mime/text/vbscript.encode.xml
+-rw-r--r--  0 root   root     3658 May  8 01:32 usr/share/mime/text/javascript.xml
+-rw-r--r--  0 root   root      628 May  8 01:32 usr/share/mime/text/x-mpl2.xml
+-rw-r--r--  0 root   root     2937 May  8 01:32 usr/share/mime/text/x-ooc.xml
+-rw-r--r--  0 root   root     3427 May  8 01:32 usr/share/mime/text/x-c++src.xml
+-rw-r--r--  0 root   root     2612 May  8 01:32 usr/share/mime/text/x-dbus-service.xml
+-rw-r--r--  0 root   root     3362 May  8 01:32 usr/share/mime/text/calendar.xml
+-rw-r--r--  0 root   root     1070 May  8 01:32 usr/share/mime/text/x-gettext-translation-template.xml
+-rw-r--r--  0 root   root     3235 May  8 01:32 usr/share/mime/text/x-csrc.xml
+-rw-r--r--  0 root   root     3247 May  8 01:32 usr/share/mime/text/x-vala.xml
+-rw-r--r--  0 root   root     2666 May  8 01:32 usr/share/mime/text/x-opencl-src.xml
+-rw-r--r--  0 root   root     2109 May  8 01:32 usr/share/mime/text/x-kotlin.xml
+-rw-r--r--  0 root   root     2530 May  8 01:32 usr/share/mime/text/x-python3.xml
+-rw-r--r--  0 root   root     3331 May  8 01:32 usr/share/mime/text/x-lilypond.xml
+-rw-r--r--  0 root   root     2287 May  8 01:32 usr/share/mime/text/x.gcode.xml
+-rw-r--r--  0 root   root     3182 May  8 01:32 usr/share/mime/text/x-c++hdr.xml
+-rw-r--r--  0 root   root      960 May  8 01:32 usr/share/mime/text/enriched.xml
+-rw-r--r--  0 root   root     3373 May  8 01:32 usr/share/mime/text/x-texinfo.xml
+-rw-r--r--  0 root   root     3533 May  8 01:32 usr/share/mime/text/x-scheme.xml
+-rw-r--r--  0 root   root     2652 May  8 01:32 usr/share/mime/text/x-modelica.xml
+-rw-r--r--  0 root   root     1031 May  8 01:32 usr/share/mime/text/x-devicetree-source.xml
+-rw-r--r--  0 root   root     3199 May  8 01:32 usr/share/mime/text/x-svsrc.xml
+-rw-r--r--  0 root   root     3320 May  8 01:32 usr/share/mime/text/x-adasrc.xml
+-rw-r--r--  0 root   root     2958 May  8 01:32 usr/share/mime/text/x-nfo.xml
+-rw-r--r--  0 root   root     2839 May  8 01:32 usr/share/mime/text/x-go.xml
+-rw-r--r--  0 root   root     2972 May  8 01:32 usr/share/mime/text/x-chdr.xml
+-rw-r--r--  0 root   root     3754 May  8 01:32 usr/share/mime/text/x-objcsrc.xml
+-rw-r--r--  0 root   root     2758 May  8 01:32 usr/share/mime/text/rust.xml
+-rw-r--r--  0 root   root     3069 May  8 01:32 usr/share/mime/text/vnd.sun.j2me.app-descriptor.xml
+-rw-r--r--  0 root   root      885 May  8 01:32 usr/share/mime/text/x-nim.xml
+-rw-r--r--  0 root   root     3327 May  8 01:32 usr/share/mime/text/x-txt2tags.xml
+-rw-r--r--  0 root   root      807 May  8 01:32 usr/share/mime/text/jscript.encode.xml
+-rw-r--r--  0 root   root     3068 May  8 01:32 usr/share/mime/text/x-sass.xml
+-rw-r--r--  0 root   root      653 May  8 01:32 usr/share/mime/text/x-mpsub.xml
+-rw-r--r--  0 root   root     3165 May  8 01:32 usr/share/mime/text/x-dsrc.xml
+-rw-r--r--  0 root   root     2622 May  8 01:32 usr/share/mime/text/turtle.xml
+-rw-r--r--  0 root   root     2974 May  8 01:32 usr/share/mime/text/x-svhdr.xml
+-rw-r--r--  0 root   root     1027 May  8 01:32 usr/share/mime/text/plain.xml
+-rw-r--r--  0 root   root     3003 May  8 01:32 usr/share/mime/text/tcl.xml
+-rw-r--r--  0 root   root     3295 May  8 01:32 usr/share/mime/text/x-python.xml
+-rw-r--r--  0 root   root     1020 May  8 01:32 usr/share/mime/text/spreadsheet.xml
+-rw-r--r--  0 root   root     2815 May  8 01:32 usr/share/mime/text/csv-schema.xml
+-rw-r--r--  0 root   root     3098 May  8 01:32 usr/share/mime/text/x-ssa.xml
+-rw-r--r--  0 root   root     2810 May  8 01:32 usr/share/mime/text/x-meson.xml
+-rw-r--r--  0 root   root     3249 May  8 01:32 usr/share/mime/text/x-tex.xml
+-rw-r--r--  0 root   root      771 May  8 01:32 usr/share/mime/text/x-component.xml
+-rw-r--r--  0 root   root      726 May  8 01:32 usr/share/mime/inode/socket.xml
+-rw-r--r--  0 root   root      888 May  8 01:32 usr/share/mime/inode/blockdevice.xml
+-rw-r--r--  0 root   root      733 May  8 01:32 usr/share/mime/inode/fifo.xml
+-rw-r--r--  0 root   root      976 May  8 01:32 usr/share/mime/inode/symlink.xml
+-rw-r--r--  0 root   root      919 May  8 01:32 usr/share/mime/inode/chardevice.xml
+-rw-r--r--  0 root   root      967 May  8 01:32 usr/share/mime/inode/mount-point.xml
+-rw-r--r--  0 root   root      842 May  8 01:32 usr/share/mime/inode/directory.xml
+-rw-r--r--  0 root   root  2470771 May  8 01:32 usr/share/mime/packages/freedesktop.org.xml
+=======> Building '/home/devel/packages/shared-mime-info#2.4-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling shared-mime-info 2.4-1
+prt-get: /usr/bin/pkgadd -u shared-mime-info#2.4-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 01:32:40 2024
+

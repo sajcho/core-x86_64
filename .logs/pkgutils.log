@@ -1,0 +1,93 @@
+prt-get: updating /usr/ports/core-x86_64/pkgutils
+prt-get: starting build Wed May  8 00:56:53 2024
+=======> Building '/home/devel/packages/pkgutils#5.40.10-4.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/pkgutils-5.40.10.tar.xz
+cp pkgutils-5.40.10-by-saux.patch /home/devel/building/work/src
++ build
++ cd pkgutils-5.40.10
++ patch -p1 -i /home/devel/building/work/src/pkgutils-5.40.10-by-saux.patch
+patching file Makefile
+patching file main.cc
+patching file pkgadd.cc
+patching file pkgadd.conf
+patching file pkgadd.h
+patching file pkgadd.8.in
+patching file pkgfile.5.in
+patching file pkginfo.cc
+patching file pkginfo.h
+patching file pkginfo.8.in
+patching file pkgmk.conf
+patching file pkgmk.conf.5.in
+patching file pkgmk.8.in
+patching file pkgmk.in
+patching file pkgrm.cc
+patching file pkgrm.h
+patching file pkgrm.8.in
+patching file pkgutil.cc
+patching file pkgutil.h
+patching file rejmerge.8.in
+patching file rejmerge.in
+patching file pkgutil.h
++ sed 's|--passive-ftp ||' -i pkgmk.in
++ make DESTDIR=/home/devel/building/work/pkg install
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -Wall -pedantic -D_GNU_SOURCE -DVERSION=\"5.40.10\" -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -MM main.cc pkgutil.cc pkgadd.cc pkgrm.cc pkginfo.cc > .depend
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -Wall -pedantic -D_GNU_SOURCE -DVERSION=\"5.40.10\" -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64   -c -o main.o main.cc
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -Wall -pedantic -D_GNU_SOURCE -DVERSION=\"5.40.10\" -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64   -c -o pkgutil.o pkgutil.cc
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -Wall -pedantic -D_GNU_SOURCE -DVERSION=\"5.40.10\" -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64   -c -o pkgadd.o pkgadd.cc
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -Wall -pedantic -D_GNU_SOURCE -DVERSION=\"5.40.10\" -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64   -c -o pkgrm.o pkgrm.cc
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -DNDEBUG -O2 -Wall -pedantic -D_GNU_SOURCE -DVERSION=\"5.40.10\" -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64   -c -o pkginfo.o pkginfo.cc
+sed -e "s/#VERSION#/5.40.10/" pkgmk.in > pkgmk
+sed -e "s/#VERSION#/5.40.10/" rejmerge.in > rejmerge
+sed -e "s/#VERSION#/5.40.10/" pkgadd.8.in > pkgadd.8
+sed -e "s/#VERSION#/5.40.10/" pkgrm.8.in > pkgrm.8
+sed -e "s/#VERSION#/5.40.10/" pkginfo.8.in > pkginfo.8
+sed -e "s/#VERSION#/5.40.10/" pkgmk.8.in > pkgmk.8
+sed -e "s/#VERSION#/5.40.10/" rejmerge.8.in > rejmerge.8
+sed -e "s/#VERSION#/5.40.10/" pkgmk.conf.5.in > pkgmk.conf.5
+sed -e "s/#VERSION#/5.40.10/" pkgfile.5.in > pkgfile.5
+g++ main.o pkgutil.o pkgadd.o pkgrm.o pkginfo.o -o pkgadd -larchive
+install -D -m0755 pkgadd /home/devel/building/work/pkg/usr/bin/pkgadd
+install -D -m0644 pkgadd.conf /home/devel/building/work/pkg/etc/pkgadd.conf
+install -D -m0755 pkgmk /home/devel/building/work/pkg/usr/bin/pkgmk
+install -D -m0755 rejmerge /home/devel/building/work/pkg/usr/bin/rejmerge
+install -D -m0644 pkgmk.conf /home/devel/building/work/pkg/etc/pkgmk.conf
+install -D -m0644 rejmerge.conf /home/devel/building/work/pkg/etc/rejmerge.conf
+install -D -m0644 pkgadd.8 /home/devel/building/work/pkg/usr/share/man/man8/pkgadd.8
+install -D -m0644 pkgrm.8 /home/devel/building/work/pkg/usr/share/man/man8/pkgrm.8
+install -D -m0644 pkginfo.8 /home/devel/building/work/pkg/usr/share/man/man8/pkginfo.8
+install -D -m0644 pkgmk.8 /home/devel/building/work/pkg/usr/share/man/man8/pkgmk.8
+install -D -m0644 rejmerge.8 /home/devel/building/work/pkg/usr/share/man/man8/rejmerge.8
+install -D -m0644 pkgmk.conf.5 /home/devel/building/work/pkg/usr/share/man/man5/pkgmk.conf.5
+install -D -m0644 pkgfile.5 /home/devel/building/work/pkg/usr/share/man/man5/pkgfile.5
+ln -sf pkgadd /home/devel/building/work/pkg/usr/bin/pkgrm
+ln -sf pkgadd /home/devel/building/work/pkg/usr/bin/pkginfo
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 00:56 etc/
+-rw-r--r--  0 root   root      598 May  8 00:56 etc/pkgadd.conf
+-rw-r--r--  0 root   root     1561 May  8 00:56 etc/pkgmk.conf
+-rw-r--r--  0 root   root       67 May  8 00:56 etc/rejmerge.conf
+drwxr-xr-x  0 root   root        0 May  8 00:56 usr/
+drwxr-xr-x  0 root   root        0 May  8 00:56 usr/bin/
+drwxr-xr-x  0 root   root        0 May  8 00:56 usr/share/
+drwxr-xr-x  0 root   root        0 May  8 00:56 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  8 00:56 usr/share/man/man8/
+drwxr-xr-x  0 root   root        0 May  8 00:56 usr/share/man/man5/
+-rw-r--r--  0 root   root     1083 May  8 00:56 usr/share/man/man5/pkgmk.conf.5.gz
+-rw-r--r--  0 root   root     4837 May  8 00:56 usr/share/man/man5/pkgfile.5.gz
+-rw-r--r--  0 root   root     1481 May  8 00:56 usr/share/man/man8/pkgadd.8.gz
+-rw-r--r--  0 root   root      596 May  8 00:56 usr/share/man/man8/pkgrm.8.gz
+-rw-r--r--  0 root   root      756 May  8 00:56 usr/share/man/man8/pkginfo.8.gz
+-rw-r--r--  0 root   root     1701 May  8 00:56 usr/share/man/man8/pkgmk.8.gz
+-rw-r--r--  0 root   root     1259 May  8 00:56 usr/share/man/man8/rejmerge.8.gz
+-rwxr-xr-x  0 root   root   101712 May  8 00:56 usr/bin/pkgadd
+-rwxr-xr-x  0 root   root    24191 May  8 00:56 usr/bin/pkgmk
+-rwxr-xr-x  0 root   root     6091 May  8 00:56 usr/bin/rejmerge
+lrwxrwxrwx  0 root   root        0 May  8 00:56 usr/bin/pkgrm -> pkgadd
+lrwxrwxrwx  0 root   root        0 May  8 00:56 usr/bin/pkginfo -> pkgadd
+=======> Building '/home/devel/packages/pkgutils#5.40.10-4.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling pkgutils 5.40.10-4
+prt-get: /usr/bin/pkgadd -u pkgutils#5.40.10-4.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 00:56:56 2024
+
+pkgadd: rejecting etc/pkgmk.conf, keeping existing version

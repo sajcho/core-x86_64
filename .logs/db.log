@@ -1,0 +1,1105 @@
+prt-get: updating /usr/ports/core-x86_64/db
+prt-get: starting build Tue May  7 20:42:06 2024
+=======> Building '/home/devel/packages/db#6.2.32-2.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/db-6.2.32.tar.gz
++ build
++ cd db-6.2.32
++ cd build_unix
++ ../dist/configure --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --prefix=/usr --enable-compat185 --enable-shared --enable-cxx --enable-dbm --disable-static --disable-stl
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking if building in the top-level or dist directories... no
+checking if --enable-smallbuild option specified... no
+checking if --disable-atomicsupport option specified... no
+checking if --disable-compression option specified... no
+checking if --disable-hash option specified... no
+checking if --disable-heap option specified... no
+checking if --disable-mutexsupport option specified... no
+checking if --disable-log_checksum option specified... no
+checking if --disable-partition option specified... no
+checking if --disable-queue option specified... no
+checking if --disable-replication option specified... no
+checking if --disable-statistics option specified... no
+checking if --disable-verify option specified... no
+checking if --enable-compat185 option specified... yes
+checking if --enable-cxx option specified... yes
+checking if --enable-debug option specified... no
+checking if --enable-debug_rop option specified... no
+checking if --enable-debug_wop option specified... no
+checking if --enable-error_history option specified... no
+checking if --enable-diagnostic option specified... no
+checking if --enable-dump185 option specified... no
+checking if --enable-java option specified... no
+checking if --enable-server option specified... no
+checking if --enable-mingw option specified... no
+checking if --enable-o_direct option specified... no
+checking if --enable-posixmutexes option specified... no
+checking if --enable-rpc option specified... no
+checking if --enable-slices option specified... no
+checking if --enable-sql option specified... no
+checking if --enable-sql_compat option specified... no
+checking if --enable-jdbc option specified... no
+checking if --with-jdbc=DIR option specified... no
+checking if --enable-amalgamation option specified... no
+checking if --enable-sql_codegen option specified... no
+checking if --enable-stl option specified... no
+checking if --enable-tcl option specified... no
+checking if --enable-test option specified... no
+checking if --enable-localization option specified... no
+checking if --enable-stripped_messages option specified... no
+checking if --enable-dbm option specified... yes
+checking if --enable-dtrace option specified... no
+checking if --enable-systemtap option specified... no
+checking if --enable-perfmon-statistics option specified... no
+checking if --enable-failchk_broadcast option specified... no
+checking if --enable-uimutexes option specified... no
+checking if --enable-umrw option specified... no
+checking if --enable-atomicfileread option specified... no
+checking if --with-mutex=MUTEX option specified... no
+checking if --with-tcl=DIR option specified... no
+checking if --with-uniquename=NAME option specified... no
+checking if --with-cryptography option specified... yes
+checking for x86_64-unknown-linux-gnu-chmod... no
+checking for chmod... chmod
+checking for x86_64-unknown-linux-gnu-cp... no
+checking for cp... cp
+checking for x86_64-unknown-linux-gnu-ln... no
+checking for ln... ln
+checking for x86_64-unknown-linux-gnu-mkdir... no
+checking for mkdir... mkdir
+checking for x86_64-unknown-linux-gnu-rm... no
+checking for rm... rm
+checking for x86_64-unknown-linux-gnu-mv... no
+checking for mv... mv
+checking for x86_64-unknown-linux-gnu-sh... no
+checking for sh... /bin/sh
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for x86_64-unknown-linux-gnu-cc... x86_64-unknown-linux-gnu-cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-unknown-linux-gnu-cc accepts -g... yes
+checking for x86_64-unknown-linux-gnu-cc option to accept ISO C89... none needed
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for GCC aligned attribute... yes
+checking for x86_64-unknown-linux-gnu-g++... x86_64-unknown-linux-gnu-g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether x86_64-unknown-linux-gnu-g++ accepts -g... yes
+checking how to run the C++ preprocessor... x86_64-unknown-linux-gnu-g++ -E
+checking whether C++ supports the ISO C++ standard includes... yes
+checking whether we are using gcc version 2.96... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-unknown-linux-gnu-cc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... no
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-unknown-linux-gnu-objdump... x86_64-unknown-linux-gnu-objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-unknown-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-unknown-linux-gnu-ar... x86_64-unknown-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-unknown-linux-gnu-strip... x86_64-unknown-linux-gnu-strip
+checking for x86_64-unknown-linux-gnu-ranlib... x86_64-unknown-linux-gnu-ranlib
+checking for gawk... gawk
+checking command to parse /usr/bin/nm -B output from x86_64-unknown-linux-gnu-cc object... ok
+checking for sysroot... no
+checking for x86_64-unknown-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... x86_64-unknown-linux-gnu-cc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-unknown-linux-gnu-cc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-unknown-linux-gnu-cc option to produce PIC... -fPIC -DPIC
+checking if x86_64-unknown-linux-gnu-cc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-unknown-linux-gnu-cc static flag -static works... yes
+checking if x86_64-unknown-linux-gnu-cc supports -c -o file.o... yes
+checking if x86_64-unknown-linux-gnu-cc supports -c -o file.o... (cached) yes
+checking whether the x86_64-unknown-linux-gnu-cc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... x86_64-unknown-linux-gnu-g++ -E
+checking for ld used by x86_64-unknown-linux-gnu-g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the x86_64-unknown-linux-gnu-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for x86_64-unknown-linux-gnu-g++ option to produce PIC... -fPIC -DPIC
+checking if x86_64-unknown-linux-gnu-g++ PIC flag -fPIC -DPIC works... yes
+checking if x86_64-unknown-linux-gnu-g++ static flag -static works... yes
+checking if x86_64-unknown-linux-gnu-g++ supports -c -o file.o... yes
+checking if x86_64-unknown-linux-gnu-g++ supports -c -o file.o... (cached) yes
+checking whether the x86_64-unknown-linux-gnu-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking SOSUFFIX from libtool... .so
+checking MODSUFFIX from libtool... .so
+checking JMODSUFFIX from libtool... .so
+checking whether stat file-mode macros are broken... no
+checking whether time.h and sys/time.h may both be included... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking execinfo.h usability... yes
+checking execinfo.h presence... yes
+checking for execinfo.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for struct stat.st_blksize... yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... yes
+checking if stdint.h can be used by C++... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for unistd.h... (cached) yes
+checking size of char... 1
+checking size of unsigned char... 1
+checking size of short... 2
+checking size of unsigned short... 2
+checking size of int... 4
+checking size of unsigned int... 4
+checking size of long... 8
+checking size of unsigned long... 8
+checking size of long long... 8
+checking size of unsigned long long... 8
+checking size of char *... 8
+checking for u_char... yes
+checking for u_short... yes
+checking for u_int... yes
+checking for u_long... yes
+checking for u_int8_t... yes
+checking for u_int16_t... yes
+checking for int16_t... yes
+checking for u_int32_t... yes
+checking for int32_t... yes
+checking for u_int64_t... yes
+checking for int64_t... yes
+checking for FILE *... yes
+checking for off_t... yes
+checking size of off_t... 8
+checking for db_off_t... no
+../dist/configure: 20488: test: 8: unexpected operator
+checking for pid_t... yes
+checking for size_t... yes
+checking for time_t... yes
+checking size of size_t... 8
+checking for ssize_t... yes
+checking for uintmax_t... yes
+checking for uintptr_t... yes
+checking for socklen_t... yes
+checking for ANSI C exit success/failure values... yes
+checking for getopt optreset variable... no
+checking for mutexes... POSIX/pthreads/library/x86_64/gcc-assembly
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for main in -lpthread... yes
+checking for atomic operations... gcc-builtin
+checking for library containing sched_yield... none required
+checking for library containing fdatasync... none required
+checking for library containing getaddrinfo... none required
+checking for library containing hstrerror... none required
+checking for main in -lm... yes
+checking for main in -lnsl... yes
+checking for main in -lsocket... no
+checking for abort... yes
+checking for atoi... yes
+checking for atol... yes
+checking for bsearch... yes
+checking for getcwd... yes
+checking for getenv... yes
+checking for getopt... yes
+checking for isalpha... yes
+checking for isdigit... yes
+checking for isprint... yes
+checking for isspace... yes
+checking for memcmp... yes
+checking for memcpy... yes
+checking for memmove... yes
+checking for printf... yes
+checking for qsort... yes
+checking for raise... yes
+checking for rand... yes
+checking for strcat... yes
+checking for strchr... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strncat... yes
+checking for strncmp... yes
+checking for strrchr... yes
+checking for strsep... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking whether strcasecmp is declared... yes
+checking for _fstati64... no
+checking for backtrace... yes
+checking for backtrace_symbols... yes
+checking for directio... no
+checking for fchmod... yes
+checking for fclose... yes
+checking for fcntl... yes
+checking for fdatasync... yes
+checking for fgetc... yes
+checking for fgets... yes
+checking for fopen... yes
+checking for fwrite... yes
+checking for getgid... yes
+checking for getrusage... yes
+checking for getuid... yes
+checking for hstrerror... yes
+checking for mprotect... yes
+checking for pstat_getdynamic... no
+checking for pthread_self... yes
+checking for pthread_yield... no
+checking for random... yes
+checking for sched_yield... yes
+checking for select... yes
+checking for setgid... yes
+checking for setuid... yes
+checking for sigaction... yes
+checking for snprintf... yes
+checking for stat... yes
+checking for sysconf... yes
+checking for vsnprintf... yes
+checking for yield... no
+checking for initstate_r... yes
+checking for random_r... yes
+checking for srandom_r... yes
+checking for gettimeofday... yes
+checking for localtime... yes
+checking for localtime_r... yes
+checking for time... yes
+checking for strftime... yes
+checking for clock_gettime... yes
+checking for clock_gettime monotonic clock... yes
+checking for ctime_r... yes
+checking for 2 or 3 argument version of ctime_r... 2-argument
+checking for ftruncate... yes
+checking for pread... yes
+checking for pwrite... yes
+checking for getaddrinfo... yes
+checking for fcntl/F_SETFD... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for mlock... yes
+checking for munlock... yes
+checking for mmap... yes
+checking for munmap... yes
+checking for shmget... yes
+checking for shmctl... yes
+checking for 64-bit integral type support for sequences... yes
+checking for growing a file under an mmap region... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating db_cxx.h
+config.status: creating db_int.h
+config.status: creating clib_port.h
+config.status: creating include.tcl
+config.status: creating db.h
+config.status: creating db_185.h
+config.status: creating db185_int.h
+config.status: creating db_config.h
+config.status: executing libtool commands
++ make V=1
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../lang/db185/db185.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mutex/mut_tas.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mutex/mut_pthread.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_compare.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_compress.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_conv.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_curadj.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_cursor.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/db185/db185.c  -fPIC -DPIC -o .libs/db185.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mutex/mut_tas.c  -fPIC -DPIC -o .libs/mut_tas.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_compare.c  -fPIC -DPIC -o .libs/bt_compare.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_conv.c  -fPIC -DPIC -o .libs/bt_conv.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mutex/mut_pthread.c  -fPIC -DPIC -o .libs/mut_pthread.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_cursor.c  -fPIC -DPIC -o .libs/bt_cursor.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_curadj.c  -fPIC -DPIC -o .libs/bt_curadj.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_compress.c  -fPIC -DPIC -o .libs/bt_compress.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_delete.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_method.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_method.c  -fPIC -DPIC -o .libs/bt_method.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_delete.c  -fPIC -DPIC -o .libs/bt_delete.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_open.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_open.c  -fPIC -DPIC -o .libs/bt_open.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_put.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_rec.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_put.c  -fPIC -DPIC -o .libs/bt_put.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_rec.c  -fPIC -DPIC -o .libs/bt_rec.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_reclaim.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_reclaim.c  -fPIC -DPIC -o .libs/bt_reclaim.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_recno.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_recno.c  -fPIC -DPIC -o .libs/bt_recno.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_rsearch.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_rsearch.c  -fPIC -DPIC -o .libs/bt_rsearch.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_search.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_split.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_search.c  -fPIC -DPIC -o .libs/bt_search.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_split.c  -fPIC -DPIC -o .libs/bt_split.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_stat.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_stat.c  -fPIC -DPIC -o .libs/bt_stat.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_compact.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_compact.c  -fPIC -DPIC -o .libs/bt_compact.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_upgrade.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_upgrade.c  -fPIC -DPIC -o .libs/bt_upgrade.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/btree_auto.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/btree_auto.c  -fPIC -DPIC -o .libs/btree_auto.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hash/hash.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hash/hash.c  -fPIC -DPIC -o .libs/hash.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hash/hash_auto.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hash/hash_auto.c  -fPIC -DPIC -o .libs/hash_auto.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hash/hash_compact.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hash/hash_compact.c  -fPIC -DPIC -o .libs/hash_compact.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hash/hash_conv.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hash/hash_conv.c  -fPIC -DPIC -o .libs/hash_conv.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hash/hash_dup.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hash/hash_dup.c  -fPIC -DPIC -o .libs/hash_dup.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hash/hash_meta.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hash/hash_method.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hash/hash_meta.c  -fPIC -DPIC -o .libs/hash_meta.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hash/hash_method.c  -fPIC -DPIC -o .libs/hash_method.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hash/hash_open.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hash/hash_open.c  -fPIC -DPIC -o .libs/hash_open.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hash/hash_page.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hash/hash_page.c  -fPIC -DPIC -o .libs/hash_page.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hash/hash_rec.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hash/hash_reclaim.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hash/hash_rec.c  -fPIC -DPIC -o .libs/hash_rec.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hash/hash_reclaim.c  -fPIC -DPIC -o .libs/hash_reclaim.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hash/hash_stat.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hash/hash_stat.c  -fPIC -DPIC -o .libs/hash_stat.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hash/hash_upgrade.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hash/hash_verify.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hash/hash_upgrade.c  -fPIC -DPIC -o .libs/hash_upgrade.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hash/hash_verify.c  -fPIC -DPIC -o .libs/hash_verify.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/heap/heap.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/heap/heap.c  -fPIC -DPIC -o .libs/heap.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/heap/heap_auto.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/heap/heap_auto.c  -fPIC -DPIC -o .libs/heap_auto.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/heap/heap_backup.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/heap/heap_backup.c  -fPIC -DPIC -o .libs/heap_backup.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/heap/heap_conv.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/heap/heap_conv.c  -fPIC -DPIC -o .libs/heap_conv.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/heap/heap_method.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/heap/heap_open.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/heap/heap_method.c  -fPIC -DPIC -o .libs/heap_method.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/heap/heap_open.c  -fPIC -DPIC -o .libs/heap_open.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/heap/heap_rec.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/heap/heap_reclaim.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/heap/heap_rec.c  -fPIC -DPIC -o .libs/heap_rec.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/heap/heap_reclaim.c  -fPIC -DPIC -o .libs/heap_reclaim.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/heap/heap_stat.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/heap/heap_stat.c  -fPIC -DPIC -o .libs/heap_stat.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/heap/heap_upgrade.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/heap/heap_verify.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/heap/heap_verify.c  -fPIC -DPIC -o .libs/heap_verify.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/heap/heap_upgrade.c  -fPIC -DPIC -o .libs/heap_upgrade.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/qam/qam.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/qam/qam.c  -fPIC -DPIC -o .libs/qam.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/qam/qam_auto.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/qam/qam_auto.c  -fPIC -DPIC -o .libs/qam_auto.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/qam/qam_conv.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/qam/qam_conv.c  -fPIC -DPIC -o .libs/qam_conv.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/qam/qam_files.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/qam/qam_files.c  -fPIC -DPIC -o .libs/qam_files.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/qam/qam_method.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/qam/qam_method.c  -fPIC -DPIC -o .libs/qam_method.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/qam/qam_open.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/qam/qam_open.c  -fPIC -DPIC -o .libs/qam_open.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/qam/qam_rec.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/qam/qam_stat.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/qam/qam_rec.c  -fPIC -DPIC -o .libs/qam_rec.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/qam/qam_stat.c  -fPIC -DPIC -o .libs/qam_stat.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/qam/qam_upgrade.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/qam/qam_upgrade.c  -fPIC -DPIC -o .libs/qam_upgrade.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/qam/qam_verify.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/qam/qam_verify.c  -fPIC -DPIC -o .libs/qam_verify.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/rep/rep_automsg.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/rep/rep_backup.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/rep/rep_automsg.c  -fPIC -DPIC -o .libs/rep_automsg.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/rep/rep_backup.c  -fPIC -DPIC -o .libs/rep_backup.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/rep/rep_elect.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/rep/rep_elect.c  -fPIC -DPIC -o .libs/rep_elect.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/rep/rep_lease.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/rep/rep_lease.c  -fPIC -DPIC -o .libs/rep_lease.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/rep/rep_log.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/rep/rep_log.c  -fPIC -DPIC -o .libs/rep_log.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/rep/rep_method.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/rep/rep_method.c  -fPIC -DPIC -o .libs/rep_method.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/rep/rep_record.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/rep/rep_record.c  -fPIC -DPIC -o .libs/rep_record.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/rep/rep_region.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/rep/rep_region.c  -fPIC -DPIC -o .libs/rep_region.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/rep/rep_stat.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/rep/rep_stat.c  -fPIC -DPIC -o .libs/rep_stat.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/rep/rep_util.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/rep/rep_util.c  -fPIC -DPIC -o .libs/rep_util.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/rep/rep_verify.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/rep/rep_verify.c  -fPIC -DPIC -o .libs/rep_verify.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_addrinfo.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_addrinfo.c  -fPIC -DPIC -o .libs/os_addrinfo.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/repmgr/repmgr_auto.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/repmgr/repmgr_auto.c  -fPIC -DPIC -o .libs/repmgr_auto.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/repmgr/repmgr_automsg.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/repmgr/repmgr_automsg.c  -fPIC -DPIC -o .libs/repmgr_automsg.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/repmgr/repmgr_elect.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/repmgr/repmgr_elect.c  -fPIC -DPIC -o .libs/repmgr_elect.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/repmgr/repmgr_method.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/repmgr/repmgr_method.c  -fPIC -DPIC -o .libs/repmgr_method.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/repmgr/repmgr_msg.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/repmgr/repmgr_msg.c  -fPIC -DPIC -o .libs/repmgr_msg.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/repmgr/repmgr_net.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/repmgr/repmgr_net.c  -fPIC -DPIC -o .libs/repmgr_net.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/repmgr/repmgr_posix.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/repmgr/repmgr_posix.c  -fPIC -DPIC -o .libs/repmgr_posix.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/repmgr/repmgr_queue.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/repmgr/repmgr_queue.c  -fPIC -DPIC -o .libs/repmgr_queue.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/repmgr/repmgr_rec.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/repmgr/repmgr_rec.c  -fPIC -DPIC -o .libs/repmgr_rec.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/repmgr/repmgr_sel.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/repmgr/repmgr_sel.c  -fPIC -DPIC -o .libs/repmgr_sel.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/repmgr/repmgr_stat.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/repmgr/repmgr_util.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/repmgr/repmgr_util.c  -fPIC -DPIC -o .libs/repmgr_util.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_ovfl_vrfy.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/repmgr/repmgr_stat.c  -fPIC -DPIC -o .libs/repmgr_stat.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_ovfl_vrfy.c  -fPIC -DPIC -o .libs/db_ovfl_vrfy.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_vrfy.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_vrfy.c  -fPIC -DPIC -o .libs/db_vrfy.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_vrfyutil.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_vrfyutil.c  -fPIC -DPIC -o .libs/db_vrfyutil.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/bt_verify.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/log/log_verify.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/bt_verify.c  -fPIC -DPIC -o .libs/bt_verify.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/log/log_verify.c  -fPIC -DPIC -o .libs/log_verify.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/log/log_verify_util.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/log/log_verify_util.c  -fPIC -DPIC -o .libs/log_verify_util.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/log/log_verify_int.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/log/log_verify_int.c  -fPIC -DPIC -o .libs/log_verify_int.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/log/log_verify_auto.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/log/log_verify_auto.c  -fPIC -DPIC -o .libs/log_verify_auto.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/lock/lock.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/lock/lock.c  -fPIC -DPIC -o .libs/lock.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/lock/lock_deadlock.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/lock/lock_failchk.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/lock/lock_deadlock.c  -fPIC -DPIC -o .libs/lock_deadlock.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/lock/lock_failchk.c  -fPIC -DPIC -o .libs/lock_failchk.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/lock/lock_id.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/lock/lock_id.c  -fPIC -DPIC -o .libs/lock_id.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/lock/lock_list.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/lock/lock_list.c  -fPIC -DPIC -o .libs/lock_list.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/lock/lock_method.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/lock/lock_method.c  -fPIC -DPIC -o .libs/lock_method.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/lock/lock_region.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/lock/lock_region.c  -fPIC -DPIC -o .libs/lock_region.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/lock/lock_stat.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/lock/lock_timer.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/lock/lock_stat.c  -fPIC -DPIC -o .libs/lock_stat.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/lock/lock_timer.c  -fPIC -DPIC -o .libs/lock_timer.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/lock/lock_util.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/lock/lock_util.c  -fPIC -DPIC -o .libs/lock_util.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mutex/mut_alloc.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mutex/mut_alloc.c  -fPIC -DPIC -o .libs/mut_alloc.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mutex/mut_failchk.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mutex/mut_method.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mutex/mut_failchk.c  -fPIC -DPIC -o .libs/mut_failchk.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mutex/mut_method.c  -fPIC -DPIC -o .libs/mut_method.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mutex/mut_region.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mutex/mut_region.c  -fPIC -DPIC -o .libs/mut_region.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mutex/mut_stat.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mutex/mut_stat.c  -fPIC -DPIC -o .libs/mut_stat.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../lang/dbm/dbm.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../lang/hsearch/hsearch.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/dbm/dbm.c  -fPIC -DPIC -o .libs/dbm.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/crypto/aes_method.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/hsearch/hsearch.c  -fPIC -DPIC -o .libs/hsearch.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/crypto/crypto.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/crypto/aes_method.c  -fPIC -DPIC -o .libs/aes_method.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/crypto/mersenne/mt19937db.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/crypto/mersenne/mt19937db.c  -fPIC -DPIC -o .libs/mt19937db.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/crypto/crypto.c  -fPIC -DPIC -o .libs/crypto.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/crypto/rijndael/rijndael-alg-fst.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/crypto/rijndael/rijndael-alg-fst.c  -fPIC -DPIC -o .libs/rijndael-alg-fst.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/crypto/rijndael/rijndael-api-fst.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/blob/blob_fileops.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/crypto/rijndael/rijndael-api-fst.c  -fPIC -DPIC -o .libs/rijndael-api-fst.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/blob/blob_fileops.c  -fPIC -DPIC -o .libs/blob_fileops.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/blob/blob_page.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/blob/blob_stream.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/blob/blob_stream.c  -fPIC -DPIC -o .libs/blob_stream.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/blob/blob_page.c  -fPIC -DPIC -o .libs/blob_page.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/blob/blob_util.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/blob/blob_util.c  -fPIC -DPIC -o .libs/blob_util.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/clock.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/clock.c  -fPIC -DPIC -o .libs/clock.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/crdel_auto.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/crdel_auto.c  -fPIC -DPIC -o .libs/crdel_auto.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/crdel_rec.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/crdel_rec.c  -fPIC -DPIC -o .libs/crdel_rec.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_am.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db.c  -fPIC -DPIC -o .libs/db.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_am.c  -fPIC -DPIC -o .libs/db_am.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_auto.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_backup.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_auto.c  -fPIC -DPIC -o .libs/db_auto.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/db_byteorder.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_backup.c  -fPIC -DPIC -o .libs/db_backup.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/db_byteorder.c  -fPIC -DPIC -o .libs/db_byteorder.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_cam.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_cam.c  -fPIC -DPIC -o .libs/db_cam.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_cds.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_cds.c  -fPIC -DPIC -o .libs/db_cds.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_compact.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_compact.c  -fPIC -DPIC -o .libs/db_compact.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/db_compint.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/db_compint.c  -fPIC -DPIC -o .libs/db_compint.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_conv.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_conv.c  -fPIC -DPIC -o .libs/db_conv.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_copy.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_copy.c  -fPIC -DPIC -o .libs/db_copy.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_dispatch.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_dispatch.c  -fPIC -DPIC -o .libs/db_dispatch.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_dup.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_dup.c  -fPIC -DPIC -o .libs/db_dup.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/db_err.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/db_err.c  -fPIC -DPIC -o .libs/db_err.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/db_getlong.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/db_idspace.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/db_getlong.c  -fPIC -DPIC -o .libs/db_getlong.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/db_idspace.c  -fPIC -DPIC -o .libs/db_idspace.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_iface.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_join.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_iface.c  -fPIC -DPIC -o .libs/db_iface.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/db_log2.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_join.c  -fPIC -DPIC -o .libs/db_join.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/db_log2.c  -fPIC -DPIC -o .libs/db_log2.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_meta.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_meta.c  -fPIC -DPIC -o .libs/db_meta.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_method.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_method.c  -fPIC -DPIC -o .libs/db_method.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_open.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_open.c  -fPIC -DPIC -o .libs/db_open.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_overflow.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_overflow.c  -fPIC -DPIC -o .libs/db_overflow.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_pr.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_pr.c  -fPIC -DPIC -o .libs/db_pr.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_rec.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_rec.c  -fPIC -DPIC -o .libs/db_rec.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_reclaim.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_reclaim.c  -fPIC -DPIC -o .libs/db_reclaim.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_remove.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_remove.c  -fPIC -DPIC -o .libs/db_remove.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_rename.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_ret.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_setid.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_rename.c  -fPIC -DPIC -o .libs/db_rename.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_ret.c  -fPIC -DPIC -o .libs/db_ret.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_setid.c  -fPIC -DPIC -o .libs/db_setid.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_setlsn.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_setlsn.c  -fPIC -DPIC -o .libs/db_setlsn.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_slice.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/db_shash.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_slice.c  -fPIC -DPIC -o .libs/db_slice.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/db_shash.c  -fPIC -DPIC -o .libs/db_shash.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_sort_multiple.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_stati.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_truncate.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_sort_multiple.c  -fPIC -DPIC -o .libs/db_sort_multiple.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_stati.c  -fPIC -DPIC -o .libs/db_stati.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_truncate.c  -fPIC -DPIC -o .libs/db_truncate.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_upg.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_upg.c  -fPIC -DPIC -o .libs/db_upg.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_upg_opd.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_upg_opd.c  -fPIC -DPIC -o .libs/db_upg_opd.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/dbreg/dbreg.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/dbreg/dbreg.c  -fPIC -DPIC -o .libs/dbreg.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/dbreg/dbreg_stat.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/dbreg/dbreg_auto.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/dbreg/dbreg_rec.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/dbreg/dbreg_auto.c  -fPIC -DPIC -o .libs/dbreg_auto.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/dbreg/dbreg_util.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/dbreg/dbreg_rec.c  -fPIC -DPIC -o .libs/dbreg_rec.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/dbreg/dbreg_util.c  -fPIC -DPIC -o .libs/dbreg_util.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/dbt.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/dbt.c  -fPIC -DPIC -o .libs/dbt.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/dbreg/dbreg_stat.c  -fPIC -DPIC -o .libs/dbreg_stat.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/env/env_alloc.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/env/env_alloc.c  -fPIC -DPIC -o .libs/env_alloc.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/env/env_config.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/env/env_backup.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/env/env_config.c  -fPIC -DPIC -o .libs/env_config.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/env/env_backup.c  -fPIC -DPIC -o .libs/env_backup.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/env/env_failchk.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/env/env_failchk.c  -fPIC -DPIC -o .libs/env_failchk.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/env/env_file.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/env/env_file.c  -fPIC -DPIC -o .libs/env_file.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/env/env_globals.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/env/env_open.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/env/env_globals.c  -fPIC -DPIC -o .libs/env_globals.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/env/env_open.c  -fPIC -DPIC -o .libs/env_open.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/env/env_method.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/env/env_method.c  -fPIC -DPIC -o .libs/env_method.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/env/env_name.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/env/env_recover.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/env/env_region.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/env/env_region.c  -fPIC -DPIC -o .libs/env_region.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/env/env_recover.c  -fPIC -DPIC -o .libs/env_recover.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/env/env_name.c  -fPIC -DPIC -o .libs/env_name.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/env/env_register.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/env/env_register.c  -fPIC -DPIC -o .libs/env_register.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/env/env_sig.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/env/env_sig.c  -fPIC -DPIC -o .libs/env_sig.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/env/env_slice.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/env/env_slice.c  -fPIC -DPIC -o .libs/env_slice.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/env/env_stat.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/fileops/fileops_auto.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/env/env_stat.c  -fPIC -DPIC -o .libs/env_stat.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/fileops/fop_basic.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/fileops/fileops_auto.c  -fPIC -DPIC -o .libs/fileops_auto.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/fileops/fop_basic.c  -fPIC -DPIC -o .libs/fop_basic.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/fileops/fop_rec.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/fileops/fop_rec.c  -fPIC -DPIC -o .libs/fop_rec.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/fileops/fop_util.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hash/hash_func.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hash/hash_func.c  -fPIC -DPIC -o .libs/hash_func.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hmac/hmac.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hmac/hmac.c  -fPIC -DPIC -o .libs/hmac.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/fileops/fop_util.c  -fPIC -DPIC -o .libs/fop_util.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/log/log.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/log/log.c  -fPIC -DPIC -o .libs/log.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/log/log_archive.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/log/log_compare.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/log/log_debug.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/log/log_get.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/log/log_archive.c  -fPIC -DPIC -o .libs/log_archive.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/log/log_compare.c  -fPIC -DPIC -o .libs/log_compare.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/log/log_debug.c  -fPIC -DPIC -o .libs/log_debug.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/log/log_get.c  -fPIC -DPIC -o .libs/log_get.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/log/log_method.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/log/log_method.c  -fPIC -DPIC -o .libs/log_method.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/log/log_print.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/log/log_put.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/log/log_print.c  -fPIC -DPIC -o .libs/log_print.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/log/log_put.c  -fPIC -DPIC -o .libs/log_put.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/log/log_stat.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/log/log_stat.c  -fPIC -DPIC -o .libs/log_stat.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/mkpath.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/mkpath.c  -fPIC -DPIC -o .libs/mkpath.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mp/mp_alloc.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mp/mp_alloc.c  -fPIC -DPIC -o .libs/mp_alloc.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mp/mp_backup.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mp/mp_backup.c  -fPIC -DPIC -o .libs/mp_backup.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mp/mp_bh.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mp/mp_bh.c  -fPIC -DPIC -o .libs/mp_bh.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mp/mp_fget.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mp/mp_fmethod.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mp/mp_fmethod.c  -fPIC -DPIC -o .libs/mp_fmethod.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mp/mp_fget.c  -fPIC -DPIC -o .libs/mp_fget.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mp/mp_fopen.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mp/mp_fput.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mp/mp_fopen.c  -fPIC -DPIC -o .libs/mp_fopen.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mp/mp_fput.c  -fPIC -DPIC -o .libs/mp_fput.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mp/mp_fset.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mp/mp_method.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mp/mp_method.c  -fPIC -DPIC -o .libs/mp_method.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mp/mp_fset.c  -fPIC -DPIC -o .libs/mp_fset.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mp/mp_mvcc.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mp/mp_region.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mp/mp_mvcc.c  -fPIC -DPIC -o .libs/mp_mvcc.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mp/mp_region.c  -fPIC -DPIC -o .libs/mp_region.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mp/mp_register.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mp/mp_resize.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mp/mp_register.c  -fPIC -DPIC -o .libs/mp_register.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mp/mp_resize.c  -fPIC -DPIC -o .libs/mp_resize.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mp/mp_stat.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mp/mp_stat.c  -fPIC -DPIC -o .libs/mp_stat.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mp/mp_sync.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/mp/mp_trickle.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mp/mp_sync.c  -fPIC -DPIC -o .libs/mp_sync.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/mp/mp_trickle.c  -fPIC -DPIC -o .libs/mp_trickle.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/openflags.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_abort.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_abs.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/openflags.c  -fPIC -DPIC -o .libs/openflags.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_abs.c  -fPIC -DPIC -o .libs/os_abs.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_alloc.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_abort.c  -fPIC -DPIC -o .libs/os_abort.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_alloc.c  -fPIC -DPIC -o .libs/os_alloc.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_clock.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_cpu.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_ctime.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_config.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_cpu.c  -fPIC -DPIC -o .libs/os_cpu.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_ctime.c  -fPIC -DPIC -o .libs/os_ctime.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_config.c  -fPIC -DPIC -o .libs/os_config.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_clock.c  -fPIC -DPIC -o .libs/os_clock.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_dir.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_errno.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_errno.c  -fPIC -DPIC -o .libs/os_errno.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_dir.c  -fPIC -DPIC -o .libs/os_dir.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_fid.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_flock.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_fid.c  -fPIC -DPIC -o .libs/os_fid.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_flock.c  -fPIC -DPIC -o .libs/os_flock.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_fsync.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_getenv.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_handle.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_getenv.c  -fPIC -DPIC -o .libs/os_getenv.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_handle.c  -fPIC -DPIC -o .libs/os_handle.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_fsync.c  -fPIC -DPIC -o .libs/os_fsync.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_map.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_map.c  -fPIC -DPIC -o .libs/os_map.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/os_method.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_mkdir.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_mkdir.c  -fPIC -DPIC -o .libs/os_mkdir.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/os_method.c  -fPIC -DPIC -o .libs/os_method.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_open.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_open.c  -fPIC -DPIC -o .libs/os_open.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_path.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_pid.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_path.c  -fPIC -DPIC -o .libs/os_path.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_pid.c  -fPIC -DPIC -o .libs/os_pid.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_rename.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_rmdir.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_root.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_rpath.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_rmdir.c  -fPIC -DPIC -o .libs/os_rmdir.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_root.c  -fPIC -DPIC -o .libs/os_root.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_rename.c  -fPIC -DPIC -o .libs/os_rename.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_rpath.c  -fPIC -DPIC -o .libs/os_rpath.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_rw.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_seek.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_rw.c  -fPIC -DPIC -o .libs/os_rw.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_seek.c  -fPIC -DPIC -o .libs/os_seek.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_stack.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_stat.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_stat.c  -fPIC -DPIC -o .libs/os_stat.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_stack.c  -fPIC -DPIC -o .libs/os_stack.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_tmpdir.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_tmpdir.c  -fPIC -DPIC -o .libs/os_tmpdir.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_truncate.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_truncate.c  -fPIC -DPIC -o .libs/os_truncate.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_uid.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_unlink.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_uid.c  -fPIC -DPIC -o .libs/os_uid.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_unlink.c  -fPIC -DPIC -o .libs/os_unlink.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/os/os_yield.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/os/os_yield.c  -fPIC -DPIC -o .libs/os_yield.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/partition.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/sequence/seq_stat.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/partition.c  -fPIC -DPIC -o .libs/partition.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/sequence/sequence.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/sequence/seq_stat.c  -fPIC -DPIC -o .libs/seq_stat.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/sequence/sequence.c  -fPIC -DPIC -o .libs/sequence.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hmac/sha1.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hmac/sha1.c  -fPIC -DPIC -o .libs/sha1.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/clib/snprintf.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/clib/snprintf.c  -fPIC -DPIC -o .libs/snprintf.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/txn/txn.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/txn/txn.c  -fPIC -DPIC -o .libs/txn.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/txn/txn_auto.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/txn/txn_auto.c  -fPIC -DPIC -o .libs/txn_auto.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/txn/txn_chkpt.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/txn/txn_chkpt.c  -fPIC -DPIC -o .libs/txn_chkpt.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/txn/txn_failchk.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/txn/txn_method.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/txn/txn_method.c  -fPIC -DPIC -o .libs/txn_method.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/txn/txn_rec.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/txn/txn_rec.c  -fPIC -DPIC -o .libs/txn_rec.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/txn/txn_failchk.c  -fPIC -DPIC -o .libs/txn_failchk.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/txn/txn_recover.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/txn/txn_recover.c  -fPIC -DPIC -o .libs/txn_recover.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/txn/txn_region.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/txn/txn_region.c  -fPIC -DPIC -o .libs/txn_region.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/txn/txn_stat.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/txn/txn_stat.c  -fPIC -DPIC -o .libs/txn_stat.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/txn/txn_util.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/txn/txn_util.c  -fPIC -DPIC -o .libs/txn_util.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/xa/xa.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/xa/xa.c  -fPIC -DPIC -o .libs/xa.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/xa/xa_map.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/zerofill.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/xa/xa_map.c  -fPIC -DPIC -o .libs/xa_map.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-g++ -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_channel.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/zerofill.c  -fPIC -DPIC -o .libs/zerofill.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_channel.cpp  -fPIC -DPIC -o .libs/cxx_channel.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-g++ -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_db.cpp
+./libtool --mode=compile x86_64-unknown-linux-gnu-g++ -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_dbc.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_db.cpp  -fPIC -DPIC -o .libs/cxx_db.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_dbc.cpp  -fPIC -DPIC -o .libs/cxx_dbc.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-g++ -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_dbstream.cpp
+./libtool --mode=compile x86_64-unknown-linux-gnu-g++ -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_dbt.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_dbt.cpp  -fPIC -DPIC -o .libs/cxx_dbt.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_dbstream.cpp  -fPIC -DPIC -o .libs/cxx_dbstream.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-g++ -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_env.cpp
+./libtool --mode=compile x86_64-unknown-linux-gnu-g++ -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_except.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_except.cpp  -fPIC -DPIC -o .libs/cxx_except.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_env.cpp  -fPIC -DPIC -o .libs/cxx_env.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-g++ -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_lock.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_lock.cpp  -fPIC -DPIC -o .libs/cxx_lock.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-g++ -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_logc.cpp
+./libtool --mode=compile x86_64-unknown-linux-gnu-g++ -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_mpool.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_logc.cpp  -fPIC -DPIC -o .libs/cxx_logc.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_mpool.cpp  -fPIC -DPIC -o .libs/cxx_mpool.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-g++ -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_multi.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_multi.cpp  -fPIC -DPIC -o .libs/cxx_multi.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-g++ -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_rid.cpp
+./libtool --mode=compile x86_64-unknown-linux-gnu-g++ -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_seq.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_seq.cpp  -fPIC -DPIC -o .libs/cxx_seq.o
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_rid.cpp  -fPIC -DPIC -o .libs/cxx_rid.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-g++ -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_site.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_site.cpp  -fPIC -DPIC -o .libs/cxx_site.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-g++ -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_txn.cpp
+libtool: compile:  x86_64-unknown-linux-gnu-g++ -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../lang/cxx/cxx_txn.cpp  -fPIC -DPIC -o .libs/cxx_txn.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../util/db_archive.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../util/db_archive.c  -fPIC -DPIC -o .libs/db_archive.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/util_arg.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/util_cache.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/util_arg.c  -fPIC -DPIC -o .libs/util_arg.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/util_env.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/util_env.c  -fPIC -DPIC -o .libs/util_env.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/util_cache.c  -fPIC -DPIC -o .libs/util_cache.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/util_log.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/util_sig.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/util_log.c  -fPIC -DPIC -o .libs/util_log.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/util_sig.c  -fPIC -DPIC -o .libs/util_sig.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/common/util_ver_check.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../util/db_checkpoint.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../util/db_checkpoint.c  -fPIC -DPIC -o .libs/db_checkpoint.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/common/util_ver_check.c  -fPIC -DPIC -o .libs/util_ver_check.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../util/db_convert.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../util/db_deadlock.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../util/db_dump.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../util/db_convert.c  -fPIC -DPIC -o .libs/db_convert.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../util/db_dump.c  -fPIC -DPIC -o .libs/db_dump.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../util/db_deadlock.c  -fPIC -DPIC -o .libs/db_deadlock.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../util/db_hotbackup.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../util/db_hotbackup.c  -fPIC -DPIC -o .libs/db_hotbackup.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../util/db_load.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../util/db_load.c  -fPIC -DPIC -o .libs/db_load.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../util/db_log_verify.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../util/db_printlog.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../util/db_log_verify.c  -fPIC -DPIC -o .libs/db_log_verify.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/btree/btree_autop.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../util/db_printlog.c  -fPIC -DPIC -o .libs/db_printlog.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/crdel_autop.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/btree/btree_autop.c  -fPIC -DPIC -o .libs/btree_autop.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/crdel_autop.c  -fPIC -DPIC -o .libs/crdel_autop.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/db/db_autop.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/dbreg/dbreg_autop.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/db/db_autop.c  -fPIC -DPIC -o .libs/db_autop.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/fileops/fileops_autop.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/dbreg/dbreg_autop.c  -fPIC -DPIC -o .libs/dbreg_autop.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/fileops/fileops_autop.c  -fPIC -DPIC -o .libs/fileops_autop.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/hash/hash_autop.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/heap/heap_autop.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/heap/heap_autop.c  -fPIC -DPIC -o .libs/heap_autop.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/hash/hash_autop.c  -fPIC -DPIC -o .libs/hash_autop.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/qam/qam_autop.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/repmgr/repmgr_autop.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/qam/qam_autop.c  -fPIC -DPIC -o .libs/qam_autop.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/repmgr/repmgr_autop.c  -fPIC -DPIC -o .libs/repmgr_autop.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../src/txn/txn_autop.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../src/txn/txn_autop.c  -fPIC -DPIC -o .libs/txn_autop.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../util/db_recover.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../util/db_replicate.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../util/db_recover.c  -fPIC -DPIC -o .libs/db_recover.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../util/db_replicate.c  -fPIC -DPIC -o .libs/db_replicate.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../util/db_stat.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../util/db_tuner.c
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../util/db_upgrade.c
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../util/db_tuner.c  -fPIC -DPIC -o .libs/db_tuner.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../util/db_upgrade.c  -fPIC -DPIC -o .libs/db_upgrade.o
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../util/db_stat.c  -fPIC -DPIC -o .libs/db_stat.o
+./libtool --mode=compile x86_64-unknown-linux-gnu-cc -c -I. -I../src  -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  ../util/db_verify.c
+./libtool --mode=link x86_64-unknown-linux-gnu-cc -avoid-version -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -rpath /usr/lib  -o libdb-6.2.la db185.lo mut_tas.lo mut_pthread.lo  bt_compare.lo bt_compress.lo bt_conv.lo bt_curadj.lo bt_cursor.lo bt_delete.lo bt_method.lo bt_open.lo bt_put.lo bt_rec.lo bt_reclaim.lo bt_recno.lo bt_rsearch.lo bt_search.lo bt_split.lo bt_stat.lo bt_compact.lo bt_upgrade.lo btree_auto.lo hash.lo hash_auto.lo hash_compact.lo hash_conv.lo hash_dup.lo hash_meta.lo hash_method.lo hash_open.lo hash_page.lo hash_rec.lo hash_reclaim.lo hash_stat.lo hash_upgrade.lo hash_verify.lo heap.lo heap_auto.lo heap_backup.lo heap_conv.lo heap_method.lo heap_open.lo heap_rec.lo heap_reclaim.lo heap_stat.lo heap_upgrade.lo heap_verify.lo qam.lo qam_auto.lo qam_conv.lo qam_files.lo qam_method.lo qam_open.lo qam_rec.lo qam_stat.lo qam_upgrade.lo qam_verify.lo rep_automsg.lo rep_backup.lo rep_elect.lo rep_lease.lo rep_log.lo rep_method.lo rep_record.lo rep_region.lo rep_stat.lo rep_util.lo rep_verify.lo os_addrinfo.lo repmgr_auto.lo repmgr_automsg.lo repmgr_elect.lo repmgr_method.lo repmgr_msg.lo repmgr_net.lo repmgr_posix.lo repmgr_queue.lo repmgr_rec.lo repmgr_sel.lo repmgr_stat.lo repmgr_util.lo db_ovfl_vrfy.lo db_vrfy.lo db_vrfyutil.lo bt_verify.lo log_verify.lo log_verify_util.lo log_verify_int.lo log_verify_auto.lo  lock.lo lock_deadlock.lo lock_failchk.lo lock_id.lo lock_list.lo lock_method.lo lock_region.lo lock_stat.lo lock_timer.lo lock_util.lo mut_alloc.lo mut_failchk.lo mut_method.lo mut_region.lo mut_stat.lo dbm.lo hsearch.lo  aes_method.lo crypto.lo mt19937db.lo rijndael-alg-fst.lo rijndael-api-fst.lo blob_fileops.lo blob_page.lo blob_stream.lo blob_util.lo clock.lo crdel_auto.lo crdel_rec.lo db.lo db_am.lo db_auto.lo db_backup.lo db_byteorder.lo db_cam.lo db_cds.lo db_compact.lo db_compint.lo db_conv.lo db_copy.lo db_dispatch.lo db_dup.lo db_err.lo db_getlong.lo db_idspace.lo db_iface.lo db_join.lo db_log2.lo db_meta.lo db_method.lo db_open.lo db_overflow.lo db_pr.lo db_rec.lo db_reclaim.lo db_remove.lo db_rename.lo db_ret.lo db_setid.lo db_setlsn.lo db_slice.lo db_shash.lo db_sort_multiple.lo db_stati.lo db_truncate.lo db_upg.lo db_upg_opd.lo dbreg.lo dbreg_stat.lo dbreg_auto.lo dbreg_rec.lo dbreg_util.lo dbt.lo env_alloc.lo env_config.lo env_backup.lo env_failchk.lo env_file.lo env_globals.lo env_open.lo env_method.lo env_name.lo env_recover.lo env_region.lo env_register.lo env_sig.lo env_slice.lo env_stat.lo fileops_auto.lo fop_basic.lo fop_rec.lo fop_util.lo hash_func.lo hmac.lo log.lo log_archive.lo log_compare.lo log_debug.lo log_get.lo log_method.lo log_print.lo log_put.lo log_stat.lo mkpath.lo mp_alloc.lo mp_backup.lo mp_bh.lo mp_fget.lo mp_fmethod.lo mp_fopen.lo mp_fput.lo mp_fset.lo mp_method.lo mp_mvcc.lo mp_region.lo mp_register.lo mp_resize.lo mp_stat.lo mp_sync.lo mp_trickle.lo openflags.lo os_abort.lo os_abs.lo os_alloc.lo os_clock.lo os_cpu.lo os_ctime.lo os_config.lo os_dir.lo os_errno.lo os_fid.lo os_flock.lo os_fsync.lo os_getenv.lo os_handle.lo os_map.lo os_method.lo os_mkdir.lo os_open.lo os_path.lo os_pid.lo os_rename.lo os_rmdir.lo os_root.lo os_rpath.lo os_rw.lo os_seek.lo os_stack.lo os_stat.lo os_tmpdir.lo os_truncate.lo os_uid.lo os_unlink.lo os_yield.lo partition.lo seq_stat.lo sequence.lo sha1.lo snprintf.lo txn.lo txn_auto.lo txn_chkpt.lo txn_failchk.lo txn_method.lo txn_rec.lo txn_recover.lo txn_region.lo txn_stat.lo txn_util.lo xa.lo xa_map.lo zerofill.lo   \
+	-lpthread
+libtool: compile:  x86_64-unknown-linux-gnu-cc -c -I. -I../src -D_GNU_SOURCE -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ../util/db_verify.c  -fPIC -DPIC -o .libs/db_verify.o
+libtool: link: x86_64-unknown-linux-gnu-cc -shared  -fPIC -DPIC  .libs/db185.o .libs/mut_tas.o .libs/mut_pthread.o .libs/bt_compare.o .libs/bt_compress.o .libs/bt_conv.o .libs/bt_curadj.o .libs/bt_cursor.o .libs/bt_delete.o .libs/bt_method.o .libs/bt_open.o .libs/bt_put.o .libs/bt_rec.o .libs/bt_reclaim.o .libs/bt_recno.o .libs/bt_rsearch.o .libs/bt_search.o .libs/bt_split.o .libs/bt_stat.o .libs/bt_compact.o .libs/bt_upgrade.o .libs/btree_auto.o .libs/hash.o .libs/hash_auto.o .libs/hash_compact.o .libs/hash_conv.o .libs/hash_dup.o .libs/hash_meta.o .libs/hash_method.o .libs/hash_open.o .libs/hash_page.o .libs/hash_rec.o .libs/hash_reclaim.o .libs/hash_stat.o .libs/hash_upgrade.o .libs/hash_verify.o .libs/heap.o .libs/heap_auto.o .libs/heap_backup.o .libs/heap_conv.o .libs/heap_method.o .libs/heap_open.o .libs/heap_rec.o .libs/heap_reclaim.o .libs/heap_stat.o .libs/heap_upgrade.o .libs/heap_verify.o .libs/qam.o .libs/qam_auto.o .libs/qam_conv.o .libs/qam_files.o .libs/qam_method.o .libs/qam_open.o .libs/qam_rec.o .libs/qam_stat.o .libs/qam_upgrade.o .libs/qam_verify.o .libs/rep_automsg.o .libs/rep_backup.o .libs/rep_elect.o .libs/rep_lease.o .libs/rep_log.o .libs/rep_method.o .libs/rep_record.o .libs/rep_region.o .libs/rep_stat.o .libs/rep_util.o .libs/rep_verify.o .libs/os_addrinfo.o .libs/repmgr_auto.o .libs/repmgr_automsg.o .libs/repmgr_elect.o .libs/repmgr_method.o .libs/repmgr_msg.o .libs/repmgr_net.o .libs/repmgr_posix.o .libs/repmgr_queue.o .libs/repmgr_rec.o .libs/repmgr_sel.o .libs/repmgr_stat.o .libs/repmgr_util.o .libs/db_ovfl_vrfy.o .libs/db_vrfy.o .libs/db_vrfyutil.o .libs/bt_verify.o .libs/log_verify.o .libs/log_verify_util.o .libs/log_verify_int.o .libs/log_verify_auto.o .libs/lock.o .libs/lock_deadlock.o .libs/lock_failchk.o .libs/lock_id.o .libs/lock_list.o .libs/lock_method.o .libs/lock_region.o .libs/lock_stat.o .libs/lock_timer.o .libs/lock_util.o .libs/mut_alloc.o .libs/mut_failchk.o .libs/mut_method.o .libs/mut_region.o .libs/mut_stat.o .libs/dbm.o .libs/hsearch.o .libs/aes_method.o .libs/crypto.o .libs/mt19937db.o .libs/rijndael-alg-fst.o .libs/rijndael-api-fst.o .libs/blob_fileops.o .libs/blob_page.o .libs/blob_stream.o .libs/blob_util.o .libs/clock.o .libs/crdel_auto.o .libs/crdel_rec.o .libs/db.o .libs/db_am.o .libs/db_auto.o .libs/db_backup.o .libs/db_byteorder.o .libs/db_cam.o .libs/db_cds.o .libs/db_compact.o .libs/db_compint.o .libs/db_conv.o .libs/db_copy.o .libs/db_dispatch.o .libs/db_dup.o .libs/db_err.o .libs/db_getlong.o .libs/db_idspace.o .libs/db_iface.o .libs/db_join.o .libs/db_log2.o .libs/db_meta.o .libs/db_method.o .libs/db_open.o .libs/db_overflow.o .libs/db_pr.o .libs/db_rec.o .libs/db_reclaim.o .libs/db_remove.o .libs/db_rename.o .libs/db_ret.o .libs/db_setid.o .libs/db_setlsn.o .libs/db_slice.o .libs/db_shash.o .libs/db_sort_multiple.o .libs/db_stati.o .libs/db_truncate.o .libs/db_upg.o .libs/db_upg_opd.o .libs/dbreg.o .libs/dbreg_stat.o .libs/dbreg_auto.o .libs/dbreg_rec.o .libs/dbreg_util.o .libs/dbt.o .libs/env_alloc.o .libs/env_config.o .libs/env_backup.o .libs/env_failchk.o .libs/env_file.o .libs/env_globals.o .libs/env_open.o .libs/env_method.o .libs/env_name.o .libs/env_recover.o .libs/env_region.o .libs/env_register.o .libs/env_sig.o .libs/env_slice.o .libs/env_stat.o .libs/fileops_auto.o .libs/fop_basic.o .libs/fop_rec.o .libs/fop_util.o .libs/hash_func.o .libs/hmac.o .libs/log.o .libs/log_archive.o .libs/log_compare.o .libs/log_debug.o .libs/log_get.o .libs/log_method.o .libs/log_print.o .libs/log_put.o .libs/log_stat.o .libs/mkpath.o .libs/mp_alloc.o .libs/mp_backup.o .libs/mp_bh.o .libs/mp_fget.o .libs/mp_fmethod.o .libs/mp_fopen.o .libs/mp_fput.o .libs/mp_fset.o .libs/mp_method.o .libs/mp_mvcc.o .libs/mp_region.o .libs/mp_register.o .libs/mp_resize.o .libs/mp_stat.o .libs/mp_sync.o .libs/mp_trickle.o .libs/openflags.o .libs/os_abort.o .libs/os_abs.o .libs/os_alloc.o .libs/os_clock.o .libs/os_cpu.o .libs/os_ctime.o .libs/os_config.o .libs/os_dir.o .libs/os_errno.o .libs/os_fid.o .libs/os_flock.o .libs/os_fsync.o .libs/os_getenv.o .libs/os_handle.o .libs/os_map.o .libs/os_method.o .libs/os_mkdir.o .libs/os_open.o .libs/os_path.o .libs/os_pid.o .libs/os_rename.o .libs/os_rmdir.o .libs/os_root.o .libs/os_rpath.o .libs/os_rw.o .libs/os_seek.o .libs/os_stack.o .libs/os_stat.o .libs/os_tmpdir.o .libs/os_truncate.o .libs/os_uid.o .libs/os_unlink.o .libs/os_yield.o .libs/partition.o .libs/seq_stat.o .libs/sequence.o .libs/sha1.o .libs/snprintf.o .libs/txn.o .libs/txn_auto.o .libs/txn_chkpt.o .libs/txn_failchk.o .libs/txn_method.o .libs/txn_rec.o .libs/txn_recover.o .libs/txn_region.o .libs/txn_stat.o .libs/txn_util.o .libs/xa.o .libs/xa_map.o .libs/zerofill.o   -lpthread  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,libdb-6.2.so -o .libs/libdb-6.2.so
+./libtool --mode=link x86_64-unknown-linux-gnu-g++ -avoid-version -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -rpath /usr/lib  \
+    -o libdb_cxx-6.2.la cxx_channel.lo cxx_db.lo cxx_dbc.lo cxx_dbstream.lo cxx_dbt.lo cxx_env.lo cxx_except.lo cxx_lock.lo cxx_logc.lo cxx_mpool.lo cxx_multi.lo cxx_rid.lo cxx_seq.lo cxx_site.lo cxx_txn.lo db185.lo mut_tas.lo mut_pthread.lo  bt_compare.lo bt_compress.lo bt_conv.lo bt_curadj.lo bt_cursor.lo bt_delete.lo bt_method.lo bt_open.lo bt_put.lo bt_rec.lo bt_reclaim.lo bt_recno.lo bt_rsearch.lo bt_search.lo bt_split.lo bt_stat.lo bt_compact.lo bt_upgrade.lo btree_auto.lo hash.lo hash_auto.lo hash_compact.lo hash_conv.lo hash_dup.lo hash_meta.lo hash_method.lo hash_open.lo hash_page.lo hash_rec.lo hash_reclaim.lo hash_stat.lo hash_upgrade.lo hash_verify.lo heap.lo heap_auto.lo heap_backup.lo heap_conv.lo heap_method.lo heap_open.lo heap_rec.lo heap_reclaim.lo heap_stat.lo heap_upgrade.lo heap_verify.lo qam.lo qam_auto.lo qam_conv.lo qam_files.lo qam_method.lo qam_open.lo qam_rec.lo qam_stat.lo qam_upgrade.lo qam_verify.lo rep_automsg.lo rep_backup.lo rep_elect.lo rep_lease.lo rep_log.lo rep_method.lo rep_record.lo rep_region.lo rep_stat.lo rep_util.lo rep_verify.lo os_addrinfo.lo repmgr_auto.lo repmgr_automsg.lo repmgr_elect.lo repmgr_method.lo repmgr_msg.lo repmgr_net.lo repmgr_posix.lo repmgr_queue.lo repmgr_rec.lo repmgr_sel.lo repmgr_stat.lo repmgr_util.lo db_ovfl_vrfy.lo db_vrfy.lo db_vrfyutil.lo bt_verify.lo log_verify.lo log_verify_util.lo log_verify_int.lo log_verify_auto.lo  lock.lo lock_deadlock.lo lock_failchk.lo lock_id.lo lock_list.lo lock_method.lo lock_region.lo lock_stat.lo lock_timer.lo lock_util.lo mut_alloc.lo mut_failchk.lo mut_method.lo mut_region.lo mut_stat.lo dbm.lo hsearch.lo  aes_method.lo crypto.lo mt19937db.lo rijndael-alg-fst.lo rijndael-api-fst.lo blob_fileops.lo blob_page.lo blob_stream.lo blob_util.lo clock.lo crdel_auto.lo crdel_rec.lo db.lo db_am.lo db_auto.lo db_backup.lo db_byteorder.lo db_cam.lo db_cds.lo db_compact.lo db_compint.lo db_conv.lo db_copy.lo db_dispatch.lo db_dup.lo db_err.lo db_getlong.lo db_idspace.lo db_iface.lo db_join.lo db_log2.lo db_meta.lo db_method.lo db_open.lo db_overflow.lo db_pr.lo db_rec.lo db_reclaim.lo db_remove.lo db_rename.lo db_ret.lo db_setid.lo db_setlsn.lo db_slice.lo db_shash.lo db_sort_multiple.lo db_stati.lo db_truncate.lo db_upg.lo db_upg_opd.lo dbreg.lo dbreg_stat.lo dbreg_auto.lo dbreg_rec.lo dbreg_util.lo dbt.lo env_alloc.lo env_config.lo env_backup.lo env_failchk.lo env_file.lo env_globals.lo env_open.lo env_method.lo env_name.lo env_recover.lo env_region.lo env_register.lo env_sig.lo env_slice.lo env_stat.lo fileops_auto.lo fop_basic.lo fop_rec.lo fop_util.lo hash_func.lo hmac.lo log.lo log_archive.lo log_compare.lo log_debug.lo log_get.lo log_method.lo log_print.lo log_put.lo log_stat.lo mkpath.lo mp_alloc.lo mp_backup.lo mp_bh.lo mp_fget.lo mp_fmethod.lo mp_fopen.lo mp_fput.lo mp_fset.lo mp_method.lo mp_mvcc.lo mp_region.lo mp_register.lo mp_resize.lo mp_stat.lo mp_sync.lo mp_trickle.lo openflags.lo os_abort.lo os_abs.lo os_alloc.lo os_clock.lo os_cpu.lo os_ctime.lo os_config.lo os_dir.lo os_errno.lo os_fid.lo os_flock.lo os_fsync.lo os_getenv.lo os_handle.lo os_map.lo os_method.lo os_mkdir.lo os_open.lo os_path.lo os_pid.lo os_rename.lo os_rmdir.lo os_root.lo os_rpath.lo os_rw.lo os_seek.lo os_stack.lo os_stat.lo os_tmpdir.lo os_truncate.lo os_uid.lo os_unlink.lo os_yield.lo partition.lo seq_stat.lo sequence.lo sha1.lo snprintf.lo txn.lo txn_auto.lo txn_chkpt.lo txn_failchk.lo txn_method.lo txn_rec.lo txn_recover.lo txn_region.lo txn_stat.lo txn_util.lo xa.lo xa_map.lo zerofill.lo   -lpthread
+libtool: link: x86_64-unknown-linux-gnu-g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-unknown-linux-gnu/14.1.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.1.0/crtbeginS.o  .libs/cxx_channel.o .libs/cxx_db.o .libs/cxx_dbc.o .libs/cxx_dbstream.o .libs/cxx_dbt.o .libs/cxx_env.o .libs/cxx_except.o .libs/cxx_lock.o .libs/cxx_logc.o .libs/cxx_mpool.o .libs/cxx_multi.o .libs/cxx_rid.o .libs/cxx_seq.o .libs/cxx_site.o .libs/cxx_txn.o .libs/db185.o .libs/mut_tas.o .libs/mut_pthread.o .libs/bt_compare.o .libs/bt_compress.o .libs/bt_conv.o .libs/bt_curadj.o .libs/bt_cursor.o .libs/bt_delete.o .libs/bt_method.o .libs/bt_open.o .libs/bt_put.o .libs/bt_rec.o .libs/bt_reclaim.o .libs/bt_recno.o .libs/bt_rsearch.o .libs/bt_search.o .libs/bt_split.o .libs/bt_stat.o .libs/bt_compact.o .libs/bt_upgrade.o .libs/btree_auto.o .libs/hash.o .libs/hash_auto.o .libs/hash_compact.o .libs/hash_conv.o .libs/hash_dup.o .libs/hash_meta.o .libs/hash_method.o .libs/hash_open.o .libs/hash_page.o .libs/hash_rec.o .libs/hash_reclaim.o .libs/hash_stat.o .libs/hash_upgrade.o .libs/hash_verify.o .libs/heap.o .libs/heap_auto.o .libs/heap_backup.o .libs/heap_conv.o .libs/heap_method.o .libs/heap_open.o .libs/heap_rec.o .libs/heap_reclaim.o .libs/heap_stat.o .libs/heap_upgrade.o .libs/heap_verify.o .libs/qam.o .libs/qam_auto.o .libs/qam_conv.o .libs/qam_files.o .libs/qam_method.o .libs/qam_open.o .libs/qam_rec.o .libs/qam_stat.o .libs/qam_upgrade.o .libs/qam_verify.o .libs/rep_automsg.o .libs/rep_backup.o .libs/rep_elect.o .libs/rep_lease.o .libs/rep_log.o .libs/rep_method.o .libs/rep_record.o .libs/rep_region.o .libs/rep_stat.o .libs/rep_util.o .libs/rep_verify.o .libs/os_addrinfo.o .libs/repmgr_auto.o .libs/repmgr_automsg.o .libs/repmgr_elect.o .libs/repmgr_method.o .libs/repmgr_msg.o .libs/repmgr_net.o .libs/repmgr_posix.o .libs/repmgr_queue.o .libs/repmgr_rec.o .libs/repmgr_sel.o .libs/repmgr_stat.o .libs/repmgr_util.o .libs/db_ovfl_vrfy.o .libs/db_vrfy.o .libs/db_vrfyutil.o .libs/bt_verify.o .libs/log_verify.o .libs/log_verify_util.o .libs/log_verify_int.o .libs/log_verify_auto.o .libs/lock.o .libs/lock_deadlock.o .libs/lock_failchk.o .libs/lock_id.o .libs/lock_list.o .libs/lock_method.o .libs/lock_region.o .libs/lock_stat.o .libs/lock_timer.o .libs/lock_util.o .libs/mut_alloc.o .libs/mut_failchk.o .libs/mut_method.o .libs/mut_region.o .libs/mut_stat.o .libs/dbm.o .libs/hsearch.o .libs/aes_method.o .libs/crypto.o .libs/mt19937db.o .libs/rijndael-alg-fst.o .libs/rijndael-api-fst.o .libs/blob_fileops.o .libs/blob_page.o .libs/blob_stream.o .libs/blob_util.o .libs/clock.o .libs/crdel_auto.o .libs/crdel_rec.o .libs/db.o .libs/db_am.o .libs/db_auto.o .libs/db_backup.o .libs/db_byteorder.o .libs/db_cam.o .libs/db_cds.o .libs/db_compact.o .libs/db_compint.o .libs/db_conv.o .libs/db_copy.o .libs/db_dispatch.o .libs/db_dup.o .libs/db_err.o .libs/db_getlong.o .libs/db_idspace.o .libs/db_iface.o .libs/db_join.o .libs/db_log2.o .libs/db_meta.o .libs/db_method.o .libs/db_open.o .libs/db_overflow.o .libs/db_pr.o .libs/db_rec.o .libs/db_reclaim.o .libs/db_remove.o .libs/db_rename.o .libs/db_ret.o .libs/db_setid.o .libs/db_setlsn.o .libs/db_slice.o .libs/db_shash.o .libs/db_sort_multiple.o .libs/db_stati.o .libs/db_truncate.o .libs/db_upg.o .libs/db_upg_opd.o .libs/dbreg.o .libs/dbreg_stat.o .libs/dbreg_auto.o .libs/dbreg_rec.o .libs/dbreg_util.o .libs/dbt.o .libs/env_alloc.o .libs/env_config.o .libs/env_backup.o .libs/env_failchk.o .libs/env_file.o .libs/env_globals.o .libs/env_open.o .libs/env_method.o .libs/env_name.o .libs/env_recover.o .libs/env_region.o .libs/env_register.o .libs/env_sig.o .libs/env_slice.o .libs/env_stat.o .libs/fileops_auto.o .libs/fop_basic.o .libs/fop_rec.o .libs/fop_util.o .libs/hash_func.o .libs/hmac.o .libs/log.o .libs/log_archive.o .libs/log_compare.o .libs/log_debug.o .libs/log_get.o .libs/log_method.o .libs/log_print.o .libs/log_put.o .libs/log_stat.o .libs/mkpath.o .libs/mp_alloc.o .libs/mp_backup.o .libs/mp_bh.o .libs/mp_fget.o .libs/mp_fmethod.o .libs/mp_fopen.o .libs/mp_fput.o .libs/mp_fset.o .libs/mp_method.o .libs/mp_mvcc.o .libs/mp_region.o .libs/mp_register.o .libs/mp_resize.o .libs/mp_stat.o .libs/mp_sync.o .libs/mp_trickle.o .libs/openflags.o .libs/os_abort.o .libs/os_abs.o .libs/os_alloc.o .libs/os_clock.o .libs/os_cpu.o .libs/os_ctime.o .libs/os_config.o .libs/os_dir.o .libs/os_errno.o .libs/os_fid.o .libs/os_flock.o .libs/os_fsync.o .libs/os_getenv.o .libs/os_handle.o .libs/os_map.o .libs/os_method.o .libs/os_mkdir.o .libs/os_open.o .libs/os_path.o .libs/os_pid.o .libs/os_rename.o .libs/os_rmdir.o .libs/os_root.o .libs/os_rpath.o .libs/os_rw.o .libs/os_seek.o .libs/os_stack.o .libs/os_stat.o .libs/os_tmpdir.o .libs/os_truncate.o .libs/os_uid.o .libs/os_unlink.o .libs/os_yield.o .libs/partition.o .libs/seq_stat.o .libs/sequence.o .libs/sha1.o .libs/snprintf.o .libs/txn.o .libs/txn_auto.o .libs/txn_chkpt.o .libs/txn_failchk.o .libs/txn_method.o .libs/txn_rec.o .libs/txn_recover.o .libs/txn_region.o .libs/txn_stat.o .libs/txn_util.o .libs/xa.o .libs/xa_map.o .libs/zerofill.o   -Wl,-rpath -Wl,/usr/lib/../lib -Wl,-rpath -Wl,/usr/lib/../lib -lpthread -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.1.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.1.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/14.1.0/../../.. /usr/lib/../lib/libstdc++.so -lm -lc -lgcc_s /usr/lib/gcc/x86_64-unknown-linux-gnu/14.1.0/crtendS.o /usr/lib/gcc/x86_64-unknown-linux-gnu/14.1.0/../../../../lib/crtn.o  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,libdb_cxx-6.2.so -o .libs/libdb_cxx-6.2.so
+libtool: link: ( cd ".libs" && rm -f "libdb-6.2.la" && ln -s "../libdb-6.2.la" "libdb-6.2.la" )
+rm -f libdb.a
+ln -s .libs/libdb-6.2.a libdb.a
+./libtool --mode=link x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o db_archive  \
+    db_archive.lo util_arg.lo util_cache.lo util_env.lo util_log.lo util_sig.lo util_ver_check.lo libdb-6.2.la -lpthread
+./libtool --mode=link x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o db_checkpoint  \
+    db_checkpoint.lo util_arg.lo util_cache.lo util_env.lo util_log.lo util_sig.lo util_ver_check.lo libdb-6.2.la -lpthread
+libtool: link: x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/db_archive .libs/db_archive.o .libs/util_arg.o .libs/util_cache.o .libs/util_env.o .libs/util_log.o .libs/util_sig.o .libs/util_ver_check.o  ./.libs/libdb-6.2.so -lpthread
+libtool: link: x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/db_checkpoint .libs/db_checkpoint.o .libs/util_arg.o .libs/util_cache.o .libs/util_env.o .libs/util_log.o .libs/util_sig.o .libs/util_ver_check.o  ./.libs/libdb-6.2.so -lpthread
+./libtool --mode=link x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o db_convert  \
+    db_convert.lo util_arg.lo util_cache.lo util_env.lo util_log.lo util_sig.lo util_ver_check.lo libdb-6.2.la -lpthread
+libtool: link: x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/db_convert .libs/db_convert.o .libs/util_arg.o .libs/util_cache.o .libs/util_env.o .libs/util_log.o .libs/util_sig.o .libs/util_ver_check.o  ./.libs/libdb-6.2.so -lpthread
+./libtool --mode=execute true db_archive
+./libtool --mode=execute true db_checkpoint
+./libtool --mode=link x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o db_deadlock  \
+    db_deadlock.lo util_arg.lo util_cache.lo util_env.lo util_log.lo util_sig.lo util_ver_check.lo libdb-6.2.la -lpthread
+libtool: link: x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/db_deadlock .libs/db_deadlock.o .libs/util_arg.o .libs/util_cache.o .libs/util_env.o .libs/util_log.o .libs/util_sig.o .libs/util_ver_check.o  ./.libs/libdb-6.2.so -lpthread
+./libtool --mode=execute true db_convert
+./libtool --mode=link x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o db_dump  \
+    db_dump.lo util_arg.lo util_cache.lo util_env.lo util_log.lo util_sig.lo util_ver_check.lo libdb-6.2.la -lpthread
+./libtool --mode=link x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o db_hotbackup  \
+    db_hotbackup.lo util_arg.lo util_cache.lo util_env.lo util_log.lo util_sig.lo util_ver_check.lo libdb-6.2.la -lpthread
+libtool: link: x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/db_dump .libs/db_dump.o .libs/util_arg.o .libs/util_cache.o .libs/util_env.o .libs/util_log.o .libs/util_sig.o .libs/util_ver_check.o  ./.libs/libdb-6.2.so -lpthread
+./libtool --mode=link x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o db_load  \
+    db_load.lo util_arg.lo util_cache.lo util_env.lo util_log.lo util_sig.lo util_ver_check.lo libdb-6.2.la -lpthread
+./libtool --mode=execute true db_deadlock
+libtool: link: x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/db_hotbackup .libs/db_hotbackup.o .libs/util_arg.o .libs/util_cache.o .libs/util_env.o .libs/util_log.o .libs/util_sig.o .libs/util_ver_check.o  ./.libs/libdb-6.2.so -lpthread
+libtool: link: x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/db_load .libs/db_load.o .libs/util_arg.o .libs/util_cache.o .libs/util_env.o .libs/util_log.o .libs/util_sig.o .libs/util_ver_check.o  ./.libs/libdb-6.2.so -lpthread
+./libtool --mode=link x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o db_log_verify  \
+    db_log_verify.lo util_arg.lo util_cache.lo util_env.lo util_log.lo util_sig.lo util_ver_check.lo libdb-6.2.la -lpthread
+./libtool --mode=link x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o db_printlog  \
+    db_printlog.lo btree_autop.lo crdel_autop.lo db_autop.lo dbreg_autop.lo fileops_autop.lo hash_autop.lo heap_autop.lo qam_autop.lo repmgr_autop.lo txn_autop.lo util_arg.lo util_cache.lo util_env.lo util_log.lo util_sig.lo util_ver_check.lo libdb-6.2.la \
+    -lpthread
+libtool: link: x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/db_log_verify .libs/db_log_verify.o .libs/util_arg.o .libs/util_cache.o .libs/util_env.o .libs/util_log.o .libs/util_sig.o .libs/util_ver_check.o  ./.libs/libdb-6.2.so -lpthread
+libtool: link: x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/db_printlog .libs/db_printlog.o .libs/btree_autop.o .libs/crdel_autop.o .libs/db_autop.o .libs/dbreg_autop.o .libs/fileops_autop.o .libs/hash_autop.o .libs/heap_autop.o .libs/qam_autop.o .libs/repmgr_autop.o .libs/txn_autop.o .libs/util_arg.o .libs/util_cache.o .libs/util_env.o .libs/util_log.o .libs/util_sig.o .libs/util_ver_check.o  ./.libs/libdb-6.2.so -lpthread
+./libtool --mode=link x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o db_recover  \
+    db_recover.lo util_arg.lo util_cache.lo util_env.lo util_log.lo util_sig.lo util_ver_check.lo libdb-6.2.la -lpthread
+./libtool --mode=execute true db_dump
+libtool: link: x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/db_recover .libs/db_recover.o .libs/util_arg.o .libs/util_cache.o .libs/util_env.o .libs/util_log.o .libs/util_sig.o .libs/util_ver_check.o  ./.libs/libdb-6.2.so -lpthread
+./libtool --mode=execute true db_hotbackup
+./libtool --mode=execute true db_log_verify
+./libtool --mode=execute true db_recover
+./libtool --mode=link x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o db_replicate  \
+    db_replicate.lo util_arg.lo util_cache.lo util_env.lo util_log.lo util_sig.lo util_ver_check.lo libdb-6.2.la -lpthread
+./libtool --mode=link x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o db_stat  \
+    db_stat.lo util_arg.lo util_cache.lo util_env.lo util_log.lo util_sig.lo util_ver_check.lo libdb-6.2.la -lpthread
+libtool: link: x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/db_replicate .libs/db_replicate.o .libs/util_arg.o .libs/util_cache.o .libs/util_env.o .libs/util_log.o .libs/util_sig.o .libs/util_ver_check.o  ./.libs/libdb-6.2.so -lpthread
+libtool: link: x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/db_stat .libs/db_stat.o .libs/util_arg.o .libs/util_cache.o .libs/util_env.o .libs/util_log.o .libs/util_sig.o .libs/util_ver_check.o  ./.libs/libdb-6.2.so -lpthread
+./libtool --mode=link x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o db_tuner  \
+    db_tuner.lo util_arg.lo util_cache.lo util_env.lo util_log.lo util_sig.lo util_ver_check.lo libdb-6.2.la -lpthread
+./libtool --mode=execute true db_printlog
+libtool: link: x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/db_tuner .libs/db_tuner.o .libs/util_arg.o .libs/util_cache.o .libs/util_env.o .libs/util_log.o .libs/util_sig.o .libs/util_ver_check.o  ./.libs/libdb-6.2.so -lpthread
+./libtool --mode=execute true db_replicate
+./libtool --mode=execute true db_stat
+./libtool --mode=execute true db_load
+./libtool --mode=link x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o db_upgrade  \
+    db_upgrade.lo util_arg.lo util_cache.lo util_env.lo util_log.lo util_sig.lo util_ver_check.lo libdb-6.2.la -lpthread
+libtool: link: x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/db_upgrade .libs/db_upgrade.o .libs/util_arg.o .libs/util_cache.o .libs/util_env.o .libs/util_log.o .libs/util_sig.o .libs/util_ver_check.o  ./.libs/libdb-6.2.so -lpthread
+./libtool --mode=link x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o db_verify  \
+    db_verify.lo util_arg.lo util_cache.lo util_env.lo util_log.lo util_sig.lo util_ver_check.lo libdb-6.2.la -lpthread
+libtool: link: x86_64-unknown-linux-gnu-cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/db_verify .libs/db_verify.o .libs/util_arg.o .libs/util_cache.o .libs/util_env.o .libs/util_log.o .libs/util_sig.o .libs/util_ver_check.o  ./.libs/libdb-6.2.so -lpthread
+./libtool --mode=execute true db_tuner
+./libtool --mode=execute true db_upgrade
+./libtool --mode=execute true db_verify
+libtool: link: ( cd ".libs" && rm -f "libdb_cxx-6.2.la" && ln -s "../libdb_cxx-6.2.la" "libdb_cxx-6.2.la" )
+rm -f libdb_cxx.a
+ln -s .libs/libdb_cxx-6.2.a libdb_cxx.a
++ make DESTDIR=/home/devel/building/work/pkg install
+Installing DB include files: /home/devel/building/work/pkg/usr/include ...
+Installing DB library: /home/devel/building/work/pkg/usr/lib ...
+Installing DB utilities: /home/devel/building/work/pkg/usr/bin ...
+Installing documentation: /home/devel/building/work/pkg/usr/docs ...
+libtool: install: cp -p .libs/libdb-6.2.so /home/devel/building/work/pkg/usr/lib/libdb-6.2.so
+libtool: install: cp -p .libs/libdb-6.2.lai /home/devel/building/work/pkg/usr/lib/libdb-6.2.la
+libtool: install: cp -p .libs/libdb_cxx-6.2.so /home/devel/building/work/pkg/usr/lib/libdb_cxx-6.2.so
+libtool: install: cp -p .libs/libdb_cxx-6.2.lai /home/devel/building/work/pkg/usr/lib/libdb_cxx-6.2.la
+libtool: install: warning: remember to run `libtool --finish /usr/lib'
+libtool: install: warning: `libdb-6.2.la' has not been installed in `/usr/lib'
+libtool: install: cp -p .libs/db_archive /home/devel/building/work/pkg/usr/bin/db_archive
+libtool: install: warning: `libdb-6.2.la' has not been installed in `/usr/lib'
+libtool: install: cp -p .libs/db_checkpoint /home/devel/building/work/pkg/usr/bin/db_checkpoint
+libtool: install: warning: `libdb-6.2.la' has not been installed in `/usr/lib'
+libtool: install: cp -p .libs/db_convert /home/devel/building/work/pkg/usr/bin/db_convert
+libtool: install: warning: `libdb-6.2.la' has not been installed in `/usr/lib'
+libtool: install: cp -p .libs/db_deadlock /home/devel/building/work/pkg/usr/bin/db_deadlock
+libtool: install: warning: `libdb-6.2.la' has not been installed in `/usr/lib'
+libtool: install: cp -p .libs/db_dump /home/devel/building/work/pkg/usr/bin/db_dump
+libtool: install: warning: `libdb-6.2.la' has not been installed in `/usr/lib'
+libtool: install: cp -p .libs/db_hotbackup /home/devel/building/work/pkg/usr/bin/db_hotbackup
+libtool: install: warning: `libdb-6.2.la' has not been installed in `/usr/lib'
+libtool: install: cp -p .libs/db_load /home/devel/building/work/pkg/usr/bin/db_load
+libtool: install: warning: `libdb-6.2.la' has not been installed in `/usr/lib'
+libtool: install: cp -p .libs/db_log_verify /home/devel/building/work/pkg/usr/bin/db_log_verify
+libtool: install: warning: `libdb-6.2.la' has not been installed in `/usr/lib'
+libtool: install: cp -p .libs/db_printlog /home/devel/building/work/pkg/usr/bin/db_printlog
+libtool: install: warning: `libdb-6.2.la' has not been installed in `/usr/lib'
+libtool: install: cp -p .libs/db_recover /home/devel/building/work/pkg/usr/bin/db_recover
+libtool: install: warning: `libdb-6.2.la' has not been installed in `/usr/lib'
+libtool: install: cp -p .libs/db_replicate /home/devel/building/work/pkg/usr/bin/db_replicate
+libtool: install: warning: `libdb-6.2.la' has not been installed in `/usr/lib'
+libtool: install: cp -p .libs/db_stat /home/devel/building/work/pkg/usr/bin/db_stat
+libtool: install: warning: `libdb-6.2.la' has not been installed in `/usr/lib'
+libtool: install: cp -p .libs/db_tuner /home/devel/building/work/pkg/usr/bin/db_tuner
+libtool: install: warning: `libdb-6.2.la' has not been installed in `/usr/lib'
+libtool: install: cp -p .libs/db_upgrade /home/devel/building/work/pkg/usr/bin/db_upgrade
+libtool: install: warning: `libdb-6.2.la' has not been installed in `/usr/lib'
+libtool: install: cp -p .libs/db_verify /home/devel/building/work/pkg/usr/bin/db_verify
++ chmod -R +w /home/devel/building/work/pkg
++ rm -r /home/devel/building/work/pkg/usr/docs
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 20:42 usr/
+drwxr-xr-x  0 root   root        0 May  7 20:42 usr/include/
+drwxr-xr-x  0 root   root        0 May  7 20:42 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 20:42 usr/bin/
+-rwxr-xr-x  0 root   root    14520 May  7 20:42 usr/bin/db_archive
+-rwxr-xr-x  0 root   root    14584 May  7 20:42 usr/bin/db_checkpoint
+-rwxr-xr-x  0 root   root    14544 May  7 20:42 usr/bin/db_convert
+-rwxr-xr-x  0 root   root    14592 May  7 20:42 usr/bin/db_deadlock
+-rwxr-xr-x  0 root   root    18672 May  7 20:42 usr/bin/db_dump
+-rwxr-xr-x  0 root   root    18712 May  7 20:42 usr/bin/db_hotbackup
+-rwxr-xr-x  0 root   root    26920 May  7 20:42 usr/bin/db_load
+-rwxr-xr-x  0 root   root    14576 May  7 20:42 usr/bin/db_log_verify
+-rwxr-xr-x  0 root   root    35104 May  7 20:42 usr/bin/db_printlog
+-rwxr-xr-x  0 root   root    14576 May  7 20:42 usr/bin/db_recover
+-rwxr-xr-x  0 root   root    14600 May  7 20:42 usr/bin/db_replicate
+-rwxr-xr-x  0 root   root    14528 May  7 20:42 usr/bin/db_stat
+-rwxr-xr-x  0 root   root    22704 May  7 20:42 usr/bin/db_tuner
+-rwxr-xr-x  0 root   root    14536 May  7 20:42 usr/bin/db_upgrade
+-rwxr-xr-x  0 root   root    14536 May  7 20:42 usr/bin/db_verify
+-rwxr-xr-x  0 root   root  2008784 May  7 20:42 usr/lib/libdb-6.2.so
+-rwxr-xr-x  0 root   root  2181536 May  7 20:42 usr/lib/libdb_cxx-6.2.so
+lrwxrwxrwx  0 root   root        0 May  7 20:42 usr/lib/libdb.so -> libdb-6.2.so
+lrwxrwxrwx  0 root   root        0 May  7 20:42 usr/lib/libdb-6.so -> libdb-6.2.so
+lrwxrwxrwx  0 root   root        0 May  7 20:42 usr/lib/libdb_cxx.so -> libdb_cxx-6.2.so
+lrwxrwxrwx  0 root   root        0 May  7 20:42 usr/lib/libdb_cxx-6.so -> libdb_cxx-6.2.so
+-rw-r--r--  0 root   root   133695 May  7 20:42 usr/include/db.h
+-rw-r--r--  0 root   root    52609 May  7 20:42 usr/include/db_cxx.h
+-rw-r--r--  0 root   root     5983 May  7 20:42 usr/include/db_185.h
+=======> Building '/home/devel/packages/db#6.2.32-2.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling db 6.2.32-2
+prt-get: /usr/bin/pkgadd -u db#6.2.32-2.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 20:42:33 2024
+

@@ -1,0 +1,502 @@
+prt-get: updating /usr/ports/opt-x86_64/libexif
+prt-get: starting build Tue May  7 23:27:02 2024
+=======> Building '/home/devel/packages/libexif#0.6.24-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/libexif-0.6.24.tar.bz2
++ build
++ cd libexif-0.6.24
++ ./configure --prefix=/usr --disable-static --disable-nls
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether make supports nested variables... (cached) yes
+checking for POSIX sh $() command substitution... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for inline... inline
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for diff... /usr/bin/diff
+checking whether diff supports -u... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for uint8_t in stdint.h... yes
+checking for math functions in libm... yes
+checking for /usr/lib/gcc/x86_64-unknown-linux-gnu/14.1.0/libfailmalloc.so.0... no
+checking for /usr/lib/libfailmalloc.so.0... no
+checking for /lib/libfailmalloc.so.0... no
+checking for failmalloc... no
+checking whether to build any docs... yes
+checking main docdir... ${datadir}/doc (default value)
+checking package docdir... ${datadir}/doc/libexif (default style)
+checking for dot... false
+checking for doxygen... false
+checking whether to create internal code docs... no
+checking whether NLS is requested... no
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for po/Makevars requiring hack... no
+checking for ld used by gcc... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking whether to use NLS... no
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for localtime_s... no
+checking for localtime_r... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating po/Makefile.in
+config.status: creating Makefile
+config.status: creating libexif.spec
+config.status: creating libexif/Makefile
+config.status: creating test/Makefile
+config.status: creating test/nls/Makefile
+config.status: creating m4m/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/Doxyfile
+config.status: creating doc/Doxyfile-internals
+config.status: creating libexif.pc
+config.status: creating libexif-uninstalled.pc
+config.status: creating binary-dist/Makefile
+config.status: creating contrib/Makefile
+config.status: creating contrib/examples/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+
+Configuration (libexif 0.6.24):
+
+  Build
+    Source code location:          .
+    Compiler:                      gcc
+    Ship binaries in tarball:      false
+    Use translations:              no
+
+You may run "make" and "make install" now.
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/libexif-0.6.24'
+Making all in m4m
+make[2]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/m4m'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/m4m'
+Making all in po
+make[2]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/po'
+Making all in libexif
+make[2]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/libexif'
+depbase=`echo exif-byte-order.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-byte-order.lo -MD -MP -MF $depbase.Tpo -c -o exif-byte-order.lo exif-byte-order.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo exif-content.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-content.lo -MD -MP -MF $depbase.Tpo -c -o exif-content.lo exif-content.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo exif-data.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-data.lo -MD -MP -MF $depbase.Tpo -c -o exif-data.lo exif-data.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo exif-entry.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-entry.lo -MD -MP -MF $depbase.Tpo -c -o exif-entry.lo exif-entry.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo exif-format.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-format.lo -MD -MP -MF $depbase.Tpo -c -o exif-format.lo exif-format.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo exif-ifd.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-ifd.lo -MD -MP -MF $depbase.Tpo -c -o exif-ifd.lo exif-ifd.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo exif-loader.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-loader.lo -MD -MP -MF $depbase.Tpo -c -o exif-loader.lo exif-loader.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo exif-log.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-log.lo -MD -MP -MF $depbase.Tpo -c -o exif-log.lo exif-log.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-byte-order.lo -MD -MP -MF .deps/exif-byte-order.Tpo -c exif-byte-order.c  -fPIC -DPIC -o .libs/exif-byte-order.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-content.lo -MD -MP -MF .deps/exif-content.Tpo -c exif-content.c  -fPIC -DPIC -o .libs/exif-content.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-ifd.lo -MD -MP -MF .deps/exif-ifd.Tpo -c exif-ifd.c  -fPIC -DPIC -o .libs/exif-ifd.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-format.lo -MD -MP -MF .deps/exif-format.Tpo -c exif-format.c  -fPIC -DPIC -o .libs/exif-format.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-data.lo -MD -MP -MF .deps/exif-data.Tpo -c exif-data.c  -fPIC -DPIC -o .libs/exif-data.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-log.lo -MD -MP -MF .deps/exif-log.Tpo -c exif-log.c  -fPIC -DPIC -o .libs/exif-log.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-loader.lo -MD -MP -MF .deps/exif-loader.Tpo -c exif-loader.c  -fPIC -DPIC -o .libs/exif-loader.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-entry.lo -MD -MP -MF .deps/exif-entry.Tpo -c exif-entry.c  -fPIC -DPIC -o .libs/exif-entry.o
+depbase=`echo exif-mem.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-mem.lo -MD -MP -MF $depbase.Tpo -c -o exif-mem.lo exif-mem.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo exif-mnote-data.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-mnote-data.lo -MD -MP -MF $depbase.Tpo -c -o exif-mnote-data.lo exif-mnote-data.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo exif-tag.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-tag.lo -MD -MP -MF $depbase.Tpo -c -o exif-tag.lo exif-tag.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo exif-utils.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-utils.lo -MD -MP -MF $depbase.Tpo -c -o exif-utils.lo exif-utils.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+exif-entry.c: In function 'exif_entry_get_value':
+exif-entry.c:1235:9: warning: case value '0' not in enumerated type 'ExifTag' [-Wswitch]
+ 1235 |         case EXIF_TAG_GPS_VERSION_ID:
+      |         ^~~~
+exif-entry.c:1259:9: warning: case value '5' not in enumerated type 'ExifTag' [-Wswitch]
+ 1259 |         case EXIF_TAG_GPS_ALTITUDE_REF:
+      |         ^~~~
+exif-entry.c:1272:9: warning: case value '7' not in enumerated type 'ExifTag' [-Wswitch]
+ 1272 |         case EXIF_TAG_GPS_TIME_STAMP:
+      |         ^~~~
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-mem.lo -MD -MP -MF .deps/exif-mem.Tpo -c exif-mem.c  -fPIC -DPIC -o .libs/exif-mem.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-mnote-data.lo -MD -MP -MF .deps/exif-mnote-data.Tpo -c exif-mnote-data.c  -fPIC -DPIC -o .libs/exif-mnote-data.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-tag.lo -MD -MP -MF .deps/exif-tag.Tpo -c exif-tag.c  -fPIC -DPIC -o .libs/exif-tag.o
+depbase=`echo exif-gps-ifd.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-gps-ifd.lo -MD -MP -MF $depbase.Tpo -c -o exif-gps-ifd.lo exif-gps-ifd.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-utils.lo -MD -MP -MF .deps/exif-utils.Tpo -c exif-utils.c  -fPIC -DPIC -o .libs/exif-utils.o
+depbase=`echo apple/mnote-apple-entry.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT apple/mnote-apple-entry.lo -MD -MP -MF $depbase.Tpo -c -o apple/mnote-apple-entry.lo apple/mnote-apple-entry.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo apple/exif-mnote-data-apple.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT apple/exif-mnote-data-apple.lo -MD -MP -MF $depbase.Tpo -c -o apple/exif-mnote-data-apple.lo apple/exif-mnote-data-apple.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo apple/mnote-apple-tag.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT apple/mnote-apple-tag.lo -MD -MP -MF $depbase.Tpo -c -o apple/mnote-apple-tag.lo apple/mnote-apple-tag.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exif-gps-ifd.lo -MD -MP -MF .deps/exif-gps-ifd.Tpo -c exif-gps-ifd.c  -fPIC -DPIC -o .libs/exif-gps-ifd.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT apple/exif-mnote-data-apple.lo -MD -MP -MF apple/.deps/exif-mnote-data-apple.Tpo -c apple/exif-mnote-data-apple.c  -fPIC -DPIC -o apple/.libs/exif-mnote-data-apple.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT apple/mnote-apple-tag.lo -MD -MP -MF apple/.deps/mnote-apple-tag.Tpo -c apple/mnote-apple-tag.c  -fPIC -DPIC -o apple/.libs/mnote-apple-tag.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT apple/mnote-apple-entry.lo -MD -MP -MF apple/.deps/mnote-apple-entry.Tpo -c apple/mnote-apple-entry.c  -fPIC -DPIC -o apple/.libs/mnote-apple-entry.o
+depbase=`echo canon/exif-mnote-data-canon.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT canon/exif-mnote-data-canon.lo -MD -MP -MF $depbase.Tpo -c -o canon/exif-mnote-data-canon.lo canon/exif-mnote-data-canon.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo canon/mnote-canon-entry.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT canon/mnote-canon-entry.lo -MD -MP -MF $depbase.Tpo -c -o canon/mnote-canon-entry.lo canon/mnote-canon-entry.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo canon/mnote-canon-tag.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT canon/mnote-canon-tag.lo -MD -MP -MF $depbase.Tpo -c -o canon/mnote-canon-tag.lo canon/mnote-canon-tag.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo fuji/mnote-fuji-entry.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fuji/mnote-fuji-entry.lo -MD -MP -MF $depbase.Tpo -c -o fuji/mnote-fuji-entry.lo fuji/mnote-fuji-entry.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo fuji/exif-mnote-data-fuji.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fuji/exif-mnote-data-fuji.lo -MD -MP -MF $depbase.Tpo -c -o fuji/exif-mnote-data-fuji.lo fuji/exif-mnote-data-fuji.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT canon/exif-mnote-data-canon.lo -MD -MP -MF canon/.deps/exif-mnote-data-canon.Tpo -c canon/exif-mnote-data-canon.c  -fPIC -DPIC -o canon/.libs/exif-mnote-data-canon.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT canon/mnote-canon-tag.lo -MD -MP -MF canon/.deps/mnote-canon-tag.Tpo -c canon/mnote-canon-tag.c  -fPIC -DPIC -o canon/.libs/mnote-canon-tag.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fuji/mnote-fuji-entry.lo -MD -MP -MF fuji/.deps/mnote-fuji-entry.Tpo -c fuji/mnote-fuji-entry.c  -fPIC -DPIC -o fuji/.libs/mnote-fuji-entry.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT canon/mnote-canon-entry.lo -MD -MP -MF canon/.deps/mnote-canon-entry.Tpo -c canon/mnote-canon-entry.c  -fPIC -DPIC -o canon/.libs/mnote-canon-entry.o
+depbase=`echo fuji/mnote-fuji-tag.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fuji/mnote-fuji-tag.lo -MD -MP -MF $depbase.Tpo -c -o fuji/mnote-fuji-tag.lo fuji/mnote-fuji-tag.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+canon/exif-mnote-data-canon.c: In function 'exif_mnote_data_canon_get_name':
+canon/exif-mnote-data-canon.c:365:16: warning: 's' may be used uninitialized [-Wmaybe-uninitialized]
+  365 |         return mnote_canon_tag_get_name_sub (dc->entries[m].tag, s, dc->options);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+canon/exif-mnote-data-canon.c:360:25: note: 's' was declared here
+  360 |         unsigned int m, s;
+      |                         ^
+depbase=`echo olympus/mnote-olympus-entry.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT olympus/mnote-olympus-entry.lo -MD -MP -MF $depbase.Tpo -c -o olympus/mnote-olympus-entry.lo olympus/mnote-olympus-entry.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo olympus/exif-mnote-data-olympus.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT olympus/exif-mnote-data-olympus.lo -MD -MP -MF $depbase.Tpo -c -o olympus/exif-mnote-data-olympus.lo olympus/exif-mnote-data-olympus.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fuji/mnote-fuji-tag.lo -MD -MP -MF fuji/.deps/mnote-fuji-tag.Tpo -c fuji/mnote-fuji-tag.c  -fPIC -DPIC -o fuji/.libs/mnote-fuji-tag.o
+depbase=`echo olympus/mnote-olympus-tag.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT olympus/mnote-olympus-tag.lo -MD -MP -MF $depbase.Tpo -c -o olympus/mnote-olympus-tag.lo olympus/mnote-olympus-tag.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fuji/exif-mnote-data-fuji.lo -MD -MP -MF fuji/.deps/exif-mnote-data-fuji.Tpo -c fuji/exif-mnote-data-fuji.c  -fPIC -DPIC -o fuji/.libs/exif-mnote-data-fuji.o
+depbase=`echo pentax/mnote-pentax-entry.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT pentax/mnote-pentax-entry.lo -MD -MP -MF $depbase.Tpo -c -o pentax/mnote-pentax-entry.lo pentax/mnote-pentax-entry.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT olympus/mnote-olympus-entry.lo -MD -MP -MF olympus/.deps/mnote-olympus-entry.Tpo -c olympus/mnote-olympus-entry.c  -fPIC -DPIC -o olympus/.libs/mnote-olympus-entry.o
+canon/exif-mnote-data-canon.c: In function 'exif_mnote_data_canon_get_value':
+canon/exif-mnote-data-canon.c:92:16: warning: 's' may be used uninitialized [-Wmaybe-uninitialized]
+   92 |         return mnote_canon_entry_get_value (&dc->entries[m], s, val, maxlen);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+canon/exif-mnote-data-canon.c:87:25: note: 's' was declared here
+   87 |         unsigned int m, s;
+      |                         ^
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT olympus/mnote-olympus-tag.lo -MD -MP -MF olympus/.deps/mnote-olympus-tag.Tpo -c olympus/mnote-olympus-tag.c  -fPIC -DPIC -o olympus/.libs/mnote-olympus-tag.o
+canon/exif-mnote-data-canon.c: In function 'exif_mnote_data_canon_get_title':
+canon/exif-mnote-data-canon.c:377:16: warning: 's' may be used uninitialized [-Wmaybe-uninitialized]
+  377 |         return mnote_canon_tag_get_title_sub (dc->entries[m].tag, s, dc->options);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+canon/exif-mnote-data-canon.c:372:25: note: 's' was declared here
+  372 |         unsigned int m, s;
+      |                         ^
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT olympus/exif-mnote-data-olympus.lo -MD -MP -MF olympus/.deps/exif-mnote-data-olympus.Tpo -c olympus/exif-mnote-data-olympus.c  -fPIC -DPIC -o olympus/.libs/exif-mnote-data-olympus.o
+depbase=`echo pentax/exif-mnote-data-pentax.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT pentax/exif-mnote-data-pentax.lo -MD -MP -MF $depbase.Tpo -c -o pentax/exif-mnote-data-pentax.lo pentax/exif-mnote-data-pentax.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo pentax/mnote-pentax-tag.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT pentax/mnote-pentax-tag.lo -MD -MP -MF $depbase.Tpo -c -o pentax/mnote-pentax-tag.lo pentax/mnote-pentax-tag.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -g -Wall  -o libmnote-apple.la  apple/mnote-apple-entry.lo apple/exif-mnote-data-apple.lo apple/mnote-apple-tag.lo  -lm
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -g -Wall  -o libmnote-canon.la  canon/exif-mnote-data-canon.lo canon/mnote-canon-entry.lo canon/mnote-canon-tag.lo  -lm
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT pentax/mnote-pentax-entry.lo -MD -MP -MF pentax/.deps/mnote-pentax-entry.Tpo -c pentax/mnote-pentax-entry.c  -fPIC -DPIC -o pentax/.libs/mnote-pentax-entry.o
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -g -Wall  -o libmnote-fuji.la  fuji/mnote-fuji-entry.lo fuji/exif-mnote-data-fuji.lo fuji/mnote-fuji-tag.lo  -lm
+libtool: link: ar cru .libs/libmnote-apple.a apple/.libs/mnote-apple-entry.o apple/.libs/exif-mnote-data-apple.o apple/.libs/mnote-apple-tag.o 
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: ar cru .libs/libmnote-canon.a canon/.libs/exif-mnote-data-canon.o canon/.libs/mnote-canon-entry.o canon/.libs/mnote-canon-tag.o 
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: ranlib .libs/libmnote-apple.a
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT pentax/mnote-pentax-tag.lo -MD -MP -MF pentax/.deps/mnote-pentax-tag.Tpo -c pentax/mnote-pentax-tag.c  -fPIC -DPIC -o pentax/.libs/mnote-pentax-tag.o
+libtool: link: ranlib .libs/libmnote-canon.a
+libtool: link: ( cd ".libs" && rm -f "libmnote-apple.la" && ln -s "../libmnote-apple.la" "libmnote-apple.la" )
+libtool: link: ( cd ".libs" && rm -f "libmnote-canon.la" && ln -s "../libmnote-canon.la" "libmnote-canon.la" )
+libtool: link: ar cru .libs/libmnote-fuji.a fuji/.libs/mnote-fuji-entry.o fuji/.libs/exif-mnote-data-fuji.o fuji/.libs/mnote-fuji-tag.o 
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -DGETTEXT_PACKAGE=\"libexif-12\" -DLOCALEDIR=\"/usr/share/locale\" -I.. -I.. -g -Wall -Wmissing-declarations -Wmissing-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT pentax/exif-mnote-data-pentax.lo -MD -MP -MF pentax/.deps/exif-mnote-data-pentax.Tpo -c pentax/exif-mnote-data-pentax.c  -fPIC -DPIC -o pentax/.libs/exif-mnote-data-pentax.o
+libtool: link: ranlib .libs/libmnote-fuji.a
+libtool: link: ( cd ".libs" && rm -f "libmnote-fuji.la" && ln -s "../libmnote-fuji.la" "libmnote-fuji.la" )
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -g -Wall  -o libmnote-olympus.la  olympus/mnote-olympus-entry.lo olympus/exif-mnote-data-olympus.lo olympus/mnote-olympus-tag.lo  -lm
+libtool: link: ar cru .libs/libmnote-olympus.a olympus/.libs/mnote-olympus-entry.o olympus/.libs/exif-mnote-data-olympus.o olympus/.libs/mnote-olympus-tag.o 
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: ranlib .libs/libmnote-olympus.a
+libtool: link: ( cd ".libs" && rm -f "libmnote-olympus.la" && ln -s "../libmnote-olympus.la" "libmnote-olympus.la" )
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -g -Wall  -o libmnote-pentax.la  pentax/mnote-pentax-entry.lo pentax/exif-mnote-data-pentax.lo pentax/mnote-pentax-tag.lo  -lm
+libtool: link: ar cru .libs/libmnote-pentax.a pentax/.libs/mnote-pentax-entry.o pentax/.libs/exif-mnote-data-pentax.o pentax/.libs/mnote-pentax-tag.o 
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: ranlib .libs/libmnote-pentax.a
+libtool: link: ( cd ".libs" && rm -f "libmnote-pentax.la" && ln -s "../libmnote-pentax.la" "libmnote-pentax.la" )
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -export-symbols ./libexif.sym -no-undefined -version-info 15:4:3  -o libexif.la -rpath /usr/lib exif-byte-order.lo exif-content.lo exif-data.lo exif-entry.lo exif-format.lo exif-ifd.lo exif-loader.lo exif-log.lo exif-mem.lo exif-mnote-data.lo exif-tag.lo exif-utils.lo exif-gps-ifd.lo  libmnote-apple.la libmnote-canon.la libmnote-fuji.la libmnote-olympus.la libmnote-pentax.la -lm
+libtool: link: echo "{ global:" > .libs/libexif.ver
+libtool: link:  cat ./libexif.sym | sed -e "s/\(.*\)/\1;/" >> .libs/libexif.ver
+libtool: link:  echo "local: *; };" >> .libs/libexif.ver
+libtool: link:  gcc -shared  -fPIC -DPIC  .libs/exif-byte-order.o .libs/exif-content.o .libs/exif-data.o .libs/exif-entry.o .libs/exif-format.o .libs/exif-ifd.o .libs/exif-loader.o .libs/exif-log.o .libs/exif-mem.o .libs/exif-mnote-data.o .libs/exif-tag.o .libs/exif-utils.o .libs/exif-gps-ifd.o  -Wl,--whole-archive ./.libs/libmnote-apple.a ./.libs/libmnote-canon.a ./.libs/libmnote-fuji.a ./.libs/libmnote-olympus.a ./.libs/libmnote-pentax.a -Wl,--no-whole-archive  -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,libexif.so.12 -Wl,-version-script -Wl,.libs/libexif.ver -o .libs/libexif.so.12.3.4
+libtool: link: (cd ".libs" && rm -f "libexif.so.12" && ln -s "libexif.so.12.3.4" "libexif.so.12")
+libtool: link: (cd ".libs" && rm -f "libexif.so" && ln -s "libexif.so.12.3.4" "libexif.so")
+libtool: link: ( cd ".libs" && rm -f "libexif.la" && ln -s "../libexif.la" "libexif.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/libexif'
+Making all in test
+make[2]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/test'
+Making all in nls
+make[3]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/test/nls'
+Makefile:1038: warning: ignoring prerequisites on suffix rule definition
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/test/nls'
+make[3]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/test'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/test'
+make[2]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/test'
+Making all in doc
+make[2]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/doc'
+Making all in binary-dist
+make[2]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/binary-dist'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/binary-dist'
+Making all in contrib
+make[2]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/contrib'
+Making all in examples
+make[3]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/contrib/examples'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/contrib/examples'
+make[3]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/contrib'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/contrib'
+make[2]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/contrib'
+make[2]: Entering directory '/home/devel/building/work/src/libexif-0.6.24'
+make[2]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24'
+make[1]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in m4m
+make[1]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/m4m'
+make[2]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/m4m'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/m4m'
+make[1]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/m4m'
+Making install in po
+make[1]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/po'
+if test "libexif" = "gettext-tools"; then \
+  /bin/mkdir -p /home/devel/building/work/pkg/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /home/devel/building/work/pkg/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/devel/building/work/pkg/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/po'
+Making install in libexif
+make[1]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/libexif'
+make[2]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/libexif'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/libexif'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libexif.la '/home/devel/building/work/pkg/usr/lib'
+ /usr/bin/install -c -m 644 exif-byte-order.h exif-content.h exif-data.h exif-data-type.h exif-entry.h exif-format.h exif-ifd.h exif-loader.h exif-log.h exif-mem.h exif-mnote-data.h exif-tag.h exif-utils.h _stdint.h '/home/devel/building/work/pkg/usr/include/libexif'
+libtool: install: /usr/bin/install -c .libs/libexif.so.12.3.4 /home/devel/building/work/pkg/usr/lib/libexif.so.12.3.4
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libexif.so.12.3.4 libexif.so.12 || { rm -f libexif.so.12 && ln -s libexif.so.12.3.4 libexif.so.12; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libexif.so.12.3.4 libexif.so || { rm -f libexif.so && ln -s libexif.so.12.3.4 libexif.so; }; })
+libtool: install: /usr/bin/install -c .libs/libexif.lai /home/devel/building/work/pkg/usr/lib/libexif.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make[2]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/libexif'
+make[1]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/libexif'
+Making install in test
+make[1]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/test'
+Making install in nls
+make[2]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/test/nls'
+Makefile:1038: warning: ignoring prerequisites on suffix rule definition
+make[3]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/test/nls'
+Makefile:1038: warning: ignoring prerequisites on suffix rule definition
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/test/nls'
+make[2]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/test/nls'
+make[2]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/test'
+make[3]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/test'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/test'
+make[2]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/test'
+make[1]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/test'
+Making install in doc
+make[1]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/doc'
+make[2]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/doc'
+make[1]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/doc'
+Making install in binary-dist
+make[1]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/binary-dist'
+make[2]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/binary-dist'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/binary-dist'
+make[1]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/binary-dist'
+Making install in contrib
+make[1]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/contrib'
+Making install in examples
+make[2]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/contrib/examples'
+make[3]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/contrib/examples'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/contrib/examples'
+make[2]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/contrib/examples'
+make[2]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/contrib'
+make[3]: Entering directory '/home/devel/building/work/src/libexif-0.6.24/contrib'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/contrib'
+make[2]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/contrib'
+make[1]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24/contrib'
+make[1]: Entering directory '/home/devel/building/work/src/libexif-0.6.24'
+make[2]: Entering directory '/home/devel/building/work/src/libexif-0.6.24'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/libexif'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 README AUTHORS NEWS ChangeLog ABOUT-NLS COPYING SECURITY.md '/home/devel/building/work/pkg/usr/share/doc/libexif'
+ /usr/bin/install -c -m 644 libexif.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+make[2]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24'
+make[1]: Leaving directory '/home/devel/building/work/src/libexif-0.6.24'
++ rm -r /home/devel/building/work/pkg/usr/share/doc
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 23:27 usr/
+drwxr-xr-x  0 root   root        0 May  7 23:27 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 23:27 usr/include/
+drwxr-xr-x  0 root   root        0 May  7 23:27 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 23:27 usr/include/libexif/
+-rw-r--r--  0 root   root     1563 May  7 23:27 usr/include/libexif/exif-byte-order.h
+-rw-r--r--  0 root   root     5598 May  7 23:27 usr/include/libexif/exif-content.h
+-rw-r--r--  0 root   root     8948 May  7 23:27 usr/include/libexif/exif-data.h
+-rw-r--r--  0 root   root     1461 May  7 23:27 usr/include/libexif/exif-data-type.h
+-rw-r--r--  0 root   root     6316 May  7 23:27 usr/include/libexif/exif-entry.h
+-rw-r--r--  0 root   root     1981 May  7 23:27 usr/include/libexif/exif-format.h
+-rw-r--r--  0 root   root     1675 May  7 23:27 usr/include/libexif/exif-ifd.h
+-rw-r--r--  0 root   root     4301 May  7 23:27 usr/include/libexif/exif-loader.h
+-rw-r--r--  0 root   root     3452 May  7 23:27 usr/include/libexif/exif-log.h
+-rw-r--r--  0 root   root     2654 May  7 23:27 usr/include/libexif/exif-mem.h
+-rw-r--r--  0 root   root     4333 May  7 23:27 usr/include/libexif/exif-mnote-data.h
+-rw-r--r--  0 root   root    11334 May  7 23:27 usr/include/libexif/exif-tag.h
+-rw-r--r--  0 root   root     5951 May  7 23:27 usr/include/libexif/exif-utils.h
+-rw-r--r--  0 root   root       76 May  7 23:27 usr/include/libexif/_stdint.h
+-rwxr-xr-x  0 root   root   310272 May  7 23:27 usr/lib/libexif.so.12.3.4
+lrwxrwxrwx  0 root   root        0 May  7 23:27 usr/lib/libexif.so.12 -> libexif.so.12.3.4
+lrwxrwxrwx  0 root   root        0 May  7 23:27 usr/lib/libexif.so -> libexif.so.12.3.4
+drwxr-xr-x  0 root   root        0 May  7 23:27 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      247 May  7 23:27 usr/lib/pkgconfig/libexif.pc
+=======> Building '/home/devel/packages/libexif#0.6.24-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling libexif 0.6.24-1
+prt-get: /usr/bin/pkgadd -u libexif#0.6.24-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 23:27:08 2024
+

@@ -1,0 +1,1539 @@
+prt-get: updating /usr/ports/core-x86_64/bash
+prt-get: starting build Tue May  7 20:23:46 2024
+=======> Building '/home/devel/packages/bash#5.2.21-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/bash-5.2.21.tar.gz
+cp profile /home/devel/building/work/src
++ build
++ cd bash-5.2.21
++ ./configure --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --prefix=/usr --exec-prefix= --enable-readline --disable-nls --with-curses --with-installed-readline --without-bash-malloc
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+
+Beginning configuration for bash-5.2-release for x86_64-unknown-linux-gnu
+
+checking for x86_64-unknown-linux-gnu-gcc... x86_64-unknown-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... yes
+checking for x86_64-unknown-linux-gnu-gcc option to enable C11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for sys/param.h... yes
+checking for xlocale.h... no
+checking for sys/time.h... yes
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking how to run the C preprocessor... x86_64-unknown-linux-gnu-gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking whether x86_64-unknown-linux-gnu-gcc needs -traditional... no
+checking for tgetent... no
+checking for tgetent in -ltermcap... no
+checking for tgetent in -ltinfo... yes
+checking which library has the termcap functions... using libtinfo
+checking version of installed readline library... 8.2
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for x86_64-unknown-linux-gnu-ar... x86_64-unknown-linux-gnu-ar
+checking for x86_64-unknown-linux-gnu-ranlib... x86_64-unknown-linux-gnu-ranlib
+checking for bison... bison -y
+checking whether make sets $(MAKE)... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking whether byte ordering is bigendian... no
+checking for preprocessor stringizing operator... yes
+checking for long double... yes
+checking whether char is unsigned... no
+checking for working volatile... yes
+checking for C/C++ restrict keyword... __restrict__
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for a sed that does not truncate output... /bin/sed
+checking whether NLS is requested... no
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking whether we are using the GNU C Library 2 or newer... yes
+checking whether the -Werror option is usable... yes
+checking for simple visibility declarations... yes
+checking for size_t... yes
+checking for stdint.h... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for getpagesize... yes
+checking for symlink... yes
+checking for uselocale... yes
+checking for vprintf... yes
+checking for alarm... yes
+checking for fpurge... no
+checking for __fpurge... yes
+checking for snprintf... yes
+checking for vsnprintf... yes
+checking for working mmap... yes
+checking whether integer division by zero raises SIGFPE... no
+checking for inttypes.h... yes
+checking for unsigned long long int... yes
+checking for inttypes.h... (cached) yes
+checking whether the inttypes.h PRIxNN macros are broken... no
+checking for ld used by x86_64-unknown-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking for the common suffixes of directories in the library search path... lib,lib
+checking whether imported symbols can be declared weak... yes
+checking for pthread.h... yes
+checking for pthread_kill in -lpthread... yes
+checking for multithread API to use... posix
+checking for pthread_rwlock_t... yes
+checking whether pthread_rwlock_rdlock prefers a writer to a reader... no
+checking for x86_64-unknown-linux-gnu-gcc options needed to detect all undeclared functions... none needed
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for argz.h... yes
+checking for inttypes.h... (cached) yes
+checking for limits.h... yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for getcwd... yes
+checking for getegid... yes
+checking for geteuid... yes
+checking for getgid... yes
+checking for getuid... yes
+checking for mempcpy... yes
+checking for munmap... yes
+checking for stpcpy... yes
+checking for strcasecmp... yes
+checking for strdup... yes
+checking for strtoul... yes
+checking for tsearch... yes
+checking for argz_count... yes
+checking for argz_stringify... yes
+checking for argz_next... yes
+checking for __fsetlocking... yes
+checking for localeconv... yes
+checking whether feof_unlocked is declared... yes
+checking whether fgets_unlocked is declared... yes
+checking for bison... bison
+checking version of bison... 3.8.2, ok
+checking for long long int... yes
+checking for wchar_t... yes
+checking for wint_t... yes
+checking whether wint_t is too small... no
+checking for intmax_t... yes
+checking whether printf() supports POSIX/XSI format strings... yes
+checking whether we are using the GNU C Library >= 2.1 or uClibc... yes
+checking for stdint.h... (cached) yes
+checking for SIZE_MAX... yes
+checking for stdint.h... (cached) yes
+checking for working fcntl.h... yes
+checking whether uselocale works... yes
+checking for fake locale system (OpenBSD)... no
+checking for Solaris 11.4 locale system... no
+checking for getlocalename_l... no
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for CFLocaleCopyPreferredLanguages... no
+checking for flexible array members... yes
+checking for x86_64-unknown-linux-gnu-ar... (cached) x86_64-unknown-linux-gnu-ar
+checking for ptrdiff_t... yes
+checking for features.h... yes
+checking for stddef.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for asprintf... yes
+checking for fwprintf... yes
+checking for newlocale... yes
+checking for putenv... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for snprintf... (cached) yes
+checking for strnlen... yes
+checking for uselocale... (cached) yes
+checking for wcslen... yes
+checking for wcsnlen... yes
+checking for mbrtowc... yes
+checking for wcrtomb... yes
+checking whether _snprintf is declared... no
+checking whether _snwprintf is declared... no
+checking whether getc_unlocked is declared... yes
+checking for nl_langinfo and CODESET... yes
+checking for LC_MESSAGES... yes
+checking for CFPreferencesCopyAppValue... (cached) no
+checking for CFLocaleCopyCurrent... (cached) no
+checking for CFLocaleCopyPreferredLanguages... (cached) no
+checking whether to use NLS... no
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for sys/mkdev.h... no
+checking for sys/sysmacros.h... yes
+checking for inttypes.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for stdarg.h... yes
+checking for varargs.h... no
+checking for limits.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... yes
+checking for locale.h... yes
+checking for termcap.h... yes
+checking for termio.h... yes
+checking for termios.h... yes
+checking for dlfcn.h... yes
+checking for stdbool.h... yes
+checking for stddef.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for netdb.h... yes
+checking for pwd.h... yes
+checking for grp.h... yes
+checking for strings.h... (cached) yes
+checking for regex.h... yes
+checking for syslog.h... yes
+checking for ulimit.h... yes
+checking for sys/pte.h... no
+checking for sys/stream.h... no
+checking for sys/select.h... yes
+checking for sys/file.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/mman.h... yes
+checking for sys/param.h... (cached) yes
+checking for sys/random.h... yes
+checking for sys/socket.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for sys/times.h... yes
+checking for sys/types.h... (cached) yes
+checking for sys/wait.h... yes
+checking for netinet/in.h... yes
+checking for arpa/inet.h... yes
+checking for sys/ptem.h... no
+checking for sys/resource.h... yes
+checking for working alloca.h... (cached) yes
+checking for alloca... (cached) checking for uid_t in sys/types.h... yes
+checking for working chown... yes
+checking whether getpgrp requires zero arguments... yes
+checking for working strcoll... yes
+checking for __setostype... no
+checking for wait3... yes
+checking for mkfifo... yes
+checking for dup2... yes
+checking for eaccess... yes
+checking for fcntl... yes
+checking for getdtablesize... yes
+checking for getentropy... yes
+checking for getgroups... yes
+checking for gethostname... yes
+checking for getpagesize... (cached) yes
+checking for getpeername... yes
+checking for getrandom... yes
+checking for getrlimit... yes
+checking for getrusage... yes
+checking for gettimeofday... yes
+checking for kill... yes
+checking for killpg... yes
+checking for lstat... yes
+checking for pselect... yes
+checking for readlink... yes
+checking for select... yes
+checking for setdtablesize... no
+checking for setitimer... yes
+checking for tcgetpgrp... yes
+checking for uname... yes
+checking for ulimit... yes
+checking for waitpid... yes
+checking for rename... yes
+checking for bcopy... yes
+checking for bzero... yes
+checking for confstr... yes
+checking for faccessat... yes
+checking for fnmatch... yes
+checking for getaddrinfo... yes
+checking for gethostbyname... yes
+checking for getservbyname... yes
+checking for getservent... yes
+checking for inet_aton... yes
+checking for imaxdiv... yes
+checking for memmove... yes
+checking for pathconf... yes
+checking for putenv... (cached) yes
+checking for raise... yes
+checking for random... yes
+checking for regcomp... yes
+checking for regexec... yes
+checking for setenv... (cached) yes
+checking for setlinebuf... yes
+checking for setlocale... (cached) yes
+checking for setvbuf... yes
+checking for siginterrupt... yes
+checking for strchr... yes
+checking for sysconf... yes
+checking for syslog... yes
+checking for tcgetattr... yes
+checking for times... yes
+checking for ttyname... yes
+checking for tzset... yes
+checking for unsetenv... yes
+checking for vasprintf... yes
+checking for asprintf... (cached) yes
+checking for isascii... yes
+checking for isblank... yes
+checking for isgraph... yes
+checking for isprint... yes
+checking for isspace... yes
+checking for isxdigit... yes
+checking for getpwent... yes
+checking for getpwnam... yes
+checking for getpwuid... yes
+checking for mkstemp... yes
+checking for mkdtemp... yes
+checking for arc4random... yes
+checking for getcwd... (cached) yes
+checking for memset... yes
+checking for strcasecmp... (cached) yes
+checking for strcasestr... yes
+checking for strerror... yes
+checking for strftime... yes
+checking for strnlen... (cached) yes
+checking for strpbrk... yes
+checking for strstr... yes
+checking for strtod... yes
+checking for strtol... yes
+checking for strtoul... (cached) yes
+checking for strtoll... yes
+checking for strtoull... yes
+checking for strtoumax... yes
+checking for dprintf... yes
+checking for strchrnul... yes
+checking for strdup... (cached) yes
+checking for libaudit.h... no
+checking whether AUDIT_USER_TTY is declared... yes
+checking whether confstr is declared... yes
+checking whether printf is declared... yes
+checking whether sbrk is declared... yes
+checking whether setregid is declared... yes
+checking whether strcpy is declared... yes
+checking whether strsignal is declared... yes
+checking for setresuid... yes
+checking for setresgid... yes
+checking whether strtold is declared... yes
+checking for broken strtold... yes
+checking whether strtol is declared... yes
+checking whether strtoll is declared... yes
+checking whether strtoul is declared... yes
+checking whether strtoull is declared... yes
+checking whether strtoumax is declared... yes
+checking for working mktime... yes
+checking for argz.h... (cached) yes
+checking for errno.h... yes
+checking for fcntl.h... yes
+checking for malloc.h... yes
+checking for stdio_ext.h... yes
+checking for working mmap... (cached) yes
+checking for __argz_count... yes
+checking for __argz_next... yes
+checking for __argz_stringify... yes
+checking for dcgettext... yes
+checking for mempcpy... (cached) yes
+checking for munmap... (cached) yes
+checking for mremap... yes
+checking for stpcpy... (cached) yes
+checking for strcspn... yes
+checking for wctype.h... yes
+checking for wchar.h... (cached) yes
+checking for langinfo.h... yes
+checking for mbstr.h... no
+checking for mbrlen... yes
+checking for mbscasecmp... no
+checking for mbscmp... no
+checking for mbsnrtowcs... yes
+checking for mbsrtowcs... yes
+checking for mbschr... no
+checking for wcrtomb... (cached) yes
+checking for wcscoll... yes
+checking for wcsdup... yes
+checking for wcwidth... yes
+checking for wctype... yes
+checking for wcswidth... yes
+checking whether mbrtowc and mbstate_t are properly declared... (cached) yes
+checking for iswlower... yes
+checking for iswupper... yes
+checking for towlower... yes
+checking for towupper... yes
+checking for iswctype... yes
+checking for wchar_t in wchar.h... yes
+checking for wctype_t in wctype.h... yes
+checking for wint_t in wctype.h... yes
+checking for wcwidth broken with unicode combining characters... no
+checking for locale_charset... no
+checking size of wchar_t... 4
+checking for dlopen in -ldl... yes
+checking for dlopen... yes
+checking for dlclose... yes
+checking for dlsym... yes
+checking type of array argument to getgroups... gid_t
+checking for off_t... yes
+checking for mode_t... yes
+checking for uid_t in sys/types.h... (cached) yes
+checking for pid_t... yes
+checking for size_t... (cached) yes
+checking for uintptr_t... yes
+checking for ssize_t... yes
+checking for time_t... yes
+checking for long long int... (cached) yes
+checking for unsigned long long int... (cached) yes
+checking for sig_atomic_t in signal.h... yes
+checking size of char... 1
+checking size of short... 2
+checking size of int... 4
+checking size of long... 8
+checking size of char *... 8
+checking size of size_t... 8
+checking size of double... 8
+checking size of long long... 8
+checking for u_int... yes
+checking for u_long... yes
+checking for bits16_t... no
+checking for u_bits16_t... no
+checking for bits32_t... no
+checking for u_bits32_t... no
+checking for bits64_t... no
+checking for ptrdiff_t... (cached) yes
+checking whether stat file-mode macros are broken... no
+checking whether #! works in shell scripts... yes
+checking if dup2 fails to clear the close-on-exec flag... no
+checking whether pgrps need synchronization... no
+checking for type of signal functions... posix
+checking for sys_errlist and sys_nerr... yes
+checking whether sys_siglist is declared... no
+checking for sys_siglist in system C library... no
+checking for _sys_siglist in signal.h or unistd.h... no
+checking for _sys_siglist in system C library... no
+checking for clock_t... yes
+checking for sigset_t... yes
+checking for socklen_t... yes
+checking for quad_t... yes
+checking for type of struct rlimit fields... rlim_t
+checking for intmax_t... yes
+checking for uintmax_t... yes
+checking size of intmax_t... 8
+checking for struct termios.c_line... yes
+checking for struct termio.c_line... yes
+checking for struct dirent.d_ino... checking for struct dirent.d_ino... yes
+yes
+checking for struct dirent.d_fileno... checking for struct dirent.d_fileno... yes
+yes
+checking for struct dirent.d_namlen... checking for struct dirent.d_namlen... no
+no
+checking for struct winsize in sys/ioctl.h and termios.h... sys/ioctl.h
+checking for struct timeval in sys/time.h and time.h... yes
+checking for struct stat.st_blocks... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking for struct timezone in sys/time.h and time.h... yes
+checking for offset of exit status in return status from wait... 8
+checking for struct timespec in <time.h>... yes
+checking for struct stat.st_atim.tv_nsec... yes
+checking whether struct stat.st_atim is of type struct timespec... yes
+checking for sbrk... yes
+checking for working sbrk... yes
+checking for the existence of strsignal... yes
+checking if opendir() opens non-directories... no
+checking whether ulimit can substitute for getdtablesize... yes
+checking whether fpurge is declared... no
+checking to see if getenv can be redefined... yes
+checking if getcwd() will dynamically allocate memory with 0 size... yes
+checking for presence of POSIX-style sigsetjmp/siglongjmp... present
+checking whether or not strcoll and strcmp differ... no
+checking for standard-conformant snprintf... yes
+checking for standard-conformant vsnprintf... yes
+checking for usable strtoimax... checking for strtoimax... yes
+checking whether strtoimax is declared... yes
+yes
+checking for standard-conformant putenv declaration... yes
+checking for standard-conformant unsetenv declaration... yes
+checking for printf floating point output in hex notation... yes
+checking whether fnmatch can be used to check bracket equivalence classes... yes
+checking if signal handlers must be reinstalled when invoked... no
+checking for presence of necessary job control definitions... present
+checking for presence of named pipes... present
+checking whether termios.h defines TIOCGWINSZ... no
+checking whether sys/ioctl.h defines TIOCGWINSZ... yes
+checking for TIOCSTAT in sys/ioctl.h... no
+checking for FIONREAD in sys/ioctl.h... yes
+checking whether WCONTINUED flag to waitpid is unavailable or available but broken... no
+checking for speed_t in sys/types.h... no
+checking whether getpw functions are declared in pwd.h... yes
+checking for unusable real-time signals due to large values... no
+checking which library has the termcap functions... (cached) using libtinfo
+checking whether /dev/fd is available... standard
+checking whether /dev/stdin stdout stderr are available... present
+checking for default mail directory... /var/mail
+checking shared object configuration for loadable builtins... supported
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating builtins/Makefile
+config.status: creating lib/readline/Makefile
+config.status: creating lib/glob/Makefile
+config.status: creating lib/intl/Makefile
+config.status: creating lib/malloc/Makefile
+config.status: creating lib/sh/Makefile
+config.status: creating lib/termcap/Makefile
+config.status: creating lib/tilde/Makefile
+config.status: creating doc/Makefile
+config.status: creating support/Makefile
+config.status: creating po/Makefile.in
+config.status: creating examples/loadables/Makefile
+config.status: creating examples/loadables/Makefile.inc
+config.status: creating examples/loadables/Makefile.sample
+config.status: creating examples/loadables/perl/Makefile
+config.status: creating support/bash.pc
+config.status: creating support/bashbug.sh
+config.status: creating config.h
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing stamp-h commands
++ make -j1 V=1
+rm -f shell.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c shell.c
+shell.c: In function 'get_current_user_info':
+shell.c:1914:34: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1914 |           current_user.user_name = _("I have no name!");
+      |                                  ^
+rm -f eval.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c eval.c
+eval.c: In function 'alrm_catcher':
+eval.c:243:7: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  243 |   msg = _("\007timed out waiting for input: auto-logout\n");
+      |       ^
+make[1]: Entering directory '/home/devel/building/work/src/bash-5.2.21/builtins'
+rm -f mkbuiltins.o
+x86_64-unknown-linux-gnu-gcc -c  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  mkbuiltins.c
+x86_64-unknown-linux-gnu-gcc -rdynamic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -rdynamic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o mkbuiltins mkbuiltins.o -ldl 
+make[1]: Leaving directory '/home/devel/building/work/src/bash-5.2.21/builtins'
+rm -f execute_cmd.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c execute_cmd.c
+rm -f y.tab.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c y.tab.c
+In file included from bashintl.h:30,
+                 from /usr/local/src/chet/src/bash/src/parse.y:43:
+/usr/local/src/chet/src/bash/src/parse.y: In function 'push_heredoc':
+./include/gettext.h:46:26: warning: passing argument 1 of 'report_syntax_error' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+/usr/local/src/chet/src/bash/src/parse.y:2939:28: note: in expansion of macro '_'
+In file included from command.h:25,
+                 from shell.h:27,
+                 from /usr/local/src/chet/src/bash/src/parse.y:47:
+/usr/local/src/chet/src/bash/src/parse.y:210:41: note: expected 'char *' but argument is of type 'const char *'
+./include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+/usr/local/src/chet/src/bash/src/parse.y: In function 'report_syntax_error':
+/usr/local/src/chet/src/bash/src/parse.y:6292:8: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+rm -f general.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c general.c
+rm -f make_cmd.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c make_cmd.c
+rm -f print_cmd.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c print_cmd.c
+rm -f dispose_cmd.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c dispose_cmd.c
+rm -f mksyntax
+x86_64-unknown-linux-gnu-gcc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -rdynamic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -rdynamic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o mksyntax ./mksyntax.c 
+rm -f syntax.c
+./mksyntax -o syntax.c
+/bin/sh ./support/mkversion.sh -b -S . -s release -d 5.2 -o newversion.h \
+	&& mv newversion.h version.h
+rm -f variables.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c variables.c
+rm -f copy_cmd.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c copy_cmd.c
+rm -f error.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c error.c
+In file included from bashintl.h:30,
+                 from error.c:44:
+error.c: In function 'command_errstr':
+./include/gettext.h:46:26: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+error.c:513:11: note: in expansion of macro '_'
+  513 |   return (_(cmd_error_table[code]));
+      |           ^
+rm -f expr.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c expr.c
+rm -f flags.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c flags.c
+rm -f jobs.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c jobs.c
+jobs.c: In function 'printable_job_status':
+jobs.c:1868:8: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1868 |   temp = _("Done");
+      |        ^
+jobs.c:1873:14: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1873 |         temp = _("Stopped");
+      |              ^
+jobs.c:1881:10: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1881 |     temp = _("Running");
+      |          ^
+jobs.c:1903:14: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+ 1903 |         temp = _("Unknown status");
+      |              ^
+rm -f subst.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c subst.c
+rm -f hashcmd.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c hashcmd.c
+rm -f hashlib.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c hashlib.c
+rm -f mailcheck.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c mailcheck.c
+mailcheck.c: In function 'check_mail':
+mailcheck.c:439:19: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  439 |           message = mailfiles[i]->msg ? mailfiles[i]->msg : _("You have mail in $_");
+      |                   ^
+mailcheck.c:464:21: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  464 |             message = _("You have new mail in $_");
+      |                     ^
+rm -f mksignames.o
+x86_64-unknown-linux-gnu-gcc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -DBUILDTOOL -c ./support/mksignames.c
+rm -f buildsignames.o
+x86_64-unknown-linux-gnu-gcc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -DBUILDTOOL -o buildsignames.o -c ./support/signames.c
+rm -f mksignames
+x86_64-unknown-linux-gnu-gcc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -rdynamic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -rdynamic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o mksignames mksignames.o buildsignames.o 
+rm -f lsignames.h
+./mksignames lsignames.h
+if cmp -s lsignames.h signames.h ; then :; else rm -f signames.h ; cp lsignames.h signames.h ; fi
+rm -f trap.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c trap.c
+trap.c: In function 'signal_name':
+trap.c:219:7: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  219 |   ret = (sig >= BASH_NSIG || sig < 0 || signal_names[sig] == NULL)
+      |       ^
+rm -f input.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c input.c
+rm -f unwind_prot.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c unwind_prot.c
+rm -f pathexp.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c pathexp.c
+rm -f sig.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c sig.c
+rm -f test.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c test.c
+In file included from bashintl.h:30,
+                 from test.c:55:
+test.c: In function 'beyond':
+./include/gettext.h:46:26: warning: passing argument 1 of 'test_syntax_error' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+test.c:147:22: note: in expansion of macro '_'
+  147 |   test_syntax_error (_("argument expected"), (char *)NULL);
+      |                      ^
+test.c:134:12: note: expected 'char *' but argument is of type 'const char *'
+  134 |      char *format, *arg;
+      |            ^~~~~~
+test.c: In function 'integer_expected_error':
+./include/gettext.h:46:26: warning: passing argument 1 of 'test_syntax_error' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+test.c:156:22: note: in expansion of macro '_'
+  156 |   test_syntax_error (_("%s: integer expression expected"), pch);
+      |                      ^
+test.c:134:12: note: expected 'char *' but argument is of type 'const char *'
+  134 |      char *format, *arg;
+      |            ^~~~~~
+test.c: In function 'term':
+./include/gettext.h:46:26: warning: passing argument 1 of 'test_syntax_error' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+test.c:265:28: note: in expansion of macro '_'
+  265 |         test_syntax_error (_("`)' expected"), (char *)NULL);
+      |                            ^
+test.c:134:12: note: expected 'char *' but argument is of type 'const char *'
+  134 |      char *format, *arg;
+      |            ^~~~~~
+./include/gettext.h:46:26: warning: passing argument 1 of 'test_syntax_error' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+test.c:267:28: note: in expansion of macro '_'
+  267 |         test_syntax_error (_("`)' expected, found %s"), argv[pos]);
+      |                            ^
+test.c:134:12: note: expected 'char *' but argument is of type 'const char *'
+  134 |      char *format, *arg;
+      |            ^~~~~~
+test.c: In function 'binary_operator':
+./include/gettext.h:46:26: warning: passing argument 1 of 'test_syntax_error' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+test.c:469:26: note: in expansion of macro '_'
+  469 |       test_syntax_error (_("%s: binary operator expected"), w);
+      |                          ^
+test.c:134:12: note: expected 'char *' but argument is of type 'const char *'
+  134 |      char *format, *arg;
+      |            ^~~~~~
+test.c: In function 'two_arguments':
+./include/gettext.h:46:26: warning: passing argument 1 of 'test_syntax_error' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+test.c:771:28: note: in expansion of macro '_'
+  771 |         test_syntax_error (_("%s: unary operator expected"), argv[pos]);
+      |                            ^
+test.c:134:12: note: expected 'char *' but argument is of type 'const char *'
+  134 |      char *format, *arg;
+      |            ^~~~~~
+./include/gettext.h:46:26: warning: passing argument 1 of 'test_syntax_error' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+test.c:774:24: note: in expansion of macro '_'
+  774 |     test_syntax_error (_("%s: unary operator expected"), argv[pos]);
+      |                        ^
+test.c:134:12: note: expected 'char *' but argument is of type 'const char *'
+  134 |      char *format, *arg;
+      |            ^~~~~~
+test.c: In function 'three_arguments':
+./include/gettext.h:46:26: warning: passing argument 1 of 'test_syntax_error' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+test.c:815:24: note: in expansion of macro '_'
+  815 |     test_syntax_error (_("%s: binary operator expected"), argv[pos+1]);
+      |                        ^
+test.c:134:12: note: expected 'char *' but argument is of type 'const char *'
+  134 |      char *format, *arg;
+      |            ^~~~~~
+test.c: In function 'test_command':
+./include/gettext.h:46:26: warning: passing argument 1 of 'test_syntax_error' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+test.c:897:28: note: in expansion of macro '_'
+  897 |         test_syntax_error (_("missing `]'"), (char *)NULL);
+      |                            ^
+test.c:134:12: note: expected 'char *' but argument is of type 'const char *'
+  134 |      char *format, *arg;
+      |            ^~~~~~
+./include/gettext.h:46:26: warning: passing argument 1 of 'test_syntax_error' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+test.c:915:28: note: in expansion of macro '_'
+  915 |         test_syntax_error (_("syntax error: `%s' unexpected"), argv[pos]);
+      |                            ^
+test.c:134:12: note: expected 'char *' but argument is of type 'const char *'
+  134 |      char *format, *arg;
+      |            ^~~~~~
+./include/gettext.h:46:26: warning: passing argument 1 of 'test_syntax_error' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+test.c:917:28: note: in expansion of macro '_'
+  917 |         test_syntax_error (_("too many arguments"), (char *)NULL);
+      |                            ^
+test.c:134:12: note: expected 'char *' but argument is of type 'const char *'
+  134 |      char *format, *arg;
+      |            ^~~~~~
+rm -f version.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c version.c
+rm -f alias.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c alias.c
+rm -f array.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c array.c
+rm -f arrayfunc.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c arrayfunc.c
+rm -f assoc.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c assoc.c
+rm -f braces.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c braces.c
+rm -f bracecomp.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c bracecomp.c
+rm -f bashhist.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c bashhist.c
+rm -f bashline.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c bashline.c
+rm -f list.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c list.c
+rm -f stringlib.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c stringlib.c
+rm -f locale.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c locale.c
+locale.c: In function 'localetrans':
+locale.c:442:16: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  442 |     translated = dgettext (default_domain, string);
+      |                ^
+rm -f findcmd.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c findcmd.c
+make[1]: Entering directory '/home/devel/building/work/src/bash-5.2.21/builtins'
+rm -f builtins.o
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects builtins.c
+rm -f alias.o
+./mkbuiltins -D . alias.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects alias.c || ( rm -f alias.c ; exit 1 )
+rm -f alias.c
+rm -f bind.o
+./mkbuiltins -D . bind.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects bind.c || ( rm -f bind.c ; exit 1 )
+rm -f bind.c
+rm -f break.o
+./mkbuiltins -D . break.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects break.c || ( rm -f break.c ; exit 1 )
+In file included from ../bashintl.h:30,
+                 from ./break.def:43:
+./break.def: In function 'break_builtin':
+../include/gettext.h:46:26: warning: passing argument 2 of 'sh_erange' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./break.def:77:36: note: in expansion of macro '_'
+   77 |       sh_erange (list->word->word, _("loop count"));
+      |                                    ^
+In file included from ../command.h:25,
+                 from ../shell.h:27,
+                 from ./break.def:45:
+common.h:101:39: note: expected 'char *' but argument is of type 'const char *'
+  101 | extern void sh_erange PARAMS((char *, char *));
+      |                                       ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+./break.def: In function 'continue_builtin':
+../include/gettext.h:46:26: warning: passing argument 2 of 'sh_erange' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./break.def:119:36: note: in expansion of macro '_'
+  119 |       sh_erange (list->word->word, _("loop count"));
+      |                                    ^
+common.h:101:39: note: expected 'char *' but argument is of type 'const char *'
+  101 | extern void sh_erange PARAMS((char *, char *));
+      |                                       ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+rm -f break.c
+rm -f builtin.o
+./mkbuiltins -D . builtin.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects builtin.c || ( rm -f builtin.c ; exit 1 )
+rm -f builtin.c
+rm -f caller.o
+./mkbuiltins -D . caller.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects caller.c || ( rm -f caller.c ; exit 1 )
+rm -f caller.c
+rm -f cd.o
+./mkbuiltins -D . cd.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects cd.c || ( rm -f cd.c ; exit 1 )
+rm -f cd.c
+rm -f colon.o
+./mkbuiltins -D . colon.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects colon.c || ( rm -f colon.c ; exit 1 )
+rm -f colon.c
+rm -f command.o
+./mkbuiltins -D . command.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects command.c || ( rm -f command.c ; exit 1 )
+rm -f command.c
+rm -f common.o
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects common.c
+common.c: In function 'sh_invalidnum':
+common.c:240:9: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  240 |     msg = _("invalid octal number");
+      |         ^
+common.c:242:9: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  242 |     msg = _("invalid hex number");
+      |         ^
+common.c:244:9: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  244 |     msg = _("invalid number");
+      |         ^
+rm -f declare.o
+./mkbuiltins -D . declare.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects declare.c || ( rm -f declare.c ; exit 1 )
+rm -f declare.c
+rm -f echo.o
+./mkbuiltins -D . echo.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects echo.c || ( rm -f echo.c ; exit 1 )
+rm -f echo.c
+rm -f enable.o
+./mkbuiltins -D . enable.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects enable.c || ( rm -f enable.c ; exit 1 )
+rm -f enable.c
+rm -f eval.o
+./mkbuiltins -D . eval.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects eval.c || ( rm -f eval.c ; exit 1 )
+rm -f eval.c
+rm -f evalfile.o
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects evalfile.c
+rm -f evalstring.o
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects evalstring.c
+rm -f exec.o
+./mkbuiltins -D . exec.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects exec.c || ( rm -f exec.c ; exit 1 )
+rm -f exec.c
+rm -f exit.o
+./mkbuiltins -D . exit.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects exit.c || ( rm -f exit.c ; exit 1 )
+rm -f exit.c
+rm -f fc.o
+./mkbuiltins -D . fc.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects fc.c || ( rm -f fc.c ; exit 1 )
+In file included from ../bashintl.h:30,
+                 from ./fc.def:72:
+./fc.def: In function 'fc_builtin':
+../include/gettext.h:46:26: warning: passing argument 2 of 'sh_erange' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./fc.def:363:32: note: in expansion of macro '_'
+  363 |       sh_erange ((char *)NULL, _("history specification"));
+      |                                ^
+In file included from ../command.h:25,
+                 from ../shell.h:27,
+                 from ./fc.def:75:
+common.h:101:39: note: expected 'char *' but argument is of type 'const char *'
+  101 | extern void sh_erange PARAMS((char *, char *));
+      |                                       ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+../include/gettext.h:46:26: warning: passing argument 2 of 'sh_erange' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./fc.def:368:32: note: in expansion of macro '_'
+  368 |       sh_erange ((char *)NULL, _("history specification"));
+      |                                ^
+common.h:101:39: note: expected 'char *' but argument is of type 'const char *'
+  101 | extern void sh_erange PARAMS((char *, char *));
+      |                                       ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+../include/gettext.h:46:26: warning: passing argument 2 of 'sh_erange' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./fc.def:407:32: note: in expansion of macro '_'
+  407 |       sh_erange ((char *)NULL, _("history specification"));
+      |                                ^
+common.h:101:39: note: expected 'char *' but argument is of type 'const char *'
+  101 | extern void sh_erange PARAMS((char *, char *));
+      |                                       ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+../include/gettext.h:46:26: warning: passing argument 2 of 'sh_erange' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./fc.def:412:32: note: in expansion of macro '_'
+  412 |       sh_erange ((char *)NULL, _("history specification"));
+      |                                ^
+common.h:101:39: note: expected 'char *' but argument is of type 'const char *'
+  101 | extern void sh_erange PARAMS((char *, char *));
+      |                                       ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+rm -f fc.c
+rm -f fg_bg.o
+./mkbuiltins -D . fg_bg.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects fg_bg.c || ( rm -f fg_bg.c ; exit 1 )
+./fg_bg.def: In function 'fg_bg':
+./fg_bg.def:152:44: warning: passing argument 1 of 'sh_badjob' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  152 |         sh_badjob (list ? list->word->word : _("current"));
+In file included from ../command.h:25,
+                 from ../shell.h:27,
+                 from ./fg_bg.def:48:
+common.h:103:31: note: expected 'char *' but argument is of type 'const char *'
+  103 | extern void sh_badjob PARAMS((char *));
+      |                               ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+rm -f fg_bg.c
+rm -f hash.o
+./mkbuiltins -D . hash.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects hash.c || ( rm -f hash.c ; exit 1 )
+rm -f hash.c
+rm -f help.o
+./mkbuiltins -D . help.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects help.c || ( rm -f help.c ; exit 1 )
+./help.def: In function 'show_manpage':
+./help.def:315:10: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  315 |     line = doc ? _(doc[0]) : (char *)NULL;
+      |          ^
+./help.def: In function 'dispcolumn':
+./help.def:380:11: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  380 |   helpdoc = _(shell_builtins[i].short_doc);
+      |           ^
+./help.def:399:11: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  399 |   helpdoc = _(shell_builtins[i+height].short_doc);
+      |           ^
+./help.def: In function 'wdispcolumn':
+./help.def:424:11: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  424 |   helpdoc = _(shell_builtins[i].short_doc);
+      |           ^
+./help.def:473:11: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  473 |   helpdoc = _(shell_builtins[i+height].short_doc);
+      |           ^
+rm -f help.c
+rm -f history.o
+./mkbuiltins -D . history.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects history.c || ( rm -f history.c ; exit 1 )
+In file included from ../bashintl.h:30,
+                 from ./history.def:75:
+./history.def: In function 'history_builtin':
+../include/gettext.h:46:26: warning: passing argument 2 of 'sh_erange' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./history.def:192:34: note: in expansion of macro '_'
+  192 |           sh_erange (delete_arg, _("history position"));
+      |                                  ^
+In file included from ../command.h:25,
+                 from ../shell.h:27,
+                 from ./history.def:77:
+common.h:101:39: note: expected 'char *' but argument is of type 'const char *'
+  101 | extern void sh_erange PARAMS((char *, char *));
+      |                                       ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+../include/gettext.h:46:26: warning: passing argument 2 of 'sh_erange' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./history.def:204:34: note: in expansion of macro '_'
+  204 |           sh_erange (delete_arg, _("history position"));
+      |                                  ^
+common.h:101:39: note: expected 'char *' but argument is of type 'const char *'
+  101 | extern void sh_erange PARAMS((char *, char *));
+      |                                       ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+../include/gettext.h:46:26: warning: passing argument 2 of 'sh_erange' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./history.def:215:29: note: in expansion of macro '_'
+  215 |           sh_erange (range, _("history position"));
+      |                             ^
+common.h:101:39: note: expected 'char *' but argument is of type 'const char *'
+  101 | extern void sh_erange PARAMS((char *, char *));
+      |                                       ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+../include/gettext.h:46:26: warning: passing argument 2 of 'sh_erange' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./history.def:228:34: note: in expansion of macro '_'
+  228 |           sh_erange (delete_arg, _("history position"));
+      |                                  ^
+common.h:101:39: note: expected 'char *' but argument is of type 'const char *'
+  101 | extern void sh_erange PARAMS((char *, char *));
+      |                                       ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+../include/gettext.h:46:26: warning: passing argument 2 of 'sh_erange' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./history.def:240:38: note: in expansion of macro '_'
+  240 |               sh_erange (delete_arg, _("history position"));
+      |                                      ^
+common.h:101:39: note: expected 'char *' but argument is of type 'const char *'
+  101 | extern void sh_erange PARAMS((char *, char *));
+      |                                       ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+../include/gettext.h:46:26: warning: passing argument 2 of 'sh_erange' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./history.def:247:34: note: in expansion of macro '_'
+  247 |           sh_erange (delete_arg, _("history position"));
+      |                                  ^
+common.h:101:39: note: expected 'char *' but argument is of type 'const char *'
+  101 | extern void sh_erange PARAMS((char *, char *));
+      |                                       ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+rm -f history.c
+rm -f jobs.o
+./mkbuiltins -D . jobs.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects jobs.c || ( rm -f jobs.c ; exit 1 )
+./jobs.def: In function 'disown_builtin':
+./jobs.def:284:46: warning: passing argument 1 of 'sh_badjob' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  284 |           sh_badjob (list ? list->word->word : _("current"));
+In file included from ../command.h:25,
+                 from ../shell.h:27,
+                 from ./jobs.def:61:
+common.h:103:31: note: expected 'char *' but argument is of type 'const char *'
+  103 | extern void sh_badjob PARAMS((char *));
+      |                               ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+rm -f jobs.c
+rm -f kill.o
+./mkbuiltins -D . kill.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects kill.c || ( rm -f kill.c ; exit 1 )
+./kill.def: In function 'kill_error':
+./kill.def:274:7: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  274 |     x = _("Unknown error");
+      |       ^
+rm -f kill.c
+rm -f let.o
+./mkbuiltins -D . let.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects let.c || ( rm -f let.c ; exit 1 )
+rm -f let.c
+rm -f mapfile.o
+./mkbuiltins -D . mapfile.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects mapfile.c || ( rm -f mapfile.c ; exit 1 )
+rm -f mapfile.c
+rm -f pushd.o
+./mkbuiltins -D . pushd.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects pushd.c || ( rm -f pushd.c ; exit 1 )
+In file included from ../bashintl.h:30,
+                 from ./pushd.def:132:
+./pushd.def: In function 'pushd_error':
+../include/gettext.h:46:26: warning: passing argument 2 of 'sh_erange' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./pushd.def:526:21: note: in expansion of macro '_'
+  526 |     sh_erange (arg, _("directory stack index"));
+      |                     ^
+In file included from ../command.h:25,
+                 from ../shell.h:27,
+                 from ./pushd.def:138:
+common.h:101:39: note: expected 'char *' but argument is of type 'const char *'
+  101 | extern void sh_erange PARAMS((char *, char *));
+      |                                       ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+rm -f pushd.c
+rm -f read.o
+./mkbuiltins -D . read.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects read.c || ( rm -f read.c ; exit 1 )
+rm -f read.c
+rm -f return.o
+./mkbuiltins -D . return.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects return.c || ( rm -f return.c ; exit 1 )
+rm -f return.c
+rm -f set.o
+./mkbuiltins -D . set.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects set.c || ( rm -f set.c ; exit 1 )
+rm -f set.c
+rm -f setattr.o
+./mkbuiltins -D . setattr.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects setattr.c || ( rm -f setattr.c ; exit 1 )
+rm -f setattr.c
+rm -f shift.o
+./mkbuiltins -D . shift.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects shift.c || ( rm -f shift.c ; exit 1 )
+In file included from ../bashintl.h:30,
+                 from ./shift.def:33:
+./shift.def: In function 'shift_builtin':
+../include/gettext.h:46:26: warning: passing argument 2 of 'sh_erange' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./shift.def:72:50: note: in expansion of macro '_'
+   72 |       sh_erange (list ? list->word->word : NULL, _("shift count"));
+      |                                                  ^
+In file included from ../command.h:25,
+                 from ../shell.h:27,
+                 from ./shift.def:35:
+common.h:101:39: note: expected 'char *' but argument is of type 'const char *'
+  101 | extern void sh_erange PARAMS((char *, char *));
+      |                                       ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+../include/gettext.h:46:26: warning: passing argument 2 of 'sh_erange' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./shift.def:79:52: note: in expansion of macro '_'
+   79 |         sh_erange (list ? list->word->word : NULL, _("shift count"));
+      |                                                    ^
+common.h:101:39: note: expected 'char *' but argument is of type 'const char *'
+  101 | extern void sh_erange PARAMS((char *, char *));
+      |                                       ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+rm -f shift.c
+rm -f source.o
+./mkbuiltins -D . source.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects source.c || ( rm -f source.c ; exit 1 )
+rm -f source.c
+rm -f suspend.o
+./mkbuiltins -D . suspend.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects suspend.c || ( rm -f suspend.c ; exit 1 )
+In file included from ../bashintl.h:30,
+                 from ./suspend.def:53:
+./suspend.def: In function 'suspend_builtin':
+../include/gettext.h:46:26: warning: passing argument 1 of 'sh_nojobs' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./suspend.def:107:22: note: in expansion of macro '_'
+  107 |           sh_nojobs (_("cannot suspend"));
+      |                      ^
+In file included from ../command.h:25,
+                 from ../shell.h:27,
+                 from ./suspend.def:54:
+common.h:104:31: note: expected 'char *' but argument is of type 'const char *'
+  104 | extern void sh_nojobs PARAMS((char *));
+      |                               ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+rm -f suspend.c
+rm -f test.o
+./mkbuiltins -D . test.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects test.c || ( rm -f test.c ; exit 1 )
+rm -f test.c
+rm -f times.o
+./mkbuiltins -D . times.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects times.c || ( rm -f times.c ; exit 1 )
+rm -f times.c
+rm -f trap.o
+./mkbuiltins -D . trap.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects trap.c || ( rm -f trap.c ; exit 1 )
+rm -f trap.c
+rm -f type.o
+./mkbuiltins -D . type.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects type.c || ( rm -f type.c ; exit 1 )
+rm -f type.c
+x86_64-unknown-linux-gnu-gcc  -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -rdynamic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -rdynamic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o psize.aux ./psize.c
+/bin/sh ./psize.sh > pipesize.h
+rm -f ulimit.o
+./mkbuiltins -D . ulimit.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects ulimit.c || ( rm -f ulimit.c ; exit 1 )
+In file included from ../bashintl.h:30,
+                 from ./ulimit.def:90:
+./ulimit.def: In function 'ulimit_internal':
+../include/gettext.h:46:26: warning: passing argument 2 of 'sh_erange' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./ulimit.def:490:30: note: in expansion of macro '_'
+  490 |           sh_erange (cmdarg, _("limit"));
+      |                              ^
+In file included from ../command.h:25,
+                 from ../shell.h:27,
+                 from ./ulimit.def:92:
+common.h:101:39: note: expected 'char *' but argument is of type 'const char *'
+  101 | extern void sh_erange PARAMS((char *, char *));
+      |                                       ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+rm -f ulimit.c
+rm -f umask.o
+./mkbuiltins -D . umask.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects umask.c || ( rm -f umask.c ; exit 1 )
+In file included from ../bashintl.h:30,
+                 from ./umask.def:57:
+./umask.def: In function 'umask_builtin':
+../include/gettext.h:46:26: warning: passing argument 2 of 'sh_erange' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   46 | # define gettext(Msgid) ((const char *) (Msgid))
+      |                         ~^~~~~~~~~~~~~~~~~~~~~~~
+../bashintl.h:36:25: note: in expansion of macro 'gettext'
+   36 | #define _(msgid)        gettext(msgid)
+      |                         ^~~~~~~
+./umask.def:115:44: note: in expansion of macro '_'
+  115 |               sh_erange (list->word->word, _("octal number"));
+      |                                            ^
+In file included from ../command.h:25,
+                 from ../shell.h:27,
+                 from ./umask.def:59:
+common.h:101:39: note: expected 'char *' but argument is of type 'const char *'
+  101 | extern void sh_erange PARAMS((char *, char *));
+      |                                       ^~~~~~
+../include/stdc.h:33:28: note: in definition of macro 'PARAMS'
+   33 | #    define PARAMS(protos) protos
+      |                            ^~~~~~
+rm -f umask.c
+rm -f wait.o
+./mkbuiltins -D . wait.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects wait.c || ( rm -f wait.c ; exit 1 )
+rm -f wait.c
+rm -f getopts.o
+./mkbuiltins -D . getopts.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects getopts.c || ( rm -f getopts.c ; exit 1 )
+rm -f getopts.c
+rm -f shopt.o
+./mkbuiltins -D . shopt.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects shopt.c || ( rm -f shopt.c ; exit 1 )
+rm -f shopt.c
+rm -f printf.o
+./mkbuiltins -D . printf.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects printf.c || ( rm -f printf.c ; exit 1 )
+rm -f printf.c
+rm -f getopt.o
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects getopt.c
+rm -f bashgetopt.o
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects bashgetopt.c
+rm -f complete.o
+./mkbuiltins -D . complete.def
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I..  -I.. -I../include -I../lib -I.     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects complete.c || ( rm -f complete.c ; exit 1 )
+rm -f complete.c
+rm -f libbuiltins.a
+x86_64-unknown-linux-gnu-ar cr libbuiltins.a builtins.o alias.o bind.o break.o builtin.o caller.o cd.o colon.o command.o common.o declare.o echo.o enable.o eval.o evalfile.o evalstring.o exec.o exit.o fc.o fg_bg.o hash.o help.o history.o jobs.o kill.o let.o mapfile.o pushd.o read.o return.o set.o setattr.o shift.o source.o suspend.o test.o times.o trap.o type.o ulimit.o umask.o wait.o getopts.o shopt.o printf.o getopt.o bashgetopt.o complete.o
+x86_64-unknown-linux-gnu-ranlib libbuiltins.a
+make[1]: Leaving directory '/home/devel/building/work/src/bash-5.2.21/builtins'
+make[1]: Entering directory '/home/devel/building/work/src/bash-5.2.21/builtins'
+make[1]: 'pipesize.h' is up to date.
+make[1]: Leaving directory '/home/devel/building/work/src/bash-5.2.21/builtins'
+rm -f redir.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c redir.c
+redir.c: In function 'redirection_error':
+redir.c:150:14: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  150 |     filename = _("file descriptor out of range");
+      |              ^
+redir.c:198:14: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  198 |     filename = _("file descriptor out of range");
+      |              ^
+rm -f pcomplete.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c pcomplete.c
+rm -f pcomplib.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c pcomplib.c
+rm -f syntax.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c syntax.c
+rm -f xmalloc.o
+x86_64-unknown-linux-gnu-gcc  -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib     -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c xmalloc.c
+x86_64-unknown-linux-gnu-gcc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -DBUILDTOOL -c -o buildversion.o ./version.c
+x86_64-unknown-linux-gnu-gcc -DPROGRAM='"bash"' -DCONF_HOSTTYPE='"x86_64"' -DCONF_OSTYPE='"linux-gnu"' -DCONF_MACHTYPE='"x86_64-unknown-linux-gnu"' -DCONF_VENDOR='"unknown"' -DLOCALEDIR='"/usr/share/locale"' -DPACKAGE='"bash"' -DSHELL -DHAVE_CONFIG_H   -I.  -I. -I./include -I./lib    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -rdynamic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -rdynamic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -o bashversion ./support/bashversion.c buildversion.o 
+
+	  ***********************************************************
+	  *                                                         *
+	  * GNU bash, version 5.2.21(1)-release (x86_64-unknown-linux-gnu)
+	  *                                                         *
+	  ***********************************************************
+
+making lib/glob/libglob.a in ./lib/glob
+make[1]: Entering directory '/home/devel/building/work/src/bash-5.2.21/lib/glob'
+rm -f glob.o
+x86_64-unknown-linux-gnu-gcc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  glob.c
+rm -f strmatch.o
+x86_64-unknown-linux-gnu-gcc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  strmatch.c
+rm -f smatch.o
+x86_64-unknown-linux-gnu-gcc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  smatch.c
+rm -f xmbsrtowcs.o
+x86_64-unknown-linux-gnu-gcc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  xmbsrtowcs.c
+rm -f gmisc.o
+x86_64-unknown-linux-gnu-gcc -c  -DHAVE_CONFIG_H -DSHELL -I. -I../.. -I../.. -I../../include -I../../lib    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  gmisc.c
+rm -f -f libglob.a
+x86_64-unknown-linux-gnu-ar cr libglob.a glob.o strmatch.o smatch.o xmbsrtowcs.o gmisc.o
+test -n "x86_64-unknown-linux-gnu-ranlib" && x86_64-unknown-linux-gnu-ranlib libglob.a
+make[1]: Leaving directory '/home/devel/building/work/src/bash-5.2.21/lib/glob'
+making lib/sh/libsh.a in ./lib/sh
+make[1]: Entering directory '/home/devel/building/work/src/bash-5.2.21/lib/sh'
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   clktck.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   clock.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   getenv.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   oslib.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   setlinebuf.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   strnlen.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   itos.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   zread.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   zwrite.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   shtty.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   shmatch.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   eaccess.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   netconn.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   netopen.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   timeval.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   makepath.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   pathcanon.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   pathphys.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   tmpfile.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   stringlist.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   stringvec.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   spell.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   shquote.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   strtrans.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   snprintf.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   mailstat.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   fmtulong.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   fmtullong.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   fmtumax.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   zcatfd.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   zmapfd.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   winsize.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   wcsdup.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   fpurge.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   zgetline.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   mbscmp.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   uconvert.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   ufuncs.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   casemod.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   input_avail.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   mbscasecmp.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   fnxform.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   unicode.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   shmbchar.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   strvis.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   utf8.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   random.c
+random.c: In function 'genseed':
+random.c:93:8: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   93 |   iv = (u_bits32_t)seedrand;            /* let the compiler truncate */
+      |        ^
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   gettimeofday.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   timers.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   wcsnwidth.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   mbschr.c
+x86_64-unknown-linux-gnu-gcc -c   -I. -I../.. -I../.. -I../../lib -I../../include -I.  -DHAVE_CONFIG_H -DSHELL   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   strtoimax.c
+rm -f libsh.a
+x86_64-unknown-linux-gnu-ar cr libsh.a clktck.o clock.o getenv.o oslib.o setlinebuf.o strnlen.o itos.o zread.o zwrite.o shtty.o shmatch.o eaccess.o netconn.o netopen.o timeval.o makepath.o pathcanon.o pathphys.o tmpfile.o stringlist.o stringvec.o spell.o shquote.o strtrans.o snprintf.o mailstat.o fmtulong.o fmtullong.o fmtumax.o zcatfd.o zmapfd.o winsize.o wcsdup.o fpurge.o zgetline.o mbscmp.o uconvert.o ufuncs.o casemod.o input_avail.o mbscasecmp.o fnxform.o unicode.o shmbchar.o strvis.o utf8.o random.o gettimeofday.o timers.o wcsnwidth.o mbschr.o strtoimax.o
+test -n "x86_64-unknown-linux-gnu-ranlib" && x86_64-unknown-linux-gnu-ranlib libsh.a
+make[1]: Leaving directory '/home/devel/building/work/src/bash-5.2.21/lib/sh'
+making lib/tilde/libtilde.a in ./lib/tilde
+make[1]: Entering directory '/home/devel/building/work/src/bash-5.2.21/lib/tilde'
+x86_64-unknown-linux-gnu-gcc -c   -DHAVE_CONFIG_H -DSHELL  -I. -I../.. -I../.. -I../../include -I../../lib   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects tilde.c
+rm -f libtilde.a
+x86_64-unknown-linux-gnu-ar cr libtilde.a tilde.o
+test -n "x86_64-unknown-linux-gnu-ranlib" && x86_64-unknown-linux-gnu-ranlib libtilde.a
+make[1]: Leaving directory '/home/devel/building/work/src/bash-5.2.21/lib/tilde'
+rm -f bash
+x86_64-unknown-linux-gnu-gcc -L./builtins -L/usr/lib -L/usr/lib -L./lib/glob -L./lib/tilde  -L./lib/sh  -rdynamic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o bash shell.o eval.o y.tab.o general.o make_cmd.o print_cmd.o  dispose_cmd.o execute_cmd.o variables.o copy_cmd.o error.o expr.o flags.o jobs.o subst.o hashcmd.o hashlib.o mailcheck.o trap.o input.o unwind_prot.o pathexp.o sig.o test.o version.o alias.o array.o arrayfunc.o assoc.o braces.o bracecomp.o bashhist.o bashline.o  list.o stringlib.o locale.o findcmd.o redir.o pcomplete.o pcomplib.o syntax.o xmalloc.o  -lbuiltins -lglob -lsh -lreadline -lhistory -ltinfo -ltilde     -ldl 
+In function 'xrealloc',
+    inlined from 'shell_getc' at /usr/local/src/chet/src/bash/src/parse.y:2447:24:
+xmalloc.c:135:20: warning: argument 2 value '18446744073709551615' exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+  135 |   temp = pointer ? realloc (pointer, bytes) : malloc (bytes);
+      |                    ^
+/usr/include/stdlib.h: In function 'shell_getc':
+/usr/include/stdlib.h:683:14: note: in a call to allocation function 'realloc' declared here
+  683 | extern void *realloc (void *__ptr, size_t __size)
+      |              ^
+In function 'xrealloc',
+    inlined from 'shell_getc' at /usr/local/src/chet/src/bash/src/parse.y:2447:24:
+xmalloc.c:135:47: warning: argument 1 value '18446744073709551615' exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
+  135 |   temp = pointer ? realloc (pointer, bytes) : malloc (bytes);
+      |                                               ^
+/usr/include/stdlib.h: In function 'shell_getc':
+/usr/include/stdlib.h:672:14: note: in a call to allocation function 'malloc' declared here
+  672 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |              ^
+/usr/bin/ld: /tmp/ccQfvJ5J.ltrans13.ltrans.o: in function `sh_mktmpname':
+<artificial>:(.text+0xb585): warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
+ls -l bash
+-rwxr-xr-x 1 root root 1128616 May  7 20:24 bash
+x86_64-unknown-linux-gnu-size bash
+   text	   data	    bss	    dec	    hex	filename
+ 987073	  16024	  60696	1063793	 103b71	bash
+make[1]: Entering directory '/home/devel/building/work/src/bash-5.2.21/support'
+rm -f man2html.o
+x86_64-unknown-linux-gnu-gcc -c  -DHAVE_CONFIG_H -DSHELL  -I/home/devel/building/work/src/bash-5.2.21 -I..    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects man2html.c
+x86_64-unknown-linux-gnu-gcc -rdynamic -rdynamic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects man2html.o -o man2html -ldl 		
+make[1]: Leaving directory '/home/devel/building/work/src/bash-5.2.21/support'
++ install -D -m 0755 bash /home/devel/building/work/pkg/bin/bash
++ install -D -m 0644 doc/bash.1 /home/devel/building/work/pkg/usr/share/man/man1/bash.1
++ install -D -m 0644 /home/devel/building/work/src/profile /home/devel/building/work/pkg/etc/profile
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 20:24 bin/
+-rwxr-xr-x  0 root   root  1008784 May  7 20:24 bin/bash
+drwxr-xr-x  0 root   root        0 May  7 20:24 etc/
+-rw-r--r--  0 root   root      455 May  7 20:24 etc/profile
+drwxr-xr-x  0 root   root        0 May  7 20:24 usr/
+drwxr-xr-x  0 root   root        0 May  7 20:24 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 20:24 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  7 20:24 usr/share/man/man1/
+-rw-r--r--  0 root   root    97111 May  7 20:24 usr/share/man/man1/bash.1.gz
+=======> Building '/home/devel/packages/bash#5.2.21-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling bash 5.2.21-1
+prt-get: /usr/bin/pkgadd -u bash#5.2.21-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 20:24:34 2024
+

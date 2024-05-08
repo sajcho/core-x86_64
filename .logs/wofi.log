@@ -1,0 +1,135 @@
+prt-get: updating /usr/ports/wayland-x86_64/wofi
+prt-get: starting build Wed May  8 01:41:21 2024
+=======> Building '/home/devel/packages/wofi#1.4.1-3.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/wofi-1.4.1.tar.gz
+cp upstream-20240406.patch /home/devel/building/work/src
++ build
++ cd wofi-v1.4.1
++ patch -p1 -i /home/devel/building/work/src/upstream-20240406.patch
+patching file meson.build
+patching file src/wofi.c
+patching file src/wofi.c
+patching file src/wofi.c
+patching file src/wofi.c
++ build-meson . build
+The Meson build system
+Version: 1.4.0
+Source dir: /home/devel/building/work/src/wofi-v1.4.1
+Build dir: /home/devel/building/work/src/wofi-v1.4.1/build
+Build type: native build
+Project name: wofi
+Project version: hg
+C compiler for the host machine: cc (gcc 14.1.0 "cc (SAUX-x86_64) 14.1.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 2.2.0
+Run-time dependency gtk+-3.0 found: YES 3.24.41
+Run-time dependency wayland-client found: YES 1.22.0
+Run-time dependency threads found: YES
+Library dl found: YES
+Program hg found: NO
+Run-time dependency gio-unix-2.0 found: YES 2.80.0
+Build targets in project: 1
+
+wofi hg
+
+  User defined options
+    auto_features     : auto
+    bindir            : /usr/bin
+    buildtype         : plain
+    datadir           : /usr/share
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    libexecdir        : /usr/lib
+    localstatedir     : /var
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sbindir           : /usr/sbin
+    sharedstatedir    : /var/lib
+    sysconfdir        : /etc
+    werror            : false
+    wrap_mode         : nodownload
+    python.bytecompile: 0
+    b_lto             : false
+    b_pie             : true
+    b_staticpic       : true
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -v -C build
+ninja: entering directory '/home/devel/building/work/src/wofi-v1.4.1/build'
+[1/16] cc -Iwofi.p -I. -I.. -I../inc -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/libdrm -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -D_GNU_SOURCE '-DVERSION="hg"' -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ wofi.p/modes_dmenu.c.o -MF wofi.p/modes_dmenu.c.o.d -o wofi.p/modes_dmenu.c.o -c ../modes/dmenu.c
+[2/16] cc -Iwofi.p -I. -I.. -I../inc -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/libdrm -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -D_GNU_SOURCE '-DVERSION="hg"' -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ wofi.p/modes_drun.c.o -MF wofi.p/modes_drun.c.o.d -o wofi.p/modes_drun.c.o -c ../modes/drun.c
+[3/16] cc -Iwofi.p -I. -I.. -I../inc -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/libdrm -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -D_GNU_SOURCE '-DVERSION="hg"' -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ wofi.p/modes_run.c.o -MF wofi.p/modes_run.c.o.d -o wofi.p/modes_run.c.o -c ../modes/run.c
+[4/16] cc -Iwofi.p -I. -I.. -I../inc -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/libdrm -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -D_GNU_SOURCE '-DVERSION="hg"' -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ wofi.p/proto_xdg-shell-protocol.c.o -MF wofi.p/proto_xdg-shell-protocol.c.o.d -o wofi.p/proto_xdg-shell-protocol.c.o -c ../proto/xdg-shell-protocol.c
+[5/16] cc -Iwofi.p -I. -I.. -I../inc -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/libdrm -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -D_GNU_SOURCE '-DVERSION="hg"' -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ wofi.p/proto_xdg-output-unstable-v1-protocol.c.o -MF wofi.p/proto_xdg-output-unstable-v1-protocol.c.o.d -o wofi.p/proto_xdg-output-unstable-v1-protocol.c.o -c ../proto/xdg-output-unstable-v1-protocol.c
+[6/16] cc -Iwofi.p -I. -I.. -I../inc -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/libdrm -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -D_GNU_SOURCE '-DVERSION="hg"' -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ wofi.p/proto_wlr-layer-shell-unstable-v1-protocol.c.o -MF wofi.p/proto_wlr-layer-shell-unstable-v1-protocol.c.o.d -o wofi.p/proto_wlr-layer-shell-unstable-v1-protocol.c.o -c ../proto/wlr-layer-shell-unstable-v1-protocol.c
+[7/16] cc -Iwofi.p -I. -I.. -I../inc -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/libdrm -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -D_GNU_SOURCE '-DVERSION="hg"' -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ wofi.p/src_wofi.c.o -MF wofi.p/src_wofi.c.o.d -o wofi.p/src_wofi.c.o -c ../src/wofi.c
+[8/16] cc -Iwofi.p -I. -I.. -I../inc -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/libdrm -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -D_GNU_SOURCE '-DVERSION="hg"' -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ wofi.p/src_widget_builder.c.o -MF wofi.p/src_widget_builder.c.o.d -o wofi.p/src_widget_builder.c.o -c ../src/widget_builder.c
+[9/16] cc -Iwofi.p -I. -I.. -I../inc -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/libdrm -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -D_GNU_SOURCE '-DVERSION="hg"' -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ wofi.p/src_utils.c.o -MF wofi.p/src_utils.c.o.d -o wofi.p/src_utils.c.o -c ../src/utils.c
+[10/16] cc -Iwofi.p -I. -I.. -I../inc -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/libdrm -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -D_GNU_SOURCE '-DVERSION="hg"' -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ wofi.p/src_utils_g.c.o -MF wofi.p/src_utils_g.c.o.d -o wofi.p/src_utils_g.c.o -c ../src/utils_g.c
+[11/16] cc -Iwofi.p -I. -I.. -I../inc -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/libdrm -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -D_GNU_SOURCE '-DVERSION="hg"' -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ wofi.p/src_property_box.c.o -MF wofi.p/src_property_box.c.o.d -o wofi.p/src_property_box.c.o -c ../src/property_box.c
+[12/16] cc -Iwofi.p -I. -I.. -I../inc -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/libdrm -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -D_GNU_SOURCE '-DVERSION="hg"' -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ wofi.p/src_match.c.o -MF wofi.p/src_match.c.o.d -o wofi.p/src_match.c.o -c ../src/match.c
+[13/16] cc -Iwofi.p -I. -I.. -I../inc -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/libdrm -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -D_GNU_SOURCE '-DVERSION="hg"' -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ wofi.p/src_map.c.o -MF wofi.p/src_map.c.o.d -o wofi.p/src_map.c.o -c ../src/map.c
+[14/16] cc -Iwofi.p -I. -I.. -I../inc -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/libdrm -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -D_GNU_SOURCE '-DVERSION="hg"' -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ wofi.p/src_main.c.o -MF wofi.p/src_main.c.o.d -o wofi.p/src_main.c.o -c ../src/main.c
+[15/16] cc -Iwofi.p -I. -I.. -I../inc -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/libdrm -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=c99 -D_GNU_SOURCE '-DVERSION="hg"' -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ wofi.p/src_config.c.o -MF wofi.p/src_config.c.o.d -o wofi.p/src_config.c.o -c ../src/config.c
+[16/16] cc  -o wofi wofi.p/src_config.c.o wofi.p/src_main.c.o wofi.p/src_map.c.o wofi.p/src_match.c.o wofi.p/src_property_box.c.o wofi.p/src_utils_g.c.o wofi.p/src_utils.c.o wofi.p/src_widget_builder.c.o wofi.p/src_wofi.c.o wofi.p/proto_wlr-layer-shell-unstable-v1-protocol.c.o wofi.p/proto_xdg-output-unstable-v1-protocol.c.o wofi.p/proto_xdg-shell-protocol.c.o wofi.p/modes_run.c.o wofi.p/modes_drun.c.o wofi.p/modes_dmenu.c.o -Wl,--as-needed -Wl,--no-undefined -pie -rdynamic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--start-group /usr/lib/libgtk-3.so /usr/lib/libgdk-3.so /usr/lib/libpangocairo-1.0.so /usr/lib/libpango-1.0.so /usr/lib/libharfbuzz.so /usr/lib/libatk-1.0.so /usr/lib/libcairo-gobject.so /usr/lib/libcairo.so /usr/lib/libgdk_pixbuf-2.0.so /usr/lib/libgio-2.0.so /usr/lib/libgobject-2.0.so /usr/lib/libglib-2.0.so /usr/lib/libwayland-client.so -ldl -Wl,--end-group -pthread
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/wofi-v1.4.1/build -j 8 -v
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Installing wofi to /home/devel/building/work/pkg/usr/bin
+Installing /home/devel/building/work/src/wofi-v1.4.1/inc/config.h to /home/devel/building/work/pkg/usr/include/wofi-1
+Installing /home/devel/building/work/src/wofi-v1.4.1/inc/map.h to /home/devel/building/work/pkg/usr/include/wofi-1
+Installing /home/devel/building/work/src/wofi-v1.4.1/inc/utils_g.h to /home/devel/building/work/pkg/usr/include/wofi-1
+Installing /home/devel/building/work/src/wofi-v1.4.1/inc/utils.h to /home/devel/building/work/pkg/usr/include/wofi-1
+Installing /home/devel/building/work/src/wofi-v1.4.1/inc/widget_builder_api.h to /home/devel/building/work/pkg/usr/include/wofi-1
+Installing /home/devel/building/work/src/wofi-v1.4.1/inc/wofi_api.h to /home/devel/building/work/pkg/usr/include/wofi-1
+Installing /home/devel/building/work/src/wofi-v1.4.1/man/wofi.1 to /home/devel/building/work/pkg/usr/share/man/man1
+Installing /home/devel/building/work/src/wofi-v1.4.1/man/wofi.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing /home/devel/building/work/src/wofi-v1.4.1/man/wofi.5 to /home/devel/building/work/pkg/usr/share/man/man5
+Installing /home/devel/building/work/src/wofi-v1.4.1/man/wofi.7 to /home/devel/building/work/pkg/usr/share/man/man7
+Installing /home/devel/building/work/src/wofi-v1.4.1/man/wofi-api.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing /home/devel/building/work/src/wofi-v1.4.1/man/wofi-config.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing /home/devel/building/work/src/wofi-v1.4.1/man/wofi-keys.7 to /home/devel/building/work/pkg/usr/share/man/man7
+Installing /home/devel/building/work/src/wofi-v1.4.1/man/wofi-map.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing /home/devel/building/work/src/wofi-v1.4.1/man/wofi-utils.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing /home/devel/building/work/src/wofi-v1.4.1/man/wofi-widget-builder.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing /home/devel/building/work/src/wofi-v1.4.1/build/meson-private/wofi.pc to /home/devel/building/work/pkg/usr/lib/pkgconfig
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 01:41 usr/
+drwxr-xr-x  0 root   root        0 May  8 01:41 usr/bin/
+drwxr-xr-x  0 root   root        0 May  8 01:41 usr/include/
+drwxr-xr-x  0 root   root        0 May  8 01:41 usr/share/
+drwxr-xr-x  0 root   root        0 May  8 01:41 usr/lib/
+drwxr-xr-x  0 root   root        0 May  8 01:41 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      164 May  8 01:41 usr/lib/pkgconfig/wofi.pc
+drwxr-xr-x  0 root   root        0 May  8 01:41 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  8 01:41 usr/share/man/man1/
+drwxr-xr-x  0 root   root        0 May  8 01:41 usr/share/man/man3/
+drwxr-xr-x  0 root   root        0 May  8 01:41 usr/share/man/man5/
+drwxr-xr-x  0 root   root        0 May  8 01:41 usr/share/man/man7/
+-rw-r--r--  0 root   root     2974 Feb  9 20:22 usr/share/man/man7/wofi.7.gz
+-rw-r--r--  0 root   root     8906 Feb  9 20:22 usr/share/man/man7/wofi-keys.7.gz
+-rw-r--r--  0 root   root     3988 Feb  9 20:22 usr/share/man/man5/wofi.5.gz
+-rw-r--r--  0 root   root     1355 Feb  9 20:22 usr/share/man/man3/wofi.3.gz
+-rw-r--r--  0 root   root     1597 Feb  9 20:22 usr/share/man/man3/wofi-api.3.gz
+-rw-r--r--  0 root   root      613 Feb  9 20:22 usr/share/man/man3/wofi-config.3.gz
+-rw-r--r--  0 root   root      827 Feb  9 20:22 usr/share/man/man3/wofi-map.3.gz
+-rw-r--r--  0 root   root      602 Feb  9 20:22 usr/share/man/man3/wofi-utils.3.gz
+-rw-r--r--  0 root   root      906 Feb  9 20:22 usr/share/man/man3/wofi-widget-builder.3.gz
+-rw-r--r--  0 root   root     2203 Feb  9 20:22 usr/share/man/man1/wofi.1.gz
+drwxr-xr-x  0 root   root        0 May  8 01:41 usr/include/wofi-1/
+-rw-r--r--  0 root   root     1057 Feb  9 20:22 usr/include/wofi-1/config.h
+-rw-r--r--  0 root   root     1144 Feb  9 20:22 usr/include/wofi-1/map.h
+-rw-r--r--  0 root   root      949 Feb  9 20:22 usr/include/wofi-1/utils_g.h
+-rw-r--r--  0 root   root     1109 Feb  9 20:22 usr/include/wofi-1/utils.h
+-rw-r--r--  0 root   root     1903 Feb  9 20:22 usr/include/wofi-1/widget_builder_api.h
+-rw-r--r--  0 root   root     1597 Feb  9 20:22 usr/include/wofi-1/wofi_api.h
+-rwxr-xr-x  0 root   root   108112 May  8 01:41 usr/bin/wofi
+=======> Building '/home/devel/packages/wofi#1.4.1-3.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling wofi 1.4.1-3
+prt-get: /usr/bin/pkgadd -u wofi#1.4.1-3.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 01:41:24 2024
+

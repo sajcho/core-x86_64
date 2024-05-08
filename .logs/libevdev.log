@@ -1,0 +1,122 @@
+prt-get: updating /usr/ports/wayland-x86_64/libevdev
+prt-get: starting build Tue May  7 23:26:44 2024
+=======> Building '/home/devel/packages/libevdev#1.13.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/libevdev-1.13.0.tar.xz
++ build
++ cd libevdev-1.13.0
++ build-meson -Dtests=disabled -Ddocumentation=disabled . build
+The Meson build system
+Version: 1.4.0
+Source dir: /home/devel/building/work/src/libevdev-1.13.0
+Build dir: /home/devel/building/work/src/libevdev-1.13.0/build
+Build type: native build
+Project name: libevdev
+Project version: 1.13.0
+C compiler for the host machine: cc (gcc 14.1.0 "cc (SAUX-x86_64) 14.1.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Library m found: YES
+Library rt found: YES
+Program libevdev/make-event-names.py found: YES (/home/devel/building/work/src/libevdev-1.13.0/libevdev/make-event-names.py)
+Configuring event-names.h with command
+Found pkg-config: YES (/usr/bin/pkg-config) 2.2.0
+Configuring libevdev.3 using configuration
+Dependency check skipped: feature tests disabled
+Program doxygen skipped: feature documentation disabled
+Configuring config.h using configuration
+Build targets in project: 6
+NOTICE: Future-deprecated features used:
+ * 1.1.0: {'"boolean option" keyword argument "value" of type str'}
+
+libevdev 1.13.0
+
+  User defined options
+    auto_features     : auto
+    bindir            : /usr/bin
+    buildtype         : plain
+    datadir           : /usr/share
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    libexecdir        : /usr/lib
+    localstatedir     : /var
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sbindir           : /usr/sbin
+    sharedstatedir    : /var/lib
+    sysconfdir        : /etc
+    werror            : false
+    wrap_mode         : nodownload
+    python.bytecompile: 0
+    b_lto             : false
+    b_pie             : true
+    b_staticpic       : true
+    documentation     : disabled
+    tests             : disabled
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -v -C build
+ninja: entering directory '/home/devel/building/work/src/libevdev-1.13.0/build'
+[1/15] cc -Ilibevdev-tweak-device.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -Wno-unused-parameter -fvisibility=hidden -Wmissing-prototypes -Wstrict-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ libevdev-tweak-device.p/tools_libevdev-tweak-device.c.o -MF libevdev-tweak-device.p/tools_libevdev-tweak-device.c.o.d -o libevdev-tweak-device.p/tools_libevdev-tweak-device.c.o -c ../tools/libevdev-tweak-device.c
+[2/15] cc -Imouse-dpi-tool.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -Wno-unused-parameter -fvisibility=hidden -Wmissing-prototypes -Wstrict-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ mouse-dpi-tool.p/tools_mouse-dpi-tool.c.o -MF mouse-dpi-tool.p/tools_mouse-dpi-tool.c.o.d -o mouse-dpi-tool.p/tools_mouse-dpi-tool.c.o -c ../tools/mouse-dpi-tool.c
+[3/15] cc -Itouchpad-edge-detector.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -Wno-unused-parameter -fvisibility=hidden -Wmissing-prototypes -Wstrict-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ touchpad-edge-detector.p/tools_touchpad-edge-detector.c.o -MF touchpad-edge-detector.p/tools_touchpad-edge-detector.c.o.d -o touchpad-edge-detector.p/tools_touchpad-edge-detector.c.o -c ../tools/touchpad-edge-detector.c
+[4/15] cc -Ilibevdev-list-codes.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -Wno-unused-parameter -fvisibility=hidden -Wmissing-prototypes -Wstrict-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ libevdev-list-codes.p/tools_libevdev-list-codes.c.o -MF libevdev-list-codes.p/tools_libevdev-list-codes.c.o.d -o libevdev-list-codes.p/tools_libevdev-list-codes.c.o -c ../tools/libevdev-list-codes.c
+[5/15] cc -Ilibevdev-events.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -Wno-unused-parameter -fvisibility=hidden -Wmissing-prototypes -Wstrict-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ libevdev-events.p/tools_libevdev-events.c.o -MF libevdev-events.p/tools_libevdev-events.c.o.d -o libevdev-events.p/tools_libevdev-events.c.o -c ../tools/libevdev-events.c
+[6/15] cc -Ilibevdev.so.2.3.0.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -Wno-unused-parameter -fvisibility=hidden -Wmissing-prototypes -Wstrict-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ libevdev.so.2.3.0.p/libevdev_libevdev-names.c.o -MF libevdev.so.2.3.0.p/libevdev_libevdev-names.c.o.d -o libevdev.so.2.3.0.p/libevdev_libevdev-names.c.o -c ../libevdev/libevdev-names.c
+[7/15] cc -Ilibevdev.so.2.3.0.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -Wno-unused-parameter -fvisibility=hidden -Wmissing-prototypes -Wstrict-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ libevdev.so.2.3.0.p/libevdev_libevdev.c.o -MF libevdev.so.2.3.0.p/libevdev_libevdev.c.o.d -o libevdev.so.2.3.0.p/libevdev_libevdev.c.o -c ../libevdev/libevdev.c
+[8/15] cc -Ilibevdev.so.2.3.0.p -I. -I.. -I../include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -std=gnu99 -Wno-unused-parameter -fvisibility=hidden -Wmissing-prototypes -Wstrict-prototypes -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ libevdev.so.2.3.0.p/libevdev_libevdev-uinput.c.o -MF libevdev.so.2.3.0.p/libevdev_libevdev-uinput.c.o.d -o libevdev.so.2.3.0.p/libevdev_libevdev-uinput.c.o -c ../libevdev/libevdev-uinput.c
+[9/15] cc  -o libevdev.so.2.3.0 libevdev.so.2.3.0.p/libevdev_libevdev-uinput.c.o libevdev.so.2.3.0.p/libevdev_libevdev.c.o libevdev.so.2.3.0.p/libevdev_libevdev-names.c.o -Wl,--as-needed -Wl,--no-undefined -shared -fPIC -Wl,-soname,libevdev.so.2 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--version-script,/home/devel/building/work/src/libevdev-1.13.0/libevdev/libevdev.sym -lrt
+[10/15] /usr/bin/meson --internal symbolextractor /home/devel/building/work/src/libevdev-1.13.0/build libevdev.so.2.3.0 libevdev.so.2.3.0 libevdev.so.2.3.0.p/libevdev.so.2.3.0.symbols 
+[11/15] cc  -o libevdev-tweak-device libevdev-tweak-device.p/tools_libevdev-tweak-device.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects '-Wl,-rpath,$ORIGIN/' -Wl,-rpath-link,/home/devel/building/work/src/libevdev-1.13.0/build/ libevdev.so.2.3.0
+[12/15] cc  -o mouse-dpi-tool mouse-dpi-tool.p/tools_mouse-dpi-tool.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects '-Wl,-rpath,$ORIGIN/' -Wl,-rpath-link,/home/devel/building/work/src/libevdev-1.13.0/build/ libevdev.so.2.3.0
+[13/15] cc  -o touchpad-edge-detector touchpad-edge-detector.p/tools_touchpad-edge-detector.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects '-Wl,-rpath,$ORIGIN/' -Wl,-rpath-link,/home/devel/building/work/src/libevdev-1.13.0/build/ -Wl,--start-group libevdev.so.2.3.0 -lm -Wl,--end-group
+[14/15] cc  -o libevdev-list-codes libevdev-list-codes.p/tools_libevdev-list-codes.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects '-Wl,-rpath,$ORIGIN/' -Wl,-rpath-link,/home/devel/building/work/src/libevdev-1.13.0/build/ libevdev.so.2.3.0
+[15/15] cc  -o libevdev-events libevdev-events.p/tools_libevdev-events.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects '-Wl,-rpath,$ORIGIN/' -Wl,-rpath-link,/home/devel/building/work/src/libevdev-1.13.0/build/ libevdev.so.2.3.0
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/libevdev-1.13.0/build -j 8 -v
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Installing libevdev.so.2.3.0 to /home/devel/building/work/pkg/usr/lib
+Installing touchpad-edge-detector to /home/devel/building/work/pkg/usr/bin
+Installing mouse-dpi-tool to /home/devel/building/work/pkg/usr/bin
+Installing libevdev-tweak-device to /home/devel/building/work/pkg/usr/bin
+Installing /home/devel/building/work/src/libevdev-1.13.0/libevdev/libevdev.h to /home/devel/building/work/pkg/usr/include/libevdev-1.0/libevdev
+Installing /home/devel/building/work/src/libevdev-1.13.0/libevdev/libevdev-uinput.h to /home/devel/building/work/pkg/usr/include/libevdev-1.0/libevdev
+Installing /home/devel/building/work/src/libevdev-1.13.0/build/libevdev.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing /home/devel/building/work/src/libevdev-1.13.0/tools/libevdev-tweak-device.1 to /home/devel/building/work/pkg/usr/share/man/man1
+Installing /home/devel/building/work/src/libevdev-1.13.0/tools/touchpad-edge-detector.1 to /home/devel/building/work/pkg/usr/share/man/man1
+Installing /home/devel/building/work/src/libevdev-1.13.0/tools/mouse-dpi-tool.1 to /home/devel/building/work/pkg/usr/share/man/man1
+Installing /home/devel/building/work/src/libevdev-1.13.0/build/meson-private/libevdev.pc to /home/devel/building/work/pkg/usr/lib/pkgconfig
+Installing symlink pointing to libevdev.so.2.3.0 to /home/devel/building/work/pkg/usr/lib/libevdev.so.2
+Installing symlink pointing to libevdev.so.2 to /home/devel/building/work/pkg/usr/lib/libevdev.so
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 23:26 usr/
+drwxr-xr-x  0 root   root        0 May  7 23:26 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 23:26 usr/bin/
+drwxr-xr-x  0 root   root        0 May  7 23:26 usr/include/
+drwxr-xr-x  0 root   root        0 May  7 23:26 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 23:26 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  7 23:26 usr/share/man/man3/
+drwxr-xr-x  0 root   root        0 May  7 23:26 usr/share/man/man1/
+-rw-r--r--  0 root   root      883 Aug  2  2022 usr/share/man/man1/libevdev-tweak-device.1.gz
+-rw-r--r--  0 root   root      956 Aug  2  2022 usr/share/man/man1/touchpad-edge-detector.1.gz
+-rw-r--r--  0 root   root      391 Aug  2  2022 usr/share/man/man1/mouse-dpi-tool.1.gz
+-rw-r--r--  0 root   root      426 May  7 23:26 usr/share/man/man3/libevdev.3.gz
+drwxr-xr-x  0 root   root        0 May  7 23:26 usr/include/libevdev-1.0/
+drwxr-xr-x  0 root   root        0 May  7 23:26 usr/include/libevdev-1.0/libevdev/
+-rw-r--r--  0 root   root    88286 Aug  2  2022 usr/include/libevdev-1.0/libevdev/libevdev.h
+-rw-r--r--  0 root   root     8962 Aug  2  2022 usr/include/libevdev-1.0/libevdev/libevdev-uinput.h
+-rwxr-xr-x  0 root   root    14720 May  7 23:26 usr/bin/touchpad-edge-detector
+-rwxr-xr-x  0 root   root    14648 May  7 23:26 usr/bin/mouse-dpi-tool
+-rwxr-xr-x  0 root   root    15128 May  7 23:26 usr/bin/libevdev-tweak-device
+-rwxr-xr-x  0 root   root   117392 May  7 23:26 usr/lib/libevdev.so.2.3.0
+drwxr-xr-x  0 root   root        0 May  7 23:26 usr/lib/pkgconfig/
+lrwxrwxrwx  0 root   root        0 May  7 23:26 usr/lib/libevdev.so.2 -> libevdev.so.2.3.0
+lrwxrwxrwx  0 root   root        0 May  7 23:26 usr/lib/libevdev.so -> libevdev.so.2
+-rw-r--r--  0 root   root      222 May  7 23:26 usr/lib/pkgconfig/libevdev.pc
+=======> Building '/home/devel/packages/libevdev#1.13.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling libevdev 1.13.0-1
+prt-get: /usr/bin/pkgadd -u libevdev#1.13.0-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 23:26:46 2024
+

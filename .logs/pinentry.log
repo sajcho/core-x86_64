@@ -1,0 +1,284 @@
+prt-get: updating /usr/ports/opt-x86_64/pinentry
+prt-get: starting build Wed May  8 00:56:24 2024
+=======> Building '/home/devel/packages/pinentry#1.3.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/pinentry-1.3.0.tar.bz2
+cp pinentry /home/devel/building/work/src
++ build
++ cd pinentry-1.3.0
++ ./configure --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --prefix=/usr --enable-pinentry-curses --enable-fallback-curses --disable-pinentry-fltk --disable-pinentry-gnome3 --disable-pinentry-gtk2 --disable-pinentry-qt --disable-pinentry-qt5 --disable-pinentry-tqt --disable-libsecret
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports the include directive... yes (GNU style)
+checking for x86_64-unknown-linux-gnu-gcc... x86_64-unknown-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... yes
+checking for x86_64-unknown-linux-gnu-gcc option to enable C11 features... none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... yes
+checking dependency style of x86_64-unknown-linux-gnu-gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking whether make sets $(MAKE)... (cached) yes
+checking whether build environment is sane... yes
+checking for x86_64-unknown-linux-gnu-gcc... (cached) x86_64-unknown-linux-gnu-gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... (cached) yes
+checking for x86_64-unknown-linux-gnu-gcc option to enable C11 features... (cached) none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... (cached) yes
+checking dependency style of x86_64-unknown-linux-gnu-gcc... (cached) gcc3
+checking how to run the C preprocessor... x86_64-unknown-linux-gnu-gcc -E
+checking for x86_64-unknown-linux-gnu-ranlib... x86_64-unknown-linux-gnu-ranlib
+checking for x86_64-unknown-linux-gnu-g++... x86_64-unknown-linux-gnu-g++
+checking whether the compiler supports GNU C++... yes
+checking whether x86_64-unknown-linux-gnu-g++ accepts -g... yes
+checking for x86_64-unknown-linux-gnu-g++ option to enable C++11 features... none needed
+checking dependency style of x86_64-unknown-linux-gnu-g++... gcc3
+checking whether ln -s works... yes
+checking for x86_64-unknown-linux-gnu-pkg-config... /usr/bin/x86_64-unknown-linux-gnu-pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for x86_64-unknown-linux-gnu-windres... no
+checking for windres... no
+checking for gitlog-to-changelog... no
+checking if gcc ignores unknown -Wno-* options... yes
+checking if gcc supports -Wpointer-arith... yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for langinfo.h... yes
+checking for termio.h... yes
+checking for locale.h... yes
+checking for utime.h... yes
+checking for wchar.h... (cached) yes
+checking for seteuid... yes
+checking for stpcpy... yes
+checking for mmap... yes
+checking for stat... yes
+checking for mlock... yes
+checking for sysconf... yes
+checking for getpagesize... yes
+checking whether mlock is broken... no
+checking for uint32_t... yes
+checking for gpg-error-config... /usr/bin/gpg-error-config
+checking for gpgrt-config... /usr/bin/gpgrt-config
+configure: Use gpgrt-config with /usr/lib as gpg-error-config
+checking for GPG Error - version >= 1.16... yes (1.49)
+configure: Use gpgrt-config as libassuan-config
+checking for LIBASSUAN - version >= 2.1.0... yes (2.5.7)
+checking LIBASSUAN API version... okay
+checking for byte... no
+checking for ulong... yes
+checking for u64... no
+checking for ncursesw... yes
+checking for ncurses include dir... none
+checking for ld used by x86_64-unknown-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking if Unix domain socket is supported... yes
+checking for elementary >= 1.18,ecore-x... no
+configure: WARNING: pkg-config could not find the modules elementary or ecore-x
+checking for x11... no
+configure: WARNING: pkg-config could not find the module x11
+checking for KF5WaylandClient >= 5.60... no
+configure: WARNING: pkg-config could not find the module KF5WaylandClient
+checking for KF6GuiAddons >= 5.240... no
+configure: WARNING: pkg-config could not find the module KF6GuiAddons
+configure: WARNING: pinentry-qt5 will be built without Caps Lock warning on Wayland
+configure: WARNING: pinentry-qt will be built without Caps Lock warning on Unix
+configure: WARNING: pinentry-qt will be built without window parenting on wayland
+checking for QtCore >= 4.6.0 QtGui >= 4.6.0... no
+checking that generated files are newer than configure... done
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating m4/Makefile
+config.status: creating secmem/Makefile
+config.status: creating pinentry/Makefile
+config.status: creating curses/Makefile
+config.status: creating tty/Makefile
+config.status: creating efl/Makefile
+config.status: creating emacs/Makefile
+config.status: creating gtk+-2/Makefile
+config.status: creating gnome3/Makefile
+config.status: creating qt/Makefile
+config.status: creating qt/icons/Makefile
+config.status: creating qt5/Makefile
+config.status: creating qt5/icons/Makefile
+config.status: creating qt4/Makefile
+config.status: creating tqt/Makefile
+config.status: creating w32/Makefile
+config.status: creating fltk/Makefile
+config.status: creating doc/Makefile
+config.status: creating Makefile
+config.status: creating qt/org.gnupg.pinentry-qt.desktop
+config.status: creating qt5/org.gnupg.pinentry-qt5.desktop
+config.status: creating config.h
+config.status: executing depfiles commands
+configure:
+
+	Pinentry v1.3.0 has been configured as follows:
+
+	Revision:  24833c9  (9347)
+	Platform:  x86_64-unknown-linux-gnu
+
+	Curses Pinentry ..: yes
+	TTY Pinentry .....: maybe
+	Emacs Pinentry ...: no
+	EFL Pinentry .....: no
+	GTK+-2 Pinentry ..: no
+	GNOME 3 Pinentry .: no
+	Qt6 Pinentry .....: no
+	Qt5 Pinentry .....: no
+	Qt4 Pinentry .....: no
+	TQt Pinentry .....: no
+	W32 Pinentry .....: no
+	FLTK Pinentry ....: no
+
+	Fallback to Curses: yes
+	Emacs integration : yes
+
+	libsecret ........: no
+
+	Default Pinentry .: pinentry-curses
+
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0'
+Making all in m4
+make[2]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0/m4'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0/m4'
+Making all in secmem
+make[2]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0/secmem'
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..   -Wall  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wno-pointer-sign -Wpointer-arith -MT secmem.o -MD -MP -MF .deps/secmem.Tpo -c -o secmem.o secmem.c
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..   -Wall  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wno-pointer-sign -Wpointer-arith -MT util.o -MD -MP -MF .deps/util.Tpo -c -o util.o util.c
+mv -f .deps/util.Tpo .deps/util.Po
+mv -f .deps/secmem.Tpo .deps/secmem.Po
+rm -f libsecmem.a
+ar cru libsecmem.a secmem.o util.o 
+ar: `u' modifier ignored since `D' is the default (see `U')
+x86_64-unknown-linux-gnu-ranlib libsecmem.a
+make[2]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0/secmem'
+Making all in pinentry
+make[2]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0/pinentry'
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..   -I../secmem -Wall  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wno-pointer-sign -Wpointer-arith -MT pinentry.o -MD -MP -MF .deps/pinentry.Tpo -c -o pinentry.o pinentry.c
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..   -I../secmem -Wall  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wno-pointer-sign -Wpointer-arith -MT argparse.o -MD -MP -MF .deps/argparse.Tpo -c -o argparse.o argparse.c
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..   -I../secmem -Wall  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wno-pointer-sign -Wpointer-arith -MT password-cache.o -MD -MP -MF .deps/password-cache.Tpo -c -o password-cache.o password-cache.c
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..   -I../secmem -Wall  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wno-pointer-sign -Wpointer-arith -MT pinentry-emacs.o -MD -MP -MF .deps/pinentry-emacs.Tpo -c -o pinentry-emacs.o pinentry-emacs.c
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..   -I../secmem -Wall -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=600 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wno-pointer-sign -Wpointer-arith -MT libpinentry_curses_a-pinentry-curses.o -MD -MP -MF .deps/libpinentry_curses_a-pinentry-curses.Tpo -c -o libpinentry_curses_a-pinentry-curses.o `test -f 'pinentry-curses.c' || echo './'`pinentry-curses.c
+mv -f .deps/password-cache.Tpo .deps/password-cache.Po
+mv -f .deps/pinentry-emacs.Tpo .deps/pinentry-emacs.Po
+mv -f .deps/argparse.Tpo .deps/argparse.Po
+mv -f .deps/pinentry.Tpo .deps/pinentry.Po
+rm -f libpinentry.a
+ar cru libpinentry.a pinentry.o argparse.o password-cache.o pinentry-emacs.o 
+ar: `u' modifier ignored since `D' is the default (see `U')
+x86_64-unknown-linux-gnu-ranlib libpinentry.a
+mv -f .deps/libpinentry_curses_a-pinentry-curses.Tpo .deps/libpinentry_curses_a-pinentry-curses.Po
+rm -f libpinentry-curses.a
+ar cru libpinentry-curses.a libpinentry_curses_a-pinentry-curses.o 
+ar: `u' modifier ignored since `D' is the default (see `U')
+x86_64-unknown-linux-gnu-ranlib libpinentry-curses.a
+make[2]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0/pinentry'
+Making all in curses
+make[2]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0/curses'
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..    -I../pinentry -Wall  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wno-pointer-sign -Wpointer-arith -MT pinentry-curses.o -MD -MP -MF .deps/pinentry-curses.Tpo -c -o pinentry-curses.o pinentry-curses.c
+mv -f .deps/pinentry-curses.Tpo .deps/pinentry-curses.Po
+x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wno-pointer-sign -Wpointer-arith   -o pinentry-curses pinentry-curses.o ../pinentry/libpinentry.a ../pinentry/libpinentry-curses.a ../secmem/libsecmem.a -lassuan -lgpg-error  -lncursesw -ltinfo  
+make[2]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0/curses'
+Making all in doc
+make[2]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0/doc'
+make[2]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0'
+make[2]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0'
+make[1]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in m4
+make[1]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0/m4'
+make[2]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0/m4'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0/m4'
+make[1]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0/m4'
+Making install in secmem
+make[1]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0/secmem'
+make[2]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0/secmem'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0/secmem'
+make[1]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0/secmem'
+Making install in pinentry
+make[1]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0/pinentry'
+make[2]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0/pinentry'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0/pinentry'
+make[1]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0/pinentry'
+Making install in curses
+make[1]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0/curses'
+make[2]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0/curses'
+make[2]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+  /usr/bin/install -c pinentry-curses '/home/devel/building/work/pkg/usr/bin'
+make[2]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0/curses'
+make[1]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0/curses'
+Making install in doc
+make[1]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0/doc'
+make[2]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/info'
+ /usr/bin/install -c -m 644 ./pinentry.info '/home/devel/building/work/pkg/usr/share/info'
+ install-info --info-dir='/home/devel/building/work/pkg/usr/share/info' '/home/devel/building/work/pkg/usr/share/info/pinentry.info'
+make[2]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0/doc'
+make[1]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0/doc'
+make[1]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0'
+make[2]: Entering directory '/home/devel/building/work/src/pinentry-1.3.0'
+make[2]: Nothing to be done for 'install-data-am'.
+(cd /home/devel/building/work/pkg/usr/bin; \
+rm -f pinentry; \
+ln -s pinentry-curses pinentry)
+make[2]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0'
+make[1]: Leaving directory '/home/devel/building/work/src/pinentry-1.3.0'
++ rm /home/devel/building/work/pkg/usr/bin/pinentry
++ install -m 0755 /home/devel/building/work/src/pinentry /home/devel/building/work/pkg/usr/bin/pinentry
++ rm -r /home/devel/building/work/pkg/usr/share
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 00:56 usr/
+drwxr-xr-x  0 root   root        0 May  8 00:56 usr/bin/
+-rwxr-xr-x  0 root   root    69088 May  8 00:56 usr/bin/pinentry-curses
+-rwxr-xr-x  0 root   root      403 May  8 00:56 usr/bin/pinentry
+=======> Building '/home/devel/packages/pinentry#1.3.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling pinentry 1.3.0-1
+prt-get: /usr/bin/pkgadd -u pinentry#1.3.0-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 00:56:37 2024
+

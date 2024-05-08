@@ -1,0 +1,64 @@
+prt-get: updating /usr/ports/opt-x86_64/help2man
+prt-get: starting build Tue May  7 23:18:04 2024
+=======> Building '/home/devel/packages/help2man#1.49.3-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/help2man-1.49.3.tar.xz
++ build
++ cd help2man-1.49.3
++ ./configure --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --prefix=/usr --disable-nls
+checking for perl... perl
+checking for module Locale::gettext... no
+checking for msgfmt... /usr/bin/msgfmt
+checking for x86_64-unknown-linux-gnu-gcc... x86_64-unknown-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... yes
+checking for x86_64-unknown-linux-gnu-gcc option to enable C11 features... none needed
+checking for library containing dlsym... none required
+checking for library containing bindtextdomain... none required
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for makeinfo... /usr/bin/makeinfo
+checking for install-info... /usr/bin/install-info
+checking for msgmerge... /usr/bin/msgmerge
+checking for xgettext... /usr/bin/xgettext
+checking for po4a-updatepo... ./build-aux//missing po4a-updatepo
+checking for po4a-translate... ./build-aux//missing po4a-translate
+configure: creating ./config.status
+config.status: creating Makefile
++ make V=1
+perl help2man.PL 
+Extracting help2man (with variable substitutions)
++ make DESTDIR=/home/devel/building/work/pkg install
+./build-aux//mkinstalldirs /home/devel/building/work/pkg/usr/bin
+mkdir -p -- /home/devel/building/work/pkg/usr/bin
+/usr/bin/install -c help2man /home/devel/building/work/pkg/usr/bin
+./build-aux//mkinstalldirs /home/devel/building/work/pkg/usr/share/man/man1
+mkdir -p -- /home/devel/building/work/pkg/usr/share/man/man1
+/usr/bin/install -c -m 644 $(./build-aux//find-vpath   help2man.1) /home/devel/building/work/pkg/usr/share/man/man1
+./build-aux//mkinstalldirs /home/devel/building/work/pkg/usr/share/info
+mkdir -p -- /home/devel/building/work/pkg/usr/share/info
+/usr/bin/install -c -m 644 $(./build-aux//find-vpath   help2man.info) \
+    /home/devel/building/work/pkg/usr/share/info/help2man.info
+if test -f /home/devel/building/work/pkg/usr/share/info/dir; \
+then \
+    /usr/bin/install-info --info-dir=/home/devel/building/work/pkg/usr/share/info \
+	/home/devel/building/work/pkg/usr/share/info/help2man.info; \
+fi
++ rm -r /home/devel/building/work/pkg/usr/share/info
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 23:18 usr/
+drwxr-xr-x  0 root   root        0 May  7 23:18 usr/bin/
+drwxr-xr-x  0 root   root        0 May  7 23:18 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 23:18 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  7 23:18 usr/share/man/man1/
+-rw-r--r--  0 root   root     1902 May  7 23:18 usr/share/man/man1/help2man.1.gz
+-rwxr-xr-x  0 root   root    20063 May  7 23:18 usr/bin/help2man
+=======> Building '/home/devel/packages/help2man#1.49.3-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling help2man 1.49.3-1
+prt-get: /usr/bin/pkgadd -u help2man#1.49.3-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 23:18:04 2024
+

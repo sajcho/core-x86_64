@@ -1,0 +1,45 @@
+prt-get: updating /usr/ports/core-x86_64/httpup
+prt-get: starting build Tue May  7 23:18:06 2024
+=======> Building '/home/devel/packages/httpup#0.5.1-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/httpup-0.5.1.tar.xz
+cp httpup /home/devel/building/work/src
++ build
++ cd httpup-0.5.1
++ make V=1
+g++ -O2 -pipe -DMF_VERSION=\"0.5.1\" -g -Wall -Werror -Wno-strict-aliasing   -c -o httpup.o httpup.cpp
+g++ -O2 -pipe -DMF_VERSION=\"0.5.1\" -g -Wall -Werror -Wno-strict-aliasing   -c -o fileutils.o fileutils.cpp
+g++ -O2 -pipe -DMF_VERSION=\"0.5.1\" -g -Wall -Werror -Wno-strict-aliasing   -c -o argparser.o argparser.cpp
+g++ -O2 -pipe -DMF_VERSION=\"0.5.1\" -g -Wall -Werror -Wno-strict-aliasing   -c -o md5.o md5.cpp
+g++ -O2 -pipe -DMF_VERSION=\"0.5.1\" -g -Wall -Werror -Wno-strict-aliasing   -c -o httpupargparser.o httpupargparser.cpp
+g++ -O2 -pipe -DMF_VERSION=\"0.5.1\" -g -Wall -Werror -Wno-strict-aliasing   -c -o configparser.o configparser.cpp
+g++ -O2 -pipe -DMF_VERSION=\"0.5.1\" -g -Wall -Werror -Wno-strict-aliasing   -c -o main.o main.cpp
+g++ -lcurl httpup.o fileutils.o argparser.o md5.o httpupargparser.o configparser.o main.o -o httpup
++ make DESTDIR=/home/devel/building/work/pkg prefix=/usr mandir=/usr/share/man install
+/usr/bin/install -d /home/devel/building/work/pkg/usr/bin
+/usr/bin/install -d /home/devel/building/work/pkg/usr/share/man/man8
+/usr/bin/install -m 755 httpup	/home/devel/building/work/pkg/usr/bin/httpup
+/usr/bin/install -m 755 httpup-repgen	/home/devel/building/work/pkg/usr/bin/httpup-repgen
+/usr/bin/install -m 644 httpup.8	/home/devel/building/work/pkg/usr/share/man/man8/httpup.8
+/usr/bin/install -m 644 httpup-repgen.8 \
+	/home/devel/building/work/pkg/usr/share/man/man8/httpup-repgen.8
++ install -D -m 755 /home/devel/building/work/src/httpup /home/devel/building/work/pkg/etc/ports/drivers/httpup
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 23:18 etc/
+drwxr-xr-x  0 root   root        0 May  7 23:18 etc/ports/
+drwxr-xr-x  0 root   root        0 May  7 23:18 etc/ports/drivers/
+-rwxr-xr-x  0 root   root      434 May  7 23:18 etc/ports/drivers/httpup
+drwxr-xr-x  0 root   root        0 May  7 23:18 usr/
+drwxr-xr-x  0 root   root        0 May  7 23:18 usr/bin/
+drwxr-xr-x  0 root   root        0 May  7 23:18 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 23:18 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  7 23:18 usr/share/man/man8/
+-rw-r--r--  0 root   root      840 May  7 23:18 usr/share/man/man8/httpup.8.gz
+-rw-r--r--  0 root   root      704 May  7 23:18 usr/share/man/man8/httpup-repgen.8.gz
+-rwxr-xr-x  0 root   root   117632 May  7 23:18 usr/bin/httpup
+-rwxr-xr-x  0 root   root     1778 May  7 23:18 usr/bin/httpup-repgen
+=======> Building '/home/devel/packages/httpup#0.5.1-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling httpup 0.5.1-1
+prt-get: /usr/bin/pkgadd -u httpup#0.5.1-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 23:18:08 2024
+

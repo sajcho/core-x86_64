@@ -1,0 +1,241 @@
+prt-get: updating /usr/ports/opt-x86_64/lm-sensors
+prt-get: starting build Wed May  8 00:14:12 2024
+=======> Building '/home/devel/packages/lm-sensors#3.6.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/lm-sensors-3.6.0.tar.gz
++ build
++ cd lm-sensors-3-6-0
++ make PREFIX=/usr ETCDIR=/etc MANDIR=/usr/share/man DESTDIR=/home/devel/building/work/pkg install
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -fpic -D_REENTRANT -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects lib/data.c | \
+sed -e 's@^\(.*\)\.o:@lib/data.ld lib/data.lo: Makefile '`dirname lib/data.ld`/Module.mk' @' > lib/data.ld
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -fpic -D_REENTRANT -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects lib/general.c | \
+sed -e 's@^\(.*\)\.o:@lib/general.ld lib/general.lo: Makefile '`dirname lib/general.ld`/Module.mk' @' > lib/general.ld
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -fpic -D_REENTRANT -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects lib/error.c | \
+sed -e 's@^\(.*\)\.o:@lib/error.ld lib/error.lo: Makefile '`dirname lib/error.ld`/Module.mk' @' > lib/error.ld
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -fpic -D_REENTRANT -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects lib/access.c | \
+sed -e 's@^\(.*\)\.o:@lib/access.ld lib/access.lo: Makefile '`dirname lib/access.ld`/Module.mk' @' > lib/access.ld
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -fpic -D_REENTRANT -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects lib/init.c | \
+sed -e 's@^\(.*\)\.o:@lib/init.ld lib/init.lo: Makefile '`dirname lib/init.ld`/Module.mk' @' > lib/init.ld
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -fpic -D_REENTRANT -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects lib/sysfs.c | \
+sed -e 's@^\(.*\)\.o:@lib/sysfs.ld lib/sysfs.lo: Makefile '`dirname lib/sysfs.ld`/Module.mk' @' > lib/sysfs.ld
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects lib/data.c | \
+sed -e 's@^\(.*\)\.o:@lib/data.ad lib/data.ao: Makefile '`dirname lib/data.ad`/Module.mk' @' > lib/data.ad
+/usr/bin/bison
+bison -p sensors_yy -d lib/conf-parse.y -o lib/conf-parse.c
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects lib/general.c | \
+sed -e 's@^\(.*\)\.o:@lib/general.ad lib/general.ao: Makefile '`dirname lib/general.ad`/Module.mk' @' > lib/general.ad
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects lib/error.c | \
+sed -e 's@^\(.*\)\.o:@lib/error.ad lib/error.ao: Makefile '`dirname lib/error.ad`/Module.mk' @' > lib/error.ad
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects lib/access.c | \
+sed -e 's@^\(.*\)\.o:@lib/access.ad lib/access.ao: Makefile '`dirname lib/access.ad`/Module.mk' @' > lib/access.ad
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects lib/init.c | \
+sed -e 's@^\(.*\)\.o:@lib/init.ad lib/init.ao: Makefile '`dirname lib/init.ad`/Module.mk' @' > lib/init.ad
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects lib/sysfs.c | \
+sed -e 's@^\(.*\)\.o:@lib/sysfs.ad lib/sysfs.ao: Makefile '`dirname lib/sysfs.ad`/Module.mk' @' > lib/sysfs.ad
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects prog/sensors/main.c | \
+sed -e 's@^\(.*\)\.o:@prog/sensors/main.rd prog/sensors/main.ro: Makefile '`dirname prog/sensors/main.rd`/Module.mk' @' > prog/sensors/main.rd
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects prog/sensors/chips.c | \
+sed -e 's@^\(.*\)\.o:@prog/sensors/chips.rd prog/sensors/chips.ro: Makefile '`dirname prog/sensors/chips.rd`/Module.mk' @' > prog/sensors/chips.rd
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects prog/dump/util.c | \
+sed -e 's@^\(.*\)\.o:@prog/dump/util.rd prog/dump/util.ro: Makefile '`dirname prog/dump/util.rd`/Module.mk' @' > prog/dump/util.rd
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects prog/dump/isadump.c | \
+sed -e 's@^\(.*\)\.o:@prog/dump/isadump.rd prog/dump/isadump.ro: Makefile '`dirname prog/dump/isadump.rd`/Module.mk' @' > prog/dump/isadump.rd
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects prog/dump/isaset.c | \
+sed -e 's@^\(.*\)\.o:@prog/dump/isaset.rd prog/dump/isaset.ro: Makefile '`dirname prog/dump/isaset.rd`/Module.mk' @' > prog/dump/isaset.rd
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects prog/dump/superio.c | \
+sed -e 's@^\(.*\)\.o:@prog/dump/superio.rd prog/dump/superio.ro: Makefile '`dirname prog/dump/superio.rd`/Module.mk' @' > prog/dump/superio.rd
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -fpic -D_REENTRANT -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects lib/conf-parse.c | \
+sed -e 's@^\(.*\)\.o:@lib/conf-parse.ld lib/conf-parse.lo: Makefile '`dirname lib/conf-parse.ld`/Module.mk' @' > lib/conf-parse.ld
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects lib/conf-parse.c | \
+sed -e 's@^\(.*\)\.o:@lib/conf-parse.ad lib/conf-parse.ao: Makefile '`dirname lib/conf-parse.ad`/Module.mk' @' > lib/conf-parse.ad
+/usr/bin/flex
+flex -Psensors_yy -t -Cfe -8 lib/conf-lex.l > lib/conf-lex.c
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -fpic -D_REENTRANT -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects lib/conf-lex.c | \
+sed -e 's@^\(.*\)\.o:@lib/conf-lex.ld lib/conf-lex.lo: Makefile '`dirname lib/conf-lex.ld`/Module.mk' @' > lib/conf-lex.ld
+gcc -M -MG -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects lib/conf-lex.c | \
+sed -e 's@^\(.*\)\.o:@lib/conf-lex.ad lib/conf-lex.ao: Makefile '`dirname lib/conf-lex.ad`/Module.mk' @' > lib/conf-lex.ad
+gcc -DETCDIR="\"/etc\"" -I. -fpic -D_REENTRANT -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c lib/data.c -o lib/data.lo
+gcc -DETCDIR="\"/etc\"" -I. -fpic -D_REENTRANT -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c lib/general.c -o lib/general.lo
+gcc -DETCDIR="\"/etc\"" -I. -fpic -D_REENTRANT -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c lib/error.c -o lib/error.lo
+gcc -DETCDIR="\"/etc\"" -I. -fpic -D_REENTRANT -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c lib/access.c -o lib/access.lo
+gcc -DETCDIR="\"/etc\"" -I. -fpic -D_REENTRANT -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c lib/init.c -o lib/init.lo
+gcc -DETCDIR="\"/etc\"" -I. -fpic -D_REENTRANT -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c lib/sysfs.c -o lib/sysfs.lo
+gcc -DETCDIR="\"/etc\"" -I. -fpic -D_REENTRANT -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wno-undef -c lib/conf-parse.c -o lib/conf-parse.lo
+gcc -DETCDIR="\"/etc\"" -I. -fpic -D_REENTRANT -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wno-shadow -Wno-undef -Wno-unused -Wno-missing-prototypes -Wno-sign-compare -c lib/conf-lex.c -o lib/conf-lex.lo
+gcc -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c lib/data.c -o lib/data.ao
+gcc -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c lib/general.c -o lib/general.ao
+gcc -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c lib/error.c -o lib/error.ao
+lib/sysfs.c: In function 'find_bus_type':
+lib/sysfs.c:637:36: warning: '/class/i2c-adapter/i2c-' directive output may be truncated writing 23 bytes into a region of size between 1 and 255 [-Wformat-truncation=]
+  637 |                                 "%s/class/i2c-adapter/i2c-%d/device",
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~
+In function 'classify_device',
+    inlined from 'find_bus_type' at lib/sysfs.c:739:9:
+lib/sysfs.c:637:33: note: directive argument in the range [-32768, 32767]
+  637 |                                 "%s/class/i2c-adapter/i2c-%d/device",
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lib/sysfs.c:636:25: note: 'snprintf' output between 32 and 291 bytes into a destination of size 255
+  636 |                         snprintf(bus_path, sizeof(bus_path),
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  637 |                                 "%s/class/i2c-adapter/i2c-%d/device",
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  638 |                                 sensors_sysfs_mount, entry->chip.bus.nr);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c lib/access.c -o lib/access.ao
+gcc -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c lib/init.c -o lib/init.ao
+gcc -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c lib/sysfs.c -o lib/sysfs.ao
+gcc -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wno-undef -c lib/conf-parse.c -o lib/conf-parse.ao
+gcc -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wno-shadow -Wno-undef -Wno-unused -Wno-missing-prototypes -Wno-sign-compare -c lib/conf-lex.c -o lib/conf-lex.ao
+lib/sysfs.c: In function 'sensors_read_dynamic_chip':
+lib/sysfs.c:408:38: warning: '%s' directive output may be truncated writing up to 255 bytes into a region of size 254 [-Wformat-truncation=]
+  408 |         snprintf(path, NAME_MAX, "%s/%s", device, attr);
+      |                                      ^~
+In function 'sensors_get_attr_mode',
+    inlined from 'sensors_read_dynamic_chip' at lib/sysfs.c:533:6:
+lib/sysfs.c:408:9: note: 'snprintf' output 2 or more bytes (assuming 257) into a destination of size 255
+  408 |         snprintf(path, NAME_MAX, "%s/%s", device, attr);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -shared  -Wl,--version-script=lib/libsensors.map -Wl,-soname,libsensors.so.5 -o lib/libsensors.so.5.0.0 lib/data.lo lib/general.lo lib/error.lo lib/access.lo lib/init.lo lib/sysfs.lo lib/conf-parse.lo lib/conf-lex.lo -lc -lm
+lib/sysfs.c: In function 'find_bus_type':
+lib/sysfs.c:637:36: warning: '/class/i2c-adapter/i2c-' directive output may be truncated writing 23 bytes into a region of size between 1 and 255 [-Wformat-truncation=]
+  637 |                                 "%s/class/i2c-adapter/i2c-%d/device",
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~
+In function 'classify_device',
+    inlined from 'find_bus_type' at lib/sysfs.c:739:9:
+lib/sysfs.c:637:33: note: directive argument in the range [-32768, 32767]
+  637 |                                 "%s/class/i2c-adapter/i2c-%d/device",
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lib/sysfs.c:636:25: note: 'snprintf' output between 32 and 291 bytes into a destination of size 255
+  636 |                         snprintf(bus_path, sizeof(bus_path),
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  637 |                                 "%s/class/i2c-adapter/i2c-%d/device",
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  638 |                                 sensors_sysfs_mount, entry->chip.bus.nr);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lib/sysfs.c: In function 'sensors_read_dynamic_chip':
+lib/sysfs.c:408:38: warning: '%s' directive output may be truncated writing up to 255 bytes into a region of size 254 [-Wformat-truncation=]
+  408 |         snprintf(path, NAME_MAX, "%s/%s", device, attr);
+      |                                      ^~
+In function 'sensors_get_attr_mode',
+    inlined from 'sensors_read_dynamic_chip' at lib/sysfs.c:533:6:
+lib/sysfs.c:408:9: note: 'snprintf' output 2 or more bytes (assuming 257) into a destination of size 255
+  408 |         snprintf(path, NAME_MAX, "%s/%s", device, attr);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rm -f lib/libsensors.a
+ar rcvs lib/libsensors.a lib/data.ao lib/general.ao lib/error.ao lib/access.ao lib/init.ao lib/sysfs.ao lib/conf-parse.ao lib/conf-lex.ao
+a - lib/data.ao
+a - lib/general.ao
+a - lib/error.ao
+a - lib/access.ao
+a - lib/init.ao
+a - lib/sysfs.ao
+a - lib/conf-parse.ao
+a - lib/conf-lex.ao
+rm -f lib/libsensors.so.5
+rm -f lib/libsensors.so 
+ln -sf libsensors.so.5.0.0 lib/libsensors.so.5
+ln -sf libsensors.so.5.0.0 lib/libsensors.so
+gcc -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c prog/sensors/main.c -o prog/sensors/main.ro
+gcc -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c prog/sensors/chips.c -o prog/sensors/chips.ro
+mkdir -p /home/devel/building/work/pkg/usr/lib /home/devel/building/work/pkg/usr/include/sensors /home/devel/building/work/pkg/usr/share/man/man3 /home/devel/building/work/pkg/usr/share/man/man5
+install -m 644 lib/libsensors.a /home/devel/building/work/pkg/usr/lib
+install -m 755 lib/libsensors.so.5.0.0 /home/devel/building/work/pkg/usr/lib
+ln -sf libsensors.so.5.0.0 /home/devel/building/work/pkg/usr/lib/libsensors.so.5
+ln -sf libsensors.so.5 /home/devel/building/work/pkg/usr/lib/libsensors.so
+install -m 644 lib/error.h lib/sensors.h /home/devel/building/work/pkg/usr/include/sensors
+install -m 644 lib/libsensors.3 /home/devel/building/work/pkg/usr/share/man/man3
+install -m 644 lib/sensors.conf.5 /home/devel/building/work/pkg/usr/share/man/man5
+ln -sf sensors.conf.5 /home/devel/building/work/pkg/usr/share/man/man5/sensors3.conf.5
+mkdir -p /home/devel/building/work/pkg/usr/sbin /home/devel/building/work/pkg/usr/share/man/man8
+install -m 755 prog/detect/sensors-detect /home/devel/building/work/pkg/usr/sbin
+install -m 644 prog/detect/sensors-detect.8 /home/devel/building/work/pkg/usr/share/man/man8
+mkdir -p /home/devel/building/work/pkg/usr/sbin /home/devel/building/work/pkg/usr/share/man/man8
+install -m 755 prog/pwm/fancontrol prog/pwm/pwmconfig /home/devel/building/work/pkg/usr/sbin
+install -m 644 prog/pwm/fancontrol.8 prog/pwm/pwmconfig.8 /home/devel/building/work/pkg/usr/share/man/man8
+gcc -Wl,-rpath,/usr/lib -o prog/sensors/sensors prog/sensors/main.ro prog/sensors/chips.ro  -Llib -lsensors
+gcc -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c prog/dump/isadump.c -o prog/dump/isadump.ro
+gcc -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c prog/dump/superio.c -o prog/dump/superio.ro
+gcc -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c prog/dump/util.c -o prog/dump/util.ro
+gcc -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c prog/dump/isaset.c -o prog/dump/isaset.ro
+mkdir -p /home/devel/building/work/pkg/usr/bin /home/devel/building/work/pkg/usr/share/man/man1
+install -m 755 prog/sensors/sensors /home/devel/building/work/pkg/usr/bin
+install -m 644 prog/sensors/sensors.1 /home/devel/building/work/pkg/usr/share/man/man1
+mkdir -p /home/devel/building/work/pkg/etc /home/devel/building/work/pkg/etc/sensors.d
+if [ ! -e /home/devel/building/work/pkg/etc/sensors3.conf ] ; then \
+  install -m 644 etc/sensors.conf.default /home/devel/building/work/pkg/etc/sensors3.conf ; \
+fi
+mkdir -p /home/devel/building/work/pkg/usr/bin
+install -m 755 etc/sensors-conf-convert /home/devel/building/work/pkg/usr/bin
+if [ -e /home/devel/building/work/pkg/etc/modprobe.d/lm_sensors \
+     -a ! -e /home/devel/building/work/pkg/etc/modprobe.d/lm_sensors.conf ] ; then \
+  mv -f /home/devel/building/work/pkg/etc/modprobe.d/lm_sensors /home/devel/building/work/pkg/etc/modprobe.d/lm_sensors.conf ; \
+fi
+mkdir -p /home/devel/building/work/pkg/usr/share/man/man8
+install -m 644 etc/sensors-conf-convert.8 /home/devel/building/work/pkg/usr/share/man/man8
+gcc -Wl,-rpath,/usr/lib -o prog/dump/isaset prog/dump/isaset.ro prog/dump/util.ro
+gcc -Wl,-rpath,/usr/lib -o prog/dump/isadump prog/dump/isadump.ro prog/dump/superio.ro prog/dump/util.ro
+gcc -DETCDIR="\"/etc\"" -I. -Wall -O2 -Wstrict-prototypes -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wnested-externs -Winline -W -Wmissing-prototypes -Wundef -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -c lib/test/test-scanner.c -o lib/test/test-scanner.ro
+mkdir -p /home/devel/building/work/pkg/usr/sbin /home/devel/building/work/pkg/usr/share/man/man8
+install -m 755 prog/dump/isadump prog/dump/isaset /home/devel/building/work/pkg/usr/sbin
+install -m 644 prog/dump/isadump.8 prog/dump/isaset.8 /home/devel/building/work/pkg/usr/share/man/man8
+*** Important notes:
+***  * The libsensors configuration file (/etc/sensors3.conf) is never
+***    overwritten by our installation process, so that you won't lose
+***    your personal settings in that file. You still can get our latest
+***    default config file in etc/sensors.conf.default and manually copy
+***    it to /etc/sensors3.conf if you want. You will then want to
+***    edit it to fit your needs again.
+***  * The format of /etc/sensors3.conf changed with lm-sensors 3.0.0.
+***    If you have a custom configuration file using the old format, you
+***    can convert it using the sensors-conf-convert script. Otherwise just
+***    overwrite your old configuration file with the new default one.
+***  * As of lm-sensors 3.1.0, the default configuration file only
+***    contains statements which do not depend on how chips are wired.
+***    If you miss parts of the bigger configuration file that used to be
+***    the default, copy the relevant parts from etc/sensors.conf.eg to
+***    /etc/sensors3.conf.
+gcc -Wl,-rpath,/usr/lib -o lib/test/test-scanner lib/test/test-scanner.ro lib/conf-lex.ao lib/error.ao lib/general.ao -Llib
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 00:14 etc/
+drwxr-xr-x  0 root   root        0 May  8 00:14 etc/sensors.d/
+-rw-r--r--  0 root   root    10593 May  8 00:14 etc/sensors3.conf
+drwxr-xr-x  0 root   root        0 May  8 00:14 usr/
+drwxr-xr-x  0 root   root        0 May  8 00:14 usr/lib/
+drwxr-xr-x  0 root   root        0 May  8 00:14 usr/include/
+drwxr-xr-x  0 root   root        0 May  8 00:14 usr/share/
+drwxr-xr-x  0 root   root        0 May  8 00:14 usr/sbin/
+drwxr-xr-x  0 root   root        0 May  8 00:14 usr/bin/
+-rwxr-xr-x  0 root   root    27088 May  8 00:14 usr/bin/sensors
+-rwxr-xr-x  0 root   root    13647 May  8 00:14 usr/bin/sensors-conf-convert
+-rwxr-xr-x  0 root   root   219801 May  8 00:14 usr/sbin/sensors-detect
+-rwxr-xr-x  0 root   root    17587 May  8 00:14 usr/sbin/fancontrol
+-rwxr-xr-x  0 root   root    23456 May  8 00:14 usr/sbin/pwmconfig
+-rwxr-xr-x  0 root   root    14480 May  8 00:14 usr/sbin/isadump
+-rwxr-xr-x  0 root   root    14472 May  8 00:14 usr/sbin/isaset
+drwxr-xr-x  0 root   root        0 May  8 00:14 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  8 00:14 usr/share/man/man3/
+drwxr-xr-x  0 root   root        0 May  8 00:14 usr/share/man/man5/
+drwxr-xr-x  0 root   root        0 May  8 00:14 usr/share/man/man8/
+drwxr-xr-x  0 root   root        0 May  8 00:14 usr/share/man/man1/
+-rw-r--r--  0 root   root     1509 May  8 00:14 usr/share/man/man1/sensors.1.gz
+-rw-r--r--  0 root   root     1232 May  8 00:14 usr/share/man/man8/sensors-detect.8.gz
+-rw-r--r--  0 root   root     2193 May  8 00:14 usr/share/man/man8/fancontrol.8.gz
+-rw-r--r--  0 root   root     1176 May  8 00:14 usr/share/man/man8/pwmconfig.8.gz
+-rw-r--r--  0 root   root      342 May  8 00:14 usr/share/man/man8/sensors-conf-convert.8.gz
+-rw-r--r--  0 root   root     1828 May  8 00:14 usr/share/man/man8/isadump.8.gz
+-rw-r--r--  0 root   root     1113 May  8 00:14 usr/share/man/man8/isaset.8.gz
+-rw-r--r--  0 root   root     6654 May  8 00:14 usr/share/man/man5/sensors.conf.5.gz
+lrwxrwxrwx  0 root   root        0 May  8 00:14 usr/share/man/man5/sensors3.conf.5.gz -> sensors.conf.5.gz
+-rw-r--r--  0 root   root     3763 May  8 00:14 usr/share/man/man3/libsensors.3.gz
+drwxr-xr-x  0 root   root        0 May  8 00:14 usr/include/sensors/
+-rw-r--r--  0 root   root     3334 May  8 00:14 usr/include/sensors/error.h
+-rw-r--r--  0 root   root    11697 May  8 00:14 usr/include/sensors/sensors.h
+-rw-r--r--  0 root   root   349426 May  8 00:14 usr/lib/libsensors.a
+-rwxr-xr-x  0 root   root    59840 May  8 00:14 usr/lib/libsensors.so.5.0.0
+lrwxrwxrwx  0 root   root        0 May  8 00:14 usr/lib/libsensors.so.5 -> libsensors.so.5.0.0
+lrwxrwxrwx  0 root   root        0 May  8 00:14 usr/lib/libsensors.so -> libsensors.so.5
+=======> Building '/home/devel/packages/lm-sensors#3.6.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling lm-sensors 3.6.0-1
+prt-get: /usr/bin/pkgadd -u lm-sensors#3.6.0-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 00:14:13 2024
+

@@ -1,0 +1,932 @@
+prt-get: updating /usr/ports/core-x86_64/eudev
+prt-get: starting build Tue May  7 20:44:14 2024
+=======> Building '/home/devel/packages/eudev#3.2.14-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/eudev-3.2.14.tar.gz
+cp 50-firmware.rules /home/devel/building/work/src
+cp udevd.run /home/devel/building/work/src
++ build
++ cd eudev-3.2.14
++ sed -i '/^Libs:/s/-ludev/-ludev -lrt/' src/libudev/libudev.pc.in
++ sed -e 's|GROUP="sgx", ||' -i rules/50-udev-default.rules
++ ./configure --prefix=/usr --sbindir=/sbin --bindir=/sbin --sysconfdir=/etc --with-rootprefix= --with-rootlibdir=/lib --libexecdir=/lib --enable-split-usr --disable-manpages --disable-static
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether make supports nested variables... yes
+checking dependency style of gcc... gcc3
+checking whether make supports nested variables... (cached) yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether ln -s works... yes
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for grep that handles long lines and -e... (cached) /usr/bin/grep
+checking for gawk... (cached) gawk
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+/usr/bin/grep: warning: stray \ before -
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking how to run the C preprocessor... gcc -E
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking for m4... /usr/bin/m4
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for inttypes.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/mount.h usability... yes
+checking sys/mount.h presence... yes
+checking for sys/mount.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/statvfs.h usability... yes
+checking sys/statvfs.h presence... yes
+checking for sys/statvfs.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/vfs.h usability... yes
+checking sys/vfs.h presence... yes
+checking for sys/vfs.h... yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking for unistd.h... (cached) yes
+checking mtd/mtd-user.h usability... yes
+checking mtd/mtd-user.h presence... yes
+checking for mtd/mtd-user.h... yes
+checking linux/btrfs.h usability... yes
+checking linux/btrfs.h presence... yes
+checking for linux/btrfs.h... yes
+checking for uid_t in sys/types.h... yes
+checking for inline... inline
+checking for mode_t... yes
+checking for pid_t... yes
+checking for struct stat.st_rdev... yes
+checking whether getrandom is declared... no
+checking whether gettid is declared... yes
+checking whether name_to_handle_at is declared... yes
+checking whether accept4 is declared... yes
+checking whether mkostemp is declared... yes
+checking whether ppoll is declared... yes
+checking whether strndupa is declared... yes
+checking size of pid_t... 4
+checking size of uid_t... 4
+checking size of gid_t... 4
+checking size of dev_t... 8
+checking size of rlim_t... 8
+checking for unistd.h... (cached) yes
+checking for working chown... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking type of array argument to getgroups... gid_t
+checking for size_t... yes
+checking for getgroups... yes
+checking for working getgroups... yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether sys/types.h defines makedev... no
+checking sys/mkdev.h usability... no
+checking sys/mkdev.h presence... no
+checking for sys/mkdev.h... no
+checking sys/sysmacros.h usability... yes
+checking sys/sysmacros.h presence... yes
+checking for sys/sysmacros.h... yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking for alarm... yes
+checking for dup2... yes
+checking for ftruncate... yes
+checking for localtime_r... yes
+checking for mempcpy... yes
+checking for mkdir... yes
+checking for munmap... yes
+checking for nl_langinfo... yes
+checking for rmdir... yes
+checking for setlocale... yes
+checking for socket... yes
+checking for stpcpy... yes
+checking for uname... yes
+checking for explicit_bzero... yes
+checking for library containing clock_gettime... none required
+checking for cos in -lm... yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for blkid >= 2.20... yes
+checking for libselinux >= 2.1.9... no
+checking for mallinfo... yes
+checking for mallinfo2... yes
+checking whether unshare is declared... yes
+checking for gperf... /usr/bin/gperf
+checking for  libkmod >= 15 ... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating hwdb/Makefile
+config.status: creating man/Makefile
+config.status: creating rule_generator/Makefile
+config.status: creating rule_generator/write_net_rules
+config.status: creating rules/Makefile
+config.status: creating src/Makefile
+config.status: creating src/ata_id/Makefile
+config.status: creating src/cdrom_id/Makefile
+config.status: creating src/collect/Makefile
+config.status: creating src/dmi_memory_id/Makefile
+config.status: creating src/fido_id/Makefile
+config.status: creating src/mtd_probe/Makefile
+config.status: creating src/scsi_id/Makefile
+config.status: creating src/v4l_id/Makefile
+config.status: creating src/shared/Makefile
+config.status: creating src/libudev/Makefile
+config.status: creating src/libudev/libudev.pc
+config.status: creating src/udev/Makefile
+config.status: creating src/udev/udev.pc
+config.status: creating test/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+	prefix:                  /usr
+	exec_prefix:             ${prefix}
+	sysconfdir:              /etc
+	datadir:                 ${datarootdir}
+	includedir:              ${prefix}/include
+	bindir:                  /sbin
+	libdir:                  ${exec_prefix}/lib
+
+	rootprefix:              
+	rootlibdir:              /lib
+	rootlibexecdir:          /lib/udev
+	datarootdir:             ${prefix}/share
+	rootrundir:              /run
+
+	udevconfdir:             /etc/udev
+	udevconffile:            /etc/udev/udev.conf
+	udevhwdbdir:             /etc/udev/hwdb.d
+	udevhwdbbin:             /etc/udev/hwdb.bin
+	udevlibexecdir:          /lib/udev
+	udevkeymapdir:           /lib/udev/keymaps
+	udevkeymapforceredir:    /lib/udev/keymaps/force-release
+	udevrulesdir:            /lib/udev/rules.d
+
+	pkgconfiglibdir:         ${exec_prefix}/lib/pkgconfig
+	sharepkgconfigdir        ${datarootdir}/pkgconfig
+
++ make V=1 'CFLAGS=-O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE'
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/eudev-3.2.14'
+Making all in src
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src'
+Making all in shared
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/shared'
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT conf-files.lo -MD -MP -MF .deps/conf-files.Tpo -c -o conf-files.lo conf-files.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT device-nodes.lo -MD -MP -MF .deps/device-nodes.Tpo -c -o device-nodes.lo device-nodes.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT dev-setup.lo -MD -MP -MF .deps/dev-setup.Tpo -c -o dev-setup.lo dev-setup.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT fileio.lo -MD -MP -MF .deps/fileio.Tpo -c -o fileio.lo fileio.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT hashmap.lo -MD -MP -MF .deps/hashmap.Tpo -c -o hashmap.lo hashmap.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT label.lo -MD -MP -MF .deps/label.Tpo -c -o label.lo label.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT log.lo -MD -MP -MF .deps/log.Tpo -c -o log.lo log.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT mempool.lo -MD -MP -MF .deps/mempool.Tpo -c -o mempool.lo mempool.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT hashmap.lo -MD -MP -MF .deps/hashmap.Tpo -c hashmap.c  -fPIC -DPIC -o .libs/hashmap.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT label.lo -MD -MP -MF .deps/label.Tpo -c label.c  -fPIC -DPIC -o .libs/label.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT conf-files.lo -MD -MP -MF .deps/conf-files.Tpo -c conf-files.c  -fPIC -DPIC -o .libs/conf-files.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT log.lo -MD -MP -MF .deps/log.Tpo -c log.c  -fPIC -DPIC -o .libs/log.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT device-nodes.lo -MD -MP -MF .deps/device-nodes.Tpo -c device-nodes.c  -fPIC -DPIC -o .libs/device-nodes.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT dev-setup.lo -MD -MP -MF .deps/dev-setup.Tpo -c dev-setup.c  -fPIC -DPIC -o .libs/dev-setup.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT mempool.lo -MD -MP -MF .deps/mempool.Tpo -c mempool.c  -fPIC -DPIC -o .libs/mempool.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT fileio.lo -MD -MP -MF .deps/fileio.Tpo -c fileio.c  -fPIC -DPIC -o .libs/fileio.o
+mv -f .deps/device-nodes.Tpo .deps/device-nodes.Plo
+mv -f .deps/label.Tpo .deps/label.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT mkdir.lo -MD -MP -MF .deps/mkdir.Tpo -c -o mkdir.lo mkdir.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT mkdir-label.lo -MD -MP -MF .deps/mkdir-label.Tpo -c -o mkdir-label.lo mkdir-label.c
+mv -f .deps/mempool.Tpo .deps/mempool.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT MurmurHash2.lo -MD -MP -MF .deps/MurmurHash2.Tpo -c -o MurmurHash2.lo MurmurHash2.c
+mv -f .deps/dev-setup.Tpo .deps/dev-setup.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT path-util.lo -MD -MP -MF .deps/path-util.Tpo -c -o path-util.lo path-util.c
+mv -f .deps/conf-files.Tpo .deps/conf-files.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT process-util.lo -MD -MP -MF .deps/process-util.Tpo -c -o process-util.lo process-util.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT MurmurHash2.lo -MD -MP -MF .deps/MurmurHash2.Tpo -c MurmurHash2.c  -fPIC -DPIC -o .libs/MurmurHash2.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT mkdir.lo -MD -MP -MF .deps/mkdir.Tpo -c mkdir.c  -fPIC -DPIC -o .libs/mkdir.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT mkdir-label.lo -MD -MP -MF .deps/mkdir-label.Tpo -c mkdir-label.c  -fPIC -DPIC -o .libs/mkdir-label.o
+mv -f .deps/MurmurHash2.Tpo .deps/MurmurHash2.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT random-util.lo -MD -MP -MF .deps/random-util.Tpo -c -o random-util.lo random-util.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT path-util.lo -MD -MP -MF .deps/path-util.Tpo -c path-util.c  -fPIC -DPIC -o .libs/path-util.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT process-util.lo -MD -MP -MF .deps/process-util.Tpo -c process-util.c  -fPIC -DPIC -o .libs/process-util.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT random-util.lo -MD -MP -MF .deps/random-util.Tpo -c random-util.c  -fPIC -DPIC -o .libs/random-util.o
+mv -f .deps/log.Tpo .deps/log.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT selinux-util.lo -MD -MP -MF .deps/selinux-util.Tpo -c -o selinux-util.lo selinux-util.c
+mv -f .deps/mkdir-label.Tpo .deps/mkdir-label.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT siphash24.lo -MD -MP -MF .deps/siphash24.Tpo -c -o siphash24.lo siphash24.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT siphash24.lo -MD -MP -MF .deps/siphash24.Tpo -c siphash24.c  -fPIC -DPIC -o .libs/siphash24.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT selinux-util.lo -MD -MP -MF .deps/selinux-util.Tpo -c selinux-util.c  -fPIC -DPIC -o .libs/selinux-util.o
+mv -f .deps/random-util.Tpo .deps/random-util.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT smack-util.lo -MD -MP -MF .deps/smack-util.Tpo -c -o smack-util.lo smack-util.c
+mv -f .deps/siphash24.Tpo .deps/siphash24.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT strbuf.lo -MD -MP -MF .deps/strbuf.Tpo -c -o strbuf.lo strbuf.c
+mv -f .deps/process-util.Tpo .deps/process-util.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT strv.lo -MD -MP -MF .deps/strv.Tpo -c -o strv.lo strv.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT smack-util.lo -MD -MP -MF .deps/smack-util.Tpo -c smack-util.c  -fPIC -DPIC -o .libs/smack-util.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT strbuf.lo -MD -MP -MF .deps/strbuf.Tpo -c strbuf.c  -fPIC -DPIC -o .libs/strbuf.o
+mv -f .deps/mkdir.Tpo .deps/mkdir.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT strxcpyx.lo -MD -MP -MF .deps/strxcpyx.Tpo -c -o strxcpyx.lo strxcpyx.c
+mv -f .deps/selinux-util.Tpo .deps/selinux-util.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT sysctl-util.lo -MD -MP -MF .deps/sysctl-util.Tpo -c -o sysctl-util.lo sysctl-util.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT strv.lo -MD -MP -MF .deps/strv.Tpo -c strv.c  -fPIC -DPIC -o .libs/strv.o
+mv -f .deps/fileio.Tpo .deps/fileio.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT terminal-util.lo -MD -MP -MF .deps/terminal-util.Tpo -c -o terminal-util.lo terminal-util.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT sysctl-util.lo -MD -MP -MF .deps/sysctl-util.Tpo -c sysctl-util.c  -fPIC -DPIC -o .libs/sysctl-util.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT strxcpyx.lo -MD -MP -MF .deps/strxcpyx.Tpo -c strxcpyx.c  -fPIC -DPIC -o .libs/strxcpyx.o
+mv -f .deps/path-util.Tpo .deps/path-util.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT time-util.lo -MD -MP -MF .deps/time-util.Tpo -c -o time-util.lo time-util.c
+mv -f .deps/smack-util.Tpo .deps/smack-util.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT util.lo -MD -MP -MF .deps/util.Tpo -c -o util.lo util.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT time-util.lo -MD -MP -MF .deps/time-util.Tpo -c time-util.c  -fPIC -DPIC -o .libs/time-util.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT util.lo -MD -MP -MF .deps/util.Tpo -c util.c  -fPIC -DPIC -o .libs/util.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT terminal-util.lo -MD -MP -MF .deps/terminal-util.Tpo -c terminal-util.c  -fPIC -DPIC -o .libs/terminal-util.o
+mv -f .deps/sysctl-util.Tpo .deps/sysctl-util.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT utf8.lo -MD -MP -MF .deps/utf8.Tpo -c -o utf8.lo utf8.c
+mv -f .deps/strbuf.Tpo .deps/strbuf.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT virt.lo -MD -MP -MF .deps/virt.Tpo -c -o virt.lo virt.c
+mv -f .deps/strxcpyx.Tpo .deps/strxcpyx.Plo
+mv -f .deps/strv.Tpo .deps/strv.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT utf8.lo -MD -MP -MF .deps/utf8.Tpo -c utf8.c  -fPIC -DPIC -o .libs/utf8.o
+mv -f .deps/terminal-util.Tpo .deps/terminal-util.Plo
+mv -f .deps/time-util.Tpo .deps/time-util.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -DUDEV_ROOT_RUN=\"/run\" -include ../../config.h -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT virt.lo -MD -MP -MF .deps/virt.Tpo -c virt.c  -fPIC -DPIC -o .libs/virt.o
+mv -f .deps/virt.Tpo .deps/virt.Plo
+mv -f .deps/hashmap.Tpo .deps/hashmap.Plo
+mv -f .deps/utf8.Tpo .deps/utf8.Plo
+mv -f .deps/util.Tpo .deps/util.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE   -o libudev_shared.la  conf-files.lo device-nodes.lo dev-setup.lo fileio.lo hashmap.lo label.lo log.lo mempool.lo mkdir.lo mkdir-label.lo MurmurHash2.lo path-util.lo process-util.lo random-util.lo selinux-util.lo siphash24.lo smack-util.lo strbuf.lo strv.lo strxcpyx.lo sysctl-util.lo terminal-util.lo time-util.lo util.lo utf8.lo virt.lo  
+libtool: link: ar cr .libs/libudev_shared.a .libs/conf-files.o .libs/device-nodes.o .libs/dev-setup.o .libs/fileio.o .libs/hashmap.o .libs/label.o .libs/log.o .libs/mempool.o .libs/mkdir.o .libs/mkdir-label.o .libs/MurmurHash2.o .libs/path-util.o .libs/process-util.o .libs/random-util.o .libs/selinux-util.o .libs/siphash24.o .libs/smack-util.o .libs/strbuf.o .libs/strv.o .libs/strxcpyx.o .libs/sysctl-util.o .libs/terminal-util.o .libs/time-util.o .libs/util.o .libs/utf8.o .libs/virt.o 
+libtool: link: ranlib .libs/libudev_shared.a
+libtool: link: ( cd ".libs" && rm -f "libudev_shared.la" && ln -s "../libudev_shared.la" "libudev_shared.la" )
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/shared'
+Making all in libudev
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/libudev'
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_la-libudev.lo -MD -MP -MF .deps/libudev_la-libudev.Tpo -c -o libudev_la-libudev.lo `test -f 'libudev.c' || echo './'`libudev.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_la-libudev-list.lo -MD -MP -MF .deps/libudev_la-libudev-list.Tpo -c -o libudev_la-libudev-list.lo `test -f 'libudev-list.c' || echo './'`libudev-list.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_la-libudev-util.lo -MD -MP -MF .deps/libudev_la-libudev-util.Tpo -c -o libudev_la-libudev-util.lo `test -f 'libudev-util.c' || echo './'`libudev-util.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_la-libudev-device.lo -MD -MP -MF .deps/libudev_la-libudev-device.Tpo -c -o libudev_la-libudev-device.lo `test -f 'libudev-device.c' || echo './'`libudev-device.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_la-libudev-enumerate.lo -MD -MP -MF .deps/libudev_la-libudev-enumerate.Tpo -c -o libudev_la-libudev-enumerate.lo `test -f 'libudev-enumerate.c' || echo './'`libudev-enumerate.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_la-libudev-monitor.lo -MD -MP -MF .deps/libudev_la-libudev-monitor.Tpo -c -o libudev_la-libudev-monitor.lo `test -f 'libudev-monitor.c' || echo './'`libudev-monitor.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_la-libudev-queue.lo -MD -MP -MF .deps/libudev_la-libudev-queue.Tpo -c -o libudev_la-libudev-queue.lo `test -f 'libudev-queue.c' || echo './'`libudev-queue.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared   -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_la-libudev-hwdb.lo -MD -MP -MF .deps/libudev_la-libudev-hwdb.Tpo -c -o libudev_la-libudev-hwdb.lo `test -f 'libudev-hwdb.c' || echo './'`libudev-hwdb.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_la-libudev-list.lo -MD -MP -MF .deps/libudev_la-libudev-list.Tpo -c libudev-list.c  -fPIC -DPIC -o .libs/libudev_la-libudev-list.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_la-libudev-monitor.lo -MD -MP -MF .deps/libudev_la-libudev-monitor.Tpo -c libudev-monitor.c  -fPIC -DPIC -o .libs/libudev_la-libudev-monitor.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_la-libudev.lo -MD -MP -MF .deps/libudev_la-libudev.Tpo -c libudev.c  -fPIC -DPIC -o .libs/libudev_la-libudev.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_la-libudev-device.lo -MD -MP -MF .deps/libudev_la-libudev-device.Tpo -c libudev-device.c  -fPIC -DPIC -o .libs/libudev_la-libudev-device.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_la-libudev-queue.lo -MD -MP -MF .deps/libudev_la-libudev-queue.Tpo -c libudev-queue.c  -fPIC -DPIC -o .libs/libudev_la-libudev-queue.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_la-libudev-util.lo -MD -MP -MF .deps/libudev_la-libudev-util.Tpo -c libudev-util.c  -fPIC -DPIC -o .libs/libudev_la-libudev-util.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_la-libudev-enumerate.lo -MD -MP -MF .deps/libudev_la-libudev-enumerate.Tpo -c libudev-enumerate.c  -fPIC -DPIC -o .libs/libudev_la-libudev-enumerate.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_la-libudev-hwdb.lo -MD -MP -MF .deps/libudev_la-libudev-hwdb.Tpo -c libudev-hwdb.c  -fPIC -DPIC -o .libs/libudev_la-libudev-hwdb.o
+mv -f .deps/libudev_la-libudev.Tpo .deps/libudev_la-libudev.Plo
+mv -f .deps/libudev_la-libudev-queue.Tpo .deps/libudev_la-libudev-queue.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared   -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev.lo -MD -MP -MF .deps/libudev_private_la-libudev.Tpo -c -o libudev_private_la-libudev.lo `test -f 'libudev.c' || echo './'`libudev.c
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared   -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev-list.lo -MD -MP -MF .deps/libudev_private_la-libudev-list.Tpo -c -o libudev_private_la-libudev-list.lo `test -f 'libudev-list.c' || echo './'`libudev-list.c
+mv -f .deps/libudev_la-libudev-list.Tpo .deps/libudev_la-libudev-list.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared   -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev-util.lo -MD -MP -MF .deps/libudev_private_la-libudev-util.Tpo -c -o libudev_private_la-libudev-util.lo `test -f 'libudev-util.c' || echo './'`libudev-util.c
+mv -f .deps/libudev_la-libudev-util.Tpo .deps/libudev_la-libudev-util.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared   -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev-device.lo -MD -MP -MF .deps/libudev_private_la-libudev-device.Tpo -c -o libudev_private_la-libudev-device.lo `test -f 'libudev-device.c' || echo './'`libudev-device.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev-list.lo -MD -MP -MF .deps/libudev_private_la-libudev-list.Tpo -c libudev-list.c  -fPIC -DPIC -o .libs/libudev_private_la-libudev-list.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev.lo -MD -MP -MF .deps/libudev_private_la-libudev.Tpo -c libudev.c  -fPIC -DPIC -o .libs/libudev_private_la-libudev.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev-util.lo -MD -MP -MF .deps/libudev_private_la-libudev-util.Tpo -c libudev-util.c  -fPIC -DPIC -o .libs/libudev_private_la-libudev-util.o
+mv -f .deps/libudev_la-libudev-monitor.Tpo .deps/libudev_la-libudev-monitor.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared   -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev-enumerate.lo -MD -MP -MF .deps/libudev_private_la-libudev-enumerate.Tpo -c -o libudev_private_la-libudev-enumerate.lo `test -f 'libudev-enumerate.c' || echo './'`libudev-enumerate.c
+mv -f .deps/libudev_private_la-libudev.Tpo .deps/libudev_private_la-libudev.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared   -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev-monitor.lo -MD -MP -MF .deps/libudev_private_la-libudev-monitor.Tpo -c -o libudev_private_la-libudev-monitor.lo `test -f 'libudev-monitor.c' || echo './'`libudev-monitor.c
+mv -f .deps/libudev_la-libudev-enumerate.Tpo .deps/libudev_la-libudev-enumerate.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared   -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev-queue.lo -MD -MP -MF .deps/libudev_private_la-libudev-queue.Tpo -c -o libudev_private_la-libudev-queue.lo `test -f 'libudev-queue.c' || echo './'`libudev-queue.c
+mv -f .deps/libudev_la-libudev-hwdb.Tpo .deps/libudev_la-libudev-hwdb.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared   -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev-hwdb.lo -MD -MP -MF .deps/libudev_private_la-libudev-hwdb.Tpo -c -o libudev_private_la-libudev-hwdb.lo `test -f 'libudev-hwdb.c' || echo './'`libudev-hwdb.c
+mv -f .deps/libudev_private_la-libudev-list.Tpo .deps/libudev_private_la-libudev-list.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared   -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev-device-private.lo -MD -MP -MF .deps/libudev_private_la-libudev-device-private.Tpo -c -o libudev_private_la-libudev-device-private.lo `test -f 'libudev-device-private.c' || echo './'`libudev-device-private.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev-enumerate.lo -MD -MP -MF .deps/libudev_private_la-libudev-enumerate.Tpo -c libudev-enumerate.c  -fPIC -DPIC -o .libs/libudev_private_la-libudev-enumerate.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev-device.lo -MD -MP -MF .deps/libudev_private_la-libudev-device.Tpo -c libudev-device.c  -fPIC -DPIC -o .libs/libudev_private_la-libudev-device.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev-monitor.lo -MD -MP -MF .deps/libudev_private_la-libudev-monitor.Tpo -c libudev-monitor.c  -fPIC -DPIC -o .libs/libudev_private_la-libudev-monitor.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev-hwdb.lo -MD -MP -MF .deps/libudev_private_la-libudev-hwdb.Tpo -c libudev-hwdb.c  -fPIC -DPIC -o .libs/libudev_private_la-libudev-hwdb.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev-queue.lo -MD -MP -MF .deps/libudev_private_la-libudev-queue.Tpo -c libudev-queue.c  -fPIC -DPIC -o .libs/libudev_private_la-libudev-queue.o
+mv -f .deps/libudev_private_la-libudev-util.Tpo .deps/libudev_private_la-libudev-util.Plo
+mv -f .deps/libudev_private_la-libudev-queue.Tpo .deps/libudev_private_la-libudev-queue.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DUDEV_ROOT_RUN=\"/run\" -DUDEV_CONF_FILE=\"/etc/udev/udev.conf\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_VERSION=251 -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -I ../../src/shared -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_private_la-libudev-device-private.lo -MD -MP -MF .deps/libudev_private_la-libudev-device-private.Tpo -c libudev-device-private.c  -fPIC -DPIC -o .libs/libudev_private_la-libudev-device-private.o
+mv -f .deps/libudev_private_la-libudev-hwdb.Tpo .deps/libudev_private_la-libudev-hwdb.Plo
+mv -f .deps/libudev_private_la-libudev-monitor.Tpo .deps/libudev_private_la-libudev-monitor.Plo
+mv -f .deps/libudev_private_la-libudev-enumerate.Tpo .deps/libudev_private_la-libudev-enumerate.Plo
+mv -f .deps/libudev_la-libudev-device.Tpo .deps/libudev_la-libudev-device.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE  -version-info 7:3:6 -Wl,--version-script=../../src/libudev/libudev.sym  -o libudev.la -rpath /usr/lib libudev_la-libudev.lo libudev_la-libudev-list.lo libudev_la-libudev-util.lo libudev_la-libudev-device.lo libudev_la-libudev-enumerate.lo libudev_la-libudev-monitor.lo libudev_la-libudev-queue.lo libudev_la-libudev-hwdb.lo ../../src/shared/libudev_shared.la  
+mv -f .deps/libudev_private_la-libudev-device-private.Tpo .deps/libudev_private_la-libudev-device-private.Plo
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libudev_la-libudev.o .libs/libudev_la-libudev-list.o .libs/libudev_la-libudev-util.o .libs/libudev_la-libudev-device.o .libs/libudev_la-libudev-enumerate.o .libs/libudev_la-libudev-monitor.o .libs/libudev_la-libudev-queue.o .libs/libudev_la-libudev-hwdb.o  -Wl,--whole-archive ../../src/shared/.libs/libudev_shared.a -Wl,--no-whole-archive   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -Wl,--version-script=../../src/libudev/libudev.sym   -Wl,-soname -Wl,libudev.so.1 -o .libs/libudev.so.1.6.3
+mv -f .deps/libudev_private_la-libudev-device.Tpo .deps/libudev_private_la-libudev-device.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -fvisibility=default -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE   -o libudev-private.la  libudev_private_la-libudev.lo libudev_private_la-libudev-list.lo libudev_private_la-libudev-util.lo libudev_private_la-libudev-device.lo libudev_private_la-libudev-enumerate.lo libudev_private_la-libudev-monitor.lo libudev_private_la-libudev-queue.lo libudev_private_la-libudev-hwdb.lo libudev_private_la-libudev-device-private.lo  
+libtool: link: ar cr .libs/libudev-private.a .libs/libudev_private_la-libudev.o .libs/libudev_private_la-libudev-list.o .libs/libudev_private_la-libudev-util.o .libs/libudev_private_la-libudev-device.o .libs/libudev_private_la-libudev-enumerate.o .libs/libudev_private_la-libudev-monitor.o .libs/libudev_private_la-libudev-queue.o .libs/libudev_private_la-libudev-hwdb.o .libs/libudev_private_la-libudev-device-private.o 
+libtool: link: ranlib .libs/libudev-private.a
+libtool: link: ( cd ".libs" && rm -f "libudev-private.la" && ln -s "../libudev-private.la" "libudev-private.la" )
+libtool: link: (cd ".libs" && rm -f "libudev.so.1" && ln -s "libudev.so.1.6.3" "libudev.so.1")
+libtool: link: (cd ".libs" && rm -f "libudev.so" && ln -s "libudev.so.1.6.3" "libudev.so")
+libtool: link: ( cd ".libs" && rm -f "libudev.la" && ln -s "../libudev.la" "libudev.la" )
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/libudev'
+Making all in udev
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/udev'
+f="keyboard-keys.txt"; case $f in */*) /bin/mkdir -p "${f%/*}"; esac
+gcc -E -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev  -dM -include linux/input.h - < /dev/null | gawk '/^#define[ \t]+KEY_[^ ]+[ \t]+[0-9]/ { if ($2 != "KEY_MAX") { print $2 } }' | sed 's/^KEY_COFFEE$/KEY_SCREENLOCK/' > keyboard-keys.txt
+gawk 'BEGIN{ print "struct key { const char* name; unsigned short id; };"; print "%null-strings"; print "%%";} { print tolower(substr($1 ,5)) ", " $1 }' keyboard-keys.txt > keyboard-keys-from-name.gperf
+gawk 'BEGIN{ print "const char* const key_names[KEY_CNT] = { "} { print "[" $1 "] = \"" $1 "\"," } END{print "};"}' keyboard-keys.txt > keyboard-keys-to-name.h
+/usr/bin/gperf -L ANSI-C -t -N keyboard_lookup_key -H hash_key_name -p -C < keyboard-keys-from-name.gperf > keyboard-keys-from-name.h
+make  all-am
+make[4]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/udev'
+gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT udevadm.o -MD -MP -MF .deps/udevadm.Tpo -c -o udevadm.o udevadm.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT udevadm-info.o -MD -MP -MF .deps/udevadm-info.Tpo -c -o udevadm-info.o udevadm-info.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT udevadm-control.o -MD -MP -MF .deps/udevadm-control.Tpo -c -o udevadm-control.o udevadm-control.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT udevadm-monitor.o -MD -MP -MF .deps/udevadm-monitor.Tpo -c -o udevadm-monitor.o udevadm-monitor.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT udevadm-hwdb.o -MD -MP -MF .deps/udevadm-hwdb.Tpo -c -o udevadm-hwdb.o udevadm-hwdb.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT udevadm-settle.o -MD -MP -MF .deps/udevadm-settle.Tpo -c -o udevadm-settle.o udevadm-settle.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT udevadm-trigger.o -MD -MP -MF .deps/udevadm-trigger.Tpo -c -o udevadm-trigger.o udevadm-trigger.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT udevadm-test.o -MD -MP -MF .deps/udevadm-test.Tpo -c -o udevadm-test.o udevadm-test.c
+mv -f .deps/udevadm.Tpo .deps/udevadm.Po
+mv -f .deps/udevadm-settle.Tpo .deps/udevadm-settle.Po
+gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT udevadm-test-builtin.o -MD -MP -MF .deps/udevadm-test-builtin.Tpo -c -o udevadm-test-builtin.o udevadm-test-builtin.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT udevadm-util.o -MD -MP -MF .deps/udevadm-util.Tpo -c -o udevadm-util.o udevadm-util.c
+mv -f .deps/udevadm-trigger.Tpo .deps/udevadm-trigger.Po
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -I/usr/include/blkid  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-event.lo -MD -MP -MF .deps/libudev_core_la-udev-event.Tpo -c -o libudev_core_la-udev-event.lo `test -f 'udev-event.c' || echo './'`udev-event.c
+mv -f .deps/udevadm-monitor.Tpo .deps/udevadm-monitor.Po
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -I/usr/include/blkid  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-watch.lo -MD -MP -MF .deps/libudev_core_la-udev-watch.Tpo -c -o libudev_core_la-udev-watch.lo `test -f 'udev-watch.c' || echo './'`udev-watch.c
+mv -f .deps/udevadm-test.Tpo .deps/udevadm-test.Po
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -I/usr/include/blkid  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-node.lo -MD -MP -MF .deps/libudev_core_la-udev-node.Tpo -c -o libudev_core_la-udev-node.lo `test -f 'udev-node.c' || echo './'`udev-node.c
+mv -f .deps/udevadm-info.Tpo .deps/udevadm-info.Po
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -I/usr/include/blkid  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-rules.lo -MD -MP -MF .deps/libudev_core_la-udev-rules.Tpo -c -o libudev_core_la-udev-rules.lo `test -f 'udev-rules.c' || echo './'`udev-rules.c
+mv -f .deps/udevadm-test-builtin.Tpo .deps/udevadm-test-builtin.Po
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -I/usr/include/blkid  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-ctrl.lo -MD -MP -MF .deps/libudev_core_la-udev-ctrl.Tpo -c -o libudev_core_la-udev-ctrl.lo `test -f 'udev-ctrl.c' || echo './'`udev-ctrl.c
+mv -f .deps/udevadm-util.Tpo .deps/udevadm-util.Po
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -I/usr/include/blkid  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin.Tpo -c -o libudev_core_la-udev-builtin.lo `test -f 'udev-builtin.c' || echo './'`udev-builtin.c
+mv -f .deps/udevadm-control.Tpo .deps/udevadm-control.Po
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -I/usr/include/blkid  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-btrfs.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-btrfs.Tpo -c -o libudev_core_la-udev-builtin-btrfs.lo `test -f 'udev-builtin-btrfs.c' || echo './'`udev-builtin-btrfs.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev -I/usr/include/blkid -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-watch.lo -MD -MP -MF .deps/libudev_core_la-udev-watch.Tpo -c udev-watch.c  -fPIC -DPIC -o .libs/libudev_core_la-udev-watch.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev -I/usr/include/blkid -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-event.lo -MD -MP -MF .deps/libudev_core_la-udev-event.Tpo -c udev-event.c  -fPIC -DPIC -o .libs/libudev_core_la-udev-event.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev -I/usr/include/blkid -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-node.lo -MD -MP -MF .deps/libudev_core_la-udev-node.Tpo -c udev-node.c  -fPIC -DPIC -o .libs/libudev_core_la-udev-node.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev -I/usr/include/blkid -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-rules.lo -MD -MP -MF .deps/libudev_core_la-udev-rules.Tpo -c udev-rules.c  -fPIC -DPIC -o .libs/libudev_core_la-udev-rules.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev -I/usr/include/blkid -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin.Tpo -c udev-builtin.c  -fPIC -DPIC -o .libs/libudev_core_la-udev-builtin.o
+mv -f .deps/udevadm-hwdb.Tpo .deps/udevadm-hwdb.Po
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -I/usr/include/blkid  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-hwdb.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-hwdb.Tpo -c -o libudev_core_la-udev-builtin-hwdb.lo `test -f 'udev-builtin-hwdb.c' || echo './'`udev-builtin-hwdb.c
+mv -f .deps/libudev_core_la-udev-watch.Tpo .deps/libudev_core_la-udev-watch.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -I/usr/include/blkid  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-input_id.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-input_id.Tpo -c -o libudev_core_la-udev-builtin-input_id.lo `test -f 'udev-builtin-input_id.c' || echo './'`udev-builtin-input_id.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev -I/usr/include/blkid -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-ctrl.lo -MD -MP -MF .deps/libudev_core_la-udev-ctrl.Tpo -c udev-ctrl.c  -fPIC -DPIC -o .libs/libudev_core_la-udev-ctrl.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev -I/usr/include/blkid -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-btrfs.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-btrfs.Tpo -c udev-builtin-btrfs.c  -fPIC -DPIC -o .libs/libudev_core_la-udev-builtin-btrfs.o
+mv -f .deps/libudev_core_la-udev-builtin.Tpo .deps/libudev_core_la-udev-builtin.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -I/usr/include/blkid  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-net_id.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-net_id.Tpo -c -o libudev_core_la-udev-builtin-net_id.lo `test -f 'udev-builtin-net_id.c' || echo './'`udev-builtin-net_id.c
+mv -f .deps/libudev_core_la-udev-builtin-btrfs.Tpo .deps/libudev_core_la-udev-builtin-btrfs.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -I/usr/include/blkid  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-path_id.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-path_id.Tpo -c -o libudev_core_la-udev-builtin-path_id.lo `test -f 'udev-builtin-path_id.c' || echo './'`udev-builtin-path_id.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev -I/usr/include/blkid -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-hwdb.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-hwdb.Tpo -c udev-builtin-hwdb.c  -fPIC -DPIC -o .libs/libudev_core_la-udev-builtin-hwdb.o
+mv -f .deps/libudev_core_la-udev-node.Tpo .deps/libudev_core_la-udev-node.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -I/usr/include/blkid  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-usb_id.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-usb_id.Tpo -c -o libudev_core_la-udev-builtin-usb_id.lo `test -f 'udev-builtin-usb_id.c' || echo './'`udev-builtin-usb_id.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev -I/usr/include/blkid -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-net_id.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-net_id.Tpo -c udev-builtin-net_id.c  -fPIC -DPIC -o .libs/libudev_core_la-udev-builtin-net_id.o
+mv -f .deps/libudev_core_la-udev-ctrl.Tpo .deps/libudev_core_la-udev-ctrl.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -I/usr/include/blkid  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-blkid.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-blkid.Tpo -c -o libudev_core_la-udev-builtin-blkid.lo `test -f 'udev-builtin-blkid.c' || echo './'`udev-builtin-blkid.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev -I/usr/include/blkid -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-input_id.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-input_id.Tpo -c udev-builtin-input_id.c  -fPIC -DPIC -o .libs/libudev_core_la-udev-builtin-input_id.o
+mv -f .deps/libudev_core_la-udev-builtin-hwdb.Tpo .deps/libudev_core_la-udev-builtin-hwdb.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -I/usr/include/blkid  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-kmod.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-kmod.Tpo -c -o libudev_core_la-udev-builtin-kmod.lo `test -f 'udev-builtin-kmod.c' || echo './'`udev-builtin-kmod.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev -I/usr/include/blkid -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-path_id.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-path_id.Tpo -c udev-builtin-path_id.c  -fPIC -DPIC -o .libs/libudev_core_la-udev-builtin-path_id.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev -I/usr/include/blkid -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-usb_id.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-usb_id.Tpo -c udev-builtin-usb_id.c  -fPIC -DPIC -o .libs/libudev_core_la-udev-builtin-usb_id.o
+mv -f .deps/libudev_core_la-udev-event.Tpo .deps/libudev_core_la-udev-event.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -I/usr/include/blkid  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-keyboard.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-keyboard.Tpo -c -o libudev_core_la-udev-builtin-keyboard.lo `test -f 'udev-builtin-keyboard.c' || echo './'`udev-builtin-keyboard.c
+mv -f .deps/libudev_core_la-udev-builtin-net_id.Tpo .deps/libudev_core_la-udev-builtin-net_id.Plo
+gcc -DHAVE_CONFIG_H -I. -I../..  -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT udevd.o -MD -MP -MF .deps/udevd.Tpo -c -o udevd.o udevd.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev -I/usr/include/blkid -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-blkid.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-blkid.Tpo -c udev-builtin-blkid.c  -fPIC -DPIC -o .libs/libudev_core_la-udev-builtin-blkid.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev -I/usr/include/blkid -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-kmod.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-kmod.Tpo -c udev-builtin-kmod.c  -fPIC -DPIC -o .libs/libudev_core_la-udev-builtin-kmod.o
+mv -f .deps/libudev_core_la-udev-builtin-input_id.Tpo .deps/libudev_core_la-udev-builtin-input_id.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I../.. -include ../../config.h -DROOTPREFIX=\"\" -DUDEV_HWDB_DIR=\"/etc/udev/hwdb.d\" -DUDEV_HWDB_BIN=\"/etc/udev/hwdb.bin\" -DUDEV_CONF_DIR=\"/etc/udev\" -DUDEV_ROOT_RUN=\"/run\" -DUDEV_RULES_DIR=\"/lib/udev/rules.d\" -DUDEV_LIBEXEC_DIR=\"/lib/udev\" -DUDEV_VERSION=\"251\" -I ../../src/shared -I ../../src/libudev -I ../../src/udev -I/usr/include/blkid -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT libudev_core_la-udev-builtin-keyboard.lo -MD -MP -MF .deps/libudev_core_la-udev-builtin-keyboard.Tpo -c udev-builtin-keyboard.c  -fPIC -DPIC -o .libs/libudev_core_la-udev-builtin-keyboard.o
+mv -f .deps/libudev_core_la-udev-builtin-usb_id.Tpo .deps/libudev_core_la-udev-builtin-usb_id.Plo
+mv -f .deps/libudev_core_la-udev-builtin-path_id.Tpo .deps/libudev_core_la-udev-builtin-path_id.Plo
+mv -f .deps/libudev_core_la-udev-builtin-kmod.Tpo .deps/libudev_core_la-udev-builtin-kmod.Plo
+mv -f .deps/libudev_core_la-udev-builtin-blkid.Tpo .deps/libudev_core_la-udev-builtin-blkid.Plo
+mv -f .deps/libudev_core_la-udev-builtin-keyboard.Tpo .deps/libudev_core_la-udev-builtin-keyboard.Plo
+mv -f .deps/udevd.Tpo .deps/udevd.Po
+mv -f .deps/libudev_core_la-udev-rules.Tpo .deps/libudev_core_la-udev-rules.Plo
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -I/usr/include/blkid  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE   -o libudev-core.la  libudev_core_la-udev-event.lo libudev_core_la-udev-watch.lo libudev_core_la-udev-node.lo libudev_core_la-udev-rules.lo libudev_core_la-udev-ctrl.lo libudev_core_la-udev-builtin.lo libudev_core_la-udev-builtin-btrfs.lo libudev_core_la-udev-builtin-hwdb.lo libudev_core_la-udev-builtin-input_id.lo libudev_core_la-udev-builtin-net_id.lo libudev_core_la-udev-builtin-path_id.lo libudev_core_la-udev-builtin-usb_id.lo libudev_core_la-udev-builtin-blkid.lo libudev_core_la-udev-builtin-kmod.lo libudev_core_la-udev-builtin-keyboard.lo  ../../src/shared/libudev_shared.la ../../src/libudev/libudev-private.la -lblkid  -lkmod 
+libtool: link: (cd .libs/libudev-core.lax/libudev_shared.a && ar x "/home/devel/building/work/src/eudev-3.2.14/src/udev/../../src/shared/.libs/libudev_shared.a")
+libtool: link: (cd .libs/libudev-core.lax/libudev-private.a && ar x "/home/devel/building/work/src/eudev-3.2.14/src/udev/../../src/libudev/.libs/libudev-private.a")
+libtool: link: ar cr .libs/libudev-core.a .libs/libudev_core_la-udev-event.o .libs/libudev_core_la-udev-watch.o .libs/libudev_core_la-udev-node.o .libs/libudev_core_la-udev-rules.o .libs/libudev_core_la-udev-ctrl.o .libs/libudev_core_la-udev-builtin.o .libs/libudev_core_la-udev-builtin-btrfs.o .libs/libudev_core_la-udev-builtin-hwdb.o .libs/libudev_core_la-udev-builtin-input_id.o .libs/libudev_core_la-udev-builtin-net_id.o .libs/libudev_core_la-udev-builtin-path_id.o .libs/libudev_core_la-udev-builtin-usb_id.o .libs/libudev_core_la-udev-builtin-blkid.o .libs/libudev_core_la-udev-builtin-kmod.o .libs/libudev_core_la-udev-builtin-keyboard.o   .libs/libudev-core.lax/libudev_shared.a/MurmurHash2.o .libs/libudev-core.lax/libudev_shared.a/conf-files.o .libs/libudev-core.lax/libudev_shared.a/dev-setup.o .libs/libudev-core.lax/libudev_shared.a/device-nodes.o .libs/libudev-core.lax/libudev_shared.a/fileio.o .libs/libudev-core.lax/libudev_shared.a/hashmap.o .libs/libudev-core.lax/libudev_shared.a/label.o .libs/libudev-core.lax/libudev_shared.a/log.o .libs/libudev-core.lax/libudev_shared.a/mempool.o .libs/libudev-core.lax/libudev_shared.a/mkdir-label.o .libs/libudev-core.lax/libudev_shared.a/mkdir.o .libs/libudev-core.lax/libudev_shared.a/path-util.o .libs/libudev-core.lax/libudev_shared.a/process-util.o .libs/libudev-core.lax/libudev_shared.a/random-util.o .libs/libudev-core.lax/libudev_shared.a/selinux-util.o .libs/libudev-core.lax/libudev_shared.a/siphash24.o .libs/libudev-core.lax/libudev_shared.a/smack-util.o .libs/libudev-core.lax/libudev_shared.a/strbuf.o .libs/libudev-core.lax/libudev_shared.a/strv.o .libs/libudev-core.lax/libudev_shared.a/strxcpyx.o .libs/libudev-core.lax/libudev_shared.a/sysctl-util.o .libs/libudev-core.lax/libudev_shared.a/terminal-util.o .libs/libudev-core.lax/libudev_shared.a/time-util.o .libs/libudev-core.lax/libudev_shared.a/utf8.o .libs/libudev-core.lax/libudev_shared.a/util.o .libs/libudev-core.lax/libudev_shared.a/virt.o  .libs/libudev-core.lax/libudev-private.a/libudev_private_la-libudev-device-private.o .libs/libudev-core.lax/libudev-private.a/libudev_private_la-libudev-device.o .libs/libudev-core.lax/libudev-private.a/libudev_private_la-libudev-enumerate.o .libs/libudev-core.lax/libudev-private.a/libudev_private_la-libudev-hwdb.o .libs/libudev-core.lax/libudev-private.a/libudev_private_la-libudev-list.o .libs/libudev-core.lax/libudev-private.a/libudev_private_la-libudev-monitor.o .libs/libudev-core.lax/libudev-private.a/libudev_private_la-libudev-queue.o .libs/libudev-core.lax/libudev-private.a/libudev_private_la-libudev-util.o .libs/libudev-core.lax/libudev-private.a/libudev_private_la-libudev.o 
+libtool: link: ranlib .libs/libudev-core.a
+libtool: link: rm -fr .libs/libudev-core.lax
+libtool: link: ( cd ".libs" && rm -f "libudev-core.la" && ln -s "../libudev-core.la" "libudev-core.la" )
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE   -o udevadm udevadm.o udevadm-info.o udevadm-control.o udevadm-monitor.o udevadm-hwdb.o udevadm-settle.o udevadm-trigger.o udevadm-test.o udevadm-test-builtin.o udevadm-util.o libudev-core.la 
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE   -o udevd udevd.o libudev-core.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -o udevd udevd.o  ./.libs/libudev-core.a -lblkid -lkmod
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -o udevadm udevadm.o udevadm-info.o udevadm-control.o udevadm-monitor.o udevadm-hwdb.o udevadm-settle.o udevadm-trigger.o udevadm-test.o udevadm-test-builtin.o udevadm-util.o  ./.libs/libudev-core.a -lblkid -lkmod
+make[4]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/udev'
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/udev'
+Making all in ata_id
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/ata_id'
+gcc -DHAVE_CONFIG_H -I. -I../..  -I ../../src/shared -I ../../src/udev -I ../../src/libudev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT ata_id.o -MD -MP -MF .deps/ata_id.Tpo -c -o ata_id.o ata_id.c
+mv -f .deps/ata_id.Tpo .deps/ata_id.Po
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE   -o ata_id ata_id.o ../../src/libudev/libudev-private.la ../../src/udev/libudev-core.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -o ata_id ata_id.o  ../../src/libudev/.libs/libudev-private.a ../../src/udev/.libs/libudev-core.a -lblkid -lkmod
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/ata_id'
+Making all in cdrom_id
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/cdrom_id'
+gcc -DHAVE_CONFIG_H -I. -I../..  -I ../../src/shared -I ../../src/libudev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT cdrom_id.o -MD -MP -MF .deps/cdrom_id.Tpo -c -o cdrom_id.o cdrom_id.c
+mv -f .deps/cdrom_id.Tpo .deps/cdrom_id.Po
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE   -o cdrom_id cdrom_id.o ../../src/libudev/libudev-private.la ../../src/udev/libudev-core.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -o cdrom_id cdrom_id.o  ../../src/libudev/.libs/libudev-private.a ../../src/udev/.libs/libudev-core.a -lblkid -lkmod
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/cdrom_id'
+Making all in collect
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/collect'
+gcc -DHAVE_CONFIG_H -I. -I../..  -DUDEV_ROOT_RUN=\"/run\" -I ../../src/shared -I ../../src/libudev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT collect.o -MD -MP -MF .deps/collect.Tpo -c -o collect.o collect.c
+mv -f .deps/collect.Tpo .deps/collect.Po
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE   -o collect collect.o ../../src/libudev/libudev-private.la ../../src/udev/libudev-core.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -o collect collect.o  ../../src/libudev/.libs/libudev-private.a ../../src/udev/.libs/libudev-core.a -lblkid -lkmod
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/collect'
+Making all in dmi_memory_id
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/dmi_memory_id'
+gcc -DHAVE_CONFIG_H -I. -I../..  -I ../../src/shared -I ../../src/udev -I ../../src/libudev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT dmi_memory_id.o -MD -MP -MF .deps/dmi_memory_id.Tpo -c -o dmi_memory_id.o dmi_memory_id.c
+mv -f .deps/dmi_memory_id.Tpo .deps/dmi_memory_id.Po
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE   -o dmi_memory_id dmi_memory_id.o ../../src/libudev/libudev-private.la ../../src/udev/libudev-core.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -o dmi_memory_id dmi_memory_id.o  ../../src/libudev/.libs/libudev-private.a ../../src/udev/.libs/libudev-core.a -lblkid -lkmod
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/dmi_memory_id'
+Making all in fido_id
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/fido_id'
+gcc -DHAVE_CONFIG_H -I. -I../..  -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT fido_id.o -MD -MP -MF .deps/fido_id.Tpo -c -o fido_id.o fido_id.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT fido_id_desc.o -MD -MP -MF .deps/fido_id_desc.Tpo -c -o fido_id_desc.o fido_id_desc.c
+mv -f .deps/fido_id_desc.Tpo .deps/fido_id_desc.Po
+mv -f .deps/fido_id.Tpo .deps/fido_id.Po
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE   -o fido_id fido_id.o fido_id_desc.o ../../src/libudev/libudev-private.la ../../src/udev/libudev-core.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -o fido_id fido_id.o fido_id_desc.o  ../../src/libudev/.libs/libudev-private.a ../../src/udev/.libs/libudev-core.a -lblkid -lkmod
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/fido_id'
+Making all in scsi_id
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/scsi_id'
+gcc -DHAVE_CONFIG_H -I. -I../..  -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT scsi_id.o -MD -MP -MF .deps/scsi_id.Tpo -c -o scsi_id.o scsi_id.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -I ../../src/shared -I ../../src/libudev -I ../../src/udev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT scsi_serial.o -MD -MP -MF .deps/scsi_serial.Tpo -c -o scsi_serial.o scsi_serial.c
+mv -f .deps/scsi_id.Tpo .deps/scsi_id.Po
+mv -f .deps/scsi_serial.Tpo .deps/scsi_serial.Po
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE   -o scsi_id scsi_id.o scsi_serial.o ../../src/libudev/libudev-private.la ../../src/udev/libudev-core.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -o scsi_id scsi_id.o scsi_serial.o  ../../src/libudev/.libs/libudev-private.a ../../src/udev/.libs/libudev-core.a -lblkid -lkmod
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/scsi_id'
+Making all in v4l_id
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/v4l_id'
+gcc -DHAVE_CONFIG_H -I. -I../..  -I ../../src/shared   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT v4l_id.o -MD -MP -MF .deps/v4l_id.Tpo -c -o v4l_id.o v4l_id.c
+mv -f .deps/v4l_id.Tpo .deps/v4l_id.Po
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE   -o v4l_id v4l_id.o ../../src/libudev/libudev-private.la ../../src/udev/libudev-core.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -o v4l_id v4l_id.o  ../../src/libudev/.libs/libudev-private.a ../../src/udev/.libs/libudev-core.a -lblkid -lkmod
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/v4l_id'
+Making all in mtd_probe
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/mtd_probe'
+gcc -DHAVE_CONFIG_H -I. -I../..  -I ../../src/shared   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT mtd_probe.o -MD -MP -MF .deps/mtd_probe.Tpo -c -o mtd_probe.o mtd_probe.c
+gcc -DHAVE_CONFIG_H -I. -I../..  -I ../../src/shared   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT probe_smartmedia.o -MD -MP -MF .deps/probe_smartmedia.Tpo -c -o probe_smartmedia.o probe_smartmedia.c
+mv -f .deps/mtd_probe.Tpo .deps/mtd_probe.Po
+mv -f .deps/probe_smartmedia.Tpo .deps/probe_smartmedia.Po
+/bin/sh ../../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE   -o mtd_probe mtd_probe.o probe_smartmedia.o ../../src/libudev/libudev-private.la ../../src/udev/libudev-core.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -o mtd_probe mtd_probe.o probe_smartmedia.o  ../../src/libudev/.libs/libudev-private.a ../../src/udev/.libs/libudev-core.a -lblkid -lkmod
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/mtd_probe'
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src'
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src'
+Making all in rules
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/rules'
+/bin/sed -e 's,{{ROOTBINDIR}},/sbin,g' ./64-btrfs.rules.in > 64-btrfs.rules
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/rules'
+Making all in test
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/test'
+gcc -DHAVE_CONFIG_H -I. -I..  -I ../src/libudev -include ../config.h -DUDEV_ROOT_RUN=\"/run\" -DVERSION=\"3.2.14\" -I ../src/shared -I ../src/libudev -I ../src/udev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT test_libudev-test-libudev.o -MD -MP -MF .deps/test_libudev-test-libudev.Tpo -c -o test_libudev-test-libudev.o `test -f 'test-libudev.c' || echo './'`test-libudev.c
+gcc -DHAVE_CONFIG_H -I. -I..  -I ../src/udev -include ../config.h -DUDEV_ROOT_RUN=\"/run\" -DVERSION=\"3.2.14\" -I ../src/shared -I ../src/libudev -I ../src/udev   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -MT test_udev-test-udev.o -MD -MP -MF .deps/test_udev-test-udev.Tpo -c -o test_udev-test-udev.o `test -f 'test-udev.c' || echo './'`test-udev.c
+mv -f .deps/test_udev-test-udev.Tpo .deps/test_udev-test-udev.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE   -o test-udev test_udev-test-udev.o ../src/libudev/libudev-private.la ../src/udev/libudev-core.la -lblkid  -lkmod 
+mv -f .deps/test_libudev-test-libudev.Tpo .deps/test_libudev-test-libudev.Po
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -o test-udev test_udev-test-udev.o  ../src/libudev/.libs/libudev-private.a ../src/udev/.libs/libudev-core.a -lblkid -lkmod
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE   -o test-libudev test_libudev-test-libudev.o ../src/libudev/libudev-private.la ../src/udev/libudev-core.la 
+libtool: link: gcc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -D_GNU_SOURCE -o test-libudev test_libudev-test-libudev.o  ../src/libudev/.libs/libudev-private.a ../src/udev/.libs/libudev-core.a -lblkid -lkmod
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/test'
+Making all in hwdb
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/hwdb'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/hwdb'
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14'
+make[1]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14'
++ make install DESTDIR=/home/devel/building/work/pkg
+Making install in src
+make[1]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src'
+Making install in shared
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/shared'
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/shared'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/shared'
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/shared'
+Making install in libudev
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/libudev'
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/libudev'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   libudev.la '/home/devel/building/work/pkg/usr/lib'
+ /usr/bin/install -c -m 644 libudev.h '/home/devel/building/work/pkg/usr/include'
+ /usr/bin/install -c -m 644 libudev.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+libtool: install: /usr/bin/install -c .libs/libudev.so.1.6.3 /home/devel/building/work/pkg/usr/lib/libudev.so.1.6.3
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libudev.so.1.6.3 libudev.so.1 || { rm -f libudev.so.1 && ln -s libudev.so.1.6.3 libudev.so.1; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libudev.so.1.6.3 libudev.so || { rm -f libudev.so && ln -s libudev.so.1.6.3 libudev.so; }; })
+libtool: install: /usr/bin/install -c .libs/libudev.lai /home/devel/building/work/pkg/usr/lib/libudev.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make  install-exec-hook
+make[4]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/libudev'
+libname=libudev.so; if test "/usr/lib" != "/lib"; then \
+	/bin/mkdir -p /home/devel/building/work/pkg/lib && \
+	so_img_name=$(readlink /home/devel/building/work/pkg/usr/lib/$libname) && \
+	so_img_rel_target_prefix=$(echo /usr/lib | sed 's,\(^/\)\?[^/]\+,..,g') && \
+	ln -s -f $so_img_rel_target_prefix/lib/$so_img_name /home/devel/building/work/pkg/usr/lib/$libname && \
+	mv /home/devel/building/work/pkg/usr/lib/$libname.* /home/devel/building/work/pkg/lib; \
+fi
+make[4]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/libudev'
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/libudev'
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/libudev'
+Making install in udev
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/udev'
+make  install-am
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/udev'
+make[4]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/udev'
+ /bin/mkdir -p '/home/devel/building/work/pkg/sbin'
+ /bin/mkdir -p '/home/devel/building/work/pkg/sbin'
+ /bin/mkdir -p '/home/devel/building/work/pkg/etc/udev'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/pkgconfig'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c udevadm '/home/devel/building/work/pkg/sbin'
+ /usr/bin/install -c -m 644 udev.pc '/home/devel/building/work/pkg/usr/share/pkgconfig'
+ /usr/bin/install -c -m 644 udev.h '/home/devel/building/work/pkg/usr/include'
+ /usr/bin/install -c -m 644 udev.conf '/home/devel/building/work/pkg/etc/udev'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c udevd '/home/devel/building/work/pkg/sbin'
+libtool: install: /usr/bin/install -c udevadm /home/devel/building/work/pkg/sbin/udevadm
+libtool: install: /usr/bin/install -c udevd /home/devel/building/work/pkg/sbin/udevd
+make  install-exec-hook
+make[5]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/udev'
+test "/sbin" = "/sbin" || \
+	ln -s -f /sbin/udevadm /home/devel/building/work/pkg/sbin/udevadm
+make[5]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/udev'
+make[4]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/udev'
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/udev'
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/udev'
+Making install in ata_id
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/ata_id'
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/ata_id'
+make[3]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/lib/udev'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c ata_id '/home/devel/building/work/pkg/lib/udev'
+libtool: install: /usr/bin/install -c ata_id /home/devel/building/work/pkg/lib/udev/ata_id
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/ata_id'
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/ata_id'
+Making install in cdrom_id
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/cdrom_id'
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/cdrom_id'
+make[3]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/lib/udev'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c cdrom_id '/home/devel/building/work/pkg/lib/udev'
+libtool: install: /usr/bin/install -c cdrom_id /home/devel/building/work/pkg/lib/udev/cdrom_id
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/cdrom_id'
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/cdrom_id'
+Making install in collect
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/collect'
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/collect'
+make[3]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/lib/udev'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c collect '/home/devel/building/work/pkg/lib/udev'
+libtool: install: /usr/bin/install -c collect /home/devel/building/work/pkg/lib/udev/collect
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/collect'
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/collect'
+Making install in dmi_memory_id
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/dmi_memory_id'
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/dmi_memory_id'
+make[3]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/lib/udev'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c dmi_memory_id '/home/devel/building/work/pkg/lib/udev'
+libtool: install: /usr/bin/install -c dmi_memory_id /home/devel/building/work/pkg/lib/udev/dmi_memory_id
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/dmi_memory_id'
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/dmi_memory_id'
+Making install in fido_id
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/fido_id'
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/fido_id'
+make[3]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/lib/udev'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c fido_id '/home/devel/building/work/pkg/lib/udev'
+libtool: install: /usr/bin/install -c fido_id /home/devel/building/work/pkg/lib/udev/fido_id
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/fido_id'
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/fido_id'
+Making install in scsi_id
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/scsi_id'
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/scsi_id'
+make[3]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/lib/udev'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c scsi_id '/home/devel/building/work/pkg/lib/udev'
+libtool: install: /usr/bin/install -c scsi_id /home/devel/building/work/pkg/lib/udev/scsi_id
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/scsi_id'
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/scsi_id'
+Making install in v4l_id
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/v4l_id'
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/v4l_id'
+make[3]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/lib/udev'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c v4l_id '/home/devel/building/work/pkg/lib/udev'
+libtool: install: /usr/bin/install -c v4l_id /home/devel/building/work/pkg/lib/udev/v4l_id
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/v4l_id'
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/v4l_id'
+Making install in mtd_probe
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/mtd_probe'
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src/mtd_probe'
+make[3]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/lib/udev'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c mtd_probe '/home/devel/building/work/pkg/lib/udev'
+libtool: install: /usr/bin/install -c mtd_probe /home/devel/building/work/pkg/lib/udev/mtd_probe
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/mtd_probe'
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src/mtd_probe'
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src'
+make[3]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/src'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src'
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src'
+make[1]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/src'
+Making install in rules
+make[1]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/rules'
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/rules'
+make[2]: Nothing to be done for 'install-exec-am'.
+/bin/mkdir -p /home/devel/building/work/pkg/etc/udev/rules.d
+ /bin/mkdir -p '/home/devel/building/work/pkg/lib/udev/rules.d'
+ /usr/bin/install -c -m 644 50-udev-default.rules 60-autosuspend.rules 60-block.rules 60-cdrom_id.rules 60-drm.rules 60-evdev.rules 60-fido-id.rules 60-input-id.rules 60-persistent-alsa.rules 60-persistent-input.rules 60-persistent-storage-tape.rules 60-persistent-v4l.rules 60-sensor.rules 60-serial.rules 64-btrfs.rules 70-camera.rules 70-joystick.rules 70-memory.rules 70-mouse.rules 70-touchpad.rules 75-net-description.rules 78-sound-card.rules 81-net-dhcp.rules 80-net-name-slot.rules 60-persistent-storage.rules 80-drivers.rules 75-probe_mtd.rules '/home/devel/building/work/pkg/lib/udev/rules.d'
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/rules'
+make[1]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/rules'
+Making install in test
+make[1]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/test'
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/test'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/test'
+make[1]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/test'
+Making install in hwdb
+make[1]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/hwdb'
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/hwdb'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/etc/udev/hwdb.d'
+ /usr/bin/install -c -m 644 20-acpi-vendor.hwdb 20-bluetooth-vendor-product.hwdb 20-dmi-id.hwdb 20-net-ifname.hwdb 20-OUI.hwdb 20-pci-classes.hwdb 20-pci-vendor-model.hwdb 20-sdio-classes.hwdb 20-sdio-vendor-model.hwdb 20-usb-classes.hwdb 20-usb-vendor-model.hwdb 20-vmbus-class.hwdb 60-autosuspend-fingerprint-reader.hwdb 60-autosuspend.hwdb 60-evdev.hwdb 60-input-id.hwdb 60-keyboard.hwdb 60-seat.hwdb 60-sensor.hwdb 70-analyzers.hwdb 70-av-production.hwdb 70-cameras.hwdb 70-joystick.hwdb 70-mouse.hwdb 70-pointingstick.hwdb 70-pda.hwdb 70-touchpad.hwdb 80-ieee1394-unit-function.hwdb '/home/devel/building/work/pkg/etc/udev/hwdb.d'
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/hwdb'
+make[1]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/hwdb'
+make[1]: Entering directory '/home/devel/building/work/src/eudev-3.2.14'
+make[2]: Entering directory '/home/devel/building/work/src/eudev-3.2.14'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14'
+make[1]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14'
++ make -C man install DESTDIR=/home/devel/building/work/pkg
+make: Entering directory '/home/devel/building/work/src/eudev-3.2.14/man'
+make[1]: Entering directory '/home/devel/building/work/src/eudev-3.2.14/man'
+make[1]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man5'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man7'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man8'
+ /usr/bin/install -c -m 644 hwdb.7 udev.7 '/home/devel/building/work/pkg/usr/share/man/man7'
+ /usr/bin/install -c -m 644 udev.conf.5 '/home/devel/building/work/pkg/usr/share/man/man5'
+ /usr/bin/install -c -m 644 udevd.8 udevadm.8 '/home/devel/building/work/pkg/usr/share/man/man8'
+make[1]: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/man'
+make: Leaving directory '/home/devel/building/work/src/eudev-3.2.14/man'
++ LD_LIBRARY_PATH=/home/devel/building/work/pkg/lib
++ /home/devel/building/work/pkg/sbin/udevadm hwdb --update --root=/home/devel/building/work/pkg
++ install -d /home/devel/building/work/pkg/lib/firmware /home/devel/building/work/pkg/lib/udev/devices/pts /home/devel/building/work/pkg/lib/udev/devices/shm
++ install -d /home/devel/building/work/pkg/lib /home/devel/building/work/pkg/sbin /home/devel/building/work/pkg/run
++ install -m 0644 /home/devel/building/work/src/50-firmware.rules /home/devel/building/work/pkg/lib/udev/rules.d
++ install -d /home/devel/building/work/pkg/etc/sv/udevd
++ install -m 0755 /home/devel/building/work/src/udevd.run /home/devel/building/work/pkg/etc/sv/udevd/run
++ ln -s /run/runit/supervise.udevd /home/devel/building/work/pkg/etc/sv/udevd/supervise
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 20:44 etc/
+drwxr-xr-x  0 root   root        0 May  7 20:44 etc/udev/
+drwxr-xr-x  0 root   root        0 May  7 20:44 etc/sv/
+drwxr-xr-x  0 root   root        0 May  7 20:44 etc/sv/udevd/
+-rwxr-xr-x  0 root   root       44 May  7 20:44 etc/sv/udevd/run
+lrwxrwxrwx  0 root   root        0 May  7 20:44 etc/sv/udevd/supervise -> /run/runit/supervise.udevd
+-rw-r--r--  0 root   root      215 May  7 20:44 etc/udev/udev.conf
+drwxr-xr-x  0 root   root        0 May  7 20:44 etc/udev/rules.d/
+drwxr-xr-x  0 root   root        0 May  7 20:44 etc/udev/hwdb.d/
+-r--r--r--  0 root   root  9732328 May  7 20:44 etc/udev/hwdb.bin
+-rw-r--r--  0 root   root   151677 May  7 20:44 etc/udev/hwdb.d/20-acpi-vendor.hwdb
+-rw-r--r--  0 root   root   140340 May  7 20:44 etc/udev/hwdb.d/20-bluetooth-vendor-product.hwdb
+-rw-r--r--  0 root   root      310 May  7 20:44 etc/udev/hwdb.d/20-dmi-id.hwdb
+-rw-r--r--  0 root   root      111 May  7 20:44 etc/udev/hwdb.d/20-net-ifname.hwdb
+-rw-r--r--  0 root   root  2364896 May  7 20:44 etc/udev/hwdb.d/20-OUI.hwdb
+-rw-r--r--  0 root   root    15708 May  7 20:44 etc/udev/hwdb.d/20-pci-classes.hwdb
+-rw-r--r--  0 root   root  3449959 May  7 20:44 etc/udev/hwdb.d/20-pci-vendor-model.hwdb
+-rw-r--r--  0 root   root      783 May  7 20:44 etc/udev/hwdb.d/20-sdio-classes.hwdb
+-rw-r--r--  0 root   root     4181 May  7 20:44 etc/udev/hwdb.d/20-sdio-vendor-model.hwdb
+-rw-r--r--  0 root   root     8070 May  7 20:44 etc/udev/hwdb.d/20-usb-classes.hwdb
+-rw-r--r--  0 root   root  1470385 May  7 20:44 etc/udev/hwdb.d/20-usb-vendor-model.hwdb
+-rw-r--r--  0 root   root     1810 May  7 20:44 etc/udev/hwdb.d/20-vmbus-class.hwdb
+-rw-r--r--  0 root   root     5846 May  7 20:44 etc/udev/hwdb.d/60-autosuspend-fingerprint-reader.hwdb
+-rw-r--r--  0 root   root     2224 May  7 20:44 etc/udev/hwdb.d/60-autosuspend.hwdb
+-rw-r--r--  0 root   root    20698 May  7 20:44 etc/udev/hwdb.d/60-evdev.hwdb
+-rw-r--r--  0 root   root     2671 May  7 20:44 etc/udev/hwdb.d/60-input-id.hwdb
+-rw-r--r--  0 root   root    91032 May  7 20:44 etc/udev/hwdb.d/60-keyboard.hwdb
+-rw-r--r--  0 root   root     1119 May  7 20:44 etc/udev/hwdb.d/60-seat.hwdb
+-rw-r--r--  0 root   root    40169 May  7 20:44 etc/udev/hwdb.d/60-sensor.hwdb
+-rw-r--r--  0 root   root     1015 May  7 20:44 etc/udev/hwdb.d/70-analyzers.hwdb
+-rw-r--r--  0 root   root     2719 May  7 20:44 etc/udev/hwdb.d/70-av-production.hwdb
+-rw-r--r--  0 root   root      679 May  7 20:44 etc/udev/hwdb.d/70-cameras.hwdb
+-rw-r--r--  0 root   root     1751 May  7 20:44 etc/udev/hwdb.d/70-joystick.hwdb
+-rw-r--r--  0 root   root    25255 May  7 20:44 etc/udev/hwdb.d/70-mouse.hwdb
+-rw-r--r--  0 root   root     7273 May  7 20:44 etc/udev/hwdb.d/70-pointingstick.hwdb
+-rw-r--r--  0 root   root      926 May  7 20:44 etc/udev/hwdb.d/70-pda.hwdb
+-rw-r--r--  0 root   root     2316 May  7 20:44 etc/udev/hwdb.d/70-touchpad.hwdb
+-rw-r--r--  0 root   root    47289 May  7 20:44 etc/udev/hwdb.d/80-ieee1394-unit-function.hwdb
+drwxr-xr-x  0 root   root        0 May  7 20:44 lib/
+lrwxrwxrwx  0 root   root        0 May  7 20:44 lib/libudev.so.1 -> libudev.so.1.6.3
+-rwxr-xr-x  0 root   root    64336 May  7 20:44 lib/libudev.so.1.6.3
+drwxr-xr-x  0 root   root        0 May  7 20:44 lib/udev/
+drwxr-xr-x  0 root   root        0 May  7 20:44 lib/firmware/
+-rwxr-xr-x  0 root   root    26968 May  7 20:44 lib/udev/ata_id
+-rwxr-xr-x  0 root   root    39320 May  7 20:44 lib/udev/cdrom_id
+-rwxr-xr-x  0 root   root    22968 May  7 20:44 lib/udev/collect
+-rwxr-xr-x  0 root   root    31152 May  7 20:44 lib/udev/dmi_memory_id
+-rwxr-xr-x  0 root   root    35248 May  7 20:44 lib/udev/fido_id
+-rwxr-xr-x  0 root   root    35832 May  7 20:44 lib/udev/scsi_id
+-rwxr-xr-x  0 root   root    14568 May  7 20:44 lib/udev/v4l_id
+-rwxr-xr-x  0 root   root    14592 May  7 20:44 lib/udev/mtd_probe
+drwxr-xr-x  0 root   root        0 May  7 20:44 lib/udev/rules.d/
+drwxr-xr-x  0 root   root        0 May  7 20:44 lib/udev/devices/
+drwxr-xr-x  0 root   root        0 May  7 20:44 lib/udev/devices/pts/
+drwxr-xr-x  0 root   root        0 May  7 20:44 lib/udev/devices/shm/
+-rw-r--r--  0 root   root     4954 May  7 20:44 lib/udev/rules.d/50-udev-default.rules
+-rw-r--r--  0 root   root      532 May  7 20:44 lib/udev/rules.d/60-autosuspend.rules
+-rw-r--r--  0 root   root      703 May  7 20:44 lib/udev/rules.d/60-block.rules
+-rw-r--r--  0 root   root     1071 May  7 20:44 lib/udev/rules.d/60-cdrom_id.rules
+-rw-r--r--  0 root   root      413 May  7 20:44 lib/udev/rules.d/60-drm.rules
+-rw-r--r--  0 root   root      982 May  7 20:44 lib/udev/rules.d/60-evdev.rules
+-rw-r--r--  0 root   root      491 May  7 20:44 lib/udev/rules.d/60-fido-id.rules
+-rw-r--r--  0 root   root      282 May  7 20:44 lib/udev/rules.d/60-input-id.rules
+-rw-r--r--  0 root   root      616 May  7 20:44 lib/udev/rules.d/60-persistent-alsa.rules
+-rw-r--r--  0 root   root     2719 May  7 20:44 lib/udev/rules.d/60-persistent-input.rules
+-rw-r--r--  0 root   root     2204 May  7 20:44 lib/udev/rules.d/60-persistent-storage-tape.rules
+-rw-r--r--  0 root   root      769 May  7 20:44 lib/udev/rules.d/60-persistent-v4l.rules
+-rw-r--r--  0 root   root     1618 May  7 20:44 lib/udev/rules.d/60-sensor.rules
+-rw-r--r--  0 root   root     1190 May  7 20:44 lib/udev/rules.d/60-serial.rules
+-rw-r--r--  0 root   root      613 May  7 20:44 lib/udev/rules.d/64-btrfs.rules
+-rw-r--r--  0 root   root      281 May  7 20:44 lib/udev/rules.d/70-camera.rules
+-rw-r--r--  0 root   root      432 May  7 20:44 lib/udev/rules.d/70-joystick.rules
+-rw-r--r--  0 root   root      184 May  7 20:44 lib/udev/rules.d/70-memory.rules
+-rw-r--r--  0 root   root      734 May  7 20:44 lib/udev/rules.d/70-mouse.rules
+-rw-r--r--  0 root   root      473 May  7 20:44 lib/udev/rules.d/70-touchpad.rules
+-rw-r--r--  0 root   root      452 May  7 20:44 lib/udev/rules.d/75-net-description.rules
+-rw-r--r--  0 root   root     4816 May  7 20:44 lib/udev/rules.d/78-sound-card.rules
+-rw-r--r--  0 root   root      528 May  7 20:44 lib/udev/rules.d/81-net-dhcp.rules
+-rw-r--r--  0 root   root      491 May  7 20:44 lib/udev/rules.d/80-net-name-slot.rules
+-rw-r--r--  0 root   root     8346 May  7 20:44 lib/udev/rules.d/60-persistent-storage.rules
+-rw-r--r--  0 root   root      617 May  7 20:44 lib/udev/rules.d/80-drivers.rules
+-rw-r--r--  0 root   root      174 May  7 20:44 lib/udev/rules.d/75-probe_mtd.rules
+-rw-r--r--  0 root   root      210 May  7 20:44 lib/udev/rules.d/50-firmware.rules
+drwxr-xr-x  0 root   root        0 May  7 20:44 run/
+drwxr-xr-x  0 root   root        0 May  7 20:44 sbin/
+-rwxr-xr-x  0 root   root   249392 May  7 20:44 sbin/udevadm
+-rwxr-xr-x  0 root   root   245488 May  7 20:44 sbin/udevd
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/include/
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/share/pkgconfig/
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/share/man/man5/
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/share/man/man7/
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/share/man/man8/
+-rw-r--r--  0 root   root     1363 May  7 20:44 usr/share/man/man8/udevd.8.gz
+-rw-r--r--  0 root   root     3579 May  7 20:44 usr/share/man/man8/udevadm.8.gz
+-rw-r--r--  0 root   root     2369 May  7 20:44 usr/share/man/man7/hwdb.7.gz
+-rw-r--r--  0 root   root     6034 May  7 20:44 usr/share/man/man7/udev.7.gz
+-rw-r--r--  0 root   root      715 May  7 20:44 usr/share/man/man5/udev.conf.5.gz
+-rw-r--r--  0 root   root      116 May  7 20:44 usr/share/pkgconfig/udev.pc
+-rw-r--r--  0 root   root    10621 May  7 20:44 usr/include/libudev.h
+-rw-r--r--  0 root   root     8855 May  7 20:44 usr/include/udev.h
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/lib/pkgconfig/
+lrwxrwxrwx  0 root   root        0 May  7 20:44 usr/lib/libudev.so -> ../../lib/libudev.so.1.6.3
+-rw-r--r--  0 root   root      518 May  7 20:44 usr/lib/pkgconfig/libudev.pc
+=======> Building '/home/devel/packages/eudev#3.2.14-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling eudev 3.2.14-1
+prt-get: /usr/bin/pkgadd -u eudev#3.2.14-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 20:44:28 2024
+
+pkgadd: rejecting etc/udev/udev.conf, keeping existing version

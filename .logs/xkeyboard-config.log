@@ -1,0 +1,1046 @@
+prt-get: updating /usr/ports/wayland-x86_64/xkeyboard-config
+prt-get: starting build Wed May  8 01:45:30 2024
+=======> Building '/home/devel/packages/xkeyboard-config#2.41-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/xkeyboard-config-2.41.tar.xz
+bsdtar -p -o -C /home/devel/building/work/src -xf locale.tar.xz
++ build
++ cd xkeyboard-config-2.41
++ build-meson . build
+The Meson build system
+Version: 1.4.0
+Source dir: /home/devel/building/work/src/xkeyboard-config-2.41
+Build dir: /home/devel/building/work/src/xkeyboard-config-2.41/build
+Build type: native build
+Project name: xkeyboard-config
+Project version: 2.41
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 2.2.0
+Program compat/map-variants.py found: YES (/home/devel/building/work/src/xkeyboard-config-2.41/rules/compat/map-variants.py)
+Program merge.py found: YES (/home/devel/building/work/src/xkeyboard-config-2.41/rules/merge.py)
+Program xml2lst.pl found: YES (/home/devel/building/work/src/xkeyboard-config-2.41/rules/xml2lst.pl)
+Program xsltproc found: YES (/usr/bin/xsltproc)
+Configuring man.xsl using configuration
+Program tests/verify-group-names.sh found: YES (/home/devel/building/work/src/xkeyboard-config-2.41/tests/verify-group-names.sh)
+Program python3 (pytest) found: NO
+Program pytest-3 pytest found: NO
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Build targets in project: 63
+NOTICE: Future-deprecated features used:
+ * 0.56.0: {'meson.source_root'}
+ * 0.64.0: {'copy arg in configure_file'}
+
+xkeyboard-config 2.41
+
+  User defined options
+    auto_features     : auto
+    bindir            : /usr/bin
+    buildtype         : plain
+    datadir           : /usr/share
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    libexecdir        : /usr/lib
+    localstatedir     : /var
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sbindir           : /usr/sbin
+    sharedstatedir    : /var/lib
+    sysconfdir        : /etc
+    werror            : false
+    wrap_mode         : nodownload
+    python.bytecompile: 0
+    b_lto             : false
+    b_pie             : true
+    b_staticpic       : true
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -v -C build
+ninja: entering directory '/home/devel/building/work/src/xkeyboard-config-2.41/build'
+[1/60] /usr/bin/msgfmt -o po/zh_TW/LC_MESSAGES/xkeyboard-config.mo ../po/zh_TW.po
+[2/60] /usr/bin/msgfmt -o po/zh_CN/LC_MESSAGES/xkeyboard-config.mo ../po/zh_CN.po
+[3/60] /usr/bin/msgfmt -o po/vi/LC_MESSAGES/xkeyboard-config.mo ../po/vi.po
+[4/60] /usr/bin/msgfmt -o po/uk/LC_MESSAGES/xkeyboard-config.mo ../po/uk.po
+[5/60] /usr/bin/msgfmt -o po/tr/LC_MESSAGES/xkeyboard-config.mo ../po/tr.po
+[6/60] /usr/bin/msgfmt -o po/sv/LC_MESSAGES/xkeyboard-config.mo ../po/sv.po
+[7/60] /usr/bin/msgfmt -o po/sr/LC_MESSAGES/xkeyboard-config.mo ../po/sr.po
+[8/60] /usr/bin/msgfmt -o po/sq/LC_MESSAGES/xkeyboard-config.mo ../po/sq.po
+[9/60] /usr/bin/msgfmt -o po/sl/LC_MESSAGES/xkeyboard-config.mo ../po/sl.po
+[10/60] /usr/bin/msgfmt -o po/sk/LC_MESSAGES/xkeyboard-config.mo ../po/sk.po
+[11/60] /usr/bin/msgfmt -o po/rw/LC_MESSAGES/xkeyboard-config.mo ../po/rw.po
+[12/60] /usr/bin/msgfmt -o po/ru/LC_MESSAGES/xkeyboard-config.mo ../po/ru.po
+[13/60] /usr/bin/msgfmt -o po/ro/LC_MESSAGES/xkeyboard-config.mo ../po/ro.po
+[14/60] /usr/bin/msgfmt -o po/pt_BR/LC_MESSAGES/xkeyboard-config.mo ../po/pt_BR.po
+[15/60] /usr/bin/msgfmt -o po/pt/LC_MESSAGES/xkeyboard-config.mo ../po/pt.po
+[16/60] /usr/bin/msgfmt -o po/pl/LC_MESSAGES/xkeyboard-config.mo ../po/pl.po
+[17/60] /usr/bin/msgfmt -o po/nl/LC_MESSAGES/xkeyboard-config.mo ../po/nl.po
+[18/60] /usr/bin/msgfmt -o po/nb/LC_MESSAGES/xkeyboard-config.mo ../po/nb.po
+[19/60] /usr/bin/msgfmt -o po/lt/LC_MESSAGES/xkeyboard-config.mo ../po/lt.po
+[20/60] /usr/bin/msgfmt -o po/ky/LC_MESSAGES/xkeyboard-config.mo ../po/ky.po
+[21/60] /usr/bin/msgfmt -o po/ko/LC_MESSAGES/xkeyboard-config.mo ../po/ko.po
+[22/60] /usr/bin/msgfmt -o po/ka/LC_MESSAGES/xkeyboard-config.mo ../po/ka.po
+[23/60] /usr/bin/msgfmt -o po/ja/LC_MESSAGES/xkeyboard-config.mo ../po/ja.po
+[24/60] /usr/bin/msgfmt -o po/it/LC_MESSAGES/xkeyboard-config.mo ../po/it.po
+[25/60] /usr/bin/msgfmt -o po/id/LC_MESSAGES/xkeyboard-config.mo ../po/id.po
+[26/60] /usr/bin/msgfmt -o po/hu/LC_MESSAGES/xkeyboard-config.mo ../po/hu.po
+[27/60] /usr/bin/msgfmt -o po/hr/LC_MESSAGES/xkeyboard-config.mo ../po/hr.po
+[28/60] /usr/bin/msgfmt -o po/he/LC_MESSAGES/xkeyboard-config.mo ../po/he.po
+[29/60] /usr/bin/msgfmt -o po/gl/LC_MESSAGES/xkeyboard-config.mo ../po/gl.po
+[30/60] /usr/bin/msgfmt -o po/fur/LC_MESSAGES/xkeyboard-config.mo ../po/fur.po
+[31/60] /usr/bin/msgfmt -o po/fr/LC_MESSAGES/xkeyboard-config.mo ../po/fr.po
+[32/60] /usr/bin/msgfmt -o po/fi/LC_MESSAGES/xkeyboard-config.mo ../po/fi.po
+[33/60] /usr/bin/msgfmt -o po/es/LC_MESSAGES/xkeyboard-config.mo ../po/es.po
+[34/60] /usr/bin/msgfmt -o po/eo/LC_MESSAGES/xkeyboard-config.mo ../po/eo.po
+[35/60] /usr/bin/msgfmt -o po/en_GB/LC_MESSAGES/xkeyboard-config.mo ../po/en_GB.po
+[36/60] /usr/bin/msgfmt -o po/el/LC_MESSAGES/xkeyboard-config.mo ../po/el.po
+[37/60] /usr/bin/msgfmt -o po/de/LC_MESSAGES/xkeyboard-config.mo ../po/de.po
+[38/60] /usr/bin/msgfmt -o po/da/LC_MESSAGES/xkeyboard-config.mo ../po/da.po
+[39/60] /usr/bin/msgfmt -o po/cs/LC_MESSAGES/xkeyboard-config.mo ../po/cs.po
+[40/60] /usr/bin/msgfmt -o po/crh/LC_MESSAGES/xkeyboard-config.mo ../po/crh.po
+[41/60] /usr/bin/msgfmt -o po/ca/LC_MESSAGES/xkeyboard-config.mo ../po/ca.po
+[42/60] /usr/bin/msgfmt -o po/bg/LC_MESSAGES/xkeyboard-config.mo ../po/bg.po
+[43/60] /usr/bin/msgfmt -o po/az/LC_MESSAGES/xkeyboard-config.mo ../po/az.po
+[44/60] /usr/bin/msgfmt -o po/ar/LC_MESSAGES/xkeyboard-config.mo ../po/ar.po
+[45/60] /usr/bin/msgfmt -o po/af/LC_MESSAGES/xkeyboard-config.mo ../po/af.po
+[46/60] /usr/bin/meson --internal exe --capture xkeyboard-config.7 -- /usr/bin/xsltproc -nonet man.xsl rules/evdev.xml
+[47/60] /usr/bin/meson --internal exe --capture rules/evdev.lst -- /home/devel/building/work/src/xkeyboard-config-2.41/rules/xml2lst.pl rules/evdev.xml
+[48/60] /usr/bin/meson --internal exe --capture rules/base.lst -- /home/devel/building/work/src/xkeyboard-config-2.41/rules/xml2lst.pl rules/base.xml
+[49/60] /home/devel/building/work/src/xkeyboard-config-2.41/rules/compat/map-variants.py --want=mlvs --number=4 rules/0025-ml4v4_s.part ../rules/compat/variantsMapping.lst
+[50/60] /home/devel/building/work/src/xkeyboard-config-2.41/rules/compat/map-variants.py --want=mls --number=4 rules/0021-ml4_s.part ../rules/compat/layoutsMapping.lst ../rules/compat/variantsMapping.lst
+[51/60] /home/devel/building/work/src/xkeyboard-config-2.41/rules/compat/map-variants.py --want=mlvs --number=3 rules/0024-ml3v3_s.part ../rules/compat/variantsMapping.lst
+[52/60] /home/devel/building/work/src/xkeyboard-config-2.41/rules/compat/map-variants.py --want=mls --number=3 rules/0019-ml3_s.part ../rules/compat/layoutsMapping.lst ../rules/compat/variantsMapping.lst
+[53/60] /home/devel/building/work/src/xkeyboard-config-2.41/rules/compat/map-variants.py --want=mlvs --number=2 rules/0023-ml2v2_s.part ../rules/compat/variantsMapping.lst
+[54/60] /home/devel/building/work/src/xkeyboard-config-2.41/rules/compat/map-variants.py --want=mls --number=2 rules/0017-ml2_s.part ../rules/compat/layoutsMapping.lst ../rules/compat/variantsMapping.lst
+[55/60] /home/devel/building/work/src/xkeyboard-config-2.41/rules/compat/map-variants.py --want=mlvs --number=1 rules/0016-ml1v1_s.part ../rules/compat/variantsMapping.lst
+[56/60] /home/devel/building/work/src/xkeyboard-config-2.41/rules/compat/map-variants.py --want=mls --number=1 rules/0014-ml1_s.part ../rules/compat/layoutsMapping.lst ../rules/compat/variantsMapping.lst
+[57/60] /home/devel/building/work/src/xkeyboard-config-2.41/rules/compat/map-variants.py --want=mlvs --number=0 rules/0010-mlv_s.part ../rules/compat/variantsMapping.lst
+[58/60] /home/devel/building/work/src/xkeyboard-config-2.41/rules/compat/map-variants.py --want=mls --number=0 rules/0012-ml_s.part ../rules/compat/layoutsMapping.lst ../rules/compat/variantsMapping.lst
+[59/60] /usr/bin/meson --internal exe --capture rules/evdev -- /home/devel/building/work/src/xkeyboard-config-2.41/rules/merge.py rules/0000-hdr.part.evdev rules/0001-lists.part.evdev rules/0002-evdev.lists.part.evdev rules/0004-evdev.m_k.part.evdev rules/0005-l1_k.part.evdev rules/0006-l_k.part.evdev rules/0007-o_k.part.evdev rules/0008-ml_g.part.evdev rules/0009-m_g.part.evdev rules/0011-mlv_s.part.evdev rules/0013-ml_s.part.evdev rules/0015-ml1_s.part.evdev rules/0018-ml2_s.part.evdev rules/0020-ml3_s.part.evdev rules/0022-ml4_s.part.evdev rules/0026-evdev.m_s.part.evdev rules/0027-evdev.ml_s1.part.evdev rules/0033-ml_c.part.evdev rules/0034-ml1_c.part.evdev rules/0035-m_t.part.evdev rules/0036-lo_s.part.evdev rules/0037-l1o_s.part.evdev rules/0038-l2o_s.part.evdev rules/0039-l3o_s.part.evdev rules/0040-l4o_s.part.evdev rules/0042-o_s.part.evdev rules/0043-o_c.part.evdev rules/0044-o_t.part.evdev rules/0028-lv_c.part.evdev rules/0029-l1v1_c.part.evdev rules/0030-l2v2_c.part.evdev rules/0031-l3v3_c.part.evdev rules/0032-l4v4_c.part.evdev rules/0041-o_s.part.evdev rules/0012-ml_s.part rules/0010-mlv_s.part rules/0014-ml1_s.part rules/0016-ml1v1_s.part rules/0017-ml2_s.part rules/0023-ml2v2_s.part rules/0019-ml3_s.part rules/0024-ml3v3_s.part rules/0021-ml4_s.part rules/0025-ml4v4_s.part
+[60/60] /usr/bin/meson --internal exe --capture rules/base -- /home/devel/building/work/src/xkeyboard-config-2.41/rules/merge.py rules/0000-hdr.part.base rules/0001-lists.part.base rules/0002-base.lists.part.base rules/0004-base.m_k.part.base rules/0005-l1_k.part.base rules/0006-l_k.part.base rules/0007-o_k.part.base rules/0008-ml_g.part.base rules/0009-m_g.part.base rules/0011-mlv_s.part.base rules/0013-ml_s.part.base rules/0015-ml1_s.part.base rules/0018-ml2_s.part.base rules/0020-ml3_s.part.base rules/0022-ml4_s.part.base rules/0026-base.m_s.part.base rules/0027-base.ml_s1.part.base rules/0033-ml_c.part.base rules/0034-ml1_c.part.base rules/0035-m_t.part.base rules/0036-lo_s.part.base rules/0037-l1o_s.part.base rules/0038-l2o_s.part.base rules/0039-l3o_s.part.base rules/0040-l4o_s.part.base rules/0042-o_s.part.base rules/0043-o_c.part.base rules/0044-o_t.part.base rules/0028-lv_c.part.base rules/0029-l1v1_c.part.base rules/0030-l2v2_c.part.base rules/0031-l3v3_c.part.base rules/0032-l4v4_c.part.base rules/0041-o_s.part.base rules/0012-ml_s.part rules/0010-mlv_s.part rules/0014-ml1_s.part rules/0016-ml1v1_s.part rules/0017-ml2_s.part rules/0023-ml2v2_s.part rules/0019-ml3_s.part rules/0024-ml3v3_s.part rules/0021-ml4_s.part rules/0025-ml4v4_s.part
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/xkeyboard-config-2.41/build -j 8 -v
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Installing subdir /home/devel/building/work/src/xkeyboard-config-2.41/compat to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/README to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/accessx to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/basic to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/caps to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/complete to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/iso9995 to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/japan to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/ledcaps to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/ledcompose to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/lednum to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/ledscroll to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/level5 to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/misc to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/mousekeys to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/olpc to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/pc to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/pc98 to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/xfree86 to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/compat/xtest to /home/devel/building/work/pkg/usr/share/X11/xkb/compat
+Installing subdir /home/devel/building/work/src/xkeyboard-config-2.41/geometry to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/README to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/amiga to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/ataritt to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/chicony to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/dell to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/everex to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/fujitsu to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/hhk to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/hp to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/keytronic to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/kinesis to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/macintosh to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/microsoft to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/nec to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/nokia to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/northgate to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/pc to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/sanwa to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/sony to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/steelseries to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/sun to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/teck to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/thinkpad to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/typematrix to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/winbook to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/digital_vndr/lk to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry/digital_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/digital_vndr/pc to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry/digital_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/digital_vndr/unix to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry/digital_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/sgi_vndr/O2 to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry/sgi_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/sgi_vndr/indigo to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry/sgi_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/geometry/sgi_vndr/indy to /home/devel/building/work/pkg/usr/share/X11/xkb/geometry/sgi_vndr
+Installing subdir /home/devel/building/work/src/xkeyboard-config-2.41/keycodes to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/README to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/aliases to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/amiga to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/ataritt to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/empty to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/evdev to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/fujitsu to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/hp to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/ibm to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/jolla to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/macintosh to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/olpc to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/sony to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/sun to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/xfree86 to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/xfree98 to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/digital_vndr/lk to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes/digital_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/digital_vndr/pc to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes/digital_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/sgi_vndr/indigo to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes/sgi_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/sgi_vndr/indy to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes/sgi_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/keycodes/sgi_vndr/iris to /home/devel/building/work/pkg/usr/share/X11/xkb/keycodes/sgi_vndr
+Installing subdir /home/devel/building/work/src/xkeyboard-config-2.41/symbols to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/af to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/al to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/altwin to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/am to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ancient to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/apl to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ara to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/at to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/au to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/az to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ba to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/bd to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/be to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/bg to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/bqn to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/br to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/brai to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/bt to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/bw to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/by to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ca to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/capslock to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/cd to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ch to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/cm to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/cn to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/compose to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ctrl to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/cz to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/de to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/dk to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/dz to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ee to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/eg to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/empty to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/epo to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/es to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/et to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/eu to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/eurosign to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/fi to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/fo to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/fr to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/gb to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ge to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/gh to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/gn to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/gr to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/group to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/hr to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/hu to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/id to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ie to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/il to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/in to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/inet to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/iq to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ir to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/is to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/it to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/jp to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ke to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/keypad to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/kg to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/kh to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/kpdl to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/kr to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/kz to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/la to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/latam to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/latin to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/level2 to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/level3 to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/level5 to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/lk to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/lt to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/lv to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ma to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/md to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/me to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/mk to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ml to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/mm to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/mn to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/mt to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/mv to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/my to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/nbsp to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ng to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/nl to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/no to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/np to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/nz to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/olpc to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/parens to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/pc to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ph to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/pk to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/pl to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/pt to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ro to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/rs to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ru to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/rupeesign to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/se to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/shift to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/si to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sk to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sn to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/srvr_ctrl to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sy to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/terminate to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/tg to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/th to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/tj to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/tm to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/tr to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/trans to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/tw to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/typo to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/tz to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/ua to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/us to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/uz to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/vn to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/za to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/digital_vndr/lk to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/digital_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/digital_vndr/pc to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/digital_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/digital_vndr/us to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/digital_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/digital_vndr/vt to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/digital_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/fujitsu_vndr/jp to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/fujitsu_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/fujitsu_vndr/us to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/fujitsu_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/hp_vndr/us to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/hp_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/jolla_vndr/sbj to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/jolla_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/macintosh_vndr/apple to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/macintosh_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/macintosh_vndr/ch to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/macintosh_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/macintosh_vndr/de to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/macintosh_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/macintosh_vndr/dk to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/macintosh_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/macintosh_vndr/fi to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/macintosh_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/macintosh_vndr/fr to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/macintosh_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/macintosh_vndr/gb to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/macintosh_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/macintosh_vndr/is to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/macintosh_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/macintosh_vndr/it to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/macintosh_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/macintosh_vndr/jp to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/macintosh_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/macintosh_vndr/latam to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/macintosh_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/macintosh_vndr/nl to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/macintosh_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/macintosh_vndr/no to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/macintosh_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/macintosh_vndr/pt to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/macintosh_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/macintosh_vndr/se to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/macintosh_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/macintosh_vndr/us to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/macintosh_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/nec_vndr/jp to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/nec_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/nokia_vndr/rx-44 to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/nokia_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/nokia_vndr/rx-51 to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/nokia_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/nokia_vndr/su-8w to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/nokia_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sgi_vndr/jp to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sgi_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sharp_vndr/sl-c3x00 to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sharp_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sharp_vndr/ws003sh to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sharp_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sharp_vndr/ws007sh to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sharp_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sharp_vndr/ws011sh to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sharp_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sharp_vndr/ws020sh to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sharp_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sony_vndr/us to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sony_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/ara to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/be to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/br to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/ca to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/ch to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/cz to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/de to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/dk to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/ee to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/es to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/fi to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/fr to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/gb to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/gr to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/it to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/jp to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/kr to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/lt to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/lv to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/nl to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/no to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/pl to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/pt to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/ro to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/ru to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/se to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/sk to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/solaris to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/tr to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/tw to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/ua to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/sun_vndr/us to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/sun_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/xfree68_vndr/amiga to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/xfree68_vndr
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/symbols/xfree68_vndr/ataritt to /home/devel/building/work/pkg/usr/share/X11/xkb/symbols/xfree68_vndr
+Installing subdir /home/devel/building/work/src/xkeyboard-config-2.41/types to /home/devel/building/work/pkg/usr/share/X11/xkb/types
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/types/README to /home/devel/building/work/pkg/usr/share/X11/xkb/types
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/types/basic to /home/devel/building/work/pkg/usr/share/X11/xkb/types
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/types/cancel to /home/devel/building/work/pkg/usr/share/X11/xkb/types
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/types/caps to /home/devel/building/work/pkg/usr/share/X11/xkb/types
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/types/complete to /home/devel/building/work/pkg/usr/share/X11/xkb/types
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/types/default to /home/devel/building/work/pkg/usr/share/X11/xkb/types
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/types/extra to /home/devel/building/work/pkg/usr/share/X11/xkb/types
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/types/iso9995 to /home/devel/building/work/pkg/usr/share/X11/xkb/types
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/types/level5 to /home/devel/building/work/pkg/usr/share/X11/xkb/types
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/types/mousekeys to /home/devel/building/work/pkg/usr/share/X11/xkb/types
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/types/nokia to /home/devel/building/work/pkg/usr/share/X11/xkb/types
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/types/numpad to /home/devel/building/work/pkg/usr/share/X11/xkb/types
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/types/pc to /home/devel/building/work/pkg/usr/share/X11/xkb/types
+Installing rules/base to /home/devel/building/work/pkg/usr/share/X11/xkb/rules
+Installing rules/base.lst to /home/devel/building/work/pkg/usr/share/X11/xkb/rules
+Installing rules/evdev to /home/devel/building/work/pkg/usr/share/X11/xkb/rules
+Installing rules/evdev.lst to /home/devel/building/work/pkg/usr/share/X11/xkb/rules
+Installing xkeyboard-config.7 to /home/devel/building/work/pkg/usr/share/man/man7
+Installing po/af/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/af/LC_MESSAGES
+Installing po/ar/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/ar/LC_MESSAGES
+Installing po/az/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/az/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/bg/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/ca/LC_MESSAGES
+Installing po/crh/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/crh/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/de/LC_MESSAGES
+Installing po/el/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/el/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/en_GB/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/es/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/fi/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/fur/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/gl/LC_MESSAGES
+Installing po/he/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/he/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/hu/LC_MESSAGES
+Installing po/id/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/id/LC_MESSAGES
+Installing po/it/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/ka/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/ko/LC_MESSAGES
+Installing po/ky/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/ky/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/lt/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/nb/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/nl/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/pl/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/ru/LC_MESSAGES
+Installing po/rw/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/rw/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/sl/LC_MESSAGES
+Installing po/sq/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/sq/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/sr/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/sv/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/tr/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/uk/LC_MESSAGES
+Installing po/vi/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/vi/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/xkeyboard-config.mo to /home/devel/building/work/pkg/usr/share/locale/zh_TW/LC_MESSAGES
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/build/meson-private/xkeyboard-config.pc to /home/devel/building/work/pkg/usr/share/pkgconfig
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/rules/README to /home/devel/building/work/pkg/usr/share/X11/xkb/rules
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/rules/xkb.dtd to /home/devel/building/work/pkg/usr/share/X11/xkb/rules
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/rules/xfree98 to /home/devel/building/work/pkg/usr/share/X11/xkb/rules
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/build/rules/base.xml to /home/devel/building/work/pkg/usr/share/X11/xkb/rules
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/build/rules/base.extras.xml to /home/devel/building/work/pkg/usr/share/X11/xkb/rules
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/build/rules/evdev.xml to /home/devel/building/work/pkg/usr/share/X11/xkb/rules
+Installing /home/devel/building/work/src/xkeyboard-config-2.41/build/rules/evdev.extras.xml to /home/devel/building/work/pkg/usr/share/X11/xkb/rules
++ install -d /home/devel/building/work/pkg/usr/share/X11
++ cp -r /home/devel/building/work/src/locale /home/devel/building/work/pkg/usr/share/X11
++ rm -r /home/devel/building/work/pkg/usr/share/locale
++ find /home/devel/building/work/pkg -name README -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/pkgconfig/
+-rw-r--r--  0 root   root      128 May  8 01:45 usr/share/pkgconfig/xkeyboard-config.pc
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/man/man7/
+-rw-r--r--  0 root   root    12132 May  8 01:45 usr/share/man/man7/xkeyboard-config.7.gz
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/
+-rw-r--r--  0 root   root    76406 May  8 01:45 usr/share/X11/locale/locale.alias
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/koi8-r/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/ko_KR.UTF-8/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/mulelao-1/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/pt_PT.UTF-8/
+-rw-r--r--  0 root   root    35812 May  8 01:45 usr/share/X11/locale/locale.dir
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/iso8859-6/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/microsoft-cp1251/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/iso8859-7/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/georgian-academy/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/georgian-ps/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/zh_CN.gbk/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/th_TH.UTF-8/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/km_KH.UTF-8/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/koi8-c/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/microsoft-cp1256/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/cs_CZ.UTF-8/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/pt_BR.UTF-8/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/iso8859-9e/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/zh_TW.UTF-8/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/zh_HK.UTF-8/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/C/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/iso8859-15/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/microsoft-cp1255/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/armscii-8/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/koi8-u/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/tscii-0/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/iso8859-3/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/ru_RU.UTF-8/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/ja_JP.UTF-8/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/ja.SJIS/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/zh_TW.big5/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/iso8859-1/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/el_GR.UTF-8/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/iso8859-14/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/zh_HK.big5/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/iso8859-5/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/nokhchi-1/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/th_TH/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/iso8859-8/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/zh_TW/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/iso8859-10/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/fi_FI.UTF-8/
+-rw-r--r--  0 root   root    31977 May  8 01:45 usr/share/X11/locale/compose.dir
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/am_ET.UTF-8/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/iso8859-13/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/iso8859-9/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/vi_VN.tcvn/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/vi_VN.viscii/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/sr_RS.UTF-8/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/zh_HK.big5hkscs/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/iso8859-4/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/iscii-dev/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/ko/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/ja/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/ibm-cp1133/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/isiri-3342/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/zh_CN/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/iso8859-2/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/iso8859-11/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/en_US.UTF-8/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/zh_CN.gb18030/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/tatar-cyr/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/zh_CN.UTF-8/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/locale/ja.JIS/
+-rw-r--r--  0 root   root      303 May  8 01:45 usr/share/X11/locale/ja.JIS/Compose
+-rw-r--r--  0 root   root      340 May  8 01:45 usr/share/X11/locale/ja.JIS/XI18N_OBJS
+-rw-r--r--  0 root   root     1681 May  8 01:45 usr/share/X11/locale/ja.JIS/XLC_LOCALE
+-rw-r--r--  0 root   root       52 May  8 01:45 usr/share/X11/locale/zh_CN.UTF-8/Compose
+-rw-r--r--  0 root   root      347 May  8 01:45 usr/share/X11/locale/zh_CN.UTF-8/XI18N_OBJS
+-rw-r--r--  0 root   root     1901 May  8 01:45 usr/share/X11/locale/zh_CN.UTF-8/XLC_LOCALE
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/tatar-cyr/Compose
+-rw-r--r--  0 root   root      341 May  8 01:45 usr/share/X11/locale/tatar-cyr/XI18N_OBJS
+-rw-r--r--  0 root   root      934 May  8 01:45 usr/share/X11/locale/tatar-cyr/XLC_LOCALE
+-rw-r--r--  0 root   root      310 May  8 01:45 usr/share/X11/locale/zh_CN.gb18030/Compose
+-rw-r--r--  0 root   root      347 May  8 01:45 usr/share/X11/locale/zh_CN.gb18030/XI18N_OBJS
+-rw-r--r--  0 root   root     1413 May  8 01:45 usr/share/X11/locale/zh_CN.gb18030/XLC_LOCALE
+-rw-r--r--  0 root   root   454647 May  8 01:45 usr/share/X11/locale/en_US.UTF-8/Compose
+-rw-r--r--  0 root   root      346 May  8 01:45 usr/share/X11/locale/en_US.UTF-8/XI18N_OBJS
+-rw-r--r--  0 root   root     4074 May  8 01:45 usr/share/X11/locale/en_US.UTF-8/XLC_LOCALE
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/iso8859-11/Compose
+-rw-r--r--  0 root   root      344 May  8 01:45 usr/share/X11/locale/iso8859-11/XI18N_OBJS
+-rw-r--r--  0 root   root      770 May  8 01:45 usr/share/X11/locale/iso8859-11/XLC_LOCALE
+-rw-r--r--  0 root   root    23658 May  8 01:45 usr/share/X11/locale/iso8859-2/Compose
+-rw-r--r--  0 root   root      248 May  8 01:45 usr/share/X11/locale/iso8859-2/XI18N_OBJS
+-rw-r--r--  0 root   root      763 May  8 01:45 usr/share/X11/locale/iso8859-2/XLC_LOCALE
+-rw-r--r--  0 root   root      299 May  8 01:45 usr/share/X11/locale/zh_CN/Compose
+-rw-r--r--  0 root   root      338 May  8 01:45 usr/share/X11/locale/zh_CN/XI18N_OBJS
+-rw-r--r--  0 root   root      787 May  8 01:45 usr/share/X11/locale/zh_CN/XLC_LOCALE
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/isiri-3342/Compose
+-rw-r--r--  0 root   root      342 May  8 01:45 usr/share/X11/locale/isiri-3342/XI18N_OBJS
+-rw-r--r--  0 root   root      915 May  8 01:45 usr/share/X11/locale/isiri-3342/XLC_LOCALE
+-rw-r--r--  0 root   root      307 May  8 01:45 usr/share/X11/locale/ibm-cp1133/Compose
+-rw-r--r--  0 root   root      342 May  8 01:45 usr/share/X11/locale/ibm-cp1133/XI18N_OBJS
+-rw-r--r--  0 root   root      915 May  8 01:45 usr/share/X11/locale/ibm-cp1133/XLC_LOCALE
+-rw-r--r--  0 root   root      299 May  8 01:45 usr/share/X11/locale/ja/Compose
+-rw-r--r--  0 root   root      611 May  8 01:45 usr/share/X11/locale/ja/XI18N_OBJS
+-rw-r--r--  0 root   root     1613 May  8 01:45 usr/share/X11/locale/ja/XLC_LOCALE
+-rw-r--r--  0 root   root      299 May  8 01:45 usr/share/X11/locale/ko/Compose
+-rw-r--r--  0 root   root      240 May  8 01:45 usr/share/X11/locale/ko/XI18N_OBJS
+-rw-r--r--  0 root   root      789 May  8 01:45 usr/share/X11/locale/ko/XLC_LOCALE
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/iscii-dev/Compose
+-rw-r--r--  0 root   root      341 May  8 01:45 usr/share/X11/locale/iscii-dev/XI18N_OBJS
+-rw-r--r--  0 root   root      907 May  8 01:45 usr/share/X11/locale/iscii-dev/XLC_LOCALE
+-rw-r--r--  0 root   root    16009 May  8 01:45 usr/share/X11/locale/iso8859-4/Compose
+-rw-r--r--  0 root   root      341 May  8 01:45 usr/share/X11/locale/iso8859-4/XI18N_OBJS
+-rw-r--r--  0 root   root      763 May  8 01:45 usr/share/X11/locale/iso8859-4/XLC_LOCALE
+-rw-r--r--  0 root   root      310 May  8 01:45 usr/share/X11/locale/zh_HK.big5hkscs/Compose
+-rw-r--r--  0 root   root      349 May  8 01:45 usr/share/X11/locale/zh_HK.big5hkscs/XI18N_OBJS
+-rw-r--r--  0 root   root     1097 May  8 01:45 usr/share/X11/locale/zh_HK.big5hkscs/XLC_LOCALE
+-rw-r--r--  0 root   root     4878 May  8 01:45 usr/share/X11/locale/sr_RS.UTF-8/Compose
+-rw-r--r--  0 root   root      299 May  8 01:45 usr/share/X11/locale/sr_RS.UTF-8/XI18N_OBJS
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/sr_RS.UTF-8/XLC_LOCALE
+-rw-r--r--  0 root   root     5509 May  8 01:45 usr/share/X11/locale/vi_VN.viscii/Compose
+-rw-r--r--  0 root   root      344 May  8 01:45 usr/share/X11/locale/vi_VN.viscii/XI18N_OBJS
+-rw-r--r--  0 root   root      923 May  8 01:45 usr/share/X11/locale/vi_VN.viscii/XLC_LOCALE
+-rw-r--r--  0 root   root     5509 May  8 01:45 usr/share/X11/locale/vi_VN.tcvn/Compose
+-rw-r--r--  0 root   root      342 May  8 01:45 usr/share/X11/locale/vi_VN.tcvn/XI18N_OBJS
+-rw-r--r--  0 root   root      907 May  8 01:45 usr/share/X11/locale/vi_VN.tcvn/XLC_LOCALE
+-rw-r--r--  0 root   root    21703 May  8 01:45 usr/share/X11/locale/iso8859-9/Compose
+-rw-r--r--  0 root   root      248 May  8 01:45 usr/share/X11/locale/iso8859-9/XI18N_OBJS
+-rw-r--r--  0 root   root      763 May  8 01:45 usr/share/X11/locale/iso8859-9/XLC_LOCALE
+-rw-r--r--  0 root   root    21247 May  8 01:45 usr/share/X11/locale/iso8859-13/Compose
+-rw-r--r--  0 root   root      248 May  8 01:45 usr/share/X11/locale/iso8859-13/XI18N_OBJS
+-rw-r--r--  0 root   root      770 May  8 01:45 usr/share/X11/locale/iso8859-13/XLC_LOCALE
+-rw-r--r--  0 root   root    17420 May  8 01:45 usr/share/X11/locale/am_ET.UTF-8/Compose
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/am_ET.UTF-8/XI18N_OBJS
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/am_ET.UTF-8/XLC_LOCALE
+-rw-r--r--  0 root   root    36227 May  8 01:45 usr/share/X11/locale/fi_FI.UTF-8/Compose
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/fi_FI.UTF-8/XI18N_OBJS
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/fi_FI.UTF-8/XLC_LOCALE
+-rw-r--r--  0 root   root      308 May  8 01:45 usr/share/X11/locale/iso8859-10/Compose
+-rw-r--r--  0 root   root      342 May  8 01:45 usr/share/X11/locale/iso8859-10/XI18N_OBJS
+-rw-r--r--  0 root   root      769 May  8 01:45 usr/share/X11/locale/iso8859-10/XLC_LOCALE
+-rw-r--r--  0 root   root      302 May  8 01:45 usr/share/X11/locale/zh_TW/Compose
+-rw-r--r--  0 root   root      244 May  8 01:45 usr/share/X11/locale/zh_TW/XI18N_OBJS
+-rw-r--r--  0 root   root     2283 May  8 01:45 usr/share/X11/locale/zh_TW/XLC_LOCALE
+-rw-r--r--  0 root   root      307 May  8 01:45 usr/share/X11/locale/iso8859-8/Compose
+-rw-r--r--  0 root   root      341 May  8 01:45 usr/share/X11/locale/iso8859-8/XI18N_OBJS
+-rw-r--r--  0 root   root      763 May  8 01:45 usr/share/X11/locale/iso8859-8/XLC_LOCALE
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/th_TH/Compose
+-rw-r--r--  0 root   root      337 May  8 01:45 usr/share/X11/locale/th_TH/XI18N_OBJS
+-rw-r--r--  0 root   root      758 May  8 01:45 usr/share/X11/locale/th_TH/XLC_LOCALE
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/nokhchi-1/Compose
+-rw-r--r--  0 root   root      341 May  8 01:45 usr/share/X11/locale/nokhchi-1/XI18N_OBJS
+-rw-r--r--  0 root   root      908 May  8 01:45 usr/share/X11/locale/nokhchi-1/XLC_LOCALE
+-rw-r--r--  0 root   root      307 May  8 01:45 usr/share/X11/locale/iso8859-5/Compose
+-rw-r--r--  0 root   root      248 May  8 01:45 usr/share/X11/locale/iso8859-5/XI18N_OBJS
+-rw-r--r--  0 root   root      763 May  8 01:45 usr/share/X11/locale/iso8859-5/XLC_LOCALE
+-rw-r--r--  0 root   root      305 May  8 01:45 usr/share/X11/locale/zh_HK.big5/Compose
+-rw-r--r--  0 root   root      344 May  8 01:45 usr/share/X11/locale/zh_HK.big5/XI18N_OBJS
+-rw-r--r--  0 root   root     1053 May  8 01:45 usr/share/X11/locale/zh_HK.big5/XLC_LOCALE
+-rw-r--r--  0 root   root    21014 May  8 01:45 usr/share/X11/locale/iso8859-14/Compose
+-rw-r--r--  0 root   root      342 May  8 01:45 usr/share/X11/locale/iso8859-14/XI18N_OBJS
+-rw-r--r--  0 root   root      770 May  8 01:45 usr/share/X11/locale/iso8859-14/XLC_LOCALE
+-rw-r--r--  0 root   root   124875 May  8 01:45 usr/share/X11/locale/el_GR.UTF-8/Compose
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/el_GR.UTF-8/XI18N_OBJS
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/el_GR.UTF-8/XLC_LOCALE
+-rw-r--r--  0 root   root    20458 May  8 01:45 usr/share/X11/locale/iso8859-1/Compose
+-rw-r--r--  0 root   root      340 May  8 01:45 usr/share/X11/locale/iso8859-1/XI18N_OBJS
+-rw-r--r--  0 root   root      720 May  8 01:45 usr/share/X11/locale/iso8859-1/XLC_LOCALE
+-rw-r--r--  0 root   root      307 May  8 01:45 usr/share/X11/locale/zh_TW.big5/Compose
+-rw-r--r--  0 root   root      344 May  8 01:45 usr/share/X11/locale/zh_TW.big5/XI18N_OBJS
+-rw-r--r--  0 root   root     9519 May  8 01:45 usr/share/X11/locale/zh_TW.big5/XLC_LOCALE
+-rw-r--r--  0 root   root      304 May  8 01:45 usr/share/X11/locale/ja.SJIS/Compose
+-rw-r--r--  0 root   root      481 May  8 01:45 usr/share/X11/locale/ja.SJIS/XI18N_OBJS
+-rw-r--r--  0 root   root     5138 May  8 01:45 usr/share/X11/locale/ja.SJIS/XLC_LOCALE
+-rw-r--r--  0 root   root       52 May  8 01:45 usr/share/X11/locale/ja_JP.UTF-8/Compose
+-rw-r--r--  0 root   root      347 May  8 01:45 usr/share/X11/locale/ja_JP.UTF-8/XI18N_OBJS
+-rw-r--r--  0 root   root     2161 May  8 01:45 usr/share/X11/locale/ja_JP.UTF-8/XLC_LOCALE
+-rw-r--r--  0 root   root       52 May  8 01:45 usr/share/X11/locale/ru_RU.UTF-8/Compose
+-rw-r--r--  0 root   root      345 May  8 01:45 usr/share/X11/locale/ru_RU.UTF-8/XI18N_OBJS
+-rw-r--r--  0 root   root     2266 May  8 01:45 usr/share/X11/locale/ru_RU.UTF-8/XLC_LOCALE
+-rw-r--r--  0 root   root    22797 May  8 01:45 usr/share/X11/locale/iso8859-3/Compose
+-rw-r--r--  0 root   root      341 May  8 01:45 usr/share/X11/locale/iso8859-3/XI18N_OBJS
+-rw-r--r--  0 root   root      763 May  8 01:45 usr/share/X11/locale/iso8859-3/XLC_LOCALE
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/tscii-0/Compose
+-rw-r--r--  0 root   root      339 May  8 01:45 usr/share/X11/locale/tscii-0/XI18N_OBJS
+-rw-r--r--  0 root   root      893 May  8 01:45 usr/share/X11/locale/tscii-0/XLC_LOCALE
+-rw-r--r--  0 root   root      303 May  8 01:45 usr/share/X11/locale/koi8-u/Compose
+-rw-r--r--  0 root   root      338 May  8 01:45 usr/share/X11/locale/koi8-u/XI18N_OBJS
+-rw-r--r--  0 root   root      883 May  8 01:45 usr/share/X11/locale/koi8-u/XLC_LOCALE
+-rw-r--r--  0 root   root      306 May  8 01:45 usr/share/X11/locale/armscii-8/Compose
+-rw-r--r--  0 root   root      341 May  8 01:45 usr/share/X11/locale/armscii-8/XI18N_OBJS
+-rw-r--r--  0 root   root      907 May  8 01:45 usr/share/X11/locale/armscii-8/XLC_LOCALE
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/microsoft-cp1255/Compose
+-rw-r--r--  0 root   root      348 May  8 01:45 usr/share/X11/locale/microsoft-cp1255/XI18N_OBJS
+-rw-r--r--  0 root   root      990 May  8 01:45 usr/share/X11/locale/microsoft-cp1255/XLC_LOCALE
+-rw-r--r--  0 root   root    20625 May  8 01:45 usr/share/X11/locale/iso8859-15/Compose
+-rw-r--r--  0 root   root      342 May  8 01:45 usr/share/X11/locale/iso8859-15/XI18N_OBJS
+-rw-r--r--  0 root   root     1054 May  8 01:45 usr/share/X11/locale/iso8859-15/XLC_LOCALE
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/C/Compose
+-rw-r--r--  0 root   root      340 May  8 01:45 usr/share/X11/locale/C/XI18N_OBJS
+-rw-r--r--  0 root   root      632 May  8 01:45 usr/share/X11/locale/C/XLC_LOCALE
+-rw-r--r--  0 root   root       52 May  8 01:45 usr/share/X11/locale/zh_HK.UTF-8/Compose
+-rw-r--r--  0 root   root      345 May  8 01:45 usr/share/X11/locale/zh_HK.UTF-8/XI18N_OBJS
+-rw-r--r--  0 root   root     1668 May  8 01:45 usr/share/X11/locale/zh_HK.UTF-8/XLC_LOCALE
+-rw-r--r--  0 root   root       52 May  8 01:45 usr/share/X11/locale/zh_TW.UTF-8/Compose
+-rw-r--r--  0 root   root      345 May  8 01:45 usr/share/X11/locale/zh_TW.UTF-8/XI18N_OBJS
+-rw-r--r--  0 root   root     1228 May  8 01:45 usr/share/X11/locale/zh_TW.UTF-8/XLC_LOCALE
+-rw-r--r--  0 root   root    22291 May  8 01:45 usr/share/X11/locale/iso8859-9e/Compose
+-rw-r--r--  0 root   root      342 May  8 01:45 usr/share/X11/locale/iso8859-9e/XI18N_OBJS
+-rw-r--r--  0 root   root      942 May  8 01:45 usr/share/X11/locale/iso8859-9e/XLC_LOCALE
+-rw-r--r--  0 root   root     1405 May  8 01:45 usr/share/X11/locale/pt_BR.UTF-8/Compose
+-rw-r--r--  0 root   root      345 May  8 01:45 usr/share/X11/locale/pt_BR.UTF-8/XI18N_OBJS
+-rw-r--r--  0 root   root     2006 May  8 01:45 usr/share/X11/locale/pt_BR.UTF-8/XLC_LOCALE
+-rw-r--r--  0 root   root      512 May  8 01:45 usr/share/X11/locale/cs_CZ.UTF-8/Compose
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/cs_CZ.UTF-8/XI18N_OBJS
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/cs_CZ.UTF-8/XLC_LOCALE
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/microsoft-cp1256/Compose
+-rw-r--r--  0 root   root      348 May  8 01:45 usr/share/X11/locale/microsoft-cp1256/XI18N_OBJS
+-rw-r--r--  0 root   root      990 May  8 01:45 usr/share/X11/locale/microsoft-cp1256/XLC_LOCALE
+-rw-r--r--  0 root   root     6257 May  8 01:45 usr/share/X11/locale/koi8-c/Compose
+-rw-r--r--  0 root   root      338 May  8 01:45 usr/share/X11/locale/koi8-c/XI18N_OBJS
+-rw-r--r--  0 root   root      883 May  8 01:45 usr/share/X11/locale/koi8-c/XLC_LOCALE
+-rw-r--r--  0 root   root       52 May  8 01:45 usr/share/X11/locale/km_KH.UTF-8/Compose
+-rw-r--r--  0 root   root      299 May  8 01:45 usr/share/X11/locale/km_KH.UTF-8/XI18N_OBJS
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/km_KH.UTF-8/XLC_LOCALE
+-rw-r--r--  0 root   root       52 May  8 01:45 usr/share/X11/locale/th_TH.UTF-8/Compose
+-rw-r--r--  0 root   root      347 May  8 01:45 usr/share/X11/locale/th_TH.UTF-8/XI18N_OBJS
+-rw-r--r--  0 root   root     1007 May  8 01:45 usr/share/X11/locale/th_TH.UTF-8/XLC_LOCALE
+-rw-r--r--  0 root   root      306 May  8 01:45 usr/share/X11/locale/zh_CN.gbk/Compose
+-rw-r--r--  0 root   root      343 May  8 01:45 usr/share/X11/locale/zh_CN.gbk/XI18N_OBJS
+-rw-r--r--  0 root   root     1165 May  8 01:45 usr/share/X11/locale/zh_CN.gbk/XLC_LOCALE
+-rw-r--r--  0 root   root      308 May  8 01:45 usr/share/X11/locale/georgian-ps/Compose
+-rw-r--r--  0 root   root      343 May  8 01:45 usr/share/X11/locale/georgian-ps/XI18N_OBJS
+-rw-r--r--  0 root   root      923 May  8 01:45 usr/share/X11/locale/georgian-ps/XLC_LOCALE
+-rw-r--r--  0 root   root      313 May  8 01:45 usr/share/X11/locale/georgian-academy/Compose
+-rw-r--r--  0 root   root      348 May  8 01:45 usr/share/X11/locale/georgian-academy/XI18N_OBJS
+-rw-r--r--  0 root   root      962 May  8 01:45 usr/share/X11/locale/georgian-academy/XLC_LOCALE
+-rw-r--r--  0 root   root    10660 May  8 01:45 usr/share/X11/locale/iso8859-7/Compose
+-rw-r--r--  0 root   root      248 May  8 01:45 usr/share/X11/locale/iso8859-7/XI18N_OBJS
+-rw-r--r--  0 root   root      763 May  8 01:45 usr/share/X11/locale/iso8859-7/XLC_LOCALE
+-rw-r--r--  0 root   root        0 May  8 01:45 usr/share/X11/locale/microsoft-cp1251/Compose
+-rw-r--r--  0 root   root      348 May  8 01:45 usr/share/X11/locale/microsoft-cp1251/XI18N_OBJS
+-rw-r--r--  0 root   root      990 May  8 01:45 usr/share/X11/locale/microsoft-cp1251/XLC_LOCALE
+-rw-r--r--  0 root   root      307 May  8 01:45 usr/share/X11/locale/iso8859-6/Compose
+-rw-r--r--  0 root   root      341 May  8 01:45 usr/share/X11/locale/iso8859-6/XI18N_OBJS
+-rw-r--r--  0 root   root      763 May  8 01:45 usr/share/X11/locale/iso8859-6/XLC_LOCALE
+-rw-r--r--  0 root   root      192 May  8 01:45 usr/share/X11/locale/pt_PT.UTF-8/Compose
+-rw-r--r--  0 root   root      345 May  8 01:45 usr/share/X11/locale/pt_PT.UTF-8/XI18N_OBJS
+-rw-r--r--  0 root   root     2006 May  8 01:45 usr/share/X11/locale/pt_PT.UTF-8/XLC_LOCALE
+-rw-r--r--  0 root   root      306 May  8 01:45 usr/share/X11/locale/mulelao-1/Compose
+-rw-r--r--  0 root   root      341 May  8 01:45 usr/share/X11/locale/mulelao-1/XI18N_OBJS
+-rw-r--r--  0 root   root      907 May  8 01:45 usr/share/X11/locale/mulelao-1/XLC_LOCALE
+-rw-r--r--  0 root   root       52 May  8 01:45 usr/share/X11/locale/ko_KR.UTF-8/Compose
+-rw-r--r--  0 root   root      347 May  8 01:45 usr/share/X11/locale/ko_KR.UTF-8/XI18N_OBJS
+-rw-r--r--  0 root   root     2160 May  8 01:45 usr/share/X11/locale/ko_KR.UTF-8/XLC_LOCALE
+-rw-r--r--  0 root   root      303 May  8 01:45 usr/share/X11/locale/koi8-r/Compose
+-rw-r--r--  0 root   root      338 May  8 01:45 usr/share/X11/locale/koi8-r/XI18N_OBJS
+-rw-r--r--  0 root   root      886 May  8 01:45 usr/share/X11/locale/koi8-r/XLC_LOCALE
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/compat/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/geometry/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/keycodes/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/symbols/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/types/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/rules/
+-rw-r--r--  0 root   root    40765 May  8 01:45 usr/share/X11/xkb/rules/base
+-rw-r--r--  0 root   root    46156 May  8 01:45 usr/share/X11/xkb/rules/base.lst
+-rw-r--r--  0 root   root    35826 May  8 01:45 usr/share/X11/xkb/rules/evdev
+-rw-r--r--  0 root   root    46156 May  8 01:45 usr/share/X11/xkb/rules/evdev.lst
+-rw-r--r--  0 root   root     1085 Feb  5 02:24 usr/share/X11/xkb/rules/xkb.dtd
+-rw-r--r--  0 root   root      863 Feb  5 02:24 usr/share/X11/xkb/rules/xfree98
+-rw-r--r--  0 root   root   252837 Feb  5 02:24 usr/share/X11/xkb/rules/base.xml
+-rw-r--r--  0 root   root    59780 Feb  5 02:24 usr/share/X11/xkb/rules/base.extras.xml
+-rw-r--r--  0 root   root   252837 Feb  5 02:24 usr/share/X11/xkb/rules/evdev.xml
+-rw-r--r--  0 root   root    59780 Feb  5 02:24 usr/share/X11/xkb/rules/evdev.extras.xml
+-rw-r--r--  0 root   root      596 Feb  5 02:24 usr/share/X11/xkb/types/basic
+-rw-r--r--  0 root   root      226 Feb  5 02:24 usr/share/X11/xkb/types/cancel
+-rw-r--r--  0 root   root     4535 Feb  5 02:24 usr/share/X11/xkb/types/caps
+-rw-r--r--  0 root   root      179 Feb  5 02:24 usr/share/X11/xkb/types/complete
+-rw-r--r--  0 root   root      178 Feb  5 02:24 usr/share/X11/xkb/types/default
+-rw-r--r--  0 root   root     4431 Feb  5 02:24 usr/share/X11/xkb/types/extra
+-rw-r--r--  0 root   root      432 Feb  5 02:24 usr/share/X11/xkb/types/iso9995
+-rw-r--r--  0 root   root     7674 Feb  5 02:24 usr/share/X11/xkb/types/level5
+-rw-r--r--  0 root   root      218 Feb  5 02:24 usr/share/X11/xkb/types/mousekeys
+-rw-r--r--  0 root   root      303 Feb  5 02:24 usr/share/X11/xkb/types/nokia
+-rw-r--r--  0 root   root     1658 Feb  5 02:24 usr/share/X11/xkb/types/numpad
+-rw-r--r--  0 root   root     1107 Feb  5 02:24 usr/share/X11/xkb/types/pc
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/symbols/digital_vndr/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/symbols/fujitsu_vndr/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/symbols/hp_vndr/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/symbols/jolla_vndr/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/symbols/macintosh_vndr/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/symbols/nec_vndr/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/symbols/nokia_vndr/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/symbols/sgi_vndr/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/symbols/sharp_vndr/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/symbols/sony_vndr/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/symbols/sun_vndr/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/symbols/xfree68_vndr/
+-rw-r--r--  0 root   root    22269 Feb  5 02:24 usr/share/X11/xkb/symbols/af
+-rw-r--r--  0 root   root     5987 Feb  5 02:24 usr/share/X11/xkb/symbols/al
+-rw-r--r--  0 root   root     3667 Feb  5 02:24 usr/share/X11/xkb/symbols/altwin
+-rw-r--r--  0 root   root     9468 Feb  5 02:24 usr/share/X11/xkb/symbols/am
+-rw-r--r--  0 root   root     8468 Feb  5 02:24 usr/share/X11/xkb/symbols/ancient
+-rw-r--r--  0 root   root    52172 Feb  5 02:24 usr/share/X11/xkb/symbols/apl
+-rw-r--r--  0 root   root    36045 Feb  5 02:24 usr/share/X11/xkb/symbols/ara
+-rw-r--r--  0 root   root      392 Feb  5 02:24 usr/share/X11/xkb/symbols/at
+-rw-r--r--  0 root   root      222 Feb  5 02:24 usr/share/X11/xkb/symbols/au
+-rw-r--r--  0 root   root     3946 Feb  5 02:24 usr/share/X11/xkb/symbols/az
+-rw-r--r--  0 root   root      690 Feb  5 02:24 usr/share/X11/xkb/symbols/ba
+-rw-r--r--  0 root   root     3325 Feb  5 02:24 usr/share/X11/xkb/symbols/bd
+-rw-r--r--  0 root   root    10702 Feb  5 02:24 usr/share/X11/xkb/symbols/be
+-rw-r--r--  0 root   root    18901 Feb  5 02:24 usr/share/X11/xkb/symbols/bg
+-rw-r--r--  0 root   root     5301 Feb  5 02:24 usr/share/X11/xkb/symbols/bqn
+-rw-r--r--  0 root   root    19260 Feb  5 02:24 usr/share/X11/xkb/symbols/br
+-rw-r--r--  0 root   root     2510 Feb  5 02:24 usr/share/X11/xkb/symbols/brai
+-rw-r--r--  0 root   root     3681 Feb  5 02:24 usr/share/X11/xkb/symbols/bt
+-rw-r--r--  0 root   root      950 Feb  5 02:24 usr/share/X11/xkb/symbols/bw
+-rw-r--r--  0 root   root     4417 Feb  5 02:24 usr/share/X11/xkb/symbols/by
+-rw-r--r--  0 root   root    17126 Feb  5 02:24 usr/share/X11/xkb/symbols/ca
+-rw-r--r--  0 root   root     2238 Feb  5 02:24 usr/share/X11/xkb/symbols/capslock
+-rw-r--r--  0 root   root     3977 Feb  5 02:24 usr/share/X11/xkb/symbols/cd
+-rw-r--r--  0 root   root     6801 Feb  5 02:24 usr/share/X11/xkb/symbols/ch
+-rw-r--r--  0 root   root    27943 Feb  5 02:24 usr/share/X11/xkb/symbols/cm
+-rw-r--r--  0 root   root    37393 Feb  5 02:24 usr/share/X11/xkb/symbols/cn
+-rw-r--r--  0 root   root     2485 Feb  5 02:24 usr/share/X11/xkb/symbols/compose
+-rw-r--r--  0 root   root     3947 Feb  5 02:24 usr/share/X11/xkb/symbols/ctrl
+-rw-r--r--  0 root   root    23520 Feb  5 02:24 usr/share/X11/xkb/symbols/cz
+-rw-r--r--  0 root   root    94153 Feb  5 02:24 usr/share/X11/xkb/symbols/de
+-rw-r--r--  0 root   root     2578 Feb  5 02:24 usr/share/X11/xkb/symbols/dk
+-rw-r--r--  0 root   root    12452 Feb  5 02:24 usr/share/X11/xkb/symbols/dz
+-rw-r--r--  0 root   root     4922 Feb  5 02:24 usr/share/X11/xkb/symbols/ee
+-rw-r--r--  0 root   root     2160 Feb  5 02:24 usr/share/X11/xkb/symbols/eg
+-rw-r--r--  0 root   root      121 Feb  5 02:24 usr/share/X11/xkb/symbols/empty
+-rw-r--r--  0 root   root     7654 Feb  5 02:24 usr/share/X11/xkb/symbols/epo
+-rw-r--r--  0 root   root     9958 Feb  5 02:24 usr/share/X11/xkb/symbols/es
+-rw-r--r--  0 root   root     2327 Feb  5 02:24 usr/share/X11/xkb/symbols/et
+-rw-r--r--  0 root   root     5018 Feb  5 02:24 usr/share/X11/xkb/symbols/eu
+-rw-r--r--  0 root   root      629 Feb  5 02:24 usr/share/X11/xkb/symbols/eurosign
+-rw-r--r--  0 root   root    24789 Feb  5 02:24 usr/share/X11/xkb/symbols/fi
+-rw-r--r--  0 root   root     1832 Feb  5 02:24 usr/share/X11/xkb/symbols/fo
+-rw-r--r--  0 root   root    94682 Feb  5 02:24 usr/share/X11/xkb/symbols/fr
+-rw-r--r--  0 root   root     9473 Feb  5 02:24 usr/share/X11/xkb/symbols/gb
+-rw-r--r--  0 root   root    12641 Feb  5 02:24 usr/share/X11/xkb/symbols/ge
+-rw-r--r--  0 root   root     6530 Feb  5 02:24 usr/share/X11/xkb/symbols/gh
+-rw-r--r--  0 root   root     2171 Feb  5 02:24 usr/share/X11/xkb/symbols/gn
+-rw-r--r--  0 root   root    10528 Feb  5 02:24 usr/share/X11/xkb/symbols/gr
+-rw-r--r--  0 root   root     9891 Feb  5 02:24 usr/share/X11/xkb/symbols/group
+-rw-r--r--  0 root   root     2726 Feb  5 02:24 usr/share/X11/xkb/symbols/hr
+-rw-r--r--  0 root   root    24206 Feb  5 02:24 usr/share/X11/xkb/symbols/hu
+-rw-r--r--  0 root   root    13937 Feb  5 02:24 usr/share/X11/xkb/symbols/id
+-rw-r--r--  0 root   root    17971 Feb  5 02:24 usr/share/X11/xkb/symbols/ie
+-rw-r--r--  0 root   root    16122 Feb  5 02:24 usr/share/X11/xkb/symbols/il
+-rw-r--r--  0 root   root   118512 Feb  5 02:24 usr/share/X11/xkb/symbols/in
+-rw-r--r--  0 root   root    80532 Feb  5 02:24 usr/share/X11/xkb/symbols/inet
+-rw-r--r--  0 root   root      633 Feb  5 02:24 usr/share/X11/xkb/symbols/iq
+-rw-r--r--  0 root   root    11783 Feb  5 02:24 usr/share/X11/xkb/symbols/ir
+-rw-r--r--  0 root   root    11128 Feb  5 02:24 usr/share/X11/xkb/symbols/is
+-rw-r--r--  0 root   root    16979 Feb  5 02:24 usr/share/X11/xkb/symbols/it
+-rw-r--r--  0 root   root     7407 Feb  5 02:24 usr/share/X11/xkb/symbols/jp
+-rw-r--r--  0 root   root     4512 Feb  5 02:24 usr/share/X11/xkb/symbols/ke
+-rw-r--r--  0 root   root    23910 Feb  5 02:24 usr/share/X11/xkb/symbols/keypad
+-rw-r--r--  0 root   root     6364 Feb  5 02:24 usr/share/X11/xkb/symbols/kg
+-rw-r--r--  0 root   root     3430 Feb  5 02:24 usr/share/X11/xkb/symbols/kh
+-rw-r--r--  0 root   root     3398 Feb  5 02:24 usr/share/X11/xkb/symbols/kpdl
+-rw-r--r--  0 root   root     1200 Feb  5 02:24 usr/share/X11/xkb/symbols/kr
+-rw-r--r--  0 root   root    16429 Feb  5 02:24 usr/share/X11/xkb/symbols/kz
+-rw-r--r--  0 root   root     4819 Feb  5 02:24 usr/share/X11/xkb/symbols/la
+-rw-r--r--  0 root   root    10061 Feb  5 02:24 usr/share/X11/xkb/symbols/latam
+-rw-r--r--  0 root   root    14743 Feb  5 02:24 usr/share/X11/xkb/symbols/latin
+-rw-r--r--  0 root   root      209 Feb  5 02:24 usr/share/X11/xkb/symbols/level2
+-rw-r--r--  0 root   root     4480 Feb  5 02:24 usr/share/X11/xkb/symbols/level3
+-rw-r--r--  0 root   root     4195 Feb  5 02:24 usr/share/X11/xkb/symbols/level5
+-rw-r--r--  0 root   root     7827 Feb  5 02:24 usr/share/X11/xkb/symbols/lk
+-rw-r--r--  0 root   root    20500 Feb  5 02:24 usr/share/X11/xkb/symbols/lt
+-rw-r--r--  0 root   root    20480 Feb  5 02:24 usr/share/X11/xkb/symbols/lv
+-rw-r--r--  0 root   root    12757 Feb  5 02:24 usr/share/X11/xkb/symbols/ma
+-rw-r--r--  0 root   root     4950 Feb  5 02:24 usr/share/X11/xkb/symbols/md
+-rw-r--r--  0 root   root     1706 Feb  5 02:24 usr/share/X11/xkb/symbols/me
+-rw-r--r--  0 root   root     3110 Feb  5 02:24 usr/share/X11/xkb/symbols/mk
+-rw-r--r--  0 root   root     2083 Feb  5 02:24 usr/share/X11/xkb/symbols/ml
+-rw-r--r--  0 root   root    17258 Feb  5 02:24 usr/share/X11/xkb/symbols/mm
+-rw-r--r--  0 root   root     4309 Feb  5 02:24 usr/share/X11/xkb/symbols/mn
+-rw-r--r--  0 root   root     5670 Feb  5 02:24 usr/share/X11/xkb/symbols/mt
+-rw-r--r--  0 root   root     2550 Feb  5 02:24 usr/share/X11/xkb/symbols/mv
+-rw-r--r--  0 root   root     5537 Feb  5 02:24 usr/share/X11/xkb/symbols/my
+-rw-r--r--  0 root   root     2680 Feb  5 02:24 usr/share/X11/xkb/symbols/nbsp
+-rw-r--r--  0 root   root     6298 Feb  5 02:24 usr/share/X11/xkb/symbols/ng
+-rw-r--r--  0 root   root     6941 Feb  5 02:24 usr/share/X11/xkb/symbols/nl
+-rw-r--r--  0 root   root    12435 Feb  5 02:24 usr/share/X11/xkb/symbols/no
+-rw-r--r--  0 root   root     6317 Feb  5 02:24 usr/share/X11/xkb/symbols/np
+-rw-r--r--  0 root   root      698 Feb  5 02:24 usr/share/X11/xkb/symbols/nz
+-rw-r--r--  0 root   root      930 Feb  5 02:24 usr/share/X11/xkb/symbols/olpc
+-rw-r--r--  0 root   root      389 Feb  5 02:24 usr/share/X11/xkb/symbols/parens
+-rw-r--r--  0 root   root     2726 Feb  5 02:24 usr/share/X11/xkb/symbols/pc
+-rw-r--r--  0 root   root    76020 Feb  5 02:24 usr/share/X11/xkb/symbols/ph
+-rw-r--r--  0 root   root    20325 Feb  5 02:24 usr/share/X11/xkb/symbols/pk
+-rw-r--r--  0 root   root    27943 Feb  5 02:24 usr/share/X11/xkb/symbols/pl
+-rw-r--r--  0 root   root    11775 Feb  5 02:24 usr/share/X11/xkb/symbols/pt
+-rw-r--r--  0 root   root    11343 Feb  5 02:24 usr/share/X11/xkb/symbols/ro
+-rw-r--r--  0 root   root    15173 Feb  5 02:24 usr/share/X11/xkb/symbols/rs
+-rw-r--r--  0 root   root    80362 Feb  5 02:24 usr/share/X11/xkb/symbols/ru
+-rw-r--r--  0 root   root      131 Feb  5 02:24 usr/share/X11/xkb/symbols/rupeesign
+-rw-r--r--  0 root   root    16113 Feb  5 02:24 usr/share/X11/xkb/symbols/se
+-rw-r--r--  0 root   root     2115 Feb  5 02:24 usr/share/X11/xkb/symbols/shift
+-rw-r--r--  0 root   root      625 Feb  5 02:24 usr/share/X11/xkb/symbols/si
+-rw-r--r--  0 root   root     6718 Feb  5 02:24 usr/share/X11/xkb/symbols/sk
+-rw-r--r--  0 root   root     2233 Feb  5 02:24 usr/share/X11/xkb/symbols/sn
+-rw-r--r--  0 root   root     1803 Feb  5 02:24 usr/share/X11/xkb/symbols/srvr_ctrl
+-rw-r--r--  0 root   root     4782 Feb  5 02:24 usr/share/X11/xkb/symbols/sy
+-rw-r--r--  0 root   root      199 Feb  5 02:24 usr/share/X11/xkb/symbols/terminate
+-rw-r--r--  0 root   root     3748 Feb  5 02:24 usr/share/X11/xkb/symbols/tg
+-rw-r--r--  0 root   root     7429 Feb  5 02:24 usr/share/X11/xkb/symbols/th
+-rw-r--r--  0 root   root     9868 Feb  5 02:24 usr/share/X11/xkb/symbols/tj
+-rw-r--r--  0 root   root     1519 Feb  5 02:24 usr/share/X11/xkb/symbols/tm
+-rw-r--r--  0 root   root    28100 Feb  5 02:24 usr/share/X11/xkb/symbols/tr
+-rw-r--r--  0 root   root    16578 Feb  5 02:24 usr/share/X11/xkb/symbols/trans
+-rw-r--r--  0 root   root     3338 Feb  5 02:24 usr/share/X11/xkb/symbols/tw
+-rw-r--r--  0 root   root     4493 Feb  5 02:24 usr/share/X11/xkb/symbols/typo
+-rw-r--r--  0 root   root     3353 Feb  5 02:24 usr/share/X11/xkb/symbols/tz
+-rw-r--r--  0 root   root    16265 Feb  5 02:24 usr/share/X11/xkb/symbols/ua
+-rw-r--r--  0 root   root   118061 Feb  5 02:24 usr/share/X11/xkb/symbols/us
+-rw-r--r--  0 root   root     3177 Feb  5 02:24 usr/share/X11/xkb/symbols/uz
+-rw-r--r--  0 root   root     6140 Feb  5 02:24 usr/share/X11/xkb/symbols/vn
+-rw-r--r--  0 root   root     2241 Feb  5 02:24 usr/share/X11/xkb/symbols/za
+-rw-r--r--  0 root   root     3899 Feb  5 02:24 usr/share/X11/xkb/symbols/xfree68_vndr/amiga
+-rw-r--r--  0 root   root     4685 Feb  5 02:24 usr/share/X11/xkb/symbols/xfree68_vndr/ataritt
+-rw-r--r--  0 root   root     6085 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/ara
+-rw-r--r--  0 root   root     4509 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/be
+-rw-r--r--  0 root   root     5242 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/br
+-rw-r--r--  0 root   root     4805 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/ca
+-rw-r--r--  0 root   root     6575 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/ch
+-rw-r--r--  0 root   root     4666 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/cz
+-rw-r--r--  0 root   root     5418 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/de
+-rw-r--r--  0 root   root     3793 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/dk
+-rw-r--r--  0 root   root     5813 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/ee
+-rw-r--r--  0 root   root     4201 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/es
+-rw-r--r--  0 root   root     4416 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/fi
+-rw-r--r--  0 root   root     5376 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/fr
+-rw-r--r--  0 root   root     2798 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/gb
+-rw-r--r--  0 root   root     5122 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/gr
+-rw-r--r--  0 root   root     4052 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/it
+-rw-r--r--  0 root   root     6604 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/jp
+-rw-r--r--  0 root   root     2556 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/kr
+-rw-r--r--  0 root   root     5733 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/lt
+-rw-r--r--  0 root   root     6725 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/lv
+-rw-r--r--  0 root   root     4209 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/nl
+-rw-r--r--  0 root   root     4035 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/no
+-rw-r--r--  0 root   root     4190 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/pl
+-rw-r--r--  0 root   root     4241 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/pt
+-rw-r--r--  0 root   root     4533 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/ro
+-rw-r--r--  0 root   root     6528 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/ru
+-rw-r--r--  0 root   root     3987 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/se
+-rw-r--r--  0 root   root     5104 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/sk
+-rw-r--r--  0 root   root     4304 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/solaris
+-rw-r--r--  0 root   root     3967 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/tr
+-rw-r--r--  0 root   root     2184 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/tw
+-rw-r--r--  0 root   root     5472 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/ua
+-rw-r--r--  0 root   root     5761 Feb  5 02:24 usr/share/X11/xkb/symbols/sun_vndr/us
+-rw-r--r--  0 root   root     2891 Feb  5 02:24 usr/share/X11/xkb/symbols/sony_vndr/us
+-rw-r--r--  0 root   root     2053 Feb  5 02:24 usr/share/X11/xkb/symbols/sharp_vndr/sl-c3x00
+-rw-r--r--  0 root   root     1924 Feb  5 02:24 usr/share/X11/xkb/symbols/sharp_vndr/ws003sh
+-rw-r--r--  0 root   root     1924 Feb  5 02:24 usr/share/X11/xkb/symbols/sharp_vndr/ws007sh
+-rw-r--r--  0 root   root     2071 Feb  5 02:24 usr/share/X11/xkb/symbols/sharp_vndr/ws011sh
+-rw-r--r--  0 root   root     1847 Feb  5 02:24 usr/share/X11/xkb/symbols/sharp_vndr/ws020sh
+-rw-r--r--  0 root   root     2102 Feb  5 02:24 usr/share/X11/xkb/symbols/sgi_vndr/jp
+-rw-r--r--  0 root   root    15161 Feb  5 02:24 usr/share/X11/xkb/symbols/nokia_vndr/rx-44
+-rw-r--r--  0 root   root    71840 Feb  5 02:24 usr/share/X11/xkb/symbols/nokia_vndr/rx-51
+-rw-r--r--  0 root   root    27441 Feb  5 02:24 usr/share/X11/xkb/symbols/nokia_vndr/su-8w
+-rw-r--r--  0 root   root     6075 Feb  5 02:24 usr/share/X11/xkb/symbols/nec_vndr/jp
+-rw-r--r--  0 root   root     5281 Feb  5 02:24 usr/share/X11/xkb/symbols/macintosh_vndr/apple
+-rw-r--r--  0 root   root     3787 Feb  5 02:24 usr/share/X11/xkb/symbols/macintosh_vndr/ch
+-rw-r--r--  0 root   root     4037 Feb  5 02:24 usr/share/X11/xkb/symbols/macintosh_vndr/de
+-rw-r--r--  0 root   root     3505 Feb  5 02:24 usr/share/X11/xkb/symbols/macintosh_vndr/dk
+-rw-r--r--  0 root   root      328 Feb  5 02:24 usr/share/X11/xkb/symbols/macintosh_vndr/fi
+-rw-r--r--  0 root   root     5150 Feb  5 02:24 usr/share/X11/xkb/symbols/macintosh_vndr/fr
+-rw-r--r--  0 root   root      552 Feb  5 02:24 usr/share/X11/xkb/symbols/macintosh_vndr/gb
+-rw-r--r--  0 root   root     5710 Feb  5 02:24 usr/share/X11/xkb/symbols/macintosh_vndr/is
+-rw-r--r--  0 root   root     2742 Feb  5 02:24 usr/share/X11/xkb/symbols/macintosh_vndr/it
+-rw-r--r--  0 root   root      763 Feb  5 02:24 usr/share/X11/xkb/symbols/macintosh_vndr/jp
+-rw-r--r--  0 root   root     1912 Feb  5 02:24 usr/share/X11/xkb/symbols/macintosh_vndr/latam
+-rw-r--r--  0 root   root      155 Feb  5 02:24 usr/share/X11/xkb/symbols/macintosh_vndr/nl
+-rw-r--r--  0 root   root     2116 Feb  5 02:24 usr/share/X11/xkb/symbols/macintosh_vndr/no
+-rw-r--r--  0 root   root     2555 Feb  5 02:24 usr/share/X11/xkb/symbols/macintosh_vndr/pt
+-rw-r--r--  0 root   root     2083 Feb  5 02:24 usr/share/X11/xkb/symbols/macintosh_vndr/se
+-rw-r--r--  0 root   root     4004 Feb  5 02:24 usr/share/X11/xkb/symbols/macintosh_vndr/us
+-rw-r--r--  0 root   root     1958 Feb  5 02:24 usr/share/X11/xkb/symbols/jolla_vndr/sbj
+-rw-r--r--  0 root   root     3319 Feb  5 02:24 usr/share/X11/xkb/symbols/hp_vndr/us
+-rw-r--r--  0 root   root     4109 Feb  5 02:24 usr/share/X11/xkb/symbols/fujitsu_vndr/jp
+-rw-r--r--  0 root   root     4382 Feb  5 02:24 usr/share/X11/xkb/symbols/fujitsu_vndr/us
+-rw-r--r--  0 root   root     4348 Feb  5 02:24 usr/share/X11/xkb/symbols/digital_vndr/lk
+-rw-r--r--  0 root   root     6189 Feb  5 02:24 usr/share/X11/xkb/symbols/digital_vndr/pc
+-rw-r--r--  0 root   root     7948 Feb  5 02:24 usr/share/X11/xkb/symbols/digital_vndr/us
+-rw-r--r--  0 root   root     5454 Feb  5 02:24 usr/share/X11/xkb/symbols/digital_vndr/vt
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/keycodes/digital_vndr/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/keycodes/sgi_vndr/
+-rw-r--r--  0 root   root     2176 Feb  5 02:24 usr/share/X11/xkb/keycodes/aliases
+-rw-r--r--  0 root   root     3401 Feb  5 02:24 usr/share/X11/xkb/keycodes/amiga
+-rw-r--r--  0 root   root     1839 Feb  5 02:24 usr/share/X11/xkb/keycodes/ataritt
+-rw-r--r--  0 root   root       68 Feb  5 02:24 usr/share/X11/xkb/keycodes/empty
+-rw-r--r--  0 root   root    25523 Feb  5 02:24 usr/share/X11/xkb/keycodes/evdev
+-rw-r--r--  0 root   root     3715 Feb  5 02:24 usr/share/X11/xkb/keycodes/fujitsu
+-rw-r--r--  0 root   root     4971 Feb  5 02:24 usr/share/X11/xkb/keycodes/hp
+-rw-r--r--  0 root   root     3146 Feb  5 02:24 usr/share/X11/xkb/keycodes/ibm
+-rw-r--r--  0 root   root      283 Feb  5 02:24 usr/share/X11/xkb/keycodes/jolla
+-rw-r--r--  0 root   root     4120 Feb  5 02:24 usr/share/X11/xkb/keycodes/macintosh
+-rw-r--r--  0 root   root      762 Feb  5 02:24 usr/share/X11/xkb/keycodes/olpc
+-rw-r--r--  0 root   root     2954 Feb  5 02:24 usr/share/X11/xkb/keycodes/sony
+-rw-r--r--  0 root   root     5076 Feb  5 02:24 usr/share/X11/xkb/keycodes/sun
+-rw-r--r--  0 root   root     8749 Feb  5 02:24 usr/share/X11/xkb/keycodes/xfree86
+-rw-r--r--  0 root   root     3204 Feb  5 02:24 usr/share/X11/xkb/keycodes/xfree98
+-rw-r--r--  0 root   root     2311 Feb  5 02:24 usr/share/X11/xkb/keycodes/sgi_vndr/indigo
+-rw-r--r--  0 root   root     3683 Feb  5 02:24 usr/share/X11/xkb/keycodes/sgi_vndr/indy
+-rw-r--r--  0 root   root      260 Feb  5 02:24 usr/share/X11/xkb/keycodes/sgi_vndr/iris
+-rw-r--r--  0 root   root     6126 Feb  5 02:24 usr/share/X11/xkb/keycodes/digital_vndr/lk
+-rw-r--r--  0 root   root     6094 Feb  5 02:24 usr/share/X11/xkb/keycodes/digital_vndr/pc
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/geometry/digital_vndr/
+drwxr-xr-x  0 root   root        0 May  8 01:45 usr/share/X11/xkb/geometry/sgi_vndr/
+-rw-r--r--  0 root   root     6221 Feb  5 02:24 usr/share/X11/xkb/geometry/amiga
+-rw-r--r--  0 root   root     5764 Feb  5 02:24 usr/share/X11/xkb/geometry/ataritt
+-rw-r--r--  0 root   root     4531 Feb  5 02:24 usr/share/X11/xkb/geometry/chicony
+-rw-r--r--  0 root   root    20201 Feb  5 02:24 usr/share/X11/xkb/geometry/dell
+-rw-r--r--  0 root   root     3821 Feb  5 02:24 usr/share/X11/xkb/geometry/everex
+-rw-r--r--  0 root   root     7737 Feb  5 02:24 usr/share/X11/xkb/geometry/fujitsu
+-rw-r--r--  0 root   root     5451 Feb  5 02:24 usr/share/X11/xkb/geometry/hhk
+-rw-r--r--  0 root   root    17323 Feb  5 02:24 usr/share/X11/xkb/geometry/hp
+-rw-r--r--  0 root   root     6479 Feb  5 02:24 usr/share/X11/xkb/geometry/keytronic
+-rw-r--r--  0 root   root     4030 Feb  5 02:24 usr/share/X11/xkb/geometry/kinesis
+-rw-r--r--  0 root   root    41020 Feb  5 02:24 usr/share/X11/xkb/geometry/macintosh
+-rw-r--r--  0 root   root    12547 Feb  5 02:24 usr/share/X11/xkb/geometry/microsoft
+-rw-r--r--  0 root   root     4139 Feb  5 02:24 usr/share/X11/xkb/geometry/nec
+-rw-r--r--  0 root   root     1264 Feb  5 02:24 usr/share/X11/xkb/geometry/nokia
+-rw-r--r--  0 root   root     4011 Feb  5 02:24 usr/share/X11/xkb/geometry/northgate
+-rw-r--r--  0 root   root    25737 Feb  5 02:24 usr/share/X11/xkb/geometry/pc
+-rw-r--r--  0 root   root     5878 Feb  5 02:24 usr/share/X11/xkb/geometry/sanwa
+-rw-r--r--  0 root   root     4949 Feb  5 02:24 usr/share/X11/xkb/geometry/sony
+-rw-r--r--  0 root   root     8282 Feb  5 02:24 usr/share/X11/xkb/geometry/steelseries
+-rw-r--r--  0 root   root    19791 Feb  5 02:24 usr/share/X11/xkb/geometry/sun
+-rw-r--r--  0 root   root     9728 Feb  5 02:24 usr/share/X11/xkb/geometry/teck
+-rw-r--r--  0 root   root    12112 Feb  5 02:24 usr/share/X11/xkb/geometry/thinkpad
+-rw-r--r--  0 root   root    21188 Feb  5 02:24 usr/share/X11/xkb/geometry/typematrix
+-rw-r--r--  0 root   root     2740 Feb  5 02:24 usr/share/X11/xkb/geometry/winbook
+-rw-r--r--  0 root   root    15273 Feb  5 02:24 usr/share/X11/xkb/geometry/sgi_vndr/O2
+-rw-r--r--  0 root   root    10366 Feb  5 02:24 usr/share/X11/xkb/geometry/sgi_vndr/indigo
+-rw-r--r--  0 root   root    14928 Feb  5 02:24 usr/share/X11/xkb/geometry/sgi_vndr/indy
+-rw-r--r--  0 root   root    20585 Feb  5 02:24 usr/share/X11/xkb/geometry/digital_vndr/lk
+-rw-r--r--  0 root   root    10833 Feb  5 02:24 usr/share/X11/xkb/geometry/digital_vndr/pc
+-rw-r--r--  0 root   root     7147 Feb  5 02:24 usr/share/X11/xkb/geometry/digital_vndr/unix
+-rw-r--r--  0 root   root     1121 Feb  5 02:24 usr/share/X11/xkb/compat/accessx
+-rw-r--r--  0 root   root      996 Feb  5 02:24 usr/share/X11/xkb/compat/basic
+-rw-r--r--  0 root   root      507 Feb  5 02:24 usr/share/X11/xkb/compat/caps
+-rw-r--r--  0 root   root      228 Feb  5 02:24 usr/share/X11/xkb/compat/complete
+-rw-r--r--  0 root   root     1492 Feb  5 02:24 usr/share/X11/xkb/compat/iso9995
+-rw-r--r--  0 root   root      979 Feb  5 02:24 usr/share/X11/xkb/compat/japan
+-rw-r--r--  0 root   root      469 Feb  5 02:24 usr/share/X11/xkb/compat/ledcaps
+-rw-r--r--  0 root   root      287 Feb  5 02:24 usr/share/X11/xkb/compat/ledcompose
+-rw-r--r--  0 root   root      466 Feb  5 02:24 usr/share/X11/xkb/compat/lednum
+-rw-r--r--  0 root   root      486 Feb  5 02:24 usr/share/X11/xkb/compat/ledscroll
+-rw-r--r--  0 root   root     1273 Feb  5 02:24 usr/share/X11/xkb/compat/level5
+-rw-r--r--  0 root   root     3053 Feb  5 02:24 usr/share/X11/xkb/compat/misc
+-rw-r--r--  0 root   root     4578 Feb  5 02:24 usr/share/X11/xkb/compat/mousekeys
+-rw-r--r--  0 root   root     1001 Feb  5 02:24 usr/share/X11/xkb/compat/olpc
+-rw-r--r--  0 root   root      341 Feb  5 02:24 usr/share/X11/xkb/compat/pc
+-rw-r--r--  0 root   root     1094 Feb  5 02:24 usr/share/X11/xkb/compat/pc98
+-rw-r--r--  0 root   root     1842 Feb  5 02:24 usr/share/X11/xkb/compat/xfree86
+-rw-r--r--  0 root   root     1399 Feb  5 02:24 usr/share/X11/xkb/compat/xtest
+=======> Building '/home/devel/packages/xkeyboard-config#2.41-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling xkeyboard-config 2.41-1
+prt-get: /usr/bin/pkgadd -u xkeyboard-config#2.41-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 01:45:31 2024
+

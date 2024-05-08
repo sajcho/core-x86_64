@@ -1,0 +1,160 @@
+prt-get: updating /usr/ports/opt-x86_64/keyutils
+prt-get: starting build Tue May  7 23:24:04 2024
+=======> Building '/home/devel/packages/keyutils#1.6.3-2.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/keyutils-1.6.3.tar.gz
++ build
++ cd keyutils-1.6.3
++ sed -i '/^CFLAGS/s/-g/-O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects/' Makefile
++ make -j1 V=1
+/bin/sh: 1: rpmspec: not found
+cc -I. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Werror -o keyctl.o -c keyctl.c
+cc -I. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Werror -o keyctl_testing.o -c keyctl_testing.c
+cc -I. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Werror -o keyctl_watch.o -c keyctl_watch.c
+cc -I. -DPKGBUILD="\"2024-05-07\"" -DPKGVERSION="\"keyutils-1.6.3\"" -DAPIVERSION="\"libkeyutils-1.10\"" -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Werror -fPIC -o keyutils.os -c keyutils.c
+cc -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Werror -fPIC  -shared -Wl,-soname,libkeyutils.so.1 -Wl,--version-script,version.lds -o libkeyutils.so.1.10 keyutils.os 
+ln -sf libkeyutils.so.1.10 libkeyutils.so.1
+ln -sf libkeyutils.so.1 libkeyutils.so
+cc -L. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Werror   -o keyctl \
+	keyctl.o keyctl_testing.o keyctl_watch.o -lkeyutils
+cc -I. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Werror -o request-key.o -c request-key.c
+cc -L. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Werror   -o request-key request-key.o -lkeyutils
+cc -I. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Werror -o key.dns_resolver.o -c key.dns_resolver.c
+cc -I. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Werror -o dns.afsdb.o -c dns.afsdb.c
+cc -L. -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Werror   -o key.dns_resolver \
+	key.dns_resolver.o dns.afsdb.o -lkeyutils -lresolv
+g++ -I. -g -Wall -Werror -x c++-header -fsyntax-only keyutils.h
+touch cxx.stamp
+cc -I. -DPKGBUILD="\"2024-05-07\"" -DPKGVERSION="\"keyutils-1.6.3\"" -DAPIVERSION="\"libkeyutils-1.10\"" -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Werror -UNO_GLIBC_KEYERR -o keyutils.o -c keyutils.c
+ar rcs libkeyutils.a keyutils.o
++ make DESTDIR=/home/devel/building/work/pkg USRLIBDIR=/usr/lib LIBDIR=/lib install
+/bin/sh: 1: rpmspec: not found
+install -D -m 0644 libkeyutils.a /home/devel/building/work/pkg/usr/lib/libkeyutils.a
+install -D libkeyutils.so.1.10 /home/devel/building/work/pkg/lib/libkeyutils.so.1.10
+ln -sf libkeyutils.so.1.10 /home/devel/building/work/pkg/lib/libkeyutils.so.1
+mkdir -p /home/devel/building/work/pkg/usr/lib
+ln -sf /lib/libkeyutils.so.1 /home/devel/building/work/pkg/usr/lib/libkeyutils.so
+sed \
+-e 's,@VERSION\@,1.6.3,g' \
+-e 's,@prefix\@,/usr,g' \
+-e 's,@exec_prefix\@,/usr,g' \
+-e 's,@libdir\@,/usr/lib,g' \
+-e 's,@includedir\@,/usr/include,g' \
+< libkeyutils.pc.in > libkeyutils.pc || rm libkeyutils.pc
+install -D libkeyutils.pc /home/devel/building/work/pkg/lib/pkgconfig/libkeyutils.pc
+rm libkeyutils.pc
+install -D keyctl /home/devel/building/work/pkg/bin/keyctl
+install -D request-key /home/devel/building/work/pkg/sbin/request-key
+install -D request-key-debug.sh /home/devel/building/work/pkg/usr/share/keyutils/request-key-debug.sh
+install -D key.dns_resolver /home/devel/building/work/pkg/sbin/key.dns_resolver
+install -D -m 0644 request-key.conf /home/devel/building/work/pkg/etc/request-key.conf
+mkdir -p /home/devel/building/work/pkg/etc/request-key.d
+mkdir -p /home/devel/building/work/pkg/etc/keyutils
+mkdir -p /home/devel/building/work/pkg/usr/share/man/man1
+install -m 0644 man/keyctl.1 /home/devel/building/work/pkg/usr/share/man/man1
+mkdir -p /home/devel/building/work/pkg/usr/share/man/man3
+install -m 0644 man/find_key_by_type_and_name.3 man/keyctl.3 man/keyctl_capabilities.3 man/keyctl_chown.3 man/keyctl_clear.3 man/keyctl_describe.3 man/keyctl_dh_compute.3 man/keyctl_get_keyring_ID.3 man/keyctl_get_persistent.3 man/keyctl_get_security.3 man/keyctl_instantiate.3 man/keyctl_invalidate.3 man/keyctl_join_session_keyring.3 man/keyctl_link.3 man/keyctl_move.3 man/keyctl_pkey_decrypt.3 man/keyctl_pkey_encrypt.3 man/keyctl_pkey_query.3 man/keyctl_pkey_sign.3 man/keyctl_pkey_verify.3 man/keyctl_read.3 man/keyctl_restrict_keyring.3 man/keyctl_revoke.3 man/keyctl_search.3 man/keyctl_session_to_parent.3 man/keyctl_set_reqkey_keyring.3 man/keyctl_set_timeout.3 man/keyctl_setperm.3 man/keyctl_update.3 man/keyctl_watch_key.3 man/recursive_key_scan.3 /home/devel/building/work/pkg/usr/share/man/man3
+mkdir -p /home/devel/building/work/pkg/usr/share/man/man5
+install -m 0644 man/key.dns_resolver.conf.5 man/request-key.conf.5 /home/devel/building/work/pkg/usr/share/man/man5
+mkdir -p /home/devel/building/work/pkg/usr/share/man/man7
+install -m 0644 man/asymmetric-key.7 man/keyutils.7 /home/devel/building/work/pkg/usr/share/man/man7
+mkdir -p /home/devel/building/work/pkg/usr/share/man/man8
+install -m 0644 man/key.dns_resolver.8 man/request-key.8 /home/devel/building/work/pkg/usr/share/man/man8
+ln -sf keyctl_describe.3 /home/devel/building/work/pkg/usr/share/man/man3/keyctl_describe_alloc.3
+ln -sf keyctl_get_security.3 /home/devel/building/work/pkg/usr/share/man/man3/keyctl_get_security_alloc.3
+ln -sf keyctl_instantiate.3 /home/devel/building/work/pkg/usr/share/man/man3/keyctl_instantiate_iov.3
+ln -sf keyctl_instantiate.3 /home/devel/building/work/pkg/usr/share/man/man3/keyctl_reject.3
+ln -sf keyctl_instantiate.3 /home/devel/building/work/pkg/usr/share/man/man3/keyctl_negate.3
+ln -sf keyctl_instantiate.3 /home/devel/building/work/pkg/usr/share/man/man3/keyctl_assume_authority.3
+ln -sf keyctl_link.3 /home/devel/building/work/pkg/usr/share/man/man3/keyctl_unlink.3
+ln -sf keyctl_read.3 /home/devel/building/work/pkg/usr/share/man/man3/keyctl_read_alloc.3
+ln -sf recursive_key_scan.3 /home/devel/building/work/pkg/usr/share/man/man3/recursive_session_key_scan.3
+ln -sf keyctl_dh_compute.3 /home/devel/building/work/pkg/usr/share/man/man3/keyctl_dh_compute_alloc.3
+ln -sf keyctl_dh_compute.3 /home/devel/building/work/pkg/usr/share/man/man3/keyctl_dh_compute_kdf.3
+install -D -m 0644 keyutils.h /home/devel/building/work/pkg/usr/include/keyutils.h
++ mv /home/devel/building/work/pkg/lib/pkgconfig /home/devel/building/work/pkg/usr/lib
++ chmod 0644 /home/devel/building/work/pkg/usr/lib/pkgconfig/libkeyutils.pc
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 23:24 bin/
+-rwxr-xr-x  0 root   root    52152 May  7 23:24 bin/keyctl
+drwxr-xr-x  0 root   root        0 May  7 23:24 etc/
+-rw-r--r--  0 root   root     1787 May  7 23:24 etc/request-key.conf
+drwxr-xr-x  0 root   root        0 May  7 23:24 etc/request-key.d/
+drwxr-xr-x  0 root   root        0 May  7 23:24 etc/keyutils/
+drwxr-xr-x  0 root   root        0 May  7 23:24 lib/
+-rwxr-xr-x  0 root   root    22840 May  7 23:24 lib/libkeyutils.so.1.10
+lrwxrwxrwx  0 root   root        0 May  7 23:24 lib/libkeyutils.so.1 -> libkeyutils.so.1.10
+drwxr-xr-x  0 root   root        0 May  7 23:24 sbin/
+-rwxr-xr-x  0 root   root    23088 May  7 23:24 sbin/request-key
+-rwxr-xr-x  0 root   root    31264 May  7 23:24 sbin/key.dns_resolver
+drwxr-xr-x  0 root   root        0 May  7 23:24 usr/
+drwxr-xr-x  0 root   root        0 May  7 23:24 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 23:24 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 23:24 usr/include/
+-rw-r--r--  0 root   root    11796 May  7 23:24 usr/include/keyutils.h
+drwxr-xr-x  0 root   root        0 May  7 23:24 usr/share/keyutils/
+drwxr-xr-x  0 root   root        0 May  7 23:24 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  7 23:24 usr/share/man/man1/
+drwxr-xr-x  0 root   root        0 May  7 23:24 usr/share/man/man3/
+drwxr-xr-x  0 root   root        0 May  7 23:24 usr/share/man/man5/
+drwxr-xr-x  0 root   root        0 May  7 23:24 usr/share/man/man7/
+drwxr-xr-x  0 root   root        0 May  7 23:24 usr/share/man/man8/
+-rw-r--r--  0 root   root     1010 May  7 23:24 usr/share/man/man8/key.dns_resolver.8.gz
+-rw-r--r--  0 root   root     1158 May  7 23:24 usr/share/man/man8/request-key.8.gz
+-rw-r--r--  0 root   root     3626 May  7 23:24 usr/share/man/man7/asymmetric-key.7.gz
+-rw-r--r--  0 root   root     1167 May  7 23:24 usr/share/man/man7/keyutils.7.gz
+-rw-r--r--  0 root   root     1061 May  7 23:24 usr/share/man/man5/key.dns_resolver.conf.5.gz
+-rw-r--r--  0 root   root     2021 May  7 23:24 usr/share/man/man5/request-key.conf.5.gz
+-rw-r--r--  0 root   root      928 May  7 23:24 usr/share/man/man3/find_key_by_type_and_name.3.gz
+-rw-r--r--  0 root   root      929 May  7 23:24 usr/share/man/man3/keyctl.3.gz
+-rw-r--r--  0 root   root     1558 May  7 23:24 usr/share/man/man3/keyctl_capabilities.3.gz
+-rw-r--r--  0 root   root     1034 May  7 23:24 usr/share/man/man3/keyctl_chown.3.gz
+-rw-r--r--  0 root   root      840 May  7 23:24 usr/share/man/man3/keyctl_clear.3.gz
+-rw-r--r--  0 root   root     1371 May  7 23:24 usr/share/man/man3/keyctl_describe.3.gz
+-rw-r--r--  0 root   root     1832 May  7 23:24 usr/share/man/man3/keyctl_dh_compute.3.gz
+-rw-r--r--  0 root   root     1178 May  7 23:24 usr/share/man/man3/keyctl_get_keyring_ID.3.gz
+-rw-r--r--  0 root   root     1363 May  7 23:24 usr/share/man/man3/keyctl_get_persistent.3.gz
+-rw-r--r--  0 root   root     1270 May  7 23:24 usr/share/man/man3/keyctl_get_security.3.gz
+-rw-r--r--  0 root   root     2235 May  7 23:24 usr/share/man/man3/keyctl_instantiate.3.gz
+-rw-r--r--  0 root   root      949 May  7 23:24 usr/share/man/man3/keyctl_invalidate.3.gz
+-rw-r--r--  0 root   root     1113 May  7 23:24 usr/share/man/man3/keyctl_join_session_keyring.3.gz
+-rw-r--r--  0 root   root     1055 May  7 23:24 usr/share/man/man3/keyctl_link.3.gz
+-rw-r--r--  0 root   root     1206 May  7 23:24 usr/share/man/man3/keyctl_move.3.gz
+-rw-r--r--  0 root   root       66 May  7 23:24 usr/share/man/man3/keyctl_pkey_decrypt.3.gz
+-rw-r--r--  0 root   root     1625 May  7 23:24 usr/share/man/man3/keyctl_pkey_encrypt.3.gz
+-rw-r--r--  0 root   root     1601 May  7 23:24 usr/share/man/man3/keyctl_pkey_query.3.gz
+-rw-r--r--  0 root   root     1912 May  7 23:24 usr/share/man/man3/keyctl_pkey_sign.3.gz
+-rw-r--r--  0 root   root       62 May  7 23:24 usr/share/man/man3/keyctl_pkey_verify.3.gz
+-rw-r--r--  0 root   root     1418 May  7 23:24 usr/share/man/man3/keyctl_read.3.gz
+-rw-r--r--  0 root   root     1061 May  7 23:24 usr/share/man/man3/keyctl_restrict_keyring.3.gz
+-rw-r--r--  0 root   root      881 May  7 23:24 usr/share/man/man3/keyctl_revoke.3.gz
+-rw-r--r--  0 root   root     1483 May  7 23:24 usr/share/man/man3/keyctl_search.3.gz
+-rw-r--r--  0 root   root     1072 May  7 23:24 usr/share/man/man3/keyctl_session_to_parent.3.gz
+-rw-r--r--  0 root   root     1168 May  7 23:24 usr/share/man/man3/keyctl_set_reqkey_keyring.3.gz
+-rw-r--r--  0 root   root      978 May  7 23:24 usr/share/man/man3/keyctl_set_timeout.3.gz
+-rw-r--r--  0 root   root     1431 May  7 23:24 usr/share/man/man3/keyctl_setperm.3.gz
+-rw-r--r--  0 root   root     1098 May  7 23:24 usr/share/man/man3/keyctl_update.3.gz
+-rw-r--r--  0 root   root     1852 May  7 23:24 usr/share/man/man3/keyctl_watch_key.3.gz
+-rw-r--r--  0 root   root     1232 May  7 23:24 usr/share/man/man3/recursive_key_scan.3.gz
+lrwxrwxrwx  0 root   root        0 May  7 23:24 usr/share/man/man3/keyctl_describe_alloc.3.gz -> keyctl_describe.3.gz
+lrwxrwxrwx  0 root   root        0 May  7 23:24 usr/share/man/man3/keyctl_get_security_alloc.3.gz -> keyctl_get_security.3.gz
+lrwxrwxrwx  0 root   root        0 May  7 23:24 usr/share/man/man3/keyctl_instantiate_iov.3.gz -> keyctl_instantiate.3.gz
+lrwxrwxrwx  0 root   root        0 May  7 23:24 usr/share/man/man3/keyctl_reject.3.gz -> keyctl_instantiate.3.gz
+lrwxrwxrwx  0 root   root        0 May  7 23:24 usr/share/man/man3/keyctl_negate.3.gz -> keyctl_instantiate.3.gz
+lrwxrwxrwx  0 root   root        0 May  7 23:24 usr/share/man/man3/keyctl_assume_authority.3.gz -> keyctl_instantiate.3.gz
+lrwxrwxrwx  0 root   root        0 May  7 23:24 usr/share/man/man3/keyctl_unlink.3.gz -> keyctl_link.3.gz
+lrwxrwxrwx  0 root   root        0 May  7 23:24 usr/share/man/man3/keyctl_read_alloc.3.gz -> keyctl_read.3.gz
+lrwxrwxrwx  0 root   root        0 May  7 23:24 usr/share/man/man3/recursive_session_key_scan.3.gz -> recursive_key_scan.3.gz
+lrwxrwxrwx  0 root   root        0 May  7 23:24 usr/share/man/man3/keyctl_dh_compute_alloc.3.gz -> keyctl_dh_compute.3.gz
+lrwxrwxrwx  0 root   root        0 May  7 23:24 usr/share/man/man3/keyctl_dh_compute_kdf.3.gz -> keyctl_dh_compute.3.gz
+-rw-r--r--  0 root   root     9906 May  7 23:24 usr/share/man/man1/keyctl.1.gz
+-rwxr-xr-x  0 root   root      906 May  7 23:24 usr/share/keyutils/request-key-debug.sh
+-rw-r--r--  0 root   root    64162 May  7 23:24 usr/lib/libkeyutils.a
+lrwxrwxrwx  0 root   root        0 May  7 23:24 usr/lib/libkeyutils.so -> /lib/libkeyutils.so.1
+drwxr-xr-x  0 root   root        0 May  7 23:24 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      157 May  7 23:24 usr/lib/pkgconfig/libkeyutils.pc
+=======> Building '/home/devel/packages/keyutils#1.6.3-2.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling keyutils 1.6.3-2
+prt-get: /usr/bin/pkgadd -u keyutils#1.6.3-2.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 23:24:06 2024
+

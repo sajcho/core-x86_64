@@ -1,0 +1,36 @@
+prt-get: updating /usr/ports/wayland-x86_64/river
+prt-get: starting build Wed May  8 01:06:21 2024
+=======> Building '/home/devel/packages/river#0.3.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/river-0.3.0.tar.gz
++ build
++ cd river-0.3.0
++ DESTDIR=/home/devel/building/work/src/river-0.3.0/out
++ zig build -Doptimize=ReleaseSafe -Dcpu=baseline -Dpie --prefix /usr install
++ cp -r out/usr /home/devel/building/work/pkg
++ install -D -m 0644 example/init -t /home/devel/building/work/pkg/usr/share/river/examples
++ rm -r /home/devel/building/work/pkg/usr/share/bash-completion /home/devel/building/work/pkg/usr/share/fish /home/devel/building/work/pkg/usr/share/zsh
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 01:06 usr/
+drwxr-xr-x  0 root   root        0 May  8 01:06 usr/share/
+drwxr-xr-x  0 root   root        0 May  8 01:06 usr/bin/
+-rwxr-xr-x  0 root   root   306528 May  8 01:06 usr/bin/riverctl
+-rwxr-xr-x  0 root   root   384360 May  8 01:06 usr/bin/rivertile
+-rwxr-xr-x  0 root   root   757832 May  8 01:06 usr/bin/river
+drwxr-xr-x  0 root   root        0 May  8 01:06 usr/share/river-protocols/
+drwxr-xr-x  0 root   root        0 May  8 01:06 usr/share/pkgconfig/
+drwxr-xr-x  0 root   root        0 May  8 01:06 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  8 01:06 usr/share/river/
+drwxr-xr-x  0 root   root        0 May  8 01:06 usr/share/river/examples/
+-rw-r--r--  0 root   root     6575 May  8 01:06 usr/share/river/examples/init
+drwxr-xr-x  0 root   root        0 May  8 01:06 usr/share/man/man1/
+-rw-r--r--  0 root   root     1219 May  8 01:06 usr/share/man/man1/river.1.gz
+-rw-r--r--  0 root   root     7490 May  8 01:06 usr/share/man/man1/riverctl.1.gz
+-rw-r--r--  0 root   root     1199 May  8 01:06 usr/share/man/man1/rivertile.1.gz
+-rw-r--r--  0 root   root      210 May  8 01:06 usr/share/pkgconfig/river-protocols.pc
+-rw-r--r--  0 root   root     9451 May  8 01:06 usr/share/river-protocols/river-layout-v3.xml
+=======> Building '/home/devel/packages/river#0.3.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling river 0.3.0-1
+prt-get: /usr/bin/pkgadd -u river#0.3.0-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 01:06:57 2024
+

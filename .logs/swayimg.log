@@ -1,0 +1,142 @@
+prt-get: updating /usr/ports/wayland-x86_64/swayimg
+prt-get: starting build Wed May  8 01:34:33 2024
+=======> Building '/home/devel/packages/swayimg#2.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/swayimg-2.0.tar.gz
++ build
++ cd swayimg-2.0
++ build-meson . build
+The Meson build system
+Version: 1.4.0
+Source dir: /home/devel/building/work/src/swayimg-2.0
+Build dir: /home/devel/building/work/src/swayimg-2.0/build
+Build type: native build
+Project name: swayimg
+Project version: 0.0.0
+C compiler for the host machine: cc (gcc 14.1.0 "cc (SAUX-x86_64) 14.1.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program git found: YES (/usr/bin/git)
+Found pkg-config: YES (/usr/bin/pkg-config) 2.2.0
+Run-time dependency wayland-client found: YES 1.22.0
+Run-time dependency json-c found: YES 0.17
+Run-time dependency xkbcommon found: YES 1.7.0
+Run-time dependency fontconfig found: YES 2.15.0
+Run-time dependency freetype2 found: YES 26.1.20
+Run-time dependency threads found: YES
+Library rt found: YES
+Found CMake: /usr/bin/cmake (3.29.2)
+Run-time dependency openexr found: NO (tried pkgconfig and cmake)
+Library gif found: YES
+Run-time dependency libheif found: NO (tried pkgconfig and cmake)
+Run-time dependency libavif found: NO (tried pkgconfig and cmake)
+Run-time dependency libjpeg found: YES 3.0.2
+Run-time dependency libpng found: YES 1.6.43
+Run-time dependency librsvg-2.0 found: YES 2.58.0
+Run-time dependency libtiff-4 found: YES 4.3.0
+Run-time dependency libwebp found: YES 1.4.0
+Run-time dependency libwebpdemux found: YES 1.4.0
+Run-time dependency libexif found: YES 0.6.24
+Run-time dependency bash-completion found: NO (tried pkgconfig and cmake)
+Run-time dependency libjxl found: NO (tried pkgconfig and cmake)
+Library libjxl found: NO
+Run-time dependency epoll-shim found: NO (tried pkgconfig and cmake)
+Has header "sys/inotify.h" : YES 
+Configuring buildcfg.h using configuration
+Run-time dependency wayland-protocols found: YES 1.36
+Build-time dependency wayland-scanner found: YES 1.22.0
+Program /usr/bin/wayland-scanner found: YES (/usr/bin/wayland-scanner)
+Program zsh found: NO
+Build targets in project: 3
+
+swayimg 0.0.0
+
+  User defined options
+    auto_features     : auto
+    bindir            : /usr/bin
+    buildtype         : plain
+    datadir           : /usr/share
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    libexecdir        : /usr/lib
+    localstatedir     : /var
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sbindir           : /usr/sbin
+    sharedstatedir    : /var/lib
+    sysconfdir        : /etc
+    werror            : false
+    wrap_mode         : nodownload
+    python.bytecompile: 0
+    b_lto             : false
+    b_pie             : true
+    b_staticpic       : true
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -v -C build
+ninja: entering directory '/home/devel/building/work/src/swayimg-2.0/build'
+[1/26] /usr/bin/wayland-scanner client-header //usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml xdg-shell-protocol.h
+[2/26] /usr/bin/wayland-scanner private-code //usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml xdg-shell-protocol.c
+[3/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_formats_webp.c.o -MF swayimg.p/src_formats_webp.c.o.d -o swayimg.p/src_formats_webp.c.o -c ../src/formats/webp.c
+[4/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_formats_tiff.c.o -MF swayimg.p/src_formats_tiff.c.o.d -o swayimg.p/src_formats_tiff.c.o -c ../src/formats/tiff.c
+[5/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_formats_svg.c.o -MF swayimg.p/src_formats_svg.c.o.d -o swayimg.p/src_formats_svg.c.o -c ../src/formats/svg.c
+[6/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_formats_png.c.o -MF swayimg.p/src_formats_png.c.o.d -o swayimg.p/src_formats_png.c.o -c ../src/formats/png.c
+[7/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_formats_jpeg.c.o -MF swayimg.p/src_formats_jpeg.c.o.d -o swayimg.p/src_formats_jpeg.c.o -c ../src/formats/jpeg.c
+[8/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_formats_gif.c.o -MF swayimg.p/src_formats_gif.c.o.d -o swayimg.p/src_formats_gif.c.o -c ../src/formats/gif.c
+[9/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_exif.c.o -MF swayimg.p/src_exif.c.o.d -o swayimg.p/src_exif.c.o -c ../src/exif.c
+[10/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_formats_loader.c.o -MF swayimg.p/src_formats_loader.c.o.d -o swayimg.p/src_formats_loader.c.o -c ../src/formats/loader.c
+[11/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_formats_pnm.c.o -MF swayimg.p/src_formats_pnm.c.o.d -o swayimg.p/src_formats_pnm.c.o -c ../src/formats/pnm.c
+[12/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_formats_bmp.c.o -MF swayimg.p/src_formats_bmp.c.o.d -o swayimg.p/src_formats_bmp.c.o -c ../src/formats/bmp.c
+[13/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_viewer.c.o -MF swayimg.p/src_viewer.c.o.d -o swayimg.p/src_viewer.c.o -c ../src/viewer.c
+[14/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_ui.c.o -MF swayimg.p/src_ui.c.o.d -o swayimg.p/src_ui.c.o -c ../src/ui.c
+[15/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_sway.c.o -MF swayimg.p/src_sway.c.o.d -o swayimg.p/src_sway.c.o -c ../src/sway.c
+[16/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_str.c.o -MF swayimg.p/src_str.c.o.d -o swayimg.p/src_str.c.o -c ../src/str.c
+[17/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_main.c.o -MF swayimg.p/src_main.c.o.d -o swayimg.p/src_main.c.o -c ../src/main.c
+[01m[K../src/formats/png.c:[m[K In function '[01m[Kdecode_png_frames[m[K':
+[01m[K../src/formats/png.c:201:15:[m[K [01;35m[Kwarning: [m[Kvariable '[01m[Ktmp[m[K' might be clobbered by '[01m[Klongjmp[m[K' or '[01m[Kvfork[m[K' [[01;35m[K-Wclobbered[m[K]
+  201 |     uint32_t* [01;35m[Ktmp[m[K = NULL;
+      |               [01;35m[K^~~[m[K
+[18/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_keybind.c.o -MF swayimg.p/src_keybind.c.o.d -o swayimg.p/src_keybind.c.o -c ../src/keybind.c
+[19/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_info.c.o -MF swayimg.p/src_info.c.o.d -o swayimg.p/src_info.c.o -c ../src/info.c
+[20/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_imagelist.c.o -MF swayimg.p/src_imagelist.c.o.d -o swayimg.p/src_imagelist.c.o -c ../src/imagelist.c
+[21/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_image.c.o -MF swayimg.p/src_image.c.o.d -o swayimg.p/src_image.c.o -c ../src/image.c
+[22/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_font.c.o -MF swayimg.p/src_font.c.o.d -o swayimg.p/src_font.c.o -c ../src/font.c
+[23/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_config.c.o -MF swayimg.p/src_config.c.o.d -o swayimg.p/src_config.c.o -c ../src/config.c
+[24/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/src_canvas.c.o -MF swayimg.p/src_canvas.c.o.d -o swayimg.p/src_canvas.c.o -c ../src/canvas.c
+[25/26] cc -Iswayimg.p -I. -I.. -I/usr/include/json-c -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/librsvg-2.0 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/webp -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Wpedantic -std=c99 -D_POSIX_C_SOURCE=200809 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ swayimg.p/meson-generated_.._xdg-shell-protocol.c.o -MF swayimg.p/meson-generated_.._xdg-shell-protocol.c.o.d -o swayimg.p/meson-generated_.._xdg-shell-protocol.c.o -c xdg-shell-protocol.c
+[26/26] cc  -o swayimg swayimg.p/meson-generated_.._xdg-shell-protocol.c.o swayimg.p/src_canvas.c.o swayimg.p/src_config.c.o swayimg.p/src_font.c.o swayimg.p/src_image.c.o swayimg.p/src_imagelist.c.o swayimg.p/src_info.c.o swayimg.p/src_keybind.c.o swayimg.p/src_main.c.o swayimg.p/src_str.c.o swayimg.p/src_sway.c.o swayimg.p/src_ui.c.o swayimg.p/src_viewer.c.o swayimg.p/src_formats_bmp.c.o swayimg.p/src_formats_pnm.c.o swayimg.p/src_formats_loader.c.o swayimg.p/src_exif.c.o swayimg.p/src_formats_gif.c.o swayimg.p/src_formats_jpeg.c.o swayimg.p/src_formats_png.c.o swayimg.p/src_formats_svg.c.o swayimg.p/src_formats_tiff.c.o swayimg.p/src_formats_webp.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--start-group -lrt -pthread /usr/lib/libwayland-client.so /usr/lib/libjson-c.so /usr/lib/libxkbcommon.so /usr/lib/libfontconfig.so /usr/lib/libfreetype.so /usr/lib/libexif.so -lgif /usr/lib/libjpeg.so /usr/lib/libpng16.so /usr/lib/librsvg-2.so -lm /usr/lib/libgio-2.0.so /usr/lib/libgdk_pixbuf-2.0.so /usr/lib/libgobject-2.0.so /usr/lib/libglib-2.0.so /usr/lib/libcairo.so /usr/lib/libtiff.so /usr/lib/libwebp.so /usr/lib/libwebpdemux.so -Wl,--end-group
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/swayimg-2.0/build -j 8 -v
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Installing swayimg to /home/devel/building/work/pkg/usr/bin
+Installing /home/devel/building/work/src/swayimg-2.0/extra/swayimg.1 to /home/devel/building/work/pkg/usr/share/man/man1
+Installing /home/devel/building/work/src/swayimg-2.0/extra/swayimgrc.5 to /home/devel/building/work/pkg/usr/share/man/man5
+Installing /home/devel/building/work/src/swayimg-2.0/extra/swayimgrc to /home/devel/building/work/pkg/usr/share/swayimg
+Installing /home/devel/building/work/src/swayimg-2.0/extra/swayimg.desktop to /home/devel/building/work/pkg/usr/share/applications
+Installing /home/devel/building/work/src/swayimg-2.0/extra/swayimg.png to /home/devel/building/work/pkg/usr/share/icons/hicolor/64x64/apps
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 01:34 usr/
+drwxr-xr-x  0 root   root        0 May  8 01:34 usr/bin/
+drwxr-xr-x  0 root   root        0 May  8 01:34 usr/share/
+drwxr-xr-x  0 root   root        0 May  8 01:34 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  8 01:34 usr/share/swayimg/
+drwxr-xr-x  0 root   root        0 May  8 01:34 usr/share/applications/
+drwxr-xr-x  0 root   root        0 May  8 01:34 usr/share/icons/
+drwxr-xr-x  0 root   root        0 May  8 01:34 usr/share/icons/hicolor/
+drwxr-xr-x  0 root   root        0 May  8 01:34 usr/share/icons/hicolor/64x64/
+drwxr-xr-x  0 root   root        0 May  8 01:34 usr/share/icons/hicolor/64x64/apps/
+-rw-r--r--  0 root   root     3458 Jan  3 10:45 usr/share/icons/hicolor/64x64/apps/swayimg.png
+-rw-r--r--  0 root   root      488 Jan  3 10:45 usr/share/applications/swayimg.desktop
+-rw-r--r--  0 root   root     3372 Jan  3 10:45 usr/share/swayimg/swayimgrc
+drwxr-xr-x  0 root   root        0 May  8 01:34 usr/share/man/man1/
+drwxr-xr-x  0 root   root        0 May  8 01:34 usr/share/man/man5/
+-rw-r--r--  0 root   root     2516 Jan  3 10:45 usr/share/man/man5/swayimgrc.5.gz
+-rw-r--r--  0 root   root     1832 Jan  3 10:45 usr/share/man/man1/swayimg.1.gz
+-rwxr-xr-x  0 root   root   107496 May  8 01:34 usr/bin/swayimg
+=======> Building '/home/devel/packages/swayimg#2.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling swayimg 2.0-1
+prt-get: /usr/bin/pkgadd -u swayimg#2.0-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 01:34:36 2024
+

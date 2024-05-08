@@ -1,0 +1,125 @@
+prt-get: updating /usr/ports/core-x86_64/plocate
+prt-get: starting build Wed May  8 00:56:56 2024
+=======> Building '/home/devel/packages/plocate#1.1.19-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/plocate-1.1.19.tar.gz
+cp plocate /home/devel/building/work/src
+cp updatedb.conf /home/devel/building/work/src
++ build
++ cd plocate-1.1.19
++ build-meson -Dinstall_cron=false -Dlocategroup=plocate -Dinstall_systemd=false . build
+The Meson build system
+Version: 1.4.0
+Source dir: /home/devel/building/work/src/plocate-1.1.19
+Build dir: /home/devel/building/work/src/plocate-1.1.19/build
+Build type: native build
+Project name: plocate
+Project version: 1.1.19
+C++ compiler for the host machine: c++ (gcc 14.1.0 "c++ (SAUX-x86_64) 14.1.0")
+C++ linker for the host machine: c++ ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 2.2.0
+Run-time dependency liburing found: YES 2.6
+Run-time dependency libzstd found: YES 1.5.6
+Run-time dependency threads found: YES
+Library atomic found: YES
+Has header "endian.h" : YES 
+Checking if "function multiversioning" compiles: YES 
+Configuring update-plocate.sh using configuration
+Configuring updatedb.8 using configuration
+Configuring updatedb.conf.5 using configuration
+Build targets in project: 3
+
+plocate 1.1.19
+
+  User defined options
+    auto_features     : auto
+    bindir            : /usr/bin
+    buildtype         : plain
+    datadir           : /usr/share
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    libexecdir        : /usr/lib
+    localstatedir     : /var
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sbindir           : /usr/sbin
+    sharedstatedir    : /var/lib
+    sysconfdir        : /etc
+    werror            : false
+    wrap_mode         : nodownload
+    python.bytecompile: 0
+    b_lto             : false
+    b_pie             : true
+    b_staticpic       : true
+    install_cron      : false
+    install_systemd   : false
+    locategroup       : plocate
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -v -C build
+ninja: entering directory '/home/devel/building/work/src/plocate-1.1.19/build'
+[1/19] c++ -Iupdatedb.p -I. -I.. -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 '-DGROUPNAME="plocate"' '-DUPDATEDB_CONF="/etc/updatedb.conf"' '-DDBFILE="/var/lib/plocate/plocate.db"' '-DPACKAGE_NAME="plocate"' '-DPACKAGE_VERSION="1.1.19"' '-DPACKAGE_BUGREPORT="steinar+plocate@gunderson.no"' -DHAS_ENDIAN_H -DHAS_FUNCTION_MULTIVERSIONING -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ updatedb.p/complete_pread.cpp.o -MF updatedb.p/complete_pread.cpp.o.d -o updatedb.p/complete_pread.cpp.o -c ../complete_pread.cpp
+[2/19] c++ -Iupdatedb.p -I. -I.. -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 '-DGROUPNAME="plocate"' '-DUPDATEDB_CONF="/etc/updatedb.conf"' '-DDBFILE="/var/lib/plocate/plocate.db"' '-DPACKAGE_NAME="plocate"' '-DPACKAGE_VERSION="1.1.19"' '-DPACKAGE_BUGREPORT="steinar+plocate@gunderson.no"' -DHAS_ENDIAN_H -DHAS_FUNCTION_MULTIVERSIONING -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ updatedb.p/bind-mount.cpp.o -MF updatedb.p/bind-mount.cpp.o.d -o updatedb.p/bind-mount.cpp.o -c ../bind-mount.cpp
+[3/19] c++ -Iupdatedb.p -I. -I.. -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 '-DGROUPNAME="plocate"' '-DUPDATEDB_CONF="/etc/updatedb.conf"' '-DDBFILE="/var/lib/plocate/plocate.db"' '-DPACKAGE_NAME="plocate"' '-DPACKAGE_VERSION="1.1.19"' '-DPACKAGE_BUGREPORT="steinar+plocate@gunderson.no"' -DHAS_ENDIAN_H -DHAS_FUNCTION_MULTIVERSIONING -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ updatedb.p/lib.cpp.o -MF updatedb.p/lib.cpp.o.d -o updatedb.p/lib.cpp.o -c ../lib.cpp
+[4/19] c++ -Iupdatedb.p -I. -I.. -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 '-DGROUPNAME="plocate"' '-DUPDATEDB_CONF="/etc/updatedb.conf"' '-DDBFILE="/var/lib/plocate/plocate.db"' '-DPACKAGE_NAME="plocate"' '-DPACKAGE_VERSION="1.1.19"' '-DPACKAGE_BUGREPORT="steinar+plocate@gunderson.no"' -DHAS_ENDIAN_H -DHAS_FUNCTION_MULTIVERSIONING -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ updatedb.p/conf.cpp.o -MF updatedb.p/conf.cpp.o.d -o updatedb.p/conf.cpp.o -c ../conf.cpp
+[5/19] c++ -Iupdatedb.p -I. -I.. -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 '-DGROUPNAME="plocate"' '-DUPDATEDB_CONF="/etc/updatedb.conf"' '-DDBFILE="/var/lib/plocate/plocate.db"' '-DPACKAGE_NAME="plocate"' '-DPACKAGE_VERSION="1.1.19"' '-DPACKAGE_BUGREPORT="steinar+plocate@gunderson.no"' -DHAS_ENDIAN_H -DHAS_FUNCTION_MULTIVERSIONING -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ updatedb.p/database-builder.cpp.o -MF updatedb.p/database-builder.cpp.o.d -o updatedb.p/database-builder.cpp.o -c ../database-builder.cpp
+[6/19] c++ -Iupdatedb.p -I. -I.. -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 '-DGROUPNAME="plocate"' '-DUPDATEDB_CONF="/etc/updatedb.conf"' '-DDBFILE="/var/lib/plocate/plocate.db"' '-DPACKAGE_NAME="plocate"' '-DPACKAGE_VERSION="1.1.19"' '-DPACKAGE_BUGREPORT="steinar+plocate@gunderson.no"' -DHAS_ENDIAN_H -DHAS_FUNCTION_MULTIVERSIONING -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ updatedb.p/updatedb.cpp.o -MF updatedb.p/updatedb.cpp.o.d -o updatedb.p/updatedb.cpp.o -c ../updatedb.cpp
+[7/19] c++ -Iplocate-build.p -I. -I.. -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 '-DGROUPNAME="plocate"' '-DUPDATEDB_CONF="/etc/updatedb.conf"' '-DDBFILE="/var/lib/plocate/plocate.db"' '-DPACKAGE_NAME="plocate"' '-DPACKAGE_VERSION="1.1.19"' '-DPACKAGE_BUGREPORT="steinar+plocate@gunderson.no"' -DHAS_ENDIAN_H -DHAS_FUNCTION_MULTIVERSIONING -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ plocate-build.p/database-builder.cpp.o -MF plocate-build.p/database-builder.cpp.o.d -o plocate-build.p/database-builder.cpp.o -c ../database-builder.cpp
+[8/19] c++ -Iplocate-build.p -I. -I.. -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 '-DGROUPNAME="plocate"' '-DUPDATEDB_CONF="/etc/updatedb.conf"' '-DDBFILE="/var/lib/plocate/plocate.db"' '-DPACKAGE_NAME="plocate"' '-DPACKAGE_VERSION="1.1.19"' '-DPACKAGE_BUGREPORT="steinar+plocate@gunderson.no"' -DHAS_ENDIAN_H -DHAS_FUNCTION_MULTIVERSIONING -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ plocate-build.p/plocate-build.cpp.o -MF plocate-build.p/plocate-build.cpp.o.d -o plocate-build.p/plocate-build.cpp.o -c ../plocate-build.cpp
+[9/19] c++ -Iplocate.p -I. -I.. -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 '-DGROUPNAME="plocate"' '-DUPDATEDB_CONF="/etc/updatedb.conf"' '-DDBFILE="/var/lib/plocate/plocate.db"' '-DPACKAGE_NAME="plocate"' '-DPACKAGE_VERSION="1.1.19"' '-DPACKAGE_BUGREPORT="steinar+plocate@gunderson.no"' -DHAS_ENDIAN_H -DHAS_FUNCTION_MULTIVERSIONING -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ plocate.p/complete_pread.cpp.o -MF plocate.p/complete_pread.cpp.o.d -o plocate.p/complete_pread.cpp.o -c ../complete_pread.cpp
+[10/19] c++ -Iplocate.p -I. -I.. -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 '-DGROUPNAME="plocate"' '-DUPDATEDB_CONF="/etc/updatedb.conf"' '-DDBFILE="/var/lib/plocate/plocate.db"' '-DPACKAGE_NAME="plocate"' '-DPACKAGE_VERSION="1.1.19"' '-DPACKAGE_BUGREPORT="steinar+plocate@gunderson.no"' -DHAS_ENDIAN_H -DHAS_FUNCTION_MULTIVERSIONING -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ plocate.p/needle.cpp.o -MF plocate.p/needle.cpp.o.d -o plocate.p/needle.cpp.o -c ../needle.cpp
+[11/19] c++ -Iplocate.p -I. -I.. -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 '-DGROUPNAME="plocate"' '-DUPDATEDB_CONF="/etc/updatedb.conf"' '-DDBFILE="/var/lib/plocate/plocate.db"' '-DPACKAGE_NAME="plocate"' '-DPACKAGE_VERSION="1.1.19"' '-DPACKAGE_BUGREPORT="steinar+plocate@gunderson.no"' -DHAS_ENDIAN_H -DHAS_FUNCTION_MULTIVERSIONING -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ plocate.p/access_rx_cache.cpp.o -MF plocate.p/access_rx_cache.cpp.o.d -o plocate.p/access_rx_cache.cpp.o -c ../access_rx_cache.cpp
+[12/19] c++ -Iplocate.p -I. -I.. -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 '-DGROUPNAME="plocate"' '-DUPDATEDB_CONF="/etc/updatedb.conf"' '-DDBFILE="/var/lib/plocate/plocate.db"' '-DPACKAGE_NAME="plocate"' '-DPACKAGE_VERSION="1.1.19"' '-DPACKAGE_BUGREPORT="steinar+plocate@gunderson.no"' -DHAS_ENDIAN_H -DHAS_FUNCTION_MULTIVERSIONING -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ plocate.p/serializer.cpp.o -MF plocate.p/serializer.cpp.o.d -o plocate.p/serializer.cpp.o -c ../serializer.cpp
+[13/19] c++ -Iplocate.p -I. -I.. -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 '-DGROUPNAME="plocate"' '-DUPDATEDB_CONF="/etc/updatedb.conf"' '-DDBFILE="/var/lib/plocate/plocate.db"' '-DPACKAGE_NAME="plocate"' '-DPACKAGE_VERSION="1.1.19"' '-DPACKAGE_BUGREPORT="steinar+plocate@gunderson.no"' -DHAS_ENDIAN_H -DHAS_FUNCTION_MULTIVERSIONING -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ plocate.p/parse_trigrams.cpp.o -MF plocate.p/parse_trigrams.cpp.o.d -o plocate.p/parse_trigrams.cpp.o -c ../parse_trigrams.cpp
+[14/19] c++ -Iplocate.p -I. -I.. -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 '-DGROUPNAME="plocate"' '-DUPDATEDB_CONF="/etc/updatedb.conf"' '-DDBFILE="/var/lib/plocate/plocate.db"' '-DPACKAGE_NAME="plocate"' '-DPACKAGE_VERSION="1.1.19"' '-DPACKAGE_BUGREPORT="steinar+plocate@gunderson.no"' -DHAS_ENDIAN_H -DHAS_FUNCTION_MULTIVERSIONING -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ plocate.p/turbopfor.cpp.o -MF plocate.p/turbopfor.cpp.o.d -o plocate.p/turbopfor.cpp.o -c ../turbopfor.cpp
+[15/19] c++ -Iplocate.p -I. -I.. -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 '-DGROUPNAME="plocate"' '-DUPDATEDB_CONF="/etc/updatedb.conf"' '-DDBFILE="/var/lib/plocate/plocate.db"' '-DPACKAGE_NAME="plocate"' '-DPACKAGE_VERSION="1.1.19"' '-DPACKAGE_BUGREPORT="steinar+plocate@gunderson.no"' -DHAS_ENDIAN_H -DHAS_FUNCTION_MULTIVERSIONING -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ plocate.p/io_uring_engine.cpp.o -MF plocate.p/io_uring_engine.cpp.o.d -o plocate.p/io_uring_engine.cpp.o -c ../io_uring_engine.cpp
+[16/19] c++ -Iplocate.p -I. -I.. -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++17 '-DGROUPNAME="plocate"' '-DUPDATEDB_CONF="/etc/updatedb.conf"' '-DDBFILE="/var/lib/plocate/plocate.db"' '-DPACKAGE_NAME="plocate"' '-DPACKAGE_VERSION="1.1.19"' '-DPACKAGE_BUGREPORT="steinar+plocate@gunderson.no"' -DHAS_ENDIAN_H -DHAS_FUNCTION_MULTIVERSIONING -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ plocate.p/plocate.cpp.o -MF plocate.p/plocate.cpp.o.d -o plocate.p/plocate.cpp.o -c ../plocate.cpp
+[17/19] c++  -o plocate-build plocate-build.p/plocate-build.cpp.o plocate-build.p/database-builder.cpp.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects /usr/lib/libzstd.so
+[18/19] c++  -o updatedb updatedb.p/updatedb.cpp.o updatedb.p/database-builder.cpp.o updatedb.p/conf.cpp.o updatedb.p/lib.cpp.o updatedb.p/bind-mount.cpp.o updatedb.p/complete_pread.cpp.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects /usr/lib/libzstd.so -pthread
+[19/19] c++  -o plocate plocate.p/plocate.cpp.o plocate.p/io_uring_engine.cpp.o plocate.p/turbopfor.cpp.o plocate.p/parse_trigrams.cpp.o plocate.p/serializer.cpp.o plocate.p/access_rx_cache.cpp.o plocate.p/needle.cpp.o plocate.p/complete_pread.cpp.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--start-group /usr/lib/liburing.so /usr/lib/libzstd.so -pthread -latomic -Wl,--end-group
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/plocate-1.1.19/build -j 8 -v
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Installing plocate to /home/devel/building/work/pkg/usr/bin
+Installing plocate-build to /home/devel/building/work/pkg/usr/sbin
+Installing updatedb to /home/devel/building/work/pkg/usr/sbin
+Installing /home/devel/building/work/src/plocate-1.1.19/plocate.1 to /home/devel/building/work/pkg/usr/share/man/man1
+Installing /home/devel/building/work/src/plocate-1.1.19/plocate-build.8 to /home/devel/building/work/pkg/usr/share/man/man8
+Installing /home/devel/building/work/src/plocate-1.1.19/build/updatedb.8 to /home/devel/building/work/pkg/usr/share/man/man8
+Installing /home/devel/building/work/src/plocate-1.1.19/build/updatedb.conf.5 to /home/devel/building/work/pkg/usr/share/man/man5
+Running custom install script '/home/devel/building/work/src/plocate-1.1.19/mkdir.sh /var/lib/plocate'
++ install -D -m 0755 /home/devel/building/work/src/plocate /home/devel/building/work/pkg/etc/cron/daily/plocate
++ install -m 0644 /home/devel/building/work/src/updatedb.conf /home/devel/building/work/pkg/etc
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 00:57 etc/
+drwxr-xr-x  0 root   root        0 May  8 00:57 etc/cron/
+-rw-r--r--  0 root   root      555 May  8 00:57 etc/updatedb.conf
+drwxr-xr-x  0 root   root        0 May  8 00:57 etc/cron/daily/
+-rwxr-xr-x  0 root   root       38 May  8 00:57 etc/cron/daily/plocate
+drwxr-xr-x  0 root   root        0 May  8 00:57 usr/
+drwxr-xr-x  0 root   root        0 May  8 00:57 usr/bin/
+drwxr-xr-x  0 root   root        0 May  8 00:57 usr/sbin/
+drwxr-xr-x  0 root   root        0 May  8 00:57 usr/share/
+drwxr-xr-x  0 root   root        0 May  8 00:57 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  8 00:57 usr/share/man/man1/
+drwxr-xr-x  0 root   root        0 May  8 00:57 usr/share/man/man8/
+drwxr-xr-x  0 root   root        0 May  8 00:57 usr/share/man/man5/
+-rw-r--r--  0 root   root     1851 May  8 00:56 usr/share/man/man5/updatedb.conf.5.gz
+-rw-r--r--  0 root   root     1149 Jun  9  2023 usr/share/man/man8/plocate-build.8.gz
+-rw-r--r--  0 root   root     2184 May  8 00:56 usr/share/man/man8/updatedb.8.gz
+-rw-r--r--  0 root   root     2440 Jun  9  2023 usr/share/man/man1/plocate.1.gz
+-rwxr-xr-x  0 root   root    56016 May  8 00:57 usr/sbin/plocate-build
+-rwxr-xr-x  0 root   root   113808 May  8 00:57 usr/sbin/updatedb
+-rwxr-sr-x  0 root   plocate 318616 May  8 00:57 usr/bin/plocate
+drwxr-xr-x  0 root   root         0 May  8 00:57 var/
+drwxr-xr-x  0 root   root         0 May  8 00:57 var/lib/
+drwxr-xr-x  0 root   root         0 May  8 00:57 var/lib/plocate/
+-rw-r--r--  0 root   root       183 May  8 00:57 var/lib/plocate/CACHEDIR.TAG
+=======> Building '/home/devel/packages/plocate#1.1.19-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling plocate 1.1.19-1
+prt-get: /usr/bin/pkgadd -u plocate#1.1.19-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 00:57:03 2024
+

@@ -1,0 +1,304 @@
+prt-get: updating /usr/ports/core-x86_64/runit
+prt-get: starting build Wed May  8 01:12:51 2024
+=======> Building '/home/devel/packages/runit#2.1.2-2.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/runit-2.1.2.tar.gz
+cp runit-patchset-by-saux.patch /home/devel/building/work/src
+cp _sv /home/devel/building/work/src
+cp sv /home/devel/building/work/src
++ build
++ cd /home/devel/building/work/src/admin/runit-2.1.2
++ patch -d /home/devel/building/work/src -p1 -i /home/devel/building/work/src/runit-patchset-by-saux.patch
+patching file admin/runit-2.1.2/src/chkshsgr.c
+patching file admin/runit-2.1.2/src/chpst.c
+patching file admin/runit-2.1.2/src/pathexec.h
+patching file admin/runit-2.1.2/src/pathexec_env.c
+patching file admin/runit-2.1.2/src/pathexec_run.c
+patching file admin/runit-2.1.2/src/prot.c
+patching file admin/runit-2.1.2/src/prot.h
+patching file admin/runit-2.1.2/src/runsvdir.c
+patching file admin/runit-2.1.2/src/seek_set.c
+patching file admin/runit-2.1.2/src/sgetopt.c
+patching file admin/runit-2.1.2/src/sgetopt.h
+patching file admin/runit-2.1.2/src/subgetopt.c
+patching file admin/runit-2.1.2/src/subgetopt.h
+patching file admin/runit-2.1.2/src/sv.c
+patching file admin/runit-2.1.2/src/svlogd.c
+patching file admin/runit-2.1.2/src/utmpset.c
+patching file admin/runit-2.1.2/src/byte_chr.c
+patching file admin/runit-2.1.2/src/byte_copy.c
+patching file admin/runit-2.1.2/src/byte_cr.c
+patching file admin/runit-2.1.2/src/byte_diff.c
+patching file admin/runit-2.1.2/src/byte_rchr.c
+patching file admin/runit-2.1.2/src/chpst.c
+patching file admin/runit-2.1.2/src/str_chr.c
+patching file admin/runit-2.1.2/src/str_len.c
+patching file admin/runit-2.1.2/src/sv.c
+patching file admin/runit-2.1.2/src/svlogd.c
+patching file admin/runit-2.1.2/src/chpst.c
+patching file admin/runit-2.1.2/src/sv.c
+patching file admin/runit-2.1.2/src/utmpset.c
+patching file admin/runit-2.1.2/src/Makefile
+patching file admin/runit-2.1.2/src/svlogd.c
+patching file admin/runit-2.1.2/src/sig_pause.c
+patching file admin/runit-2.1.2/src/runit.c
+patching file admin/runit-2.1.2/src/Makefile
++ sed -i -e 's:^char \*varservice ="/service/";$:char \*varservice ="/var/service/";:' src/sv.c
++ echo 'gcc -Wall -Wno-deprecated-declarations'
++ echo 'gcc -s'
++ package/compile
+Linking ./src/* into ./compile...
+Compiling everything in ./compile...
++ cd compile
++ exec make
+sh find-systype.sh > systype
+rm -f choose
+cat warn-auto.sh choose.sh \
+> choose
+cat warn-auto.sh > compilehost
+rm -f loadhost
+chmod 555 choose
+chmod 555 compilehost
+./compilehost chkshsgr.c
+chmod 555 loadhost
+rm -f compile
+rm -f load
+rm -f makelib
+sh print-cc.sh > compile
+sh print-ld.sh > load
+sh print-ar.sh > makelib
+chmod 555 makelib
+chmod 555 compile
+chmod 555 load
+./choose c trydrent direntry.h1 direntry.h2 > direntry.h
+./choose c trysysel select.h1 select.h2 > select.h
+./choose clr tryulong64 uint64.h1 uint64.h2 > uint64.h
+./choose c tryreboot reboot_system.h1 reboot_system.h2 > \
+  reboot_system.h
+( ./compile tryuwtmpx.c 2>/dev/null && cat uw_tmp.h2 >uw_tmp.h ) || \
+( ./compile tryuwtmp.c 2>/dev/null && cat uw_tmp.h1 >uw_tmp.h )
+./compile trysocketlib.c
+./compile uidgid.c
+./compile alloc.c
+./compile alloc_re.c
+./compile buffer.c
+./compile buffer_0.c
+rm -f tryuwtmp.o tryuwtmpx.o
+( ./load trysocketlib >/dev/null 2>&1 || \
+  ( ./load trysocketlib -lxnet >/dev/null 2>&1 && echo '-lxnet' ) || \
+  ( ./load trysocketlib -lsocket -lnsl >/dev/null 2>&1 && \
+    echo '-lsocket -lnsl' ) \
+) >socket.lib
+./compile buffer_1.c
+./compile buffer_2.c
+./compile buffer_get.c
+./compile buffer_put.c
+./compile buffer_read.c
+./compile buffer_write.c
+./compile coe.c
+./compile env.c
+rm -f trysocketlib.o trysocketlib
+./compile error.c
+./compile error_str.c
+./compile fd_copy.c
+./compile fd_move.c
+./compile ndelay_off.c
+./compile ndelay_on.c
+./compile open_append.c
+./compile open_read.c
+./compile open_trunc.c
+./compile open_write.c
+./compile openreadclose.c
+./compile pathexec_env.c
+./compile pathexec_run.c
+./compile readclose.c
+./compile seek_set.c
+./compile sgetopt.c
+./compile sig.c
+./compile stralloc_cat.c
+./compile stralloc_catb.c
+./compile stralloc_cats.c
+./compile stralloc_eady.c
+./compile stralloc_opyb.c
+./compile stralloc_opys.c
+./compile stralloc_pend.c
+./compile strerr_die.c
+./compile strerr_sys.c
+./compile subgetopt.c
+./compile byte_chr.c
+./compile byte_copy.c
+./compile byte_cr.c
+./compile byte_diff.c
+./compile byte_rchr.c
+./compile fmt_uint.c
+./compile fmt_uint0.c
+./compile fmt_ulong.c
+./compile scan_ulong.c
+./compile str_chr.c
+./compile str_diff.c
+./compile str_len.c
+./compile str_start.c
+./compile runit-init.c
+./compile tai_now.c
+./compile tai_pack.c
+./compile tai_sub.c
+./compile tai_unpack.c
+./compile taia_add.c
+./compile taia_approx.c
+./compile taia_frac.c
+./compile taia_less.c
+./compile taia_now.c
+./compile taia_pack.c
+./compile taia_sub.c
+./compile taia_uint.c
+./compile runsvchdir.c
+./compile pmatch.c
+./choose cl tryflock hasflock.h1 hasflock.h2 > hasflock.h
+./choose cl trymkffo hasmkffo.h1 hasmkffo.h2 > hasmkffo.h
+./choose cl trysgact hassgact.h1 hassgact.h2 > hassgact.h
+./choose cl trysgprm hassgprm.h1 hassgprm.h2 > hassgprm.h
+./loadhost chkshsgr 
+./choose cl trywaitp haswaitp.h1 haswaitp.h2 > haswaitp.h
+./choose clr trypoll iopause.h1 iopause.h2 > iopause.h
+#!/bin/sh
+# WARNING: This file was auto-generated. Do not edit!
+./makelib byte.a byte_chr.o byte_copy.o byte_cr.o byte_diff.o \
+byte_rchr.o fmt_uint.o fmt_uint0.o fmt_ulong.o scan_ulong.o str_chr.o \
+str_diff.o str_len.o str_start.o
+./compile lock_ex.c
+./compile lock_exnb.c
+./compile sig_block.c
+./compile sig_catch.c
+./compile sig_pause.c
+./compile iopause.c
+./chkshsgr || ( cat warn-shsgr; exit 1 )
+./compile fifo.c
+./choose clr tryshsgr hasshsgr.h1 hasshsgr.h2 > hasshsgr.h
+./compile wait_nohang.c
+./compile wait_pid.c
+./makelib time.a iopause.o tai_now.o tai_pack.o tai_sub.o \
+tai_unpack.o taia_add.o taia_approx.o taia_frac.o taia_less.o \
+taia_now.o taia_pack.o taia_sub.o taia_uint.o
+rm -f sysdeps
+./compile prot.c
+cat systype compile load socket.lib >>sysdeps
+grep sysdep direntry.h >>sysdeps
+grep sysdep haswaitp.h >>sysdeps
+grep sysdep hassgact.h >>sysdeps
+grep sysdep hassgprm.h >>sysdeps
+grep sysdep select.h >>sysdeps
+grep sysdep uint64.h >>sysdeps
+grep sysdep iopause.h >>sysdeps
+grep sysdep hasmkffo.h >>sysdeps
+grep sysdep hasflock.h >>sysdeps
+grep sysdep hasshsgr.h >>sysdeps
+./makelib unix.a alloc.o alloc_re.o buffer.o buffer_0.o buffer_1.o \
+buffer_2.o buffer_get.o buffer_put.o buffer_read.o buffer_write.o \
+coe.o env.o error.o error_str.o fd_copy.o fd_move.o fifo.o lock_ex.o \
+lock_exnb.o ndelay_off.o ndelay_on.o open_append.o open_read.o \
+open_trunc.o open_write.o openreadclose.o pathexec_env.o \
+pathexec_run.o prot.o readclose.o seek_set.o sgetopt.o sig.o \
+sig_block.o sig_catch.o sig_pause.o stralloc_cat.o stralloc_catb.o \
+stralloc_cats.o stralloc_eady.o stralloc_opyb.o stralloc_opys.o \
+stralloc_pend.o strerr_die.o strerr_sys.o subgetopt.o wait_nohang.o \
+wait_pid.o
+grep sysdep reboot_system.h >>sysdeps
+grep sysdep uw_tmp.h >>sysdeps
+cat sysdeps
+linux-6.8.9-saux-:-:-:x86_64-:-
+#!/bin/sh
+# WARNING: This file was auto-generated. Do not edit!
+exec gcc -Wall -Wno-deprecated-declarations -c ${1+"$@"}
+#!/bin/sh
+# WARNING: This file was auto-generated. Do not edit!
+main="$1"; shift
+exec gcc -s -o "$main" "$main".o ${1+"$@"}
+/* sysdep: +dirent */
+/* sysdep: -waitpid */
+/* sysdep: -sigaction */
+/* sysdep: -sigprocmask */
+/* sysdep: +sysselect */
+/* sysdep: -ulong64 */
+/* sysdep: -poll */
+/* sysdep: +mkfifo */
+/* sysdep: -flock */
+/* sysdep: -shortsetgroups */
+/* sysdep: +std reboot */
+/* sysdep: -utmpx */
+./compile chpst.c
+./compile runit.c
+./compile runsv.c
+./compile runsvdir.c
+./compile sv.c
+./compile svlogd.c
+./compile fmt_ptime.c
+./compile utmpset.c
+./load chpst uidgid.o unix.a byte.a
+./load runit unix.a byte.a
+./load runit-init unix.a byte.a
+./load runsvchdir unix.a byte.a
+./load runsvdir unix.a byte.a time.a
+./load sv unix.a byte.a time.a
+./load runsv unix.a byte.a time.a
+./load utmpset unix.a byte.a
+./load svlogd pmatch.o fmt_ptime.o unix.a byte.a time.a \
+`cat socket.lib`
+Copying commands into ./command...
++ mkdir -v /home/devel/building/work/pkg/var
+mkdir: created directory '/home/devel/building/work/pkg/var'
++ ln -s ../run/runit/runsvdir/current /home/devel/building/work/pkg/var/service
++ mkdir -v /home/devel/building/work/pkg/sbin
+mkdir: created directory '/home/devel/building/work/pkg/sbin'
++ cp -v command/chpst command/runit command/runit-init command/runsv command/runsvchdir command/runsvdir command/sv command/svlogd command/utmpset /home/devel/building/work/pkg/sbin/
+'command/chpst' -> '/home/devel/building/work/pkg/sbin/chpst'
+'command/runit' -> '/home/devel/building/work/pkg/sbin/runit'
+'command/runit-init' -> '/home/devel/building/work/pkg/sbin/runit-init'
+'command/runsv' -> '/home/devel/building/work/pkg/sbin/runsv'
+'command/runsvchdir' -> '/home/devel/building/work/pkg/sbin/runsvchdir'
+'command/runsvdir' -> '/home/devel/building/work/pkg/sbin/runsvdir'
+'command/sv' -> '/home/devel/building/work/pkg/sbin/sv'
+'command/svlogd' -> '/home/devel/building/work/pkg/sbin/svlogd'
+'command/utmpset' -> '/home/devel/building/work/pkg/sbin/utmpset'
++ install -d -m 0755 /home/devel/building/work/pkg/usr/share/man/man8
++ install -D -m 0644 /home/devel/building/work/src/admin/runit-2.1.2/man/chpst.8 /home/devel/building/work/src/admin/runit-2.1.2/man/runit-init.8 /home/devel/building/work/src/admin/runit-2.1.2/man/runit.8 /home/devel/building/work/src/admin/runit-2.1.2/man/runsv.8 /home/devel/building/work/src/admin/runit-2.1.2/man/runsvchdir.8 /home/devel/building/work/src/admin/runit-2.1.2/man/runsvdir.8 /home/devel/building/work/src/admin/runit-2.1.2/man/sv.8 /home/devel/building/work/src/admin/runit-2.1.2/man/svlogd.8 /home/devel/building/work/src/admin/runit-2.1.2/man/utmpset.8 /home/devel/building/work/pkg/usr/share/man/man8
++ install -d -m 0755 /home/devel/building/work/pkg/usr/share/zsh/site-functions
++ install -D -m 0644 /home/devel/building/work/src/_sv /home/devel/building/work/pkg/usr/share/zsh/site-functions
++ install -d -m 0755 /home/devel/building/work/pkg/usr/share/bash-completion/completions
++ install -D -m 0644 /home/devel/building/work/src/sv /home/devel/building/work/pkg/usr/share/bash-completion/completions
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 01:12 sbin/
+-rwxr-xr-x  0 root   root    31208 May  8 01:12 sbin/chpst
+-rwxr-xr-x  0 root   root    22960 May  8 01:12 sbin/runit
+-rwxr-xr-x  0 root   root    18696 May  8 01:12 sbin/runit-init
+-rwxr-xr-x  0 root   root    31176 May  8 01:12 sbin/runsv
+-rwxr-xr-x  0 root   root    18728 May  8 01:12 sbin/runsvchdir
+-rwxr-xr-x  0 root   root    27064 May  8 01:12 sbin/runsvdir
+-rwxr-xr-x  0 root   root    31104 May  8 01:12 sbin/sv
+-rwxr-xr-x  0 root   root    47688 May  8 01:12 sbin/svlogd
+-rwxr-xr-x  0 root   root    18704 May  8 01:12 sbin/utmpset
+drwxr-xr-x  0 root   root        0 May  8 01:12 usr/
+drwxr-xr-x  0 root   root        0 May  8 01:12 usr/share/
+drwxr-xr-x  0 root   root        0 May  8 01:12 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  8 01:12 usr/share/zsh/
+drwxr-xr-x  0 root   root        0 May  8 01:12 usr/share/bash-completion/
+drwxr-xr-x  0 root   root        0 May  8 01:12 usr/share/bash-completion/completions/
+-rw-r--r--  0 root   root      691 May  8 01:12 usr/share/bash-completion/completions/sv
+drwxr-xr-x  0 root   root        0 May  8 01:12 usr/share/zsh/site-functions/
+-rw-r--r--  0 root   root      958 May  8 01:12 usr/share/zsh/site-functions/_sv
+drwxr-xr-x  0 root   root        0 May  8 01:12 usr/share/man/man8/
+-rw-r--r--  0 root   root     1640 May  8 01:12 usr/share/man/man8/chpst.8.gz
+-rw-r--r--  0 root   root      548 May  8 01:12 usr/share/man/man8/runit-init.8.gz
+-rw-r--r--  0 root   root      850 May  8 01:12 usr/share/man/man8/runit.8.gz
+-rw-r--r--  0 root   root     1710 May  8 01:12 usr/share/man/man8/runsv.8.gz
+-rw-r--r--  0 root   root      465 May  8 01:12 usr/share/man/man8/runsvchdir.8.gz
+-rw-r--r--  0 root   root      954 May  8 01:12 usr/share/man/man8/runsvdir.8.gz
+-rw-r--r--  0 root   root     1922 May  8 01:12 usr/share/man/man8/sv.8.gz
+-rw-r--r--  0 root   root     3414 May  8 01:12 usr/share/man/man8/svlogd.8.gz
+-rw-r--r--  0 root   root      595 May  8 01:12 usr/share/man/man8/utmpset.8.gz
+drwxr-xr-x  0 root   root        0 May  8 01:12 var/
+lrwxrwxrwx  0 root   root        0 May  8 01:12 var/service -> ../run/runit/runsvdir/current
+=======> Building '/home/devel/packages/runit#2.1.2-2.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling runit 2.1.2-2
+prt-get: /usr/bin/pkgadd -u runit#2.1.2-2.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 01:12:51 2024
+

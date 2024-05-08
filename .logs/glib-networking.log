@@ -1,0 +1,282 @@
+prt-get: updating /usr/ports/wayland-x86_64/glib-networking
+prt-get: starting build Tue May  7 22:59:55 2024
+=======> Building '/home/devel/packages/glib-networking#2.78.1-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/glib-networking-2.78.1.tar.xz
++ build
++ cd glib-networking-2.78.1
++ build-meson -Dopenssl=enabled -Dgnutls=disabled -Dlibproxy=disabled . build
+The Meson build system
+Version: 1.4.0
+Source dir: /home/devel/building/work/src/glib-networking-2.78.1
+Build dir: /home/devel/building/work/src/glib-networking-2.78.1/build
+Build type: native build
+Project name: glib-networking
+Project version: 2.78.1
+C compiler for the host machine: cc (gcc 14.1.0 "cc (SAUX-x86_64) 14.1.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C supports arguments -Werror=declaration-after-statement: YES 
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Compiler for C supports link arguments -Wl,--version-script,/home/devel/building/work/src/glib-networking-2.78.1/glib-networking.map: YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 2.2.0
+Run-time dependency glib-2.0 found: YES 2.80.0
+Run-time dependency gio-2.0 found: YES 2.80.0
+Run-time dependency gobject-2.0 found: YES 2.80.0
+Run-time dependency gmodule-2.0 found: YES 2.80.0
+Dependency libproxy-1.0 skipped: feature libproxy disabled
+Run-time dependency gsettings-desktop-schemas found: YES 46.0
+Header "dlfcn.h" has symbol "RTLD_NOLOAD" : YES 
+Dependency gnutls skipped: feature gnutls disabled
+Run-time dependency openssl found: YES 3.3.0
+Configuring config.h using configuration
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Checking for size of "time_t" : 8 
+Library dl found: YES
+Checking for size of "time_t" : 8 (cached)
+Library dl found: YES
+Checking for size of "time_t" : 8 (cached)
+Library dl found: YES
+Dependency gio-2.0 found: YES 2.80.0 (cached)
+Program /usr/bin/gio-querymodules found: YES (/usr/bin/gio-querymodules)
+Build targets in project: 81
+
+glib-networking 2.78.1
+
+    GnuTLS support           : NO
+    OpenSSL support          : YES
+    Environment proxy support: NO
+    libproxy support         : NO
+    GNOME proxy support      : YES
+
+  User defined options
+    auto_features            : auto
+    bindir                   : /usr/bin
+    buildtype                : plain
+    datadir                  : /usr/share
+    includedir               : /usr/include
+    libdir                   : /usr/lib
+    libexecdir               : /usr/lib
+    localstatedir            : /var
+    mandir                   : /usr/share/man
+    prefix                   : /usr
+    sbindir                  : /usr/sbin
+    sharedstatedir           : /var/lib
+    sysconfdir               : /etc
+    werror                   : false
+    wrap_mode                : nodownload
+    python.bytecompile       : 0
+    b_lto                    : false
+    b_pie                    : true
+    b_staticpic              : true
+    gnutls                   : disabled
+    libproxy                 : disabled
+    openssl                  : enabled
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -v -C build
+ninja: entering directory '/home/devel/building/work/src/glib-networking-2.78.1/build'
+[1/100] cc -Itls/openssl/libgioopenssl.so.p -Itls/openssl -I../tls/openssl -I. -I.. -Itls/base -I../tls/base -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ tls/openssl/libgioopenssl.so.p/gtlsbio.c.o -MF tls/openssl/libgioopenssl.so.p/gtlsbio.c.o.d -o tls/openssl/libgioopenssl.so.p/gtlsbio.c.o -c ../tls/openssl/gtlsbio.c
+[2/100] cc -Itls/openssl/libgioopenssl.so.p -Itls/openssl -I../tls/openssl -I. -I.. -Itls/base -I../tls/base -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ tls/openssl/libgioopenssl.so.p/gtlsfiledatabase-openssl.c.o -MF tls/openssl/libgioopenssl.so.p/gtlsfiledatabase-openssl.c.o.d -o tls/openssl/libgioopenssl.so.p/gtlsfiledatabase-openssl.c.o -c ../tls/openssl/gtlsfiledatabase-openssl.c
+[3/100] cc -Itls/openssl/libgioopenssl.so.p -Itls/openssl -I../tls/openssl -I. -I.. -Itls/base -I../tls/base -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ tls/openssl/libgioopenssl.so.p/gtlsdatabase-openssl.c.o -MF tls/openssl/libgioopenssl.so.p/gtlsdatabase-openssl.c.o.d -o tls/openssl/libgioopenssl.so.p/gtlsdatabase-openssl.c.o -c ../tls/openssl/gtlsdatabase-openssl.c
+[4/100] cc -Itls/openssl/libgioopenssl.so.p -Itls/openssl -I../tls/openssl -I. -I.. -Itls/base -I../tls/base -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ tls/openssl/libgioopenssl.so.p/gtlsclientconnection-openssl.c.o -MF tls/openssl/libgioopenssl.so.p/gtlsclientconnection-openssl.c.o.d -o tls/openssl/libgioopenssl.so.p/gtlsclientconnection-openssl.c.o -c ../tls/openssl/gtlsclientconnection-openssl.c
+[5/100] cc -Itls/openssl/libgioopenssl.so.p -Itls/openssl -I../tls/openssl -I. -I.. -Itls/base -I../tls/base -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ tls/openssl/libgioopenssl.so.p/gtlsserverconnection-openssl.c.o -MF tls/openssl/libgioopenssl.so.p/gtlsserverconnection-openssl.c.o.d -o tls/openssl/libgioopenssl.so.p/gtlsserverconnection-openssl.c.o -c ../tls/openssl/gtlsserverconnection-openssl.c
+[6/100] cc -Itls/openssl/libgioopenssl.so.p -Itls/openssl -I../tls/openssl -I. -I.. -Itls/base -I../tls/base -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ tls/openssl/libgioopenssl.so.p/gtlsconnection-openssl.c.o -MF tls/openssl/libgioopenssl.so.p/gtlsconnection-openssl.c.o.d -o tls/openssl/libgioopenssl.so.p/gtlsconnection-openssl.c.o -c ../tls/openssl/gtlsconnection-openssl.c
+[7/100] cc -Itls/openssl/libgioopenssl.so.p -Itls/openssl -I../tls/openssl -I. -I.. -Itls/base -I../tls/base -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ tls/openssl/libgioopenssl.so.p/gtlscertificate-openssl.c.o -MF tls/openssl/libgioopenssl.so.p/gtlscertificate-openssl.c.o.d -o tls/openssl/libgioopenssl.so.p/gtlscertificate-openssl.c.o -c ../tls/openssl/gtlscertificate-openssl.c
+[8/100] cc -Itls/openssl/libgioopenssl.so.p -Itls/openssl -I../tls/openssl -I. -I.. -Itls/base -I../tls/base -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ tls/openssl/libgioopenssl.so.p/gtlsbackend-openssl.c.o -MF tls/openssl/libgioopenssl.so.p/gtlsbackend-openssl.c.o.d -o tls/openssl/libgioopenssl.so.p/gtlsbackend-openssl.c.o -c ../tls/openssl/gtlsbackend-openssl.c
+[9/100] cc -Itls/openssl/libgioopenssl.so.p -Itls/openssl -I../tls/openssl -I. -I.. -Itls/base -I../tls/base -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ tls/openssl/libgioopenssl.so.p/openssl-module.c.o -MF tls/openssl/libgioopenssl.so.p/openssl-module.c.o.d -o tls/openssl/libgioopenssl.so.p/openssl-module.c.o -c ../tls/openssl/openssl-module.c
+[10/100] cc -Itls/base/libtlsbase.a.p -Itls/base -I../tls/base -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ tls/base/libtlsbase.a.p/gtlssessioncache.c.o -MF tls/base/libtlsbase.a.p/gtlssessioncache.c.o.d -o tls/base/libtlsbase.a.p/gtlssessioncache.c.o -c ../tls/base/gtlssessioncache.c
+[11/100] cc -Itls/base/libtlsbase.a.p -Itls/base -I../tls/base -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ tls/base/libtlsbase.a.p/gtlsoutputstream.c.o -MF tls/base/libtlsbase.a.p/gtlsoutputstream.c.o.d -o tls/base/libtlsbase.a.p/gtlsoutputstream.c.o -c ../tls/base/gtlsoutputstream.c
+[12/100] cc -Itls/base/libtlsbase.a.p -Itls/base -I../tls/base -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ tls/base/libtlsbase.a.p/gtlslog.c.o -MF tls/base/libtlsbase.a.p/gtlslog.c.o.d -o tls/base/libtlsbase.a.p/gtlslog.c.o -c ../tls/base/gtlslog.c
+[13/100] cc -Itls/base/libtlsbase.a.p -Itls/base -I../tls/base -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ tls/base/libtlsbase.a.p/gtlsinputstream.c.o -MF tls/base/libtlsbase.a.p/gtlsinputstream.c.o.d -o tls/base/libtlsbase.a.p/gtlsinputstream.c.o -c ../tls/base/gtlsinputstream.c
+[14/100] cc -Itls/base/libtlsbase.a.p -Itls/base -I../tls/base -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ tls/base/libtlsbase.a.p/gtlshttp.c.o -MF tls/base/libtlsbase.a.p/gtlshttp.c.o.d -o tls/base/libtlsbase.a.p/gtlshttp.c.o -c ../tls/base/gtlshttp.c
+[15/100] cc -Itls/base/libtlsbase.a.p -Itls/base -I../tls/base -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ tls/base/libtlsbase.a.p/gtlsconnection-base.c.o -MF tls/base/libtlsbase.a.p/gtlsconnection-base.c.o.d -o tls/base/libtlsbase.a.p/gtlsconnection-base.c.o -c ../tls/base/gtlsconnection-base.c
+[16/100] cc -Iproxy/gnome/libgiognomeproxy.so.p -Iproxy/gnome -I../proxy/gnome -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gsettings-desktop-schemas -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ proxy/gnome/libgiognomeproxy.so.p/gnome-proxy-module.c.o -MF proxy/gnome/libgiognomeproxy.so.p/gnome-proxy-module.c.o.d -o proxy/gnome/libgiognomeproxy.so.p/gnome-proxy-module.c.o -c ../proxy/gnome/gnome-proxy-module.c
+[17/100] cc -Iproxy/gnome/libgiognomeproxy.so.p -Iproxy/gnome -I../proxy/gnome -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gsettings-desktop-schemas -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -pthread -MD -MQ proxy/gnome/libgiognomeproxy.so.p/gproxyresolvergnome.c.o -MF proxy/gnome/libgiognomeproxy.so.p/gproxyresolvergnome.c.o.d -o proxy/gnome/libgiognomeproxy.so.p/gproxyresolvergnome.c.o -c ../proxy/gnome/gproxyresolvergnome.c
+[18/100] /usr/bin/msgfmt -o po/zh_TW/LC_MESSAGES/glib-networking.mo ../po/zh_TW.po
+[19/100] /usr/bin/msgfmt -o po/zh_HK/LC_MESSAGES/glib-networking.mo ../po/zh_HK.po
+[20/100] /usr/bin/msgfmt -o po/zh_CN/LC_MESSAGES/glib-networking.mo ../po/zh_CN.po
+[21/100] /usr/bin/msgfmt -o po/vi/LC_MESSAGES/glib-networking.mo ../po/vi.po
+[22/100] /usr/bin/msgfmt -o po/uk/LC_MESSAGES/glib-networking.mo ../po/uk.po
+[23/100] /usr/bin/msgfmt -o po/ug/LC_MESSAGES/glib-networking.mo ../po/ug.po
+[24/100] /usr/bin/msgfmt -o po/tr/LC_MESSAGES/glib-networking.mo ../po/tr.po
+[25/100] /usr/bin/msgfmt -o po/th/LC_MESSAGES/glib-networking.mo ../po/th.po
+[26/100] /usr/bin/msgfmt -o po/tg/LC_MESSAGES/glib-networking.mo ../po/tg.po
+[27/100] /usr/bin/msgfmt -o po/te/LC_MESSAGES/glib-networking.mo ../po/te.po
+[28/100] /usr/bin/msgfmt -o po/ta/LC_MESSAGES/glib-networking.mo ../po/ta.po
+[29/100] /usr/bin/msgfmt -o po/sv/LC_MESSAGES/glib-networking.mo ../po/sv.po
+[30/100] /usr/bin/msgfmt -o po/sr@latin/LC_MESSAGES/glib-networking.mo ../po/sr@latin.po
+[31/100] /usr/bin/msgfmt -o po/sr/LC_MESSAGES/glib-networking.mo ../po/sr.po
+[32/100] /usr/bin/msgfmt -o po/sl/LC_MESSAGES/glib-networking.mo ../po/sl.po
+[33/100] /usr/bin/msgfmt -o po/sk/LC_MESSAGES/glib-networking.mo ../po/sk.po
+[34/100] /usr/bin/msgfmt -o po/ru/LC_MESSAGES/glib-networking.mo ../po/ru.po
+[35/100] /usr/bin/msgfmt -o po/ro/LC_MESSAGES/glib-networking.mo ../po/ro.po
+[36/100] /usr/bin/msgfmt -o po/pt_BR/LC_MESSAGES/glib-networking.mo ../po/pt_BR.po
+[37/100] /usr/bin/msgfmt -o po/pt/LC_MESSAGES/glib-networking.mo ../po/pt.po
+[38/100] /usr/bin/msgfmt -o po/pl/LC_MESSAGES/glib-networking.mo ../po/pl.po
+[39/100] /usr/bin/msgfmt -o po/pa/LC_MESSAGES/glib-networking.mo ../po/pa.po
+[40/100] /usr/bin/msgfmt -o po/or/LC_MESSAGES/glib-networking.mo ../po/or.po
+[41/100] /usr/bin/msgfmt -o po/oc/LC_MESSAGES/glib-networking.mo ../po/oc.po
+[42/100] /usr/bin/msgfmt -o po/nl/LC_MESSAGES/glib-networking.mo ../po/nl.po
+[43/100] /usr/bin/msgfmt -o po/ne/LC_MESSAGES/glib-networking.mo ../po/ne.po
+[44/100] /usr/bin/msgfmt -o po/nb/LC_MESSAGES/glib-networking.mo ../po/nb.po
+[45/100] /usr/bin/msgfmt -o po/ms/LC_MESSAGES/glib-networking.mo ../po/ms.po
+[46/100] /usr/bin/msgfmt -o po/mr/LC_MESSAGES/glib-networking.mo ../po/mr.po
+[47/100] /usr/bin/msgfmt -o po/ml/LC_MESSAGES/glib-networking.mo ../po/ml.po
+[48/100] /usr/bin/msgfmt -o po/lt/LC_MESSAGES/glib-networking.mo ../po/lt.po
+[49/100] /usr/bin/msgfmt -o po/lv/LC_MESSAGES/glib-networking.mo ../po/lv.po
+[50/100] /usr/bin/msgfmt -o po/ko/LC_MESSAGES/glib-networking.mo ../po/ko.po
+[51/100] /usr/bin/msgfmt -o po/kn/LC_MESSAGES/glib-networking.mo ../po/kn.po
+[52/100] /usr/bin/msgfmt -o po/km/LC_MESSAGES/glib-networking.mo ../po/km.po
+[53/100] /usr/bin/msgfmt -o po/kk/LC_MESSAGES/glib-networking.mo ../po/kk.po
+[54/100] /usr/bin/msgfmt -o po/ka/LC_MESSAGES/glib-networking.mo ../po/ka.po
+[55/100] /usr/bin/msgfmt -o po/ja/LC_MESSAGES/glib-networking.mo ../po/ja.po
+[56/100] /usr/bin/msgfmt -o po/it/LC_MESSAGES/glib-networking.mo ../po/it.po
+[57/100] /usr/bin/msgfmt -o po/id/LC_MESSAGES/glib-networking.mo ../po/id.po
+[58/100] /usr/bin/msgfmt -o po/hu/LC_MESSAGES/glib-networking.mo ../po/hu.po
+[59/100] /usr/bin/msgfmt -o po/hr/LC_MESSAGES/glib-networking.mo ../po/hr.po
+[60/100] /usr/bin/msgfmt -o po/hi/LC_MESSAGES/glib-networking.mo ../po/hi.po
+[61/100] /usr/bin/msgfmt -o po/he/LC_MESSAGES/glib-networking.mo ../po/he.po
+[62/100] /usr/bin/msgfmt -o po/gu/LC_MESSAGES/glib-networking.mo ../po/gu.po
+[63/100] /usr/bin/msgfmt -o po/gl/LC_MESSAGES/glib-networking.mo ../po/gl.po
+[64/100] /usr/bin/msgfmt -o po/gd/LC_MESSAGES/glib-networking.mo ../po/gd.po
+[65/100] /usr/bin/msgfmt -o po/fur/LC_MESSAGES/glib-networking.mo ../po/fur.po
+[66/100] /usr/bin/msgfmt -o po/fr/LC_MESSAGES/glib-networking.mo ../po/fr.po
+[67/100] /usr/bin/msgfmt -o po/fi/LC_MESSAGES/glib-networking.mo ../po/fi.po
+[68/100] /usr/bin/msgfmt -o po/fa/LC_MESSAGES/glib-networking.mo ../po/fa.po
+[69/100] /usr/bin/msgfmt -o po/eu/LC_MESSAGES/glib-networking.mo ../po/eu.po
+[70/100] /usr/bin/msgfmt -o po/et/LC_MESSAGES/glib-networking.mo ../po/et.po
+[71/100] /usr/bin/msgfmt -o po/es/LC_MESSAGES/glib-networking.mo ../po/es.po
+[72/100] /usr/bin/msgfmt -o po/eo/LC_MESSAGES/glib-networking.mo ../po/eo.po
+[73/100] /usr/bin/msgfmt -o po/en_GB/LC_MESSAGES/glib-networking.mo ../po/en_GB.po
+[74/100] /usr/bin/msgfmt -o po/en_CA/LC_MESSAGES/glib-networking.mo ../po/en_CA.po
+[75/100] /usr/bin/msgfmt -o po/el/LC_MESSAGES/glib-networking.mo ../po/el.po
+[76/100] /usr/bin/msgfmt -o po/de/LC_MESSAGES/glib-networking.mo ../po/de.po
+[77/100] /usr/bin/msgfmt -o po/da/LC_MESSAGES/glib-networking.mo ../po/da.po
+[78/100] /usr/bin/msgfmt -o po/cs/LC_MESSAGES/glib-networking.mo ../po/cs.po
+[79/100] /usr/bin/msgfmt -o po/ca@valencia/LC_MESSAGES/glib-networking.mo ../po/ca@valencia.po
+[80/100] /usr/bin/msgfmt -o po/ca/LC_MESSAGES/glib-networking.mo ../po/ca.po
+[81/100] /usr/bin/msgfmt -o po/bs/LC_MESSAGES/glib-networking.mo ../po/bs.po
+[82/100] /usr/bin/msgfmt -o po/bn_IN/LC_MESSAGES/glib-networking.mo ../po/bn_IN.po
+[83/100] /usr/bin/msgfmt -o po/bg/LC_MESSAGES/glib-networking.mo ../po/bg.po
+[84/100] /usr/bin/msgfmt -o po/be/LC_MESSAGES/glib-networking.mo ../po/be.po
+[85/100] /usr/bin/msgfmt -o po/as/LC_MESSAGES/glib-networking.mo ../po/as.po
+[86/100] /usr/bin/msgfmt -o po/ar/LC_MESSAGES/glib-networking.mo ../po/ar.po
+[87/100] /usr/bin/msgfmt -o po/an/LC_MESSAGES/glib-networking.mo ../po/an.po
+[88/100] /usr/bin/msgfmt -o po/ab/LC_MESSAGES/glib-networking.mo ../po/ab.po
+[89/100] cc -Itls/tests/connection-openssl.p -Itls/tests -I../tls/tests -I. -I.. -Itls -I../tls -Itls/openssl -I../tls/openssl -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread '-DBACKEND="openssl"' -DBACKEND_IS_OPENSSL -DSIZEOF_TIME_T=8 -D_GNU_SOURCE -MD -MQ tls/tests/connection-openssl.p/mock-interaction.c.o -MF tls/tests/connection-openssl.p/mock-interaction.c.o.d -o tls/tests/connection-openssl.p/mock-interaction.c.o -c ../tls/tests/mock-interaction.c
+[90/100] cc -Itls/tests/connection-openssl.p -Itls/tests -I../tls/tests -I. -I.. -Itls -I../tls -Itls/openssl -I../tls/openssl -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread '-DBACKEND="openssl"' -DBACKEND_IS_OPENSSL -DSIZEOF_TIME_T=8 -D_GNU_SOURCE -MD -MQ tls/tests/connection-openssl.p/connection.c.o -MF tls/tests/connection-openssl.p/connection.c.o.d -o tls/tests/connection-openssl.p/connection.c.o -c ../tls/tests/connection.c
+[91/100] cc -Itls/tests/file-database-openssl.p -Itls/tests -I../tls/tests -I. -I.. -Itls -I../tls -Itls/openssl -I../tls/openssl -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread '-DBACKEND="openssl"' -DBACKEND_IS_OPENSSL -DSIZEOF_TIME_T=8 -D_GNU_SOURCE -MD -MQ tls/tests/file-database-openssl.p/file-database.c.o -MF tls/tests/file-database-openssl.p/file-database.c.o.d -o tls/tests/file-database-openssl.p/file-database.c.o -c ../tls/tests/file-database.c
+[92/100] cc -Itls/tests/certificate-openssl.p -Itls/tests -I../tls/tests -I. -I.. -Itls -I../tls -Itls/openssl -I../tls/openssl -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread '-DBACKEND="openssl"' -DBACKEND_IS_OPENSSL -DSIZEOF_TIME_T=8 -D_GNU_SOURCE -MD -MQ tls/tests/certificate-openssl.p/certificate.c.o -MF tls/tests/certificate-openssl.p/certificate.c.o.d -o tls/tests/certificate-openssl.p/certificate.c.o -c ../tls/tests/certificate.c
+[93/100] cc -Iproxy/tests/gnome.p -Iproxy/tests -I../proxy/tests -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gsettings-desktop-schemas -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -DHAVE_CONFIG_H '-DG_LOG_DOMAIN="GLib-Net"' -DG_LOG_USE_STRUCTURED '-DLOCALE_DIR="/usr/share/locale"' -DG_DISABLE_DEPRECATED -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_70 -Werror=declaration-after-statement -Werror=implicit-function-declaration -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -DLIBPROXY_0_5 -MD -MQ proxy/tests/gnome.p/gnome.c.o -MF proxy/tests/gnome.p/gnome.c.o.d -o proxy/tests/gnome.p/gnome.c.o -c ../proxy/tests/gnome.c
+[94/100] cc  -o proxy/gnome/libgiognomeproxy.so proxy/gnome/libgiognomeproxy.so.p/gproxyresolvergnome.c.o proxy/gnome/libgiognomeproxy.so.p/gnome-proxy-module.c.o -Wl,--as-needed -Wl,--allow-shlib-undefined -shared -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--version-script,/home/devel/building/work/src/glib-networking-2.78.1/glib-networking.map -Wl,--start-group /usr/lib/libgio-2.0.so /usr/lib/libgobject-2.0.so /usr/lib/libglib-2.0.so -Wl,--export-dynamic /usr/lib/libgmodule-2.0.so -Wl,--end-group -pthread
+[95/100] cc  -o proxy/tests/gnome proxy/tests/gnome.p/gnome.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--start-group /usr/lib/libgio-2.0.so /usr/lib/libgobject-2.0.so /usr/lib/libglib-2.0.so -Wl,--export-dynamic /usr/lib/libgmodule-2.0.so -Wl,--end-group -pthread
+[96/100] cc  -o tls/tests/file-database-openssl tls/tests/file-database-openssl.p/file-database.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--start-group /usr/lib/libgio-2.0.so /usr/lib/libgobject-2.0.so /usr/lib/libglib-2.0.so -Wl,--export-dynamic /usr/lib/libgmodule-2.0.so -pthread /usr/lib/libssl.so /usr/lib/libcrypto.so -ldl -Wl,--end-group
+[01m[K../tls/tests/certificate.c:316:1:[m[K [01;35m[Kwarning: [m[K'[01m[Ktest_private_key_pkcs11[m[K' defined but not used [[01;35m[K-Wunused-function[m[K]
+  316 | [01;35m[Ktest_private_key_pkcs11[m[K (TestCertificate *test,
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K../tls/tests/certificate.c:272:1:[m[K [01;35m[Kwarning: [m[K'[01m[Ktest_create_certificate_pkcs11[m[K' defined but not used [[01;35m[K-Wunused-function[m[K]
+  272 | [01;35m[Ktest_create_certificate_pkcs11[m[K (TestCertificate *test,
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[97/100] cc  -o tls/tests/certificate-openssl tls/tests/certificate-openssl.p/certificate.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--start-group /usr/lib/libgio-2.0.so /usr/lib/libgobject-2.0.so /usr/lib/libglib-2.0.so -Wl,--export-dynamic /usr/lib/libgmodule-2.0.so -pthread /usr/lib/libssl.so /usr/lib/libcrypto.so -ldl -Wl,--end-group
+[98/100] rm -f tls/base/libtlsbase.a && gcc-ar csrDT tls/base/libtlsbase.a tls/base/libtlsbase.a.p/gtlsconnection-base.c.o tls/base/libtlsbase.a.p/gtlshttp.c.o tls/base/libtlsbase.a.p/gtlsinputstream.c.o tls/base/libtlsbase.a.p/gtlslog.c.o tls/base/libtlsbase.a.p/gtlsoutputstream.c.o tls/base/libtlsbase.a.p/gtlssessioncache.c.o
+[99/100] cc  -o tls/openssl/libgioopenssl.so tls/openssl/libgioopenssl.so.p/openssl-module.c.o tls/openssl/libgioopenssl.so.p/gtlsbackend-openssl.c.o tls/openssl/libgioopenssl.so.p/gtlscertificate-openssl.c.o tls/openssl/libgioopenssl.so.p/gtlsconnection-openssl.c.o tls/openssl/libgioopenssl.so.p/gtlsserverconnection-openssl.c.o tls/openssl/libgioopenssl.so.p/gtlsclientconnection-openssl.c.o tls/openssl/libgioopenssl.so.p/gtlsdatabase-openssl.c.o tls/openssl/libgioopenssl.so.p/gtlsfiledatabase-openssl.c.o tls/openssl/libgioopenssl.so.p/gtlsbio.c.o -Wl,--as-needed -Wl,--allow-shlib-undefined -shared -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--start-group tls/base/libtlsbase.a -Wl,--version-script,/home/devel/building/work/src/glib-networking-2.78.1/glib-networking.map /usr/lib/libgio-2.0.so /usr/lib/libgobject-2.0.so /usr/lib/libglib-2.0.so -Wl,--export-dynamic /usr/lib/libgmodule-2.0.so -pthread /usr/lib/libssl.so /usr/lib/libcrypto.so -Wl,--end-group
+[01m[K../tls/tests/connection.c:1367:1:[m[K [01;35m[Kwarning: [m[K'[01m[Ktest_client_auth_pkcs11_connection[m[K' defined but not used [[01;35m[K-Wunused-function[m[K]
+ 1367 | [01;35m[Ktest_client_auth_pkcs11_connection[m[K (TestConnection *test,
+      | [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[100/100] cc  -o tls/tests/connection-openssl tls/tests/connection-openssl.p/connection.c.o tls/tests/connection-openssl.p/mock-interaction.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--start-group /usr/lib/libgio-2.0.so /usr/lib/libgobject-2.0.so /usr/lib/libglib-2.0.so -Wl,--export-dynamic /usr/lib/libgmodule-2.0.so -pthread /usr/lib/libssl.so /usr/lib/libcrypto.so -ldl -Wl,--end-group
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/glib-networking-2.78.1/build -j 8 -v
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Installing po/ab/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/ab/LC_MESSAGES
+Installing po/an/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/an/LC_MESSAGES
+Installing po/ar/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/ar/LC_MESSAGES
+Installing po/as/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/as/LC_MESSAGES
+Installing po/be/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/be/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/bg/LC_MESSAGES
+Installing po/bn_IN/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/bn_IN/LC_MESSAGES
+Installing po/bs/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/bs/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/ca/LC_MESSAGES
+Installing po/ca@valencia/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/ca@valencia/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/cs/LC_MESSAGES
+Installing po/da/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/de/LC_MESSAGES
+Installing po/el/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/el/LC_MESSAGES
+Installing po/en_CA/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/en_CA/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/en_GB/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/es/LC_MESSAGES
+Installing po/et/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/et/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/eu/LC_MESSAGES
+Installing po/fa/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/fa/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/fi/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/fur/LC_MESSAGES
+Installing po/gd/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/gd/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/gl/LC_MESSAGES
+Installing po/gu/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/gu/LC_MESSAGES
+Installing po/he/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/he/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/hu/LC_MESSAGES
+Installing po/id/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/id/LC_MESSAGES
+Installing po/it/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/ka/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/kk/LC_MESSAGES
+Installing po/km/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/km/LC_MESSAGES
+Installing po/kn/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/kn/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/ko/LC_MESSAGES
+Installing po/lv/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/lv/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/lt/LC_MESSAGES
+Installing po/ml/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/ml/LC_MESSAGES
+Installing po/mr/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/mr/LC_MESSAGES
+Installing po/ms/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/ms/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/nb/LC_MESSAGES
+Installing po/ne/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/ne/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/nl/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/oc/LC_MESSAGES
+Installing po/or/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/or/LC_MESSAGES
+Installing po/pa/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/pa/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/pl/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/ru/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/sl/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/sr/LC_MESSAGES
+Installing po/sr@latin/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/sr@latin/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/sv/LC_MESSAGES
+Installing po/ta/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/ta/LC_MESSAGES
+Installing po/te/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/te/LC_MESSAGES
+Installing po/tg/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/tg/LC_MESSAGES
+Installing po/th/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/th/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/tr/LC_MESSAGES
+Installing po/ug/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/ug/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/uk/LC_MESSAGES
+Installing po/vi/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/vi/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_HK/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/zh_HK/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/glib-networking.mo to /home/devel/building/work/pkg/usr/share/locale/zh_TW/LC_MESSAGES
+Installing proxy/gnome/libgiognomeproxy.so to /home/devel/building/work/pkg/usr/lib/gio/modules
+Installing tls/openssl/libgioopenssl.so to /home/devel/building/work/pkg/usr/lib/gio/modules
+Skipping custom install script because DESTDIR is set '/usr/bin/gio-querymodules /usr/lib/gio/modules'
++ rm -r /home/devel/building/work/pkg/usr/share
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 22:59 usr/
+drwxr-xr-x  0 root   root        0 May  7 22:59 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 22:59 usr/lib/gio/
+drwxr-xr-x  0 root   root        0 May  7 22:59 usr/lib/gio/modules/
+-rwxr-xr-x  0 root   root    23032 May  7 22:59 usr/lib/gio/modules/libgiognomeproxy.so
+-rwxr-xr-x  0 root   root   124208 May  7 22:59 usr/lib/gio/modules/libgioopenssl.so
+=======> Building '/home/devel/packages/glib-networking#2.78.1-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling glib-networking 2.78.1-1
+prt-get: /usr/bin/pkgadd -u glib-networking#2.78.1-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 22:59:58 2024
+

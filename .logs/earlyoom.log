@@ -1,0 +1,51 @@
+prt-get: updating /usr/ports/core-x86_64/earlyoom
+prt-get: starting build Tue May  7 20:43:32 2024
+=======> Building '/home/devel/packages/earlyoom#1.7-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/earlyoom-1.7.tar.gz
+cp earlyoom.conf /home/devel/building/work/src
+cp earlyoom.run /home/devel/building/work/src
+cp earlyoom.1 /home/devel/building/work/src
+cp log-earlyoom.run /home/devel/building/work/src
++ build
++ cd earlyoom-1.7
++ sed -e /systemctl/d -e /chcon/d -i Makefile
++ make PREFIX=/usr BINDIR=/sbin VERSION=1.7 earlyoom
+cc   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wall -Wextra -Wformat-security -Wconversion -DVERSION=\"1.7\" -g -fstack-protector-all -std=gnu99 -o earlyoom globals.c kill.c main.c meminfo.c msg.c
++ make DESTDIR=/home/devel/building/work/pkg PREFIX=/usr BINDIR=/sbin install
+sed "s|:TARGET:|/usr/sbin|g;s|:SYSCONFDIR:|/etc|g" earlyoom.service.in > earlyoom.service
+install -d /home/devel/building/work/pkg/usr/sbin/
+install -m 755 earlyoom /home/devel/building/work/pkg/usr/sbin/
+pandoc is not installed, skipping earlyoom.1 manpage generation
+install -d /home/devel/building/work/pkg/etc/default/
+install -m 644 earlyoom.default /home/devel/building/work/pkg/etc/default/earlyoom
+install -d /home/devel/building/work/pkg/etc/systemd/system
+install -m 644 earlyoom.service /home/devel/building/work/pkg/etc/systemd/system
++ install -D /home/devel/building/work/src/earlyoom.1 /home/devel/building/work/pkg/usr/share/man/man1/earlyoom.1
++ install -d /home/devel/building/work/pkg/etc/sv/earlyoom/log
++ install -m 0644 /home/devel/building/work/src/earlyoom.conf /home/devel/building/work/pkg/etc/sv/earlyoom/conf
++ install -m 0755 /home/devel/building/work/src/earlyoom.run /home/devel/building/work/pkg/etc/sv/earlyoom/run
++ install -m 0755 /home/devel/building/work/src/log-earlyoom.run /home/devel/building/work/pkg/etc/sv/earlyoom/log/run
++ ln -s /run/runit/supervise.earlyoom /home/devel/building/work/pkg/etc/sv/earlyoom/supervise
++ rm -r /home/devel/building/work/pkg/etc/default /home/devel/building/work/pkg/etc/systemd
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 20:43 etc/
+drwxr-xr-x  0 root   root        0 May  7 20:43 etc/sv/
+drwxr-xr-x  0 root   root        0 May  7 20:43 etc/sv/earlyoom/
+drwxr-xr-x  0 root   root        0 May  7 20:43 etc/sv/earlyoom/log/
+-rw-r--r--  0 root   root      939 May  7 20:43 etc/sv/earlyoom/conf
+-rwxr-xr-x  0 root   root       81 May  7 20:43 etc/sv/earlyoom/run
+lrwxrwxrwx  0 root   root        0 May  7 20:43 etc/sv/earlyoom/supervise -> /run/runit/supervise.earlyoom
+-rwxr-xr-x  0 root   root       34 May  7 20:43 etc/sv/earlyoom/log/run
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/sbin/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  7 20:43 usr/share/man/man1/
+-rwxr-xr-x  0 root   root     3432 May  7 20:43 usr/share/man/man1/earlyoom.1.gz
+-rwxr-xr-x  0 root   root    35296 May  7 20:43 usr/sbin/earlyoom
+=======> Building '/home/devel/packages/earlyoom#1.7-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling earlyoom 1.7-1
+prt-get: /usr/bin/pkgadd -u earlyoom#1.7-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 20:43:32 2024
+

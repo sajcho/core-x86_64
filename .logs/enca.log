@@ -1,0 +1,541 @@
+prt-get: updating /usr/ports/opt-x86_64/enca
+prt-get: starting build Tue May  7 20:44:09 2024
+=======> Building '/home/devel/packages/enca#1.19-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/enca-1.19.tar.xz
+cp enca-bad-file-descriptor.patch /home/devel/building/work/src
++ build
++ cd enca-1.19
++ patch -p1 -i /home/devel/building/work/src/enca-bad-file-descriptor.patch
+patching file src/convert_recode.c
++ ./configure --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --prefix=/usr --libexecdir=/usr/lib --enable-external --disable-static --with-librecode=/usr
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gawk... (cached) gawk
+checking for x86_64-unknown-linux-gnu-gcc... x86_64-unknown-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... yes
+checking for x86_64-unknown-linux-gnu-gcc option to accept ISO C89... none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of x86_64-unknown-linux-gnu-gcc... gcc3
+checking how to run the C preprocessor... x86_64-unknown-linux-gnu-gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for library containing strerror... none required
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-unknown-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/x86_64-unknown-linux-gnu-nm -B
+checking the name lister (/usr/bin/x86_64-unknown-linux-gnu-nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-unknown-linux-gnu-objdump... x86_64-unknown-linux-gnu-objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-unknown-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-unknown-linux-gnu-ar... x86_64-unknown-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-unknown-linux-gnu-strip... x86_64-unknown-linux-gnu-strip
+checking for x86_64-unknown-linux-gnu-ranlib... x86_64-unknown-linux-gnu-ranlib
+checking command to parse /usr/bin/x86_64-unknown-linux-gnu-nm -B output from x86_64-unknown-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for x86_64-unknown-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-unknown-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-unknown-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-unknown-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-unknown-linux-gnu-gcc static flag -static works... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-unknown-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for x86_64-unknown-linux-gnu-gcc... (cached) x86_64-unknown-linux-gnu-gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... (cached) yes
+checking for x86_64-unknown-linux-gnu-gcc option to accept ISO C89... (cached) none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... (cached) yes
+checking dependency style of x86_64-unknown-linux-gnu-gcc... (cached) gcc3
+checking whether ln -s works... yes
+checking for mktemp... /usr/bin/mktemp
+checking for cstocs... no
+checking for recode... /usr/bin/recode
+checking for umap... no
+checking for piconv... /usr/bin/piconv
+checking for map... no
+checking for gcov... /usr/bin/gcov
+checking for gtkdoc-mkdb... false
+checking for sqrt in -lm... yes
+checking for ANSI C header files... (cached) yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking whether stat file-mode macros are broken... no
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking for memory.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/wait.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking for unistd.h... (cached) yes
+checking wordexp.h usability... yes
+checking wordexp.h presence... yes
+checking for wordexp.h... yes
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for uid_t in sys/types.h... yes
+checking for ssize_t... yes
+checking whether LC_MESSAGES is declared... yes
+checking for program_invocation_short_name... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for ftruncate... yes
+checking for gettimeofday... yes
+checking for isatty... yes
+checking for nl_langinfo... yes
+checking for random... yes
+checking for realpath... yes
+checking for strstr... yes
+checking for stpcpy... yes
+checking for setlocale... yes
+checking for ttyname... yes
+checking for wordexp... yes
+checking for getopt_long... yes
+checking for ld used by x86_64-unknown-linux-gnu-gcc... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for iconv... yes
+checking for working iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking whether iconv implementation is usable... yes
+checking whether iconv is transitive... yes
+checking for recode_new_outer in librecode... no
+checking for locale.alias... 
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating enca.spec
+config.status: creating enca.pc
+config.status: creating devel-docs/Makefile
+config.status: creating data/Makefile
+config.status: creating lib/Makefile
+config.status: creating script/Makefile
+config.status: creating script/b-cstocs
+config.status: creating script/b-map
+config.status: creating script/b-piconv
+config.status: creating script/b-umap
+config.status: creating src/Makefile
+config.status: creating src/HELP
+config.status: creating test/Makefile
+config.status: creating tools/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+=================================================================
+  Features:
+    libenca will be built as:            shared
+    GNU recode library interface:        no
+    UNIX98 iconv interface:              yes
+    External converters:                 yes (recode)
+    Language preferences from locale:    yes
+    Language aliases decryption:         built-in (naive)
+    Target charset from locale:          yes
+    ENCAOPT environment variable:        yes
+=================================================================
+
+Configure complete, now type `make' to compile enca.
+If it compiles, don't forget to run `make check'.
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/enca-1.19'
+Making all in tools
+make[2]: Entering directory '/home/devel/building/work/src/enca-1.19/tools'
+sed -e 's/^#define \([A-Z0-9_]*\) \(.*\)/@\1@ \2/' -e 's/"//g' -e 's/NULL$//' -e 's/ /\//' -e 's/^\(.*\)$/s\/\1\//' ../iconvenc.h >encodings.sed
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..     -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT make_hash.o -MD -MP -MF .deps/make_hash.Tpo -c -o make_hash.o make_hash.c
+mv -f .deps/make_hash.Tpo .deps/make_hash.Po
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o make_hash make_hash.o  -lm
+libtool: link: x86_64-unknown-linux-gnu-gcc -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o make_hash make_hash.o  -lm
+sed -f encodings.sed ./encodings.dat | ./make_hash >encodings.h
+Keeping equvialent `ascii' and `ASCII'
+Keeping equvialent `baltic' and `BALTIC'
+Keeping equvialent `BIG5' and `BIG-5'
+Keeping equvialent `Big5' and `BIG5'
+Keeping equvialent `BIGFIVE' and `BIG-FIVE'
+Keeping equvialent `Cork' and `CORK'
+Keeping equvialent `ecma-cyrillic' and `ECMA-cyrillic'
+Removing duplicate `GB18030'
+Keeping equvialent `ISO8859-13' and `ISO-8859-13'
+Keeping equvialent `ISO_8859-13' and `ISO8859-13'
+Keeping equvialent `ISO_8859-16' and `ISO-8859-16'
+Keeping equvialent `iso-ir-179' and `ISO-IR-179'
+Keeping equvialent `KOI-8_CS_2' and `KOI-8_CS2'
+Keeping equvialent `KOI8-CS2' and `KOI-8_CS_2'
+Keeping equvialent `latex' and `LaTeX'
+Keeping equvialent `mac_cyrillic' and `MACCYRILLIC'
+Keeping equvialent `maccyrillic' and `mac_cyrillic'
+Keeping equvialent `macintoshce' and `macintosh_ce'
+Keeping equvialent `tex' and `TeX'
+Keeping equvialent `utf8' and `UTF-8'
+Keeping equvialent `windows-1125' and `Windows-1125'
+Keeping equvialent `windows-1250' and `Windows-1250'
+Keeping equvialent `windows-1251' and `Windows-1251'
+Keeping equvialent `windows-1257' and `Windows-1257'
+make  all-am
+make[3]: Entering directory '/home/devel/building/work/src/enca-1.19/tools'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/enca-1.19/tools'
+make[2]: Leaving directory '/home/devel/building/work/src/enca-1.19/tools'
+Making all in script
+make[2]: Entering directory '/home/devel/building/work/src/enca-1.19/script'
+cat b-cstocs >cstocs
+cat b-map >map
+cat b-piconv >piconv
+cat b-recode >recode
+cat b-umap >umap
+make[2]: Leaving directory '/home/devel/building/work/src/enca-1.19/script'
+Making all in lib
+make[2]: Entering directory '/home/devel/building/work/src/enca-1.19/lib'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT common.lo -MD -MP -MF .deps/common.Tpo -c -o common.lo common.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT ctype.lo -MD -MP -MF .deps/ctype.Tpo -c -o ctype.lo ctype.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT enca.lo -MD -MP -MF .deps/enca.Tpo -c -o enca.lo enca.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT encnames.lo -MD -MP -MF .deps/encnames.Tpo -c -o encnames.lo encnames.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT filters.lo -MD -MP -MF .deps/filters.Tpo -c -o filters.lo filters.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT guess.lo -MD -MP -MF .deps/guess.Tpo -c -o guess.lo guess.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang.lo -MD -MP -MF .deps/lang.Tpo -c -o lang.lo lang.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_be.lo -MD -MP -MF .deps/lang_be.Tpo -c -o lang_be.lo lang_be.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT enca.lo -MD -MP -MF .deps/enca.Tpo -c enca.c  -fPIC -DPIC -o .libs/enca.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT encnames.lo -MD -MP -MF .deps/encnames.Tpo -c encnames.c  -fPIC -DPIC -o .libs/encnames.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT guess.lo -MD -MP -MF .deps/guess.Tpo -c guess.c  -fPIC -DPIC -o .libs/guess.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT common.lo -MD -MP -MF .deps/common.Tpo -c common.c  -fPIC -DPIC -o .libs/common.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT filters.lo -MD -MP -MF .deps/filters.Tpo -c filters.c  -fPIC -DPIC -o .libs/filters.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang.lo -MD -MP -MF .deps/lang.Tpo -c lang.c  -fPIC -DPIC -o .libs/lang.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_be.lo -MD -MP -MF .deps/lang_be.Tpo -c lang_be.c  -fPIC -DPIC -o .libs/lang_be.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT ctype.lo -MD -MP -MF .deps/ctype.Tpo -c ctype.c  -fPIC -DPIC -o .libs/ctype.o
+mv -f .deps/lang_be.Tpo .deps/lang_be.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_bg.lo -MD -MP -MF .deps/lang_bg.Tpo -c -o lang_bg.lo lang_bg.c
+mv -f .deps/enca.Tpo .deps/enca.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_cs.lo -MD -MP -MF .deps/lang_cs.Tpo -c -o lang_cs.lo lang_cs.c
+mv -f .deps/ctype.Tpo .deps/ctype.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_et.lo -MD -MP -MF .deps/lang_et.Tpo -c -o lang_et.lo lang_et.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_cs.lo -MD -MP -MF .deps/lang_cs.Tpo -c lang_cs.c  -fPIC -DPIC -o .libs/lang_cs.o
+mv -f .deps/common.Tpo .deps/common.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_hr.lo -MD -MP -MF .deps/lang_hr.Tpo -c -o lang_hr.lo lang_hr.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_bg.lo -MD -MP -MF .deps/lang_bg.Tpo -c lang_bg.c  -fPIC -DPIC -o .libs/lang_bg.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_et.lo -MD -MP -MF .deps/lang_et.Tpo -c lang_et.c  -fPIC -DPIC -o .libs/lang_et.o
+mv -f .deps/lang.Tpo .deps/lang.Plo
+mv -f .deps/lang_cs.Tpo .deps/lang_cs.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_hr.lo -MD -MP -MF .deps/lang_hr.Tpo -c lang_hr.c  -fPIC -DPIC -o .libs/lang_hr.o
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_hu.lo -MD -MP -MF .deps/lang_hu.Tpo -c -o lang_hu.lo lang_hu.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_lt.lo -MD -MP -MF .deps/lang_lt.Tpo -c -o lang_lt.lo lang_lt.c
+mv -f .deps/lang_bg.Tpo .deps/lang_bg.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_lv.lo -MD -MP -MF .deps/lang_lv.Tpo -c -o lang_lv.lo lang_lv.c
+mv -f .deps/encnames.Tpo .deps/encnames.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_pl.lo -MD -MP -MF .deps/lang_pl.Tpo -c -o lang_pl.lo lang_pl.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_hu.lo -MD -MP -MF .deps/lang_hu.Tpo -c lang_hu.c  -fPIC -DPIC -o .libs/lang_hu.o
+mv -f .deps/lang_et.Tpo .deps/lang_et.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_ru.lo -MD -MP -MF .deps/lang_ru.Tpo -c -o lang_ru.lo lang_ru.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_lt.lo -MD -MP -MF .deps/lang_lt.Tpo -c lang_lt.c  -fPIC -DPIC -o .libs/lang_lt.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_lv.lo -MD -MP -MF .deps/lang_lv.Tpo -c lang_lv.c  -fPIC -DPIC -o .libs/lang_lv.o
+mv -f .deps/filters.Tpo .deps/filters.Plo
+mv -f .deps/lang_hr.Tpo .deps/lang_hr.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_sk.lo -MD -MP -MF .deps/lang_sk.Tpo -c -o lang_sk.lo lang_sk.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_sl.lo -MD -MP -MF .deps/lang_sl.Tpo -c -o lang_sl.lo lang_sl.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_ru.lo -MD -MP -MF .deps/lang_ru.Tpo -c lang_ru.c  -fPIC -DPIC -o .libs/lang_ru.o
+mv -f .deps/lang_hu.Tpo .deps/lang_hu.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_uk.lo -MD -MP -MF .deps/lang_uk.Tpo -c -o lang_uk.lo lang_uk.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_sl.lo -MD -MP -MF .deps/lang_sl.Tpo -c lang_sl.c  -fPIC -DPIC -o .libs/lang_sl.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_sk.lo -MD -MP -MF .deps/lang_sk.Tpo -c lang_sk.c  -fPIC -DPIC -o .libs/lang_sk.o
+mv -f .deps/lang_lv.Tpo .deps/lang_lv.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_uk.lo -MD -MP -MF .deps/lang_uk.Tpo -c lang_uk.c  -fPIC -DPIC -o .libs/lang_uk.o
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_zh.lo -MD -MP -MF .deps/lang_zh.Tpo -c -o lang_zh.lo lang_zh.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_zh.lo -MD -MP -MF .deps/lang_zh.Tpo -c lang_zh.c  -fPIC -DPIC -o .libs/lang_zh.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lang_pl.lo -MD -MP -MF .deps/lang_pl.Tpo -c lang_pl.c  -fPIC -DPIC -o .libs/lang_pl.o
+mv -f .deps/lang_lt.Tpo .deps/lang_lt.Plo
+mv -f .deps/lang_ru.Tpo .deps/lang_ru.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT multibyte.lo -MD -MP -MF .deps/multibyte.Tpo -c -o multibyte.lo multibyte.c
+mv -f .deps/lang_sl.Tpo .deps/lang_sl.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT pair.lo -MD -MP -MF .deps/pair.Tpo -c -o pair.lo pair.c
+mv -f .deps/lang_sk.Tpo .deps/lang_sk.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT unicodemap.lo -MD -MP -MF .deps/unicodemap.Tpo -c -o unicodemap.lo unicodemap.c
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I..    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT utf8_double.lo -MD -MP -MF .deps/utf8_double.Tpo -c -o utf8_double.lo utf8_double.c
+mv -f .deps/lang_uk.Tpo .deps/lang_uk.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT utf8_double.lo -MD -MP -MF .deps/utf8_double.Tpo -c utf8_double.c  -fPIC -DPIC -o .libs/utf8_double.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT pair.lo -MD -MP -MF .deps/pair.Tpo -c pair.c  -fPIC -DPIC -o .libs/pair.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT multibyte.lo -MD -MP -MF .deps/multibyte.Tpo -c multibyte.c  -fPIC -DPIC -o .libs/multibyte.o
+mv -f .deps/lang_pl.Tpo .deps/lang_pl.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I.. -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT unicodemap.lo -MD -MP -MF .deps/unicodemap.Tpo -c unicodemap.c  -fPIC -DPIC -o .libs/unicodemap.o
+mv -f .deps/guess.Tpo .deps/guess.Plo
+mv -f .deps/lang_zh.Tpo .deps/lang_zh.Plo
+mv -f .deps/unicodemap.Tpo .deps/unicodemap.Plo
+mv -f .deps/pair.Tpo .deps/pair.Plo
+mv -f .deps/utf8_double.Tpo .deps/utf8_double.Plo
+mv -f .deps/multibyte.Tpo .deps/multibyte.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -version-info 5:1:5  -o libenca.la -rpath /usr/lib common.lo ctype.lo enca.lo encnames.lo filters.lo guess.lo lang.lo lang_be.lo lang_bg.lo lang_cs.lo lang_et.lo lang_hr.lo lang_hu.lo lang_lt.lo lang_lv.lo lang_pl.lo lang_ru.lo lang_sk.lo lang_sl.lo lang_uk.lo lang_zh.lo multibyte.lo pair.lo unicodemap.lo utf8_double.lo  -lm
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/common.o .libs/ctype.o .libs/enca.o .libs/encnames.o .libs/filters.o .libs/guess.o .libs/lang.o .libs/lang_be.o .libs/lang_bg.o .libs/lang_cs.o .libs/lang_et.o .libs/lang_hr.o .libs/lang_hu.o .libs/lang_lt.o .libs/lang_lv.o .libs/lang_pl.o .libs/lang_ru.o .libs/lang_sk.o .libs/lang_sl.o .libs/lang_uk.o .libs/lang_zh.o .libs/multibyte.o .libs/pair.o .libs/unicodemap.o .libs/utf8_double.o   -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,libenca.so.0 -o .libs/libenca.so.0.5.1
+libtool: link: (cd ".libs" && rm -f "libenca.so.0" && ln -s "libenca.so.0.5.1" "libenca.so.0")
+libtool: link: (cd ".libs" && rm -f "libenca.so" && ln -s "libenca.so.0.5.1" "libenca.so")
+libtool: link: ( cd ".libs" && rm -f "libenca.la" && ln -s "../libenca.la" "libenca.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/enca-1.19/lib'
+Making all in src
+make[2]: Entering directory '/home/devel/building/work/src/enca-1.19/src'
+./text2c.sh ../COPYING >COPYING.c
+./text2c.sh HELP >HELP.c
+make  all-am
+make[3]: Entering directory '/home/devel/building/work/src/enca-1.19/src'
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -DEXTCONV_DIR=\"/usr/lib/enca/extconv\"   -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT enca-COPYING.o -MD -MP -MF .deps/enca-COPYING.Tpo -c -o enca-COPYING.o `test -f 'COPYING.c' || echo './'`COPYING.c
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -DEXTCONV_DIR=\"/usr/lib/enca/extconv\"   -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT enca-HELP.o -MD -MP -MF .deps/enca-HELP.Tpo -c -o enca-HELP.o `test -f 'HELP.c' || echo './'`HELP.c
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -DEXTCONV_DIR=\"/usr/lib/enca/extconv\"   -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT enca-convert.o -MD -MP -MF .deps/enca-convert.Tpo -c -o enca-convert.o `test -f 'convert.c' || echo './'`convert.c
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -DEXTCONV_DIR=\"/usr/lib/enca/extconv\"   -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT enca-convert_extern.o -MD -MP -MF .deps/enca-convert_extern.Tpo -c -o enca-convert_extern.o `test -f 'convert_extern.c' || echo './'`convert_extern.c
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -DEXTCONV_DIR=\"/usr/lib/enca/extconv\"   -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT enca-convert_recode.o -MD -MP -MF .deps/enca-convert_recode.Tpo -c -o enca-convert_recode.o `test -f 'convert_recode.c' || echo './'`convert_recode.c
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -DEXTCONV_DIR=\"/usr/lib/enca/extconv\"   -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT enca-convert_iconv.o -MD -MP -MF .deps/enca-convert_iconv.Tpo -c -o enca-convert_iconv.o `test -f 'convert_iconv.c' || echo './'`convert_iconv.c
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -DEXTCONV_DIR=\"/usr/lib/enca/extconv\"   -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT enca-enca.o -MD -MP -MF .deps/enca-enca.Tpo -c -o enca-enca.o `test -f 'enca.c' || echo './'`enca.c
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -DEXTCONV_DIR=\"/usr/lib/enca/extconv\"   -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT enca-filebuf.o -MD -MP -MF .deps/enca-filebuf.Tpo -c -o enca-filebuf.o `test -f 'filebuf.c' || echo './'`filebuf.c
+mv -f .deps/enca-COPYING.Tpo .deps/enca-COPYING.Po
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -DEXTCONV_DIR=\"/usr/lib/enca/extconv\"   -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT enca-locale_detect.o -MD -MP -MF .deps/enca-locale_detect.Tpo -c -o enca-locale_detect.o `test -f 'locale_detect.c' || echo './'`locale_detect.c
+mv -f .deps/enca-HELP.Tpo .deps/enca-HELP.Po
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -DEXTCONV_DIR=\"/usr/lib/enca/extconv\"   -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT enca-options.o -MD -MP -MF .deps/enca-options.Tpo -c -o enca-options.o `test -f 'options.c' || echo './'`options.c
+convert_extern.c: In function 'convert_external':
+convert_extern.c:67:9: warning: variable 'tempfile' might be clobbered by 'longjmp' or 'vfork' [-Wclobbered]
+   67 |   File *tempfile = NULL;
+      |         ^~~~~~~~
+mv -f .deps/enca-convert_recode.Tpo .deps/enca-convert_recode.Po
+mv -f .deps/enca-convert_extern.Tpo .deps/enca-convert_extern.Po
+mv -f .deps/enca-convert_iconv.Tpo .deps/enca-convert_iconv.Po
+mv -f .deps/enca-enca.Tpo .deps/enca-enca.Po
+mv -f .deps/enca-locale_detect.Tpo .deps/enca-locale_detect.Po
+mv -f .deps/enca-filebuf.Tpo .deps/enca-filebuf.Po
+mv -f .deps/enca-convert.Tpo .deps/enca-convert.Po
+mv -f .deps/enca-options.Tpo .deps/enca-options.Po
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -lm  -o enca enca-COPYING.o enca-HELP.o enca-convert.o enca-convert_extern.o enca-convert_recode.o enca-convert_iconv.o enca-enca.o enca-filebuf.o enca-locale_detect.o enca-options.o ../lib/libenca.la -lm
+libtool: link: x86_64-unknown-linux-gnu-gcc -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/enca enca-COPYING.o enca-HELP.o enca-convert.o enca-convert_extern.o enca-convert_recode.o enca-convert_iconv.o enca-enca.o enca-filebuf.o enca-locale_detect.o enca-options.o  ../lib/.libs/libenca.so -lm
+make[3]: Leaving directory '/home/devel/building/work/src/enca-1.19/src'
+make[2]: Leaving directory '/home/devel/building/work/src/enca-1.19/src'
+Making all in devel-docs
+make[2]: Entering directory '/home/devel/building/work/src/enca-1.19/devel-docs'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/enca-1.19/devel-docs'
+Making all in test
+make[2]: Entering directory '/home/devel/building/work/src/enca-1.19/test'
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../lib    -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT simtable.o -MD -MP -MF .deps/simtable.Tpo -c -o simtable.o simtable.c
+mv -f .deps/simtable.Tpo .deps/simtable.Po
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -lm  -o simtable simtable.o ../lib/libenca.la -lm
+libtool: link: x86_64-unknown-linux-gnu-gcc -Wall -Wextra -W -pedantic -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/simtable simtable.o  ../lib/.libs/libenca.so -lm
+make[2]: Leaving directory '/home/devel/building/work/src/enca-1.19/test'
+make[2]: Entering directory '/home/devel/building/work/src/enca-1.19'
+make[2]: Nothing to be done for 'all-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/enca-1.19'
+make[1]: Leaving directory '/home/devel/building/work/src/enca-1.19'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in tools
+make[1]: Entering directory '/home/devel/building/work/src/enca-1.19/tools'
+make  install-am
+make[2]: Entering directory '/home/devel/building/work/src/enca-1.19/tools'
+make[3]: Entering directory '/home/devel/building/work/src/enca-1.19/tools'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/enca-1.19/tools'
+make[2]: Leaving directory '/home/devel/building/work/src/enca-1.19/tools'
+make[1]: Leaving directory '/home/devel/building/work/src/enca-1.19/tools'
+Making install in script
+make[1]: Entering directory '/home/devel/building/work/src/enca-1.19/script'
+make[2]: Entering directory '/home/devel/building/work/src/enca-1.19/script'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/enca/extconv'
+ /usr/bin/install -c cstocs map piconv recode umap '/home/devel/building/work/pkg/usr/lib/enca/extconv'
+make[2]: Leaving directory '/home/devel/building/work/src/enca-1.19/script'
+make[1]: Leaving directory '/home/devel/building/work/src/enca-1.19/script'
+Making install in lib
+make[1]: Entering directory '/home/devel/building/work/src/enca-1.19/lib'
+make[2]: Entering directory '/home/devel/building/work/src/enca-1.19/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libenca.la '/home/devel/building/work/pkg/usr/lib'
+ /usr/bin/install -c -m 644 enca.h '/home/devel/building/work/pkg/usr/include'
+libtool: install: /usr/bin/install -c .libs/libenca.so.0.5.1 /home/devel/building/work/pkg/usr/lib/libenca.so.0.5.1
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libenca.so.0.5.1 libenca.so.0 || { rm -f libenca.so.0 && ln -s libenca.so.0.5.1 libenca.so.0; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libenca.so.0.5.1 libenca.so || { rm -f libenca.so && ln -s libenca.so.0.5.1 libenca.so; }; })
+libtool: install: /usr/bin/install -c .libs/libenca.lai /home/devel/building/work/pkg/usr/lib/libenca.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make[2]: Leaving directory '/home/devel/building/work/src/enca-1.19/lib'
+make[1]: Leaving directory '/home/devel/building/work/src/enca-1.19/lib'
+Making install in src
+make[1]: Entering directory '/home/devel/building/work/src/enca-1.19/src'
+make  install-am
+make[2]: Entering directory '/home/devel/building/work/src/enca-1.19/src'
+make[3]: Entering directory '/home/devel/building/work/src/enca-1.19/src'
+make[3]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c enca '/home/devel/building/work/pkg/usr/bin'
+libtool: warning: '../lib/libenca.la' has not been installed in '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/enca /home/devel/building/work/pkg/usr/bin/enca
+make  install-exec-hook
+make[4]: Entering directory '/home/devel/building/work/src/enca-1.19/src'
+cd /home/devel/building/work/pkg/usr/bin; \
+inst1=`echo enca | sed 's,x,x,'`; \
+inst2=`echo enconv | sed 's,x,x,'`; \
+ln -s -f $inst1 $inst2
+make[4]: Leaving directory '/home/devel/building/work/src/enca-1.19/src'
+make[3]: Leaving directory '/home/devel/building/work/src/enca-1.19/src'
+make[2]: Leaving directory '/home/devel/building/work/src/enca-1.19/src'
+make[1]: Leaving directory '/home/devel/building/work/src/enca-1.19/src'
+Making install in devel-docs
+make[1]: Entering directory '/home/devel/building/work/src/enca-1.19/devel-docs'
+make[2]: Entering directory '/home/devel/building/work/src/enca-1.19/devel-docs'
+make[2]: Nothing to be done for 'install-exec-am'.
+/bin/sh ../mkinstalldirs /home/devel/building/work/pkg/usr/share/gtk-doc/html/libenca
+mkdir -p -- /home/devel/building/work/pkg/usr/share/gtk-doc/html/libenca
+(installfiles=`echo ./html/*.html`; \
+if test "$installfiles" = './html/*.html'; \
+then echo '-- Nothing to install' ; \
+else \
+  for i in $installfiles; do \
+    echo '-- Installing '$i ; \
+    /usr/bin/install -c -m 644 $i /home/devel/building/work/pkg/usr/share/gtk-doc/html/libenca; \
+  done; \
+  echo '-- Installing ./html/index.sgml' ; \
+  /usr/bin/install -c -m 644 ./html/index.sgml /home/devel/building/work/pkg/usr/share/gtk-doc/html/libenca; \
+  echo '-- Installing ./html/libenca.devhelp2' ; \
+  /usr/bin/install -c -m 644 ./html/libenca.devhelp2 /home/devel/building/work/pkg/usr/share/gtk-doc/html/libenca; \
+fi)
+-- Installing ./html/ch01.html
+-- Installing ./html/index.html
+-- Installing ./html/libenca-Analyser.html
+-- Installing ./html/libenca-Auxiliary-Functions.html
+-- Installing ./html/libenca-Charsets-and-Surfaces.html
+-- Installing ./html/libenca-Typedefs-and-Constants.html
+-- Installing ./html/index.sgml
+-- Installing ./html/libenca.devhelp2
+make[2]: Leaving directory '/home/devel/building/work/src/enca-1.19/devel-docs'
+make[1]: Leaving directory '/home/devel/building/work/src/enca-1.19/devel-docs'
+Making install in test
+make[1]: Entering directory '/home/devel/building/work/src/enca-1.19/test'
+make[2]: Entering directory '/home/devel/building/work/src/enca-1.19/test'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/enca-1.19/test'
+make[1]: Leaving directory '/home/devel/building/work/src/enca-1.19/test'
+make[1]: Entering directory '/home/devel/building/work/src/enca-1.19'
+make[2]: Entering directory '/home/devel/building/work/src/enca-1.19'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man1'
+ /usr/bin/install -c -m 644 enca.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 man/enca.1 '/home/devel/building/work/pkg/usr/share/man/man1'
+make  install-data-hook
+make[3]: Entering directory '/home/devel/building/work/src/enca-1.19'
+cd /home/devel/building/work/pkg/usr/share/man/man1; \
+inst1=`echo enca | sed 's,x,x,'`.1; \
+inst2=`echo enconv | sed 's,x,x,'`.1; \
+ln -s -f $inst1 $inst2
+make[3]: Leaving directory '/home/devel/building/work/src/enca-1.19'
+make[2]: Leaving directory '/home/devel/building/work/src/enca-1.19'
+make[1]: Leaving directory '/home/devel/building/work/src/enca-1.19'
++ rm -r /home/devel/building/work/pkg/usr/share/gtk-doc
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/include/
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/bin/
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/share/man/man1/
+-rw-r--r--  0 root   root    11685 May  7 20:44 usr/share/man/man1/enca.1.gz
+lrwxrwxrwx  0 root   root        0 May  7 20:44 usr/share/man/man1/enconv.1.gz -> enca.1.gz
+-rwxr-xr-x  0 root   root    68280 May  7 20:44 usr/bin/enca
+lrwxrwxrwx  0 root   root        0 May  7 20:44 usr/bin/enconv -> enca
+-rw-r--r--  0 root   root     6991 May  7 20:44 usr/include/enca.h
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/lib/enca/
+-rwxr-xr-x  0 root   root   212496 May  7 20:44 usr/lib/libenca.so.0.5.1
+lrwxrwxrwx  0 root   root        0 May  7 20:44 usr/lib/libenca.so.0 -> libenca.so.0.5.1
+lrwxrwxrwx  0 root   root        0 May  7 20:44 usr/lib/libenca.so -> libenca.so.0.5.1
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      285 May  7 20:44 usr/lib/pkgconfig/enca.pc
+drwxr-xr-x  0 root   root        0 May  7 20:44 usr/lib/enca/extconv/
+-rwxr-xr-x  0 root   root     1394 May  7 20:44 usr/lib/enca/extconv/cstocs
+-rwxr-xr-x  0 root   root     1247 May  7 20:44 usr/lib/enca/extconv/map
+-rwxr-xr-x  0 root   root     1124 May  7 20:44 usr/lib/enca/extconv/piconv
+-rwxr-xr-x  0 root   root      900 May  7 20:44 usr/lib/enca/extconv/recode
+-rwxr-xr-x  0 root   root     1096 May  7 20:44 usr/lib/enca/extconv/umap
+=======> Building '/home/devel/packages/enca#1.19-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling enca 1.19-1
+prt-get: /usr/bin/pkgadd -u enca#1.19-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 20:44:14 2024
+

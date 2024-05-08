@@ -1,0 +1,148 @@
+prt-get: updating /usr/ports/wayland-x86_64/xcb-proto
+prt-get: starting build Wed May  8 01:44:49 2024
+=======> Building '/home/devel/packages/xcb-proto#1.17.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/xcb-proto-1.17.0.tar.xz
++ build
++ cd xcb-proto-1.17.0
++ ./configure --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --prefix=/usr
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for xmllint... /usr/bin/xmllint
+checking for a Python interpreter with version >= 2.5... python
+checking for python... /usr/bin/python
+checking for python version... 3.12
+checking for python platform... linux
+checking for GNU default python prefix... ${prefix}
+checking for GNU default python exec_prefix... ${exec_prefix}
+checking for python script directory (pythondir)... ${PYTHON_PREFIX}/lib/python3.12/site-packages
+checking for python extension module directory (pyexecdir)... ${PYTHON_EXEC_PREFIX}/lib/python3.12/site-packages
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating xcbgen/Makefile
+config.status: creating xcb-proto.pc
++ make V=1
+Making all in src
+make[1]: Entering directory '/home/devel/building/work/src/xcb-proto-1.17.0/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/devel/building/work/src/xcb-proto-1.17.0/src'
+Making all in xcbgen
+make[1]: Entering directory '/home/devel/building/work/src/xcb-proto-1.17.0/xcbgen'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/devel/building/work/src/xcb-proto-1.17.0/xcbgen'
+make[1]: Entering directory '/home/devel/building/work/src/xcb-proto-1.17.0'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/home/devel/building/work/src/xcb-proto-1.17.0'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in src
+make[1]: Entering directory '/home/devel/building/work/src/xcb-proto-1.17.0/src'
+make[2]: Entering directory '/home/devel/building/work/src/xcb-proto-1.17.0/src'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/xcb'
+ /usr/bin/install -c -m 644 xcb.xsd xproto.xml bigreq.xml composite.xml damage.xml dbe.xml dpms.xml dri2.xml dri3.xml ge.xml glx.xml present.xml randr.xml record.xml render.xml res.xml screensaver.xml shape.xml shm.xml sync.xml xc_misc.xml xevie.xml xf86dri.xml xf86vidmode.xml xfixes.xml xinerama.xml xinput.xml xkb.xml xprint.xml xselinux.xml xtest.xml xv.xml xvmc.xml '/home/devel/building/work/pkg/usr/share/xcb'
+make[2]: Leaving directory '/home/devel/building/work/src/xcb-proto-1.17.0/src'
+make[1]: Leaving directory '/home/devel/building/work/src/xcb-proto-1.17.0/src'
+Making install in xcbgen
+make[1]: Entering directory '/home/devel/building/work/src/xcb-proto-1.17.0/xcbgen'
+make[2]: Entering directory '/home/devel/building/work/src/xcb-proto-1.17.0/xcbgen'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/python3.12/site-packages/xcbgen'
+ /usr/bin/install -c -m 644 __init__.py error.py expr.py align.py matcher.py state.py xtypes.py '/home/devel/building/work/pkg/usr/lib/python3.12/site-packages/xcbgen'
+Byte-compiling python modules...
+__init__.pyerror.pyexpr.pyalign.pymatcher.pystate.pyxtypes.py
+Byte-compiling python modules (optimized versions) ...
+__init__.pyerror.pyexpr.pyalign.pymatcher.pystate.pyxtypes.py
+Byte-compiling python modules (optimized versions) ...
+__init__.pyerror.pyexpr.pyalign.pymatcher.pystate.pyxtypes.py
+make[2]: Leaving directory '/home/devel/building/work/src/xcb-proto-1.17.0/xcbgen'
+make[1]: Leaving directory '/home/devel/building/work/src/xcb-proto-1.17.0/xcbgen'
+make[1]: Entering directory '/home/devel/building/work/src/xcb-proto-1.17.0'
+make[2]: Entering directory '/home/devel/building/work/src/xcb-proto-1.17.0'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/pkgconfig'
+ /usr/bin/install -c -m 644 xcb-proto.pc '/home/devel/building/work/pkg/usr/share/pkgconfig'
+make[2]: Leaving directory '/home/devel/building/work/src/xcb-proto-1.17.0'
+make[1]: Leaving directory '/home/devel/building/work/src/xcb-proto-1.17.0'
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 01:44 usr/
+drwxr-xr-x  0 root   root        0 May  8 01:44 usr/share/
+drwxr-xr-x  0 root   root        0 May  8 01:44 usr/lib/
+drwxr-xr-x  0 root   root        0 May  8 01:44 usr/lib/python3.12/
+drwxr-xr-x  0 root   root        0 May  8 01:44 usr/lib/python3.12/site-packages/
+drwxr-xr-x  0 root   root        0 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/
+-rw-r--r--  0 root   root        1 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__init__.py
+-rw-r--r--  0 root   root      116 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/error.py
+-rw-r--r--  0 root   root     6498 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/expr.py
+-rw-r--r--  0 root   root     6473 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/align.py
+-rw-r--r--  0 root   root     4037 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/matcher.py
+-rw-r--r--  0 root   root     6906 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/state.py
+-rw-r--r--  0 root   root    53475 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/xtypes.py
+drwxr-xr-x  0 root   root        0 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/
+-rw-r--r--  0 root   root      149 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--  0 root   root      422 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/error.cpython-312.pyc
+-rw-r--r--  0 root   root     7648 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/expr.cpython-312.pyc
+-rw-r--r--  0 root   root     7422 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/align.cpython-312.pyc
+-rw-r--r--  0 root   root     6587 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/matcher.cpython-312.pyc
+-rw-r--r--  0 root   root    10648 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/state.cpython-312.pyc
+-rw-r--r--  0 root   root    61031 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/xtypes.cpython-312.pyc
+-rw-r--r--  0 root   root      149 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/__init__.cpython-312.opt-1.pyc
+-rw-r--r--  0 root   root      422 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/error.cpython-312.opt-1.pyc
+-rw-r--r--  0 root   root     7648 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/expr.cpython-312.opt-1.pyc
+-rw-r--r--  0 root   root     7393 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/align.cpython-312.opt-1.pyc
+-rw-r--r--  0 root   root     6587 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/matcher.cpython-312.opt-1.pyc
+-rw-r--r--  0 root   root    10648 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/state.cpython-312.opt-1.pyc
+-rw-r--r--  0 root   root    60850 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/xtypes.cpython-312.opt-1.pyc
+-rw-r--r--  0 root   root      149 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/__init__.cpython-312.opt-2.pyc
+-rw-r--r--  0 root   root      348 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/error.cpython-312.opt-2.pyc
+-rw-r--r--  0 root   root     6576 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/expr.cpython-312.opt-2.pyc
+-rw-r--r--  0 root   root     7159 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/align.cpython-312.opt-2.pyc
+-rw-r--r--  0 root   root     6146 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/matcher.cpython-312.opt-2.pyc
+-rw-r--r--  0 root   root     9878 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/state.cpython-312.opt-2.pyc
+-rw-r--r--  0 root   root    56132 May  8 01:44 usr/lib/python3.12/site-packages/xcbgen/__pycache__/xtypes.cpython-312.opt-2.pyc
+drwxr-xr-x  0 root   root        0 May  8 01:44 usr/share/xcb/
+drwxr-xr-x  0 root   root        0 May  8 01:44 usr/share/pkgconfig/
+-rw-r--r--  0 root   root      304 May  8 01:44 usr/share/pkgconfig/xcb-proto.pc
+-rw-r--r--  0 root   root    16334 May  8 01:44 usr/share/xcb/xcb.xsd
+-rw-r--r--  0 root   root   206205 May  8 01:44 usr/share/xcb/xproto.xml
+-rw-r--r--  0 root   root     2229 May  8 01:44 usr/share/xcb/bigreq.xml
+-rw-r--r--  0 root   root     9180 May  8 01:44 usr/share/xcb/composite.xml
+-rw-r--r--  0 root   root     7890 May  8 01:44 usr/share/xcb/damage.xml
+-rw-r--r--  0 root   root     6947 May  8 01:44 usr/share/xcb/dbe.xml
+-rw-r--r--  0 root   root     3642 May  8 01:44 usr/share/xcb/dpms.xml
+-rw-r--r--  0 root   root     9488 May  8 01:44 usr/share/xcb/dri2.xml
+-rw-r--r--  0 root   root     6170 May  8 01:44 usr/share/xcb/dri3.xml
+-rw-r--r--  0 root   root     1863 May  8 01:44 usr/share/xcb/ge.xml
+-rw-r--r--  0 root   root    45391 May  8 01:44 usr/share/xcb/glx.xml
+-rw-r--r--  0 root   root     8489 May  8 01:44 usr/share/xcb/present.xml
+-rw-r--r--  0 root   root    30366 May  8 01:44 usr/share/xcb/randr.xml
+-rw-r--r--  0 root   root     5924 May  8 01:44 usr/share/xcb/record.xml
+-rw-r--r--  0 root   root    23693 May  8 01:44 usr/share/xcb/render.xml
+-rw-r--r--  0 root   root     5912 May  8 01:44 usr/share/xcb/res.xml
+-rw-r--r--  0 root   root     6678 May  8 01:44 usr/share/xcb/screensaver.xml
+-rw-r--r--  0 root   root     6039 May  8 01:44 usr/share/xcb/shape.xml
+-rw-r--r--  0 root   root    14636 May  8 01:44 usr/share/xcb/shm.xml
+-rw-r--r--  0 root   root     8390 May  8 01:44 usr/share/xcb/sync.xml
+-rw-r--r--  0 root   root     1162 May  8 01:44 usr/share/xcb/xc_misc.xml
+-rw-r--r--  0 root   root     2958 May  8 01:44 usr/share/xcb/xevie.xml
+-rw-r--r--  0 root   root     5900 May  8 01:44 usr/share/xcb/xf86dri.xml
+-rw-r--r--  0 root   root    14673 May  8 01:44 usr/share/xcb/xf86vidmode.xml
+-rw-r--r--  0 root   root    13530 May  8 01:44 usr/share/xcb/xfixes.xml
+-rw-r--r--  0 root   root     3453 May  8 01:44 usr/share/xcb/xinerama.xml
+-rw-r--r--  0 root   root   107533 May  8 01:44 usr/share/xcb/xinput.xml
+-rw-r--r--  0 root   root    91919 May  8 01:44 usr/share/xcb/xkb.xml
+-rw-r--r--  0 root   root    11114 May  8 01:44 usr/share/xcb/xprint.xml
+-rw-r--r--  0 root   root     8260 May  8 01:44 usr/share/xcb/xselinux.xml
+-rw-r--r--  0 root   root     3968 May  8 01:44 usr/share/xcb/xtest.xml
+-rw-r--r--  0 root   root    16061 May  8 01:44 usr/share/xcb/xv.xml
+-rw-r--r--  0 root   root     5363 May  8 01:44 usr/share/xcb/xvmc.xml
+=======> Building '/home/devel/packages/xcb-proto#1.17.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling xcb-proto 1.17.0-1
+prt-get: /usr/bin/pkgadd -u xcb-proto#1.17.0-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 01:44:50 2024
+

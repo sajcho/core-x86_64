@@ -1,0 +1,51 @@
+prt-get: updating /usr/ports/wayland-x86_64/python3-markupsafe
+prt-get: starting build Wed May  8 01:05:08 2024
+=======> Building '/home/devel/packages/python3-markupsafe#2.1.5-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/MarkupSafe-2.1.5.tar.gz
++ build
++ cd MarkupSafe-2.1.5
++ /usr/bin/pip3 wheel -w dist --no-cache-dir --no-build-isolation --no-deps /home/devel/building/work/src/MarkupSafe-2.1.5
+Processing /home/devel/building/work/src/MarkupSafe-2.1.5
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: MarkupSafe
+  Building wheel for MarkupSafe (setup.py): started
+  Building wheel for MarkupSafe (setup.py): finished with status 'done'
+  Created wheel for MarkupSafe: filename=MarkupSafe-2.1.5-cp312-cp312-linux_x86_64.whl size=26763 sha256=c8f2c7a3c3ae7ee84c02adc32205c90651c7ac1f6fad7102891f8bf11b3f414a
+  Stored in directory: /tmp/pip-ephem-wheel-cache-0nta91tn/wheels/f4/46/5a/0eb781fb5d4986713ce3c666c5cd6028230433ba30c08e6f6f
+Successfully built MarkupSafe
++ PIP_CONFIG_FILE=/dev/null
++ /usr/bin/pip3 install --root-user-action=ignore --no-warn-script-location --ignore-installed --no-deps dist/MarkupSafe-2.1.5-cp312-cp312-linux_x86_64.whl --no-cache-dir --no-index --isolated --root=/home/devel/building/work/pkg
+Processing ./dist/MarkupSafe-2.1.5-cp312-cp312-linux_x86_64.whl
+Installing collected packages: MarkupSafe
+Successfully installed MarkupSafe-2.1.5
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/python3.12/
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/markupsafe/
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/MarkupSafe-2.1.5.dist-info/
+-rw-r--r--  0 root   root     1475 May  8 01:05 usr/lib/python3.12/site-packages/MarkupSafe-2.1.5.dist-info/LICENSE.rst
+-rw-r--r--  0 root   root     3003 May  8 01:05 usr/lib/python3.12/site-packages/MarkupSafe-2.1.5.dist-info/METADATA
+-rw-r--r--  0 root   root      105 May  8 01:05 usr/lib/python3.12/site-packages/MarkupSafe-2.1.5.dist-info/WHEEL
+-rw-r--r--  0 root   root       11 May  8 01:05 usr/lib/python3.12/site-packages/MarkupSafe-2.1.5.dist-info/top_level.txt
+-rw-r--r--  0 root   root        4 May  8 01:05 usr/lib/python3.12/site-packages/MarkupSafe-2.1.5.dist-info/INSTALLER
+-rw-r--r--  0 root   root      306 May  8 01:05 usr/lib/python3.12/site-packages/MarkupSafe-2.1.5.dist-info/direct_url.json
+-rw-r--r--  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/MarkupSafe-2.1.5.dist-info/REQUESTED
+-rw-r--r--  0 root   root     1299 May  8 01:05 usr/lib/python3.12/site-packages/MarkupSafe-2.1.5.dist-info/RECORD
+-rw-r--r--  0 root   root    10958 May  8 01:05 usr/lib/python3.12/site-packages/markupsafe/__init__.py
+-rw-r--r--  0 root   root     1713 May  8 01:05 usr/lib/python3.12/site-packages/markupsafe/_native.py
+-rw-r--r--  0 root   root     7083 May  8 01:05 usr/lib/python3.12/site-packages/markupsafe/_speedups.c
+-rwxr-xr-x  0 root   root    14648 May  8 01:05 usr/lib/python3.12/site-packages/markupsafe/_speedups.cpython-312-x86_64-linux-gnu.so
+-rw-r--r--  0 root   root      229 May  8 01:05 usr/lib/python3.12/site-packages/markupsafe/_speedups.pyi
+-rw-r--r--  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/markupsafe/py.typed
+drwxr-xr-x  0 root   root        0 May  8 01:05 usr/lib/python3.12/site-packages/markupsafe/__pycache__/
+-rw-r--r--  0 root   root    17436 May  8 01:05 usr/lib/python3.12/site-packages/markupsafe/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--  0 root   root     2539 May  8 01:05 usr/lib/python3.12/site-packages/markupsafe/__pycache__/_native.cpython-312.pyc
+=======> Building '/home/devel/packages/python3-markupsafe#2.1.5-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling python3-markupsafe 2.1.5-1
+prt-get: /usr/bin/pkgadd -u python3-markupsafe#2.1.5-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 01:05:09 2024
+

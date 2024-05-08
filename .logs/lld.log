@@ -1,0 +1,359 @@
+prt-get: updating /usr/ports/opt-x86_64/lld
+prt-get: starting build Tue May  7 23:39:45 2024
+=======> Building '/home/devel/packages/lld#18.1.5-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/llvm-project-18.1.5.src.tar.xz
++ build
++ cd llvm-project-18.1.5.src
++ export CC=gcc
++ CC=gcc
++ export CXX=g++
++ CXX=g++
++ export 'CFLAGS=-O2 -m64 -march=x86-64 -mtune=generic -w'
++ CFLAGS='-O2 -m64 -march=x86-64 -mtune=generic -w'
++ export 'CXXFLAGS=-O2 -m64 -march=x86-64 -mtune=generic -w'
++ CXXFLAGS='-O2 -m64 -march=x86-64 -mtune=generic -w'
++ mkdir build
++ cd build
++ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release '-DCMAKE_INSTALL_PREFIX=/usr ' -DCMAKE_SKIP_INSTALL_RPATH=ON -DBUILD_SHARED_LIBS=ON -DLLD_BUILT_STANDALONE=ON -Wno-dev ../lld
+-- The C compiler identification is GNU 14.1.0
+-- The CXX compiler identification is GNU 14.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test HAVE_FFI_CALL
+-- Performing Test HAVE_FFI_CALL - Success
+-- Found FFI: /usr/lib/libffi.so
+-- Looking for histedit.h
+-- Looking for histedit.h - found
+-- Found LibEdit: /usr/include (found version "2.11")
+-- Performing Test Terminfo_LINKABLE
+-- Performing Test Terminfo_LINKABLE - Success
+-- Found Terminfo: /usr/lib/libtinfo.so
+-- Found ZLIB: /usr/lib/libz.so (found version "1.3.1")
+-- Found zstd: /usr/lib/libzstd.so
+-- Found LibXml2: /usr/lib/libxml2.so (found version "2.12.6")
+-- Linker detection: GNU ld
+-- Performing Test C_SUPPORTS_FPIC
+-- Performing Test C_SUPPORTS_FPIC - Success
+-- Performing Test CXX_SUPPORTS_FPIC
+-- Performing Test CXX_SUPPORTS_FPIC - Success
+-- Building with -fPIC
+-- Performing Test C_SUPPORTS_FNO_SEMANTIC_INTERPOSITION
+-- Performing Test C_SUPPORTS_FNO_SEMANTIC_INTERPOSITION - Success
+-- Performing Test CXX_SUPPORTS_FNO_SEMANTIC_INTERPOSITION
+-- Performing Test CXX_SUPPORTS_FNO_SEMANTIC_INTERPOSITION - Success
+-- Performing Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG
+-- Performing Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG - Success
+-- Performing Test C_SUPPORTS_WERROR_DATE_TIME
+-- Performing Test C_SUPPORTS_WERROR_DATE_TIME - Success
+-- Performing Test CXX_SUPPORTS_WERROR_DATE_TIME
+-- Performing Test CXX_SUPPORTS_WERROR_DATE_TIME - Success
+-- Performing Test C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW
+-- Performing Test C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW - Failed
+-- Performing Test CXX_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW
+-- Performing Test CXX_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW - Failed
+-- Performing Test C_SUPPORTS_CMAKE_CXX_FLAGS
+-- Performing Test C_SUPPORTS_CMAKE_CXX_FLAGS - Success
+-- Performing Test CXX_SUPPORTS_CMAKE_CXX_FLAGS
+-- Performing Test CXX_SUPPORTS_CMAKE_CXX_FLAGS - Success
+-- Performing Test CXX_SUPPORTS_MISSING_FIELD_INITIALIZERS_FLAG
+-- Performing Test CXX_SUPPORTS_MISSING_FIELD_INITIALIZERS_FLAG - Success
+-- Performing Test C_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG
+-- Performing Test C_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG - Success
+-- Performing Test CXX_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG
+-- Performing Test CXX_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG - Success
+-- Performing Test C_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG
+-- Performing Test C_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG - Failed
+-- Performing Test CXX_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG
+-- Performing Test CXX_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG - Failed
+-- Performing Test CXX_SUPPORTS_CLASS_MEMACCESS_FLAG
+-- Performing Test CXX_SUPPORTS_CLASS_MEMACCESS_FLAG - Success
+-- Performing Test CXX_SUPPORTS_REDUNDANT_MOVE_FLAG
+-- Performing Test CXX_SUPPORTS_REDUNDANT_MOVE_FLAG - Success
+-- Performing Test CXX_SUPPORTS_PESSIMIZING_MOVE_FLAG
+-- Performing Test CXX_SUPPORTS_PESSIMIZING_MOVE_FLAG - Success
+-- Performing Test CXX_SUPPORTS_NOEXCEPT_TYPE_FLAG
+-- Performing Test CXX_SUPPORTS_NOEXCEPT_TYPE_FLAG - Success
+-- Performing Test CXX_WONT_WARN_ON_FINAL_NONVIRTUALDTOR
+-- Performing Test CXX_WONT_WARN_ON_FINAL_NONVIRTUALDTOR - Success
+-- Performing Test CXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG
+-- Performing Test CXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG - Success
+-- Performing Test CXX_WSUGGEST_OVERRIDE_ALLOWS_ONLY_FINAL
+-- Performing Test CXX_WSUGGEST_OVERRIDE_ALLOWS_ONLY_FINAL - Success
+-- Performing Test C_WCOMMENT_ALLOWS_LINE_WRAP
+-- Performing Test C_WCOMMENT_ALLOWS_LINE_WRAP - Success
+-- Performing Test C_SUPPORTS_STRING_CONVERSION_FLAG
+-- Performing Test C_SUPPORTS_STRING_CONVERSION_FLAG - Failed
+-- Performing Test CXX_SUPPORTS_STRING_CONVERSION_FLAG
+-- Performing Test CXX_SUPPORTS_STRING_CONVERSION_FLAG - Failed
+-- Performing Test CXX_SUPPORTS_MISLEADING_INDENTATION_FLAG
+-- Performing Test CXX_SUPPORTS_MISLEADING_INDENTATION_FLAG - Success
+-- Performing Test C_SUPPORTS_CTAD_MAYBE_UNSPPORTED_FLAG
+-- Performing Test C_SUPPORTS_CTAD_MAYBE_UNSPPORTED_FLAG - Failed
+-- Performing Test CXX_SUPPORTS_CTAD_MAYBE_UNSPPORTED_FLAG
+-- Performing Test CXX_SUPPORTS_CTAD_MAYBE_UNSPPORTED_FLAG - Success
+-- Performing Test LINKER_SUPPORTS_COLOR_DIAGNOSTICS
+-- Performing Test LINKER_SUPPORTS_COLOR_DIAGNOSTICS - Failed
+-- Performing Test C_SUPPORTS_FNO_FUNCTION_SECTIONS
+-- Performing Test C_SUPPORTS_FNO_FUNCTION_SECTIONS - Success
+-- Performing Test C_SUPPORTS_FFUNCTION_SECTIONS
+-- Performing Test C_SUPPORTS_FFUNCTION_SECTIONS - Success
+-- Performing Test CXX_SUPPORTS_FFUNCTION_SECTIONS
+-- Performing Test CXX_SUPPORTS_FFUNCTION_SECTIONS - Success
+-- Performing Test C_SUPPORTS_FDATA_SECTIONS
+-- Performing Test C_SUPPORTS_FDATA_SECTIONS - Success
+-- Performing Test CXX_SUPPORTS_FDATA_SECTIONS
+-- Performing Test CXX_SUPPORTS_FDATA_SECTIONS - Success
+-- Looking for os_signpost_interval_begin
+-- Looking for os_signpost_interval_begin - not found
+-- Performing Test HAVE_CXX_ATOMICS_WITHOUT_LIB
+-- Performing Test HAVE_CXX_ATOMICS_WITHOUT_LIB - Success
+-- Performing Test HAVE_CXX_ATOMICS64_WITHOUT_LIB
+-- Performing Test HAVE_CXX_ATOMICS64_WITHOUT_LIB - Success
+-- Performing Test LLVM_HAS_ATOMICS
+-- Performing Test LLVM_HAS_ATOMICS - Success
+-- LLD version: 18.1.5
+-- Found Git: /usr/bin/git (found version "2.45.0")
+-- Configuring done (2.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/devel/building/work/src/llvm-project-18.1.5.src/build
++ ninja
+[1/133] Building Options.inc...
+[2/133] Building Options.inc...
+[3/133] Building Options.inc...
+[4/133] Building Options.inc...
+[5/133] Building Options.inc...
+[6/133] Generating VCSVersion.inc
+[7/133] Building CXX object wasm/CMakeFiles/lldWasm.dir/WriterUtils.cpp.o
+[8/133] Building CXX object wasm/CMakeFiles/lldWasm.dir/Writer.cpp.o
+[9/133] Building CXX object wasm/CMakeFiles/lldWasm.dir/SyntheticSections.cpp.o
+[10/133] Building CXX object wasm/CMakeFiles/lldWasm.dir/Symbols.cpp.o
+[11/133] Building CXX object wasm/CMakeFiles/lldWasm.dir/SymbolTable.cpp.o
+[12/133] Building CXX object wasm/CMakeFiles/lldWasm.dir/Relocations.cpp.o
+[13/133] Building CXX object wasm/CMakeFiles/lldWasm.dir/OutputSegment.cpp.o
+[14/133] Building CXX object wasm/CMakeFiles/lldWasm.dir/OutputSections.cpp.o
+[15/133] Building CXX object wasm/CMakeFiles/lldWasm.dir/MarkLive.cpp.o
+[16/133] Building CXX object wasm/CMakeFiles/lldWasm.dir/MapFile.cpp.o
+[17/133] Building CXX object wasm/CMakeFiles/lldWasm.dir/LTO.cpp.o
+[18/133] Building CXX object wasm/CMakeFiles/lldWasm.dir/InputFiles.cpp.o
+[19/133] Building CXX object wasm/CMakeFiles/lldWasm.dir/InputChunks.cpp.o
+[20/133] Building CXX object wasm/CMakeFiles/lldWasm.dir/Driver.cpp.o
+[21/133] Building CXX object tools/lld/CMakeFiles/lld.dir/lld-driver.cpp.o
+[22/133] Building CXX object tools/lld/CMakeFiles/lld.dir/lld.cpp.o
+[23/133] Building CXX object MinGW/CMakeFiles/lldMinGW.dir/Driver.cpp.o
+[24/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/Writer.cpp.o
+[25/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/UnwindInfoSection.cpp.o
+[26/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/Target.cpp.o
+[27/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/SyntheticSections.cpp.o
+[28/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/Symbols.cpp.o
+[29/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/SymbolTable.cpp.o
+[30/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/SectionPriorities.cpp.o
+[31/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/Relocations.cpp.o
+[32/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/OutputSegment.cpp.o
+[33/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/OutputSection.cpp.o
+[34/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/ObjC.cpp.o
+[35/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/MarkLive.cpp.o
+[36/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/MapFile.cpp.o
+[37/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/LTO.cpp.o
+[38/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/InputSection.cpp.o
+[39/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/InputFiles.cpp.o
+[40/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/ICF.cpp.o
+[41/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/ExportTrie.cpp.o
+[42/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/EhFrame.cpp.o
+[43/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/Dwarf.cpp.o
+[44/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/DriverUtils.cpp.o
+[45/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/Driver.cpp.o
+[46/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/ConcatOutputSection.cpp.o
+[47/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/Arch/X86_64.cpp.o
+[48/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/Arch/ARM64_32.cpp.o
+[49/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/Arch/ARM64Common.cpp.o
+[50/133] Building CXX object MachO/CMakeFiles/lldMachO.dir/Arch/ARM64.cpp.o
+[51/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Writer.cpp.o
+[52/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Thunks.cpp.o
+[53/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Target.cpp.o
+[54/133] Building CXX object ELF/CMakeFiles/lldELF.dir/SyntheticSections.cpp.o
+[55/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Symbols.cpp.o
+[56/133] Building CXX object ELF/CMakeFiles/lldELF.dir/SymbolTable.cpp.o
+[57/133] Building CXX object ELF/CMakeFiles/lldELF.dir/ScriptParser.cpp.o
+[58/133] Building CXX object ELF/CMakeFiles/lldELF.dir/ScriptLexer.cpp.o
+[59/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Relocations.cpp.o
+[60/133] Building CXX object ELF/CMakeFiles/lldELF.dir/OutputSections.cpp.o
+[61/133] Building CXX object ELF/CMakeFiles/lldELF.dir/MarkLive.cpp.o
+[62/133] Building CXX object ELF/CMakeFiles/lldELF.dir/MapFile.cpp.o
+[63/133] Building CXX object ELF/CMakeFiles/lldELF.dir/LinkerScript.cpp.o
+[64/133] Building CXX object ELF/CMakeFiles/lldELF.dir/LTO.cpp.o
+[65/133] Building CXX object ELF/CMakeFiles/lldELF.dir/InputSection.cpp.o
+[66/133] Building CXX object ELF/CMakeFiles/lldELF.dir/InputFiles.cpp.o
+[67/133] Building CXX object ELF/CMakeFiles/lldELF.dir/ICF.cpp.o
+[68/133] Building CXX object ELF/CMakeFiles/lldELF.dir/EhFrame.cpp.o
+[69/133] Building CXX object ELF/CMakeFiles/lldELF.dir/DriverUtils.cpp.o
+[70/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Driver.cpp.o
+[71/133] Building CXX object ELF/CMakeFiles/lldELF.dir/DWARF.cpp.o
+[72/133] Building CXX object ELF/CMakeFiles/lldELF.dir/CallGraphSort.cpp.o
+[73/133] Building CXX object ELF/CMakeFiles/lldELF.dir/ARMErrataFix.cpp.o
+[74/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Arch/X86_64.cpp.o
+[75/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Arch/X86.cpp.o
+[76/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Arch/SystemZ.cpp.o
+[77/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Arch/SPARCV9.cpp.o
+[78/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Arch/RISCV.cpp.o
+[79/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Arch/PPC64.cpp.o
+[80/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Arch/PPC.cpp.o
+[81/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Arch/MSP430.cpp.o
+[82/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Arch/MipsArchTree.cpp.o
+[83/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Arch/Mips.cpp.o
+[84/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Arch/LoongArch.cpp.o
+[85/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Arch/Hexagon.cpp.o
+[86/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Arch/AVR.cpp.o
+[87/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Arch/ARM.cpp.o
+[88/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Arch/AMDGPU.cpp.o
+[89/133] Building CXX object ELF/CMakeFiles/lldELF.dir/Arch/AArch64.cpp.o
+[90/133] Building CXX object ELF/CMakeFiles/lldELF.dir/AArch64ErrataFix.cpp.o
+[91/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/Writer.cpp.o
+[92/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/Symbols.cpp.o
+[93/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/SymbolTable.cpp.o
+[94/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/PDB.cpp.o
+[95/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/MinGW.cpp.o
+[96/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/MarkLive.cpp.o
+[97/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/MapFile.cpp.o
+[98/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/LTO.cpp.o
+[99/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/LLDMapFile.cpp.o
+[100/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/InputFiles.cpp.o
+[101/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/ICF.cpp.o
+[102/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/DriverUtils.cpp.o
+[103/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/Driver.cpp.o
+[104/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/DLL.cpp.o
+[105/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/DebugTypes.cpp.o
+[106/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/COFFLinkerContext.cpp.o
+[107/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/Chunks.cpp.o
+[108/133] Building CXX object COFF/CMakeFiles/lldCOFF.dir/CallGraphSort.cpp.o
+[109/133] Building CXX object Common/CMakeFiles/lldCommon.dir/Version.cpp.o
+[110/133] Building CXX object Common/CMakeFiles/lldCommon.dir/Timer.cpp.o
+[111/133] Building CXX object Common/CMakeFiles/lldCommon.dir/TargetOptionsCommandFlags.cpp.o
+[112/133] Building CXX object Common/CMakeFiles/lldCommon.dir/Strings.cpp.o
+[113/133] Building CXX object Common/CMakeFiles/lldCommon.dir/Reproduce.cpp.o
+[114/133] Building CXX object Common/CMakeFiles/lldCommon.dir/Memory.cpp.o
+[115/133] Building CXX object Common/CMakeFiles/lldCommon.dir/Filesystem.cpp.o
+[116/133] Building CXX object Common/CMakeFiles/lldCommon.dir/ErrorHandler.cpp.o
+[117/133] Building CXX object Common/CMakeFiles/lldCommon.dir/DWARF.cpp.o
+[118/133] Building CXX object Common/CMakeFiles/lldCommon.dir/DriverDispatcher.cpp.o
+[119/133] Building CXX object Common/CMakeFiles/lldCommon.dir/CommonLinkerContext.cpp.o
+[120/133] Building CXX object Common/CMakeFiles/lldCommon.dir/Args.cpp.o
+[121/133] Linking CXX shared library lib/liblldCommon.so.18.1
+[122/133] Creating library symlink lib/liblldCommon.so
+[123/133] Linking CXX shared library lib/liblldWasm.so.18.1
+[124/133] Linking CXX shared library lib/liblldMachO.so.18.1
+[125/133] Linking CXX shared library lib/liblldELF.so.18.1
+[126/133] Creating library symlink lib/liblldMachO.so
+[127/133] Creating library symlink lib/liblldWasm.so
+[128/133] Creating library symlink lib/liblldELF.so
+[129/133] Linking CXX shared library lib/liblldCOFF.so.18.1
+[130/133] Creating library symlink lib/liblldCOFF.so
+[131/133] Linking CXX shared library lib/liblldMinGW.so.18.1
+[132/133] Creating library symlink lib/liblldMinGW.so
+[133/133] Linking CXX executable bin/lld
++ DESTDIR=/home/devel/building/work/pkg
++ ninja install
+[1/1] Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/devel/building/work/pkg/usr/include
+-- Installing: /home/devel/building/work/pkg/usr/include/lld
+-- Installing: /home/devel/building/work/pkg/usr/include/lld/Common
+-- Installing: /home/devel/building/work/pkg/usr/include/lld/Common/Args.h
+-- Installing: /home/devel/building/work/pkg/usr/include/lld/Common/Arrays.h
+-- Installing: /home/devel/building/work/pkg/usr/include/lld/Common/CommonLinkerContext.h
+-- Installing: /home/devel/building/work/pkg/usr/include/lld/Common/DWARF.h
+-- Installing: /home/devel/building/work/pkg/usr/include/lld/Common/Driver.h
+-- Installing: /home/devel/building/work/pkg/usr/include/lld/Common/ErrorHandler.h
+-- Installing: /home/devel/building/work/pkg/usr/include/lld/Common/Filesystem.h
+-- Installing: /home/devel/building/work/pkg/usr/include/lld/Common/LLVM.h
+-- Installing: /home/devel/building/work/pkg/usr/include/lld/Common/Memory.h
+-- Installing: /home/devel/building/work/pkg/usr/include/lld/Common/Reproduce.h
+-- Installing: /home/devel/building/work/pkg/usr/include/lld/Common/Strings.h
+-- Installing: /home/devel/building/work/pkg/usr/include/lld/Common/TargetOptionsCommandFlags.h
+-- Installing: /home/devel/building/work/pkg/usr/include/lld/Common/Timer.h
+-- Installing: /home/devel/building/work/pkg/usr/include/lld/Common/Version.h
+-- Installing: /home/devel/building/work/pkg/usr/lib/liblldCommon.so.18.1
+-- Set non-toolchain portion of runtime path of "/home/devel/building/work/pkg/usr/lib/liblldCommon.so.18.1" to ""
+-- Installing: /home/devel/building/work/pkg/usr/lib/liblldCommon.so
+-- Installing: /home/devel/building/work/pkg/usr/bin/lld
+-- Set non-toolchain portion of runtime path of "/home/devel/building/work/pkg/usr/bin/lld" to ""
+-- Creating lld-link
+-- Creating ld.lld
+-- Creating ld64.lld
+-- Creating wasm-ld
+-- Installing: /home/devel/building/work/pkg/usr/lib/liblldCOFF.so.18.1
+-- Set non-toolchain portion of runtime path of "/home/devel/building/work/pkg/usr/lib/liblldCOFF.so.18.1" to ""
+-- Installing: /home/devel/building/work/pkg/usr/lib/liblldCOFF.so
+-- Installing: /home/devel/building/work/pkg/usr/lib/liblldELF.so.18.1
+-- Set non-toolchain portion of runtime path of "/home/devel/building/work/pkg/usr/lib/liblldELF.so.18.1" to ""
+-- Installing: /home/devel/building/work/pkg/usr/lib/liblldELF.so
+-- Installing: /home/devel/building/work/pkg/usr/lib/liblldMachO.so.18.1
+-- Set non-toolchain portion of runtime path of "/home/devel/building/work/pkg/usr/lib/liblldMachO.so.18.1" to ""
+-- Installing: /home/devel/building/work/pkg/usr/lib/liblldMachO.so
+-- Installing: /home/devel/building/work/pkg/usr/lib/liblldMinGW.so.18.1
+-- Set non-toolchain portion of runtime path of "/home/devel/building/work/pkg/usr/lib/liblldMinGW.so.18.1" to ""
+-- Installing: /home/devel/building/work/pkg/usr/lib/liblldMinGW.so
+-- Installing: /home/devel/building/work/pkg/usr/lib/liblldWasm.so.18.1
+-- Set non-toolchain portion of runtime path of "/home/devel/building/work/pkg/usr/lib/liblldWasm.so.18.1" to ""
+-- Installing: /home/devel/building/work/pkg/usr/lib/liblldWasm.so
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/lld/LLDTargets.cmake
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/lld/LLDTargets-release.cmake
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/lld/LLDConfig.cmake
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/lld/LLDConfigVersion.cmake
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 23:40 usr/
+drwxr-xr-x  0 root   root        0 May  7 23:40 usr/include/
+drwxr-xr-x  0 root   root        0 May  7 23:40 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 23:40 usr/bin/
+-rwxr-xr-x  0 root   root    18896 May  7 23:40 usr/bin/lld
+-rwxr-xr-x  0 root   root    18896 May  7 23:40 usr/bin/lld-link
+-rwxr-xr-x  0 root   root    18896 May  7 23:40 usr/bin/ld.lld
+-rwxr-xr-x  0 root   root    18896 May  7 23:40 usr/bin/ld64.lld
+-rwxr-xr-x  0 root   root    18896 May  7 23:40 usr/bin/wasm-ld
+-rwxr-xr-x  0 root   root   234416 May  7 23:40 usr/lib/liblldCommon.so.18.1
+lrwxrwxrwx  0 root   root        0 May  7 23:40 usr/lib/liblldCommon.so -> liblldCommon.so.18.1
+-rwxr-xr-x  0 root   root  1302544 May  7 23:40 usr/lib/liblldCOFF.so.18.1
+lrwxrwxrwx  0 root   root        0 May  7 23:40 usr/lib/liblldCOFF.so -> liblldCOFF.so.18.1
+-rwxr-xr-x  0 root   root  3329480 May  7 23:40 usr/lib/liblldELF.so.18.1
+lrwxrwxrwx  0 root   root        0 May  7 23:40 usr/lib/liblldELF.so -> liblldELF.so.18.1
+-rwxr-xr-x  0 root   root  1260560 May  7 23:40 usr/lib/liblldMachO.so.18.1
+lrwxrwxrwx  0 root   root        0 May  7 23:40 usr/lib/liblldMachO.so -> liblldMachO.so.18.1
+-rwxr-xr-x  0 root   root    92680 May  7 23:40 usr/lib/liblldMinGW.so.18.1
+lrwxrwxrwx  0 root   root        0 May  7 23:40 usr/lib/liblldMinGW.so -> liblldMinGW.so.18.1
+-rwxr-xr-x  0 root   root   735072 May  7 23:40 usr/lib/liblldWasm.so.18.1
+lrwxrwxrwx  0 root   root        0 May  7 23:40 usr/lib/liblldWasm.so -> liblldWasm.so.18.1
+drwxr-xr-x  0 root   root        0 May  7 23:40 usr/lib/cmake/
+drwxr-xr-x  0 root   root        0 May  7 23:40 usr/lib/cmake/lld/
+-rw-r--r--  0 root   root     4851 May  7 23:39 usr/lib/cmake/lld/LLDTargets.cmake
+-rw-r--r--  0 root   root     3777 May  7 23:39 usr/lib/cmake/lld/LLDTargets-release.cmake
+-rw-r--r--  0 root   root      872 May  7 23:39 usr/lib/cmake/lld/LLDConfig.cmake
+-rw-r--r--  0 root   root      447 May  7 23:39 usr/lib/cmake/lld/LLDConfigVersion.cmake
+drwxr-xr-x  0 root   root        0 May  7 23:40 usr/include/lld/
+drwxr-xr-x  0 root   root        0 May  7 23:40 usr/include/lld/Common/
+-rw-r--r--  0 root   root     1260 May  2 00:56 usr/include/lld/Common/Args.h
+-rw-r--r--  0 root   root      942 May  2 00:56 usr/include/lld/Common/Arrays.h
+-rw-r--r--  0 root   root     1903 May  2 00:56 usr/include/lld/Common/CommonLinkerContext.h
+-rw-r--r--  0 root   root     1385 May  2 00:56 usr/include/lld/Common/DWARF.h
+-rw-r--r--  0 root   root     2849 May  2 00:56 usr/include/lld/Common/Driver.h
+-rw-r--r--  0 root   root     7246 May  2 00:56 usr/include/lld/Common/ErrorHandler.h
+-rw-r--r--  0 root   root      792 May  2 00:56 usr/include/lld/Common/Filesystem.h
+-rw-r--r--  0 root   root     2764 May  2 00:56 usr/include/lld/Common/LLVM.h
+-rw-r--r--  0 root   root     3790 May  2 00:56 usr/include/lld/Common/Memory.h
+-rw-r--r--  0 root   root     1039 May  2 00:56 usr/include/lld/Common/Reproduce.h
+-rw-r--r--  0 root   root     2560 May  2 00:56 usr/include/lld/Common/Strings.h
+-rw-r--r--  0 root   root      977 May  2 00:56 usr/include/lld/Common/TargetOptionsCommandFlags.h
+-rw-r--r--  0 root   root     1292 May  2 00:56 usr/include/lld/Common/Timer.h
+-rw-r--r--  0 root   root      750 May  2 00:56 usr/include/lld/Common/Version.h
+=======> Building '/home/devel/packages/lld#18.1.5-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling lld 18.1.5-1
+prt-get: /usr/bin/pkgadd -u lld#18.1.5-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 23:40:47 2024
+

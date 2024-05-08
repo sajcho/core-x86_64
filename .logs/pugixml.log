@@ -1,0 +1,59 @@
+prt-get: updating /usr/ports/wayland-x86_64/pugixml
+prt-get: starting build Wed May  8 00:58:13 2024
+=======> Building '/home/devel/packages/pugixml#1.14-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/pugixml-1.14.tar.gz
++ build
++ cd pugixml-1.14
++ mkdir build
++ cd build
++ cmake .. -G Ninja -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib -DBUILD_SHARED_LIBS=True -Wno-dev
+-- The CXX compiler identification is GNU 14.1.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/devel/building/work/src/pugixml-1.14/build
++ ninja -v
+[1/3] /usr/bin/c++ -DPUGIXML_API="__attribute__((visibility(\"default\")))" -Dpugixml_shared_EXPORTS -I/home/devel/building/work/src/pugixml-1.14/src -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++11 -fPIC -MD -MT CMakeFiles/pugixml-shared.dir/src/pugixml.cpp.o -MF CMakeFiles/pugixml-shared.dir/src/pugixml.cpp.o.d -o CMakeFiles/pugixml-shared.dir/src/pugixml.cpp.o -c /home/devel/building/work/src/pugixml-1.14/src/pugixml.cpp
+[2/3] : && /usr/bin/c++ -fPIC -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -shared -Wl,-soname,libpugixml.so.1 -o libpugixml.so.1.14 CMakeFiles/pugixml-shared.dir/src/pugixml.cpp.o   && :
+[3/3] /usr/bin/cmake -E cmake_symlink_library libpugixml.so.1.14  libpugixml.so.1 libpugixml.so && :
++ DESTDIR=/home/devel/building/work/pkg
++ ninja install
+[1/1] Install the project...
+-- Install configuration: "None"
+-- Installing: /home/devel/building/work/pkg/usr/lib/libpugixml.so.1.14
+-- Installing: /home/devel/building/work/pkg/usr/lib/libpugixml.so.1
+-- Installing: /home/devel/building/work/pkg/usr/lib/libpugixml.so
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/pugixml/pugixml-targets.cmake
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/pugixml/pugixml-targets-none.cmake
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/pugixml/pugixml-config-version.cmake
+-- Installing: /home/devel/building/work/pkg/usr/lib/cmake/pugixml/pugixml-config.cmake
+-- Installing: /home/devel/building/work/pkg/usr/lib/pkgconfig/pugixml.pc
+-- Installing: /home/devel/building/work/pkg/usr/include/pugiconfig.hpp
+-- Installing: /home/devel/building/work/pkg/usr/include/pugixml.hpp
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 00:58 usr/
+drwxr-xr-x  0 root   root        0 May  8 00:58 usr/lib/
+drwxr-xr-x  0 root   root        0 May  8 00:58 usr/include/
+-rw-r--r--  0 root   root     2896 Sep  7  2023 usr/include/pugiconfig.hpp
+-rw-r--r--  0 root   root    54297 Sep  7  2023 usr/include/pugixml.hpp
+-rwxr-xr-x  0 root   root   245352 May  8 00:58 usr/lib/libpugixml.so.1.14
+lrwxrwxrwx  0 root   root        0 May  8 00:58 usr/lib/libpugixml.so.1 -> libpugixml.so.1.14
+lrwxrwxrwx  0 root   root        0 May  8 00:58 usr/lib/libpugixml.so -> libpugixml.so.1
+drwxr-xr-x  0 root   root        0 May  8 00:58 usr/lib/cmake/
+drwxr-xr-x  0 root   root        0 May  8 00:58 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      263 May  8 00:58 usr/lib/pkgconfig/pugixml.pc
+drwxr-xr-x  0 root   root        0 May  8 00:58 usr/lib/cmake/pugixml/
+-rw-r--r--  0 root   root     4957 May  8 00:58 usr/lib/cmake/pugixml/pugixml-targets.cmake
+-rw-r--r--  0 root   root      841 May  8 00:58 usr/lib/cmake/pugixml/pugixml-targets-none.cmake
+-rw-r--r--  0 root   root     2759 May  8 00:58 usr/lib/cmake/pugixml/pugixml-config-version.cmake
+-rw-r--r--  0 root   root      983 May  8 00:58 usr/lib/cmake/pugixml/pugixml-config.cmake
+=======> Building '/home/devel/packages/pugixml#1.14-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling pugixml 1.14-1
+prt-get: /usr/bin/pkgadd -u pugixml#1.14-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 00:58:18 2024
+

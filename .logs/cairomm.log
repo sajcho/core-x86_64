@@ -1,0 +1,219 @@
+prt-get: updating /usr/ports/wayland-x86_64/cairomm
+prt-get: starting build Tue May  7 20:34:03 2024
+=======> Building '/home/devel/packages/cairomm#1.14.5-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/cairomm-1.14.5.tar.xz
++ build
++ cd cairomm-1.14.5
++ build-meson -Dboost-shared=true -Dbuild-examples=false -Dbuild-tests=false . build
+The Meson build system
+Version: 1.4.0
+Source dir: /home/devel/building/work/src/cairomm-1.14.5
+Build dir: /home/devel/building/work/src/cairomm-1.14.5/build
+Build type: native build
+Project name: cairomm
+Project version: 1.14.5
+C++ compiler for the host machine: c++ (gcc 14.1.0 "c++ (SAUX-x86_64) 14.1.0")
+C++ linker for the host machine: c++ ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program python3 found: YES 3.12.3 3.12.3 (/usr/bin/python3)
+Found pkg-config: YES (/usr/bin/pkg-config) 2.2.0
+Run-time dependency sigc++-2.0 found: YES 2.12.1
+Run-time dependency cairo found: YES 1.18.0
+Program mm-common-get found: YES (/usr/bin/mm-common-get)
+Program doxygen found: NO
+Program dot found: NO
+Program xsltproc found: YES (/usr/bin/xsltproc)
+Run-time dependency Boost (found: unit_test_framework) found: YES 1.85.0 (/usr)
+Run-time dependency fontconfig found: YES 2.15.0
+Configuring cairommconfig.h using configuration
+Configuring cairomm.rc using configuration
+Configuring cairommconfig.h using configuration
+Configuring cairomm-1.0.pc using configuration
+Run-time dependency cairo-ft found: YES 1.18.0
+Configuring cairomm-ft-1.0.pc using configuration
+Run-time dependency cairo-pdf found: YES 1.18.0
+Configuring cairomm-pdf-1.0.pc using configuration
+Run-time dependency cairo-png found: YES 1.18.0
+Configuring cairomm-png-1.0.pc using configuration
+Run-time dependency cairo-ps found: YES 1.18.0
+Configuring cairomm-ps-1.0.pc using configuration
+Found CMake: /usr/bin/cmake (3.29.2)
+Run-time dependency cairo-quartz found: NO (tried pkgconfig and cmake)
+Configuring cairomm-quartz-1.0.pc using configuration
+Run-time dependency cairo-quartz-font found: NO (tried pkgconfig and cmake)
+Configuring cairomm-quartz-font-1.0.pc using configuration
+Run-time dependency cairo-quartz-image found: NO (tried pkgconfig and cmake)
+Configuring cairomm-quartz-image-1.0.pc using configuration
+Run-time dependency cairo-svg found: YES 1.18.0
+Configuring cairomm-svg-1.0.pc using configuration
+Run-time dependency cairo-win32 found: NO (tried pkgconfig and cmake)
+Configuring cairomm-win32-1.0.pc using configuration
+Run-time dependency cairo-win32-font found: NO (tried pkgconfig and cmake)
+Configuring cairomm-win32-font-1.0.pc using configuration
+Run-time dependency cairo-xlib found: NO (tried pkgconfig and cmake)
+Configuring cairomm-xlib-1.0.pc using configuration
+Run-time dependency cairo-xlib-xrender found: NO (tried pkgconfig and cmake)
+Configuring cairomm-xlib-xrender-1.0.pc using configuration
+Run-time dependency mm-common-libstdc++ found: YES 1.0.5
+Dependency sigc++-2.0 found: YES 2.12.1 (cached)
+Configuring Doxyfile using configuration
+Message: 
+------
+cairomm 1.14.5
+
+         Maintainer mode: if-git-build (false)
+       Compiler warnings: min (warning_level: 1, werror: false)
+    Build deprecated API: true
+Build HTML documentation: if-maintainer-mode (false)
+  Build example programs: false
+     Build test programs: false
+   Use shared Boost Test: true
+Directories:
+                  prefix: /usr
+              includedir: /usr/include
+       includecairommdir: /usr/include/cairomm-1.0
+                  libdir: /usr/lib
+        includeconfigdir: /usr/lib/cairomm-1.0/include
+            pkgconfigdir: /usr/lib/pkgconfig
+                 datadir: /usr/share
+                  docdir: /usr/share/doc/cairomm-1.0
+              devhelpdir: /usr/share/devhelp/books/cairomm-1.0
+------
+Build targets in project: 15
+
+cairomm 1.14.5
+
+  User defined options
+    auto_features     : auto
+    bindir            : /usr/bin
+    buildtype         : plain
+    datadir           : /usr/share
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    libexecdir        : /usr/lib
+    localstatedir     : /var
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sbindir           : /usr/sbin
+    sharedstatedir    : /var/lib
+    sysconfdir        : /etc
+    werror            : false
+    wrap_mode         : nodownload
+    python.bytecompile: 0
+    b_lto             : false
+    b_pie             : true
+    b_staticpic       : true
+    boost-shared      : true
+    build-examples    : false
+    build-tests       : false
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -v -C build
+ninja: entering directory '/home/devel/building/work/src/cairomm-1.14.5/build'
+[1/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/xlib_surface.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/xlib_surface.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/xlib_surface.cc.o -c ../cairomm/xlib_surface.cc
+[2/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/win32_surface.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/win32_surface.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/win32_surface.cc.o -c ../cairomm/win32_surface.cc
+[3/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/win32_font.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/win32_font.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/win32_font.cc.o -c ../cairomm/win32_font.cc
+[4/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/surface.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/surface.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/surface.cc.o -c ../cairomm/surface.cc
+[5/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/script_surface.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/script_surface.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/script_surface.cc.o -c ../cairomm/script_surface.cc
+[6/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/script.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/script.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/script.cc.o -c ../cairomm/script.cc
+[7/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/scaledfont.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/scaledfont.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/scaledfont.cc.o -c ../cairomm/scaledfont.cc
+[8/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/region.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/region.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/region.cc.o -c ../cairomm/region.cc
+[9/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/quartz_surface.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/quartz_surface.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/quartz_surface.cc.o -c ../cairomm/quartz_surface.cc
+[10/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/quartz_font.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/quartz_font.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/quartz_font.cc.o -c ../cairomm/quartz_font.cc
+[11/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/private.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/private.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/private.cc.o -c ../cairomm/private.cc
+[12/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/pattern.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/pattern.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/pattern.cc.o -c ../cairomm/pattern.cc
+[13/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/path.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/path.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/path.cc.o -c ../cairomm/path.cc
+[14/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/matrix.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/matrix.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/matrix.cc.o -c ../cairomm/matrix.cc
+[15/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/fontoptions.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/fontoptions.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/fontoptions.cc.o -c ../cairomm/fontoptions.cc
+[16/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/fontface.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/fontface.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/fontface.cc.o -c ../cairomm/fontface.cc
+[17/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/exception.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/exception.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/exception.cc.o -c ../cairomm/exception.cc
+[18/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/device.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/device.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/device.cc.o -c ../cairomm/device.cc
+[19/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/context_surface_xlib.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/context_surface_xlib.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/context_surface_xlib.cc.o -c ../cairomm/context_surface_xlib.cc
+[20/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/context_surface_win32.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/context_surface_win32.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/context_surface_win32.cc.o -c ../cairomm/context_surface_win32.cc
+[21/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/context_surface_quartz.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/context_surface_quartz.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/context_surface_quartz.cc.o -c ../cairomm/context_surface_quartz.cc
+[22/23] c++ -Icairomm/libcairomm-1.0.so.1.4.0.p -I. -I.. -I/usr/include/sigc++-2.0 -I/usr/lib/sigc++-2.0/include -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fdiagnostics-color=always -D_GLIBCXX_ASSERTIONS=1 -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c++11 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DCAIROMM_BUILD=1 -MD -MQ cairomm/libcairomm-1.0.so.1.4.0.p/context.cc.o -MF cairomm/libcairomm-1.0.so.1.4.0.p/context.cc.o.d -o cairomm/libcairomm-1.0.so.1.4.0.p/context.cc.o -c ../cairomm/context.cc
+[23/23] c++  -o cairomm/libcairomm-1.0.so.1.4.0 cairomm/libcairomm-1.0.so.1.4.0.p/context.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/context_surface_quartz.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/context_surface_win32.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/context_surface_xlib.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/device.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/exception.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/fontface.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/fontoptions.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/matrix.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/path.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/pattern.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/private.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/quartz_font.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/quartz_surface.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/region.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/scaledfont.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/script.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/script_surface.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/surface.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/win32_font.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/win32_surface.cc.o cairomm/libcairomm-1.0.so.1.4.0.p/xlib_surface.cc.o -Wl,--as-needed -Wl,--no-undefined -shared -fPIC -Wl,-soname,libcairomm-1.0.so.1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--start-group /usr/lib/libsigc-2.0.so /usr/lib/libcairo.so -Wl,--end-group
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/cairomm-1.14.5/build -j 8 -v
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Installing cairomm/libcairomm-1.0.so.1.4.0 to /home/devel/building/work/pkg/usr/lib
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/cairomm.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/context.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/device.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/enums.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/exception.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/fontface.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/fontoptions.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/matrix.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/path.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/pattern.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/quartz_font.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/quartz_surface.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/refptr.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/region.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/scaledfont.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/script.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/script_surface.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/surface.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/types.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/win32_font.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/win32_surface.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/cairomm/xlib_surface.h to /home/devel/building/work/pkg/usr/include/cairomm-1.0/cairomm
+Installing /home/devel/building/work/src/cairomm-1.14.5/build/cairommconfig.h to /home/devel/building/work/pkg/usr/lib/cairomm-1.0/include
+Installing /home/devel/building/work/src/cairomm-1.14.5/build/data/cairomm-1.0.pc to /home/devel/building/work/pkg/usr/lib/pkgconfig
+Installing /home/devel/building/work/src/cairomm-1.14.5/build/data/cairomm-ft-1.0.pc to /home/devel/building/work/pkg/usr/lib/pkgconfig
+Installing /home/devel/building/work/src/cairomm-1.14.5/build/data/cairomm-pdf-1.0.pc to /home/devel/building/work/pkg/usr/lib/pkgconfig
+Installing /home/devel/building/work/src/cairomm-1.14.5/build/data/cairomm-png-1.0.pc to /home/devel/building/work/pkg/usr/lib/pkgconfig
+Installing /home/devel/building/work/src/cairomm-1.14.5/build/data/cairomm-ps-1.0.pc to /home/devel/building/work/pkg/usr/lib/pkgconfig
+Installing /home/devel/building/work/src/cairomm-1.14.5/build/data/cairomm-svg-1.0.pc to /home/devel/building/work/pkg/usr/lib/pkgconfig
+Installing symlink pointing to libcairomm-1.0.so.1.4.0 to /home/devel/building/work/pkg/usr/lib/libcairomm-1.0.so.1
+Installing symlink pointing to libcairomm-1.0.so.1 to /home/devel/building/work/pkg/usr/lib/libcairomm-1.0.so
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 20:34 usr/
+drwxr-xr-x  0 root   root        0 May  7 20:34 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 20:34 usr/include/
+drwxr-xr-x  0 root   root        0 May  7 20:34 usr/include/cairomm-1.0/
+drwxr-xr-x  0 root   root        0 May  7 20:34 usr/include/cairomm-1.0/cairomm/
+-rw-r--r--  0 root   root     1680 Sep 27  2023 usr/include/cairomm-1.0/cairomm/cairomm.h
+-rw-r--r--  0 root   root    63593 Sep 27  2023 usr/include/cairomm-1.0/cairomm/context.h
+-rw-r--r--  0 root   root     6122 Sep 27  2023 usr/include/cairomm-1.0/cairomm/device.h
+-rw-r--r--  0 root   root    21851 Sep 27  2023 usr/include/cairomm-1.0/cairomm/enums.h
+-rw-r--r--  0 root   root     1444 Sep 27  2023 usr/include/cairomm-1.0/cairomm/exception.h
+-rw-r--r--  0 root   root    19738 Sep 27  2023 usr/include/cairomm-1.0/cairomm/fontface.h
+-rw-r--r--  0 root   root     5700 Sep 27  2023 usr/include/cairomm-1.0/cairomm/fontoptions.h
+-rw-r--r--  0 root   root     7618 Sep 27  2023 usr/include/cairomm-1.0/cairomm/matrix.h
+-rw-r--r--  0 root   root     2162 Sep 27  2023 usr/include/cairomm-1.0/cairomm/path.h
+-rw-r--r--  0 root   root    15500 Sep 27  2023 usr/include/cairomm-1.0/cairomm/pattern.h
+-rw-r--r--  0 root   root     2132 Sep 27  2023 usr/include/cairomm-1.0/cairomm/quartz_font.h
+-rw-r--r--  0 root   root     3752 Sep 27  2023 usr/include/cairomm-1.0/cairomm/quartz_surface.h
+-rw-r--r--  0 root   root    13618 Sep 27  2023 usr/include/cairomm-1.0/cairomm/refptr.h
+-rw-r--r--  0 root   root     4953 Sep 27  2023 usr/include/cairomm-1.0/cairomm/region.h
+-rw-r--r--  0 root   root    11097 Sep 27  2023 usr/include/cairomm-1.0/cairomm/scaledfont.h
+-rw-r--r--  0 root   root     3564 Sep 27  2023 usr/include/cairomm-1.0/cairomm/script.h
+-rw-r--r--  0 root   root     2699 Sep 27  2023 usr/include/cairomm-1.0/cairomm/script_surface.h
+-rw-r--r--  0 root   root    41523 Sep 27  2023 usr/include/cairomm-1.0/cairomm/surface.h
+-rw-r--r--  0 root   root     2332 Sep 27  2023 usr/include/cairomm-1.0/cairomm/types.h
+-rw-r--r--  0 root   root     5356 Sep 27  2023 usr/include/cairomm-1.0/cairomm/win32_font.h
+-rw-r--r--  0 root   root     5473 Sep 27  2023 usr/include/cairomm-1.0/cairomm/win32_surface.h
+-rw-r--r--  0 root   root     7519 Sep 27  2023 usr/include/cairomm-1.0/cairomm/xlib_surface.h
+-rwxr-xr-x  0 root   root   161120 May  7 20:34 usr/lib/libcairomm-1.0.so.1.4.0
+drwxr-xr-x  0 root   root        0 May  7 20:34 usr/lib/cairomm-1.0/
+drwxr-xr-x  0 root   root        0 May  7 20:34 usr/lib/pkgconfig/
+lrwxrwxrwx  0 root   root        0 May  7 20:34 usr/lib/libcairomm-1.0.so.1 -> libcairomm-1.0.so.1.4.0
+lrwxrwxrwx  0 root   root        0 May  7 20:34 usr/lib/libcairomm-1.0.so -> libcairomm-1.0.so.1
+-rw-r--r--  0 root   root      612 May  7 20:34 usr/lib/pkgconfig/cairomm-1.0.pc
+-rw-r--r--  0 root   root      112 May  7 20:34 usr/lib/pkgconfig/cairomm-ft-1.0.pc
+-rw-r--r--  0 root   root      115 May  7 20:34 usr/lib/pkgconfig/cairomm-pdf-1.0.pc
+-rw-r--r--  0 root   root      115 May  7 20:34 usr/lib/pkgconfig/cairomm-png-1.0.pc
+-rw-r--r--  0 root   root      120 May  7 20:34 usr/lib/pkgconfig/cairomm-ps-1.0.pc
+-rw-r--r--  0 root   root      115 May  7 20:34 usr/lib/pkgconfig/cairomm-svg-1.0.pc
+drwxr-xr-x  0 root   root        0 May  7 20:34 usr/lib/cairomm-1.0/include/
+-rw-r--r--  0 root   root     1125 May  7 20:34 usr/lib/cairomm-1.0/include/cairommconfig.h
+=======> Building '/home/devel/packages/cairomm#1.14.5-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling cairomm 1.14.5-1
+prt-get: /usr/bin/pkgadd -u cairomm#1.14.5-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 20:34:07 2024
+

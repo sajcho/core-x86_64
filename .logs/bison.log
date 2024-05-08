@@ -1,0 +1,2566 @@
+prt-get: updating /usr/ports/core-x86_64/bison
+prt-get: starting build Tue May  7 20:30:07 2024
+=======> Building '/home/devel/packages/bison#3.8.2-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/bison-3.8.2.tar.xz
++ build
++ cd bison-3.8.2
++ ./configure --prefix=/usr --disable-nls
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether the compiler is clang... no
+checking for compiler option needed when checking for declarations... none
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking dependency style of g++... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking for locale.h... yes
+checking for sys/param.h... yes
+checking for sys/socket.h... yes
+checking for stdio_ext.h... yes
+checking for features.h... yes
+checking for getopt.h... yes
+checking for sys/cdefs.h... yes
+checking for sys/time.h... yes
+checking for iconv.h... yes
+checking for limits.h... yes
+checking for crtdefs.h... no
+checking for wctype.h... yes
+checking for threads.h... yes
+checking for math.h... yes
+checking for sys/mman.h... yes
+checking for spawn.h... yes
+checking for sys/ioctl.h... yes
+checking for sys/resource.h... yes
+checking for sys/times.h... yes
+checking for sys/wait.h... yes
+checking for termios.h... yes
+checking for dirent.h... yes
+checking for xlocale.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for Minix Amsterdam compiler... no
+checking for ar... ar
+checking for ranlib... ranlib
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking for ELF binary format... yes
+checking for the common suffixes of directories in the library search path... lib,lib,lib64
+checking for libtextstyle... yes
+checking how to link with libtextstyle... /usr/lib/libtextstyle.so
+checking for inline... inline
+checking for tcdrain... yes
+checking for canonicalize_file_name... yes
+checking for faccessat... yes
+checking for realpath... yes
+checking for lstat... yes
+checking for readlinkat... yes
+checking for _set_invalid_parameter_handler... no
+checking for fchdir... yes
+checking for fcntl... yes
+checking for symlink... yes
+checking for ffsl... yes
+checking for vasnprintf... no
+checking for snprintf... yes
+checking for fsync... yes
+checking for microuptime... no
+checking for nanouptime... no
+checking for getprogname... no
+checking for getexecname... no
+checking for getrusage... yes
+checking for gettimeofday... yes
+checking for iswcntrl... yes
+checking for iswblank... yes
+checking for mbsinit... yes
+checking for mbrtowc... yes
+checking for isascii... yes
+checking for mprotect... yes
+checking for obstack_printf... yes
+checking for strerror_r... yes
+checking for __xpg_strerror_r... yes
+checking for pipe... yes
+checking for pipe2... yes
+checking for posix_spawn_file_actions_addchdir_np... yes
+checking for posix_spawn_file_actions_addchdir... no
+checking for readlink... yes
+checking for setenv... yes
+checking for link... yes
+checking for sigaction... yes
+checking for sigaltstack... yes
+checking for siginterrupt... yes
+checking for stpncpy... yes
+checking for strndup... yes
+checking for wcwidth... yes
+checking for fdopendir... yes
+checking for mempcpy... yes
+checking for __fseterr... no
+checking for fstatat... yes
+checking for getdelim... yes
+checking for getdtablesize... yes
+checking for openat... yes
+checking for catgets... yes
+checking for setlocale... yes
+checking whether pragma GCC diagnostic push works... yes
+checking whether C++ compiler handles -Werror -Wunknown-warning-option... no
+checking whether C++ compiler handles -fno-exceptions... yes
+checking whether C++ compiler accepts -std=c++98... yes
+checking whether C++ compiler accepts -std=c++03... yes
+checking whether C++ compiler accepts -std=c++11... yes
+checking whether C++ compiler accepts -std=c++14... yes
+checking whether C++ compiler accepts -std=c++17... yes
+checking whether C++ compiler accepts -std=c++20... yes
+checking whether C++ compiler accepts -std=c++2b... yes
+checking whether gcc supports POSIXLY_CORRECT=1... yes
+checking whether g++ builds executables that work... yes
+checking whether g++ supports POSIXLY_CORRECT=1... yes
+checking for dmd... no
+checking for -g... no
+checking for Java compiler... no
+checking for Java virtual machine... no
+checking for flex... flex
+checking whether lex is flex... yes
+checking whether flex supports --header=FILE... yes
+checking lex output file root... lex.yy
+checking lex library... -lfl
+checking whether yytext is a pointer... yes
+checking for bison... bison -y
+checking for ranlib... (cached) ranlib
+checking for GNU M4 that supports accurate traces... /usr/bin/m4
+checking whether /usr/bin/m4 accepts --gnu... yes
+checking how m4 supports trace files... --debugfile
+checking for perl... /usr/bin/perl
+checking for xsltproc... /usr/bin/xsltproc
+checking for inline... (cached) inline
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether malloc is ptrdiff_t safe... yes
+checking whether malloc, realloc, calloc set errno on failure... yes
+checking whether lstat correctly handles trailing slash... yes
+checking whether // is distinct from /... no
+checking whether realpath works... yes
+checking for getcwd... yes
+checking for C/C++ restrict keyword... __restrict__
+checking if environ is properly declared... yes
+checking whether the preprocessor supports include_next... yes
+checking whether source code line length is unlimited... yes
+checking for complete errno.h... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether strerror_r is declared... yes
+checking whether strerror_r returns char *... yes
+checking for mode_t... yes
+checking for sig_atomic_t... yes
+checking for working fcntl.h... yes
+checking for pid_t... yes
+checking for eaccess... yes
+checking for stdint.h... yes
+checking for inttypes.h... yes
+checking whether printf supports size specifiers as in C99... yes
+checking whether printf supports 'long double' arguments... yes
+checking whether printf supports infinite 'double' arguments... yes
+checking whether byte ordering is bigendian... no
+checking whether long double and double are the same... no
+checking whether printf supports infinite 'long double' arguments... yes
+checking whether printf supports the 'a' and 'A' directives... yes
+checking whether printf supports the 'F' directive... yes
+checking whether printf supports the 'n' directive... yes
+checking whether printf supports the 'ls' directive... yes
+checking whether printf supports POSIX/XSI format strings with positions... yes
+checking whether printf supports the grouping flag... yes
+checking whether printf supports the left-adjust flag correctly... yes
+checking whether printf supports the zero flag correctly... yes
+checking whether printf supports large precisions... yes
+checking whether the compiler produces multi-arch binaries... no
+checking whether printf survives out-of-memory conditions... yes
+checking for wchar_t... yes
+checking for wint_t... yes
+checking whether wint_t is large enough... yes
+checking for intmax_t... yes
+checking where to find the exponent in a 'double'... word 1 bit 20
+checking whether snprintf returns a byte count as in C99... yes
+checking whether snprintf truncates the result as in C99... yes
+checking for snprintf... (cached) yes
+checking for strnlen... yes
+checking for wcslen... yes
+checking for wcsnlen... yes
+checking for mbrtowc... (cached) yes
+checking for wcrtomb... yes
+checking whether _snprintf is declared... no
+checking whether frexp() can be used without linking with libm... yes
+checking whether alarm is declared... yes
+checking whether getcwd (NULL, 0) allocates memory for result... yes
+checking for getcwd with POSIX signature... yes
+checking whether getcwd is declared... yes
+checking for d_ino member in directory struct... yes
+checking for arithmetic hrtime_t... no
+checking for getopt.h... (cached) yes
+checking for getopt_long_only... yes
+checking whether getopt is POSIX compatible... yes
+checking for working GNU getopt function... yes
+checking for working GNU getopt_long function... yes
+checking for struct timeval... yes
+checking for wide-enough struct timeval.tv_sec member... yes
+checking for iconv... yes
+checking for working iconv... yes
+checking whether iconv is compatible with its POSIX signature... yes
+checking whether limits.h has WORD_BIT, BOOL_WIDTH etc.... yes
+checking whether stdint.h conforms to C99... yes
+checking whether stdint.h works without ISO C predefines... yes
+checking whether stdint.h has UINTMAX_WIDTH etc.... yes
+checking whether INT32_MAX < INTMAX_MAX... yes
+checking whether INT64_MAX == LONG_MAX... yes
+checking whether UINT32_MAX < UINTMAX_MAX... yes
+checking whether UINT64_MAX == ULONG_MAX... yes
+checking where to find the exponent in a 'float'... word 0 bit 23
+checking whether isnan(float) can be used without linking with libm... yes
+checking whether isnan(float) works... yes
+checking whether isnan(double) can be used without linking with libm... yes
+checking whether isnan(long double) can be used without linking with libm... yes
+checking whether isnanl works... yes
+checking whether iswcntrl works... yes
+checking for towlower... yes
+checking for wctype_t... yes
+checking for wctrans_t... yes
+checking for nl_langinfo and CODESET... yes
+checking for a traditional french locale... none
+checking for a traditional japanese locale... none
+checking for a french Unicode locale... none
+checking for a transitional chinese locale... none
+checking whether ldexp() can be used without linking with libm... yes
+checking whether imported symbols can be declared weak... yes
+checking for pthread.h... yes
+checking for pthread_kill in -lpthread... yes
+checking whether POSIX threads API is available... yes
+checking for multithread API to use... posix
+checking for a sed that does not truncate output... /bin/sed
+checking whether NAN macro works... yes
+checking whether HUGE_VAL works... yes
+checking for mbstate_t... yes
+checking for mmap... yes
+checking for MAP_ANONYMOUS... yes
+checking whether memchr works... yes
+checking whether <limits.h> defines MIN and MAX... no
+checking whether <sys/param.h> defines MIN and MAX... yes
+checking whether obstack_printf is declared... yes
+checking for O_CLOEXEC... yes
+checking for promoted mode_t type... mode_t
+checking whether strerror(0) succeeds... yes
+checking for strerror_r with POSIX signature... no
+checking whether __xpg_strerror_r works... yes
+checking for library containing posix_spawn... none required
+checking for posix_spawn... yes
+checking whether posix_spawn is declared... yes
+checking whether posix_spawn works... yes
+checking whether posix_spawn rejects scripts without shebang... yes
+checking whether posix_spawnp rejects scripts without shebang... yes
+checking whether posix_spawnattr_setschedpolicy is supported... yes
+checking whether posix_spawnattr_setschedparam is supported... yes
+checking whether C symbols are prefixed with underscore at the linker level... no
+checking for sigset_t... yes
+checking for shared library path variable... LD_LIBRARY_PATH
+checking whether to activate relocatable installation... no
+checking whether malloc (0) returns nonnull... yes
+checking whether setenv is declared... yes
+checking for sched.h... yes
+checking for struct sched_param... yes
+checking for uid_t in sys/types.h... yes
+checking for volatile sig_atomic_t... yes
+checking for sighandler_t... yes
+checking whether snprintf is declared... yes
+checking for posix_spawnattr_t... yes
+checking for posix_spawn_file_actions_t... yes
+checking whether stat file-mode macros are broken... no
+checking for nlink_t... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for good max_align_t... yes
+checking whether NULL can be used in arbitrary expressions... yes
+checking whether fcloseall is declared... yes
+checking which flavor of printf attribute matches inttypes macros... system
+checking whether ecvt is declared... yes
+checking whether fcvt is declared... yes
+checking whether gcvt is declared... yes
+checking whether stpncpy is declared... yes
+checking whether strdup is declared... yes
+checking whether strndup is declared... yes
+checking whether <sys/ioctl.h> declares ioctl... yes
+checking for struct tms... yes
+checking for struct timespec in <time.h>... yes
+checking for TIME_UTC in <time.h>... yes
+checking whether execvpe is declared... yes
+checking whether clearerr_unlocked is declared... yes
+checking whether feof_unlocked is declared... yes
+checking whether ferror_unlocked is declared... yes
+checking whether fflush_unlocked is declared... yes
+checking whether fgets_unlocked is declared... yes
+checking whether fputc_unlocked is declared... yes
+checking whether fputs_unlocked is declared... yes
+checking whether fread_unlocked is declared... yes
+checking whether fwrite_unlocked is declared... yes
+checking whether getc_unlocked is declared... yes
+checking whether getchar_unlocked is declared... yes
+checking whether putc_unlocked is declared... yes
+checking whether putchar_unlocked is declared... yes
+checking whether unsetenv is declared... yes
+checking whether vsnprintf is declared... yes
+checking whether <wchar.h> uses 'inline' correctly... yes
+checking whether wcsdup is declared... yes
+checking POSIX termios... yes
+checking whether use of TIOCGWINSZ requires termios.h... no
+checking whether fchdir is declared... yes
+checking whether getdelim is declared... yes
+checking whether getdtablesize is declared... yes
+checking whether getline is declared... yes
+checking whether setlocale (LC_ALL, NULL) is multithread-safe... yes
+checking whether setlocale (category, NULL) is multithread-safe... yes
+checking whether locale.h defines locale_t... yes
+checking whether locale.h conforms to POSIX:2001... yes
+checking whether struct lconv is properly defined... yes
+checking whether memrchr is declared... yes
+checking whether strnlen is declared... yes
+checking for alloca as a compiler built-in... yes
+checking whether to enable assertions... yes
+checking for __builtin_expect... yes
+checking whether calloc (0, n) and calloc (n, 0) return nonnull... yes
+checking for library containing clock_gettime... none required
+checking for clock_gettime... yes
+checking for clock_settime... yes
+checking whether // is distinct from /... (cached) no
+checking whether dup2 works... yes
+checking for error_at_line... yes
+checking whether fcntl handles F_DUPFD correctly... yes
+checking whether fcntl understands F_DUPFD_CLOEXEC... needs runtime check
+checking whether conversion from 'int' to 'long double' works... yes
+checking whether fopen recognizes a trailing slash... yes
+checking whether fopen supports the mode character 'x'... yes
+checking whether fopen supports the mode character 'e'... yes
+checking for __fpending... yes
+checking whether __fpending is declared... yes
+checking whether free is known to preserve errno... yes
+checking whether frexp works... yes
+checking whether frexpl is declared... yes
+checking whether frexpl() can be used without linking with libm... yes
+checking whether frexpl works... yes
+checking whether getcwd handles long file names properly... yes
+checking for getpagesize... yes
+checking whether getcwd succeeds when 4k < cwd_length < 16k... yes
+checking whether gethrtime is declared... no
+checking whether CLOCK_MONOTONIC or CLOCK_REALTIME is defined... yes
+checking whether program_invocation_name is declared... yes
+checking whether program_invocation_short_name is declared... yes
+checking whether __argv is declared... no
+checking for gettimeofday with POSIX signature... yes
+checking whether the compiler generally respects inline... yes
+checking whether isnan macro works... yes
+checking whether isnan(double) can be used without linking with libm... (cached) yes
+checking whether isnan(double) can be used without linking with libm... (cached) yes
+checking whether isnan(float) can be used without linking with libm... (cached) yes
+checking whether isnan(float) works... (cached) yes
+checking whether isnan(long double) can be used without linking with libm... (cached) yes
+checking whether isnanl works... (cached) yes
+checking whether isnan(long double) can be used without linking with libm... (cached) yes
+checking whether isnanl works... (cached) yes
+checking whether iswblank is declared... yes
+checking whether iswdigit is ISO C compliant... guessing yes
+checking whether iswxdigit is ISO C compliant... guessing yes
+checking whether ldexpl is declared... yes
+checking whether ldexpl() can be used without linking with libm... yes
+checking whether ldexpl works... yes
+checking whether the compiler supports the __inline keyword... yes
+checking for pthread_rwlock_t... yes
+checking whether pthread_rwlock_rdlock prefers a writer to a reader... no
+checking whether malloc (0) returns nonnull... (cached) yes
+checking whether mbrtowc handles incomplete characters... guessing yes
+checking whether mbrtowc works as well as mbtowc... guessing yes
+checking whether mbrtowc handles a NULL pwc argument... guessing yes
+checking whether mbrtowc handles a NULL string argument... guessing yes
+checking whether mbrtowc has a correct return value... guessing yes
+checking whether mbrtowc returns 0 when parsing a NUL character... guessing yes
+checking whether mbrtowc stores incomplete characters... guessing no
+checking whether mbrtowc works on empty input... yes
+checking whether the C locale is free of encoding errors... no
+checking whether mbrtowc handles incomplete characters... (cached) guessing yes
+checking whether mbrtowc works as well as mbtowc... (cached) guessing yes
+checking whether mbswidth is declared in <wchar.h>... no
+checking for mbstate_t... (cached) yes
+checking for mempcpy... (cached) yes
+checking for obstacks that work with any size object... no
+checking whether open recognizes a trailing slash... yes
+checking whether perror matches strerror... yes
+checking whether posix_spawn_file_actions_addclose works... yes
+checking whether posix_spawn_file_actions_adddup2 works... yes
+checking whether posix_spawn_file_actions_addopen works... yes
+checking whether frexp works... (cached) yes
+checking whether ldexp can be used without linking with libm... (cached) yes
+checking whether frexpl() can be used without linking with libm... (cached) yes
+checking whether frexpl works... (cached) yes
+checking whether frexpl is declared... (cached) yes
+checking whether ldexpl() can be used without linking with libm... (cached) yes
+checking whether ldexpl works... (cached) yes
+checking whether ldexpl is declared... (cached) yes
+checking whether program_invocation_name is declared... (cached) yes
+checking whether program_invocation_short_name is declared... (cached) yes
+checking for raise... yes
+checking for sigprocmask... yes
+checking for rawmemchr... yes
+checking for readline... yes
+checking how to link with libreadline... /usr/lib/libreadline.so
+checking for readline/readline.h... yes
+checking for readline/history.h... yes
+checking whether readlink signature is correct... yes
+checking whether readlink handles trailing slash correctly... yes
+checking whether readlink truncates results correctly... yes
+checking whether realloc (0, 0) returns nonnull... yes
+checking for reallocarray... yes
+checking for getcwd... (cached) yes
+checking whether free is known to preserve errno... (cached) yes
+checking for mempcpy... (cached) yes
+checking for rawmemchr... (cached) yes
+checking for search.h... yes
+checking for tsearch... yes
+checking whether rename honors trailing slash on destination... yes
+checking whether rename honors trailing slash on source... yes
+checking whether rename manages hard links correctly... yes
+checking whether rename manages existing destinations correctly... yes
+checking for struct sigaction.sa_sigaction... yes
+checking for signbit macro... yes
+checking for signbit compiler built-ins... yes
+checking for sigprocmask... (cached) yes
+checking for stdint.h... (cached) yes
+checking for SIZE_MAX... yes
+checking for snprintf... (cached) yes
+checking whether snprintf respects a size of 1... yes
+checking whether printf supports POSIX/XSI format strings with positions... (cached) yes
+checking for snprintf... (cached) yes
+checking whether snprintf fully supports the 'n' directive... yes
+checking whether snprintf respects a size of 1... (cached) yes
+checking whether vsnprintf respects a zero size as in C99... yes
+checking for ssize_t... yes
+checking whether stat handles trailing slashes on files... yes
+checking for working stdalign.h... yes
+checking for stpcpy... yes
+checking for working stpncpy... yes
+checking for working strerror function... yes
+checking for working strndup... yes
+checking whether strtod obeys C99... yes
+checking for strverscmp... yes
+checking for sys/single_threaded.h... yes
+checking whether unlink honors trailing slashes... yes
+checking whether unlink of a parent directory fails as it should... guessing yes
+checking for unsetenv... yes
+checking for unsetenv() return type... int
+checking whether unsetenv obeys POSIX... yes
+checking for ptrdiff_t... yes
+checking for vasprintf... yes
+checking for vasprintf... (cached) yes
+checking for vsnprintf... yes
+checking whether snprintf respects a size of 1... (cached) yes
+checking whether printf supports POSIX/XSI format strings with positions... (cached) yes
+checking for vsnprintf... (cached) yes
+checking whether snprintf fully supports the 'n' directive... (cached) yes
+checking whether snprintf respects a size of 1... (cached) yes
+checking whether vsnprintf respects a zero size as in C99... (cached) yes
+checking for waitid... yes
+checking whether wcwidth is declared... yes
+checking whether wcwidth works reasonably in UTF-8 locales... yes
+checking whether use of TIOCGWINSZ requires sys/ioctl.h... yes
+checking whether use of TIOCGWINSZ requires termios.h... (cached) no
+checking whether use of struct winsize requires sys/ptem.h... no
+checking for stdint.h... (cached) yes
+checking whether getdtablesize works... yes
+checking whether setlocale (LC_ALL, NULL) is multithread-safe... (cached) yes
+checking whether setlocale (category, NULL) is multithread-safe... (cached) yes
+checking whether NLS is requested... no
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking whether to use NLS... no
+checking for valgrind... no
+checking Valgrind suppression file... 
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating src/yacc
+config.status: creating javacomp.sh
+config.status: creating javaexec.sh
+config.status: creating gnulib-po/Makefile.in
+config.status: creating runtime-po/Makefile.in
+config.status: creating etc/bench.pl
+config.status: creating tests/atlocal
+config.status: creating tests/bison
+config.status: creating Makefile
+config.status: creating po/Makefile.in
+config.status: creating doc/yacc.1
+config.status: creating lib/config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating gnulib-po/POTFILES
+config.status: creating gnulib-po/Makefile
+config.status: creating runtime-po/POTFILES
+config.status: creating runtime-po/Makefile
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing tests/atconfig commands
++ make V=1
+rm -f examples/c/reccalc/scan.stamp examples/c/reccalc/scan.stamp.tmp
+rm -f lib/alloca.h-t lib/alloca.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''HAVE_ALLOCA_H''@|1|g' < ./lib/alloca.in.h; \
+} > lib/alloca.h-t && \
+mv -f lib/alloca.h-t lib/alloca.h
+/bin/mkdir -p examples/c/reccalc
+rm -f lib/configmake.h-t && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  echo '#if HAVE_WINSOCK2_H'; \
+  echo '# include <winsock2.h> /* avoid mingw pollution on DATADIR */'; \
+  echo '#endif'; \
+  echo '#define PREFIX "/usr"'; \
+  echo '#define EXEC_PREFIX "/usr"'; \
+  echo '#define BINDIR "/usr/bin"'; \
+  echo '#define SBINDIR "/usr/sbin"'; \
+  echo '#define LIBEXECDIR "/usr/libexec"'; \
+  echo '#define DATAROOTDIR "/usr/share"'; \
+  echo '#define DATADIR "/usr/share"'; \
+  echo '#define SYSCONFDIR "/usr/etc"'; \
+  echo '#define SHAREDSTATEDIR "/usr/com"'; \
+  echo '#define LOCALSTATEDIR "/usr/var"'; \
+  echo '#define RUNSTATEDIR "/usr/var/run"'; \
+  echo '#define INCLUDEDIR "/usr/include"'; \
+  echo '#define OLDINCLUDEDIR "/usr/include"'; \
+  echo '#define DOCDIR "/usr/share/doc/bison"'; \
+  echo '#define INFODIR "/usr/share/info"'; \
+  echo '#define HTMLDIR "/usr/share/doc/bison"'; \
+  echo '#define DVIDIR "/usr/share/doc/bison"'; \
+  echo '#define PDFDIR "/usr/share/doc/bison"'; \
+  echo '#define PSDIR "/usr/share/doc/bison"'; \
+  echo '#define LIBDIR "/usr/lib"'; \
+  echo '#define LISPDIR "/usr/share/emacs/site-lisp"'; \
+  echo '#define LOCALEDIR "/usr/share/locale"'; \
+  echo '#define MANDIR "/usr/share/man"'; \
+  echo '#define MANEXT ""'; \
+  echo '#define PKGDATADIR "/usr/share/bison"'; \
+  echo '#define PKGINCLUDEDIR "/usr/include/bison"'; \
+  echo '#define PKGLIBDIR "/usr/lib/bison"'; \
+  echo '#define PKGLIBEXECDIR "/usr/libexec/bison"'; \
+} | sed '/""/d' > lib/configmake.h-t && \
+mv -f lib/configmake.h-t lib/configmake.h
+touch examples/c/reccalc/scan.stamp.tmp
+rm -f lib/fcntl.h-t lib/fcntl.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_FCNTL_H''@|<fcntl.h>|g' \
+      -e 's/@''GNULIB_CREAT''@/0/g' \
+      -e 's/@''GNULIB_FCNTL''@/1/g' \
+      -e 's/@''GNULIB_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_OPEN''@/1/g' \
+      -e 's/@''GNULIB_OPENAT''@/0/g' \
+      -e 's/@''GNULIB_MDA_CREAT''@/1/g' \
+      -e 's/@''GNULIB_MDA_OPEN''@/1/g' \
+      -e 's|@''HAVE_FCNTL''@|1|g' \
+      -e 's|@''HAVE_OPENAT''@|1|g' \
+      -e 's|@''REPLACE_CREAT''@|0|g' \
+      -e 's|@''REPLACE_FCNTL''@|1|g' \
+      -e 's|@''REPLACE_OPEN''@|0|g' \
+      -e 's|@''REPLACE_OPENAT''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h' \
+      < ./lib/fcntl.in.h; \
+} > lib/fcntl.h-t && \
+mv lib/fcntl.h-t lib/fcntl.h
+flex   -oexamples/c/reccalc/scan.c --header=examples/c/reccalc/scan.h ./examples/c/reccalc/scan.l
+rm -f lib/iconv.h-t lib/iconv.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_ICONV_H''@|<iconv.h>|g' \
+      -e 's/@''GNULIB_ICONV''@/1/g' \
+      -e 's|@''ICONV_CONST''@||g' \
+      -e 's|@''REPLACE_ICONV''@|0|g' \
+      -e 's|@''REPLACE_ICONV_OPEN''@|0|g' \
+      -e 's|@''REPLACE_ICONV_UTF''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h' \
+      < ./lib/iconv.in.h; \
+} > lib/iconv.h-t && \
+mv lib/iconv.h-t lib/iconv.h
+rm -f lib/inttypes.h-t lib/inttypes.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's/@''HAVE_INTTYPES_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_INTTYPES_H''@|<inttypes.h>|g' \
+      -e 's/@''APPLE_UNIVERSAL_BUILD''@/0/g' \
+      -e 's/@''PRIPTR_PREFIX''@/"l"/g' \
+      -e 's/@''GNULIB_IMAXABS''@/0/g' \
+      -e 's/@''GNULIB_IMAXDIV''@/0/g' \
+      -e 's/@''GNULIB_STRTOIMAX''@/0/g' \
+      -e 's/@''GNULIB_STRTOUMAX''@/0/g' \
+      -e 's/@''HAVE_DECL_IMAXABS''@/1/g' \
+      -e 's/@''HAVE_DECL_IMAXDIV''@/1/g' \
+      -e 's/@''HAVE_DECL_STRTOIMAX''@/1/g' \
+      -e 's/@''HAVE_DECL_STRTOUMAX''@/1/g' \
+      -e 's/@''HAVE_IMAXDIV_T''@/1/g' \
+      -e 's/@''REPLACE_STRTOIMAX''@/0/g' \
+      -e 's/@''REPLACE_STRTOUMAX''@/0/g' \
+      -e 's/@''INT32_MAX_LT_INTMAX_MAX''@/1/g' \
+      -e 's/@''INT64_MAX_EQ_LONG_MAX''@/1/g' \
+      -e 's/@''UINT32_MAX_LT_UINTMAX_MAX''@/1/g' \
+      -e 's/@''UINT64_MAX_EQ_ULONG_MAX''@/1/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h' \
+      < ./lib/inttypes.in.h; \
+} > lib/inttypes.h-t && \
+mv lib/inttypes.h-t lib/inttypes.h
+rm -f lib/limits.h-t lib/limits.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_LIMITS_H''@|<limits.h>|g' \
+      < ./lib/limits.in.h; \
+} > lib/limits.h-t && \
+mv lib/limits.h-t lib/limits.h
+rm -f lib/locale.h-t lib/locale.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_LOCALE_H''@|<locale.h>|g' \
+      -e 's/@''GNULIB_LOCALECONV''@/0/g' \
+      -e 's/@''GNULIB_SETLOCALE''@/0/g' \
+      -e 's/@''GNULIB_SETLOCALE_NULL''@/1/g' \
+      -e 's/@''GNULIB_DUPLOCALE''@/0/g' \
+      -e 's/@''GNULIB_LOCALENAME''@/0/g' \
+      -e 's|@''HAVE_NEWLOCALE''@|1|g' \
+      -e 's|@''HAVE_DUPLOCALE''@|1|g' \
+      -e 's|@''HAVE_FREELOCALE''@|1|g' \
+      -e 's|@''HAVE_XLOCALE_H''@|0|g' \
+      -e 's|@''REPLACE_LOCALECONV''@|0|g' \
+      -e 's|@''REPLACE_SETLOCALE''@|0|g' \
+      -e 's|@''REPLACE_NEWLOCALE''@|0|g' \
+      -e 's|@''REPLACE_DUPLOCALE''@|0|g' \
+      -e 's|@''REPLACE_FREELOCALE''@|0|g' \
+      -e 's|@''REPLACE_STRUCT_LCONV''@|0|g' \
+      -e 's|@''LOCALENAME_ENHANCE_LOCALE_FUNCS''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h' \
+      < ./lib/locale.in.h; \
+} > lib/locale.h-t && \
+mv lib/locale.h-t lib/locale.h
+rm -f lib/math.h-t lib/math.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT_AS_FIRST_DIRECTIVE''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_AS_FIRST_DIRECTIVE_MATH_H''@|<math.h>|g' \
+      -e 's/@''GNULIB_ACOSF''@/0/g' \
+      -e 's/@''GNULIB_ACOSL''@/0/g' \
+      -e 's/@''GNULIB_ASINF''@/0/g' \
+      -e 's/@''GNULIB_ASINL''@/0/g' \
+      -e 's/@''GNULIB_ATANF''@/0/g' \
+      -e 's/@''GNULIB_ATANL''@/0/g' \
+      -e 's/@''GNULIB_ATAN2F''@/0/g' \
+      -e 's/@''GNULIB_CBRT''@/0/g' \
+      -e 's/@''GNULIB_CBRTF''@/0/g' \
+      -e 's/@''GNULIB_CBRTL''@/0/g' \
+      -e 's/@''GNULIB_CEIL''@/0/g' \
+      -e 's/@''GNULIB_CEILF''@/0/g' \
+      -e 's/@''GNULIB_CEILL''@/0/g' \
+      -e 's/@''GNULIB_COPYSIGN''@/0/g' \
+      -e 's/@''GNULIB_COPYSIGNF''@/0/g' \
+      -e 's/@''GNULIB_COPYSIGNL''@/0/g' \
+      -e 's/@''GNULIB_COSF''@/0/g' \
+      -e 's/@''GNULIB_COSL''@/0/g' \
+      -e 's/@''GNULIB_COSHF''@/0/g' \
+      -e 's/@''GNULIB_EXPF''@/0/g' \
+      -e 's/@''GNULIB_EXPL''@/0/g' \
+      -e 's/@''GNULIB_EXP2''@/0/g' \
+      -e 's/@''GNULIB_EXP2F''@/0/g' \
+      -e 's/@''GNULIB_EXP2L''@/0/g' \
+      -e 's/@''GNULIB_EXPM1''@/0/g' \
+      -e 's/@''GNULIB_EXPM1F''@/0/g' \
+      -e 's/@''GNULIB_EXPM1L''@/0/g' \
+      -e 's/@''GNULIB_FABSF''@/0/g' \
+      -e 's/@''GNULIB_FABSL''@/0/g' \
+      -e 's/@''GNULIB_FLOOR''@/0/g' \
+      -e 's/@''GNULIB_FLOORF''@/0/g' \
+      -e 's/@''GNULIB_FLOORL''@/0/g' \
+      -e 's/@''GNULIB_FMA''@/0/g' \
+      -e 's/@''GNULIB_FMAF''@/0/g' \
+      -e 's/@''GNULIB_FMAL''@/0/g' \
+      -e 's/@''GNULIB_FMOD''@/0/g' \
+      -e 's/@''GNULIB_FMODF''@/0/g' \
+      -e 's/@''GNULIB_FMODL''@/0/g' \
+      -e 's/@''GNULIB_FREXPF''@/0/g' \
+      -e 's/@''GNULIB_FREXP''@/1/g' \
+      -e 's/@''GNULIB_FREXPL''@/1/g' \
+      -e 's/@''GNULIB_HYPOT''@/0/g' \
+      -e 's/@''GNULIB_HYPOTF''@/0/g' \
+      -e 's/@''GNULIB_HYPOTL''@/0/g' \
+      < ./lib/math.in.h | \
+  sed -e 's/@''GNULIB_ILOGB''@/0/g' \
+      -e 's/@''GNULIB_ILOGBF''@/0/g' \
+      -e 's/@''GNULIB_ILOGBL''@/0/g' \
+      -e 's/@''GNULIB_ISFINITE''@/0/g' \
+      -e 's/@''GNULIB_ISINF''@/0/g' \
+      -e 's/@''GNULIB_ISNAN''@/1/g' \
+      -e 's/@''GNULIB_ISNANF''@/1/g' \
+      -e 's/@''GNULIB_ISNAND''@/1/g' \
+      -e 's/@''GNULIB_ISNANL''@/1/g' \
+      -e 's/@''GNULIB_LDEXPF''@/0/g' \
+      -e 's/@''GNULIB_LDEXPL''@/1/g' \
+      -e 's/@''GNULIB_LOG''@/0/g' \
+      -e 's/@''GNULIB_LOGF''@/0/g' \
+      -e 's/@''GNULIB_LOGL''@/0/g' \
+      -e 's/@''GNULIB_LOG10''@/0/g' \
+      -e 's/@''GNULIB_LOG10F''@/0/g' \
+      -e 's/@''GNULIB_LOG10L''@/0/g' \
+      -e 's/@''GNULIB_LOG1P''@/0/g' \
+      -e 's/@''GNULIB_LOG1PF''@/0/g' \
+      -e 's/@''GNULIB_LOG1PL''@/0/g' \
+      -e 's/@''GNULIB_LOG2''@/0/g' \
+      -e 's/@''GNULIB_LOG2F''@/0/g' \
+      -e 's/@''GNULIB_LOG2L''@/0/g' \
+      -e 's/@''GNULIB_LOGB''@/0/g' \
+      -e 's/@''GNULIB_LOGBF''@/0/g' \
+      -e 's/@''GNULIB_LOGBL''@/0/g' \
+      -e 's/@''GNULIB_MODF''@/0/g' \
+      -e 's/@''GNULIB_MODFF''@/0/g' \
+      -e 's/@''GNULIB_MODFL''@/0/g' \
+      -e 's/@''GNULIB_POWF''@/0/g' \
+      -e 's/@''GNULIB_REMAINDER''@/0/g' \
+      -e 's/@''GNULIB_REMAINDERF''@/0/g' \
+      -e 's/@''GNULIB_REMAINDERL''@/0/g' \
+      -e 's/@''GNULIB_RINT''@/0/g' \
+      -e 's/@''GNULIB_RINTF''@/0/g' \
+      -e 's/@''GNULIB_RINTL''@/0/g' \
+      -e 's/@''GNULIB_ROUND''@/0/g' \
+      -e 's/@''GNULIB_ROUNDF''@/0/g' \
+      -e 's/@''GNULIB_ROUNDL''@/0/g' \
+      -e 's/@''GNULIB_SIGNBIT''@/1/g' \
+      -e 's/@''GNULIB_SINF''@/0/g' \
+      -e 's/@''GNULIB_SINL''@/0/g' \
+      -e 's/@''GNULIB_SINHF''@/0/g' \
+      -e 's/@''GNULIB_SQRTF''@/0/g' \
+      -e 's/@''GNULIB_SQRTL''@/0/g' \
+      -e 's/@''GNULIB_TANF''@/0/g' \
+      -e 's/@''GNULIB_TANL''@/0/g' \
+      -e 's/@''GNULIB_TANHF''@/0/g' \
+      -e 's/@''GNULIB_TRUNC''@/0/g' \
+      -e 's/@''GNULIB_TRUNCF''@/0/g' \
+      -e 's/@''GNULIB_TRUNCL''@/0/g' \
+      -e 's/@''GNULIB_MDA_J0''@/1/g' \
+      -e 's/@''GNULIB_MDA_J1''@/1/g' \
+      -e 's/@''GNULIB_MDA_JN''@/1/g' \
+      -e 's/@''GNULIB_MDA_Y0''@/1/g' \
+      -e 's/@''GNULIB_MDA_Y1''@/1/g' \
+      -e 's/@''GNULIB_MDA_YN''@/1/g' \
+  | \
+  sed -e 's|@''HAVE_ACOSF''@|1|g' \
+      -e 's|@''HAVE_ACOSL''@|1|g' \
+      -e 's|@''HAVE_ASINF''@|1|g' \
+      -e 's|@''HAVE_ASINL''@|1|g' \
+      -e 's|@''HAVE_ATANF''@|1|g' \
+      -e 's|@''HAVE_ATANL''@|1|g' \
+      -e 's|@''HAVE_ATAN2F''@|1|g' \
+      -e 's|@''HAVE_CBRT''@|1|g' \
+      -e 's|@''HAVE_CBRTF''@|1|g' \
+      -e 's|@''HAVE_CBRTL''@|1|g' \
+      -e 's|@''HAVE_COPYSIGN''@|1|g' \
+      -e 's|@''HAVE_COPYSIGNL''@|1|g' \
+      -e 's|@''HAVE_COSF''@|1|g' \
+      -e 's|@''HAVE_COSL''@|1|g' \
+      -e 's|@''HAVE_COSHF''@|1|g' \
+      -e 's|@''HAVE_EXPF''@|1|g' \
+      -e 's|@''HAVE_EXPL''@|1|g' \
+      -e 's|@''HAVE_EXPM1''@|1|g' \
+      -e 's|@''HAVE_EXPM1F''@|1|g' \
+      -e 's|@''HAVE_FABSF''@|1|g' \
+      -e 's|@''HAVE_FABSL''@|1|g' \
+      -e 's|@''HAVE_FMA''@|1|g' \
+      -e 's|@''HAVE_FMAF''@|1|g' \
+      -e 's|@''HAVE_FMAL''@|1|g' \
+      -e 's|@''HAVE_FMODF''@|1|g' \
+      -e 's|@''HAVE_FMODL''@|1|g' \
+      -e 's|@''HAVE_FREXPF''@|1|g' \
+      -e 's|@''HAVE_HYPOTF''@|1|g' \
+      -e 's|@''HAVE_HYPOTL''@|1|g' \
+      -e 's|@''HAVE_ILOGB''@|1|g' \
+      -e 's|@''HAVE_ILOGBF''@|1|g' \
+      -e 's|@''HAVE_ILOGBL''@|1|g' \
+      -e 's|@''HAVE_ISNANF''@|1|g' \
+      -e 's|@''HAVE_ISNAND''@|1|g' \
+      -e 's|@''HAVE_ISNANL''@|1|g' \
+      -e 's|@''HAVE_LDEXPF''@|1|g' \
+      -e 's|@''HAVE_LOGF''@|1|g' \
+      -e 's|@''HAVE_LOGL''@|1|g' \
+      -e 's|@''HAVE_LOG10F''@|1|g' \
+      -e 's|@''HAVE_LOG10L''@|1|g' \
+      -e 's|@''HAVE_LOG1P''@|1|g' \
+      -e 's|@''HAVE_LOG1PF''@|1|g' \
+      -e 's|@''HAVE_LOG1PL''@|1|g' \
+      -e 's|@''HAVE_LOGBF''@|1|g' \
+      -e 's|@''HAVE_LOGBL''@|1|g' \
+      -e 's|@''HAVE_MODFF''@|1|g' \
+      -e 's|@''HAVE_MODFL''@|1|g' \
+      -e 's|@''HAVE_POWF''@|1|g' \
+      -e 's|@''HAVE_REMAINDER''@|1|g' \
+      -e 's|@''HAVE_REMAINDERF''@|1|g' \
+      -e 's|@''HAVE_RINT''@|1|g' \
+      -e 's|@''HAVE_RINTL''@|1|g' \
+      -e 's|@''HAVE_SINF''@|1|g' \
+      -e 's|@''HAVE_SINL''@|1|g' \
+      -e 's|@''HAVE_SINHF''@|1|g' \
+      -e 's|@''HAVE_SQRTF''@|1|g' \
+      -e 's|@''HAVE_SQRTL''@|1|g' \
+      -e 's|@''HAVE_TANF''@|1|g' \
+      -e 's|@''HAVE_TANL''@|1|g' \
+      -e 's|@''HAVE_TANHF''@|1|g' \
+      -e 's|@''HAVE_DECL_ACOSL''@|1|g' \
+      -e 's|@''HAVE_DECL_ASINL''@|1|g' \
+      -e 's|@''HAVE_DECL_ATANL''@|1|g' \
+      -e 's|@''HAVE_DECL_CBRTF''@|1|g' \
+      -e 's|@''HAVE_DECL_CBRTL''@|1|g' \
+      -e 's|@''HAVE_DECL_CEILF''@|1|g' \
+      -e 's|@''HAVE_DECL_CEILL''@|1|g' \
+      -e 's|@''HAVE_DECL_COPYSIGNF''@|1|g' \
+      -e 's|@''HAVE_DECL_COSL''@|1|g' \
+      -e 's|@''HAVE_DECL_EXPL''@|1|g' \
+      -e 's|@''HAVE_DECL_EXP2''@|1|g' \
+      -e 's|@''HAVE_DECL_EXP2F''@|1|g' \
+      -e 's|@''HAVE_DECL_EXP2L''@|1|g' \
+      -e 's|@''HAVE_DECL_EXPM1L''@|1|g' \
+      -e 's|@''HAVE_DECL_FLOORF''@|1|g' \
+      -e 's|@''HAVE_DECL_FLOORL''@|1|g' \
+      -e 's|@''HAVE_DECL_FREXPL''@|1|g' \
+      -e 's|@''HAVE_DECL_LDEXPL''@|1|g' \
+      -e 's|@''HAVE_DECL_LOGL''@|1|g' \
+      -e 's|@''HAVE_DECL_LOG10L''@|1|g' \
+      -e 's|@''HAVE_DECL_LOG2''@|1|g' \
+      -e 's|@''HAVE_DECL_LOG2F''@|1|g' \
+      -e 's|@''HAVE_DECL_LOG2L''@|1|g' \
+      -e 's|@''HAVE_DECL_LOGB''@|1|g' \
+      -e 's|@''HAVE_DECL_REMAINDER''@|1|g' \
+      -e 's|@''HAVE_DECL_REMAINDERL''@|1|g' \
+      -e 's|@''HAVE_DECL_RINTF''@|1|g' \
+      -e 's|@''HAVE_DECL_ROUND''@|1|g' \
+      -e 's|@''HAVE_DECL_ROUNDF''@|1|g' \
+      -e 's|@''HAVE_DECL_ROUNDL''@|1|g' \
+      -e 's|@''HAVE_DECL_SINL''@|1|g' \
+      -e 's|@''HAVE_DECL_SQRTL''@|1|g' \
+      -e 's|@''HAVE_DECL_TANL''@|1|g' \
+      -e 's|@''HAVE_DECL_TRUNC''@|1|g' \
+      -e 's|@''HAVE_DECL_TRUNCF''@|1|g' \
+      -e 's|@''HAVE_DECL_TRUNCL''@|1|g' \
+  | \
+  sed -e 's|@''REPLACE_ACOSF''@|0|g' \
+      -e 's|@''REPLACE_ASINF''@|0|g' \
+      -e 's|@''REPLACE_ATANF''@|0|g' \
+      -e 's|@''REPLACE_ATAN2F''@|0|g' \
+      -e 's|@''REPLACE_CBRTF''@|0|g' \
+      -e 's|@''REPLACE_CBRTL''@|0|g' \
+      -e 's|@''REPLACE_CEIL''@|0|g' \
+      -e 's|@''REPLACE_CEILF''@|0|g' \
+      -e 's|@''REPLACE_CEILL''@|0|g' \
+      -e 's|@''REPLACE_COSF''@|0|g' \
+      -e 's|@''REPLACE_COSHF''@|0|g' \
+      -e 's|@''REPLACE_EXPF''@|0|g' \
+      -e 's|@''REPLACE_EXPL''@|0|g' \
+      -e 's|@''REPLACE_EXPM1''@|0|g' \
+      -e 's|@''REPLACE_EXPM1F''@|0|g' \
+      -e 's|@''REPLACE_EXPM1L''@|0|g' \
+      -e 's|@''REPLACE_EXP2''@|0|g' \
+      -e 's|@''REPLACE_EXP2L''@|0|g' \
+      -e 's|@''REPLACE_FABSL''@|0|g' \
+      -e 's|@''REPLACE_FLOOR''@|0|g' \
+      -e 's|@''REPLACE_FLOORF''@|0|g' \
+      -e 's|@''REPLACE_FLOORL''@|0|g' \
+      -e 's|@''REPLACE_FMA''@|0|g' \
+      -e 's|@''REPLACE_FMAF''@|0|g' \
+      -e 's|@''REPLACE_FMAL''@|0|g' \
+      -e 's|@''REPLACE_FMOD''@|0|g' \
+      -e 's|@''REPLACE_FMODF''@|0|g' \
+      -e 's|@''REPLACE_FMODL''@|0|g' \
+      -e 's|@''REPLACE_FREXPF''@|0|g' \
+      -e 's|@''REPLACE_FREXP''@|0|g' \
+      -e 's|@''REPLACE_FREXPL''@|0|g' \
+      -e 's|@''REPLACE_HUGE_VAL''@|0|g' \
+      -e 's|@''REPLACE_HYPOT''@|0|g' \
+      -e 's|@''REPLACE_HYPOTF''@|0|g' \
+      -e 's|@''REPLACE_HYPOTL''@|0|g' \
+      -e 's|@''REPLACE_ILOGB''@|0|g' \
+      -e 's|@''REPLACE_ILOGBF''@|0|g' \
+      -e 's|@''REPLACE_ILOGBL''@|0|g' \
+      -e 's|@''REPLACE_ISFINITE''@|0|g' \
+      -e 's|@''REPLACE_ISINF''@|0|g' \
+      -e 's|@''REPLACE_ISNAN''@|0|g' \
+      -e 's|@''REPLACE_ITOLD''@|0|g' \
+      -e 's|@''REPLACE_LDEXPL''@|0|g' \
+      -e 's|@''REPLACE_LOG''@|0|g' \
+      -e 's|@''REPLACE_LOGF''@|0|g' \
+      -e 's|@''REPLACE_LOGL''@|0|g' \
+      -e 's|@''REPLACE_LOG10''@|0|g' \
+      -e 's|@''REPLACE_LOG10F''@|0|g' \
+      -e 's|@''REPLACE_LOG10L''@|0|g' \
+      -e 's|@''REPLACE_LOG1P''@|0|g' \
+      -e 's|@''REPLACE_LOG1PF''@|0|g' \
+      -e 's|@''REPLACE_LOG1PL''@|0|g' \
+      -e 's|@''REPLACE_LOG2''@|0|g' \
+      -e 's|@''REPLACE_LOG2F''@|0|g' \
+      -e 's|@''REPLACE_LOG2L''@|0|g' \
+      -e 's|@''REPLACE_LOGB''@|0|g' \
+      -e 's|@''REPLACE_LOGBF''@|0|g' \
+      -e 's|@''REPLACE_LOGBL''@|0|g' \
+      -e 's|@''REPLACE_MODF''@|0|g' \
+      -e 's|@''REPLACE_MODFF''@|0|g' \
+      -e 's|@''REPLACE_MODFL''@|0|g' \
+      -e 's|@''REPLACE_NAN''@|0|g' \
+      -e 's|@''REPLACE_REMAINDER''@|0|g' \
+      -e 's|@''REPLACE_REMAINDERF''@|0|g' \
+      -e 's|@''REPLACE_REMAINDERL''@|0|g' \
+      -e 's|@''REPLACE_RINTL''@|0|g' \
+      -e 's|@''REPLACE_ROUND''@|0|g' \
+      -e 's|@''REPLACE_ROUNDF''@|0|g' \
+      -e 's|@''REPLACE_ROUNDL''@|0|g' \
+      -e 's|@''REPLACE_SIGNBIT''@|0|g' \
+      -e 's|@''REPLACE_SIGNBIT_USING_BUILTINS''@|1|g' \
+      -e 's|@''REPLACE_SINF''@|0|g' \
+      -e 's|@''REPLACE_SINHF''@|0|g' \
+      -e 's|@''REPLACE_SQRTF''@|0|g' \
+      -e 's|@''REPLACE_SQRTL''@|0|g' \
+      -e 's|@''REPLACE_TANF''@|0|g' \
+      -e 's|@''REPLACE_TANHF''@|0|g' \
+      -e 's|@''REPLACE_TRUNC''@|0|g' \
+      -e 's|@''REPLACE_TRUNCF''@|0|g' \
+      -e 's|@''REPLACE_TRUNCL''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h'; \
+} > lib/math.h-t && \
+mv lib/math.h-t lib/math.h
+rm -f lib/sched.h-t lib/sched.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_SCHED_H''@|1|g' \
+      -e 's|@''HAVE_SYS_CDEFS_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SCHED_H''@|<sched.h>|g' \
+      -e 's|@''HAVE_STRUCT_SCHED_PARAM''@|1|g' \
+      -e 's/@''GNULIB_SCHED_YIELD''@/0/g' \
+      -e 's|@''HAVE_SCHED_YIELD''@|1|g' \
+      -e 's|@''REPLACE_SCHED_YIELD''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h' \
+      < ./lib/sched.in.h; \
+} > lib/sched.h-t && \
+mv lib/sched.h-t lib/sched.h
+mv examples/c/reccalc/scan.stamp.tmp examples/c/reccalc/scan.stamp
+/bin/mkdir -p lib/malloc
+rm -f lib/malloc/scratch_buffer.gl.h-t lib/malloc/scratch_buffer.gl.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|__always_inline|inline _GL_ATTRIBUTE_ALWAYS_INLINE|g' \
+      -e 's|__glibc_likely|_GL_LIKELY|g' \
+      -e 's|__glibc_unlikely|_GL_UNLIKELY|g' \
+      -e '/libc_hidden_proto/d' \
+      < ./lib/malloc/scratch_buffer.h; \
+} > lib/malloc/scratch_buffer.gl.h-t && \
+mv lib/malloc/scratch_buffer.gl.h-t lib/malloc/scratch_buffer.gl.h
+rm -f lib/signal.h-t lib/signal.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SIGNAL_H''@|<signal.h>|g' \
+      -e 's/@''GNULIB_PTHREAD_SIGMASK''@/0/g' \
+      -e 's/@''GNULIB_RAISE''@/1/g' \
+      -e 's/@''GNULIB_SIGNAL_H_SIGPIPE''@/0/g' \
+      -e 's/@''GNULIB_SIGPROCMASK''@/1/g' \
+      -e 's/@''GNULIB_SIGACTION''@/1/g' \
+      -e 's|@''HAVE_POSIX_SIGNALBLOCKING''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_SIGMASK''@|1|g' \
+      -e 's|@''HAVE_RAISE''@|1|g' \
+      -e 's|@''HAVE_SIGSET_T''@|1|g' \
+      -e 's|@''HAVE_SIGINFO_T''@|1|g' \
+      -e 's|@''HAVE_SIGACTION''@|1|g' \
+      -e 's|@''HAVE_STRUCT_SIGACTION_SA_SIGACTION''@|1|g' \
+      -e 's|@''HAVE_TYPE_VOLATILE_SIG_ATOMIC_T''@|1|g' \
+      -e 's|@''HAVE_SIGHANDLER_T''@|1|g' \
+      -e 's|@''REPLACE_PTHREAD_SIGMASK''@|0|g' \
+      -e 's|@''REPLACE_RAISE''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h' \
+      < ./lib/signal.in.h; \
+} > lib/signal.h-t && \
+mv lib/signal.h-t lib/signal.h
+rm -f lib/spawn.h-t lib/spawn.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_SPAWN_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SPAWN_H''@|<spawn.h>|g' \
+      -e 's/@''GNULIB_POSIX_SPAWN''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNP''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWN_FILE_ACTIONS_INIT''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWN_FILE_ACTIONS_ADDCHDIR''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWN_FILE_ACTIONS_ADDCLOSE''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWN_FILE_ACTIONS_ADDDUP2''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWN_FILE_ACTIONS_ADDFCHDIR''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWN_FILE_ACTIONS_ADDOPEN''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWN_FILE_ACTIONS_DESTROY''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_INIT''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_GETFLAGS''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_SETFLAGS''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_GETPGROUP''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_SETPGROUP''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_GETSCHEDPARAM''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_SETSCHEDPARAM''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_GETSCHEDPOLICY''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_SETSCHEDPOLICY''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_GETSIGDEFAULT''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_SETSIGDEFAULT''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_GETSIGMASK''@/0/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_SETSIGMASK''@/1/g' \
+      -e 's/@''GNULIB_POSIX_SPAWNATTR_DESTROY''@/1/g' \
+      -e 's|@''HAVE_POSIX_SPAWN''@|1|g' \
+      -e 's|@''HAVE_POSIX_SPAWNATTR_T''@|1|g' \
+      -e 's|@''HAVE_POSIX_SPAWN_FILE_ACTIONS_T''@|1|g' \
+      -e 's|@''HAVE_POSIX_SPAWN_FILE_ACTIONS_ADDCHDIR''@|0|g' \
+      -e 's|@''HAVE_POSIX_SPAWN_FILE_ACTIONS_ADDFCHDIR''@|1|g' \
+      -e 's|@''REPLACE_POSIX_SPAWN''@|0|g' \
+      -e 's|@''REPLACE_POSIX_SPAWN_FILE_ACTIONS_ADDCHDIR''@|0|g' \
+      -e 's|@''REPLACE_POSIX_SPAWN_FILE_ACTIONS_ADDCLOSE''@|0|g' \
+      -e 's|@''REPLACE_POSIX_SPAWN_FILE_ACTIONS_ADDDUP2''@|0|g' \
+      -e 's|@''REPLACE_POSIX_SPAWN_FILE_ACTIONS_ADDFCHDIR''@|0|g' \
+      -e 's|@''REPLACE_POSIX_SPAWN_FILE_ACTIONS_ADDOPEN''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h' \
+      < ./lib/spawn.in.h; \
+} > lib/spawn.h-t && \
+mv lib/spawn.h-t lib/spawn.h
+rm -f lib/stdio.h-t lib/stdio.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STDIO_H''@|<stdio.h>|g' \
+      -e 's/@''GNULIB_DPRINTF''@/0/g' \
+      -e 's/@''GNULIB_FCLOSE''@/0/g' \
+      -e 's/@''GNULIB_FDOPEN''@/0/g' \
+      -e 's/@''GNULIB_FFLUSH''@/0/g' \
+      -e 's/@''GNULIB_FGETC''@/1/g' \
+      -e 's/@''GNULIB_FGETS''@/1/g' \
+      -e 's/@''GNULIB_FOPEN''@/1/g' \
+      -e 's/@''GNULIB_FPRINTF''@/1/g' \
+      -e 's/@''GNULIB_FPRINTF_POSIX''@/1/g' \
+      -e 's/@''GNULIB_FPURGE''@/0/g' \
+      -e 's/@''GNULIB_FPUTC''@/1/g' \
+      -e 's/@''GNULIB_FPUTS''@/1/g' \
+      -e 's/@''GNULIB_FREAD''@/1/g' \
+      -e 's/@''GNULIB_FREOPEN''@/0/g' \
+      -e 's/@''GNULIB_FSCANF''@/1/g' \
+      -e 's/@''GNULIB_FSEEK''@/0/g' \
+      -e 's/@''GNULIB_FSEEKO''@/0/g' \
+      -e 's/@''GNULIB_FTELL''@/0/g' \
+      -e 's/@''GNULIB_FTELLO''@/0/g' \
+      -e 's/@''GNULIB_FWRITE''@/1/g' \
+      -e 's/@''GNULIB_GETC''@/1/g' \
+      -e 's/@''GNULIB_GETCHAR''@/1/g' \
+      -e 's/@''GNULIB_GETDELIM''@/0/g' \
+      -e 's/@''GNULIB_GETLINE''@/0/g' \
+      -e 's/@''GNULIB_OBSTACK_PRINTF''@/1/g' \
+      -e 's/@''GNULIB_OBSTACK_PRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_PCLOSE''@/0/g' \
+      -e 's/@''GNULIB_PERROR''@/1/g' \
+      -e 's/@''GNULIB_POPEN''@/0/g' \
+      -e 's/@''GNULIB_PRINTF''@/1/g' \
+      -e 's/@''GNULIB_PRINTF_POSIX''@/1/g' \
+      -e 's/@''GNULIB_PUTC''@/1/g' \
+      -e 's/@''GNULIB_PUTCHAR''@/1/g' \
+      -e 's/@''GNULIB_PUTS''@/1/g' \
+      -e 's/@''GNULIB_REMOVE''@/0/g' \
+      -e 's/@''GNULIB_RENAME''@/1/g' \
+      -e 's/@''GNULIB_RENAMEAT''@/0/g' \
+      -e 's/@''GNULIB_SCANF''@/1/g' \
+      -e 's/@''GNULIB_SNPRINTF''@/1/g' \
+      -e 's/@''GNULIB_SPRINTF_POSIX''@/1/g' \
+      -e 's/@''GNULIB_STDIO_H_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_STDIO_H_SIGPIPE''@/0/g' \
+      -e 's/@''GNULIB_TMPFILE''@/0/g' \
+      -e 's/@''GNULIB_VASPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VDPRINTF''@/0/g' \
+      -e 's/@''GNULIB_VFPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VFPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_VFSCANF''@/0/g' \
+      -e 's/@''GNULIB_VSCANF''@/0/g' \
+      -e 's/@''GNULIB_VPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_VSNPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VSPRINTF_POSIX''@/1/g' \
+      -e 's/@''GNULIB_MDA_FCLOSEALL''@/1/g' \
+      -e 's/@''GNULIB_MDA_FDOPEN''@/1/g' \
+      -e 's/@''GNULIB_MDA_FILENO''@/1/g' \
+      -e 's/@''GNULIB_MDA_GETW''@/1/g' \
+      -e 's/@''GNULIB_MDA_PUTW''@/1/g' \
+      -e 's/@''GNULIB_MDA_TEMPNAM''@/1/g' \
+      < ./lib/stdio.in.h | \
+  sed -e 's|@''HAVE_DECL_FCLOSEALL''@|1|g' \
+      -e 's|@''HAVE_DECL_FPURGE''@|1|g' \
+      -e 's|@''HAVE_DECL_FSEEKO''@|1|g' \
+      -e 's|@''HAVE_DECL_FTELLO''@|1|g' \
+      -e 's|@''HAVE_DECL_GETDELIM''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLINE''@|1|g' \
+      -e 's|@''HAVE_DECL_OBSTACK_PRINTF''@|1|g' \
+      -e 's|@''HAVE_DECL_SNPRINTF''@|1|g' \
+      -e 's|@''HAVE_DECL_VSNPRINTF''@|1|g' \
+      -e 's|@''HAVE_DPRINTF''@|1|g' \
+      -e 's|@''HAVE_FSEEKO''@|1|g' \
+      -e 's|@''HAVE_FTELLO''@|1|g' \
+      -e 's|@''HAVE_PCLOSE''@|1|g' \
+      -e 's|@''HAVE_POPEN''@|1|g' \
+      -e 's|@''HAVE_RENAMEAT''@|1|g' \
+      -e 's|@''HAVE_VASPRINTF''@|1|g' \
+      -e 's|@''HAVE_VDPRINTF''@|1|g' \
+      -e 's|@''REPLACE_DPRINTF''@|0|g' \
+      -e 's|@''REPLACE_FCLOSE''@|0|g' \
+      -e 's|@''REPLACE_FDOPEN''@|0|g' \
+      -e 's|@''REPLACE_FFLUSH''@|0|g' \
+      -e 's|@''REPLACE_FOPEN''@|0|g' \
+      -e 's|@''REPLACE_FPRINTF''@|0|g' \
+      -e 's|@''REPLACE_FPURGE''@|0|g' \
+      -e 's|@''REPLACE_FREOPEN''@|0|g' \
+      -e 's|@''REPLACE_FSEEK''@|0|g' \
+      -e 's|@''REPLACE_FSEEKO''@|0|g' \
+      -e 's|@''REPLACE_FTELL''@|0|g' \
+      -e 's|@''REPLACE_FTELLO''@|0|g' \
+      -e 's|@''REPLACE_GETDELIM''@|0|g' \
+      -e 's|@''REPLACE_GETLINE''@|0|g' \
+      -e 's|@''REPLACE_OBSTACK_PRINTF''@|0|g' \
+      -e 's|@''REPLACE_PERROR''@|0|g' \
+      -e 's|@''REPLACE_POPEN''@|0|g' \
+      -e 's|@''REPLACE_PRINTF''@|0|g' \
+      -e 's|@''REPLACE_REMOVE''@|0|g' \
+      -e 's|@''REPLACE_RENAME''@|0|g' \
+      -e 's|@''REPLACE_RENAMEAT''@|0|g' \
+      -e 's|@''REPLACE_SNPRINTF''@|0|g' \
+      -e 's|@''REPLACE_SPRINTF''@|0|g' \
+      -e 's|@''REPLACE_STDIO_READ_FUNCS''@|0|g' \
+      -e 's|@''REPLACE_STDIO_WRITE_FUNCS''@|0|g' \
+      -e 's|@''REPLACE_TMPFILE''@|0|g' \
+      -e 's|@''REPLACE_VASPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VDPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VFPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VSNPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VSPRINTF''@|0|g' \
+      -e 's|@''ASM_SYMBOL_PREFIX''@|""|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h'; \
+} > lib/stdio.h-t && \
+mv lib/stdio.h-t lib/stdio.h
+rm -f lib/stdlib.h-t lib/stdlib.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STDLIB_H''@|<stdlib.h>|g' \
+      -e 's/@''GNULIB__EXIT''@/0/g' \
+      -e 's/@''GNULIB_ALIGNED_ALLOC''@/0/g' \
+      -e 's/@''GNULIB_ATOLL''@/0/g' \
+      -e 's/@''GNULIB_CALLOC_POSIX''@/1/g' \
+      -e 's/@''GNULIB_CANONICALIZE_FILE_NAME''@/1/g' \
+      -e 's/@''GNULIB_FREE_POSIX''@/1/g' \
+      -e 's/@''GNULIB_GETLOADAVG''@/0/g' \
+      -e 's/@''GNULIB_GETSUBOPT''@/0/g' \
+      -e 's/@''GNULIB_GRANTPT''@/0/g' \
+      -e 's/@''GNULIB_MALLOC_POSIX''@/1/g' \
+      -e 's/@''GNULIB_MBTOWC''@/0/g' \
+      -e 's/@''GNULIB_MKDTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKOSTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKOSTEMPS''@/0/g' \
+      -e 's/@''GNULIB_MKSTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKSTEMPS''@/0/g' \
+      -e 's/@''GNULIB_POSIX_MEMALIGN''@/0/g' \
+      -e 's/@''GNULIB_POSIX_OPENPT''@/0/g' \
+      -e 's/@''GNULIB_PTSNAME''@/0/g' \
+      -e 's/@''GNULIB_PTSNAME_R''@/0/g' \
+      -e 's/@''GNULIB_PUTENV''@/0/g' \
+      -e 's/@''GNULIB_QSORT_R''@/0/g' \
+      -e 's/@''GNULIB_RANDOM''@/0/g' \
+      -e 's/@''GNULIB_RANDOM_R''@/0/g' \
+      -e 's/@''GNULIB_REALLOC_POSIX''@/1/g' \
+      -e 's/@''GNULIB_REALLOCARRAY''@/1/g' \
+      -e 's/@''GNULIB_REALPATH''@/1/g' \
+      -e 's/@''GNULIB_RPMATCH''@/0/g' \
+      -e 's/@''GNULIB_SECURE_GETENV''@/0/g' \
+      -e 's/@''GNULIB_SETENV''@/0/g' \
+      -e 's/@''GNULIB_STRTOD''@/1/g' \
+      -e 's/@''GNULIB_STRTOL''@/0/g' \
+      -e 's/@''GNULIB_STRTOLD''@/0/g' \
+      -e 's/@''GNULIB_STRTOLL''@/0/g' \
+      -e 's/@''GNULIB_STRTOUL''@/0/g' \
+      -e 's/@''GNULIB_STRTOULL''@/0/g' \
+      -e 's/@''GNULIB_SYSTEM_POSIX''@/0/g' \
+      -e 's/@''GNULIB_UNLOCKPT''@/0/g' \
+      -e 's/@''GNULIB_UNSETENV''@/1/g' \
+      -e 's/@''GNULIB_WCTOMB''@/0/g' \
+      -e 's/@''GNULIB_MDA_ECVT''@/1/g' \
+      -e 's/@''GNULIB_MDA_FCVT''@/1/g' \
+      -e 's/@''GNULIB_MDA_GCVT''@/1/g' \
+      -e 's/@''GNULIB_MDA_MKTEMP''@/1/g' \
+      -e 's/@''GNULIB_MDA_PUTENV''@/1/g' \
+      < ./lib/stdlib.in.h | \
+  sed -e 's|@''HAVE__EXIT''@|1|g' \
+      -e 's|@''HAVE_ALIGNED_ALLOC''@|1|g' \
+      -e 's|@''HAVE_ATOLL''@|1|g' \
+      -e 's|@''HAVE_CANONICALIZE_FILE_NAME''@|1|g' \
+      -e 's|@''HAVE_DECL_ECVT''@|1|g' \
+      -e 's|@''HAVE_DECL_FCVT''@|1|g' \
+      -e 's|@''HAVE_DECL_GCVT''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOADAVG''@|1|g' \
+      -e 's|@''HAVE_GETSUBOPT''@|1|g' \
+      -e 's|@''HAVE_GRANTPT''@|1|g' \
+      -e 's|@''HAVE_INITSTATE''@|1|g' \
+      -e 's|@''HAVE_DECL_INITSTATE''@|1|g' \
+      -e 's|@''HAVE_MBTOWC''@|1|g' \
+      -e 's|@''HAVE_MKDTEMP''@|1|g' \
+      -e 's|@''HAVE_MKOSTEMP''@|1|g' \
+      -e 's|@''HAVE_MKOSTEMPS''@|1|g' \
+      -e 's|@''HAVE_MKSTEMP''@|1|g' \
+      -e 's|@''HAVE_MKSTEMPS''@|1|g' \
+      -e 's|@''HAVE_POSIX_MEMALIGN''@|1|g' \
+      -e 's|@''HAVE_POSIX_OPENPT''@|1|g' \
+      -e 's|@''HAVE_PTSNAME''@|1|g' \
+      -e 's|@''HAVE_PTSNAME_R''@|1|g' \
+      -e 's|@''HAVE_QSORT_R''@|1|g' \
+      -e 's|@''HAVE_RANDOM''@|1|g' \
+      -e 's|@''HAVE_RANDOM_H''@|1|g' \
+      -e 's|@''HAVE_RANDOM_R''@|1|g' \
+      -e 's|@''HAVE_REALLOCARRAY''@|1|g' \
+      -e 's|@''HAVE_REALPATH''@|1|g' \
+      -e 's|@''HAVE_RPMATCH''@|1|g' \
+      -e 's|@''HAVE_SECURE_GETENV''@|1|g' \
+      -e 's|@''HAVE_DECL_SETENV''@|1|g' \
+      -e 's|@''HAVE_SETSTATE''@|1|g' \
+      -e 's|@''HAVE_DECL_SETSTATE''@|1|g' \
+      -e 's|@''HAVE_STRTOD''@|1|g' \
+      -e 's|@''HAVE_STRTOL''@|1|g' \
+      -e 's|@''HAVE_STRTOLD''@|1|g' \
+      -e 's|@''HAVE_STRTOLL''@|1|g' \
+      -e 's|@''HAVE_STRTOUL''@|1|g' \
+      -e 's|@''HAVE_STRTOULL''@|1|g' \
+      -e 's|@''HAVE_STRUCT_RANDOM_DATA''@|1|g' \
+      -e 's|@''HAVE_SYS_LOADAVG_H''@|0|g' \
+      -e 's|@''HAVE_UNLOCKPT''@|1|g' \
+      -e 's|@''HAVE_DECL_UNSETENV''@|1|g' \
+      -e 's|@''REPLACE_ALIGNED_ALLOC''@|0|g' \
+      -e 's|@''REPLACE_CALLOC''@|0|g' \
+      -e 's|@''REPLACE_CANONICALIZE_FILE_NAME''@|0|g' \
+      -e 's|@''REPLACE_FREE''@|0|g' \
+      -e 's|@''REPLACE_INITSTATE''@|0|g' \
+      -e 's|@''REPLACE_MALLOC''@|0|g' \
+      -e 's|@''REPLACE_MBTOWC''@|0|g' \
+      -e 's|@''REPLACE_MKSTEMP''@|0|g' \
+      -e 's|@''REPLACE_POSIX_MEMALIGN''@|0|g' \
+      -e 's|@''REPLACE_PTSNAME''@|0|g' \
+      -e 's|@''REPLACE_PTSNAME_R''@|0|g' \
+      -e 's|@''REPLACE_PUTENV''@|0|g' \
+      -e 's|@''REPLACE_QSORT_R''@|0|g' \
+      -e 's|@''REPLACE_RANDOM''@|0|g' \
+      -e 's|@''REPLACE_RANDOM_R''@|0|g' \
+      -e 's|@''REPLACE_REALLOC''@|0|g' \
+      -e 's|@''REPLACE_REALLOCARRAY''@|0|g' \
+      -e 's|@''REPLACE_REALPATH''@|0|g' \
+      -e 's|@''REPLACE_SETENV''@|0|g' \
+      -e 's|@''REPLACE_SETSTATE''@|0|g' \
+      -e 's|@''REPLACE_STRTOD''@|0|g' \
+      -e 's|@''REPLACE_STRTOL''@|0|g' \
+      -e 's|@''REPLACE_STRTOLD''@|0|g' \
+      -e 's|@''REPLACE_STRTOLL''@|0|g' \
+      -e 's|@''REPLACE_STRTOUL''@|0|g' \
+      -e 's|@''REPLACE_STRTOULL''@|0|g' \
+      -e 's|@''REPLACE_UNSETENV''@|0|g' \
+      -e 's|@''REPLACE_WCTOMB''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _Noreturn/r ./lib/_Noreturn.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h'; \
+} > lib/stdlib.h-t && \
+mv lib/stdlib.h-t lib/stdlib.h
+rm -f lib/string.h-t lib/string.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STRING_H''@|<string.h>|g' \
+      -e 's/@''GNULIB_EXPLICIT_BZERO''@/0/g' \
+      -e 's/@''GNULIB_FFSL''@/1/g' \
+      -e 's/@''GNULIB_FFSLL''@/0/g' \
+      -e 's/@''GNULIB_MBSLEN''@/0/g' \
+      -e 's/@''GNULIB_MBSNLEN''@/0/g' \
+      -e 's/@''GNULIB_MBSCHR''@/0/g' \
+      -e 's/@''GNULIB_MBSRCHR''@/0/g' \
+      -e 's/@''GNULIB_MBSSTR''@/0/g' \
+      -e 's/@''GNULIB_MBSCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSNCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSPCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSCASESTR''@/0/g' \
+      -e 's/@''GNULIB_MBSCSPN''@/0/g' \
+      -e 's/@''GNULIB_MBSPBRK''@/0/g' \
+      -e 's/@''GNULIB_MBSSPN''@/0/g' \
+      -e 's/@''GNULIB_MBSSEP''@/0/g' \
+      -e 's/@''GNULIB_MBSTOK_R''@/0/g' \
+      -e 's/@''GNULIB_MEMCHR''@/1/g' \
+      -e 's/@''GNULIB_MEMMEM''@/0/g' \
+      -e 's/@''GNULIB_MEMPCPY''@/1/g' \
+      -e 's/@''GNULIB_MEMRCHR''@/0/g' \
+      -e 's/@''GNULIB_RAWMEMCHR''@/1/g' \
+      -e 's/@''GNULIB_STPCPY''@/1/g' \
+      -e 's/@''GNULIB_STPNCPY''@/1/g' \
+      -e 's/@''GNULIB_STRCHRNUL''@/0/g' \
+      -e 's/@''GNULIB_STRDUP''@/1/g' \
+      -e 's/@''GNULIB_STRNCAT''@/0/g' \
+      -e 's/@''GNULIB_STRNDUP''@/1/g' \
+      -e 's/@''GNULIB_STRNLEN''@/0/g' \
+      -e 's/@''GNULIB_STRPBRK''@/0/g' \
+      -e 's/@''GNULIB_STRSEP''@/0/g' \
+      -e 's/@''GNULIB_STRSTR''@/0/g' \
+      -e 's/@''GNULIB_STRCASESTR''@/0/g' \
+      -e 's/@''GNULIB_STRTOK_R''@/0/g' \
+      -e 's/@''GNULIB_STRERROR''@/1/g' \
+      -e 's/@''GNULIB_STRERROR_R''@/0/g' \
+      -e 's/@''GNULIB_STRERRORNAME_NP''@/0/g' \
+      -e 's/@''GNULIB_SIGABBREV_NP''@/0/g' \
+      -e 's/@''GNULIB_SIGDESCR_NP''@/0/g' \
+      -e 's/@''GNULIB_STRSIGNAL''@/0/g' \
+      -e 's/@''GNULIB_STRVERSCMP''@/1/g' \
+      -e 's/@''GNULIB_MDA_MEMCCPY''@/1/g' \
+      -e 's/@''GNULIB_MDA_STRDUP''@/1/g' \
+      < ./lib/string.in.h | \
+  sed -e 's|@''HAVE_EXPLICIT_BZERO''@|1|g' \
+      -e 's|@''HAVE_FFSL''@|1|g' \
+      -e 's|@''HAVE_FFSLL''@|1|g' \
+      -e 's|@''HAVE_MBSLEN''@|0|g' \
+      -e 's|@''HAVE_DECL_MEMMEM''@|1|g' \
+      -e 's|@''HAVE_MEMPCPY''@|1|g' \
+      -e 's|@''HAVE_DECL_MEMRCHR''@|1|g' \
+      -e 's|@''HAVE_RAWMEMCHR''@|1|g' \
+      -e 's|@''HAVE_STPCPY''@|1|g' \
+      -e 's|@''HAVE_STPNCPY''@|1|g' \
+      -e 's|@''HAVE_STRCHRNUL''@|1|g' \
+      -e 's|@''HAVE_DECL_STRDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRNDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRNLEN''@|1|g' \
+      -e 's|@''HAVE_STRPBRK''@|1|g' \
+      -e 's|@''HAVE_STRSEP''@|1|g' \
+      -e 's|@''HAVE_STRCASESTR''@|1|g' \
+      -e 's|@''HAVE_DECL_STRTOK_R''@|1|g' \
+      -e 's|@''HAVE_DECL_STRERROR_R''@|1|g' \
+      -e 's|@''HAVE_STRERRORNAME_NP''@|1|g' \
+      -e 's|@''HAVE_SIGABBREV_NP''@|1|g' \
+      -e 's|@''HAVE_SIGDESCR_NP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRSIGNAL''@|1|g' \
+      -e 's|@''HAVE_STRVERSCMP''@|1|g' \
+      -e 's|@''REPLACE_FFSLL''@|0|g' \
+      -e 's|@''REPLACE_MEMCHR''@|0|g' \
+      -e 's|@''REPLACE_MEMMEM''@|0|g' \
+      -e 's|@''REPLACE_FREE''@|0|g' \
+      -e 's|@''REPLACE_STPNCPY''@|0|g' \
+      -e 's|@''REPLACE_STRCHRNUL''@|0|g' \
+      -e 's|@''REPLACE_STRDUP''@|0|g' \
+      -e 's|@''REPLACE_STRNCAT''@|0|g' \
+      -e 's|@''REPLACE_STRNDUP''@|0|g' \
+      -e 's|@''REPLACE_STRNLEN''@|0|g' \
+      -e 's|@''REPLACE_STRSTR''@|0|g' \
+      -e 's|@''REPLACE_STRCASESTR''@|0|g' \
+      -e 's|@''REPLACE_STRTOK_R''@|0|g' \
+      -e 's|@''REPLACE_STRERROR''@|0|g' \
+      -e 's|@''REPLACE_STRERROR_R''@|1|g' \
+      -e 's|@''REPLACE_STRERRORNAME_NP''@|0|g' \
+      -e 's|@''REPLACE_STRSIGNAL''@|0|g' \
+      -e 's|@''UNDEFINE_STRTOK_R''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h'; \
+      < ./lib/string.in.h; \
+} > lib/string.h-t && \
+mv lib/string.h-t lib/string.h
+/bin/mkdir -p lib/sys
+rm -f lib/sys/ioctl.h-t lib/sys/ioctl.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_SYS_IOCTL_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_IOCTL_H''@|<sys/ioctl.h>|g' \
+      -e 's/@''GNULIB_IOCTL''@/0/g' \
+      -e 's|@''SYS_IOCTL_H_HAVE_WINSOCK2_H''@|0|g' \
+      -e 's|@''SYS_IOCTL_H_HAVE_WINSOCK2_H_AND_USE_SOCKETS''@|0|g' \
+      -e 's|@''REPLACE_IOCTL''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h' \
+      < ./lib/sys_ioctl.in.h; \
+} > lib/sys/ioctl.h-t && \
+mv lib/sys/ioctl.h-t lib/sys/ioctl.h
+/bin/mkdir -p lib/sys
+rm -f lib/sys/resource.h-t lib/sys/resource.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_RESOURCE_H''@|<sys/resource.h>|g' \
+      -e 's|@''HAVE_SYS_RESOURCE_H''@|1|g' \
+      -e 's/@''GNULIB_GETRUSAGE''@/1/g' \
+      -e 's/@''HAVE_GETRUSAGE''@/1/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h' \
+      < ./lib/sys_resource.in.h; \
+} > lib/sys/resource.h-t && \
+mv -f lib/sys/resource.h-t lib/sys/resource.h
+/bin/mkdir -p lib/sys
+rm -f lib/sys/stat.h-t lib/sys/stat.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_STAT_H''@|<sys/stat.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_ST_SIZE''@|0|g' \
+      -e 's|@''WINDOWS_STAT_TIMESPEC''@|0|g' \
+      -e 's/@''GNULIB_FCHMODAT''@/0/g' \
+      -e 's/@''GNULIB_FSTAT''@/0/g' \
+      -e 's/@''GNULIB_FSTATAT''@/0/g' \
+      -e 's/@''GNULIB_FUTIMENS''@/0/g' \
+      -e 's/@''GNULIB_GETUMASK''@/0/g' \
+      -e 's/@''GNULIB_LCHMOD''@/0/g' \
+      -e 's/@''GNULIB_LSTAT''@/0/g' \
+      -e 's/@''GNULIB_MKDIR''@/0/g' \
+      -e 's/@''GNULIB_MKDIRAT''@/0/g' \
+      -e 's/@''GNULIB_MKFIFO''@/0/g' \
+      -e 's/@''GNULIB_MKFIFOAT''@/0/g' \
+      -e 's/@''GNULIB_MKNOD''@/0/g' \
+      -e 's/@''GNULIB_MKNODAT''@/0/g' \
+      -e 's/@''GNULIB_STAT''@/1/g' \
+      -e 's/@''GNULIB_UTIMENSAT''@/0/g' \
+      -e 's/@''GNULIB_OVERRIDES_STRUCT_STAT''@/0/g' \
+      -e 's/@''GNULIB_MDA_CHMOD''@/1/g' \
+      -e 's/@''GNULIB_MDA_MKDIR''@/1/g' \
+      -e 's/@''GNULIB_MDA_UMASK''@/1/g' \
+      -e 's|@''HAVE_FCHMODAT''@|1|g' \
+      -e 's|@''HAVE_FSTATAT''@|1|g' \
+      -e 's|@''HAVE_FUTIMENS''@|1|g' \
+      -e 's|@''HAVE_GETUMASK''@|1|g' \
+      -e 's|@''HAVE_LCHMOD''@|1|g' \
+      -e 's|@''HAVE_LSTAT''@|1|g' \
+      -e 's|@''HAVE_MKDIRAT''@|1|g' \
+      -e 's|@''HAVE_MKFIFO''@|1|g' \
+      -e 's|@''HAVE_MKFIFOAT''@|1|g' \
+      -e 's|@''HAVE_MKNOD''@|1|g' \
+      -e 's|@''HAVE_MKNODAT''@|1|g' \
+      -e 's|@''HAVE_UTIMENSAT''@|1|g' \
+      -e 's|@''REPLACE_FCHMODAT''@|0|g' \
+      -e 's|@''REPLACE_FSTAT''@|0|g' \
+      -e 's|@''REPLACE_FSTATAT''@|0|g' \
+      -e 's|@''REPLACE_FUTIMENS''@|0|g' \
+      -e 's|@''REPLACE_LSTAT''@|0|g' \
+      -e 's|@''REPLACE_MKDIR''@|0|g' \
+      -e 's|@''REPLACE_MKFIFO''@|0|g' \
+      -e 's|@''REPLACE_MKFIFOAT''@|0|g' \
+      -e 's|@''REPLACE_MKNOD''@|0|g' \
+      -e 's|@''REPLACE_MKNODAT''@|0|g' \
+      -e 's|@''REPLACE_STAT''@|0|g' \
+      -e 's|@''REPLACE_UTIMENSAT''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h' \
+      < ./lib/sys_stat.in.h; \
+} > lib/sys/stat.h-t && \
+mv lib/sys/stat.h-t lib/sys/stat.h
+/bin/mkdir -p lib/sys
+rm -f lib/sys/time.h-t lib/sys/time.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's/@''HAVE_SYS_TIME_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_TIME_H''@|<sys/time.h>|g' \
+      -e 's/@''GNULIB_GETTIMEOFDAY''@/1/g' \
+      -e 's|@''HAVE_WINSOCK2_H''@|0|g' \
+      -e 's/@''HAVE_GETTIMEOFDAY''@/1/g' \
+      -e 's/@''HAVE_STRUCT_TIMEVAL''@/1/g' \
+      -e 's/@''REPLACE_GETTIMEOFDAY''@/0/g' \
+      -e 's/@''REPLACE_STRUCT_TIMEVAL''@/0/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h' \
+      < ./lib/sys_time.in.h; \
+} > lib/sys/time.h-t && \
+mv lib/sys/time.h-t lib/sys/time.h
+/bin/mkdir -p lib/sys
+rm -f lib/sys/times.h-t lib/sys/times.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's/@''HAVE_SYS_TIMES_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_TIMES_H''@|<sys/times.h>|g' \
+      -e 's/@''GNULIB_TIMES''@/0/g' \
+      -e 's|@''HAVE_STRUCT_TMS''@|1|g' \
+      -e 's|@''HAVE_TIMES''@|1|g' \
+      -e '/definition of _GL_ARG_NONNULL/r ./lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h' \
+      < ./lib/sys_times.in.h; \
+} > lib/sys/times.h-t && \
+mv lib/sys/times.h-t lib/sys/times.h
+/bin/mkdir -p lib/sys
+rm -f lib/sys/types.h-t lib/sys/types.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_TYPES_H''@|<sys/types.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+      -e 's|@''WINDOWS_STAT_INODES''@|0|g' \
+      < ./lib/sys_types.in.h; \
+} > lib/sys/types.h-t && \
+mv lib/sys/types.h-t lib/sys/types.h
+/bin/mkdir -p lib/sys
+rm -f lib/sys/wait.h-t lib/sys/wait.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_WAIT_H''@|<sys/wait.h>|g' \
+      -e 's/@''GNULIB_WAITPID''@/1/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h' \
+      < ./lib/sys_wait.in.h; \
+} > lib/sys/wait.h-t && \
+mv lib/sys/wait.h-t lib/sys/wait.h
+rm -f lib/termios.h-t lib/termios.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_TERMIOS_H''@|<termios.h>|g' \
+      -e 's/@''GNULIB_TCGETSID''@/0/g' \
+      -e 's|@''HAVE_DECL_TCGETSID''@|1|g' \
+      -e 's|@''HAVE_TERMIOS_H''@|1|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h' \
+    < ./lib/termios.in.h; \
+} > lib/termios.h-t && \
+mv lib/termios.h-t lib/termios.h
+rm -f lib/time.h-t lib/time.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_TIME_H''@|<time.h>|g' \
+      -e 's/@''GNULIB_CTIME''@/0/g' \
+      -e 's/@''GNULIB_LOCALTIME''@/0/g' \
+      -e 's/@''GNULIB_MKTIME''@/0/g' \
+      -e 's/@''GNULIB_NANOSLEEP''@/0/g' \
+      -e 's/@''GNULIB_STRFTIME''@/0/g' \
+      -e 's/@''GNULIB_STRPTIME''@/0/g' \
+      -e 's/@''GNULIB_TIMEGM''@/0/g' \
+      -e 's/@''GNULIB_TIMESPEC_GET''@/0/g' \
+      -e 's/@''GNULIB_TIME_R''@/0/g' \
+      -e 's/@''GNULIB_TIME_RZ''@/0/g' \
+      -e 's/@''GNULIB_TZSET''@/0/g' \
+      -e 's/@''GNULIB_MDA_TZSET''@/1/g' \
+      -e 's|@''HAVE_DECL_LOCALTIME_R''@|1|g' \
+      -e 's|@''HAVE_NANOSLEEP''@|1|g' \
+      -e 's|@''HAVE_STRPTIME''@|1|g' \
+      -e 's|@''HAVE_TIMEGM''@|1|g' \
+      -e 's|@''HAVE_TIMESPEC_GET''@|1|g' \
+      -e 's|@''HAVE_TIMEZONE_T''@|0|g' \
+      -e 's|@''REPLACE_CTIME''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_GMTIME''@|0|g' \
+      -e 's|@''REPLACE_LOCALTIME''@|0|g' \
+      -e 's|@''REPLACE_LOCALTIME_R''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_MKTIME''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_NANOSLEEP''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_STRFTIME''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_TIMEGM''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_TZSET''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''PTHREAD_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e 's|@''SYS_TIME_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e 's|@''TIME_H_DEFINES_STRUCT_TIMESPEC''@|1|g' \
+      -e 's|@''UNISTD_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e 's|@''TIME_H_DEFINES_TIME_UTC''@|1|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h' \
+      < ./lib/time.in.h; \
+} > lib/time.h-t && \
+mv lib/time.h-t lib/time.h
+rm -f lib/unistd.h-t lib/unistd.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_UNISTD_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_UNISTD_H''@|<unistd.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+      -e 's/@''GNULIB_ACCESS''@/1/g' \
+      -e 's/@''GNULIB_CHDIR''@/0/g' \
+      -e 's/@''GNULIB_CHOWN''@/0/g' \
+      -e 's/@''GNULIB_CLOSE''@/1/g' \
+      -e 's/@''GNULIB_COPY_FILE_RANGE''@/0/g' \
+      -e 's/@''GNULIB_DUP''@/0/g' \
+      -e 's/@''GNULIB_DUP2''@/1/g' \
+      -e 's/@''GNULIB_DUP3''@/0/g' \
+      -e 's/@''GNULIB_ENVIRON''@/1/g' \
+      -e 's/@''GNULIB_EUIDACCESS''@/0/g' \
+      -e 's/@''GNULIB_EXECL''@/0/g' \
+      -e 's/@''GNULIB_EXECLE''@/0/g' \
+      -e 's/@''GNULIB_EXECLP''@/0/g' \
+      -e 's/@''GNULIB_EXECV''@/0/g' \
+      -e 's/@''GNULIB_EXECVE''@/0/g' \
+      -e 's/@''GNULIB_EXECVP''@/0/g' \
+      -e 's/@''GNULIB_EXECVPE''@/0/g' \
+      -e 's/@''GNULIB_FACCESSAT''@/0/g' \
+      -e 's/@''GNULIB_FCHDIR''@/0/g' \
+      -e 's/@''GNULIB_FCHOWNAT''@/0/g' \
+      -e 's/@''GNULIB_FDATASYNC''@/0/g' \
+      -e 's/@''GNULIB_FSYNC''@/1/g' \
+      -e 's/@''GNULIB_FTRUNCATE''@/0/g' \
+      -e 's/@''GNULIB_GETCWD''@/1/g' \
+      -e 's/@''GNULIB_GETDOMAINNAME''@/0/g' \
+      -e 's/@''GNULIB_GETDTABLESIZE''@/1/g' \
+      -e 's/@''GNULIB_GETENTROPY''@/0/g' \
+      -e 's/@''GNULIB_GETGROUPS''@/0/g' \
+      -e 's/@''GNULIB_GETHOSTNAME''@/0/g' \
+      -e 's/@''GNULIB_GETLOGIN''@/0/g' \
+      -e 's/@''GNULIB_GETLOGIN_R''@/0/g' \
+      -e 's/@''GNULIB_GETOPT_POSIX''@/1/g' \
+      -e 's/@''GNULIB_GETPAGESIZE''@/0/g' \
+      -e 's/@''GNULIB_GETPASS''@/0/g' \
+      -e 's/@''GNULIB_GETUSERSHELL''@/0/g' \
+      -e 's/@''GNULIB_GROUP_MEMBER''@/0/g' \
+      -e 's/@''GNULIB_ISATTY''@/0/g' \
+      -e 's/@''GNULIB_LCHOWN''@/0/g' \
+      -e 's/@''GNULIB_LINK''@/0/g' \
+      -e 's/@''GNULIB_LINKAT''@/0/g' \
+      -e 's/@''GNULIB_LSEEK''@/0/g' \
+      -e 's/@''GNULIB_PIPE''@/1/g' \
+      -e 's/@''GNULIB_PIPE2''@/1/g' \
+      -e 's/@''GNULIB_PREAD''@/0/g' \
+      -e 's/@''GNULIB_PWRITE''@/0/g' \
+      -e 's/@''GNULIB_READ''@/0/g' \
+      -e 's/@''GNULIB_READLINK''@/1/g' \
+      -e 's/@''GNULIB_READLINKAT''@/0/g' \
+      -e 's/@''GNULIB_RMDIR''@/0/g' \
+      -e 's/@''GNULIB_SETHOSTNAME''@/0/g' \
+      -e 's/@''GNULIB_SLEEP''@/0/g' \
+      -e 's/@''GNULIB_SYMLINK''@/0/g' \
+      -e 's/@''GNULIB_SYMLINKAT''@/0/g' \
+      -e 's/@''GNULIB_TRUNCATE''@/0/g' \
+      -e 's/@''GNULIB_TTYNAME_R''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_GETOPT''@/00/g' \
+      -e 's/@''GNULIB_UNISTD_H_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_SIGPIPE''@/0/g' \
+      -e 's/@''GNULIB_UNLINK''@/1/g' \
+      -e 's/@''GNULIB_UNLINKAT''@/0/g' \
+      -e 's/@''GNULIB_USLEEP''@/0/g' \
+      -e 's/@''GNULIB_WRITE''@/0/g' \
+      -e 's/@''GNULIB_MDA_ACCESS''@/1/g' \
+      -e 's/@''GNULIB_MDA_CHDIR''@/1/g' \
+      -e 's/@''GNULIB_MDA_CLOSE''@/1/g' \
+      -e 's/@''GNULIB_MDA_DUP''@/1/g' \
+      -e 's/@''GNULIB_MDA_DUP2''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECL''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECLE''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECLP''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECV''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECVE''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECVP''@/1/g' \
+      -e 's/@''GNULIB_MDA_EXECVPE''@/1/g' \
+      -e 's/@''GNULIB_MDA_GETCWD''@/1/g' \
+      -e 's/@''GNULIB_MDA_GETPID''@/1/g' \
+      -e 's/@''GNULIB_MDA_ISATTY''@/1/g' \
+      -e 's/@''GNULIB_MDA_LSEEK''@/1/g' \
+      -e 's/@''GNULIB_MDA_READ''@/1/g' \
+      -e 's/@''GNULIB_MDA_RMDIR''@/1/g' \
+      -e 's/@''GNULIB_MDA_SWAB''@/1/g' \
+      -e 's/@''GNULIB_MDA_UNLINK''@/1/g' \
+      -e 's/@''GNULIB_MDA_WRITE''@/1/g' \
+      < ./lib/unistd.in.h | \
+  sed -e 's|@''HAVE_CHOWN''@|1|g' \
+      -e 's|@''HAVE_COPY_FILE_RANGE''@|1|g' \
+      -e 's|@''HAVE_DUP3''@|1|g' \
+      -e 's|@''HAVE_EUIDACCESS''@|1|g' \
+      -e 's|@''HAVE_EXECVPE''@|1|g' \
+      -e 's|@''HAVE_FACCESSAT''@|1|g' \
+      -e 's|@''HAVE_FCHDIR''@|1|g' \
+      -e 's|@''HAVE_FCHOWNAT''@|1|g' \
+      -e 's|@''HAVE_FDATASYNC''@|1|g' \
+      -e 's|@''HAVE_FSYNC''@|1|g' \
+      -e 's|@''HAVE_FTRUNCATE''@|1|g' \
+      -e 's|@''HAVE_GETDTABLESIZE''@|1|g' \
+      -e 's|@''HAVE_GETENTROPY''@|1|g' \
+      -e 's|@''HAVE_GETGROUPS''@|1|g' \
+      -e 's|@''HAVE_GETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_GETPAGESIZE''@|1|g' \
+      -e 's|@''HAVE_GETPASS''@|1|g' \
+      -e 's|@''HAVE_GROUP_MEMBER''@|1|g' \
+      -e 's|@''HAVE_LCHOWN''@|1|g' \
+      -e 's|@''HAVE_LINK''@|1|g' \
+      -e 's|@''HAVE_LINKAT''@|1|g' \
+      -e 's|@''HAVE_PIPE''@|1|g' \
+      -e 's|@''HAVE_PIPE2''@|1|g' \
+      -e 's|@''HAVE_PREAD''@|1|g' \
+      -e 's|@''HAVE_PWRITE''@|1|g' \
+      -e 's|@''HAVE_READLINK''@|1|g' \
+      -e 's|@''HAVE_READLINKAT''@|1|g' \
+      -e 's|@''HAVE_SETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_SLEEP''@|1|g' \
+      -e 's|@''HAVE_SYMLINK''@|1|g' \
+      -e 's|@''HAVE_SYMLINKAT''@|1|g' \
+      -e 's|@''HAVE_UNLINKAT''@|1|g' \
+      -e 's|@''HAVE_USLEEP''@|1|g' \
+      -e 's|@''HAVE_DECL_ENVIRON''@|1|g' \
+      -e 's|@''HAVE_DECL_EXECVPE''@|1|g' \
+      -e 's|@''HAVE_DECL_FCHDIR''@|1|g' \
+      -e 's|@''HAVE_DECL_FDATASYNC''@|1|g' \
+      -e 's|@''HAVE_DECL_GETDOMAINNAME''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOGIN''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOGIN_R''@|1|g' \
+      -e 's|@''HAVE_DECL_GETPAGESIZE''@|1|g' \
+      -e 's|@''HAVE_DECL_GETUSERSHELL''@|1|g' \
+      -e 's|@''HAVE_DECL_SETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_DECL_TRUNCATE''@|1|g' \
+      -e 's|@''HAVE_DECL_TTYNAME_R''@|1|g' \
+      -e 's|@''HAVE_OS_H''@|0|g' \
+      -e 's|@''HAVE_SYS_PARAM_H''@|0|g' \
+  | \
+  sed -e 's|@''REPLACE_ACCESS''@|0|g' \
+      -e 's|@''REPLACE_CHOWN''@|0|g' \
+      -e 's|@''REPLACE_CLOSE''@|0|g' \
+      -e 's|@''REPLACE_DUP''@|0|g' \
+      -e 's|@''REPLACE_DUP2''@|0|g' \
+      -e 's|@''REPLACE_EXECL''@|0|g' \
+      -e 's|@''REPLACE_EXECLE''@|0|g' \
+      -e 's|@''REPLACE_EXECLP''@|0|g' \
+      -e 's|@''REPLACE_EXECV''@|0|g' \
+      -e 's|@''REPLACE_EXECVE''@|0|g' \
+      -e 's|@''REPLACE_EXECVP''@|0|g' \
+      -e 's|@''REPLACE_EXECVPE''@|0|g' \
+      -e 's|@''REPLACE_FACCESSAT''@|0|g' \
+      -e 's|@''REPLACE_FCHOWNAT''@|0|g' \
+      -e 's|@''REPLACE_FTRUNCATE''@|0|g' \
+      -e 's|@''REPLACE_GETCWD''@|0|g' \
+      -e 's|@''REPLACE_GETDOMAINNAME''@|0|g' \
+      -e 's|@''REPLACE_GETDTABLESIZE''@|0|g' \
+      -e 's|@''REPLACE_GETLOGIN_R''@|0|g' \
+      -e 's|@''REPLACE_GETGROUPS''@|0|g' \
+      -e 's|@''REPLACE_GETPAGESIZE''@|0|g' \
+      -e 's|@''REPLACE_GETPASS''@|0|g' \
+      -e 's|@''REPLACE_ISATTY''@|0|g' \
+      -e 's|@''REPLACE_LCHOWN''@|0|g' \
+      -e 's|@''REPLACE_LINK''@|0|g' \
+      -e 's|@''REPLACE_LINKAT''@|0|g' \
+      -e 's|@''REPLACE_LSEEK''@|0|g' \
+      -e 's|@''REPLACE_PREAD''@|0|g' \
+      -e 's|@''REPLACE_PWRITE''@|0|g' \
+      -e 's|@''REPLACE_READ''@|0|g' \
+      -e 's|@''REPLACE_READLINK''@|0|g' \
+      -e 's|@''REPLACE_READLINKAT''@|0|g' \
+      -e 's|@''REPLACE_RMDIR''@|0|g' \
+      -e 's|@''REPLACE_SLEEP''@|0|g' \
+      -e 's|@''REPLACE_SYMLINK''@|0|g' \
+      -e 's|@''REPLACE_SYMLINKAT''@|0|g' \
+      -e 's|@''REPLACE_TRUNCATE''@|0|g' \
+      -e 's|@''REPLACE_TTYNAME_R''@|0|g' \
+      -e 's|@''REPLACE_UNLINK''@|0|g' \
+      -e 's|@''REPLACE_UNLINKAT''@|0|g' \
+      -e 's|@''REPLACE_USLEEP''@|0|g' \
+      -e 's|@''REPLACE_WRITE''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_SYS_RANDOM_H''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H_AND_USE_SOCKETS''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h'; \
+} > lib/unistd.h-t && \
+mv lib/unistd.h-t lib/unistd.h
+rm -f lib/unistr.h-t lib/unistr.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat ./lib/unistr.in.h; \
+} > lib/unistr.h-t && \
+mv -f lib/unistr.h-t lib/unistr.h
+rm -f lib/unitypes.h-t lib/unitypes.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat ./lib/unitypes.in.h; \
+} > lib/unitypes.h-t && \
+mv -f lib/unitypes.h-t lib/unitypes.h
+rm -f lib/uniwidth.h-t lib/uniwidth.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat ./lib/uniwidth.in.h; \
+} > lib/uniwidth.h-t && \
+mv -f lib/uniwidth.h-t lib/uniwidth.h
+rm -f lib/wchar.h-t lib/wchar.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''HAVE_FEATURES_H''@|1|g' \
+      -e 's|@''NEXT_WCHAR_H''@|<wchar.h>|g' \
+      -e 's|@''HAVE_WCHAR_H''@|1|g' \
+      -e 's/@''HAVE_CRTDEFS_H''@/0/g' \
+      -e 's/@''GNULIBHEADERS_OVERRIDE_WINT_T''@/0/g' \
+      -e 's/@''GNULIB_BTOWC''@/0/g' \
+      -e 's/@''GNULIB_WCTOB''@/0/g' \
+      -e 's/@''GNULIB_MBSINIT''@/1/g' \
+      -e 's/@''GNULIB_MBRTOWC''@/1/g' \
+      -e 's/@''GNULIB_MBRLEN''@/0/g' \
+      -e 's/@''GNULIB_MBSRTOWCS''@/0/g' \
+      -e 's/@''GNULIB_MBSNRTOWCS''@/0/g' \
+      -e 's/@''GNULIB_WCRTOMB''@/0/g' \
+      -e 's/@''GNULIB_WCSRTOMBS''@/0/g' \
+      -e 's/@''GNULIB_WCSNRTOMBS''@/0/g' \
+      -e 's/@''GNULIB_WCWIDTH''@/1/g' \
+      -e 's/@''GNULIB_WMEMCHR''@/0/g' \
+      -e 's/@''GNULIB_WMEMCMP''@/0/g' \
+      -e 's/@''GNULIB_WMEMCPY''@/0/g' \
+      -e 's/@''GNULIB_WMEMMOVE''@/0/g' \
+      -e 's/@''GNULIB_WMEMPCPY''@/0/g' \
+      -e 's/@''GNULIB_WMEMSET''@/0/g' \
+      -e 's/@''GNULIB_WCSLEN''@/0/g' \
+      -e 's/@''GNULIB_WCSNLEN''@/0/g' \
+      -e 's/@''GNULIB_WCSCPY''@/0/g' \
+      -e 's/@''GNULIB_WCPCPY''@/0/g' \
+      -e 's/@''GNULIB_WCSNCPY''@/0/g' \
+      -e 's/@''GNULIB_WCPNCPY''@/0/g' \
+      -e 's/@''GNULIB_WCSCAT''@/0/g' \
+      -e 's/@''GNULIB_WCSNCAT''@/0/g' \
+      -e 's/@''GNULIB_WCSCMP''@/0/g' \
+      -e 's/@''GNULIB_WCSNCMP''@/0/g' \
+      -e 's/@''GNULIB_WCSCASECMP''@/0/g' \
+      -e 's/@''GNULIB_WCSNCASECMP''@/0/g' \
+      -e 's/@''GNULIB_WCSCOLL''@/0/g' \
+      -e 's/@''GNULIB_WCSXFRM''@/0/g' \
+      -e 's/@''GNULIB_WCSDUP''@/0/g' \
+      -e 's/@''GNULIB_WCSCHR''@/0/g' \
+      -e 's/@''GNULIB_WCSRCHR''@/0/g' \
+      -e 's/@''GNULIB_WCSCSPN''@/0/g' \
+      -e 's/@''GNULIB_WCSSPN''@/0/g' \
+      -e 's/@''GNULIB_WCSPBRK''@/0/g' \
+      -e 's/@''GNULIB_WCSSTR''@/0/g' \
+      -e 's/@''GNULIB_WCSTOK''@/0/g' \
+      -e 's/@''GNULIB_WCSWIDTH''@/0/g' \
+      -e 's/@''GNULIB_WCSFTIME''@/0/g' \
+      -e 's/@''GNULIB_MDA_WCSDUP''@/1/g' \
+      < ./lib/wchar.in.h | \
+  sed -e 's|@''HAVE_WINT_T''@|1|g' \
+      -e 's|@''HAVE_BTOWC''@|1|g' \
+      -e 's|@''HAVE_MBSINIT''@|1|g' \
+      -e 's|@''HAVE_MBRTOWC''@|1|g' \
+      -e 's|@''HAVE_MBRLEN''@|1|g' \
+      -e 's|@''HAVE_MBSRTOWCS''@|1|g' \
+      -e 's|@''HAVE_MBSNRTOWCS''@|1|g' \
+      -e 's|@''HAVE_WCRTOMB''@|1|g' \
+      -e 's|@''HAVE_WCSRTOMBS''@|1|g' \
+      -e 's|@''HAVE_WCSNRTOMBS''@|1|g' \
+      -e 's|@''HAVE_WMEMCHR''@|1|g' \
+      -e 's|@''HAVE_WMEMCMP''@|1|g' \
+      -e 's|@''HAVE_WMEMCPY''@|1|g' \
+      -e 's|@''HAVE_WMEMMOVE''@|1|g' \
+      -e 's|@''HAVE_WMEMPCPY''@|1|g' \
+      -e 's|@''HAVE_WMEMSET''@|1|g' \
+      -e 's|@''HAVE_WCSLEN''@|1|g' \
+      -e 's|@''HAVE_WCSNLEN''@|1|g' \
+      -e 's|@''HAVE_WCSCPY''@|1|g' \
+      -e 's|@''HAVE_WCPCPY''@|1|g' \
+      -e 's|@''HAVE_WCSNCPY''@|1|g' \
+      -e 's|@''HAVE_WCPNCPY''@|1|g' \
+      -e 's|@''HAVE_WCSCAT''@|1|g' \
+      -e 's|@''HAVE_WCSNCAT''@|1|g' \
+      -e 's|@''HAVE_WCSCMP''@|1|g' \
+      -e 's|@''HAVE_WCSNCMP''@|1|g' \
+      -e 's|@''HAVE_WCSCASECMP''@|1|g' \
+      -e 's|@''HAVE_WCSNCASECMP''@|1|g' \
+      -e 's|@''HAVE_WCSCOLL''@|1|g' \
+      -e 's|@''HAVE_WCSXFRM''@|1|g' \
+      -e 's|@''HAVE_WCSDUP''@|1|g' \
+      -e 's|@''HAVE_WCSCHR''@|1|g' \
+      -e 's|@''HAVE_WCSRCHR''@|1|g' \
+      -e 's|@''HAVE_WCSCSPN''@|1|g' \
+      -e 's|@''HAVE_WCSSPN''@|1|g' \
+      -e 's|@''HAVE_WCSPBRK''@|1|g' \
+      -e 's|@''HAVE_WCSSTR''@|1|g' \
+      -e 's|@''HAVE_WCSTOK''@|1|g' \
+      -e 's|@''HAVE_WCSWIDTH''@|1|g' \
+      -e 's|@''HAVE_WCSFTIME''@|1|g' \
+      -e 's|@''HAVE_DECL_WCTOB''@|1|g' \
+      -e 's|@''HAVE_DECL_WCSDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_WCWIDTH''@|1|g' \
+  | \
+  sed -e 's|@''REPLACE_MBSTATE_T''@|0|g' \
+      -e 's|@''REPLACE_BTOWC''@|0|g' \
+      -e 's|@''REPLACE_WCTOB''@|0|g' \
+      -e 's|@''REPLACE_FREE''@|0|g' \
+      -e 's|@''REPLACE_MBSINIT''@|0|g' \
+      -e 's|@''REPLACE_MBRTOWC''@|1|g' \
+      -e 's|@''REPLACE_MBRLEN''@|0|g' \
+      -e 's|@''REPLACE_MBSRTOWCS''@|0|g' \
+      -e 's|@''REPLACE_MBSNRTOWCS''@|0|g' \
+      -e 's|@''REPLACE_WCRTOMB''@|0|g' \
+      -e 's|@''REPLACE_WCSRTOMBS''@|0|g' \
+      -e 's|@''REPLACE_WCSNRTOMBS''@|0|g' \
+      -e 's|@''REPLACE_WCWIDTH''@|0|g' \
+      -e 's|@''REPLACE_WCSWIDTH''@|0|g' \
+      -e 's|@''REPLACE_WCSFTIME''@|0|g' \
+      -e 's|@''REPLACE_WCSTOK''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r ./lib/arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h'; \
+} > lib/wchar.h-t && \
+mv lib/wchar.h-t lib/wchar.h
+rm -f lib/wctype.h-t lib/wctype.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's/@''HAVE_WCTYPE_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_WCTYPE_H''@|<wctype.h>|g' \
+      -e 's/@''HAVE_CRTDEFS_H''@/0/g' \
+      -e 's/@''GNULIBHEADERS_OVERRIDE_WINT_T''@/0/g' \
+      -e 's/@''GNULIB_ISWBLANK''@/1/g' \
+      -e 's/@''GNULIB_ISWDIGIT''@/1/g' \
+      -e 's/@''GNULIB_ISWXDIGIT''@/1/g' \
+      -e 's/@''GNULIB_WCTYPE''@/0/g' \
+      -e 's/@''GNULIB_ISWCTYPE''@/0/g' \
+      -e 's/@''GNULIB_WCTRANS''@/0/g' \
+      -e 's/@''GNULIB_TOWCTRANS''@/0/g' \
+      -e 's/@''HAVE_ISWBLANK''@/1/g' \
+      -e 's/@''HAVE_ISWCNTRL''@/1/g' \
+      -e 's/@''HAVE_WCTYPE_T''@/1/g' \
+      -e 's/@''HAVE_WCTRANS_T''@/1/g' \
+      -e 's/@''HAVE_WINT_T''@/1/g' \
+      -e 's/@''REPLACE_ISWBLANK''@/0/g' \
+      -e 's/@''REPLACE_ISWDIGIT''@/0/g' \
+      -e 's/@''REPLACE_ISWXDIGIT''@/0/g' \
+      -e 's/@''REPLACE_ISWCNTRL''@/0/g' \
+      -e 's/@''REPLACE_TOWLOWER''@/0/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r ./lib/c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r ./lib/warn-on-use.h' \
+      < ./lib/wctype.in.h; \
+} > lib/wctype.h-t && \
+mv lib/wctype.h-t lib/wctype.h
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/bison-3.8.2'
+Making all in po
+make[2]: Entering directory '/home/devel/building/work/src/bison-3.8.2/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/bison-3.8.2/po'
+Making all in runtime-po
+make[2]: Entering directory '/home/devel/building/work/src/bison-3.8.2/runtime-po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/bison-3.8.2/runtime-po'
+Making all in gnulib-po
+make[2]: Entering directory '/home/devel/building/work/src/bison-3.8.2/gnulib-po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/bison-3.8.2/gnulib-po'
+Making all in .
+make[2]: Entering directory '/home/devel/building/work/src/bison-3.8.2'
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-gl_map.o -MD -MP -MF lib/.deps/libbison_a-gl_map.Tpo -c -o lib/libbison_a-gl_map.o `test -f 'lib/gl_map.c' || echo './'`lib/gl_map.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-math.o -MD -MP -MF lib/.deps/libbison_a-math.Tpo -c -o lib/libbison_a-math.o `test -f 'lib/math.c' || echo './'`lib/math.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-mbchar.o -MD -MP -MF lib/.deps/libbison_a-mbchar.Tpo -c -o lib/libbison_a-mbchar.o `test -f 'lib/mbchar.c' || echo './'`lib/mbchar.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-mbfile.o -MD -MP -MF lib/.deps/libbison_a-mbfile.Tpo -c -o lib/libbison_a-mbfile.o `test -f 'lib/mbfile.c' || echo './'`lib/mbfile.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-mbswidth.o -MD -MP -MF lib/.deps/libbison_a-mbswidth.Tpo -c -o lib/libbison_a-mbswidth.o `test -f 'lib/mbswidth.c' || echo './'`lib/mbswidth.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-gl_oset.o -MD -MP -MF lib/.deps/libbison_a-gl_oset.Tpo -c -o lib/libbison_a-gl_oset.o `test -f 'lib/gl_oset.c' || echo './'`lib/gl_oset.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-pipe2.o -MD -MP -MF lib/.deps/libbison_a-pipe2.Tpo -c -o lib/libbison_a-pipe2.o `test -f 'lib/pipe2.c' || echo './'`lib/pipe2.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-pipe2-safer.o -MD -MP -MF lib/.deps/libbison_a-pipe2-safer.Tpo -c -o lib/libbison_a-pipe2-safer.o `test -f 'lib/pipe2-safer.c' || echo './'`lib/pipe2-safer.c
+mv -f lib/.deps/libbison_a-mbchar.Tpo lib/.deps/libbison_a-mbchar.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-printf-frexp.o -MD -MP -MF lib/.deps/libbison_a-printf-frexp.Tpo -c -o lib/libbison_a-printf-frexp.o `test -f 'lib/printf-frexp.c' || echo './'`lib/printf-frexp.c
+mv -f lib/.deps/libbison_a-math.Tpo lib/.deps/libbison_a-math.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-printf-frexpl.o -MD -MP -MF lib/.deps/libbison_a-printf-frexpl.Tpo -c -o lib/libbison_a-printf-frexpl.o `test -f 'lib/printf-frexpl.c' || echo './'`lib/printf-frexpl.c
+mv -f lib/.deps/libbison_a-gl_oset.Tpo lib/.deps/libbison_a-gl_oset.Po
+mv -f lib/.deps/libbison_a-gl_map.Tpo lib/.deps/libbison_a-gl_map.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-progname.o -MD -MP -MF lib/.deps/libbison_a-progname.Tpo -c -o lib/libbison_a-progname.o `test -f 'lib/progname.c' || echo './'`lib/progname.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-quotearg.o -MD -MP -MF lib/.deps/libbison_a-quotearg.Tpo -c -o lib/libbison_a-quotearg.o `test -f 'lib/quotearg.c' || echo './'`lib/quotearg.c
+mv -f lib/.deps/libbison_a-pipe2-safer.Tpo lib/.deps/libbison_a-pipe2-safer.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-gl_rbtree_oset.o -MD -MP -MF lib/.deps/libbison_a-gl_rbtree_oset.Tpo -c -o lib/libbison_a-gl_rbtree_oset.o `test -f 'lib/gl_rbtree_oset.c' || echo './'`lib/gl_rbtree_oset.c
+mv -f lib/.deps/libbison_a-mbswidth.Tpo lib/.deps/libbison_a-mbswidth.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-gl_rbtreehash_list.o -MD -MP -MF lib/.deps/libbison_a-gl_rbtreehash_list.Tpo -c -o lib/libbison_a-gl_rbtreehash_list.o `test -f 'lib/gl_rbtreehash_list.c' || echo './'`lib/gl_rbtreehash_list.c
+mv -f lib/.deps/libbison_a-pipe2.Tpo lib/.deps/libbison_a-pipe2.Po
+mv -f lib/.deps/libbison_a-mbfile.Tpo lib/.deps/libbison_a-mbfile.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-setlocale_null.o -MD -MP -MF lib/.deps/libbison_a-setlocale_null.Tpo -c -o lib/libbison_a-setlocale_null.o `test -f 'lib/setlocale_null.c' || echo './'`lib/setlocale_null.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-sig-handler.o -MD -MP -MF lib/.deps/libbison_a-sig-handler.Tpo -c -o lib/libbison_a-sig-handler.o `test -f 'lib/sig-handler.c' || echo './'`lib/sig-handler.c
+mv -f lib/.deps/libbison_a-progname.Tpo lib/.deps/libbison_a-progname.Po
+mv -f lib/.deps/libbison_a-printf-frexp.Tpo lib/.deps/libbison_a-printf-frexp.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-spawn-pipe.o -MD -MP -MF lib/.deps/libbison_a-spawn-pipe.Tpo -c -o lib/libbison_a-spawn-pipe.o `test -f 'lib/spawn-pipe.c' || echo './'`lib/spawn-pipe.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/glthread/libbison_a-threadlib.o -MD -MP -MF lib/glthread/.deps/libbison_a-threadlib.Tpo -c -o lib/glthread/libbison_a-threadlib.o `test -f 'lib/glthread/threadlib.c' || echo './'`lib/glthread/threadlib.c
+mv -f lib/.deps/libbison_a-printf-frexpl.Tpo lib/.deps/libbison_a-printf-frexpl.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-timespec.o -MD -MP -MF lib/.deps/libbison_a-timespec.Tpo -c -o lib/libbison_a-timespec.o `test -f 'lib/timespec.c' || echo './'`lib/timespec.c
+mv -f lib/.deps/libbison_a-setlocale_null.Tpo lib/.deps/libbison_a-setlocale_null.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-timevar.o -MD -MP -MF lib/.deps/libbison_a-timevar.Tpo -c -o lib/libbison_a-timevar.o `test -f 'lib/timevar.c' || echo './'`lib/timevar.c
+mv -f lib/.deps/libbison_a-sig-handler.Tpo lib/.deps/libbison_a-sig-handler.Po
+mv -f lib/glthread/.deps/libbison_a-threadlib.Tpo lib/glthread/.deps/libbison_a-threadlib.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/glthread/libbison_a-tls.o -MD -MP -MF lib/glthread/.deps/libbison_a-tls.Tpo -c -o lib/glthread/libbison_a-tls.o `test -f 'lib/glthread/tls.c' || echo './'`lib/glthread/tls.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-unicodeio.o -MD -MP -MF lib/.deps/libbison_a-unicodeio.Tpo -c -o lib/libbison_a-unicodeio.o `test -f 'lib/unicodeio.c' || echo './'`lib/unicodeio.c
+mv -f lib/.deps/libbison_a-timespec.Tpo lib/.deps/libbison_a-timespec.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-unistd.o -MD -MP -MF lib/.deps/libbison_a-unistd.Tpo -c -o lib/libbison_a-unistd.o `test -f 'lib/unistd.c' || echo './'`lib/unistd.c
+mv -f lib/glthread/.deps/libbison_a-tls.Tpo lib/glthread/.deps/libbison_a-tls.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-dup-safer.o -MD -MP -MF lib/.deps/libbison_a-dup-safer.Tpo -c -o lib/libbison_a-dup-safer.o `test -f 'lib/dup-safer.c' || echo './'`lib/dup-safer.c
+mv -f lib/.deps/libbison_a-unistd.Tpo lib/.deps/libbison_a-unistd.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-fd-safer.o -MD -MP -MF lib/.deps/libbison_a-fd-safer.Tpo -c -o lib/libbison_a-fd-safer.o `test -f 'lib/fd-safer.c' || echo './'`lib/fd-safer.c
+mv -f lib/.deps/libbison_a-unicodeio.Tpo lib/.deps/libbison_a-unicodeio.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-pipe-safer.o -MD -MP -MF lib/.deps/libbison_a-pipe-safer.Tpo -c -o lib/libbison_a-pipe-safer.o `test -f 'lib/pipe-safer.c' || echo './'`lib/pipe-safer.c
+mv -f lib/.deps/libbison_a-dup-safer.Tpo lib/.deps/libbison_a-dup-safer.Po
+mv -f lib/.deps/libbison_a-fd-safer.Tpo lib/.deps/libbison_a-fd-safer.Po
+mv -f lib/.deps/libbison_a-spawn-pipe.Tpo lib/.deps/libbison_a-spawn-pipe.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-wait-process.o -MD -MP -MF lib/.deps/libbison_a-wait-process.Tpo -c -o lib/libbison_a-wait-process.o `test -f 'lib/wait-process.c' || echo './'`lib/wait-process.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-wctype-h.o -MD -MP -MF lib/.deps/libbison_a-wctype-h.Tpo -c -o lib/libbison_a-wctype-h.o `test -f 'lib/wctype-h.c' || echo './'`lib/wctype-h.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-xmalloc.o -MD -MP -MF lib/.deps/libbison_a-xmalloc.Tpo -c -o lib/libbison_a-xmalloc.o `test -f 'lib/xmalloc.c' || echo './'`lib/xmalloc.c
+mv -f lib/.deps/libbison_a-timevar.Tpo lib/.deps/libbison_a-timevar.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-xalloc-die.o -MD -MP -MF lib/.deps/libbison_a-xalloc-die.Tpo -c -o lib/libbison_a-xalloc-die.o `test -f 'lib/xalloc-die.c' || echo './'`lib/xalloc-die.c
+mv -f lib/.deps/libbison_a-pipe-safer.Tpo lib/.deps/libbison_a-pipe-safer.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-xconcat-filename.o -MD -MP -MF lib/.deps/libbison_a-xconcat-filename.Tpo -c -o lib/libbison_a-xconcat-filename.o `test -f 'lib/xconcat-filename.c' || echo './'`lib/xconcat-filename.c
+mv -f lib/.deps/libbison_a-wctype-h.Tpo lib/.deps/libbison_a-wctype-h.Po
+mv -f lib/.deps/libbison_a-gl_rbtree_oset.Tpo lib/.deps/libbison_a-gl_rbtree_oset.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-xhash.o -MD -MP -MF lib/.deps/libbison_a-xhash.Tpo -c -o lib/libbison_a-xhash.o `test -f 'lib/xhash.c' || echo './'`lib/xhash.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-gl_xlist.o -MD -MP -MF lib/.deps/libbison_a-gl_xlist.Tpo -c -o lib/libbison_a-gl_xlist.o `test -f 'lib/gl_xlist.c' || echo './'`lib/gl_xlist.c
+mv -f lib/.deps/libbison_a-xconcat-filename.Tpo lib/.deps/libbison_a-xconcat-filename.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-gl_xmap.o -MD -MP -MF lib/.deps/libbison_a-gl_xmap.Tpo -c -o lib/libbison_a-gl_xmap.o `test -f 'lib/gl_xmap.c' || echo './'`lib/gl_xmap.c
+mv -f lib/.deps/libbison_a-xalloc-die.Tpo lib/.deps/libbison_a-xalloc-die.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-xmemdup0.o -MD -MP -MF lib/.deps/libbison_a-xmemdup0.Tpo -c -o lib/libbison_a-xmemdup0.o `test -f 'lib/xmemdup0.c' || echo './'`lib/xmemdup0.c
+mv -f lib/.deps/libbison_a-xhash.Tpo lib/.deps/libbison_a-xhash.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-xreadlink.o -MD -MP -MF lib/.deps/libbison_a-xreadlink.Tpo -c -o lib/libbison_a-xreadlink.o `test -f 'lib/xreadlink.c' || echo './'`lib/xreadlink.c
+mv -f lib/.deps/libbison_a-wait-process.Tpo lib/.deps/libbison_a-wait-process.Po
+mv -f lib/.deps/libbison_a-gl_xmap.Tpo lib/.deps/libbison_a-gl_xmap.Po
+mv -f lib/.deps/libbison_a-xreadlink.Tpo lib/.deps/libbison_a-xreadlink.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-xsize.o -MD -MP -MF lib/.deps/libbison_a-xsize.Tpo -c -o lib/libbison_a-xsize.o `test -f 'lib/xsize.c' || echo './'`lib/xsize.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-xstrndup.o -MD -MP -MF lib/.deps/libbison_a-xstrndup.Tpo -c -o lib/libbison_a-xstrndup.o `test -f 'lib/xstrndup.c' || echo './'`lib/xstrndup.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-get-errno.o -MD -MP -MF lib/.deps/libbison_a-get-errno.Tpo -c -o lib/libbison_a-get-errno.o `test -f 'lib/get-errno.c' || echo './'`lib/get-errno.c
+mv -f lib/.deps/libbison_a-xmalloc.Tpo lib/.deps/libbison_a-xmalloc.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-path-join.o -MD -MP -MF lib/.deps/libbison_a-path-join.Tpo -c -o lib/libbison_a-path-join.o `test -f 'lib/path-join.c' || echo './'`lib/path-join.c
+mv -f lib/.deps/libbison_a-gl_xlist.Tpo lib/.deps/libbison_a-gl_xlist.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-asnprintf.o -MD -MP -MF lib/.deps/libbison_a-asnprintf.Tpo -c -o lib/libbison_a-asnprintf.o `test -f 'lib/asnprintf.c' || echo './'`lib/asnprintf.c
+mv -f lib/.deps/libbison_a-xsize.Tpo lib/.deps/libbison_a-xsize.Po
+mv -f lib/.deps/libbison_a-xstrndup.Tpo lib/.deps/libbison_a-xstrndup.Po
+mv -f lib/.deps/libbison_a-get-errno.Tpo lib/.deps/libbison_a-get-errno.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-fcntl.o -MD -MP -MF lib/.deps/libbison_a-fcntl.Tpo -c -o lib/libbison_a-fcntl.o `test -f 'lib/fcntl.c' || echo './'`lib/fcntl.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-mbrtowc.o -MD -MP -MF lib/.deps/libbison_a-mbrtowc.Tpo -c -o lib/libbison_a-mbrtowc.o `test -f 'lib/mbrtowc.c' || echo './'`lib/mbrtowc.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-obstack.o -MD -MP -MF lib/.deps/libbison_a-obstack.Tpo -c -o lib/libbison_a-obstack.o `test -f 'lib/obstack.c' || echo './'`lib/obstack.c
+mv -f lib/.deps/libbison_a-path-join.Tpo lib/.deps/libbison_a-path-join.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-printf-args.o -MD -MP -MF lib/.deps/libbison_a-printf-args.Tpo -c -o lib/libbison_a-printf-args.o `test -f 'lib/printf-args.c' || echo './'`lib/printf-args.c
+mv -f lib/.deps/libbison_a-asnprintf.Tpo lib/.deps/libbison_a-asnprintf.Po
+mv -f lib/.deps/libbison_a-xmemdup0.Tpo lib/.deps/libbison_a-xmemdup0.Po
+mv -f lib/.deps/libbison_a-mbrtowc.Tpo lib/.deps/libbison_a-mbrtowc.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-printf-parse.o -MD -MP -MF lib/.deps/libbison_a-printf-parse.Tpo -c -o lib/libbison_a-printf-parse.o `test -f 'lib/printf-parse.c' || echo './'`lib/printf-parse.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-spawn_faction_addchdir.o -MD -MP -MF lib/.deps/libbison_a-spawn_faction_addchdir.Tpo -c -o lib/libbison_a-spawn_faction_addchdir.o `test -f 'lib/spawn_faction_addchdir.c' || echo './'`lib/spawn_faction_addchdir.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-vasnprintf.o -MD -MP -MF lib/.deps/libbison_a-vasnprintf.Tpo -c -o lib/libbison_a-vasnprintf.o `test -f 'lib/vasnprintf.c' || echo './'`lib/vasnprintf.c
+mv -f lib/.deps/libbison_a-spawn_faction_addchdir.Tpo lib/.deps/libbison_a-spawn_faction_addchdir.Po
+depbase=`echo lib/main.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/main.o -MD -MP -MF $depbase.Tpo -c -o lib/main.o lib/main.c &&\
+mv -f $depbase.Tpo $depbase.Po
+mv -f lib/.deps/libbison_a-fcntl.Tpo lib/.deps/libbison_a-fcntl.Po
+mv -f lib/.deps/libbison_a-printf-args.Tpo lib/.deps/libbison_a-printf-args.Po
+depbase=`echo lib/yyerror.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/yyerror.o -MD -MP -MF $depbase.Tpo -c -o lib/yyerror.o lib/yyerror.c &&\
+mv -f $depbase.Tpo $depbase.Po
+mv -f lib/.deps/libbison_a-obstack.Tpo lib/.deps/libbison_a-obstack.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-AnnotationList.o -MD -MP -MF src/.deps/bison-AnnotationList.Tpo -c -o src/bison-AnnotationList.o `test -f 'src/AnnotationList.c' || echo './'`src/AnnotationList.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-InadequacyList.o -MD -MP -MF src/.deps/bison-InadequacyList.Tpo -c -o src/bison-InadequacyList.o `test -f 'src/InadequacyList.c' || echo './'`src/InadequacyList.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-Sbitset.o -MD -MP -MF src/.deps/bison-Sbitset.Tpo -c -o src/bison-Sbitset.o `test -f 'src/Sbitset.c' || echo './'`src/Sbitset.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-assoc.o -MD -MP -MF src/.deps/bison-assoc.Tpo -c -o src/bison-assoc.o `test -f 'src/assoc.c' || echo './'`src/assoc.c
+mv -f lib/.deps/libbison_a-gl_rbtreehash_list.Tpo lib/.deps/libbison_a-gl_rbtreehash_list.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-closure.o -MD -MP -MF src/.deps/bison-closure.Tpo -c -o src/bison-closure.o `test -f 'src/closure.c' || echo './'`src/closure.c
+mv -f lib/.deps/libbison_a-quotearg.Tpo lib/.deps/libbison_a-quotearg.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-complain.o -MD -MP -MF src/.deps/bison-complain.Tpo -c -o src/bison-complain.o `test -f 'src/complain.c' || echo './'`src/complain.c
+mv -f src/.deps/bison-InadequacyList.Tpo src/.deps/bison-InadequacyList.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-conflicts.o -MD -MP -MF src/.deps/bison-conflicts.Tpo -c -o src/bison-conflicts.o `test -f 'src/conflicts.c' || echo './'`src/conflicts.c
+mv -f src/.deps/bison-Sbitset.Tpo src/.deps/bison-Sbitset.Po
+mv -f src/.deps/bison-assoc.Tpo src/.deps/bison-assoc.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-counterexample.o -MD -MP -MF src/.deps/bison-counterexample.Tpo -c -o src/bison-counterexample.o `test -f 'src/counterexample.c' || echo './'`src/counterexample.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-derivation.o -MD -MP -MF src/.deps/bison-derivation.Tpo -c -o src/bison-derivation.o `test -f 'src/derivation.c' || echo './'`src/derivation.c
+mv -f lib/.deps/libbison_a-printf-parse.Tpo lib/.deps/libbison_a-printf-parse.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-derives.o -MD -MP -MF src/.deps/bison-derives.Tpo -c -o src/bison-derives.o `test -f 'src/derives.c' || echo './'`src/derives.c
+mv -f src/.deps/bison-closure.Tpo src/.deps/bison-closure.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-files.o -MD -MP -MF src/.deps/bison-files.Tpo -c -o src/bison-files.o `test -f 'src/files.c' || echo './'`src/files.c
+mv -f src/.deps/bison-derives.Tpo src/.deps/bison-derives.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-fixits.o -MD -MP -MF src/.deps/bison-fixits.Tpo -c -o src/bison-fixits.o `test -f 'src/fixits.c' || echo './'`src/fixits.c
+mv -f lib/.deps/libbison_a-vasnprintf.Tpo lib/.deps/libbison_a-vasnprintf.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-getargs.o -MD -MP -MF src/.deps/bison-getargs.Tpo -c -o src/bison-getargs.o `test -f 'src/getargs.c' || echo './'`src/getargs.c
+mv -f src/.deps/bison-derivation.Tpo src/.deps/bison-derivation.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-glyphs.o -MD -MP -MF src/.deps/bison-glyphs.Tpo -c -o src/bison-glyphs.o `test -f 'src/glyphs.c' || echo './'`src/glyphs.c
+mv -f src/.deps/bison-fixits.Tpo src/.deps/bison-fixits.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-gram.o -MD -MP -MF src/.deps/bison-gram.Tpo -c -o src/bison-gram.o `test -f 'src/gram.c' || echo './'`src/gram.c
+mv -f src/.deps/bison-glyphs.Tpo src/.deps/bison-glyphs.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-graphviz.o -MD -MP -MF src/.deps/bison-graphviz.Tpo -c -o src/bison-graphviz.o `test -f 'src/graphviz.c' || echo './'`src/graphviz.c
+mv -f src/.deps/bison-complain.Tpo src/.deps/bison-complain.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-ielr.o -MD -MP -MF src/.deps/bison-ielr.Tpo -c -o src/bison-ielr.o `test -f 'src/ielr.c' || echo './'`src/ielr.c
+mv -f src/.deps/bison-conflicts.Tpo src/.deps/bison-conflicts.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-lalr.o -MD -MP -MF src/.deps/bison-lalr.Tpo -c -o src/bison-lalr.o `test -f 'src/lalr.c' || echo './'`src/lalr.c
+mv -f src/.deps/bison-AnnotationList.Tpo src/.deps/bison-AnnotationList.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-location.o -MD -MP -MF src/.deps/bison-location.Tpo -c -o src/bison-location.o `test -f 'src/location.c' || echo './'`src/location.c
+mv -f src/.deps/bison-files.Tpo src/.deps/bison-files.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-lr0.o -MD -MP -MF src/.deps/bison-lr0.Tpo -c -o src/bison-lr0.o `test -f 'src/lr0.c' || echo './'`src/lr0.c
+mv -f src/.deps/bison-graphviz.Tpo src/.deps/bison-graphviz.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-lssi.o -MD -MP -MF src/.deps/bison-lssi.Tpo -c -o src/bison-lssi.o `test -f 'src/lssi.c' || echo './'`src/lssi.c
+mv -f src/.deps/bison-gram.Tpo src/.deps/bison-gram.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-main.o -MD -MP -MF src/.deps/bison-main.Tpo -c -o src/bison-main.o `test -f 'src/main.c' || echo './'`src/main.c
+mv -f src/.deps/bison-lr0.Tpo src/.deps/bison-lr0.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-muscle-tab.o -MD -MP -MF src/.deps/bison-muscle-tab.Tpo -c -o src/bison-muscle-tab.o `test -f 'src/muscle-tab.c' || echo './'`src/muscle-tab.c
+mv -f src/.deps/bison-main.Tpo src/.deps/bison-main.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-named-ref.o -MD -MP -MF src/.deps/bison-named-ref.Tpo -c -o src/bison-named-ref.o `test -f 'src/named-ref.c' || echo './'`src/named-ref.c
+mv -f src/.deps/bison-getargs.Tpo src/.deps/bison-getargs.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-nullable.o -MD -MP -MF src/.deps/bison-nullable.Tpo -c -o src/bison-nullable.o `test -f 'src/nullable.c' || echo './'`src/nullable.c
+mv -f src/.deps/bison-named-ref.Tpo src/.deps/bison-named-ref.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-output.o -MD -MP -MF src/.deps/bison-output.Tpo -c -o src/bison-output.o `test -f 'src/output.c' || echo './'`src/output.c
+mv -f src/.deps/bison-lalr.Tpo src/.deps/bison-lalr.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-parse-gram.o -MD -MP -MF src/.deps/bison-parse-gram.Tpo -c -o src/bison-parse-gram.o `test -f 'src/parse-gram.c' || echo './'`src/parse-gram.c
+mv -f src/.deps/bison-location.Tpo src/.deps/bison-location.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-parse-simulation.o -MD -MP -MF src/.deps/bison-parse-simulation.Tpo -c -o src/bison-parse-simulation.o `test -f 'src/parse-simulation.c' || echo './'`src/parse-simulation.c
+mv -f src/.deps/bison-lssi.Tpo src/.deps/bison-lssi.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-print-graph.o -MD -MP -MF src/.deps/bison-print-graph.Tpo -c -o src/bison-print-graph.o `test -f 'src/print-graph.c' || echo './'`src/print-graph.c
+mv -f src/.deps/bison-nullable.Tpo src/.deps/bison-nullable.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-print-xml.o -MD -MP -MF src/.deps/bison-print-xml.Tpo -c -o src/bison-print-xml.o `test -f 'src/print-xml.c' || echo './'`src/print-xml.c
+mv -f src/.deps/bison-ielr.Tpo src/.deps/bison-ielr.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-print.o -MD -MP -MF src/.deps/bison-print.Tpo -c -o src/bison-print.o `test -f 'src/print.c' || echo './'`src/print.c
+mv -f src/.deps/bison-counterexample.Tpo src/.deps/bison-counterexample.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-reader.o -MD -MP -MF src/.deps/bison-reader.Tpo -c -o src/bison-reader.o `test -f 'src/reader.c' || echo './'`src/reader.c
+mv -f src/.deps/bison-parse-simulation.Tpo src/.deps/bison-parse-simulation.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-reduce.o -MD -MP -MF src/.deps/bison-reduce.Tpo -c -o src/bison-reduce.o `test -f 'src/reduce.c' || echo './'`src/reduce.c
+mv -f src/.deps/bison-muscle-tab.Tpo src/.deps/bison-muscle-tab.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-relation.o -MD -MP -MF src/.deps/bison-relation.Tpo -c -o src/bison-relation.o `test -f 'src/relation.c' || echo './'`src/relation.c
+mv -f src/.deps/bison-print-xml.Tpo src/.deps/bison-print-xml.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-scan-code-c.o -MD -MP -MF src/.deps/bison-scan-code-c.Tpo -c -o src/bison-scan-code-c.o `test -f 'src/scan-code-c.c' || echo './'`src/scan-code-c.c
+mv -f src/.deps/bison-print-graph.Tpo src/.deps/bison-print-graph.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-scan-gram-c.o -MD -MP -MF src/.deps/bison-scan-gram-c.Tpo -c -o src/bison-scan-gram-c.o `test -f 'src/scan-gram-c.c' || echo './'`src/scan-gram-c.c
+mv -f src/.deps/bison-print.Tpo src/.deps/bison-print.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-scan-skel-c.o -MD -MP -MF src/.deps/bison-scan-skel-c.Tpo -c -o src/bison-scan-skel-c.o `test -f 'src/scan-skel-c.c' || echo './'`src/scan-skel-c.c
+mv -f src/.deps/bison-relation.Tpo src/.deps/bison-relation.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-state.o -MD -MP -MF src/.deps/bison-state.Tpo -c -o src/bison-state.o `test -f 'src/state.c' || echo './'`src/state.c
+mv -f src/.deps/bison-reduce.Tpo src/.deps/bison-reduce.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-state-item.o -MD -MP -MF src/.deps/bison-state-item.Tpo -c -o src/bison-state-item.o `test -f 'src/state-item.c' || echo './'`src/state-item.c
+mv -f src/.deps/bison-reader.Tpo src/.deps/bison-reader.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-strversion.o -MD -MP -MF src/.deps/bison-strversion.Tpo -c -o src/bison-strversion.o `test -f 'src/strversion.c' || echo './'`src/strversion.c
+mv -f src/.deps/bison-strversion.Tpo src/.deps/bison-strversion.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-symlist.o -MD -MP -MF src/.deps/bison-symlist.Tpo -c -o src/bison-symlist.o `test -f 'src/symlist.c' || echo './'`src/symlist.c
+mv -f src/.deps/bison-state.Tpo src/.deps/bison-state.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-symtab.o -MD -MP -MF src/.deps/bison-symtab.Tpo -c -o src/bison-symtab.o `test -f 'src/symtab.c' || echo './'`src/symtab.c
+mv -f src/.deps/bison-parse-gram.Tpo src/.deps/bison-parse-gram.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-tables.o -MD -MP -MF src/.deps/bison-tables.Tpo -c -o src/bison-tables.o `test -f 'src/tables.c' || echo './'`src/tables.c
+mv -f src/.deps/bison-symlist.Tpo src/.deps/bison-symlist.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DINSTALLDIR=\"/usr/bin\"    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT src/bison-uniqstr.o -MD -MP -MF src/.deps/bison-uniqstr.Tpo -c -o src/bison-uniqstr.o `test -f 'src/uniqstr.c' || echo './'`src/uniqstr.c
+mv -f src/.deps/bison-scan-skel-c.Tpo src/.deps/bison-scan-skel-c.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-allocator.o -MD -MP -MF lib/.deps/libbison_a-allocator.Tpo -c -o lib/libbison_a-allocator.o `test -f 'lib/allocator.c' || echo './'`lib/allocator.c
+mv -f lib/.deps/libbison_a-allocator.Tpo lib/.deps/libbison_a-allocator.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-areadlink.o -MD -MP -MF lib/.deps/libbison_a-areadlink.Tpo -c -o lib/libbison_a-areadlink.o `test -f 'lib/areadlink.c' || echo './'`lib/areadlink.c
+mv -f lib/.deps/libbison_a-areadlink.Tpo lib/.deps/libbison_a-areadlink.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-argmatch.o -MD -MP -MF lib/.deps/libbison_a-argmatch.Tpo -c -o lib/libbison_a-argmatch.o `test -f 'lib/argmatch.c' || echo './'`lib/argmatch.c
+mv -f src/.deps/bison-uniqstr.Tpo src/.deps/bison-uniqstr.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-gl_array_list.o -MD -MP -MF lib/.deps/libbison_a-gl_array_list.Tpo -c -o lib/libbison_a-gl_array_list.o `test -f 'lib/gl_array_list.c' || echo './'`lib/gl_array_list.c
+mv -f lib/.deps/libbison_a-argmatch.Tpo lib/.deps/libbison_a-argmatch.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-basename-lgpl.o -MD -MP -MF lib/.deps/libbison_a-basename-lgpl.Tpo -c -o lib/libbison_a-basename-lgpl.o `test -f 'lib/basename-lgpl.c' || echo './'`lib/basename-lgpl.c
+mv -f src/.deps/bison-state-item.Tpo src/.deps/bison-state-item.Po
+mv -f src/.deps/bison-output.Tpo src/.deps/bison-output.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-binary-io.o -MD -MP -MF lib/.deps/libbison_a-binary-io.Tpo -c -o lib/libbison_a-binary-io.o `test -f 'lib/binary-io.c' || echo './'`lib/binary-io.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-bitrotate.o -MD -MP -MF lib/.deps/libbison_a-bitrotate.Tpo -c -o lib/libbison_a-bitrotate.o `test -f 'lib/bitrotate.c' || echo './'`lib/bitrotate.c
+mv -f lib/.deps/libbison_a-basename-lgpl.Tpo lib/.deps/libbison_a-basename-lgpl.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-bitset.o -MD -MP -MF lib/.deps/libbison_a-bitset.Tpo -c -o lib/libbison_a-bitset.o `test -f 'lib/bitset.c' || echo './'`lib/bitset.c
+mv -f lib/.deps/libbison_a-binary-io.Tpo lib/.deps/libbison_a-binary-io.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/bitset/libbison_a-array.o -MD -MP -MF lib/bitset/.deps/libbison_a-array.Tpo -c -o lib/bitset/libbison_a-array.o `test -f 'lib/bitset/array.c' || echo './'`lib/bitset/array.c
+mv -f src/.deps/bison-scan-code-c.Tpo src/.deps/bison-scan-code-c.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/bitset/libbison_a-stats.o -MD -MP -MF lib/bitset/.deps/libbison_a-stats.Tpo -c -o lib/bitset/libbison_a-stats.o `test -f 'lib/bitset/stats.c' || echo './'`lib/bitset/stats.c
+mv -f lib/.deps/libbison_a-bitrotate.Tpo lib/.deps/libbison_a-bitrotate.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/bitset/libbison_a-table.o -MD -MP -MF lib/bitset/.deps/libbison_a-table.Tpo -c -o lib/bitset/libbison_a-table.o `test -f 'lib/bitset/table.c' || echo './'`lib/bitset/table.c
+mv -f src/.deps/bison-tables.Tpo src/.deps/bison-tables.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/bitset/libbison_a-list.o -MD -MP -MF lib/bitset/.deps/libbison_a-list.Tpo -c -o lib/bitset/libbison_a-list.o `test -f 'lib/bitset/list.c' || echo './'`lib/bitset/list.c
+mv -f src/.deps/bison-symtab.Tpo src/.deps/bison-symtab.Po
+mv -f lib/.deps/libbison_a-gl_array_list.Tpo lib/.deps/libbison_a-gl_array_list.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/bitset/libbison_a-vector.o -MD -MP -MF lib/bitset/.deps/libbison_a-vector.Tpo -c -o lib/bitset/libbison_a-vector.o `test -f 'lib/bitset/vector.c' || echo './'`lib/bitset/vector.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-bitsetv.o -MD -MP -MF lib/.deps/libbison_a-bitsetv.Tpo -c -o lib/libbison_a-bitsetv.o `test -f 'lib/bitsetv.c' || echo './'`lib/bitsetv.c
+mv -f lib/.deps/libbison_a-bitset.Tpo lib/.deps/libbison_a-bitset.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-c-ctype.o -MD -MP -MF lib/.deps/libbison_a-c-ctype.Tpo -c -o lib/libbison_a-c-ctype.o `test -f 'lib/c-ctype.c' || echo './'`lib/c-ctype.c
+mv -f lib/.deps/libbison_a-c-ctype.Tpo lib/.deps/libbison_a-c-ctype.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-c-strcasecmp.o -MD -MP -MF lib/.deps/libbison_a-c-strcasecmp.Tpo -c -o lib/libbison_a-c-strcasecmp.o `test -f 'lib/c-strcasecmp.c' || echo './'`lib/c-strcasecmp.c
+mv -f lib/.deps/libbison_a-c-strcasecmp.Tpo lib/.deps/libbison_a-c-strcasecmp.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-c-strncasecmp.o -MD -MP -MF lib/.deps/libbison_a-c-strncasecmp.Tpo -c -o lib/libbison_a-c-strncasecmp.o `test -f 'lib/c-strncasecmp.c' || echo './'`lib/c-strncasecmp.c
+mv -f lib/.deps/libbison_a-bitsetv.Tpo lib/.deps/libbison_a-bitsetv.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-canonicalize.o -MD -MP -MF lib/.deps/libbison_a-canonicalize.Tpo -c -o lib/libbison_a-canonicalize.o `test -f 'lib/canonicalize.c' || echo './'`lib/canonicalize.c
+mv -f lib/bitset/.deps/libbison_a-array.Tpo lib/bitset/.deps/libbison_a-array.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-careadlinkat.o -MD -MP -MF lib/.deps/libbison_a-careadlinkat.Tpo -c -o lib/libbison_a-careadlinkat.o `test -f 'lib/careadlinkat.c' || echo './'`lib/careadlinkat.c
+mv -f lib/bitset/.deps/libbison_a-stats.Tpo lib/bitset/.deps/libbison_a-stats.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-cloexec.o -MD -MP -MF lib/.deps/libbison_a-cloexec.Tpo -c -o lib/libbison_a-cloexec.o `test -f 'lib/cloexec.c' || echo './'`lib/cloexec.c
+mv -f lib/.deps/libbison_a-c-strncasecmp.Tpo lib/.deps/libbison_a-c-strncasecmp.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-close-stream.o -MD -MP -MF lib/.deps/libbison_a-close-stream.Tpo -c -o lib/libbison_a-close-stream.o `test -f 'lib/close-stream.c' || echo './'`lib/close-stream.c
+lib/canonicalize.c: In function 'canonicalize_filename_mode':
+lib/canonicalize.c:484:5: warning: #warning "GCC might issue a bogus -Wreturn-local-addr warning here." [-Wcpp]
+  484 |    #warning "GCC might issue a bogus -Wreturn-local-addr warning here."
+      |     ^~~~~~~
+lib/canonicalize.c:485:5: warning: #warning "See <https://gcc.gnu.org/bugzilla/show_bug.cgi?id=93644>." [-Wcpp]
+  485 |    #warning "See <https://gcc.gnu.org/bugzilla/show_bug.cgi?id=93644>."
+      |     ^~~~~~~
+lib/careadlinkat.c: In function 'careadlinkat':
+lib/careadlinkat.c:178:5: warning: #warning "GCC might issue a bogus -Wreturn-local-addr warning here." [-Wcpp]
+  178 |    #warning "GCC might issue a bogus -Wreturn-local-addr warning here."
+      |     ^~~~~~~
+lib/careadlinkat.c:179:5: warning: #warning "See <https://gcc.gnu.org/bugzilla/show_bug.cgi?id=93644>." [-Wcpp]
+  179 |    #warning "See <https://gcc.gnu.org/bugzilla/show_bug.cgi?id=93644>."
+      |     ^~~~~~~
+lib/careadlinkat.c:182:10: warning: function may return address of local variable [-Wreturn-local-addr]
+  182 |   return readlink_stk (fd, filename, buffer, buffer_size, alloc,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  183 |                        preadlinkat, stack_buf);
+      |                        ~~~~~~~~~~~~~~~~~~~~~~~
+lib/careadlinkat.c:181:8: note: declared here
+  181 |   char stack_buf[STACK_BUF_SIZE];
+      |        ^~~~~~~~~
+mv -f lib/.deps/libbison_a-cloexec.Tpo lib/.deps/libbison_a-cloexec.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-closeout.o -MD -MP -MF lib/.deps/libbison_a-closeout.Tpo -c -o lib/libbison_a-closeout.o `test -f 'lib/closeout.c' || echo './'`lib/closeout.c
+mv -f lib/.deps/libbison_a-careadlinkat.Tpo lib/.deps/libbison_a-careadlinkat.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-concat-filename.o -MD -MP -MF lib/.deps/libbison_a-concat-filename.Tpo -c -o lib/libbison_a-concat-filename.o `test -f 'lib/concat-filename.c' || echo './'`lib/concat-filename.c
+mv -f lib/.deps/libbison_a-close-stream.Tpo lib/.deps/libbison_a-close-stream.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-dirname.o -MD -MP -MF lib/.deps/libbison_a-dirname.Tpo -c -o lib/libbison_a-dirname.o `test -f 'lib/dirname.c' || echo './'`lib/dirname.c
+mv -f lib/.deps/libbison_a-closeout.Tpo lib/.deps/libbison_a-closeout.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-basename.o -MD -MP -MF lib/.deps/libbison_a-basename.Tpo -c -o lib/libbison_a-basename.o `test -f 'lib/basename.c' || echo './'`lib/basename.c
+mv -f lib/.deps/libbison_a-concat-filename.Tpo lib/.deps/libbison_a-concat-filename.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-dirname-lgpl.o -MD -MP -MF lib/.deps/libbison_a-dirname-lgpl.Tpo -c -o lib/libbison_a-dirname-lgpl.o `test -f 'lib/dirname-lgpl.c' || echo './'`lib/dirname-lgpl.c
+mv -f lib/.deps/libbison_a-dirname.Tpo lib/.deps/libbison_a-dirname.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-stripslash.o -MD -MP -MF lib/.deps/libbison_a-stripslash.Tpo -c -o lib/libbison_a-stripslash.o `test -f 'lib/stripslash.c' || echo './'`lib/stripslash.c
+mv -f lib/bitset/.deps/libbison_a-vector.Tpo lib/bitset/.deps/libbison_a-vector.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-execute.o -MD -MP -MF lib/.deps/libbison_a-execute.Tpo -c -o lib/libbison_a-execute.o `test -f 'lib/execute.c' || echo './'`lib/execute.c
+mv -f lib/.deps/libbison_a-canonicalize.Tpo lib/.deps/libbison_a-canonicalize.Po
+mv -f lib/.deps/libbison_a-basename.Tpo lib/.deps/libbison_a-basename.Po
+mv -f lib/.deps/libbison_a-dirname-lgpl.Tpo lib/.deps/libbison_a-dirname-lgpl.Po
+mv -f lib/.deps/libbison_a-stripslash.Tpo lib/.deps/libbison_a-stripslash.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-exitfail.o -MD -MP -MF lib/.deps/libbison_a-exitfail.Tpo -c -o lib/libbison_a-exitfail.o `test -f 'lib/exitfail.c' || echo './'`lib/exitfail.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-fatal-signal.o -MD -MP -MF lib/.deps/libbison_a-fatal-signal.Tpo -c -o lib/libbison_a-fatal-signal.o `test -f 'lib/fatal-signal.c' || echo './'`lib/fatal-signal.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-fd-safer-flag.o -MD -MP -MF lib/.deps/libbison_a-fd-safer-flag.Tpo -c -o lib/libbison_a-fd-safer-flag.o `test -f 'lib/fd-safer-flag.c' || echo './'`lib/fd-safer-flag.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-dup-safer-flag.o -MD -MP -MF lib/.deps/libbison_a-dup-safer-flag.Tpo -c -o lib/libbison_a-dup-safer-flag.o `test -f 'lib/dup-safer-flag.c' || echo './'`lib/dup-safer-flag.c
+mv -f lib/.deps/libbison_a-exitfail.Tpo lib/.deps/libbison_a-exitfail.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-file-set.o -MD -MP -MF lib/.deps/libbison_a-file-set.Tpo -c -o lib/libbison_a-file-set.o `test -f 'lib/file-set.c' || echo './'`lib/file-set.c
+mv -f lib/.deps/libbison_a-fd-safer-flag.Tpo lib/.deps/libbison_a-fd-safer-flag.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-findprog-in.o -MD -MP -MF lib/.deps/libbison_a-findprog-in.Tpo -c -o lib/libbison_a-findprog-in.o `test -f 'lib/findprog-in.c' || echo './'`lib/findprog-in.c
+mv -f lib/.deps/libbison_a-dup-safer-flag.Tpo lib/.deps/libbison_a-dup-safer-flag.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-fopen-safer.o -MD -MP -MF lib/.deps/libbison_a-fopen-safer.Tpo -c -o lib/libbison_a-fopen-safer.o `test -f 'lib/fopen-safer.c' || echo './'`lib/fopen-safer.c
+mv -f lib/.deps/libbison_a-file-set.Tpo lib/.deps/libbison_a-file-set.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-fstrcmp.o -MD -MP -MF lib/.deps/libbison_a-fstrcmp.Tpo -c -o lib/libbison_a-fstrcmp.o `test -f 'lib/fstrcmp.c' || echo './'`lib/fstrcmp.c
+mv -f lib/.deps/libbison_a-execute.Tpo lib/.deps/libbison_a-execute.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-gethrxtime.o -MD -MP -MF lib/.deps/libbison_a-gethrxtime.Tpo -c -o lib/libbison_a-gethrxtime.o `test -f 'lib/gethrxtime.c' || echo './'`lib/gethrxtime.c
+mv -f lib/.deps/libbison_a-fopen-safer.Tpo lib/.deps/libbison_a-fopen-safer.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-xtime.o -MD -MP -MF lib/.deps/libbison_a-xtime.Tpo -c -o lib/libbison_a-xtime.o `test -f 'lib/xtime.c' || echo './'`lib/xtime.c
+mv -f lib/bitset/.deps/libbison_a-list.Tpo lib/bitset/.deps/libbison_a-list.Po
+mv -f lib/.deps/libbison_a-fatal-signal.Tpo lib/.deps/libbison_a-fatal-signal.Po
+mv -f lib/.deps/libbison_a-findprog-in.Tpo lib/.deps/libbison_a-findprog-in.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-getprogname.o -MD -MP -MF lib/.deps/libbison_a-getprogname.Tpo -c -o lib/libbison_a-getprogname.o `test -f 'lib/getprogname.c' || echo './'`lib/getprogname.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-gettime.o -MD -MP -MF lib/.deps/libbison_a-gettime.Tpo -c -o lib/libbison_a-gettime.o `test -f 'lib/gettime.c' || echo './'`lib/gettime.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-hard-locale.o -MD -MP -MF lib/.deps/libbison_a-hard-locale.Tpo -c -o lib/libbison_a-hard-locale.o `test -f 'lib/hard-locale.c' || echo './'`lib/hard-locale.c
+mv -f lib/.deps/libbison_a-gethrxtime.Tpo lib/.deps/libbison_a-gethrxtime.Po
+mv -f lib/.deps/libbison_a-xtime.Tpo lib/.deps/libbison_a-xtime.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-hash.o -MD -MP -MF lib/.deps/libbison_a-hash.Tpo -c -o lib/libbison_a-hash.o `test -f 'lib/hash.c' || echo './'`lib/hash.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-gl_hash_map.o -MD -MP -MF lib/.deps/libbison_a-gl_hash_map.Tpo -c -o lib/libbison_a-gl_hash_map.o `test -f 'lib/gl_hash_map.c' || echo './'`lib/gl_hash_map.c
+mv -f lib/.deps/libbison_a-gettime.Tpo lib/.deps/libbison_a-gettime.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-hash-pjw.o -MD -MP -MF lib/.deps/libbison_a-hash-pjw.Tpo -c -o lib/libbison_a-hash-pjw.o `test -f 'lib/hash-pjw.c' || echo './'`lib/hash-pjw.c
+mv -f lib/.deps/libbison_a-hard-locale.Tpo lib/.deps/libbison_a-hard-locale.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-hash-triple-simple.o -MD -MP -MF lib/.deps/libbison_a-hash-triple-simple.Tpo -c -o lib/libbison_a-hash-triple-simple.o `test -f 'lib/hash-triple-simple.c' || echo './'`lib/hash-triple-simple.c
+mv -f lib/.deps/libbison_a-getprogname.Tpo lib/.deps/libbison_a-getprogname.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-ialloc.o -MD -MP -MF lib/.deps/libbison_a-ialloc.Tpo -c -o lib/libbison_a-ialloc.o `test -f 'lib/ialloc.c' || echo './'`lib/ialloc.c
+mv -f lib/.deps/libbison_a-hash-pjw.Tpo lib/.deps/libbison_a-hash-pjw.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-integer_length.o -MD -MP -MF lib/.deps/libbison_a-integer_length.Tpo -c -o lib/libbison_a-integer_length.o `test -f 'lib/integer_length.c' || echo './'`lib/integer_length.c
+mv -f lib/.deps/libbison_a-hash-triple-simple.Tpo lib/.deps/libbison_a-hash-triple-simple.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-integer_length_l.o -MD -MP -MF lib/.deps/libbison_a-integer_length_l.Tpo -c -o lib/libbison_a-integer_length_l.o `test -f 'lib/integer_length_l.c' || echo './'`lib/integer_length_l.c
+mv -f lib/bitset/.deps/libbison_a-table.Tpo lib/bitset/.deps/libbison_a-table.Po
+mv -f lib/.deps/libbison_a-integer_length.Tpo lib/.deps/libbison_a-integer_length.Po
+mv -f lib/.deps/libbison_a-integer_length_l.Tpo lib/.deps/libbison_a-integer_length_l.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-gl_linked_list.o -MD -MP -MF lib/.deps/libbison_a-gl_linked_list.Tpo -c -o lib/libbison_a-gl_linked_list.o `test -f 'lib/gl_linked_list.c' || echo './'`lib/gl_linked_list.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-gl_list.o -MD -MP -MF lib/.deps/libbison_a-gl_list.Tpo -c -o lib/libbison_a-gl_list.o `test -f 'lib/gl_list.c' || echo './'`lib/gl_list.c
+mv -f lib/.deps/libbison_a-ialloc.Tpo lib/.deps/libbison_a-ialloc.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/libbison_a-localcharset.o -MD -MP -MF lib/.deps/libbison_a-localcharset.Tpo -c -o lib/libbison_a-localcharset.o `test -f 'lib/localcharset.c' || echo './'`lib/localcharset.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/glthread/libbison_a-lock.o -MD -MP -MF lib/glthread/.deps/libbison_a-lock.Tpo -c -o lib/glthread/libbison_a-lock.o `test -f 'lib/glthread/lock.c' || echo './'`lib/glthread/lock.c
+mv -f lib/.deps/libbison_a-gl_hash_map.Tpo lib/.deps/libbison_a-gl_hash_map.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/malloc/libbison_a-scratch_buffer_dupfree.o -MD -MP -MF lib/malloc/.deps/libbison_a-scratch_buffer_dupfree.Tpo -c -o lib/malloc/libbison_a-scratch_buffer_dupfree.o `test -f 'lib/malloc/scratch_buffer_dupfree.c' || echo './'`lib/malloc/scratch_buffer_dupfree.c
+mv -f lib/.deps/libbison_a-fstrcmp.Tpo lib/.deps/libbison_a-fstrcmp.Po
+mv -f lib/.deps/libbison_a-localcharset.Tpo lib/.deps/libbison_a-localcharset.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/malloc/libbison_a-scratch_buffer_grow.o -MD -MP -MF lib/malloc/.deps/libbison_a-scratch_buffer_grow.Tpo -c -o lib/malloc/libbison_a-scratch_buffer_grow.o `test -f 'lib/malloc/scratch_buffer_grow.c' || echo './'`lib/malloc/scratch_buffer_grow.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/malloc/libbison_a-scratch_buffer_grow_preserve.o -MD -MP -MF lib/malloc/.deps/libbison_a-scratch_buffer_grow_preserve.Tpo -c -o lib/malloc/libbison_a-scratch_buffer_grow_preserve.o `test -f 'lib/malloc/scratch_buffer_grow_preserve.c' || echo './'`lib/malloc/scratch_buffer_grow_preserve.c
+mv -f lib/malloc/.deps/libbison_a-scratch_buffer_dupfree.Tpo lib/malloc/.deps/libbison_a-scratch_buffer_dupfree.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/malloc/libbison_a-scratch_buffer_set_array_size.o -MD -MP -MF lib/malloc/.deps/libbison_a-scratch_buffer_set_array_size.Tpo -c -o lib/malloc/libbison_a-scratch_buffer_set_array_size.o `test -f 'lib/malloc/scratch_buffer_set_array_size.c' || echo './'`lib/malloc/scratch_buffer_set_array_size.c
+mv -f lib/malloc/.deps/libbison_a-scratch_buffer_grow.Tpo lib/malloc/.deps/libbison_a-scratch_buffer_grow.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/unistr/libbison_a-u8-mbtoucr.o -MD -MP -MF lib/unistr/.deps/libbison_a-u8-mbtoucr.Tpo -c -o lib/unistr/libbison_a-u8-mbtoucr.o `test -f 'lib/unistr/u8-mbtoucr.c' || echo './'`lib/unistr/u8-mbtoucr.c
+mv -f lib/.deps/libbison_a-gl_list.Tpo lib/.deps/libbison_a-gl_list.Po
+mv -f lib/glthread/.deps/libbison_a-lock.Tpo lib/glthread/.deps/libbison_a-lock.Po
+mv -f lib/malloc/.deps/libbison_a-scratch_buffer_grow_preserve.Tpo lib/malloc/.deps/libbison_a-scratch_buffer_grow_preserve.Po
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/unistr/libbison_a-u8-uctomb.o -MD -MP -MF lib/unistr/.deps/libbison_a-u8-uctomb.Tpo -c -o lib/unistr/libbison_a-u8-uctomb.o `test -f 'lib/unistr/u8-uctomb.c' || echo './'`lib/unistr/u8-uctomb.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/unistr/libbison_a-u8-uctomb-aux.o -MD -MP -MF lib/unistr/.deps/libbison_a-u8-uctomb-aux.Tpo -c -o lib/unistr/libbison_a-u8-uctomb-aux.o `test -f 'lib/unistr/u8-uctomb-aux.c' || echo './'`lib/unistr/u8-uctomb-aux.c
+gcc -DEXEEXT=\"\"   -I. -I./lib -I. -I./lib -DDEFAULT_TEXT_DOMAIN=\"bison-gnulib\"   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT lib/uniwidth/libbison_a-width.o -MD -MP -MF lib/uniwidth/.deps/libbison_a-width.Tpo -c -o lib/uniwidth/libbison_a-width.o `test -f 'lib/uniwidth/width.c' || echo './'`lib/uniwidth/width.c
+mv -f lib/malloc/.deps/libbison_a-scratch_buffer_set_array_size.Tpo lib/malloc/.deps/libbison_a-scratch_buffer_set_array_size.Po
+mv -f lib/unistr/.deps/libbison_a-u8-mbtoucr.Tpo lib/unistr/.deps/libbison_a-u8-mbtoucr.Po
+rm -f lib/liby.a
+ar cr lib/liby.a lib/main.o lib/yyerror.o 
+mv -f lib/.deps/libbison_a-hash.Tpo lib/.deps/libbison_a-hash.Po
+ranlib lib/liby.a
+mv -f lib/unistr/.deps/libbison_a-u8-uctomb.Tpo lib/unistr/.deps/libbison_a-u8-uctomb.Po
+mv -f lib/unistr/.deps/libbison_a-u8-uctomb-aux.Tpo lib/unistr/.deps/libbison_a-u8-uctomb-aux.Po
+mv -f lib/uniwidth/.deps/libbison_a-width.Tpo lib/uniwidth/.deps/libbison_a-width.Po
+mv -f lib/.deps/libbison_a-gl_linked_list.Tpo lib/.deps/libbison_a-gl_linked_list.Po
+rm -f lib/libbison.a
+ar cr lib/libbison.a lib/libbison_a-allocator.o lib/libbison_a-areadlink.o lib/libbison_a-argmatch.o lib/libbison_a-gl_array_list.o  lib/libbison_a-basename-lgpl.o lib/libbison_a-binary-io.o lib/libbison_a-bitrotate.o lib/libbison_a-bitset.o lib/bitset/libbison_a-array.o lib/bitset/libbison_a-stats.o lib/bitset/libbison_a-table.o lib/bitset/libbison_a-list.o lib/bitset/libbison_a-vector.o lib/libbison_a-bitsetv.o lib/libbison_a-c-ctype.o lib/libbison_a-c-strcasecmp.o lib/libbison_a-c-strncasecmp.o lib/libbison_a-canonicalize.o lib/libbison_a-careadlinkat.o lib/libbison_a-cloexec.o lib/libbison_a-close-stream.o lib/libbison_a-closeout.o lib/libbison_a-concat-filename.o lib/libbison_a-dirname.o lib/libbison_a-basename.o lib/libbison_a-dirname-lgpl.o lib/libbison_a-stripslash.o lib/libbison_a-execute.o lib/libbison_a-exitfail.o lib/libbison_a-fatal-signal.o  lib/libbison_a-fd-safer-flag.o lib/libbison_a-dup-safer-flag.o lib/libbison_a-file-set.o  lib/libbison_a-findprog-in.o lib/libbison_a-fopen-safer.o lib/libbison_a-fstrcmp.o lib/libbison_a-gethrxtime.o lib/libbison_a-xtime.o lib/libbison_a-getprogname.o lib/libbison_a-gettime.o lib/libbison_a-hard-locale.o lib/libbison_a-hash.o lib/libbison_a-gl_hash_map.o lib/libbison_a-hash-pjw.o lib/libbison_a-hash-triple-simple.o lib/libbison_a-ialloc.o lib/libbison_a-integer_length.o lib/libbison_a-integer_length_l.o lib/libbison_a-gl_linked_list.o lib/libbison_a-gl_list.o lib/libbison_a-localcharset.o lib/glthread/libbison_a-lock.o  lib/libbison_a-gl_map.o lib/libbison_a-math.o lib/libbison_a-mbchar.o lib/libbison_a-mbfile.o lib/libbison_a-mbswidth.o  lib/libbison_a-gl_oset.o lib/libbison_a-pipe2.o lib/libbison_a-pipe2-safer.o lib/libbison_a-printf-frexp.o lib/libbison_a-printf-frexpl.o lib/libbison_a-progname.o lib/libbison_a-quotearg.o lib/libbison_a-gl_rbtree_oset.o lib/libbison_a-gl_rbtreehash_list.o  lib/malloc/libbison_a-scratch_buffer_dupfree.o lib/malloc/libbison_a-scratch_buffer_grow.o lib/malloc/libbison_a-scratch_buffer_grow_preserve.o lib/malloc/libbison_a-scratch_buffer_set_array_size.o lib/libbison_a-setlocale_null.o lib/libbison_a-sig-handler.o lib/libbison_a-spawn-pipe.o  lib/glthread/libbison_a-threadlib.o lib/libbison_a-timespec.o lib/libbison_a-timevar.o lib/glthread/libbison_a-tls.o lib/libbison_a-unicodeio.o lib/libbison_a-unistd.o lib/libbison_a-dup-safer.o lib/libbison_a-fd-safer.o lib/libbison_a-pipe-safer.o lib/unistr/libbison_a-u8-mbtoucr.o lib/unistr/libbison_a-u8-uctomb.o lib/unistr/libbison_a-u8-uctomb-aux.o lib/uniwidth/libbison_a-width.o lib/libbison_a-wait-process.o lib/libbison_a-wctype-h.o lib/libbison_a-xmalloc.o lib/libbison_a-xalloc-die.o lib/libbison_a-xconcat-filename.o lib/libbison_a-xhash.o lib/libbison_a-gl_xlist.o lib/libbison_a-gl_xmap.o lib/libbison_a-xmemdup0.o lib/libbison_a-xreadlink.o lib/libbison_a-xsize.o lib/libbison_a-xstrndup.o lib/libbison_a-get-errno.o lib/libbison_a-path-join.o lib/libbison_a-asnprintf.o lib/libbison_a-fcntl.o lib/libbison_a-mbrtowc.o lib/libbison_a-obstack.o lib/libbison_a-printf-args.o lib/libbison_a-printf-parse.o lib/libbison_a-spawn_faction_addchdir.o lib/libbison_a-vasnprintf.o
+ranlib lib/libbison.a
+mv -f src/.deps/bison-scan-gram-c.Tpo src/.deps/bison-scan-gram-c.Po
+gcc   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o src/bison src/bison-AnnotationList.o src/bison-InadequacyList.o src/bison-Sbitset.o src/bison-assoc.o src/bison-closure.o src/bison-complain.o src/bison-conflicts.o src/bison-counterexample.o src/bison-derivation.o src/bison-derives.o src/bison-files.o src/bison-fixits.o src/bison-getargs.o src/bison-glyphs.o src/bison-gram.o src/bison-graphviz.o src/bison-ielr.o src/bison-lalr.o src/bison-location.o src/bison-lr0.o src/bison-lssi.o src/bison-main.o src/bison-muscle-tab.o src/bison-named-ref.o src/bison-nullable.o src/bison-output.o src/bison-parse-gram.o src/bison-parse-simulation.o src/bison-print-graph.o src/bison-print-xml.o src/bison-print.o src/bison-reader.o src/bison-reduce.o src/bison-relation.o src/bison-scan-code-c.o src/bison-scan-gram-c.o src/bison-scan-skel-c.o src/bison-state.o src/bison-state-item.o src/bison-strversion.o src/bison-symlist.o src/bison-symtab.o src/bison-tables.o src/bison-uniqstr.o lib/libbison.a              /usr/lib/libtextstyle.so 
+/bin/mkdir -p doc
+LC_ALL=C tests/bison --version >doc/bison.help.tmp
+LC_ALL=C tests/bison --help | \
+  sed -e 's,^Usage: .*/bison \[OPTION\],Usage: bison [OPTION],g' \
+      -e '/translation bugs/d'  >>doc/bison.help.tmp
+./build-aux/move-if-change doc/bison.help.tmp doc/bison.help
+make[2]: Leaving directory '/home/devel/building/work/src/bison-3.8.2'
+make[1]: Leaving directory '/home/devel/building/work/src/bison-3.8.2'
++ make DESTDIR=/home/devel/building/work/pkg install
+make  install-recursive
+make[1]: Entering directory '/home/devel/building/work/src/bison-3.8.2'
+Making install in po
+make[2]: Entering directory '/home/devel/building/work/src/bison-3.8.2/po'
+if test "bison" = "gettext-tools"; then \
+  /bin/mkdir -p /home/devel/building/work/pkg/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /home/devel/building/work/pkg/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/devel/building/work/pkg/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/home/devel/building/work/src/bison-3.8.2/po'
+Making install in runtime-po
+make[2]: Entering directory '/home/devel/building/work/src/bison-3.8.2/runtime-po'
+if test "bison" = "gettext-tools"; then \
+  /bin/mkdir -p /home/devel/building/work/pkg/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /home/devel/building/work/pkg/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/devel/building/work/pkg/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/home/devel/building/work/src/bison-3.8.2/runtime-po'
+Making install in gnulib-po
+make[2]: Entering directory '/home/devel/building/work/src/bison-3.8.2/gnulib-po'
+if test "bison" = "gettext-tools"; then \
+  /bin/mkdir -p /home/devel/building/work/pkg/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /home/devel/building/work/pkg/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/devel/building/work/pkg/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/home/devel/building/work/src/bison-3.8.2/gnulib-po'
+Making install in .
+make[2]: Entering directory '/home/devel/building/work/src/bison-3.8.2'
+  GEN      doc/bison.help
+make[3]: Entering directory '/home/devel/building/work/src/bison-3.8.2'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/aclocal'
+ /usr/bin/install -c -m 644  lib/liby.a '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c++/calc++'
+  /usr/bin/install -c src/bison '/home/devel/building/work/pkg/usr/bin'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c++'
+ /usr/bin/install -c src/yacc '/home/devel/building/work/pkg/usr/bin'
+ /usr/bin/install -c -m 644 m4/bison-i18n.m4 '/home/devel/building/work/pkg/usr/share/aclocal'
+ /usr/bin/install -c -m 644 examples/c++/calc++/driver.cc examples/c++/calc++/driver.hh examples/c++/calc++/scanner.ll examples/c++/calc++/calc++.cc examples/c++/calc++/parser.yy '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c++/calc++'
+ ( cd '/home/devel/building/work/pkg/usr/lib' && ranlib liby.a )
+ /usr/bin/install -c -m 644 examples/c++/simple.yy '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c++'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/bistromathic'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/calc'
+ /usr/bin/install -c -m 644 examples/c/bistromathic/parse.y examples/c/bistromathic/Makefile examples/c/bistromathic/README.md '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/bistromathic'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/d/calc'
+ /usr/bin/install -c -m 644 examples/c/README.md '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c++/calc++'
+ /usr/bin/install -c -m 644 examples/c/calc/calc.y examples/c/calc/Makefile examples/c/calc/README.md '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/calc'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c++'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/d'
+ /usr/bin/install -c -m 644 examples/d/calc/calc.y examples/d/calc/Makefile '/home/devel/building/work/pkg/usr/share/doc/bison/examples/d/calc'
+ /usr/bin/install -c -m 644 examples/c++/calc++/README.md examples/c++/calc++/Makefile '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c++/calc++'
+ /usr/bin/install -c -m 644 examples/c++/README.md examples/c++/Makefile examples/c++/variant.yy examples/c++/variant-11.yy '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c++'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples'
+ /usr/bin/install -c -m 644 examples/d/README.md '/home/devel/building/work/pkg/usr/share/doc/bison/examples/d'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/glr'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/java'
+ /usr/bin/install -c -m 644 AUTHORS COPYING NEWS README THANKS TODO '/home/devel/building/work/pkg/usr/share/doc/bison'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/java/calc'
+ /usr/bin/install -c -m 644 examples/README.md '/home/devel/building/work/pkg/usr/share/doc/bison/examples'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/java/simple'
+ /usr/bin/install -c -m 644 examples/c/glr/c++-types.y examples/c/glr/Makefile examples/c/glr/README.md '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/glr'
+ /usr/bin/install -c -m 644 examples/java/README.md '/home/devel/building/work/pkg/usr/share/doc/bison/examples/java'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/lexcalc'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/bison/m4sugar'
+ /usr/bin/install -c -m 644 examples/java/simple/Calc.y examples/java/simple/Makefile '/home/devel/building/work/pkg/usr/share/doc/bison/examples/java/simple'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/mfcalc'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/bison'
+ /usr/bin/install -c -m 644 examples/c/lexcalc/parse.y examples/c/lexcalc/scan.l examples/c/lexcalc/Makefile examples/c/lexcalc/README.md '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/lexcalc'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/pushcalc'
+ /usr/bin/install -c -m 644 examples/java/calc/Calc.y examples/java/calc/Makefile '/home/devel/building/work/pkg/usr/share/doc/bison/examples/java/calc'
+ /usr/bin/install -c -m 644 data/m4sugar/foreach.m4 data/m4sugar/m4sugar.m4 '/home/devel/building/work/pkg/usr/share/bison/m4sugar'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/reccalc'
+ /usr/bin/install -c -m 644 data/README.md data/bison-default.css '/home/devel/building/work/pkg/usr/share/bison'
+ /usr/bin/install -c -m 644 examples/c/mfcalc/Makefile '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/mfcalc'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/rpcalc'
+ /usr/bin/install -c -m 644 examples/c/pushcalc/calc.y examples/c/pushcalc/Makefile examples/c/pushcalc/README.md '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/pushcalc'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/d/simple'
+ /usr/bin/install -c -m 644 examples/c/reccalc/parse.y examples/c/reccalc/scan.l examples/c/reccalc/Makefile examples/c/reccalc/README.md '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/reccalc'
+ /usr/bin/install -c -m 644 examples/c/rpcalc/Makefile '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/rpcalc'
+ /usr/bin/install -c -m 644 examples/d/simple/calc.y examples/d/simple/Makefile '/home/devel/building/work/pkg/usr/share/doc/bison/examples/d/simple'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/bison/skeletons'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/bison/xslt'
+  GEN      doc/bison.help
+ /usr/bin/install -c -m 644 data/skeletons/bison.m4 data/skeletons/c++-skel.m4 data/skeletons/c++.m4 data/skeletons/c-like.m4 data/skeletons/c-skel.m4 data/skeletons/c.m4 data/skeletons/glr.c data/skeletons/glr.cc data/skeletons/glr2.cc data/skeletons/java-skel.m4 data/skeletons/java.m4 data/skeletons/lalr1.cc data/skeletons/lalr1.java data/skeletons/location.cc data/skeletons/stack.hh data/skeletons/traceon.m4 data/skeletons/variant.hh data/skeletons/yacc.c data/skeletons/d-skel.m4 data/skeletons/d.m4 data/skeletons/lalr1.d '/home/devel/building/work/pkg/usr/share/bison/skeletons'
+ /usr/bin/install -c -m 644 data/xslt/bison.xsl data/xslt/xml2dot.xsl data/xslt/xml2text.xsl data/xslt/xml2xhtml.xsl '/home/devel/building/work/pkg/usr/share/bison/xslt'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/mfcalc'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/rpcalc'
+ /usr/bin/install -c -m 644 examples/c/mfcalc/calc.h examples/c/mfcalc/mfcalc.y '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/mfcalc'
+ /usr/bin/install -c -m 644 examples/c/rpcalc/rpcalc.y '/home/devel/building/work/pkg/usr/share/doc/bison/examples/c/rpcalc'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man1'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/info'
+ /usr/bin/install -c -m 644 ./doc/bison.1 doc/yacc.1 '/home/devel/building/work/pkg/usr/share/man/man1'
+ /usr/bin/install -c -m 644 ./doc/bison.info '/home/devel/building/work/pkg/usr/share/info'
+ install-info --info-dir='/home/devel/building/work/pkg/usr/share/info' '/home/devel/building/work/pkg/usr/share/info/bison.info'
+make[3]: Leaving directory '/home/devel/building/work/src/bison-3.8.2'
+make[2]: Leaving directory '/home/devel/building/work/src/bison-3.8.2'
+make[1]: Leaving directory '/home/devel/building/work/src/bison-3.8.2'
++ rm -r /home/devel/building/work/pkg/usr/share/doc /home/devel/building/work/pkg/usr/share/info
++ rm /home/devel/building/work/pkg/usr/share/bison/README.md
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 20:30 usr/
+drwxr-xr-x  0 root   root        0 May  7 20:30 usr/bin/
+drwxr-xr-x  0 root   root        0 May  7 20:30 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 20:30 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 20:30 usr/share/aclocal/
+drwxr-xr-x  0 root   root        0 May  7 20:30 usr/share/bison/
+drwxr-xr-x  0 root   root        0 May  7 20:30 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  7 20:30 usr/share/man/man1/
+-rw-r--r--  0 root   root     2863 May  7 20:30 usr/share/man/man1/bison.1.gz
+-rw-r--r--  0 root   root      657 May  7 20:30 usr/share/man/man1/yacc.1.gz
+drwxr-xr-x  0 root   root        0 May  7 20:30 usr/share/bison/m4sugar/
+-rw-r--r--  0 root   root     1862 May  7 20:30 usr/share/bison/bison-default.css
+drwxr-xr-x  0 root   root        0 May  7 20:30 usr/share/bison/skeletons/
+drwxr-xr-x  0 root   root        0 May  7 20:30 usr/share/bison/xslt/
+-rw-r--r--  0 root   root     3366 May  7 20:30 usr/share/bison/xslt/bison.xsl
+-rw-r--r--  0 root   root    12812 May  7 20:30 usr/share/bison/xslt/xml2dot.xsl
+-rw-r--r--  0 root   root    18867 May  7 20:30 usr/share/bison/xslt/xml2text.xsl
+-rw-r--r--  0 root   root    23252 May  7 20:30 usr/share/bison/xslt/xml2xhtml.xsl
+-rw-r--r--  0 root   root    43379 May  7 20:30 usr/share/bison/skeletons/bison.m4
+-rw-r--r--  0 root   root     1170 May  7 20:30 usr/share/bison/skeletons/c++-skel.m4
+-rw-r--r--  0 root   root    23066 May  7 20:30 usr/share/bison/skeletons/c++.m4
+-rw-r--r--  0 root   root     2565 May  7 20:30 usr/share/bison/skeletons/c-like.m4
+-rw-r--r--  0 root   root     1164 May  7 20:30 usr/share/bison/skeletons/c-skel.m4
+-rw-r--r--  0 root   root    34544 May  7 20:30 usr/share/bison/skeletons/c.m4
+-rw-r--r--  0 root   root    91333 May  7 20:30 usr/share/bison/skeletons/glr.c
+-rw-r--r--  0 root   root    12669 May  7 20:30 usr/share/bison/skeletons/glr.cc
+-rw-r--r--  0 root   root   115011 May  7 20:30 usr/share/bison/skeletons/glr2.cc
+-rw-r--r--  0 root   root     1167 May  7 20:30 usr/share/bison/skeletons/java-skel.m4
+-rw-r--r--  0 root   root    14594 May  7 20:30 usr/share/bison/skeletons/java.m4
+-rw-r--r--  0 root   root    51545 May  7 20:30 usr/share/bison/skeletons/lalr1.cc
+-rw-r--r--  0 root   root    45349 May  7 20:30 usr/share/bison/skeletons/lalr1.java
+-rw-r--r--  0 root   root    10393 May  7 20:30 usr/share/bison/skeletons/location.cc
+-rw-r--r--  0 root   root     4000 May  7 20:30 usr/share/bison/skeletons/stack.hh
+-rw-r--r--  0 root   root       87 May  7 20:30 usr/share/bison/skeletons/traceon.m4
+-rw-r--r--  0 root   root    15031 May  7 20:30 usr/share/bison/skeletons/variant.hh
+-rw-r--r--  0 root   root    74996 May  7 20:30 usr/share/bison/skeletons/yacc.c
+-rw-r--r--  0 root   root     1136 May  7 20:30 usr/share/bison/skeletons/d-skel.m4
+-rw-r--r--  0 root   root    19495 May  7 20:30 usr/share/bison/skeletons/d.m4
+-rw-r--r--  0 root   root    43502 May  7 20:30 usr/share/bison/skeletons/lalr1.d
+-rw-r--r--  0 root   root    14761 May  7 20:30 usr/share/bison/m4sugar/foreach.m4
+-rw-r--r--  0 root   root   123136 May  7 20:30 usr/share/bison/m4sugar/m4sugar.m4
+-rw-r--r--  0 root   root     1939 May  7 20:30 usr/share/aclocal/bison-i18n.m4
+-rw-r--r--  0 root   root    11166 May  7 20:30 usr/lib/liby.a
+-rwxr-xr-x  0 root   root   467992 May  7 20:30 usr/bin/bison
+-rwxr-xr-x  0 root   root     4214 May  7 20:30 usr/bin/yacc
+=======> Building '/home/devel/packages/bison#3.8.2-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling bison 3.8.2-1
+prt-get: /usr/bin/pkgadd -u bison#3.8.2-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 20:30:32 2024
+

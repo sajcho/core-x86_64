@@ -1,0 +1,337 @@
+prt-get: updating /usr/ports/core-x86_64/libseccomp
+prt-get: starting build Tue May  7 23:32:35 2024
+=======> Building '/home/devel/packages/libseccomp#2.5.5-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/libseccomp-2.5.5.tar.gz
++ build
++ cd libseccomp-2.5.5
++ ./configure --prefix=/usr --disable-static
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking how to create a pax tar archive... gnutar
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for linux/seccomp.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether make supports nested variables... (cached) yes
+checking for cython3... no
+checking for cython... no
+checking for gperf... gperf
+checking for cov-build... no
+checking whether to build with code coverage support... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating libseccomp.pc
+config.status: creating include/seccomp.h
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating src/Makefile
+config.status: creating src/python/Makefile
+config.status: creating tools/Makefile
+config.status: creating tests/Makefile
+config.status: creating doc/Makefile
+config.status: creating configure.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/libseccomp-2.5.5'
+Making all in include
+make[2]: Entering directory '/home/devel/building/work/src/libseccomp-2.5.5/include'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libseccomp-2.5.5/include'
+Making all in src
+make[2]: Entering directory '/home/devel/building/work/src/libseccomp-2.5.5/src'
+Making all in .
+make[3]: Entering directory '/home/devel/building/work/src/libseccomp-2.5.5/src'
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-api.lo -MD -MP -MF .deps/libseccomp_la-api.Tpo -c -o libseccomp_la-api.lo `test -f 'api.c' || echo './'`api.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-system.lo -MD -MP -MF .deps/libseccomp_la-system.Tpo -c -o libseccomp_la-system.lo `test -f 'system.c' || echo './'`system.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-helper.lo -MD -MP -MF .deps/libseccomp_la-helper.Tpo -c -o libseccomp_la-helper.lo `test -f 'helper.c' || echo './'`helper.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-gen_pfc.lo -MD -MP -MF .deps/libseccomp_la-gen_pfc.Tpo -c -o libseccomp_la-gen_pfc.lo `test -f 'gen_pfc.c' || echo './'`gen_pfc.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-gen_bpf.lo -MD -MP -MF .deps/libseccomp_la-gen_bpf.Tpo -c -o libseccomp_la-gen_bpf.lo `test -f 'gen_bpf.c' || echo './'`gen_bpf.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-hash.lo -MD -MP -MF .deps/libseccomp_la-hash.Tpo -c -o libseccomp_la-hash.lo `test -f 'hash.c' || echo './'`hash.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-db.lo -MD -MP -MF .deps/libseccomp_la-db.Tpo -c -o libseccomp_la-db.lo `test -f 'db.c' || echo './'`db.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch.lo -MD -MP -MF .deps/libseccomp_la-arch.Tpo -c -o libseccomp_la-arch.lo `test -f 'arch.c' || echo './'`arch.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-api.lo -MD -MP -MF .deps/libseccomp_la-api.Tpo -c api.c  -fPIC -DPIC -o .libs/libseccomp_la-api.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-system.lo -MD -MP -MF .deps/libseccomp_la-system.Tpo -c system.c  -fPIC -DPIC -o .libs/libseccomp_la-system.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-gen_bpf.lo -MD -MP -MF .deps/libseccomp_la-gen_bpf.Tpo -c gen_bpf.c  -fPIC -DPIC -o .libs/libseccomp_la-gen_bpf.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-helper.lo -MD -MP -MF .deps/libseccomp_la-helper.Tpo -c helper.c  -fPIC -DPIC -o .libs/libseccomp_la-helper.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-hash.lo -MD -MP -MF .deps/libseccomp_la-hash.Tpo -c hash.c  -fPIC -DPIC -o .libs/libseccomp_la-hash.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-gen_pfc.lo -MD -MP -MF .deps/libseccomp_la-gen_pfc.Tpo -c gen_pfc.c  -fPIC -DPIC -o .libs/libseccomp_la-gen_pfc.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch.lo -MD -MP -MF .deps/libseccomp_la-arch.Tpo -c arch.c  -fPIC -DPIC -o .libs/libseccomp_la-arch.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-db.lo -MD -MP -MF .deps/libseccomp_la-db.Tpo -c db.c  -fPIC -DPIC -o .libs/libseccomp_la-db.o
+mv -f .deps/libseccomp_la-helper.Tpo .deps/libseccomp_la-helper.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-x86.lo -MD -MP -MF .deps/libseccomp_la-arch-x86.Tpo -c -o libseccomp_la-arch-x86.lo `test -f 'arch-x86.c' || echo './'`arch-x86.c
+mv -f .deps/libseccomp_la-hash.Tpo .deps/libseccomp_la-hash.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-x86_64.lo -MD -MP -MF .deps/libseccomp_la-arch-x86_64.Tpo -c -o libseccomp_la-arch-x86_64.lo `test -f 'arch-x86_64.c' || echo './'`arch-x86_64.c
+gen_bpf.c: In function '_gen_bpf_build_bpf':
+gen_bpf.c:2077:21: warning: storing the address of local variable 'pseudo_arch' in 'state_234(D)->arch' [-Wdangling-pointer=]
+ 2077 |         state->arch = &pseudo_arch;
+      |         ~~~~~~~~~~~~^~~~~~~~~~~~~~
+gen_bpf.c:1999:25: note: 'pseudo_arch' declared here
+ 1999 |         struct arch_def pseudo_arch;
+      |                         ^~~~~~~~~~~
+gen_bpf.c:1985:49: note: 'state' declared here
+ 1985 | static int _gen_bpf_build_bpf(struct bpf_state *state,
+      |                               ~~~~~~~~~~~~~~~~~~^~~~~
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-x86_64.lo -MD -MP -MF .deps/libseccomp_la-arch-x86_64.Tpo -c arch-x86_64.c  -fPIC -DPIC -o .libs/libseccomp_la-arch-x86_64.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-x86.lo -MD -MP -MF .deps/libseccomp_la-arch-x86.Tpo -c arch-x86.c  -fPIC -DPIC -o .libs/libseccomp_la-arch-x86.o
+mv -f .deps/libseccomp_la-arch.Tpo .deps/libseccomp_la-arch.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-x32.lo -MD -MP -MF .deps/libseccomp_la-arch-x32.Tpo -c -o libseccomp_la-arch-x32.lo `test -f 'arch-x32.c' || echo './'`arch-x32.c
+mv -f .deps/libseccomp_la-system.Tpo .deps/libseccomp_la-system.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-arm.lo -MD -MP -MF .deps/libseccomp_la-arch-arm.Tpo -c -o libseccomp_la-arch-arm.lo `test -f 'arch-arm.c' || echo './'`arch-arm.c
+mv -f .deps/libseccomp_la-arch-x86_64.Tpo .deps/libseccomp_la-arch-x86_64.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-aarch64.lo -MD -MP -MF .deps/libseccomp_la-arch-aarch64.Tpo -c -o libseccomp_la-arch-aarch64.lo `test -f 'arch-aarch64.c' || echo './'`arch-aarch64.c
+mv -f .deps/libseccomp_la-arch-x86.Tpo .deps/libseccomp_la-arch-x86.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-mips.lo -MD -MP -MF .deps/libseccomp_la-arch-mips.Tpo -c -o libseccomp_la-arch-mips.lo `test -f 'arch-mips.c' || echo './'`arch-mips.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-x32.lo -MD -MP -MF .deps/libseccomp_la-arch-x32.Tpo -c arch-x32.c  -fPIC -DPIC -o .libs/libseccomp_la-arch-x32.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-arm.lo -MD -MP -MF .deps/libseccomp_la-arch-arm.Tpo -c arch-arm.c  -fPIC -DPIC -o .libs/libseccomp_la-arch-arm.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-aarch64.lo -MD -MP -MF .deps/libseccomp_la-arch-aarch64.Tpo -c arch-aarch64.c  -fPIC -DPIC -o .libs/libseccomp_la-arch-aarch64.o
+mv -f .deps/libseccomp_la-arch-x32.Tpo .deps/libseccomp_la-arch-x32.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-mips64.lo -MD -MP -MF .deps/libseccomp_la-arch-mips64.Tpo -c -o libseccomp_la-arch-mips64.lo `test -f 'arch-mips64.c' || echo './'`arch-mips64.c
+mv -f .deps/libseccomp_la-gen_pfc.Tpo .deps/libseccomp_la-gen_pfc.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-mips64n32.lo -MD -MP -MF .deps/libseccomp_la-arch-mips64n32.Tpo -c -o libseccomp_la-arch-mips64n32.lo `test -f 'arch-mips64n32.c' || echo './'`arch-mips64n32.c
+mv -f .deps/libseccomp_la-api.Tpo .deps/libseccomp_la-api.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-parisc.lo -MD -MP -MF .deps/libseccomp_la-arch-parisc.Tpo -c -o libseccomp_la-arch-parisc.lo `test -f 'arch-parisc.c' || echo './'`arch-parisc.c
+mv -f .deps/libseccomp_la-arch-arm.Tpo .deps/libseccomp_la-arch-arm.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-parisc64.lo -MD -MP -MF .deps/libseccomp_la-arch-parisc64.Tpo -c -o libseccomp_la-arch-parisc64.lo `test -f 'arch-parisc64.c' || echo './'`arch-parisc64.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-mips.lo -MD -MP -MF .deps/libseccomp_la-arch-mips.Tpo -c arch-mips.c  -fPIC -DPIC -o .libs/libseccomp_la-arch-mips.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-mips64n32.lo -MD -MP -MF .deps/libseccomp_la-arch-mips64n32.Tpo -c arch-mips64n32.c  -fPIC -DPIC -o .libs/libseccomp_la-arch-mips64n32.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-mips64.lo -MD -MP -MF .deps/libseccomp_la-arch-mips64.Tpo -c arch-mips64.c  -fPIC -DPIC -o .libs/libseccomp_la-arch-mips64.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-parisc.lo -MD -MP -MF .deps/libseccomp_la-arch-parisc.Tpo -c arch-parisc.c  -fPIC -DPIC -o .libs/libseccomp_la-arch-parisc.o
+mv -f .deps/libseccomp_la-arch-aarch64.Tpo .deps/libseccomp_la-arch-aarch64.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-ppc.lo -MD -MP -MF .deps/libseccomp_la-arch-ppc.Tpo -c -o libseccomp_la-arch-ppc.lo `test -f 'arch-ppc.c' || echo './'`arch-ppc.c
+mv -f .deps/libseccomp_la-arch-mips64n32.Tpo .deps/libseccomp_la-arch-mips64n32.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-parisc64.lo -MD -MP -MF .deps/libseccomp_la-arch-parisc64.Tpo -c arch-parisc64.c  -fPIC -DPIC -o .libs/libseccomp_la-arch-parisc64.o
+mv -f .deps/libseccomp_la-arch-mips64.Tpo .deps/libseccomp_la-arch-mips64.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-ppc64.lo -MD -MP -MF .deps/libseccomp_la-arch-ppc64.Tpo -c -o libseccomp_la-arch-ppc64.lo `test -f 'arch-ppc64.c' || echo './'`arch-ppc64.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-riscv64.lo -MD -MP -MF .deps/libseccomp_la-arch-riscv64.Tpo -c -o libseccomp_la-arch-riscv64.lo `test -f 'arch-riscv64.c' || echo './'`arch-riscv64.c
+mv -f .deps/libseccomp_la-arch-mips.Tpo .deps/libseccomp_la-arch-mips.Plo
+mv -f .deps/libseccomp_la-arch-parisc.Tpo .deps/libseccomp_la-arch-parisc.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-s390.lo -MD -MP -MF .deps/libseccomp_la-arch-s390.Tpo -c -o libseccomp_la-arch-s390.lo `test -f 'arch-s390.c' || echo './'`arch-s390.c
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-s390x.lo -MD -MP -MF .deps/libseccomp_la-arch-s390x.Tpo -c -o libseccomp_la-arch-s390x.lo `test -f 'arch-s390x.c' || echo './'`arch-s390x.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-ppc64.lo -MD -MP -MF .deps/libseccomp_la-arch-ppc64.Tpo -c arch-ppc64.c  -fPIC -DPIC -o .libs/libseccomp_la-arch-ppc64.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-riscv64.lo -MD -MP -MF .deps/libseccomp_la-arch-riscv64.Tpo -c arch-riscv64.c  -fPIC -DPIC -o .libs/libseccomp_la-arch-riscv64.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-ppc.lo -MD -MP -MF .deps/libseccomp_la-arch-ppc.Tpo -c arch-ppc.c  -fPIC -DPIC -o .libs/libseccomp_la-arch-ppc.o
+mv -f .deps/libseccomp_la-arch-parisc64.Tpo .deps/libseccomp_la-arch-parisc64.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-syscalls.lo -MD -MP -MF .deps/libseccomp_la-syscalls.Tpo -c -o libseccomp_la-syscalls.lo `test -f 'syscalls.c' || echo './'`syscalls.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-s390x.lo -MD -MP -MF .deps/libseccomp_la-arch-s390x.Tpo -c arch-s390x.c  -fPIC -DPIC -o .libs/libseccomp_la-arch-s390x.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-arch-s390.lo -MD -MP -MF .deps/libseccomp_la-arch-s390.Tpo -c arch-s390.c  -fPIC -DPIC -o .libs/libseccomp_la-arch-s390.o
+mv -f .deps/libseccomp_la-arch-riscv64.Tpo .deps/libseccomp_la-arch-riscv64.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include   -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-syscalls.perf.lo -MD -MP -MF .deps/libseccomp_la-syscalls.perf.Tpo -c -o libseccomp_la-syscalls.perf.lo `test -f 'syscalls.perf.c' || echo './'`syscalls.perf.c
+mv -f .deps/libseccomp_la-arch-ppc64.Tpo .deps/libseccomp_la-arch-ppc64.Plo
+mv -f .deps/libseccomp_la-arch-ppc.Tpo .deps/libseccomp_la-arch-ppc.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-syscalls.lo -MD -MP -MF .deps/libseccomp_la-syscalls.Tpo -c syscalls.c  -fPIC -DPIC -o .libs/libseccomp_la-syscalls.o
+mv -f .deps/libseccomp_la-arch-s390x.Tpo .deps/libseccomp_la-arch-s390x.Plo
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libseccomp_la-syscalls.perf.lo -MD -MP -MF .deps/libseccomp_la-syscalls.perf.Tpo -c syscalls.perf.c  -fPIC -DPIC -o .libs/libseccomp_la-syscalls.perf.o
+mv -f .deps/libseccomp_la-arch-s390.Tpo .deps/libseccomp_la-arch-s390.Plo
+mv -f .deps/libseccomp_la-syscalls.Tpo .deps/libseccomp_la-syscalls.Plo
+mv -f .deps/libseccomp_la-db.Tpo .deps/libseccomp_la-db.Plo
+mv -f .deps/libseccomp_la-gen_bpf.Tpo .deps/libseccomp_la-gen_bpf.Plo
+mv -f .deps/libseccomp_la-syscalls.perf.Tpo .deps/libseccomp_la-syscalls.perf.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -Wall -Umips  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DPIC -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,-z -Wl,relro   -version-number 2:5:5  -o libseccomp.la -rpath /usr/lib libseccomp_la-api.lo libseccomp_la-system.lo libseccomp_la-helper.lo libseccomp_la-gen_pfc.lo libseccomp_la-gen_bpf.lo libseccomp_la-hash.lo libseccomp_la-db.lo libseccomp_la-arch.lo libseccomp_la-arch-x86.lo libseccomp_la-arch-x86_64.lo libseccomp_la-arch-x32.lo libseccomp_la-arch-arm.lo libseccomp_la-arch-aarch64.lo libseccomp_la-arch-mips.lo libseccomp_la-arch-mips64.lo libseccomp_la-arch-mips64n32.lo libseccomp_la-arch-parisc.lo libseccomp_la-arch-parisc64.lo libseccomp_la-arch-ppc.lo libseccomp_la-arch-ppc64.lo libseccomp_la-arch-riscv64.lo libseccomp_la-arch-s390.lo libseccomp_la-arch-s390x.lo libseccomp_la-syscalls.lo libseccomp_la-syscalls.perf.lo  
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/libseccomp_la-api.o .libs/libseccomp_la-system.o .libs/libseccomp_la-helper.o .libs/libseccomp_la-gen_pfc.o .libs/libseccomp_la-gen_bpf.o .libs/libseccomp_la-hash.o .libs/libseccomp_la-db.o .libs/libseccomp_la-arch.o .libs/libseccomp_la-arch-x86.o .libs/libseccomp_la-arch-x86_64.o .libs/libseccomp_la-arch-x32.o .libs/libseccomp_la-arch-arm.o .libs/libseccomp_la-arch-aarch64.o .libs/libseccomp_la-arch-mips.o .libs/libseccomp_la-arch-mips64.o .libs/libseccomp_la-arch-mips64n32.o .libs/libseccomp_la-arch-parisc.o .libs/libseccomp_la-arch-parisc64.o .libs/libseccomp_la-arch-ppc.o .libs/libseccomp_la-arch-ppc64.o .libs/libseccomp_la-arch-riscv64.o .libs/libseccomp_la-arch-s390.o .libs/libseccomp_la-arch-s390x.o .libs/libseccomp_la-syscalls.o .libs/libseccomp_la-syscalls.perf.o    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -Wl,-z -Wl,relro   -Wl,-soname -Wl,libseccomp.so.2 -o .libs/libseccomp.so.2.5.5
+libtool: link: (cd ".libs" && rm -f "libseccomp.so.2" && ln -s "libseccomp.so.2.5.5" "libseccomp.so.2")
+libtool: link: (cd ".libs" && rm -f "libseccomp.so" && ln -s "libseccomp.so.2.5.5" "libseccomp.so")
+libtool: link: ( cd ".libs" && rm -f "libseccomp.la" && ln -s "../libseccomp.la" "libseccomp.la" )
+make[3]: Leaving directory '/home/devel/building/work/src/libseccomp-2.5.5/src'
+make[2]: Leaving directory '/home/devel/building/work/src/libseccomp-2.5.5/src'
+Making all in tools
+make[2]: Entering directory '/home/devel/building/work/src/libseccomp-2.5.5/tools'
+depbase=`echo scmp_sys_resolver.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include  -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT scmp_sys_resolver.o -MD -MP -MF $depbase.Tpo -c -o scmp_sys_resolver.o scmp_sys_resolver.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo scmp_arch_detect.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include  -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT scmp_arch_detect.o -MD -MP -MF $depbase.Tpo -c -o scmp_arch_detect.o scmp_arch_detect.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo scmp_bpf_disasm.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include  -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT scmp_bpf_disasm.o -MD -MP -MF $depbase.Tpo -c -o scmp_bpf_disasm.o scmp_bpf_disasm.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo util.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include  -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT util.lo -MD -MP -MF $depbase.Tpo -c -o util.lo util.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo scmp_bpf_sim.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include  -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT scmp_bpf_sim.o -MD -MP -MF $depbase.Tpo -c -o scmp_bpf_sim.o scmp_bpf_sim.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo scmp_api_level.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include  -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT scmp_api_level.o -MD -MP -MF $depbase.Tpo -c -o scmp_api_level.o scmp_api_level.c &&\
+mv -f $depbase.Tpo $depbase.Po
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT util.lo -MD -MP -MF .deps/util.Tpo -c util.c  -fPIC -DPIC -o .libs/util.o
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,-z -Wl,relro  -o scmp_api_level scmp_api_level.o ../src/libseccomp.la 
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,-z -Wl,relro  -o scmp_arch_detect scmp_arch_detect.o ../src/libseccomp.la 
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,-z -Wl,relro  -o scmp_sys_resolver scmp_sys_resolver.o ../src/libseccomp.la 
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -module  -o util.la  util.lo  
+libtool: link: gcc -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,-z -Wl,relro -o .libs/scmp_api_level scmp_api_level.o  ../src/.libs/libseccomp.so
+libtool: link: gcc -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,-z -Wl,relro -o .libs/scmp_arch_detect scmp_arch_detect.o  ../src/.libs/libseccomp.so
+libtool: link: ar cr .libs/util.a .libs/util.o 
+libtool: link: gcc -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,-z -Wl,relro -o .libs/scmp_sys_resolver scmp_sys_resolver.o  ../src/.libs/libseccomp.so
+libtool: link: ranlib .libs/util.a
+libtool: link: ( cd ".libs" && rm -f "util.la" && ln -s "../util.la" "util.la" )
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,-z -Wl,relro  -o scmp_bpf_disasm scmp_bpf_disasm.o util.la 
+/bin/sh ../libtool  --tag=CC   --mode=link gcc -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,-z -Wl,relro  -o scmp_bpf_sim scmp_bpf_sim.o util.la 
+libtool: link: gcc -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,-z -Wl,relro -o scmp_bpf_disasm scmp_bpf_disasm.o  ./.libs/util.a
+libtool: link: gcc -Wall -Umips -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,-z -Wl,relro -o scmp_bpf_sim scmp_bpf_sim.o  ./.libs/util.a
+make[2]: Leaving directory '/home/devel/building/work/src/libseccomp-2.5.5/tools'
+Making all in tests
+make[2]: Entering directory '/home/devel/building/work/src/libseccomp-2.5.5/tests'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libseccomp-2.5.5/tests'
+Making all in doc
+make[2]: Entering directory '/home/devel/building/work/src/libseccomp-2.5.5/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libseccomp-2.5.5/doc'
+make[2]: Entering directory '/home/devel/building/work/src/libseccomp-2.5.5'
+make[2]: Leaving directory '/home/devel/building/work/src/libseccomp-2.5.5'
+make[1]: Leaving directory '/home/devel/building/work/src/libseccomp-2.5.5'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in include
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include'
+ /usr/bin/install -c -m 644 seccomp.h seccomp-syscalls.h '/home/devel/building/work/pkg/usr/include'
+Making install in src
+Making install in .
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libseccomp.la '/home/devel/building/work/pkg/usr/lib'
+libtool: install: /usr/bin/install -c .libs/libseccomp.so.2.5.5 /home/devel/building/work/pkg/usr/lib/libseccomp.so.2.5.5
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libseccomp.so.2.5.5 libseccomp.so.2 || { rm -f libseccomp.so.2 && ln -s libseccomp.so.2.5.5 libseccomp.so.2; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libseccomp.so.2.5.5 libseccomp.so || { rm -f libseccomp.so && ln -s libseccomp.so.2.5.5 libseccomp.so; }; })
+libtool: install: /usr/bin/install -c .libs/libseccomp.lai /home/devel/building/work/pkg/usr/lib/libseccomp.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+Making install in tools
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c scmp_sys_resolver '/home/devel/building/work/pkg/usr/bin'
+libtool: warning: '../src/libseccomp.la' has not been installed in '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/scmp_sys_resolver /home/devel/building/work/pkg/usr/bin/scmp_sys_resolver
+Making install in tests
+Making install in doc
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man1'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man3'
+ /usr/bin/install -c -m 644 man/man1/scmp_sys_resolver.1 '/home/devel/building/work/pkg/usr/share/man/man1'
+ /usr/bin/install -c -m 644 man/man3/seccomp_arch_add.3 man/man3/seccomp_arch_exist.3 man/man3/seccomp_arch_native.3 man/man3/seccomp_arch_remove.3 man/man3/seccomp_arch_resolve_name.3 man/man3/seccomp_attr_get.3 man/man3/seccomp_attr_set.3 man/man3/seccomp_export_bpf.3 man/man3/seccomp_export_pfc.3 man/man3/seccomp_init.3 man/man3/seccomp_load.3 man/man3/seccomp_merge.3 man/man3/seccomp_release.3 man/man3/seccomp_reset.3 man/man3/seccomp_rule_add.3 man/man3/seccomp_rule_add_array.3 man/man3/seccomp_rule_add_exact.3 man/man3/seccomp_rule_add_exact_array.3 man/man3/seccomp_notify_alloc.3 man/man3/seccomp_notify_fd.3 man/man3/seccomp_notify_free.3 man/man3/seccomp_notify_id_valid.3 man/man3/seccomp_notify_receive.3 man/man3/seccomp_notify_respond.3 man/man3/seccomp_syscall_priority.3 man/man3/seccomp_syscall_resolve_name.3 man/man3/seccomp_syscall_resolve_name_arch.3 man/man3/seccomp_syscall_resolve_name_rewrite.3 man/man3/seccomp_syscall_resolve_num_arch.3 man/man3/seccomp_version.3 man/man3/seccomp_api_get.3 man/man3/seccomp_api_set.3 '/home/devel/building/work/pkg/usr/share/man/man3'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libseccomp.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 23:32 usr/
+drwxr-xr-x  0 root   root        0 May  7 23:32 usr/include/
+drwxr-xr-x  0 root   root        0 May  7 23:32 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 23:32 usr/bin/
+drwxr-xr-x  0 root   root        0 May  7 23:32 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 23:32 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  7 23:32 usr/share/man/man1/
+drwxr-xr-x  0 root   root        0 May  7 23:32 usr/share/man/man3/
+-rw-r--r--  0 root   root     1631 May  7 23:32 usr/share/man/man3/seccomp_arch_add.3.gz
+-rw-r--r--  0 root   root       69 May  7 23:32 usr/share/man/man3/seccomp_arch_exist.3.gz
+-rw-r--r--  0 root   root       70 May  7 23:32 usr/share/man/man3/seccomp_arch_native.3.gz
+-rw-r--r--  0 root   root       70 May  7 23:32 usr/share/man/man3/seccomp_arch_remove.3.gz
+-rw-r--r--  0 root   root       76 May  7 23:32 usr/share/man/man3/seccomp_arch_resolve_name.3.gz
+-rw-r--r--  0 root   root       67 May  7 23:32 usr/share/man/man3/seccomp_attr_get.3.gz
+-rw-r--r--  0 root   root     2157 May  7 23:32 usr/share/man/man3/seccomp_attr_set.3.gz
+-rw-r--r--  0 root   root     1472 May  7 23:32 usr/share/man/man3/seccomp_export_bpf.3.gz
+-rw-r--r--  0 root   root       71 May  7 23:32 usr/share/man/man3/seccomp_export_pfc.3.gz
+-rw-r--r--  0 root   root     1863 May  7 23:32 usr/share/man/man3/seccomp_init.3.gz
+-rw-r--r--  0 root   root     1357 May  7 23:32 usr/share/man/man3/seccomp_load.3.gz
+-rw-r--r--  0 root   root     1304 May  7 23:32 usr/share/man/man3/seccomp_merge.3.gz
+-rw-r--r--  0 root   root      811 May  7 23:32 usr/share/man/man3/seccomp_release.3.gz
+-rw-r--r--  0 root   root       60 May  7 23:32 usr/share/man/man3/seccomp_reset.3.gz
+-rw-r--r--  0 root   root     3847 May  7 23:32 usr/share/man/man3/seccomp_rule_add.3.gz
+-rw-r--r--  0 root   root       73 May  7 23:32 usr/share/man/man3/seccomp_rule_add_array.3.gz
+-rw-r--r--  0 root   root       73 May  7 23:32 usr/share/man/man3/seccomp_rule_add_exact.3.gz
+-rw-r--r--  0 root   root       79 May  7 23:32 usr/share/man/man3/seccomp_rule_add_exact_array.3.gz
+-rw-r--r--  0 root   root     1573 May  7 23:32 usr/share/man/man3/seccomp_notify_alloc.3.gz
+-rw-r--r--  0 root   root       72 May  7 23:32 usr/share/man/man3/seccomp_notify_fd.3.gz
+-rw-r--r--  0 root   root       74 May  7 23:32 usr/share/man/man3/seccomp_notify_free.3.gz
+-rw-r--r--  0 root   root       78 May  7 23:32 usr/share/man/man3/seccomp_notify_id_valid.3.gz
+-rw-r--r--  0 root   root       77 May  7 23:32 usr/share/man/man3/seccomp_notify_receive.3.gz
+-rw-r--r--  0 root   root       77 May  7 23:32 usr/share/man/man3/seccomp_notify_respond.3.gz
+-rw-r--r--  0 root   root     1421 May  7 23:32 usr/share/man/man3/seccomp_syscall_priority.3.gz
+-rw-r--r--  0 root   root     1373 May  7 23:32 usr/share/man/man3/seccomp_syscall_resolve_name.3.gz
+-rw-r--r--  0 root   root       96 May  7 23:32 usr/share/man/man3/seccomp_syscall_resolve_name_arch.3.gz
+-rw-r--r--  0 root   root       99 May  7 23:32 usr/share/man/man3/seccomp_syscall_resolve_name_rewrite.3.gz
+-rw-r--r--  0 root   root       95 May  7 23:32 usr/share/man/man3/seccomp_syscall_resolve_num_arch.3.gz
+-rw-r--r--  0 root   root      893 May  7 23:32 usr/share/man/man3/seccomp_version.3.gz
+-rw-r--r--  0 root   root     1183 May  7 23:32 usr/share/man/man3/seccomp_api_get.3.gz
+-rw-r--r--  0 root   root       65 May  7 23:32 usr/share/man/man3/seccomp_api_set.3.gz
+-rw-r--r--  0 root   root      958 May  7 23:32 usr/share/man/man1/scmp_sys_resolver.1.gz
+-rwxr-xr-x  0 root   root    14480 May  7 23:32 usr/bin/scmp_sys_resolver
+-rwxr-xr-x  0 root   root   125256 May  7 23:32 usr/lib/libseccomp.so.2.5.5
+lrwxrwxrwx  0 root   root        0 May  7 23:32 usr/lib/libseccomp.so.2 -> libseccomp.so.2.5.5
+lrwxrwxrwx  0 root   root        0 May  7 23:32 usr/lib/libseccomp.so -> libseccomp.so.2.5.5
+drwxr-xr-x  0 root   root        0 May  7 23:32 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root     1009 May  7 23:32 usr/lib/pkgconfig/libseccomp.pc
+-rw-r--r--  0 root   root    25529 May  7 23:32 usr/include/seccomp.h
+-rw-r--r--  0 root   root    50739 May  7 23:32 usr/include/seccomp-syscalls.h
+=======> Building '/home/devel/packages/libseccomp#2.5.5-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling libseccomp 2.5.5-1
+prt-get: /usr/bin/pkgadd -u libseccomp#2.5.5-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 23:32:40 2024
+

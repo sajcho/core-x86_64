@@ -1,0 +1,130 @@
+prt-get: updating /usr/ports/wayland-x86_64/wdisplays
+prt-get: starting build Wed May  8 01:40:17 2024
+=======> Building '/home/devel/packages/wdisplays#1.1.1-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/wdisplays-1.1.1.tar.gz
++ build
++ cd wdisplays-1.1.1
++ build-meson . build
+The Meson build system
+Version: 1.4.0
+Source dir: /home/devel/building/work/src/wdisplays-1.1.1
+Build dir: /home/devel/building/work/src/wdisplays-1.1.1/build
+Build type: native build
+Project name: network.cycles.wdisplays
+Project version: 1.1.1
+C compiler for the host machine: cc (gcc 14.1.0 "cc (SAUX-x86_64) 14.1.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program wayland-scanner found: YES (/usr/bin/wayland-scanner)
+Found pkg-config: YES (/usr/bin/pkg-config) 2.2.0
+Run-time dependency wayland-client found: YES 1.22.0
+Run-time dependency wayland-protocols found: YES 1.36
+Configuring resources.xml using configuration
+Build-time dependency gio-2.0 found: YES 2.80.0
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Program scour found: NO
+Configuring network.cycles.wdisplays.desktop using configuration
+Library m found: YES
+Library rt found: YES
+Run-time dependency gdk-3.0 found: YES 3.24.41
+Run-time dependency gtk+-3.0 found: YES 3.24.41
+Run-time dependency epoxy found: YES 1.5.10
+Configuring config.h using configuration
+Build targets in project: 4
+
+network.cycles.wdisplays 1.1.1
+
+  User defined options
+    auto_features     : auto
+    bindir            : /usr/bin
+    buildtype         : plain
+    datadir           : /usr/share
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    libexecdir        : /usr/lib
+    localstatedir     : /var
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sbindir           : /usr/sbin
+    sharedstatedir    : /var/lib
+    sysconfdir        : /etc
+    werror            : false
+    wrap_mode         : nodownload
+    python.bytecompile: 0
+    b_lto             : false
+    b_pie             : true
+    b_staticpic       : true
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -v -C build
+ninja: entering directory '/home/devel/building/work/src/wdisplays-1.1.1/build'
+[1/31] /usr/bin/wayland-scanner client-header //usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml src/wdisplays.p/xdg-shell-client-protocol.h
+[2/31] /usr/bin/wayland-scanner client-header //usr/share/wayland-protocols/unstable/xdg-output/xdg-output-unstable-v1.xml src/wdisplays.p/xdg-output-unstable-v1-client-protocol.h
+[3/31] /usr/bin/wayland-scanner client-header ../protocol/wlr-screencopy-unstable-v1.xml src/wdisplays.p/wlr-screencopy-unstable-v1-client-protocol.h
+[4/31] /usr/bin/wayland-scanner client-header ../protocol/wlr-output-management-unstable-v1.xml src/wdisplays.p/wlr-output-management-unstable-v1-client-protocol.h
+[5/31] /usr/bin/wayland-scanner client-header ../protocol/wlr-layer-shell-unstable-v1.xml src/wdisplays.p/wlr-layer-shell-unstable-v1-client-protocol.h
+[6/31] /usr/bin/glib-compile-resources resources/resources.xml --sourcedir ../resources --c-name wdisplays_resources --internal --generate --target resources/wdisplays-resources.h
+[7/31] /usr/bin/glib-compile-resources resources/resources.xml --sourcedir ../resources --c-name wdisplays_resources --internal --generate --target resources/wdisplays-resources.c --dependency-file resources/wdisplays-resources.c.d
+[8/31] /usr/bin/wayland-scanner private-code ../protocol/wlr-layer-shell-unstable-v1.xml protocol/libclient_protos.a.p/wlr-layer-shell-unstable-v1-protocol.c
+[9/31] /usr/bin/wayland-scanner private-code ../protocol/wlr-screencopy-unstable-v1.xml protocol/libclient_protos.a.p/wlr-screencopy-unstable-v1-protocol.c
+[10/31] /usr/bin/wayland-scanner private-code ../protocol/wlr-output-management-unstable-v1.xml protocol/libclient_protos.a.p/wlr-output-management-unstable-v1-protocol.c
+[11/31] /usr/bin/wayland-scanner private-code //usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml protocol/libclient_protos.a.p/xdg-shell-protocol.c
+[12/31] /usr/bin/wayland-scanner client-header //usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml protocol/libclient_protos.a.p/xdg-shell-client-protocol.h
+[13/31] /usr/bin/wayland-scanner client-header //usr/share/wayland-protocols/unstable/xdg-output/xdg-output-unstable-v1.xml protocol/libclient_protos.a.p/xdg-output-unstable-v1-client-protocol.h
+[14/31] /usr/bin/wayland-scanner client-header ../protocol/wlr-screencopy-unstable-v1.xml protocol/libclient_protos.a.p/wlr-screencopy-unstable-v1-client-protocol.h
+[15/31] /usr/bin/wayland-scanner client-header ../protocol/wlr-output-management-unstable-v1.xml protocol/libclient_protos.a.p/wlr-output-management-unstable-v1-client-protocol.h
+[16/31] /usr/bin/wayland-scanner client-header ../protocol/wlr-layer-shell-unstable-v1.xml protocol/libclient_protos.a.p/wlr-layer-shell-unstable-v1-client-protocol.h
+[17/31] /usr/bin/wayland-scanner private-code //usr/share/wayland-protocols/unstable/xdg-output/xdg-output-unstable-v1.xml protocol/libclient_protos.a.p/xdg-output-unstable-v1-protocol.c
+[18/31] cc -Isrc/wdisplays.p -Isrc -I../src -Iresources -I/usr/include/libdrm -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ src/wdisplays.p/render.c.o -MF src/wdisplays.p/render.c.o.d -o src/wdisplays.p/render.c.o -c ../src/render.c
+[19/31] cc -Isrc/wdisplays.p -Isrc -I../src -Iresources -I/usr/include/libdrm -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ src/wdisplays.p/overlay.c.o -MF src/wdisplays.p/overlay.c.o.d -o src/wdisplays.p/overlay.c.o -c ../src/overlay.c
+[20/31] cc -Isrc/wdisplays.p -Isrc -I../src -Iresources -I/usr/include/libdrm -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ src/wdisplays.p/outputs.c.o -MF src/wdisplays.p/outputs.c.o.d -o src/wdisplays.p/outputs.c.o -c ../src/outputs.c
+[21/31] cc -Isrc/wdisplays.p -Isrc -I../src -Iresources -I/usr/include/libdrm -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ src/wdisplays.p/headform.c.o -MF src/wdisplays.p/headform.c.o.d -o src/wdisplays.p/headform.c.o -c ../src/headform.c
+[22/31] cc -Isrc/wdisplays.p -Isrc -I../src -Iresources -I/usr/include/libdrm -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ src/wdisplays.p/glviewport.c.o -MF src/wdisplays.p/glviewport.c.o.d -o src/wdisplays.p/glviewport.c.o -c ../src/glviewport.c
+[23/31] cc -Isrc/wdisplays.p -Isrc -I../src -Iresources -I/usr/include/libdrm -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ src/wdisplays.p/main.c.o -MF src/wdisplays.p/main.c.o.d -o src/wdisplays.p/main.c.o -c ../src/main.c
+[24/31] cc -Isrc/wdisplays.p -Isrc -I../src -Iresources -I/usr/include/libdrm -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -pthread -MD -MQ src/wdisplays.p/meson-generated_.._.._resources_wdisplays-resources.c.o -MF src/wdisplays.p/meson-generated_.._.._resources_wdisplays-resources.c.o.d -o src/wdisplays.p/meson-generated_.._.._resources_wdisplays-resources.c.o -c resources/wdisplays-resources.c
+[25/31] cc -Iprotocol/libclient_protos.a.p -Iprotocol -I../protocol -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ protocol/libclient_protos.a.p/meson-generated_wlr-layer-shell-unstable-v1-protocol.c.o -MF protocol/libclient_protos.a.p/meson-generated_wlr-layer-shell-unstable-v1-protocol.c.o.d -o protocol/libclient_protos.a.p/meson-generated_wlr-layer-shell-unstable-v1-protocol.c.o -c protocol/libclient_protos.a.p/wlr-layer-shell-unstable-v1-protocol.c
+[26/31] cc -Iprotocol/libclient_protos.a.p -Iprotocol -I../protocol -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ protocol/libclient_protos.a.p/meson-generated_wlr-screencopy-unstable-v1-protocol.c.o -MF protocol/libclient_protos.a.p/meson-generated_wlr-screencopy-unstable-v1-protocol.c.o.d -o protocol/libclient_protos.a.p/meson-generated_wlr-screencopy-unstable-v1-protocol.c.o -c protocol/libclient_protos.a.p/wlr-screencopy-unstable-v1-protocol.c
+[27/31] cc -Iprotocol/libclient_protos.a.p -Iprotocol -I../protocol -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ protocol/libclient_protos.a.p/meson-generated_wlr-output-management-unstable-v1-protocol.c.o -MF protocol/libclient_protos.a.p/meson-generated_wlr-output-management-unstable-v1-protocol.c.o.d -o protocol/libclient_protos.a.p/meson-generated_wlr-output-management-unstable-v1-protocol.c.o -c protocol/libclient_protos.a.p/wlr-output-management-unstable-v1-protocol.c
+[28/31] cc -Iprotocol/libclient_protos.a.p -Iprotocol -I../protocol -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ protocol/libclient_protos.a.p/meson-generated_xdg-shell-protocol.c.o -MF protocol/libclient_protos.a.p/meson-generated_xdg-shell-protocol.c.o.d -o protocol/libclient_protos.a.p/meson-generated_xdg-shell-protocol.c.o -c protocol/libclient_protos.a.p/xdg-shell-protocol.c
+[29/31] cc -Iprotocol/libclient_protos.a.p -Iprotocol -I../protocol -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -MD -MQ protocol/libclient_protos.a.p/meson-generated_xdg-output-unstable-v1-protocol.c.o -MF protocol/libclient_protos.a.p/meson-generated_xdg-output-unstable-v1-protocol.c.o.d -o protocol/libclient_protos.a.p/meson-generated_xdg-output-unstable-v1-protocol.c.o -c protocol/libclient_protos.a.p/xdg-output-unstable-v1-protocol.c
+[30/31] rm -f protocol/libclient_protos.a && gcc-ar csrDT protocol/libclient_protos.a protocol/libclient_protos.a.p/meson-generated_xdg-output-unstable-v1-protocol.c.o protocol/libclient_protos.a.p/meson-generated_xdg-shell-protocol.c.o protocol/libclient_protos.a.p/meson-generated_wlr-output-management-unstable-v1-protocol.c.o protocol/libclient_protos.a.p/meson-generated_wlr-screencopy-unstable-v1-protocol.c.o protocol/libclient_protos.a.p/meson-generated_wlr-layer-shell-unstable-v1-protocol.c.o
+[01m[K../src/main.c:[m[K In function '[01m[Kmain[m[K':
+[01m[K../src/main.c:1086:3:[m[K [01;35m[Kwarning: [m[K'[01m[KG_APPLICATION_FLAGS_NONE[m[K' is deprecated: Use 'G_APPLICATION_DEFAULT_FLAGS' instead [[01;35m[K-Wdeprecated-declarations[m[K]
+ 1086 |   [01;35m[KGtkApplication[m[K *app = gtk_application_new(WDISPLAYS_APP_ID, G_APPLICATION_FLAGS_NONE);
+      |   [01;35m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/glib-2.0/gio/giotypes.h:30[m[K,
+                 from [01m[K/usr/include/glib-2.0/gio/gio.h:28[m[K,
+                 from [01m[K/usr/include/gtk-3.0/gdk/gdkapplaunchcontext.h:28[m[K,
+                 from [01m[K/usr/include/gtk-3.0/gdk/gdk.h:32[m[K,
+                 from [01m[K/usr/include/gtk-3.0/gtk/gtk.h:30[m[K,
+                 from [01m[K../src/main.c:4[m[K:
+[01m[K/usr/include/glib-2.0/gio/gioenums.h:1545:3:[m[K [01;36m[Knote: [m[Kdeclared here
+ 1545 |   [01;36m[KG_APPLICATION_FLAGS_NONE[m[K GIO_DEPRECATED_ENUMERATOR_IN_2_74_FOR(G_APPLICATION_DEFAULT_FLAGS),
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[31/31] cc  -o src/wdisplays src/wdisplays.p/meson-generated_.._.._resources_wdisplays-resources.c.o src/wdisplays.p/main.c.o src/wdisplays.p/glviewport.c.o src/wdisplays.p/headform.c.o src/wdisplays.p/outputs.c.o src/wdisplays.p/overlay.c.o src/wdisplays.p/render.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--start-group protocol/libclient_protos.a -lm -lrt /usr/lib/libwayland-client.so /usr/lib/libepoxy.so /usr/lib/libgtk-3.so /usr/lib/libgdk-3.so /usr/lib/libpangocairo-1.0.so /usr/lib/libpango-1.0.so /usr/lib/libharfbuzz.so /usr/lib/libatk-1.0.so /usr/lib/libcairo-gobject.so /usr/lib/libcairo.so /usr/lib/libgdk_pixbuf-2.0.so /usr/lib/libgio-2.0.so /usr/lib/libgobject-2.0.so /usr/lib/libglib-2.0.so -Wl,--end-group
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/wdisplays-1.1.1/build -j 8 -v
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Installing src/wdisplays to /home/devel/building/work/pkg/usr/bin
+Installing /home/devel/building/work/src/wdisplays-1.1.1/resources/wdisplays.svg to /home/devel/building/work/pkg/usr/share/icons/hicolor/scalable/apps
+Installing /home/devel/building/work/src/wdisplays-1.1.1/build/resources/network.cycles.wdisplays.desktop to /home/devel/building/work/pkg/usr/share/applications
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 01:40 usr/
+drwxr-xr-x  0 root   root        0 May  8 01:40 usr/bin/
+drwxr-xr-x  0 root   root        0 May  8 01:40 usr/share/
+drwxr-xr-x  0 root   root        0 May  8 01:40 usr/share/icons/
+drwxr-xr-x  0 root   root        0 May  8 01:40 usr/share/applications/
+-rw-r--r--  0 root   root      319 May  8 01:40 usr/share/applications/network.cycles.wdisplays.desktop
+drwxr-xr-x  0 root   root        0 May  8 01:40 usr/share/icons/hicolor/
+drwxr-xr-x  0 root   root        0 May  8 01:40 usr/share/icons/hicolor/scalable/
+drwxr-xr-x  0 root   root        0 May  8 01:40 usr/share/icons/hicolor/scalable/apps/
+-rw-r--r--  0 root   root    21410 Jul  1  2023 usr/share/icons/hicolor/scalable/apps/network.cycles.wdisplays.svg
+-rwxr-xr-x  0 root   root    99128 May  8 01:40 usr/bin/wdisplays
+=======> Building '/home/devel/packages/wdisplays#1.1.1-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling wdisplays 1.1.1-1
+prt-get: /usr/bin/pkgadd -u wdisplays#1.1.1-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 01:40:19 2024
+

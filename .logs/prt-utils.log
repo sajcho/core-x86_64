@@ -1,0 +1,143 @@
+prt-get: updating /usr/ports/core-x86_64/prt-utils
+prt-get: starting build Wed May  8 00:58:07 2024
+=======> Building '/home/devel/packages/prt-utils#1.3.3-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/prt-utils-1.3.3-1.tar.gz
++ build
++ cd prt-utils
++ sed -e 's|--static||' -e 's|-static||' -i revdep/Makefile
++ make V=1
+make[1]: Entering directory '/home/devel/building/work/src/prt-utils/revdep'
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++0x -Wall -Wextra -g -DVERSION='"2.0"'   -c -o elf.o elf.cpp
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++0x -Wall -Wextra -g -DVERSION='"2.0"'   -c -o utility.o utility.cpp
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++0x -Wall -Wextra -g -DVERSION='"2.0"'   -c -o main.o main.cpp
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++0x -Wall -Wextra -g -DVERSION='"2.0"'   -c -o pkg.o pkg.cpp
+g++ -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -std=gnu++0x -Wall -Wextra -g -DVERSION='"2.0"'   -c -o elf-cache.o elf-cache.cpp
+make[1]: Entering directory '/home/devel/building/work/src/prt-utils/scripts'
+sed "s|@@LIBDIR@@|/usr/lib|" prtverify.awk  > prtverify
+sed "s|@@LIBDIR@@|/usr/lib|" prtverify.in  > prtverify.sh
+make[1]: Leaving directory '/home/devel/building/work/src/prt-utils/scripts'
+g++ elf.o utility.o main.o pkg.o elf-cache.o -lelf -o revdep
+make[1]: Leaving directory '/home/devel/building/work/src/prt-utils/revdep'
++ make DESTDIR=/home/devel/building/work/pkg install
+if [ ! -d /home/devel/building/work/pkg/usr/share/man/man1 ]; then \
+  install -d /home/devel/building/work/pkg/usr/share/man/man1; \
+fi
+for tool in prtcreate prtcheck prtrej prtsweep prtwash pkgexport pkgfoster pkg_installed pkgsize portspage prtorphan prtcheckmissing prtcheckperms oldfiles dllist finddeps findredundantdeps prtverify prtverify.sh; do \
+  if [ -d lib/$tool ]; then \
+    install -d /home/devel/building/work/pkg/usr/lib/$tool; \
+    install -m 644 lib/$tool/* /home/devel/building/work/pkg/usr/lib/$tool; \
+  fi; \
+done
+for tool in prtcreate prtcheck prtrej prtsweep prtwash pkgexport pkgfoster pkg_installed pkgsize portspage prtorphan prtcheckmissing prtcheckperms oldfiles dllist finddeps findredundantdeps prtverify prtverify.sh; do \
+  if [ -d share/$tool ]; then \
+    install -d /home/devel/building/work/pkg/usr/share/$tool; \
+    install -m 644 share/$tool/* /home/devel/building/work/pkg/usr/share/$tool; \
+  fi; \
+done
+for manpage in prtcreate prtcheck prtrej prtsweep prtwash pkgexport pkgfoster pkg_installed pkgsize portspage prtorphan prtcheckmissing prtcheckperms oldfiles dllist finddeps findredundantdeps prtverify prtverify.sh prt-utils; do \
+  if [ -f doc/$manpage.1 ]; then \
+    install -m 644 doc/$manpage.1 /home/devel/building/work/pkg/usr/share/man/man1/; \
+  fi; \
+done
+make[1]: Entering directory '/home/devel/building/work/src/prt-utils/scripts'
+sed "s|@@LIBDIR@@|/usr/lib|" prtverify.awk  > prtverify
+sed "s|@@LIBDIR@@|/usr/lib|" prtverify.in  > prtverify.sh
+make[1]: Leaving directory '/home/devel/building/work/src/prt-utils/scripts'
+if [ ! -d /home/devel/building/work/pkg/usr/bin ]; then \
+  install -d /home/devel/building/work/pkg/usr/bin; \
+fi
+for binary in prtcreate prtcheck prtrej prtsweep prtwash pkgexport pkgfoster pkg_installed pkgsize portspage prtorphan prtcheckmissing prtcheckperms oldfiles dllist finddeps findredundantdeps prtverify prtverify.sh; do \
+  install -m 755 scripts/$binary /home/devel/building/work/pkg/usr/bin/; \
+done
+install -m 644 revdep/revdep.1 /home/devel/building/work/pkg/usr/share/man/man1
+install -m 755 revdep/revdep /home/devel/building/work/pkg/usr/bin
+mv /home/devel/building/work/pkg/usr/bin/prtverify /home/devel/building/work/pkg/usr/bin/prtverify.awk
+ln -sf prtverify.awk /home/devel/building/work/pkg/usr/bin/prtverify
++ install -d /home/devel/building/work/pkg/etc/revdep.d
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 00:58 etc/
+drwxr-xr-x  0 root   root        0 May  8 00:58 etc/revdep.d/
+drwxr-xr-x  0 root   root        0 May  8 00:58 usr/
+drwxr-xr-x  0 root   root        0 May  8 00:58 usr/share/
+drwxr-xr-x  0 root   root        0 May  8 00:58 usr/lib/
+drwxr-xr-x  0 root   root        0 May  8 00:58 usr/bin/
+-rwxr-xr-x  0 root   root     1638 May  8 00:58 usr/bin/prtcreate
+-rwxr-xr-x  0 root   root     2853 May  8 00:58 usr/bin/prtcheck
+-rwxr-xr-x  0 root   root     2356 May  8 00:58 usr/bin/prtrej
+-rwxr-xr-x  0 root   root     7029 May  8 00:58 usr/bin/prtsweep
+-rwxr-xr-x  0 root   root     8139 May  8 00:58 usr/bin/prtwash
+-rwxr-xr-x  0 root   root     3408 May  8 00:58 usr/bin/pkgexport
+-rwxr-xr-x  0 root   root     1544 May  8 00:58 usr/bin/pkgfoster
+-rwxr-xr-x  0 root   root     1156 May  8 00:58 usr/bin/pkg_installed
+-rwxr-xr-x  0 root   root     3045 May  8 00:58 usr/bin/pkgsize
+-rwxr-xr-x  0 root   root    11130 May  8 00:58 usr/bin/portspage
+-rwxr-xr-x  0 root   root     2811 May  8 00:58 usr/bin/prtorphan
+-rwxr-xr-x  0 root   root     1163 May  8 00:58 usr/bin/prtcheckmissing
+-rwxr-xr-x  0 root   root     1817 May  8 00:58 usr/bin/prtcheckperms
+-rwxr-xr-x  0 root   root     5303 May  8 00:58 usr/bin/oldfiles
+-rwxr-xr-x  0 root   root     1724 May  8 00:58 usr/bin/dllist
+-rwxr-xr-x  0 root   root     2027 May  8 00:58 usr/bin/finddeps
+-rwxr-xr-x  0 root   root     2162 May  8 00:58 usr/bin/findredundantdeps
+-rwxr-xr-x  0 root   root     3393 May  8 00:58 usr/bin/prtverify.sh
+-rwxr-xr-x  0 root   root    52056 May  8 00:58 usr/bin/revdep
+-rwxr-xr-x  0 root   root     4715 May  8 00:58 usr/bin/prtverify.awk
+lrwxrwxrwx  0 root   root        0 May  8 00:58 usr/bin/prtverify -> prtverify.awk
+drwxr-xr-x  0 root   root        0 May  8 00:58 usr/lib/prtverify/
+-rw-r--r--  0 root   root     1270 May  8 00:58 usr/lib/prtverify/00_prtverify_lib.awk
+-rw-r--r--  0 root   root     2040 May  8 00:58 usr/lib/prtverify/05_file_check.awk
+-rw-r--r--  0 root   root      563 May  8 00:58 usr/lib/prtverify/10_file_check_clean_repo.awk
+-rw-r--r--  0 root   root      275 May  8 00:58 usr/lib/prtverify/20_encoding.awk
+-rw-r--r--  0 root   root     1276 May  8 00:58 usr/lib/prtverify/20_evil_cmds.awk
+-rw-r--r--  0 root   root      612 May  8 00:58 usr/lib/prtverify/20_maintainer_email.awk
+-rw-r--r--  0 root   root      476 May  8 00:58 usr/lib/prtverify/20_missing_deps.awk
+-rw-r--r--  0 root   root     1032 May  8 00:58 usr/lib/prtverify/20_pkgfile_headers.awk
+-rw-r--r--  0 root   root     1467 May  8 00:58 usr/lib/prtverify/20_pkgfile_vars.awk
+-rw-r--r--  0 root   root     1542 May  8 00:58 usr/lib/prtverify/20_redundant_deps.awk
+-rw-r--r--  0 root   root      378 May  8 00:58 usr/lib/prtverify/30_file_conflict.awk
+-rw-r--r--  0 root   root      384 May  8 00:58 usr/lib/prtverify/30_file_permissions.awk
+-rw-r--r--  0 root   root      694 May  8 00:58 usr/lib/prtverify/30_filesystem_collisions.awk
+-rw-r--r--  0 root   root      598 May  8 00:58 usr/lib/prtverify/30_invalid_dirs.awk
+-rw-r--r--  0 root   root      513 May  8 00:58 usr/lib/prtverify/30_junk_files.awk
+-rw-r--r--  0 root   root      537 May  8 00:58 usr/lib/prtverify/30_suid_sgid.awk
+-rw-r--r--  0 root   root      653 May  8 00:58 usr/lib/prtverify/30_system_users.awk
+-rw-r--r--  0 root   root      967 May  8 00:58 usr/lib/prtverify/90_mk_footprint_db.awk
+-rw-r--r--  0 root   root     3938 May  8 00:58 usr/lib/prtverify/prtverify.wl
+drwxr-xr-x  0 root   root        0 May  8 00:58 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  8 00:58 usr/share/prtcreate/
+drwxr-xr-x  0 root   root        0 May  8 00:58 usr/share/portspage/
+-rw-r--r--  0 root   root      646 May  8 00:58 usr/share/portspage/style.html
+-rw-r--r--  0 root   root      107 May  8 00:58 usr/share/prtcreate/autotools
+-rw-r--r--  0 root   root      368 May  8 00:58 usr/share/prtcreate/cmake
+-rw-r--r--  0 root   root      303 May  8 00:58 usr/share/prtcreate/meson
+-rw-r--r--  0 root   root      378 May  8 00:58 usr/share/prtcreate/ninja
+-rw-r--r--  0 root   root      404 May  8 00:58 usr/share/prtcreate/perl
+-rw-r--r--  0 root   root      284 May  8 00:58 usr/share/prtcreate/py3pip
+-rw-r--r--  0 root   root      402 May  8 00:58 usr/share/prtcreate/py3setup
+-rw-r--r--  0 root   root      100 May  8 00:58 usr/share/prtcreate/r
+drwxr-xr-x  0 root   root        0 May  8 00:58 usr/share/man/man1/
+-rw-r--r--  0 root   root     1514 May  8 00:58 usr/share/man/man1/prtcreate.1.gz
+-rw-r--r--  0 root   root     1624 May  8 00:58 usr/share/man/man1/prtcheck.1.gz
+-rw-r--r--  0 root   root     1250 May  8 00:58 usr/share/man/man1/prtrej.1.gz
+-rw-r--r--  0 root   root     2232 May  8 00:58 usr/share/man/man1/prtsweep.1.gz
+-rw-r--r--  0 root   root     2592 May  8 00:58 usr/share/man/man1/prtwash.1.gz
+-rw-r--r--  0 root   root     1137 May  8 00:58 usr/share/man/man1/pkgexport.1.gz
+-rw-r--r--  0 root   root      563 May  8 00:58 usr/share/man/man1/pkgfoster.1.gz
+-rw-r--r--  0 root   root      423 May  8 00:58 usr/share/man/man1/pkg_installed.1.gz
+-rw-r--r--  0 root   root     1599 May  8 00:58 usr/share/man/man1/pkgsize.1.gz
+-rw-r--r--  0 root   root     2600 May  8 00:58 usr/share/man/man1/portspage.1.gz
+-rw-r--r--  0 root   root      510 May  8 00:58 usr/share/man/man1/prtorphan.1.gz
+-rw-r--r--  0 root   root      335 May  8 00:58 usr/share/man/man1/prtcheckmissing.1.gz
+-rw-r--r--  0 root   root      817 May  8 00:58 usr/share/man/man1/prtcheckperms.1.gz
+-rw-r--r--  0 root   root     1702 May  8 00:58 usr/share/man/man1/oldfiles.1.gz
+-rw-r--r--  0 root   root     1302 May  8 00:58 usr/share/man/man1/dllist.1.gz
+-rw-r--r--  0 root   root      906 May  8 00:58 usr/share/man/man1/finddeps.1.gz
+-rw-r--r--  0 root   root     2305 May  8 00:58 usr/share/man/man1/findredundantdeps.1.gz
+-rw-r--r--  0 root   root     3046 May  8 00:58 usr/share/man/man1/prtverify.1.gz
+-rw-r--r--  0 root   root     1234 May  8 00:58 usr/share/man/man1/prt-utils.1.gz
+-rw-r--r--  0 root   root     1502 May  8 00:58 usr/share/man/man1/revdep.1.gz
+=======> Building '/home/devel/packages/prt-utils#1.3.3-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling prt-utils 1.3.3-1
+prt-get: /usr/bin/pkgadd -u prt-utils#1.3.3-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 00:58:09 2024
+

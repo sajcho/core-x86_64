@@ -1,0 +1,167 @@
+prt-get: updating /usr/ports/wayland-x86_64/fcft
+prt-get: starting build Tue May  7 20:45:08 2024
+=======> Building '/home/devel/packages/fcft#3.1.8-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/fcft-3.1.8.tar.gz
++ build
++ cd fcft
++ build-meson -Dtest-text-shaping=true -Drun-shaping=enabled -Dgrapheme-shaping=enabled . build
+The Meson build system
+Version: 1.4.0
+Source dir: /home/devel/building/work/src/fcft
+Build dir: /home/devel/building/work/src/fcft/build
+Build type: native build
+Project name: fcft
+Project version: 3.1.8
+C compiler for the host machine: cc (gcc 14.1.0 "cc (SAUX-x86_64) 14.1.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Checking for function "memfd_create" : YES 
+Compiler for C supports arguments -fvisibility=default: YES 
+Compiler for C supports arguments -fmacro-prefix-map=/foo=: YES 
+Library m found: YES
+Run-time dependency threads found: YES
+Found pkg-config: YES (/usr/bin/pkg-config) 2.2.0
+Run-time dependency fontconfig found: YES 2.15.0
+Run-time dependency freetype2 found: YES 26.1.20
+Run-time dependency harfbuzz found: YES 8.4.0
+Dependency harfbuzz found: YES 8.4.0 (cached)
+Run-time dependency libutf8proc found: YES 3.0.0
+Run-time dependency pixman-1 found: YES 0.43.4
+Library stdthreads found: NO
+Run-time dependency tllist found: YES 1.1.0
+Program env found: YES (/usr/bin/env)
+Program python3 found: YES (/usr/bin/python3)
+Run-time dependency check found: YES 0.15.2
+Build-time dependency scdoc found: YES 1.11.3
+Program sh found: YES (/bin/sh)
+Program /usr/bin/scdoc found: YES (/usr/bin/scdoc)
+Build targets in project: 20
+
+fcft 3.1.8
+
+    OT-SVG backend    : nanosvg
+    Grapheme shaping  : YES
+    Run shaping       : YES
+    Test text shaping : YES
+    Documentation     : YES
+
+  User defined options
+    auto_features     : auto
+    bindir            : /usr/bin
+    buildtype         : plain
+    datadir           : /usr/share
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    libexecdir        : /usr/lib
+    localstatedir     : /var
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sbindir           : /usr/sbin
+    sharedstatedir    : /var/lib
+    sysconfdir        : /etc
+    werror            : false
+    wrap_mode         : nodownload
+    python.bytecompile: 0
+    b_lto             : false
+    b_pie             : true
+    b_staticpic       : true
+    grapheme-shaping  : enabled
+    run-shaping       : enabled
+    test-text-shaping : true
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -v -C build
+ninja: entering directory '/home/devel/building/work/src/fcft/build'
+[1/27] /usr/bin/meson --internal exe --capture doc/fcft_text_run_destroy.3 -- /bin/sh -c '/usr/bin/scdoc < ../doc/fcft_text_run_destroy.3.scd'
+[2/27] /usr/bin/meson --internal exe --capture doc/fcft_set_scaling_filter.3 -- /bin/sh -c '/usr/bin/scdoc < ../doc/fcft_set_scaling_filter.3.scd'
+[3/27] /usr/bin/meson --internal exe --capture doc/fcft_set_emoji_presentation.3 -- /bin/sh -c '/usr/bin/scdoc < ../doc/fcft_set_emoji_presentation.3.scd'
+[4/27] /usr/bin/meson --internal exe --capture doc/fcft_rasterize_text_run_utf32.3 -- /bin/sh -c '/usr/bin/scdoc < ../doc/fcft_rasterize_text_run_utf32.3.scd'
+[5/27] /usr/bin/meson --internal exe --capture doc/fcft_rasterize_grapheme_utf32.3 -- /bin/sh -c '/usr/bin/scdoc < ../doc/fcft_rasterize_grapheme_utf32.3.scd'
+[6/27] /usr/bin/meson --internal exe --capture doc/fcft_rasterize_char_utf32.3 -- /bin/sh -c '/usr/bin/scdoc < ../doc/fcft_rasterize_char_utf32.3.scd'
+[7/27] /usr/bin/meson --internal exe --capture doc/fcft_precompose.3 -- /bin/sh -c '/usr/bin/scdoc < ../doc/fcft_precompose.3.scd'
+[8/27] /usr/bin/meson --internal exe --capture doc/fcft_log_init.3 -- /bin/sh -c '/usr/bin/scdoc < ../doc/fcft_log_init.3.scd'
+[9/27] /usr/bin/meson --internal exe --capture doc/fcft_kerning.3 -- /bin/sh -c '/usr/bin/scdoc < ../doc/fcft_kerning.3.scd'
+[10/27] /usr/bin/meson --internal exe --capture doc/fcft_init.3 -- /bin/sh -c '/usr/bin/scdoc < ../doc/fcft_init.3.scd'
+[11/27] /usr/bin/meson --internal exe --capture doc/fcft_from_name.3 -- /bin/sh -c '/usr/bin/scdoc < ../doc/fcft_from_name.3.scd'
+[12/27] /usr/bin/meson --internal exe --capture doc/fcft_fini.3 -- /bin/sh -c '/usr/bin/scdoc < ../doc/fcft_fini.3.scd'
+[13/27] /usr/bin/meson --internal exe --capture doc/fcft_destroy.3 -- /bin/sh -c '/usr/bin/scdoc < ../doc/fcft_destroy.3.scd'
+[14/27] /usr/bin/meson --internal exe --capture doc/fcft_clone.3 -- /bin/sh -c '/usr/bin/scdoc < ../doc/fcft_clone.3.scd'
+[15/27] /usr/bin/meson --internal exe --capture doc/fcft_capabilities.3 -- /bin/sh -c '/usr/bin/scdoc < ../doc/fcft_capabilities.3.scd'
+[16/27] /usr/bin/env LC_ALL=C ../generate-version.sh 3.1.8 ../ version.h
+[17/27] /usr/bin/env LC_ALL=C ../generate-unicode-precompose.sh ../unicode/UnicodeData.txt unicode-compose-table.h
+[18/27] /usr/bin/python3 ../generate-emoji-data.py ../unicode/emoji-data.txt emoji-data.h
+[19/27] cc -Itest-fcft.p -I. -I.. -I/usr/include/pixman-1 -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c11 -D_GNU_SOURCE=200809L -DMEMFD_CREATE '-DFCFT_EXPORT=__attribute__((visibility("default")))' -fmacro-prefix-map=../= -DFCFT_HAVE_HARFBUZZ -DFCFT_HAVE_UTF8PROC -DFCFT_ENABLE_SVG_NANOSVG=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIE -MD -MQ test-fcft.p/test.c.o -MF test-fcft.p/test.c.o.d -o test-fcft.p/test.c.o -c ../test.c
+[20/27] cc -Ilibfcft.so.4.1.8.p -I. -I.. -I../3rd-party/nanosvg/src -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fvisibility=hidden -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c11 -D_GNU_SOURCE=200809L -DMEMFD_CREATE '-DFCFT_EXPORT=__attribute__((visibility("default")))' -fmacro-prefix-map=../= -DFCFT_HAVE_HARFBUZZ -DFCFT_HAVE_UTF8PROC -DFCFT_ENABLE_SVG_NANOSVG=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DUTF8PROC_EXPORTS -pthread -MD -MQ libfcft.so.4.1.8.p/svg-backend-nanosvg.c.o -MF libfcft.so.4.1.8.p/svg-backend-nanosvg.c.o.d -o libfcft.so.4.1.8.p/svg-backend-nanosvg.c.o -c ../svg-backend-nanosvg.c
+[21/27] cc -Ilibfcft.so.4.1.8.p -I. -I.. -I../3rd-party/nanosvg/src -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fvisibility=hidden -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c11 -D_GNU_SOURCE=200809L -DMEMFD_CREATE '-DFCFT_EXPORT=__attribute__((visibility("default")))' -fmacro-prefix-map=../= -DFCFT_HAVE_HARFBUZZ -DFCFT_HAVE_UTF8PROC -DFCFT_ENABLE_SVG_NANOSVG=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DUTF8PROC_EXPORTS -pthread -MD -MQ libfcft.so.4.1.8.p/nanosvgrast.c.o -MF libfcft.so.4.1.8.p/nanosvgrast.c.o.d -o libfcft.so.4.1.8.p/nanosvgrast.c.o -c ../nanosvgrast.c
+[22/27] cc -Ilibfcft.so.4.1.8.p -I. -I.. -I../3rd-party/nanosvg/src -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fvisibility=hidden -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c11 -D_GNU_SOURCE=200809L -DMEMFD_CREATE '-DFCFT_EXPORT=__attribute__((visibility("default")))' -fmacro-prefix-map=../= -DFCFT_HAVE_HARFBUZZ -DFCFT_HAVE_UTF8PROC -DFCFT_ENABLE_SVG_NANOSVG=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DUTF8PROC_EXPORTS -pthread -MD -MQ libfcft.so.4.1.8.p/nanosvg.c.o -MF libfcft.so.4.1.8.p/nanosvg.c.o.d -o libfcft.so.4.1.8.p/nanosvg.c.o -c ../nanosvg.c
+[23/27] cc -Ilibfcft.so.4.1.8.p -I. -I.. -I../3rd-party/nanosvg/src -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fvisibility=hidden -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c11 -D_GNU_SOURCE=200809L -DMEMFD_CREATE '-DFCFT_EXPORT=__attribute__((visibility("default")))' -fmacro-prefix-map=../= -DFCFT_HAVE_HARFBUZZ -DFCFT_HAVE_UTF8PROC -DFCFT_ENABLE_SVG_NANOSVG=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DUTF8PROC_EXPORTS -pthread -MD -MQ libfcft.so.4.1.8.p/log.c.o -MF libfcft.so.4.1.8.p/log.c.o.d -o libfcft.so.4.1.8.p/log.c.o -c ../log.c
+[24/27] cc -Ilibfcft.so.4.1.8.p -I. -I.. -I../3rd-party/nanosvg/src -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -fvisibility=hidden -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c11 -D_GNU_SOURCE=200809L -DMEMFD_CREATE '-DFCFT_EXPORT=__attribute__((visibility("default")))' -fmacro-prefix-map=../= -DFCFT_HAVE_HARFBUZZ -DFCFT_HAVE_UTF8PROC -DFCFT_ENABLE_SVG_NANOSVG=1 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -DUTF8PROC_EXPORTS -pthread -MD -MQ libfcft.so.4.1.8.p/fcft.c.o -MF libfcft.so.4.1.8.p/fcft.c.o.d -o libfcft.so.4.1.8.p/fcft.c.o -c ../fcft.c
+[25/27] cc  -o libfcft.so.4.1.8 libfcft.so.4.1.8.p/fcft.c.o libfcft.so.4.1.8.p/log.c.o libfcft.so.4.1.8.p/nanosvg.c.o libfcft.so.4.1.8.p/nanosvgrast.c.o libfcft.so.4.1.8.p/svg-backend-nanosvg.c.o -Wl,--as-needed -Wl,--no-undefined -shared -fPIC -Wl,-soname,libfcft.so.4 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,--start-group -lm -pthread /usr/lib/libfontconfig.so /usr/lib/libfreetype.so /usr/lib/libharfbuzz.so /usr/lib/libutf8proc.so /usr/lib/libpixman-1.so -Wl,--end-group
+[26/27] /usr/bin/meson --internal symbolextractor /home/devel/building/work/src/fcft/build libfcft.so.4.1.8 libfcft.so.4.1.8 libfcft.so.4.1.8.p/libfcft.so.4.1.8.symbols 
+[27/27] cc  -o test-fcft test-fcft.p/test.c.o -Wl,--as-needed -Wl,--no-undefined -pie -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects '-Wl,-rpath,$ORIGIN/' -Wl,-rpath-link,/home/devel/building/work/src/fcft/build/ -Wl,--start-group libfcft.so.4.1.8 /usr/lib/libcheck.so /usr/lib/libpixman-1.so -Wl,--end-group
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/fcft/build -j 8 -v
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Installing libfcft.so.4.1.8 to /home/devel/building/work/pkg/usr/lib
+Installing doc/fcft_capabilities.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing doc/fcft_clone.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing doc/fcft_destroy.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing doc/fcft_fini.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing doc/fcft_from_name.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing doc/fcft_init.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing doc/fcft_kerning.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing doc/fcft_log_init.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing doc/fcft_precompose.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing doc/fcft_rasterize_char_utf32.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing doc/fcft_rasterize_grapheme_utf32.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing doc/fcft_rasterize_text_run_utf32.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing doc/fcft_set_emoji_presentation.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing doc/fcft_set_scaling_filter.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing doc/fcft_text_run_destroy.3 to /home/devel/building/work/pkg/usr/share/man/man3
+Installing /home/devel/building/work/src/fcft/fcft/fcft.h to /home/devel/building/work/pkg/usr/include/fcft
+Installing /home/devel/building/work/src/fcft/fcft/stride.h to /home/devel/building/work/pkg/usr/include/fcft
+Installing /home/devel/building/work/src/fcft/build/meson-private/fcft.pc to /home/devel/building/work/pkg/usr/lib/pkgconfig
+Installing /home/devel/building/work/src/fcft/LICENSE to /home/devel/building/work/pkg/usr/share/doc/fcft
+Installing /home/devel/building/work/src/fcft/README.md to /home/devel/building/work/pkg/usr/share/doc/fcft
+Installing /home/devel/building/work/src/fcft/CHANGELOG.md to /home/devel/building/work/pkg/usr/share/doc/fcft
+Installing symlink pointing to libfcft.so.4.1.8 to /home/devel/building/work/pkg/usr/lib/libfcft.so.4
+Installing symlink pointing to libfcft.so.4 to /home/devel/building/work/pkg/usr/lib/libfcft.so
++ rm -r /home/devel/building/work/pkg/usr/share/doc
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 20:45 usr/
+drwxr-xr-x  0 root   root        0 May  7 20:45 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 20:45 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 20:45 usr/include/
+drwxr-xr-x  0 root   root        0 May  7 20:45 usr/include/fcft/
+-rw-r--r--  0 root   root     5508 Feb 26 15:53 usr/include/fcft/fcft.h
+-rw-r--r--  0 root   root      198 Feb 26 15:53 usr/include/fcft/stride.h
+drwxr-xr-x  0 root   root        0 May  7 20:45 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  7 20:45 usr/share/man/man3/
+-rw-r--r--  0 root   root      618 May  7 20:45 usr/share/man/man3/fcft_capabilities.3.gz
+-rw-r--r--  0 root   root      618 May  7 20:45 usr/share/man/man3/fcft_clone.3.gz
+-rw-r--r--  0 root   root      564 May  7 20:45 usr/share/man/man3/fcft_destroy.3.gz
+-rw-r--r--  0 root   root      471 May  7 20:45 usr/share/man/man3/fcft_fini.3.gz
+-rw-r--r--  0 root   root     2690 May  7 20:45 usr/share/man/man3/fcft_from_name.3.gz
+-rw-r--r--  0 root   root      942 May  7 20:45 usr/share/man/man3/fcft_init.3.gz
+-rw-r--r--  0 root   root      844 May  7 20:45 usr/share/man/man3/fcft_kerning.3.gz
+-rw-r--r--  0 root   root      831 May  7 20:45 usr/share/man/man3/fcft_log_init.3.gz
+-rw-r--r--  0 root   root      712 May  7 20:45 usr/share/man/man3/fcft_precompose.3.gz
+-rw-r--r--  0 root   root     1880 May  7 20:45 usr/share/man/man3/fcft_rasterize_char_utf32.3.gz
+-rw-r--r--  0 root   root     1040 May  7 20:45 usr/share/man/man3/fcft_rasterize_grapheme_utf32.3.gz
+-rw-r--r--  0 root   root     1145 May  7 20:45 usr/share/man/man3/fcft_rasterize_text_run_utf32.3.gz
+-rw-r--r--  0 root   root     1037 May  7 20:45 usr/share/man/man3/fcft_set_emoji_presentation.3.gz
+-rw-r--r--  0 root   root      877 May  7 20:45 usr/share/man/man3/fcft_set_scaling_filter.3.gz
+-rw-r--r--  0 root   root      554 May  7 20:45 usr/share/man/man3/fcft_text_run_destroy.3.gz
+-rwxr-xr-x  0 root   root   125984 May  7 20:45 usr/lib/libfcft.so.4.1.8
+drwxr-xr-x  0 root   root        0 May  7 20:45 usr/lib/pkgconfig/
+lrwxrwxrwx  0 root   root        0 May  7 20:45 usr/lib/libfcft.so.4 -> libfcft.so.4.1.8
+lrwxrwxrwx  0 root   root        0 May  7 20:45 usr/lib/libfcft.so -> libfcft.so.4
+-rw-r--r--  0 root   root      320 May  7 20:45 usr/lib/pkgconfig/fcft.pc
+=======> Building '/home/devel/packages/fcft#3.1.8-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling fcft 3.1.8-1
+prt-get: /usr/bin/pkgadd -u fcft#3.1.8-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 20:45:11 2024
+

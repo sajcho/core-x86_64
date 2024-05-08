@@ -1,0 +1,636 @@
+prt-get: updating /usr/ports/core-x86_64/libxml2
+prt-get: starting build Tue May  7 23:37:38 2024
+=======> Building '/home/devel/packages/libxml2#2.12.6-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/libxml2-2.12.6.tar.xz
++ build
++ cd libxml2-2.12.6
++ ./configure --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --prefix=/usr --sysconfdir=/etc --disable-static --with-threads --with-history --with-python
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking whether make supports nested variables... (cached) yes
+checking for x86_64-unknown-linux-gnu-gcc... x86_64-unknown-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... yes
+checking for x86_64-unknown-linux-gnu-gcc option to enable C11 features... none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of x86_64-unknown-linux-gnu-gcc... gcc3
+checking whether ln -s works... yes
+checking for tar... /bin/tar
+checking for perl... /usr/bin/perl
+checking for wget... /usr/bin/wget
+checking for xsltproc... /usr/bin/xsltproc
+checking for x86_64-unknown-linux-gnu-pkg-config... /usr/bin/x86_64-unknown-linux-gnu-pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-unknown-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/x86_64-unknown-linux-gnu-nm -B
+checking the name lister (/usr/bin/x86_64-unknown-linux-gnu-nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-unknown-linux-gnu-objdump... x86_64-unknown-linux-gnu-objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-unknown-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-unknown-linux-gnu-ar... x86_64-unknown-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-unknown-linux-gnu-strip... x86_64-unknown-linux-gnu-strip
+checking for x86_64-unknown-linux-gnu-ranlib... x86_64-unknown-linux-gnu-ranlib
+checking command to parse /usr/bin/x86_64-unknown-linux-gnu-nm -B output from x86_64-unknown-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for x86_64-unknown-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-unknown-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-unknown-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-unknown-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-unknown-linux-gnu-gcc static flag -static works... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-unknown-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for cos in -lm... yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for fcntl.h... yes
+checking for unistd.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/mman.h... yes
+checking for sys/socket.h... yes
+checking for netinet/in.h... yes
+checking for arpa/inet.h... yes
+checking for netdb.h... yes
+checking for sys/select.h... yes
+checking for poll.h... yes
+checking for sys/time.h... yes
+checking for sys/timeb.h... yes
+checking for dl.h... no
+checking for dlfcn.h... (cached) yes
+checking for glob.h... yes
+checking for uint32_t... yes
+checking for gettimeofday... yes
+checking for ftime... yes
+checking for stat... yes
+checking for isascii... yes
+checking for mmap... yes
+checking for munmap... yes
+checking for va_copy... yes
+checking whether va_list is an array type... yes
+checking for library containing gethostbyname... none required
+checking for library containing connect... none required
+checking for type of socket length (socklen_t)... socklen_t *
+checking whether to enable IPv6... yes
+checking whether __attribute__((destructor)) is accepted... yes
+checking whether the linker accepts -Wl,--undefined-version... yes
+checking for python... /usr/bin/python
+checking for python version... 3.12
+checking for python platform... linux
+checking for GNU default python prefix... ${prefix}
+checking for GNU default python exec_prefix... ${exec_prefix}
+checking for python script directory (pythondir)... ${PYTHON_PREFIX}/lib/python3.12/site-packages
+checking for python extension module directory (pyexecdir)... ${PYTHON_EXEC_PREFIX}/lib/python3.12/site-packages
+checking for PYTHON... yes
+checking for library containing dlopen... none required
+checking for pthread.h... yes
+checking for library containing pthread_join... none required
+Enabling xmllint shell history
+checking for tputs in -lncurses... no
+checking for tputs in -lcurses... no
+checking for tputs in -ltermcap... no
+checking for tputs in -lterminfo... no
+checking for tputs in -ltermlib... no
+checking for readline/history.h... yes
+checking for append_history in -lhistory... yes
+checking for readline/readline.h... yes
+checking for readline in -lreadline... yes
+checking for Z... yes
+checking for LZMA... yes
+checking for libiconv... none required
+Disabling ICU support
+Disabling code coverage for GCC
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating include/libxml/Makefile
+config.status: creating include/private/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/examples/Makefile
+config.status: creating doc/devhelp/Makefile
+config.status: creating example/Makefile
+config.status: creating fuzz/Makefile
+config.status: creating python/Makefile
+config.status: creating python/tests/Makefile
+config.status: creating xstc/Makefile
+config.status: creating include/libxml/xmlversion.h
+config.status: creating libxml-2.0.pc
+config.status: creating libxml-2.0-uninstalled.pc
+config.status: creating libxml2-config.cmake
+config.status: creating python/setup.py
+config.status: creating xml2-config
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
++ sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6'
+Making all in include
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/include'
+Making all in libxml
+make[3]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/include/libxml'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/include/libxml'
+Making all in private
+make[3]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/include/private'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/include/private'
+make[3]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/include'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/include'
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/include'
+Making all in .
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6'
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xmllint-xmllint.o -MD -MP -MF .deps/xmllint-xmllint.Tpo -c -o xmllint-xmllint.o `test -f 'xmllint.c' || echo './'`xmllint.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-buf.lo -MD -MP -MF .deps/libxml2_la-buf.Tpo -c -o libxml2_la-buf.lo `test -f 'buf.c' || echo './'`buf.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-chvalid.lo -MD -MP -MF .deps/libxml2_la-chvalid.Tpo -c -o libxml2_la-chvalid.lo `test -f 'chvalid.c' || echo './'`chvalid.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-dict.lo -MD -MP -MF .deps/libxml2_la-dict.Tpo -c -o libxml2_la-dict.lo `test -f 'dict.c' || echo './'`dict.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-entities.lo -MD -MP -MF .deps/libxml2_la-entities.Tpo -c -o libxml2_la-entities.lo `test -f 'entities.c' || echo './'`entities.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-encoding.lo -MD -MP -MF .deps/libxml2_la-encoding.Tpo -c -o libxml2_la-encoding.lo `test -f 'encoding.c' || echo './'`encoding.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-error.lo -MD -MP -MF .deps/libxml2_la-error.Tpo -c -o libxml2_la-error.lo `test -f 'error.c' || echo './'`error.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-globals.lo -MD -MP -MF .deps/libxml2_la-globals.Tpo -c -o libxml2_la-globals.lo `test -f 'globals.c' || echo './'`globals.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-globals.lo -MD -MP -MF .deps/libxml2_la-globals.Tpo -c globals.c  -fPIC -DPIC -o .libs/libxml2_la-globals.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-dict.lo -MD -MP -MF .deps/libxml2_la-dict.Tpo -c dict.c  -fPIC -DPIC -o .libs/libxml2_la-dict.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-entities.lo -MD -MP -MF .deps/libxml2_la-entities.Tpo -c entities.c  -fPIC -DPIC -o .libs/libxml2_la-entities.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-chvalid.lo -MD -MP -MF .deps/libxml2_la-chvalid.Tpo -c chvalid.c  -fPIC -DPIC -o .libs/libxml2_la-chvalid.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-encoding.lo -MD -MP -MF .deps/libxml2_la-encoding.Tpo -c encoding.c  -fPIC -DPIC -o .libs/libxml2_la-encoding.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-error.lo -MD -MP -MF .deps/libxml2_la-error.Tpo -c error.c  -fPIC -DPIC -o .libs/libxml2_la-error.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-buf.lo -MD -MP -MF .deps/libxml2_la-buf.Tpo -c buf.c  -fPIC -DPIC -o .libs/libxml2_la-buf.o
+mv -f .deps/libxml2_la-chvalid.Tpo .deps/libxml2_la-chvalid.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-hash.lo -MD -MP -MF .deps/libxml2_la-hash.Tpo -c -o libxml2_la-hash.lo `test -f 'hash.c' || echo './'`hash.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-hash.lo -MD -MP -MF .deps/libxml2_la-hash.Tpo -c hash.c  -fPIC -DPIC -o .libs/libxml2_la-hash.o
+mv -f .deps/libxml2_la-globals.Tpo .deps/libxml2_la-globals.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-list.lo -MD -MP -MF .deps/libxml2_la-list.Tpo -c -o libxml2_la-list.lo `test -f 'list.c' || echo './'`list.c
+mv -f .deps/libxml2_la-dict.Tpo .deps/libxml2_la-dict.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-parser.lo -MD -MP -MF .deps/libxml2_la-parser.Tpo -c -o libxml2_la-parser.lo `test -f 'parser.c' || echo './'`parser.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-list.lo -MD -MP -MF .deps/libxml2_la-list.Tpo -c list.c  -fPIC -DPIC -o .libs/libxml2_la-list.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-parser.lo -MD -MP -MF .deps/libxml2_la-parser.Tpo -c parser.c  -fPIC -DPIC -o .libs/libxml2_la-parser.o
+mv -f .deps/libxml2_la-entities.Tpo .deps/libxml2_la-entities.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-parserInternals.lo -MD -MP -MF .deps/libxml2_la-parserInternals.Tpo -c -o libxml2_la-parserInternals.lo `test -f 'parserInternals.c' || echo './'`parserInternals.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-parserInternals.lo -MD -MP -MF .deps/libxml2_la-parserInternals.Tpo -c parserInternals.c  -fPIC -DPIC -o .libs/libxml2_la-parserInternals.o
+mv -f .deps/libxml2_la-buf.Tpo .deps/libxml2_la-buf.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-SAX2.lo -MD -MP -MF .deps/libxml2_la-SAX2.Tpo -c -o libxml2_la-SAX2.lo `test -f 'SAX2.c' || echo './'`SAX2.c
+mv -f .deps/libxml2_la-error.Tpo .deps/libxml2_la-error.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-threads.lo -MD -MP -MF .deps/libxml2_la-threads.Tpo -c -o libxml2_la-threads.lo `test -f 'threads.c' || echo './'`threads.c
+mv -f .deps/libxml2_la-list.Tpo .deps/libxml2_la-list.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-SAX2.lo -MD -MP -MF .deps/libxml2_la-SAX2.Tpo -c SAX2.c  -fPIC -DPIC -o .libs/libxml2_la-SAX2.o
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-tree.lo -MD -MP -MF .deps/libxml2_la-tree.Tpo -c -o libxml2_la-tree.lo `test -f 'tree.c' || echo './'`tree.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-tree.lo -MD -MP -MF .deps/libxml2_la-tree.Tpo -c tree.c  -fPIC -DPIC -o .libs/libxml2_la-tree.o
+mv -f .deps/libxml2_la-hash.Tpo .deps/libxml2_la-hash.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-uri.lo -MD -MP -MF .deps/libxml2_la-uri.Tpo -c -o libxml2_la-uri.lo `test -f 'uri.c' || echo './'`uri.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-threads.lo -MD -MP -MF .deps/libxml2_la-threads.Tpo -c threads.c  -fPIC -DPIC -o .libs/libxml2_la-threads.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-uri.lo -MD -MP -MF .deps/libxml2_la-uri.Tpo -c uri.c  -fPIC -DPIC -o .libs/libxml2_la-uri.o
+mv -f .deps/libxml2_la-threads.Tpo .deps/libxml2_la-threads.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-valid.lo -MD -MP -MF .deps/libxml2_la-valid.Tpo -c -o libxml2_la-valid.lo `test -f 'valid.c' || echo './'`valid.c
+mv -f .deps/libxml2_la-encoding.Tpo .deps/libxml2_la-encoding.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlIO.lo -MD -MP -MF .deps/libxml2_la-xmlIO.Tpo -c -o libxml2_la-xmlIO.lo `test -f 'xmlIO.c' || echo './'`xmlIO.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-valid.lo -MD -MP -MF .deps/libxml2_la-valid.Tpo -c valid.c  -fPIC -DPIC -o .libs/libxml2_la-valid.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlIO.lo -MD -MP -MF .deps/libxml2_la-xmlIO.Tpo -c xmlIO.c  -fPIC -DPIC -o .libs/libxml2_la-xmlIO.o
+mv -f .deps/libxml2_la-parserInternals.Tpo .deps/libxml2_la-parserInternals.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlmemory.lo -MD -MP -MF .deps/libxml2_la-xmlmemory.Tpo -c -o libxml2_la-xmlmemory.lo `test -f 'xmlmemory.c' || echo './'`xmlmemory.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlmemory.lo -MD -MP -MF .deps/libxml2_la-xmlmemory.Tpo -c xmlmemory.c  -fPIC -DPIC -o .libs/libxml2_la-xmlmemory.o
+mv -f .deps/xmllint-xmllint.Tpo .deps/xmllint-xmllint.Po
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlstring.lo -MD -MP -MF .deps/libxml2_la-xmlstring.Tpo -c -o libxml2_la-xmlstring.lo `test -f 'xmlstring.c' || echo './'`xmlstring.c
+mv -f .deps/libxml2_la-SAX2.Tpo .deps/libxml2_la-SAX2.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-c14n.lo -MD -MP -MF .deps/libxml2_la-c14n.Tpo -c -o libxml2_la-c14n.lo `test -f 'c14n.c' || echo './'`c14n.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlstring.lo -MD -MP -MF .deps/libxml2_la-xmlstring.Tpo -c xmlstring.c  -fPIC -DPIC -o .libs/libxml2_la-xmlstring.o
+mv -f .deps/libxml2_la-xmlmemory.Tpo .deps/libxml2_la-xmlmemory.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-catalog.lo -MD -MP -MF .deps/libxml2_la-catalog.Tpo -c -o libxml2_la-catalog.lo `test -f 'catalog.c' || echo './'`catalog.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-c14n.lo -MD -MP -MF .deps/libxml2_la-c14n.Tpo -c c14n.c  -fPIC -DPIC -o .libs/libxml2_la-c14n.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-catalog.lo -MD -MP -MF .deps/libxml2_la-catalog.Tpo -c catalog.c  -fPIC -DPIC -o .libs/libxml2_la-catalog.o
+mv -f .deps/libxml2_la-xmlIO.Tpo .deps/libxml2_la-xmlIO.Plo
+mv -f .deps/libxml2_la-xmlstring.Tpo .deps/libxml2_la-xmlstring.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-debugXML.lo -MD -MP -MF .deps/libxml2_la-debugXML.Tpo -c -o libxml2_la-debugXML.lo `test -f 'debugXML.c' || echo './'`debugXML.c
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-HTMLparser.lo -MD -MP -MF .deps/libxml2_la-HTMLparser.Tpo -c -o libxml2_la-HTMLparser.lo `test -f 'HTMLparser.c' || echo './'`HTMLparser.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-HTMLparser.lo -MD -MP -MF .deps/libxml2_la-HTMLparser.Tpo -c HTMLparser.c  -fPIC -DPIC -o .libs/libxml2_la-HTMLparser.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-debugXML.lo -MD -MP -MF .deps/libxml2_la-debugXML.Tpo -c debugXML.c  -fPIC -DPIC -o .libs/libxml2_la-debugXML.o
+mv -f .deps/libxml2_la-uri.Tpo .deps/libxml2_la-uri.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-HTMLtree.lo -MD -MP -MF .deps/libxml2_la-HTMLtree.Tpo -c -o libxml2_la-HTMLtree.lo `test -f 'HTMLtree.c' || echo './'`HTMLtree.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-HTMLtree.lo -MD -MP -MF .deps/libxml2_la-HTMLtree.Tpo -c HTMLtree.c  -fPIC -DPIC -o .libs/libxml2_la-HTMLtree.o
+mv -f .deps/libxml2_la-c14n.Tpo .deps/libxml2_la-c14n.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-nanohttp.lo -MD -MP -MF .deps/libxml2_la-nanohttp.Tpo -c -o libxml2_la-nanohttp.lo `test -f 'nanohttp.c' || echo './'`nanohttp.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-nanohttp.lo -MD -MP -MF .deps/libxml2_la-nanohttp.Tpo -c nanohttp.c  -fPIC -DPIC -o .libs/libxml2_la-nanohttp.o
+mv -f .deps/libxml2_la-HTMLtree.Tpo .deps/libxml2_la-HTMLtree.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xzlib.lo -MD -MP -MF .deps/libxml2_la-xzlib.Tpo -c -o libxml2_la-xzlib.lo `test -f 'xzlib.c' || echo './'`xzlib.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xzlib.lo -MD -MP -MF .deps/libxml2_la-xzlib.Tpo -c xzlib.c  -fPIC -DPIC -o .libs/libxml2_la-xzlib.o
+mv -f .deps/libxml2_la-catalog.Tpo .deps/libxml2_la-catalog.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlmodule.lo -MD -MP -MF .deps/libxml2_la-xmlmodule.Tpo -c -o libxml2_la-xmlmodule.lo `test -f 'xmlmodule.c' || echo './'`xmlmodule.c
+mv -f .deps/libxml2_la-nanohttp.Tpo .deps/libxml2_la-nanohttp.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlsave.lo -MD -MP -MF .deps/libxml2_la-xmlsave.Tpo -c -o libxml2_la-xmlsave.lo `test -f 'xmlsave.c' || echo './'`xmlsave.c
+mv -f .deps/libxml2_la-valid.Tpo .deps/libxml2_la-valid.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-pattern.lo -MD -MP -MF .deps/libxml2_la-pattern.Tpo -c -o libxml2_la-pattern.lo `test -f 'pattern.c' || echo './'`pattern.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlmodule.lo -MD -MP -MF .deps/libxml2_la-xmlmodule.Tpo -c xmlmodule.c  -fPIC -DPIC -o .libs/libxml2_la-xmlmodule.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlsave.lo -MD -MP -MF .deps/libxml2_la-xmlsave.Tpo -c xmlsave.c  -fPIC -DPIC -o .libs/libxml2_la-xmlsave.o
+mv -f .deps/libxml2_la-xzlib.Tpo .deps/libxml2_la-xzlib.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlreader.lo -MD -MP -MF .deps/libxml2_la-xmlreader.Tpo -c -o libxml2_la-xmlreader.lo `test -f 'xmlreader.c' || echo './'`xmlreader.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-pattern.lo -MD -MP -MF .deps/libxml2_la-pattern.Tpo -c pattern.c  -fPIC -DPIC -o .libs/libxml2_la-pattern.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlreader.lo -MD -MP -MF .deps/libxml2_la-xmlreader.Tpo -c xmlreader.c  -fPIC -DPIC -o .libs/libxml2_la-xmlreader.o
+mv -f .deps/libxml2_la-xmlmodule.Tpo .deps/libxml2_la-xmlmodule.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlregexp.lo -MD -MP -MF .deps/libxml2_la-xmlregexp.Tpo -c -o libxml2_la-xmlregexp.lo `test -f 'xmlregexp.c' || echo './'`xmlregexp.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlregexp.lo -MD -MP -MF .deps/libxml2_la-xmlregexp.Tpo -c xmlregexp.c  -fPIC -DPIC -o .libs/libxml2_la-xmlregexp.o
+mv -f .deps/libxml2_la-debugXML.Tpo .deps/libxml2_la-debugXML.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlunicode.lo -MD -MP -MF .deps/libxml2_la-xmlunicode.Tpo -c -o libxml2_la-xmlunicode.lo `test -f 'xmlunicode.c' || echo './'`xmlunicode.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlunicode.lo -MD -MP -MF .deps/libxml2_la-xmlunicode.Tpo -c xmlunicode.c  -fPIC -DPIC -o .libs/libxml2_la-xmlunicode.o
+mv -f .deps/libxml2_la-xmlunicode.Tpo .deps/libxml2_la-xmlunicode.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-relaxng.lo -MD -MP -MF .deps/libxml2_la-relaxng.Tpo -c -o libxml2_la-relaxng.lo `test -f 'relaxng.c' || echo './'`relaxng.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-relaxng.lo -MD -MP -MF .deps/libxml2_la-relaxng.Tpo -c relaxng.c  -fPIC -DPIC -o .libs/libxml2_la-relaxng.o
+mv -f .deps/libxml2_la-xmlsave.Tpo .deps/libxml2_la-xmlsave.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlschemas.lo -MD -MP -MF .deps/libxml2_la-xmlschemas.Tpo -c -o libxml2_la-xmlschemas.lo `test -f 'xmlschemas.c' || echo './'`xmlschemas.c
+mv -f .deps/libxml2_la-pattern.Tpo .deps/libxml2_la-pattern.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlschemastypes.lo -MD -MP -MF .deps/libxml2_la-xmlschemastypes.Tpo -c -o libxml2_la-xmlschemastypes.lo `test -f 'xmlschemastypes.c' || echo './'`xmlschemastypes.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlschemas.lo -MD -MP -MF .deps/libxml2_la-xmlschemas.Tpo -c xmlschemas.c  -fPIC -DPIC -o .libs/libxml2_la-xmlschemas.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlschemastypes.lo -MD -MP -MF .deps/libxml2_la-xmlschemastypes.Tpo -c xmlschemastypes.c  -fPIC -DPIC -o .libs/libxml2_la-xmlschemastypes.o
+mv -f .deps/libxml2_la-tree.Tpo .deps/libxml2_la-tree.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-schematron.lo -MD -MP -MF .deps/libxml2_la-schematron.Tpo -c -o libxml2_la-schematron.lo `test -f 'schematron.c' || echo './'`schematron.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-schematron.lo -MD -MP -MF .deps/libxml2_la-schematron.Tpo -c schematron.c  -fPIC -DPIC -o .libs/libxml2_la-schematron.o
+mv -f .deps/libxml2_la-HTMLparser.Tpo .deps/libxml2_la-HTMLparser.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlwriter.lo -MD -MP -MF .deps/libxml2_la-xmlwriter.Tpo -c -o libxml2_la-xmlwriter.lo `test -f 'xmlwriter.c' || echo './'`xmlwriter.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xmlwriter.lo -MD -MP -MF .deps/libxml2_la-xmlwriter.Tpo -c xmlwriter.c  -fPIC -DPIC -o .libs/libxml2_la-xmlwriter.o
+mv -f .deps/libxml2_la-xmlreader.Tpo .deps/libxml2_la-xmlreader.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xinclude.lo -MD -MP -MF .deps/libxml2_la-xinclude.Tpo -c -o libxml2_la-xinclude.lo `test -f 'xinclude.c' || echo './'`xinclude.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xinclude.lo -MD -MP -MF .deps/libxml2_la-xinclude.Tpo -c xinclude.c  -fPIC -DPIC -o .libs/libxml2_la-xinclude.o
+mv -f .deps/libxml2_la-schematron.Tpo .deps/libxml2_la-schematron.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xpath.lo -MD -MP -MF .deps/libxml2_la-xpath.Tpo -c -o libxml2_la-xpath.lo `test -f 'xpath.c' || echo './'`xpath.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xpath.lo -MD -MP -MF .deps/libxml2_la-xpath.Tpo -c xpath.c  -fPIC -DPIC -o .libs/libxml2_la-xpath.o
+mv -f .deps/libxml2_la-xinclude.Tpo .deps/libxml2_la-xinclude.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xlink.lo -MD -MP -MF .deps/libxml2_la-xlink.Tpo -c -o libxml2_la-xlink.lo `test -f 'xlink.c' || echo './'`xlink.c
+mv -f .deps/libxml2_la-xmlregexp.Tpo .deps/libxml2_la-xmlregexp.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xpointer.lo -MD -MP -MF .deps/libxml2_la-xpointer.Tpo -c -o libxml2_la-xpointer.lo `test -f 'xpointer.c' || echo './'`xpointer.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xlink.lo -MD -MP -MF .deps/libxml2_la-xlink.Tpo -c xlink.c  -fPIC -DPIC -o .libs/libxml2_la-xlink.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2_la-xpointer.lo -MD -MP -MF .deps/libxml2_la-xpointer.Tpo -c xpointer.c  -fPIC -DPIC -o .libs/libxml2_la-xpointer.o
+mv -f .deps/libxml2_la-xlink.Tpo .deps/libxml2_la-xlink.Plo
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xmlcatalog-xmlcatalog.o -MD -MP -MF .deps/xmlcatalog-xmlcatalog.Tpo -c -o xmlcatalog-xmlcatalog.o `test -f 'xmlcatalog.c' || echo './'`xmlcatalog.c
+mv -f .deps/libxml2_la-xmlwriter.Tpo .deps/libxml2_la-xmlwriter.Plo
+/bin/sh ./libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.  -I./include -I./include -DSYSCONFDIR='"/etc"'  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT testdso.lo -MD -MP -MF .deps/testdso.Tpo -c -o testdso.lo testdso.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I./include -I./include -DSYSCONFDIR=\"/etc\" -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT testdso.lo -MD -MP -MF .deps/testdso.Tpo -c testdso.c  -fPIC -DPIC -o .libs/testdso.o
+mv -f .deps/libxml2_la-xpointer.Tpo .deps/libxml2_la-xpointer.Plo
+mv -f .deps/testdso.Tpo .deps/testdso.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -module -no-undefined -avoid-version -rpath /usr/lib  -o testdso.la  testdso.lo  
+libtool: link: x86_64-unknown-linux-gnu-gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/testdso.o    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,testdso.so -o .libs/testdso.so
+mv -f .deps/xmlcatalog-xmlcatalog.Tpo .deps/xmlcatalog-xmlcatalog.Po
+libtool: link: ( cd ".libs" && rm -f "testdso.la" && ln -s "../testdso.la" "testdso.la" )
+mv -f .deps/libxml2_la-xmlschemastypes.Tpo .deps/libxml2_la-xmlschemastypes.Plo
+mv -f .deps/libxml2_la-parser.Tpo .deps/libxml2_la-parser.Plo
+mv -f .deps/libxml2_la-relaxng.Tpo .deps/libxml2_la-relaxng.Plo
+mv -f .deps/libxml2_la-xpath.Tpo .deps/libxml2_la-xpath.Plo
+mv -f .deps/libxml2_la-xmlschemas.Tpo .deps/libxml2_la-xmlschemas.Plo
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -D_REENTRANT  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects  -no-undefined -version-info 14:6:12  -Wl,--undefined-version -Wl,--version-script=./libxml2.syms  -o libxml2.la -rpath /usr/lib libxml2_la-buf.lo libxml2_la-chvalid.lo libxml2_la-dict.lo libxml2_la-entities.lo libxml2_la-encoding.lo libxml2_la-error.lo libxml2_la-globals.lo libxml2_la-hash.lo libxml2_la-list.lo libxml2_la-parser.lo libxml2_la-parserInternals.lo libxml2_la-SAX2.lo libxml2_la-threads.lo libxml2_la-tree.lo libxml2_la-uri.lo libxml2_la-valid.lo libxml2_la-xmlIO.lo libxml2_la-xmlmemory.lo libxml2_la-xmlstring.lo libxml2_la-c14n.lo libxml2_la-catalog.lo libxml2_la-debugXML.lo  libxml2_la-HTMLparser.lo libxml2_la-HTMLtree.lo libxml2_la-nanohttp.lo   libxml2_la-xzlib.lo libxml2_la-xmlmodule.lo libxml2_la-xmlsave.lo libxml2_la-pattern.lo libxml2_la-xmlreader.lo libxml2_la-xmlregexp.lo libxml2_la-xmlunicode.lo libxml2_la-relaxng.lo libxml2_la-xmlschemas.lo libxml2_la-xmlschemastypes.lo  libxml2_la-schematron.lo  libxml2_la-xmlwriter.lo libxml2_la-xinclude.lo libxml2_la-xpath.lo libxml2_la-xlink.lo libxml2_la-xpointer.lo -lz -llzma   -lm  
+libtool: link: x86_64-unknown-linux-gnu-gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/libxml2_la-buf.o .libs/libxml2_la-chvalid.o .libs/libxml2_la-dict.o .libs/libxml2_la-entities.o .libs/libxml2_la-encoding.o .libs/libxml2_la-error.o .libs/libxml2_la-globals.o .libs/libxml2_la-hash.o .libs/libxml2_la-list.o .libs/libxml2_la-parser.o .libs/libxml2_la-parserInternals.o .libs/libxml2_la-SAX2.o .libs/libxml2_la-threads.o .libs/libxml2_la-tree.o .libs/libxml2_la-uri.o .libs/libxml2_la-valid.o .libs/libxml2_la-xmlIO.o .libs/libxml2_la-xmlmemory.o .libs/libxml2_la-xmlstring.o .libs/libxml2_la-c14n.o .libs/libxml2_la-catalog.o .libs/libxml2_la-debugXML.o .libs/libxml2_la-HTMLparser.o .libs/libxml2_la-HTMLtree.o .libs/libxml2_la-nanohttp.o .libs/libxml2_la-xzlib.o .libs/libxml2_la-xmlmodule.o .libs/libxml2_la-xmlsave.o .libs/libxml2_la-pattern.o .libs/libxml2_la-xmlreader.o .libs/libxml2_la-xmlregexp.o .libs/libxml2_la-xmlunicode.o .libs/libxml2_la-relaxng.o .libs/libxml2_la-xmlschemas.o .libs/libxml2_la-xmlschemastypes.o .libs/libxml2_la-schematron.o .libs/libxml2_la-xmlwriter.o .libs/libxml2_la-xinclude.o .libs/libxml2_la-xpath.o .libs/libxml2_la-xlink.o .libs/libxml2_la-xpointer.o   -lz -llzma -lm  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -Wl,--undefined-version -Wl,--version-script=./libxml2.syms   -Wl,-soname -Wl,libxml2.so.2 -o .libs/libxml2.so.2.12.6
+libtool: link: (cd ".libs" && rm -f "libxml2.so.2" && ln -s "libxml2.so.2.12.6" "libxml2.so.2")
+libtool: link: (cd ".libs" && rm -f "libxml2.so" && ln -s "libxml2.so.2.12.6" "libxml2.so")
+libtool: link: ( cd ".libs" && rm -f "libxml2.la" && ln -s "../libxml2.la" "libxml2.la" )
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o xmllint xmllint-xmllint.o -lreadline -lhistory  ./libxml2.la 
+/bin/sh ./libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args   -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o xmlcatalog xmlcatalog-xmlcatalog.o -lreadline -lhistory  ./libxml2.la 
+libtool: link: x86_64-unknown-linux-gnu-gcc -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/xmllint xmllint-xmllint.o  -lreadline -lhistory ./.libs/libxml2.so
+libtool: link: x86_64-unknown-linux-gnu-gcc -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/xmlcatalog xmlcatalog-xmlcatalog.o  -lreadline -lhistory ./.libs/libxml2.so
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6'
+Making all in doc
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/doc'
+Making all in .
+make[3]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/doc'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/doc'
+Making all in devhelp
+make[3]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/doc/devhelp'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/doc/devhelp'
+Making all in examples
+make[3]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/doc/examples'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/doc/examples'
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/doc'
+Making all in example
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/example'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/example'
+Making all in xstc
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/xstc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/xstc'
+Making all in python
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/python'
+/usr/bin/python ./generator.py .
+Found 1617 functions in libxml2-api.xml
+Found 54 functions in libxml2-python-api.xml
+Generated 891 wrapper functions, 574 failed, 206 skipped
+make  all-recursive
+make[3]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/python'
+Making all in .
+make[4]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/python'
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include -I/usr/include/python3.12  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml.lo -MD -MP -MF .deps/libxml.Tpo -c -o libxml.lo libxml.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -I/usr/include/python3.12 -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml.lo -MD -MP -MF .deps/libxml.Tpo -c libxml.c  -fPIC -DPIC -o .libs/libxml.o
+mv -f .deps/libxml.Tpo .deps/libxml.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include -I/usr/include/python3.12  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT types.lo -MD -MP -MF .deps/types.Tpo -c -o types.lo types.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -I/usr/include/python3.12 -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT types.lo -MD -MP -MF .deps/types.Tpo -c types.c  -fPIC -DPIC -o .libs/types.o
+mv -f .deps/types.Tpo .deps/types.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -I../include -I/usr/include/python3.12  -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2-py.lo -MD -MP -MF .deps/libxml2-py.Tpo -c -o libxml2-py.lo libxml2-py.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -I../include -I/usr/include/python3.12 -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libxml2-py.lo -MD -MP -MF .deps/libxml2-py.Tpo -c libxml2-py.c  -fPIC -DPIC -o .libs/libxml2-py.o
+mv -f .deps/libxml2-py.Tpo .deps/libxml2-py.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -module -avoid-version  -o libxml2mod.la -rpath /usr/lib/python3.12/site-packages libxml.lo types.lo libxml2-py.lo ../libxml2.la  
+libtool: link: x86_64-unknown-linux-gnu-gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/libxml.o .libs/types.o .libs/libxml2-py.o   -Wl,-rpath -Wl,/home/devel/building/work/src/libxml2-2.12.6/.libs ../.libs/libxml2.so  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,libxml2mod.so -o .libs/libxml2mod.so
+libtool: link: ( cd ".libs" && rm -f "libxml2mod.la" && ln -s "../libxml2mod.la" "libxml2mod.la" )
+cat ./libxml.py `test -f libxml2class.py || echo ./`libxml2class.py > libxml2.py
+make[4]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/python'
+Making all in tests
+make[4]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/python/tests'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/python/tests'
+make[3]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/python'
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/python'
+Making all in fuzz
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/fuzz'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/fuzz'
+make[1]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in include
+make[1]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/include'
+Making install in libxml
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/include/libxml'
+make[3]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/include/libxml'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/libxml2/libxml'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/libxml2/libxml'
+ /usr/bin/install -c -m 644 xmlversion.h '/home/devel/building/work/pkg/usr/include/libxml2/libxml'
+ /usr/bin/install -c -m 644 SAX.h entities.h encoding.h parser.h parserInternals.h xmlerror.h HTMLparser.h HTMLtree.h debugXML.h tree.h list.h hash.h xpath.h xpathInternals.h xpointer.h xinclude.h xmlIO.h xmlmemory.h nanohttp.h nanoftp.h uri.h valid.h xlink.h catalog.h threads.h globals.h c14n.h xmlautomata.h xmlregexp.h xmlmodule.h xmlschemas.h schemasInternals.h xmlschemastypes.h xmlstring.h xmlunicode.h xmlreader.h relaxng.h dict.h SAX2.h xmlexports.h '/home/devel/building/work/pkg/usr/include/libxml2/libxml'
+ /usr/bin/install -c -m 644 xmlwriter.h chvalid.h pattern.h xmlsave.h schematron.h '/home/devel/building/work/pkg/usr/include/libxml2/libxml'
+make[3]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/include/libxml'
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/include/libxml'
+Making install in private
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/include/private'
+make[3]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/include/private'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/include/private'
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/include/private'
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/include'
+make[3]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/include'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/include'
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/include'
+make[1]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/include'
+Making install in .
+make[1]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6'
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/cmake/libxml2'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/aclocal'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/libxml2/examples'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libxml2.la '/home/devel/building/work/pkg/usr/lib'
+ /usr/bin/install -c -m 644 libxml2-config.cmake '/home/devel/building/work/pkg/usr/lib/cmake/libxml2'
+ /usr/bin/install -c -m 644 libxml.m4 '/home/devel/building/work/pkg/usr/share/aclocal'
+ /usr/bin/install -c -m 644 libxml-2.0.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 xmllint.c '/home/devel/building/work/pkg/usr/share/doc/libxml2/examples'
+ /usr/bin/install -c xml2-config '/home/devel/building/work/pkg/usr/bin'
+libtool: install: /usr/bin/install -c .libs/libxml2.so.2.12.6 /home/devel/building/work/pkg/usr/lib/libxml2.so.2.12.6
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libxml2.so.2.12.6 libxml2.so.2 || { rm -f libxml2.so.2 && ln -s libxml2.so.2.12.6 libxml2.so.2; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libxml2.so.2.12.6 libxml2.so || { rm -f libxml2.so && ln -s libxml2.so.2.12.6 libxml2.so; }; })
+libtool: install: /usr/bin/install -c .libs/libxml2.lai /home/devel/building/work/pkg/usr/lib/libxml2.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/bin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c xmllint xmlcatalog '/home/devel/building/work/pkg/usr/bin'
+libtool: warning: './libxml2.la' has not been installed in '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/xmllint /home/devel/building/work/pkg/usr/bin/xmllint
+libtool: warning: './libxml2.la' has not been installed in '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/xmlcatalog /home/devel/building/work/pkg/usr/bin/xmlcatalog
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6'
+make[1]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6'
+Making install in doc
+make[1]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/doc'
+Making install in .
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/doc'
+make[3]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man1'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/libxml2'
+ /usr/bin/install -c -m 644 xml2-config.1 xmllint.1 xmlcatalog.1 '/home/devel/building/work/pkg/usr/share/man/man1'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/libxml2/tutorial/images'
+ /usr/bin/install -c -m 644  tutorial/images/blank.png tutorial/images/caution.png tutorial/images/draft.png tutorial/images/home.png tutorial/images/important.png tutorial/images/next.png tutorial/images/note.png tutorial/images/prev.png tutorial/images/tip.png tutorial/images/toc-blank.png tutorial/images/toc-minus.png tutorial/images/toc-plus.png tutorial/images/up.png tutorial/images/warning.png '/home/devel/building/work/pkg/usr/share/doc/libxml2/tutorial/images'
+ /usr/bin/install -c -m 644  xmlcatalog.html xmllint.html '/home/devel/building/work/pkg/usr/share/doc/libxml2/.'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/libxml2/tutorial/images/callouts'
+ /usr/bin/install -c -m 644  tutorial/images/callouts/1.png tutorial/images/callouts/10.png tutorial/images/callouts/2.png tutorial/images/callouts/3.png tutorial/images/callouts/4.png tutorial/images/callouts/5.png tutorial/images/callouts/6.png tutorial/images/callouts/7.png tutorial/images/callouts/8.png tutorial/images/callouts/9.png '/home/devel/building/work/pkg/usr/share/doc/libxml2/tutorial/images/callouts'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/libxml2/tutorial'
+ /usr/bin/install -c -m 644  tutorial/apa.html tutorial/apb.html tutorial/apc.html tutorial/apd.html tutorial/ape.html tutorial/apf.html tutorial/apg.html tutorial/aph.html tutorial/api.html tutorial/ar01s02.html tutorial/ar01s03.html tutorial/ar01s04.html tutorial/ar01s05.html tutorial/ar01s06.html tutorial/ar01s07.html tutorial/ar01s08.html tutorial/ar01s09.html tutorial/includeaddattribute.c tutorial/includeaddkeyword.c tutorial/includeconvert.c tutorial/includegetattribute.c tutorial/includekeyword.c tutorial/includexpath.c tutorial/index.html tutorial/ix01.html '/home/devel/building/work/pkg/usr/share/doc/libxml2/tutorial'
+make[3]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/doc'
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/doc'
+Making install in devhelp
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/doc/devhelp'
+make[3]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/doc/devhelp'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/gtk-doc/html/libxml2'
+ /usr/bin/install -c -m 644 libxml2.devhelp2 general.html index.html libxml2-c14n.html libxml2-catalog.html libxml2-chvalid.html libxml2-debugXML.html libxml2-dict.html libxml2-encoding.html libxml2-entities.html libxml2-globals.html libxml2-hash.html libxml2-HTMLparser.html libxml2-HTMLtree.html libxml2-list.html libxml2-nanoftp.html libxml2-nanohttp.html libxml2-parser.html libxml2-parserInternals.html libxml2-pattern.html libxml2-relaxng.html libxml2-SAX2.html libxml2-SAX.html libxml2-schemasInternals.html libxml2-schematron.html libxml2-threads.html libxml2-tree.html libxml2-uri.html libxml2-valid.html libxml2-xinclude.html libxml2-xlink.html libxml2-xmlautomata.html libxml2-xmlerror.html libxml2-xmlexports.html libxml2-xmlIO.html libxml2-xmlmemory.html libxml2-xmlmodule.html libxml2-xmlreader.html libxml2-xmlregexp.html libxml2-xmlsave.html '/home/devel/building/work/pkg/usr/share/gtk-doc/html/libxml2'
+ /usr/bin/install -c -m 644 libxml2-xmlschemas.html libxml2-xmlschemastypes.html libxml2-xmlstring.html libxml2-xmlunicode.html libxml2-xmlversion.html libxml2-xmlwriter.html libxml2-xpath.html libxml2-xpathInternals.html libxml2-xpointer.html home.png left.png right.png up.png style.css '/home/devel/building/work/pkg/usr/share/gtk-doc/html/libxml2'
+make[3]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/doc/devhelp'
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/doc/devhelp'
+Making install in examples
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/doc/examples'
+make[3]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/doc/examples'
+make[3]: Nothing to be done for 'install-exec-am'.
+/bin/mkdir -p /home/devel/building/work/pkg/usr/share/doc/libxml2/examples
+/usr/bin/install -c -m 0644 ./*.html ./*.c /home/devel/building/work/pkg/usr/share/doc/libxml2/examples/
+make[3]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/doc/examples'
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/doc/examples'
+make[1]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/doc'
+Making install in example
+make[1]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/example'
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/example'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/example'
+make[1]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/example'
+Making install in xstc
+make[1]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/xstc'
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/xstc'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/xstc'
+make[1]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/xstc'
+Making install in python
+make[1]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/python'
+make  install-recursive
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/python'
+Making install in .
+make[3]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/python'
+make[4]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/python'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/python3.12/site-packages'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libxml2mod.la '/home/devel/building/work/pkg/usr/lib/python3.12/site-packages'
+libtool: warning: relinking 'libxml2mod.la'
+libtool: install: (cd /home/devel/building/work/src/libxml2-2.12.6/python; /bin/sh "/home/devel/building/work/src/libxml2-2.12.6/libtool"  --tag CC --mode=relink x86_64-unknown-linux-gnu-gcc -pedantic -Wall -Wextra -Wshadow -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wno-long-long -Wno-format-extra-args -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -module -avoid-version -o libxml2mod.la -rpath /usr/lib/python3.12/site-packages libxml.lo types.lo libxml2-py.lo ../libxml2.la -inst-prefix-dir /home/devel/building/work/pkg)
+libtool: relink: x86_64-unknown-linux-gnu-gcc -Wl,-O1,--as-needed -shared  -fPIC -DPIC  .libs/libxml.o .libs/types.o .libs/libxml2-py.o   -L/home/devel/building/work/pkg/usr/lib -L/usr/lib -lxml2  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto   -Wl,-soname -Wl,libxml2mod.so -o .libs/libxml2mod.so
+libtool: install: /usr/bin/install -c .libs/libxml2mod.soT /home/devel/building/work/pkg/usr/lib/python3.12/site-packages/libxml2mod.so
+libtool: install: /usr/bin/install -c .libs/libxml2mod.lai /home/devel/building/work/pkg/usr/lib/python3.12/site-packages/libxml2mod.la
+libtool: warning: remember to run 'libtool --finish /usr/lib/python3.12/site-packages'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/python3.12/site-packages'
+ /usr/bin/install -c -m 644 libxml2.py '/home/devel/building/work/pkg/usr/lib/python3.12/site-packages'
+Byte-compiling python modules...
+libxml2.py
+Byte-compiling python modules (optimized versions) ...
+libxml2.py
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/python3.12/site-packages'
+ /usr/bin/install -c -m 644 drv_libxml2.py '/home/devel/building/work/pkg/usr/lib/python3.12/site-packages'
+Byte-compiling python modules...
+drv_libxml2.py
+Byte-compiling python modules (optimized versions) ...
+drv_libxml2.py
+make[4]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/python'
+make[3]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/python'
+Making install in tests
+make[3]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/python/tests'
+make[4]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/python/tests'
+make[4]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/libxml2/python/examples'
+ /usr/bin/install -c -m 644 build.py attribs.py tst.py tstxpath.py xpathext.py push.py pushSAX.py pushSAXhtml.py error.py serialize.py validate.py tstURI.py cutnpaste.py xpathret.py xpath.py outbuf.py inbuf.py input_callback.py resolver.py regexp.py reader.py reader2.py reader3.py reader4.py reader5.py reader6.py reader7.py reader8.py readernext.py walker.py nsdel.py ctxterror.py readererr.py relaxng.py schema.py thread2.py sync.py tstLastError.py indexes.py dtdvalid.py '/home/devel/building/work/pkg/usr/share/doc/libxml2/python/examples'
+ /usr/bin/install -c -m 644 tstmem.py validDTD.py validSchemas.py validRNG.py compareNodes.py xpathns.py xpathleak.py tst.xml valid.xml invalid.xml test.dtd setup_test.py '/home/devel/building/work/pkg/usr/share/doc/libxml2/python/examples'
+make[4]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/python/tests'
+make[3]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/python/tests'
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/python'
+make[1]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/python'
+Making install in fuzz
+make[1]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/fuzz'
+make[2]: Entering directory '/home/devel/building/work/src/libxml2-2.12.6/fuzz'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/fuzz'
+make[1]: Leaving directory '/home/devel/building/work/src/libxml2-2.12.6/fuzz'
++ rm -r /home/devel/building/work/pkg/usr/share/doc /home/devel/building/work/pkg/usr/share/gtk-doc
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 23:37 usr/
+drwxr-xr-x  0 root   root        0 May  7 23:37 usr/include/
+drwxr-xr-x  0 root   root        0 May  7 23:37 usr/bin/
+drwxr-xr-x  0 root   root        0 May  7 23:37 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 23:37 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 23:37 usr/share/aclocal/
+drwxr-xr-x  0 root   root        0 May  7 23:37 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  7 23:37 usr/share/man/man1/
+-rw-r--r--  0 root   root      637 May  7 23:37 usr/share/man/man1/xml2-config.1.gz
+-rw-r--r--  0 root   root     4730 May  7 23:37 usr/share/man/man1/xmllint.1.gz
+-rw-r--r--  0 root   root     2823 May  7 23:37 usr/share/man/man1/xmlcatalog.1.gz
+-rw-r--r--  0 root   root      461 May  7 23:37 usr/share/aclocal/libxml.m4
+drwxr-xr-x  0 root   root        0 May  7 23:37 usr/lib/cmake/
+drwxr-xr-x  0 root   root        0 May  7 23:37 usr/lib/pkgconfig/
+-rwxr-xr-x  0 root   root  1440928 May  7 23:37 usr/lib/libxml2.so.2.12.6
+lrwxrwxrwx  0 root   root        0 May  7 23:37 usr/lib/libxml2.so.2 -> libxml2.so.2.12.6
+lrwxrwxrwx  0 root   root        0 May  7 23:37 usr/lib/libxml2.so -> libxml2.so.2.12.6
+drwxr-xr-x  0 root   root        0 May  7 23:37 usr/lib/python3.12/
+drwxr-xr-x  0 root   root        0 May  7 23:37 usr/lib/python3.12/site-packages/
+-rwxr-xr-x  0 root   root   387360 May  7 23:37 usr/lib/python3.12/site-packages/libxml2mod.so
+-rw-r--r--  0 root   root   351586 May  7 23:37 usr/lib/python3.12/site-packages/libxml2.py
+drwxr-xr-x  0 root   root        0 May  7 23:37 usr/lib/python3.12/site-packages/__pycache__/
+-rw-r--r--  0 root   root    15252 May  7 23:37 usr/lib/python3.12/site-packages/drv_libxml2.py
+-rw-r--r--  0 root   root   459249 May  7 23:37 usr/lib/python3.12/site-packages/__pycache__/libxml2.cpython-312.pyc
+-rw-r--r--  0 root   root   459249 May  7 23:37 usr/lib/python3.12/site-packages/__pycache__/libxml2.cpython-312.opt-1.pyc
+-rw-r--r--  0 root   root    16138 May  7 23:37 usr/lib/python3.12/site-packages/__pycache__/drv_libxml2.cpython-312.pyc
+-rw-r--r--  0 root   root    16138 May  7 23:37 usr/lib/python3.12/site-packages/__pycache__/drv_libxml2.cpython-312.opt-1.pyc
+-rw-r--r--  0 root   root      281 May  7 23:37 usr/lib/pkgconfig/libxml-2.0.pc
+drwxr-xr-x  0 root   root        0 May  7 23:37 usr/lib/cmake/libxml2/
+-rw-r--r--  0 root   root     5498 May  7 23:37 usr/lib/cmake/libxml2/libxml2-config.cmake
+-rwxr-xr-x  0 root   root     1771 May  7 23:37 usr/bin/xml2-config
+-rwxr-xr-x  0 root   root    65816 May  7 23:37 usr/bin/xmllint
+-rwxr-xr-x  0 root   root    18744 May  7 23:37 usr/bin/xmlcatalog
+drwxr-xr-x  0 root   root        0 May  7 23:37 usr/include/libxml2/
+drwxr-xr-x  0 root   root        0 May  7 23:37 usr/include/libxml2/libxml/
+-rw-r--r--  0 root   root     9205 May  7 23:37 usr/include/libxml2/libxml/xmlversion.h
+-rw-r--r--  0 root   root     4418 May  7 23:37 usr/include/libxml2/libxml/SAX.h
+-rw-r--r--  0 root   root     4659 May  7 23:37 usr/include/libxml2/libxml/entities.h
+-rw-r--r--  0 root   root     8109 May  7 23:37 usr/include/libxml2/libxml/encoding.h
+-rw-r--r--  0 root   root    44410 May  7 23:37 usr/include/libxml2/libxml/parser.h
+-rw-r--r--  0 root   root    16604 May  7 23:37 usr/include/libxml2/libxml/parserInternals.h
+-rw-r--r--  0 root   root    37295 May  7 23:37 usr/include/libxml2/libxml/xmlerror.h
+-rw-r--r--  0 root   root    10008 May  7 23:37 usr/include/libxml2/libxml/HTMLparser.h
+-rw-r--r--  0 root   root     3502 May  7 23:37 usr/include/libxml2/libxml/HTMLtree.h
+-rw-r--r--  0 root   root     4928 May  7 23:37 usr/include/libxml2/libxml/debugXML.h
+-rw-r--r--  0 root   root    38353 May  7 23:37 usr/include/libxml2/libxml/tree.h
+-rw-r--r--  0 root   root     3140 May  7 23:37 usr/include/libxml2/libxml/list.h
+-rw-r--r--  0 root   root     6310 May  7 23:37 usr/include/libxml2/libxml/hash.h
+-rw-r--r--  0 root   root    16442 May  7 23:37 usr/include/libxml2/libxml/xpath.h
+-rw-r--r--  0 root   root    18419 May  7 23:37 usr/include/libxml2/libxml/xpathInternals.h
+-rw-r--r--  0 root   root     3647 May  7 23:37 usr/include/libxml2/libxml/xpointer.h
+-rw-r--r--  0 root   root     2887 May  7 23:37 usr/include/libxml2/libxml/xinclude.h
+-rw-r--r--  0 root   root    12253 May  7 23:37 usr/include/libxml2/libxml/xmlIO.h
+-rw-r--r--  0 root   root     6116 May  7 23:37 usr/include/libxml2/libxml/xmlmemory.h
+-rw-r--r--  0 root   root     1869 May  7 23:37 usr/include/libxml2/libxml/nanohttp.h
+-rw-r--r--  0 root   root     4013 May  7 23:37 usr/include/libxml2/libxml/nanoftp.h
+-rw-r--r--  0 root   root     2568 May  7 23:37 usr/include/libxml2/libxml/uri.h
+-rw-r--r--  0 root   root    12834 May  7 23:37 usr/include/libxml2/libxml/valid.h
+-rw-r--r--  0 root   root     5002 May  7 23:37 usr/include/libxml2/libxml/xlink.h
+-rw-r--r--  0 root   root     4618 May  7 23:37 usr/include/libxml2/libxml/catalog.h
+-rw-r--r--  0 root   root     1730 May  7 23:37 usr/include/libxml2/libxml/threads.h
+-rw-r--r--  0 root   root      890 May  7 23:37 usr/include/libxml2/libxml/globals.h
+-rw-r--r--  0 root   root     3021 May  7 23:37 usr/include/libxml2/libxml/c14n.h
+-rw-r--r--  0 root   root     3787 May  7 23:37 usr/include/libxml2/libxml/xmlautomata.h
+-rw-r--r--  0 root   root     5149 May  7 23:37 usr/include/libxml2/libxml/xmlregexp.h
+-rw-r--r--  0 root   root     1138 May  7 23:37 usr/include/libxml2/libxml/xmlmodule.h
+-rw-r--r--  0 root   root     6902 May  7 23:37 usr/include/libxml2/libxml/xmlschemas.h
+-rw-r--r--  0 root   root    26233 May  7 23:37 usr/include/libxml2/libxml/schemasInternals.h
+-rw-r--r--  0 root   root     4583 May  7 23:37 usr/include/libxml2/libxml/xmlschemastypes.h
+-rw-r--r--  0 root   root     5271 May  7 23:37 usr/include/libxml2/libxml/xmlstring.h
+-rw-r--r--  0 root   root     8665 May  7 23:37 usr/include/libxml2/libxml/xmlunicode.h
+-rw-r--r--  0 root   root    12114 May  7 23:37 usr/include/libxml2/libxml/xmlreader.h
+-rw-r--r--  0 root   root     5830 May  7 23:37 usr/include/libxml2/libxml/relaxng.h
+-rw-r--r--  0 root   root     1770 May  7 23:37 usr/include/libxml2/libxml/dict.h
+-rw-r--r--  0 root   root     4430 May  7 23:37 usr/include/libxml2/libxml/SAX2.h
+-rw-r--r--  0 root   root      992 May  7 23:37 usr/include/libxml2/libxml/xmlexports.h
+-rw-r--r--  0 root   root    20625 May  7 23:37 usr/include/libxml2/libxml/xmlwriter.h
+-rw-r--r--  0 root   root     5087 May  7 23:37 usr/include/libxml2/libxml/chvalid.h
+-rw-r--r--  0 root   root     2466 May  7 23:37 usr/include/libxml2/libxml/pattern.h
+-rw-r--r--  0 root   root     2469 May  7 23:37 usr/include/libxml2/libxml/xmlsave.h
+-rw-r--r--  0 root   root     4255 May  7 23:37 usr/include/libxml2/libxml/schematron.h
+=======> Building '/home/devel/packages/libxml2#2.12.6-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling libxml2 2.12.6-1
+prt-get: /usr/bin/pkgadd -u libxml2#2.12.6-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 23:37:57 2024
+

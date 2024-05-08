@@ -1,0 +1,637 @@
+prt-get: updating /usr/ports/core-x86_64/nftables
+prt-get: starting build Wed May  8 00:22:01 2024
+=======> Building '/home/devel/packages/nftables#1.0.9-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/nftables-1.0.9.tar.xz
+cp nftables-basic-firewall.nft /home/devel/building/work/src
+cp nftables.conf /home/devel/building/work/src
+cp nftables.finish /home/devel/building/work/src
+cp nftables.run /home/devel/building/work/src
++ build
++ cd nftables-1.0.9
++ ./configure --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --prefix=/usr --sysconfdir=/etc --disable-python --disable-static --with-json --with-python-bin=/usr/bin/python3
+configure: WARNING: unrecognized options: --disable-python, --with-python-bin
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking how to create a pax tar archive... gnutar
+checking whether make supports nested variables... (cached) yes
+checking for x86_64-unknown-linux-gnu-gcc... x86_64-unknown-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... yes
+checking for x86_64-unknown-linux-gnu-gcc option to accept ISO C89... none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of x86_64-unknown-linux-gnu-gcc... gcc3
+checking how to run the C preprocessor... x86_64-unknown-linux-gnu-gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for a sed that does not truncate output... /bin/sed
+checking for flex... flex
+checking lex output file root... lex.yy
+checking lex library... -lfl
+checking whether yytext is a pointer... yes
+checking for bison... bison -y
+checking for x86_64-unknown-linux-gnu-ar... x86_64-unknown-linux-gnu-ar
+checking the archiver (x86_64-unknown-linux-gnu-ar) interface... ar
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-unknown-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/x86_64-unknown-linux-gnu-nm -B
+checking the name lister (/usr/bin/x86_64-unknown-linux-gnu-nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-unknown-linux-gnu-objdump... x86_64-unknown-linux-gnu-objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-unknown-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-unknown-linux-gnu-ar... (cached) x86_64-unknown-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-unknown-linux-gnu-strip... x86_64-unknown-linux-gnu-strip
+checking for x86_64-unknown-linux-gnu-ranlib... x86_64-unknown-linux-gnu-ranlib
+checking command to parse /usr/bin/x86_64-unknown-linux-gnu-nm -B output from x86_64-unknown-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for x86_64-unknown-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-unknown-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-unknown-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-unknown-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-unknown-linux-gnu-gcc static flag -static works... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-unknown-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking whether compiler accepts -fvisibility=hidden... yes
+checking for a2x... no
+checking for x86_64-unknown-linux-gnu-pkg-config... /usr/bin/x86_64-unknown-linux-gnu-pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for libmnl >= 1.0.4... yes
+checking for libnftnl >= 1.2.6... yes
+checking for __gmpz_init in -lgmp... yes
+checking for readline in -ledit... yes
+checking for json_object in -ljansson... yes
+checking whether getprotobyname_r is declared... yes
+checking whether getprotobynumber_r is declared... yes
+checking whether getservbyport_r is declared... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating libnftables.pc
+config.status: creating src/Makefile
+config.status: creating include/Makefile
+config.status: creating include/nftables/Makefile
+config.status: creating include/linux/Makefile
+config.status: creating include/linux/netfilter/Makefile
+config.status: creating include/linux/netfilter_arp/Makefile
+config.status: creating include/linux/netfilter_bridge/Makefile
+config.status: creating include/linux/netfilter_ipv4/Makefile
+config.status: creating include/linux/netfilter_ipv6/Makefile
+config.status: creating files/Makefile
+config.status: creating files/examples/Makefile
+config.status: creating files/nftables/Makefile
+config.status: creating files/osf/Makefile
+config.status: creating doc/Makefile
+config.status: creating py/Makefile
+config.status: creating examples/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure: WARNING: unrecognized options: --disable-python, --with-python-bin
+
+nft configuration:
+  cli support:			editline
+  enable debugging symbols:	yes
+  use mini-gmp:			no
+  enable man page:              yes
+  libxtables support:		no
+  json output support:          yes
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/nftables-1.0.9'
+Making all in src
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/src'
+make  all-am
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/src'
+depbase=`echo main.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT main.o -MD -MP -MF $depbase.Tpo -c -o main.o main.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo cli.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT cli.o -MD -MP -MF $depbase.Tpo -c -o cli.o cli.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo rule.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT rule.lo -MD -MP -MF $depbase.Tpo -c -o rule.lo rule.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo statement.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT statement.lo -MD -MP -MF $depbase.Tpo -c -o statement.lo statement.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo cache.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT cache.lo -MD -MP -MF $depbase.Tpo -c -o cache.lo cache.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo cmd.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT cmd.lo -MD -MP -MF $depbase.Tpo -c -o cmd.lo cmd.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo datatype.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT datatype.lo -MD -MP -MF $depbase.Tpo -c -o datatype.lo datatype.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expression.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expression.lo -MD -MP -MF $depbase.Tpo -c -o expression.lo expression.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT statement.lo -MD -MP -MF .deps/statement.Tpo -c statement.c  -fPIC -DPIC -o .libs/statement.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT rule.lo -MD -MP -MF .deps/rule.Tpo -c rule.c  -fPIC -DPIC -o .libs/rule.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT cache.lo -MD -MP -MF .deps/cache.Tpo -c cache.c  -fPIC -DPIC -o .libs/cache.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expression.lo -MD -MP -MF .deps/expression.Tpo -c expression.c  -fPIC -DPIC -o .libs/expression.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT datatype.lo -MD -MP -MF .deps/datatype.Tpo -c datatype.c  -fPIC -DPIC -o .libs/datatype.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT cmd.lo -MD -MP -MF .deps/cmd.Tpo -c cmd.c  -fPIC -DPIC -o .libs/cmd.o
+depbase=`echo evaluate.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT evaluate.lo -MD -MP -MF $depbase.Tpo -c -o evaluate.lo evaluate.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo proto.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT proto.lo -MD -MP -MF $depbase.Tpo -c -o proto.lo proto.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT evaluate.lo -MD -MP -MF .deps/evaluate.Tpo -c evaluate.c  -fPIC -DPIC -o .libs/evaluate.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT proto.lo -MD -MP -MF .deps/proto.Tpo -c proto.c  -fPIC -DPIC -o .libs/proto.o
+depbase=`echo payload.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT payload.lo -MD -MP -MF $depbase.Tpo -c -o payload.lo payload.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT payload.lo -MD -MP -MF .deps/payload.Tpo -c payload.c  -fPIC -DPIC -o .libs/payload.o
+depbase=`echo exthdr.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exthdr.lo -MD -MP -MF $depbase.Tpo -c -o exthdr.lo exthdr.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo fib.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fib.lo -MD -MP -MF $depbase.Tpo -c -o fib.lo fib.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fib.lo -MD -MP -MF .deps/fib.Tpo -c fib.c  -fPIC -DPIC -o .libs/fib.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT exthdr.lo -MD -MP -MF .deps/exthdr.Tpo -c exthdr.c  -fPIC -DPIC -o .libs/exthdr.o
+depbase=`echo hash.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT hash.lo -MD -MP -MF $depbase.Tpo -c -o hash.lo hash.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo intervals.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT intervals.lo -MD -MP -MF $depbase.Tpo -c -o intervals.lo intervals.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ipopt.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT ipopt.lo -MD -MP -MF $depbase.Tpo -c -o ipopt.lo ipopt.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT hash.lo -MD -MP -MF .deps/hash.Tpo -c hash.c  -fPIC -DPIC -o .libs/hash.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT intervals.lo -MD -MP -MF .deps/intervals.Tpo -c intervals.c  -fPIC -DPIC -o .libs/intervals.o
+depbase=`echo meta.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT meta.lo -MD -MP -MF $depbase.Tpo -c -o meta.lo meta.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT ipopt.lo -MD -MP -MF .deps/ipopt.Tpo -c ipopt.c  -fPIC -DPIC -o .libs/ipopt.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT meta.lo -MD -MP -MF .deps/meta.Tpo -c meta.c  -fPIC -DPIC -o .libs/meta.o
+depbase=`echo rt.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT rt.lo -MD -MP -MF $depbase.Tpo -c -o rt.lo rt.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo numgen.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT numgen.lo -MD -MP -MF $depbase.Tpo -c -o numgen.lo numgen.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo ct.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT ct.lo -MD -MP -MF $depbase.Tpo -c -o ct.lo ct.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT numgen.lo -MD -MP -MF .deps/numgen.Tpo -c numgen.c  -fPIC -DPIC -o .libs/numgen.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT rt.lo -MD -MP -MF .deps/rt.Tpo -c rt.c  -fPIC -DPIC -o .libs/rt.o
+depbase=`echo xfrm.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xfrm.lo -MD -MP -MF $depbase.Tpo -c -o xfrm.lo xfrm.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT ct.lo -MD -MP -MF .deps/ct.Tpo -c ct.c  -fPIC -DPIC -o .libs/ct.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xfrm.lo -MD -MP -MF .deps/xfrm.Tpo -c xfrm.c  -fPIC -DPIC -o .libs/xfrm.o
+depbase=`echo netlink.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT netlink.lo -MD -MP -MF $depbase.Tpo -c -o netlink.lo netlink.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo netlink_linearize.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT netlink_linearize.lo -MD -MP -MF $depbase.Tpo -c -o netlink_linearize.lo netlink_linearize.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo netlink_delinearize.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT netlink_delinearize.lo -MD -MP -MF $depbase.Tpo -c -o netlink_delinearize.lo netlink_delinearize.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT netlink_linearize.lo -MD -MP -MF .deps/netlink_linearize.Tpo -c netlink_linearize.c  -fPIC -DPIC -o .libs/netlink_linearize.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT netlink.lo -MD -MP -MF .deps/netlink.Tpo -c netlink.c  -fPIC -DPIC -o .libs/netlink.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT netlink_delinearize.lo -MD -MP -MF .deps/netlink_delinearize.Tpo -c netlink_delinearize.c  -fPIC -DPIC -o .libs/netlink_delinearize.o
+depbase=`echo misspell.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT misspell.lo -MD -MP -MF $depbase.Tpo -c -o misspell.lo misspell.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo monitor.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT monitor.lo -MD -MP -MF $depbase.Tpo -c -o monitor.lo monitor.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo owner.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT owner.lo -MD -MP -MF $depbase.Tpo -c -o owner.lo owner.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo segtree.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT segtree.lo -MD -MP -MF $depbase.Tpo -c -o segtree.lo segtree.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT misspell.lo -MD -MP -MF .deps/misspell.Tpo -c misspell.c  -fPIC -DPIC -o .libs/misspell.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT monitor.lo -MD -MP -MF .deps/monitor.Tpo -c monitor.c  -fPIC -DPIC -o .libs/monitor.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT owner.lo -MD -MP -MF .deps/owner.Tpo -c owner.c  -fPIC -DPIC -o .libs/owner.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT segtree.lo -MD -MP -MF .deps/segtree.Tpo -c segtree.c  -fPIC -DPIC -o .libs/segtree.o
+depbase=`echo gmputil.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT gmputil.lo -MD -MP -MF $depbase.Tpo -c -o gmputil.lo gmputil.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo utils.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT utils.lo -MD -MP -MF $depbase.Tpo -c -o utils.lo utils.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT gmputil.lo -MD -MP -MF .deps/gmputil.Tpo -c gmputil.c  -fPIC -DPIC -o .libs/gmputil.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT utils.lo -MD -MP -MF .deps/utils.Tpo -c utils.c  -fPIC -DPIC -o .libs/utils.o
+depbase=`echo nftutils.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT nftutils.lo -MD -MP -MF $depbase.Tpo -c -o nftutils.lo nftutils.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo erec.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT erec.lo -MD -MP -MF $depbase.Tpo -c -o erec.lo erec.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo mnl.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT mnl.lo -MD -MP -MF $depbase.Tpo -c -o mnl.lo mnl.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo iface.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT iface.lo -MD -MP -MF $depbase.Tpo -c -o iface.lo iface.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT nftutils.lo -MD -MP -MF .deps/nftutils.Tpo -c nftutils.c  -fPIC -DPIC -o .libs/nftutils.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT erec.lo -MD -MP -MF .deps/erec.Tpo -c erec.c  -fPIC -DPIC -o .libs/erec.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT iface.lo -MD -MP -MF .deps/iface.Tpo -c iface.c  -fPIC -DPIC -o .libs/iface.o
+depbase=`echo mergesort.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT mergesort.lo -MD -MP -MF $depbase.Tpo -c -o mergesort.lo mergesort.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT mnl.lo -MD -MP -MF .deps/mnl.Tpo -c mnl.c  -fPIC -DPIC -o .libs/mnl.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT mergesort.lo -MD -MP -MF .deps/mergesort.Tpo -c mergesort.c  -fPIC -DPIC -o .libs/mergesort.o
+depbase=`echo optimize.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT optimize.lo -MD -MP -MF $depbase.Tpo -c -o optimize.lo optimize.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo osf.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT osf.lo -MD -MP -MF $depbase.Tpo -c -o osf.lo osf.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo nfnl_osf.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT nfnl_osf.lo -MD -MP -MF $depbase.Tpo -c -o nfnl_osf.lo nfnl_osf.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT osf.lo -MD -MP -MF .deps/osf.Tpo -c osf.c  -fPIC -DPIC -o .libs/osf.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT optimize.lo -MD -MP -MF .deps/optimize.Tpo -c optimize.c  -fPIC -DPIC -o .libs/optimize.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT nfnl_osf.lo -MD -MP -MF .deps/nfnl_osf.Tpo -c nfnl_osf.c  -fPIC -DPIC -o .libs/nfnl_osf.o
+depbase=`echo tcpopt.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT tcpopt.lo -MD -MP -MF $depbase.Tpo -c -o tcpopt.lo tcpopt.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo socket.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT socket.lo -MD -MP -MF $depbase.Tpo -c -o socket.lo socket.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo print.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT print.lo -MD -MP -MF $depbase.Tpo -c -o print.lo print.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT tcpopt.lo -MD -MP -MF .deps/tcpopt.Tpo -c tcpopt.c  -fPIC -DPIC -o .libs/tcpopt.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT socket.lo -MD -MP -MF .deps/socket.Tpo -c socket.c  -fPIC -DPIC -o .libs/socket.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT print.lo -MD -MP -MF .deps/print.Tpo -c print.c  -fPIC -DPIC -o .libs/print.o
+depbase=`echo sctp_chunk.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sctp_chunk.lo -MD -MP -MF $depbase.Tpo -c -o sctp_chunk.lo sctp_chunk.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo dccpopt.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT dccpopt.lo -MD -MP -MF $depbase.Tpo -c -o dccpopt.lo dccpopt.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo libnftables.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libnftables.lo -MD -MP -MF $depbase.Tpo -c -o libnftables.lo libnftables.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo xt.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xt.lo -MD -MP -MF $depbase.Tpo -c -o xt.lo xt.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libnftables.lo -MD -MP -MF .deps/libnftables.Tpo -c libnftables.c  -fPIC -DPIC -o .libs/libnftables.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT sctp_chunk.lo -MD -MP -MF .deps/sctp_chunk.Tpo -c sctp_chunk.c  -fPIC -DPIC -o .libs/sctp_chunk.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT dccpopt.lo -MD -MP -MF .deps/dccpopt.Tpo -c dccpopt.c  -fPIC -DPIC -o .libs/dccpopt.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT xt.lo -MD -MP -MF .deps/xt.Tpo -c xt.c  -fPIC -DPIC -o .libs/xt.o
+depbase=`echo json.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT json.lo -MD -MP -MF $depbase.Tpo -c -o json.lo json.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo parser_json.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT parser_json.lo -MD -MP -MF $depbase.Tpo -c -o parser_json.lo parser_json.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -Wno-missing-prototypes -Wno-missing-declarations -Wno-implicit-function-declaration -Wno-unused-but-set-variable -Wno-nested-externs -Wno-undef -Wno-redundant-decls -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libparser_la-parser_bison.lo -MD -MP -MF .deps/libparser_la-parser_bison.Tpo -c -o libparser_la-parser_bison.lo `test -f 'parser_bison.c' || echo './'`parser_bison.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT parser_json.lo -MD -MP -MF .deps/parser_json.Tpo -c parser_json.c  -fPIC -DPIC -o .libs/parser_json.o
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I..  -I../include -DDEFAULT_INCLUDE_PATH="\"/etc\""   -g -DDEBUG   -DHAVE_JSON   -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -Wno-missing-prototypes -Wno-missing-declarations -Wno-implicit-function-declaration -Wno-unused-but-set-variable -Wno-nested-externs -Wno-undef -Wno-redundant-decls -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libparser_la-scanner.lo -MD -MP -MF .deps/libparser_la-scanner.Tpo -c -o libparser_la-scanner.lo `test -f 'scanner.c' || echo './'`scanner.c
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT json.lo -MD -MP -MF .deps/json.Tpo -c json.c  -fPIC -DPIC -o .libs/json.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -Wno-missing-prototypes -Wno-missing-declarations -Wno-implicit-function-declaration -Wno-unused-but-set-variable -Wno-nested-externs -Wno-undef -Wno-redundant-decls -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libparser_la-parser_bison.lo -MD -MP -MF .deps/libparser_la-parser_bison.Tpo -c parser_bison.c  -fPIC -DPIC -o .libs/libparser_la-parser_bison.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I.. -I../include -DDEFAULT_INCLUDE_PATH=\"/etc\" -g -DDEBUG -DHAVE_JSON -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -Wno-missing-prototypes -Wno-missing-declarations -Wno-implicit-function-declaration -Wno-unused-but-set-variable -Wno-nested-externs -Wno-undef -Wno-redundant-decls -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT libparser_la-scanner.lo -MD -MP -MF .deps/libparser_la-scanner.Tpo -c scanner.c  -fPIC -DPIC -o .libs/libparser_la-scanner.o
+mv -f .deps/libparser_la-parser_bison.Tpo .deps/libparser_la-parser_bison.Plo
+mv -f .deps/libparser_la-scanner.Tpo .deps/libparser_la-scanner.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -Wno-missing-prototypes -Wno-missing-declarations -Wno-implicit-function-declaration -Wno-unused-but-set-variable -Wno-nested-externs -Wno-undef -Wno-redundant-decls -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o libparser.la  libparser_la-parser_bison.lo libparser_la-scanner.lo  -ljansson -ledit -lgmp 
+libtool: link: x86_64-unknown-linux-gnu-ar cr .libs/libparser.a .libs/libparser_la-parser_bison.o .libs/libparser_la-scanner.o 
+libtool: link: x86_64-unknown-linux-gnu-ranlib .libs/libparser.a
+libtool: link: ( cd ".libs" && rm -f "libparser.la" && ln -s "../libparser.la" "libparser.la" )
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -version-info 2:0:1 -Wl,--version-script=./libnftables.map  -o libnftables.la -rpath /usr/lib rule.lo statement.lo cache.lo cmd.lo datatype.lo expression.lo evaluate.lo proto.lo payload.lo exthdr.lo fib.lo hash.lo intervals.lo ipopt.lo meta.lo rt.lo numgen.lo ct.lo xfrm.lo netlink.lo netlink_linearize.lo netlink_delinearize.lo misspell.lo monitor.lo owner.lo segtree.lo gmputil.lo utils.lo nftutils.lo erec.lo mnl.lo iface.lo mergesort.lo optimize.lo osf.lo nfnl_osf.lo tcpopt.lo socket.lo print.lo sctp_chunk.lo dccpopt.lo libnftables.lo xt.lo json.lo parser_json.lo -lmnl -lnftnl libparser.la    -ljansson -ledit -lgmp 
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/rule.o .libs/statement.o .libs/cache.o .libs/cmd.o .libs/datatype.o .libs/expression.o .libs/evaluate.o .libs/proto.o .libs/payload.o .libs/exthdr.o .libs/fib.o .libs/hash.o .libs/intervals.o .libs/ipopt.o .libs/meta.o .libs/rt.o .libs/numgen.o .libs/ct.o .libs/xfrm.o .libs/netlink.o .libs/netlink_linearize.o .libs/netlink_delinearize.o .libs/misspell.o .libs/monitor.o .libs/owner.o .libs/segtree.o .libs/gmputil.o .libs/utils.o .libs/nftutils.o .libs/erec.o .libs/mnl.o .libs/iface.o .libs/mergesort.o .libs/optimize.o .libs/osf.o .libs/nfnl_osf.o .libs/tcpopt.o .libs/socket.o .libs/print.o .libs/sctp_chunk.o .libs/dccpopt.o .libs/libnftables.o .libs/xt.o .libs/json.o .libs/parser_json.o  -Wl,--whole-archive ./.libs/libparser.a -Wl,--no-whole-archive  -lmnl -lnftnl -ljansson -ledit /usr/lib/libgmp.so  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -Wl,--version-script=./libnftables.map   -Wl,-soname -Wl,libnftables.so.1 -o .libs/libnftables.so.1.1.0
+libtool: link: (cd ".libs" && rm -f "libnftables.so.1" && ln -s "libnftables.so.1.1.0" "libnftables.so.1")
+libtool: link: (cd ".libs" && rm -f "libnftables.so" && ln -s "libnftables.so.1.1.0" "libnftables.so")
+libtool: link: ( cd ".libs" && rm -f "libnftables.la" && ln -s "../libnftables.la" "libnftables.la" )
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects   -o nft main.o cli.o libnftables.la -ljansson -ledit -lgmp 
+libtool: link: x86_64-unknown-linux-gnu-gcc -Wall -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wdeclaration-after-statement -Wsign-compare -Winit-self -Wformat-nonliteral -Wformat-security -Wmissing-format-attribute -Wcast-align -Wundef -Wbad-function-cast -Waggregate-return -Wunused -Wwrite-strings -fvisibility=hidden -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -o .libs/nft main.o cli.o  ./.libs/libnftables.so -ljansson -ledit /usr/lib/libgmp.so
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/src'
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/src'
+Making all in include
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include'
+Making all in linux
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux'
+Making all in netfilter
+make[4]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter'
+Making all in netfilter_arp
+make[4]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_arp'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_arp'
+Making all in netfilter_bridge
+make[4]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_bridge'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_bridge'
+Making all in netfilter_ipv4
+make[4]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_ipv4'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_ipv4'
+Making all in netfilter_ipv6
+make[4]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_ipv6'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_ipv6'
+make[4]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux'
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux'
+Making all in nftables
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/nftables'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/nftables'
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include'
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include'
+Making all in files
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/files'
+Making all in nftables
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/files/nftables'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/files/nftables'
+Making all in examples
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/files/examples'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/files/examples'
+Making all in osf
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/files/osf'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/files/osf'
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/files'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/files'
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/files'
+Making all in doc
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/doc'
+Making all in examples
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/examples'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/examples'
+Making all in py
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/py'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/py'
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9'
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9'
+make[1]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in src
+make[1]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/src'
+make  install-am
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/src'
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/src'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libnftables.la '/home/devel/building/work/pkg/usr/lib'
+make[3]: Nothing to be done for 'install-data-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/sbin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c nft '/home/devel/building/work/pkg/usr/sbin'
+libtool: install: /usr/bin/install -c .libs/libnftables.so.1.1.0 /home/devel/building/work/pkg/usr/lib/libnftables.so.1.1.0
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libnftables.so.1.1.0 libnftables.so.1 || { rm -f libnftables.so.1 && ln -s libnftables.so.1.1.0 libnftables.so.1; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libnftables.so.1.1.0 libnftables.so || { rm -f libnftables.so && ln -s libnftables.so.1.1.0 libnftables.so; }; })
+libtool: install: /usr/bin/install -c .libs/libnftables.lai /home/devel/building/work/pkg/usr/lib/libnftables.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+libtool: warning: 'libnftables.la' has not been installed in '/usr/lib'
+libtool: install: /usr/bin/install -c .libs/nft /home/devel/building/work/pkg/usr/sbin/nft
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/src'
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/src'
+make[1]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/src'
+Making install in include
+make[1]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include'
+Making install in linux
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux'
+Making install in netfilter
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter'
+make[4]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter'
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter'
+Making install in netfilter_arp
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_arp'
+make[4]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_arp'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_arp'
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_arp'
+Making install in netfilter_bridge
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_bridge'
+make[4]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_bridge'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_bridge'
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_bridge'
+Making install in netfilter_ipv4
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_ipv4'
+make[4]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_ipv4'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_ipv4'
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_ipv4'
+Making install in netfilter_ipv6
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_ipv6'
+make[4]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_ipv6'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_ipv6'
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux/netfilter_ipv6'
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux'
+make[4]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/linux'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux'
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux'
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/linux'
+Making install in nftables
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/nftables'
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include/nftables'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/nftables'
+ /usr/bin/install -c -m 644 libnftables.h '/home/devel/building/work/pkg/usr/include/nftables'
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/nftables'
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include/nftables'
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include'
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/include'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include'
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include'
+make[1]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/include'
+Making install in files
+make[1]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/files'
+Making install in nftables
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/files/nftables'
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/files/nftables'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/nftables'
+ /usr/bin/install -c -m 644 all-in-one.nft arp-filter.nft bridge-filter.nft inet-filter.nft inet-nat.nft ipv4-filter.nft ipv4-mangle.nft ipv4-nat.nft ipv4-raw.nft ipv6-filter.nft ipv6-mangle.nft ipv6-nat.nft ipv6-raw.nft netdev-ingress.nft '/home/devel/building/work/pkg/usr/share/nftables'
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/files/nftables'
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/files/nftables'
+Making install in examples
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/files/examples'
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/files/examples'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/doc/nftables/examples'
+ /usr/bin/install -c ct_helpers.nft load_balancing.nft secmark.nft sets_and_maps.nft '/home/devel/building/work/pkg/usr/share/doc/nftables/examples'
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/files/examples'
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/files/examples'
+Making install in osf
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/files/osf'
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/files/osf'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/etc/nftables/osf'
+ /usr/bin/install -c -m 644 pf.os '/home/devel/building/work/pkg/etc/nftables/osf'
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/files/osf'
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/files/osf'
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/files'
+make[3]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/files'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/files'
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/files'
+make[1]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/files'
+Making install in doc
+make[1]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/doc'
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/doc'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man3'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man5'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man8'
+ /usr/bin/install -c -m 644 libnftables.3 '/home/devel/building/work/pkg/usr/share/man/man3'
+ /usr/bin/install -c -m 644 libnftables-json.5 '/home/devel/building/work/pkg/usr/share/man/man5'
+ /usr/bin/install -c -m 644 nft.8 '/home/devel/building/work/pkg/usr/share/man/man8'
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/doc'
+make[1]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/doc'
+Making install in examples
+make[1]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/examples'
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/examples'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/examples'
+make[1]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/examples'
+Making install in py
+make[1]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/py'
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9/py'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/py'
+make[1]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9/py'
+make[1]: Entering directory '/home/devel/building/work/src/nftables-1.0.9'
+make[2]: Entering directory '/home/devel/building/work/src/nftables-1.0.9'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libnftables.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+make[2]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9'
+make[1]: Leaving directory '/home/devel/building/work/src/nftables-1.0.9'
++ install -D -m 0644 /home/devel/building/work/src/nftables.conf /home/devel/building/work/pkg/etc/nftables.conf
++ install -D -m 0644 /home/devel/building/work/src/nftables-basic-firewall.nft /home/devel/building/work/pkg/etc/nftables/basic-firewall.nft
++ mv /home/devel/building/work/pkg/usr/share/nftables/all-in-one.nft /home/devel/building/work/pkg/usr/share/nftables/arp-filter.nft /home/devel/building/work/pkg/usr/share/nftables/bridge-filter.nft /home/devel/building/work/pkg/usr/share/nftables/inet-filter.nft /home/devel/building/work/pkg/usr/share/nftables/inet-nat.nft /home/devel/building/work/pkg/usr/share/nftables/ipv4-filter.nft /home/devel/building/work/pkg/usr/share/nftables/ipv4-mangle.nft /home/devel/building/work/pkg/usr/share/nftables/ipv4-nat.nft /home/devel/building/work/pkg/usr/share/nftables/ipv4-raw.nft /home/devel/building/work/pkg/usr/share/nftables/ipv6-filter.nft /home/devel/building/work/pkg/usr/share/nftables/ipv6-mangle.nft /home/devel/building/work/pkg/usr/share/nftables/ipv6-nat.nft /home/devel/building/work/pkg/usr/share/nftables/ipv6-raw.nft /home/devel/building/work/pkg/usr/share/nftables/netdev-ingress.nft /home/devel/building/work/pkg/etc/nftables/
++ install -d /home/devel/building/work/pkg/etc/sv/nftables
++ install -m 0755 /home/devel/building/work/src/nftables.run /home/devel/building/work/pkg/etc/sv/nftables/run
++ install -m 0755 /home/devel/building/work/src/nftables.finish /home/devel/building/work/pkg/etc/sv/nftables/finish
++ ln -s /run/runit/supervise.nftables /home/devel/building/work/pkg/etc/sv/nftables/supervise
++ rm -r /home/devel/building/work/pkg/usr/share/doc /home/devel/building/work/pkg/usr/share/nftables
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  8 00:22 etc/
+drwxr-xr-x  0 root   root        0 May  8 00:22 etc/nftables/
+-rw-r--r--  0 root   root      669 May  8 00:22 etc/nftables.conf
+drwxr-xr-x  0 root   root        0 May  8 00:22 etc/sv/
+drwxr-xr-x  0 root   root        0 May  8 00:22 etc/sv/nftables/
+-rwxr-xr-x  0 root   root      103 May  8 00:22 etc/sv/nftables/run
+-rwxr-xr-x  0 root   root       29 May  8 00:22 etc/sv/nftables/finish
+lrwxrwxrwx  0 root   root        0 May  8 00:22 etc/sv/nftables/supervise -> /run/runit/supervise.nftables
+drwxr-xr-x  0 root   root        0 May  8 00:22 etc/nftables/osf/
+-rw-r--r--  0 root   root     2104 May  8 00:22 etc/nftables/basic-firewall.nft
+-rw-r--r--  0 root   root     1016 May  8 00:22 etc/nftables/all-in-one.nft
+-rw-r--r--  0 root   root      129 May  8 00:22 etc/nftables/arp-filter.nft
+-rw-r--r--  0 root   root      197 May  8 00:22 etc/nftables/bridge-filter.nft
+-rw-r--r--  0 root   root      187 May  8 00:22 etc/nftables/inet-filter.nft
+-rw-r--r--  0 root   root      251 May  8 00:22 etc/nftables/inet-nat.nft
+-rw-r--r--  0 root   root      182 May  8 00:22 etc/nftables/ipv4-filter.nft
+-rw-r--r--  0 root   root       74 May  8 00:22 etc/nftables/ipv4-mangle.nft
+-rw-r--r--  0 root   root      246 May  8 00:22 etc/nftables/ipv4-nat.nft
+-rw-r--r--  0 root   root      137 May  8 00:22 etc/nftables/ipv4-raw.nft
+-rw-r--r--  0 root   root      186 May  8 00:22 etc/nftables/ipv6-filter.nft
+-rw-r--r--  0 root   root       78 May  8 00:22 etc/nftables/ipv6-mangle.nft
+-rw-r--r--  0 root   root      253 May  8 00:22 etc/nftables/ipv6-nat.nft
+-rw-r--r--  0 root   root      141 May  8 00:22 etc/nftables/ipv6-raw.nft
+-rw-r--r--  0 root   root      128 May  8 00:22 etc/nftables/netdev-ingress.nft
+-rw-r--r--  0 root   root    28884 May  8 00:22 etc/nftables/osf/pf.os
+drwxr-xr-x  0 root   root        0 May  8 00:22 usr/
+drwxr-xr-x  0 root   root        0 May  8 00:22 usr/lib/
+drwxr-xr-x  0 root   root        0 May  8 00:22 usr/sbin/
+drwxr-xr-x  0 root   root        0 May  8 00:22 usr/include/
+drwxr-xr-x  0 root   root        0 May  8 00:22 usr/share/
+drwxr-xr-x  0 root   root        0 May  8 00:22 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  8 00:22 usr/share/man/man3/
+drwxr-xr-x  0 root   root        0 May  8 00:22 usr/share/man/man5/
+drwxr-xr-x  0 root   root        0 May  8 00:22 usr/share/man/man8/
+-rw-r--r--  0 root   root    38837 May  8 00:22 usr/share/man/man8/nft.8.gz
+-rw-r--r--  0 root   root     9850 May  8 00:22 usr/share/man/man5/libnftables-json.5.gz
+-rw-r--r--  0 root   root     5000 May  8 00:22 usr/share/man/man3/libnftables.3.gz
+drwxr-xr-x  0 root   root        0 May  8 00:22 usr/include/nftables/
+-rw-r--r--  0 root   root     3091 May  8 00:22 usr/include/nftables/libnftables.h
+-rwxr-xr-x  0 root   root    22896 May  8 00:22 usr/sbin/nft
+-rwxr-xr-x  0 root   root   942192 May  8 00:22 usr/lib/libnftables.so.1.1.0
+lrwxrwxrwx  0 root   root        0 May  8 00:22 usr/lib/libnftables.so.1 -> libnftables.so.1.1.0
+lrwxrwxrwx  0 root   root        0 May  8 00:22 usr/lib/libnftables.so -> libnftables.so.1.1.0
+drwxr-xr-x  0 root   root        0 May  8 00:22 usr/lib/pkgconfig/
+-rw-r--r--  0 root   root      319 May  8 00:22 usr/lib/pkgconfig/libnftables.pc
+=======> Building '/home/devel/packages/nftables#1.0.9-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling nftables 1.0.9-1
+prt-get: /usr/bin/pkgadd -u nftables#1.0.9-1.x86_64.pkg.tar.zst
+prt-get: build done Wed May  8 00:22:13 2024
+

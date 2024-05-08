@@ -1,0 +1,438 @@
+prt-get: updating /usr/ports/wayland-x86_64/at-spi2-core
+prt-get: starting build Tue May  7 20:23:15 2024
+=======> Building '/home/devel/packages/at-spi2-core#2.52.0-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/at-spi2-core-2.52.0.tar.xz
++ build
++ cd at-spi2-core-2.52.0
++ build-meson -Datk_only=true -Ddisable_p2p=true -Ddocs=false -Dx11=disabled -Dintrospection=enabled . build
+The Meson build system
+Version: 1.4.0
+Source dir: /home/devel/building/work/src/at-spi2-core-2.52.0
+Build dir: /home/devel/building/work/src/at-spi2-core-2.52.0/build
+Build type: native build
+Project name: at-spi2-core
+Project version: 2.52.0
+C compiler for the host machine: cc (gcc 14.1.0 "cc (SAUX-x86_64) 14.1.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C supports arguments -fvisibility=hidden: YES 
+Compiler for C supports link arguments -Wl,-Bsymbolic: YES 
+Compiler for C supports link arguments -Wl,-z,relro: YES 
+Compiler for C supports link arguments -Wl,-z,now: YES 
+Checking for function "bind_textdomain_codeset" : YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 2.2.0
+Run-time dependency glib-2.0 found: YES 2.80.0
+Run-time dependency gobject-2.0 found: YES 2.80.0
+Run-time dependency gio-2.0 found: YES 2.80.0
+Run-time dependency gmodule-2.0 found: YES 2.80.0
+Run-time dependency libxml-2.0 found: YES 2.12.6
+Dependency x11 skipped: feature x11 disabled
+Checking for alignment of "char" : 1 
+Checking for alignment of "double" : 8 
+Checking for alignment of "dbind_pointer" : 8 
+Checking for alignment of "dbind_struct" : 1 
+Program g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Program xgettext found: YES (/usr/bin/xgettext)
+Configuring config.h using configuration
+Configuring atkversion.h using configuration
+Dependency glib-2.0 found: YES 2.80.0 (cached)
+Program /usr/bin/glib-genmarshal found: YES (/usr/bin/glib-genmarshal)
+Dependency glib-2.0 found: YES 2.80.0 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Dependency glib-2.0 found: YES 2.80.0 (cached)
+Program /usr/bin/glib-mkenums found: YES (/usr/bin/glib-mkenums)
+Run-time dependency gobject-introspection-1.0 found: YES 1.78.1
+Dependency gobject-introspection-1.0 found: YES 1.78.1 (cached)
+Program /usr/bin/g-ir-scanner found: YES (/usr/bin/g-ir-scanner)
+Dependency gobject-introspection-1.0 found: YES 1.78.1 (cached)
+Program /usr/bin/g-ir-compiler found: YES (/usr/bin/g-ir-compiler)
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Build targets in project: 113
+
+at-spi2-core 2.52.0
+
+  User defined options
+    auto_features     : auto
+    bindir            : /usr/bin
+    buildtype         : plain
+    datadir           : /usr/share
+    includedir        : /usr/include
+    libdir            : /usr/lib
+    libexecdir        : /usr/lib
+    localstatedir     : /var
+    mandir            : /usr/share/man
+    prefix            : /usr
+    sbindir           : /usr/sbin
+    sharedstatedir    : /var/lib
+    sysconfdir        : /etc
+    werror            : false
+    wrap_mode         : nodownload
+    python.bytecompile: 0
+    b_lto             : false
+    b_pie             : true
+    b_staticpic       : true
+    atk_only          : true
+    disable_p2p       : true
+    docs              : false
+    introspection     : enabled
+    x11               : disabled
+
+Found ninja-1.9 at /usr/bin/ninja
++ meson compile -j 8 -v -C build
+ninja: entering directory '/home/devel/building/work/src/at-spi2-core-2.52.0/build'
+[1/144] /usr/bin/msgfmt -o po/zu/LC_MESSAGES/at-spi2-core.mo ../po/zu.po
+[2/144] /usr/bin/msgfmt -o po/zh_TW/LC_MESSAGES/at-spi2-core.mo ../po/zh_TW.po
+[3/144] /usr/bin/msgfmt -o po/zh_HK/LC_MESSAGES/at-spi2-core.mo ../po/zh_HK.po
+[4/144] /usr/bin/msgfmt -o po/zh_CN/LC_MESSAGES/at-spi2-core.mo ../po/zh_CN.po
+[5/144] /usr/bin/msgfmt -o po/yi/LC_MESSAGES/at-spi2-core.mo ../po/yi.po
+[6/144] /usr/bin/msgfmt -o po/xh/LC_MESSAGES/at-spi2-core.mo ../po/xh.po
+[7/144] /usr/bin/msgfmt -o po/wa/LC_MESSAGES/at-spi2-core.mo ../po/wa.po
+[8/144] /usr/bin/msgfmt -o po/vi/LC_MESSAGES/at-spi2-core.mo ../po/vi.po
+[9/144] /usr/bin/msgfmt -o po/uz@cyrillic/LC_MESSAGES/at-spi2-core.mo ../po/uz@cyrillic.po
+[10/144] /usr/bin/msgfmt -o po/uk/LC_MESSAGES/at-spi2-core.mo ../po/uk.po
+[11/144] /usr/bin/msgfmt -o po/ug/LC_MESSAGES/at-spi2-core.mo ../po/ug.po
+[12/144] /usr/bin/msgfmt -o po/tt/LC_MESSAGES/at-spi2-core.mo ../po/tt.po
+[13/144] /usr/bin/msgfmt -o po/tr/LC_MESSAGES/at-spi2-core.mo ../po/tr.po
+[14/144] /usr/bin/msgfmt -o po/tk/LC_MESSAGES/at-spi2-core.mo ../po/tk.po
+[15/144] /usr/bin/msgfmt -o po/th/LC_MESSAGES/at-spi2-core.mo ../po/th.po
+[16/144] /usr/bin/msgfmt -o po/tg/LC_MESSAGES/at-spi2-core.mo ../po/tg.po
+[17/144] /usr/bin/msgfmt -o po/te/LC_MESSAGES/at-spi2-core.mo ../po/te.po
+[18/144] /usr/bin/msgfmt -o po/ta/LC_MESSAGES/at-spi2-core.mo ../po/ta.po
+[19/144] /usr/bin/msgfmt -o po/sv/LC_MESSAGES/at-spi2-core.mo ../po/sv.po
+[20/144] /usr/bin/msgfmt -o po/sr@latin/LC_MESSAGES/at-spi2-core.mo ../po/sr@latin.po
+[21/144] /usr/bin/msgfmt -o po/sr@ije/LC_MESSAGES/at-spi2-core.mo ../po/sr@ije.po
+[22/144] /usr/bin/msgfmt -o po/sr/LC_MESSAGES/at-spi2-core.mo ../po/sr.po
+[23/144] /usr/bin/msgfmt -o po/sq/LC_MESSAGES/at-spi2-core.mo ../po/sq.po
+[24/144] /usr/bin/msgfmt -o po/sl/LC_MESSAGES/at-spi2-core.mo ../po/sl.po
+[25/144] /usr/bin/msgfmt -o po/sk/LC_MESSAGES/at-spi2-core.mo ../po/sk.po
+[26/144] /usr/bin/msgfmt -o po/si/LC_MESSAGES/at-spi2-core.mo ../po/si.po
+[27/144] /usr/bin/msgfmt -o po/rw/LC_MESSAGES/at-spi2-core.mo ../po/rw.po
+[28/144] /usr/bin/msgfmt -o po/ru/LC_MESSAGES/at-spi2-core.mo ../po/ru.po
+[29/144] /usr/bin/msgfmt -o po/ro/LC_MESSAGES/at-spi2-core.mo ../po/ro.po
+[30/144] /usr/bin/msgfmt -o po/pt_BR/LC_MESSAGES/at-spi2-core.mo ../po/pt_BR.po
+[31/144] /usr/bin/msgfmt -o po/pt/LC_MESSAGES/at-spi2-core.mo ../po/pt.po
+[32/144] /usr/bin/msgfmt -o po/ps/LC_MESSAGES/at-spi2-core.mo ../po/ps.po
+[33/144] /usr/bin/msgfmt -o po/pl/LC_MESSAGES/at-spi2-core.mo ../po/pl.po
+[34/144] /usr/bin/msgfmt -o po/pa/LC_MESSAGES/at-spi2-core.mo ../po/pa.po
+[35/144] /usr/bin/msgfmt -o po/or/LC_MESSAGES/at-spi2-core.mo ../po/or.po
+[36/144] /usr/bin/msgfmt -o po/oc/LC_MESSAGES/at-spi2-core.mo ../po/oc.po
+[37/144] /usr/bin/msgfmt -o po/nn/LC_MESSAGES/at-spi2-core.mo ../po/nn.po
+[38/144] /usr/bin/msgfmt -o po/nl/LC_MESSAGES/at-spi2-core.mo ../po/nl.po
+[39/144] /usr/bin/msgfmt -o po/ne/LC_MESSAGES/at-spi2-core.mo ../po/ne.po
+[40/144] /usr/bin/msgfmt -o po/nb/LC_MESSAGES/at-spi2-core.mo ../po/nb.po
+[41/144] /usr/bin/msgfmt -o po/ms/LC_MESSAGES/at-spi2-core.mo ../po/ms.po
+[42/144] /usr/bin/msgfmt -o po/mr/LC_MESSAGES/at-spi2-core.mo ../po/mr.po
+[43/144] /usr/bin/msgfmt -o po/mn/LC_MESSAGES/at-spi2-core.mo ../po/mn.po
+[44/144] /usr/bin/msgfmt -o po/ml/LC_MESSAGES/at-spi2-core.mo ../po/ml.po
+[45/144] /usr/bin/msgfmt -o po/mk/LC_MESSAGES/at-spi2-core.mo ../po/mk.po
+[46/144] /usr/bin/msgfmt -o po/mai/LC_MESSAGES/at-spi2-core.mo ../po/mai.po
+[47/144] /usr/bin/msgfmt -o po/lv/LC_MESSAGES/at-spi2-core.mo ../po/lv.po
+[48/144] /usr/bin/msgfmt -o po/lt/LC_MESSAGES/at-spi2-core.mo ../po/lt.po
+[49/144] /usr/bin/msgfmt -o po/li/LC_MESSAGES/at-spi2-core.mo ../po/li.po
+[50/144] /usr/bin/msgfmt -o po/ku/LC_MESSAGES/at-spi2-core.mo ../po/ku.po
+[51/144] /usr/bin/msgfmt -o po/ko/LC_MESSAGES/at-spi2-core.mo ../po/ko.po
+[52/144] /usr/bin/msgfmt -o po/kn/LC_MESSAGES/at-spi2-core.mo ../po/kn.po
+[53/144] /usr/bin/msgfmt -o po/km/LC_MESSAGES/at-spi2-core.mo ../po/km.po
+[54/144] /usr/bin/msgfmt -o po/kk/LC_MESSAGES/at-spi2-core.mo ../po/kk.po
+[55/144] /usr/bin/msgfmt -o po/kab/LC_MESSAGES/at-spi2-core.mo ../po/kab.po
+[56/144] /usr/bin/msgfmt -o po/ka/LC_MESSAGES/at-spi2-core.mo ../po/ka.po
+[57/144] /usr/bin/msgfmt -o po/ja/LC_MESSAGES/at-spi2-core.mo ../po/ja.po
+[58/144] /usr/bin/msgfmt -o po/it/LC_MESSAGES/at-spi2-core.mo ../po/it.po
+[59/144] /usr/bin/msgfmt -o po/is/LC_MESSAGES/at-spi2-core.mo ../po/is.po
+[60/144] /usr/bin/msgfmt -o po/id/LC_MESSAGES/at-spi2-core.mo ../po/id.po
+[61/144] /usr/bin/msgfmt -o po/hy/LC_MESSAGES/at-spi2-core.mo ../po/hy.po
+[62/144] /usr/bin/msgfmt -o po/hu/LC_MESSAGES/at-spi2-core.mo ../po/hu.po
+[63/144] /usr/bin/msgfmt -o po/hr/LC_MESSAGES/at-spi2-core.mo ../po/hr.po
+[64/144] /usr/bin/msgfmt -o po/hi/LC_MESSAGES/at-spi2-core.mo ../po/hi.po
+[65/144] /usr/bin/msgfmt -o po/he/LC_MESSAGES/at-spi2-core.mo ../po/he.po
+[66/144] /usr/bin/msgfmt -o po/gu/LC_MESSAGES/at-spi2-core.mo ../po/gu.po
+[67/144] /usr/bin/msgfmt -o po/gl/LC_MESSAGES/at-spi2-core.mo ../po/gl.po
+[68/144] /usr/bin/msgfmt -o po/gd/LC_MESSAGES/at-spi2-core.mo ../po/gd.po
+[69/144] /usr/bin/msgfmt -o po/ga/LC_MESSAGES/at-spi2-core.mo ../po/ga.po
+[70/144] /usr/bin/msgfmt -o po/fur/LC_MESSAGES/at-spi2-core.mo ../po/fur.po
+[71/144] /usr/bin/msgfmt -o po/fr/LC_MESSAGES/at-spi2-core.mo ../po/fr.po
+[72/144] /usr/bin/msgfmt -o po/fi/LC_MESSAGES/at-spi2-core.mo ../po/fi.po
+[73/144] /usr/bin/msgfmt -o po/fa/LC_MESSAGES/at-spi2-core.mo ../po/fa.po
+[74/144] /usr/bin/msgfmt -o po/eu/LC_MESSAGES/at-spi2-core.mo ../po/eu.po
+[75/144] /usr/bin/msgfmt -o po/et/LC_MESSAGES/at-spi2-core.mo ../po/et.po
+[76/144] /usr/bin/msgfmt -o po/es/LC_MESSAGES/at-spi2-core.mo ../po/es.po
+[77/144] /usr/bin/msgfmt -o po/eo/LC_MESSAGES/at-spi2-core.mo ../po/eo.po
+[78/144] /usr/bin/msgfmt -o po/en@shaw/LC_MESSAGES/at-spi2-core.mo ../po/en@shaw.po
+[79/144] /usr/bin/msgfmt -o po/en_GB/LC_MESSAGES/at-spi2-core.mo ../po/en_GB.po
+[80/144] /usr/bin/msgfmt -o po/en_CA/LC_MESSAGES/at-spi2-core.mo ../po/en_CA.po
+[81/144] /usr/bin/msgfmt -o po/el/LC_MESSAGES/at-spi2-core.mo ../po/el.po
+[82/144] /usr/bin/msgfmt -o po/dz/LC_MESSAGES/at-spi2-core.mo ../po/dz.po
+[83/144] /usr/bin/msgfmt -o po/de/LC_MESSAGES/at-spi2-core.mo ../po/de.po
+[84/144] /usr/bin/msgfmt -o po/da/LC_MESSAGES/at-spi2-core.mo ../po/da.po
+[85/144] /usr/bin/msgfmt -o po/cy/LC_MESSAGES/at-spi2-core.mo ../po/cy.po
+[86/144] /usr/bin/msgfmt -o po/cs/LC_MESSAGES/at-spi2-core.mo ../po/cs.po
+[87/144] /usr/bin/msgfmt -o po/ckb/LC_MESSAGES/at-spi2-core.mo ../po/ckb.po
+[88/144] /usr/bin/msgfmt -o po/ca@valencia/LC_MESSAGES/at-spi2-core.mo ../po/ca@valencia.po
+[89/144] /usr/bin/msgfmt -o po/ca/LC_MESSAGES/at-spi2-core.mo ../po/ca.po
+[90/144] /usr/bin/msgfmt -o po/bs/LC_MESSAGES/at-spi2-core.mo ../po/bs.po
+[91/144] /usr/bin/msgfmt -o po/bn_IN/LC_MESSAGES/at-spi2-core.mo ../po/bn_IN.po
+[92/144] /usr/bin/msgfmt -o po/bn/LC_MESSAGES/at-spi2-core.mo ../po/bn.po
+[93/144] /usr/bin/msgfmt -o po/bg/LC_MESSAGES/at-spi2-core.mo ../po/bg.po
+[94/144] /usr/bin/msgfmt -o po/be@latin/LC_MESSAGES/at-spi2-core.mo ../po/be@latin.po
+[95/144] /usr/bin/msgfmt -o po/be/LC_MESSAGES/at-spi2-core.mo ../po/be.po
+[96/144] /usr/bin/msgfmt -o po/az/LC_MESSAGES/at-spi2-core.mo ../po/az.po
+[97/144] /usr/bin/msgfmt -o po/ast/LC_MESSAGES/at-spi2-core.mo ../po/ast.po
+[98/144] /usr/bin/msgfmt -o po/as/LC_MESSAGES/at-spi2-core.mo ../po/as.po
+[99/144] /usr/bin/msgfmt -o po/ar/LC_MESSAGES/at-spi2-core.mo ../po/ar.po
+[100/144] /usr/bin/msgfmt -o po/an/LC_MESSAGES/at-spi2-core.mo ../po/an.po
+[101/144] /usr/bin/msgfmt -o po/am/LC_MESSAGES/at-spi2-core.mo ../po/am.po
+[102/144] /usr/bin/msgfmt -o po/af/LC_MESSAGES/at-spi2-core.mo ../po/af.po
+[103/144] /usr/bin/msgfmt -o po/ab/LC_MESSAGES/at-spi2-core.mo ../po/ab.po
+[104/144] /usr/bin/glib-genmarshal --prefix atk_marshal --output atk/atkmarshal.h --header ../atk/atkmarshal.list --pragma-once
+[105/144] /usr/bin/meson --internal exe --capture atk/atk-enum-types.h -- /usr/bin/glib-mkenums --template /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atk-enum-types.h.template /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkaction.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkcomponent.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkdocument.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkeditabletext.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkgobjectaccessible.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkhyperlink.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkhyperlinkimpl.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkhypertext.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkimage.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkmisc.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atknoopobject.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atknoopobjectfactory.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkobject.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkobjectfactory.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkplug.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkrange.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkregistry.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkrelation.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkrelationtype.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkrelationset.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkselection.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atksocket.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkstate.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkstateset.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkstreamablecontent.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atktable.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atktablecell.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atktext.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkutil.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkvalue.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkwindow.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atk-autocleanups.h
+INFO: Reading ../atk/atkmarshal.list...
+[106/144] /usr/bin/glib-genmarshal --prefix atk_marshal --output atk/atkmarshal.c --body ../atk/atkmarshal.list --include-header atkmarshal.h
+INFO: Reading ../atk/atkmarshal.list...
+[107/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkwindow.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkwindow.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkwindow.c.o -c ../atk/atkwindow.c
+[108/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkversion.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkversion.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkversion.c.o -c ../atk/atkversion.c
+[109/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkvalue.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkvalue.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkvalue.c.o -c ../atk/atkvalue.c
+[110/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkmisc.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkmisc.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkmisc.c.o -c ../atk/atkmisc.c
+[111/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkutil.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkutil.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkutil.c.o -c ../atk/atkutil.c
+[112/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atktext.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atktext.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atktext.c.o -c ../atk/atktext.c
+[113/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atktablecell.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atktablecell.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atktablecell.c.o -c ../atk/atktablecell.c
+[114/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atktable.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atktable.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atktable.c.o -c ../atk/atktable.c
+[115/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkstreamablecontent.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkstreamablecontent.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkstreamablecontent.c.o -c ../atk/atkstreamablecontent.c
+[116/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkstateset.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkstateset.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkstateset.c.o -c ../atk/atkstateset.c
+[117/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkstate.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkstate.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkstate.c.o -c ../atk/atkstate.c
+[118/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atksocket.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atksocket.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atksocket.c.o -c ../atk/atksocket.c
+[119/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkselection.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkselection.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkselection.c.o -c ../atk/atkselection.c
+[120/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkrelationset.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkrelationset.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkrelationset.c.o -c ../atk/atkrelationset.c
+[121/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkrelation.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkrelation.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkrelation.c.o -c ../atk/atkrelation.c
+[122/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkregistry.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkregistry.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkregistry.c.o -c ../atk/atkregistry.c
+[123/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkrange.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkrange.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkrange.c.o -c ../atk/atkrange.c
+[124/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkprivate.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkprivate.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkprivate.c.o -c ../atk/atkprivate.c
+[125/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkplug.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkplug.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkplug.c.o -c ../atk/atkplug.c
+[126/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkobjectfactory.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkobjectfactory.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkobjectfactory.c.o -c ../atk/atkobjectfactory.c
+[127/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkobject.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkobject.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkobject.c.o -c ../atk/atkobject.c
+[128/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atknoopobjectfactory.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atknoopobjectfactory.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atknoopobjectfactory.c.o -c ../atk/atknoopobjectfactory.c
+[129/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atknoopobject.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atknoopobject.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atknoopobject.c.o -c ../atk/atknoopobject.c
+[130/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkimage.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkimage.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkimage.c.o -c ../atk/atkimage.c
+[131/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkhypertext.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkhypertext.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkhypertext.c.o -c ../atk/atkhypertext.c
+[132/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkhyperlinkimpl.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkhyperlinkimpl.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkhyperlinkimpl.c.o -c ../atk/atkhyperlinkimpl.c
+[133/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkhyperlink.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkhyperlink.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkhyperlink.c.o -c ../atk/atkhyperlink.c
+[134/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkgobjectaccessible.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkgobjectaccessible.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkgobjectaccessible.c.o -c ../atk/atkgobjectaccessible.c
+[135/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkeditabletext.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkeditabletext.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkeditabletext.c.o -c ../atk/atkeditabletext.c
+[136/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkdocument.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkdocument.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkdocument.c.o -c ../atk/atkdocument.c
+[137/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkcomponent.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkcomponent.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkcomponent.c.o -c ../atk/atkcomponent.c
+[138/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/atkaction.c.o -MF atk/libatk-1.0.so.0.25209.1.p/atkaction.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/atkaction.c.o -c ../atk/atkaction.c
+[139/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/meson-generated_.._atkmarshal.c.o -MF atk/libatk-1.0.so.0.25209.1.p/meson-generated_.._atkmarshal.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/meson-generated_.._atkmarshal.c.o -c atk/atkmarshal.c
+[140/144] /usr/bin/meson --internal exe --capture atk/atk-enum-types.c -- /usr/bin/glib-mkenums --template /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atk-enum-types.c.template /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkaction.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkcomponent.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkdocument.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkeditabletext.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkgobjectaccessible.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkhyperlink.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkhyperlinkimpl.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkhypertext.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkimage.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkmisc.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atknoopobject.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atknoopobjectfactory.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkobject.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkobjectfactory.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkplug.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkrange.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkregistry.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkrelation.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkrelationtype.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkrelationset.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkselection.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atksocket.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkstate.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkstateset.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkstreamablecontent.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atktable.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atktablecell.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atktext.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkutil.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkvalue.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atkwindow.h /home/devel/building/work/src/at-spi2-core-2.52.0/build/../atk/atk-autocleanups.h
+[141/144] cc -Iatk/libatk-1.0.so.0.25209.1.p -Iatk -I../atk -I. -I.. -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c99 -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -fPIC -fvisibility=hidden '-DG_LOG_DOMAIN="Atk"' -DG_LOG_USE_STRUCTURED=1 -DGLIB_DISABLE_DEPRECATION_WARNINGS -DATK_DISABLE_DEPRECATION_WARNINGS -DATK_COMPILATION -MD -MQ atk/libatk-1.0.so.0.25209.1.p/meson-generated_.._atk-enum-types.c.o -MF atk/libatk-1.0.so.0.25209.1.p/meson-generated_.._atk-enum-types.c.o.d -o atk/libatk-1.0.so.0.25209.1.p/meson-generated_.._atk-enum-types.c.o -c atk/atk-enum-types.c
+[142/144] cc  -o atk/libatk-1.0.so.0.25209.1 atk/libatk-1.0.so.0.25209.1.p/meson-generated_.._atk-enum-types.c.o atk/libatk-1.0.so.0.25209.1.p/meson-generated_.._atkmarshal.c.o atk/libatk-1.0.so.0.25209.1.p/atkaction.c.o atk/libatk-1.0.so.0.25209.1.p/atkcomponent.c.o atk/libatk-1.0.so.0.25209.1.p/atkdocument.c.o atk/libatk-1.0.so.0.25209.1.p/atkeditabletext.c.o atk/libatk-1.0.so.0.25209.1.p/atkgobjectaccessible.c.o atk/libatk-1.0.so.0.25209.1.p/atkhyperlink.c.o atk/libatk-1.0.so.0.25209.1.p/atkhyperlinkimpl.c.o atk/libatk-1.0.so.0.25209.1.p/atkhypertext.c.o atk/libatk-1.0.so.0.25209.1.p/atkimage.c.o atk/libatk-1.0.so.0.25209.1.p/atknoopobject.c.o atk/libatk-1.0.so.0.25209.1.p/atknoopobjectfactory.c.o atk/libatk-1.0.so.0.25209.1.p/atkobject.c.o atk/libatk-1.0.so.0.25209.1.p/atkobjectfactory.c.o atk/libatk-1.0.so.0.25209.1.p/atkplug.c.o atk/libatk-1.0.so.0.25209.1.p/atkprivate.c.o atk/libatk-1.0.so.0.25209.1.p/atkrange.c.o atk/libatk-1.0.so.0.25209.1.p/atkregistry.c.o atk/libatk-1.0.so.0.25209.1.p/atkrelation.c.o atk/libatk-1.0.so.0.25209.1.p/atkrelationset.c.o atk/libatk-1.0.so.0.25209.1.p/atkselection.c.o atk/libatk-1.0.so.0.25209.1.p/atksocket.c.o atk/libatk-1.0.so.0.25209.1.p/atkstate.c.o atk/libatk-1.0.so.0.25209.1.p/atkstateset.c.o atk/libatk-1.0.so.0.25209.1.p/atkstreamablecontent.c.o atk/libatk-1.0.so.0.25209.1.p/atktable.c.o atk/libatk-1.0.so.0.25209.1.p/atktablecell.c.o atk/libatk-1.0.so.0.25209.1.p/atktext.c.o atk/libatk-1.0.so.0.25209.1.p/atkutil.c.o atk/libatk-1.0.so.0.25209.1.p/atkmisc.c.o atk/libatk-1.0.so.0.25209.1.p/atkvalue.c.o atk/libatk-1.0.so.0.25209.1.p/atkversion.c.o atk/libatk-1.0.so.0.25209.1.p/atkwindow.c.o -Wl,--as-needed -Wl,--no-undefined -shared -fPIC -Wl,-soname,libatk-1.0.so.0 -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -Wl,-Bsymbolic -Wl,-z,relro -Wl,-z,now -Wl,--start-group /usr/lib/libglib-2.0.so /usr/lib/libgobject-2.0.so -Wl,--end-group
+[143/144] env PKG_CONFIG_PATH=/usr/lib/pkgconfig:/usr/share/pkgconfig:/home/devel/building/work/src/at-spi2-core-2.52.0/build/meson-uninstalled PKG_CONFIG=/usr/bin/pkg-config CC=cc /usr/bin/g-ir-scanner --quiet --no-libtool --namespace=Atk --nsversion=1.0 --warn-all --output atk/Atk-1.0.gir --quiet --c-include=atk/atk.h -DATK_COMPILATION -I/home/devel/building/work/src/at-spi2-core-2.52.0/atk -I/home/devel/building/work/src/at-spi2-core-2.52.0/build/atk -I/home/devel/building/work/src/at-spi2-core-2.52.0/. -I/home/devel/building/work/src/at-spi2-core-2.52.0/build/. -I/home/devel/building/work/src/at-spi2-core-2.52.0/atk -I/home/devel/building/work/src/at-spi2-core-2.52.0/build/atk --filelist=/home/devel/building/work/src/at-spi2-core-2.52.0/build/atk/libatk-1.0.so.0.25209.1.p/Atk_1.0_gir_filelist --include=GObject-2.0 --symbol-prefix=atk --identifier-prefix=Atk --pkg-export=atk --cflags-begin -D_POSIX_C_SOURCE=200809L -D_DEFAULT_SOURCE -DG_DISABLE_SINGLE_INCLUDES -DATK_DISABLE_SINGLE_INCLUDES -I/home/devel/building/work/src/at-spi2-core-2.52.0/. -I/home/devel/building/work/src/at-spi2-core-2.52.0/build/. -I/home/devel/building/work/src/at-spi2-core-2.52.0/atk -I/home/devel/building/work/src/at-spi2-core-2.52.0/build/atk -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/gobject-introspection-1.0 --cflags-end --add-include-path=/usr/share/gir-1.0 -L/home/devel/building/work/src/at-spi2-core-2.52.0/build/atk --library atk-1.0 --extra-library=glib-2.0 --extra-library=gobject-2.0 --extra-library=girepository-1.0 --sources-top-dirs /home/devel/building/work/src/at-spi2-core-2.52.0/ --sources-top-dirs /home/devel/building/work/src/at-spi2-core-2.52.0/build/
+[144/144] /usr/bin/g-ir-compiler atk/Atk-1.0.gir --output atk/Atk-1.0.typelib --includedir=/usr/share/gir-1.0
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/devel/building/work/src/at-spi2-core-2.52.0/build -j 8 -v
++ DESTDIR=/home/devel/building/work/pkg
++ meson install --no-rebuild -C build
+Installing atk/atk-enum-types.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing atk/libatk-1.0.so.0.25209.1 to /home/devel/building/work/pkg/usr/lib
+Installing atk/Atk-1.0.gir to /home/devel/building/work/pkg/usr/share/gir-1.0
+Installing atk/Atk-1.0.typelib to /home/devel/building/work/pkg/usr/lib/girepository-1.0
+Installing po/ab/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ab/LC_MESSAGES
+Installing po/af/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/af/LC_MESSAGES
+Installing po/am/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/am/LC_MESSAGES
+Installing po/an/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/an/LC_MESSAGES
+Installing po/ar/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ar/LC_MESSAGES
+Installing po/as/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/as/LC_MESSAGES
+Installing po/ast/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ast/LC_MESSAGES
+Installing po/az/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/az/LC_MESSAGES
+Installing po/be/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/be/LC_MESSAGES
+Installing po/be@latin/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/be@latin/LC_MESSAGES
+Installing po/bg/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/bg/LC_MESSAGES
+Installing po/bn/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/bn/LC_MESSAGES
+Installing po/bn_IN/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/bn_IN/LC_MESSAGES
+Installing po/bs/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/bs/LC_MESSAGES
+Installing po/ca/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ca/LC_MESSAGES
+Installing po/ca@valencia/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ca@valencia/LC_MESSAGES
+Installing po/ckb/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ckb/LC_MESSAGES
+Installing po/cs/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/cs/LC_MESSAGES
+Installing po/cy/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/cy/LC_MESSAGES
+Installing po/da/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/da/LC_MESSAGES
+Installing po/de/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/de/LC_MESSAGES
+Installing po/dz/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/dz/LC_MESSAGES
+Installing po/el/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/el/LC_MESSAGES
+Installing po/en_CA/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/en_CA/LC_MESSAGES
+Installing po/en_GB/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/en_GB/LC_MESSAGES
+Installing po/en@shaw/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/en@shaw/LC_MESSAGES
+Installing po/eo/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/eo/LC_MESSAGES
+Installing po/es/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/es/LC_MESSAGES
+Installing po/et/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/et/LC_MESSAGES
+Installing po/eu/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/eu/LC_MESSAGES
+Installing po/fa/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/fa/LC_MESSAGES
+Installing po/fi/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/fi/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/fr/LC_MESSAGES
+Installing po/fur/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/fur/LC_MESSAGES
+Installing po/ga/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ga/LC_MESSAGES
+Installing po/gd/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/gd/LC_MESSAGES
+Installing po/gl/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/gl/LC_MESSAGES
+Installing po/gu/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/gu/LC_MESSAGES
+Installing po/he/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/he/LC_MESSAGES
+Installing po/hi/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/hi/LC_MESSAGES
+Installing po/hr/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/hr/LC_MESSAGES
+Installing po/hu/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/hu/LC_MESSAGES
+Installing po/hy/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/hy/LC_MESSAGES
+Installing po/id/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/id/LC_MESSAGES
+Installing po/is/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/is/LC_MESSAGES
+Installing po/it/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/it/LC_MESSAGES
+Installing po/ja/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ja/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ka/LC_MESSAGES
+Installing po/kab/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/kab/LC_MESSAGES
+Installing po/kk/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/kk/LC_MESSAGES
+Installing po/km/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/km/LC_MESSAGES
+Installing po/kn/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/kn/LC_MESSAGES
+Installing po/ko/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ko/LC_MESSAGES
+Installing po/ku/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ku/LC_MESSAGES
+Installing po/li/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/li/LC_MESSAGES
+Installing po/lt/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/lt/LC_MESSAGES
+Installing po/lv/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/lv/LC_MESSAGES
+Installing po/mai/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/mai/LC_MESSAGES
+Installing po/mk/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/mk/LC_MESSAGES
+Installing po/ml/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ml/LC_MESSAGES
+Installing po/mn/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/mn/LC_MESSAGES
+Installing po/mr/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/mr/LC_MESSAGES
+Installing po/ms/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ms/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/nb/LC_MESSAGES
+Installing po/ne/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ne/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/nl/LC_MESSAGES
+Installing po/nn/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/nn/LC_MESSAGES
+Installing po/oc/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/oc/LC_MESSAGES
+Installing po/or/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/or/LC_MESSAGES
+Installing po/pa/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/pa/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/pl/LC_MESSAGES
+Installing po/ps/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ps/LC_MESSAGES
+Installing po/pt/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/pt/LC_MESSAGES
+Installing po/pt_BR/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/pt_BR/LC_MESSAGES
+Installing po/ro/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ro/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ru/LC_MESSAGES
+Installing po/rw/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/rw/LC_MESSAGES
+Installing po/si/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/si/LC_MESSAGES
+Installing po/sk/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/sk/LC_MESSAGES
+Installing po/sl/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/sl/LC_MESSAGES
+Installing po/sq/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/sq/LC_MESSAGES
+Installing po/sr/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/sr/LC_MESSAGES
+Installing po/sr@ije/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/sr@ije/LC_MESSAGES
+Installing po/sr@latin/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/sr@latin/LC_MESSAGES
+Installing po/sv/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/sv/LC_MESSAGES
+Installing po/ta/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ta/LC_MESSAGES
+Installing po/te/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/te/LC_MESSAGES
+Installing po/tg/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/tg/LC_MESSAGES
+Installing po/th/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/th/LC_MESSAGES
+Installing po/tk/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/tk/LC_MESSAGES
+Installing po/tr/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/tr/LC_MESSAGES
+Installing po/tt/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/tt/LC_MESSAGES
+Installing po/ug/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/ug/LC_MESSAGES
+Installing po/uk/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/uk/LC_MESSAGES
+Installing po/uz@cyrillic/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/uz@cyrillic/LC_MESSAGES
+Installing po/vi/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/vi/LC_MESSAGES
+Installing po/wa/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/wa/LC_MESSAGES
+Installing po/xh/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/xh/LC_MESSAGES
+Installing po/yi/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/yi/LC_MESSAGES
+Installing po/zh_CN/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/zh_CN/LC_MESSAGES
+Installing po/zh_HK/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/zh_HK/LC_MESSAGES
+Installing po/zh_TW/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/zh_TW/LC_MESSAGES
+Installing po/zu/LC_MESSAGES/at-spi2-core.mo to /home/devel/building/work/pkg/usr/share/locale/zu/LC_MESSAGES
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkaction.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkcomponent.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkdocument.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkeditabletext.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkgobjectaccessible.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkhyperlink.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkhyperlinkimpl.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkhypertext.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkimage.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkmisc.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atknoopobject.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atknoopobjectfactory.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkobject.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkobjectfactory.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkplug.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkrange.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkregistry.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkrelation.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkrelationtype.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkrelationset.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkselection.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atksocket.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkstate.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkstateset.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkstreamablecontent.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atktable.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atktablecell.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atktext.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkutil.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkvalue.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atkwindow.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atk-autocleanups.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/atk/atk.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/build/atk/atkversion.h to /home/devel/building/work/pkg/usr/include/atk-1.0/atk
+Installing /home/devel/building/work/src/at-spi2-core-2.52.0/build/meson-private/atk.pc to /home/devel/building/work/pkg/usr/lib/pkgconfig
+Installing symlink pointing to libatk-1.0.so.0.25209.1 to /home/devel/building/work/pkg/usr/lib/libatk-1.0.so.0
+Installing symlink pointing to libatk-1.0.so.0 to /home/devel/building/work/pkg/usr/lib/libatk-1.0.so
++ rm -r /home/devel/building/work/pkg/usr/share/locale
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 20:23 usr/
+drwxr-xr-x  0 root   root        0 May  7 20:23 usr/include/
+drwxr-xr-x  0 root   root        0 May  7 20:23 usr/lib/
+drwxr-xr-x  0 root   root        0 May  7 20:23 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 20:23 usr/share/gir-1.0/
+-rw-r--r--  0 root   root  1105990 May  7 20:23 usr/share/gir-1.0/Atk-1.0.gir
+-rwxr-xr-x  0 root   root   161768 May  7 20:23 usr/lib/libatk-1.0.so.0.25209.1
+drwxr-xr-x  0 root   root        0 May  7 20:23 usr/lib/girepository-1.0/
+drwxr-xr-x  0 root   root        0 May  7 20:23 usr/lib/pkgconfig/
+lrwxrwxrwx  0 root   root        0 May  7 20:23 usr/lib/libatk-1.0.so.0 -> libatk-1.0.so.0.25209.1
+lrwxrwxrwx  0 root   root        0 May  7 20:23 usr/lib/libatk-1.0.so -> libatk-1.0.so.0
+-rw-r--r--  0 root   root      237 May  7 20:23 usr/lib/pkgconfig/atk.pc
+-rw-r--r--  0 root   root    75720 May  7 20:23 usr/lib/girepository-1.0/Atk-1.0.typelib
+drwxr-xr-x  0 root   root        0 May  7 20:23 usr/include/atk-1.0/
+drwxr-xr-x  0 root   root        0 May  7 20:23 usr/include/atk-1.0/atk/
+-rw-r--r--  0 root   root     2566 May  7 20:23 usr/include/atk-1.0/atk/atk-enum-types.h
+-rw-r--r--  0 root   root     4300 Mar 16 15:43 usr/include/atk-1.0/atk/atkaction.h
+-rw-r--r--  0 root   root    11067 Mar 16 15:43 usr/include/atk-1.0/atk/atkcomponent.h
+-rw-r--r--  0 root   root     6667 Mar 16 15:43 usr/include/atk-1.0/atk/atkdocument.h
+-rw-r--r--  0 root   root     4291 Mar 16 15:43 usr/include/atk-1.0/atk/atkeditabletext.h
+-rw-r--r--  0 root   root     2527 Mar 16 15:43 usr/include/atk-1.0/atk/atkgobjectaccessible.h
+-rw-r--r--  0 root   root     3497 Mar 16 15:43 usr/include/atk-1.0/atk/atkhyperlink.h
+-rw-r--r--  0 root   root     2397 Mar 16 15:43 usr/include/atk-1.0/atk/atkhyperlinkimpl.h
+-rw-r--r--  0 root   root     2619 Mar 16 15:43 usr/include/atk-1.0/atk/atkhypertext.h
+-rw-r--r--  0 root   root     3163 Mar 16 15:43 usr/include/atk-1.0/atk/atkimage.h
+-rw-r--r--  0 root   root     3371 Mar 16 15:43 usr/include/atk-1.0/atk/atkmisc.h
+-rw-r--r--  0 root   root     2078 Mar 16 15:43 usr/include/atk-1.0/atk/atknoopobject.h
+-rw-r--r--  0 root   root     2295 Mar 16 15:43 usr/include/atk-1.0/atk/atknoopobjectfactory.h
+-rw-r--r--  0 root   root    38153 Mar 16 15:43 usr/include/atk-1.0/atk/atkobject.h
+-rw-r--r--  0 root   root     2561 Mar 16 15:43 usr/include/atk-1.0/atk/atkobjectfactory.h
+-rw-r--r--  0 root   root     2119 Mar 16 15:43 usr/include/atk-1.0/atk/atkplug.h
+-rw-r--r--  0 root   root     1881 Mar 16 15:43 usr/include/atk-1.0/atk/atkrange.h
+-rw-r--r--  0 root   root     2553 Mar 16 15:43 usr/include/atk-1.0/atk/atkregistry.h
+-rw-r--r--  0 root   root     3314 Mar 16 15:43 usr/include/atk-1.0/atk/atkrelation.h
+-rw-r--r--  0 root   root     6216 Mar 16 15:43 usr/include/atk-1.0/atk/atkrelationtype.h
+-rw-r--r--  0 root   root     3380 Mar 16 15:43 usr/include/atk-1.0/atk/atkrelationset.h
+-rw-r--r--  0 root   root     3514 Mar 16 15:43 usr/include/atk-1.0/atk/atkselection.h
+-rw-r--r--  0 root   root     2243 Mar 16 15:43 usr/include/atk-1.0/atk/atksocket.h
+-rw-r--r--  0 root   root    14467 Mar 16 15:43 usr/include/atk-1.0/atk/atkstate.h
+-rw-r--r--  0 root   root     3326 Mar 16 15:43 usr/include/atk-1.0/atk/atkstateset.h
+-rw-r--r--  0 root   root     4394 Mar 16 15:43 usr/include/atk-1.0/atk/atkstreamablecontent.h
+-rw-r--r--  0 root   root     9113 Mar 16 15:43 usr/include/atk-1.0/atk/atktable.h
+-rw-r--r--  0 root   root     4224 Mar 16 15:43 usr/include/atk-1.0/atk/atktablecell.h
+-rw-r--r--  0 root   root    21133 Mar 16 15:43 usr/include/atk-1.0/atk/atktext.h
+-rw-r--r--  0 root   root    16635 Mar 16 15:43 usr/include/atk-1.0/atk/atkutil.h
+-rw-r--r--  0 root   root     5856 Mar 16 15:43 usr/include/atk-1.0/atk/atkvalue.h
+-rw-r--r--  0 root   root     1755 Mar 16 15:43 usr/include/atk-1.0/atk/atkwindow.h
+-rw-r--r--  0 root   root     2678 Mar 16 15:43 usr/include/atk-1.0/atk/atk-autocleanups.h
+-rw-r--r--  0 root   root     1943 Mar 16 15:43 usr/include/atk-1.0/atk/atk.h
+-rw-r--r--  0 root   root    14688 May  7 20:23 usr/include/atk-1.0/atk/atkversion.h
+=======> Building '/home/devel/packages/at-spi2-core#2.52.0-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling at-spi2-core 2.52.0-1
+prt-get: /usr/bin/pkgadd -u at-spi2-core#2.52.0-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 20:23:19 2024
+

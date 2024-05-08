@@ -1,0 +1,896 @@
+prt-get: updating /usr/ports/core-x86_64/libbsd
+prt-get: starting build Tue May  7 23:25:38 2024
+=======> Building '/home/devel/packages/libbsd#0.12.2-1.x86_64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/libbsd-0.12.2.tar.xz
++ build
++ cd libbsd-0.12.2
++ ./configure --build= --host=x86_64-unknown-linux-gnu --prefix=/usr --disable-static
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for x86_64-unknown-linux-gnu-strip... x86_64-unknown-linux-gnu-strip
+checking for a race-free mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking whether make supports the include directive... yes (GNU style)
+checking for x86_64-unknown-linux-gnu-gcc... x86_64-unknown-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... yes
+checking for x86_64-unknown-linux-gnu-gcc option to enable C11 features... none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... yes
+checking dependency style of x86_64-unknown-linux-gnu-gcc... gcc3
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for x86_64-unknown-linux-gnu-gcc option to enable large file support... none needed
+checking size of time_t... 8
+checking size of time_t... 8
+checking size of off_t... 8
+checking for x86_64-unknown-linux-gnu-ar... x86_64-unknown-linux-gnu-ar
+checking the archiver (x86_64-unknown-linux-gnu-ar) interface... ar
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by x86_64-unknown-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/x86_64-unknown-linux-gnu-nm -B
+checking the name lister (/usr/bin/x86_64-unknown-linux-gnu-nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for x86_64-unknown-linux-gnu-file... no
+checking for file... file
+checking for x86_64-unknown-linux-gnu-objdump... x86_64-unknown-linux-gnu-objdump
+checking how to recognize dependent libraries... pass_all
+checking for x86_64-unknown-linux-gnu-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for x86_64-unknown-linux-gnu-ar... (cached) x86_64-unknown-linux-gnu-ar
+checking for archiver @FILE support... @
+checking for x86_64-unknown-linux-gnu-strip... (cached) x86_64-unknown-linux-gnu-strip
+checking for x86_64-unknown-linux-gnu-ranlib... x86_64-unknown-linux-gnu-ranlib
+checking command to parse /usr/bin/x86_64-unknown-linux-gnu-nm -B output from x86_64-unknown-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for x86_64-unknown-linux-gnu-mt... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-unknown-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-unknown-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-unknown-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-unknown-linux-gnu-gcc static flag -static works... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-unknown-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-unknown-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking if ld supports --version-script flag... yes
+checking for x86_64-unknown-linux-gnu-objdump... (cached) x86_64-unknown-linux-gnu-objdump
+checking for x86_64-unknown-linux-gnu-gcc... (cached) x86_64-unknown-linux-gnu-gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether x86_64-unknown-linux-gnu-gcc accepts -g... (cached) yes
+checking for x86_64-unknown-linux-gnu-gcc option to enable C11 features... (cached) none needed
+checking whether x86_64-unknown-linux-gnu-gcc understands -c and -o together... (cached) yes
+checking dependency style of x86_64-unknown-linux-gnu-gcc... (cached) gcc3
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking whether ln -s works... yes
+checking for unif01_CreateExternGenBits in -ltestu01... no
+checking for library containing MD5Update... -lmd
+checking for getentropy... yes
+checking for library containing clock_gettime... none required
+checking for sys/ndir.h... no
+checking for sys/dir.h... yes
+checking for ndir.h... no
+checking for dirent.h... yes
+checking for pwd.h... yes
+checking for grp.h... yes
+checking for stdio_ext.h... yes
+checking for procinfo.h... no
+checking for inline... inline
+checking for typeof syntax and keyword spelling... typeof
+checking for int64_t... yes
+checking for mode_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for uid_t... yes
+checking for gid_t... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for x86_64-unknown-linux-gnu-gcc options needed to detect all undeclared functions... none needed
+checking whether F_CLOSEM is declared... no
+checking whether environ is declared... yes
+checking how to run the C preprocessor... x86_64-unknown-linux-gnu-gcc -E
+checking for GNU .init_array section support... yes
+checking for program_invocation_short_name... yes
+checking for __progname... yes
+checking for __register_atfork... yes
+checking for vasprintf... yes
+checking for asprintf... yes
+checking for clearenv... yes
+checking for dirfd... yes
+checking for flock... yes
+checking for fopencookie... yes
+checking for __fpurge... yes
+checking for funopen... no
+checking for getauxval... yes
+checking for getentropy... (cached) yes
+checking for getexecname... no
+checking for getline... yes
+checking for open_memstream... yes
+checking for pstat_getproc... no
+checking for sysconf... yes
+checking for uid_from_user... no
+checking for gid_from_group... no
+checking for user_from_uid... no
+checking for group_from_gid... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating man/Makefile
+config.status: creating src/Makefile
+config.status: creating src/libbsd.pc
+config.status: creating src/libbsd-ctor.pc
+config.status: creating src/libbsd-overlay.pc
+config.status: creating test/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
++ make V=1
+make  all-recursive
+make[1]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2'
+Making all in include
+make[2]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/include'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/include'
+Making all in man
+make[2]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/man'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/man'
+Making all in src
+make[2]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/src'
+depbase=`echo setproctitle_ctor.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT setproctitle_ctor.o -MD -MP -MF $depbase.Tpo -c -o setproctitle_ctor.o setproctitle_ctor.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo setmode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT setmode.lo -MD -MP -MF $depbase.Tpo -c -o setmode.lo setmode.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo arc4random.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT arc4random.lo -MD -MP -MF $depbase.Tpo -c -o arc4random.lo arc4random.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo arc4random_uniform.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT arc4random_uniform.lo -MD -MP -MF $depbase.Tpo -c -o arc4random_uniform.lo arc4random_uniform.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo bsd_getopt.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT bsd_getopt.lo -MD -MP -MF $depbase.Tpo -c -o bsd_getopt.lo bsd_getopt.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo closefrom.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT closefrom.lo -MD -MP -MF $depbase.Tpo -c -o closefrom.lo closefrom.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo errc.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT errc.lo -MD -MP -MF $depbase.Tpo -c -o errc.lo errc.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo expand_number.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expand_number.lo -MD -MP -MF $depbase.Tpo -c -o expand_number.lo expand_number.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo explicit_bzero.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT explicit_bzero.lo -MD -MP -MF $depbase.Tpo -c -o explicit_bzero.lo explicit_bzero.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT setmode.lo -MD -MP -MF .deps/setmode.Tpo -c setmode.c  -fPIC -DPIC -o .libs/setmode.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT bsd_getopt.lo -MD -MP -MF .deps/bsd_getopt.Tpo -c bsd_getopt.c  -fPIC -DPIC -o .libs/bsd_getopt.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT closefrom.lo -MD -MP -MF .deps/closefrom.Tpo -c closefrom.c  -fPIC -DPIC -o .libs/closefrom.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT arc4random.lo -MD -MP -MF .deps/arc4random.Tpo -c arc4random.c  -fPIC -DPIC -o .libs/arc4random.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT arc4random_uniform.lo -MD -MP -MF .deps/arc4random_uniform.Tpo -c arc4random_uniform.c  -fPIC -DPIC -o .libs/arc4random_uniform.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT errc.lo -MD -MP -MF .deps/errc.Tpo -c errc.c  -fPIC -DPIC -o .libs/errc.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT expand_number.lo -MD -MP -MF .deps/expand_number.Tpo -c expand_number.c  -fPIC -DPIC -o .libs/expand_number.o
+depbase=`echo fgetln.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fgetln.lo -MD -MP -MF $depbase.Tpo -c -o fgetln.lo fgetln.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo fgetwln.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fgetwln.lo -MD -MP -MF $depbase.Tpo -c -o fgetwln.lo fgetwln.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo fparseln.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fparseln.lo -MD -MP -MF $depbase.Tpo -c -o fparseln.lo fparseln.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT explicit_bzero.lo -MD -MP -MF .deps/explicit_bzero.Tpo -c explicit_bzero.c  -fPIC -DPIC -o .libs/explicit_bzero.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fgetln.lo -MD -MP -MF .deps/fgetln.Tpo -c fgetln.c  -fPIC -DPIC -o .libs/fgetln.o
+depbase=`echo flopen.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT flopen.lo -MD -MP -MF $depbase.Tpo -c -o flopen.lo flopen.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo fmtcheck.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fmtcheck.lo -MD -MP -MF $depbase.Tpo -c -o fmtcheck.lo fmtcheck.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fparseln.lo -MD -MP -MF .deps/fparseln.Tpo -c fparseln.c  -fPIC -DPIC -o .libs/fparseln.o
+depbase=`echo fpurge.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fpurge.lo -MD -MP -MF $depbase.Tpo -c -o fpurge.lo fpurge.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo freezero.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT freezero.lo -MD -MP -MF $depbase.Tpo -c -o freezero.lo freezero.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fgetwln.lo -MD -MP -MF .deps/fgetwln.Tpo -c fgetwln.c  -fPIC -DPIC -o .libs/fgetwln.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT flopen.lo -MD -MP -MF .deps/flopen.Tpo -c flopen.c  -fPIC -DPIC -o .libs/flopen.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fmtcheck.lo -MD -MP -MF .deps/fmtcheck.Tpo -c fmtcheck.c  -fPIC -DPIC -o .libs/fmtcheck.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT freezero.lo -MD -MP -MF .deps/freezero.Tpo -c freezero.c  -fPIC -DPIC -o .libs/freezero.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT fpurge.lo -MD -MP -MF .deps/fpurge.Tpo -c fpurge.c  -fPIC -DPIC -o .libs/fpurge.o
+depbase=`echo funopen.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT funopen.lo -MD -MP -MF $depbase.Tpo -c -o funopen.lo funopen.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo getbsize.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT getbsize.lo -MD -MP -MF $depbase.Tpo -c -o getbsize.lo getbsize.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo getpeereid.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT getpeereid.lo -MD -MP -MF $depbase.Tpo -c -o getpeereid.lo getpeereid.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo dehumanize_number.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT dehumanize_number.lo -MD -MP -MF $depbase.Tpo -c -o dehumanize_number.lo dehumanize_number.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo humanize_number.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT humanize_number.lo -MD -MP -MF $depbase.Tpo -c -o humanize_number.lo humanize_number.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo inet_net_pton.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT inet_net_pton.lo -MD -MP -MF $depbase.Tpo -c -o inet_net_pton.lo inet_net_pton.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo md5.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT md5.lo -MD -MP -MF $depbase.Tpo -c -o md5.lo md5.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo nlist.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT nlist.lo -MD -MP -MF $depbase.Tpo -c -o nlist.lo nlist.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT funopen.lo -MD -MP -MF .deps/funopen.Tpo -c funopen.c  -fPIC -DPIC -o .libs/funopen.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT getbsize.lo -MD -MP -MF .deps/getbsize.Tpo -c getbsize.c  -fPIC -DPIC -o .libs/getbsize.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT getpeereid.lo -MD -MP -MF .deps/getpeereid.Tpo -c getpeereid.c  -fPIC -DPIC -o .libs/getpeereid.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT dehumanize_number.lo -MD -MP -MF .deps/dehumanize_number.Tpo -c dehumanize_number.c  -fPIC -DPIC -o .libs/dehumanize_number.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT humanize_number.lo -MD -MP -MF .deps/humanize_number.Tpo -c humanize_number.c  -fPIC -DPIC -o .libs/humanize_number.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT nlist.lo -MD -MP -MF .deps/nlist.Tpo -c nlist.c  -fPIC -DPIC -o .libs/nlist.o
+depbase=`echo pidfile.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT pidfile.lo -MD -MP -MF $depbase.Tpo -c -o pidfile.lo pidfile.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT inet_net_pton.lo -MD -MP -MF .deps/inet_net_pton.Tpo -c inet_net_pton.c  -fPIC -DPIC -o .libs/inet_net_pton.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT md5.lo -MD -MP -MF .deps/md5.Tpo -c md5.c  -fPIC -DPIC -o .libs/md5.o
+depbase=`echo setproctitle.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT setproctitle.lo -MD -MP -MF $depbase.Tpo -c -o setproctitle.lo setproctitle.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo progname.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT progname.lo -MD -MP -MF $depbase.Tpo -c -o progname.lo progname.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo pwcache.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT pwcache.lo -MD -MP -MF $depbase.Tpo -c -o pwcache.lo pwcache.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT pidfile.lo -MD -MP -MF .deps/pidfile.Tpo -c pidfile.c  -fPIC -DPIC -o .libs/pidfile.o
+depbase=`echo readpassphrase.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT readpassphrase.lo -MD -MP -MF $depbase.Tpo -c -o readpassphrase.lo readpassphrase.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT pwcache.lo -MD -MP -MF .deps/pwcache.Tpo -c pwcache.c  -fPIC -DPIC -o .libs/pwcache.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT progname.lo -MD -MP -MF .deps/progname.Tpo -c progname.c  -fPIC -DPIC -o .libs/progname.o
+depbase=`echo reallocarray.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT reallocarray.lo -MD -MP -MF $depbase.Tpo -c -o reallocarray.lo reallocarray.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT readpassphrase.lo -MD -MP -MF .deps/readpassphrase.Tpo -c readpassphrase.c  -fPIC -DPIC -o .libs/readpassphrase.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT setproctitle.lo -MD -MP -MF .deps/setproctitle.Tpo -c setproctitle.c  -fPIC -DPIC -o .libs/setproctitle.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT reallocarray.lo -MD -MP -MF .deps/reallocarray.Tpo -c reallocarray.c  -fPIC -DPIC -o .libs/reallocarray.o
+depbase=`echo reallocf.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT reallocf.lo -MD -MP -MF $depbase.Tpo -c -o reallocf.lo reallocf.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo recallocarray.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT recallocarray.lo -MD -MP -MF $depbase.Tpo -c -o recallocarray.lo recallocarray.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo heapsort.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT heapsort.lo -MD -MP -MF $depbase.Tpo -c -o heapsort.lo heapsort.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo merge.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT merge.lo -MD -MP -MF $depbase.Tpo -c -o merge.lo merge.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT reallocf.lo -MD -MP -MF .deps/reallocf.Tpo -c reallocf.c  -fPIC -DPIC -o .libs/reallocf.o
+depbase=`echo radixsort.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT radixsort.lo -MD -MP -MF $depbase.Tpo -c -o radixsort.lo radixsort.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT heapsort.lo -MD -MP -MF .deps/heapsort.Tpo -c heapsort.c  -fPIC -DPIC -o .libs/heapsort.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT recallocarray.lo -MD -MP -MF .deps/recallocarray.Tpo -c recallocarray.c  -fPIC -DPIC -o .libs/recallocarray.o
+depbase=`echo stringlist.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT stringlist.lo -MD -MP -MF $depbase.Tpo -c -o stringlist.lo stringlist.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo strlcat.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT strlcat.lo -MD -MP -MF $depbase.Tpo -c -o strlcat.lo strlcat.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT radixsort.lo -MD -MP -MF .deps/radixsort.Tpo -c radixsort.c  -fPIC -DPIC -o .libs/radixsort.o
+depbase=`echo strlcpy.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT strlcpy.lo -MD -MP -MF $depbase.Tpo -c -o strlcpy.lo strlcpy.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo strmode.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT strmode.lo -MD -MP -MF $depbase.Tpo -c -o strmode.lo strmode.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT merge.lo -MD -MP -MF .deps/merge.Tpo -c merge.c  -fPIC -DPIC -o .libs/merge.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT stringlist.lo -MD -MP -MF .deps/stringlist.Tpo -c stringlist.c  -fPIC -DPIC -o .libs/stringlist.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT strmode.lo -MD -MP -MF .deps/strmode.Tpo -c strmode.c  -fPIC -DPIC -o .libs/strmode.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT strlcat.lo -MD -MP -MF .deps/strlcat.Tpo -c strlcat.c  -fPIC -DPIC -o .libs/strlcat.o
+depbase=`echo strnstr.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT strnstr.lo -MD -MP -MF $depbase.Tpo -c -o strnstr.lo strnstr.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT strlcpy.lo -MD -MP -MF .deps/strlcpy.Tpo -c strlcpy.c  -fPIC -DPIC -o .libs/strlcpy.o
+depbase=`echo strtonum.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT strtonum.lo -MD -MP -MF $depbase.Tpo -c -o strtonum.lo strtonum.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo strtoi.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT strtoi.lo -MD -MP -MF $depbase.Tpo -c -o strtoi.lo strtoi.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo strtou.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT strtou.lo -MD -MP -MF $depbase.Tpo -c -o strtou.lo strtou.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo timeconv.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT timeconv.lo -MD -MP -MF $depbase.Tpo -c -o timeconv.lo timeconv.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo unvis.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT unvis.lo -MD -MP -MF $depbase.Tpo -c -o unvis.lo unvis.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT strnstr.lo -MD -MP -MF .deps/strnstr.Tpo -c strnstr.c  -fPIC -DPIC -o .libs/strnstr.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT strtonum.lo -MD -MP -MF .deps/strtonum.Tpo -c strtonum.c  -fPIC -DPIC -o .libs/strtonum.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT strtoi.lo -MD -MP -MF .deps/strtoi.Tpo -c strtoi.c  -fPIC -DPIC -o .libs/strtoi.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT strtou.lo -MD -MP -MF .deps/strtou.Tpo -c strtou.c  -fPIC -DPIC -o .libs/strtou.o
+depbase=`echo vis.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT vis.lo -MD -MP -MF $depbase.Tpo -c -o vis.lo vis.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT unvis.lo -MD -MP -MF .deps/unvis.Tpo -c unvis.c  -fPIC -DPIC -o .libs/unvis.o
+depbase=`echo wcslcat.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT wcslcat.lo -MD -MP -MF $depbase.Tpo -c -o wcslcat.lo wcslcat.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+depbase=`echo wcslcpy.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+/bin/sh ../libtool  --tag=CC   --mode=compile x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H   -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT    -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT wcslcpy.lo -MD -MP -MF $depbase.Tpo -c -o wcslcpy.lo wcslcpy.c &&\
+mv -f $depbase.Tpo $depbase.Plo
+x86_64-unknown-linux-gnu-gcc -E -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT   -P - <./libbsd.map.in >libbsd.map
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT vis.lo -MD -MP -MF .deps/vis.Tpo -c vis.c  -fPIC -DPIC -o .libs/vis.o
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT timeconv.lo -MD -MP -MF .deps/timeconv.Tpo -c timeconv.c  -fPIC -DPIC -o .libs/timeconv.o
+rm -f libbsd-ctor.a
+x86_64-unknown-linux-gnu-ar cru libbsd-ctor.a setproctitle_ctor.o 
+x86_64-unknown-linux-gnu-ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT wcslcpy.lo -MD -MP -MF .deps/wcslcpy.Tpo -c wcslcpy.c  -fPIC -DPIC -o .libs/wcslcpy.o
+x86_64-unknown-linux-gnu-ranlib libbsd-ctor.a
+libtool: compile:  x86_64-unknown-linux-gnu-gcc -DHAVE_CONFIG_H -I.. -isystem ../include/bsd/ -include ../config.h -DLIBBSD_OVERLAY -DLIBBSD_DISABLE_DEPRECATED -D__REENTRANT -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -MT wcslcat.lo -MD -MP -MF .deps/wcslcat.Tpo -c wcslcat.c  -fPIC -DPIC -o .libs/wcslcat.o
+/bin/sh ../libtool  --tag=CC   --mode=link x86_64-unknown-linux-gnu-gcc  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -ffat-lto-objects -no-undefined -version-number 0:12:2 -Wl,--version-script=libbsd.map    -o libbsd.la -rpath /usr/lib setmode.lo  arc4random.lo arc4random_uniform.lo  bsd_getopt.lo closefrom.lo  errc.lo expand_number.lo explicit_bzero.lo fgetln.lo fgetwln.lo fparseln.lo flopen.lo fmtcheck.lo fpurge.lo freezero.lo funopen.lo getbsize.lo getpeereid.lo dehumanize_number.lo humanize_number.lo inet_net_pton.lo md5.lo nlist.lo pidfile.lo setproctitle.lo progname.lo pwcache.lo readpassphrase.lo reallocarray.lo reallocf.lo recallocarray.lo heapsort.lo merge.lo radixsort.lo stringlist.lo strlcat.lo strlcpy.lo strmode.lo strnstr.lo strtonum.lo strtoi.lo strtou.lo timeconv.lo unvis.lo vis.lo wcslcat.lo wcslcpy.lo -lmd   
+libtool: link: x86_64-unknown-linux-gnu-gcc -shared  -fPIC -DPIC  .libs/setmode.o .libs/arc4random.o .libs/arc4random_uniform.o .libs/bsd_getopt.o .libs/closefrom.o .libs/errc.o .libs/expand_number.o .libs/explicit_bzero.o .libs/fgetln.o .libs/fgetwln.o .libs/fparseln.o .libs/flopen.o .libs/fmtcheck.o .libs/fpurge.o .libs/freezero.o .libs/funopen.o .libs/getbsize.o .libs/getpeereid.o .libs/dehumanize_number.o .libs/humanize_number.o .libs/inet_net_pton.o .libs/md5.o .libs/nlist.o .libs/pidfile.o .libs/setproctitle.o .libs/progname.o .libs/pwcache.o .libs/readpassphrase.o .libs/reallocarray.o .libs/reallocf.o .libs/recallocarray.o .libs/heapsort.o .libs/merge.o .libs/radixsort.o .libs/stringlist.o .libs/strlcat.o .libs/strlcpy.o .libs/strmode.o .libs/strnstr.o .libs/strtonum.o .libs/strtoi.o .libs/strtou.o .libs/timeconv.o .libs/unvis.o .libs/vis.o .libs/wcslcat.o .libs/wcslcpy.o   -lmd  -O2 -m64 -march=x86-64 -mtune=generic -flto=auto -Wl,--version-script=libbsd.map   -Wl,-soname -Wl,libbsd.so.0 -o .libs/libbsd.so.0.12.2
+/usr/bin/ld: warning: The MD5Init() function in libbsd is a deprecated wrapper, use libmd instead.
+/usr/bin/ld: warning: The MD5Update() function in libbsd is a deprecated wrapper, use libmd instead.
+/usr/bin/ld: warning: The MD5Pad() function in libbsd is a deprecated wrapper, use libmd instead.
+/usr/bin/ld: warning: The MD5Final() function in libbsd is a deprecated wrapper, use libmd instead.
+/usr/bin/ld: warning: The MD5Transform() function in libbsd is a deprecated wrapper, use libmd instead.
+/usr/bin/ld: warning: The MD5End() function in libbsd is a deprecated wrapper, use libmd instead.
+/usr/bin/ld: warning: The MD5File() function in libbsd is a deprecated wrapper, use libmd instead.
+/usr/bin/ld: warning: The MD5FileChunk() function in libbsd is a deprecated wrapper, use libmd instead.
+/usr/bin/ld: warning: The MD5Data() function in libbsd is a deprecated wrapper, use libmd instead.
+libtool: link: (cd ".libs" && rm -f "libbsd.so.0" && ln -s "libbsd.so.0.12.2" "libbsd.so.0")
+libtool: link: (cd ".libs" && rm -f "libbsd.so" && ln -s "libbsd.so.0.12.2" "libbsd.so")
+libtool: link: ( cd ".libs" && rm -f "libbsd.la" && ln -s "../libbsd.la" "libbsd.la" )
+make[2]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/src'
+Making all in test
+make[2]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/test'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/test'
+make[2]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2'
+make[2]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2'
+make[1]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2'
++ make check
+Making check in include
+make[1]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/include'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/include'
+Making check in man
+make[1]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/man'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/man'
+Making check in src
+make[1]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/src'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/src'
+Making check in test
+make[1]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/test'
+make  overlay endian setmode  closefrom bzero explicit_bzero fgetln fparseln fpurge funopen humanize fpurge funopen md5 nlist progname proctitle-init proctitle pwcache progname strl strmode strnstr strtonum vis vis-openbsd  timeconv64 headers-overlay.sh headers-system.sh 
+make[2]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/test'
+  CC       overlay.o
+  CC       endian.o
+  CC       setmode.o
+  CC       closefrom.o
+  CC       bzero.o
+  CC       explicit_bzero.o
+  CC       fgetln-test-stream.o
+  CC       fgetln-fgetln.o
+  CC       test-stream.o
+  CC       fparseln.o
+  CC       fpurge.o
+  CC       funopen.o
+  CC       humanize.o
+  CC       md5.o
+  CC       nlist.o
+  CC       progname.o
+  CC       proctitle_init-proctitle.o
+  CC       proctitle.o
+  CC       pwcache.o
+  CC       strl.o
+  CC       strmode.o
+  CC       strnstr.o
+  CC       strtonum.o
+  CC       vis.o
+make[2]: Nothing to be done for 'headers-overlay.sh'.
+make[2]: Nothing to be done for 'headers-system.sh'.
+  CC       vis-openbsd.o
+  CC       timeconv64.o
+  CCLD     overlay
+  CCLD     endian
+  CCLD     setmode
+  CCLD     closefrom
+  CCLD     bzero
+  CCLD     explicit_bzero
+  CCLD     fgetln
+  CCLD     fparseln
+  CCLD     fpurge
+  CCLD     funopen
+  CCLD     humanize
+  CCLD     md5
+  CCLD     nlist
+/usr/bin/ld: /tmp/cc3TTefV.ltrans0.ltrans.o: in function `test_fgetln_multi':
+<artificial>:(.text+0x277): warning: The fgetln() function cannot be safely ported, use getline(3) instead, as it is supported by GNU and POSIX.1-2008.
+/usr/bin/ld: /tmp/cc3TTefV.ltrans0.ltrans.o: in function `test_fgetwln_multi':
+<artificial>:(.text+0x437): warning: The fgetwln() function cannot be safely ported, use fgetwc(3) instead, as it is supported by C99 and POSIX.1-2001.
+  CCLD     progname
+  CCLD     proctitle-init
+  CCLD     proctitle
+  CCLD     pwcache
+/usr/bin/ld: /tmp/ccg0Yoch.ltrans0.ltrans.o: in function `test_md5':
+<artificial>:(.text+0x1e): warning: The MD5Data() function in libbsd is a deprecated wrapper, use libmd instead.
+  CCLD     strl
+  CCLD     strmode
+  CCLD     strnstr
+  CCLD     strtonum
+  CCLD     vis
+  CCLD     vis-openbsd
+make[2]: 'fpurge' is up to date.
+make[2]: 'funopen' is up to date.
+make[2]: 'progname' is up to date.
+  CCLD     timeconv64
+make[2]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/test'
+make  check-TESTS
+make[2]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/test'
+make[3]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/test'
+PASS: endian
+PASS: setmode
+PASS: closefrom
+PASS: bzero
+PASS: overlay
+PASS: explicit_bzero
+PASS: fpurge
+PASS: fparseln
+PASS: funopen
+PASS: humanize
+PASS: fgetln
+PASS: md5
+PASS: nlist
+PASS: proctitle-init
+PASS: progname
+PASS: proctitle
+PASS: pwcache
+PASS: strl
+PASS: strmode
+PASS: strnstr
+PASS: strtonum
+PASS: vis-openbsd
+PASS: vis
+PASS: timeconv64
+PASS: headers-overlay.sh
+PASS: headers-system.sh
+============================================================================
+Testsuite summary for libbsd 0.12.2
+============================================================================
+# TOTAL: 29
+# PASS:  29
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[3]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/test'
+make[2]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/test'
+make[1]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/test'
+make[1]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2'
+make[1]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2'
++ make DESTDIR=/home/devel/building/work/pkg install
+Making install in include
+make[1]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/include'
+make[2]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/include'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/bsd/netinet'
+ /usr/bin/install -c -m 644  bsd/netinet/ip_icmp.h '/home/devel/building/work/pkg/usr/include/bsd/netinet'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/bsd/sys'
+ /usr/bin/install -c -m 644  bsd/sys/bitstring.h bsd/sys/cdefs.h bsd/sys/endian.h bsd/sys/param.h bsd/sys/poll.h bsd/sys/queue.h bsd/sys/time.h bsd/sys/tree.h '/home/devel/building/work/pkg/usr/include/bsd/sys'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/include/bsd'
+ /usr/bin/install -c -m 644  bsd/bitstring.h bsd/bsd.h bsd/inttypes.h bsd/libutil.h bsd/stdio.h bsd/stdlib.h bsd/string.h bsd/unistd.h bsd/wchar.h bsd/err.h bsd/getopt.h bsd/md5.h bsd/nlist.h bsd/readpassphrase.h bsd/grp.h bsd/pwd.h bsd/stringlist.h bsd/timeconv.h bsd/vis.h '/home/devel/building/work/pkg/usr/include/bsd'
+make  install-data-hook
+make[3]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/include'
+  GEN      install-data-hook
+mv  /home/devel/building/work/pkg/usr/include/bsd/sys/cdefs.h.new \
+    /home/devel/building/work/pkg/usr/include/bsd/sys/cdefs.h
+make[3]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/include'
+make[2]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/include'
+make[1]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/include'
+Making install in man
+make[1]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/man'
+make[2]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/man'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man3'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/share/man/man7'
+ /usr/bin/install -c -m 644 libbsd.7 '/home/devel/building/work/pkg/usr/share/man/man7'
+ /usr/bin/install -c -m 644 LIST_CLASS_ENTRY.3bsd LIST_CLASS_HEAD.3bsd LIST_EMPTY.3bsd LIST_ENTRY.3bsd LIST_FIRST.3bsd LIST_FOREACH.3bsd LIST_FOREACH_FROM.3bsd LIST_FOREACH_FROM_SAFE.3bsd LIST_FOREACH_SAFE.3bsd LIST_HEAD.3bsd LIST_HEAD_INITIALIZER.3bsd LIST_INIT.3bsd LIST_INSERT_AFTER.3bsd LIST_INSERT_BEFORE.3bsd LIST_INSERT_HEAD.3bsd LIST_NEXT.3bsd LIST_PREV.3bsd LIST_REMOVE.3bsd LIST_SWAP.3bsd RB_EMPTY.3bsd RB_ENTRY.3bsd RB_FIND.3bsd RB_FOREACH.3bsd RB_FOREACH_REVERSE.3bsd RB_GENERATE.3bsd RB_GENERATE_STATIC.3bsd RB_HEAD.3bsd RB_INIT.3bsd RB_INITIALIZER.3bsd RB_INSERT.3bsd RB_LEFT.3bsd RB_MAX.3bsd RB_MIN.3bsd RB_NEXT.3bsd RB_NFIND.3bsd RB_PARENT.3bsd RB_PREV.3bsd RB_PROTOTYPE.3bsd RB_PROTOTYPE_STATIC.3bsd RB_REMOVE.3bsd '/home/devel/building/work/pkg/usr/share/man/man3'
+ /usr/bin/install -c -m 644 RB_RIGHT.3bsd RB_ROOT.3bsd SLIST_CLASS_ENTRY.3bsd SLIST_CLASS_HEAD.3bsd SLIST_EMPTY.3bsd SLIST_ENTRY.3bsd SLIST_FIRST.3bsd SLIST_FOREACH.3bsd SLIST_FOREACH_FROM.3bsd SLIST_FOREACH_FROM_SAFE.3bsd SLIST_FOREACH_SAFE.3bsd SLIST_HEAD.3bsd SLIST_HEAD_INITIALIZER.3bsd SLIST_INIT.3bsd SLIST_INSERT_AFTER.3bsd SLIST_INSERT_HEAD.3bsd SLIST_NEXT.3bsd SLIST_REMOVE.3bsd SLIST_REMOVE_AFTER.3bsd SLIST_REMOVE_HEAD.3bsd SLIST_REMOVE_PREVPTR.3bsd SLIST_SWAP.3bsd SPLAY_EMPTY.3bsd SPLAY_ENTRY.3bsd SPLAY_FIND.3bsd SPLAY_FOREACH.3bsd SPLAY_GENERATE.3bsd SPLAY_HEAD.3bsd SPLAY_INIT.3bsd SPLAY_INITIALIZER.3bsd SPLAY_INSERT.3bsd SPLAY_LEFT.3bsd SPLAY_MAX.3bsd SPLAY_MIN.3bsd SPLAY_NEXT.3bsd SPLAY_PROTOTYPE.3bsd SPLAY_REMOVE.3bsd SPLAY_RIGHT.3bsd SPLAY_ROOT.3bsd STAILQ_CLASS_ENTRY.3bsd '/home/devel/building/work/pkg/usr/share/man/man3'
+ /usr/bin/install -c -m 644 STAILQ_CLASS_HEAD.3bsd STAILQ_CONCAT.3bsd STAILQ_EMPTY.3bsd STAILQ_ENTRY.3bsd STAILQ_FIRST.3bsd STAILQ_FOREACH.3bsd STAILQ_FOREACH_FROM.3bsd STAILQ_FOREACH_FROM_SAFE.3bsd STAILQ_FOREACH_SAFE.3bsd STAILQ_HEAD.3bsd STAILQ_HEAD_INITIALIZER.3bsd STAILQ_INIT.3bsd STAILQ_INSERT_AFTER.3bsd STAILQ_INSERT_HEAD.3bsd STAILQ_INSERT_TAIL.3bsd STAILQ_LAST.3bsd STAILQ_NEXT.3bsd STAILQ_REMOVE.3bsd STAILQ_REMOVE_AFTER.3bsd STAILQ_REMOVE_HEAD.3bsd STAILQ_SWAP.3bsd TAILQ_CLASS_ENTRY.3bsd TAILQ_CLASS_HEAD.3bsd TAILQ_CONCAT.3bsd TAILQ_EMPTY.3bsd TAILQ_ENTRY.3bsd TAILQ_FIRST.3bsd TAILQ_FOREACH.3bsd TAILQ_FOREACH_FROM.3bsd TAILQ_FOREACH_FROM_SAFE.3bsd TAILQ_FOREACH_REVERSE.3bsd TAILQ_FOREACH_REVERSE_FROM.3bsd TAILQ_FOREACH_REVERSE_FROM_SAFE.3bsd TAILQ_FOREACH_REVERSE_SAFE.3bsd TAILQ_FOREACH_SAFE.3bsd TAILQ_HEAD.3bsd TAILQ_HEAD_INITIALIZER.3bsd TAILQ_INIT.3bsd TAILQ_INSERT_AFTER.3bsd TAILQ_INSERT_BEFORE.3bsd '/home/devel/building/work/pkg/usr/share/man/man3'
+ /usr/bin/install -c -m 644 TAILQ_INSERT_HEAD.3bsd TAILQ_INSERT_TAIL.3bsd TAILQ_LAST.3bsd TAILQ_NEXT.3bsd TAILQ_PREV.3bsd TAILQ_REMOVE.3bsd TAILQ_SWAP.3bsd be16dec.3bsd be16enc.3bsd be32dec.3bsd be32enc.3bsd be64dec.3bsd be64enc.3bsd bit_alloc.3bsd bit_clear.3bsd bit_decl.3bsd bit_ffc.3bsd bit_ffs.3bsd bit_nclear.3bsd bit_nset.3bsd bit_set.3bsd bit_test.3bsd bitstr_size.3bsd bitstring.3bsd byteorder.3bsd le16dec.3bsd le16enc.3bsd le32dec.3bsd le32enc.3bsd le64dec.3bsd le64enc.3bsd queue.3bsd timeradd.3bsd timerclear.3bsd timercmp.3bsd timerisset.3bsd timersub.3bsd timespecadd.3bsd timespecclear.3bsd timespeccmp.3bsd '/home/devel/building/work/pkg/usr/share/man/man3'
+ /usr/bin/install -c -m 644 timespecisset.3bsd timespecsub.3bsd tree.3bsd getmode.3bsd setmode.3bsd arc4random.3bsd arc4random_addrandom.3bsd arc4random_buf.3bsd arc4random_stir.3bsd arc4random_uniform.3bsd closefrom.3bsd errc.3bsd verrc.3bsd vwarnc.3bsd warnc.3bsd expand_number.3bsd explicit_bzero.3bsd fgetln.3bsd fgetwln.3bsd fparseln.3bsd flopen.3bsd fmtcheck.3bsd fpurge.3bsd freezero.3bsd funopen.3bsd getbsize.3bsd getpeereid.3bsd dehumanize_number.3bsd humanize_number.3bsd md5.3bsd nlist.3bsd pidfile.3bsd pidfile_close.3bsd pidfile_open.3bsd pidfile_remove.3bsd pidfile_write.3bsd setproctitle.3bsd setproctitle_init.3bsd getprogname.3bsd setprogname.3bsd '/home/devel/building/work/pkg/usr/share/man/man3'
+ /usr/bin/install -c -m 644 pwcache.3bsd gid_from_group.3bsd uid_from_user.3bsd group_from_gid.3bsd user_from_uid.3bsd readpassphrase.3bsd reallocarray.3bsd reallocf.3bsd recallocarray.3bsd heapsort.3bsd mergesort.3bsd radixsort.3bsd sradixsort.3bsd sl_add.3bsd sl_delete.3bsd sl_find.3bsd sl_free.3bsd sl_init.3bsd stringlist.3bsd strlcat.3bsd strlcpy.3bsd strmode.3bsd strnstr.3bsd strtoi.3bsd strtou.3bsd strtonum.3bsd strnunvis.3bsd strnvis.3bsd strunvis.3bsd strvis.3bsd strvisx.3bsd unvis.3bsd vis.3bsd wcslcat.3bsd wcslcpy.3bsd '/home/devel/building/work/pkg/usr/share/man/man3'
+make[2]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/man'
+make[1]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/man'
+Making install in src
+make[1]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/src'
+make[2]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/src'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /usr/bin/install -c -m 644  libbsd-ctor.a '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib'
+ /bin/mkdir -p '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libbsd.la '/home/devel/building/work/pkg/usr/lib'
+ ( cd '/home/devel/building/work/pkg/usr/lib' && x86_64-unknown-linux-gnu-ranlib libbsd-ctor.a )
+ /usr/bin/install -c -m 644 libbsd.pc libbsd-overlay.pc libbsd-ctor.pc '/home/devel/building/work/pkg/usr/lib/pkgconfig'
+libtool: install: /usr/bin/install -c .libs/libbsd.so.0.12.2 /home/devel/building/work/pkg/usr/lib/libbsd.so.0.12.2
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libbsd.so.0.12.2 libbsd.so.0 || { rm -f libbsd.so.0 && ln -s libbsd.so.0.12.2 libbsd.so.0; }; })
+libtool: install: (cd /home/devel/building/work/pkg/usr/lib && { ln -s -f libbsd.so.0.12.2 libbsd.so || { rm -f libbsd.so && ln -s libbsd.so.0.12.2 libbsd.so; }; })
+libtool: install: /usr/bin/install -c .libs/libbsd.lai /home/devel/building/work/pkg/usr/lib/libbsd.la
+libtool: warning: remember to run 'libtool --finish /usr/lib'
+make  install-exec-hook
+make[3]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/src'
+x86_64-unknown-linux-gnu-gcc -shared -nostdlib -nostartfiles -x assembler /dev/null -o format.ld.so
+x86_64-unknown-linux-gnu-objdump -f format.ld.so | sed -n 's/.*file format \(.*\)/OUTPUT_FORMAT(\1)/;T;p' >format.ld
+rm -f format.ld.so
+if [ "/usr/lib" != "/usr/lib" ]; then \
+	/bin/mkdir -p /home/devel/building/work/pkg/usr/lib; \
+	mv /home/devel/building/work/pkg/usr/lib/libbsd*.so.* \
+	   /home/devel/building/work/pkg/usr/lib/; \
+fi
+soname=`readlink /home/devel/building/work/pkg/usr/lib/libbsd.so`; \
+rm -f /home/devel/building/work/pkg/usr/lib/libbsd.so; \
+(echo '/* GNU ld script'; \
+ echo ' * The MD5 functions are provided by the libmd library. */'; \
+ cat format.ld; \
+ echo "GROUP(/usr/lib/$soname AS_NEEDED(-lmd))"; \
+)>/home/devel/building/work/pkg/usr/lib/libbsd.so
+make[3]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/src'
+make[2]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/src'
+make[1]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/src'
+Making install in test
+make[1]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/test'
+make[2]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2/test'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/test'
+make[1]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2/test'
+make[1]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2'
+make[2]: Entering directory '/home/devel/building/work/src/libbsd-0.12.2'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2'
+make[1]: Leaving directory '/home/devel/building/work/src/libbsd-0.12.2'
++ find /home/devel/building/work/pkg -type f -name '*.la' -delete
+=======> Build result:
+drwxr-xr-x  0 root   root        0 May  7 23:25 usr/
+drwxr-xr-x  0 root   root        0 May  7 23:25 usr/include/
+drwxr-xr-x  0 root   root        0 May  7 23:25 usr/share/
+drwxr-xr-x  0 root   root        0 May  7 23:25 usr/lib/
+-rw-r--r--  0 root   root     4076 May  7 23:25 usr/lib/libbsd-ctor.a
+drwxr-xr-x  0 root   root        0 May  7 23:25 usr/lib/pkgconfig/
+-rwxr-xr-x  0 root   root    81880 May  7 23:25 usr/lib/libbsd.so.0.12.2
+lrwxrwxrwx  0 root   root        0 May  7 23:25 usr/lib/libbsd.so.0 -> libbsd.so.0.12.2
+-rw-r--r--  0 root   root      153 May  7 23:25 usr/lib/libbsd.so
+-rw-r--r--  0 root   root      273 May  7 23:25 usr/lib/pkgconfig/libbsd.pc
+-rw-r--r--  0 root   root      384 May  7 23:25 usr/lib/pkgconfig/libbsd-overlay.pc
+-rw-r--r--  0 root   root      327 May  7 23:25 usr/lib/pkgconfig/libbsd-ctor.pc
+drwxr-xr-x  0 root   root        0 May  7 23:25 usr/share/man/
+drwxr-xr-x  0 root   root        0 May  7 23:25 usr/share/man/man3/
+drwxr-xr-x  0 root   root        0 May  7 23:25 usr/share/man/man7/
+-rw-r--r--  0 root   root     3534 May  7 23:25 usr/share/man/man7/libbsd.7.gz
+-rw-r--r--  0 root   root       62 May  7 23:25 usr/share/man/man3/LIST_CLASS_ENTRY.3bsd.gz
+-rw-r--r--  0 root   root       61 May  7 23:25 usr/share/man/man3/LIST_CLASS_HEAD.3bsd.gz
+-rw-r--r--  0 root   root       56 May  7 23:25 usr/share/man/man3/LIST_EMPTY.3bsd.gz
+-rw-r--r--  0 root   root       56 May  7 23:25 usr/share/man/man3/LIST_ENTRY.3bsd.gz
+-rw-r--r--  0 root   root       56 May  7 23:25 usr/share/man/man3/LIST_FIRST.3bsd.gz
+-rw-r--r--  0 root   root       58 May  7 23:25 usr/share/man/man3/LIST_FOREACH.3bsd.gz
+-rw-r--r--  0 root   root       63 May  7 23:25 usr/share/man/man3/LIST_FOREACH_FROM.3bsd.gz
+-rw-r--r--  0 root   root       68 May  7 23:25 usr/share/man/man3/LIST_FOREACH_FROM_SAFE.3bsd.gz
+-rw-r--r--  0 root   root       63 May  7 23:25 usr/share/man/man3/LIST_FOREACH_SAFE.3bsd.gz
+-rw-r--r--  0 root   root       55 May  7 23:25 usr/share/man/man3/LIST_HEAD.3bsd.gz
+-rw-r--r--  0 root   root       67 May  7 23:25 usr/share/man/man3/LIST_HEAD_INITIALIZER.3bsd.gz
+-rw-r--r--  0 root   root       55 May  7 23:25 usr/share/man/man3/LIST_INIT.3bsd.gz
+-rw-r--r--  0 root   root       63 May  7 23:25 usr/share/man/man3/LIST_INSERT_AFTER.3bsd.gz
+-rw-r--r--  0 root   root       64 May  7 23:25 usr/share/man/man3/LIST_INSERT_BEFORE.3bsd.gz
+-rw-r--r--  0 root   root       62 May  7 23:25 usr/share/man/man3/LIST_INSERT_HEAD.3bsd.gz
+-rw-r--r--  0 root   root       55 May  7 23:25 usr/share/man/man3/LIST_NEXT.3bsd.gz
+-rw-r--r--  0 root   root       55 May  7 23:25 usr/share/man/man3/LIST_PREV.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/LIST_REMOVE.3bsd.gz
+-rw-r--r--  0 root   root       55 May  7 23:25 usr/share/man/man3/LIST_SWAP.3bsd.gz
+-rw-r--r--  0 root   root       53 May  7 23:25 usr/share/man/man3/RB_EMPTY.3bsd.gz
+-rw-r--r--  0 root   root       53 May  7 23:25 usr/share/man/man3/RB_ENTRY.3bsd.gz
+-rw-r--r--  0 root   root       52 May  7 23:25 usr/share/man/man3/RB_FIND.3bsd.gz
+-rw-r--r--  0 root   root       55 May  7 23:25 usr/share/man/man3/RB_FOREACH.3bsd.gz
+-rw-r--r--  0 root   root       63 May  7 23:25 usr/share/man/man3/RB_FOREACH_REVERSE.3bsd.gz
+-rw-r--r--  0 root   root       56 May  7 23:25 usr/share/man/man3/RB_GENERATE.3bsd.gz
+-rw-r--r--  0 root   root       63 May  7 23:25 usr/share/man/man3/RB_GENERATE_STATIC.3bsd.gz
+-rw-r--r--  0 root   root       52 May  7 23:25 usr/share/man/man3/RB_HEAD.3bsd.gz
+-rw-r--r--  0 root   root       52 May  7 23:25 usr/share/man/man3/RB_INIT.3bsd.gz
+-rw-r--r--  0 root   root       59 May  7 23:25 usr/share/man/man3/RB_INITIALIZER.3bsd.gz
+-rw-r--r--  0 root   root       54 May  7 23:25 usr/share/man/man3/RB_INSERT.3bsd.gz
+-rw-r--r--  0 root   root       52 May  7 23:25 usr/share/man/man3/RB_LEFT.3bsd.gz
+-rw-r--r--  0 root   root       51 May  7 23:25 usr/share/man/man3/RB_MAX.3bsd.gz
+-rw-r--r--  0 root   root       51 May  7 23:25 usr/share/man/man3/RB_MIN.3bsd.gz
+-rw-r--r--  0 root   root       52 May  7 23:25 usr/share/man/man3/RB_NEXT.3bsd.gz
+-rw-r--r--  0 root   root       53 May  7 23:25 usr/share/man/man3/RB_NFIND.3bsd.gz
+-rw-r--r--  0 root   root       54 May  7 23:25 usr/share/man/man3/RB_PARENT.3bsd.gz
+-rw-r--r--  0 root   root       52 May  7 23:25 usr/share/man/man3/RB_PREV.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/RB_PROTOTYPE.3bsd.gz
+-rw-r--r--  0 root   root       64 May  7 23:25 usr/share/man/man3/RB_PROTOTYPE_STATIC.3bsd.gz
+-rw-r--r--  0 root   root       54 May  7 23:25 usr/share/man/man3/RB_REMOVE.3bsd.gz
+-rw-r--r--  0 root   root       53 May  7 23:25 usr/share/man/man3/RB_RIGHT.3bsd.gz
+-rw-r--r--  0 root   root       52 May  7 23:25 usr/share/man/man3/RB_ROOT.3bsd.gz
+-rw-r--r--  0 root   root       63 May  7 23:25 usr/share/man/man3/SLIST_CLASS_ENTRY.3bsd.gz
+-rw-r--r--  0 root   root       62 May  7 23:25 usr/share/man/man3/SLIST_CLASS_HEAD.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/SLIST_EMPTY.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/SLIST_ENTRY.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/SLIST_FIRST.3bsd.gz
+-rw-r--r--  0 root   root       59 May  7 23:25 usr/share/man/man3/SLIST_FOREACH.3bsd.gz
+-rw-r--r--  0 root   root       64 May  7 23:25 usr/share/man/man3/SLIST_FOREACH_FROM.3bsd.gz
+-rw-r--r--  0 root   root       69 May  7 23:25 usr/share/man/man3/SLIST_FOREACH_FROM_SAFE.3bsd.gz
+-rw-r--r--  0 root   root       64 May  7 23:25 usr/share/man/man3/SLIST_FOREACH_SAFE.3bsd.gz
+-rw-r--r--  0 root   root       56 May  7 23:25 usr/share/man/man3/SLIST_HEAD.3bsd.gz
+-rw-r--r--  0 root   root       68 May  7 23:25 usr/share/man/man3/SLIST_HEAD_INITIALIZER.3bsd.gz
+-rw-r--r--  0 root   root       56 May  7 23:25 usr/share/man/man3/SLIST_INIT.3bsd.gz
+-rw-r--r--  0 root   root       64 May  7 23:25 usr/share/man/man3/SLIST_INSERT_AFTER.3bsd.gz
+-rw-r--r--  0 root   root       63 May  7 23:25 usr/share/man/man3/SLIST_INSERT_HEAD.3bsd.gz
+-rw-r--r--  0 root   root       56 May  7 23:25 usr/share/man/man3/SLIST_NEXT.3bsd.gz
+-rw-r--r--  0 root   root       58 May  7 23:25 usr/share/man/man3/SLIST_REMOVE.3bsd.gz
+-rw-r--r--  0 root   root       64 May  7 23:25 usr/share/man/man3/SLIST_REMOVE_AFTER.3bsd.gz
+-rw-r--r--  0 root   root       63 May  7 23:25 usr/share/man/man3/SLIST_REMOVE_HEAD.3bsd.gz
+-rw-r--r--  0 root   root       66 May  7 23:25 usr/share/man/man3/SLIST_REMOVE_PREVPTR.3bsd.gz
+-rw-r--r--  0 root   root       56 May  7 23:25 usr/share/man/man3/SLIST_SWAP.3bsd.gz
+-rw-r--r--  0 root   root       56 May  7 23:25 usr/share/man/man3/SPLAY_EMPTY.3bsd.gz
+-rw-r--r--  0 root   root       56 May  7 23:25 usr/share/man/man3/SPLAY_ENTRY.3bsd.gz
+-rw-r--r--  0 root   root       55 May  7 23:25 usr/share/man/man3/SPLAY_FIND.3bsd.gz
+-rw-r--r--  0 root   root       58 May  7 23:25 usr/share/man/man3/SPLAY_FOREACH.3bsd.gz
+-rw-r--r--  0 root   root       59 May  7 23:25 usr/share/man/man3/SPLAY_GENERATE.3bsd.gz
+-rw-r--r--  0 root   root       55 May  7 23:25 usr/share/man/man3/SPLAY_HEAD.3bsd.gz
+-rw-r--r--  0 root   root       55 May  7 23:25 usr/share/man/man3/SPLAY_INIT.3bsd.gz
+-rw-r--r--  0 root   root       62 May  7 23:25 usr/share/man/man3/SPLAY_INITIALIZER.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/SPLAY_INSERT.3bsd.gz
+-rw-r--r--  0 root   root       55 May  7 23:25 usr/share/man/man3/SPLAY_LEFT.3bsd.gz
+-rw-r--r--  0 root   root       54 May  7 23:25 usr/share/man/man3/SPLAY_MAX.3bsd.gz
+-rw-r--r--  0 root   root       54 May  7 23:25 usr/share/man/man3/SPLAY_MIN.3bsd.gz
+-rw-r--r--  0 root   root       55 May  7 23:25 usr/share/man/man3/SPLAY_NEXT.3bsd.gz
+-rw-r--r--  0 root   root       60 May  7 23:25 usr/share/man/man3/SPLAY_PROTOTYPE.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/SPLAY_REMOVE.3bsd.gz
+-rw-r--r--  0 root   root       56 May  7 23:25 usr/share/man/man3/SPLAY_RIGHT.3bsd.gz
+-rw-r--r--  0 root   root       55 May  7 23:25 usr/share/man/man3/SPLAY_ROOT.3bsd.gz
+-rw-r--r--  0 root   root       64 May  7 23:25 usr/share/man/man3/STAILQ_CLASS_ENTRY.3bsd.gz
+-rw-r--r--  0 root   root       63 May  7 23:25 usr/share/man/man3/STAILQ_CLASS_HEAD.3bsd.gz
+-rw-r--r--  0 root   root       59 May  7 23:25 usr/share/man/man3/STAILQ_CONCAT.3bsd.gz
+-rw-r--r--  0 root   root       58 May  7 23:25 usr/share/man/man3/STAILQ_EMPTY.3bsd.gz
+-rw-r--r--  0 root   root       58 May  7 23:25 usr/share/man/man3/STAILQ_ENTRY.3bsd.gz
+-rw-r--r--  0 root   root       58 May  7 23:25 usr/share/man/man3/STAILQ_FIRST.3bsd.gz
+-rw-r--r--  0 root   root       60 May  7 23:25 usr/share/man/man3/STAILQ_FOREACH.3bsd.gz
+-rw-r--r--  0 root   root       65 May  7 23:25 usr/share/man/man3/STAILQ_FOREACH_FROM.3bsd.gz
+-rw-r--r--  0 root   root       70 May  7 23:25 usr/share/man/man3/STAILQ_FOREACH_FROM_SAFE.3bsd.gz
+-rw-r--r--  0 root   root       65 May  7 23:25 usr/share/man/man3/STAILQ_FOREACH_SAFE.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/STAILQ_HEAD.3bsd.gz
+-rw-r--r--  0 root   root       69 May  7 23:25 usr/share/man/man3/STAILQ_HEAD_INITIALIZER.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/STAILQ_INIT.3bsd.gz
+-rw-r--r--  0 root   root       65 May  7 23:25 usr/share/man/man3/STAILQ_INSERT_AFTER.3bsd.gz
+-rw-r--r--  0 root   root       64 May  7 23:25 usr/share/man/man3/STAILQ_INSERT_HEAD.3bsd.gz
+-rw-r--r--  0 root   root       64 May  7 23:25 usr/share/man/man3/STAILQ_INSERT_TAIL.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/STAILQ_LAST.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/STAILQ_NEXT.3bsd.gz
+-rw-r--r--  0 root   root       59 May  7 23:25 usr/share/man/man3/STAILQ_REMOVE.3bsd.gz
+-rw-r--r--  0 root   root       65 May  7 23:25 usr/share/man/man3/STAILQ_REMOVE_AFTER.3bsd.gz
+-rw-r--r--  0 root   root       64 May  7 23:25 usr/share/man/man3/STAILQ_REMOVE_HEAD.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/STAILQ_SWAP.3bsd.gz
+-rw-r--r--  0 root   root       63 May  7 23:25 usr/share/man/man3/TAILQ_CLASS_ENTRY.3bsd.gz
+-rw-r--r--  0 root   root       62 May  7 23:25 usr/share/man/man3/TAILQ_CLASS_HEAD.3bsd.gz
+-rw-r--r--  0 root   root       58 May  7 23:25 usr/share/man/man3/TAILQ_CONCAT.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/TAILQ_EMPTY.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/TAILQ_ENTRY.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/TAILQ_FIRST.3bsd.gz
+-rw-r--r--  0 root   root       59 May  7 23:25 usr/share/man/man3/TAILQ_FOREACH.3bsd.gz
+-rw-r--r--  0 root   root       64 May  7 23:25 usr/share/man/man3/TAILQ_FOREACH_FROM.3bsd.gz
+-rw-r--r--  0 root   root       69 May  7 23:25 usr/share/man/man3/TAILQ_FOREACH_FROM_SAFE.3bsd.gz
+-rw-r--r--  0 root   root       67 May  7 23:25 usr/share/man/man3/TAILQ_FOREACH_REVERSE.3bsd.gz
+-rw-r--r--  0 root   root       72 May  7 23:25 usr/share/man/man3/TAILQ_FOREACH_REVERSE_FROM.3bsd.gz
+-rw-r--r--  0 root   root       77 May  7 23:25 usr/share/man/man3/TAILQ_FOREACH_REVERSE_FROM_SAFE.3bsd.gz
+-rw-r--r--  0 root   root       72 May  7 23:25 usr/share/man/man3/TAILQ_FOREACH_REVERSE_SAFE.3bsd.gz
+-rw-r--r--  0 root   root       64 May  7 23:25 usr/share/man/man3/TAILQ_FOREACH_SAFE.3bsd.gz
+-rw-r--r--  0 root   root       56 May  7 23:25 usr/share/man/man3/TAILQ_HEAD.3bsd.gz
+-rw-r--r--  0 root   root       68 May  7 23:25 usr/share/man/man3/TAILQ_HEAD_INITIALIZER.3bsd.gz
+-rw-r--r--  0 root   root       56 May  7 23:25 usr/share/man/man3/TAILQ_INIT.3bsd.gz
+-rw-r--r--  0 root   root       64 May  7 23:25 usr/share/man/man3/TAILQ_INSERT_AFTER.3bsd.gz
+-rw-r--r--  0 root   root       65 May  7 23:25 usr/share/man/man3/TAILQ_INSERT_BEFORE.3bsd.gz
+-rw-r--r--  0 root   root       63 May  7 23:25 usr/share/man/man3/TAILQ_INSERT_HEAD.3bsd.gz
+-rw-r--r--  0 root   root       63 May  7 23:25 usr/share/man/man3/TAILQ_INSERT_TAIL.3bsd.gz
+-rw-r--r--  0 root   root       56 May  7 23:25 usr/share/man/man3/TAILQ_LAST.3bsd.gz
+-rw-r--r--  0 root   root       56 May  7 23:25 usr/share/man/man3/TAILQ_NEXT.3bsd.gz
+-rw-r--r--  0 root   root       56 May  7 23:25 usr/share/man/man3/TAILQ_PREV.3bsd.gz
+-rw-r--r--  0 root   root       58 May  7 23:25 usr/share/man/man3/TAILQ_REMOVE.3bsd.gz
+-rw-r--r--  0 root   root       56 May  7 23:25 usr/share/man/man3/TAILQ_SWAP.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/be16dec.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/be16enc.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/be32dec.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/be32enc.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/be64dec.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/be64enc.3bsd.gz
+-rw-r--r--  0 root   root       59 May  7 23:25 usr/share/man/man3/bit_alloc.3bsd.gz
+-rw-r--r--  0 root   root       59 May  7 23:25 usr/share/man/man3/bit_clear.3bsd.gz
+-rw-r--r--  0 root   root       58 May  7 23:25 usr/share/man/man3/bit_decl.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/bit_ffc.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/bit_ffs.3bsd.gz
+-rw-r--r--  0 root   root       60 May  7 23:25 usr/share/man/man3/bit_nclear.3bsd.gz
+-rw-r--r--  0 root   root       58 May  7 23:25 usr/share/man/man3/bit_nset.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/bit_set.3bsd.gz
+-rw-r--r--  0 root   root       58 May  7 23:25 usr/share/man/man3/bit_test.3bsd.gz
+-rw-r--r--  0 root   root       61 May  7 23:25 usr/share/man/man3/bitstr_size.3bsd.gz
+-rw-r--r--  0 root   root     1976 May  7 23:25 usr/share/man/man3/bitstring.3bsd.gz
+-rw-r--r--  0 root   root     1237 May  7 23:25 usr/share/man/man3/byteorder.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/le16dec.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/le16enc.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/le32dec.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/le32enc.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/le64dec.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/le64enc.3bsd.gz
+-rw-r--r--  0 root   root     5851 May  7 23:25 usr/share/man/man3/queue.3bsd.gz
+-rw-r--r--  0 root   root     1827 May  7 23:25 usr/share/man/man3/timeradd.3bsd.gz
+-rw-r--r--  0 root   root       59 May  7 23:25 usr/share/man/man3/timerclear.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/timercmp.3bsd.gz
+-rw-r--r--  0 root   root       59 May  7 23:25 usr/share/man/man3/timerisset.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/timersub.3bsd.gz
+-rw-r--r--  0 root   root       60 May  7 23:25 usr/share/man/man3/timespecadd.3bsd.gz
+-rw-r--r--  0 root   root       62 May  7 23:25 usr/share/man/man3/timespecclear.3bsd.gz
+-rw-r--r--  0 root   root       60 May  7 23:25 usr/share/man/man3/timespeccmp.3bsd.gz
+-rw-r--r--  0 root   root       62 May  7 23:25 usr/share/man/man3/timespecisset.3bsd.gz
+-rw-r--r--  0 root   root       60 May  7 23:25 usr/share/man/man3/timespecsub.3bsd.gz
+-rw-r--r--  0 root   root     4377 May  7 23:25 usr/share/man/man3/tree.3bsd.gz
+-rw-r--r--  0 root   root       55 May  7 23:25 usr/share/man/man3/getmode.3bsd.gz
+-rw-r--r--  0 root   root     2196 May  7 23:25 usr/share/man/man3/setmode.3bsd.gz
+-rw-r--r--  0 root   root     4130 May  7 23:25 usr/share/man/man3/arc4random.3bsd.gz
+-rw-r--r--  0 root   root       71 May  7 23:25 usr/share/man/man3/arc4random_addrandom.3bsd.gz
+-rw-r--r--  0 root   root       65 May  7 23:25 usr/share/man/man3/arc4random_buf.3bsd.gz
+-rw-r--r--  0 root   root       66 May  7 23:25 usr/share/man/man3/arc4random_stir.3bsd.gz
+-rw-r--r--  0 root   root       69 May  7 23:25 usr/share/man/man3/arc4random_uniform.3bsd.gz
+-rw-r--r--  0 root   root     1212 May  7 23:25 usr/share/man/man3/closefrom.3bsd.gz
+-rw-r--r--  0 root   root     2239 May  7 23:25 usr/share/man/man3/errc.3bsd.gz
+-rw-r--r--  0 root   root       50 May  7 23:25 usr/share/man/man3/verrc.3bsd.gz
+-rw-r--r--  0 root   root       51 May  7 23:25 usr/share/man/man3/vwarnc.3bsd.gz
+-rw-r--r--  0 root   root       50 May  7 23:25 usr/share/man/man3/warnc.3bsd.gz
+-rw-r--r--  0 root   root     1482 May  7 23:25 usr/share/man/man3/expand_number.3bsd.gz
+-rw-r--r--  0 root   root     1400 May  7 23:25 usr/share/man/man3/explicit_bzero.3bsd.gz
+-rw-r--r--  0 root   root     1970 May  7 23:25 usr/share/man/man3/fgetln.3bsd.gz
+-rw-r--r--  0 root   root     1880 May  7 23:25 usr/share/man/man3/fgetwln.3bsd.gz
+-rw-r--r--  0 root   root     2037 May  7 23:25 usr/share/man/man3/fparseln.3bsd.gz
+-rw-r--r--  0 root   root     1763 May  7 23:25 usr/share/man/man3/flopen.3bsd.gz
+-rw-r--r--  0 root   root     1767 May  7 23:25 usr/share/man/man3/fmtcheck.3bsd.gz
+-rw-r--r--  0 root   root     1534 May  7 23:25 usr/share/man/man3/fpurge.3bsd.gz
+-rw-r--r--  0 root   root       61 May  7 23:25 usr/share/man/man3/freezero.3bsd.gz
+-rw-r--r--  0 root   root     2463 May  7 23:25 usr/share/man/man3/funopen.3bsd.gz
+-rw-r--r--  0 root   root     1615 May  7 23:25 usr/share/man/man3/getbsize.3bsd.gz
+-rw-r--r--  0 root   root     1669 May  7 23:25 usr/share/man/man3/getpeereid.3bsd.gz
+-rw-r--r--  0 root   root       71 May  7 23:25 usr/share/man/man3/dehumanize_number.3bsd.gz
+-rw-r--r--  0 root   root     2420 May  7 23:25 usr/share/man/man3/humanize_number.3bsd.gz
+-rw-r--r--  0 root   root     2507 May  7 23:25 usr/share/man/man3/md5.3bsd.gz
+-rw-r--r--  0 root   root     1514 May  7 23:25 usr/share/man/man3/nlist.3bsd.gz
+-rw-r--r--  0 root   root     2781 May  7 23:25 usr/share/man/man3/pidfile.3bsd.gz
+-rw-r--r--  0 root   root       61 May  7 23:25 usr/share/man/man3/pidfile_close.3bsd.gz
+-rw-r--r--  0 root   root       60 May  7 23:25 usr/share/man/man3/pidfile_open.3bsd.gz
+-rw-r--r--  0 root   root       62 May  7 23:25 usr/share/man/man3/pidfile_remove.3bsd.gz
+-rw-r--r--  0 root   root       61 May  7 23:25 usr/share/man/man3/pidfile_write.3bsd.gz
+-rw-r--r--  0 root   root     1816 May  7 23:25 usr/share/man/man3/setproctitle.3bsd.gz
+-rw-r--r--  0 root   root       70 May  7 23:25 usr/share/man/man3/setproctitle_init.3bsd.gz
+-rw-r--r--  0 root   root     1443 May  7 23:25 usr/share/man/man3/getprogname.3bsd.gz
+-rw-r--r--  0 root   root       63 May  7 23:25 usr/share/man/man3/setprogname.3bsd.gz
+-rw-r--r--  0 root   root     1634 May  7 23:25 usr/share/man/man3/pwcache.3bsd.gz
+-rw-r--r--  0 root   root       62 May  7 23:25 usr/share/man/man3/gid_from_group.3bsd.gz
+-rw-r--r--  0 root   root       61 May  7 23:25 usr/share/man/man3/uid_from_user.3bsd.gz
+-rw-r--r--  0 root   root       62 May  7 23:25 usr/share/man/man3/group_from_gid.3bsd.gz
+-rw-r--r--  0 root   root       61 May  7 23:25 usr/share/man/man3/user_from_uid.3bsd.gz
+-rw-r--r--  0 root   root     2430 May  7 23:25 usr/share/man/man3/readpassphrase.3bsd.gz
+-rw-r--r--  0 root   root     2747 May  7 23:25 usr/share/man/man3/reallocarray.3bsd.gz
+-rw-r--r--  0 root   root     1811 May  7 23:25 usr/share/man/man3/reallocf.3bsd.gz
+-rw-r--r--  0 root   root       66 May  7 23:25 usr/share/man/man3/recallocarray.3bsd.gz
+-rw-r--r--  0 root   root     2475 May  7 23:25 usr/share/man/man3/heapsort.3bsd.gz
+-rw-r--r--  0 root   root       58 May  7 23:25 usr/share/man/man3/mergesort.3bsd.gz
+-rw-r--r--  0 root   root     2309 May  7 23:25 usr/share/man/man3/radixsort.3bsd.gz
+-rw-r--r--  0 root   root       60 May  7 23:25 usr/share/man/man3/sradixsort.3bsd.gz
+-rw-r--r--  0 root   root       57 May  7 23:25 usr/share/man/man3/sl_add.3bsd.gz
+-rw-r--r--  0 root   root       60 May  7 23:25 usr/share/man/man3/sl_delete.3bsd.gz
+-rw-r--r--  0 root   root       58 May  7 23:25 usr/share/man/man3/sl_find.3bsd.gz
+-rw-r--r--  0 root   root       58 May  7 23:25 usr/share/man/man3/sl_free.3bsd.gz
+-rw-r--r--  0 root   root       58 May  7 23:25 usr/share/man/man3/sl_init.3bsd.gz
+-rw-r--r--  0 root   root     1737 May  7 23:25 usr/share/man/man3/stringlist.3bsd.gz
+-rw-r--r--  0 root   root       55 May  7 23:25 usr/share/man/man3/strlcat.3bsd.gz
+-rw-r--r--  0 root   root     2126 May  7 23:25 usr/share/man/man3/strlcpy.3bsd.gz
+-rw-r--r--  0 root   root     2114 May  7 23:25 usr/share/man/man3/strmode.3bsd.gz
+-rw-r--r--  0 root   root     1686 May  7 23:25 usr/share/man/man3/strnstr.3bsd.gz
+-rw-r--r--  0 root   root     2879 May  7 23:25 usr/share/man/man3/strtoi.3bsd.gz
+-rw-r--r--  0 root   root     2880 May  7 23:25 usr/share/man/man3/strtou.3bsd.gz
+-rw-r--r--  0 root   root     2085 May  7 23:25 usr/share/man/man3/strtonum.3bsd.gz
+-rw-r--r--  0 root   root       55 May  7 23:25 usr/share/man/man3/strnunvis.3bsd.gz
+-rw-r--r--  0 root   root       51 May  7 23:25 usr/share/man/man3/strnvis.3bsd.gz
+-rw-r--r--  0 root   root       54 May  7 23:25 usr/share/man/man3/strunvis.3bsd.gz
+-rw-r--r--  0 root   root       50 May  7 23:25 usr/share/man/man3/strvis.3bsd.gz
+-rw-r--r--  0 root   root       51 May  7 23:25 usr/share/man/man3/strvisx.3bsd.gz
+-rw-r--r--  0 root   root     2984 May  7 23:25 usr/share/man/man3/unvis.3bsd.gz
+-rw-r--r--  0 root   root     4667 May  7 23:25 usr/share/man/man3/vis.3bsd.gz
+-rw-r--r--  0 root   root       55 May  7 23:25 usr/share/man/man3/wcslcat.3bsd.gz
+-rw-r--r--  0 root   root     1474 May  7 23:25 usr/share/man/man3/wcslcpy.3bsd.gz
+drwxr-xr-x  0 root   root        0 May  7 23:25 usr/include/bsd/
+drwxr-xr-x  0 root   root        0 May  7 23:25 usr/include/bsd/netinet/
+drwxr-xr-x  0 root   root        0 May  7 23:25 usr/include/bsd/sys/
+-rw-r--r--  0 root   root     1596 May  7 23:25 usr/include/bsd/bitstring.h
+-rw-r--r--  0 root   root     1880 May  7 23:25 usr/include/bsd/bsd.h
+-rw-r--r--  0 root   root     1992 May  7 23:25 usr/include/bsd/inttypes.h
+-rw-r--r--  0 root   root     3304 May  7 23:25 usr/include/bsd/libutil.h
+-rw-r--r--  0 root   root     3324 May  7 23:25 usr/include/bsd/stdio.h
+-rw-r--r--  0 root   root     3488 May  7 23:25 usr/include/bsd/stdlib.h
+-rw-r--r--  0 root   root     2246 May  7 23:25 usr/include/bsd/string.h
+-rw-r--r--  0 root   root     2620 May  7 23:25 usr/include/bsd/unistd.h
+-rw-r--r--  0 root   root     2138 May  7 23:25 usr/include/bsd/wchar.h
+-rw-r--r--  0 root   root     2790 May  7 23:25 usr/include/bsd/err.h
+-rw-r--r--  0 root   root     1707 May  7 23:25 usr/include/bsd/getopt.h
+-rw-r--r--  0 root   root     1548 May  7 23:25 usr/include/bsd/md5.h
+-rw-r--r--  0 root   root     3519 May  7 23:25 usr/include/bsd/nlist.h
+-rw-r--r--  0 root   root     1809 May  7 23:25 usr/include/bsd/readpassphrase.h
+-rw-r--r--  0 root   root     1890 May  7 23:25 usr/include/bsd/grp.h
+-rw-r--r--  0 root   root     1895 May  7 23:25 usr/include/bsd/pwd.h
+-rw-r--r--  0 root   root     2105 May  7 23:25 usr/include/bsd/stringlist.h
+-rw-r--r--  0 root   root     3153 May  7 23:25 usr/include/bsd/timeconv.h
+-rw-r--r--  0 root   root     5928 May  7 23:25 usr/include/bsd/vis.h
+-rw-r--r--  0 root   root     5001 May  7 23:25 usr/include/bsd/sys/bitstring.h
+-rw-r--r--  0 root   root     3900 May  7 23:25 usr/include/bsd/sys/endian.h
+-rw-r--r--  0 root   root     1844 May  7 23:25 usr/include/bsd/sys/param.h
+-rw-r--r--  0 root   root     1642 May  7 23:25 usr/include/bsd/sys/poll.h
+-rw-r--r--  0 root   root    29515 May  7 23:25 usr/include/bsd/sys/queue.h
+-rw-r--r--  0 root   root     4424 May  7 23:25 usr/include/bsd/sys/time.h
+-rw-r--r--  0 root   root    25853 May  7 23:25 usr/include/bsd/sys/tree.h
+-rw-r--r--  0 root   root     7129 May  7 23:25 usr/include/bsd/sys/cdefs.h
+-rw-r--r--  0 root   root     8086 May  7 23:25 usr/include/bsd/netinet/ip_icmp.h
+=======> Building '/home/devel/packages/libbsd#0.12.2-1.x86_64.pkg.tar.zst' succeeded.
+prt-get: Using PKGMK_PACKAGE_DIR: /home/devel/packages
+prt-get: reinstalling libbsd 0.12.2-1
+prt-get: /usr/bin/pkgadd -u libbsd#0.12.2-1.x86_64.pkg.tar.zst
+prt-get: build done Tue May  7 23:25:47 2024
+
