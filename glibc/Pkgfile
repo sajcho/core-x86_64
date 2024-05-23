@@ -5,14 +5,14 @@
 
 name=glibc
 version=2.39
-release=1
+release=2
 source=(https://ftp.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.1.tar.xz \
+	https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.1.tar.xz \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
 	# install kernel headers
-	cd $SRC/linux-6.7.1
+	cd $SRC/linux-6.9.1
 
 	make mrproper
 	make ARCH=$CARCH INSTALL_HDR_PATH=$PKG/usr headers_install

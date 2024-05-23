@@ -150,6 +150,7 @@ drwxr-xr-x	root/root	usr/include/asm/
 -rw-r--r--	root/root	usr/include/asm/resource.h
 -rw-r--r--	root/root	usr/include/asm/sembuf.h
 -rw-r--r--	root/root	usr/include/asm/setup.h
+-rw-r--r--	root/root	usr/include/asm/setup_data.h
 -rw-r--r--	root/root	usr/include/asm/sgx.h
 -rw-r--r--	root/root	usr/include/asm/shmbuf.h
 -rw-r--r--	root/root	usr/include/asm/sigcontext.h
@@ -430,6 +431,7 @@ drwxr-xr-x	root/root	usr/include/drm/
 -rw-r--r--	root/root	usr/include/drm/nouveau_drm.h
 -rw-r--r--	root/root	usr/include/drm/omap_drm.h
 -rw-r--r--	root/root	usr/include/drm/panfrost_drm.h
+-rw-r--r--	root/root	usr/include/drm/pvr_drm.h
 -rw-r--r--	root/root	usr/include/drm/qaic_accel.h
 -rw-r--r--	root/root	usr/include/drm/qxl_drm.h
 -rw-r--r--	root/root	usr/include/drm/radeon_drm.h
@@ -439,6 +441,7 @@ drwxr-xr-x	root/root	usr/include/drm/
 -rw-r--r--	root/root	usr/include/drm/vgem_drm.h
 -rw-r--r--	root/root	usr/include/drm/virtgpu_drm.h
 -rw-r--r--	root/root	usr/include/drm/vmwgfx_drm.h
+-rw-r--r--	root/root	usr/include/drm/xe_drm.h
 -rw-r--r--	root/root	usr/include/elf.h
 -rw-r--r--	root/root	usr/include/endian.h
 -rw-r--r--	root/root	usr/include/envz.h
@@ -531,13 +534,13 @@ drwxr-xr-x	root/root	usr/include/linux/android/
 -rw-r--r--	root/root	usr/include/linux/bcm933xx_hcs.h
 -rw-r--r--	root/root	usr/include/linux/bfs_fs.h
 -rw-r--r--	root/root	usr/include/linux/binfmts.h
+-rw-r--r--	root/root	usr/include/linux/bits.h
 -rw-r--r--	root/root	usr/include/linux/blkpg.h
 -rw-r--r--	root/root	usr/include/linux/blktrace_api.h
 -rw-r--r--	root/root	usr/include/linux/blkzoned.h
 -rw-r--r--	root/root	usr/include/linux/bpf.h
 -rw-r--r--	root/root	usr/include/linux/bpf_common.h
 -rw-r--r--	root/root	usr/include/linux/bpf_perf_event.h
--rw-r--r--	root/root	usr/include/linux/bpfilter.h
 -rw-r--r--	root/root	usr/include/linux/bpqether.h
 -rw-r--r--	root/root	usr/include/linux/bsg.h
 -rw-r--r--	root/root	usr/include/linux/bt-bmc.h
@@ -734,7 +737,6 @@ drwxr-xr-x	root/root	usr/include/linux/iio/
 -rw-r--r--	root/root	usr/include/linux/ioam6_genl.h
 -rw-r--r--	root/root	usr/include/linux/ioam6_iptunnel.h
 -rw-r--r--	root/root	usr/include/linux/ioctl.h
--rw-r--r--	root/root	usr/include/linux/iommu.h
 -rw-r--r--	root/root	usr/include/linux/iommufd.h
 -rw-r--r--	root/root	usr/include/linux/ioprio.h
 -rw-r--r--	root/root	usr/include/linux/ip.h
@@ -781,6 +783,7 @@ drwxr-xr-x	root/root	usr/include/linux/isdn/
 -rw-r--r--	root/root	usr/include/linux/loadpin.h
 -rw-r--r--	root/root	usr/include/linux/loop.h
 -rw-r--r--	root/root	usr/include/linux/lp.h
+-rw-r--r--	root/root	usr/include/linux/lsm.h
 -rw-r--r--	root/root	usr/include/linux/lwtunnel.h
 -rw-r--r--	root/root	usr/include/linux/magic.h
 -rw-r--r--	root/root	usr/include/linux/major.h
@@ -1003,6 +1006,7 @@ drwxr-xr-x	root/root	usr/include/linux/nfsd/
 -rw-r--r--	root/root	usr/include/linux/nl80211.h
 -rw-r--r--	root/root	usr/include/linux/npcm-video.h
 -rw-r--r--	root/root	usr/include/linux/nsfs.h
+-rw-r--r--	root/root	usr/include/linux/nsm.h
 -rw-r--r--	root/root	usr/include/linux/nubus.h
 -rw-r--r--	root/root	usr/include/linux/nvme_ioctl.h
 -rw-r--r--	root/root	usr/include/linux/nvram.h
@@ -1145,7 +1149,6 @@ drwxr-xr-x	root/root	usr/include/linux/tc_act/
 -rw-r--r--	root/root	usr/include/linux/tc_act/tc_gact.h
 -rw-r--r--	root/root	usr/include/linux/tc_act/tc_gate.h
 -rw-r--r--	root/root	usr/include/linux/tc_act/tc_ife.h
--rw-r--r--	root/root	usr/include/linux/tc_act/tc_ipt.h
 -rw-r--r--	root/root	usr/include/linux/tc_act/tc_mirred.h
 -rw-r--r--	root/root	usr/include/linux/tc_act/tc_mpls.h
 -rw-r--r--	root/root	usr/include/linux/tc_act/tc_nat.h
@@ -1167,6 +1170,7 @@ drwxr-xr-x	root/root	usr/include/linux/tc_ematch/
 -rw-r--r--	root/root	usr/include/linux/tee.h
 -rw-r--r--	root/root	usr/include/linux/termios.h
 -rw-r--r--	root/root	usr/include/linux/thermal.h
+-rw-r--r--	root/root	usr/include/linux/thp7312.h
 -rw-r--r--	root/root	usr/include/linux/time.h
 -rw-r--r--	root/root	usr/include/linux/time_types.h
 -rw-r--r--	root/root	usr/include/linux/timerfd.h
@@ -1231,6 +1235,7 @@ drwxr-xr-x	root/root	usr/include/linux/usb/
 -rw-r--r--	root/root	usr/include/linux/vdpa.h
 -rw-r--r--	root/root	usr/include/linux/vduse.h
 -rw-r--r--	root/root	usr/include/linux/version.h
+-rw-r--r--	root/root	usr/include/linux/vesa.h
 -rw-r--r--	root/root	usr/include/linux/veth.h
 -rw-r--r--	root/root	usr/include/linux/vfio.h
 -rw-r--r--	root/root	usr/include/linux/vfio_ccw.h
@@ -1403,6 +1408,8 @@ drwxr-xr-x	root/root	usr/include/rdma/hfi/
 -rw-r--r--	root/root	usr/include/re_comp.h
 -rw-r--r--	root/root	usr/include/regex.h
 -rw-r--r--	root/root	usr/include/regexp.h
+drwxr-xr-x	root/root	usr/include/regulator/
+-rw-r--r--	root/root	usr/include/regulator/regulator.h
 -rw-r--r--	root/root	usr/include/resolv.h
 drwxr-xr-x	root/root	usr/include/rpc/
 -rw-r--r--	root/root	usr/include/rpc/netdb.h
@@ -1443,6 +1450,7 @@ drwxr-xr-x	root/root	usr/include/sound/intel/
 drwxr-xr-x	root/root	usr/include/sound/intel/avs/
 -rw-r--r--	root/root	usr/include/sound/intel/avs/tokens.h
 -rw-r--r--	root/root	usr/include/sound/sb16_csp.h
+-rw-r--r--	root/root	usr/include/sound/scarlett2.h
 -rw-r--r--	root/root	usr/include/sound/sfnt_info.h
 -rw-r--r--	root/root	usr/include/sound/skl-tplg-interface.h
 -rw-r--r--	root/root	usr/include/sound/snd_ar_tokens.h
