@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ9BqxAgwhQm/w4mZZV2Z8CWSfW4iivbE5M3pgScsHw3SQ2ZHdMQUMVCrWegWm7AthCFdXffQawHcQkZ5iN4XRwY=
-SHA256 (Pkgfile) = 0df3f51cf7bd1e937361795321c6112614139081d3bee10bbff7b10953450315
-SHA256 (.footprint) = d92b1cc842cc22ce85244d71787d441f5c4bc2e986a7b71e00256acaebd9646b
-SHA256 (e2fsprogs-1.47.0.tar.xz) = 144af53f2bbd921cef6f8bea88bb9faddca865da3fbc657cc9b4d2001097d5db
+RWQ0XEjKMixyZx0PQas4+GksWKEE88Ms7/RxGT6oNpqaBzVP8SakfpYcHH6ohpgTOi9sHlkULg/AItF/Ua78Q9DueGsuJYni/w8=
+SHA256 (Pkgfile) = 61036d40cf8f73cc256e9404b1e5b7e2ad2b9abbba587fbf220ac13bf82bf0ca
+SHA256 (.footprint) = 1443ee2946eb26fb14bb54cb79ed0744254ea75b1f1bcc82fb225e84c8ecf359
+SHA256 (e2fsprogs-1.47.1.tar.xz) = 5a33dc047fd47284bca4bb10c13cfe7896377ae3d01cb81a05d406025d99e0d1

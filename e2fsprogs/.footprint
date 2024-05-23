@@ -12,6 +12,7 @@ lrwxrwxrwx	root/root	lib/libss.so.2 -> libss.so.2.0
 -rwxr-xr-x	root/root	lib/libss.so.2.0
 drwxr-xr-x	root/root	lib/udev/
 drwxr-xr-x	root/root	lib/udev/rules.d/
+-rw-r--r--	root/root	lib/udev/rules.d/64-ext4.rules
 -rw-r--r--	root/root	lib/udev/rules.d/96-e2scrub.rules
 drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/badblocks
