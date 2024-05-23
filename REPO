@@ -433,8 +433,8 @@ f:5cbd8f09cffd59a16df64175ef1446c7:man-db/.footprint
 f:79092488ea1d8569b97483ce08d16636:man-db/.signature
 f:8ad761cd683dd1380ac1731acae00f76:man-db/Pkgfile
 f:5de02b8b4ea0d0ed1485212b87a3e15f:sqlite3/.footprint
-f:d976b9b5a9d125bcab948b32aa809e60:sqlite3/.signature
-f:92e70da29e3e0f31f035d21bd274766e:sqlite3/Pkgfile
+f:bb846adfa0b4d2a39884af9d37a5968f:sqlite3/.signature
+f:429de5a2bce3457e3a0f06ce1535a3bc:sqlite3/Pkgfile
 f:a3536b3710a738086d1acbf20fd0df13:sed/.footprint
 f:d120f6b17989931b6297044cecfa24d2:sed/.signature
 f:bb8562334678ad7a348cb35f2bae6df4:sed/Pkgfile
