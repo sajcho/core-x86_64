@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=man-pages
-version=6.7
+version=6.8
 release=1
 source=(http://www.kernel.org/pub/linux/docs/${name}/${name}-${version}.tar.xz \
 	http://www.kernel.org/pub/linux/docs/${name}/${name}-posix/${name}-posix-2017-a.tar.xz)
