@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ1F2WoNed7t6Pzk/RvnuJNwgxJrt8/v8MyFmpv6q3NvBEuANNUXEQIhl+ErAv0KCXbITRw+M61WtUbBITlKdQAg=
-SHA256 (Pkgfile) = eca2ce75aa60e40d61462b4003a297a87e4a0d5ab531d0dd04e5929f937be265
-SHA256 (.footprint) = e4ee60ec57d58c10f770165d557ea4a3a6a1d185e1448406050f69bf4e6a482f
-SHA256 (libxml2-2.12.6.tar.xz) = 889c593a881a3db5fdd96cc9318c87df34eb648edfc458272ad46fd607353fbb
+RWQ0XEjKMixyZ38tZkqL9FWaTsw939urGNehyCvYlbb28ALc1CRmrgkBvJm155IvybZ54HwRKOXFD1MWxdDK8uLT8KLOyTzpkgU=
+SHA256 (Pkgfile) = 9dd7539d718fd88beacc86130d31ccd91a7d4ca6d1adcea3c1856902732ce074
+SHA256 (.footprint) = 28542bd569b8b4bc210a294c94ee71e24245b00a9b5bde1cbcbf3a1b34f11dae
+SHA256 (libxml2-2.12.7.tar.xz) = 24ae78ff1363a973e6d8beba941a7945da2ac056e19b53956aeb6927fd6cfb56
