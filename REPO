@@ -387,10 +387,10 @@ f:0cbf3dc59cf5d453b501d738204cfa00:lzo/Pkgfile
 f:10885d6e20214150376c3e22eb368202:xz/.footprint
 f:60eec8a7705bf4b8cbef6225aa0885e8:xz/.signature
 f:c14627388c8b730d403402fc74b14bbe:xz/Pkgfile
-f:6af033f9ed5b3b8d9550b41c4163e9f6:libcap-ng/libcap-ng-0.8.3-apply-disable.patch
+f:d62bab4069691fc264aa74b76e67bac9:libcap-ng/apply-disable.patch
 f:cf760a372e7688196d1b3e9e34abab7c:libcap-ng/.footprint
-f:4148d723a1ed72b028097ad3e7187999:libcap-ng/.signature
-f:afa75baadd87a226177d6517afcda901:libcap-ng/Pkgfile
+f:bee0baa237cc67893d1c6556acb1fd27:libcap-ng/.signature
+f:c38870b31a8f0e26b17b65d9ee6ad283:libcap-ng/Pkgfile
 f:aead0804ad94cde8fc7cda5b49878750:automake/.footprint
 f:ee9c629a213a4ce6d2423b9798a44355:automake/.signature
 f:11ce08b735facac282313c60fe3fc9d7:automake/Pkgfile
@@ -447,9 +447,9 @@ f:9ba5bfbcff18cfbf70284953969e1d2a:socklog/patches-fix-build-warnings.patch
 f:a0af182bf92fdd78e3a6c12e361ba2c6:socklog/.footprint
 f:52aceac262b353de09a66c7fb759f4cf:socklog/.signature
 f:6a951c389ebe1d2edc81083646437c0b:socklog/Pkgfile
-f:5510770d0fd663c1873bf1208bc603c2:isl/.footprint
-f:bb2a96aa37c2f712353747107ab98c1c:isl/.signature
-f:ff02f5e96fd0eef5a4524b6205dfe8d4:isl/Pkgfile
+f:897927be408484c5e452bd405493a33a:isl/.footprint
+f:691aa55e98a73f602c8019101c73befe:isl/.signature
+f:884b08b5ea2395cb18f96de81092b819:isl/Pkgfile
 f:32248d3becedd8e01816be2c3a698ecf:bash/.footprint
 f:7d2098635b10ea3b772f70ec0555b0ca:bash/profile
 f:12d2cc205f9acd835264fe92574253f6:bash/.signature
@@ -681,8 +681,8 @@ f:23bad69a803040ec1f85215b016390e1:mpdecimal/.footprint
 f:f8f70f934183d835d2b9a2dd58136c0f:mpdecimal/.signature
 f:3ee5fc05902fb124830bc45872a5fa28:mpdecimal/Pkgfile
 f:a98cb3bec29ec19898280d032258b09a:signify3/.footprint
-f:7e7d1e15b16845475ee18cd2ca36843d:signify3/.signature
-f:356291eec103387a38d45267c1ca26be:signify3/Pkgfile
+f:4d424111dbdcde9d30912e47e9cffc1f:signify3/.signature
+f:e74d9202b2c5db6995ee356619b68336:signify3/Pkgfile
 f:3e155d4a7adb32da44665179758ec66b:ed/.footprint
 f:34adfa932a658508465ebe1eef6658b5:ed/.signature
 f:d532e767f86f8cf404b3cb3bd92524e1:ed/Pkgfile
