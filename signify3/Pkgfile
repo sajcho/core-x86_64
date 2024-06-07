@@ -5,7 +5,7 @@
 
 name=signify3
 _realname=signify
-version=31
+version=32
 release=1
 source=(https://github.com/aperezdc/${_realname}/archive/v${version}/${_realname}-${version}.tar.gz)
 
