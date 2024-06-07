@@ -3,9 +3,9 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=xz
-version=5.4.6
+version=5.6.2
 release=1
-source=(https://anduin.linuxfromscratch.org/LFS/${name}-${version}.tar.xz)
+source=(https://github.com/tukaani-project/xz/releases/download/v${version}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
@@ -14,14 +14,15 @@ build() {
 		--build=$CHOST \
 		--host=$CHOST \
 		--prefix=/usr \
+		--enable-threads \
+		--enable-werror \
+		--disable-doc \
 		--disable-nls \
 		--disable-static
 
 	make V=1
 
 	make DESTDIR=$PKG install
-
-	rm -r $PKG/usr/share/doc/
 
 	find $PKG -type f -name '*.la' -delete
 }
