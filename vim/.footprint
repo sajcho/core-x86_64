@@ -51,6 +51,7 @@ drwxr-xr-x	root/root	usr/share/vim/autoload/dist/
 -rw-r--r--	root/root	usr/share/vim/autoload/getscript.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/gnat.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/gzip.vim
+-rw-r--r--	root/root	usr/share/vim/autoload/hare.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/haskellcomplete.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/htmlcomplete.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/javascriptcomplete.vim
@@ -93,9 +94,6 @@ drwxr-xr-x	root/root	usr/share/vim/autoload/xml/
 -rw-r--r--	root/root	usr/share/vim/autoload/xml/xsl.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/xmlcomplete.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/xmlformat.vim
-drwxr-xr-x	root/root	usr/share/vim/autoload/zig/
--rw-r--r--	root/root	usr/share/vim/autoload/zig/create_cmdidxs.vim
--rw-r--r--	root/root	usr/share/vim/autoload/zig/create_nvcmdidxs.vim
 -rw-r--r--	root/root	usr/share/vim/autoload/zip.vim
 -rw-r--r--	root/root	usr/share/vim/bugreport.vim
 drwxr-xr-x	root/root	usr/share/vim/colors/
@@ -266,6 +264,7 @@ drwxr-xr-x	root/root	usr/share/vim/doc/
 -rw-r--r--	root/root	usr/share/vim/doc/fold.txt
 -rw-r--r--	root/root	usr/share/vim/doc/ft_ada.txt
 -rw-r--r--	root/root	usr/share/vim/doc/ft_context.txt
+-rw-r--r--	root/root	usr/share/vim/doc/ft_hare.txt
 -rw-r--r--	root/root	usr/share/vim/doc/ft_mp.txt
 -rw-r--r--	root/root	usr/share/vim/doc/ft_ps1.txt
 -rw-r--r--	root/root	usr/share/vim/doc/ft_raku.txt
@@ -520,6 +519,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/haml.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/hamster.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/hare.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/haredoc.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/haskell.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/heex.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/help.vim
@@ -552,6 +552,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/kconfig.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/kotlin.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/kwt.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/lc.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/ld.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/less.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/lftp.vim
@@ -642,6 +643,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/racc.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/racket.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/raku.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/rasi.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/readline.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/registry.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/requirements.vim
@@ -754,7 +756,6 @@ drwxr-xr-x	root/root	usr/share/vim/indent/
 -rw-r--r--	root/root	usr/share/vim/indent/ada.vim
 -rw-r--r--	root/root	usr/share/vim/indent/ant.vim
 -rw-r--r--	root/root	usr/share/vim/indent/arduino.vim
--rw-r--r--	root/root	usr/share/vim/indent/asm.vim
 -rw-r--r--	root/root	usr/share/vim/indent/astro.vim
 -rw-r--r--	root/root	usr/share/vim/indent/automake.vim
 -rw-r--r--	root/root	usr/share/vim/indent/awk.vim
@@ -1285,6 +1286,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/haml.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/hamster.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/hare.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/haredoc.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/haskell.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/haste.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/hastepreproc.vim
@@ -1531,6 +1533,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/modula2/opt/
 -rw-r--r--	root/root	usr/share/vim/syntax/raku.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/raml.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/rapid.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/rasi.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/ratpoison.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/rc.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/rcs.vim
