@@ -4,7 +4,7 @@
 # Depends on:	curl libpcre2
 
 name=git
-version=2.45.1
+version=2.45.2
 release=1
 source=(https://www.kernel.org/pub/software/scm/git/git-{,manpages-}${version}.tar.xz
 	git.driver)
