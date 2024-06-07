@@ -4,8 +4,8 @@
 # Depends on:	gmp
 
 name=isl
-version=0.24
-release=2
+version=0.26
+release=1
 source=(https://downloads.sourceforge.net/project/libisl/${name}-${version}.tar.xz)
 
 build() {
