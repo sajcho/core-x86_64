@@ -3,16 +3,16 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=libcap-ng
-version=0.8.3
+version=0.8.5
 release=1
 source=(https://people.redhat.com/sgrubb/${name}/${name}-${version}.tar.gz \
-	${name}-${version}-apply-disable.patch)
+	apply-disable.patch)
 
 build() {
 	cd ${name}-${version}
 
 	# Upstream: Fedora patch
-	patch -p1 -i $SRC/${name}-${version}-apply-disable.patch
+	patch -p1 -i $SRC/apply-disable.patch
 
 	./configure \
 		--prefix=/usr \

@@ -1,6 +1,6 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZzdpwerNavSfbPc/14U2xGZG8X48v5EB/L7Hq977MsMjDOo4OrePuHh4g1PHc0JqoJ05X8WN6UXvLUaKGVUqcgM=
-SHA256 (Pkgfile) = 43c236cde914dfa87de1a2b88bd55a23b7f98c83497612dffe2a4938dfacc362
+RWQ0XEjKMixyZ2q4UhhlwzIiANVPGed80JgRGeSDkCQSYZ6cfYXcWAgtq2abUNnB5RjPyntsCgRmMwNgvIEVgB//NTEo2/BljwM=
+SHA256 (Pkgfile) = 27b0394bd1eaed2a4ddacb096ddbf9067a0f911627aef665b696a3463c85f38f
 SHA256 (.footprint) = e65c35afa67f9d5b01d44c56ca3381422f17fefd3aeec72e67ae1bdb3320c378
-SHA256 (libcap-ng-0.8.3.tar.gz) = bed6f6848e22bb2f83b5f764b2aef0ed393054e803a8e3a8711cb2a39e6b492d
-SHA256 (libcap-ng-0.8.3-apply-disable.patch) = 271f00bf4316d3db5e0a29fbe860198249e62aaff726ddd2f6292e6e68250995
+SHA256 (libcap-ng-0.8.5.tar.gz) = 3ba5294d1cbdfa98afaacfbc00b6af9ed2b83e8a21817185dfd844cc8c7ac6ff
+SHA256 (apply-disable.patch) = ea03209a708ff2ddcbcf158d377e7416a83d21eb3c4d5be4347ecd6cf892f92d
