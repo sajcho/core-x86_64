@@ -409,10 +409,9 @@ f:3b0ac19785dd07a6a0c497f4f5eaf185:bindutils/utils.patch
 f:d21963552e877968012854321a3acbd4:console-font-terminus/.footprint
 f:a91f7ac471fdaf29d7f363e113d51e49:console-font-terminus/.signature
 f:be5c4452d7f4097dc20b2cc06bb3cafd:console-font-terminus/Pkgfile
-f:057b5a6e2ac7136b2d339b5287136b11:openssl3/CVE-2024-4603.patch
-f:e76ad43aed3de2e8bd61debfb9eb3e18:openssl3/.footprint
-f:0cc34d3e24a53c894ce154a82d649ae5:openssl3/.signature
-f:11f12e8b9018229e0e7f866cdc533a9d:openssl3/Pkgfile
+f:c8150a61e0023a252bb4ab01bd8d60d5:openssl3/.footprint
+f:85787487a184c5038659a001a11f1d16:openssl3/.signature
+f:079ae5a6c0d4276fe9ea11c38df90b83:openssl3/Pkgfile
 f:91f85842d2118003ee465c34259047e6:openssl3/mksslcert.sh
 f:089085b6322f7d3bb6f073790e127a99:zstd/disable-warning-decompression-multi-thread.patch
 f:2c92eeb97437aca745f356ff43cedb84:zstd/.footprint
