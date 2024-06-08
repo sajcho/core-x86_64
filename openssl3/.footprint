@@ -4759,6 +4759,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set_security_callback.3ssl.gz -> SSL
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set_security_level.3ssl.gz -> SSL_CTX_set_security_level.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/SSL_set_session.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set_session_id_context.3ssl.gz -> SSL_CTX_set_session_id_context.3ssl.gz
+-rw-r--r--	root/root	usr/share/man/man3/SSL_set_session_secret_cb.3ssl.gz
 -rw-r--r--	root/root	usr/share/man/man3/SSL_set_shutdown.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set_split_send_fragment.3ssl.gz -> SSL_CTX_set_split_send_fragment.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/SSL_set_srp_server_param.3ssl.gz -> SSL_CTX_set_srp_password.3ssl.gz
@@ -5950,6 +5951,7 @@ lrwxrwxrwx	root/root	usr/share/man/man3/sk_TYPE_unshift.3ssl.gz -> DEFINE_STACK_
 lrwxrwxrwx	root/root	usr/share/man/man3/sk_TYPE_value.3ssl.gz -> DEFINE_STACK_OF.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/sk_TYPE_zero.3ssl.gz -> DEFINE_STACK_OF.3ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man3/ssl_ct_validation_cb.3ssl.gz -> SSL_CTX_set_ct_validation_callback.3ssl.gz
+lrwxrwxrwx	root/root	usr/share/man/man3/tls_session_secret_cb_fn.3ssl.gz -> SSL_set_session_secret_cb.3ssl.gz
 drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/config.5ssl.gz
 -rw-r--r--	root/root	usr/share/man/man5/fips_config.5ssl.gz
@@ -6077,6 +6079,7 @@ lrwxrwxrwx	root/root	usr/share/man/man7/OPENSSL_NO_DEPRECATED.7ssl.gz -> openssl
 -rw-r--r--	root/root	usr/share/man/man7/OSSL_PROVIDER-default.7ssl.gz
 -rw-r--r--	root/root	usr/share/man/man7/OSSL_PROVIDER-legacy.7ssl.gz
 -rw-r--r--	root/root	usr/share/man/man7/OSSL_PROVIDER-null.7ssl.gz
+-rw-r--r--	root/root	usr/share/man/man7/OSSL_STORE-winstore.7ssl.gz
 -rw-r--r--	root/root	usr/share/man/man7/RAND.7ssl.gz
 -rw-r--r--	root/root	usr/share/man/man7/RSA-PSS.7ssl.gz
 lrwxrwxrwx	root/root	usr/share/man/man7/RSA.7ssl.gz -> EVP_PKEY-RSA.7ssl.gz

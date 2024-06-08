@@ -5,16 +5,13 @@
 
 name=openssl3
 _realname=openssl
-version=3.3.0
-release=2
+version=3.3.1
+release=1
 source=(https://www.openssl.org/source/${_realname}-${version}.tar.gz \
-	CVE-2024-4603.patch \
 	mksslcert.sh)
 
 build() {
 	cd ${_realname}-${version}
-
-	patch -p1 -i $SRC/CVE-2024-4603.patch
 
 	perl ./Configure \
 		--prefix=/usr \
