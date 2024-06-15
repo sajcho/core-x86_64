@@ -372,9 +372,9 @@ f:2acc18f2b0f5afe2224d2a3e5b966d1b:lynx/Pkgfile
 f:2a09f4df9235f7f0722507bc8172d5c9:wget2/.footprint
 f:7882b89a11fe694ba8ce21a37cb3e51d:wget2/.signature
 f:8ae2cc490e3ca06f9235de02026674b3:wget2/Pkgfile
-f:7bb0413f7834f882ef02fb3f665bb4c2:libxml2/.footprint
-f:95fbdad8518f65287b4e8ec451b1e252:libxml2/.signature
-f:8ae8fdbf0f5f6829583c843416a5f1d5:libxml2/Pkgfile
+f:4a974cf39647ade95f7e0d9787909397:libxml2/.footprint
+f:652163777741d0006ff5a40b90ebbb17:libxml2/.signature
+f:3f21a1aca1c26fde3c4d889a70a151f9:libxml2/Pkgfile
 f:2fae769507b7ddf7ad7cf95093974435:libtool/.footprint
 f:b1cbb7062cd75df3a702a07037d91adb:libtool/.signature
 f:714ccf9aa52e5ae88c868ff99c09862b:libtool/Pkgfile
