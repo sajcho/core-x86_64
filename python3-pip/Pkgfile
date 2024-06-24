@@ -5,7 +5,7 @@
 
 name=python3-pip
 _realname=get-pip
-version=24.0
+version=24.1
 release=1
 source=(https://github.com/pypa/${_realname}/archive/${version}/${_realname}-${version}.tar.gz)
 
