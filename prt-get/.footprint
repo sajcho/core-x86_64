@@ -1,4 +1,5 @@
 drwxr-xr-x	root/root	etc/
+-rw-r--r--	root/root	etc/prt-get.aliases
 -rw-r--r--	root/root	etc/prt-get.conf
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
@@ -14,4 +15,4 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/lib/
 drwxr-xr-x	root/root	var/lib/pkg/
--rw-r--r--	root/root	var/lib/pkg/prt-get.aliases
+-rw-r--r--	root/root	var/lib/pkg/prt-get.locker (EMPTY)

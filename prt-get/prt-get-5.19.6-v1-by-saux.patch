@@ -1,11 +1,12 @@
-From 2dad0072ec664c68d9344a8f9ef034c3d1e08c73 Mon Sep 17 00:00:00 2001
+From eb17b5d68d538f221146d2837dc48ca18e7cae1a Mon Sep 17 00:00:00 2001
 From: sajcho <saux.aarch64@gmail.com>
-Date: Wed, 15 Feb 2023 23:12:32 +0100
-Subject: [PATCH] Makefile.in: modified by saux
+Date: Tue, 20 Aug 2024 17:57:54 +0200
+Subject: [PATCH] modified by Saux
 
 ---
- Makefile.in | 8 +++++++-
- 1 file changed, 7 insertions(+), 1 deletion(-)
+ Makefile.in                |  8 +++++++-
+ src/installtransaction.cpp | 17 ++++++++++++++++-
+ 2 files changed, 23 insertions(+), 2 deletions(-)
 
 diff --git a/Makefile.in b/Makefile.in
 index bce64e7..405e9f1 100644
@@ -40,18 +41,6 @@ index bce64e7..405e9f1 100644
  	dist-shar dist-tarZ dist-xz dist-zip distcheck distclean \
  	distclean-generic distclean-hdr distclean-tags distcleancheck \
  	distdir distuninstallcheck dvi dvi-am html html-am info \
--- 
-2.39.1
-
-From a413284e9090f38150842de4fbd84fed34b3e59c Mon Sep 17 00:00:00 2001
-From: sajcho <saux.aarch64@gmail.com>
-Date: Fri, 17 Feb 2023 10:55:24 +0100
-Subject: [PATCH] installtransaction.cpp: define supported architecture
-
----
- src/installtransaction.cpp | 17 ++++++++++++++++-
- 1 file changed, 16 insertions(+), 1 deletion(-)
-
 diff --git a/src/installtransaction.cpp b/src/installtransaction.cpp
 index 59834f1..41f2a51 100644
 --- a/src/installtransaction.cpp
@@ -88,5 +77,31 @@ index 59834f1..41f2a51 100644
  
              // - inform the user about what's happening
 -- 
-2.39.1
+2.46.0
+
+From 7bbdb6566ab8c56de2983fc4e68d85581d5e36f5 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Tue, 20 Aug 2024 18:02:23 +0200
+Subject: [PATCH] installtransaction.cpp: add support for loongarch64
+
+---
+ src/installtransaction.cpp | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/src/installtransaction.cpp b/src/installtransaction.cpp
+index 41f2a51..cf52212 100644
+--- a/src/installtransaction.cpp
++++ b/src/installtransaction.cpp
+@@ -44,6 +44,9 @@ using namespace std;
+ #ifdef __riscv
+ #define PKG_EXT ".riscv64.pkg.tar."
+ #endif
++#ifdef __loongarch__
++#define PKG_EXT ".loongarch64.pkg.tar."
++#endif
+ #else
+ #error "unsupported architecture"
+ #endif
+-- 
+2.46.0
 

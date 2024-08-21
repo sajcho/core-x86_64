@@ -5,16 +5,18 @@
 
 name=prt-get
 version=5.19.6
-release=5
+release=6
 source=(http://crux.nu/files/${name}-${version}.tar.xz \
-	prt-get-5.19.6-by-saux.patch \
-	prt-get.conf \
-	prt-get.aliases)
+	prt-get-5.19.6-v1-by-saux.patch \
+	prt-get.conf-aarch64 \
+	prt-get.conf-loongarch64 \
+	prt-get.conf-riscv64 \
+	prt-get.conf-x86_64)
 
 build() {
 	cd ${name}-${version}
 
-	patch -p1 -i $SRC/prt-get-5.19.6-by-saux.patch
+	patch -p1 -i $SRC/prt-get-5.19.6-v1-by-saux.patch
 
 	./configure \
 		--prefix=/usr
@@ -23,6 +25,26 @@ build() {
 
 	make DESTDIR=$PKG install
 
-	install -m 644 $SRC/prt-get.conf $PKG/etc/
-	install -D -m 644 $SRC/prt-get.aliases $PKG/var/lib/pkg/prt-get.aliases
+	install -d $PKG/var/lib/pkg
+	echo "# define aliases" > $PKG/etc/prt-get.aliases
+	touch $PKG/var/lib/pkg/prt-get.locker
+
+	case ${CARCH} in
+		"aarch64")
+			install -m 0644 $SRC/prt-get.conf-aarch64 $PKG/etc/prt-get.conf
+			;;
+		"loongarch64")
+			install -m 0644 $SRC/prt-get.conf-loongarch64 $PKG/etc/prt-get.conf
+			;;
+		"riscv64")
+			install -m 0644 $SRC/prt-get.conf-riscv64 $PKG/etc/prt-get.conf
+			;;
+		"x86_64")
+			install -m 0644 $SRC/prt-get.conf-x86_64 $PKG/etc/prt-get.conf
+			;;
+		*)
+			echo "Unknown architecture selected! Exiting."
+			exit 1
+			;;
+	esac
 }
