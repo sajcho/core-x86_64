@@ -1,19 +1,28 @@
 # Description:	Perl programming language
 # URL:		http://www.perl.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	db gdbm libxcrypt
+# Depends on:	db gdbm libnsl libtirpc libxcrypt
 
 name=perl
-version=5.38.2
+version=5.40.0
 release=1
 source=(http://www.cpan.org/src/5.0/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
-	export LDFLAGS="-Wl,-z,relro -Wl,--as-needed  -Wl,-z,now"
+	# Ensure that we never accidentally bundle zlib or bzip2
+	rm -rf cpan/Compress-Raw-Zlib/zlib-src
+	rm -rf cpan/Compress-Raw-Bzip2/bzip2-src
+	sed -i '/\(bzip2\|zlib\)-src/d' MANIFEST
+
+	export BUILD_ZLIB=0
+	export BUILD_BZIP2=0
+	export BZIP2_LIB=/usr/lib
+	export BZIP2_INCLUDE=/usr/include
 
 	./Configure -des \
+		-Darchname=linux \
 		-Dprefix=/usr \
 		-Dvendorprefix=/usr \
 		-Dprivlib=/usr/lib/perl5/${version%.*} \
@@ -25,18 +34,12 @@ build() {
 		-Di_db \
 		-Duseshrplib \
 		-Dusethreads \
-		-Duselargefiles \
-		-Doptimize=none \
-		-Dccflags="$CFLAGS" \
-		-Dldflags="$LDFLAGS" \
-		-Dccdlflags="-Wl,--enable-new-dtags $LDFLAGS" \
-		-Dlddlflags="-shared $LDFLAGS" \
-		-Dpager="/usr/bin/less -isr" \
+		-Doptimize="$CFLAGS" \
+		-Dcccdlflags='-fPIC' \
+		-Dccdlflags='-rdynamic' \
 		-Dcf_by="SAUX-x86_64"
 
 	make V=1
-
-	#make test
 
 	make DESTDIR=$PKG install
 
