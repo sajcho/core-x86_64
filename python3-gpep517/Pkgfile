@@ -1,0 +1,27 @@
+# Description:	Minimal backend script to aid installing Python packages through PEP 517-compliant build systems
+# URL:		https://github.com/mgorny/gpep517/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	python3-installer
+
+name=python3-gpep517
+_realname=gpep517
+version=16
+release=1
+source=(https://github.com/mgorny/gpep517/archive/v${version}/${_realname}-${version}.tar.gz \
+	default-bytecode-levels.patch \
+	gpep517)
+
+build() {
+	cd ${_realname}-${version}
+
+	patch -p1 -i $SRC/default-bytecode-levels.patch
+
+	local sitedir="$(python3 -c 'import site;print(site.getsitepackages()[0])')"
+	mkdir -p $PKG/$sitedir
+	find gpep517 -name "*.orig" -delete
+	cp -a gpep517 $PKG/$sitedir
+
+	python3 -m compileall $PKG/$sitedir
+
+	install -D -m 0755 $SRC/gpep517 -t $PKG/usr/bin
+}

@@ -1,0 +1,23 @@
+# Description:	built-package format for Python
+# URL:		https://github.com/pypa/wheel
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	python3-flit-core python3-gpep517 python3-packaging
+
+name=python3-wheel
+_realname=wheel
+version=0.43.0
+release=1
+source=(https://files.pythonhosted.org/packages/source/w/wheel/${_realname}-${version}.tar.gz \
+	use-system-packaging.patch)
+
+build() {
+	cd ${_realname}-${version}
+
+	patch -p1 -i $SRC/use-system-packaging.patch
+
+	rm -rf src/wheel/vendored
+
+	gpep517 build-wheel --wheel-dir .dist --output-fd 3 3>&1 >&2
+
+	python3 -m installer -d $PKG .dist/*.whl
+}

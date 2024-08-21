@@ -1,0 +1,6 @@
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZ0BudJh370hEF3HJgvHntJs1lTApL3PCgxUpMPfP+XzWRzVxaxbpLBWuGhfhVkGM1HqQRALyTdgRcvHBkJiUgQU=
+SHA256 (Pkgfile) = 7c35ca48fa1c918416bcae9fe8392ac9608b2d1dbccc33768e67be5225c25b58
+SHA256 (.footprint) = 5ec1acfd1a3e0ec959608e3f9dd29a1058b092027fa0090594f359a012aecffb
+SHA256 (python3-installer-0.7.0.zip) = 05d1933f0a5ba7d8d6296bb6d5018e7c94fa473ceb10cf198a92ccea19c27b53
+SHA256 (default-bytecode-levels.patch) = 07ffa118b34cf0454169c5d9996feca2dee4c25bac8de4933875432dcccf676b

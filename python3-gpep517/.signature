@@ -1,0 +1,7 @@
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZywkof+m6oUqD9C4IZvIw4gtnU8YTTc+0PxoFDZ6DZS3zF4lupjKjFFpob1NtW64XHHi9x+/5hovvw16FH1TXgU=
+SHA256 (Pkgfile) = 027b1a6bfa55574b23f65a6689a88f4696dc24614b0a0758e548ec99a193a23e
+SHA256 (.footprint) = 032d4ac6ebb32212ad2c4aa6783dad2889c678da21188f4cc86f277f9a316a04
+SHA256 (gpep517-16.tar.gz) = 965ff7cb2217fa03091face01fcb9a2b0205f58be80c8be9ccf832eab7a55414
+SHA256 (default-bytecode-levels.patch) = fe32568983e85b5f72ca36b217edca9d34fee0c20847dc058c0497451924edb2
+SHA256 (gpep517) = 5f9cccf1d1894807ed4f980e407cae63935118342fbfb28307116363ab27661f

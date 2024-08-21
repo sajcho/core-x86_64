@@ -1,0 +1,6 @@
+untrusted comment: verify with core-x86_64.pub
+RWQ0XEjKMixyZ3UBt037BYE6ZsXBh5RtcJ/ObQNVQGbOP1CZj7zwgyXbaf2V8QGXpjrug+i5Ws56JJG402y5LoR9RczH3U7sdwQ=
+SHA256 (Pkgfile) = a67f110ea697141b5e5e8ee8024f1398ddf1ac8981e44244f51e90c95ffe435c
+SHA256 (.footprint) = 4ead829a7ef5df12aaebfe9e1eeda6c7900cff08e20fefd9839671d06d8280af
+SHA256 (wheel-0.43.0.tar.gz) = 465ef92c69fa5c5da2d1cf8ac40559a8c940886afcef87dcf14b9470862f1d85
+SHA256 (use-system-packaging.patch) = 0765d58f9ac72c316948dc7b9d3644ef3e725f721ae7b083313cf43bb383aba0

@@ -1,0 +1,18 @@
+# Description:	Core utilities for Python3 packages
+# URL:		https://pypi.org/project/packaging
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	python3-flit-core python3-gpep517 python3-parsing
+
+name=python3-packaging
+_realname=packaging
+version=24.1
+release=1
+source=(https://files.pythonhosted.org/packages/source/p/packaging/${_realname}-${version}.tar.gz)
+
+build() {
+	cd ${_realname}-${version}
+
+	gpep517 build-wheel --wheel-dir .dist --output-fd 3 3>&1 >&2
+
+	python3 -m installer -d $PKG .dist/*.whl
+}

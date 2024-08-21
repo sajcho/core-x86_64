@@ -1,0 +1,18 @@
+# Description:	Object-oriented approach to text processing
+# URL:		https://github.com/pyparsing/pyparsing
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	python3-flit-core python3-gpep517
+
+name=python3-parsing
+_realname=pyparsing
+version=3.1.2
+release=1
+source=(https://files.pythonhosted.org/packages/source/p/pyparsing/${_realname}-${version}.tar.gz)
+
+build() {
+	cd ${_realname}-${version}
+
+	gpep517 build-wheel --wheel-dir .dist --output-fd 3 3>&1 >&2
+
+	python3 -m installer -d $PKG .dist/*.whl
+}

@@ -1,0 +1,21 @@
+# Description:	simple packaging tool for simple packages (core)
+# URL:		https://flit.readthedocs.io/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	python3-installer
+
+name=python3-flit-core
+_realname=flit
+version=3.9.0
+release=1
+source=(https://files.pythonhosted.org/packages/source/f/flit/${_realname}-${version}.tar.gz)
+
+build() {
+	cd ${_realname}-${version}/flit_core
+
+	# don't need this with py3.11 for tomli
+	rm -rf flit_core/vendor/
+	python3 build_dists.py
+
+	python3 -m installer -d $PKG \
+		dist/flit_core-${version}-py3-none-any.whl
+}
