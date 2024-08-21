@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ15e/r4QpfyT+EJzmIY0IId4wWHpUnyJOBpy6Yd5+oHtCA5draKS7fMM6CfzYHcRD0x6JlJKe18SUwWGy1XOcwg=
-SHA256 (Pkgfile) = e0dfeac29aa4cfcf071b8ccb14b95ae542c0bfaec0f003a9a57a689a509e2846
-SHA256 (.footprint) = eee3456a8628ffe7c82b718bcbf57db7e69fda3c4ad905df2ce991da64514960
-SHA256 (kmod-32.tar.xz) = 630ed0d92275a88cb9a7bf68f5700e911fdadaf02e051cf2e4680ff8480bd492
+RWQ0XEjKMixyZ3UV13D2eNcFS0iyZmXR3FPGAxCR5vQHQdF+sctzCAW1vDT/gT/zWhqLf7MIBWkrRJ1zCFQS0LgaAyT7f3hyfgk=
+SHA256 (Pkgfile) = fdeef7eac018123770fb7b49b0a3fd81927c0a7838fecafbfd4fc98f01e64635
+SHA256 (.footprint) = 2e3b3cde2f77e7098dfbd66cc12ca242d12c4183398adc53586a38343618f144
+SHA256 (kmod-33.tar.xz) = dc768b3155172091f56dc69430b5481f2d76ecd9ccb54ead8c2540dbcf5ea9bc
