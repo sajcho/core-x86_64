@@ -3,8 +3,8 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=mpdecimal
-version=2.5.1
-release=4
+version=4.0.0
+release=1
 source=(http://www.bytereef.org/software/${name}/releases/${name}-${version}.tar.gz)
 
 build() {
