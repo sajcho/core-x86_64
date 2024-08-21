@@ -5,7 +5,7 @@
 
 name=python3
 _realname=Python
-version=3.12.4
+version=3.12.5
 release=1
 source=(https://www.python.org/ftp/python/${version}/${_realname}-${version}.tar.xz)
 
@@ -20,32 +20,30 @@ build() {
 	rm -r Lib/test
 	rm -r Lib/idlelib/idle_test
 
-	CFLAGS+=" -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"
-	CXXFLAGS+=" -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"
+	export CFLAGS_NODIST="${CFLAGS/-O2/-O3}"
+	export CXXFLAGS_NODIST="${CXXFLAGS/-O2/-O3}"
+	export LDFLAGS_NODIST="$LDFLAGS"
 
-	# Use -flto=auto to use GNU make’s job server, if available,
-	# or otherwise fall back to autodetection of the number
-	# of CPU threads present in your system.
-	sed -i -e "s|-flto |-flto=auto |g" configure configure.ac
+	# we set them via NODIST to not propagate them and duplicate them to modules
+	unset LDFLAGS CFLAGS CXXFLAGS CPPFLAGS
 
-	CXX="/usr/bin/c++" \
 	./configure \
 		--build=$CHOST \
 		--host=$CHOST \
 		--prefix=/usr \
-		--enable-shared \
 		--enable-ipv6 \
-		--enable-optimizations \
 		--enable-loadable-sqlite-extensions \
-		--with-ssl-default-suites=openssl \
+		--enable-optimizations \
+		--enable-shared \
 		--with-computed-gotos \
+		--with-dbmliborder=gdbm:ndbm \
+		--with-lto \
 		--with-system-expat \
 		--with-system-libmpdec \
-		--with-lto \
 		--with-tzpath=/usr/share/zoneinfo \
-		--without-static-libpython \
 		--without-ensurepip \
-		--without-pydebug
+		--without-pydebug \
+		--without-static-libpython
 
 	make V=1
 
