@@ -54,14 +54,12 @@ d:lynx
 d:wget2
 d:libxml2
 d:libtool
-d:check
 d:lzo
 d:xz
 d:libcap-ng
 d:automake
 d:libpipeline
 d:inetutils
-d:bindutils
 d:console-font-terminus
 d:openssl3
 d:zstd
@@ -382,9 +380,6 @@ f:88dbff3372dd4e05ae72ea516c96a5e2:libxml2/Pkgfile
 f:2fae769507b7ddf7ad7cf95093974435:libtool/.footprint
 f:b1cbb7062cd75df3a702a07037d91adb:libtool/.signature
 f:714ccf9aa52e5ae88c868ff99c09862b:libtool/Pkgfile
-f:a492e3a9fa08ca1d4dc6ec3dd74c3c94:check/.footprint
-f:cb3d409c92ac0130200f9def348bea21:check/.signature
-f:fa1a59861529c8f5513c91eeade1a20a:check/Pkgfile
 f:eaa7212ea86fa33b52d3c03698c1db81:lzo/.footprint
 f:30a7dfef26dbd25fe9ce12004b00eb4e:lzo/.signature
 f:0cbf3dc59cf5d453b501d738204cfa00:lzo/Pkgfile
@@ -406,10 +401,6 @@ f:73162410bdca11e71d090fa23726b743:inetutils/.footprint
 f:a0844fbeca2c931e0d32aaa3fe46e0e4:inetutils/.signature
 f:35861833be79593cde24a13bb7b44dc8:inetutils/inetd.run
 f:4c5d591a1c718a6f793564f7aff663ae:inetutils/Pkgfile
-f:2e65ba0e5704c82fd9bc12e0e92e4e0a:bindutils/.footprint
-f:1a9f8c1803e13f443c1c40b298083297:bindutils/.signature
-f:1d10db772843102259375a2f51d8f050:bindutils/Pkgfile
-f:3b0ac19785dd07a6a0c497f4f5eaf185:bindutils/utils.patch
 f:d21963552e877968012854321a3acbd4:console-font-terminus/.footprint
 f:a91f7ac471fdaf29d7f363e113d51e49:console-font-terminus/.signature
 f:be5c4452d7f4097dc20b2cc06bb3cafd:console-font-terminus/Pkgfile
