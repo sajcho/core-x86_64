@@ -1,6 +1,0 @@
-untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ7UjtC/sEg2CXBCYjn+WT4Eni0A5f5YNz5q+qEkOQaMPOOJW1wfmGhd929TUUOqnVECzYRXLDCQ5YQYuLvBfXQw=
-SHA256 (Pkgfile) = 91286c6223cfadf660d43e2445f7a951cf674f8cb21339a3cc9a5ab1b0112f05
-SHA256 (.footprint) = 4d969366fb50c95fc5f5f39c90aae7b2939dc8f331e1b7c5e8d8afa5c05d798c
-SHA256 (bind-9.18.27.tar.xz) = ea3f3d8cfa2f6ae78c8722751d008f54bc17a3aed2be3f7399eb7bf5f4cda8f1
-SHA256 (utils.patch) = 300e6a789ae99aca1a414a0e6d5ef67ec7b41baff99449e69c7c6b94785fc465
