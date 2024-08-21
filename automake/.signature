@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ80apPRVgk6BXp4kbSUq6hsuuWpNDxIt8V2W5JQZdmnkDFcD4DJdV5O66Vnv/VJIFvJGMCDgRyDPXrtb1cwGeQs=
-SHA256 (Pkgfile) = 7af5956b91c777bd1c7f5d734578a6c4471b68c70ff2f4421ea60cc9dabd6deb
-SHA256 (.footprint) = ae6ec010cf38ff8acb9c0341aa7ec201b0b21dc712b084e20ac5e16689fdb214
-SHA256 (automake-1.16.5.tar.xz) = f01d58cd6d9d77fbdca9eb4bbd5ead1988228fdb73d6f7a201f5f8d6b118b469
+RWQ0XEjKMixyZxBwkngEK+O6pB4w6G/ru5DBZ0zNEUpK+NmKCGqQCu5W52vw90I3XOik8gvseSj//dpxHom3oA9iKsZ5BZ7SkQE=
+SHA256 (Pkgfile) = b6ad3e15cfd9978f417303dc54802bc733b68b531da17ec2e81c56dc93180012
+SHA256 (.footprint) = 01be15e00170727055ddc06374706f944aeca3aa45ff890e73852271aa91beb0
+SHA256 (automake-1.17.tar.xz) = 8920c1fc411e13b90bf704ef9db6f29d540e76d232cb3b2c9f4dc4cc599bd990
