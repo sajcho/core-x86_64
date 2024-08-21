@@ -4,8 +4,8 @@
 # Depends on:	python3 texinfo
 
 name=glibc
-version=2.39
-release=2
+version=2.40
+release=1
 source=(https://ftp.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
 	https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.1.tar.xz \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
@@ -15,7 +15,7 @@ build() {
 	cd $SRC/linux-6.9.1
 
 	make mrproper
-	make ARCH=$CARCH INSTALL_HDR_PATH=$PKG/usr headers_install
+	make ARCH=x86_64 INSTALL_HDR_PATH=$PKG/usr headers_install
 	chown -R root:root $PKG/usr
 
 	cd $SRC/${name}-${version}
