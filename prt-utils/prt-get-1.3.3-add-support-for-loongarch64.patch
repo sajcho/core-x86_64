@@ -1,0 +1,65 @@
+From bb3bcb7b63572b55e3b54d058d8df2d4dedeb640 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Tue, 20 Aug 2024 22:08:41 +0200
+Subject: [PATCH] revdep/elf.cpp: add support for loongarch64
+
+---
+ revdep/elf.cpp | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+
+diff --git a/revdep/elf.cpp b/revdep/elf.cpp
+index a5ddb0f..67a873a 100644
+--- a/revdep/elf.cpp
++++ b/revdep/elf.cpp
+@@ -52,16 +52,18 @@ static bool isValidElf(Elf *elf, int &machine) {
+ 
+ 	switch(ehdr.e_machine) {
+ #if   defined(__i386__)
+-		case EM_386:    break;
++		case EM_386:		break;
+ #elif defined(__x86_64__)
+-		case EM_386:    break;
+-		case EM_X86_64: break;
++		case EM_386:		break;
++		case EM_X86_64:		break;
+ #elif defined(__arm__)
+-		case EM_ARM:    break;
++		case EM_ARM:		break;
+ #elif defined(__aarch64__)
+ 		case EM_AARCH64:	break;
+ #elif defined(__riscv)
+-		case EM_RISCV:	break;
++		case EM_RISCV:		break;
++#elif defined(__loongarch__)
++		case EM_LOONGARCH:	break;
+ #else
+ #error "unsupported architecture"
+ #endif
+-- 
+2.46.0
+
+From 9a3178b4531b73e8cceaa1f393e337d030140ce1 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Tue, 20 Aug 2024 22:16:53 +0200
+Subject: [PATCH] revdep/Makefile: disable static
+
+---
+ revdep/Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/revdep/Makefile b/revdep/Makefile
+index edb29e4..afedc3a 100644
+--- a/revdep/Makefile
++++ b/revdep/Makefile
+@@ -4,7 +4,7 @@ MANDIR   := /usr/share/man/man1
+ ETCDIR   := /etc/revdep.d
+ CXXFLAGS ?= -O2
+ CXXFLAGS += -std=gnu++0x -Wall -Wextra -g -DVERSION='"$(VERSION)"'
+-LDFLAGS  += -static $(shell pkg-config --libs --static libelf)
++LDFLAGS  += $(shell pkg-config --libs libelf)
+ SOURCES  := elf.cpp utility.cpp main.cpp pkg.cpp elf-cache.cpp
+ OBJECTS  := $(patsubst %.cpp,%.o,$(SOURCES))
+ 
+-- 
+2.46.0
+
