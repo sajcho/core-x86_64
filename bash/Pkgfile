@@ -4,13 +4,14 @@
 # Depends on:	readline
 
 name=bash
-version=5.2.21
+version=5.2.32
 release=1
-source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz \
+source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version:0:3}.tar.gz \
+	${name}-${version}.patch.gz \
 	profile)
 
 build() {
-	cd ${name}-${version}
+	cd ${name}-${version:0:3}
 
 	./configure \
 		--build=$CHOST \
