@@ -4,16 +4,13 @@
 # Depends on:	ncurses
 
 name=readline
-version=8.2.10
+version=8.2.13
 release=1
-source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version:0:3}.tar.gz \
-	readline_readline-8.2.7.patch.gz \
+source=(http://ftpmirror.gnu.org/gnu/readline/${name}-${version}.tar.gz \
 	inputrc)
 
 build() {
-	cd ${name}-${version:0:3}
-
-	gunzip -c $SRC/readline_readline-8.2.7.patch.gz | patch -p0
+	cd ${name}-${version}
 
 	./configure \
 		--build=$CHOST \
