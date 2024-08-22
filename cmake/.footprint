@@ -7,7 +7,7 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/cmake.m4
-lrwxrwxrwx	root/root	usr/share/cmake-3.29 -> cmake
+lrwxrwxrwx	root/root	usr/share/cmake-3.30 -> cmake
 drwxr-xr-x	root/root	usr/share/cmake/
 drwxr-xr-x	root/root	usr/share/cmake/Modules/
 -rw-r--r--	root/root	usr/share/cmake/Modules/.NoDartCoverage
@@ -67,10 +67,10 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/CMakeAddFortranSubdirectory/
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineCSharpCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineCUDACompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake
--rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineFortranCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineHIPCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineISPCCompiler.cmake
@@ -177,6 +177,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/CMakeAddFortranSubdirectory/
 -rw-r--r--	root/root	usr/share/cmake/Modules/CTestScriptMode.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CTestTargets.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CTestUseLaunchers.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/CXX-DetectStdlib.h
 -rw-r--r--	root/root	usr/share/cmake/Modules/CheckCCompilerFlag.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CheckCSourceCompiles.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CheckCSourceRuns.cmake
@@ -210,7 +211,6 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/CheckIPOSupported/
 -rw-r--r--	root/root	usr/share/cmake/Modules/CheckIncludeFiles.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CheckLanguage.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CheckLibraryExists.cmake
--rw-r--r--	root/root	usr/share/cmake/Modules/CheckLibraryExists.lists.in
 -rw-r--r--	root/root	usr/share/cmake/Modules/CheckLinkerFlag.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CheckOBJCCompilerFlag.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CheckOBJCSourceCompiles.cmake
@@ -267,6 +267,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Compiler/
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Clang-C-FeatureTests.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Clang-C.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Clang-CUDA.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Clang-CXX-CXXImportStd.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Clang-CXX-FeatureTests.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Clang-CXX-TestableFeatures.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Clang-CXX.cmake
@@ -370,6 +371,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Compiler/
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/MSVC-ASM.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/MSVC-C-FeatureTests.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/MSVC-C.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/MSVC-CXX-CXXImportStd.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/MSVC-CXX-FeatureTests.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/MSVC-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake
@@ -495,6 +497,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/ExternalProject/
 -rw-r--r--	root/root	usr/share/cmake/Modules/ExternalProject/hgclone.cmake.in
 -rw-r--r--	root/root	usr/share/cmake/Modules/ExternalProject/mkdirs.cmake.in
 -rw-r--r--	root/root	usr/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/ExternalProject/stepscript.cmake.in
 -rw-r--r--	root/root	usr/share/cmake/Modules/ExternalProject/verify.cmake.in
 -rw-r--r--	root/root	usr/share/cmake/Modules/FLTKCompatibility.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/FeatureSummary.cmake
@@ -750,6 +753,8 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Internal/CPack/
 -rw-r--r--	root/root	usr/share/cmake/Modules/Internal/CPack/ISScript.template.in
 -rw-r--r--	root/root	usr/share/cmake/Modules/Internal/CPack/NSIS.InstallOptions.ini.in
 -rw-r--r--	root/root	usr/share/cmake/Modules/Internal/CPack/NSIS.template.in
+drwxr-xr-x	root/root	usr/share/cmake/Modules/Internal/CPack/WIX-v3/
+-rw-r--r--	root/root	usr/share/cmake/Modules/Internal/CPack/WIX-v3/WIX.template.in
 -rw-r--r--	root/root	usr/share/cmake/Modules/Internal/CPack/WIX.template.in
 -rw-r--r--	root/root	usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake
@@ -1056,6 +1061,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Platform/Android/
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/MirBSD.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/NetBSD-Initialize.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/NetBSD.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/OHOS.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/OS2-OpenWatcom-C.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/OS2-OpenWatcom-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/OS2-OpenWatcom.cmake
