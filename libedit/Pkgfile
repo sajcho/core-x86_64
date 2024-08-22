@@ -4,12 +4,12 @@
 # Depends on:	ncurses
 
 name=libedit
-version=20240517_3.1
+version=20240808-3.1
 release=1
-source=(https://thrysoee.dk/editline/${name}-${version/_/-}.tar.gz)
+source=(https://thrysoee.dk/editline/${name}-${version}.tar.gz)
 
 build() {
-	cd ${name}-${version/_/-}
+	cd ${name}-${version}
 
 	./configure \
 		--prefix=/usr \
@@ -21,9 +21,6 @@ build() {
 	make DESTDIR=$PKG install
 
 	ln -s editline.3 $PKG/usr/share/man/man3/el.3
-
-	# conflict with readline
-	rm $PKG/usr/share/man/man3/history.3
 
 	find $PKG -type f -name '*.la' -delete
 }
