@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ2Ljt9g8HyU65r5nRhPghok90VXhZFWLYPt/qq24zvGPP4CjBs3fGYJaervaBC5lx7txID5WRe1ak9y24agM5gg=
-SHA256 (Pkgfile) = e9664eecfb1eb3fbf3770fec03a54c9afeddf6549ce041d1c0ceb3fa4c1d78ee
-SHA256 (.footprint) = 41d55a2ddeb6871824359c1770e07093bd409a67a113acc7b0eaabb2a5ca2509
-SHA256 (liburing-2.6.tar.bz2) = 78bcc0dc0d004a238d8b5f597adbb4ec74926352a3983b872db7f0efdb72565d
+RWQ0XEjKMixyZ6pprhVBNTnYLudvLiAAaGfxi2eTqEvvrm/rFa3eQhHJnu4w8PAz9PQ22ADbmfDfwZ56kUwUFkFPLFHs55M+dQc=
+SHA256 (Pkgfile) = ef6569cdcbb1771aed298f748284e74acacc27b5201fee846bb111f8e7b7ed78
+SHA256 (.footprint) = 6ed5ed5e184d71df8f55bb6878d4e84918f3cdbe442a1d636a49ab0c9605bb93
+SHA256 (liburing-2.7.tar.bz2) = cc5268f97d089bc21d3d5848959e6620b2dfc85023b92479dad0496b2c51df06

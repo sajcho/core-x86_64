@@ -7,12 +7,12 @@ drwxr-xr-x	root/root	usr/include/liburing/
 -rw-r--r--	root/root	usr/include/liburing/io_uring.h
 -rw-r--r--	root/root	usr/include/liburing/io_uring_version.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/liburing-ffi.so -> liburing-ffi.so.2.6
-lrwxrwxrwx	root/root	usr/lib/liburing-ffi.so.2 -> liburing-ffi.so.2.6
--rwxr-xr-x	root/root	usr/lib/liburing-ffi.so.2.6
-lrwxrwxrwx	root/root	usr/lib/liburing.so -> liburing.so.2.6
-lrwxrwxrwx	root/root	usr/lib/liburing.so.2 -> liburing.so.2.6
--rwxr-xr-x	root/root	usr/lib/liburing.so.2.6
+lrwxrwxrwx	root/root	usr/lib/liburing-ffi.so -> liburing-ffi.so.2.7
+lrwxrwxrwx	root/root	usr/lib/liburing-ffi.so.2 -> liburing-ffi.so.2.7
+-rwxr-xr-x	root/root	usr/lib/liburing-ffi.so.2.7
+lrwxrwxrwx	root/root	usr/lib/liburing.so -> liburing.so.2.7
+lrwxrwxrwx	root/root	usr/lib/liburing.so.2 -> liburing.so.2.7
+-rwxr-xr-x	root/root	usr/lib/liburing.so.2.7
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/liburing-ffi.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/liburing.pc
@@ -42,6 +42,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_cqe_get_data.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_cqe_get_data64.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_cqe_seen.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_enable_rings.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_for_each_cqe.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_free_buf_ring.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_free_probe.3.gz
@@ -54,6 +55,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_peek_cqe.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_accept.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_accept_direct.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_bind.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_cancel.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_cancel64.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_cancel_fd.3.gz
@@ -62,6 +64,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_cmd.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_connect.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_fadvise.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_fadvise64.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_fallocate.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_fgetxattr.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_files_update.3.gz
@@ -76,7 +79,9 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_link.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_link_timeout.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_linkat.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_listen.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_madvise.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_madvise64.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_mkdir.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_mkdirat.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_msg_ring.3.gz
@@ -108,6 +113,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_rename.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_renameat.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_send.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_send_bundle.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_send_set_addr.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_send_zc.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/io_uring_prep_send_zc_fixed.3.gz
