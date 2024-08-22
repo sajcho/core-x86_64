@@ -1,8 +1,8 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZxX7A2aUq9wMCnVPGQ/+ygk8PGklNdXCY2w4WDMAgVH/UbaB7+DT2OhYd7wcA1DXsm/oX8Eo4Pq/wb75CF2xZwk=
-SHA256 (Pkgfile) = ddb2871811d396f36635b7d55b5e403ace3af0f51d4826a0c13123f1f1c5b5bb
+RWQ0XEjKMixyZyteSbSrC+VShndRQNOZ/gsaB6jHvZ1Gcchtix4BfzCQie2orAV92GfDyXsQCx7WrYXCShKvbtP7mEHDLtzeKwc=
+SHA256 (Pkgfile) = 6abf968d4aa837af008799a5c53fd6279f83f54dc8234c6cddd62bc70e5ffaa9
 SHA256 (.footprint) = be202c25ca3c4b2b6b897a580134b2db310eac62cc1a8495e7aa295d39d2de5b
-SHA256 (nftables-1.0.9.tar.xz) = a3c304cd9ba061239ee0474f9afb938a9bb99d89b960246f66f0c3a0a85e14cd
+SHA256 (nftables-1.1.0.tar.xz) = ef3373294886c5b607ee7be82c56a25bc04e75f802f8e8adcd55aac91eb0aa24
 SHA256 (nftables-basic-firewall.nft) = 4fe63b07304af44f0c98c6453b7d98ded50cac3b8877e5daf1c95f5ff6f99a42
 SHA256 (nftables.conf) = 4d2f8fd036dead63503674cdca3c212e8cf81bf5ae9abb54e7808c521b02fce0
 SHA256 (nftables.finish) = ab2aa5c244e957f429308e722267f95655d15c716436c216977bb12b359e3eb7
