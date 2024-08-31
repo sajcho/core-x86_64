@@ -1,6 +1,6 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ8iVdPKz2AJT5YwtI/c6nkimVC2uXh10R1JN2U4hJPdq7kWbJD+QEcgwbN3PdqrWYrPeGjU4pxxdyhMRAxOu/ws=
-SHA256 (Pkgfile) = 51662707a5c6b1907d7688c2e0dfe92a363f0f6ee8a89430afef6be0d294e5e7
+RWQ0XEjKMixyZyWTUGhIXHaIniXBK/s5RfX++7QijXmmwuJICz5+exw82nVPjRKyEwfPuc5u8Joyn+sSw1+Uqnn2PFVGL8ebKww=
+SHA256 (Pkgfile) = 96a5543b791f51fefa9ed1a30d1712ff49f579af0065db07a2241e2140fee86b
 SHA256 (.footprint) = be671b5dea09b7d6937d907c8be7bb582b62b530d41d4d8848e397bc237757d8
 SHA256 (eudev-3.2.14.tar.gz) = 8da4319102f24abbf7fff5ce9c416af848df163b29590e666d334cc1927f006f
 SHA256 (50-firmware.rules) = 37895a6ae81ab0e8753eb97a7c11b7cf578549e06fbbf2d6b192d109bc2cd9a3
