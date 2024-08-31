@@ -4,10 +4,9 @@
 # Depends on:	eudev file libcap-ng
 
 name=util-linux
-version=2.40.1
+version=2.40.2
 release=1
 source=(https://www.kernel.org/pub/linux/utils/${name}/v${version:0:4}/${name}-${version}.tar.xz \
-	pam_lastlog2.patch \
 	uuidd.run)
 
 build() {
@@ -17,18 +16,21 @@ build() {
 		--build=$CHOST \
 		--host=$CHOST \
 		--prefix=/usr \
+		--libdir=/lib \
+		--runstatedir=/run \
+		--enable-{write,kill} \
 		--disable-asciidoc \
+		--disable-liblastlog2 \
+		--disable-pylibmount \
 		--disable-nls \
 		--disable-static \
 		--disable-{login,su,nologin,runuser} \
 		--disable-{bfs,minix} \
 		--disable-chfn-chsh \
 		--disable-raw \
-		--enable-{write,kill} \
 		--without-python \
 		--without-systemd \
-		--without-systemdsystemunitdir \
-		runstatedir=/run
+		--without-systemdsystemunitdir
 
 	make V=1
 
@@ -44,6 +46,7 @@ build() {
 
 	touch $PKG/etc/adjtime
 
+	rm $PKG/usr/bin/setarch
 	rm -r $PKG/usr/share/{doc,bash-completion}
 
 	find $PKG -type f -name '*.la' -delete
