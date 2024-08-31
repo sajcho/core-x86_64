@@ -5,13 +5,20 @@
 
 name=libseccomp
 version=2.5.5
-release=1
-source=(https://github.com/seccomp/libseccomp/releases/download/v${version}/${name}-${version}.tar.gz)
+release=2
+source=(https://github.com/seccomp/libseccomp/releases/download/v${version}/${name}-${version}.tar.gz \
+	loongarch64.patch \
+	remove-redefinition-prctl.patch)
 
 build() {
 	cd ${name}-${version}
 
+	patch -p1 -i $SRC/loongarch64.patch
+	patch -p1 -i $SRC/remove-redefinition-prctl.patch
+
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--disable-static
 

@@ -1,5 +1,7 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZwtOYvk2U5iKoN2DaeZ5woSbIokzc+hNqizkllTe+pQ/5aFWeiTwlM90lJtl10izoOjpQktGeuBmuZpMNonCQgQ=
-SHA256 (Pkgfile) = 3a169ef85ee7e587dadd32a4f4128a6641ad2c8beb347a1496a350f6b4a6bb52
+RWQ0XEjKMixyZ/7yC90wSE36mmors1K57mzNa0fCaRfVQnOkJApW2PdZgCn73Pg/nrEyb6JMeXPiiBICMh1ynTSB0GsI+Wet1w8=
+SHA256 (Pkgfile) = 72c34745806b06ae71e20e84b36f6fdd380017c260a35b6de5edf3fe5e0dac6a
 SHA256 (.footprint) = 4d52a8ff39634bfe4ec374788efd02311444038dbcd299965cf5368924b19415
 SHA256 (libseccomp-2.5.5.tar.gz) = 248a2c8a4d9b9858aa6baf52712c34afefcf9c9e94b76dce02c1c9aa25fb3375
+SHA256 (loongarch64.patch) = 0b7c5782ebf6b996e16147f10b2e366fe75b6275ba589e043ec78ec7779cc651
+SHA256 (remove-redefinition-prctl.patch) = e133750447fcf0f84504d7dff4a915e357cfce9961576c57fe63df669f8dc58a
