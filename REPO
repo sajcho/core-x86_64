@@ -382,8 +382,8 @@ f:2fae769507b7ddf7ad7cf95093974435:libtool/.footprint
 f:b1cbb7062cd75df3a702a07037d91adb:libtool/.signature
 f:714ccf9aa52e5ae88c868ff99c09862b:libtool/Pkgfile
 f:eaa7212ea86fa33b52d3c03698c1db81:lzo/.footprint
-f:30a7dfef26dbd25fe9ce12004b00eb4e:lzo/.signature
-f:0cbf3dc59cf5d453b501d738204cfa00:lzo/Pkgfile
+f:1107c9b00226e4ffb980905e022d0e4e:lzo/.signature
+f:0824a6c840ddfa39a37fc05ba8bf9303:lzo/Pkgfile
 f:10885d6e20214150376c3e22eb368202:xz/.footprint
 f:60eec8a7705bf4b8cbef6225aa0885e8:xz/.signature
 f:c14627388c8b730d403402fc74b14bbe:xz/Pkgfile
@@ -500,9 +500,9 @@ f:c148027c04bc4a8f5790ba37fb268d92:patch/CVE-2019-13636.patch
 f:84fba03109d823a8aae88c211376f914:patch/CVE-2019-20633.patch
 f:a316f48f5130f7601752d298d8187108:patch/.footprint
 f:9842bbeecd50922ee751fd1e7f48e590:patch/0002-Fix-arbitrary-command-execution-in-ed-style-patches-.patch
-f:e8b7a6b8767db41b47340cc0661e9b32:patch/.signature
+f:e79dbbb31a5f1659431bba06c1c7c710:patch/.signature
 f:76c3396708f46ea2158555ed69962e2c:patch/CVE-2019-13638.patch
-f:7a7ef6a7807a785bfe891ec03d752271:patch/Pkgfile
+f:14d70fd585b54640e8403725acccb293:patch/Pkgfile
 f:e41fd5bbde882dd578378a372df870ec:patch/CVE-2018-6951.patch
 f:aa8ac1e3dccbd523143b01e9f60b06e8:patch/CVE-2018-6952.patch
 f:c26ea3025849f5cec0cfb448aabb6f0f:mpfr/.footprint
