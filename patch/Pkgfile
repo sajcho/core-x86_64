@@ -4,7 +4,7 @@
 
 name=patch
 version=2.7.6
-release=1
+release=2
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
 	0001-Allow-input-files-to-be-missing-for-ed-style-patches.patch \
 	0002-Fix-arbitrary-command-execution-in-ed-style-patches-.patch \
@@ -28,6 +28,8 @@ build() {
 	aclocal && autoheader && autoconf && automake --add-missing
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		gl_cv_func_gettimeofday_clobber=no \
 		gl_cv_func_tzset_clobber=no

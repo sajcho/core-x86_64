@@ -1,6 +1,6 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ9SJViNbKARAPG5P1XJYtTBAycwBK2Amr8RkRgEQdGbkML+haQexp4ADL16zS/UpdZTB12ozYlYoDyvLULCyeQc=
-SHA256 (Pkgfile) = 29cb71287612656d7e68e00ef19ab1ae9c0e001a894049d08d30eebbcadb5e82
+RWQ0XEjKMixyZ76cUq5brqvr3ym7EyrdUsHvv+iF4uSCIlM9a+iIvcarBg0e0iGyVMyAlroyKiWZVP2wY6riPqB0Y4Ir/4sCqA0=
+SHA256 (Pkgfile) = 56da7424080f1d7ad3a579860274beee612e3d68b17a92fa063157e561f3650e
 SHA256 (.footprint) = 7185313cfe8efa96d2ac73dd1a2d12bd07820c9f4982052d085c72abece80bac
 SHA256 (patch-2.7.6.tar.xz) = ac610bda97abe0d9f6b7c963255a11dcb196c25e337c61f94e4778d632f1d8fd
 SHA256 (0001-Allow-input-files-to-be-missing-for-ed-style-patches.patch) = c2e9d1d960c8cf04dd732ddfa73e267e9a956fbc6d7bf99cf2d3a7c0f9a6d05f
