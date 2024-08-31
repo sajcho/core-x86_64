@@ -5,7 +5,7 @@
 
 name=libcap
 version=2.70
-release=1
+release=2
 source=(https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/${name}-${version}.tar.xz)
 
 build() {
@@ -17,13 +17,15 @@ build() {
 	make \
 		GOLANG=no \
 		RAISE_SETFCAP=no \
-		PKGCONFIGDIR=/usr/lib/pkgconfig
+		PKGCONFIGDIR=/usr/lib/pkgconfig \
+		lib=lib
 
 	make \
 		GOLANG=no \
 		RAISE_SETFCAP=no \
 		PKGCONFIGDIR=/usr/lib/pkgconfig \
 		DESTDIR=$PKG \
+		lib=lib \
 		install
 
 	install -d $PKG/usr/lib
