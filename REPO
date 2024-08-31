@@ -242,8 +242,8 @@ f:91f023f9606942fc217244df4e8ed022:pkgconf/.footprint
 f:98134e2f30085d858f9d834f38ab54fe:pkgconf/.signature
 f:273ea4089977998cfd66845e50ed2d53:pkgconf/Pkgfile
 f:655acc31c6f42843fd303b4ad16f6cd2:libmnl/.footprint
-f:5d60e70cd3e892f08923a58ea2c55f68:libmnl/.signature
-f:e025a7900e583ccd612e570300b3e2b9:libmnl/Pkgfile
+f:2a53201d4834fabda9df41a753b9dc55:libmnl/.signature
+f:b43162d28baf6aa2a0a83c2dc5c23d4d:libmnl/Pkgfile
 f:cfec9b994959fc3bf89bcc0b0887f9a6:rsync/rsyncd.run
 f:bd6cc8e2c83d5e845af20a30e105fb5f:rsync/rsync.driver
 f:ce1baa7b69bd6dcf6de9a6e22517ff3c:rsync/.footprint
@@ -295,8 +295,8 @@ f:d7307a2d993d011f33600b4ec2275d40:readline/.signature
 f:22de5c8b178f394336229f389cef002d:readline/Pkgfile
 f:553cf04fdeec54dca12062864c3ffba3:readline/inputrc
 f:68d29a7a4fc30ea3ba47a4caa45b6a5e:libnsl/.footprint
-f:046ce91ce21e8d29a8782ba7adf44361:libnsl/.signature
-f:96f1d14ced64654cc3c60cd7bcb08ba9:libnsl/Pkgfile
+f:8d59781eb98283038bf939c88442cd25:libnsl/.signature
+f:3d3b4f705802f8b19563621923afce02:libnsl/Pkgfile
 f:341701b8457455cc7be81628611cfd54:less/.footprint
 f:a763e103f8b8c17679a0d4132f47ce0c:less/.signature
 f:2c01dc512b558865ba48e7074217b43b:less/Pkgfile
@@ -326,8 +326,10 @@ f:2daf15977f11aaf8f35c0c0a841598a1:gpm/.signature
 f:9897c63427674af4b4033e640df21ddf:gpm/Pkgfile
 f:5fc76a6032b21f79d09c59ab8f14f1a8:gpm/gpm.run
 f:352370dcd5c06ebd6ebf4a609af86d87:libseccomp/.footprint
-f:9aed1a7a73cff916aa8277b8889b79fa:libseccomp/.signature
-f:e55eed37f70ab666290c1e409a0ee089:libseccomp/Pkgfile
+f:5cfdb3531ec25af84b59b1f565866ca0:libseccomp/.signature
+f:996d17f37c95907e4d59475ed791644d:libseccomp/Pkgfile
+f:f10f467d772d6fcfbfb05e3bbba450b4:libseccomp/remove-redefinition-prctl.patch
+f:b553f8f54ae243013cbecfe2aac00c3f:libseccomp/loongarch64.patch
 f:2930e24751dffbb68da3562492b1c2fb:grep/.footprint
 f:a6732572657dd5ddd0fcbd141af37d07:grep/.signature
 f:7d534624758b35dc73e6a38a51f11371:grep/Pkgfile
@@ -594,8 +596,8 @@ f:eb75b6a1348671ae4a0be6d43fe89a2b:diffutils/.footprint
 f:8f7fc302cf99308395360c5413e8b6e4:diffutils/.signature
 f:e4b2514348ea8776dac3e7ec4a2d9644:diffutils/Pkgfile
 f:d68b753b05a83b8ddd8f547fb5389f4f:libcap/.footprint
-f:587841af8d25cc10dcd22f8f8479bfc4:libcap/.signature
-f:5eff50661da791361355dedbcd3bdd2a:libcap/Pkgfile
+f:ab711b7c6e6f4635e6b257b7514e4fd2:libcap/.signature
+f:96bb0e1377b7937adeac238df9a614c6:libcap/Pkgfile
 f:f4f31e501248953199c83cb3b5f5b11e:python3-setuptools/.footprint
 f:66b899d1d7a0e07726e1ad9de4f024fe:python3-setuptools/.signature
 f:59ede4efb165d94a5b81b64c1288415d:python3-setuptools/Pkgfile
@@ -696,9 +698,9 @@ f:c5326de5f9241ba27e8edd014fd98dc3:python3-packaging/.signature
 f:123262364be3060b1889b4bcca608970:python3-packaging/Pkgfile
 f:bcb33e71700ee52629f732e4488a5955:eudev/.footprint
 f:83e7ba837a4c25ecc8b66f36bed97c9d:eudev/50-firmware.rules
-f:412b445e93871342bdf1622e4ba3c1ed:eudev/.signature
+f:cc2aa53275ef81bef4a85e024f560c35:eudev/.signature
 f:967c02132309d78b3ee6843fea61957b:eudev/udevd.run
-f:de9e20828f576d5fff4f3e50ad46ca51:eudev/Pkgfile
+f:09509eca9ae40082b7c240cc161e2f23:eudev/Pkgfile
 f:752afb19bca99d6299c2dc424c020c44:util-linux/uuidd.run
 f:a28a85e3322b32986b91e5c56b518e5a:util-linux/.footprint
 f:2a6d259911b21481bbdd5513808937d3:util-linux/.signature
