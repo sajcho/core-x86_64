@@ -4,13 +4,15 @@
 
 name=lzo
 version=2.10
-release=1
+release=2
 source=(http://www.oberhumer.com/opensource/lzo/download/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
 
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--enable-shared \
 		--disable-static
