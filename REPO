@@ -702,9 +702,9 @@ f:cc2aa53275ef81bef4a85e024f560c35:eudev/.signature
 f:967c02132309d78b3ee6843fea61957b:eudev/udevd.run
 f:09509eca9ae40082b7c240cc161e2f23:eudev/Pkgfile
 f:752afb19bca99d6299c2dc424c020c44:util-linux/uuidd.run
-f:e8dc6fa2d9c9120cb7d69bb85c33d624:util-linux/.footprint
-f:c2d5defb176f1a3b19d88cf697d62a40:util-linux/.signature
-f:4da68cd04ce5952188de8d856e3dc9bb:util-linux/Pkgfile
+f:dec18608f3e4dc4d1a3f2b87aa00e390:util-linux/.footprint
+f:b57911745144b50e8b792938e59f985d:util-linux/.signature
+f:b2f9178db6fd68ba3bb03084fb986082:util-linux/Pkgfile
 f:b930876865b6f6e683daef8aebcc6511:cmake/.footprint
 f:9d1c098ca90699661b24e59a252c50ad:cmake/.signature
 f:a655f098ad87b36244ef12603c280768:cmake/Pkgfile
