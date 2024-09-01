@@ -208,10 +208,10 @@ f:a6e5e5447ef7a4cb3fc6600cdb35493a:kmod/Pkgfile
 f:159aefdfbc12502327a3deffee4be70e:runit-saux/.footprint
 f:496d56593187f13c48f17b633ef5b006:runit-saux/.signature
 f:467ca5ac8637d63d0ff4361fbbeefc16:runit-saux/Pkgfile
-f:35345b74c25848b61a2e1c7a7a84097b:prt-utils/prt-get-1.3.3-add-support-for-loongarch64.patch
+f:35345b74c25848b61a2e1c7a7a84097b:prt-utils/prt-utils-1.3.3-add-support-for-loongarch64.patch
 f:fefd637c79fdc499a29aacb4e1640336:prt-utils/.footprint
-f:3ccc5ea17fe7fdfc5ecc07b2ec069507:prt-utils/.signature
-f:69f53caffb8b36c60a59d43af657acec:prt-utils/Pkgfile
+f:fa31acddd78cddf5a3cd2b1310ee27a5:prt-utils/.signature
+f:1508ec8db706eb12ac0a47b39f08f50f:prt-utils/Pkgfile
 f:156f314630b38707bf4492a8d938f8a1:prt-utils/README
 f:04e984660249b54c17116cecfe5b2de1:gcc/.footprint
 f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
