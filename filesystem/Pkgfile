@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=filesystem
-version=20230426
+version=20240901
 release=1
 source=(motd shells group passwd shadow securetty fstab mime.types)
 
@@ -70,9 +70,21 @@ build() {
 	install -m 0644 fstab $PKG/etc
 	install -m 0644 mime.types $PKG/etc
 	ln -s /proc/self/mounts $PKG/etc/mtab
-	cat > $PKG/etc/issue << EOF
 
-    SAUX $CARCH  (\n) (\l)
+	# create /etc/issue
+	cat > $PKG/etc/issue <<EOF
 
+    Welcome to SAUX Linux
+    Kernel \\r on an \\m (\\l)
+
+EOF
+
+	# create /etc/os-release
+	cat > $PKG/etc/os-release << EOF
+NAME=SAUX
+VERSION="rolling"
+ID=saux
+PRETTY_NAME="SAUX"
+HOME_URL="https://github.com/sajcho/"
 EOF
 }

@@ -11,6 +11,7 @@ drwxr-xr-x	root/root	etc/
 -rw-r--r--	root/root	etc/mime.types
 -rw-r--r--	root/root	etc/motd (EMPTY)
 lrwxrwxrwx	root/root	etc/mtab -> /proc/self/mounts
+-rw-r--r--	root/root	etc/os-release
 -rw-r--r--	root/root	etc/passwd
 -rw-r--r--	root/root	etc/securetty
 -rw-r-----	root/root	etc/shadow
