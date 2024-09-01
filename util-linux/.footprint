@@ -79,7 +79,6 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/getopt
 -rwxr-xr-x	root/root	usr/bin/hardlink
 -rwxr-xr-x	root/root	usr/bin/hexdump
-lrwxrwxrwx	root/root	usr/bin/i386 -> setarch
 -rwxr-xr-x	root/root	usr/bin/ionice
 -rwxr-xr-x	root/root	usr/bin/ipcmk
 -rwxr-xr-x	root/root	usr/bin/ipcrm
@@ -88,8 +87,6 @@ lrwxrwxrwx	root/root	usr/bin/i386 -> setarch
 -rwxr-xr-x	root/root	usr/bin/isosize
 -rwxr-xr-x	root/root	usr/bin/last
 lrwxrwxrwx	root/root	usr/bin/lastb -> last
-lrwxrwxrwx	root/root	usr/bin/linux32 -> setarch
-lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 -rwxr-xr-x	root/root	usr/bin/logger
 -rwxr-xr-x	root/root	usr/bin/look
 -rwxr-xr-x	root/root	usr/bin/lsclocks
@@ -118,7 +115,6 @@ lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 -rwxr-xr-x	root/root	usr/bin/taskset
 -rwxr-xr-x	root/root	usr/bin/uclampset
 -rwxr-xr-x	root/root	usr/bin/ul
-lrwxrwxrwx	root/root	usr/bin/uname26 -> setarch
 -rwxr-xr-x	root/root	usr/bin/unshare
 -rwxr-xr-x	root/root	usr/bin/utmpdump
 -rwxr-xr-x	root/root	usr/bin/uuidgen
@@ -127,7 +123,6 @@ lrwxrwxrwx	root/root	usr/bin/uname26 -> setarch
 -rwxr-sr-x	root/tty	usr/bin/wall
 -rwxr-xr-x	root/root	usr/bin/whereis
 -rwxr-sr-x	root/tty	usr/bin/write
-lrwxrwxrwx	root/root	usr/bin/x86_64 -> setarch
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/blkid/
 -rw-r--r--	root/root	usr/include/blkid/blkid.h

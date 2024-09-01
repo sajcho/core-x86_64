@@ -5,7 +5,7 @@
 
 name=util-linux
 version=2.40.2
-release=1
+release=2
 source=(https://www.kernel.org/pub/linux/utils/${name}/v${version:0:4}/${name}-${version}.tar.xz \
 	uuidd.run)
 
@@ -46,7 +46,7 @@ build() {
 
 	touch $PKG/etc/adjtime
 
-	rm $PKG/usr/bin/setarch
+	rm -f $PKG/usr/bin/{i386,linux32,linux64,setarch,uname26,x86_64}
 	rm -r $PKG/usr/share/{doc,bash-completion}
 
 	find $PKG -type f -name '*.la' -delete
