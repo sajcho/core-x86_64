@@ -1,6 +1,6 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ49LmGUMNQpmvCr4oJKS+M1TGoU2A4wpSrWaTn3ABFWLi8E14BSe8xmCYZWYdFarE9JyPUsjSNeiUSH59U5Dqwg=
-SHA256 (Pkgfile) = 50f1a2d61c2f6e05471fbeae33a27cf4dbf67729a22bc7be358dbb9d25e1b8b4
+RWQ0XEjKMixyZ/Jdy3m22bUdFxZRowo6JxxUUtE29gC7ozjQc1r+G5886VzgwBw51PdTEjuImrg5lIqYYDtBfiY7KS4l8bkWpwo=
+SHA256 (Pkgfile) = 63477add7a5f0d60cc76bccd1469297651a3fd7e2ccbb6e39ab5b86c3b308433
 SHA256 (.footprint) = 6f1c811ae9a03fa50a0efbda542a758c596a60a10f8d31e8a2b0de2609c42eb0
-SHA256 (prt-utils-1.3.3-2.tar.gz) = 8305e1013c737d8b7f018db00d4fa70210748b5e6b7fd8eb0768de1a590a545b
-SHA256 (prt-get-1.3.3-add-support-for-loongarch64.patch) = 2dfd8ffa9d4aeaaa8e1101a8ff175d84f007e72579a6eb843c39bf7d2d795b34
+SHA256 (prt-utils-1.3.3-3.tar.gz) = 8305e1013c737d8b7f018db00d4fa70210748b5e6b7fd8eb0768de1a590a545b
+SHA256 (prt-utils-1.3.3-add-support-for-loongarch64.patch) = 2dfd8ffa9d4aeaaa8e1101a8ff175d84f007e72579a6eb843c39bf7d2d795b34

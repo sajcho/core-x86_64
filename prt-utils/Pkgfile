@@ -5,16 +5,16 @@
 
 name=prt-utils
 version=1.3.3
-release=2
+release=3
 _commit=c1676f01676d70fbe47b8f4806d0d72020b6393f
 source=(https://git.crux.nu/tools/$name/archive/${_commit}.tar.gz \
-	prt-get-1.3.3-add-support-for-loongarch64.patch)
+	prt-utils-1.3.3-add-support-for-loongarch64.patch)
 renames=(${name}-${version}-${release}.tar.gz)
 
 build() {
 	cd ${name}
 
-	patch -p1 -i $SRC/prt-get-1.3.3-add-support-for-loongarch64.patch
+	patch -p1 -i $SRC/prt-utils-1.3.3-add-support-for-loongarch64.patch
 
 	make V=1
 
