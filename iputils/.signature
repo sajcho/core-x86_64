@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ01Bks2DUlrE6ZGS8JZTgwb/4/M2PjxWdqDoB+vBzM+9p+YzPsDWeHbqL5sNeDD/lg585f4jbYqawu7qWI7JGAw=
-SHA256 (Pkgfile) = 8b7b2da6c803d160c96da4c569facc3a6613ff37ea4baa63dbf09938eee40ec6
+RWQ0XEjKMixyZ3BP2vgyvpHW9S+FNxv6/KRE51RuCUUA8uAncdJfMa71ElSbVvKnnLFm3gBNTdaOclEe5LVGK9sWMdNdfekGgwA=
+SHA256 (Pkgfile) = 679ea06ee9871507b45ee564d9fbfd660cb89451bb95ccd4d1a031df723a3e76
 SHA256 (.footprint) = 0c8f29166730785f2d01bfedbdba6ed8189dc8f471c9d1b24dae88e4375166eb
-SHA256 (iputils-20240117.tar.gz) = a5d66e2997945b2541b8f780a7f5a5ec895d53a517ae1dc4f3ab762573edea9a
+SHA256 (iputils-20240905.tar.gz) = 055b4e6e4f298c97fd5848898099e59b4590db63fac3f7ad4fa796354ad44403
