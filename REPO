@@ -286,9 +286,9 @@ f:de53e1212b201325394f688487d0a74e:iproute2/Pkgfile
 f:392729cf3be6397d4357dbc1da15e9f3:chrony/chrony.run
 f:c45828190dc39ef65ad0f024f8d2ae39:chrony/chrony.run.conf
 f:3db7d4147b7e28691d2adec62d0a2f46:chrony/.footprint
-f:ce01f3faf1603a754a01b7ea438f4638:chrony/.signature
+f:5256e667f4c783e973d488f89d2b9687:chrony/.signature
 f:637d19b0bbebeb620a45e953f629dc8e:chrony/chrony.conf
-f:f4d1c0ccf10d0d048c7f251a9b7a29a6:chrony/Pkgfile
+f:e2d0e4b0ef7421cf68e744de16b671c3:chrony/Pkgfile
 f:46b6f8977204863978e1211e5358590c:chrony/README
 f:da214214ee665b3985be97bb22ae8daf:readline/.footprint
 f:d7307a2d993d011f33600b4ec2275d40:readline/.signature
@@ -625,8 +625,8 @@ f:9b7b1d03db54266563c1c35f98334b54:autoconf/.footprint
 f:93fa6af6ed32c8ee911e4985d847d1ad:autoconf/.signature
 f:54e6854d44ef30996c63063d686dacbb:autoconf/Pkgfile
 f:9748e104314f62759fb51aaf3119751e:iputils/.footprint
-f:3e93c3bbd4242b67d1a972c0ab1cb1c8:iputils/.signature
-f:4d78de54ddb4f016e179a04f83d91aec:iputils/Pkgfile
+f:aaf0f42444c46e8e7fdedb0fef40814b:iputils/.signature
+f:43255482b311ddba2cda838ddc5c8789:iputils/Pkgfile
 f:7b70869e294b08b8f2ff8cc8450004bf:libffi/.footprint
 f:ad0a29119dba142301ff865099dcf815:libffi/.signature
 f:c378428ba0c9d8f9e18ec0ba6c4449a3:libffi/Pkgfile
