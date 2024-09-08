@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ5DaLy3rdK3rkgx4qOczHzm2hNaKJ2t6qadeKTxZsGlLss4OgtLpQzUo0uAU7VUPIYllu6k+5dVk80E504dSows=
-SHA256 (Pkgfile) = 5e3564fcced76faf506e4568f11abc50c0796c5fcb941bff1cbd4e21ced0cd3c
+RWQ0XEjKMixyZ95VdzflGSykuNdL/SDdPYxmwPNLyEqmLJVVonNNbCU4RAX8mqqrNrxG4GdlHiejBAec5zjp/sL5uWWBe8n0rAU=
+SHA256 (Pkgfile) = 0f8a5ba82460b3b04dc81429dd118dd1602f3a71c5189ad99392f4512a4f2783
 SHA256 (.footprint) = d0d41d91b99717fed30c486625d73a3b7bdf0545f410cc7890c1f36c07cc378e
-SHA256 (cmake-3.30.2.tar.gz) = 46074c781eccebc433e98f0bbfa265ca3fd4381f245ca3b140e7711531d60db2
+SHA256 (cmake-3.30.3.tar.gz) = 6d5de15b6715091df7f5441007425264bdd477809f80333fdf95f846aaff88e4
