@@ -286,9 +286,9 @@ f:de53e1212b201325394f688487d0a74e:iproute2/Pkgfile
 f:392729cf3be6397d4357dbc1da15e9f3:chrony/chrony.run
 f:c45828190dc39ef65ad0f024f8d2ae39:chrony/chrony.run.conf
 f:3db7d4147b7e28691d2adec62d0a2f46:chrony/.footprint
-f:5256e667f4c783e973d488f89d2b9687:chrony/.signature
+f:ce23ae078bfe0c19c83263754c450e67:chrony/.signature
 f:637d19b0bbebeb620a45e953f629dc8e:chrony/chrony.conf
-f:e2d0e4b0ef7421cf68e744de16b671c3:chrony/Pkgfile
+f:6a6107acc153829bcc28b0ce7cdec1f4:chrony/Pkgfile
 f:46b6f8977204863978e1211e5358590c:chrony/README
 f:da214214ee665b3985be97bb22ae8daf:readline/.footprint
 f:d7307a2d993d011f33600b4ec2275d40:readline/.signature
