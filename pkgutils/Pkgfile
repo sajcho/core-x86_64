@@ -1,11 +1,11 @@
 # Description:	A set of utilities to manage software packages
 # URL:		http://crux.nu/gitweb/?p=tools/pkgutils.git
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	libarchive
+# Depends on:	libarchive tar
 
 name=pkgutils
 version=5.40.10
-release=5
+release=6
 source=(https://crux.nu/files/${name}-${version}.tar.xz \
 	pkgutils-5.40.10-v1-by-saux.patch)
 
@@ -13,6 +13,10 @@ build() {
 	cd ${name}-${version}
 
 	patch -p1 -i $SRC/pkgutils-5.40.10-v1-by-saux.patch
+
+	# see README
+	sed 's|bsdtar --format=gnutar|tar|' -i pkgmk.in
+	sed 's|bsdtar -t|tar -t|' -i pkgmk.in
 
 	make DESTDIR=$PKG install
 }

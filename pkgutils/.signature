@@ -1,6 +1,6 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ0yloWuD0+WKHRoS0Y4rRXgmcbsb9Q6BtDF/075n9ssEjBj0jUwBYctjztCC04hnhLcKDdNrl3sMEK4dclnMogs=
-SHA256 (Pkgfile) = e338364671d1bb8ea9c722dfe57fb61afa9a55b256c3d08e59b40563677fcb55
+RWQ0XEjKMixyZ4V5A+stcChlcXbgmglZWcIfmv4WQP6LhVbID2tPPVd+XNgeMuMnx+89hkHSDilz/fI6oPde5RSEp5EQp6uiEgo=
+SHA256 (Pkgfile) = b4d365836994729aa45db596c8362644875087d816594e249501531867733b04
 SHA256 (.footprint) = 7d143f18f63bba5569d729eefd0d0f04ae4b0539f8bd71f9cfd6955b9e7c639d
 SHA256 (pkgutils-5.40.10.tar.xz) = 2d86335be3d0452dcc7ae5f568e7296cd7ea80117f57646d15420a6dc192f174
 SHA256 (pkgutils-5.40.10-v1-by-saux.patch) = 8e51e80f6a31e433a9b1b5260beb25f289d6648620d4d22cbddf3fc7153a28eb

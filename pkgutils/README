@@ -1,0 +1,10 @@
+
+
+   By changing bsdtar to tar, we gain the ability to influence the size of the final package.
+   We achieve this by adding variable
+
+   for zst:
+   export ZSTD_CLEVEL ZSTD_NBTHREADS - see man zstd
+
+   for xz:
+   export XZ_DEFAULTS XZ_OPT - see man xz
