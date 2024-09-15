@@ -619,8 +619,9 @@ f:73ab1b1509792c1712713a003236447a:bc/.signature
 f:cd2bfedd0578d516b6bdb3ccd2a2c611:bc/Pkgfile
 f:447250ac43aaec93c67093777fa76a27:pkgutils/pkgutils-5.40.10-v1-by-saux.patch
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
-f:1da8d90e6cf1f3bab303993459e4a149:pkgutils/.signature
-f:44efd4929102fd8eaad9bd35de9d406e:pkgutils/Pkgfile
+f:683dd782f92f95dc917376dc4a381c91:pkgutils/.signature
+f:40858aed322f76c894e7d07d82162f6f:pkgutils/Pkgfile
+f:a57a4a09a6300f7cf058143a2682b223:pkgutils/README
 f:9b7b1d03db54266563c1c35f98334b54:autoconf/.footprint
 f:93fa6af6ed32c8ee911e4985d847d1ad:autoconf/.signature
 f:54e6854d44ef30996c63063d686dacbb:autoconf/Pkgfile
