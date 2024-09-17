@@ -598,9 +598,9 @@ f:e4b2514348ea8776dac3e7ec4a2d9644:diffutils/Pkgfile
 f:d68b753b05a83b8ddd8f547fb5389f4f:libcap/.footprint
 f:ab711b7c6e6f4635e6b257b7514e4fd2:libcap/.signature
 f:96bb0e1377b7937adeac238df9a614c6:libcap/Pkgfile
-f:f4f31e501248953199c83cb3b5f5b11e:python3-setuptools/.footprint
-f:66b899d1d7a0e07726e1ad9de4f024fe:python3-setuptools/.signature
-f:59ede4efb165d94a5b81b64c1288415d:python3-setuptools/Pkgfile
+f:65cc7ccaa0dd7467357d480271664d11:python3-setuptools/.footprint
+f:3bbf90f866bc22de13c28f1bbed64314:python3-setuptools/.signature
+f:88df5b0808ae8e5d50830b27fb58fc4e:python3-setuptools/Pkgfile
 f:cacb036817fcf2bd4c27335e3942a32f:ncurses/.footprint
 f:0dfbae1e3c2424d7e51a74fee0e921ef:ncurses/.signature
 f:3e697d134ff5551c91fa3970b505d43c:ncurses/Pkgfile
