@@ -1,5 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZ1ZqbGvjnyWJXDHzEjxPKk2Z6U78unx57xoXsV4FsWYV4ZpdvOPO3YERZyjaB2Q4Mqv+/pIWL18RXBPXwUOoUgc=
-SHA256 (Pkgfile) = 958690fd43c6beeade17207883658100481fb02effecc65e2aafcdf90a018996
-SHA256 (.footprint) = f36158259b0414eac6b4e714929467d728ee68f114cca27ee68d7cd5ebdf3358
-SHA256 (libarchive-3.7.4.tar.xz) = f887755c434a736a609cbd28d87ddbfbe9d6a3bb5b703c22c02f6af80a802735
+RWQ0XEjKMixyZ6U87poRkJy+VZz2tArNEfAWeCALoR73ED53SzE/+y6vkVnGmg5VcXKQ40FZeVH/EK7urQJw9BD/aKuAkndkRAc=
+SHA256 (Pkgfile) = ef2f79ac4284c535422c8ae414f0a8abcdce49f6305beb73e63c1afdda9d2717
+SHA256 (.footprint) = 5bf4dd5ea2b20f677aaf346bb37930dac327643f3e163ac4a487b369718b95e4
+SHA256 (libarchive-3.7.5.tar.xz) = ca74ff8f99dd40ab8a8274424d10a12a7ec3f4428dd35aee9fdda8bdb861b570
