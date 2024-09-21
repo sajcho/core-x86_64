@@ -1,6 +1,5 @@
 untrusted comment: verify with core-x86_64.pub
-RWQ0XEjKMixyZyh64iI4+Ivyr46pdWeLvfxXN3fj79ZurRAW/+XjBRdcD73w/cr1H7UTSDh1AE9iVkn2ff4rdqX/YnPnclNcVAw=
-SHA256 (Pkgfile) = 087ef3a4c797781561ca11236cf4aac71e4e70af19f06f61d70a4d7bd7707bfc
+RWQ0XEjKMixyZ9p8aZlXuR6awHpiEuifSwzxvpT6QIMIY17dpCkVmkQrLsrPU84vlsSjX+fm4NJJQKsMPABlQIkIdWrZXcRt6gc=
+SHA256 (Pkgfile) = 29fb74f07766071b3124dbb677fc8c5eaa6f254ab7a68debc8edefbde6727c06
 SHA256 (.footprint) = 9afa52dde8150d552e10fbcd96a41e2831963abfb7accefdfbd9d088acb78802
-SHA256 (texinfo-7.1.tar.xz) = deeec9f19f159e046fdf8ad22231981806dac332cc372f1c763504ad82b30953
-SHA256 (fix-build-without-NLS.patch) = fb530e919ca94f886b90b006c78518eed8022152ce3c18f2343f44132f11ad9e
+SHA256 (texinfo-7.1.1.tar.xz) = 31ae37e46283529432b61bee1ce01ed0090d599e606fc6a29dca1f77c76a6c82
